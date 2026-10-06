@@ -1,19 +1,50 @@
 {
-  "version": "v1.0.0",
-  "final_package_sha256": "6ff809735ba733be684a9793fc7ecc97b74781ff13c95dfa2315fd7fa8ba5fe0",
-  "installed": false,
-  "game_started": false,
-  "game_test_verified": false,
-  "archives": [
+  "version": "v1.0.1",
+  "status": "installed_and_delivery_verified",
+  "created_at": "2026-10-06T22:21:27.432566+08:00",
+  "final_package_sha256": "2101c74eae7851d3bac8bad67022fd3700ffe41368ac9c8180c34dbe60ab0d63",
+  "install_directory": "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\HanfuBlueRed",
+  "installed_files": [
     {
-      "file": "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed\\dist\\HanfuBlueRed_Mod.zip",
-      "bytes": 27008669,
-      "sha256": "cd8b4ebecee745542482064b6e6fa1027a5efd3fdfd547e9d8f7a5a45f7de836"
+      "file": "README.md",
+      "sha256": "ef1b4a17d574b149214d3013b22a7c209391e54b4155460e818e920abc64068c"
     },
     {
-      "file": "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed\\dist\\HanfuBlueRed_Source.zip",
-      "bytes": 93143892,
-      "sha256": "8e09cb0241fb2da100bebfff9e16109883fca0d95e17052ce0f7b2ecf2dbbf17"
+      "file": "SubModule.xml",
+      "sha256": "271be5bdc9bb407889642ea876c74e2c06a0afcfbc1ee46a36ac1e94fe8cd1dc"
+    },
+    {
+      "file": "AssetPackages\\hbr.tpac",
+      "sha256": "2101c74eae7851d3bac8bad67022fd3700ffe41368ac9c8180c34dbe60ab0d63"
+    },
+    {
+      "file": "ModuleData\\items.xml",
+      "sha256": "0a2cee14eb38b828b5d68380c1b97fa18b1ae44fe8da1b2173d5c70e3604db9b"
     }
-  ]
+  ],
+  "archives": [
+    {
+      "kind": "Mod",
+      "path": "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed\\dist\\HanfuBlueRed_Mod.zip",
+      "bytes": 32734985,
+      "sha256": "b8b4624c0c160b04512da0b49e3cb38936146c4666a2f39dcfed8a38764390cd",
+      "archive_bytes_verified": true
+    },
+    {
+      "kind": "Source",
+      "path": "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed\\dist\\HanfuBlueRed_Source.zip",
+      "bytes": 98386207,
+      "sha256": "d922aa8381735a21a91a44cab31465108898854de4302ae408b63847dd84007e",
+      "archive_bytes_verified": true
+    }
+  ],
+  "previous_archives_preserved": [
+    "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed\\dist\\HanfuBlueRed_v1.0.0_Mod.zip",
+    "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed\\dist\\HanfuBlueRed_v1.0.0_Source.zip"
+  ],
+  "original_inputs_rechecked": 25,
+  "unchanged_source_meshes": 21,
+  "back_surface_rays_checked": 1080,
+  "game_started": false,
+  "game_test_verified": false
 }
