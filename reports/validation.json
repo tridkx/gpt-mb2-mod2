@@ -1,0 +1,499 @@
+{
+  "vertices_lod0": 13444,
+  "triangles_lod0": 16312,
+  "weights_all_sum_255": true,
+  "bone_indices_valid": true,
+  "xml_valid": true,
+  "animations": {
+    "idle": [
+      {
+        "frame": 1,
+        "edge_stretch_p99": 1.094085678190683,
+        "edge_stretch_max": 1.6063150460733246,
+        "lowest_z": -0.0024088500861705582,
+        "worst_submesh": [
+          "tx5_legs_05",
+          1.6063150460733246
+        ]
+      },
+      {
+        "frame": 116,
+        "edge_stretch_p99": 1.1122487353688097,
+        "edge_stretch_max": 1.5342008867580443,
+        "lowest_z": -0.002137200936983456,
+        "worst_submesh": [
+          "tx5_body_04",
+          1.5342008867580443
+        ]
+      },
+      {
+        "frame": 231,
+        "edge_stretch_p99": 1.1231866879628298,
+        "edge_stretch_max": 1.6165266157730755,
+        "lowest_z": -0.0024398150032344506,
+        "worst_submesh": [
+          "tx5_legs_05",
+          1.6165266157730755
+        ]
+      },
+      {
+        "frame": 346,
+        "edge_stretch_p99": 1.0901575247033195,
+        "edge_stretch_max": 1.6170571206878117,
+        "lowest_z": -0.0024891286786873027,
+        "worst_submesh": [
+          "tx5_legs_05",
+          1.6170571206878117
+        ]
+      },
+      {
+        "frame": 461,
+        "edge_stretch_p99": 1.09496993427837,
+        "edge_stretch_max": 1.5841593645983703,
+        "lowest_z": -0.0024646755600737694,
+        "worst_submesh": [
+          "tx5_legs_05",
+          1.5841593645983703
+        ]
+      },
+      {
+        "frame": 576,
+        "edge_stretch_p99": 1.111784284829877,
+        "edge_stretch_max": 1.6095771868191642,
+        "lowest_z": -0.002332522676311455,
+        "worst_submesh": [
+          "tx5_legs_05",
+          1.6095771868191642
+        ]
+      },
+      {
+        "frame": 691,
+        "edge_stretch_p99": 1.1002895985112031,
+        "edge_stretch_max": 1.6211379025035193,
+        "lowest_z": -0.002372647715313263,
+        "worst_submesh": [
+          "tx5_legs_05",
+          1.6211379025035193
+        ]
+      },
+      {
+        "frame": 806,
+        "edge_stretch_p99": 1.099725454262968,
+        "edge_stretch_max": 1.5898093946233773,
+        "lowest_z": -0.0025136959525738794,
+        "worst_submesh": [
+          "tx5_legs_05",
+          1.5898093946233773
+        ]
+      },
+      {
+        "frame": 921,
+        "edge_stretch_p99": 1.1284797679552352,
+        "edge_stretch_max": 1.5807420205574214,
+        "lowest_z": -0.0023181092400006995,
+        "worst_submesh": [
+          "tx5_legs_05",
+          1.5807420205574214
+        ]
+      },
+      {
+        "frame": 1036,
+        "edge_stretch_p99": 1.0998222347147484,
+        "edge_stretch_max": 1.6156975142511854,
+        "lowest_z": -0.002451679491825001,
+        "worst_submesh": [
+          "tx5_legs_05",
+          1.6156975142511854
+        ]
+      },
+      {
+        "frame": 1151,
+        "edge_stretch_p99": 1.0909750880895668,
+        "edge_stretch_max": 1.5934459089027775,
+        "lowest_z": -0.002484422786998749,
+        "worst_submesh": [
+          "tx5_legs_05",
+          1.5934459089027775
+        ]
+      },
+      {
+        "frame": 1267,
+        "edge_stretch_p99": 1.0942341569667715,
+        "edge_stretch_max": 1.6066800148472784,
+        "lowest_z": -0.0024099674180954097,
+        "worst_submesh": [
+          "tx5_legs_05",
+          1.6066800148472784
+        ]
+      }
+    ],
+    "run": [
+      {
+        "frame": 1,
+        "edge_stretch_p99": 1.3345030557823998,
+        "edge_stretch_max": 2.752020936008262,
+        "lowest_z": 0.06575638382510587,
+        "worst_submesh": [
+          "tx5_body_03",
+          2.752020936008262
+        ]
+      },
+      {
+        "frame": 3,
+        "edge_stretch_p99": 1.3221906548671292,
+        "edge_stretch_max": 2.6552360384127356,
+        "lowest_z": -0.008226917751423538,
+        "worst_submesh": [
+          "tx5_body_03",
+          2.6552360384127356
+        ]
+      },
+      {
+        "frame": 5,
+        "edge_stretch_p99": 1.3367833134403742,
+        "edge_stretch_max": 2.6569478365594796,
+        "lowest_z": -0.006141666931820107,
+        "worst_submesh": [
+          "tx5_body_03",
+          2.6569478365594796
+        ]
+      },
+      {
+        "frame": 7,
+        "edge_stretch_p99": 1.3542303511867337,
+        "edge_stretch_max": 3.686708415906851,
+        "lowest_z": -0.006482540016901519,
+        "worst_submesh": [
+          "tx5_body_03",
+          3.686708415906851
+        ]
+      },
+      {
+        "frame": 9,
+        "edge_stretch_p99": 1.3796549441889459,
+        "edge_stretch_max": 3.721648259949475,
+        "lowest_z": 0.013859509258060839,
+        "worst_submesh": [
+          "tx5_body_03",
+          3.721648259949475
+        ]
+      },
+      {
+        "frame": 11,
+        "edge_stretch_p99": 1.3622131292151896,
+        "edge_stretch_max": 3.503282071870166,
+        "lowest_z": 0.11680236983628275,
+        "worst_submesh": [
+          "tx5_body_03",
+          3.503282071870166
+        ]
+      },
+      {
+        "frame": 14,
+        "edge_stretch_p99": 1.3215657282450057,
+        "edge_stretch_max": 2.8556539656398803,
+        "lowest_z": 0.025223012929177228,
+        "worst_submesh": [
+          "tx5_body_03",
+          2.8556539656398803
+        ]
+      },
+      {
+        "frame": 16,
+        "edge_stretch_p99": 1.3121812833382651,
+        "edge_stretch_max": 2.9797533609792914,
+        "lowest_z": -0.002429941714797264,
+        "worst_submesh": [
+          "tx5_body_03",
+          2.9797533609792914
+        ]
+      },
+      {
+        "frame": 18,
+        "edge_stretch_p99": 1.334262083732565,
+        "edge_stretch_max": 2.6149826200694344,
+        "lowest_z": -0.00492794606411821,
+        "worst_submesh": [
+          "tx5_body_03",
+          2.6149826200694344
+        ]
+      },
+      {
+        "frame": 20,
+        "edge_stretch_p99": 1.365403579599218,
+        "edge_stretch_max": 3.373499650277673,
+        "lowest_z": -0.006917100016800643,
+        "worst_submesh": [
+          "tx5_body_03",
+          3.373499650277673
+        ]
+      },
+      {
+        "frame": 22,
+        "edge_stretch_p99": 1.3808389054943835,
+        "edge_stretch_max": 3.349481727681981,
+        "lowest_z": 0.03968713300062822,
+        "worst_submesh": [
+          "tx5_body_03",
+          3.349481727681981
+        ]
+      },
+      {
+        "frame": 25,
+        "edge_stretch_p99": 1.3346255801350662,
+        "edge_stretch_max": 2.752040399614281,
+        "lowest_z": 0.06575714200243833,
+        "worst_submesh": [
+          "tx5_body_03",
+          2.752040399614281
+        ]
+      }
+    ],
+    "bow": [
+      {
+        "frame": 1,
+        "edge_stretch_p99": 1.501852711135127,
+        "edge_stretch_max": 3.7267002886061906,
+        "lowest_z": -0.007517237796161714,
+        "worst_submesh": [
+          "tx5_body_04",
+          3.7267002886061906
+        ]
+      },
+      {
+        "frame": 14,
+        "edge_stretch_p99": 1.5897144229219522,
+        "edge_stretch_max": 2.9748395071844658,
+        "lowest_z": -0.007461862039121175,
+        "worst_submesh": [
+          "tx5_body_04",
+          2.9748395071844658
+        ]
+      },
+      {
+        "frame": 28,
+        "edge_stretch_p99": 1.2850802061930848,
+        "edge_stretch_max": 2.5049652105203064,
+        "lowest_z": -0.007778825596238545,
+        "worst_submesh": [
+          "tx5_legs_05",
+          2.5049652105203064
+        ]
+      },
+      {
+        "frame": 41,
+        "edge_stretch_p99": 1.2871417543881571,
+        "edge_stretch_max": 2.674707008440857,
+        "lowest_z": -0.00882714490263067,
+        "worst_submesh": [
+          "tx5_legs_05",
+          2.674707008440857
+        ]
+      },
+      {
+        "frame": 55,
+        "edge_stretch_p99": 1.57261288318764,
+        "edge_stretch_max": 3.0666446550476287,
+        "lowest_z": -0.007543427253310196,
+        "worst_submesh": [
+          "tx5_legs_05",
+          3.0666446550476287
+        ]
+      },
+      {
+        "frame": 68,
+        "edge_stretch_p99": 1.5969517761266443,
+        "edge_stretch_max": 3.6144554379565763,
+        "lowest_z": -0.0023543250300593244,
+        "worst_submesh": [
+          "tx5_body_04",
+          3.6144554379565763
+        ]
+      },
+      {
+        "frame": 82,
+        "edge_stretch_p99": 1.5634344998051257,
+        "edge_stretch_max": 3.8048271725162985,
+        "lowest_z": -0.002534250230480128,
+        "worst_submesh": [
+          "tx5_body_04",
+          3.8048271725162985
+        ]
+      },
+      {
+        "frame": 95,
+        "edge_stretch_p99": 1.2986634618187325,
+        "edge_stretch_max": 2.4767004060848605,
+        "lowest_z": -0.0018778053421880467,
+        "worst_submesh": [
+          "tx5_legs_05",
+          2.4767004060848605
+        ]
+      },
+      {
+        "frame": 109,
+        "edge_stretch_p99": 1.258675509033111,
+        "edge_stretch_max": 2.563674827054251,
+        "lowest_z": -0.001077894359347269,
+        "worst_submesh": [
+          "tx5_legs_05",
+          2.563674827054251
+        ]
+      },
+      {
+        "frame": 122,
+        "edge_stretch_p99": 1.2828058197794998,
+        "edge_stretch_max": 2.1900078058746533,
+        "lowest_z": -0.001042301092603028,
+        "worst_submesh": [
+          "tx5_body_04",
+          2.1900078058746533
+        ]
+      },
+      {
+        "frame": 136,
+        "edge_stretch_p99": 1.2828058197794998,
+        "edge_stretch_max": 2.1900078058746533,
+        "lowest_z": -0.001042301092603028,
+        "worst_submesh": [
+          "tx5_body_04",
+          2.1900078058746533
+        ]
+      },
+      {
+        "frame": 150,
+        "edge_stretch_p99": 1.2828058197794998,
+        "edge_stretch_max": 2.1900078058746533,
+        "lowest_z": -0.001042301092603028,
+        "worst_submesh": [
+          "tx5_body_04",
+          2.1900078058746533
+        ]
+      }
+    ],
+    "riding": [
+      {
+        "frame": 1,
+        "edge_stretch_p99": 1.4270626123430672,
+        "edge_stretch_max": 3.2980657152448365,
+        "lowest_z": 0.9581320305204643,
+        "worst_submesh": [
+          "tx5_legs_05",
+          3.2980657152448365
+        ]
+      },
+      {
+        "frame": 2,
+        "edge_stretch_p99": 1.4376633139912438,
+        "edge_stretch_max": 3.3274497370256158,
+        "lowest_z": 0.9846885679306097,
+        "worst_submesh": [
+          "tx5_legs_05",
+          3.3274497370256158
+        ]
+      },
+      {
+        "frame": 4,
+        "edge_stretch_p99": 1.4525481655546868,
+        "edge_stretch_max": 3.3743534336564194,
+        "lowest_z": 1.0101784328176002,
+        "worst_submesh": [
+          "tx5_legs_05",
+          3.3743534336564194
+        ]
+      },
+      {
+        "frame": 6,
+        "edge_stretch_p99": 1.4634059209494608,
+        "edge_stretch_max": 3.661428324395257,
+        "lowest_z": 1.0051225499971046,
+        "worst_submesh": [
+          "tx5_body_04",
+          3.661428324395257
+        ]
+      },
+      {
+        "frame": 7,
+        "edge_stretch_p99": 1.4778714760873284,
+        "edge_stretch_max": 3.5767280333795077,
+        "lowest_z": 1.009206177056751,
+        "worst_submesh": [
+          "tx5_body_04",
+          3.5767280333795077
+        ]
+      },
+      {
+        "frame": 9,
+        "edge_stretch_p99": 1.4965635743060437,
+        "edge_stretch_max": 3.4288761369325473,
+        "lowest_z": 1.009063420391919,
+        "worst_submesh": [
+          "tx5_legs_05",
+          3.4288761369325473
+        ]
+      },
+      {
+        "frame": 11,
+        "edge_stretch_p99": 1.494491980735524,
+        "edge_stretch_max": 3.3959039601028373,
+        "lowest_z": 0.9856521147382269,
+        "worst_submesh": [
+          "tx5_legs_05",
+          3.3959039601028373
+        ]
+      },
+      {
+        "frame": 13,
+        "edge_stretch_p99": 1.4478484464535288,
+        "edge_stretch_max": 3.3191372184531587,
+        "lowest_z": 0.9295540747134021,
+        "worst_submesh": [
+          "tx5_legs_05",
+          3.3191372184531587
+        ]
+      },
+      {
+        "frame": 14,
+        "edge_stretch_p99": 1.430469414667209,
+        "edge_stretch_max": 3.2758304987054485,
+        "lowest_z": 0.9135767132805681,
+        "worst_submesh": [
+          "tx5_legs_05",
+          3.2758304987054485
+        ]
+      },
+      {
+        "frame": 16,
+        "edge_stretch_p99": 1.42299107490536,
+        "edge_stretch_max": 3.267374110099916,
+        "lowest_z": 0.9341323222698671,
+        "worst_submesh": [
+          "tx5_legs_05",
+          3.267374110099916
+        ]
+      },
+      {
+        "frame": 18,
+        "edge_stretch_p99": 1.4270617869076647,
+        "edge_stretch_max": 3.298068723288446,
+        "lowest_z": 0.9581335444514255,
+        "worst_submesh": [
+          "tx5_legs_05",
+          3.298068723288446
+        ]
+      },
+      {
+        "frame": 20,
+        "edge_stretch_p99": 1.4270617869076647,
+        "edge_stretch_max": 3.298068723288446,
+        "lowest_z": 0.9581335444514255,
+        "worst_submesh": [
+          "tx5_legs_05",
+          3.298068723288446
+        ]
+      }
+    ]
+  },
+  "metadata": "D:\\gpt-mb2-mod2\\module\\TianxiangT5\\AssetPackages\\tx5.tpac: 23 assets | checksum ok=23 bad=0 | metadata identical=23 differ=0 noSerializer=0",
+  "references": "D:\\gpt-mb2-mod2\\module\\TianxiangT5\\AssetPackages\\tx5.tpac: 9 materials, 23 assets\n  metamesh-level material missing=0 | submesh Material present=56 missing=0 | submesh SecondMaterial present=0 missing=0 | metameshes with no material at all=0"
+}

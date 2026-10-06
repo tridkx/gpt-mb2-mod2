@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item id="tx5_body" name="天香T5 · 白粉长裙" mesh="tx5_body" culture="Culture.empire" weight="3.2" appearance="2.8" value="12000" Type="BodyArmor" is_merchandise="true">
+    <ItemComponent><Armor body_armor="38" arm_armor="12" leg_armor="8" has_gender_variations="false" covers_body="true" covers_hands="true" modifier_group="cloth_unarmoured" material_type="Cloth" /></ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
+  <Item id="tx5_legs" name="天香T5 · 长袜与靴" mesh="tx5_legs" culture="Culture.empire" weight="1.4" appearance="2.0" value="4000" Type="LegArmor" is_merchandise="true">
+    <ItemComponent><Armor leg_armor="22" covers_legs="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" /></ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
+  <Item id="tx5_head" name="天香T5 · 发容与头饰" mesh="tx5_head" culture="Culture.empire" weight="0.6" appearance="3.0" value="5000" Type="HeadArmor" is_merchandise="true">
+    <ItemComponent><Armor head_armor="20" covers_head="true" has_gender_variations="false" hair_cover_type="all" beard_cover_type="all" modifier_group="cloth_unarmoured" material_type="Cloth" /></ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
+</Items>
