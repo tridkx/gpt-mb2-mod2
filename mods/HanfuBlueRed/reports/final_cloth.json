@@ -1,0 +1,2615 @@
+[
+  {
+    "Name": "hbr_head",
+    "UnknownString": "human_body",
+    "ClothMetamesh": "00000000-0000-0000-0000-000000000000",
+    "ClothUint": 0,
+    "ClothString": "",
+    "meshes": [
+      {
+        "Name": "hbr_head_00",
+        "Lod": 0,
+        "Flags": [
+          "uses_cloth_simulation"
+        ],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": true,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "hbr_limited_fabric",
+          "BendingStiffness": 0.78,
+          "ShearingStiffness": 0.94,
+          "StretchingStiffness": 1,
+          "AnchorStiffness": 1,
+          "Damping": 0.55,
+          "Gravity": 9.81,
+          "LinearInertia": 0.2,
+          "MaxLinearVelocity": 6,
+          "LinearVelocityMultiplier": 0.55,
+          "AirDragMultiplier": 0.12,
+          "Wind": 0.1
+        }
+      },
+      {
+        "Name": "hbr_head_00.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_00.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_00.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_14",
+        "Lod": 0,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_14.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_14.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_14.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_20",
+        "Lod": 0,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_20.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_20.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_20.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_25",
+        "Lod": 0,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_25.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_25.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_25.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_30",
+        "Lod": 0,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_30.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_30.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_30.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_31",
+        "Lod": 0,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_31.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_31.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_31.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_34",
+        "Lod": 0,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_34.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_34.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_34.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_37",
+        "Lod": 0,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_37.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_37.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_head_37.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      }
+    ]
+  },
+  {
+    "Name": "hbr_body",
+    "UnknownString": "human_body",
+    "ClothMetamesh": "00000000-0000-0000-0000-000000000000",
+    "ClothUint": 0,
+    "ClothString": "",
+    "meshes": [
+      {
+        "Name": "hbr_body_04",
+        "Lod": 0,
+        "Flags": [
+          "uses_cloth_simulation"
+        ],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": true,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "hbr_limited_fabric",
+          "BendingStiffness": 0.78,
+          "ShearingStiffness": 0.94,
+          "StretchingStiffness": 1,
+          "AnchorStiffness": 1,
+          "Damping": 0.55,
+          "Gravity": 9.81,
+          "LinearInertia": 0.2,
+          "MaxLinearVelocity": 6,
+          "LinearVelocityMultiplier": 0.55,
+          "AirDragMultiplier": 0.12,
+          "Wind": 0.1
+        }
+      },
+      {
+        "Name": "hbr_body_04.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_04.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_04.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_05",
+        "Lod": 0,
+        "Flags": [
+          "uses_cloth_simulation"
+        ],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": true,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "hbr_limited_fabric",
+          "BendingStiffness": 0.78,
+          "ShearingStiffness": 0.94,
+          "StretchingStiffness": 1,
+          "AnchorStiffness": 1,
+          "Damping": 0.55,
+          "Gravity": 9.81,
+          "LinearInertia": 0.2,
+          "MaxLinearVelocity": 6,
+          "LinearVelocityMultiplier": 0.55,
+          "AirDragMultiplier": 0.12,
+          "Wind": 0.1
+        }
+      },
+      {
+        "Name": "hbr_body_05.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_05.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_05.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_18",
+        "Lod": 0,
+        "Flags": [
+          "uses_cloth_simulation"
+        ],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": true,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "hbr_limited_fabric",
+          "BendingStiffness": 0.78,
+          "ShearingStiffness": 0.94,
+          "StretchingStiffness": 1,
+          "AnchorStiffness": 1,
+          "Damping": 0.55,
+          "Gravity": 9.81,
+          "LinearInertia": 0.2,
+          "MaxLinearVelocity": 6,
+          "LinearVelocityMultiplier": 0.55,
+          "AirDragMultiplier": 0.12,
+          "Wind": 0.1
+        }
+      },
+      {
+        "Name": "hbr_body_18.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_18.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_18.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_21",
+        "Lod": 0,
+        "Flags": [
+          "uses_cloth_simulation"
+        ],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": true,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "hbr_limited_fabric",
+          "BendingStiffness": 0.78,
+          "ShearingStiffness": 0.94,
+          "StretchingStiffness": 1,
+          "AnchorStiffness": 1,
+          "Damping": 0.55,
+          "Gravity": 9.81,
+          "LinearInertia": 0.2,
+          "MaxLinearVelocity": 6,
+          "LinearVelocityMultiplier": 0.55,
+          "AirDragMultiplier": 0.12,
+          "Wind": 0.1
+        }
+      },
+      {
+        "Name": "hbr_body_21.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_21.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_21.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_29",
+        "Lod": 0,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_29.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_29.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_29.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_36",
+        "Lod": 0,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_36.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_36.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_36.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_38",
+        "Lod": 0,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_38.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_38.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_body_38.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      }
+    ]
+  },
+  {
+    "Name": "hbr_legs",
+    "UnknownString": "human_body",
+    "ClothMetamesh": "00000000-0000-0000-0000-000000000000",
+    "ClothUint": 0,
+    "ClothString": "",
+    "meshes": [
+      {
+        "Name": "hbr_legs_01",
+        "Lod": 0,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_01.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_01.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_01.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_02",
+        "Lod": 0,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_02.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_02.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_02.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_11",
+        "Lod": 0,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_11.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_11.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_11.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_15",
+        "Lod": 0,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_15.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_15.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_15.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_23",
+        "Lod": 0,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_23.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_23.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_23.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_27",
+        "Lod": 0,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_27.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_27.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_27.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_32",
+        "Lod": 0,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_32.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_32.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_32.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_35",
+        "Lod": 0,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_35.lod1",
+        "Lod": 1,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_35.lod2",
+        "Lod": 2,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      },
+      {
+        "Name": "hbr_legs_35.lod3",
+        "Lod": 3,
+        "Flags": [],
+        "MaterialFlags": [
+          "no_team_color",
+          "no_tattoo"
+        ],
+        "UnknownFloat1": 1,
+        "UnknownInt3": 120,
+        "UnknownBool1": false,
+        "UnknownBool2": false,
+        "UnknownBool3": false,
+        "ClothingMaterial": {
+          "Name": "",
+          "BendingStiffness": 0,
+          "ShearingStiffness": 0,
+          "StretchingStiffness": 0,
+          "AnchorStiffness": 0,
+          "Damping": 0,
+          "Gravity": 0,
+          "LinearInertia": 0,
+          "MaxLinearVelocity": -1,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0,
+          "Wind": 0
+        }
+      }
+    ]
+  }
+]

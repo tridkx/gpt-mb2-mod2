@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+  <Name value="汉服少女 · 蓝红衣装" />
+  <Id value="HanfuBlueRed" />
+  <Version value="v1.0.0" />
+  <DefaultModule value="false" />
+  <ModuleCategory value="Singleplayer" />
+  <Official value="false" />
+  <ModuleType value="Community" />
+  <DependedModules><DependedModule Id="Native" /><DependedModule Id="SandBoxCore" /><DependedModule Id="Sandbox" /></DependedModules>
+  <SubModules />
+  <Xmls><XmlNode><XmlName id="Items" path="items" /><IncludedGameTypes>
+    <GameType value="Campaign" /><GameType value="CampaignStoryMode" /><GameType value="CustomGame" /><GameType value="EditorGame" />
+  </IncludedGameTypes></XmlNode></Xmls>
+</Module>

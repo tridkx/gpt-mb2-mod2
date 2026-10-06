@@ -1,0 +1,130 @@
+{
+  "version": "v1.0.0",
+  "status": "offline_checks_pass",
+  "final_package_sha256": "6ff809735ba733be684a9793fc7ecc97b74781ff13c95dfa2315fd7fa8ba5fe0",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release, no earlier package",
+  "lods": [
+    {
+      "lod": 0,
+      "vertices": 72730,
+      "triangles": 111347,
+      "submeshes": 23
+    },
+    {
+      "lod": 1,
+      "vertices": 40086,
+      "triangles": 53555,
+      "submeshes": 23
+    },
+    {
+      "lod": 2,
+      "vertices": 21013,
+      "triangles": 22707,
+      "submeshes": 23
+    },
+    {
+      "lod": 3,
+      "vertices": 13003,
+      "triangles": 11877,
+      "submeshes": 23
+    }
+  ],
+  "seams": [
+    {
+      "lod": 0,
+      "shared_points": 2462,
+      "cross_equipment_points": 404,
+      "max_position_error": 0
+    },
+    {
+      "lod": 1,
+      "shared_points": 2462,
+      "cross_equipment_points": 404,
+      "max_position_error": 0
+    },
+    {
+      "lod": 2,
+      "shared_points": 2462,
+      "cross_equipment_points": 404,
+      "max_position_error": 0
+    },
+    {
+      "lod": 3,
+      "shared_points": 2462,
+      "cross_equipment_points": 404,
+      "max_position_error": 0
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "asset": "anim_inventory_idle",
+      "frames_checked": 12,
+      "total_frames": 1268,
+      "skipped_binding_frame": 1,
+      "max_edge_extension": 4.455597409019741,
+      "worst_frame": 116,
+      "worst_mesh": "hbr_body_29"
+    },
+    {
+      "label": "run",
+      "asset": "anim_run_forward_unarmed",
+      "frames_checked": 25,
+      "total_frames": 26,
+      "skipped_binding_frame": 1,
+      "max_edge_extension": 6.9775319368317605,
+      "worst_frame": 11,
+      "worst_mesh": "hbr_legs_23"
+    },
+    {
+      "label": "bow",
+      "asset": "anim_bow",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "skipped_binding_frame": 1,
+      "max_edge_extension": 4.622758049228052,
+      "worst_frame": 1,
+      "worst_mesh": "hbr_body_36"
+    },
+    {
+      "label": "riding",
+      "asset": "anim_rider_gallop_bow",
+      "frames_checked": 20,
+      "total_frames": 21,
+      "skipped_binding_frame": 1,
+      "max_edge_extension": 5.484309889595549,
+      "worst_frame": 9,
+      "worst_mesh": "hbr_body_18"
+    }
+  ],
+  "texture_resolution": [
+    4096,
+    4096
+  ],
+  "textures": [
+    {
+      "name": "hbr_flat_n",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "encoded_bytes_match_build": true
+    },
+    {
+      "name": "hbr_neutral_s",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "encoded_bytes_match_build": true
+    },
+    {
+      "name": "hbr_original_d",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "encoded_bytes_match_build": true
+    }
+  ],
+  "diffuse_mean_absolute_error_255": 1.728193740049998,
+  "metadata_audit": "pass",
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "limitations": "Offline native skeletal motion only. In-game cloth, weapon IK, horse collision and character body sliders require user testing."
+}
