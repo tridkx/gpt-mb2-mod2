@@ -1,7 +1,9 @@
-import bpy, os, json, re, math
+import bpy, os, sys, json, re, math
 import numpy as np
 from mathutils import Vector, Matrix
 ROOT=r'D:\gpt-mb2-mod2'
+sys.path.insert(0,ROOT+'/tools')
+from motion_fit import forward_arms,skirt_weights,skirt_clearance,ARM_FORWARD_DEGREES
 OUT=os.path.join(ROOT,'build')
 os.makedirs(OUT,exist_ok=True)
 bpy.ops.wm.open_mainfile(filepath=ROOT+'/inspection.blend')
@@ -112,7 +114,7 @@ for oi,o in enumerate(src_objects):
    kind[ids]='leg'
   elif oi==3:
    if lo[2]<.5:
-    A[ids]=.075*smooth(.95,.28,Q[:,2]);kind[ids]='skirt'
+    A[ids]=.040*smooth(.95,.28,Q[:,2]);kind[ids]='skirt'
    else:kind[ids]='waist'
   elif oi==0 and lo[2]<.6 and abs(mid[0])>.20:
    # Long sleeve streamers must follow their sleeve root throughout their length.
@@ -151,6 +153,8 @@ for oi,o in enumerate(src_objects):
   # Eyes, lashes, hair and ornaments remain rigidly attached to the head.
   if oi not in {9,11}:D=P-source[13]+target[13]
  D=neck_shape(P,D,whole_head=oi in head_ids and oi not in {9,11})
+ # Shoulder-centered forward rotation shared by skin, sleeves and ornaments.
+ D=forward_arms(D,W,target)
  if oi in {0,3}:
   # Small radial clearance on free fabric, away from legs and torso.
   free=A>0.003;rad=D[:,:2].copy();rad[:,1]-=0.02
@@ -158,14 +162,14 @@ for oi,o in enumerate(src_objects):
   D[free,:2]+=rad[free]*.008
  if oi==1:D[:,1]-=.007*smooth(1.45,1.05,P[:,2])
  if oi==3:
-  # Long skirts are driven by pelvis and thighs, never by ankles or opposite calves.
-  # The continuous center blend prevents a sharp split across the back panel.
+  # Keep the waist on the pelvis, then follow thighs before the knee can enter
+  # the front panels. Gradually transfer the lower portion to same-side calves.
+  # The continuous center blend keeps the connected back panel joined.
   Q=P
-  amount=smooth(.98,.40,Q[:,2])*(.30+.48*smooth(-.10,.03,Q[:,1]))
-  side=smooth(-.10,.10,Q[:,0]);core=weights(Q,[0,9,10])
-  W=core*(1-amount[:,None]);W[:,1]+=amount*(1-side);W[:,5]+=amount*side
+  W=skirt_weights(Q,weights(Q,[0,9,10]))
+  D=skirt_clearance(D,Q)
   # Small detached surface patches receive the same spatial mask as the main skirt.
-  A=np.maximum(A,.065*smooth(.94,.30,Q[:,2]))
+  A=np.maximum(A,.040*smooth(.94,.30,Q[:,2]))
  o.matrix_world=Matrix.Identity(4)
  for v,co in zip(o.data.vertices,D):v.co=co
  for p in o.data.polygons:p.use_smooth=True
@@ -205,7 +209,15 @@ for o in skin_objects:
  normals=[normal_sums[tuple(round(c,5) for c in v.co)].normalized() for v in o.data.vertices]
  o.data.normals_split_custom_set_from_vertices(normals)
 for img in bpy.data.images:
- if img.has_data and img.source=='FILE':img.pack()
+ if img.source!='FILE':continue
+ texture_path=os.path.join(ROOT,'tex',os.path.basename(img.filepath.replace('\\','/')))
+ if not os.path.isfile(texture_path):
+  texture_path=os.path.join(ROOT,'tex',re.sub(r'\.\d{3}$','',img.name))
+ if not os.path.isfile(texture_path):raise FileNotFoundError(texture_path)
+ # Background loading is lazy. Load pixels explicitly before packing, otherwise
+ # has_data is false and the delivered .blend depends on relative texture paths.
+ img.filepath=texture_path;img.reload();img.pack()
+ assert img.packed_file is not None,img.name
 # Add disabled Blender cloth previews. They are separate from game physics metadata.
 preview=bpy.data.collections.new('Blender Cloth Preview - optional');bpy.context.scene.collection.children.link(preview)
 for o,rec in zip(src_objects,records):
@@ -221,6 +233,7 @@ for o,rec in zip(src_objects,records):
  c.hide_render=True;c.hide_set(True)
 preview.hide_render=True;preview.hide_viewport=True
 rig['runtime_skeleton']='human_skeleton';rig['bone_count']=28
+rig['arm_forward_degrees']=ARM_FORWARD_DEGREES
 os.makedirs(ROOT+'/source',exist_ok=True)
 bpy.ops.wm.save_as_mainfile(filepath=ROOT+'/source/TianxiangT5_Rigged.blend')
 bpy.ops.object.select_all(action='DESELECT');rig.select_set(True)

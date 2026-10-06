@@ -1,6 +1,6 @@
 """Regress opacity/cloth-alpha conflict against both final TPAC revisions."""
 from pathlib import Path
-import json,subprocess,tempfile
+import json,subprocess,tempfile,sys
 ROOT=Path(__file__).resolve().parents[1]
 TOOL=ROOT/'tools/AssetTool/AssetTool.dll'
 PACK=ROOT/'module/TianxiangT5/AssetPackages/tx5.tpac'
@@ -24,6 +24,9 @@ meshes={m['Name']:m for m in after['meshes']}
 assert len(materials)==len(old_materials)==9
 assert set(meshes)==set(old_meshes) and len(meshes)==56
 previously_clipped=[]
+materials_only='--materials-only' in sys.argv
+unchanged_meshes=0
+unchanged_colors=0
 for guid,m in materials.items():
     assert 'disable_vertex_color_alpha' in m['ShaderMaterialFlags'],m['Name']
     old=old_materials[guid]
@@ -31,7 +34,10 @@ for guid,m in materials.items():
     assert m['AlphaTest']==old['AlphaTest'] and m['BlendMode']==old['BlendMode']
 for name,m in meshes.items():
     old=old_meshes[name]
-    assert m==old,f'Mesh or cloth data changed: {name}'
+    if not materials_only:assert m==old,f'Mesh or cloth data changed: {name}'
+    for key in ['Name','Lod','Flags','Material']:assert m[key]==old[key],(name,key)
+    unchanged_meshes+=int(m==old)
+    unchanged_colors+=int(m['ColorsSHA256']==old['ColorsSHA256'])
     mat=old_materials[m['Material']]
     if 'alpha_test' in mat['ShaderMaterialFlags'] and m['AlphaMax']/255 < mat['AlphaTest']:
         # Every diffuse pixel has alpha <= 1, so all these vertices clip in
@@ -45,9 +51,11 @@ checks={}
 for cmd in ['metacheck','mataudit']:
     p=subprocess.run([MB,cmd,str(PACK)],check=True,capture_output=True,text=True)
     checks[cmd]=p.stdout.strip()
-result={'baseline_version':baseline,'materials_ignore_vertex_opacity':9,'submeshes_vertex_colors_unchanged':56,
-        'submeshes_geometry_weights_and_cloth_metadata_unchanged':56,
+result={'baseline_version':baseline,'materials_ignore_vertex_opacity':9,'mesh_equality_required':not materials_only,
+        'submeshes_vertex_colors_unchanged':unchanged_colors,
+        'submeshes_geometry_weights_and_cloth_metadata_unchanged':unchanged_meshes,
         'previously_fully_clipped_submeshes':previously_clipped,
         'cloth_submeshes_preserved':cloth,'asset_checks':checks,'game_visibility_verified':False}
-(ROOT/'reports/visibility_validation.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+report='visibility_validation_materials.json' if materials_only else 'visibility_validation.json'
+(ROOT/'reports'/report).write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps(result,ensure_ascii=False,indent=2))
