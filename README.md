@@ -45,7 +45,7 @@ python tools/package_delivery.py --mod TianxiangT5 --version v1.3.1
 
 只维护 `C:/Users/DKX/.codex/skills/bannerlord-equipment-mod/`。工作区不保存技能副本。[只读审查记录](docs/equipment_skill_review.md)列出本次发现。
 
-技能中的天香示例路径尚为旧布局。读取后应以本工作区路径为准：
+Codex 中的技能已对齐此多模组布局。以下表格保留旧工程路径映射，供读取历史报告或旧版本时使用：
 
 | 旧路径 | 新路径 |
 | --- | --- |
@@ -56,6 +56,6 @@ python tools/package_delivery.py --mod TianxiangT5 --version v1.3.1
 | `tools/repair_launch.py`、`backups/` | `maintenance/tools/repair_launch.py`、`maintenance/backups/` |
 | `tools/AssetTool/` | 保持原位置 |
 
-技能预检增加 `--example-workspace D:/gpt-mb2-mod2/mods/TianxiangT5`；包审查显式使用迁移后的 TPAC 路径。旧版 Git 标签不改写，现有回归检查仍读取旧标签中的 `module/TianxiangT5/...`。
+技能预检会识别工作区中的天香示例工程；其他项目用 `--example-workspace` 明确指定。完整示例依赖检查使用 `--require-example-pipeline --check-blender-python`，包审查使用迁移后的 TPAC 路径。旧版 Git 标签不改写，现有回归检查仍读取旧标签中的 `module/TianxiangT5/...`。
 
 共用 AssetTool 的 `patch` 仍含天香专用布料设置，新模组使用前须检查并适配；其只读检查功能可复用。外部依赖继续位于 `D:/mb-tools` 与 `D:/gpt-mb2-mod`，不是完整可移植工具包。
