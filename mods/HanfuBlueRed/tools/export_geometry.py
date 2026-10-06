@@ -23,6 +23,7 @@ for rec in manifest:
     for f in original.data.polygons:
         for e in f.edge_keys:edge_faces[e]=edge_faces.get(e,0)+1
     boundary={v for e,count in edge_faces.items() if count==1 for v in e}
+    if rec['kind']=='shoe':boundary.update(v.index for v in original.data.vertices if v.co.z<.012)
     if rec['object'] in {'hbr_body_18','hbr_body_29'}:
         uv_layer=original.data.uv_layers.active.data
         per_vertex_uv={}

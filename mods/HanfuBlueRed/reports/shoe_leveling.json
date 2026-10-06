@@ -1,0 +1,43 @@
+{
+  "reference_animation": "anim_inventory_idle",
+  "reference_frame": 1,
+  "floor_z": 0,
+  "sides": [
+    {
+      "bone": 3,
+      "side": "left",
+      "rotation_degrees": 21.51088360951745,
+      "bind_translation": [
+        0.0008374380926261496,
+        0.00010769868332348682,
+        -0.025728624232820553
+      ],
+      "before_heel_toe_gap": 0.0569852615379004,
+      "after_heel_toe_gap": -3.903127820947816e-18,
+      "after_lowest_sole": 8.040291643845315e-09,
+      "after_heel_height": 0.002096043637406285,
+      "after_toe_height": 0.002096043637406289
+    },
+    {
+      "bone": 7,
+      "side": "right",
+      "rotation_degrees": 22.7899206572443,
+      "bind_translation": [
+        -0.0009867522679389649,
+        0.0009549161250322494,
+        -0.02781477011980325
+      ],
+      "before_heel_toe_gap": 0.06813932927735517,
+      "after_heel_toe_gap": -1.0408340855860843e-17,
+      "after_lowest_sole": 7.962777210171468e-09,
+      "after_heel_height": 0.002474998155397425,
+      "after_toe_height": 0.0024749981553974353
+    }
+  ],
+  "pants_transition_z": [
+    0.14,
+    0.3
+  ],
+  "bone_weights_changed": false,
+  "game_test_verified": false
+}

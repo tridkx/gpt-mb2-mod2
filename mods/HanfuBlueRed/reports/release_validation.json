@@ -1,33 +1,33 @@
 {
-  "version": "v1.0.1",
+  "version": "v1.0.2",
   "status": "pass",
   "check_scope": "offline_checks",
-  "final_package_sha256": "2101c74eae7851d3bac8bad67022fd3700ffe41368ac9c8180c34dbe60ab0d63",
-  "baseline_package_sha256": "6ff809735ba733be684a9793fc7ecc97b74781ff13c95dfa2315fd7fa8ba5fe0",
-  "baseline_reason": "v1.0.0 before rear garment repair",
+  "final_package_sha256": "4f2e2997c2f8531147ef370d7ed0298d31c93553f49dbb9facf2e0429bf5f2c6",
+  "baseline_package_sha256": "2101c74eae7851d3bac8bad67022fd3700ffe41368ac9c8180c34dbe60ab0d63",
+  "baseline_reason": "v1.0.1 before shoe contact repair",
   "lods": [
     {
       "lod": 0,
-      "vertices": 79127,
-      "triangles": 118777,
+      "vertices": 80095,
+      "triangles": 120809,
       "submeshes": 23
     },
     {
       "lod": 1,
-      "vertices": 51104,
-      "triangles": 68699,
+      "vertices": 53442,
+      "triangles": 73261,
       "submeshes": 23
     },
     {
       "lod": 2,
-      "vertices": 35114,
-      "triangles": 42411,
+      "vertices": 38318,
+      "triangles": 48569,
       "submeshes": 23
     },
     {
       "lod": 3,
-      "vertices": 27674,
-      "triangles": 32269,
+      "vertices": 31151,
+      "triangles": 38911,
       "submeshes": 23
     }
   ],
@@ -64,7 +64,7 @@
       "frames_checked": 12,
       "total_frames": 1268,
       "skipped_binding_frame": 1,
-      "max_edge_extension": 2.2905506034042626,
+      "max_edge_extension": 2.6753911058392843,
       "worst_frame": 231,
       "worst_mesh": "hbr_legs_02"
     },
@@ -74,9 +74,9 @@
       "frames_checked": 25,
       "total_frames": 26,
       "skipped_binding_frame": 1,
-      "max_edge_extension": 6.9775319368317605,
+      "max_edge_extension": 7.25868027913397,
       "worst_frame": 11,
-      "worst_mesh": "hbr_legs_23"
+      "worst_mesh": "hbr_legs_01"
     },
     {
       "label": "bow",
@@ -94,9 +94,9 @@
       "frames_checked": 20,
       "total_frames": 21,
       "skipped_binding_frame": 1,
-      "max_edge_extension": 5.304505888441458,
-      "worst_frame": 8,
-      "worst_mesh": "hbr_legs_01"
+      "max_edge_extension": 5.135442661105344,
+      "worst_frame": 9,
+      "worst_mesh": "hbr_body_21"
     }
   ],
   "texture_resolution": [

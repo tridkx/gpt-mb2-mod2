@@ -10,6 +10,7 @@ ROOT=Path(__file__).resolve().parents[1]
 (ROOT/'build').mkdir(exist_ok=True)
 sys.path.insert(0,str(ROOT/'tools'))
 from repair_hair_contacts import repair
+from level_shoes import level
 sys.path.insert(0,r'D:\gpt-mb2-mod\previewer')
 from baker.skeleton import parse_skeljson
 rigdata=parse_skeljson(json.loads((ROOT/'reports/human_skeleton.json').read_text()))
@@ -198,6 +199,8 @@ for o,rec in zip(objects,records):
     rec['texture']=Path(im.filepath).name
     bs=next(n for n in mat.node_tree.nodes if n.type=='BSDF_PRINCIPLED');bs.inputs['Roughness'].default_value=.72
     rec.update(vertices=len(p),cloth=bool(alpha.max()>.001),max_distance=float(alpha.max()),bounds=[d.min(0).tolist(),d.max(0).tolist()])
+shoe_leveling=level(objects,records,arrays,ROOT)
+(ROOT/'reports/shoe_leveling.json').write_text(json.dumps(shoe_leveling,indent=2))
 # Shared cut normals avoid visible shading changes at segmented skin and clothes.
 ns={}
 for o in objects:

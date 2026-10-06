@@ -44,17 +44,17 @@ def snapshot(path):
     return {o.name:{'positions':np.array([v.co[:] for v in o.data.vertices]),'faces':[tuple(f.vertices) for f in o.data.polygons],
           'weights':[tuple((o.vertex_groups[g.group].name,round(g.weight,6)) for g in v.groups) for v in o.data.vertices]}
           for o in bpy.context.scene.objects if o.type=='MESH'}
-baseline=ROOT/'build/baseline_v1.0.0/HanfuBlueRed_Rigged.blend'
+baseline=ROOT/'build/baseline_v1.0.1/HanfuBlueRed_Rigged.blend'
 unchanged=[]
 if baseline.exists():
     old=snapshot(baseline);new=snapshot(ROOT/'source/HanfuBlueRed_Rigged.blend')
     for name,a in old.items():
-        if name in ['hbr_body_18','hbr_body_29']:continue
+        if name.startswith('hbr_legs'):continue
         b=new[name]
         assert np.array_equal(a['positions'],b['positions']),name
         assert a['faces']==b['faces'] and a['weights']==b['weights'],name
         unchanged.append(name)
-report={'version':'v1.0.1','status':'pass','final_package_sha256':hashlib.sha256((ROOT/'module/HanfuBlueRed/AssetPackages/hbr.tpac').read_bytes()).hexdigest(),
+report={'version':'v1.0.2','status':'pass','final_package_sha256':hashlib.sha256((ROOT/'module/HanfuBlueRed/AssetPackages/hbr.tpac').read_bytes()).hexdigest(),
         'coverage':checks,'unchanged_source_meshes':unchanged,'repair':json.loads((ROOT/'reports/rig_fit.json').read_text())['hair_surface_repairs'],
         'texture_note':'Matching plain blue used for missing original cloth; no recovered floral detail claimed.'}
 if not source_only:(ROOT/'reports/back_repair_validation.json').write_text(json.dumps(report,indent=2))

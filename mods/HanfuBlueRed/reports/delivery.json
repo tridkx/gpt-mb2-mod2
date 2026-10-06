@@ -1,21 +1,21 @@
 {
-  "version": "v1.0.1",
+  "version": "v1.0.2",
   "status": "installed_and_delivery_verified",
-  "created_at": "2026-10-06T22:21:27.432566+08:00",
-  "final_package_sha256": "2101c74eae7851d3bac8bad67022fd3700ffe41368ac9c8180c34dbe60ab0d63",
+  "created_at": "2026-10-06T22:37:02.913440+08:00",
+  "final_package_sha256": "4f2e2997c2f8531147ef370d7ed0298d31c93553f49dbb9facf2e0429bf5f2c6",
   "install_directory": "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\HanfuBlueRed",
   "installed_files": [
     {
       "file": "README.md",
-      "sha256": "ef1b4a17d574b149214d3013b22a7c209391e54b4155460e818e920abc64068c"
+      "sha256": "857dde84ce807f03c7d481a265940660ef5f227e72dd83eaa78371e2ba9f5b9d"
     },
     {
       "file": "SubModule.xml",
-      "sha256": "271be5bdc9bb407889642ea876c74e2c06a0afcfbc1ee46a36ac1e94fe8cd1dc"
+      "sha256": "d71ce95e7bb25fd0421970edd2bb520e4ce56e099239a42982ee320929991ecc"
     },
     {
       "file": "AssetPackages\\hbr.tpac",
-      "sha256": "2101c74eae7851d3bac8bad67022fd3700ffe41368ac9c8180c34dbe60ab0d63"
+      "sha256": "4f2e2997c2f8531147ef370d7ed0298d31c93553f49dbb9facf2e0429bf5f2c6"
     },
     {
       "file": "ModuleData\\items.xml",
@@ -26,25 +26,42 @@
     {
       "kind": "Mod",
       "path": "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed\\dist\\HanfuBlueRed_Mod.zip",
-      "bytes": 32734985,
-      "sha256": "b8b4624c0c160b04512da0b49e3cb38936146c4666a2f39dcfed8a38764390cd",
+      "bytes": 34110948,
+      "sha256": "f8c929efe0d3448863168fb652492faad9c71615d1801094d5955cb6689fa636",
       "archive_bytes_verified": true
     },
     {
       "kind": "Source",
       "path": "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed\\dist\\HanfuBlueRed_Source.zip",
-      "bytes": 98386207,
-      "sha256": "d922aa8381735a21a91a44cab31465108898854de4302ae408b63847dd84007e",
+      "bytes": 100991164,
+      "sha256": "f127093b3f9297145b2c5b5b0a661703416a9056586bfccc7f9e21e5f2ced33a",
       "archive_bytes_verified": true
     }
   ],
   "previous_archives_preserved": [
-    "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed\\dist\\HanfuBlueRed_v1.0.0_Mod.zip",
-    "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed\\dist\\HanfuBlueRed_v1.0.0_Source.zip"
+    {
+      "path": "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed\\dist\\HanfuBlueRed_v1.0.1_Mod.zip",
+      "sha256": "b8b4624c0c160b04512da0b49e3cb38936146c4666a2f39dcfed8a38764390cd"
+    },
+    {
+      "path": "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed\\dist\\HanfuBlueRed_v1.0.1_Source.zip",
+      "sha256": "d922aa8381735a21a91a44cab31465108898854de4302ae408b63847dd84007e"
+    },
+    {
+      "path": "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed\\dist\\HanfuBlueRed_v1.0.0_Mod.zip",
+      "sha256": "cd8b4ebecee745542482064b6e6fa1027a5efd3fdfd547e9d8f7a5a45f7de836"
+    },
+    {
+      "path": "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed\\dist\\HanfuBlueRed_v1.0.0_Source.zip",
+      "sha256": "8e09cb0241fb2da100bebfff9e16109883fca0d95e17052ce0f7b2ecf2dbbf17"
+    }
   ],
   "original_inputs_rechecked": 25,
-  "unchanged_source_meshes": 21,
+  "unchanged_head_body_meshes": 15,
+  "unchanged_weight_meshes": 23,
+  "maximum_reference_heel_toe_gap_m": 0.0015175330692324216,
   "back_surface_rays_checked": 1080,
+  "shoe_contacts_checked": 8,
   "game_started": false,
   "game_test_verified": false
 }
