@@ -1,0 +1,22 @@
+{
+  "applied": true,
+  "changes": [
+    {
+      "file": "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\Native\\ModuleData\\skins.xml",
+      "removed_id": "jingrenou",
+      "before_sha256": "e95ae88c3a38ce972842b3bda8ca7ee5ab1be72a49d941447ae1e8b1dbe91ae6",
+      "after_sha256": "01b85bbe41f4898d93f7d1ff7ad78bf78ced662ba5fea3098ed4ef054ad9b03c",
+      "backup": "D:\\gpt-mb2-mod2\\backups\\jingrenou_cleanup_20261006\\skins.xml"
+    },
+    {
+      "file": "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\Native\\ModuleData\\action_sets.xml",
+      "removed_id": "as_jingrenou",
+      "before_sha256": "6287ed994e18157864d14b817f80d4edfb615499cb9f175692aa6aef95a8b3a2",
+      "after_sha256": "c0bf93c208fdc0191976abea64fa881aa9346444c2258831d20993a1976e1451",
+      "backup": "D:\\gpt-mb2-mod2\\backups\\jingrenou_cleanup_20261006\\action_sets.xml"
+    }
+  ],
+  "game_launch_verified": false,
+  "observed_crash": "2026-10-06 10:24, TaleWorlds.Native.dll+0x725eff, read address 0x1f8; last body mesh: jingrenou",
+  "historical_match": "2026-10-02 13:04, same native DLL offset, before TianxiangT5 existed"
+}

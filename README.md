@@ -2,6 +2,14 @@
 
 当前版本：**v1.1.0**。
 
+## 本机启动修复（2026-10-06）
+
+加载画面崩溃的日志在读取 `jingrenou` 身体模型时中断，当前已启用的资源包中找不到该模型。崩溃转储为 `TaleWorlds.Native.dll + 0x725eff` 的空引用读取；10 月 2 日也有相同位置的崩溃记录。
+
+按你的许可，已清理原版 `Native/ModuleData/skins.xml` 中的镜人偶种族，以及 `action_sets.xml` 中的镜人偶动作集。只移除了 `JJRO_BEGIN` / `JJRO_END` 标记之间的内容，其他配置经对比保持一致。原文件、清理后的副本和校验记录位于 `backups/jingrenou_cleanup_20261006`，操作报告位于 `reports/launch_repair.json`，并纳入本地 Git。
+
+天香 v1.1.0 的外观与游戏资源保持原修复版。尚未重新启动游戏验证；请先在启动器选择**开始游戏**进入主菜单，确认能进入后再加载存档。这次修改针对本机旧模组残留，单独重新解压天香压缩包不会执行这项清理。
+
 已安装到：`D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\TianxiangT5`
 
 启动器单人模式勾选 **天香 T5 · 衣装与布料**，放在 Native、SandBoxCore、Sandbox 后面。它是纯装备资源模组，不需要额外 DLL。
@@ -21,6 +29,7 @@
 
 - `v1.0.0`：修改前的装备、绑骨源文件、贴图和制作流程。
 - `v1.1.0`：头颈比例、接缝和肩口修正版。
+- `launch-fix-20261006`：清理本机镜人偶全局配置残留，保留完整备份。
 
 原模型、贴图、可编辑工程、导出 FBX、运行时模组与制作脚本均已纳入版本记录。中间构建文件、压缩交付包、日志和 Blender 自动备份不纳入 Git。
 

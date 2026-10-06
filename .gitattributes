@@ -9,5 +9,6 @@
 *.fbx binary
 *.tpac binary
 *.png binary
+backups/** -text
 **/REAdaWongDefault_Rigged.blend filter=lfs diff=lfs merge=lfs -text
 **/REAdaWongDefault_Rigged.fbx filter=lfs diff=lfs merge=lfs -text
