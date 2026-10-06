@@ -3,7 +3,7 @@ import numpy as np
 from mathutils import Vector, Matrix
 ROOT=r'D:\gpt-mb2-mod2'
 sys.path.insert(0,ROOT+'/tools')
-from motion_fit import forward_arms,skirt_weights,skirt_clearance,ARM_FORWARD_DEGREES
+from motion_fit import forward_arms,fuller_torso,skirt_weights,skirt_clearance,ARM_FORWARD_DEGREES,TORSO_WIDTH_SCALE,TORSO_DEPTH_SCALE
 OUT=os.path.join(ROOT,'build')
 os.makedirs(OUT,exist_ok=True)
 bpy.ops.wm.open_mainfile(filepath=ROOT+'/inspection.blend')
@@ -155,6 +155,7 @@ for oi,o in enumerate(src_objects):
  D=neck_shape(P,D,whole_head=oi in head_ids and oi not in {9,11})
  # Shoulder-centered forward rotation shared by skin, sleeves and ornaments.
  D=forward_arms(D,W,target)
+ if oi in body_ids:D=fuller_torso(D,P)
  if oi in {0,3}:
   # Small radial clearance on free fabric, away from legs and torso.
   free=A>0.003;rad=D[:,:2].copy();rad[:,1]-=0.02
@@ -234,6 +235,7 @@ for o,rec in zip(src_objects,records):
 preview.hide_render=True;preview.hide_viewport=True
 rig['runtime_skeleton']='human_skeleton';rig['bone_count']=28
 rig['arm_forward_degrees']=ARM_FORWARD_DEGREES
+rig['torso_width_scale']=TORSO_WIDTH_SCALE;rig['torso_depth_scale']=TORSO_DEPTH_SCALE
 os.makedirs(ROOT+'/source',exist_ok=True)
 bpy.ops.wm.save_as_mainfile(filepath=ROOT+'/source/TianxiangT5_Rigged.blend')
 bpy.ops.object.select_all(action='DESELECT');rig.select_set(True)

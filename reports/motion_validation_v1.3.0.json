@@ -1,0 +1,336 @@
+{
+  "version": "v1.3.0",
+  "baseline_version": "v1.1.1",
+  "running_frames": 25,
+  "baseline_package_sha256": "e4753114e5d752e5486728b2c0a042cd30ba7f81ee75ce6c01dd2a2ab470bb91",
+  "final_package_sha256": "a0abf5887a5e7d8cb588d93835161f79929bbe1b2d19b972ac018cc74fc2dbc5",
+  "arm_forward_degrees": 26.0,
+  "median_hand_forward_mm_in_rest": 170.82305908203125,
+  "before": {
+    "capsule_depth_sum_mm": 94735.99434185366,
+    "capsule_max_depth_mm": 56.742111553287096,
+    "capsule_samples_over_1mm": 4850,
+    "surface_depth_sum_mm": 103816.62286518738,
+    "surface_samples_over_1mm": 3970,
+    "sample_count_per_frame": 1485,
+    "frames": [
+      {
+        "frame": 1,
+        "capsule_depth_sum_mm": 4641.860883298682,
+        "capsule_max_depth_mm": 52.086649203191755,
+        "surface_samples_over_1mm": 172
+      },
+      {
+        "frame": 2,
+        "capsule_depth_sum_mm": 3817.1225918678656,
+        "capsule_max_depth_mm": 56.742111553287096,
+        "surface_samples_over_1mm": 158
+      },
+      {
+        "frame": 3,
+        "capsule_depth_sum_mm": 3723.562691360675,
+        "capsule_max_depth_mm": 55.52702362696034,
+        "surface_samples_over_1mm": 162
+      },
+      {
+        "frame": 4,
+        "capsule_depth_sum_mm": 4685.678622196372,
+        "capsule_max_depth_mm": 55.50635486928642,
+        "surface_samples_over_1mm": 221
+      },
+      {
+        "frame": 5,
+        "capsule_depth_sum_mm": 5935.420987155445,
+        "capsule_max_depth_mm": 55.43645585621893,
+        "surface_samples_over_1mm": 228
+      },
+      {
+        "frame": 6,
+        "capsule_depth_sum_mm": 3760.4455848605453,
+        "capsule_max_depth_mm": 52.11766865305928,
+        "surface_samples_over_1mm": 207
+      },
+      {
+        "frame": 7,
+        "capsule_depth_sum_mm": 2460.3210103938236,
+        "capsule_max_depth_mm": 46.02165518594791,
+        "surface_samples_over_1mm": 104
+      },
+      {
+        "frame": 8,
+        "capsule_depth_sum_mm": 2231.9158979180274,
+        "capsule_max_depth_mm": 50.30921413796577,
+        "surface_samples_over_1mm": 97
+      },
+      {
+        "frame": 9,
+        "capsule_depth_sum_mm": 2470.8113199195677,
+        "capsule_max_depth_mm": 48.730368143374186,
+        "surface_samples_over_1mm": 114
+      },
+      {
+        "frame": 10,
+        "capsule_depth_sum_mm": 3684.585477618284,
+        "capsule_max_depth_mm": 49.01182798220498,
+        "surface_samples_over_1mm": 135
+      },
+      {
+        "frame": 11,
+        "capsule_depth_sum_mm": 4468.0145728858315,
+        "capsule_max_depth_mm": 54.53953088705363,
+        "surface_samples_over_1mm": 144
+      },
+      {
+        "frame": 12,
+        "capsule_depth_sum_mm": 4666.709767197018,
+        "capsule_max_depth_mm": 54.22035519057383,
+        "surface_samples_over_1mm": 149
+      },
+      {
+        "frame": 13,
+        "capsule_depth_sum_mm": 3500.7612256551392,
+        "capsule_max_depth_mm": 55.80111539284751,
+        "surface_samples_over_1mm": 129
+      },
+      {
+        "frame": 14,
+        "capsule_depth_sum_mm": 2734.4076472999027,
+        "capsule_max_depth_mm": 54.5920564125069,
+        "surface_samples_over_1mm": 119
+      },
+      {
+        "frame": 15,
+        "capsule_depth_sum_mm": 2879.0895412660184,
+        "capsule_max_depth_mm": 54.508150063994215,
+        "surface_samples_over_1mm": 138
+      },
+      {
+        "frame": 16,
+        "capsule_depth_sum_mm": 3597.2171566090615,
+        "capsule_max_depth_mm": 55.113698477598405,
+        "surface_samples_over_1mm": 195
+      },
+      {
+        "frame": 17,
+        "capsule_depth_sum_mm": 4468.0185192422005,
+        "capsule_max_depth_mm": 48.43388789880371,
+        "surface_samples_over_1mm": 226
+      },
+      {
+        "frame": 18,
+        "capsule_depth_sum_mm": 4167.194849408079,
+        "capsule_max_depth_mm": 51.341412190748535,
+        "surface_samples_over_1mm": 223
+      },
+      {
+        "frame": 19,
+        "capsule_depth_sum_mm": 3537.559185524082,
+        "capsule_max_depth_mm": 50.66304798123609,
+        "surface_samples_over_1mm": 125
+      },
+      {
+        "frame": 20,
+        "capsule_depth_sum_mm": 2359.2412745325964,
+        "capsule_max_depth_mm": 50.48776106674941,
+        "surface_samples_over_1mm": 98
+      },
+      {
+        "frame": 21,
+        "capsule_depth_sum_mm": 2681.245157456115,
+        "capsule_max_depth_mm": 47.27661216509125,
+        "surface_samples_over_1mm": 128
+      },
+      {
+        "frame": 22,
+        "capsule_depth_sum_mm": 3760.2219029731205,
+        "capsule_max_depth_mm": 49.15529448015854,
+        "surface_samples_over_1mm": 162
+      },
+      {
+        "frame": 23,
+        "capsule_depth_sum_mm": 4827.7196508760535,
+        "capsule_max_depth_mm": 53.3580470528556,
+        "surface_samples_over_1mm": 184
+      },
+      {
+        "frame": 24,
+        "capsule_depth_sum_mm": 5034.967350336665,
+        "capsule_max_depth_mm": 54.17595618824694,
+        "surface_samples_over_1mm": 180
+      },
+      {
+        "frame": 25,
+        "capsule_depth_sum_mm": 4641.9014740024995,
+        "capsule_max_depth_mm": 52.086272069497426,
+        "surface_samples_over_1mm": 172
+      }
+    ]
+  },
+  "after": {
+    "capsule_depth_sum_mm": 1832.9188830831483,
+    "capsule_max_depth_mm": 33.09566658795617,
+    "capsule_samples_over_1mm": 281,
+    "surface_depth_sum_mm": 52165.104936659445,
+    "surface_samples_over_1mm": 1436,
+    "sample_count_per_frame": 1485,
+    "frames": [
+      {
+        "frame": 1,
+        "capsule_depth_sum_mm": 1.7592896641833164,
+        "capsule_max_depth_mm": 0.8405309556984777,
+        "surface_samples_over_1mm": 48
+      },
+      {
+        "frame": 2,
+        "capsule_depth_sum_mm": 0.8049037122977165,
+        "capsule_max_depth_mm": 0.5573882106444314,
+        "surface_samples_over_1mm": 42
+      },
+      {
+        "frame": 3,
+        "capsule_depth_sum_mm": 0.9885268346718976,
+        "capsule_max_depth_mm": 0.5973266110469166,
+        "surface_samples_over_1mm": 46
+      },
+      {
+        "frame": 4,
+        "capsule_depth_sum_mm": 39.917937222205104,
+        "capsule_max_depth_mm": 12.903977757341295,
+        "surface_samples_over_1mm": 56
+      },
+      {
+        "frame": 5,
+        "capsule_depth_sum_mm": 200.38815672436476,
+        "capsule_max_depth_mm": 33.09566658795617,
+        "surface_samples_over_1mm": 61
+      },
+      {
+        "frame": 6,
+        "capsule_depth_sum_mm": 107.29872459739487,
+        "capsule_max_depth_mm": 13.313932696238988,
+        "surface_samples_over_1mm": 65
+      },
+      {
+        "frame": 7,
+        "capsule_depth_sum_mm": 148.94008879869136,
+        "capsule_max_depth_mm": 13.089277972988235,
+        "surface_samples_over_1mm": 58
+      },
+      {
+        "frame": 8,
+        "capsule_depth_sum_mm": 205.51252065475904,
+        "capsule_max_depth_mm": 16.43275796885084,
+        "surface_samples_over_1mm": 67
+      },
+      {
+        "frame": 9,
+        "capsule_depth_sum_mm": 154.5352036007729,
+        "capsule_max_depth_mm": 14.357090166234654,
+        "surface_samples_over_1mm": 65
+      },
+      {
+        "frame": 10,
+        "capsule_depth_sum_mm": 90.26026893615047,
+        "capsule_max_depth_mm": 10.606923863675629,
+        "surface_samples_over_1mm": 65
+      },
+      {
+        "frame": 11,
+        "capsule_depth_sum_mm": 31.016449962265593,
+        "capsule_max_depth_mm": 6.1572848732944845,
+        "surface_samples_over_1mm": 61
+      },
+      {
+        "frame": 12,
+        "capsule_depth_sum_mm": 20.624105437480253,
+        "capsule_max_depth_mm": 5.232501108670975,
+        "surface_samples_over_1mm": 48
+      },
+      {
+        "frame": 13,
+        "capsule_depth_sum_mm": 34.447482829872726,
+        "capsule_max_depth_mm": 7.308773548010093,
+        "surface_samples_over_1mm": 40
+      },
+      {
+        "frame": 14,
+        "capsule_depth_sum_mm": 14.835321702552044,
+        "capsule_max_depth_mm": 8.133067462036195,
+        "surface_samples_over_1mm": 40
+      },
+      {
+        "frame": 15,
+        "capsule_depth_sum_mm": 0.0,
+        "capsule_max_depth_mm": 0.0,
+        "surface_samples_over_1mm": 44
+      },
+      {
+        "frame": 16,
+        "capsule_depth_sum_mm": 32.313176348024435,
+        "capsule_max_depth_mm": 8.203486849091002,
+        "surface_samples_over_1mm": 60
+      },
+      {
+        "frame": 17,
+        "capsule_depth_sum_mm": 188.35467068572254,
+        "capsule_max_depth_mm": 29.432020325687684,
+        "surface_samples_over_1mm": 64
+      },
+      {
+        "frame": 18,
+        "capsule_depth_sum_mm": 183.1877671340477,
+        "capsule_max_depth_mm": 22.5179928006999,
+        "surface_samples_over_1mm": 61
+      },
+      {
+        "frame": 19,
+        "capsule_depth_sum_mm": 40.18304721285989,
+        "capsule_max_depth_mm": 5.4179697643791105,
+        "surface_samples_over_1mm": 57
+      },
+      {
+        "frame": 20,
+        "capsule_depth_sum_mm": 96.24362926532893,
+        "capsule_max_depth_mm": 9.554474064402415,
+        "surface_samples_over_1mm": 58
+      },
+      {
+        "frame": 21,
+        "capsule_depth_sum_mm": 123.2139834959872,
+        "capsule_max_depth_mm": 10.577466214435665,
+        "surface_samples_over_1mm": 77
+      },
+      {
+        "frame": 22,
+        "capsule_depth_sum_mm": 73.90562945492735,
+        "capsule_max_depth_mm": 7.198057173580054,
+        "surface_samples_over_1mm": 75
+      },
+      {
+        "frame": 23,
+        "capsule_depth_sum_mm": 38.89947964444579,
+        "capsule_max_depth_mm": 7.214820334562777,
+        "surface_samples_over_1mm": 72
+      },
+      {
+        "frame": 24,
+        "capsule_depth_sum_mm": 3.5291357926524882,
+        "capsule_max_depth_mm": 1.2873947517081792,
+        "surface_samples_over_1mm": 58
+      },
+      {
+        "frame": 25,
+        "capsule_depth_sum_mm": 1.7593833714899048,
+        "capsule_max_depth_mm": 0.8405698003260687,
+        "surface_samples_over_1mm": 48
+      }
+    ]
+  },
+  "capsule_depth_reduction_percent": 98.06523497661398,
+  "surface_depth_reduction_percent": 49.75264702609407,
+  "skirt_max_distance_m_after_quantization": 0.0392156862745098,
+  "opacity_fix_preserved": true,
+  "game_cloth_solver_used": false,
+  "game_test_verified": false,
+  "method_limit": "Capsules and nearest-surface normals estimate contacts; source leggings have open seams. This is not an in-game collision guarantee."
+}

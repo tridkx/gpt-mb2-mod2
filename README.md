@@ -1,8 +1,18 @@
 # 天香 T5 装备模组
 
-当前版本：**v1.2.0**。
+当前版本：**v1.3.0**。
 
-## 肩部与跑动裙摆修正
+## 手臂前旋与胸腰体积调整（v1.3.0）
+
+- 在 v1.2.0 的 6° 基础上再向前旋转 20°，双臂总前旋 **26°**；手、衣袖和饰件同步调整。
+- 胸口到腰部横向加宽 **8%**，前后厚度增加 **5%**。身体与衣服使用相同的平滑调整范围，在肩部、颈部与胯部逐渐收回。
+- 保留上一版裙摆权重、膝后余量、布料活动范围以及材质透明度修复。
+
+最终游戏资产检查确认额外前旋角为 20°，胸腰宽度与厚度分别为原来的 1.08、1.05 倍；绑骨权重与布料顶点数据保持一致，头颈接缝通过四级 LOD 和离线动作检查。记录见 `reports/posture_validation.json`；正面和侧面对照见 `reports/posture_before_front.png`、`reports/posture_after_front.png`、`reports/posture_before_side.png`、`reports/posture_after_side.png`。
+
+已更新本机模组与可编辑工程，游戏内效果由你测试。更新后请完全退出游戏和启动器再重新打开。
+
+## 肩部与跑动裙摆修正（v1.2.0）
 
 - 双臂以肩关节为支点向前旋转 **6°**；上臂、前臂、手、衣袖与饰件共同调整，肩口通过原有权重平滑过渡。保留原版骨骼和头颈接缝。
 - 裙片从腰部以下更早跟随同侧大腿，膝部以下逐渐转为跟随小腿；后裙中心保持连续权重，避免左右腿交替时出现硬分界。针对收腿时后脚跟顶穿裙片的问题，增加下摆对小腿的跟随。
@@ -51,6 +61,7 @@ v1.1.1 为全部 9 个材质补充原版支持的 `disable_vertex_color_alpha` �
 - `launch-fix-20261006`：清理本机镜人偶全局配置残留，保留完整备份。
 - `v1.1.1`：修复衣服、头发被透明裁切的问题，保留原有外观、绑骨和布料数据。
 - `v1.2.0`：双臂向前旋转 6°，调整裙片随大腿、小腿运动的权重、膝后余量和布料活动距离。
+- `v1.3.0`：双臂总前旋 26°，胸腰宽度增加 8%、前后厚度增加 5%，衣服同步调整。
 
 原模型、贴图、可编辑工程、导出 FBX、运行时模组与制作脚本均已纳入版本记录。中间构建文件、压缩交付包、日志和 Blender 自动备份不纳入 Git。
 
@@ -106,7 +117,11 @@ campaign.add_item_to_player_party tx5_head
 - `reports/visibility_validation.json`：v1.1.1 材质透明度修复及模型、布料数据对比记录。
 - `reports/visibility_validation_materials.json`：当前版本的材质、引用与布料标志复核。
 - `reports/motion_validation.json`：v1.2.0 肩部前旋、最终游戏资产跑步接触对比与透明度检查。
+- `reports/posture_validation.json`：v1.3.0 相对上一版的手臂角度、胸腰尺寸与最终游戏资产核对。
+- `reports/motion_validation_v1.3.0.json`：v1.3.0 跑步接触复核与材质显示检查。
 
 本次构建使用本机 Blender 5.2、`D:\mb-tools` 的 TPAC 工具和 `D:\gpt-mb2-mod` 的几何/贴图辅助库。重新构建的主要步骤是 `tools/rig_model.py` → `tools/export_geometry.py` → `tools/build_package.py`。
+
+`tools/install_release.ps1` 将已经检查的版本安装到本机 TianxiangT5 模组目录，保留上一版交付包，更新压缩包并保存本地 Git 版本。
 
 官方说明：[布料模拟](https://moddocs.bannerlord.com/editor/resource-editors/cloth_simulation/)、[资源命名与骨骼索引](https://moddocs.bannerlord.com/asset-management/asset-types/asset_naming_conventions/)。

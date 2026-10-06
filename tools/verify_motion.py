@@ -1,6 +1,6 @@
 """Regress running contacts on the final quantized assets, without game physics."""
 from pathlib import Path
-import json,sys,subprocess,hashlib
+import json,sys,subprocess,hashlib,xml.etree.ElementTree as ET
 import numpy as np
 import trimesh
 ROOT=Path(__file__).resolve().parents[1]
@@ -9,6 +9,7 @@ sys.path.insert(0,r'D:\gpt-mb2-mod\previewer')
 from georead import read_geo
 from baker.skeleton import parse_skeljson
 from baker.animation import parse_animjson,skin_matrices,lbs
+from motion_fit import ARM_FORWARD_DEGREES
 
 def meshes(folder):
     return {s['name']:s for file in (folder/'geo').glob('*.bin') for s in read_geo(file)}
@@ -81,16 +82,18 @@ assert len(audit['materials'])==9
 assert all('disable_vertex_color_alpha' in m['ShaderMaterialFlags'] for m in audit['materials'])
 skirt_mesh=next(m for m in audit['meshes'] if m['Name']=='tx5_body_03')
 assert skirt_mesh['AlphaMax']<=11 and 'uses_cloth_simulation' in skirt_mesh['Flags']
-result={'version':'v1.2.0','baseline_version':'v1.1.1','running_frames':len(frame_skins),
+version=ET.parse(ROOT/'module/TianxiangT5/SubModule.xml').find('Version').get('value')
+result={'version':version,'baseline_version':'v1.1.1','running_frames':len(frame_skins),
         'baseline_package_sha256':baseline_hash,
         'final_package_sha256':hashlib.sha256((ROOT/'module/TianxiangT5/AssetPackages/tx5.tpac').read_bytes()).hexdigest(),
-        'arm_forward_degrees':6,'median_hand_forward_mm_in_rest':forward_mm,
+        'arm_forward_degrees':ARM_FORWARD_DEGREES,'median_hand_forward_mm_in_rest':forward_mm,
         'before':old,'after':new,
         'capsule_depth_reduction_percent':100*(1-new['capsule_depth_sum_mm']/old['capsule_depth_sum_mm']),
         'surface_depth_reduction_percent':100*(1-new['surface_depth_sum_mm']/old['surface_depth_sum_mm']),
         'skirt_max_distance_m_after_quantization':skirt_mesh['AlphaMax']/255,
         'opacity_fix_preserved':True,'game_cloth_solver_used':False,'game_test_verified':False,
         'method_limit':'Capsules and nearest-surface normals estimate contacts; source leggings have open seams. This is not an in-game collision guarantee.'}
-(ROOT/'reports/motion_validation.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
+report='motion_validation.json' if version=='v1.2.0' else f'motion_validation_{version}.json'
+(ROOT/'reports'/report).write_text(json.dumps(result,indent=2),encoding='utf-8')
 print(json.dumps({k:v for k,v in result.items() if k not in ['before','after']},indent=2))
 print('CONTACT_TOTALS',[(label,{k:v for k,v in check.items() if k!='frames'}) for label,check in [('before',old),('after',new)]])

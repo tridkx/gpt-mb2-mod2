@@ -12,6 +12,20 @@ idle=parse_animjson(json.load(open(ROOT/'reports/idle.json')))
 run=parse_animjson(json.load(open(ROOT/'reports/run.json')))
 
 versions=[('before',ROOT/'build/movement_baseline/rigged.blend'),('after',ROOT/'source/TianxiangT5_Rigged.blend')]
+prefix='motion'
+views=[
+    ('shoulder_side',idle,1,'side',(0,0,1.28),.83),
+    ('run_side',run,6,'side',(0,0,.86),1.90),
+    ('run_back',run,18,'back',(0,0,.84),1.90),
+]
+if '--posture' in sys.argv:
+    prefix='posture'
+    versions[0]=('before',ROOT/'build/posture_baseline/rigged.blend')
+    views=[
+        ('front',idle,1,'front',(0,0,1.24),1.24),
+        ('side',idle,1,'side',(0,0,1.22),1.14),
+        ('run_side',run,6,'side',(0,0,.86),1.90),
+    ]
 if '--after-only' in sys.argv:versions=versions[1:]
 for version,file in versions:
     bpy.ops.wm.open_mainfile(filepath=str(file))
@@ -41,11 +55,7 @@ for version,file in versions:
         light.data.energy=energy;light.data.shape='DISK';light.data.size=size
         light.rotation_euler=(Vector((0,0,1.0))-light.location).to_track_quat('-Z','Y').to_euler()
     bpy.ops.object.camera_add();cam=bpy.context.object;scene.camera=cam;cam.data.type='ORTHO'
-    for label,anim,frame,view,center,scale in [
-        ('shoulder_side',idle,1,'side',(0,0,1.28),.83),
-        ('run_side',run,6,'side',(0,0,.86),1.90),
-        ('run_back',run,18,'back',(0,0,.84),1.90),
-    ]:
+    for label,anim,frame,view,center,scale in views:
         skin=skin_matrices(rig,anim,frame)
         for o in objects:
             p=base[o.name];w=weights[o.name];h=np.c_[p,np.ones(len(p))]
@@ -54,7 +64,8 @@ for version,file in versions:
             normal/=np.maximum(np.linalg.norm(normal,axis=1,keepdims=True),1e-9)
             for vertex,co in zip(o.data.vertices,posed):vertex.co=co
             o.data.normals_split_custom_set_from_vertices(normal.tolist())
-        center=Vector(center);cam.location=center+Vector((4,0,0) if view=='side' else (0,-4,0))
+        offset={'side':(4,0,0),'front':(0,4,0),'back':(0,-4,0)}[view]
+        center=Vector(center);cam.location=center+Vector(offset)
         cam.data.ortho_scale=scale;cam.rotation_euler=(center-cam.location).to_track_quat('-Z','Y').to_euler()
-        scene.render.filepath=str(ROOT/f'reports/motion_{version}_{label}.png')
+        scene.render.filepath=str(ROOT/f'reports/{prefix}_{version}_{label}.png')
         bpy.ops.render.render(write_still=True)
