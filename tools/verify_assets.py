@@ -19,6 +19,37 @@ checks['vertices_lod0']=sum(s['nverts'] for s in subs)
 checks['triangles_lod0']=sum(s['nidx']//3 for s in subs)
 checks['weights_all_sum_255']=True
 checks['bone_indices_valid']=True
+
+# Regress the exact reported defect using the final, byte-quantized game asset.
+# Skinning any pose must keep the face/body attachment coincident.
+arrays=np.load(ROOT/'build/rig_arrays.npz')
+body='tx5_body_04';face='tx5_head_11'
+source_body=arrays[body+'_S'];source_face=arrays[face+'_S']
+ii,jj=np.where(np.linalg.norm(source_body[:,None,:]-source_face[None,:,:],axis=2)<1e-7)
+expected=np.unique(arrays[body+'_P'][ii].round(6),axis=0)
+assert len(expected)>=18, len(expected)
+
+def attachment(s):
+ distance=np.linalg.norm(expected[:,None,:]-s['pos'][None,:,:],axis=2)
+ indices=distance.argmin(1)
+ assert distance.min(1).max()<2e-6,(s['name'],distance.min(1).max())
+ return {k:s[k][indices] for k in ['pos','bi','bw']}
+
+def dense_weights(s):
+ w=np.zeros((len(s['pos']),28),int)
+ for slot in range(4):w[np.arange(len(w)),s['bi'][:,slot]]+=s['bw'][:,slot]
+ return w
+
+seams=[];checks['neck_seams']={}
+for lod in range(4):
+ lod_subs=subs if lod==0 else [s for f in (ROOT/f'build/final_export_lod{lod}/geo').glob('*.bin') for s in read_geo(f)]
+ suffix='' if lod==0 else f'.lod{lod}'
+ b=attachment(next(s for s in lod_subs if s['name']==body+suffix))
+ h=attachment(next(s for s in lod_subs if s['name']==face+suffix))
+ assert np.array_equal(dense_weights(b),dense_weights(h)),f'LOD{lod}: neck weights differ'
+ assert np.linalg.norm(b['pos']-h['pos'],axis=1).max()<1e-6
+ seams.append((b,h))
+ checks['neck_seams'][f'LOD{lod}']={'vertices':len(expected),'weights_identical':True,'rest_gap_mm':float(np.linalg.norm(b['pos']-h['pos'],axis=1).max()*1000),'max_animated_gap_mm':0.0}
 for f in (ROOT/'module/TianxiangT5').rglob('*.xml'):ET.parse(f)
 checks['xml_valid']=True
 checks['animations']={}
@@ -27,6 +58,10 @@ for key in ['idle','run','bow','riding']:
  per=[]
  for frame in np.unique(np.linspace(max(1,anim['start']),anim['frames']-1,12).astype(int)):
   skin=skin_matrices(rig,anim,int(frame))
+  for lod,(b,h) in enumerate(seams):
+   gap=float(np.linalg.norm(lbs(b['pos'],b['bi'],b['bw'],skin)-lbs(h['pos'],h['bi'],h['bw'],skin),axis=1).max()*1000)
+   assert gap<.01,(key,frame,lod,gap)
+   check=checks['neck_seams'][f'LOD{lod}'];check['max_animated_gap_mm']=max(check['max_animated_gap_mm'],gap)
   ratios=[];floor=[];worst=[]
   for s in subs:
    p=lbs(s['pos'],s['bi'],s['bw'],skin)

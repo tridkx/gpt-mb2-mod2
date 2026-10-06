@@ -5,6 +5,22 @@ sys.path.insert(0,r'D:\gpt-mb2-mod\pipeline')
 from build_assets import vertex_tangents
 bpy.ops.wm.open_mainfile(filepath=ROOT+'/source/TianxiangT5_Rigged.blend')
 manifest=json.load(open(ROOT+'/build/rig_manifest.json'))
+
+# Preserve the shared neck boundary in every LOD. Each equipment is simplified
+# separately; collapsing either copy of this ring would reopen the seam.
+neck_objects=[bpy.data.objects['tx5_body_04'],bpy.data.objects['tx5_head_11']]
+point_sets=[{tuple(round(c,6) for c in v.co) for v in o.data.vertices} for o in neck_objects]
+neck_points=point_sets[0]&point_sets[1]
+
+def skin_vector(o,v):
+ w=np.zeros(28)
+ for g in v.groups:
+  name=o.vertex_groups[g.group].name
+  if name.startswith('bip01_'):w[int(name.rsplit('_',1)[1])]=g.weight
+ return w
+
+def neck_state(o):
+ return {tuple(round(c,6) for c in v.co):skin_vector(o,v) for v in o.data.vertices if tuple(round(c,6) for c in v.co) in neck_points}
 groups=[]
 os.makedirs(ROOT+'/build/mesh',exist_ok=True)
 for r in manifest:
@@ -14,8 +30,23 @@ for r in manifest:
   for m in list(o.modifiers):o.modifiers.remove(m)
   bpy.context.view_layer.objects.active=o
   if lod:
+   protected=r['object'] in {'tx5_body_04','tx5_head_11'}
+   if protected:
+    before=neck_state(original)
+    guard=o.vertex_groups.new(name='LOD_Neck_Protection')
+    center=np.array(list(neck_points));P=np.array([v.co for v in o.data.vertices])
+    distance=np.linalg.norm(P[:,None,:]-center[None,:,:],axis=2).min(1)
+    for vi in np.where(distance<.025)[0]:guard.add([int(vi)],1.0,'REPLACE')
    dec=o.modifiers.new('LOD','DECIMATE');dec.ratio=ratio
+   if protected:dec.vertex_group=guard.name;dec.vertex_group_factor=1000
    bpy.ops.object.modifier_apply(modifier=dec.name)
+   if protected:
+    after=neck_state(o)
+    if any(k not in after or np.max(np.abs(after[k]-w))>1e-6 for k,w in before.items()):
+     # Exact attachment takes priority if the simplifier cannot retain it.
+     o.data=original.data.copy();print('LOD_SEAM_FALLBACK',r['object'],lod)
+    guard=o.vertex_groups.get('LOD_Neck_Protection')
+    if guard:o.vertex_groups.remove(guard)
   me=o.data;me.calc_loop_triangles()
   if me.uv_layers:me.calc_tangents()
   uv=me.uv_layers.active.data

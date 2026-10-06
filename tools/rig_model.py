@@ -14,7 +14,9 @@ for b in raw['bones']:
  world.append(L if b['parent']<0 else world[b['parent']]@L)
 world=np.array(world);target=world[:,:3,3]
 source=np.zeros((28,3))
-for i,p in {0:(0,0,.965),9:(0,-.004,1.066),10:(0,-.008,1.220),11:(0,-.01,1.360),12:(0,-.014,1.437),13:(0,.003,1.542)}.items():source[i]=p
+# Locate chest joints below the clavicles. The previous spine2 landmark sat at
+# shoulder height, stretching the chest-to-neck segment and folding the collar.
+for i,p in {0:(0,0,.965),9:(0,-.004,1.066),10:(0,-.008,1.160),11:(0,-.01,1.285),12:(0,-.014,1.437),13:(0,.003,1.542)}.items():source[i]=p
 for ids,sign in [([1,2,3,4,14,15,16,17,18,19,20],-1),([5,6,7,8,21,22,23,24,25,26,27],1)]:
  points=[(.085,0,.965),(.112,-.012,.525),(.117,-.025,.082),(.118,.091,.003),(.04,-.025,1.366),(.155,-.025,1.366),(.230,-.012,1.260),(.305,0,1.154),(.365,.012,1.094),(.425,.024,1.034),(.469,.038,.978)]
  for i,p in zip(ids,points):source[i]=[sign*p[0],p[1],p[2]]
@@ -64,7 +66,18 @@ def body_weights(P,use_arms=True):
   legblend=1-smooth(.96,1.10,Q[:,2]);lower=weights(Q,leg)
   base=upper*(1-legblend[:,None])+lower*legblend[:,None]
   out[ids]=base*(1-armblend[:,None])+weights(Q,arm)*armblend[:,None]
+ # Use the same neck transition in the face, skin and collar meshes. Original
+ # duplicate vertices at the head/body boundary must share identical weights.
+ h=smooth(1.405,1.475,P[:,2])*(1-smooth(.055,.095,np.abs(P[:,0])))
+ out*=1-h[:,None];out[:,13]+=h
  return out
+
+def neck_shape(P,D,whole_head=False):
+ # Raise the chest through the corrected landmarks above and shorten the
+ # remaining exposed neck by 14 mm, preserving the face and head proportions.
+ blend=np.ones(len(P)) if whole_head else smooth(1.355,1.475,P[:,2])*(1-smooth(.055,.095,np.abs(P[:,0])))
+ D[:,2]-=.014*blend
+ return D
 def components(me):
  p=list(range(len(me.vertices)))
  def root(a):
@@ -78,14 +91,19 @@ def components(me):
 head_ids={1,2,9,10,11,12,13};body_ids={0,3,4,7,8};legs_ids={5,6}
 records=[];all_arrays={}
 for oi,o in enumerate(src_objects):
- P=np.array([o.matrix_world@v.co for v in o.data.vertices])*.01
+ # A 10-micron grid gives coincident source seams exactly identical positions
+ # and skinning weights, including vertices split into different equipment.
+ P=np.round(np.array([o.matrix_world@v.co for v in o.data.vertices])*.01,5)
  W=body_weights(P,use_arms=oi not in {3,5,6});A=np.zeros(len(P));kind=np.empty(len(P),object)
  for ids in components(o.data):
   ids=np.array(ids);Q=P[ids];lo=Q.min(0);hi=Q.max(0);mid=Q.mean(0);sign=-1 if mid[0]<0 else 1
   arm=[14,15,17,19] if sign<0 else [21,22,24,26]
   leg=[0,1,2,3,4] if sign<0 else [0,5,6,7,8]
   if oi in head_ids:
-   W[ids,13]=1;kind[ids]='head'
+   if oi not in {9,11}:
+    # Do not retain the initial torso weights on rigid head parts.
+    W[ids]=0;W[ids,13]=1
+   kind[ids]='head'
    if oi==1:
     A[ids]=.028*smooth(1.43,1.05, Q[:,2])
     # Hair remains anchored to the head. Its lower lengths receive only limited physics.
@@ -129,8 +147,10 @@ for oi,o in enumerate(src_objects):
    aa=a/np.linalg.norm(a);bb=b/np.linalg.norm(b);v=np.cross(aa,bb);c=aa@bb;K=np.array([[0,-v[2],v[1]],[v[2],0,-v[0]],[-v[1],v[0],0]])
    R=np.eye(3)+K+K@K/max(1+c,1e-8);D[ids]=(Q-anchor)@R.T+mapped
  if oi in head_ids:
-  # Head and face keep their proportions exactly.
-  D=P-source[13]+target[13]
+  # The face's lower neck and neck accessories use the common skin transition.
+  # Eyes, lashes, hair and ornaments remain rigidly attached to the head.
+  if oi not in {9,11}:D=P-source[13]+target[13]
+ D=neck_shape(P,D,whole_head=oi in head_ids and oi not in {9,11})
  if oi in {0,3}:
   # Small radial clearance on free fabric, away from legs and torso.
   free=A>0.003;rad=D[:,:2].copy();rad[:,1]-=0.02
@@ -162,13 +182,28 @@ for oi,o in enumerate(src_objects):
  o.name='tx5_'+part+'_'+str(oi).zfill(2)
  o['source_object']=src_objects[oi].get('source_object',str(oi));o['cloth_max_distance']=float(A.max())
  records.append({'object':o.name,'source_index':oi,'part':part,'material':'tx5_'+short,'cloth':bool(A.max()>.001),'vertices':len(P),'simulated_vertices':int((A>.001).sum()),'max_distance':float(A.max()),'bounds':[D.min(0).tolist(),D.max(0).tolist()]})
- all_arrays[o.name]={'P':D,'W':W,'A':A}
+ all_arrays[o.name]={'P':D,'S':P,'W':W,'A':A}
  # Make the Blender material reflect the intended game alpha semantics.
  m=o.data.materials[0];m.name='tx5_'+short+'_preview_'+str(oi)
  bs=next(n for n in m.node_tree.nodes if n.type=='BSDF_PRINCIPLED');bs.inputs['Roughness'].default_value=.68;bs.inputs['Metallic'].default_value=0
  if short in {'tunic','pants'}:
   for link in list(bs.inputs['Alpha'].links):m.node_tree.links.remove(link)
   bs.inputs['Alpha'].default_value=1
+# Smooth UV-split skin vertices, including the shared face/body neck boundary.
+# Topology and UVs remain separate; only shading normals are shared.
+skin_objects=[src_objects[i] for i in [4,7,11]]
+normal_sums={}
+for o in skin_objects:
+ me=o.data;me.calc_loop_triangles()
+ for tri in me.loop_triangles:
+  verts=[me.vertices[i] for i in tri.vertices]
+  normal=(verts[1].co-verts[0].co).cross(verts[2].co-verts[0].co)
+  for v in verts:
+   key=tuple(round(c,5) for c in v.co)
+   normal_sums.setdefault(key,Vector((0,0,0)));normal_sums[key]+=normal
+for o in skin_objects:
+ normals=[normal_sums[tuple(round(c,5) for c in v.co)].normalized() for v in o.data.vertices]
+ o.data.normals_split_custom_set_from_vertices(normals)
 for img in bpy.data.images:
  if img.has_data and img.source=='FILE':img.pack()
 # Add disabled Blender cloth previews. They are separate from game physics metadata.
