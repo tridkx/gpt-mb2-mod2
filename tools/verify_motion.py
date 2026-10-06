@@ -74,7 +74,12 @@ arrays=np.load(ROOT/'build/rig_arrays.npz');prior=np.load(ROOT/'build/movement_b
 source=arrays['tx5_body_07_S'];p=arrays['tx5_body_07_P'];oldp=prior['tx5_body_07_P']
 hands=(source[:,2]<1.07)&(np.abs(source[:,0])>.40)
 forward_mm=float(np.median((p-oldp)[hands,1])*1000)
-assert forward_mm>5,forward_mm
+# Forward posture belongs to the shoulders. Moving the native hand anchors is
+# deliberately forbidden after the weapon-grip repair.
+shoulder_source=arrays['tx5_body_04_S']
+shoulders=(np.abs(shoulder_source[:,0])>.14)&(shoulder_source[:,2]>1.29)
+shoulder_forward_mm=float(np.median((arrays['tx5_body_04_P']-prior['tx5_body_04_P'])[shoulders,1])*1000)
+assert shoulder_forward_mm>5,shoulder_forward_mm
 tool=ROOT/'tools/AssetTool/AssetTool.dll'
 audit=json.loads(subprocess.run(['dotnet',str(tool),'visibility',str(ROOT/'module/TianxiangT5/AssetPackages/tx5.tpac')],
                                check=True,capture_output=True,text=True).stdout)
@@ -87,6 +92,7 @@ result={'version':version,'baseline_version':'v1.1.1','running_frames':len(frame
         'baseline_package_sha256':baseline_hash,
         'final_package_sha256':hashlib.sha256((ROOT/'module/TianxiangT5/AssetPackages/tx5.tpac').read_bytes()).hexdigest(),
         'arm_forward_degrees':ARM_FORWARD_DEGREES,'median_hand_forward_mm_in_rest':forward_mm,
+        'median_shoulder_forward_mm_in_rest':shoulder_forward_mm,
         'before':old,'after':new,
         'capsule_depth_reduction_percent':100*(1-new['capsule_depth_sum_mm']/old['capsule_depth_sum_mm']),
         'surface_depth_reduction_percent':100*(1-new['surface_depth_sum_mm']/old['surface_depth_sum_mm']),

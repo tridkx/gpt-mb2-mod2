@@ -1,5 +1,6 @@
 """Shoulder posture, torso volume and continuous skirt skinning in game coordinates."""
 import numpy as np
+from hand_fit import posture_fade
 
 ARM_FORWARD_DEGREES = 26.0
 TORSO_WIDTH_SCALE = 1.08
@@ -10,15 +11,16 @@ def smooth(a, b, x):
     t = np.clip((x-a)/(b-a), 0, 1)
     return t*t*(3-2*t)
 
-def forward_arms(positions, weights, joints):
+def forward_arms(positions, weights, joints, source, source_joints):
     angle = np.radians(ARM_FORWARD_DEGREES)
     c, s = np.cos(angle), np.sin(angle)
     # +Y is forward. Rotating a descending arm around +X moves it forward.
     rotation = np.array([[1, 0, 0], [0, c, -s], [0, s, c]])
     original = positions.copy()
     result = original.copy()
-    for bones, shoulder in [(range(14,21),15), (range(21,28),22)]:
+    for bones, shoulder, elbow, wrist in [(range(14,21),15,17,19), (range(21,28),22,24,26)]:
         influence = weights[:, list(bones)].sum(1)
+        influence *= posture_fade(source,source_joints,elbow,wrist)
         rotated = (original-joints[shoulder]) @ rotation.T + joints[shoulder]
         result += influence[:,None]*(rotated-original)
     return result

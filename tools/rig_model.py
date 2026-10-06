@@ -4,6 +4,7 @@ from mathutils import Vector, Matrix
 ROOT=r'D:\gpt-mb2-mod2'
 sys.path.insert(0,ROOT+'/tools')
 from motion_fit import forward_arms,fuller_torso,skirt_weights,skirt_clearance,ARM_FORWARD_DEGREES,TORSO_WIDTH_SCALE,TORSO_DEPTH_SCALE
+from hand_fit import forearm_weights
 OUT=os.path.join(ROOT,'build')
 os.makedirs(OUT,exist_ok=True)
 bpy.ops.wm.open_mainfile(filepath=ROOT+'/inspection.blend')
@@ -22,7 +23,7 @@ for i,p in {0:(0,0,.965),9:(0,-.004,1.066),10:(0,-.008,1.160),11:(0,-.01,1.285),
 for ids,sign in [([1,2,3,4,14,15,16,17,18,19,20],-1),([5,6,7,8,21,22,23,24,25,26,27],1)]:
  points=[(.085,0,.965),(.112,-.012,.525),(.117,-.025,.082),(.118,.091,.003),(.04,-.025,1.366),(.155,-.025,1.366),(.230,-.012,1.260),(.305,0,1.154),(.365,.012,1.094),(.425,.024,1.034),(.469,.038,.978)]
  for i,p in zip(ids,points):source[i]=[sign*p[0],p[1],p[2]]
-nxt={0:9,1:2,2:3,3:4,5:6,6:7,7:8,9:10,10:11,11:12,12:13,14:15,15:17,17:19,19:20,21:22,22:24,24:26,26:27}
+nxt={0:9,1:2,2:3,3:4,5:6,6:7,7:8,9:10,10:11,11:12,12:13,14:15,15:17,17:19,18:19,19:20,21:22,22:24,24:26,25:26,26:27}
 names=['bip01_'+b['name']+'_'+str(b['i']) for b in raw['bones']]
 bpy.ops.object.armature_add()
 rig=bpy.context.object;rig.name='human_skeleton_notused'
@@ -72,7 +73,7 @@ def body_weights(P,use_arms=True):
  # duplicate vertices at the head/body boundary must share identical weights.
  h=smooth(1.405,1.475,P[:,2])*(1-smooth(.055,.095,np.abs(P[:,0])))
  out*=1-h[:,None];out[:,13]+=h
- return out
+ return forearm_weights(P,out,source) if use_arms else out
 
 def neck_shape(P,D,whole_head=False):
  # Raise the chest through the corrected landmarks above and shorten the
@@ -154,7 +155,7 @@ for oi,o in enumerate(src_objects):
   if oi not in {9,11}:D=P-source[13]+target[13]
  D=neck_shape(P,D,whole_head=oi in head_ids and oi not in {9,11})
  # Shoulder-centered forward rotation shared by skin, sleeves and ornaments.
- D=forward_arms(D,W,target)
+ D=forward_arms(D,W,target,P,source)
  if oi in body_ids:D=fuller_torso(D,P)
  if oi in {0,3}:
   # Small radial clearance on free fabric, away from legs and torso.
@@ -235,6 +236,7 @@ for o,rec in zip(src_objects,records):
 preview.hide_render=True;preview.hide_viewport=True
 rig['runtime_skeleton']='human_skeleton';rig['bone_count']=28
 rig['arm_forward_degrees']=ARM_FORWARD_DEGREES
+rig['native_hand_anchors_preserved']=True
 rig['torso_width_scale']=TORSO_WIDTH_SCALE;rig['torso_depth_scale']=TORSO_DEPTH_SCALE
 os.makedirs(ROOT+'/source',exist_ok=True)
 bpy.ops.wm.save_as_mainfile(filepath=ROOT+'/source/TianxiangT5_Rigged.blend')

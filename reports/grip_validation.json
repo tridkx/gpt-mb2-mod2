@@ -1,0 +1,72 @@
+{
+  "version": "v1.3.1",
+  "baseline_version": "v1.3.0",
+  "shoulder_setting_degrees": 26,
+  "central_torso_and_shoulders_unchanged": true,
+  "head_legs_and_skirt_unchanged": true,
+  "cloth_vertex_alpha_unchanged": true,
+  "native_hand_bones_unchanged": true,
+  "median_previous_hand_registration_offset_mm": 179.73026562519047,
+  "max_final_hand_registration_error_mm": 6.474804711729071e-05,
+  "final_palms_rigid_to_native_hand_bones": true,
+  "lods_checked": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "animations": [
+    {
+      "animation": "anim_troop_infantry_sword2h_pose",
+      "sampled_frames": 2,
+      "forearm_compression_p5_before": 0.8577127063451183,
+      "forearm_compression_p5_after": 0.9980738475412207,
+      "palm_min_directional_scale_before": 0.9877339095319988,
+      "palm_min_directional_scale_after": 0.9999995166323917
+    },
+    {
+      "animation": "anim_twohanded_defend_up_heavy",
+      "sampled_frames": 70,
+      "forearm_compression_p5_before": 0.8509420912254283,
+      "forearm_compression_p5_after": 0.9999999132586745,
+      "palm_min_directional_scale_before": 0.7316371557322011,
+      "palm_min_directional_scale_after": 0.9999995166323914
+    },
+    {
+      "animation": "anim_twohanded_thrust_ready",
+      "sampled_frames": 155,
+      "forearm_compression_p5_before": 0.769539026663638,
+      "forearm_compression_p5_after": 0.9999999132586744,
+      "palm_min_directional_scale_before": 0.7241041441332899,
+      "palm_min_directional_scale_after": 0.9999995166323913
+    },
+    {
+      "animation": "anim_block_staff2",
+      "sampled_frames": 400,
+      "forearm_compression_p5_before": 0.8651499931422988,
+      "forearm_compression_p5_after": 0.9826658189610871,
+      "palm_min_directional_scale_before": 0.7596268524003472,
+      "palm_min_directional_scale_after": 0.9999995166323911
+    },
+    {
+      "animation": "anim_bow",
+      "sampled_frames": 150,
+      "forearm_compression_p5_before": 0.7505409366994196,
+      "forearm_compression_p5_after": 0.9691604179478188,
+      "palm_min_directional_scale_before": 0.6915537260081427,
+      "palm_min_directional_scale_after": 0.9999995166323913
+    },
+    {
+      "animation": "anim_rider_gallop_bow",
+      "sampled_frames": 20,
+      "forearm_compression_p5_before": 0.8019189553991165,
+      "forearm_compression_p5_after": 0.9833249265087167,
+      "palm_min_directional_scale_before": 0.7822597342824276,
+      "palm_min_directional_scale_after": 0.9999995166323914
+    }
+  ],
+  "baseline_package_sha256": "a0abf5887a5e7d8cb588d93835161f79929bbe1b2d19b972ac018cc74fc2dbc5",
+  "final_package_sha256": "7d3fa2e062fd29fd0c9ffa31c273f0a8f42a1dde29ee9b553601c90af22ce6e4",
+  "game_test_verified": false,
+  "limitations": "Offline native skinning only; weapon-specific IK, hand morphs, character scaling and live cloth are not simulated."
+}

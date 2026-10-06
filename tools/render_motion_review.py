@@ -27,6 +27,13 @@ if '--posture' in sys.argv:
         ('run_side',run,6,'side',(0,0,.86),1.90),
     ]
 if '--after-only' in sys.argv:versions=versions[1:]
+if '--grip' in sys.argv:
+    prefix='grip'
+    versions=[('before',ROOT/'build/grip_baseline/rigged.blend'),('after',ROOT/'source/TianxiangT5_Rigged.blend')]
+    block=parse_animjson(json.load(open(ROOT/'reports/grip_twohanded_block.json')))
+    thrust=parse_animjson(json.load(open(ROOT/'reports/grip_twohanded_thrust.json')))
+    views=[('block',block,34,'grip',None,.80),('thrust',thrust,102,'grip',None,.80),
+           ('shoulder_side',idle,1,'side',(0,0,1.25),1.12)]
 for version,file in versions:
     bpy.ops.wm.open_mainfile(filepath=str(file))
     # Baseline .blend is extracted into build/, so resolve its relative textures.
@@ -64,7 +71,12 @@ for version,file in versions:
             normal/=np.maximum(np.linalg.norm(normal,axis=1,keepdims=True),1e-9)
             for vertex,co in zip(o.data.vertices,posed):vertex.co=co
             o.data.normals_split_custom_set_from_vertices(normal.tolist())
-        offset={'side':(4,0,0),'front':(0,4,0),'back':(0,-4,0)}[view]
+        if view=='grip':
+            # Same native hand-bone camera target in both versions, independent
+            # of the displaced baseline hands. No synthetic weapon is rendered.
+            centers=[(skin[i] @ np.r_[rig['restWorld'][i][:3,3],1])[:3] for i in [19,26]]
+            center=np.mean(centers,axis=0)+[0,0,-.04]
+        offset={'side':(4,0,0),'front':(0,4,0),'back':(0,-4,0),'grip':(2,4,1)}[view]
         center=Vector(center);cam.location=center+Vector(offset)
         cam.data.ortho_scale=scale;cam.rotation_euler=(center-cam.location).to_track_quat('-Z','Y').to_euler()
         scene.render.filepath=str(ROOT/f'reports/{prefix}_{version}_{label}.png')
