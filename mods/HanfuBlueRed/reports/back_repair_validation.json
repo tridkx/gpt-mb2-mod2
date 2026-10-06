@@ -1,0 +1,126 @@
+{
+  "version": "v1.0.1",
+  "status": "pass",
+  "final_package_sha256": "2101c74eae7851d3bac8bad67022fd3700ffe41368ac9c8180c34dbe60ab0d63",
+  "coverage": [
+    {
+      "lod": 0,
+      "region": "back_below_collar",
+      "rear_surface_rays": 135,
+      "rear_surface_hits": 135
+    },
+    {
+      "lod": 0,
+      "region": "waist",
+      "rear_surface_rays": 135,
+      "rear_surface_hits": 135
+    },
+    {
+      "lod": 1,
+      "region": "back_below_collar",
+      "rear_surface_rays": 135,
+      "rear_surface_hits": 135
+    },
+    {
+      "lod": 1,
+      "region": "waist",
+      "rear_surface_rays": 135,
+      "rear_surface_hits": 135
+    },
+    {
+      "lod": 2,
+      "region": "back_below_collar",
+      "rear_surface_rays": 135,
+      "rear_surface_hits": 135
+    },
+    {
+      "lod": 2,
+      "region": "waist",
+      "rear_surface_rays": 135,
+      "rear_surface_hits": 135
+    },
+    {
+      "lod": 3,
+      "region": "back_below_collar",
+      "rear_surface_rays": 135,
+      "rear_surface_hits": 135
+    },
+    {
+      "lod": 3,
+      "region": "waist",
+      "rear_surface_rays": 135,
+      "rear_surface_hits": 135
+    }
+  ],
+  "unchanged_source_meshes": [
+    "hbr_head_30",
+    "hbr_head_34",
+    "hbr_legs_11",
+    "hbr_head_14",
+    "hbr_body_05",
+    "hbr_legs_15",
+    "hbr_head_20",
+    "hbr_legs_23",
+    "hbr_head_31",
+    "hbr_legs_27",
+    "hbr_head_25",
+    "hbr_body_36",
+    "hbr_body_21",
+    "hbr_legs_35",
+    "hbr_head_00",
+    "hbr_head_37",
+    "hbr_legs_32",
+    "hbr_legs_02",
+    "hbr_legs_01",
+    "hbr_body_04",
+    "hbr_body_38"
+  ],
+  "repair": [
+    {
+      "source_part": 18,
+      "patches": 3,
+      "initial_patch_triangles": 266,
+      "removed_black_hair_faces": 503,
+      "patch_details": [
+        {
+          "boundary_vertices": 47
+        },
+        {
+          "boundary_vertices": 112
+        },
+        {
+          "boundary_vertices": 113
+        }
+      ],
+      "closed_residual_loops": 1
+    },
+    {
+      "source_part": 29,
+      "patches": 6,
+      "initial_patch_triangles": 559,
+      "removed_black_hair_faces": 702,
+      "patch_details": [
+        {
+          "boundary_vertices": 181
+        },
+        {
+          "boundary_vertices": 248
+        },
+        {
+          "boundary_vertices": 49
+        },
+        {
+          "boundary_vertices": 40
+        },
+        {
+          "boundary_vertices": 6
+        },
+        {
+          "boundary_vertices": 47
+        }
+      ],
+      "closed_residual_loops": 0
+    }
+  ],
+  "texture_note": "Matching plain blue used for missing original cloth; no recovered floral detail claimed."
+}

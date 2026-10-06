@@ -29,6 +29,12 @@ def render(name,offset):
     cam.location=center+Vector(offset);cam.rotation_euler=(center-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=max(1.9,float(np.ptp(points[:,2]))*1.15)
     s.render.filepath=str(ROOT/'reports'/(name+'.png'));bpy.ops.render.render(write_still=True)
 render('final_rest_front',(0,4,0));render('final_rest_back',(0,-4,0));render('final_rest_side',(4,0,0))
+for o in objects:o.hide_render=not o.name.startswith('hbr_body')
+for name,offset in [('final_back_repaired',(0,-4,0)),('final_back_repaired_oblique',(-1.5,-4,0))]:
+    center=Vector((0,-.04,1.1));cam.location=center+Vector(offset);cam.rotation_euler=(center-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=1.05
+    s.render.resolution_y=1000;s.render.filepath=str(ROOT/'reports'/(name+'.png'));bpy.ops.render.render(write_still=True)
+for o in objects:o.hide_render=False
+s.render.resolution_y=1100
 rig=parse_skeljson(json.loads((ROOT/'reports/human_skeleton.json').read_text()))
 report=json.loads((ROOT/'reports/release_validation.json').read_text());previews=[]
 for motion in report['motions']:
@@ -36,5 +42,8 @@ for motion in report['motions']:
     for obj,m in zip(objects,meshes):
         posed=lbs(m['pos'],m['bi'],m['bw'],skin);obj.data.vertices.foreach_set('co',posed.astype('f4').ravel());obj.data.update()
     render('final_'+label+'_worst',(2.6,4,0));previews.append({'label':label,'frame':frame,'path':'reports/final_'+label+'_worst.png'})
+    for o in objects:o.hide_render=not o.name.startswith('hbr_body')
+    render('final_'+label+'_back',(0,-4,0))
+    for o in objects:o.hide_render=False
 (ROOT/'reports/final_preview_manifest.json').write_text(json.dumps({'package_sha256':report['final_package_sha256'],'source':'Final TPAC re-export LOD0 with decoded texture and byte weights','game_cloth_solver_used':False,'motion_previews':previews},indent=2))
 print('FINAL_PREVIEWS_READY')

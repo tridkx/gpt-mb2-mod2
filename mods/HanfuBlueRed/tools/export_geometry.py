@@ -23,6 +23,17 @@ for rec in manifest:
     for f in original.data.polygons:
         for e in f.edge_keys:edge_faces[e]=edge_faces.get(e,0)+1
     boundary={v for e,count in edge_faces.items() if count==1 for v in e}
+    if rec['object'] in {'hbr_body_18','hbr_body_29'}:
+        uv_layer=original.data.uv_layers.active.data
+        per_vertex_uv={}
+        for loop in original.data.loops:
+            per_vertex_uv.setdefault(loop.vertex_index,set()).add(tuple(round(c,6) for c in uv_layer[loop.index].uv))
+        boundary.update(v for v,uvs in per_vertex_uv.items() if len(uvs)>1)
+        repaired={v for f in original.data.polygons if all((uv_layer[i].uv-uv_layer[f.loop_start].uv).length<1e-8 for i in f.loop_indices) for v in f.vertices}
+        boundary.update(repaired)
+        # Retain the cap and its immediate original rim in distant LODs.
+        for f in original.data.polygons:
+            if any(v in repaired for v in f.vertices):boundary.update(f.vertices)
     boundary.update(v.index for v in original.data.vertices if tuple(round(c,5) for c in v.co) in shared_positions)
     boundary_points={tuple(round(c,5) for c in original.data.vertices[v].co) for v in boundary}
     boundary_weights={tuple(round(c,5) for c in original.data.vertices[v].co):[(original.vertex_groups[g.group].name,g.weight) for g in original.data.vertices[v].groups] for v in boundary}

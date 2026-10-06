@@ -59,7 +59,14 @@
     "reports/remove_rig.json",
     "tools/remove_rig.py",
     "module/HanfuBlueRed/SubModule.xml",
-    "module/HanfuBlueRed/ModuleData/items.xml"
+    "module/HanfuBlueRed/ModuleData/items.xml",
+    "tools/inspect_back.py",
+    "tools/verify_back.py",
+    "reports/back_repair_validation.json",
+    "reports/back_before_back.png",
+    "reports/back_before_oblique.png",
+    "reports/final_back_repaired.png",
+    "reports/final_back_repaired_oblique.png"
   ],
   "package": "module/HanfuBlueRed/AssetPackages/hbr.tpac",
   "validation_report": "reports/release_validation.json"

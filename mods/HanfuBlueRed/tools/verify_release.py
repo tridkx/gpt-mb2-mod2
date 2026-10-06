@@ -167,6 +167,7 @@ descriptor=ET.parse(ROOT/'module/HanfuBlueRed/SubModule.xml');items=ET.parse(ROO
 assert descriptor.find('Id').get('value')=='HanfuBlueRed'
 assert {item.get('mesh') for item in items.getroot()}=={'hbr_head','hbr_body','hbr_legs'}
 assert sha(PACKAGE)==package_hash
-report={'version':'v1.0.0','status':'offline_checks_pass','final_package_sha256':package_hash,'baseline_package_sha256':None,'baseline_reason':'First release, no earlier package','lods':lods,'seams':seam_stats,'motions':motion,'texture_resolution':[4096,4096],'textures':texture_checks,'diffuse_mean_absolute_error_255':diffuse_mean_error,'metadata_audit':'pass','game_test_verified':False,'game_cloth_solver_used':False,'limitations':'Offline native skeletal motion only. In-game cloth, weapon IK, horse collision and character body sliders require user testing.'}
+baseline_hash='6ff809735ba733be684a9793fc7ecc97b74781ff13c95dfa2315fd7fa8ba5fe0'
+report={'version':'v1.0.1','status':'pass','check_scope':'offline_checks','final_package_sha256':package_hash,'baseline_package_sha256':baseline_hash,'baseline_reason':'v1.0.0 before rear garment repair','lods':lods,'seams':seam_stats,'motions':motion,'texture_resolution':[4096,4096],'textures':texture_checks,'diffuse_mean_absolute_error_255':diffuse_mean_error,'metadata_audit':'pass','game_test_verified':False,'game_cloth_solver_used':False,'limitations':'Offline native skeletal motion only. In-game cloth, weapon IK, horse collision and character body sliders require user testing.'}
 (ROOT/'reports/release_validation.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps(report,indent=2))

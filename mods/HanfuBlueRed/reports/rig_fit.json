@@ -314,18 +314,53 @@
     "r_hand_26",
     "r_finger0_27"
   ],
-  "shared_boundary_points": 2462,
-  "detached_hair_clothing_points": 441,
+  "shared_boundary_points": 2459,
+  "detached_hair_clothing_points": 313,
   "hair_surface_repairs": [
     {
       "source_part": 18,
-      "patches": 5,
-      "added_triangles": 24
+      "patches": 3,
+      "initial_patch_triangles": 266,
+      "removed_black_hair_faces": 503,
+      "patch_details": [
+        {
+          "boundary_vertices": 47
+        },
+        {
+          "boundary_vertices": 112
+        },
+        {
+          "boundary_vertices": 113
+        }
+      ],
+      "closed_residual_loops": 1
     },
     {
       "source_part": 29,
-      "patches": 11,
-      "added_triangles": 475
+      "patches": 6,
+      "initial_patch_triangles": 559,
+      "removed_black_hair_faces": 702,
+      "patch_details": [
+        {
+          "boundary_vertices": 181
+        },
+        {
+          "boundary_vertices": 248
+        },
+        {
+          "boundary_vertices": 49
+        },
+        {
+          "boundary_vertices": 40
+        },
+        {
+          "boundary_vertices": 6
+        },
+        {
+          "boundary_vertices": 47
+        }
+      ],
+      "closed_residual_loops": 0
     }
   ],
   "restored_original_uv_triangles": 471354,
@@ -523,7 +558,7 @@
       "kind": "panel",
       "material": "hbr_part_18",
       "texture": "\u6c49\u670d\u5973\u5b693d\u6a21\u578b_basecolor.JPEG",
-      "vertices": 29033,
+      "vertices": 29159,
       "cloth": true,
       "max_distance": 0.024000000208616257,
       "bounds": [
@@ -661,13 +696,13 @@
       "kind": "torso",
       "material": "hbr_part_29",
       "texture": "\u6c49\u670d\u5973\u5b693d\u6a21\u578b_basecolor.JPEG",
-      "vertices": 13565,
+      "vertices": 17683,
       "cloth": false,
       "max_distance": 0.0,
       "bounds": [
         [
           -0.20931778848171234,
-          -0.0892343819141388,
+          -0.08899727463722229,
           1.1124564409255981
         ],
         [

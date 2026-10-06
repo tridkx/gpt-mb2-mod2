@@ -1,7 +1,7 @@
-# 汉服少女 · 蓝红衣装 v1.0.0
+# 汉服少女 · 蓝红衣装 v1.0.1
 
 独立的骑马与砍杀2装备模块。保留原模型的少女脸、长发、发饰、蓝花上衣、宽袖、红花宽裤和绣鞋。
-游戏测试由你完成；本工程不启动游戏、不安装资源、不修改 Native。
+游戏测试由你完成；按用户要求，制作完成后自动安装本模块，不启动游戏、不修改 Native。
 
 ## 装备与使用
 
@@ -16,7 +16,10 @@
 
 安装包为 `dist/HanfuBlueRed_Mod.zip`，顶层是 `HanfuBlueRed/`。
 需要安装时将这个文件夹放进游戏 `Modules`，在启动器勾选本模块，排在 Native、SandBoxCore、Sandbox 后面。
-本次没有执行安装。工作区运行时模块位于 `module/HanfuBlueRed/`。
+安装位置为 `D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules/HanfuBlueRed`。工作区运行时模块位于 `module/HanfuBlueRed/`。
+
+v1.0.1 修复背部与后腰缺面：删除拆分时残留的黑色头发碎面，沿衣服边缘补齐曲面。原始输入保留；补面采用匹配蓝色，没有重建原输入中不存在的花纹。补面沿用周围衣服的骨骼权重，无需重绑整套装备。v1.0.0 交付包保留在 dist。
+补面和贴图接缝在四级LOD中保留，因此远景面数高于v1.0.0，以避免远景开洞和花纹拉伸；具体面数见检查报告。
 
 ## 制作与检查
 
@@ -42,9 +45,9 @@
 Blend已打包其使用的4K贴图；FBX使用相邻tex目录，解压时保持目录层级。
 源文件已重新打开检查骨架、贴图和网格。
 
-制作顺序：`rig_model.py` → `export_geometry.py` → 编译 `tools/PackagePatch` → `build_package.py` → `verify_release.py` → `render_final.py`。
+制作顺序：`rig_model.py` → `export_geometry.py` → 编译 `tools/PackagePatch` → `build_package.py` → `verify_release.py` → `verify_back.py` → `verify_source.py` → `render_final.py`。背面修复逻辑位于 `repair_hair_contacts.py`；`verify_back.py` 从最终 TPAC 的每级 LOD 检查背部领口下方与后腰补面，源模型还与 v1.0.0 比较其他21个部件的位置、拓扑与权重。
 骨架和动作JSON均保存于reports；几何、压缩贴图和临时导出位于build，可重新生成。
 制作脚本使用本机Blender、Python、mbtool和外部几何/贴图助手，绝对路径写在脚本中；这是本机可复现工程，非独立的软件安装包。
 
 历史无骨骼Tripo输入仍保留为 `source/HanfuBlueRed_NoRig.fbx`，其检查记录为 `reports/remove_rig.json`。
-使用本地Git保存，不上传远程；发布标签为 `HanfuBlueRed/v1.0.0`。
+使用本地Git保存，不上传远程；发布标签为 `HanfuBlueRed/v1.0.1`，旧标签保留。
