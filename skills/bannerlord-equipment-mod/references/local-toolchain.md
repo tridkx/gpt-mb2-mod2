@@ -42,8 +42,8 @@
 | 几何与 LOD | `tools/export_geometry.py` → `build/mesh/`、`geometry.json` |
 | 材质/贴图/TPAC | `tools/build_package.py` → spec、BC mip、base.tpac → AssetTool cloth patch → `module/TianxiangT5/AssetPackages/tx5.tpac` |
 | 最终包重新导出 | mbtool `exportmod`，每个交付 LOD 单独导出到 `build/final_export*` |
-| 离线检查 | `tools/verify_assets.py`、`verify_motion.py`、`verify_posture.py`、`verify_visibility.py` |
-| 预览 | `tools/render_review.py`、`render_motion_review.py` |
+| 离线检查 | `tools/verify_assets.py`、`verify_motion.py`、`verify_posture.py`、`verify_visibility.py`、`verify_grip.py`；按当前返修目标选择，旧断言不直接套用新版本 |
+| 预览 | `tools/render_review.py`、`render_motion_review.py`；原生动画读取、逐帧蒙皮与最终包核对见 [动画离线预览流程](asset-workflow.md#原生动画离线预览) |
 | 交付 | `tools/package_delivery.py`；安装、版本和 Git 由适配后的发布流程完成 |
 
 构建顺序：原始输入 → 绑骨/局部造型 → LOD/几何 → 材质/贴图/TPAC → 最终包重新导出 → 验证/预览 → 安装/打包 → 本地提交。材质返修可从构建包开始，但重新打包不能悄悄覆盖手改几何。
