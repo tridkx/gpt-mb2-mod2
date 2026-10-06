@@ -1,7 +1,7 @@
 import bpy, numpy as np, json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-bpy.ops.wm.open_mainfile(filepath=str(ROOT/'inspection.blend'))
+bpy.ops.wm.open_mainfile(filepath=str(ROOT/'source/inspection.blend'))
 objects=sorted([o for o in bpy.context.scene.objects if o.type=='MESH'],key=lambda o:o.name)
 arrays={}
 for i,o in enumerate(objects):

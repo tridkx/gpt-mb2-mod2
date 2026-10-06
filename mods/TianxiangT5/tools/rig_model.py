@@ -1,13 +1,14 @@
 import bpy, os, sys, json, re, math
 import numpy as np
 from mathutils import Vector, Matrix
-ROOT=r'D:\gpt-mb2-mod2'
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1].as_posix()
 sys.path.insert(0,ROOT+'/tools')
 from motion_fit import forward_arms,fuller_torso,skirt_weights,skirt_clearance,ARM_FORWARD_DEGREES,TORSO_WIDTH_SCALE,TORSO_DEPTH_SCALE
 from hand_fit import forearm_weights
 OUT=os.path.join(ROOT,'build')
 os.makedirs(OUT,exist_ok=True)
-bpy.ops.wm.open_mainfile(filepath=ROOT+'/inspection.blend')
+bpy.ops.wm.open_mainfile(filepath=ROOT+'/source/inspection.blend')
 src_objects=sorted([o for o in bpy.context.scene.objects if o.type=='MESH'],key=lambda o:o.name)
 raw=json.load(open(ROOT+'/reports/human_skeleton.json'))
 parent=np.array([b['parent'] for b in raw['bones']])

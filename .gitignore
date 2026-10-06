@@ -1,5 +1,7 @@
 build/
 dist/
+mods/*/build/
+mods/*/dist/
 *.blend1
 *.blend2
 __pycache__/
@@ -7,6 +9,9 @@ __pycache__/
 reports/*.log
 reports/*.cs
 reports/editor_startup*
+mods/*/reports/*.log
+mods/*/reports/*.cs
+mods/*/reports/editor_startup*
 tools/AssetTool/obj/
 tools/AssetTool/bin/
 tools/AssetTool/*.dll

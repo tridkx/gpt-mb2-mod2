@@ -42,5 +42,5 @@ for part in ['head','body','legs']:
 json.dump(spec,open(build/'spec.json','w'),indent=1)
 json.dump(patch,open(build/'cloth_patch.json','w'),indent=1)
 subprocess.run([str(MB),'build',str(build/'spec.json')],check=True)
-subprocess.run(['dotnet',str(ROOT/'tools/AssetTool/AssetTool.dll'),'patch',str(build/'base.tpac'),str(build/'cloth_patch.json'),str(module/'AssetPackages/tx5.tpac')],check=True)
+subprocess.run(['dotnet',str(ROOT.parents[1]/'tools/AssetTool/AssetTool.dll'),'patch',str(build/'base.tpac'),str(build/'cloth_patch.json'),str(module/'AssetPackages/tx5.tpac')],check=True)
 print('PACKAGE_READY',module)

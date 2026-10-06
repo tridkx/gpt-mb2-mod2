@@ -2,7 +2,7 @@
 from pathlib import Path
 import json,subprocess,tempfile,sys
 ROOT=Path(__file__).resolve().parents[1]
-TOOL=ROOT/'tools/AssetTool/AssetTool.dll'
+TOOL=ROOT.parents[1]/'tools/AssetTool/AssetTool.dll'
 PACK=ROOT/'module/TianxiangT5/AssetPackages/tx5.tpac'
 
 def audit(path):

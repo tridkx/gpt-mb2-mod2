@@ -1,8 +1,16 @@
-import bpy, os, math, sys
+import bpy, os, math, sys, re
 from mathutils import Vector
-ROOT=r'D:\gpt-mb2-mod2'
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1].as_posix()
 rigged='--rigged' in sys.argv
-bpy.ops.wm.open_mainfile(filepath=os.path.join(ROOT,'source/TianxiangT5_Rigged.blend' if rigged else 'inspection.blend'))
+bpy.ops.wm.open_mainfile(filepath=os.path.join(ROOT,'source/TianxiangT5_Rigged.blend' if rigged else 'source/inspection.blend'))
+for image in bpy.data.images:
+    if image.packed_file: continue
+    name=os.path.basename(image.filepath.replace('\\','/'))
+    texture=os.path.join(ROOT,'tex',name)
+    if not os.path.isfile(texture): texture=os.path.join(ROOT,'tex',re.sub(r'\.\d{3}$','',image.name))
+    if os.path.isfile(texture):
+        image.filepath=texture; image.reload()
 for o in bpy.context.scene.objects:
     if o.type=='MESH' and not rigged:
         o.scale*=0.01

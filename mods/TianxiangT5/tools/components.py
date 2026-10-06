@@ -1,6 +1,7 @@
 import bpy,json,os
-ROOT=r'D:\gpt-mb2-mod2'
-bpy.ops.wm.open_mainfile(filepath=ROOT+'/inspection.blend')
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1].as_posix()
+bpy.ops.wm.open_mainfile(filepath=ROOT+'/source/inspection.blend')
 report={}
 for o in bpy.context.scene.objects:
  if o.type!='MESH':continue

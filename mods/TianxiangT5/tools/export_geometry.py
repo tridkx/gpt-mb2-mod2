@@ -1,6 +1,7 @@
 import bpy,json,os,sys
 import numpy as np
-ROOT=r'D:\gpt-mb2-mod2'
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1].as_posix()
 sys.path.insert(0,r'D:\gpt-mb2-mod\pipeline')
 from build_assets import vertex_tangents
 bpy.ops.wm.open_mainfile(filepath=ROOT+'/source/TianxiangT5_Rigged.blend')

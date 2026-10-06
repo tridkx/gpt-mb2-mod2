@@ -80,7 +80,7 @@ shoulder_source=arrays['tx5_body_04_S']
 shoulders=(np.abs(shoulder_source[:,0])>.14)&(shoulder_source[:,2]>1.29)
 shoulder_forward_mm=float(np.median((arrays['tx5_body_04_P']-prior['tx5_body_04_P'])[shoulders,1])*1000)
 assert shoulder_forward_mm>5,shoulder_forward_mm
-tool=ROOT/'tools/AssetTool/AssetTool.dll'
+tool=ROOT.parents[1]/'tools/AssetTool/AssetTool.dll'
 audit=json.loads(subprocess.run(['dotnet',str(tool),'visibility',str(ROOT/'module/TianxiangT5/AssetPackages/tx5.tpac')],
                                check=True,capture_output=True,text=True).stdout)
 assert len(audit['materials'])==9

@@ -1,9 +1,10 @@
-import bpy, json, os
+import bpy, json, os, re
 from mathutils import Vector
-ROOT = r'D:\gpt-mb2-mod2'
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1].as_posix()
 bpy.ops.object.select_all(action='SELECT')
 bpy.ops.object.delete(use_global=False)
-bpy.ops.import_scene.fbx(filepath=os.path.join(ROOT, 'model.fbx'))
+bpy.ops.import_scene.fbx(filepath=os.path.join(ROOT, 'input/model.fbx'))
 def describe(obj):
     result = {'name':obj.name,'type':obj.type,'location':list(obj.location),'scale':list(obj.scale),'rotation':list(obj.rotation_euler)}
     if obj.type == 'MESH':
@@ -17,8 +18,9 @@ for m in bpy.data.materials:
     report['materials'].append({'name':m.name,'images':[{'name':n.image.name,'path':n.image.filepath} for n in m.node_tree.nodes if n.type=='TEX_IMAGE' and n.image] if m.use_nodes else []})
 for img in bpy.data.images:
     guess=os.path.join(ROOT,'tex',os.path.basename(img.filepath.replace('\\','/')))
+    if not os.path.isfile(guess): guess=os.path.join(ROOT,'tex',re.sub(r'\.\d{3}$','',img.name))
     if os.path.isfile(guess): img.filepath=guess; img.reload()
-bpy.ops.wm.save_as_mainfile(filepath=os.path.join(ROOT,'inspection.blend'))
+bpy.ops.wm.save_as_mainfile(filepath=os.path.join(ROOT,'source/inspection.blend'))
 bpy.ops.import_scene.fbx(filepath=r'D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\modding_resources\skeletons\human_skeleton.fbx',use_anim=False)
 report['all_objects']=[describe(o) for o in bpy.context.scene.objects]
 os.makedirs(os.path.join(ROOT,'reports'),exist_ok=True)

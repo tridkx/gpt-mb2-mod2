@@ -1,139 +1,61 @@
-# 天香 T5 装备模组
+# 骑砍 2 多模组工作区
 
-当前版本：**v1.3.1**。
-
-## 手掌、小臂与武器握持修正（v1.3.1）
-
-- 修正小臂直接混合到手骨的权重：补上左右小臂扭转骨，沿小臂逐渐过渡，手掌主体稳定跟随原生手骨，减少双手格挡、刺击与长杆动作中被压扁的情况。
-- 原先整条手臂前旋 26° 也移动了手掌，但武器仍挂在原生骨架上，造成浮空。本版保留肩部、上臂的前旋设置，位移沿小臂收回，在手腕和手掌处归零；不修改原生骨架或武器挂点。
-- 保留胸腰加宽与厚度、头颈接缝、裙摆几何与权重、布料顶点 Alpha、材质透明度修复。
-
-最终 TPAC 回读后，手掌主体只受对应原生手骨影响，原先约 18 厘米的模型握持注册偏移已移除。六组原生动作共 797 个离线姿态中，手掌没有出现线性蒙皮造成的压缩；小臂主要区域的压缩也有改善，腕部仍保留弯折过渡。检查覆盖 LOD0–LOD3，18 个头颈连接点仍在四级 LOD 中保持重合。
-
-报告见 `reports/grip_validation.json`；双手格挡和刺击的前后预览见 `reports/grip_before_block.png`、`reports/grip_after_block.png`、`reports/grip_before_thrust.png`、`reports/grip_after_thrust.png`。预览没有放入武器，也不模拟引擎的武器 IK、手部握持形变或体型缩放，因此实际握住双手武器、长杆时的效果仍由你在游戏内测试。完全退出游戏与启动器后重启，确保加载新包。
-
-## 手臂前旋与胸腰体积调整（v1.3.0）
-
-- 在 v1.2.0 的 6° 基础上再向前旋转 20°，双臂总前旋 **26°**；手、衣袖和饰件同步调整。
-- 胸口到腰部横向加宽 **8%**，前后厚度增加 **5%**。身体与衣服使用相同的平滑调整范围，在肩部、颈部与胯部逐渐收回。
-- 保留上一版裙摆权重、膝后余量、布料活动范围以及材质透明度修复。
-
-最终游戏资产检查确认额外前旋角为 20°，胸腰宽度与厚度分别为原来的 1.08、1.05 倍；绑骨权重与布料顶点数据保持一致，头颈接缝通过四级 LOD 和离线动作检查。记录见 `reports/posture_validation.json`；正面和侧面对照见 `reports/posture_before_front.png`、`reports/posture_after_front.png`、`reports/posture_before_side.png`、`reports/posture_after_side.png`。
-
-已更新本机模组与可编辑工程，游戏内效果由你测试。更新后请完全退出游戏和启动器再重新打开。
-
-## 肩部与跑动裙摆修正（v1.2.0）
-
-- 双臂以肩关节为支点向前旋转 **6°**；上臂、前臂、手、衣袖与饰件共同调整，肩口通过原有权重平滑过渡。保留原版骨骼和头颈接缝。
-- 裙片从腰部以下更早跟随同侧大腿，膝部以下逐渐转为跟随小腿；后裙中心保持连续权重，避免左右腿交替时出现硬分界。针对收腿时后脚跟顶穿裙片的问题，增加下摆对小腿的跟随。
-- 裙片前后方向最多增加约 4 厘米余量，左右最多约 1.8 厘米；膝后另做局部放松，腰口保持原位。
-- 裙摆布料活动距离由约 7.5 厘米收紧到约 **4 厘米**，降低跑动时偏离蒙皮位置的幅度。头发、袖边与飘带继续使用原配置，透明度修复保留。
-
-对最终 TPAC 的原版跑步动作检查覆盖全部 25 帧，接触检查同时采样裙片顶点和三角形内部，并与上一版对照。报告见 `reports/motion_validation.json`；侧面肩部和跑步预览见 `reports/motion_after_shoulder_side.png`、`reports/motion_after_run_side.png`、`reports/motion_after_run_back.png`。
-
-这些是离线蒙皮和接触估计，没有运行游戏的布料求解器，仍不能保证各种体型和动作都无穿模。游戏内测试由你完成，更新后请完全退出游戏和启动器再重新打开。
-
-## 衣服和头发不可见修复（v1.1.1）
-
-v1.1.0 中，衣服和头发材质把顶点 Alpha 同时当作透明度和布料活动距离使用。固定顶点的 Alpha 为 0，其余顶点的值也低于材质裁切阈值，因此游戏会把这些网格裁掉，留下不使用透明裁切的皮肤。
-
-v1.1.1 为全部 9 个材质补充原版支持的 `disable_vertex_color_alpha` 标志，让透明裁切读取贴图 Alpha。贴图、裁切阈值、头颈外观、绑骨、四级 LOD 和布料活动范围保持原样。
-
-最终包回读确认：56 个子网格的几何、权重、顶点颜色及布料元数据与修复前完全一致；23 个资产校验通过，全部材质引用有效。检查记录见 `reports/visibility_validation.json`。已更新本机游戏目录和交付包；游戏内显示效果仍由你测试，更新后请完全退出游戏再重新启动。
-
-## 本机启动修复（2026-10-06）
-
-加载画面崩溃的日志在读取 `jingrenou` 身体模型时中断，当前已启用的资源包中找不到该模型。崩溃转储为 `TaleWorlds.Native.dll + 0x725eff` 的空引用读取；10 月 2 日也有相同位置的崩溃记录。
-
-按你的许可，已清理原版 `Native/ModuleData/skins.xml` 中的镜人偶种族，以及 `action_sets.xml` 中的镜人偶动作集。只移除了 `JJRO_BEGIN` / `JJRO_END` 标记之间的内容，其他配置经对比保持一致。原文件、清理后的副本和校验记录位于 `backups/jingrenou_cleanup_20261006`，操作报告位于 `reports/launch_repair.json`，并纳入本地 Git。
-
-清理后，你已能进入游戏并反馈装备显示问题；该显示问题由上面的 v1.1.1 材质修复处理。这项启动修复针对本机旧模组残留，单独重新解压天香压缩包不会执行镜人偶配置清理。
-
-已安装到：`D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\TianxiangT5`
-
-启动器单人模式勾选 **天香 T5 · 衣装与布料**，放在 Native、SandBoxCore、Sandbox 后面。它是纯装备资源模组，不需要额外 DLL。
-
-## 头颈与肩口修正（v1.1.0）
-
-- 重新定位胸部骨骼在原模型中的位置，修正胸口到颈部被过度拉长的问题；头部整体下移 1.4 厘米，脸部比例保持不变。
-- 头、眼睛、睫毛、头发统一跟随头骨，清除原先误保留的躯干权重；下颈和身体使用相同的权重过渡。
-- 对齐头与身体的 18 个接缝点，并共享皮肤接缝法线。四级 LOD 均保留这些连接点与权重；简化无法保持连接时，保留该皮肤网格的细节，其余网格照常简化。
-- 调平肩口衣边和胸口到袖根的过渡，减少尖角和肩部皮肤的硬折线；保留原有花饰、衣料与布料活动范围。
-
-最终 TPAC 回读后，18 个头颈连接点在 LOD0–LOD3 中的位置和量化权重完全一致；站立、跑步、拉弓、骑乘的 48 个离线姿态中，头颈连接点的间隙均为 0。近景预览见 `reports/review_rest.png`、`reports/review_idle.png`。这些是本地模型与离线蒙皮检查，游戏内表现仍由你测试。
-
-## 本地版本管理
-
-工程已建立本地 Git 仓库，未配置远程仓库，也未上传。
-
-- `v1.0.0`：修改前的装备、绑骨源文件、贴图和制作流程。
-- `v1.1.0`：头颈比例、接缝和肩口修正版。
-- `launch-fix-20261006`：清理本机镜人偶全局配置残留，保留完整备份。
-- `v1.1.1`：修复衣服、头发被透明裁切的问题，保留原有外观、绑骨和布料数据。
-- `v1.2.0`：双臂向前旋转 6°，调整裙片随大腿、小腿运动的权重、膝后余量和布料活动距离。
-- `v1.3.0`：双臂总前旋 26°，胸腰宽度增加 8%、前后厚度增加 5%，衣服同步调整。
-- `v1.3.1`：修正小臂扭转骨和手掌权重，收回前旋造成的手腕位移，恢复原生握持对位。
-
-原模型、贴图、可编辑工程、导出 FBX、运行时模组与制作脚本均已纳入版本记录。中间构建文件、压缩交付包、日志和 Blender 自动备份不纳入 Git。
-
-## 获取装备
-
-三件装备要配套穿戴；试穿时先清空原来的披风、肩甲和手套。建议先用默认附近体型的女性角色。
-
-| 装备 | 物品 ID | 槽位 |
-| --- | --- | --- |
-| 天香T5 · 白粉长裙 | `tx5_body` | 身体 |
-| 天香T5 · 长袜与靴 | `tx5_legs` | 腿靴 |
-| 天香T5 · 发容与头饰 | `tx5_head` | 头部 |
-
-最快的试穿方法是在开启作弊的战役中，通过控制台分别输入：
+每个模组在 `mods/<模组名>/` 中独立维护。当前模组：[天香 T5 v1.3.1](mods/TianxiangT5/README.md)。
 
 ```text
-campaign.add_item_to_player_party tx5_body
-campaign.add_item_to_player_party tx5_legs
-campaign.add_item_to_player_party tx5_head
+mods/<模组名>/
+  mod.json                 模组 ID、源包清单、最终 TPAC 和发布检查报告
+  input/                   原始输入，保留原文件
+  source/                  可编辑 Blend 与导出 FBX
+  tex/                     贴图，与 source/ 保持相邻层级
+  tools/                   此模型专用制作、返修和验证脚本
+  module/<模组名>/         可直接安装的游戏模块
+  build/                   中间文件、基线缓存（不进 Git）
+  reports/                 检查结果和预览（日志不进 Git）
+  dist/                    发布 ZIP 和旧版交付包（不进 Git）
+tools/                     共用 AssetTool、新建工程、打包与安装入口
+maintenance/               本机启动修复脚本、历史报告及原文件备份
+docs/                      工作区说明与技能审查记录
 ```
 
-此命令及省略数量时给 1 件的行为已从本机游戏程序确认。装备设为帝国商店可出售，普通商店不会保证立即刷出。
+## 新增模组
 
-## 已完成的制作
+在本目录运行 `python tools/new_mod.py NewMod`。它创建独立目录和 `mod.json`，不会复制天香的模型、参数、资源名或 GUID，也不会生成假定可用的游戏模块。模组名只使用英文字母、数字、下划线和连字符。
 
-- 将无骨骼 FBX 适配到原版 `human_skeleton` 的 28 根骨骼；每个顶点最多 4 个影响，打包后的权重总和均为 255。
-- 做成头部、身体、腿靴三个装备；头部含原模型的脸、眼、睫毛、头发和头饰，身体含原模型的裸露皮肤和双手。
-- 配置覆盖原版头部、身体、手和腿，减少两套身体重叠。
-- 保留原 UV 和贴图，处理头发、睫毛、花边的透明裁切，衣料 Alpha 抬底，使用中性法线和高光贴图。
-- 提供 LOD0–LOD3；完整套装 LOD0 为 16,312 个三角形。
-- 写入原生 `uses_cloth_simulation` 标志、顶点 Alpha 活动范围、布料材料参数，并关联游戏原版 `human_body` 碰撞胶囊。
-- 修正袖后飘带误跟随腿骨、袖饰与肩肘过渡、后裙摆左右权重硬分界的问题。裙摆从骨盆平滑过渡到同侧大腿、小腿。
+将原始模型放入新工程的 `input/`，贴图放入 `tex/`。按实际模型制作专用脚本，建立 `module/NewMod/SubModule.xml` 和装备 XML，使用独立资源命名空间。完善 `mod.json` 的源包文件清单、最终包和检查报告路径。
 
-## 布料设置及验证边界
+共用打包入口：
 
-腰部、肩部连接处、面部、鞋袜固定；衣摆最大活动距离约 4 厘米，袖后飘带约 11 厘米，袖边约 3 厘米，长发约 2.8 厘米。使用较高阻尼、低风力和保守惯性，降低高速动作中的摆动幅度。
+```powershell
+python tools/package_delivery.py --mod TianxiangT5 --version v1.3.1 --check-only
+python tools/package_delivery.py --mod TianxiangT5 --version v1.3.1
+```
 
-这套设置是**写入游戏资产的原生布料配置**。游戏运行时的布料缓存、碰撞响应和战场表现尚未确认，不保证已经消除穿模。当前采用直接模拟，没有另外制作映射代理网格，也没有交付已烘焙的 `.tcc/.tcm`。
+第一条只检查输入；第二条生成并逐项验证 ZIP。Mod ZIP 顶层是模组名，源包保留 `source/` 与 `tex/` 层级。重新发布前保留原有压缩包。
 
-已完成最终 TPAC 回读检查：23 个资产的校验和与元数据一致，材质引用完整，贴图带完整 mip 链，XML 可解析，全部顶点权重和骨骼索引有效。使用原版站立、跑步、拉弓、骑乘动作进行 48 个离线姿态的数值检查；这些检查不运行游戏布料求解器。
+安装入口：
 
-按你的要求，游戏内试穿和布料测试由你完成。此前尝试启动 Modding Kit 未进入可验证状态；启动日志保留在 `reports` 中，不能据此判定游戏版本兼容或战场效果已通过。
+```powershell
+./tools/install_release.ps1 -Mod TianxiangT5 -Version v1.3.1 -CheckOnly
+```
 
-优先观察：背面长发与后背、跑步时后裙摆、抬手时袖子与腋下、骑乘时裙摆与大腿/马鞍。极端体型、其他披风肩甲以及马体碰撞仍可能穿模。原版 `human_body` 胶囊不包含马体，也未确认游戏对该装备启用布料自碰撞。
+实际安装需去掉 `-CheckOnly`，已有交付包时必须提供 `-PreviousVersion`；可用 `-GameRoot` 和 `-Python` 覆盖本机路径。安装前核对配置中的报告版本与最终 TPAC SHA256，准备并验证交付包，再仅复制自己的模块。它不会自动提交 Git 或打标签。发布时使用 `TianxiangT5/v1.3.1` 这类带模组名的标签；本次只迁移工程，不新建发布标签或更改游戏文件。
 
-## 工程文件
+## 技能的唯一维护位置
 
-- `source/TianxiangT5_Rigged.blend`：可编辑的绑骨工程，贴图已打包。包含默认关闭的 Blender 布料预览副本；Blender 设置不会随 FBX 自动变成游戏布料。
-- `source/TianxiangT5_Rigged.fbx`：28 骨导出文件。
-- `module/TianxiangT5`：运行时模组。
-- `build/spec.json`、`build/cloth_patch.json`：打包和布料参数。
-- `reports/validation.json`：最终资源和离线动作检查结果。
-- `reports/visibility_validation.json`：v1.1.1 材质透明度修复及模型、布料数据对比记录。
-- `reports/visibility_validation_materials.json`：当前版本的材质、引用与布料标志复核。
-- `reports/motion_validation.json`：v1.2.0 肩部前旋、最终游戏资产跑步接触对比与透明度检查。
-- `reports/posture_validation.json`：v1.3.0 相对上一版的手臂角度、胸腰尺寸与最终游戏资产核对。
-- `reports/motion_validation_v1.3.0.json`：v1.3.0 跑步接触复核与材质显示检查。
-- `reports/grip_validation.json`：v1.3.1 原生手骨注册、最终权重、六组动作和原有外观/布料保留检查。
+只维护 `C:/Users/DKX/.codex/skills/bannerlord-equipment-mod/`。工作区不保存技能副本。[只读审查记录](docs/equipment_skill_review.md)列出本次发现。
 
-本次构建使用本机 Blender 5.2、`D:\mb-tools` 的 TPAC 工具和 `D:\gpt-mb2-mod` 的几何/贴图辅助库。重新构建的主要步骤是 `tools/rig_model.py` → `tools/export_geometry.py` → `tools/build_package.py`。
+技能中的天香示例路径尚为旧布局。读取后应以本工作区路径为准：
 
-`tools/install_release.ps1` 将已经检查的版本安装到本机 TianxiangT5 模组目录，保留上一版交付包，更新压缩包并保存本地 Git 版本。
+| 旧路径 | 新路径 |
+| --- | --- |
+| `tools/rig_model.py` 等天香专用脚本 | `mods/TianxiangT5/tools/` |
+| `model.fbx` | `mods/TianxiangT5/input/model.fbx` |
+| `inspection.blend` | `mods/TianxiangT5/source/inspection.blend` |
+| `source/`、`tex/`、`module/`、`build/`、`reports/`、`dist/` | `mods/TianxiangT5/` 下对应目录 |
+| `tools/repair_launch.py`、`backups/` | `maintenance/tools/repair_launch.py`、`maintenance/backups/` |
+| `tools/AssetTool/` | 保持原位置 |
 
-官方说明：[布料模拟](https://moddocs.bannerlord.com/editor/resource-editors/cloth_simulation/)、[资源命名与骨骼索引](https://moddocs.bannerlord.com/asset-management/asset-types/asset_naming_conventions/)。
+技能预检增加 `--example-workspace D:/gpt-mb2-mod2/mods/TianxiangT5`；包审查显式使用迁移后的 TPAC 路径。旧版 Git 标签不改写，现有回归检查仍读取旧标签中的 `module/TianxiangT5/...`。
+
+共用 AssetTool 的 `patch` 仍含天香专用布料设置，新模组使用前须检查并适配；其只读检查功能可复用。外部依赖继续位于 `D:/mb-tools` 与 `D:/gpt-mb2-mod`，不是完整可移植工具包。

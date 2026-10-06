@@ -1,51 +1,62 @@
 param(
+    [Parameter(Mandatory=$true)][ValidatePattern('^[A-Za-z0-9_-]+$')][string]$Mod,
     [Parameter(Mandatory=$true)][ValidatePattern('^v\d+\.\d+\.\d+$')][string]$Version,
-    [Parameter(Mandatory=$true)][ValidatePattern('^v\d+\.\d+\.\d+$')][string]$PreviousVersion
+    [ValidatePattern('^v\d+\.\d+\.\d+$')][string]$PreviousVersion,
+    [string]$GameRoot = 'D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord',
+    [string]$Python = 'C:\ProgramData\anaconda3\python.exe',
+    [switch]$CheckOnly
 )
 $ErrorActionPreference = 'Stop'
 $workspaceRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
-if ($workspaceRoot -ne 'D:\gpt-mb2-mod2') { throw 'Unexpected workspace' }
-Set-Location -LiteralPath $workspaceRoot
-$sourceModulePath = [IO.Path]::GetFullPath((Join-Path $workspaceRoot 'module\TianxiangT5'))
-$installedModulePath = [IO.Path]::GetFullPath('D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\TianxiangT5')
-if ($installedModulePath -ne 'D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\TianxiangT5') { throw 'Unexpected install target' }
-[xml]$descriptor = Get-Content -LiteralPath (Join-Path $sourceModulePath 'SubModule.xml') -Encoding UTF8
-if ($descriptor.Module.Version.value -ne $Version) { throw 'Build version differs from requested release' }
-$runningGame = Get-Process | Where-Object { $_.ProcessName -match 'Bannerlord|TaleWorlds' }
-if ($runningGame) { throw 'Exit the game and launcher before installing loaded assets' }
-$postureReport = Get-Content -LiteralPath 'reports\posture_validation.json' -Raw -Encoding UTF8 | ConvertFrom-Json
-$assetHash = (Get-FileHash -LiteralPath 'module\TianxiangT5\AssetPackages\tx5.tpac' -Algorithm SHA256).Hash
-if ($postureReport.version -ne $Version -or $postureReport.final_package_sha256 -ne $assetHash) { throw 'Package does not match posture validation' }
-Copy-Item -LiteralPath 'README.md' -Destination 'module\TianxiangT5\README.txt' -Force
+$projectRoot = [IO.Path]::GetFullPath((Join-Path $workspaceRoot "mods\$Mod"))
+$config = Get-Content -LiteralPath (Join-Path $projectRoot 'mod.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+if ($config.id -cne $Mod) { throw 'Configuration ID differs from requested module' }
+function Get-ProjectFile([string]$relative) {
+    $target = [IO.Path]::GetFullPath((Join-Path $projectRoot $relative))
+    if (-not $target.StartsWith($projectRoot + '\', [StringComparison]::OrdinalIgnoreCase)) { throw 'Path outside intended mod' }
+    if (-not (Test-Path -LiteralPath $target -PathType Leaf)) { throw "Missing project file: $relative" }
+    return $target
+}
+$sourceModulePath = [IO.Path]::GetFullPath((Join-Path $projectRoot "module\$Mod"))
+[xml]$descriptor = Get-Content -LiteralPath (Get-ProjectFile "module\$Mod\SubModule.xml") -Encoding UTF8
+if ($descriptor.Module.Id.value -cne $Mod -or $descriptor.Module.Version.value -ne $Version) { throw 'Module ID/version differs from requested release' }
+$report = Get-Content -LiteralPath (Get-ProjectFile $config.validation_report) -Raw -Encoding UTF8 | ConvertFrom-Json
+$packagePath = Get-ProjectFile $config.package
+if (-not $packagePath.StartsWith($sourceModulePath + '\', [StringComparison]::OrdinalIgnoreCase)) { throw 'Package outside intended module' }
+$assetHash = (Get-FileHash -LiteralPath $packagePath -Algorithm SHA256).Hash
+if ($report.version -ne $Version -or $report.final_package_sha256 -ne $assetHash) { throw 'Package/version does not match validation report' }
+if ($report.status -and $report.status -ne 'pass') { throw 'Validation report did not pass' }
+& $Python (Join-Path $PSScriptRoot 'package_delivery.py') --mod $Mod --version $Version --check-only
+if ($LASTEXITCODE -ne 0) { throw 'Delivery inputs invalid' }
+$modulesRoot = [IO.Path]::GetFullPath((Join-Path $GameRoot 'Modules'))
+$installedModulePath = [IO.Path]::GetFullPath((Join-Path $modulesRoot $Mod))
+if (-not $installedModulePath.StartsWith($modulesRoot + '\', [StringComparison]::OrdinalIgnoreCase)) { throw 'Install target outside Modules' }
+if ($Mod -in @('Native','SandBoxCore','Sandbox','StoryMode','CustomBattle','BirthAndDeath','Multiplayer')) { throw 'Cannot install over a native module' }
+if ($CheckOnly) { Write-Output "Validated $Mod $Version; target $installedModulePath; no files installed or packaged."; return }
+if (-not (Test-Path -LiteralPath $modulesRoot -PathType Container)) { throw 'Game Modules directory missing' }
+if (Get-Process | Where-Object { $_.ProcessName -match 'Bannerlord|TaleWorlds' }) { throw 'Exit the game and launcher before installing loaded assets' }
 foreach ($kind in @('Mod','Source')) {
-    $currentArchive = Join-Path $workspaceRoot ('dist\TianxiangT5_' + $kind + '.zip')
-    $previousArchive = Join-Path $workspaceRoot ('dist\TianxiangT5_' + $PreviousVersion + '_' + $kind + '.zip')
-    if ((Test-Path -LiteralPath $currentArchive) -and -not (Test-Path -LiteralPath $previousArchive)) {
-        Copy-Item -LiteralPath $currentArchive -Destination $previousArchive
+    $currentArchive = Join-Path $projectRoot "dist\${Mod}_${kind}.zip"
+    if ((Test-Path -LiteralPath $currentArchive) -and -not $PreviousVersion) { throw 'PreviousVersion required to preserve existing delivery archives' }
+    if (Test-Path -LiteralPath $currentArchive) {
+        if ($PreviousVersion -eq $Version) { throw 'PreviousVersion must differ from Version' }
+        $backupArchive = Join-Path $projectRoot "dist\${Mod}_${PreviousVersion}_${kind}.zip"
+        if (-not (Test-Path -LiteralPath $backupArchive)) { Copy-Item -LiteralPath $currentArchive -Destination $backupArchive }
     }
 }
+# Prepare and verify delivery before touching installed resources.
+& $Python (Join-Path $PSScriptRoot 'package_delivery.py') --mod $Mod --version $Version
+if ($LASTEXITCODE -ne 0) { throw 'Delivery package verification failed' }
 $installedFiles = 0
 foreach ($moduleFile in (Get-ChildItem -LiteralPath $sourceModulePath -Recurse -File)) {
+    if ($moduleFile.Name -eq '.gitkeep') { continue }
+    if ($moduleFile.Attributes -band [IO.FileAttributes]::ReparsePoint) { throw 'Module contains a linked file' }
     $relativeFile = $moduleFile.FullName.Substring($sourceModulePath.Length + 1)
     $destinationFile = [IO.Path]::GetFullPath((Join-Path $installedModulePath $relativeFile))
     if (-not $destinationFile.StartsWith($installedModulePath + '\', [StringComparison]::OrdinalIgnoreCase)) { throw 'Install file outside intended module' }
     New-Item -ItemType Directory -Path ([IO.Path]::GetDirectoryName($destinationFile)) -Force | Out-Null
     Copy-Item -LiteralPath $moduleFile.FullName -Destination $destinationFile -Force
-    if ((Get-FileHash -LiteralPath $moduleFile.FullName -Algorithm SHA256).Hash -ne (Get-FileHash -LiteralPath $destinationFile -Algorithm SHA256).Hash) {
-        throw ('Installed file differs: ' + $relativeFile)
-    }
+    if ((Get-FileHash -LiteralPath $moduleFile.FullName -Algorithm SHA256).Hash -ne (Get-FileHash -LiteralPath $destinationFile -Algorithm SHA256).Hash) { throw "Installed file differs: $relativeFile" }
     $installedFiles++
 }
-& 'C:\ProgramData\anaconda3\python.exe' 'tools\package_delivery.py' $Version
-if ($LASTEXITCODE -ne 0) { throw 'Delivery package verification failed' }
-git diff --check
-if ($LASTEXITCODE -ne 0) { throw 'Change validation failed' }
-git add -- 'README.md' 'module/TianxiangT5/README.txt' 'module/TianxiangT5/SubModule.xml' 'module/TianxiangT5/AssetPackages/tx5.tpac' 'source/TianxiangT5_Rigged.blend' 'source/TianxiangT5_Rigged.fbx' 'tools/motion_fit.py' 'tools/rig_model.py' 'tools/verify_motion.py' 'tools/verify_posture.py' 'tools/render_motion_review.py' 'tools/package_delivery.py' 'tools/install_release.ps1' 'reports/validation.json' 'reports/posture_validation.json' 'reports/motion_validation_v1.3.0.json' 'reports/visibility_validation_materials.json' 'reports/posture_before_front.png' 'reports/posture_after_front.png' 'reports/posture_before_side.png' 'reports/posture_after_side.png' 'reports/posture_before_run_side.png' 'reports/posture_after_run_side.png'
-if ($LASTEXITCODE -ne 0) { throw 'Git staging failed' }
-git commit -m 'Increase arm forward angle and fill out chest-to-waist volume' -m 'Add 20 degrees to the previous 6 degree arm posture. Widen the torso by 8 percent and increase depth by 5 percent with matching garment changes. Preserve skirt anchors and cloth data; include offline dimensions, native poses and final asset checks.'
-if ($LASTEXITCODE -ne 0) { throw 'Local version commit failed' }
-git tag -a $Version -m 'Arm posture and torso volume revision; game testing by user'
-if ($LASTEXITCODE -ne 0) { throw 'Local version tag failed' }
-git status --short
-git log -1 --oneline
-Write-Output ('Installed ' + $Version + '; verified ' + $installedFiles + ' files; archives checked and version saved locally.')
+Write-Output "Installed $Mod $Version; verified $installedFiles files and delivery archives. Save the release with a local Git commit and a module-specific tag."
