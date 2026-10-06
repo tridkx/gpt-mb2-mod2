@@ -27,7 +27,10 @@ for name,(file,mode) in plan.items():
  if mode=='opaque':a[:,:,3]=255
  elif mode=='sheer':a[:,:,3]=np.round(140+a[:,:,3].astype(float)*115/255).astype('u1')
  texture('tx5_'+name+'_d',a,'DXT1' if mode=='opaque' else 'DXT5',mode!='opaque')
- mat={'name':'tx5_'+name,'template':'opaque' if mode=='opaque' else 'alpha','textures':{'0':'tx5_'+name+'_d','1':'tx5_flat_n','2':'tx5_flat_n','4':'tx5_neutral_s'},'dropTextureSlots':[3,5,6,7,8,9]}
+ # Vertex alpha stores cloth travel distance, often zero on pinned vertices.
+ # Rendering must ignore it and use diffuse texture alpha for transparency.
+ shader_flags=['use_specular' if mode=='opaque' else 'alpha_test','disable_vertex_color_alpha']
+ mat={'name':'tx5_'+name,'template':'opaque' if mode=='opaque' else 'alpha','shaderMaterialFlags':shader_flags,'textures':{'0':'tx5_'+name+'_d','1':'tx5_flat_n','2':'tx5_flat_n','4':'tx5_neutral_s'},'dropTextureSlots':[3,5,6,7,8,9]}
  if mode!='opaque':mat['alphaTest']=.2745
  spec['materials'].append(mat)
 geo=json.load(open(build/'geometry.json'))

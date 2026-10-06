@@ -5,13 +5,35 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Text.Json;
 using System.Text.RegularExpressions;
+using System.Security.Cryptography;
 var options = new JsonSerializerOptions { WriteIndented = true };
 var pkg = new AssetPackage(args[1], true, false);
 if(args[0]=="inspect") {
  var meshes=pkg.Items.OfType<Metamesh>().Where(m=>args.Length<3 || m.Name==args[2]).Select(mm=>new {
  mm.Name,mm.UnknownString,mm.ClothMetamesh,mm.ClothUint,mm.ClothString,
- meshes=mm.Meshes.Select(m=>new {m.Name,m.Lod,m.Flags,m.UnknownFloat1,m.UnknownInt3,m.UnknownBool1,m.UnknownBool2,m.UnknownBool3,m.ClothingMaterial})});
+ meshes=mm.Meshes.Select(m=>new {m.Name,m.Lod,m.Flags,m.MaterialFlags,m.UnknownFloat1,m.UnknownInt3,m.UnknownBool1,m.UnknownBool2,m.UnknownBool3,m.ClothingMaterial})});
  Console.WriteLine(JsonSerializer.Serialize(meshes,options));
+} else if(args[0]=="materials") {
+ var materials=pkg.Items.OfType<Material>().Where(m=>args.Length<3 || m.Name.Contains(args[2]) || m.ShaderMaterialFlags.Contains(args[2])).Select(m=>new {
+ m.Name,m.Flags,m.VertexLayoutFlags,m.BlendMode,m.AlphaTest,m.ShaderMaterialFlags});
+ Console.WriteLine(JsonSerializer.Serialize(materials,options));
+} else if(args[0]=="visibility") {
+ var materials=pkg.Items.OfType<Material>().Select(m=>new {m.Name,m.Guid,m.BlendMode,m.AlphaTest,m.ShaderMaterialFlags});
+ var meshes=pkg.Items.OfType<Metamesh>().SelectMany(mm=>mm.Meshes.Select(m=> {
+  var v=m.VertexStream.Data;
+  var colors=v.Colors1.SelectMany(c=>new byte[]{c.R,c.G,c.B,c.A}).ToArray();
+  using var vertexBytes=new MemoryStream();
+  using(var writer=new BinaryWriter(vertexBytes,System.Text.Encoding.UTF8,true))
+   v.WriteData(writer,new Dictionary<object,object>{{VertexStreamData.KEY_HAS_QTANGENT,v.TangentTransform!=null}});
+  var clothMetadata=JsonSerializer.SerializeToUtf8Bytes(new {
+   mm.UnknownString,mm.ClothMetamesh,mm.ClothUint,mm.ClothString,
+   m.MaterialFlags,m.UnknownFloat1,m.UnknownInt3,m.UnknownBool1,m.UnknownBool2,m.UnknownBool3,m.ClothingMaterial});
+  return new {m.Name,m.Lod,m.Flags,Material=m.Material.Guid,Vertices=v.Positions.Length,
+   AlphaMin=v.Colors1.Min(c=>c.A),AlphaMax=v.Colors1.Max(c=>c.A),ColorsSHA256=Convert.ToHexString(SHA256.HashData(colors)),
+   VertexStreamSHA256=Convert.ToHexString(SHA256.HashData(vertexBytes.ToArray())),
+   ClothMetadataSHA256=Convert.ToHexString(SHA256.HashData(clothMetadata))};
+ }));
+ Console.WriteLine(JsonSerializer.Serialize(new {materials,meshes},options));
 } else if(args[0]=="patch") {
  using var spec=JsonDocument.Parse(File.ReadAllText(args[2]));
  foreach(var mm in pkg.Items.OfType<Metamesh>()) {

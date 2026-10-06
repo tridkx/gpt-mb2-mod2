@@ -1,6 +1,14 @@
 # 天香 T5 装备模组
 
-当前版本：**v1.1.0**。
+当前版本：**v1.1.1**。
+
+## 衣服和头发不可见修复
+
+v1.1.0 中，衣服和头发材质把顶点 Alpha 同时当作透明度和布料活动距离使用。固定顶点的 Alpha 为 0，其余顶点的值也低于材质裁切阈值，因此游戏会把这些网格裁掉，留下不使用透明裁切的皮肤。
+
+v1.1.1 为全部 9 个材质补充原版支持的 `disable_vertex_color_alpha` 标志，让透明裁切读取贴图 Alpha。贴图、裁切阈值、头颈外观、绑骨、四级 LOD 和布料活动范围保持原样。
+
+最终包回读确认：56 个子网格的几何、权重、顶点颜色及布料元数据与修复前完全一致；23 个资产校验通过，全部材质引用有效。检查记录见 `reports/visibility_validation.json`。已更新本机游戏目录和交付包；游戏内显示效果仍由你测试，更新后请完全退出游戏再重新启动。
 
 ## 本机启动修复（2026-10-06）
 
@@ -8,7 +16,7 @@
 
 按你的许可，已清理原版 `Native/ModuleData/skins.xml` 中的镜人偶种族，以及 `action_sets.xml` 中的镜人偶动作集。只移除了 `JJRO_BEGIN` / `JJRO_END` 标记之间的内容，其他配置经对比保持一致。原文件、清理后的副本和校验记录位于 `backups/jingrenou_cleanup_20261006`，操作报告位于 `reports/launch_repair.json`，并纳入本地 Git。
 
-天香 v1.1.0 的外观与游戏资源保持原修复版。尚未重新启动游戏验证；请先在启动器选择**开始游戏**进入主菜单，确认能进入后再加载存档。这次修改针对本机旧模组残留，单独重新解压天香压缩包不会执行这项清理。
+清理后，你已能进入游戏并反馈装备显示问题；该显示问题由上面的 v1.1.1 材质修复处理。这项启动修复针对本机旧模组残留，单独重新解压天香压缩包不会执行镜人偶配置清理。
 
 已安装到：`D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\TianxiangT5`
 
@@ -30,6 +38,7 @@
 - `v1.0.0`：修改前的装备、绑骨源文件、贴图和制作流程。
 - `v1.1.0`：头颈比例、接缝和肩口修正版。
 - `launch-fix-20261006`：清理本机镜人偶全局配置残留，保留完整备份。
+- `v1.1.1`：修复衣服、头发被透明裁切的问题，保留原有外观、绑骨和布料数据。
 
 原模型、贴图、可编辑工程、导出 FBX、运行时模组与制作脚本均已纳入版本记录。中间构建文件、压缩交付包、日志和 Blender 自动备份不纳入 Git。
 
@@ -82,6 +91,7 @@ campaign.add_item_to_player_party tx5_head
 - `module/TianxiangT5`：运行时模组。
 - `build/spec.json`、`build/cloth_patch.json`：打包和布料参数。
 - `reports/validation.json`：最终资源和离线动作检查结果。
+- `reports/visibility_validation.json`：材质透明度修复及模型、布料数据对比结果。
 
 本次构建使用本机 Blender 5.2、`D:\mb-tools` 的 TPAC 工具和 `D:\gpt-mb2-mod` 的几何/贴图辅助库。重新构建的主要步骤是 `tools/rig_model.py` → `tools/export_geometry.py` → `tools/build_package.py`。
 
