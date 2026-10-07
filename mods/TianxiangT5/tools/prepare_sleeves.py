@@ -33,7 +33,7 @@ for component in range(n):
         continue
     # Top strip is the physical attachment; use surface distance, not global Z,
     # so the freedom gradient remains meaningful in the forward-rotated sleeve.
-    roots = np.unique(inv[ids[q[:,2] >= q[:,2].max()-.025]])
+    roots = np.unique(inv[ids[q[:,2] >= q[:,2].max()-config['streamer_root_strip_m']]])
     distance = np.min(dijkstra(g, indices=roots, directed=False),axis=0)[inv[ids]]
     t = np.clip((distance-config['streamer_pin_band_m'])/(config['streamer_transition_m']-config['streamer_pin_band_m']),0,1)
     travel = np.minimum(config['streamer_distance_per_length']*distance,config['streamer_max_distance_m'])*t*t*(3-2*t)

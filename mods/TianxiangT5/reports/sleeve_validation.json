@@ -1,8 +1,8 @@
 {
-  "version": "v1.4.0",
+  "version": "v1.4.1",
   "status": "pass",
   "baseline_package_sha256": "7d3fa2e062fd29fd0c9ffa31c273f0a8f42a1dde29ee9b553601c90af22ce6e4",
-  "final_package_sha256": "77a9ec0a2d7fca9832558b009c51ecfc91a98b5fe08e90c1d75063cce57d85bd",
+  "final_package_sha256": "f3eadd3fcefa0daa7789f4ec4aa81c0939c6e6e4a2882f53258e514a43f017fb",
   "route": "direct cloth, LOD0/LOD1",
   "unchanged_submeshes": 54,
   "all_geometry_normals_uvs_and_skin_weights_unchanged": true,
@@ -26,13 +26,13 @@
   "cloth": [
     {
       "mesh": "tx5_body_00",
-      "max_distance_m": 1.0980392156862746,
-      "active_vertices": 262,
+      "max_distance_m": 1.8509803921568628,
+      "active_vertices": 318,
       "components": [
         {
           "component": 0,
           "vertices": 150,
-          "fixed_vertices": 36
+          "fixed_vertices": 8
         },
         {
           "component": 1,
@@ -42,29 +42,29 @@
         {
           "component": 73,
           "vertices": 150,
-          "fixed_vertices": 36
+          "fixed_vertices": 8
         }
       ]
     },
     {
       "mesh": "tx5_body_00.lod1",
-      "max_distance_m": 1.0980392156862746,
-      "active_vertices": 173,
+      "max_distance_m": 1.8509803921568628,
+      "active_vertices": 199,
       "components": [
         {
           "component": 0,
           "vertices": 85,
-          "fixed_vertices": 16
+          "fixed_vertices": 5
         },
         {
           "component": 1,
           "vertices": 379,
-          "fixed_vertices": 345
+          "fixed_vertices": 341
         },
         {
           "component": 77,
           "vertices": 86,
-          "fixed_vertices": 16
+          "fixed_vertices": 5
         }
       ]
     }

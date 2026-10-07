@@ -27,6 +27,8 @@ for name,m in new.items():
         c=np.array(m['color']);assert np.array_equal(c[:,:3],np.array(old[name]['color'])[:,:3])
         assert c[:,3].tolist()==recipe['meshes'][name]['alpha']
         assert m['cloth']['Name']=='tx5_water_sleeve' and abs(m['multiplier']-config['distance_multiplier'])<1e-6
+        for key,value in config['material'].items():
+            assert m['cloth'][key]==value if isinstance(value,str) else np.isclose(m['cloth'][key],value,rtol=1e-6),(name,key)
         assert 'uses_cloth_simulation' in m['flags'] and m['body']=='human_body'
         u,inv=np.unique(np.round(p,5),axis=0,return_inverse=True)
         edges=np.array(m['idx']).reshape(-1,3)[:,[0,1,1,2,2,0]].reshape(-1,2);e=inv[edges]

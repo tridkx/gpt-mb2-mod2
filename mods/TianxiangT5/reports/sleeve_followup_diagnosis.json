@@ -1,0 +1,65 @@
+{
+  "method": "Geometric range diagnostic under an artificial inverted arm pose; not a cloth simulation or game result. A rigid rotated reference preserves the streamer shape and is used only to measure travel capacity.",
+  "before_material": {
+    "Name": "tx5_water_sleeve",
+    "BendingStiffness": 0.12,
+    "ShearingStiffness": 0.65,
+    "StretchingStiffness": 1,
+    "AnchorStiffness": 1,
+    "Damping": 0.2,
+    "Gravity": 9.81,
+    "LinearInertia": 0.65,
+    "MaxLinearVelocity": 8,
+    "LinearVelocityMultiplier": 0.9,
+    "AirDragMultiplier": 0.25,
+    "Wind": 0.1
+  },
+  "after_material": {
+    "Name": "tx5_water_sleeve",
+    "BendingStiffness": 0.015,
+    "ShearingStiffness": 0.15,
+    "StretchingStiffness": 1,
+    "AnchorStiffness": 0.1,
+    "Damping": 0.12,
+    "Gravity": 9.81,
+    "LinearInertia": 0.4,
+    "MaxLinearVelocity": 8,
+    "LinearVelocityMultiplier": 0.95,
+    "AirDragMultiplier": 0.22,
+    "Wind": 0.08
+  },
+  "range_checks": [
+    {
+      "version": "v1.4.0",
+      "side": "left",
+      "fixed_vertices": 36,
+      "max_distance_m": 1.0980392156862746,
+      "extreme_flip_free_vertices_outside_downward_reference_range": 113,
+      "free_vertices": 114
+    },
+    {
+      "version": "v1.4.0",
+      "side": "right",
+      "fixed_vertices": 36,
+      "max_distance_m": 1.0980392156862746,
+      "extreme_flip_free_vertices_outside_downward_reference_range": 113,
+      "free_vertices": 114
+    },
+    {
+      "version": "v1.4.1",
+      "side": "left",
+      "fixed_vertices": 8,
+      "max_distance_m": 1.8509803921568628,
+      "extreme_flip_free_vertices_outside_downward_reference_range": 10,
+      "free_vertices": 142
+    },
+    {
+      "version": "v1.4.1",
+      "side": "right",
+      "fixed_vertices": 8,
+      "max_distance_m": 1.8509803921568628,
+      "extreme_flip_free_vertices_outside_downward_reference_range": 10,
+      "free_vertices": 142
+    }
+  ]
+}
