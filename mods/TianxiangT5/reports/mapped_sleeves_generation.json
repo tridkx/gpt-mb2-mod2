@@ -1,5 +1,5 @@
 {
-  "version": "v1.5.2",
+  "version": "v1.5.3",
   "route": "mapped simulation, offline authored TPAC segments",
   "regions": [
     {
@@ -13,22 +13,30 @@
     {
       "mesh": "tx5_body_00",
       "mapped_vertices": 284,
-      "max_reconstruction_error_m": 7.207457689888892e-17
+      "max_reconstruction_error_m": 6.592519816737927e-17,
+      "minimum_barycentric_weight": 0.0,
+      "maximum_barycentric_weight": 1.0
     },
     {
       "mesh": "tx5_body_00.lod1",
       "mapped_vertices": 165,
-      "max_reconstruction_error_m": 2.89080557645347e-14
+      "max_reconstruction_error_m": 0.009398000846305012,
+      "minimum_barycentric_weight": 0.0,
+      "maximum_barycentric_weight": 1.0
     },
     {
       "mesh": "tx5_body_00.lod2",
       "mapped_vertices": 83,
-      "max_reconstruction_error_m": 1.510061192177516e-14
+      "max_reconstruction_error_m": 0.0016365072952845428,
+      "minimum_barycentric_weight": 0.0,
+      "maximum_barycentric_weight": 1.0
     },
     {
       "mesh": "tx5_body_00.lod3",
       "mapped_vertices": 46,
-      "max_reconstruction_error_m": 9.181643525187949e-14
+      "max_reconstruction_error_m": 0.00874017576097604,
+      "minimum_barycentric_weight": 0.0,
+      "maximum_barycentric_weight": 0.9957801128121164
     }
   ],
   "native_format_checks": [
@@ -53,7 +61,7 @@
     "BendingStiffness": 0.55,
     "ShearingStiffness": 0.5,
     "StretchingStiffness": 1.0,
-    "AnchorStiffness": 0.5,
+    "AnchorStiffness": 1.0,
     "Damping": 0.08,
     "Gravity": 9.81,
     "LinearInertia": 0.1,
@@ -67,6 +75,7 @@
     "force_enable_cloth"
   ],
   "simulate_skirt": false,
+  "tether_metric": "shortest path along cloth edges",
   "note": "Skirt uses accepted skinning only. Proxy and mappings contain sleeves only; no skirt tether or particle can affect sleeve simulation.",
   "official_solver_used": false
 }

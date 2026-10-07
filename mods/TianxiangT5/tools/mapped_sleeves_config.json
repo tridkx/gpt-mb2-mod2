@@ -1,5 +1,5 @@
 {
-  "version": "v1.5.2",
+  "version": "v1.5.3",
   "simulate_skirt": false,
   "skirt_distance_scale": 0.35,
   "render_lods": [0, 1, 2, 3],
@@ -9,7 +9,7 @@
     "BendingStiffness": 0.55,
     "ShearingStiffness": 0.5,
     "StretchingStiffness": 1.0,
-    "AnchorStiffness": 0.5,
+    "AnchorStiffness": 1.0,
     "Damping": 0.08,
     "Gravity": 9.81,
     "LinearInertia": 0.10,

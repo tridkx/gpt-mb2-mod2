@@ -1,7 +1,7 @@
 {
-  "version": "v1.5.2",
+  "version": "v1.5.3",
   "status": "pass",
-  "final_package_sha256": "1c90e2e654092ab7259476f8c531140daa8d938cc609276cceeb2067d4a705c4",
+  "final_package_sha256": "de09deddfd09a2ecf23a3503c2051eaf10124d04a5eb4c5d07b62cb51025969d",
   "route": "sleeve-only mapped simulation; skirt uses accepted skinning",
   "unchanged_original_submeshes": 51,
   "original_geometry_and_skin_preserved": true,
@@ -14,6 +14,9 @@
     "tx5_body_00.lod2",
     "tx5_body_00.lod3"
   ],
+  "cross_sleeve_constraints_tethers_or_mappings": false,
+  "convex_mapping_verified": true,
+  "surface_tether_distance_max_error_m": 6.293209777075148e-06,
   "byte_roundtrip": [
     {
       "asset": "tx5_body",
@@ -70,7 +73,7 @@
     "BendingStiffness": 0.55,
     "ShearingStiffness": 0.5,
     "StretchingStiffness": 1.0,
-    "AnchorStiffness": 0.5,
+    "AnchorStiffness": 1.0,
     "Damping": 0.08,
     "Gravity": 9.81,
     "LinearInertia": 0.1,

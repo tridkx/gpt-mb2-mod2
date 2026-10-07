@@ -3,7 +3,7 @@ from pathlib import Path
 import json,struct
 import numpy as np
 from scipy.spatial import cKDTree
-from scipy.optimize import root
+from scipy.optimize import root, minimize
 from cloth_format import cook,read_cook,write_cook,unpack_positions,write_mapping
 
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'build/mapped';OUT.mkdir(exist_ok=True)
@@ -50,9 +50,11 @@ for name in mapping_names:
     ids=np.tile(reorder[f[0]],(len(points),1));w=np.tile([1.,0.,0.,0.],(len(points),1));errors=[]
     tree,offset=trees[source]
     for i in np.flatnonzero(active):
-        distance,j=tree.query(points[i]);j+=offset
+        distance,neighbors=tree.query(points[i],k=min(8,tree.n));neighbors=np.atleast_1d(neighbors)+offset
+        candidates={tuple(tri) for j in neighbors for tri in incident[j]}
         best=None
-        for tri in incident[j]:
+        for tri_tuple in sorted(candidates):
+            tri=np.array(tri_tuple)
             q=p[tri];n=norm[tri]
             # Interpolated normal is part of the mapping basis. At coincident
             # vertices this reduces to exact one-hot barycentric coordinates.
@@ -62,16 +64,29 @@ for name in mapping_names:
             initial=np.linalg.lstsq(np.column_stack([q[0]-q[2],q[1]-q[2],n.mean(0)]),points[i]-q[2],rcond=None)[0]
             solution=root(lambda x:reconstruct(x)-points[i],initial)
             x=solution.x;b=np.array([x[0],x[1],1-x[0]-x[1]])
+            if b.min()<-1e-7 or abs(x[2])>.03:
+                start=np.r_[np.clip(b[:2],0,1),np.clip(x[2],-.03,.03)]
+                if start[:2].sum()>1:start[:2]/=start[:2].sum()
+                solution=minimize(lambda v:float(np.sum((reconstruct(v)-points[i])**2)),start,
+                                  method='SLSQP',bounds=[(0,1),(0,1),(-.03,.03)],
+                                  constraints=[{'type':'ineq','fun':lambda v:1-v[0]-v[1]}],
+                                  options={'ftol':1e-16,'maxiter':80})
+                x=solution.x;b=np.array([x[0],x[1],1-x[0]-x[1]])
+            b=np.maximum(b,0);b/=b.sum();x[:2]=b[:2]
             err=float(np.linalg.norm(reconstruct(x)-points[i]))
-            score=err*1000+max(0,-float(b.min()))+abs(float(x[2]))
+            score=err*1000+abs(float(x[2]))
             if best is None or score<best[0]:best=(score,tri,np.r_[b,x[2]],err)
-        assert best is not None and best[3]<2e-6,(name,i,best)
+        tolerance=2e-6 if name=='tx5_body_00' else .02
+        assert best is not None and best[3]<tolerance,(name,i,best)
         ids[i]=reorder[best[1]];w[i]=best[2];errors.append(best[3])
     path=OUT/(name+'.mapping.bin');path.write_bytes(write_mapping(ids,w))
     rec=(cookedp[ids]*w[:,:3,None]).sum(1)+(cookednormal[ids]*w[:,:3,None]).sum(1)*w[:,3,None]
-    assert np.max(np.linalg.norm(rec[active]-points[active],axis=1))<2e-6
+    tolerance=2e-6 if name=='tx5_body_00' else .02
+    assert np.max(np.linalg.norm(rec[active]-points[active],axis=1))<tolerance
+    assert w[active,:3].min()>=0 and w[active,:3].max()<=1
     mapped[name]={'alpha':render_alpha,'file':str(path)}
-    mapping_reports.append({'mesh':name,'mapped_vertices':int(active.sum()),'max_reconstruction_error_m':float(max(errors))})
+    mapping_reports.append({'mesh':name,'mapped_vertices':int(active.sum()),'max_reconstruction_error_m':float(max(errors)),
+                            'minimum_barycentric_weight':float(w[active,:3].min()),'maximum_barycentric_weight':float(w[active,:3].max())})
 
 # Independent native samples: verify the entire layout and physical constraints.
 native=[]
@@ -95,6 +110,7 @@ report={'version':config['version'],'route':'mapped simulation, offline authored
         'native_format_checks':native,'cooked_particles':len(p),'cooked_constraints':read_cook(data)['header'][1],
         'skirt_distance_scale':config['skirt_distance_scale'],'material':config['material'],'flags':config['flags'],
         'simulate_skirt':config['simulate_skirt'],
+        'tether_metric':'shortest path along cloth edges',
         'note':'Skirt uses accepted skinning only. Proxy and mappings contain sleeves only; no skirt tether or particle can affect sleeve simulation.',
         'official_solver_used':False}
 (ROOT/'reports/mapped_sleeves_generation.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))

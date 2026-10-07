@@ -60,7 +60,7 @@ def batches(items):
 def cook(p,normal,faces,alpha,bones,weights):
     from scipy.spatial import cKDTree
     from scipy.sparse import coo_matrix
-    from scipy.sparse.csgraph import connected_components
+    from scipy.sparse.csgraph import connected_components, dijkstra
     p=np.asarray(p);normal=np.asarray(normal);faces=np.asarray(faces);alpha=np.asarray(alpha)
     n=len(p); assert n<65535 and np.isfinite(p).all()
     active_faces=faces[np.any(alpha[faces]>0,axis=1)]
@@ -104,7 +104,8 @@ def cook(p,normal,faces,alpha,bones,weights):
     mass=np.zeros(n)
     for k in range(3):np.add.at(mass,faces[:,k],area/3)
     imass=np.divide(1,mass,out=np.ones(n),where=mass>1e-10)
-    e=np.array(stretch);graph=coo_matrix((np.ones(len(e)*2),(np.r_[e[:,0],e[:,1]],np.r_[e[:,1],e[:,0]])),shape=(n,n))
+    e=np.array(stretch);edge_length=np.linalg.norm(p[e[:,0]]-p[e[:,1]],axis=1)
+    graph=coo_matrix((np.r_[edge_length,edge_length],(np.r_[e[:,0],e[:,1]],np.r_[e[:,1],e[:,0]])),shape=(n,n)).tocsr()
     _,labels=connected_components(graph)
     anchors=np.arange(n);dist=np.zeros(n)
     for k in np.unique(labels):
@@ -114,7 +115,15 @@ def cook(p,normal,faces,alpha,bones,weights):
         # fixed particle for the auxiliary tether without changing their mask.
         if not len(roots):roots=np.arange(fixed_count)
         assert len(roots)>0,'No fixed particles available for tether generation'
-        d,i=cKDTree(p[roots]).query(p[ids]);anchors[ids]=roots[i];dist[ids]=d
+        if np.any(ids>=fixed_count) and np.any(labels[roots]!=k):
+            d,i=cKDTree(p[roots]).query(p[ids])
+        else:
+            # Surface paths preserve the slack of curved cloth. A straight-line
+            # tether can cut through a bend and pull the fabric into its sleeve.
+            paths=dijkstra(graph,directed=False,indices=roots)[:,ids]
+            i=np.argmin(paths,axis=0);d=paths[i,np.arange(len(ids))]
+            assert np.isfinite(d).all()
+        anchors[ids]=roots[i];dist[ids]=d
     scale=max(float(dist.max()/65535),1e-10)
     tethers=np.rint(dist/scale).astype(np.uint32)|(anchors.astype(np.uint32)<<16)
     header=(scale,len(pairs),n,fixed_count,len(unused),len(faces)*3,*p.min(0),1.,*p.max(0),1.)
