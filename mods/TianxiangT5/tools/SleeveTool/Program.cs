@@ -102,6 +102,10 @@ if (args[0] == "inspect") {
     var cooked=new ExternalLoader<RawClothSegment>(new RawClothSegment(Guid.Parse("b97e0f10-df49-4666-8f1d-ada6630d4b4e"),File.ReadAllBytes(recipe.GetProperty("cooked").GetString()!))){OwnerGuid=proxyMesh.Guid,UnknownUint=1};
     proxy.ConsumeDataSegments(new AbstractExternalLoader[]{proxyMesh.EditData,proxyMesh.VertexStream,cooked});
     body.ClothMetamesh=proxy.Guid;body.RawMetadata=null;
+    foreach(var name in recipe.GetProperty("disabled_render_meshes").EnumerateArray()) {
+        if(name.GetString()!="tx5_body_03")throw new Exception("Unexpected cloth-disable target");
+        originals[name.GetString()!].Flags=new List<string>();
+    }
     foreach(var property in recipe.GetProperty("mapped").EnumerateObject()) {
         var mesh=originals[property.Name];
         if(property.Name.StartsWith("tx5_body_00")) {

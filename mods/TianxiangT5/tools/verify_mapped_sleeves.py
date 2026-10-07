@@ -15,8 +15,12 @@ old={x['name']:x for x in json.loads((ROOT/'build/sleeve_final.json').read_text(
 new={x['name']:x for x in json.loads((OUT/'final.json').read_text())}
 assert len(new)==len(old)+1 and set(new)-set(old)=={'tx5_cloth_simulation'}
 changed={'tx5_body_00'}|{'tx5_body_00.lod'+str(lod) for lod in config['render_lods'] if lod}
+disabled=set() if config['simulate_skirt'] else {'tx5_body_03'}
 for name,m in old.items():
-    if name not in changed:assert new[name]==m,name
+    if name in disabled:
+        assert new[name]['flags']==[]
+        assert {k:v for k,v in new[name].items() if k!='flags'}=={k:v for k,v in m.items() if k!='flags'}
+    elif name not in changed:assert new[name]==m,name
     else:
         for key in m:
             if key not in ['color','flags']:assert new[name][key]==m[key],(name,key)
@@ -31,7 +35,12 @@ segment=next(s for s in proxy['segments'] if s['type'].startswith('b97'))
 blob=(OUT/'readback_proxy'/segment['file']).read_bytes();assert blob==(OUT/'proxy_cooked.bin').read_bytes()
 c=read_cook(blob);assert write_cook(c)==blob
 n=c['header'][2];fixed=c['header'][3]
-assert n==1280 and fixed>0 and c['header'][1]==len(c['pairs'])
+assert n==len(recipe['sources']) and fixed>0 and c['header'][1]==len(c['pairs'])
+if not config['simulate_skirt']:
+    assert n==284 and fixed==16
+    assert all(s['mesh']=='tx5_body_00' for s in recipe['sources'])
+    assert 'tx5_body_03' not in recipe['mapped']
+    assert not any(s['type'].startswith('af416') and s['owner']==next(m['Guid'] for m in body['meshes'] if m['Name']=='tx5_body_03') for s in body['segments'])
 assert c['header'][5]==len(c['triangles'])
 for name in ['distances','inverse_mass','normals','tethers']:assert len(c[name])==n
 assert len(c['bones'])==len(c['weights'])==n*4
@@ -95,7 +104,7 @@ base=json.loads(run(['dotnet',assettool,'visibility',ROOT/'build/sleeve_baseline
 final=json.loads(run(['dotnet',assettool,'visibility',package]));assert base['materials']==final['materials']
 originals={x['Name']:x for x in base['meshes']}
 for m in final['meshes']:
-    if m['Name'] in originals and m['Name'] not in changed:
+    if m['Name'] in originals and m['Name'] not in changed|disabled:
         # The hash includes the intentionally changed parent MetaMesh proxy GUID.
         excluded={'ClothMetadataSHA256'} if m['Name'].startswith('tx5_body_') else set()
         assert {k:v for k,v in m.items() if k not in excluded}=={k:v for k,v in originals[m['Name']].items() if k not in excluded},m['Name']
@@ -116,13 +125,13 @@ for label in ['idle','run','bow','riding','grip_twohanded_block','grip_twohanded
             assert np.isfinite(posed(new[name],skin)).all()
     motions.append({'animation':anim['name'],'frames':len(skins)})
 report={'version':config['version'],'status':'pass','final_package_sha256':hashlib.sha256(package.read_bytes()).hexdigest(),
-        'route':'mapped simulation with authored cooked constraints and mapping','unchanged_original_submeshes':len(old)-len(changed),
+        'route':'sleeve-only mapped simulation; skirt uses accepted skinning','unchanged_original_submeshes':len(old)-len(changed)-len(disabled),
         'original_geometry_and_skin_preserved':True,'proxy_particles':n,'constraints':len(c['pairs']),
         'constraint_length_max_error_m':float(length_error),'mapped_meshes':list(recipe['mapped']),
         'byte_roundtrip':segment_checks,'all_materials_and_11_full_texture_mips_preserved':True,
         'texture_sha256':texture_hashes,'source_validation':'pass','native_animation_checks':motions,
-        'material':config['material'],'force_cloth_flags_verified':True,'render_lods':config['render_lods'],'skirt_distance_scale':config['skirt_distance_scale'],
+        'material':config['material'],'force_cloth_flags_verified':True,'render_lods':config['render_lods'],'simulate_skirt':config['simulate_skirt'],'skirt_geometry_skin_and_vertex_stream_preserved':True,
         'game_solver_used':False,'game_test_verified':False,
-        'limitations':'Engine dynamics, NPC simulation scheduling and riding collisions require user game testing. Force-cloth resource flag is used by installed Native assets; it does not prove all engine budget limits are bypassed.'}
+        'limitations':'Skirt cloth is disabled after visible runtime stretching. Sleeve dynamics, NPC scheduling and riding collisions still require user game testing. Root cause of the former skirt mapping deformation is not yet uniquely established.'}
 (ROOT/'reports/mapped_sleeves_validation.json').write_text(json.dumps(report,indent=2))
 print(json.dumps({k:report[k] for k in ['version','status','proxy_particles','constraints','mapped_meshes','final_package_sha256']},indent=2))

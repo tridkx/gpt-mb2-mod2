@@ -1,5 +1,5 @@
 {
-  "version": "v1.5.1",
+  "version": "v1.5.2",
   "route": "mapped simulation, offline authored TPAC segments",
   "regions": [
     {
@@ -7,12 +7,6 @@
       "vertices": 284,
       "triangles": 480,
       "fixed": 16
-    },
-    {
-      "source": "tx5_body_03",
-      "vertices": 996,
-      "triangles": 1463,
-      "fixed": 574
     }
   ],
   "mappings": [
@@ -35,11 +29,6 @@
       "mesh": "tx5_body_00.lod3",
       "mapped_vertices": 46,
       "max_reconstruction_error_m": 9.181643525187949e-14
-    },
-    {
-      "mesh": "tx5_body_03",
-      "mapped_vertices": 451,
-      "max_reconstruction_error_m": 2.2929868617541516e-16
     }
   ],
   "native_format_checks": [
@@ -56,8 +45,8 @@
       "compressed_position_max_error_m": 0.0001456782103246013
     }
   ],
-  "cooked_particles": 1280,
-  "cooked_constraints": 3470,
+  "cooked_particles": 284,
+  "cooked_constraints": 1402,
   "skirt_distance_scale": 0.35,
   "material": {
     "Name": "tx5_water_sleeve_stable",
@@ -77,6 +66,7 @@
     "uses_cloth_simulation",
     "force_enable_cloth"
   ],
-  "note": "Simulation material is shared by sleeves and skirt. Skirt distances reduced to 35% of v1.4.1; sleeve drooping distance retained.",
+  "simulate_skirt": false,
+  "note": "Skirt uses accepted skinning only. Proxy and mappings contain sleeves only; no skirt tether or particle can affect sleeve simulation.",
   "official_solver_used": false
 }

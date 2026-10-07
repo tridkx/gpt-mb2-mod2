@@ -22,6 +22,9 @@ for name in ['tx5_body_00']:
 for img in bpy.data.images:
     if img.source=='FILE':assert img.packed_file is not None,img.name
 objects=[o for o in bpy.context.scene.objects if o.type=='MESH' and not o.name.endswith('_cloth_preview')]
+for name in recipe.get('disabled_render_meshes',[]):
+    bpy.data.objects[name]['cloth_route']='Skinning only; disabled after runtime stretching'
+    bpy.data.objects[name]['cloth_enabled']=False
 
 def export(path,selected):
     bpy.ops.object.select_all(action='DESELECT')
@@ -53,7 +56,7 @@ for loop in mesh.loops:uvlayer.data[loop.index].uv=uv[loop.vertex_index]
 mod=proxy.modifiers.new('Native skeleton','ARMATURE');mod.object=rig
 proxy['cloth_distance_multiplier']=recipe['multiplier'];proxy['cloth_material']=recipe['material']['Name']
 proxy['cooked_generation']='tools/build_mapped_recipe.py'
-proxy['note']='Skirt exact float distances are stored in cooked data; vertex alpha is the byte-quantized editable mask.'
+proxy['note']='Sleeve-only simulation proxy. Skirt remains on accepted skinning and is excluded from cloth mapping.'
 for obj in list(bpy.context.scene.objects):
     if obj not in [rig,proxy]:bpy.data.objects.remove(obj,do_unlink=True)
 bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'source/TianxiangT5_ClothSimulation.blend'))

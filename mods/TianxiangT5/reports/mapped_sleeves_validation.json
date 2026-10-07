@@ -1,19 +1,18 @@
 {
-  "version": "v1.5.1",
+  "version": "v1.5.2",
   "status": "pass",
-  "final_package_sha256": "d36dcfacc3a37556fa1072250ddc6d6be805a9112c78de944150bd15b59e88b4",
-  "route": "mapped simulation with authored cooked constraints and mapping",
-  "unchanged_original_submeshes": 52,
+  "final_package_sha256": "1c90e2e654092ab7259476f8c531140daa8d938cc609276cceeb2067d4a705c4",
+  "route": "sleeve-only mapped simulation; skirt uses accepted skinning",
+  "unchanged_original_submeshes": 51,
   "original_geometry_and_skin_preserved": true,
-  "proxy_particles": 1280,
-  "constraints": 3470,
-  "constraint_length_max_error_m": 7.446503302865892e-09,
+  "proxy_particles": 284,
+  "constraints": 1402,
+  "constraint_length_max_error_m": 7.375118543651027e-09,
   "mapped_meshes": [
     "tx5_body_00",
     "tx5_body_00.lod1",
     "tx5_body_00.lod2",
-    "tx5_body_00.lod3",
-    "tx5_body_03"
+    "tx5_body_00.lod3"
   ],
   "byte_roundtrip": [
     {
@@ -87,8 +86,9 @@
     2,
     3
   ],
-  "skirt_distance_scale": 0.35,
+  "simulate_skirt": false,
+  "skirt_geometry_skin_and_vertex_stream_preserved": true,
   "game_solver_used": false,
   "game_test_verified": false,
-  "limitations": "Engine dynamics, NPC simulation scheduling and riding collisions require user game testing. Force-cloth resource flag is used by installed Native assets; it does not prove all engine budget limits are bypassed."
+  "limitations": "Skirt cloth is disabled after visible runtime stretching. Sleeve dynamics, NPC scheduling and riding collisions still require user game testing. Root cause of the former skirt mapping deformation is not yet uniquely established."
 }

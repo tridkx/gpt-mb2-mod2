@@ -11,7 +11,9 @@ config=json.loads((ROOT/'tools/mapped_sleeves_config.json').read_text())
 meshes={m['name']:m for m in json.loads((ROOT/'build/sleeve_final.json').read_text())}
 mask=np.load(ROOT/'build/sleeve_mask.npz')
 sources=[];pos=[];normal=[];faces=[];alpha=[];bones=[];weights=[];regions=[]
-for name,selection in [('tx5_body_00',mask['streamers']),('tx5_body_03',np.ones(len(meshes['tx5_body_03']['pos']),dtype=bool))]:
+selections=[('tx5_body_00',mask['streamers'])]
+if config['simulate_skirt']:selections.append(('tx5_body_03',np.ones(len(meshes['tx5_body_03']['pos']),dtype=bool)))
+for name,selection in selections:
     m=meshes[name];p=np.array(m['pos']);ids=np.flatnonzero(selection)
     _,reps,inv=np.unique(np.round(p[ids],5),axis=0,return_index=True,return_inverse=True)
     selected=ids[reps];index={int(i):int(j) for i,j in zip(ids,inv)}
@@ -32,9 +34,12 @@ incident=[[] for _ in p]
 for tri in f:
     for i in tri:incident[i].append(tri)
 tail_points=len([x for x in sources if x['mesh']=='tx5_body_00'])
-trees={'tx5_body_00':(cKDTree(p[:tail_points]),0),'tx5_body_03':(cKDTree(p[tail_points:]),tail_points)}
+trees={'tx5_body_00':(cKDTree(p[:tail_points]),0)}
+if config['simulate_skirt']:trees['tx5_body_03']=(cKDTree(p[tail_points:]),tail_points)
 mapped={};mapping_reports=[]
-for name in ['tx5_body_00']+['tx5_body_00.lod'+str(lod) for lod in config['render_lods'] if lod]+['tx5_body_03']:
+mapping_names=['tx5_body_00']+['tx5_body_00.lod'+str(lod) for lod in config['render_lods'] if lod]
+if config['simulate_skirt']:mapping_names.append('tx5_body_03')
+for name in mapping_names:
     m=meshes[name];points=np.array(m['pos']);source='tx5_body_00' if name.startswith('tx5_body_00') else name
     if source=='tx5_body_00':
         _,nearest=cKDTree(mask['pos']).query(points)
@@ -83,11 +88,13 @@ for folder in ['native_proxy','native_coat']:
 recipe={'proxy_guid':'38b3fcd7-11ad-43e2-aae8-79026a91e86c','proxy_mesh_guid':'431abf07-5dcd-43c8-ae7e-a9b278c426c6',
         'name':'tx5_cloth_simulation','sources':sources,'faces':f.ravel().tolist(),
         'alpha':np.rint(np.array(alpha)*255).astype(int).tolist(),'cooked':str(OUT/'proxy_cooked.bin'),
-        'mapped':mapped,'multiplier':2.,'material':config['material'],'flags':config['flags']}
+        'mapped':mapped,'multiplier':2.,'material':config['material'],'flags':config['flags'],
+        'disabled_render_meshes':[] if config['simulate_skirt'] else ['tx5_body_03']}
 (OUT/'recipe.json').write_text(json.dumps(recipe,indent=2))
 report={'version':config['version'],'route':'mapped simulation, offline authored TPAC segments','regions':regions,'mappings':mapping_reports,
         'native_format_checks':native,'cooked_particles':len(p),'cooked_constraints':read_cook(data)['header'][1],
         'skirt_distance_scale':config['skirt_distance_scale'],'material':config['material'],'flags':config['flags'],
-        'note':'Simulation material is shared by sleeves and skirt. Skirt distances reduced to 35% of v1.4.1; sleeve drooping distance retained.',
+        'simulate_skirt':config['simulate_skirt'],
+        'note':'Skirt uses accepted skinning only. Proxy and mappings contain sleeves only; no skirt tether or particle can affect sleeve simulation.',
         'official_solver_used':False}
 (ROOT/'reports/mapped_sleeves_generation.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
