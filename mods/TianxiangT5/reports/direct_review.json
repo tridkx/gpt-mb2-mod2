@@ -1,0 +1,24 @@
+{
+  "version": "v1.6.0",
+  "method": "Final TPAC skinning, no cloth solver or weapon IK. Mask colors indicate alpha, not movement.",
+  "frames": [
+    {
+      "pose": "idle",
+      "asset": "anim_inventory_idle",
+      "frame": 1,
+      "image": "direct_review_idle.png"
+    },
+    {
+      "pose": "block",
+      "asset": "anim_twohanded_defend_up_heavy",
+      "frame": 23,
+      "image": "direct_review_block.png"
+    },
+    {
+      "pose": "run",
+      "asset": "anim_run_forward_unarmed",
+      "frame": 12,
+      "image": "direct_review_run.png"
+    }
+  ]
+}

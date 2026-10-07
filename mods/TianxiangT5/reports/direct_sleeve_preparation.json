@@ -1,0 +1,27 @@
+{
+  "version": "v1.6.0",
+  "route": "direct simulation, LOD0 and LOD1",
+  "regions": [
+    {
+      "component": 0,
+      "vertices": 150,
+      "pinned": 3,
+      "surface_length_m": 0.8365218308093604,
+      "max_distance_m": 1.6,
+      "side": "left"
+    },
+    {
+      "component": 73,
+      "vertices": 150,
+      "pinned": 3,
+      "surface_length_m": 0.8365058506152995,
+      "max_distance_m": 1.6,
+      "side": "right"
+    }
+  ],
+  "sleeve_edge_vertices": 34,
+  "lod1_max_transfer_distance_m": 0.029300264691780438,
+  "geometry_and_skin_weights_modified": false,
+  "collision_body": "human_body",
+  "game_solver_used": false
+}

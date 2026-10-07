@@ -1,0 +1,26 @@
+{
+  "samples": [
+    {
+      "asset": "clo_battania_dress_c",
+      "codec_byte_exact": true,
+      "render_to_particle_supports_uv_splits": true,
+      "constraint_length_max_error_m": 8.666109467536653e-08
+    },
+    {
+      "asset": "clo_khuzait_civil_coat",
+      "codec_byte_exact": true,
+      "render_to_particle_supports_uv_splits": true,
+      "constraint_length_max_error_m": 5.939988412251296e-08
+    }
+  ],
+  "scope": "Codec and geometry comparison only; not native solver/cooker equivalence.",
+  "native_game_version": "v1.4.8",
+  "native_count_example": {
+    "asset": "clo_battania_dress_c",
+    "render_vertices": 758,
+    "particle_position_count": 689,
+    "edit_positions": 689,
+    "edit_bones": 689,
+    "skin_data_size": 689
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "version": "v1.6.0",
+  "status": "pass",
+  "baseline_package_sha256": "7d3fa2e062fd29fd0c9ffa31c273f0a8f42a1dde29ee9b553601c90af22ce6e4",
+  "final_package_sha256": "fe372518c00975c73dd15dcb4e9e57c6b0c3e4b75ffdbf5dedc2eb4d06facdd7",
+  "route": "independent cooked direct cloth; no external simulation mesh or mapping",
+  "cloth": [
+    {
+      "mesh": "tx5_head_01",
+      "particles": 1593,
+      "active_particles": 257,
+      "render_vertices": 1855,
+      "constraints": 964,
+      "maximum_distance_m": 0.027450980618596077,
+      "rest_constraint_max_error_m": 3.70886489575728e-09,
+      "tether_quantization_max_error_m": 2.8967582981279105e-06,
+      "no_cross_component_constraints_or_tethers": true,
+      "render_particle_skin_and_alpha_consistent": true
+    },
+    {
+      "mesh": "tx5_body_00",
+      "particles": 1955,
+      "active_particles": 296,
+      "render_vertices": 2107,
+      "constraints": 1588,
+      "maximum_distance_m": 1.600000023841858,
+      "rest_constraint_max_error_m": 7.375118543651027e-09,
+      "tether_quantization_max_error_m": 6.293209777075148e-06,
+      "no_cross_component_constraints_or_tethers": true,
+      "render_particle_skin_and_alpha_consistent": true
+    },
+    {
+      "mesh": "tx5_body_00.lod1",
+      "particles": 1404,
+      "active_particles": 191,
+      "render_vertices": 1480,
+      "constraints": 966,
+      "maximum_distance_m": 1.600000023841858,
+      "rest_constraint_max_error_m": 1.4040065499099086e-08,
+      "tether_quantization_max_error_m": 6.379431331082763e-06,
+      "no_cross_component_constraints_or_tethers": true,
+      "render_particle_skin_and_alpha_consistent": true
+    },
+    {
+      "mesh": "tx5_body_03",
+      "particles": 996,
+      "active_particles": 369,
+      "render_vertices": 1080,
+      "constraints": 1948,
+      "maximum_distance_m": 0.03921568766236305,
+      "rest_constraint_max_error_m": 7.446503302865892e-09,
+      "tether_quantization_max_error_m": 5.618435216514506e-06,
+      "no_cross_component_constraints_or_tethers": true,
+      "render_particle_skin_and_alpha_consistent": true
+    }
+  ],
+  "unchanged_submeshes": 52,
+  "all_original_geometry_uv_normals_skin_preserved": true,
+  "materials_and_11_full_mip_textures_preserved": true,
+  "texture_sha256": {
+    "tx5_cuff_d.bin": "b153cdb6feb154716d193e4f853da7baececfb78c2668c1c334c574854c3a827",
+    "tx5_eye_d.bin": "e459f6d7c00fd5b0154a2ef41960ece95517051c9d4ce96805cbd4d5231a285c",
+    "tx5_face_d.bin": "1ec103ece7dbc1af8c700d500d79ae6b7943350b173e472569a89bede05911f7",
+    "tx5_flat_n.bin": "a08fd86cd238acfe7bb1858f0b53c66b0d242c74a0f99ab4a0116cd23915bac7",
+    "tx5_hair_d.bin": "61de066f5a9825d89e035a4bdddc82d575fb3b99bcd20c25cd1df6bacd003849",
+    "tx5_head_d.bin": "83ad8cd530e5e52237353fb0f8b752ed53b25624864e3d5e7f6aec95f74f4b64",
+    "tx5_lash_d.bin": "49d0e6b7ae782ba17aba429c988271645d35617f8e40f3d8a8db7c5e9ffe797a",
+    "tx5_neutral_s.bin": "a0c8be7880671674d9fadd1c1f2bc214ee00f865c8a5d4b76082a65447e83313",
+    "tx5_pants_d.bin": "58d2c37b49b1d336b6e79371b22a97fe7fc1aec5e4dc80b2afd9143a7786c74c",
+    "tx5_skin_d.bin": "befd3f5096993985f21e3438e9633a513272a30c049eca201a47fffc45de91f8",
+    "tx5_tunic_d.bin": "c37f800147b9c23d9b49ef7dbfe2f50ea2b502ebe6e16813c7141a79561285b3"
+  },
+  "source_validation": "pass",
+  "native_animation_checks": [
+    {
+      "animation": "anim_inventory_idle",
+      "valid_frames": 629,
+      "all_four_lods_checked": true
+    },
+    {
+      "animation": "anim_run_forward_unarmed",
+      "valid_frames": 25,
+      "all_four_lods_checked": true
+    },
+    {
+      "animation": "anim_bow",
+      "valid_frames": 95,
+      "all_four_lods_checked": true
+    },
+    {
+      "animation": "anim_rider_gallop_bow",
+      "valid_frames": 18,
+      "all_four_lods_checked": true
+    },
+    {
+      "animation": "anim_twohanded_defend_up_heavy",
+      "valid_frames": 70,
+      "all_four_lods_checked": true
+    },
+    {
+      "animation": "anim_twohanded_thrust_ready",
+      "valid_frames": 155,
+      "all_four_lods_checked": true
+    }
+  ],
+  "game_solver_used": false,
+  "game_test_verified": false,
+  "limitations": "Offline checks establish data consistency, not native cooker semantic equivalence or absence of runtime pulling. Sleeve LOD0/LOD1 and original skirt/hair LOD0 are simulated; farther LODs retain accepted skinning. No horse/self collision or NPC scheduling guarantee."
+}

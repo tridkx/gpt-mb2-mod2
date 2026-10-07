@@ -1,0 +1,85 @@
+{
+  "version": "v1.6.0",
+  "baseline_package_sha256": "7d3fa2e062fd29fd0c9ffa31c273f0a8f42a1dde29ee9b553601c90af22ce6e4",
+  "route": "independent direct simulation; no external proxy or render mappings",
+  "meshes": [
+    {
+      "mesh": "tx5_body_00",
+      "render_vertices": 2107,
+      "particles": 1955,
+      "active_particles": 296,
+      "fixed_particles": 1659,
+      "constraints": 1588,
+      "pinned_unattached_islands": [],
+      "max_distance_m": 1.6
+    },
+    {
+      "mesh": "tx5_body_00.lod1",
+      "render_vertices": 1480,
+      "particles": 1404,
+      "active_particles": 191,
+      "fixed_particles": 1213,
+      "constraints": 966,
+      "pinned_unattached_islands": [],
+      "max_distance_m": 1.6
+    },
+    {
+      "mesh": "tx5_body_03",
+      "render_vertices": 1080,
+      "particles": 996,
+      "active_particles": 369,
+      "fixed_particles": 627,
+      "constraints": 1948,
+      "pinned_unattached_islands": [
+        {
+          "particles": 5,
+          "vertices": 5
+        },
+        {
+          "particles": 5,
+          "vertices": 5
+        },
+        {
+          "particles": 5,
+          "vertices": 5
+        },
+        {
+          "particles": 5,
+          "vertices": 5
+        },
+        {
+          "particles": 13,
+          "vertices": 18
+        },
+        {
+          "particles": 5,
+          "vertices": 5
+        },
+        {
+          "particles": 5,
+          "vertices": 5
+        },
+        {
+          "particles": 5,
+          "vertices": 5
+        },
+        {
+          "particles": 5,
+          "vertices": 5
+        }
+      ],
+      "max_distance_m": 0.0392156862745098
+    },
+    {
+      "mesh": "tx5_head_01",
+      "render_vertices": 1855,
+      "particles": 1593,
+      "active_particles": 257,
+      "fixed_particles": 1336,
+      "constraints": 964,
+      "pinned_unattached_islands": [],
+      "max_distance_m": 0.027450980392156862
+    }
+  ],
+  "game_solver_used": false
+}

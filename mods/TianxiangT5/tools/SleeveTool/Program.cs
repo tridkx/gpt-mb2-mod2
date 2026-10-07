@@ -30,7 +30,7 @@ if (args[0] == "inspect") {
     }
     File.WriteAllText(Path.Combine(args[3],"metadata.json"),JsonSerializer.Serialize(new{
         mm.Name,mm.Guid,mm.ClothMetamesh,mm.MetaVersion,mm.Version,mm.UnknownString,mm.ClothUint,mm.ClothString,segments,
-        meshes=mm.Meshes.Select(m=>new{m.Name,m.Guid,m.Lod,m.Flags,m.UnknownFloat1,m.UnknownInt3,m.UnknownBool1,m.UnknownBool2,m.UnknownBool3,m.ClothingMaterial,m.VertexCount,m.PositionCount,m.FaceCount})
+        meshes=mm.Meshes.Select(m=>new{m.Name,m.Guid,m.Lod,m.Flags,m.UnknownFloat1,m.UnknownInt3,m.UnknownBool1,m.UnknownBool2,m.UnknownBool3,m.ClothingMaterial,m.VertexCount,m.PositionCount,m.SkinDataSize,m.FaceCount,EditPositionCount=m.EditData.Data.Positions.Length,EditBoneCount=m.EditData.Data.Bones.Length})
     },new JsonSerializerOptions{WriteIndented=true}));
     Console.WriteLine("Inspected "+mm.Name+": "+segments.Count+" segments");
 } else if (args[0] == "dump") {
@@ -47,6 +47,38 @@ if (args[0] == "inspect") {
     }));
     File.WriteAllText(args[2], JsonSerializer.Serialize(meshes));
     Console.WriteLine("Dumped final mesh data: " + args[2]);
+} else if (args[0] == "direct") {
+    using var doc=JsonDocument.Parse(File.ReadAllText(args[2]));var recipe=doc.RootElement;
+    var allowed=new HashSet<string>{"tx5_body_00","tx5_body_00.lod1","tx5_body_03","tx5_head_01"};
+    if(pkg.Items.OfType<Metamesh>().Any(m=>m.ClothMetamesh!=Guid.Empty))throw new Exception("Direct baseline must have no proxy reference");
+    foreach(var setting in recipe.GetProperty("meshes").EnumerateObject()) {
+        if(!allowed.Contains(setting.Name))throw new Exception("Unexpected direct cloth target");
+        var owner=pkg.Items.OfType<Metamesh>().Single(mm=>mm.Meshes.Any(m=>m.Name==setting.Name));
+        var mesh=owner.Meshes.Single(m=>m.Name==setting.Name);var value=setting.Value;
+        var alpha=value.GetProperty("alpha").EnumerateArray().Select(a=>a.GetByte()).ToArray();
+        if(alpha.Length!=mesh.VertexStream.Data.Colors1.Length)throw new Exception("Alpha count mismatch");
+        for(int i=0;i<alpha.Length;i++)mesh.VertexStream.Data.Colors1[i].A=alpha[i];
+        var edit=mesh.EditData.Data;
+        if(edit.Vertices.Length!=alpha.Length)throw new Exception("Edit/runtime vertex count mismatch");
+        var reps=value.GetProperty("position_representatives").EnumerateArray().Select(x=>x.GetInt32()).ToArray();
+        var positionIndex=value.GetProperty("vertex_to_position").EnumerateArray().Select(x=>x.GetUInt32()).ToArray();
+        var stream=mesh.VertexStream.Data;
+        edit.Positions=reps.Select(i=>new Vector4(stream.Positions[i],1)).ToArray();
+        for(int i=0;i<alpha.Length;i++){edit.Vertices[i].Color.A=alpha[i];edit.Vertices[i].PositionIndex=positionIndex[i];}
+#pragma warning disable CS0612
+        edit.Bones=reps.Select(i=>{var bi=stream.BoneIndices[i];var bw=stream.BoneWeights[i];return new MeshEditData.Bone{B0=bi.B1,B1=bi.B2,B2=bi.B3,B3=bi.B4,W0=bw.W1/255f,W1=bw.W2/255f,W2=bw.W3/255f,W3=bw.W4/255f};}).ToArray();
+#pragma warning restore CS0612
+        mesh.PositionCount=reps.Length;mesh.SkinDataSize=reps.Length;
+        mesh.EditData.MarkLongLive();
+        mesh.VertexStream.MarkLongLive();
+        mesh.Flags=new List<string>{"uses_cloth_simulation"};
+        mesh.UnknownFloat1=value.GetProperty("multiplier").GetSingle();
+        mesh.ClothingMaterial=JsonSerializer.Deserialize<ClothingMaterial>(value.GetProperty("material").GetRawText())!;
+        if(owner.TypelessDataSegments.Any(s=>s.OwnerGuid==mesh.Guid && s.TypeGuid==Guid.Parse("b97e0f10-df49-4666-8f1d-ada6630d4b4e")))throw new Exception("Baseline contains cooked target already");
+        owner.TypelessDataSegments.Add(new ExternalLoader<RawClothSegment>(new RawClothSegment(Guid.Parse("b97e0f10-df49-4666-8f1d-ada6630d4b4e"),File.ReadAllBytes(value.GetProperty("cooked").GetString()!))){OwnerGuid=mesh.Guid,UnknownUint=1});
+        owner.RawMetadata=null;
+    }
+    pkg.Save(args[3]);Console.WriteLine("Wrote independently cooked direct cloth: "+args[3]);
 } else if (args[0] == "mapped") {
     using var doc=JsonDocument.Parse(File.ReadAllText(args[2]));var recipe=doc.RootElement;
     var body=pkg.Items.OfType<Metamesh>().Single(m=>m.Name=="tx5_body");
