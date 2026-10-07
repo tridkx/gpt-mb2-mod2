@@ -1,9 +1,9 @@
 {
-  "version": "v1.5.0",
+  "version": "v1.5.1",
   "status": "pass",
-  "final_package_sha256": "4272990cc743f18ec3aa11feeb3f54c962ecc4f78d73a8c23e12fb2544f7adb8",
+  "final_package_sha256": "d36dcfacc3a37556fa1072250ddc6d6be805a9112c78de944150bd15b59e88b4",
   "route": "mapped simulation with authored cooked constraints and mapping",
-  "unchanged_original_submeshes": 54,
+  "unchanged_original_submeshes": 52,
   "original_geometry_and_skin_preserved": true,
   "proxy_particles": 1280,
   "constraints": 3470,
@@ -11,6 +11,8 @@
   "mapped_meshes": [
     "tx5_body_00",
     "tx5_body_00.lod1",
+    "tx5_body_00.lod2",
+    "tx5_body_00.lod3",
     "tx5_body_03"
   ],
   "byte_roundtrip": [
@@ -64,7 +66,29 @@
       "frames": 155
     }
   ],
+  "material": {
+    "Name": "tx5_water_sleeve_stable",
+    "BendingStiffness": 0.55,
+    "ShearingStiffness": 0.5,
+    "StretchingStiffness": 1.0,
+    "AnchorStiffness": 0.5,
+    "Damping": 0.08,
+    "Gravity": 9.81,
+    "LinearInertia": 0.1,
+    "MaxLinearVelocity": 2.5,
+    "LinearVelocityMultiplier": 0.55,
+    "AirDragMultiplier": 0.5,
+    "Wind": 0.0
+  },
+  "force_cloth_flags_verified": true,
+  "render_lods": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "skirt_distance_scale": 0.35,
   "game_solver_used": false,
   "game_test_verified": false,
-  "limitations": "Cooked format inferred from two installed Native samples. Engine dynamics, graphics cloth settings and riding collisions require user game testing. Proxy material is shared with skirt; original skirt activity limits preserved."
+  "limitations": "Engine dynamics, NPC simulation scheduling and riding collisions require user game testing. Force-cloth resource flag is used by installed Native assets; it does not prove all engine budget limits are bypassed."
 }

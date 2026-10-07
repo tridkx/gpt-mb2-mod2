@@ -4,6 +4,16 @@ using System.Reflection;
 using System.Numerics;
 
 if (args.Length < 3) throw new ArgumentException("dump <tpac> <json> | patch <baseline.tpac> <recipe.json> <out.tpac>");
+if(args[0]=="scanflags") {
+    var found=new List<object>();var skipped=new List<string>();
+    foreach(var path in Directory.EnumerateFiles(args[1],"*.tpac")){
+        AssetPackage sample;try{sample=new AssetPackage(path,true,false);}catch{skipped.Add(Path.GetFileName(path));continue;}
+        foreach(var asset in sample.Items.OfType<Metamesh>())foreach(var mesh in asset.Meshes)
+            if(mesh.Flags.Contains("force_enable_cloth"))found.Add(new{file=Path.GetFileName(path),asset=asset.Name,mesh=mesh.Name,mesh.Lod,mesh.Flags});
+    }
+    File.WriteAllText(args[2],JsonSerializer.Serialize(new{found,skipped},new JsonSerializerOptions{WriteIndented=true}));
+    Console.WriteLine("Native force-cloth examples: "+found.Count);return;
+}
 var pkg = new AssetPackage(args[1], true, false);
 if (args[0] == "inspect") {
     var mm=pkg.Items.OfType<Metamesh>().Single(m=>m.Name==args[2]);
@@ -47,7 +57,7 @@ if (args[0] == "inspect") {
     foreach(var prop in typeof(Mesh).GetProperties().Where(p=>p.CanRead&&p.CanWrite)) prop.SetValue(proxyMesh,prop.GetValue(template));
     proxyMesh.Name=recipe.GetProperty("name").GetString()!;
     proxyMesh.Guid=recipe.GetProperty("proxy_mesh_guid").GetGuid();
-    proxyMesh.Lod=0;proxyMesh.Flags=new(){"uses_cloth_simulation"};
+    proxyMesh.Lod=0;proxyMesh.Flags=recipe.GetProperty("flags").EnumerateArray().Select(x=>x.GetString()!).ToList();
     proxyMesh.VertexCount=sources.Length;proxyMesh.PositionCount=sources.Length;proxyMesh.SkinDataSize=sources.Length;
     proxyMesh.UnknownFloat1=recipe.GetProperty("multiplier").GetSingle();
     proxyMesh.ClothingMaterial=JsonSerializer.Deserialize<ClothingMaterial>(recipe.GetProperty("material").GetRawText())!;
@@ -95,6 +105,7 @@ if (args[0] == "inspect") {
     foreach(var property in recipe.GetProperty("mapped").EnumerateObject()) {
         var mesh=originals[property.Name];
         if(property.Name.StartsWith("tx5_body_00")) {
+            mesh.Flags=recipe.GetProperty("flags").EnumerateArray().Select(x=>x.GetString()!).ToList();
             var a=property.Value.GetProperty("alpha").EnumerateArray().Select(x=>x.GetByte()).ToArray();
             for(int i=0;i<a.Length;i++)mesh.VertexStream.Data.Colors1[i].A=a[i];
             mesh.VertexStream.MarkLongLive();
@@ -102,7 +113,7 @@ if (args[0] == "inspect") {
         var mapping=new ExternalLoader<RawClothSegment>(new RawClothSegment(Guid.Parse("af41613e-bd4d-46ec-8284-debb56c042dc"),File.ReadAllBytes(property.Value.GetProperty("file").GetString()!))){OwnerGuid=mesh.Guid,UnknownUint=1};
         body.TypelessDataSegments.Add(mapping);
     }
-    pkg.Items.Add(proxy);pkg.Save(args[3]);Console.WriteLine("Wrote proxy, cooked fabric and 3 mapped submeshes: "+args[3]);
+    pkg.Items.Add(proxy);pkg.Save(args[3]);Console.WriteLine("Wrote proxy, cooked fabric and "+recipe.GetProperty("mapped").EnumerateObject().Count()+" mapped submeshes: "+args[3]);
 } else if (args[0] == "patch") {
     using var doc = JsonDocument.Parse(File.ReadAllText(args[2]));
     var recipe = doc.RootElement;

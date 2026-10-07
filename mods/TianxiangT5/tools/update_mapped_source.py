@@ -16,6 +16,8 @@ for name in ['tx5_body_00']:
         color.data[v.index].color=(1,1,1,a[i]/255)
     obj['cloth_route']='Mapped simulation; baked b97e0f10 constraints and af41613e mapping'
     obj['cloth_simulation_mesh']=recipe['name']
+    obj['cloth_material']=recipe['material']['Name']
+    obj['cloth_lods']='LOD0, LOD1, LOD2, LOD3'
     obj['cloth_recipe']='tools/build_mapped_sleeves.ps1'
 for img in bpy.data.images:
     if img.source=='FILE':assert img.packed_file is not None,img.name

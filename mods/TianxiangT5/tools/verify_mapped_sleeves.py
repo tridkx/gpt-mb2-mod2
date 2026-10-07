@@ -5,6 +5,7 @@ import numpy as np
 from cloth_format import read_cook,write_cook,unpack_positions
 from sleeve_motion import skin_frames,posed
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'build/mapped'
+config=json.loads((ROOT/'tools/mapped_sleeves_config.json').read_text())
 package=OUT/'tx5.tpac';dll=ROOT/'build/sleeve_tool/bin/SleeveTool.dll'
 def run(args):return subprocess.run([str(x) for x in args],check=True,capture_output=True,text=True,encoding='utf-8').stdout
 run(['dotnet',dll,'dump',package,OUT/'final.json'])
@@ -13,12 +14,13 @@ for name,folder in [('tx5_body','readback_body'),('tx5_cloth_simulation','readba
 old={x['name']:x for x in json.loads((ROOT/'build/sleeve_final.json').read_text())}
 new={x['name']:x for x in json.loads((OUT/'final.json').read_text())}
 assert len(new)==len(old)+1 and set(new)-set(old)=={'tx5_cloth_simulation'}
-changed={'tx5_body_00','tx5_body_00.lod1'}
+changed={'tx5_body_00'}|{'tx5_body_00.lod'+str(lod) for lod in config['render_lods'] if lod}
 for name,m in old.items():
     if name not in changed:assert new[name]==m,name
     else:
         for key in m:
-            if key!='color':assert new[name][key]==m[key],(name,key)
+            if key not in ['color','flags']:assert new[name][key]==m[key],(name,key)
+        assert new[name]['flags']==config['flags']
         assert np.array_equal(np.array(m['color'])[:,:3],np.array(new[name]['color'])[:,:3])
 recipe=json.loads((OUT/'recipe.json').read_text())
 for name in changed:assert [c[3] for c in new[name]['color']]==recipe['mapped'][name]['alpha']
@@ -75,7 +77,12 @@ for i,ref in enumerate(recipe['sources']):
     assert new['tx5_cloth_simulation']['bi'][i]==m['bi'][j]
     assert new['tx5_cloth_simulation']['bw'][i]==m['bw'][j]
     distance=c['distances'][order[i]]*2
-    assert np.isclose(distance,m['color'][j][3]/255*m['multiplier'],atol=1e-7)
+    scale=config['skirt_distance_scale'] if ref['mesh']=='tx5_body_03' else 1
+    assert np.isclose(distance,m['color'][j][3]/255*m['multiplier']*scale,atol=1e-7)
+assert new['tx5_cloth_simulation']['flags']==config['flags']
+for key,value in config['material'].items():
+    actual=new['tx5_cloth_simulation']['cloth'][key]
+    assert actual==value if isinstance(value,str) else np.isclose(actual,value)
 mbtool='D:/mb-tools/mbtool/bin/Release/net9.0/mbtool.exe'
 segment_checks=[]
 for name in ['tx5_body','tx5_cloth_simulation']:
@@ -108,13 +115,14 @@ for label in ['idle','run','bow','riding','grip_twohanded_block','grip_twohanded
         for name in ['tx5_body_00','tx5_body_00.lod1','tx5_cloth_simulation']:
             assert np.isfinite(posed(new[name],skin)).all()
     motions.append({'animation':anim['name'],'frames':len(skins)})
-report={'version':'v1.5.0','status':'pass','final_package_sha256':hashlib.sha256(package.read_bytes()).hexdigest(),
-        'route':'mapped simulation with authored cooked constraints and mapping','unchanged_original_submeshes':54,
+report={'version':config['version'],'status':'pass','final_package_sha256':hashlib.sha256(package.read_bytes()).hexdigest(),
+        'route':'mapped simulation with authored cooked constraints and mapping','unchanged_original_submeshes':len(old)-len(changed),
         'original_geometry_and_skin_preserved':True,'proxy_particles':n,'constraints':len(c['pairs']),
         'constraint_length_max_error_m':float(length_error),'mapped_meshes':list(recipe['mapped']),
         'byte_roundtrip':segment_checks,'all_materials_and_11_full_texture_mips_preserved':True,
         'texture_sha256':texture_hashes,'source_validation':'pass','native_animation_checks':motions,
+        'material':config['material'],'force_cloth_flags_verified':True,'render_lods':config['render_lods'],'skirt_distance_scale':config['skirt_distance_scale'],
         'game_solver_used':False,'game_test_verified':False,
-        'limitations':'Cooked format inferred from two installed Native samples. Engine dynamics, graphics cloth settings and riding collisions require user game testing. Proxy material is shared with skirt; original skirt activity limits preserved.'}
+        'limitations':'Engine dynamics, NPC simulation scheduling and riding collisions require user game testing. Force-cloth resource flag is used by installed Native assets; it does not prove all engine budget limits are bypassed.'}
 (ROOT/'reports/mapped_sleeves_validation.json').write_text(json.dumps(report,indent=2))
 print(json.dumps({k:report[k] for k in ['version','status','proxy_particles','constraints','mapped_meshes','final_package_sha256']},indent=2))

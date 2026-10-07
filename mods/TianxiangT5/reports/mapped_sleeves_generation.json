@@ -1,4 +1,5 @@
 {
+  "version": "v1.5.1",
   "route": "mapped simulation, offline authored TPAC segments",
   "regions": [
     {
@@ -26,6 +27,16 @@
       "max_reconstruction_error_m": 2.89080557645347e-14
     },
     {
+      "mesh": "tx5_body_00.lod2",
+      "mapped_vertices": 83,
+      "max_reconstruction_error_m": 1.510061192177516e-14
+    },
+    {
+      "mesh": "tx5_body_00.lod3",
+      "mapped_vertices": 46,
+      "max_reconstruction_error_m": 9.181643525187949e-14
+    },
+    {
       "mesh": "tx5_body_03",
       "mapped_vertices": 451,
       "max_reconstruction_error_m": 2.2929868617541516e-16
@@ -47,7 +58,25 @@
   ],
   "cooked_particles": 1280,
   "cooked_constraints": 3470,
-  "skirt_effective_distances_preserved_in_cooked_data": true,
-  "note": "Simulation material is shared by sleeves and skirt; skirt remains within its original small distance limits.",
+  "skirt_distance_scale": 0.35,
+  "material": {
+    "Name": "tx5_water_sleeve_stable",
+    "BendingStiffness": 0.55,
+    "ShearingStiffness": 0.5,
+    "StretchingStiffness": 1.0,
+    "AnchorStiffness": 0.5,
+    "Damping": 0.08,
+    "Gravity": 9.81,
+    "LinearInertia": 0.1,
+    "MaxLinearVelocity": 2.5,
+    "LinearVelocityMultiplier": 0.55,
+    "AirDragMultiplier": 0.5,
+    "Wind": 0.0
+  },
+  "flags": [
+    "uses_cloth_simulation",
+    "force_enable_cloth"
+  ],
+  "note": "Simulation material is shared by sleeves and skirt. Skirt distances reduced to 35% of v1.4.1; sleeve drooping distance retained.",
   "official_solver_used": false
 }
