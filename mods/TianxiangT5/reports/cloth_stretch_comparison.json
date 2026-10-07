@@ -1,0 +1,121 @@
+{
+  "user_feedback": {
+    "v1.6.0": "Sleeves and skirt stretch; only a small sleeve region waves.",
+    "v1.5.0": "Waving present, but no stretching reported by user."
+  },
+  "observations": [
+    {
+      "version": "v1.5.0",
+      "route": "mapped",
+      "flags": [
+        "uses_cloth_simulation"
+      ],
+      "particles": 1280,
+      "fixed_particles": 590,
+      "constraints": 3470,
+      "material": {
+        "Name": "tx5_water_sleeve",
+        "BendingStiffness": 0.015,
+        "ShearingStiffness": 0.15,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 0.1,
+        "Damping": 0.12,
+        "Gravity": 9.81,
+        "LinearInertia": 0.4,
+        "MaxLinearVelocity": 8,
+        "LinearVelocityMultiplier": 0.95,
+        "AirDragMultiplier": 0.22,
+        "Wind": 0.08
+      },
+      "active_render_vertices": {
+        "tx5_body_00": 284,
+        "tx5_body_00.lod1": 165,
+        "tx5_body_03": 451
+      }
+    },
+    {
+      "version": "v1.5.1",
+      "route": "mapped",
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "particles": 1280,
+      "fixed_particles": 590,
+      "constraints": 3470,
+      "material": {
+        "Name": "tx5_water_sleeve_stable",
+        "BendingStiffness": 0.55,
+        "ShearingStiffness": 0.5,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 0.5,
+        "Damping": 0.08,
+        "Gravity": 9.81,
+        "LinearInertia": 0.1,
+        "MaxLinearVelocity": 2.5,
+        "LinearVelocityMultiplier": 0.55,
+        "AirDragMultiplier": 0.5,
+        "Wind": 0
+      },
+      "active_render_vertices": {
+        "tx5_body_00": 284,
+        "tx5_body_00.lod1": 165,
+        "tx5_body_03": 451
+      }
+    },
+    {
+      "version": "v1.5.3",
+      "route": "mapped",
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "particles": 284,
+      "fixed_particles": 16,
+      "constraints": 1402,
+      "material": {
+        "Name": "tx5_water_sleeve_stable",
+        "BendingStiffness": 0.55,
+        "ShearingStiffness": 0.5,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.08,
+        "Gravity": 9.81,
+        "LinearInertia": 0.1,
+        "MaxLinearVelocity": 2.5,
+        "LinearVelocityMultiplier": 0.55,
+        "AirDragMultiplier": 0.5,
+        "Wind": 0
+      },
+      "active_render_vertices": {
+        "tx5_body_00": 284,
+        "tx5_body_00.lod1": 165,
+        "tx5_body_03": 451
+      }
+    },
+    {
+      "version": "v1.6.0",
+      "route": "direct",
+      "material": {
+        "Name": "tx5_water_sleeve_direct",
+        "BendingStiffness": 0.12,
+        "ShearingStiffness": 0.5,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.12,
+        "Gravity": 9.81,
+        "LinearInertia": 0.15,
+        "MaxLinearVelocity": 3,
+        "LinearVelocityMultiplier": 0.65,
+        "AirDragMultiplier": 0.4,
+        "Wind": 0
+      },
+      "active_render_vertices": {
+        "tx5_body_00": 318,
+        "tx5_body_00.lod1": 199,
+        "tx5_body_03": 393
+      }
+    }
+  ],
+  "conclusion": "Static consistency did not validate solver semantics. Multiple changes prevent uniquely attributing stretching to a single parameter. Use exact user-observed v1.5.0 fabric and mapping, rather than another recook."
+}

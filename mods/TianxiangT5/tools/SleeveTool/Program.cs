@@ -47,6 +47,13 @@ if (args[0] == "inspect") {
     }));
     File.WriteAllText(args[2], JsonSerializer.Serialize(meshes));
     Console.WriteLine("Dumped final mesh data: " + args[2]);
+} else if (args[0] == "windoff") {
+    var proxy=pkg.Items.OfType<Metamesh>().Single(m=>m.Name=="tx5_cloth_simulation");
+    if(proxy.Meshes.Count!=1)throw new Exception("Unexpected proxy layout");
+    var mesh=proxy.Meshes.Single();var material=mesh.ClothingMaterial;
+    if(Math.Abs(material.Wind-0.08f)>0.000001f)throw new Exception("Expected immutable v1.5.0 wind baseline");
+    material.Wind=0;mesh.ClothingMaterial=material;proxy.RawMetadata=null;
+    pkg.Save(args[2]);Console.WriteLine("Only proxy wind changed from 0.08 to 0; original simulation segments retained");
 } else if (args[0] == "direct") {
     using var doc=JsonDocument.Parse(File.ReadAllText(args[2]));var recipe=doc.RootElement;
     var allowed=new HashSet<string>{"tx5_body_00","tx5_body_00.lod1","tx5_body_03","tx5_head_01"};

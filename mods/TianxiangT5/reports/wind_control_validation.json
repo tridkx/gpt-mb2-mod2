@@ -1,0 +1,75 @@
+{
+  "version": "v1.6.1",
+  "status": "pass",
+  "baseline_version": "v1.5.0",
+  "baseline_package_sha256": "4272990cc743f18ec3aa11feeb3f54c962ecc4f78d73a8c23e12fb2544f7adb8",
+  "final_package_sha256": "e7b3a5205509f56b4e7739014b63e825ed2d96511814432f5feae7e9513c760f",
+  "changed_fields": [
+    {
+      "mesh": "tx5_cloth_simulation",
+      "field": "Wind",
+      "before": 0.08,
+      "after": 0
+    }
+  ],
+  "unchanged_data_segments": 121,
+  "original_fabric_byte_exact": true,
+  "all_three_mappings_byte_exact": true,
+  "all_geometry_skin_alpha_flags_distances_and_other_parameters_unchanged": true,
+  "all_materials_and_11_full_mip_textures_unchanged": true,
+  "texture_sha256": {
+    "tx5_cuff_d.bin": "b153cdb6feb154716d193e4f853da7baececfb78c2668c1c334c574854c3a827",
+    "tx5_eye_d.bin": "e459f6d7c00fd5b0154a2ef41960ece95517051c9d4ce96805cbd4d5231a285c",
+    "tx5_face_d.bin": "1ec103ece7dbc1af8c700d500d79ae6b7943350b173e472569a89bede05911f7",
+    "tx5_flat_n.bin": "a08fd86cd238acfe7bb1858f0b53c66b0d242c74a0f99ab4a0116cd23915bac7",
+    "tx5_hair_d.bin": "61de066f5a9825d89e035a4bdddc82d575fb3b99bcd20c25cd1df6bacd003849",
+    "tx5_head_d.bin": "83ad8cd530e5e52237353fb0f8b752ed53b25624864e3d5e7f6aec95f74f4b64",
+    "tx5_lash_d.bin": "49d0e6b7ae782ba17aba429c988271645d35617f8e40f3d8a8db7c5e9ffe797a",
+    "tx5_neutral_s.bin": "a0c8be7880671674d9fadd1c1f2bc214ee00f865c8a5d4b76082a65447e83313",
+    "tx5_pants_d.bin": "58d2c37b49b1d336b6e79371b22a97fe7fc1aec5e4dc80b2afd9143a7786c74c",
+    "tx5_skin_d.bin": "befd3f5096993985f21e3438e9633a513272a30c049eca201a47fffc45de91f8",
+    "tx5_tunic_d.bin": "c37f800147b9c23d9b49ef7dbfe2f50ea2b502ebe6e16813c7141a79561285b3"
+  },
+  "sources_restored_byte_exact": {
+    "TianxiangT5_Rigged.blend": "62608e4d0237dc4f75d85494036863fde4cb3f5fd722c485e8c38d578f2e6743",
+    "TianxiangT5_Rigged.fbx": "acb6ad9317244f5fa4de88d5e2afcd64036dd6e117c959c29d158bfd97efd8e9",
+    "TianxiangT5_ClothSimulation.blend": "624189687d3061b3c70bdaeb5f6830422e318aa73a6d33ea7793457bca5614dd",
+    "TianxiangT5_ClothSimulation.fbx": "6f3a7de90140a19ba2c4f8fdd7390d83d71b79fd3eef6fc5df955fbfe3e55923"
+  },
+  "source_validation": "pass",
+  "native_animation_checks": [
+    {
+      "animation": "anim_inventory_idle",
+      "frames": 629,
+      "all_lods_verified": true
+    },
+    {
+      "animation": "anim_run_forward_unarmed",
+      "frames": 25,
+      "all_lods_verified": true
+    },
+    {
+      "animation": "anim_bow",
+      "frames": 95,
+      "all_lods_verified": true
+    },
+    {
+      "animation": "anim_rider_gallop_bow",
+      "frames": 18,
+      "all_lods_verified": true
+    },
+    {
+      "animation": "anim_twohanded_defend_up_heavy",
+      "frames": 70,
+      "all_lods_verified": true
+    },
+    {
+      "animation": "anim_twohanded_thrust_ready",
+      "frames": 155,
+      "all_lods_verified": true
+    }
+  ],
+  "game_test_verified": false,
+  "baseline_no_stretch_user_reported": true,
+  "limitations": "v1.6.1 is a controlled wind-only test based on v1.5.0. No runtime proof of non-stretching or reduced waving; complete sleeve draping remains unresolved. Do not confuse inherited consistency with solver validation."
+}

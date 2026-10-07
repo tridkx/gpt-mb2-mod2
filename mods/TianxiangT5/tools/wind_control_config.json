@@ -1,0 +1,13 @@
+{
+  "version": "v1.6.1",
+  "baseline_tag": "TianxiangT5/v1.5.0",
+  "baseline_package_sha256": "4272990cc743f18ec3aa11feeb3f54c962ecc4f78d73a8c23e12fb2544f7adb8",
+  "change": {
+    "mesh": "tx5_cloth_simulation",
+    "field": "ClothingMaterial.Wind",
+    "before": 0.08,
+    "after": 0.0
+  },
+  "preserve_exact_fabric_and_mapping": true,
+  "goal": "Recover user-observed non-stretching route; isolate ambient wind contribution to waving. Whole-sleeve draping unresolved."
+}
