@@ -1,0 +1,50 @@
+{
+  "status": "prepared; official editor mapping/cooking and engine preview NOT completed",
+  "route": "mapped simulation",
+  "proxy_regions": [
+    {
+      "side": "left",
+      "vertices": 142,
+      "triangles": 240,
+      "fixed_vertices": 8,
+      "boundary_edges": 44,
+      "min_triangle_area_m2": 2.144534864491482e-05
+    },
+    {
+      "side": "right",
+      "vertices": 142,
+      "triangles": 240,
+      "fixed_vertices": 8,
+      "boundary_edges": 44,
+      "min_triangle_area_m2": 2.144502693952349e-05
+    }
+  ],
+  "proxy_vertices": 284,
+  "proxy_triangles": 480,
+  "render_geometry_changed": false,
+  "installed_module_changed": false,
+  "fbx_roundtrip": [
+    {
+      "file": "TianxiangT5_SleeveSimulation.fbx",
+      "meshes": 1,
+      "passed": true
+    },
+    {
+      "file": "TianxiangT5_MappedSleeves_Render.fbx",
+      "meshes": 14,
+      "passed": true
+    }
+  ],
+  "files": {
+    "TianxiangT5_MappedSleeves.blend": "f139f9750876d30e4ca70b33b9e00b453b35d86efb2716b38dee206fe0970299",
+    "TianxiangT5_SleeveSimulation.fbx": "f3685afbf42b480a49fbc778b58d610d305d4d51fb327328ffd52b0157e72b83",
+    "TianxiangT5_MappedSleeves_Render.fbx": "df83bc8fcb5cb0216d5505adf8599455278a6044e29a67ba3842a69815a12154"
+  },
+  "official_solver_used": false,
+  "distance_multiplier": 2.0,
+  "reopened_blend_packed_images": 23,
+  "references": [
+    "https://moddocs.bannerlord.com/zh_cn/editor/resource-editors/cloth_simulation/",
+    "https://moddocs.bannerlord.com/asset-management/asset-types/overriding_assets/"
+  ]
+}
