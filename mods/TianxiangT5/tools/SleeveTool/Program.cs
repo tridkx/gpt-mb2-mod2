@@ -37,16 +37,70 @@ if (args[0] == "inspect") {
     var meshes = pkg.Items.OfType<Metamesh>().Where(mm=>args.Length<4||mm.Name==args[3]).SelectMany(mm => mm.Meshes.Select(m => {
         var v = m.VertexStream.Data;
         return new { name=m.Name, lod=m.Lod, flags=m.Flags, body=mm.UnknownString,
-            multiplier=m.UnknownFloat1, cloth=m.ClothingMaterial,
+            multiplier=m.UnknownFloat1, cloth=m.ClothingMaterial, material=m.Material.Guid,
             pos=v.Positions.Select(p => new[]{p.X,p.Y,p.Z}),
             normal=v.Normals.Select(p => new[]{p.X,p.Y,p.Z}),
-            uv=v.Uv1.Select(p => new[]{p.X,p.Y}), idx=v.Indices,
+            tangent=v.Tangents.Select(t => new[]{t.X,t.Y,t.Z,t.W}), uv=v.Uv1.Select(p => new[]{p.X,p.Y}), idx=v.Indices,
             color=v.Colors1.Select(c => new[]{(int)c.R,c.G,c.B,c.A}),
             bi=v.BoneIndices.Select(b => new[]{(int)b.B1,b.B2,b.B3,b.B4}),
             bw=v.BoneWeights.Select(b => new[]{(int)b.W1,b.W2,b.W3,b.W4}) };
     }));
     File.WriteAllText(args[2], JsonSerializer.Serialize(meshes));
     Console.WriteLine("Dumped final mesh data: " + args[2]);
+} else if (args[0] == "appearance") {
+    using var doc=JsonDocument.Parse(File.ReadAllText(args[2]));
+    var settings=doc.RootElement.GetProperty("meshes");
+    var skin=pkg.Items.OfType<Material>().Single(m=>m.Name=="tx5_skin");
+    foreach(var mm in pkg.Items.OfType<Metamesh>()) {
+        if(mm.ClothMetamesh!=Guid.Empty || mm.TypelessDataSegments.Any(s=>s.TypeGuid==Guid.Parse("b97e0f10-df49-4666-8f1d-ada6630d4b4e")||s.TypeGuid==Guid.Parse("af41613e-bd4d-46ec-8284-debb56c042dc")))throw new Exception("Expected v1.4.0 baseline without simulation segments");
+        foreach(var m in mm.Meshes) {
+            m.Flags=m.Flags.Where(f=>f!="uses_cloth_simulation"&&f!="force_enable_cloth").ToList();
+            if(m.Name.StartsWith("tx5_legs_06"))m.Material=new AssetDependence<Material>(skin.Guid);
+            if(!settings.TryGetProperty(m.Name,out var r))continue;
+            var v=m.VertexStream.Data;var ed=m.EditData.Data;int count=v.Positions.Length;
+            if(ed.Vertices.Length!=count || ed.Positions.Length!=count)throw new Exception("Unexpected edit layout");
+            var ids=r.GetProperty("keep").EnumerateArray().Select(x=>x.GetInt32()).ToArray();
+            var originals=ed.Vertices;
+            foreach(var prop in typeof(VertexStreamData).GetProperties().Where(p=>p.CanWrite&&p.PropertyType.IsArray&&p.Name!="Indices")) {
+                var old=(Array?)prop.GetValue(v);if(old==null||old.Length==0)continue;
+                if(old.Length!=count)throw new Exception("Unexpected array "+prop.Name);
+                var arr=Array.CreateInstance(prop.PropertyType.GetElementType()!,ids.Length);
+                for(int i=0;i<ids.Length;i++)arr.SetValue(old.GetValue(ids[i]),i);
+                prop.SetValue(v,arr);
+            }
+            v.Indices=r.GetProperty("idx").EnumerateArray().Select(x=>x.GetInt32()).ToArray();
+            if(r.TryGetProperty("pos",out var ps)) {
+                v.Positions=ps.EnumerateArray().Select(x=>new Vector3(x[0].GetSingle(),x[1].GetSingle(),x[2].GetSingle())).ToArray();
+                var ns=r.GetProperty("normal").EnumerateArray().ToArray();var ts=r.GetProperty("tangent").EnumerateArray().ToArray();
+                for(int i=0;i<ids.Length;i++) {
+                    var cp=v.CompressedPositions[i];cp.X=(SystemHalf.Half)v.Positions[i].X;cp.Y=(SystemHalf.Half)v.Positions[i].Y;cp.Z=(SystemHalf.Half)v.Positions[i].Z;v.CompressedPositions[i]=cp;
+                    var n=new Vector3(ns[i][0].GetSingle(),ns[i][1].GetSingle(),ns[i][2].GetSingle());
+                    var t=new Vector4(ts[i][0].GetSingle(),ts[i][1].GetSingle(),ts[i][2].GetSingle(),ts[i][3].GetSingle());
+                    if(n==v.Normals[i]&&t==v.Tangents[i])continue;
+                    v.Normals[i]=n;v.Tangents[i]=t;
+                    var cn=new VertexStreamData.X11Y11Z10();cn.X=n.X;cn.Y=n.Y;cn.Z=n.Z;v.CompressedNormals[i]=cn;
+                    var ct=new VertexStreamData.X10Y11Z10W1();ct.X=t.X;ct.Y=t.Y;ct.Z=t.Z;ct.Sign=t.W<0?-1:1;v.CompressedTangents[i]=ct;
+                    var nn=Vector3.Normalize(n);var tv=Vector3.Normalize(new Vector3(t.X,t.Y,t.Z)-nn*Vector3.Dot(nn,new Vector3(t.X,t.Y,t.Z)));
+                    v.TangentTransform[i]=Appearance.QuatFromColumns(tv,Vector3.Cross(nn,tv),nn);
+                }
+            }
+            var oldPositions=ed.Positions;
+            ed.Positions=ids.Select((id,i)=>new Vector4(v.Positions[i],oldPositions[originals[id].PositionIndex].W)).ToArray();
+            ed.Vertices=ids.Select((id,i)=>{var x=originals[id];x.PositionIndex=(uint)i;
+                if(r.TryGetProperty("pos",out _)){x.Normal=new Vector4(v.Normals[i],0);x.Padding=x.Normal;x.Tangent=new Vector4(v.Tangents[i].X,v.Tangents[i].Y,v.Tangents[i].Z,0);x.Binormal=new Vector4(Vector3.Cross(v.Normals[i],new Vector3(v.Tangents[i].X,v.Tangents[i].Y,v.Tangents[i].Z)),0);}
+                return x;}).ToArray();
+            if(ed.UnusedVec3.Length==count)ed.UnusedVec3=ids.Select(id=>ed.UnusedVec3[id]).ToArray();
+#pragma warning disable CS0612
+            if(ed.Bones.Length==count)ed.Bones=ids.Select(id=>ed.Bones[originals[id].PositionIndex]).ToArray();
+#pragma warning restore CS0612
+            ed.Faces=Enumerable.Range(0,v.Indices.Length/3).Select(i=>new MeshEditData.Face{V0=v.Indices[3*i],V1=v.Indices[3*i+1],V2=v.Indices[3*i+2]}).ToArray();
+            m.VertexCount=m.PositionCount=m.SkinDataSize=ids.Length;m.FaceCount=ed.Faces.Length;
+            m.BoundingBox=new BoundingBox(v.Positions.Aggregate(Vector3.Min),v.Positions.Aggregate(Vector3.Max));
+            m.VertexStream.MarkLongLive();m.EditData.MarkLongLive();
+        }
+        mm.RawMetadata=null;
+    }
+    pkg.Save(args[3]);Console.WriteLine("Appearance repair saved; all cloth disabled");
 } else if (args[0] == "windoff") {
     var proxy=pkg.Items.OfType<Metamesh>().Single(m=>m.Name=="tx5_cloth_simulation");
     if(proxy.Meshes.Count!=1)throw new Exception("Unexpected proxy layout");
@@ -198,4 +252,40 @@ if (args[0] == "inspect") {
 public sealed class RawClothSegment:ExternalData {
     public RawClothSegment():base(Guid.Parse("b97e0f10-df49-4666-8f1d-ada6630d4b4e")){}
     public RawClothSegment(Guid type,byte[] bytes):base(type){using var r=new BinaryReader(new MemoryStream(bytes));ReadData(r,new Dictionary<object,object>(),bytes.Length);}
+}
+
+public static class Appearance {
+		public static VertexStreamData.SnormShort4 QuatFromColumns(Vector3 c0, Vector3 c1, Vector3 c2)
+		{
+			float m00 = c0.X, m10 = c0.Y, m20 = c0.Z;
+			float m01 = c1.X, m11 = c1.Y, m21 = c1.Z;
+			float m02 = c2.X, m12 = c2.Y, m22 = c2.Z;
+			float tr = m00 + m11 + m22;
+			float x, y, z, w;
+			if (tr > 0)
+			{
+				float s = (float) Math.Sqrt(tr + 1.0) * 2f;
+				w = 0.25f * s; x = (m21 - m12) / s; y = (m02 - m20) / s; z = (m10 - m01) / s;
+			}
+			else if (m00 > m11 && m00 > m22)
+			{
+				float s = (float) Math.Sqrt(1.0 + m00 - m11 - m22) * 2f;
+				w = (m21 - m12) / s; x = 0.25f * s; y = (m01 + m10) / s; z = (m02 + m20) / s;
+			}
+			else if (m11 > m22)
+			{
+				float s = (float) Math.Sqrt(1.0 + m11 - m00 - m22) * 2f;
+				w = (m02 - m20) / s; x = (m01 + m10) / s; y = 0.25f * s; z = (m12 + m21) / s;
+			}
+			else
+			{
+				float s = (float) Math.Sqrt(1.0 + m22 - m00 - m11) * 2f;
+				w = (m10 - m01) / s; x = (m02 + m20) / s; y = (m12 + m21) / s; z = 0.25f * s;
+			}
+			if (w < 0) { x = -x; y = -y; z = -z; w = -w; }
+			var q = new VertexStreamData.SnormShort4();
+			q.X = x; q.Y = y; q.Z = z; q.W = w;
+			return q;
+		}
+
 }

@@ -1,0 +1,303 @@
+{
+  "version": "v1.4.2",
+  "status": "pass",
+  "baseline_version": "v1.4.0",
+  "baseline_package_sha256": "77a9ec0a2d7fca9832558b009c51ecfc91a98b5fe08e90c1d75063cce57d85bd",
+  "final_package_sha256": "133eb6c0584caf09590555b9e2d7f04a315dd2a54f144704ac2ae4e32b4f8425",
+  "cloth_enabled": false,
+  "all_56_meshes_skinning_only": true,
+  "sleeves_removed": [
+    {
+      "mesh": "tx5_body_00",
+      "vertices_removed": 300,
+      "triangles_removed": 480
+    },
+    {
+      "mesh": "tx5_body_00.lod1",
+      "vertices_removed": 171,
+      "triangles_removed": 246
+    },
+    {
+      "mesh": "tx5_body_00.lod2",
+      "vertices_removed": 89,
+      "triangles_removed": 110
+    },
+    {
+      "mesh": "tx5_body_00.lod3",
+      "vertices_removed": 46,
+      "triangles_removed": 50
+    }
+  ],
+  "thigh_material": {
+    "name": "tx5_skin",
+    "guid": "bb703f58-e6a1-1146-e09c-d5058f5affbe",
+    "blendMode": "no_alpha_blend",
+    "alphaTest": 0,
+    "flags": [
+      "two_sided"
+    ],
+    "shaderMatFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "vertexLayoutFlags": [
+      "bumpmap",
+      "skinning"
+    ],
+    "textures": {
+      "0": "tx5_skin_d",
+      "1": "tx5_flat_n",
+      "2": "tx5_flat_n",
+      "4": "tx5_neutral_s"
+    }
+  },
+  "head_scale_checks": [
+    {
+      "mesh": "tx5_head_01",
+      "max_position_error_m": 7.80000002365e-08,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_01.lod1",
+      "max_position_error_m": 1.1799999977135656e-07,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_01.lod2",
+      "max_position_error_m": 1.1799999977135656e-07,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_01.lod3",
+      "max_position_error_m": 1.0200000000182285e-07,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_02",
+      "max_position_error_m": 7.80000002365e-08,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_02.lod1",
+      "max_position_error_m": 1.0200000022386746e-07,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_02.lod2",
+      "max_position_error_m": 1.0200000000182285e-07,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_02.lod3",
+      "max_position_error_m": 1.0200000000182285e-07,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_09",
+      "max_position_error_m": 9.800000011495058e-08,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_09.lod1",
+      "max_position_error_m": 8.200000012337227e-08,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_09.lod2",
+      "max_position_error_m": 8.200000012337227e-08,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_09.lod3",
+      "max_position_error_m": 8.200000012337227e-08,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_10",
+      "max_position_error_m": 7.80000002365e-08,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_10.lod1",
+      "max_position_error_m": 1.0200000000182285e-07,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_10.lod2",
+      "max_position_error_m": 1.0200000000182285e-07,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_10.lod3",
+      "max_position_error_m": 1.1800000021544577e-07,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_11",
+      "max_position_error_m": 1.0615838741401262e-07,
+      "scale": 1.2,
+      "neck_transition": true
+    },
+    {
+      "mesh": "tx5_head_11.lod1",
+      "max_position_error_m": 1.0615838741401262e-07,
+      "scale": 1.2,
+      "neck_transition": true
+    },
+    {
+      "mesh": "tx5_head_11.lod2",
+      "max_position_error_m": 1.0615838741401262e-07,
+      "scale": 1.2,
+      "neck_transition": true
+    },
+    {
+      "mesh": "tx5_head_11.lod3",
+      "max_position_error_m": 1.0615838741401262e-07,
+      "scale": 1.2,
+      "neck_transition": true
+    },
+    {
+      "mesh": "tx5_head_12",
+      "max_position_error_m": 7.80000002365e-08,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_12.lod1",
+      "max_position_error_m": 7.80000000144554e-08,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_12.lod2",
+      "max_position_error_m": 1.0200000000182285e-07,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_12.lod3",
+      "max_position_error_m": 1.0200000000182285e-07,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_13",
+      "max_position_error_m": 7.80000002365e-08,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_13.lod1",
+      "max_position_error_m": 8.199999990132767e-08,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_13.lod2",
+      "max_position_error_m": 1.0200000000182285e-07,
+      "scale": 1.2,
+      "neck_transition": false
+    },
+    {
+      "mesh": "tx5_head_13.lod3",
+      "max_position_error_m": 1.0200000000182285e-07,
+      "scale": 1.2,
+      "neck_transition": false
+    }
+  ],
+  "neck_seams": [
+    {
+      "lod": 0,
+      "shared_points": 18
+    },
+    {
+      "lod": 1,
+      "shared_points": 18
+    },
+    {
+      "lod": 2,
+      "shared_points": 18
+    },
+    {
+      "lod": 3,
+      "shared_points": 18
+    }
+  ],
+  "materials_and_11_textures_unchanged": true,
+  "texture_sha256": {
+    "tx5_cuff_d.bin": "b153cdb6feb154716d193e4f853da7baececfb78c2668c1c334c574854c3a827",
+    "tx5_eye_d.bin": "e459f6d7c00fd5b0154a2ef41960ece95517051c9d4ce96805cbd4d5231a285c",
+    "tx5_face_d.bin": "1ec103ece7dbc1af8c700d500d79ae6b7943350b173e472569a89bede05911f7",
+    "tx5_flat_n.bin": "a08fd86cd238acfe7bb1858f0b53c66b0d242c74a0f99ab4a0116cd23915bac7",
+    "tx5_hair_d.bin": "61de066f5a9825d89e035a4bdddc82d575fb3b99bcd20c25cd1df6bacd003849",
+    "tx5_head_d.bin": "83ad8cd530e5e52237353fb0f8b752ed53b25624864e3d5e7f6aec95f74f4b64",
+    "tx5_lash_d.bin": "49d0e6b7ae782ba17aba429c988271645d35617f8e40f3d8a8db7c5e9ffe797a",
+    "tx5_neutral_s.bin": "a0c8be7880671674d9fadd1c1f2bc214ee00f865c8a5d4b76082a65447e83313",
+    "tx5_pants_d.bin": "58d2c37b49b1d336b6e79371b22a97fe7fc1aec5e4dc80b2afd9143a7786c74c",
+    "tx5_skin_d.bin": "befd3f5096993985f21e3438e9633a513272a30c049eca201a47fffc45de91f8",
+    "tx5_tunic_d.bin": "c37f800147b9c23d9b49ef7dbfe2f50ea2b502ebe6e16813c7141a79561285b3"
+  },
+  "source_validation": "pass",
+  "native_animation_checks": [
+    {
+      "animation": "anim_inventory_idle",
+      "frames": 629,
+      "all_lods_finite": true,
+      "max_neck_gap_m": 0.0,
+      "preview_frame": 1
+    },
+    {
+      "animation": "anim_run_forward_unarmed",
+      "frames": 25,
+      "all_lods_finite": true,
+      "max_neck_gap_m": 0.0,
+      "preview_frame": 12
+    },
+    {
+      "animation": "anim_bow",
+      "frames": 95,
+      "all_lods_finite": true,
+      "max_neck_gap_m": 0.0,
+      "preview_frame": 48
+    },
+    {
+      "animation": "anim_rider_gallop_bow",
+      "frames": 18,
+      "all_lods_finite": true,
+      "max_neck_gap_m": 0.0,
+      "preview_frame": 10
+    },
+    {
+      "animation": "anim_twohanded_defend_up_heavy",
+      "frames": 70,
+      "all_lods_finite": true,
+      "max_neck_gap_m": 0.0,
+      "preview_frame": 36
+    },
+    {
+      "animation": "anim_twohanded_thrust_ready",
+      "frames": 155,
+      "all_lods_finite": true,
+      "max_neck_gap_m": 0.0,
+      "preview_frame": 78
+    }
+  ],
+  "game_test_verified": false,
+  "limitations": "Offline resource, proportions, seam and skinning checks only. Enlarged hair/accessories and ordinary skirt deformation require game review."
+}
