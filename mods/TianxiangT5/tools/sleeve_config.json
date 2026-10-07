@@ -1,0 +1,24 @@
+{
+  "version": "v1.4.0",
+  "baseline_sha256": "7d3fa2e062fd29fd0c9ffa31c273f0a8f42a1dde29ee9b553601c90af22ce6e4",
+  "distance_multiplier": 1.25,
+  "streamer_pin_band_m": 0.035,
+  "streamer_transition_m": 0.12,
+  "streamer_distance_per_length": 1.6,
+  "streamer_max_distance_m": 1.10,
+  "sleeve_edge_max_distance_m": 0.16,
+  "material": {
+    "Name": "tx5_water_sleeve",
+    "BendingStiffness": 0.12,
+    "ShearingStiffness": 0.65,
+    "StretchingStiffness": 1.0,
+    "AnchorStiffness": 1.0,
+    "Damping": 0.20,
+    "Gravity": 9.81,
+    "LinearInertia": 0.65,
+    "MaxLinearVelocity": 8.0,
+    "LinearVelocityMultiplier": 0.9,
+    "AirDragMultiplier": 0.25,
+    "Wind": 0.10
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "method": "Approximate position-based gravity and arm/torso capsule screening, static native poses. Not Bannerlord solver; no self/horse collision or fabric parameter equivalence.",
+  "results": [
+    {
+      "pose": "idle",
+      "variant": "before",
+      "native_frame": 1,
+      "max_displacement_m": 0.10980392156862749,
+      "mean_displacement_m": 0.0349864390623444,
+      "edge_strain_p95": 0.007172316891997308,
+      "fixed_point_error_m": 0.0
+    },
+    {
+      "pose": "idle",
+      "variant": "after",
+      "native_frame": 1,
+      "max_displacement_m": 0.4838056558259035,
+      "mean_displacement_m": 0.13318307749128658,
+      "edge_strain_p95": 0.02098465293982799,
+      "fixed_point_error_m": 0.0
+    },
+    {
+      "pose": "block",
+      "variant": "before",
+      "native_frame": 23,
+      "max_displacement_m": 0.10980392156862753,
+      "mean_displacement_m": 0.03797835956917647,
+      "edge_strain_p95": 0.007593383417027876,
+      "fixed_point_error_m": 0.0
+    },
+    {
+      "pose": "block",
+      "variant": "after",
+      "native_frame": 23,
+      "max_displacement_m": 0.922183146573342,
+      "mean_displacement_m": 0.24535172136313926,
+      "edge_strain_p95": 0.04086823273134792,
+      "fixed_point_error_m": 0.0
+    },
+    {
+      "pose": "bow",
+      "variant": "before",
+      "native_frame": 61,
+      "max_displacement_m": 0.10980392156862752,
+      "mean_displacement_m": 0.03792061617122291,
+      "edge_strain_p95": 0.007988870951098874,
+      "fixed_point_error_m": 0.0
+    },
+    {
+      "pose": "bow",
+      "variant": "after",
+      "native_frame": 61,
+      "max_displacement_m": 0.7607675956625247,
+      "mean_displacement_m": 0.21784183694449322,
+      "edge_strain_p95": 0.027519294212886836,
+      "fixed_point_error_m": 0.0
+    }
+  ]
+}

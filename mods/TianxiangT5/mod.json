@@ -3,8 +3,23 @@
   "source_files": [
     "source/TianxiangT5_Rigged.blend",
     "source/TianxiangT5_Rigged.fbx",
-    "README.md"
+    "README.md",
+    "tools/build_sleeves.ps1",
+    "tools/sleeve_config.json",
+    "tools/prepare_sleeves.py",
+    "tools/update_sleeve_source.py",
+    "tools/restore_sleeve_baseline.py",
+    "tools/verify_sleeve_source.py",
+    "tools/verify_sleeves.py",
+    "tools/sleeve_motion.py",
+    "tools/preview_sleeves.py",
+    "tools/render_sleeves.py",
+    "tools/SleeveTool/Program.cs",
+    "tools/SleeveTool/SleeveTool.csproj",
+    "tools/SleeveTool/Directory.Build.props",
+    "reports/sleeve_validation.json",
+    "reports/sleeve_source_validation.json"
   ],
   "package": "module/TianxiangT5/AssetPackages/tx5.tpac",
-  "validation_report": "reports/grip_validation.json"
+  "validation_report": "reports/sleeve_validation.json"
 }
