@@ -1,0 +1,53 @@
+{
+  "route": "mapped simulation, offline authored TPAC segments",
+  "regions": [
+    {
+      "source": "tx5_body_00",
+      "vertices": 284,
+      "triangles": 480,
+      "fixed": 16
+    },
+    {
+      "source": "tx5_body_03",
+      "vertices": 996,
+      "triangles": 1463,
+      "fixed": 574
+    }
+  ],
+  "mappings": [
+    {
+      "mesh": "tx5_body_00",
+      "mapped_vertices": 284,
+      "max_reconstruction_error_m": 7.207457689888892e-17
+    },
+    {
+      "mesh": "tx5_body_00.lod1",
+      "mapped_vertices": 165,
+      "max_reconstruction_error_m": 2.89080557645347e-14
+    },
+    {
+      "mesh": "tx5_body_03",
+      "mapped_vertices": 451,
+      "max_reconstruction_error_m": 2.2929868617541516e-16
+    }
+  ],
+  "native_format_checks": [
+    {
+      "sample": "clo_battania_dress_c",
+      "codec_byte_exact": true,
+      "constraint_max_error_m": 8.666109467536653e-08,
+      "compressed_position_max_error_m": 0.00015208893504636866
+    },
+    {
+      "sample": "clo_khuzait_civil_coat",
+      "codec_byte_exact": true,
+      "constraint_max_error_m": 5.939988412251296e-08,
+      "compressed_position_max_error_m": 0.0001456782103246013
+    }
+  ],
+  "cooked_particles": 1280,
+  "cooked_constraints": 3470,
+  "skirt_effective_distances_preserved_in_cooked_data": true,
+  "note": "Simulation material is shared by sleeves and skirt; skirt remains within its original small distance limits.",
+  "official_solver_used": false
+}

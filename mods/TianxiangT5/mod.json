@@ -19,8 +19,20 @@
     "tools/SleeveTool/Directory.Build.props",
     "reports/sleeve_validation.json",
     "reports/sleeve_source_validation.json",
-    "reports/sleeve_followup_diagnosis.json"
+    "reports/sleeve_followup_diagnosis.json",
+    "source/TianxiangT5_ClothSimulation.blend",
+    "source/TianxiangT5_ClothSimulation.fbx",
+    "tools/build_mapped_sleeves.ps1",
+    "tools/restore_mapped_baseline.py",
+    "tools/build_mapped_recipe.py",
+    "tools/cloth_format.py",
+    "tools/update_mapped_source.py",
+    "tools/verify_mapped_sleeves.py",
+    "reports/mapped_sleeves_generation.json",
+    "reports/mapped_sleeves_validation.json",
+    "reports/mapped_sleeves_asset_audit.json",
+    "reports/cloth_format_research.md"
   ],
   "package": "module/TianxiangT5/AssetPackages/tx5.tpac",
-  "validation_report": "reports/sleeve_validation.json"
+  "validation_report": "reports/mapped_sleeves_validation.json"
 }

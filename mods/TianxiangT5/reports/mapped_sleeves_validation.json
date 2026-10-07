@@ -1,0 +1,70 @@
+{
+  "version": "v1.5.0",
+  "status": "pass",
+  "final_package_sha256": "4272990cc743f18ec3aa11feeb3f54c962ecc4f78d73a8c23e12fb2544f7adb8",
+  "route": "mapped simulation with authored cooked constraints and mapping",
+  "unchanged_original_submeshes": 54,
+  "original_geometry_and_skin_preserved": true,
+  "proxy_particles": 1280,
+  "constraints": 3470,
+  "constraint_length_max_error_m": 7.446503302865892e-09,
+  "mapped_meshes": [
+    "tx5_body_00",
+    "tx5_body_00.lod1",
+    "tx5_body_03"
+  ],
+  "byte_roundtrip": [
+    {
+      "asset": "tx5_body",
+      "segments_roundtrip_identical": true
+    },
+    {
+      "asset": "tx5_cloth_simulation",
+      "segments_roundtrip_identical": true
+    }
+  ],
+  "all_materials_and_11_full_texture_mips_preserved": true,
+  "texture_sha256": {
+    "tx5_cuff_d.bin": "b153cdb6feb154716d193e4f853da7baececfb78c2668c1c334c574854c3a827",
+    "tx5_eye_d.bin": "e459f6d7c00fd5b0154a2ef41960ece95517051c9d4ce96805cbd4d5231a285c",
+    "tx5_face_d.bin": "1ec103ece7dbc1af8c700d500d79ae6b7943350b173e472569a89bede05911f7",
+    "tx5_flat_n.bin": "a08fd86cd238acfe7bb1858f0b53c66b0d242c74a0f99ab4a0116cd23915bac7",
+    "tx5_hair_d.bin": "61de066f5a9825d89e035a4bdddc82d575fb3b99bcd20c25cd1df6bacd003849",
+    "tx5_head_d.bin": "83ad8cd530e5e52237353fb0f8b752ed53b25624864e3d5e7f6aec95f74f4b64",
+    "tx5_lash_d.bin": "49d0e6b7ae782ba17aba429c988271645d35617f8e40f3d8a8db7c5e9ffe797a",
+    "tx5_neutral_s.bin": "a0c8be7880671674d9fadd1c1f2bc214ee00f865c8a5d4b76082a65447e83313",
+    "tx5_pants_d.bin": "58d2c37b49b1d336b6e79371b22a97fe7fc1aec5e4dc80b2afd9143a7786c74c",
+    "tx5_skin_d.bin": "befd3f5096993985f21e3438e9633a513272a30c049eca201a47fffc45de91f8",
+    "tx5_tunic_d.bin": "c37f800147b9c23d9b49ef7dbfe2f50ea2b502ebe6e16813c7141a79561285b3"
+  },
+  "source_validation": "pass",
+  "native_animation_checks": [
+    {
+      "animation": "anim_inventory_idle",
+      "frames": 629
+    },
+    {
+      "animation": "anim_run_forward_unarmed",
+      "frames": 25
+    },
+    {
+      "animation": "anim_bow",
+      "frames": 95
+    },
+    {
+      "animation": "anim_rider_gallop_bow",
+      "frames": 18
+    },
+    {
+      "animation": "anim_twohanded_defend_up_heavy",
+      "frames": 70
+    },
+    {
+      "animation": "anim_twohanded_thrust_ready",
+      "frames": 155
+    }
+  ],
+  "game_solver_used": false,
+  "game_test_verified": false,
+  "limitations": "Cooked format inferred from two installed Native samples. Engine dynamics, graphics cloth settings and riding collisions require user game testing. Proxy material is shared with skirt; original skirt activity limits preserved."
+}

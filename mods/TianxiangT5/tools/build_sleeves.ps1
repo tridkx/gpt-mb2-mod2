@@ -1,6 +1,8 @@
 param([switch]$Preview)
 $ErrorActionPreference='Stop'
 $project=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
+[xml]$descriptor=Get-Content -LiteralPath (Join-Path $project 'module/TianxiangT5/SubModule.xml')
+if([version]$descriptor.Module.Version.value.TrimStart('v') -ge [version]'1.5.0') {throw 'This is the historical direct-simulation builder. Use tools/build_mapped_sleeves.ps1 for v1.5.0 and later.'}
 $python='C:/ProgramData/anaconda3/python.exe'
 $blender='D:/Blender Foundation/Blender 5.2/blender.exe'
 $dll=Join-Path $project 'build/sleeve_tool/bin/SleeveTool.dll'

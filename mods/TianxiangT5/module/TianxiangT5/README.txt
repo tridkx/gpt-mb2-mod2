@@ -1,6 +1,51 @@
 # 天香 T5 装备模组
 
-当前版本：**v1.3.1**。
+当前版本：**v1.5.0**。
+
+v1.4.1 的游戏反馈仍是长水袖没有下垂。v1.5.0 改用路线 2，直接生成 TPAC 内的完整模拟约束和外观映射，不依赖编辑器 GUI。新版通过离线检查，实际下垂与穿模仍由你在游戏内确认。
+
+## 独立代理与完整模拟数据（v1.5.0）
+
+- 从本机两件原生装备解读并核对 `b97e0f10` 布料预处理数据、`af41613e` 映射数据。原生数据读写逐字节一致，约束长度与网格的最大误差小于 0.0000001 米。前几版只写参数和活动距离，没有这两类数据；这可能与游戏中不下垂有关，尚未通过游戏测试确认原因。
+- 新增 `tx5_cloth_simulation` 代理：水袖 284 个顶点、裙摆 996 个顶点，合计 1280 个模拟粒子和 3470 条约束。两侧长袖各保留 8 个固定根点，活动范围沿袖长增加；写入拉伸、弯曲、锚定、碰撞三角形、质量、原生骨骼与权重数据。
+- 上衣 LOD0、LOD1 以及裙摆分别写入真实外观映射。LOD0 水袖自由顶点只决定参与映射；活动距离由代理控制。原有上衣边缘的小幅模拟在本版固定，以聚焦长水袖。
+- 身体 MetaMesh 的代理引用会影响其中的裙摆，因此代理同时包含裙摆，保留其原来的精确活动距离；裙摆和水袖共用代理布料材质，这是本路线的行为变化。裙摆上已有的少量独立饰片没有固定点，仍受蒙皮中心的活动范围约束，并生成到最近固定点的辅助锚定。
+- 原有 56 个外观子网格的几何、UV、法线与骨权重保留；除上衣 LOD0/LOD1 的映射 Alpha 外，54 个其他子网格完整顶点流和局部参数保持一致。身体资源新增全局代理引用，相关布料元数据摘要会变化。全部 9 个材质及 11 张贴图的完整 mip 保留。
+- 检查覆盖 TPAC 实际数据段回读、约束分批无写入冲突、代理映射坐标重建、源文件重新打开/导入与 992 个原生动画蒙皮姿态。**这些检查没有运行游戏布料求解器，不代表已确认下垂效果。**
+
+制作入口：`tools/build_mapped_sleeves.ps1`，从不可变 v1.4.1 基线重建。主源仍为 `source/TianxiangT5_Rigged.blend/.fbx`，独立模拟源为 `source/TianxiangT5_ClothSimulation.blend/.fbx`；两份 Blend 都保留打包贴图。报告见 `reports/mapped_sleeves_generation.json`、`reports/mapped_sleeves_validation.json`、`reports/cloth_format_research.md`。早期 `MappedSleeves` 候选源与准备报告留作历史，不是最终代理源。
+
+旧版包和标签保留；新标签为 `TianxiangT5/v1.5.0`。更新后完全退出游戏与启动器再重启，测试格挡、持弓、跑步和骑乘时的下垂、摆动、碰撞与远近切换；LOD2/LOD3 沿用蒙皮。游戏测试由你完成。
+
+## 长水袖被手臂带起、悬空的进一步返修（v1.4.1）
+
+根据 v1.4.0 的游戏反馈，继续调整长水袖的下垂空间和约束：
+
+- 每侧长水袖的固定顶点由 36 个减少到量化后的 8 个，保留实际袖根，缩短固定段；其余部分更早进入活动区。
+- 自由端最大活动距离从约 1.10 米增加到约 1.85 米，允许大幅抬臂后向下转动；这只是相对蒙皮位置的活动上限，抗拉仍为 1.0，未拉长或修改水袖几何。
+- 锚定刚度从 1.0 降至 0.10，弯曲刚度从 0.12 降至 0.015，剪切刚度从 0.65 降至 0.15，降低整片随袖根移动的约束；惯性从 0.65 降至 0.40，阻尼从 0.20 降至 0.12。袖筒边缘的原有 16 厘米上限保留，未扩展袖筒模拟区域。
+- 最终资源回读、54 个其他子网格完整数据、全部材质与贴图、源 Blend/FBX、992 个原生蒙皮姿态均通过离线检查。报告见 `reports/sleeve_validation.json`、`reports/sleeve_source_validation.json`；反馈诊断见 `reports/sleeve_followup_diagnosis.json`。
+
+本版的几何范围诊断使用人为翻转的极端姿态，不能当作游戏布料模拟。下方 v1.4.0 前后图片和近似预览是历史资料，不是 v1.4.1 的游戏验证。新版是否能在实际动作中恢复下垂、局部弯曲且不穿模，仍由你在游戏内测试。已保留 v1.4.0 交付包；本地发布标签为 `TianxiangT5/v1.4.1`。
+
+## 水袖布料返修（v1.4.0）
+
+- 采用游戏原生直接布料模拟。两侧长水袖各保留一条固定袖根，活动范围沿布面距离平滑增加；量化后自由端最大允许偏离蒙皮锚点约 1.10 米，袖边最大约 16 厘米。这是物理活动上限，不是强制位移或拉长水袖。
+- 水袖使用独立 `tx5_water_sleeve` 参数：弯曲刚度 0.12、剪切刚度 0.65、抗拉和锚定刚度 1.0、阻尼 0.20、惯性 0.65、风力 0.10。袖根随手臂，长尾有足够空间受重力下垂和产生滞后摆动。
+- LOD0 和 LOD1 启用水袖布料，LOD2/LOD3 继续使用蒙皮。碰撞沿用游戏的 `human_body`，没有修改原版碰撞体，也没有添加独立代理网格或编辑器 `.tcc/.tcm` 预处理缓存。
+- 最终包中 54 个其他子网格的完整顶点流和布料设置保持一致；所有几何、法线、UV、骨权重、材质和完整贴图 mip 保留 v1.3.1 数据。手掌握持、头颈、裙摆与头发返修保留。
+
+检查报告：`reports/sleeve_validation.json`、`reports/sleeve_source_validation.json`。六组原生动作共检查 992 个有效离线姿态；保存后的 Blend 已重新打开，FBX 已重新导入，23 个源贴图实例均已打包。
+
+前后对照见 `reports/sleeve_before_block.png`、`reports/sleeve_after_block.png`；站立和持弓对照也在 reports/。这些图使用静态原生姿态加重力/胶囊的近似布料预览，**不是游戏求解器结果**。预览中的伸长和碰撞指标只作筛查，不证明游戏中无穿模、无抖动或实际柔软度相同。游戏测试由你完成，重点检查抬臂格挡、跑步、持弓与骑乘时的摆动、穿身和远近切换；游戏的布料模拟设置也需开启。
+
+本版使用独立的局部制作入口，避免旧流程缺失的外部辅助文件，并从本地 Git 的 v1.3.1 恢复不可变基线：
+
+```powershell
+./mods/TianxiangT5/tools/build_sleeves.ps1 -Preview
+```
+
+参数在 `tools/sleeve_config.json`。此入口更新源文件和最终 TPAC、运行离线检查，但不安装或启动游戏。不要用旧 `rig_model.py` → `build_package.py` 流程单独覆盖本版水袖；该旧流程保留用于历史模型重建。源 ZIP 包含本版水袖工具和参数，仍保持 source/ 与 tex/ 相邻；运行制作入口需要本机 Blender、Python/SciPy、.NET、mbtool 和已安装的装备技能。本地发布标签为 `TianxiangT5/v1.4.0`，v1.3.1 旧交付包保留。
 
 ## 手掌、小臂与武器握持修正（v1.3.1）
 
@@ -134,6 +179,10 @@ campaign.add_item_to_player_party tx5_head
 
 本次构建使用本机 Blender 5.2、`D:\mb-tools` 的 TPAC 工具和 `D:\gpt-mb2-mod` 的几何/贴图辅助库。重新构建的主要步骤是 `tools/rig_model.py` → `tools/export_geometry.py` → `tools/build_package.py`。
 
-`tools/install_release.ps1` 将已经检查的版本安装到本机 TianxiangT5 模组目录，保留上一版交付包，更新压缩包并保存本地 Git 版本。
+`../../tools/install_release.ps1 -Mod TianxiangT5 -Version <版本>` 使用 mod.json 指定的当前验证报告安装自己的模块并打包；先用 `-CheckOnly` 检查，发布后另做本地 Git 提交。
 
 官方说明：[布料模拟](https://moddocs.bannerlord.com/editor/resource-editors/cloth_simulation/)、[资源命名与骨骼索引](https://moddocs.bannerlord.com/asset-management/asset-types/asset_naming_conventions/)。
+
+## 多模组布局迁移（2026-10-06）
+
+本文件所在目录现为 `mods/TianxiangT5/`，上文相对路径均以此模组目录为基准。原始模型在 `input/model.fbx`，初步检查工程在 `source/inspection.blend`。共享 AssetTool 位于工作区根目录 `tools/AssetTool/`，打包和安装入口也在根目录 tools/。旧报告中的绝对路径是生成时的历史记录。版本仍为 v1.3.1，游戏资源未重建。
