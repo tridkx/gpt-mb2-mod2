@@ -1,22 +1,22 @@
 {
   "status": "pass",
-  "final_package_sha256": "fd9e8a92de71dac6ed1c0b2564edc463ff99c782161b447468366eafd8b6ea42",
+  "final_package_sha256": "02920b5ab57a79ae8340f053a602a479e1d640c9b05d1cc650d745ef1f993e6d",
   "scope": "Offline final-package diffuse previews; no game rendering or cloth solver",
   "reviewed": [
-    "LOD0 front/back/side and feet front/side",
-    "LOD3 front; all LOD shared cuts checked numerically",
-    "LOD0 native run and riding worst-frame previews",
-    "Head, eye and hand geometry unchanged against v1.0.0"
+    "Run ankle-coverage worst frame 11, both feet close-up",
+    "Run extension worst frame 12",
+    "Rest feet side",
+    "All LOD ankle overlap and shared skin cuts measured from final export"
   ],
   "findings": [
-    "User clarified single-leg and single-shoe width, not stance spacing.",
-    "Leg sections measure approximately 0.80 of v1.0.0; shoes measure 0.75. Length and height are unchanged.",
-    "Head, eyes, hands, UV, weights and topology match v1.0.0.",
-    "Reviewed pants and shoes retain their silhouette in native run/riding poses."
+    "Hidden distal skin extends inside socks with continuous calf/foot weight field.",
+    "Ankle close-ups show sustained skin coverage through the sock opening.",
+    "Skin remains continuous up inside the pants; hidden cross-sections retract smoothly to avoid a small cuff poke-through.",
+    "Pants and shoes retain v1.0.1 widths; head and hands unchanged."
   ],
   "limitations": [
     "Preview uses decoded final diffuse and quantized skin weights, not the Bannerlord renderer.",
     "Game body sliders, gripping, IK and horse collision remain for user testing."
   ],
-  "version": "v1.0.1"
+  "version": "v1.0.2"
 }

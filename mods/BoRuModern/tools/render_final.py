@@ -38,8 +38,16 @@ def render(label,offset,close=False,detail=None):
         eye_points=np.concatenate([m['pos'] for m in meshes if m['name'].split('.lod')[0] in ['boru_head_eyes','boru_head_sclera']]);center=Vector((eye_points.min(0)+eye_points.max(0))/2)
     if detail=='feet':
         foot_points=np.concatenate([m['pos'] for m in meshes if m['name'].startswith('boru_legs')]);center=Vector((foot_points.min(0)+foot_points.max(0))/2)
+    if detail in ['ankle_l','ankle_r']:
+        points=[]
+        for o,m in zip(objects,meshes):
+            if not m['name'].startswith('boru_legs'):continue
+            select=(m['pos'][:,0]<0 if detail=='ankle_l' else m['pos'][:,0]>0)&(m['pos'][:,2]>.13)
+            if select.any():points.extend([list(o.data.vertices[i].co) for i in np.flatnonzero(select)])
+        points=np.array(points);center=Vector((points.min(0)+points.max(0))/2)
     cam.location=center+Vector(offset);cam.rotation_euler=(center-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=.6 if close else max(1.9,float(np.ptp(points[:,2]))*1.12)
     if detail:cam.data.ortho_scale=.19 if detail=='eyes' else .62
+    if detail in ['ankle_l','ankle_r']:cam.data.ortho_scale=.32
     for light,loc in lights:light.location=center+loc;light.rotation_euler=(center-light.location).to_track_quat('-Z','Y').to_euler()
     s.render.filepath=str(ROOT/'reports'/('final_'+(('lod'+str(lod)+'_') if lod else '')+label+'.png'));bpy.ops.render.render(write_still=True)
 render('rest_front',(0,4,0));render('rest_back',(0,-4,0));render('rest_side',(4,0,0));render('head',(0,4,0),True)
@@ -52,5 +60,10 @@ for motion in report['motions']:
     label=motion['label'];anim=parse_animjson(json.loads((ROOT/'reports'/(label+'.json')).read_text()));frame=motion['worst_frame'];skin=skin_matrices(rig,anim,frame)
     for o,m in zip(objects,meshes):p=lbs(m['pos'],m['bi'],m['bw'],skin);o.data.vertices.foreach_set('co',p.astype('f4').ravel());o.data.update()
     render(label+'_worst',(2.5,4,0));render(label+'_side',(4,0,0));previews.append({'label':label,'frame':frame,'file':'reports/final_'+label+'_worst.png'})
+    if label=='run':
+        ankle=json.loads((ROOT/'reports/ankle_validation.json').read_text());frame=next(row['worst']['frame'] for row in ankle['motions'] if row['lod']==0 and row['motion']=='run');skin=skin_matrices(rig,anim,frame)
+        for o,m in zip(objects,meshes):
+            p=lbs(m['pos'],m['bi'],m['bw'],skin);o.data.vertices.foreach_set('co',p.astype('f4').ravel());o.data.update()
+        for side in ['l','r']:render('run_ankle_'+side,(0,4,.1),detail='ankle_'+side)
 (ROOT/'reports/final_preview_manifest.json').write_text(json.dumps({'package_sha256':report['final_package_sha256'],'source':'Final TPAC re-export, decoded diffuse and byte weights','game_cloth_solver_used':False,'previews':previews},indent=2))
 print('FINAL_PREVIEWS_READY')

@@ -1,6 +1,6 @@
 # BoRu - Modern Outfit
 
-孟柏汝去脚版的独立骑砍2装备模块，版本 v1.0.1。固定外观，不包含面部表情或捏脸兼容。推荐女性角色成套穿戴：发容与眼镜、白衬衫与牛仔裤、双手与腕饰、帆布鞋。四件均为商品，也可在作弊物品列表搜索“孟柏汝”。模块管理器显示名为英文 `BoRu - Modern Outfit`。
+孟柏汝去脚版的独立骑砍2装备模块，版本 v1.0.2。固定外观，不包含面部表情或捏脸兼容。推荐女性角色成套穿戴：发容与眼镜、白衬衫与牛仔裤、双手与腕饰、帆布鞋。四件均为商品，也可在作弊物品列表搜索“孟柏汝”。模块管理器显示名为英文 `BoRu - Modern Outfit`。
 
 原始网格来自 `D:/dsh-nvguiqiao/repo/models/08_孟柏汝_BoRu_女_去脚/`，贴图来自相邻原版 `08_孟柏汝_BoRu_女/textures/`。input 保存独立副本、原说明、源工具和 SHA256；原目录只读使用。原版去脚切口保留，鞋口仍需游戏动作测试。
 
@@ -14,8 +14,12 @@
 
 目录：input 原始输入；source 可编辑 Blend/FBX；tex 相邻纹理；tools 专用脚本；build 缓存；reports 检查和最终包预览；module/BoRuModern 游戏模块；dist 交付包。
 
-制作顺序：`prepare_model.py` → `prepare_textures.py` → `create_source.py`（Blender）→ `export_geometry.py`（Blender）→ `build_package.py` → `verify_release.py` → `render_final.py`（Blender，分别传 `-- 0/1/2/3`）→ `verify_source.py`（Blender）。使用工作区共用打包和安装入口，模组 ID 为 BoRuModern。Blender 后台脚本使用 `--python-exit-code 1`，当前会话需获准在沙箱外运行。
+制作顺序：`prepare_model.py` → `prepare_textures.py` → `create_source.py`（Blender）→ `export_geometry.py`（Blender）→ `build_package.py` → `verify_release.py` → `verify_ankle.py` → `render_final.py`（Blender，分别传 `-- 0/1/2/3`）→ `verify_source.py`（Blender）。使用工作区共用打包和安装入口，模组 ID 为 BoRuModern。Blender 后台脚本使用 `--python-exit-code 1`，当前会话需获准在沙箱外运行。
 
 工具依赖为 Blender 5.2、Python NumPy/Pillow/SciPy、工作区 tools/asset_helpers、本机 mbtool/AssetTool/.NET 与当前安装的 Native 资源模板。不修改其他模组或 Native，不启动游戏，不上传远程。游戏测试由用户完成；离线检查不证明游戏中的武器握持、马匹碰撞、IK、体型滑块或所有穿模。整套装备以固定体型外观为目标，混搭不在本版兼容范围。
 
-本次宽度返修专项检查：`verify_width.py` 比较 build/width_v100/fitted_model.npz 中保留的上一版拟合基线，检查真实裤腿截面、鞋横轴、纵轴，以及头/手/UV/权重和拓扑保持不变。基线缓存可由 v1.0.0 本地 Git 标签中的生成流程重建。
+本次宽度返修专项检查：`verify_width.py` 比较 build/width_v100/fitted_model.npz 中保留的上一版拟合基线，检查真实裤腿截面、鞋横轴、纵轴，以及头/手、UV 和拓扑保持不变；脚踝权重变化单独检查。基线缓存可由 v1.0.0 本地 Git 标签中的生成流程重建。
+
+v1.0.2 脚踝返修：原去脚切口向袜口内部延伸 4.5cm，保留装备分割线并重建隐藏覆盖；袜口与脚踝使用共同的连续 calf/foot 权重场。腿、鞋宽度及头脸沿用上一版。全段跑步和脚部近景仍为离线核对，游戏效果由用户确认。
+
+裤口内隐藏皮肤采用平滑的横截面内收，保留连续覆盖；不再通过降低皮肤上切口来遮盖穿模。

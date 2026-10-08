@@ -1,10 +1,10 @@
 {
-  "version": "v1.0.1",
+  "version": "v1.0.2",
   "status": "pass",
   "check_scope": "offline_structural_and_native_motion_checks",
-  "final_package_sha256": "fd9e8a92de71dac6ed1c0b2564edc463ff99c782161b447468366eafd8b6ea42",
-  "baseline_package_sha256": "f7ca34965a9637fdf6add39f85e02b7f7ba41c12355b973ce6d6c91ed94fe01a",
-  "baseline_reason": "BoRuModern/v1.0.0: single-leg and single-shoe width revision",
+  "final_package_sha256": "02920b5ab57a79ae8340f053a602a479e1d640c9b05d1cc650d745ef1f993e6d",
+  "baseline_package_sha256": "fd9e8a92de71dac6ed1c0b2564edc463ff99c782161b447468366eafd8b6ea42",
+  "baseline_reason": "BoRuModern v1.0.1: ankle overlap and weighting revision",
   "lods": [
     {
       "lod": 0,
@@ -134,13 +134,13 @@
         },
         {
           "name": "boru_legs_skin",
-          "max_extension": 1.01648375980631,
-          "p99_extension": 1.0136523366146386
+          "max_extension": 1.0115798288626086,
+          "p99_extension": 1.010260262183108
         },
         {
           "name": "boru_legs_cloth",
-          "max_extension": 1.0188234841917838,
-          "p99_extension": 1.008100594344933
+          "max_extension": 1.0582916946414191,
+          "p99_extension": 1.0231472875133103
         }
       ]
     },
@@ -152,17 +152,17 @@
       "worst_frame": 12,
       "worst_mesh": "boru_body_cloth",
       "max_edge_extension": 3.3957820551439517,
-      "max_mesh_p99_extension": 1.582708290895282,
+      "max_mesh_p99_extension": 1.5868396664496884,
       "meshes": [
         {
           "name": "boru_body_skin",
-          "max_extension": 1.9973248635686167,
-          "p99_extension": 1.4090301796797753
+          "max_extension": 1.621608134512485,
+          "p99_extension": 1.279182178524554
         },
         {
           "name": "boru_body_cloth",
           "max_extension": 3.3957820551439517,
-          "p99_extension": 1.582708290895282
+          "p99_extension": 1.5868396664496884
         },
         {
           "name": "boru_hands_skin",
@@ -216,13 +216,13 @@
         },
         {
           "name": "boru_legs_skin",
-          "max_extension": 1.0651549078124736,
-          "p99_extension": 1.0623092893718118
+          "max_extension": 1.0627545480366414,
+          "p99_extension": 1.059204244054381
         },
         {
           "name": "boru_legs_cloth",
-          "max_extension": 1.0997135682252603,
-          "p99_extension": 1.0357419911249057
+          "max_extension": 1.2816242207976798,
+          "p99_extension": 1.1536014301173434
         }
       ]
     },
@@ -298,13 +298,13 @@
         },
         {
           "name": "boru_legs_skin",
-          "max_extension": 1.036927745723046,
-          "p99_extension": 1.0336893981495958
+          "max_extension": 1.0307125092220082,
+          "p99_extension": 1.0279017778946058
         },
         {
           "name": "boru_legs_cloth",
-          "max_extension": 1.038470173368661,
-          "p99_extension": 1.014810668634824
+          "max_extension": 1.1276507760362677,
+          "p99_extension": 1.0512491747578643
         }
       ]
     },
@@ -380,13 +380,13 @@
         },
         {
           "name": "boru_legs_skin",
-          "max_extension": 1.030064554766556,
-          "p99_extension": 1.0270594825804436
+          "max_extension": 1.0340308319810172,
+          "p99_extension": 1.0305209788414036
         },
         {
           "name": "boru_legs_cloth",
-          "max_extension": 1.0548949929309963,
-          "p99_extension": 1.0208948174670835
+          "max_extension": 1.1322070384616798,
+          "p99_extension": 1.0644326140160558
         }
       ]
     }

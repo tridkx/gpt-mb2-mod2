@@ -8,9 +8,9 @@ old=np.load(baseline);new=np.load(ROOT/'build/fitted_model.npz')
 landmarks=np.array(json.loads((ROOT/'reports/weight_transfer.json').read_text())['target_landmarks'])
 names=json.loads((ROOT/'reports/weight_transfer.json').read_text())['native_bones']
 for key in old.files:
-    if key.endswith(('_w','_f','_uv')):assert np.array_equal(old[key],new[key]),key
+    if key.endswith(('_f','_uv')) and not key.startswith(('boru_body_skin','boru_legs_skin')):assert np.array_equal(old[key],new[key]),key
     if key.startswith(('boru_head','boru_hands')):assert np.array_equal(old[key],new[key]),key
-    if key.endswith('_p'):assert np.array_equal(old[key][:,2],new[key][:,2]),key
+    if key.endswith('_p') and key not in ['boru_legs_skin_p','boru_body_skin_p']:assert np.array_equal(old[key][:,2],new[key][:,2]),key
 def section(a,name,height,side):
     p=a[name+'_p'];faces=a[name+'_f'];out=[]
     for tri in p[faces]:
@@ -35,5 +35,5 @@ for side in ['l','r']:
     assert abs(ratio-.75)<1e-5 and length<1e-6,(side,ratio,length)
     shoe.append({'side':side,'width_ratio_to_v100':ratio,'max_length_axis_change_m':length,'height_unchanged':True})
 package=ROOT/'module/BoRuModern/AssetPackages/boru.tpac'
-report={'status':'pass','version':'v1.0.1','baseline_version':'v1.0.0','final_package_sha256':hashlib.sha256(package.read_bytes()).hexdigest(),'head_hands_uv_weights_topology_unchanged':True,'leg_shoe_height_unchanged':True,'leg_width_scale_from_original':.64,'leg_depth_scale_from_original':.85,'shoe_width_scale_from_original':.6375,'leg_sections':checks,'shoes':shoe,'head_scale_from_original':1.12}
+report={'status':'pass','version':'v1.0.2','baseline_version':'v1.0.0','final_package_sha256':hashlib.sha256(package.read_bytes()).hexdigest(),'head_hands_pants_shoe_uv_topology_unchanged':True,'pants_shoes_height_unchanged':True,'ankle_weights_and_hidden_skin_checked_separately':True,'leg_width_scale_from_original':.64,'leg_depth_scale_from_original':.85,'shoe_width_scale_from_original':.6375,'leg_sections':checks,'shoes':shoe,'head_scale_from_original':1.12}
 (ROOT/'reports/proportion_validation.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))

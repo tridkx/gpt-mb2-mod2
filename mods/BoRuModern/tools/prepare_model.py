@@ -100,6 +100,18 @@ def deform(q):
         out[:,1]=fitted_centers[:,1]+(out[:,1]-fitted_centers[:,1])*(1-(1-LEG_DEPTH_SCALE)*a)
     return narrow_feet(q,out)
 
+def deform_skin(q):
+    out=deform(q)
+    amount=smooth(.18,.235,q[:,2])*(1-smooth(.25,.27,q[:,2]))
+    for side in ['l','r']:
+        joints=np.array([anatomy['foot_'+side],anatomy['calf_'+side],anatomy['thigh_'+side]])
+        centers=q.copy()
+        for axis in [0,1]:centers[:,axis]=np.interp(q[:,2],joints[:,2],joints[:,axis])
+        center=deform(centers);selected=q[:,0]<0 if side=='l' else q[:,0]>=0
+        a=amount*selected
+        out[:,:2]=center[:,:2]+(out[:,:2]-center[:,:2])*(1-.18*a[:,None])
+    return out
+
 # Map original UE/CC body skin; merge face and separate digit influences.
 mapping={'root':'pelvis','pelvis':'pelvis','spine_01':'spine','spine_02':'spine1','spine_03':'spine2','neck_01':'neck','head':'head','cc_base_l_ribstwist':'spine2','cc_base_r_ribstwist':'spine2'}
 for side in ['l','r']:
@@ -128,12 +140,14 @@ amount=(1-smooth(.08,.20,np.abs(points[:,0])))*smooth(.70,.78,points[:,2])*(1-sm
 leg=1-smooth(.78,.95,points[:,2]);right=smooth(-.04,.04,points[:,0]);lower=np.zeros_like(weights)
 lower[:,ni['pelvis']]=1-leg;lower[:,ni['l_thigh']]=leg*(1-right);lower[:,ni['r_thigh']]=leg*right
 weights=weights*(1-amount[:,None])+lower*amount[:,None]
-# Keep the shoe shell largely rigid and the concealed ankle transition smooth.
-low=points[:,2]<.20
+# One continuous ankle field is shared by the exposed skin and sock opening.
+# The sole stays rigid; the sock rim increasingly follows the calf.
+low=points[:,2]<.26
 for side in ['l','r']:
     selected=low & (points[:,0]<0 if side=='l' else points[:,0]>=0)
-    calf=.2*smooth(.11,.20,points[selected,2]);weights[selected]=0
-    weights[selected,ni[side+'_calf']]=calf;weights[selected,ni[side+'_foot']]=1-calf
+    calf=smooth(.105,.24,points[selected,2]);blend=1-smooth(.24,.26,points[selected,2])
+    local=np.zeros_like(weights[selected]);local[:,ni[side+'_calf']]=calf;local[:,ni[side+'_foot']]=1-calf
+    weights[selected]=weights[selected]*(1-blend[:,None])+local*blend[:,None]
 
 wed=p['wedges'];faces=p['faces'];tri=wed['pt'][np.stack([faces['w0'],faces['w1'],faces['w2']],1)]
 norm=np.zeros_like(points);fn=np.cross(points[tri[:,1]]-points[tri[:,0]],points[tri[:,2]]-points[tri[:,0]])
@@ -188,7 +202,16 @@ for fi,face in enumerate(faces):
             store['f'].append(idx)
 data={};manifest=[]
 for name,rec in parts.items():
-    arr=np.array(rec['rows']);q=arr[:,:3];fit_fn=deform_shoes if rec['part']=='legs' else deform;fitted=fit_fn(q);w=arr[:,8:].copy()
+    arr=np.array(rec['rows']);q=arr[:,:3].copy();w=arr[:,8:].copy()
+    if rec['part']=='legs' and rec['material']=='skin':
+        # Preserve the shared equipment cut at .145m, but extend the original
+        # open .135m cut 4.5cm into the sock. The hidden tail follows the foot.
+        extension=1-smooth(.135,.145,q[:,2]);q[:,2]-=.045*extension
+        for side in ['l','r']:
+            select=(extension>1e-7)&(q[:,0]<0 if side=='l' else q[:,0]>=0)
+            calf=smooth(.105,.24,q[select,2]);w[select]=0
+            w[select,ni[side+'_calf']]=calf;w[select,ni[side+'_foot']]=1-calf
+    fit_fn=deform_shoes if rec['part']=='legs' else (deform_skin if rec['part']=='body' and rec['material']=='skin' else deform);fitted=fit_fn(q)
     if rec['material']=='eyes':
         # The supplied eye map is a planar iris disc, not a globe UV atlas.
         # Project around the measured front corneal centers instead of wrapping

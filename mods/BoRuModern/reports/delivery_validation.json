@@ -1,9 +1,52 @@
 {
   "status": "pass",
-  "version": "v1.0.1",
-  "record": "Historical installed release recovered from byte-verified delivery archives after the earlier approval-service failure.",
+  "version": "v1.0.2",
+  "install_path": "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\BoRuModern",
+  "installed_and_archive_bytes_match": [
+    {
+      "path": "SubModule.xml",
+      "sha256": "393e57d010d478b2aa6afd4b218f7f4a8a67c8301ee3ff709b9faedbb0d3142a"
+    },
+    {
+      "path": "AssetPackages\\boru.tpac",
+      "sha256": "02920b5ab57a79ae8340f053a602a479e1d640c9b05d1cc650d745ef1f993e6d"
+    },
+    {
+      "path": "ModuleData\\items.xml",
+      "sha256": "3e73c19b9d40d1fa4b09fc9eda13b634a66684b95fad004d4c0304cb34c920af"
+    }
+  ],
+  "source_archive_matches_config": true,
+  "previous_release_archives_preserved": true,
   "archives": {
-    "BoRuModern_Mod.zip": "9c36e20b58e1c1a284471c57fed95fdaf7e48a09c68f30a00879c9355842f9ac",
-    "BoRuModern_Source.zip": "a20df554f5401b45394acc48918ac028a3582bdd671ff43cddd00b2f3c7904e4"
-  }
+    "BoRuModern_Mod.zip": {
+      "bytes": 23733627,
+      "sha256": "19e388329ab5cb5b925a55c639eff13a5d6eabf90f2a40476499acd92a42f460"
+    },
+    "BoRuModern_Source.zip": {
+      "bytes": 127237714,
+      "sha256": "627a777b3be0c6671942e03a0c79bebab82ab1620787afb72ef56401d9bdfa16"
+    },
+    "BoRuModern_Source_before_git_byte_preservation.zip": {
+      "bytes": 124977531,
+      "sha256": "76dbcea1b5664af6466f9abe2b3ec7d4e030a80a19d5b15eda3864d8fa3ee423"
+    },
+    "BoRuModern_v1.0.0_Mod.zip": {
+      "bytes": 23732567,
+      "sha256": "c34f8105826992533980324c53b18811bb41fb80e27fc4918f31f3c687832a74"
+    },
+    "BoRuModern_v1.0.0_Source.zip": {
+      "bytes": 124977548,
+      "sha256": "3ea0b86aacd0b45a62eee6b01b61c4134eccbb8416b668971d3376279a127997"
+    },
+    "BoRuModern_v1.0.1_Mod.zip": {
+      "bytes": 23732642,
+      "sha256": "9c36e20b58e1c1a284471c57fed95fdaf7e48a09c68f30a00879c9355842f9ac"
+    },
+    "BoRuModern_v1.0.1_Source.zip": {
+      "bytes": 124763535,
+      "sha256": "a20df554f5401b45394acc48918ac028a3582bdd671ff43cddd00b2f3c7904e4"
+    }
+  },
+  "game_launched": false
 }
