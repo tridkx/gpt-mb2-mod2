@@ -209,5 +209,25 @@
     0.32,
     0.16
   ],
-  "measurement_notes": "Measured 13 meshes. Eye/face landmarks z121-133. Hand mesh06 same measured bounds x43.61 z74.13..91.48, legs mesh05 z11.55..71.53, foot supplied by pants mesh04; long transparent skirt mesh10 z17..89. Wide sleeves mesh07 extend to z66.13: limited cloth .025m. Long hair consolidated mesh12. Front lash mesh02 V correction."
+  "measurement_notes": "Measured 13 meshes. Eye/face landmarks z121-133. Hand mesh06 same measured bounds x43.61 z74.13..91.48, legs mesh05 z11.55..71.53, foot supplied by pants mesh04; long transparent skirt mesh10 z17..89. Wide sleeves mesh07 extend to z66.13: limited cloth .025m. Long hair consolidated mesh12. Front lash mesh02 V correction.",
+  "reference_skirt_candidate": "pelvis_0.9_0.45",
+  "skirt_reference_calibration": {
+    "waist_modes": [
+      "pelvis",
+      "reference"
+    ],
+    "follow_candidates": [
+      0.7,
+      0.8,
+      0.9
+    ],
+    "calf_candidates": [
+      0.15,
+      0.25,
+      0.35,
+      0.45
+    ]
+  },
+  "skirt_clearance_fit": "source/SkirtClearanceFit.npz",
+  "skirt_physics_enabled": true
 }

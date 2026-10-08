@@ -1,10 +1,10 @@
 {
-  "version": "v1.0.0",
+  "version": "v1.0.1",
   "status": "pass",
   "check_scope": "offline_checks",
-  "final_package_sha256": "9cc19cc3c93421020c7e124ed98cdfbe649c4927658bfbc94c1f99a68419802f",
-  "baseline_package_sha256": null,
-  "baseline_reason": "first release; original input preserved",
+  "final_package_sha256": "5437e1e9a723eafded00583aefe5d88871b34340ac4e30958180e124d182035a",
+  "baseline_package_sha256": "9cc19cc3c93421020c7e124ed98cdfbe649c4927658bfbc94c1f99a68419802f",
+  "baseline_reason": "smooth calf-follow repair; preserve accepted rest contour",
   "lods": [
     {
       "lod": 0,
@@ -13,18 +13,18 @@
     },
     {
       "lod": 1,
-      "vertices": 9147,
-      "triangles": 11668
+      "vertices": 9872,
+      "triangles": 13031
     },
     {
       "lod": 2,
-      "vertices": 6645,
-      "triangles": 8180
+      "vertices": 7942,
+      "triangles": 10495
     },
     {
       "lod": 3,
-      "vertices": 4931,
-      "triangles": 6206
+      "vertices": 6643,
+      "triangles": 9065
     }
   ],
   "seams": [
@@ -60,9 +60,9 @@
       "worst_frame": 507,
       "worst_mesh": "qm3_head_01",
       "skirt_leg_proxy": {
-        "deepest_overlap_m": 0.017241272732271606,
+        "deepest_overlap_m": 0.01709726029526331,
         "worst_frame": 507,
-        "maximum_contact_samples": 82,
+        "maximum_contact_samples": 62,
         "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
       }
     },
@@ -71,14 +71,14 @@
       "asset": "anim_run_forward_unarmed",
       "frames_checked": 25,
       "total_frames": 26,
-      "max_edge_extension": 2.780895265895891,
-      "max_p99_edge_extension": 2.000110383540239,
-      "worst_frame": 11,
+      "max_edge_extension": 3.795587901805989,
+      "max_p99_edge_extension": 2.4847277552393328,
+      "worst_frame": 10,
       "worst_mesh": "qm3_body_10",
       "skirt_leg_proxy": {
-        "deepest_overlap_m": 0.051309149027383594,
-        "worst_frame": 8,
-        "maximum_contact_samples": 227,
+        "deepest_overlap_m": 0.048014818647325166,
+        "worst_frame": 7,
+        "maximum_contact_samples": 110,
         "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
       }
     },
@@ -92,9 +92,9 @@
       "worst_frame": 76,
       "worst_mesh": "qm3_head_01",
       "skirt_leg_proxy": {
-        "deepest_overlap_m": 0.032457401351109604,
-        "worst_frame": 83,
-        "maximum_contact_samples": 488,
+        "deepest_overlap_m": 0.025324674720036265,
+        "worst_frame": 82,
+        "maximum_contact_samples": 85,
         "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
       }
     },
@@ -103,14 +103,14 @@
       "asset": "anim_rider_gallop_bow",
       "frames_checked": 20,
       "total_frames": 21,
-      "max_edge_extension": 3.3908710406881437,
-      "max_p99_edge_extension": 2.4819997848245285,
+      "max_edge_extension": 3.911598872416692,
+      "max_p99_edge_extension": 2.942286886397652,
       "worst_frame": 9,
       "worst_mesh": "qm3_body_10",
       "skirt_leg_proxy": {
-        "deepest_overlap_m": 0.07442736342448325,
-        "worst_frame": 10,
-        "maximum_contact_samples": 516,
+        "deepest_overlap_m": 0.021813246036098945,
+        "worst_frame": 11,
+        "maximum_contact_samples": 124,
         "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
       }
     }

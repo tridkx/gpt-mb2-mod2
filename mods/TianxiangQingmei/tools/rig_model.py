@@ -117,6 +117,9 @@ for o,rec in zip(objects,records):
     if rec['kind']=='skirt':
         free=1-smooth(.85,1.10,p[:,2]);rad=d[:,:2].copy();rad[:,1]-=.01
         rad/=np.maximum(np.linalg.norm(rad,axis=1,keepdims=True),1e-6);d[:,:2]+=rad*(.009*free[:,None])
+    if rec['kind']=='skirt' and cfg.get('skirt_clearance_fit'):
+        fitted=np.load(ROOT/cfg['skirt_clearance_fit']);assert str(fitted['object'])==o.name
+        d=fitted['P'];w=fitted['W'];alpha=fitted['A'];a['W']=w;a['A']=alpha
     if rec['kind']=='long_hair':d[:,1]-=.006*(1-smooth(1.20,1.48,p[:,2]))
     a['P']=d;o.matrix_world=Matrix.Identity(4)
     for v,co in zip(o.data.vertices,d):v.co=co
