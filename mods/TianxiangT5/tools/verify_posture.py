@@ -4,7 +4,7 @@ import json,sys,hashlib,subprocess
 import numpy as np
 from scipy.spatial import cKDTree
 ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,r'D:\gpt-mb2-mod\tools')
+sys.path.insert(0,str(Path(__file__).resolve().parents[3]/'tools/asset_helpers/tools'))
 from georead import read_geo
 
 before=np.load(ROOT/'build/posture_baseline/rig_arrays.npz')

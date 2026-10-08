@@ -4,7 +4,7 @@ import numpy as np
 from pathlib import Path
 from mathutils import Vector
 ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,r'D:\gpt-mb2-mod\previewer')
+sys.path.insert(0,str(Path(__file__).resolve().parents[3]/'tools/asset_helpers/previewer'))
 from baker.skeleton import parse_skeljson
 from baker.animation import parse_animjson,skin_matrices
 rig=parse_skeljson(json.load(open(ROOT/'reports/human_skeleton.json')))

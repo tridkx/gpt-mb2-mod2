@@ -3,7 +3,7 @@ from pathlib import Path
 import json,sys,itertools
 import numpy as np
 ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,r'D:\gpt-mb2-mod\previewer')
+sys.path.insert(0,str(Path(__file__).resolve().parents[3]/'tools/asset_helpers/previewer'))
 from baker.skeleton import parse_skeljson
 from baker.animation import parse_animjson,skin_matrices
 from motion_fit import skirt_weights,skirt_clearance

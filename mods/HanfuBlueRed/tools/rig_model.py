@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'tools'))
 from repair_hair_contacts import repair
 from level_shoes import level
-sys.path.insert(0,r'D:\gpt-mb2-mod\previewer')
+sys.path.insert(0,str(Path(__file__).resolve().parents[3]/'tools/asset_helpers/previewer'))
 from baker.skeleton import parse_skeljson
 rigdata=parse_skeljson(json.loads((ROOT/'reports/human_skeleton.json').read_text()))
 assert rigdata['boneCount']==28

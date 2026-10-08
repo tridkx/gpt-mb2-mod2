@@ -5,7 +5,7 @@ from pathlib import Path
 from mathutils import Vector
 from mathutils.bvhtree import BVHTree
 ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,r'D:\gpt-mb2-mod\tools')
+sys.path.insert(0,str(Path(__file__).resolve().parents[3]/'tools/asset_helpers/tools'))
 from georead import read_geo
 checks=[]
 source_only='--source-only' in sys.argv

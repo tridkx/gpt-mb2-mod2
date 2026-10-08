@@ -273,7 +273,7 @@ campaign.add_item_to_player_party tx5_head
 - `reports/motion_validation_v1.3.0.json`：v1.3.0 跑步接触复核与材质显示检查。
 - `reports/grip_validation.json`：v1.3.1 原生手骨注册、最终权重、六组动作和原有外观/布料保留检查。
 
-本次构建使用本机 Blender 5.2、`D:\mb-tools` 的 TPAC 工具和 `D:\gpt-mb2-mod` 的几何/贴图辅助库。重新构建的主要步骤是 `tools/rig_model.py` → `tools/export_geometry.py` → `tools/build_package.py`。
+本次构建使用本机 Blender 5.2、`D:\mb-tools` 的 TPAC 工具。几何/贴图辅助库于 2026-10-08 合并至工作区根 `tools/asset_helpers/`，工具脚本已改为按自身位置读取；原 `D:\gpt-mb2-mod` 保留为历史工程。重新构建的主要步骤是 `tools/rig_model.py` → `tools/export_geometry.py` → `tools/build_package.py`。依赖预检使用工作区根 `tools/preflight.py`，详见根 README。
 
 `../../tools/install_release.ps1 -Mod TianxiangT5 -Version <版本>` 使用 mod.json 指定的当前验证报告安装自己的模块并打包；先用 `-CheckOnly` 检查，发布后另做本地 Git 提交。
 

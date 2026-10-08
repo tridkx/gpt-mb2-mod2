@@ -25,6 +25,8 @@ v1.0.2 保留背面补洞，修复鞋后跟悬空：以原生站立第1帧为参
 
 ## 制作与检查
 
+2026-10-08 共用几何、贴图、骨架及动画助手已从旧工程合并至工作区根 `tools/asset_helpers/`，本模组脚本按自身位置读取。工作区依赖预检入口为 `tools/preflight.py`，此模组加 `--example-workspace mods/HanfuBlueRed`。此次仅整理依赖路径，版本、资源、交付包及游戏安装保持不变；详见根 README。
+
 - 原始 FBX 和 Tripo 的23部件拆分结果分别保存在 `input/`，原目录没有改动。
 - 原生骨架从当前游戏 `Native/EmAssetPackages/human/human.tpac` 读取，使用28骨原生顺序和绑定矩阵。
 - 为肩臂、手腕、裤腿和鞋重新分配权重；脸/颈与身体及其他真实接缝统一位置和权重。

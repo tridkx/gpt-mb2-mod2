@@ -13,7 +13,7 @@ mods/<模组名>/
   build/                   中间文件、基线缓存（不进 Git）
   reports/                 检查结果和预览（日志不进 Git）
   dist/                    发布 ZIP 和旧版交付包（不进 Git）
-tools/                     共用 AssetTool、新建工程、打包与安装入口
+tools/                     共用 AssetTool、asset_helpers、新建工程、预检、打包与安装入口
 maintenance/               本机启动修复脚本、历史报告及原文件备份
 docs/                      工作区说明与技能审查记录
 ```
@@ -58,4 +58,23 @@ Codex 中的技能已对齐此多模组布局。以下表格保留旧工程路�
 
 技能预检会识别工作区中的天香示例工程；其他项目用 `--example-workspace` 明确指定。完整示例依赖检查使用 `--require-example-pipeline --check-blender-python`，包审查使用迁移后的 TPAC 路径。旧版 Git 标签不改写，现有回归检查仍读取旧标签中的 `module/TianxiangT5/...`。
 
-共用 AssetTool 的 `patch` 仍含天香专用布料设置，新模组使用前须检查并适配；其只读检查功能可复用。外部依赖继续位于 `D:/mb-tools` 与 `D:/gpt-mb2-mod`，不是完整可移植工具包。
+共用 AssetTool 的 `patch` 仍含天香专用布料设置，新模组使用前须检查并适配；其只读检查功能可复用。
+
+## 共用依赖合并（2026-10-08）
+
+原 `D:/gpt-mb2-mod` 中当前模组使用的几何、贴图、骨架和动画助手及其导入依赖已合并至 [tools/asset_helpers](tools/asset_helpers/README.md)。两个模组的工具脚本按自身位置查找这些助手，不再依赖旧工程目录；原目录及旧交付文件保持不变。
+
+| 旧依赖路径 | 当前路径 |
+| --- | --- |
+| `D:/gpt-mb2-mod/pipeline/{build_assets,convert_textures,paths}.py` | `tools/asset_helpers/pipeline/` |
+| `D:/gpt-mb2-mod/config/spec.py` | `tools/asset_helpers/config/spec.py` |
+| `D:/gpt-mb2-mod/tools/georead.py` | `tools/asset_helpers/tools/georead.py` |
+| `D:/gpt-mb2-mod/previewer/baker/{skeleton,animation,__init__,config}.py` | `tools/asset_helpers/previewer/baker/` |
+
+使用工作区入口执行完整依赖预检：
+
+```powershell
+& 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 tools/preflight.py --require-example-pipeline --check-blender-python
+```
+
+该入口给已安装技能传入新的助手目录。直接运行技能预检时加 `--helpers D:/gpt-mb2-mod2/tools/asset_helpers`；技能本身未修改或复制。外部依赖仍包括游戏、Blender、Python、Git、.NET 和 `D:/mb-tools`（含贴图编码库 `py/bcencode.py`），本工作区仍不是完整可移植工具包。此次整理不改变模组版本或发布标签，不更新游戏安装目录。

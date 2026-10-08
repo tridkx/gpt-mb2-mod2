@@ -1,8 +1,9 @@
+from pathlib import Path
 """Level the model-specific soles in native standing frame 1, preserving seams."""
 import json,sys
 import numpy as np
 from mathutils import Vector
-sys.path.insert(0,r'D:\gpt-mb2-mod\previewer')
+sys.path.insert(0,str(Path(__file__).resolve().parents[3]/'tools/asset_helpers/previewer'))
 from baker.skeleton import parse_skeljson
 from baker.animation import parse_animjson,skin_matrices
 

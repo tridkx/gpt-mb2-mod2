@@ -3,7 +3,7 @@ import bpy,json,sys
 import numpy as np
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,r'D:\gpt-mb2-mod\pipeline')
+sys.path.insert(0,str(Path(__file__).resolve().parents[3]/'tools/asset_helpers/pipeline'))
 from build_assets import vertex_tangents
 bpy.ops.wm.open_mainfile(filepath=str(ROOT/'source/HanfuBlueRed_Rigged.blend'))
 manifest=json.loads((ROOT/'build/rig_manifest.json').read_text())

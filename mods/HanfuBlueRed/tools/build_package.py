@@ -7,7 +7,7 @@ ROOT=Path(__file__).resolve().parents[1];BUILD=ROOT/'build'
 (ROOT/'module/HanfuBlueRed/AssetPackages').mkdir(parents=True,exist_ok=True)
 GAME=Path(r'D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord')
 NATIVE=GAME/'Modules/Native';MB=Path(r'D:\mb-tools\mbtool\bin\Release\net9.0\mbtool.exe')
-sys.path.insert(0,r'D:\gpt-mb2-mod\pipeline')
+sys.path.insert(0,str(Path(__file__).resolve().parents[3]/'tools/asset_helpers/pipeline'))
 from convert_textures import encode_mips
 (BUILD/'tex').mkdir(exist_ok=True)
 spec={'output':str(BUILD/'base.tpac'),'packageGuid':str(uuid.uuid5(uuid.NAMESPACE_URL,'bannerlord/HanfuBlueRed/package')),'templates':{

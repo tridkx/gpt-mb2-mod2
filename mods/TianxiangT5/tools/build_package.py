@@ -6,7 +6,7 @@ ROOT=Path(__file__).resolve().parents[1]
 GAME=Path(r'D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord')
 MB=Path(r'D:\mb-tools\mbtool\bin\Release\net9.0\mbtool.exe')
 NATIVE=GAME/'Modules/Native'
-sys.path.insert(0,r'D:\gpt-mb2-mod\pipeline')
+sys.path.insert(0,str(Path(__file__).resolve().parents[3]/'tools/asset_helpers/pipeline'))
 from convert_textures import encode_mips
 build=ROOT/'build';(build/'tex').mkdir(exist_ok=True)
 module=ROOT/'module/TianxiangT5';(module/'AssetPackages').mkdir(parents=True,exist_ok=True)
