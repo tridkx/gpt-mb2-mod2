@@ -77,4 +77,4 @@ Codex 中的技能已对齐此多模组布局。以下表格保留旧工程路�
 & 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 tools/preflight.py --require-example-pipeline --check-blender-python
 ```
 
-该入口给已安装技能传入新的助手目录。直接运行技能预检时加 `--helpers D:/gpt-mb2-mod2/tools/asset_helpers`；技能本身未修改或复制。外部依赖仍包括游戏、Blender、Python、Git、.NET 和 `D:/mb-tools`（含贴图编码库 `py/bcencode.py`），本工作区仍不是完整可移植工具包。此次整理不改变模组版本或发布标签，不更新游戏安装目录。
+已安装技能的原预检脚本现默认从选定工作区根的 `tools/asset_helpers/` 读取助手，工具与动画说明已同步。工作区入口只指定工作区，直接运行原预检脚本也无需传入 `--helpers`，没有旧目录依赖或回退路径。外部依赖仍包括游戏、Blender、Python、Git、.NET 和 `D:/mb-tools`（含贴图编码库 `py/bcencode.py`），本工作区仍不是完整可移植工具包。此次整理不改变模组版本或发布标签，不更新游戏安装目录。

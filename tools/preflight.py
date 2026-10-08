@@ -1,4 +1,4 @@
-"""Run the installed skill's read-only preflight with workspace-local helpers."""
+"""Run the installed skill's read-only preflight for this workspace."""
 import runpy
 import sys
 from pathlib import Path
@@ -10,12 +10,8 @@ def main():
     if not skill.is_file():
         raise SystemExit(f'Missing installed skill preflight: {skill}')
     args = sys.argv[1:]
-    for option, value in (
-        ('--workspace', root),
-        ('--helpers', root / 'tools/asset_helpers'),
-    ):
-        if not any(arg == option or arg.startswith(option + '=') for arg in args):
-            args.extend([option, str(value)])
+    if not any(arg == '--workspace' or arg.startswith('--workspace=') for arg in args):
+        args.extend(['--workspace', str(root)])
     sys.argv = [str(skill), *args]
     runpy.run_path(str(skill), run_name='__main__')
 

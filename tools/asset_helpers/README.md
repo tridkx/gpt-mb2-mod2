@@ -26,4 +26,4 @@
 & 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 tools/preflight.py --example-workspace mods/HanfuBlueRed --require-example-pipeline --check-blender-python
 ```
 
-此入口调用唯一已安装技能的预检脚本，默认传入当前工作区和这里的助手目录。技能目录保持原样；直接运行技能脚本时应显式传入 `--helpers D:/gpt-mb2-mod2/tools/asset_helpers`，覆盖其历史默认路径。预检只核对工具与导入，不生成模型或启动游戏。
+此入口调用唯一已安装技能的预检脚本，只指定当前工作区。已安装技能的原预检脚本现默认从选定工作区根的 `tools/asset_helpers/` 读取助手；从 `mods/<ModId>/` 运行时也会识别工作区根。直接运行原脚本无需传入 `--helpers`，仅在使用其他助手目录时才覆盖它。技能内工具与动画说明已同步，不再需要旧工程目录。预检只核对工具与导入，不生成模型或启动游戏。

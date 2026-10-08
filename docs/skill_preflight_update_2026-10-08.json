@@ -1,0 +1,434 @@
+{
+  "date": "2026-10-08",
+  "scope": "Original installed preflight tested without --helpers or --workspace; no game launch or asset builds",
+  "old_directory_references_in_skill": false,
+  "installed_files": {
+    "C:\\Users\\DKX\\.codex\\skills\\bannerlord-equipment-mod\\SKILL.md": "383f542b322051e1d9d9c939a4febf369be9e5410be67f2cca423b1b9a22531f",
+    "C:\\Users\\DKX\\.codex\\skills\\bannerlord-equipment-mod\\scripts\\preflight.py": "f2fbd7c4d9de4412c9e9f7b36963e299c5a8497a972fbedc905d2a2f3c093c7e",
+    "C:\\Users\\DKX\\.codex\\skills\\bannerlord-equipment-mod\\references\\local-toolchain.md": "9eedae4a20d1ab9e1270cde875930a8b6112a12c08f0c5a3c481c8aa29d102e1",
+    "C:\\Users\\DKX\\.codex\\skills\\bannerlord-equipment-mod\\references\\asset-workflow.md": "c9548ab623c21edd51fa93e08ae798bbad73d30c44f8cee4ee78767721b81920"
+  },
+  "checks": [
+    {
+      "cwd": "D:\\gpt-mb2-mod2",
+      "command": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\DKX\\.codex\\skills\\bannerlord-equipment-mod\\scripts\\preflight.py",
+        "--require-example-pipeline",
+        "--check-blender-python"
+      ],
+      "result": {
+        "status": "ready",
+        "scope": "Tool inventory and requested dependency imports only; no model builds, game launch or game-version compatibility test",
+        "missing_required": [],
+        "checks": [
+          {
+            "name": "workspace",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2"
+          },
+          {
+            "name": "game_modules",
+            "found": true,
+            "required": true,
+            "path": "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules"
+          },
+          {
+            "name": "blender",
+            "found": true,
+            "required": true,
+            "path": "D:\\Blender Foundation\\Blender 5.2\\blender.exe"
+          },
+          {
+            "name": "mbtool",
+            "found": true,
+            "required": true,
+            "path": "D:\\mb-tools\\mbtool\\bin\\Release\\net9.0\\mbtool.exe"
+          },
+          {
+            "name": "asset_tool",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\tools\\AssetTool\\AssetTool.dll"
+          },
+          {
+            "name": "asset_tool_library",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\tools\\AssetTool\\mbtool.dll"
+          },
+          {
+            "name": "python_base_imports",
+            "found": true,
+            "required": true,
+            "modules": [
+              "numpy",
+              "PIL.Image"
+            ],
+            "versions": {
+              "numpy": "2.5.1",
+              "PIL.Image": "12.3.0"
+            },
+            "error": ""
+          },
+          {
+            "name": "python_scipy_imports",
+            "found": true,
+            "required": true,
+            "modules": [
+              "scipy.spatial"
+            ],
+            "versions": {
+              "scipy.spatial": "imported"
+            },
+            "error": ""
+          },
+          {
+            "name": "git",
+            "found": true,
+            "required": true,
+            "path": "C:\\Program Files\\Git\\cmd\\git.EXE"
+          },
+          {
+            "name": "dotnet",
+            "found": true,
+            "required": true,
+            "path": "C:\\Program Files\\dotnet\\dotnet.EXE"
+          },
+          {
+            "name": "dotnet_runtime_inventory",
+            "found": true,
+            "required": true,
+            "runtimes": [
+              "Microsoft.AspNetCore.App 8.0.16 [C:\\Program Files\\dotnet\\shared\\Microsoft.AspNetCore.App]",
+              "Microsoft.AspNetCore.App 9.0.5 [C:\\Program Files\\dotnet\\shared\\Microsoft.AspNetCore.App]",
+              "Microsoft.AspNetCore.App 10.0.0 [C:\\Program Files\\dotnet\\shared\\Microsoft.AspNetCore.App]",
+              "Microsoft.NETCore.App 6.0.11 [C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App]",
+              "Microsoft.NETCore.App 8.0.16 [C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App]",
+              "Microsoft.NETCore.App 9.0.5 [C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App]",
+              "Microsoft.NETCore.App 10.0.0 [C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App]",
+              "Microsoft.WindowsDesktop.App 6.0.11 [C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App]",
+              "Microsoft.WindowsDesktop.App 8.0.16 [C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App]",
+              "Microsoft.WindowsDesktop.App 9.0.5 [C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App]",
+              "Microsoft.WindowsDesktop.App 10.0.0 [C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App]"
+            ],
+            "error": ""
+          },
+          {
+            "name": "asset_tool_runtime",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\tools\\AssetTool\\AssetTool.runtimeconfig.json",
+            "framework": {
+              "name": "Microsoft.NETCore.App",
+              "version": "10.0.0"
+            },
+            "note": "Checks default same-major/minor patch roll-forward"
+          },
+          {
+            "name": "mbtool_runtime",
+            "found": true,
+            "required": true,
+            "path": "D:\\mb-tools\\mbtool\\bin\\Release\\net9.0\\mbtool.runtimeconfig.json",
+            "framework": {
+              "name": "Microsoft.NETCore.App",
+              "version": "9.0.0"
+            },
+            "note": "Checks default same-major/minor patch roll-forward"
+          },
+          {
+            "name": "example_rigger",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\mods\\TianxiangT5\\tools\\rig_model.py"
+          },
+          {
+            "name": "example_exporter",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\mods\\TianxiangT5\\tools\\export_geometry.py"
+          },
+          {
+            "name": "example_builder",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\mods\\TianxiangT5\\tools\\build_package.py"
+          },
+          {
+            "name": "tangent_helper",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\tools\\asset_helpers\\pipeline\\build_assets.py"
+          },
+          {
+            "name": "texture_helper",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\tools\\asset_helpers\\pipeline\\convert_textures.py"
+          },
+          {
+            "name": "geometry_reader",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\tools\\asset_helpers\\tools\\georead.py"
+          },
+          {
+            "name": "skeleton_reader",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\tools\\asset_helpers\\previewer\\baker\\skeleton.py"
+          },
+          {
+            "name": "animation_reader",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\tools\\asset_helpers\\previewer\\baker\\animation.py"
+          },
+          {
+            "name": "example_helper_imports",
+            "found": true,
+            "required": true,
+            "modules": [
+              "build_assets",
+              "convert_textures",
+              "georead",
+              "baker.skeleton",
+              "baker.animation"
+            ],
+            "versions": {
+              "build_assets": "imported",
+              "convert_textures": "imported",
+              "georead": "imported",
+              "baker.skeleton": "imported",
+              "baker.animation": "imported"
+            },
+            "error": ""
+          },
+          {
+            "name": "blender_python_imports",
+            "found": true,
+            "required": true,
+            "modules": [
+              "bpy",
+              "mathutils",
+              "numpy",
+              "build_assets"
+            ],
+            "versions": {
+              "bpy": "imported",
+              "mathutils": "imported",
+              "numpy": "2.3.4",
+              "build_assets": "imported"
+            },
+            "error": ""
+          }
+        ]
+      }
+    },
+    {
+      "cwd": "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed",
+      "command": [
+        "C:\\ProgramData\\anaconda3\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "C:\\Users\\DKX\\.codex\\skills\\bannerlord-equipment-mod\\scripts\\preflight.py",
+        "--require-example-pipeline"
+      ],
+      "result": {
+        "status": "ready",
+        "scope": "Tool inventory and requested dependency imports only; no model builds, game launch or game-version compatibility test",
+        "missing_required": [],
+        "checks": [
+          {
+            "name": "workspace",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed"
+          },
+          {
+            "name": "game_modules",
+            "found": true,
+            "required": true,
+            "path": "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules"
+          },
+          {
+            "name": "blender",
+            "found": true,
+            "required": true,
+            "path": "D:\\Blender Foundation\\Blender 5.2\\blender.exe"
+          },
+          {
+            "name": "mbtool",
+            "found": true,
+            "required": true,
+            "path": "D:\\mb-tools\\mbtool\\bin\\Release\\net9.0\\mbtool.exe"
+          },
+          {
+            "name": "asset_tool",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\tools\\AssetTool\\AssetTool.dll"
+          },
+          {
+            "name": "asset_tool_library",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\tools\\AssetTool\\mbtool.dll"
+          },
+          {
+            "name": "python_base_imports",
+            "found": true,
+            "required": true,
+            "modules": [
+              "numpy",
+              "PIL.Image"
+            ],
+            "versions": {
+              "numpy": "2.5.1",
+              "PIL.Image": "12.3.0"
+            },
+            "error": ""
+          },
+          {
+            "name": "python_scipy_imports",
+            "found": true,
+            "required": true,
+            "modules": [
+              "scipy.spatial"
+            ],
+            "versions": {
+              "scipy.spatial": "imported"
+            },
+            "error": ""
+          },
+          {
+            "name": "git",
+            "found": true,
+            "required": true,
+            "path": "C:\\Program Files\\Git\\cmd\\git.EXE"
+          },
+          {
+            "name": "dotnet",
+            "found": true,
+            "required": true,
+            "path": "C:\\Program Files\\dotnet\\dotnet.EXE"
+          },
+          {
+            "name": "dotnet_runtime_inventory",
+            "found": true,
+            "required": true,
+            "runtimes": [
+              "Microsoft.AspNetCore.App 8.0.16 [C:\\Program Files\\dotnet\\shared\\Microsoft.AspNetCore.App]",
+              "Microsoft.AspNetCore.App 9.0.5 [C:\\Program Files\\dotnet\\shared\\Microsoft.AspNetCore.App]",
+              "Microsoft.AspNetCore.App 10.0.0 [C:\\Program Files\\dotnet\\shared\\Microsoft.AspNetCore.App]",
+              "Microsoft.NETCore.App 6.0.11 [C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App]",
+              "Microsoft.NETCore.App 8.0.16 [C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App]",
+              "Microsoft.NETCore.App 9.0.5 [C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App]",
+              "Microsoft.NETCore.App 10.0.0 [C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App]",
+              "Microsoft.WindowsDesktop.App 6.0.11 [C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App]",
+              "Microsoft.WindowsDesktop.App 8.0.16 [C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App]",
+              "Microsoft.WindowsDesktop.App 9.0.5 [C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App]",
+              "Microsoft.WindowsDesktop.App 10.0.0 [C:\\Program Files\\dotnet\\shared\\Microsoft.WindowsDesktop.App]"
+            ],
+            "error": ""
+          },
+          {
+            "name": "asset_tool_runtime",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\tools\\AssetTool\\AssetTool.runtimeconfig.json",
+            "framework": {
+              "name": "Microsoft.NETCore.App",
+              "version": "10.0.0"
+            },
+            "note": "Checks default same-major/minor patch roll-forward"
+          },
+          {
+            "name": "mbtool_runtime",
+            "found": true,
+            "required": true,
+            "path": "D:\\mb-tools\\mbtool\\bin\\Release\\net9.0\\mbtool.runtimeconfig.json",
+            "framework": {
+              "name": "Microsoft.NETCore.App",
+              "version": "9.0.0"
+            },
+            "note": "Checks default same-major/minor patch roll-forward"
+          },
+          {
+            "name": "example_rigger",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed\\tools\\rig_model.py"
+          },
+          {
+            "name": "example_exporter",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed\\tools\\export_geometry.py"
+          },
+          {
+            "name": "example_builder",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\mods\\HanfuBlueRed\\tools\\build_package.py"
+          },
+          {
+            "name": "tangent_helper",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\tools\\asset_helpers\\pipeline\\build_assets.py"
+          },
+          {
+            "name": "texture_helper",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\tools\\asset_helpers\\pipeline\\convert_textures.py"
+          },
+          {
+            "name": "geometry_reader",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\tools\\asset_helpers\\tools\\georead.py"
+          },
+          {
+            "name": "skeleton_reader",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\tools\\asset_helpers\\previewer\\baker\\skeleton.py"
+          },
+          {
+            "name": "animation_reader",
+            "found": true,
+            "required": true,
+            "path": "D:\\gpt-mb2-mod2\\tools\\asset_helpers\\previewer\\baker\\animation.py"
+          },
+          {
+            "name": "example_helper_imports",
+            "found": true,
+            "required": true,
+            "modules": [
+              "build_assets",
+              "convert_textures",
+              "georead",
+              "baker.skeleton",
+              "baker.animation"
+            ],
+            "versions": {
+              "build_assets": "imported",
+              "convert_textures": "imported",
+              "georead": "imported",
+              "baker.skeleton": "imported",
+              "baker.animation": "imported"
+            },
+            "error": ""
+          }
+        ]
+      }
+    }
+  ]
+}

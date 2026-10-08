@@ -1,6 +1,6 @@
 # 骑砍装备技能只读审查
 
-当前路径补充（2026-10-08）：下文保留原审查时间的状态。旧工程 `D:/gpt-mb2-mod` 中实际使用的几何、贴图、骨架、动画助手及其导入依赖现已复制到工作区 `tools/asset_helpers/`，两个模组的脚本改为相对自身位置读取。已安装技能保持原样；新增工作区入口 `tools/preflight.py` 显式覆盖技能的 `--helpers` 历史默认值。当前路径和命令见根 README 与 `tools/asset_helpers/README.md`。游戏、Blender、Python、Git、.NET、`D:/mb-tools` 仍为外部依赖。
+当前路径补充（2026-10-08）：下文保留原审查时间的状态。旧工程 `D:/gpt-mb2-mod` 中实际使用的几何、贴图、骨架、动画助手及其导入依赖现已复制到工作区 `tools/asset_helpers/`，两个模组的脚本改为相对自身位置读取。按用户明确要求，已安装技能的原预检脚本已改为默认读取选定工作区根的 `tools/asset_helpers/`，技能工具与动画说明同步更新。工作区入口 `tools/preflight.py` 只指定工作区，不再覆盖助手路径；原脚本和当前模组均无需旧目录。当前路径和命令见根 README 与 `tools/asset_helpers/README.md`。游戏、Blender、Python、Git、.NET、`D:/mb-tools` 仍为外部依赖。
 
 审查时间：2026-10-06。范围：`C:/Users/DKX/.codex/skills/bannerlord-equipment-mod/` 的 SKILL.md、三个 references 文档、两个 Python 助手和 agents/openai.yaml。未修改技能；迁移前后对全部技能文件做 SHA256 比较。
 
