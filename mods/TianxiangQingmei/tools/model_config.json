@@ -1,0 +1,213 @@
+{
+  "id": "TianxiangQingmei",
+  "prefix": "qm3",
+  "title": "轻梅映雪",
+  "display_name": "Tianxiang Qingmei",
+  "original_directory": "D:/dsh-tiandao/天香少女校服8套/03轻梅映雪",
+  "source_coordinate_to_meters": 0.013,
+  "source_landmarks": {
+    "pelvis": [
+      0,
+      -1,
+      72
+    ],
+    "spine": [
+      0,
+      -1,
+      81
+    ],
+    "spine1": [
+      0,
+      -1,
+      90
+    ],
+    "spine2": [
+      0,
+      -1,
+      100
+    ],
+    "neck": [
+      0,
+      -1,
+      112
+    ],
+    "head": [
+      0,
+      0,
+      120.5
+    ],
+    "thigh": [
+      8,
+      -1,
+      72
+    ],
+    "calf": [
+      10,
+      -2,
+      39
+    ],
+    "foot": [
+      13,
+      -1,
+      7
+    ],
+    "toe0": [
+      13,
+      6,
+      1
+    ],
+    "clavicle": [
+      4,
+      -2,
+      108
+    ],
+    "upperarm_twist": [
+      12,
+      -2,
+      108
+    ],
+    "foretwist": [
+      26,
+      -2,
+      92
+    ],
+    "hand": [
+      35.3,
+      0.5,
+      83.3
+    ],
+    "finger0": [
+      40.4,
+      3.2,
+      77.7
+    ]
+  },
+  "parts": {
+    "mesh_00_123706": [
+      "head",
+      "eye",
+      "rigid_head"
+    ],
+    "mesh_01_142007": [
+      "head",
+      "face",
+      "skin"
+    ],
+    "mesh_02_302123": [
+      "head",
+      "lash",
+      "rigid_head"
+    ],
+    "mesh_03_324175": [
+      "body",
+      "cuff",
+      "arms"
+    ],
+    "mesh_04_335939": [
+      "legs",
+      "pants",
+      "legs"
+    ],
+    "mesh_05_410895": [
+      "legs",
+      "skin",
+      "legs"
+    ],
+    "mesh_06_444291": [
+      "body",
+      "skin",
+      "arms"
+    ],
+    "mesh_07_522639": [
+      "body",
+      "tunic",
+      "upper_clothes"
+    ],
+    "mesh_08_681069": [
+      "head",
+      "head",
+      "rigid_head"
+    ],
+    "mesh_09_683987": [
+      "head",
+      "head",
+      "rigid_head"
+    ],
+    "mesh_10_699829": [
+      "body",
+      "tunic",
+      "skirt"
+    ],
+    "mesh_11_762085": [
+      "body",
+      "skin",
+      "skin"
+    ],
+    "mesh_12_794475": [
+      "head",
+      "hair",
+      "long_hair"
+    ]
+  },
+  "textures": {
+    "eye": [
+      "eye_D.png",
+      "opaque"
+    ],
+    "face": [
+      "face_D.png",
+      "opaque"
+    ],
+    "skin": [
+      "body_D.png",
+      "opaque"
+    ],
+    "cuff": [
+      "cuff_D.png",
+      "cutout"
+    ],
+    "lash": [
+      "eyelash_D.png",
+      "cutout"
+    ],
+    "head": [
+      "head_D.png",
+      "cutout"
+    ],
+    "hair": [
+      "hair_D.png",
+      "cutout"
+    ],
+    "pants": [
+      "pants_D.png",
+      "cutout"
+    ],
+    "tunic": [
+      "tunic_D.png",
+      "cutout"
+    ]
+  },
+  "uv_flip_v_objects": [
+    "mesh_02_302123"
+  ],
+  "material_overrides": {
+    "lash": {
+      "alphaTest": 0.4,
+      "blendMode": "no_alpha_blend"
+    }
+  },
+  "cloth_max_distance": {
+    "skirt": 0.05,
+    "long_hair": 0.018,
+    "upper_clothes": 0.025
+  },
+  "skirt_thigh_follow": 0.65,
+  "skirt_weight_mode": "four_anchor",
+  "lod_ratios": [
+    1,
+    0.6,
+    0.32,
+    0.16
+  ],
+  "measurement_notes": "Measured 13 meshes. Eye/face landmarks z121-133. Hand mesh06 same measured bounds x43.61 z74.13..91.48, legs mesh05 z11.55..71.53, foot supplied by pants mesh04; long transparent skirt mesh10 z17..89. Wide sleeves mesh07 extend to z66.13: limited cloth .025m. Long hair consolidated mesh12. Front lash mesh02 V correction."
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item id="qm3_head" name="轻梅映雪 · 发容" mesh="qm3_head" culture="Culture.empire" weight="0.4" appearance="2.5" value="2600" Type="HeadArmor" is_merchandise="true">
+    <ItemComponent><Armor head_armor="8" covers_head="true" hair_cover_type="all" beard_cover_type="all" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" /></ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
+  <Item id="qm3_body" name="轻梅映雪 · 衣裙与手饰" mesh="qm3_body" culture="Culture.empire" weight="2.0" appearance="2.5" value="4200" Type="BodyArmor" is_merchandise="true">
+    <ItemComponent><Armor body_armor="16" arm_armor="5" leg_armor="3" covers_body="true" covers_hands="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" /></ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
+  <Item id="qm3_legs" name="轻梅映雪 · 腿部与绣鞋" mesh="qm3_legs" culture="Culture.empire" weight="1.0" appearance="2.3" value="2400" Type="LegArmor" is_merchandise="true">
+    <ItemComponent><Armor leg_armor="10" covers_legs="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" /></ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
+</Items>
