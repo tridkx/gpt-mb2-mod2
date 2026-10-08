@@ -1,0 +1,216 @@
+{
+  "id": "TianxiangMuyu",
+  "prefix": "my4",
+  "title": "暮雨亭兰",
+  "display_name": "Tianxiang Muyu",
+  "original_directory": "D:/dsh-tiandao/天香少女校服8套/04暮雨亭兰",
+  "source_coordinate_to_meters": 0.013,
+  "source_landmarks": {
+    "pelvis": [
+      0,
+      -1,
+      72
+    ],
+    "spine": [
+      0,
+      -1,
+      81
+    ],
+    "spine1": [
+      0,
+      -1,
+      90
+    ],
+    "spine2": [
+      0,
+      -1,
+      100
+    ],
+    "neck": [
+      0,
+      -1,
+      112
+    ],
+    "head": [
+      0,
+      0,
+      120.5
+    ],
+    "thigh": [
+      8,
+      -1,
+      72
+    ],
+    "calf": [
+      10,
+      -2,
+      39
+    ],
+    "foot": [
+      13,
+      -1,
+      7
+    ],
+    "toe0": [
+      13,
+      6,
+      1
+    ],
+    "clavicle": [
+      4,
+      -2,
+      108
+    ],
+    "upperarm_twist": [
+      12,
+      -2,
+      108
+    ],
+    "foretwist": [
+      26,
+      -2,
+      92
+    ],
+    "hand": [
+      35.3,
+      0.5,
+      83.3
+    ],
+    "finger0": [
+      40.4,
+      3.2,
+      77.7
+    ]
+  },
+  "parts": {
+    "mesh_00_123714": [
+      "head",
+      "eye",
+      "rigid_head"
+    ],
+    "mesh_01_142015": [
+      "head",
+      "face",
+      "skin"
+    ],
+    "mesh_02_302131": [
+      "body",
+      "skin",
+      "arms"
+    ],
+    "mesh_03_327447": [
+      "head",
+      "lash",
+      "rigid_head"
+    ],
+    "mesh_04_349499": [
+      "legs",
+      "pants",
+      "legs"
+    ],
+    "mesh_05_417295": [
+      "legs",
+      "skin",
+      "legs"
+    ],
+    "mesh_06_451875": [
+      "body",
+      "skin",
+      "arms"
+    ],
+    "mesh_07_530223": [
+      "body",
+      "tunic",
+      "upper_clothes"
+    ],
+    "mesh_08_678149": [
+      "body",
+      "tunic",
+      "skirt"
+    ],
+    "mesh_09_798285": [
+      "body",
+      "skin",
+      "skin"
+    ],
+    "mesh_10_842707": [
+      "head",
+      "head",
+      "rigid_head"
+    ],
+    "mesh_11_858169": [
+      "head",
+      "head",
+      "rigid_head"
+    ],
+    "mesh_12_873299": [
+      "head",
+      "hair",
+      "long_hair"
+    ],
+    "mesh_13_975387": [
+      "head",
+      "head",
+      "rigid_head"
+    ]
+  },
+  "textures": {
+    "eye": [
+      "eye_D.png",
+      "opaque"
+    ],
+    "face": [
+      "face_D.png",
+      "opaque"
+    ],
+    "skin": [
+      "body_D.png",
+      "opaque"
+    ],
+    "lash": [
+      "eyelash_D.png",
+      "cutout"
+    ],
+    "head": [
+      "head_D.png",
+      "cutout"
+    ],
+    "hair": [
+      "hair_D.png",
+      "cutout"
+    ],
+    "pants": [
+      "pants_D.png",
+      "cutout"
+    ],
+    "tunic": [
+      "tunic_D.png",
+      "cutout"
+    ]
+  },
+  "uv_flip_v_objects": [
+    "mesh_03_327447"
+  ],
+  "material_overrides": {
+    "lash": {
+      "alphaTest": 0.4,
+      "blendMode": "no_alpha_blend"
+    }
+  },
+  "cloth_max_distance": {
+    "skirt": 0.05,
+    "long_hair": 0.02,
+    "upper_clothes": 0.028
+  },
+  "skirt_thigh_follow": 0.6,
+  "skirt_weight_mode": "four_anchor",
+  "lod_ratios": [
+    1,
+    0.6,
+    0.32,
+    0.16
+  ],
+  "measurement_notes": "Measured 14 meshes and 8 textures. Hands mesh06 palm component center40.4,3.2,77.7; exposed arm mesh09 center16.2,-3.3,100.6; leg skin z15.51..73.88. Long sleeve tails mesh07 reach z50.35 and y-32.23; long skirt mesh08 z19..90; head ornaments split across meshes10/11/13. body_D alpha255; ornaments mesh02 share opaque skin. Lash mesh03 corrected V. Sleeve components324 vertices each: x10..35,z50..107, lower tails y-32; use projected upperarm/forearm anchors for abs x>.20m to avoid nearest-hand switches. Full connected sleeve panels follow upperarm with at most25% forearm, reducing deformation of free hanging fabric. Riding skirt p99 stretch3.009 at .68; reduced follow to .60.",
+  "sleeve_projected_anchor": true,
+  "sleeve_forearm_follow": 0.25
+}

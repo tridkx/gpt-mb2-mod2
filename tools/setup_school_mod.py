@@ -16,6 +16,22 @@ for name in ['rig_model.py','export_geometry.py','build_package.py','verify_rele
     if name=='rig_model.py':
         s=s.replace("waist=weights(p,[0,9,10]);right=", "waist=weights(p,[0,9] if cfg.get('skirt_weight_mode')=='four_anchor' else [0,9,10]);right=")
         s=s.replace("low=1-smooth(.40,.78,p[:,2])", "low=np.zeros(len(p)) if cfg.get('skirt_weight_mode')=='four_anchor' else 1-smooth(.40,.78,p[:,2])")
+        sleeve_logic="""if kind=='upper_clothes':
+        if cfg.get('sleeve_projected_anchor'):
+            parent=list(range(len(p)))
+            def find(v):
+                while parent[v]!=v:parent[v]=parent[parent[v]];v=parent[v]
+                return v
+            for e in o.data.edges:parent[find(e.vertices[1])]=find(e.vertices[0])
+            panels={}
+            for vi in range(len(p)):panels.setdefault(find(vi),[]).append(vi)
+            for ids in panels.values():
+                q=p[ids]
+                if np.min(abs(q[:,0]))<=cfg.get('sleeve_panel_min_x',.10) or np.min(q[:,0])*np.max(q[:,0])<0:continue
+                upper,elbow=(15,17) if q[:,0].mean()<0 else (22,24)
+                t=cfg.get('sleeve_forearm_follow',.25)*smooth(abs(source[upper,0]),abs(source[elbow,0]),abs(q[:,0]))
+                w[ids]=0;w[ids,upper]=1-t;w[ids,elbow]=t"""
+        s=s.replace("if kind=='upper_clothes':",sleeve_logic)
     if name=='verify_release.py':
         s=s.replace("assert len(visibility['materials'])==9","assert len(visibility['materials'])==len(json.loads((ROOT/'tools/model_config.json').read_text())['textures'])")
         s=s.replace('assert len(meshes)==15',f"assert len(meshes)=={len(cfg['parts'])}")
