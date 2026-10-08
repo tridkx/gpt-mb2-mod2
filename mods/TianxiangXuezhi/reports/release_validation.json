@@ -1,8 +1,8 @@
 {
-  "version": "v1.0.0",
+  "version": "v1.0.1",
   "status": "pass",
   "check_scope": "offline_checks",
-  "final_package_sha256": "2769d0dc2164c742fdd1bfe8da3f2f089085a75303bca717892fb5fac95ddae7",
+  "final_package_sha256": "d23c2fdef17b33f8fcadf8c1eb0bd0e7ad3d0929a75f34a62b464001d5a6ada4",
   "baseline_package_sha256": null,
   "baseline_reason": "first release; original input preserved",
   "lods": [
@@ -13,18 +13,18 @@
     },
     {
       "lod": 1,
-      "vertices": 13297,
-      "triangles": 16066
+      "vertices": 13759,
+      "triangles": 16945
     },
     {
       "lod": 2,
-      "vertices": 11127,
-      "triangles": 13384
+      "vertices": 11960,
+      "triangles": 14878
     },
     {
       "lod": 3,
-      "vertices": 9464,
-      "triangles": 11851
+      "vertices": 10797,
+      "triangles": 13696
     }
   ],
   "seams": [
@@ -71,10 +71,10 @@
       "asset": "anim_run_forward_unarmed",
       "frames_checked": 25,
       "total_frames": 26,
-      "max_edge_extension": 3.5520227340096397,
-      "max_p99_edge_extension": 2.450652805864853,
-      "worst_frame": 11,
-      "worst_mesh": "xz7_body_09",
+      "max_edge_extension": 3.96982716782597,
+      "max_p99_edge_extension": 2.5050881980769812,
+      "worst_frame": 18,
+      "worst_mesh": "xz7_body_06",
       "skirt_leg_proxy": {
         "deepest_overlap_m": 0.04949832510357219,
         "worst_frame": 14,

@@ -16,7 +16,10 @@ for ids in panels.values():
     q=source[ids];is_skirt=q[:,2].max()<cfg['mixed_skirt_component_max_z'] and q[:,2].mean()<cfg['mixed_skirt_component_mean_z']
     (skirt if is_skirt else torso).extend(ids)
 assert len(torso)>500 and len(skirt)>300
-assert np.all(alpha[torso]==0);assert np.all(w[:,14:]==0),'combined central tunic must not inherit hand/forearm'
+assert np.all(alpha[torso]==0)
+shoulder=(source[:,2]>1.35)&(np.abs(source[:,0])>.07)
+assert np.all(w[~shoulder,14:]==0),'central tunic must not inherit arm weights'
+assert np.all(w[:,[17,18,19,20,24,25,26,27]]==0),'central dress must not inherit forearm or hand'
 assert w[skirt][:,[2,6]].max()>.1 and alpha[skirt].max()>0
 assert ((w>1e-6).sum(1)<=4).all()
 accessory_source=a['xz7_body_07_S'];accessory_w=a['xz7_body_07_W']

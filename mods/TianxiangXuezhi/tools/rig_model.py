@@ -100,22 +100,21 @@ for o in objects:
         legs=np.zeros_like(w);legs[:,1]=(1-right)*(1-left_calf);legs[:,2]=(1-right)*left_calf;legs[:,5]=right*(1-right_calf);legs[:,6]=right*right_calf
         follow=cfg['skirt_thigh_follow']*(1-smooth(.87,1.09,p[:,2]));skirtw=legs*follow[:,None];skirtw[:,0]+=1-follow
         w=anatomical;w[skirt_mask]=skirtw[skirt_mask]
+        shoulder=(p[:,2]>1.35)&(np.abs(p[:,0])>.07)&(~skirt_mask)
+        w[shoulder]=body_weights(p[shoulder],arms=True)
         alpha[skirt_mask]=cfg['cloth_max_distance'][kind]*(1-smooth(.43,1.10,p[skirt_mask,2]))
     if kind=='upper_clothes':
-        if cfg.get('sleeve_projected_anchor'):
-            parent=list(range(len(p)))
-            def find(v):
-                while parent[v]!=v:parent[v]=parent[parent[v]];v=parent[v]
-                return v
-            for e in o.data.edges:parent[find(e.vertices[1])]=find(e.vertices[0])
-            panels={}
-            for vi in range(len(p)):panels.setdefault(find(vi),[]).append(vi)
-            for ids in panels.values():
-                q=p[ids]
-                if np.min(abs(q[:,0]))<=cfg.get('sleeve_panel_min_x',.10) or np.min(q[:,0])*np.max(q[:,0])<0:continue
-                upper,elbow=(15,17) if q[:,0].mean()<0 else (22,24)
-                t=cfg.get('sleeve_forearm_follow',.25)*smooth(abs(source[upper,0]),abs(source[elbow,0]),abs(q[:,0]))
-                w[ids]=0;w[ids,upper]=1-t;w[ids,elbow]=t
+        # Hanging fabric uses the full upper-arm/elbow/wrist chain.
+        # Near the shoulder and arm surface, use the same anatomical function
+        # as skin so their attachment cannot rotate about different pivots.
+        for sign,upper,elbow,hand in [(-1,15,17,19),(1,22,24,26)]:
+            ids=np.where(p[:,0]*sign>0)[0];q=p[ids]
+            x=np.abs(q[:,0]);u=source[upper];e=source[elbow];h=source[hand]
+            t=smooth(.20,.46,x)
+            projected=np.zeros((len(q),28))
+            projected[:,upper]=1-t;projected[:,elbow]=t
+            blend=smooth(.12,.23,x)
+            w[ids]=body_weights(q,arms=True)*(1-blend[:,None])+projected*blend[:,None]
         # Limit sleeve motion; attached torso, collar and waist remain pinned.
         for sign,upper,elbow in [(-1,15,17),(1,22,24)]:
             ids=np.where(p[:,0]*sign>.20)[0];q=p[ids];a=source[upper];axis=source[elbow]-a
