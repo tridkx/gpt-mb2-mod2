@@ -1,0 +1,51 @@
+{
+  "version": "v1.0.0",
+  "group_id": 71,
+  "atlas_grid": [
+    4,
+    4
+  ],
+  "portraits": [
+    {
+      "name": "ol",
+      "label": "OL Uniform",
+      "icon_id": 7101,
+      "texture_index": 0,
+      "input": "input/ol_original.png",
+      "source": "source/ol.png",
+      "original_sha256": "40a8f25589a33672c947f29ea822e13914ad232fd66aca589a8d5bb848b6af18",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "qipao",
+      "label": "Satin Qipao",
+      "icon_id": 7102,
+      "texture_index": 1,
+      "input": "input/qipao_original.png",
+      "source": "source/qipao.png",
+      "original_sha256": "3bde53d7f49d51b69d63c0cedbb763cc0d571536c93a630253a807b1ebe6e5ef",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "hanfu",
+      "label": "Elegant Hanfu",
+      "icon_id": 7103,
+      "texture_index": 2,
+      "input": "input/hanfu_original.png",
+      "source": "source/hanfu.png",
+      "original_sha256": "cf325e245bdb85a8e14f00d463f95644e0c3684fb609edb9925824a4d6c10d02",
+      "size": [
+        1024,
+        1536
+      ]
+    }
+  ],
+  "provenance": "User-approved images generated with the built-in image generator, 2026-10-08.",
+  "processing": "Proportional resize, centered padding and atlas packing only; original RGBA preserved."
+}

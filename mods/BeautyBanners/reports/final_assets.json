@@ -1,0 +1,75 @@
+{
+  "package_guid": "1bde9782-9990-58fb-95de-9391efa65a13",
+  "textures": [
+    {
+      "Name": "bb_portrait_atlas",
+      "Guid": "7918f5e8-563d-5e7b-9781-0d141ac48a1b",
+      "width": 4096,
+      "height": 4096,
+      "mips": 1,
+      "format": "R8G8B8A8_UNORM",
+      "flags": [
+        "dont_degrade",
+        "dont_delay_loading",
+        "dont_compress"
+      ],
+      "systemFlags": [
+        "has_alpha"
+      ],
+      "arrays": 1,
+      "pixel_sha256": "B468ACD3C81F896706AFAF861810CE47568F2B6C58E1D05BEE7972227069F63C"
+    },
+    {
+      "Name": "ui_beautybanners_1",
+      "Guid": "8b1c9e72-cbbd-71ba-3596-c74f181c2189",
+      "width": 512,
+      "height": 128,
+      "mips": 1,
+      "format": "R8G8B8A8_UNORM",
+      "flags": [
+        "dont_degrade",
+        "dont_delay_loading",
+        "dont_compress"
+      ],
+      "systemFlags": [
+        "has_alpha"
+      ],
+      "arrays": 1,
+      "pixel_sha256": "B36C916775326D67E2C3CD28FBF9841E143E65EE18B4BF20F627B989CCA110E2"
+    }
+  ],
+  "materials": [
+    {
+      "Name": "bb_portrait_icons",
+      "Guid": "6168bb54-7322-7f29-74ec-2382bf872e8c",
+      "shader": "ea6bb997-7068-4144-b6a7-27c9a42ddad6",
+      "BlendMode": "modulate",
+      "AlphaTest": 0,
+      "Flags": [
+        "two_sided"
+      ],
+      "VertexLayoutFlags": [],
+      "ShaderMaterialFlags": [],
+      "textures": {
+        "0": "7918f5e8-563d-5e7b-9781-0d141ac48a1b"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "Name": "bb_portrait_atlas",
+      "Guid": "7918f5e8-563d-5e7b-9781-0d141ac48a1b",
+      "type": "Texture"
+    },
+    {
+      "Name": "ui_beautybanners_1",
+      "Guid": "8b1c9e72-cbbd-71ba-3596-c74f181c2189",
+      "type": "Texture"
+    },
+    {
+      "Name": "bb_portrait_icons",
+      "Guid": "6168bb54-7322-7f29-74ec-2382bf872e8c",
+      "type": "Material"
+    }
+  ]
+}

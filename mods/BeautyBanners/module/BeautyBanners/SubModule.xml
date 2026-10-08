@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Module>
+  <Name value="Beauty Banners" />
+  <Id value="BeautyBanners" />
+  <Version value="v1.0.0" />
+  <DefaultModule value="false" />
+  <ModuleCategory value="Singleplayer" />
+  <Official value="false" />
+  <ModuleType value="Community" />
+  <DependedModules>
+    <DependedModule Id="Native" />
+    <DependedModule Id="SandBoxCore" />
+    <DependedModule Id="Sandbox" />
+  </DependedModules>
+  <SubModules />
+  <Xmls>
+    <XmlNode>
+      <XmlName id="BannerIcons" path="banner_icons" />
+    </XmlNode>
+    <XmlNode>
+      <XmlName id="GameText" path="beauty_strings" />
+    </XmlNode>
+  </Xmls>
+</Module>
