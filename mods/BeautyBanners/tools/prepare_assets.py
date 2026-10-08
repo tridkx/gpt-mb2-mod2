@@ -1,11 +1,11 @@
-"""Pack approved artwork into game atlases without redesigning it."""
+"""Pack landscape artwork while retaining the original approved portraits."""
 import hashlib
 import json
 import shutil
 from pathlib import Path
 import xml.etree.ElementTree as ET
 from PIL import Image
-from paths import ROOT, MODULE, PORTRAITS, CATEGORY, MOD_ID, VERSION, GROUP_ID
+from paths import ROOT, MODULE, PORTRAITS, CATEGORY, MOD_ID, VERSION, GROUP_ID, WHITE_COLOR_ID
 
 def sha256(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -25,6 +25,7 @@ def fit(image, size, padding):
 
 def main():
     provenance = json.loads((ROOT / 'input/provenance.json').read_text(encoding='utf-8'))
+    landscape = json.loads((ROOT / 'input/landscape_provenance.json').read_text(encoding='utf-8'))
     for folder in ['source', 'tex', 'reports', 'module/BeautyBanners/GUI/SpriteParts/' + CATEGORY]:
         (ROOT / folder).mkdir(parents=True, exist_ok=True)
     atlas = Image.new('RGBA', (4096, 4096))
@@ -34,8 +35,14 @@ def main():
         original = ROOT / 'input' / (name + '_original.png')
         if sha256(original) != provenance[name]['sha256']:
             raise ValueError('Approved original changed: ' + name)
-        source = ROOT / 'source' / (name + '.png')
-        shutil.copy2(original, source)
+        preserved = ROOT / 'source' / (name + '.png')
+        if original.read_bytes() != preserved.read_bytes():
+            raise ValueError('Preserved portrait source changed: ' + name)
+        landscape_input = ROOT / 'input' / (name + '_landscape_v1.png')
+        if sha256(landscape_input) != landscape[name]['sha256']:
+            raise ValueError('Landscape input changed: ' + name)
+        source = ROOT / 'source' / (name + '_landscape.png')
+        shutil.copy2(landscape_input, source)
         art = Image.open(source).convert('RGBA')
         cell = fit(art, (1024, 1024), 32)
         atlas.paste(cell, (index * 1024, 0))
@@ -44,14 +51,17 @@ def main():
         ui_atlas.paste(thumb, (4 + index * 108, 4))
         manifest.append({'name': name, 'label': label, 'icon_id': icon_id, 'texture_index': index,
                          'input': original.relative_to(ROOT).as_posix(),
+                         'landscape_input': landscape_input.relative_to(ROOT).as_posix(),
                          'source': source.relative_to(ROOT).as_posix(),
-                         'original_sha256': sha256(original), 'size': list(art.size)})
+                         'original_sha256': sha256(original), 'landscape_sha256': sha256(landscape_input),
+                         'size': list(art.size)})
     atlas.save(ROOT / 'tex/bb_portrait_atlas.png')
     ui_atlas.save(ROOT / 'tex/ui_beautybanners_1.png')
     (ROOT / 'source/artwork_manifest.json').write_text(json.dumps({
         'version': VERSION, 'group_id': GROUP_ID, 'atlas_grid': [4, 4], 'portraits': manifest,
-        'provenance': 'User-approved images generated with the built-in image generator, 2026-10-08.',
-        'processing': 'Proportional resize, centered padding and atlas packing only; original RGBA preserved.'
+        'provenance': 'Landscape edits generated with the built-in image generator, 2026-10-08; portrait inputs preserved.',
+        'processing': 'Landscape waist-up recomposition; proportional atlas packing preserves generated RGBA.',
+        'white_color_id': WHITE_COLOR_ID
     }, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
     root = ET.Element('base', {'type': 'string'})
@@ -59,6 +69,10 @@ def main():
     group = ET.SubElement(data, 'BannerIconGroup', {'id': str(GROUP_ID), 'name': '{=bb_portraits}美女旗帜', 'is_pattern': 'false'})
     for index, (_, _, icon_id) in enumerate(PORTRAITS):
         ET.SubElement(group, 'Icon', {'id': str(icon_id), 'material_name': 'bb_portrait_icons', 'texture_index': str(index)})
+    colors = ET.SubElement(data, 'BannerColors')
+    ET.SubElement(colors, 'Color', {'id': str(WHITE_COLOR_ID), 'hex': '0xffffffff',
+                                  'player_can_choose_for_background': 'true',
+                                  'player_can_choose_for_sigil': 'true'})
     write_xml(MODULE / 'ModuleData/banner_icons.xml', root)
 
     sprite = ET.Element('SpriteData')
