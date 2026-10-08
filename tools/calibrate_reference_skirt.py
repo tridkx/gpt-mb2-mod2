@@ -31,11 +31,11 @@ settings=json.loads((ROOT/'tools/model_config.json').read_text()).get('skirt_ref
 for anchor in settings.get('waist_modes',['reference','pelvis']):
     waist=weights(src,[0,9,10]) if anchor=='reference' else np.eye(28)[np.zeros(len(src),int)]
     for follow in settings.get('follow_candidates',[.7,.8,.9]):
-        for amount in settings.get('calf_candidates',[.15,.25,.35,.45]):
-            right=smooth(-.12,.12,src[:,0]);low=1-smooth(.4,.78,src[:,2]);legs=np.zeros_like(waist)
-            left_calf=low*amount*(1-smooth(-.12,0,src[:,0]));right_calf=low*amount*smooth(0,.12,src[:,0])
+        for amount,width in [(a,b) for a in settings.get('calf_candidates',[.15,.25,.35,.45]) for b in settings.get('width_candidates',[.12])]:
+            right=smooth(-width,width,src[:,0]);low=1-smooth(.4,.78,src[:,2]);legs=np.zeros_like(waist)
+            left_calf=low*amount*(1-smooth(-width,0,src[:,0]));right_calf=low*amount*smooth(0,width,src[:,0])
             legs[:,1]=(1-right)*(1-left_calf);legs[:,2]=(1-right)*left_calf;legs[:,5]=right*(1-right_calf);legs[:,6]=right*right_calf
-            f=follow*(1-smooth(.87,1.09,src[:,2]));w=waist*(1-f[:,None])+legs*f[:,None];w,result=evaluate(w);key=f'{anchor}_{follow}_{amount}';np.savez_compressed(folder/(key+'.npz'),P=p,W=w,A=arrays[name+'_A'],object=name)
+            f=follow*(1-smooth(.87,1.09,src[:,2]));w=waist*(1-f[:,None])+legs*f[:,None];w,result=evaluate(w);key=f'{anchor}_{follow}_{amount}'+(f'_width{width}' if width!=.12 else '');np.savez_compressed(folder/(key+'.npz'),P=p,W=w,A=arrays[name+'_A'],object=name)
             score=sum(result[k]['severity']/max(baseline[k]['severity'],1e-8) for k in ['run','bow','riding'])
-            entry={'key':key,'waist':anchor,'follow':follow,'calf':amount,'score':score,'stats':result,'safe_deformation':all(s['stretch']<4 and s['p99']<3 for s in result.values())};results.append(entry)
+            entry={'key':key,'waist':anchor,'follow':follow,'calf':amount,'width':width,'score':score,'stats':result,'safe_deformation':all(s['stretch']<4 and s['p99']<3 for s in result.values())};results.append(entry)
 results.sort(key=lambda x:(not x['safe_deformation'],x['score']));report={'reference':'user-accepted TianxiangRenqiu calf-follow recipe; model-specific measured landmarks, immutable rest contour','baseline':baseline,'candidates':results,'rest_contour_changed':False,'game_verified':False};(ROOT/'reports/reference_skirt_calibration.json').write_text(json.dumps(report,indent=2));print('BASELINE',baseline);print('BEST',json.dumps(results[:4]))

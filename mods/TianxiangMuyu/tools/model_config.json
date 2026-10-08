@@ -212,5 +212,27 @@
   ],
   "measurement_notes": "Measured 14 meshes and 8 textures. Hands mesh06 palm component center40.4,3.2,77.7; exposed arm mesh09 center16.2,-3.3,100.6; leg skin z15.51..73.88. Long sleeve tails mesh07 reach z50.35 and y-32.23; long skirt mesh08 z19..90; head ornaments split across meshes10/11/13. body_D alpha255; ornaments mesh02 share opaque skin. Lash mesh03 corrected V. Sleeve components324 vertices each: x10..35,z50..107, lower tails y-32; use projected upperarm/forearm anchors for abs x>.20m to avoid nearest-hand switches. Full connected sleeve panels follow upperarm with at most25% forearm, reducing deformation of free hanging fabric. Riding skirt p99 stretch3.009 at .68; reduced follow to .60.",
   "sleeve_projected_anchor": true,
-  "sleeve_forearm_follow": 0.25
+  "sleeve_forearm_follow": 0.25,
+  "skirt_reference_calibration": {
+    "waist_modes": [
+      "pelvis"
+    ],
+    "follow_candidates": [
+      0.85,
+      0.9,
+      0.95
+    ],
+    "calf_candidates": [
+      0.45,
+      0.65,
+      0.8
+    ],
+    "width_candidates": [
+      0.18,
+      0.24
+    ]
+  },
+  "reference_skirt_candidate": "pelvis_0.95_0.45_width0.18",
+  "skirt_clearance_fit": "source/SkirtClearanceFit.npz",
+  "skirt_physics_enabled": true
 }

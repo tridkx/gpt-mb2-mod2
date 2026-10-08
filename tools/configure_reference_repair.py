@@ -2,7 +2,7 @@
 import sys,json,re,hashlib,xml.etree.ElementTree as ET
 from pathlib import Path
 WS=Path(__file__).resolve().parents[1];ROOT=WS/'mods'/sys.argv[1];version=sys.argv[2];key=sys.argv[3]
-cfgpath=ROOT/'tools/model_config.json';cfg=json.loads(cfgpath.read_text());cfg['reference_skirt_candidate']=key;cfg['skirt_reference_calibration']={'waist_modes':['pelvis','reference'],'follow_candidates':[.7,.8,.9],'calf_candidates':[.15,.25,.35,.45]};cfgpath.write_text(json.dumps(cfg,ensure_ascii=False,indent=2),encoding='utf-8')
+cfgpath=ROOT/'tools/model_config.json';cfg=json.loads(cfgpath.read_text());cfg['reference_skirt_candidate']=key;cfg.setdefault('skirt_reference_calibration',{'waist_modes':['pelvis','reference'],'follow_candidates':[.7,.8,.9],'calf_candidates':[.15,.25,.35,.45]});cfgpath.write_text(json.dumps(cfg,ensure_ascii=False,indent=2),encoding='utf-8')
 descriptor=ROOT/f'module/{ROOT.name}/SubModule.xml';t=ET.parse(descriptor);t.find('Version').set('value',version);t.write(descriptor,encoding='utf-8',xml_declaration=True)
 script=ROOT/'tools/rig_model.py';s=script.read_text()
 if "cfg.get('skirt_clearance_fit')" not in s:
