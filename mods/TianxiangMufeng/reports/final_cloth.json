@@ -1142,29 +1142,31 @@
       {
         "Name": "mf2_body_12",
         "Lod": 0,
-        "Flags": [],
+        "Flags": [
+          "uses_cloth_simulation"
+        ],
         "MaterialFlags": [
           "no_team_color",
           "no_tattoo"
         ],
         "UnknownFloat1": 1,
         "UnknownInt3": 120,
-        "UnknownBool1": false,
+        "UnknownBool1": true,
         "UnknownBool2": false,
         "UnknownBool3": false,
         "ClothingMaterial": {
-          "Name": "",
-          "BendingStiffness": 0,
-          "ShearingStiffness": 0,
-          "StretchingStiffness": 0,
-          "AnchorStiffness": 0,
-          "Damping": 0,
-          "Gravity": 0,
-          "LinearInertia": 0,
-          "MaxLinearVelocity": -1,
-          "LinearVelocityMultiplier": 1,
-          "AirDragMultiplier": 0,
-          "Wind": 0
+          "Name": "mf2_limited_fabric",
+          "BendingStiffness": 0.85,
+          "ShearingStiffness": 0.96,
+          "StretchingStiffness": 1,
+          "AnchorStiffness": 1,
+          "Damping": 0.6,
+          "Gravity": 9.81,
+          "LinearInertia": 0.16,
+          "MaxLinearVelocity": 5,
+          "LinearVelocityMultiplier": 0.5,
+          "AirDragMultiplier": 0.12,
+          "Wind": 0.06
         }
       },
       {
