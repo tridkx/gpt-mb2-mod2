@@ -7,7 +7,7 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
-from paths import ROOT, MODULE, BUILD, MOD_ID, VERSION, GAME, NATIVE, ASSET_TOOL, MBTOOL, GROUP_ID, PORTRAITS, CATEGORY, WHITE_COLOR_ID
+from paths import ROOT, MODULE, BUILD, MOD_ID, VERSION, GAME, NATIVE, ASSET_TOOL, MBTOOL, GROUP_ID, PORTRAITS, CATEGORY, WHITE_COLOR_ID, ARTWORK, UI_SIZE
 from prepare_assets import fit
 
 def sha(path):
@@ -59,7 +59,7 @@ def main():
     provenance = json.loads((ROOT / 'input/provenance.json').read_text(encoding='utf-8'))
     landscape = json.loads((ROOT / 'input/landscape_provenance.json').read_text(encoding='utf-8'))
     atlas = final_images['bb_portrait_atlas']
-    for index, (name, _, _) in enumerate(PORTRAITS):
+    for name, _, _ in PORTRAITS:
         original = ROOT / 'input' / (name + '_original.png')
         require(sha(original) == provenance[name]['sha256'], name + ': original approved image unchanged')
         require(original.read_bytes() == (ROOT / 'source' / (name + '.png')).read_bytes(), name + ': editable source is byte-identical')
@@ -67,14 +67,27 @@ def main():
         require(sha(landscape_input) == landscape[name]['sha256'], name + ': landscape input hash preserved')
         require(landscape_input.read_bytes() == (ROOT / 'source' / (name + '_landscape.png')).read_bytes(),
                 name + ': landscape source is byte-identical to generated input')
-        art = Image.open(landscape_input).convert('RGBA')
-        require(art.width > art.height, name + ': landscape composition')
-        require(atlas.crop((index * 1024, 0, (index + 1) * 1024, 1024)).tobytes() == fit(art, (1024, 1024), 32).tobytes(),
+    require(len(ARTWORK) == 9 and [x['icon_id'] for x in ARTWORK] == list(range(7101, 7110)),
+            'Nine distinct stable artwork IDs; existing landscape IDs unchanged')
+    for index, item in enumerate(ARTWORK):
+        name = item['name']
+        original = ROOT / item['input']
+        require(sha(original) == item['sha256'], name + ': approved input hash unchanged')
+        require(original.read_bytes() == (ROOT / item['source']).read_bytes(), name + ': source matches approved input')
+        art = Image.open(original).convert('RGBA')
+        require((art.width < art.height) if item['kind'] == 'portrait' else (art.width > art.height),
+                name + ': expected composition orientation')
+        x, y = (index % 4) * 1024, (index // 4) * 1024
+        require(atlas.crop((x, y, x + 1024, y + 1024)).tobytes() == fit(art, (1024, 1024), 32).tobytes(),
                 name + ': correct atlas slot without crop, recolor or deformation')
         alpha = np.asarray(art)[:, :, 3]
-        require(np.min(alpha) == 0 and np.max(alpha) >= 250, name + ': transparent background and opaque figure present')
-    require(atlas.crop((3072, 0, 4096, 1024)).getbbox() is None and atlas.crop((0, 1024, 4096, 4096)).getbbox() is None,
-            'All thirteen unused atlas slots are fully transparent')
+        if item['kind'] == 'background_landscape':
+            require(np.min(alpha) == 255, name + ': full opaque scenic background preserved')
+        else:
+            require(np.min(alpha) == 0 and np.max(alpha) >= 250, name + ': transparent background and opaque figure present')
+    for index in range(len(ARTWORK), 16):
+        x, y = (index % 4) * 1024, (index // 4) * 1024
+        require(atlas.crop((x, y, x + 1024, y + 1024)).getbbox() is None, 'Unused atlas cell ' + str(index) + ' is transparent')
     descriptor = ET.parse(MODULE / 'SubModule.xml')
     require(descriptor.find('Id').get('value') == MOD_ID and descriptor.find('Version').get('value') == VERSION,
             'Module ID and version match release')
@@ -85,11 +98,11 @@ def main():
         ET.parse(xml)
     group = ET.parse(MODULE / 'ModuleData/banner_icons.xml').find('.//BannerIconGroup')
     icons = list(group)
-    require(group.get('id') == str(GROUP_ID) and group.get('is_pattern') == 'false' and len(icons) == 3, 'Independent player-selectable portrait group')
-    require([int(x.get('id')) for x in icons] == [x[2] for x in PORTRAITS] and [int(x.get('texture_index')) for x in icons] == [0, 1, 2],
-            'Three icon IDs map to the correct atlas cells')
+    require(group.get('id') == str(GROUP_ID) and group.get('is_pattern') == 'false' and len(icons) == 9, 'Independent nine-artwork selectable group')
+    require([int(x.get('id')) for x in icons] == [x['icon_id'] for x in ARTWORK] and [int(x.get('texture_index')) for x in icons] == list(range(9)),
+            'Nine icon IDs map to the correct atlas cells')
     require(all(x.get('material_name') == material['Name'] and x.get('is_reserved', 'false') == 'false' for x in icons),
-            'All three icons resolve to the material and remain selectable')
+            'All nine icons resolve to the material and remain selectable')
     color = ET.parse(MODULE / 'ModuleData/banner_icons.xml').find('./BannerIconData/BannerColors/Color')
     require(color.get('id') == str(WHITE_COLOR_ID) and int(color.get('hex'), 16) == 0xffffffff
             and color.get('player_can_choose_for_background') == 'true'
@@ -104,7 +117,7 @@ def main():
         other_ids = {int(x.get('id')) for x in tree.findall('.//Icon')}
         require(WHITE_COLOR_ID not in {int(x.get('id')) for x in tree.findall('.//BannerColors/Color')},
                 'No white color ID conflict with ' + file.parent.parent.name)
-        require(GROUP_ID not in other_groups and not ({x[2] for x in PORTRAITS} & other_ids), 'No flag ID conflict with ' + file.parent.parent.name)
+        require(GROUP_ID not in other_groups and not ({x['icon_id'] for x in ARTWORK} & other_ids), 'No flag ID conflict with ' + file.parent.parent.name)
         collision_files.append(str(file))
     sprite = ET.parse(MODULE / 'GUI/BeautyBannersSpriteData.xml')
     category = sprite.find('.//SpriteCategory')
@@ -112,13 +125,14 @@ def main():
             'Unique UI sprite category with AlwaysLoad')
     require(CATEGORY + '_1' in texture_by_name, 'UI sheet name matches the game resource loader')
     ui_atlas = final_images[CATEGORY + '_1']
+    require(ui_atlas.size == UI_SIZE and len(sprite.findall('.//SpritePart')) == 9, 'Expanded UI atlas contains nine thumbnails')
     for part in sprite.findall('.//SpritePart'):
         require(part.findtext('CategoryName') == CATEGORY and part.findtext('SheetID') == '1', 'Sprite category and sheet resolve for ' + part.findtext('Name'))
         x, y, w, h = [int(part.findtext(k)) for k in ['SheetX', 'SheetY', 'Width', 'Height']]
         require(x >= 0 and y >= 0 and x + w <= ui_atlas.width and y + h <= ui_atlas.height, 'Sprite coordinates within final sheet')
         thumb = Image.open(MODULE / 'GUI/SpriteParts' / CATEGORY / (part.findtext('Name') + '.png')).convert('RGBA')
         require(ui_atlas.crop((x, y, x + w, y + h)).tobytes() == thumb.tobytes(), 'Sprite pixels match thumbnail ' + part.findtext('Name'))
-    require({x.findtext('Name') for x in sprite.findall('.//GenericSprite')} == {str(x[2]) for x in PORTRAITS}, 'Editor thumbnail names match banner IDs')
+    require({x.findtext('Name') for x in sprite.findall('.//GenericSprite')} == {str(x['icon_id']) for x in ARTWORK}, 'Editor thumbnail names match banner IDs')
     # Compare GUIDs against installed resources without reading heavy pixel data.
     index_path = BUILD / 'installed_guids.tsv'
     run(MBTOOL, 'guidindex', GAME / 'Modules', index_path)
@@ -130,20 +144,23 @@ def main():
     require(not conflicts, 'No asset GUID collision with any installed module')
 
     # Offline layout proof from final package pixels; this does not simulate the game shader.
-    preview = Image.new('RGB', (1200, 1080), '#20232b')
+    preview = Image.new('RGB', (1536, 1200), '#20232b')
     draw = ImageDraw.Draw(preview)
     font = ImageFont.truetype('C:/Windows/Fonts/arial.ttf', 22)
-    for index, (_, label, _) in enumerate(PORTRAITS):
-        banner = Image.new('RGBA', (600, 300), 'white')
-        art = Image.open(ROOT / 'source' / (PORTRAITS[index][0] + '_landscape.png')).convert('RGBA')
-        art.thumbnail((580, 280), Image.Resampling.LANCZOS)
-        banner.alpha_composite(art, ((600 - art.width) // 2, (300 - art.height) // 2))
-        preview.paste(banner.convert('RGB'), (300, 30 + index * 350))
-        draw.text((300, 337 + index * 350), label + ' / white background', font=font, fill='white')
+    for index, item in enumerate(ARTWORK):
+        banner = Image.new('RGBA', (480, 340), 'white')
+        x, y = (index % 4) * 1024, (index // 4) * 1024
+        # Show final decoded atlas pixels at their actual square-cell proportions.
+        cell = atlas.crop((x, y, x + 1024, y + 1024))
+        cell.thumbnail((340, 340), Image.Resampling.LANCZOS)
+        banner.alpha_composite(cell, ((480 - cell.width) // 2, 0))
+        px, py = 16 + (index % 3) * 512, 16 + (index // 3) * 400
+        preview.paste(banner.convert('RGB'), (px, py))
+        draw.text((px, py + 352), str(item['icon_id']) + ' ' + item['label'], font=font, fill='white')
     preview.save(ROOT / 'reports/final_banner_preview.png')
     report = {'status': 'pass', 'version': VERSION, 'game_version': ET.parse(NATIVE / 'SubModule.xml').find('Version').get('value'),
               'final_package_sha256': sha(package), 'checks': checks, 'checked_banner_files': collision_files,
-              'resource_memory_mib': 64.25,
+              'resource_memory_mib': 64.5,
               'module_files': {p.relative_to(MODULE).as_posix(): sha(p) for p in sorted(MODULE.rglob('*')) if p.is_file() and p.name != '.gitkeep'},
               'limitations': ['Game not launched. User must check banner editor thumbnails, RGB tint with white sigil, flags, shields and saving/loading.',
                               'Offline preview shows final decoded artwork placement, not in-game lighting or shader output.']}

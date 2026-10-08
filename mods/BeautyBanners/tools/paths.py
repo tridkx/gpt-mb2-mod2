@@ -1,12 +1,13 @@
 """Local tool defaults; override them for a different installation."""
 import os
+import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 WORKSPACE = ROOT.parents[1]
 BUILD = ROOT / 'build'
 MOD_ID = 'BeautyBanners'
-VERSION = 'v1.1.0'
+VERSION = 'v1.2.0'
 MODULE = ROOT / 'module' / MOD_ID
 GAME = Path(os.environ.get('BANNERLORD_GAME_ROOT', r'D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord'))
 NATIVE = GAME / 'Modules' / 'Native'
@@ -19,3 +20,5 @@ PORTRAITS = [('ol', 'OL Uniform', 7101), ('qipao', 'Satin Qipao', 7102), ('hanfu
 GROUP_ID = 71
 CATEGORY = 'ui_beautybanners'
 WHITE_COLOR_ID = 71001
+ARTWORK = json.loads((ROOT / 'input/approved_artwork.json').read_text(encoding='utf-8'))['artwork']
+UI_SIZE = (1024, 128)
