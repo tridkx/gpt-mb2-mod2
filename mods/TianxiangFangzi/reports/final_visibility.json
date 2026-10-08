@@ -1,0 +1,726 @@
+{
+  "materials": [
+    {
+      "Name": "fz5_eye",
+      "Guid": "7ffec9ab-df37-f6e4-2abd-9f178cda317d",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "fz5_face",
+      "Guid": "faeabce4-71d3-1977-b986-5e8224c26537",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "fz5_skin",
+      "Guid": "6e09bf52-ae18-9308-8fed-d091764d9ab0",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "fz5_cuff",
+      "Guid": "980f7a0c-8e8a-39af-52e5-c6b08161d168",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "fz5_lash",
+      "Guid": "ccc46757-c3d1-3664-b456-6be6a1e5a26b",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.4,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "fz5_head",
+      "Guid": "aa76adeb-cdb2-c4ac-0fcf-1b33e857122d",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "fz5_hair",
+      "Guid": "0f39681b-ce89-48df-15d9-e33423c9986d",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "fz5_pants",
+      "Guid": "d3c55a42-26eb-8ab5-bb00-bd01a8314e5d",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "fz5_tunic",
+      "Guid": "39ca3d43-93ab-1de2-ce2d-94d9e978a146",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "Name": "fz5_head_00",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "7ffec9ab-df37-f6e4-2abd-9f178cda317d",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "84E505AD3D78E0C55BA25CAA82C32A651969C7A50F7DE8A7E8F5E6512C131AB5",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_00.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "7ffec9ab-df37-f6e4-2abd-9f178cda317d",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "84E505AD3D78E0C55BA25CAA82C32A651969C7A50F7DE8A7E8F5E6512C131AB5",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_00.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "7ffec9ab-df37-f6e4-2abd-9f178cda317d",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "84E505AD3D78E0C55BA25CAA82C32A651969C7A50F7DE8A7E8F5E6512C131AB5",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_00.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "7ffec9ab-df37-f6e4-2abd-9f178cda317d",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "84E505AD3D78E0C55BA25CAA82C32A651969C7A50F7DE8A7E8F5E6512C131AB5",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_01",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "faeabce4-71d3-1977-b986-5e8224c26537",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "62551D68FE1C08442BE9E323E1CA8313B024ABE5C44FA7481854829B969127C8",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_01.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "faeabce4-71d3-1977-b986-5e8224c26537",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "62551D68FE1C08442BE9E323E1CA8313B024ABE5C44FA7481854829B969127C8",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_01.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "faeabce4-71d3-1977-b986-5e8224c26537",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "62551D68FE1C08442BE9E323E1CA8313B024ABE5C44FA7481854829B969127C8",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_01.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "faeabce4-71d3-1977-b986-5e8224c26537",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "62551D68FE1C08442BE9E323E1CA8313B024ABE5C44FA7481854829B969127C8",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_03",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "ccc46757-c3d1-3664-b456-6be6a1e5a26b",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "B9F5443DAA3B65B6F1FA81CFDC49201E549830FB33B0EE2A1699667689D2A537",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_03.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "ccc46757-c3d1-3664-b456-6be6a1e5a26b",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "B9F5443DAA3B65B6F1FA81CFDC49201E549830FB33B0EE2A1699667689D2A537",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_03.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "ccc46757-c3d1-3664-b456-6be6a1e5a26b",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "B9F5443DAA3B65B6F1FA81CFDC49201E549830FB33B0EE2A1699667689D2A537",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_03.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "ccc46757-c3d1-3664-b456-6be6a1e5a26b",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "B9F5443DAA3B65B6F1FA81CFDC49201E549830FB33B0EE2A1699667689D2A537",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_10",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation"
+      ],
+      "Material": "0f39681b-ce89-48df-15d9-e33423c9986d",
+      "Vertices": 4232,
+      "AlphaMin": 0,
+      "AlphaMax": 5,
+      "ColorsSHA256": "FAB3D08A647D3869B6125BB2A3ABA68D48A4828A786E718E36BD9017425F196C",
+      "VertexStreamSHA256": "A06BBB8D5D97E595D271E4FA90CD8A6BAFA9EC57E9F4FB0C352E034EDBE26177",
+      "ClothMetadataSHA256": "6C271E97734DEC4BEB2F63DE7E1D5ACEDB6EE362816E0312666FA1C31F2646FA"
+    },
+    {
+      "Name": "fz5_head_10.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "0f39681b-ce89-48df-15d9-e33423c9986d",
+      "Vertices": 2776,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "C984AD3E4C2BE4A5107BC9F08C8EF330F0BEDFDAAA4C6AFE8C9648D7F6039A8B",
+      "VertexStreamSHA256": "68558C461241D348485CEDE0CF109BBEA1704EBAAE7C8292C048C8294535BD7E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_10.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "0f39681b-ce89-48df-15d9-e33423c9986d",
+      "Vertices": 1632,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "518CF6CAD7ABE6F5EF13428F51F97EDE6AC5851B625969AB64FFD2DDB3E17F6C",
+      "VertexStreamSHA256": "E44EB62FF709004BB5A4FF469B75C1F39C6116E7901A4C8ED1285EFC3C8CCB64",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_10.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "0f39681b-ce89-48df-15d9-e33423c9986d",
+      "Vertices": 950,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "014EBB45892461489D0DC6F1A0D6CA6E3499713C8FC85464EEEB3A9FDC21B736",
+      "VertexStreamSHA256": "CE460309CEA9E47E96D954D940225CAA295CD8DE67FC58233E6372BD8854BDA0",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_11",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "aa76adeb-cdb2-c4ac-0fcf-1b33e857122d",
+      "Vertices": 1223,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "8BCD23B69AE1C5244BA0399A7813F017C6E683812CF882DD0CFF3FDE3E662809",
+      "VertexStreamSHA256": "B7A28B4F03E54F672B608CA4B25106C09064FAAE6681C84A86C80DD58FEF3AEF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_11.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "aa76adeb-cdb2-c4ac-0fcf-1b33e857122d",
+      "Vertices": 808,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "EAC01236E4F46BFEDC34E8A39004294E4D1C6AB25C87B6A66BE8A130E8DC02C5",
+      "VertexStreamSHA256": "2DA9089518B5A3E96079B277D47646E60F97F69ADC06D4A46AE4649A9B69EDD6",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_11.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "aa76adeb-cdb2-c4ac-0fcf-1b33e857122d",
+      "Vertices": 503,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "86F4E89E346F84AEADDECD237FC22FF1E174C3AE971CE91DB05547ACA8180AE3",
+      "VertexStreamSHA256": "DD9B800A568D1823A8AF30CD9B9C1671AAFDEDDC19910901780216A1103CAC37",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_11.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "aa76adeb-cdb2-c4ac-0fcf-1b33e857122d",
+      "Vertices": 291,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "8FC317AF9F1C4466B337EEB64D81929BA76378510EE48BBC46675387AF8655F6",
+      "VertexStreamSHA256": "3B52E38BEB4597DFAE87E6BB5933BF28A9016FD2042A4197E29DE8FB9E1EE3EA",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_12",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "aa76adeb-cdb2-c4ac-0fcf-1b33e857122d",
+      "Vertices": 571,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "6BBA7FF4635AC072003479544E34AFB3D5C375013F1E39187A113BAB84DD717F",
+      "VertexStreamSHA256": "CF286247DE863EADA5B36201BCA2DFB1F862B5D42EF0D53CC85E8FC8B96D27EF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_12.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "aa76adeb-cdb2-c4ac-0fcf-1b33e857122d",
+      "Vertices": 389,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "4E07432876FF7EE7832A0AC0E8F3FCCB08726770DF53F2013BCEFBE29AD633FA",
+      "VertexStreamSHA256": "2C9F49ABCEA14216D55A17C725255978E7118357677312498AF03C3DD387D621",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_12.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "aa76adeb-cdb2-c4ac-0fcf-1b33e857122d",
+      "Vertices": 231,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "5C4AC7249130718F3267578FD2D2ABC6983359C3F4F01552228A6FFCE4938DEE",
+      "VertexStreamSHA256": "C2882B4B31B18B32604E376DDC99BC945F9E969153B526743C588C7C86E009F4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_head_12.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "aa76adeb-cdb2-c4ac-0fcf-1b33e857122d",
+      "Vertices": 129,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "E9D2DEC69FBC3B34AA16B28C48158D540EBF62E972651ED37E8729CA3CC25C4B",
+      "VertexStreamSHA256": "2DD2D8D30EDF75DC0C763409A5E62DC43E85DA5CBB2CC2EF64E5E072D8069B87",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_body_02",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "980f7a0c-8e8a-39af-52e5-c6b08161d168",
+      "Vertices": 472,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "6F71B617B8DBC1A4598EC5E2E096C4830EC8F2654935E25DBF666BC0827E1F1A",
+      "VertexStreamSHA256": "95EA2655279898C0590D8F0049996E5AA19C09C9C5BABB54EDCBCF1B136BFD0A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_body_02.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "980f7a0c-8e8a-39af-52e5-c6b08161d168",
+      "Vertices": 337,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "0D881B9FB51F1202877633071F4B8C2D1B5B13418328F40431C572D49E3B682F",
+      "VertexStreamSHA256": "9450088DC86676B44FAE051D8F920C50A57A9788DEEF93D8845B535DBF1D5FD5",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_body_02.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "980f7a0c-8e8a-39af-52e5-c6b08161d168",
+      "Vertices": 232,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "5F230F373E0DA24E3CFBBA92DA7D38B385C57EA449768623A2470F9503CA3038",
+      "VertexStreamSHA256": "DB55FC24D86A5B4A37F3A068A7E7DCA8EFCA501A860696DC70FA094E0F54F4E3",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_body_02.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "980f7a0c-8e8a-39af-52e5-c6b08161d168",
+      "Vertices": 135,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "82B4581CEC7CB10607EF7DCAA9977EEB47919932223FD8F9C5DA5BE11A6F33BF",
+      "VertexStreamSHA256": "2606BBD4992AF898631E59A23BF02500CC41A7BECA8C5A0BA208FA162A4C2EE6",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_body_05",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "6e09bf52-ae18-9308-8fed-d091764d9ab0",
+      "Vertices": 1031,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "00631476ED7D7A681CD541F5554BEA41C9A11493E1E22AAB7839E2F05304D83A",
+      "VertexStreamSHA256": "4BCEB6BF773B2C11BEB68C63A9B0965FFA857AD17566BCC39C53F8E042A77827",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_body_05.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "6e09bf52-ae18-9308-8fed-d091764d9ab0",
+      "Vertices": 660,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D56E1D45D385F3FA38552A110DBA25EAD727C56CF31355647E8BC18BE696160E",
+      "VertexStreamSHA256": "3C5C4173FB8E2103752A9B9E77919E50848392F7BBB12D7E9A433B39750FC24C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_body_05.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "6e09bf52-ae18-9308-8fed-d091764d9ab0",
+      "Vertices": 389,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "4E07432876FF7EE7832A0AC0E8F3FCCB08726770DF53F2013BCEFBE29AD633FA",
+      "VertexStreamSHA256": "00660D3C005B9377721165CBEDB934E6DCF6315A0E67E50E6D48A06FE996CE7A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_body_05.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "6e09bf52-ae18-9308-8fed-d091764d9ab0",
+      "Vertices": 219,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "CE634E80F45F6915B847C49E158333521C653B4C4A87E4055B7052F5A8D8FA44",
+      "VertexStreamSHA256": "FD34E425924C15BE3F7CAF25BEBAE27EEF02225F32D3C30F7EB28C3B8A99FB64",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_body_07",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation"
+      ],
+      "Material": "39ca3d43-93ab-1de2-ce2d-94d9e978a146",
+      "Vertices": 982,
+      "AlphaMin": 0,
+      "AlphaMax": 6,
+      "ColorsSHA256": "1DCA67B5C054F4D63F2356FE5991C570FEFE589BA1BE52ADE1EE0B0E6796F438",
+      "VertexStreamSHA256": "2A671CF0B938DF6FF27DEB2F5D583684CF4C47B7145BB403F00CB1BD82EAA53C",
+      "ClothMetadataSHA256": "6C271E97734DEC4BEB2F63DE7E1D5ACEDB6EE362816E0312666FA1C31F2646FA"
+    },
+    {
+      "Name": "fz5_body_07.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "39ca3d43-93ab-1de2-ce2d-94d9e978a146",
+      "Vertices": 688,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "35159D05A3BFB93832A6CF540F3B7D4B2216A445FCDE147B5BB5AD5531598ED4",
+      "VertexStreamSHA256": "2180D3676B691B5A0CFEE2144687A6A9BAC1DA027785C9A155FDA2E8FAA4D982",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_body_07.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "39ca3d43-93ab-1de2-ce2d-94d9e978a146",
+      "Vertices": 440,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "BC2DD6D5C8E154DD818CA9461EDC165C0BBA21232B708B8F01AC8EE193DA2223",
+      "VertexStreamSHA256": "C9FC1FE94A47FF1C572B7C49D112A92C1F40F150D092705A23A70B4471835790",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_body_07.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "39ca3d43-93ab-1de2-ce2d-94d9e978a146",
+      "Vertices": 243,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "74EEE303B853BE5144DA608B6CDD6503262D3CC8605C9081ABC1E1E5705B6DBF",
+      "VertexStreamSHA256": "CBF85C0B402232FEA7666B1E0E187B620B48050C7D0799C8C9A7548FA5D5CA17",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_body_08",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation"
+      ],
+      "Material": "39ca3d43-93ab-1de2-ce2d-94d9e978a146",
+      "Vertices": 3574,
+      "AlphaMin": 0,
+      "AlphaMax": 13,
+      "ColorsSHA256": "B0D5B796BFBDF43A8BEFEA8041B538B8E66E1D0ACB423986610E15D736755927",
+      "VertexStreamSHA256": "2C4422ABB8459A03C8B4DAA401A889938F9F3A7B0E8D2909EA4F577E2EB4F8DF",
+      "ClothMetadataSHA256": "6C271E97734DEC4BEB2F63DE7E1D5ACEDB6EE362816E0312666FA1C31F2646FA"
+    },
+    {
+      "Name": "fz5_body_08.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "39ca3d43-93ab-1de2-ce2d-94d9e978a146",
+      "Vertices": 3574,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "802A8FF380569BA0F8C7F453446CD865E0A9CE98595DD89C445D2BEEFDED95A8",
+      "VertexStreamSHA256": "BF1241853CCA29991129CE6178AD9259BA0A6C7A120666219C25D2ED4C426802",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_body_08.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "39ca3d43-93ab-1de2-ce2d-94d9e978a146",
+      "Vertices": 3574,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "802A8FF380569BA0F8C7F453446CD865E0A9CE98595DD89C445D2BEEFDED95A8",
+      "VertexStreamSHA256": "BF1241853CCA29991129CE6178AD9259BA0A6C7A120666219C25D2ED4C426802",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_body_08.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "39ca3d43-93ab-1de2-ce2d-94d9e978a146",
+      "Vertices": 3574,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "802A8FF380569BA0F8C7F453446CD865E0A9CE98595DD89C445D2BEEFDED95A8",
+      "VertexStreamSHA256": "BF1241853CCA29991129CE6178AD9259BA0A6C7A120666219C25D2ED4C426802",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_body_09",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "6e09bf52-ae18-9308-8fed-d091764d9ab0",
+      "Vertices": 601,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "2E508299CD9549E21130E418C414780283FCDC750CF42DDB5D86A986C9B000F3",
+      "VertexStreamSHA256": "8742A3E14CF4C74D037300D803D6564CC1440D026D443D0F9B013B92CD4D5351",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_body_09.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "6e09bf52-ae18-9308-8fed-d091764d9ab0",
+      "Vertices": 397,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "6148081892DF08ADF53997BDF6F38B38A1397630E4D01E723D8A4A82703206FB",
+      "VertexStreamSHA256": "435E0547032E9F24E43B98DF5A123B0C8B98059DABE42470C366F09B60C9CDAE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_body_09.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "6e09bf52-ae18-9308-8fed-d091764d9ab0",
+      "Vertices": 248,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "A649CE0D750CB8EFB11B5E978BF0CD7EACB61387E7C3716F1D0D0F0EF1C872F0",
+      "VertexStreamSHA256": "85975A8087B3DF0DFB840BFEEE676311DB8E61F8F25BE2B841430D47402FBEE4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_body_09.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "6e09bf52-ae18-9308-8fed-d091764d9ab0",
+      "Vertices": 148,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "DE294E33DC3F32616E3240D9A2A45AE6A594FDD2B4AAA3F649D386679CF795CE",
+      "VertexStreamSHA256": "A0C132B969285E8B126637837B1B1E3FB90B5741F970305905FA7B550FCDB0E8",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_legs_04",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "d3c55a42-26eb-8ab5-bb00-bd01a8314e5d",
+      "Vertices": 542,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "8F7D977395BEB1947A3B81B95003CC383EBCE3C0B122B9377BD567814748855D",
+      "VertexStreamSHA256": "408F668889582BBD298B24613F7F3437C36EBC31AD07892EF54B0DC7F6F17948",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_legs_04.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "d3c55a42-26eb-8ab5-bb00-bd01a8314e5d",
+      "Vertices": 542,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "8F7D977395BEB1947A3B81B95003CC383EBCE3C0B122B9377BD567814748855D",
+      "VertexStreamSHA256": "408F668889582BBD298B24613F7F3437C36EBC31AD07892EF54B0DC7F6F17948",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_legs_04.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "d3c55a42-26eb-8ab5-bb00-bd01a8314e5d",
+      "Vertices": 542,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "8F7D977395BEB1947A3B81B95003CC383EBCE3C0B122B9377BD567814748855D",
+      "VertexStreamSHA256": "408F668889582BBD298B24613F7F3437C36EBC31AD07892EF54B0DC7F6F17948",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_legs_04.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "d3c55a42-26eb-8ab5-bb00-bd01a8314e5d",
+      "Vertices": 542,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "8F7D977395BEB1947A3B81B95003CC383EBCE3C0B122B9377BD567814748855D",
+      "VertexStreamSHA256": "408F668889582BBD298B24613F7F3437C36EBC31AD07892EF54B0DC7F6F17948",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_legs_06",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "6e09bf52-ae18-9308-8fed-d091764d9ab0",
+      "Vertices": 617,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "FEF0948EBEEADD7B71F4ADEBDBBEB847139D4CEB424DE45FCEB4243B4E73DB22",
+      "VertexStreamSHA256": "4D7C947EEB2E75F88424EC1D9FB2A90E0911198C76F7A37268CB3B735925CCAE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_legs_06.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "6e09bf52-ae18-9308-8fed-d091764d9ab0",
+      "Vertices": 617,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "FEF0948EBEEADD7B71F4ADEBDBBEB847139D4CEB424DE45FCEB4243B4E73DB22",
+      "VertexStreamSHA256": "4D7C947EEB2E75F88424EC1D9FB2A90E0911198C76F7A37268CB3B735925CCAE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_legs_06.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "6e09bf52-ae18-9308-8fed-d091764d9ab0",
+      "Vertices": 617,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "FEF0948EBEEADD7B71F4ADEBDBBEB847139D4CEB424DE45FCEB4243B4E73DB22",
+      "VertexStreamSHA256": "4D7C947EEB2E75F88424EC1D9FB2A90E0911198C76F7A37268CB3B735925CCAE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "fz5_legs_06.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "6e09bf52-ae18-9308-8fed-d091764d9ab0",
+      "Vertices": 617,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "FEF0948EBEEADD7B71F4ADEBDBBEB847139D4CEB424DE45FCEB4243B4E73DB22",
+      "VertexStreamSHA256": "4D7C947EEB2E75F88424EC1D9FB2A90E0911198C76F7A37268CB3B735925CCAE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    }
+  ]
+}

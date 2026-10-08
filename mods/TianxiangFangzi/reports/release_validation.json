@@ -1,0 +1,203 @@
+{
+  "version": "v1.0.0",
+  "status": "pass",
+  "check_scope": "offline_checks",
+  "final_package_sha256": "3880790654c617da59942e5e4781c33ea676f4ab806ff211f8b32ecd0f7551b1",
+  "baseline_package_sha256": null,
+  "baseline_reason": "first release; original input preserved",
+  "lods": [
+    {
+      "lod": 0,
+      "vertices": 16321,
+      "triangles": 20295
+    },
+    {
+      "lod": 1,
+      "vertices": 13264,
+      "triangles": 16372
+    },
+    {
+      "lod": 2,
+      "vertices": 10884,
+      "triangles": 13629
+    },
+    {
+      "lod": 3,
+      "vertices": 9324,
+      "triangles": 12063
+    }
+  ],
+  "seams": [
+    {
+      "lod": 0,
+      "shared_skin_points": 34,
+      "max_position_error": 0
+    },
+    {
+      "lod": 1,
+      "shared_skin_points": 34,
+      "max_position_error": 0
+    },
+    {
+      "lod": 2,
+      "shared_skin_points": 34,
+      "max_position_error": 0
+    },
+    {
+      "lod": 3,
+      "shared_skin_points": 34,
+      "max_position_error": 0
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "asset": "anim_inventory_idle",
+      "frames_checked": 16,
+      "total_frames": 1268,
+      "max_edge_extension": 3.0387352709228646,
+      "max_p99_edge_extension": 1.9302329615520173,
+      "worst_frame": 507,
+      "worst_mesh": "fz5_head_01",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0.01827895024295021,
+        "worst_frame": 507,
+        "maximum_contact_samples": 285,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    },
+    {
+      "label": "run",
+      "asset": "anim_run_forward_unarmed",
+      "frames_checked": 25,
+      "total_frames": 26,
+      "max_edge_extension": 3.288683908065264,
+      "max_p99_edge_extension": 2.010754610496673,
+      "worst_frame": 22,
+      "worst_mesh": "fz5_body_08",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0.047008555952442646,
+        "worst_frame": 2,
+        "maximum_contact_samples": 547,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    },
+    {
+      "label": "bow",
+      "asset": "anim_bow",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "max_edge_extension": 3.709047689189366,
+      "max_p99_edge_extension": 2.227712260532084,
+      "worst_frame": 76,
+      "worst_mesh": "fz5_head_01",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0.018959331283451515,
+        "worst_frame": 82,
+        "maximum_contact_samples": 413,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    },
+    {
+      "label": "riding",
+      "asset": "anim_rider_gallop_bow",
+      "frames_checked": 20,
+      "total_frames": 21,
+      "max_edge_extension": 3.7741635289292685,
+      "max_p99_edge_extension": 2.4748922107061984,
+      "worst_frame": 9,
+      "worst_mesh": "fz5_body_08",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0.023956850013650485,
+        "worst_frame": 10,
+        "maximum_contact_samples": 597,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    }
+  ],
+  "textures": [
+    {
+      "name": "fz5_cuff_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.09735107421875,
+      "alpha_mean_error_255": 0.611419677734375
+    },
+    {
+      "name": "fz5_eye_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.24217732747395834,
+      "alpha_mean_error_255": 0.0
+    },
+    {
+      "name": "fz5_face_d",
+      "mips": 11,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.4814567565917969,
+      "alpha_mean_error_255": 0.0
+    },
+    {
+      "name": "fz5_flat_n",
+      "mips": 7,
+      "decoded_all_mips": true
+    },
+    {
+      "name": "fz5_hair_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.03325653076171875,
+      "alpha_mean_error_255": 1.1602020263671875
+    },
+    {
+      "name": "fz5_head_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.04705683390299479,
+      "alpha_mean_error_255": 0.5562248229980469
+    },
+    {
+      "name": "fz5_lash_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.633721669514974,
+      "alpha_mean_error_255": 0.4771614074707031
+    },
+    {
+      "name": "fz5_neutral_s",
+      "mips": 7,
+      "decoded_all_mips": true
+    },
+    {
+      "name": "fz5_pants_d",
+      "mips": 11,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.28284263610839844,
+      "alpha_mean_error_255": 0.3750629425048828
+    },
+    {
+      "name": "fz5_skin_d",
+      "mips": 11,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 1.0055821736653645,
+      "alpha_mean_error_255": 0.0
+    },
+    {
+      "name": "fz5_tunic_d",
+      "mips": 11,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.442532221476237,
+      "alpha_mean_error_255": 0.40515708923339844
+    }
+  ],
+  "metadata_audit": "pass",
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "limitations": "Offline native skeletal motion. In-game cloth, weapon IK, face animation, body sliders and horse collision require user testing.",
+  "editable_source_verified": true,
+  "visual_review": {
+    "reviewed": "final eye/lash close-ups, rest front/side/back and worst native motion/contact frames",
+    "result": "reviewed with offline limitations",
+    "game_verified": false
+  }
+}
