@@ -1,0 +1,39 @@
+{
+  "id": "TianxiangRenqiu",
+  "prefix": "rq1",
+  "source_coordinate_to_meters": 0.013,
+  "source_landmarks": {
+    "pelvis": [0, 0, 72], "spine": [0, 0, 81], "spine1": [0, 0, 90],
+    "spine2": [0, 0, 99], "neck": [0, 0, 112], "head": [0, 0, 120.5],
+    "thigh": [8, 0, 72], "calf": [9, 0, 40], "foot": [9, 0, 8], "toe0": [9, 6, 1],
+    "clavicle": [4, 0, 108], "upperarm_twist": [12, 0, 108],
+    "foretwist": [26, 0, 92], "hand": [38, 0, 84], "finger0": [42, 1, 77]
+  },
+  "parts": {
+    "mesh_00_124886": ["head", "eye", "rigid_head"],
+    "mesh_01_143187": ["head", "face", "skin"],
+    "mesh_02_303303": ["body", "cuff", "arms"],
+    "mesh_03_318619": ["head", "lash", "rigid_head"],
+    "mesh_04_340671": ["legs", "pants", "legs"],
+    "mesh_05_388931": ["legs", "skin", "legs"],
+    "mesh_06_419327": ["body", "skin", "arms"],
+    "mesh_07_497675": ["body", "tunic", "upper_clothes"],
+    "mesh_08_640057": ["head", "head", "rigid_head"],
+    "mesh_09_644767": ["head", "lash", "rigid_head"],
+    "mesh_10_664193": ["head", "hair", "long_hair"],
+    "mesh_11_724257": ["head", "hair", "rigid_head"],
+    "mesh_12_872389": ["body", "tunic", "skirt"],
+    "mesh_13_909213": ["body", "skin", "skin"],
+    "mesh_14_920435": ["body", "skin", "skin"]
+  },
+  "textures": {
+    "eye": ["eye_D.png", "opaque"], "face": ["face_D.png", "opaque"],
+    "skin": ["body_D.png", "opaque"], "cuff": ["cuff_D.png", "cutout"],
+    "lash": ["eyelash_D.png", "cutout"], "head": ["head_D.png", "cutout"],
+    "hair": ["hair_D.png", "cutout"], "pants": ["pants_D.png", "cutout"],
+    "tunic": ["tunic_D.png", "cutout"]
+  },
+  "cloth_max_distance": {"skirt": 0.045, "long_hair": 0.020, "upper_clothes": 0.018},
+  "skirt_thigh_follow": 0.8,
+  "lod_ratios": [1.0, 0.60, 0.32, 0.16]
+}
