@@ -31,7 +31,7 @@ original=Path(cfg['original_directory'])
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 preserved=[]
 for file in [ROOT/'input/model.fbx',*sorted((ROOT/'tex').glob('*.png'))]:
-    origin=original/('model.fbx' if file.suffix=='.fbx' else 'tex/'+file.name)
+    origin=Path(cfg.get('original_fbx_backup',str(original/'model.fbx'))) if file.suffix=='.fbx' else original/('tex/'+file.name)
     assert sha(file)==sha(origin)
     preserved.append({'original':str(origin),'copy':str(file.relative_to(ROOT)),'sha256':sha(file)})
 (ROOT/'reports/input_preservation.json').write_text(json.dumps({'status':'pass','files':preserved},ensure_ascii=False,indent=2),encoding='utf-8')

@@ -21,7 +21,7 @@ for r in manifest:
         o=original.copy();o.data=original.data.copy();bpy.context.scene.collection.objects.link(o)
         for mod in list(o.modifiers):o.modifiers.remove(mod)
         bpy.context.view_layer.objects.active=o;fallback=False
-        if lod and r['texture_key'] not in ['face','eye','lash']:
+        if lod and r['texture_key'] not in ['face','eye','lash'] and r['kind']!='skirt' and r['part']!='legs':
             guard=o.vertex_groups.new(name='SeamGuard')
             ids=[v.index for v in o.data.vertices if tuple(round(c,5) for c in v.co) in saved]
             if ids:guard.add(ids,1,'REPLACE')
@@ -52,6 +52,8 @@ for r in manifest:
                     assert inf
                     idx=[i for i,w in inf];w=np.array([w for i,w in inf]);w/=w.sum()
                     q=np.floor(w*255).astype(int);q[w.argmax()]+=255-q.sum()
+                    if r['kind']=='skirt' and cfg.get('skirt_clearance_fit'):
+                        q=np.rint(w*255).astype(int);assert q.sum()==255
                     while len(idx)<4:idx.append(0);q=np.append(q,0)
                     a=alpha.data[vi].color[3] if alpha and lod==0 else 0
                     records.append((list(v.co),list(n),u,idx,q.tolist(),[255,255,255,round(a*255)]));dedup[key]=len(records)-1
