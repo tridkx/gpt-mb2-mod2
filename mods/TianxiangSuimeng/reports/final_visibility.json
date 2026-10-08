@@ -1,0 +1,668 @@
+{
+  "materials": [
+    {
+      "Name": "sm6_eye",
+      "Guid": "d34104a6-f333-29bf-8844-39f0b3f4b342",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sm6_face",
+      "Guid": "3eeb83d1-9508-a911-2810-3be50bc23bf1",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sm6_skin",
+      "Guid": "8f453845-cfdf-8aa0-f2d0-a958b271395c",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sm6_lash",
+      "Guid": "c063f410-8521-103a-f397-ab22b7d91ec6",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.4,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sm6_head",
+      "Guid": "7baa4808-23af-0162-e361-4c37ecb8f6b7",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sm6_hair",
+      "Guid": "16d5dfd7-7b5e-c0d0-fd34-9c47237dd318",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sm6_pants",
+      "Guid": "6a4fe2b2-bec6-ecac-9162-dcc03902233a",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sm6_tunic",
+      "Guid": "d74bf4a1-0703-8d68-78e9-7d7a871add65",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "Name": "sm6_head_00",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "d34104a6-f333-29bf-8844-39f0b3f4b342",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "84E505AD3D78E0C55BA25CAA82C32A651969C7A50F7DE8A7E8F5E6512C131AB5",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_head_00.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "d34104a6-f333-29bf-8844-39f0b3f4b342",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "84E505AD3D78E0C55BA25CAA82C32A651969C7A50F7DE8A7E8F5E6512C131AB5",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_head_00.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "d34104a6-f333-29bf-8844-39f0b3f4b342",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "84E505AD3D78E0C55BA25CAA82C32A651969C7A50F7DE8A7E8F5E6512C131AB5",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_head_00.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "d34104a6-f333-29bf-8844-39f0b3f4b342",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "84E505AD3D78E0C55BA25CAA82C32A651969C7A50F7DE8A7E8F5E6512C131AB5",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_head_01",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "3eeb83d1-9508-a911-2810-3be50bc23bf1",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "8B9717B8D42876AE1A345D9B5BDE4408EB4B071C52F368D786C97A38A07472DF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_head_01.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "3eeb83d1-9508-a911-2810-3be50bc23bf1",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "8B9717B8D42876AE1A345D9B5BDE4408EB4B071C52F368D786C97A38A07472DF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_head_01.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "3eeb83d1-9508-a911-2810-3be50bc23bf1",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "8B9717B8D42876AE1A345D9B5BDE4408EB4B071C52F368D786C97A38A07472DF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_head_01.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "3eeb83d1-9508-a911-2810-3be50bc23bf1",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "8B9717B8D42876AE1A345D9B5BDE4408EB4B071C52F368D786C97A38A07472DF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_head_04",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "c063f410-8521-103a-f397-ab22b7d91ec6",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "B9F5443DAA3B65B6F1FA81CFDC49201E549830FB33B0EE2A1699667689D2A537",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_head_04.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "c063f410-8521-103a-f397-ab22b7d91ec6",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "B9F5443DAA3B65B6F1FA81CFDC49201E549830FB33B0EE2A1699667689D2A537",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_head_04.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "c063f410-8521-103a-f397-ab22b7d91ec6",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "B9F5443DAA3B65B6F1FA81CFDC49201E549830FB33B0EE2A1699667689D2A537",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_head_04.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "c063f410-8521-103a-f397-ab22b7d91ec6",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "B9F5443DAA3B65B6F1FA81CFDC49201E549830FB33B0EE2A1699667689D2A537",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_head_10",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation"
+      ],
+      "Material": "16d5dfd7-7b5e-c0d0-fd34-9c47237dd318",
+      "Vertices": 4103,
+      "AlphaMin": 0,
+      "AlphaMax": 5,
+      "ColorsSHA256": "888CDBBE515104091076A4872308478FF47DE96D1C928BB0CBF50B4BC176BD49",
+      "VertexStreamSHA256": "285D0298BD29BEE8960F06CDE9BB6B302A41EF7CF43250AE5CE4DE887414E305",
+      "ClothMetadataSHA256": "ED4E87ACEA740F19F37BFB1390188F0F41147266675D4BEE745789E5D06046C0"
+    },
+    {
+      "Name": "sm6_head_10.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "16d5dfd7-7b5e-c0d0-fd34-9c47237dd318",
+      "Vertices": 2655,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "34710AE6B8E43D9C9C38DACBFE457B7932CE0AAE87C6415427A0314C4BF395AC",
+      "VertexStreamSHA256": "A9B1AE4AC9C9AFE98F2CCB649ED57C9F3F6CAC48501ABC6CBA7D4526BF176C30",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_head_10.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "16d5dfd7-7b5e-c0d0-fd34-9c47237dd318",
+      "Vertices": 1573,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "AF08770217017471C173042DEA7EA99F2AB4CA4645F1252AADF1E0700218E6BA",
+      "VertexStreamSHA256": "D2EC1B348CC1BC4FF487F00E357DAA1438F2863AFD6528C18DD3F033A0256DDE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_head_10.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "16d5dfd7-7b5e-c0d0-fd34-9c47237dd318",
+      "Vertices": 901,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "5942DDDE785ED7EE7D8C8118929F989DA7FD987BECD6F79E97DED9580234ED14",
+      "VertexStreamSHA256": "10D793EFA7243EE11FDC4E96CC84F1E0A21E13182DD1F44C6DA91B702A10ABD9",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_head_11",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "7baa4808-23af-0162-e361-4c37ecb8f6b7",
+      "Vertices": 160,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "EA72AF36B887BCDAF269437ED674CC422E7E219C837166436B889E6B4434595A",
+      "VertexStreamSHA256": "5E499F2BF413D0D110AC3E77DA26779FB94C2DE335519A456BD60DBCA9BD715C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_head_11.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "7baa4808-23af-0162-e361-4c37ecb8f6b7",
+      "Vertices": 121,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "CBFA2FB9AA6CA0767BAC6251851CDE64C0C5D88C8FE6DFE4040E88F6F0F55045",
+      "VertexStreamSHA256": "0279D463A7C86C5F8A90C3A7CCE5338221BA21ADD389C3A412CC7C9112671A75",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_head_11.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "7baa4808-23af-0162-e361-4c37ecb8f6b7",
+      "Vertices": 75,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "3AE2965818BE777CF2EEC2BD8A788A3320866B506D4BBA47455892EC03CC4434",
+      "VertexStreamSHA256": "3945F8A63739F4D8829C52E7D304D05459CBBAAD3E38A427F07A3E5CD1003F3B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_head_11.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "7baa4808-23af-0162-e361-4c37ecb8f6b7",
+      "Vertices": 42,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "97C932BA3D59D040375F19283966009335B33CCE2C8164F506C7C5FB2FC2A47D",
+      "VertexStreamSHA256": "A79EBE1CEDAC0B5AE581650FA7D3E4677D995143F380E8661AEEC0E186F95DA1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_body_02",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "8f453845-cfdf-8aa0-f2d0-a958b271395c",
+      "Vertices": 630,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1A8BB096FBD563C0FC4275D58458FB6577087BE2DB199080473F8B7BA4C66744",
+      "VertexStreamSHA256": "CC2002FEEE899557C2C7DBB9AA6E14B808ABB1CC83B8712EAECDCC5189448C55",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_body_02.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "8f453845-cfdf-8aa0-f2d0-a958b271395c",
+      "Vertices": 474,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "E4F156EA65A123DD0BA2265031619CA7300240A3DF64BCC13222ED38AA52B264",
+      "VertexStreamSHA256": "5DF0ECCBF393980E4CB43AC217F6DE26FBB47848601831F265D2F7B527CCE457",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_body_02.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "8f453845-cfdf-8aa0-f2d0-a958b271395c",
+      "Vertices": 255,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "EE2BD27623CC9D4393246F4287745BF00089FCEF0D95621344EDB0D993EA967C",
+      "VertexStreamSHA256": "B9CDAC42E03E23244CF1A6929D912377FCB4342412ABD26ACA7878B98A6570CA",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_body_02.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "8f453845-cfdf-8aa0-f2d0-a958b271395c",
+      "Vertices": 146,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D2682AE9FB38F501ADF3E88E1E5241C35BC5AD429B517F96CB8B5A92E6911DDD",
+      "VertexStreamSHA256": "0D32D19ED314613DE70A12758E9E99ED38B3CC28DC81CF563FDF8DC360E144B1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_body_05",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "8f453845-cfdf-8aa0-f2d0-a958b271395c",
+      "Vertices": 1031,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "00631476ED7D7A681CD541F5554BEA41C9A11493E1E22AAB7839E2F05304D83A",
+      "VertexStreamSHA256": "94D3DF32EDA3DF87A34CEC8AA92AFFBA71C06C05392A151A3ADF32D5E20F0959",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_body_05.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "8f453845-cfdf-8aa0-f2d0-a958b271395c",
+      "Vertices": 661,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "AAB2C38A20675E25258A916DC7103F2216F6171E86D87A363F9E4B6B5130F543",
+      "VertexStreamSHA256": "D88CCD94802FE000434D24C2ACD42D0CAAA9396575E54BE7AEF513029DED0642",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_body_05.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "8f453845-cfdf-8aa0-f2d0-a958b271395c",
+      "Vertices": 389,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "4E07432876FF7EE7832A0AC0E8F3FCCB08726770DF53F2013BCEFBE29AD633FA",
+      "VertexStreamSHA256": "0A76EFFA454A8ECD95C47AFEA399D5DBD4BC72250B92A68659EFA95BCFD0E140",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_body_05.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "8f453845-cfdf-8aa0-f2d0-a958b271395c",
+      "Vertices": 220,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "DB7A5355B5C5A11E0C6C5D078AC3A8E1863A5255BE1688D4D7040E9CAC22AF6C",
+      "VertexStreamSHA256": "820B14CDD6CA402DF79A8BFAF0D1D55D1325EE0AEA68D64675AB2332F8AE60D5",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_body_07",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation"
+      ],
+      "Material": "d74bf4a1-0703-8d68-78e9-7d7a871add65",
+      "Vertices": 2708,
+      "AlphaMin": 0,
+      "AlphaMax": 6,
+      "ColorsSHA256": "6E80A5C30F17E194A6CEA773BE41C873155561B9D6A2BF28DDB9F025E902A135",
+      "VertexStreamSHA256": "D7D04A0E3FFBC8FCEDA84A781D8D2D96246A26479FD431A96FA00A9228730760",
+      "ClothMetadataSHA256": "ED4E87ACEA740F19F37BFB1390188F0F41147266675D4BEE745789E5D06046C0"
+    },
+    {
+      "Name": "sm6_body_07.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "d74bf4a1-0703-8d68-78e9-7d7a871add65",
+      "Vertices": 1838,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "3F28B9BA4E274716B45E8CF9A233C92AEB058168CC6E37656D5AA68C9CC0416A",
+      "VertexStreamSHA256": "9B131D201FA115D9FCF95FDA96358BB5F3C8E366C7F7F960A8521CB0093D5177",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_body_07.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "d74bf4a1-0703-8d68-78e9-7d7a871add65",
+      "Vertices": 1192,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "CE1DDFE6392EAD81BB6F448800D55431EF9DCF4CE12C616F91E99DECDC415AE8",
+      "VertexStreamSHA256": "1CA8C11DADF46017AA3E42B304BBD8EED61A2B994DE5BF3C5C89D4C89D0A83D4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_body_07.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "d74bf4a1-0703-8d68-78e9-7d7a871add65",
+      "Vertices": 708,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "63AB628950E2C99A61F1D5098823B36354A563F01BF6682A995AF46FAFAB1516",
+      "VertexStreamSHA256": "FA0FD9566784CC353F5F43BDC8AA513C5872524CF4F7B164C41DFCF55ABEEE54",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_body_08",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation"
+      ],
+      "Material": "d74bf4a1-0703-8d68-78e9-7d7a871add65",
+      "Vertices": 4038,
+      "AlphaMin": 0,
+      "AlphaMax": 13,
+      "ColorsSHA256": "2F78E6BB1B6E37945D095E1F571F0D0D0BBDDF884FE89E5777DFF780A84F3FCC",
+      "VertexStreamSHA256": "1DE477332A75FF3A7CC44A0527C130C41F40A09F7DA7688B1FCAAC0BE64F6576",
+      "ClothMetadataSHA256": "ED4E87ACEA740F19F37BFB1390188F0F41147266675D4BEE745789E5D06046C0"
+    },
+    {
+      "Name": "sm6_body_08.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "d74bf4a1-0703-8d68-78e9-7d7a871add65",
+      "Vertices": 4038,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "998EF877CD46DE0CA4EBDBA3AC614F3868711E33DFCC4235FD66B63B97056CE4",
+      "VertexStreamSHA256": "B9E00D10E8DD4D74B18F7353671F313E242168F2A4D77B49D68ED48BCFF376F2",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_body_08.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "d74bf4a1-0703-8d68-78e9-7d7a871add65",
+      "Vertices": 4038,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "998EF877CD46DE0CA4EBDBA3AC614F3868711E33DFCC4235FD66B63B97056CE4",
+      "VertexStreamSHA256": "B9E00D10E8DD4D74B18F7353671F313E242168F2A4D77B49D68ED48BCFF376F2",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_body_08.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "d74bf4a1-0703-8d68-78e9-7d7a871add65",
+      "Vertices": 4038,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "998EF877CD46DE0CA4EBDBA3AC614F3868711E33DFCC4235FD66B63B97056CE4",
+      "VertexStreamSHA256": "B9E00D10E8DD4D74B18F7353671F313E242168F2A4D77B49D68ED48BCFF376F2",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_body_09",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "8f453845-cfdf-8aa0-f2d0-a958b271395c",
+      "Vertices": 583,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B4140A25B8B27073B5143795A1FECFD0FEB753D4600393ECB7ADCD496A79AA53",
+      "VertexStreamSHA256": "AB1E0D85630BEBABDE0129C701B9074160C92143A0D8E08A60345B9F5B0BF5E2",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_body_09.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "8f453845-cfdf-8aa0-f2d0-a958b271395c",
+      "Vertices": 374,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "17AC9E739FB87DF759E4F0CF642D6FA91306AEC1F01B8A223BE759359035B782",
+      "VertexStreamSHA256": "E259A919EC3791DCF9074F799DDBB2B0601F98DFEC6EBC5CF85C6DCC623563DD",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_body_09.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "8f453845-cfdf-8aa0-f2d0-a958b271395c",
+      "Vertices": 227,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B4C07B5B3A2E7BF48278C6F0F7CC4C4D8A39C619B439A28446CAE390DA1854EB",
+      "VertexStreamSHA256": "FD293F4489DB0A2412D03ACDC9FE7366788CDC9B996931F872E6B586BFC356A5",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_body_09.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "8f453845-cfdf-8aa0-f2d0-a958b271395c",
+      "Vertices": 131,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "582143604F31C5BA76078BA9BE1C109891DCC5A732916D4C17CB596DA8C8232D",
+      "VertexStreamSHA256": "4CB0487AA58ED6144DF6B435AA74BFF1611AE396F93549A29A64E80CAF32C605",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_legs_03",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "6a4fe2b2-bec6-ecac-9162-dcc03902233a",
+      "Vertices": 1434,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D529D041DC818B7FFEC62191634BF52100A0D2B5191B13CCA0416D0D95645ECB",
+      "VertexStreamSHA256": "4F236BD9CCE653AA4D8BC0DF335D6B492DE9C22544A57D8D54C8150596A26B0B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_legs_03.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "6a4fe2b2-bec6-ecac-9162-dcc03902233a",
+      "Vertices": 1434,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D529D041DC818B7FFEC62191634BF52100A0D2B5191B13CCA0416D0D95645ECB",
+      "VertexStreamSHA256": "4F236BD9CCE653AA4D8BC0DF335D6B492DE9C22544A57D8D54C8150596A26B0B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_legs_03.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "6a4fe2b2-bec6-ecac-9162-dcc03902233a",
+      "Vertices": 1434,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D529D041DC818B7FFEC62191634BF52100A0D2B5191B13CCA0416D0D95645ECB",
+      "VertexStreamSHA256": "4F236BD9CCE653AA4D8BC0DF335D6B492DE9C22544A57D8D54C8150596A26B0B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_legs_03.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "6a4fe2b2-bec6-ecac-9162-dcc03902233a",
+      "Vertices": 1434,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D529D041DC818B7FFEC62191634BF52100A0D2B5191B13CCA0416D0D95645ECB",
+      "VertexStreamSHA256": "4F236BD9CCE653AA4D8BC0DF335D6B492DE9C22544A57D8D54C8150596A26B0B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_legs_06",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "8f453845-cfdf-8aa0-f2d0-a958b271395c",
+      "Vertices": 590,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "3F0B7D8A1F50713AC5105ABFBFEA3DE13D4ED412DF3F394BE87B866F8EFD8562",
+      "VertexStreamSHA256": "49640E1A60AFBA65ABECA8E15668481BF9F206DC6A08F0BFEDF5F5512BCC9CBF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_legs_06.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "8f453845-cfdf-8aa0-f2d0-a958b271395c",
+      "Vertices": 590,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "3F0B7D8A1F50713AC5105ABFBFEA3DE13D4ED412DF3F394BE87B866F8EFD8562",
+      "VertexStreamSHA256": "49640E1A60AFBA65ABECA8E15668481BF9F206DC6A08F0BFEDF5F5512BCC9CBF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_legs_06.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "8f453845-cfdf-8aa0-f2d0-a958b271395c",
+      "Vertices": 590,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "3F0B7D8A1F50713AC5105ABFBFEA3DE13D4ED412DF3F394BE87B866F8EFD8562",
+      "VertexStreamSHA256": "49640E1A60AFBA65ABECA8E15668481BF9F206DC6A08F0BFEDF5F5512BCC9CBF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sm6_legs_06.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "8f453845-cfdf-8aa0-f2d0-a958b271395c",
+      "Vertices": 590,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "3F0B7D8A1F50713AC5105ABFBFEA3DE13D4ED412DF3F394BE87B866F8EFD8562",
+      "VertexStreamSHA256": "49640E1A60AFBA65ABECA8E15668481BF9F206DC6A08F0BFEDF5F5512BCC9CBF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    }
+  ]
+}
