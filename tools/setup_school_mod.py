@@ -26,6 +26,7 @@ for name in ['rig_model.py','export_geometry.py','build_package.py','verify_rele
     if name=='render_review.py':
         s=s.replace(f"eye=next(o for o in objects if o.name=='{prefix}_head_00')","eye=next(o for o in objects if o.name in {r['object'] for r in json.loads((ROOT/'build/rig_manifest.json').read_text()) if r['texture_key']=='eye'})")
         s=s.replace('for o in objects:o.hide_render=False','for o in objects:o.hide_render=False\n    s.render.resolution_x=800;s.render.resolution_y=1000;s.cycles.samples=12')
+        s=s.replace(f"['{prefix}_head_03','{prefix}_head_09']", "[r['object'] for r in json.loads((ROOT/'build/rig_manifest.json').read_text()) if r['texture_key']=='lash']")
     (root/'tools'/name).write_text(s,encoding='utf-8')
 patch=root/'tools/PackagePatch';patch.mkdir(exist_ok=True)
 for name in ['Program.cs','PackagePatch.csproj']:(patch/name).write_text(adapt((base/'tools/PackagePatch'/name).read_text()),encoding='utf-8')

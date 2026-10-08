@@ -57,7 +57,7 @@ if 'face' in args:
     s.render.resolution_x=1000;s.render.resolution_y=1000;s.cycles.samples=32
     eye=next(o for o in objects if o.name in {r['object'] for r in json.loads((ROOT/'build/rig_manifest.json').read_text()) if r['texture_key']=='eye'});center=Vector(np.array([v.co for v in eye.data.vertices]).mean(0));center.z+=.012
     cam.location=center+Vector((0,3,0));cam.rotation_euler=(center-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=.26
-    for label,hidden in [('all',[]),('no_lash',['mf2_head_03','mf2_head_09']),('eye_only',[o.name for o in objects if o.name!='mf2_head_00'])]:
+    for label,hidden in [('all',[]),('no_lash',[r['object'] for r in json.loads((ROOT/'build/rig_manifest.json').read_text()) if r['texture_key']=='lash']),('eye_only',[o.name for o in objects if o.name!='mf2_head_00'])]:
         for o in objects:o.hide_render=o.name in hidden
         s.render.filepath=str(ROOT/'reports'/(prefix+'_face_'+label+'.png'));bpy.ops.render.render(write_still=True)
     for o in objects:o.hide_render=False
