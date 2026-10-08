@@ -1,0 +1,24 @@
+{
+  "status": "pass",
+  "baseline_version": "v1.0.0",
+  "changed_uv_meshes": [
+    "rq1_head_03",
+    "rq1_head_03.lod1",
+    "rq1_head_03.lod2",
+    "rq1_head_03.lod3"
+  ],
+  "positions_indices_weights_unchanged_all_60_meshes": true,
+  "cloth_and_vertex_colors_unchanged": true,
+  "eye_material_unchanged": true,
+  "lash_material": {
+    "Name": "rq1_lash",
+    "Guid": "4365a355-534b-6c03-14f2-4a0f658512ca",
+    "BlendMode": "no_alpha_blend",
+    "AlphaTest": 0.4,
+    "ShaderMaterialFlags": [
+      "alpha_test",
+      "disable_vertex_color_alpha"
+    ]
+  },
+  "game_verified": false
+}

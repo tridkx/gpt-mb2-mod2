@@ -24,6 +24,7 @@ for key,(file,mode) in cfg['textures'].items():
     texture('rq1_'+key+'_d',a,'DXT1' if mode=='opaque' else 'DXT5',mode!='opaque')
     mat={'name':'rq1_'+key,'template':'opaque' if mode=='opaque' else 'alpha','shaderMaterialFlags':['use_specular' if mode=='opaque' else 'alpha_test','disable_vertex_color_alpha'],'textures':{'0':'rq1_'+key+'_d','1':'rq1_flat_n','2':'rq1_flat_n','4':'rq1_neutral_s'},'dropTextureSlots':[3,5,6,7,8,9]}
     if mode!='opaque':mat['alphaTest']=.12 if key=='lash' else .20
+    mat.update(cfg.get('material_overrides',{}).get(key,{}))
     spec['materials'].append(mat)
 geometry=json.loads((BUILD/'geometry.json').read_text());recipe={}
 for part in ['head','body','legs']:

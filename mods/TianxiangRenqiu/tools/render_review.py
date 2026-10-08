@@ -21,7 +21,7 @@ if final:
         bs=next(n for n in mat.node_tree.nodes if n.type=='BSDF_PRINCIPLED');tex=mat.node_tree.nodes.new('ShaderNodeTexImage');tex.image=image
         mat.node_tree.links.new(tex.outputs['Color'],bs.inputs['Base Color']);bs.inputs['Roughness'].default_value=.68
         if mode!='opaque':
-            test=mat.node_tree.nodes.new('ShaderNodeMath');test.operation='GREATER_THAN';test.inputs[1].default_value=.12 if key=='lash' else .20
+            test=mat.node_tree.nodes.new('ShaderNodeMath');test.operation='GREATER_THAN';test.inputs[1].default_value=cfg.get('material_overrides',{}).get(key,{}).get('alphaTest',.12 if key=='lash' else .20)
             mat.node_tree.links.new(tex.outputs['Alpha'],test.inputs[0]);mat.node_tree.links.new(test.outputs[0],bs.inputs['Alpha'])
         materials[mat.name]=mat
     for m in meshes:
@@ -52,9 +52,17 @@ def render(name,offset):
     points=np.concatenate([np.array([v.co for v in o.data.vertices]) for o in objects]);center=Vector((points.min(0)+points.max(0))/2)
     cam.location=center+Vector(offset);cam.rotation_euler=(center-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=max(float(np.ptp(points[:,2]))*1.14,float(np.ptp(points[:,0]))*1.35)
     s.render.filepath=str(ROOT/'reports'/(prefix+'_'+name+'.png'));bpy.ops.render.render(write_still=True)
-render('rest_front',(0,4,0));render('rest_side',(4,0,0))
+if 'face_only' not in args:render('rest_front',(0,4,0));render('rest_side',(4,0,0))
+if 'face' in args:
+    s.render.resolution_x=1000;s.render.resolution_y=1000;s.cycles.samples=32
+    eye=next(o for o in objects if o.name=='rq1_head_00');center=Vector(np.array([v.co for v in eye.data.vertices]).mean(0));center.z+=.012
+    cam.location=center+Vector((0,3,0));cam.rotation_euler=(center-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=.26
+    for label,hidden in [('all',[]),('no_lash',['rq1_head_03','rq1_head_09']),('eye_only',[o.name for o in objects if o.name!='rq1_head_00'])]:
+        for o in objects:o.hide_render=o.name in hidden
+        s.render.filepath=str(ROOT/'reports'/(prefix+'_face_'+label+'.png'));bpy.ops.render.render(write_still=True)
+    for o in objects:o.hide_render=False
 if not quick:
-    render('rest_back',(0,-4,0));rig=parse_skeljson(json.loads((ROOT/'reports/human_skeleton.json').read_text()));previews=[]
+    render('rest_back',(0,-4,0));rig=parse_skeljson(json.loads((ROOT/'reports/human_skeleton.json').read_text()));previews=[{'label':'face_'+label,'path':'reports/'+prefix+'_face_'+label+'.png'} for label in ['all','no_lash','eye_only']] if 'face' in args else []
     report=json.loads((ROOT/'reports/release_validation.json').read_text()) if final else None
     for label in ['idle','run','bow','riding']:
         anim=parse_animjson(json.loads((ROOT/'reports'/(label+'.json')).read_text()))

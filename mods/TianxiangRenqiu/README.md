@@ -1,4 +1,4 @@
-# Tianxiang Renqiu v1.0.0
+# Tianxiang Renqiu v1.0.1
 
 “纫秋为佩”完整角色皮套装备，独立 Module ID 为 `TianxiangRenqiu`，资源前缀为 `rq1_`。模组管理器显示英文名，游戏内装备名称使用中文。原始 FBX 没有骨架；本版按此模型的解剖标记适配本机原生 28 骨 human skeleton，保留原作脸型、发型及纤细轮廓。
 
@@ -11,6 +11,10 @@ Mod ZIP 顶层为 TianxiangRenqiu，可解压到游戏 Modules。依赖 Native�
 - 纫秋为佩 · 腿部与绣鞋（靴子槽，`rq1_legs`）
 
 三件配套穿戴，手套和披肩槽先留空，避免其他装备叠在皮套上。三件均注册为可交易、可用于平民装的装备；商店何时刷新由游戏决定，测试时可使用你已有的装备获取方式。脸是头部装备的固定造型，不含原版捏脸或面部表情形变。
+
+## v1.0.1 修复
+
+纠正睫毛片（mesh_03）的 V 方向，避免眼睑贴图遮住眼球；睫毛使用 0.4 阈值透明裁切和 no_alpha_blend。眼球、其他网格位置、绑骨、布料活动距离和原始贴图保持不变。保留 v1.0.0 交付包用于回退。
 
 ## 验证范围
 
@@ -27,7 +31,7 @@ Mod ZIP 顶层为 TianxiangRenqiu，可解压到游戏 Modules。依赖 Native�
 1. 从本机 `Modules/Native/EmAssetPackages/human/human.tpac` 导出 human_skeleton，并从 animations.tpac 导出原生动作到 reports/。
 2. 后台 Blender 执行 tools/rig_model.py、tools/export_geometry.py。
 3. 编译 tools/PackagePatch/PackagePatch.csproj 到 build/package_patch，然后 Python 执行 tools/build_package.py。
-4. 执行 tools/verify_release.py，后台 Blender 执行 tools/verify_source.py、tools/render_review.py（参数 `-- final`）。
-5. 工作区 tools/install_release.ps1 使用 `-Mod TianxiangRenqiu -Version v1.0.0` 检查、打包并只安装此模块。
+4. 执行 tools/verify_release.py，后台 Blender 执行 tools/verify_source.py、tools/render_review.py（参数 `-- final face`）；返修时再执行 tools/verify_eye_repair.py 比较保留的 v1.0.0 基线。
+5. 工作区 tools/install_release.ps1 使用 `-Mod TianxiangRenqiu -Version v1.0.1 -PreviousVersion v1.0.0` 检查、打包并只安装此模块。
 
 所需工具位置以已安装装备技能中的本机工具表为准。本工程依赖工作区 tools/asset_helpers、D:/mb-tools、游戏资源、Blender、Python 和 .NET 10；源包不包含这些第三方工具。

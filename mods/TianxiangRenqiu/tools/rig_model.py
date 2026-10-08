@@ -70,6 +70,8 @@ assert {o.name for o in objects}==set(cfg['parts'])
 arrays={};records=[];seams={}
 for o in objects:
     original=o.name;part,mat,kind=cfg['parts'][original]
+    if original in cfg.get('uv_flip_v_objects',[]):
+        for uv in o.data.uv_layers.active.data:uv.uv.y=1-uv.uv.y
     p=np.round(np.array([o.matrix_world@v.co for v in o.data.vertices])*scale,5)
     w=body_weights(p,arms=kind not in ['legs','skirt']);alpha=np.zeros(len(p))
     if kind in ['rigid_head','long_hair']:
@@ -128,6 +130,10 @@ for o,rec in zip(objects,records):
     rec.update(cloth=bool(alpha.max()>.001),max_distance=float(alpha.max()),bounds=[d.min(0).tolist(),d.max(0).tolist()])
     mat=o.data.materials[0];mat.name=rec['material']+'_preview_'+o.name
     bs=next(n for n in mat.node_tree.nodes if n.type=='BSDF_PRINCIPLED');bs.inputs['Roughness'].default_value=.68;bs.inputs['Metallic'].default_value=0
+    if rec['texture_key']=='lash':
+        tex=next(n for n in mat.node_tree.nodes if n.type=='TEX_IMAGE')
+        test=mat.node_tree.nodes.new('ShaderNodeMath');test.operation='GREATER_THAN';test.inputs[1].default_value=cfg['material_overrides']['lash']['alphaTest']
+        mat.node_tree.links.new(tex.outputs['Alpha'],test.inputs[0]);mat.node_tree.links.new(test.outputs[0],bs.inputs['Alpha'])
     for n in mat.node_tree.nodes:
         if n.type=='TEX_IMAGE' and n.image:
             texture=ROOT/'tex'/cfg['textures'][rec['texture_key']][0];n.image.filepath=str(texture);n.image.reload();n.image.pack()

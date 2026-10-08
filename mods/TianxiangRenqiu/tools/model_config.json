@@ -1,6 +1,8 @@
 {
   "id": "TianxiangRenqiu",
   "prefix": "rq1",
+  "uv_flip_v_objects": ["mesh_03_318619"],
+  "material_overrides": {"lash": {"alphaTest": 0.4, "blendMode": "no_alpha_blend"}},
   "source_coordinate_to_meters": 0.013,
   "source_landmarks": {
     "pelvis": [0, 0, 72], "spine": [0, 0, 81], "spine1": [0, 0, 90],

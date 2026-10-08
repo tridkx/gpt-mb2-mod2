@@ -1,10 +1,10 @@
 {
-  "version": "v1.0.0",
+  "version": "v1.0.1",
   "status": "pass",
   "check_scope": "offline_checks",
-  "final_package_sha256": "9eb3c460ab43414e335cc4e17afef60b7b09bf7a56bd7c50d436e5ae73a0a4af",
-  "baseline_package_sha256": null,
-  "baseline_reason": "first release, original FBX retained",
+  "final_package_sha256": "3e5a2a0bdd0995e65480b4dc761a302527f36fb7af3c3aafd332c9c05d07e92e",
+  "baseline_package_sha256": "9eb3c460ab43414e335cc4e17afef60b7b09bf7a56bd7c50d436e5ae73a0a4af",
+  "baseline_reason": "v1.0.0 eye repair baseline",
   "lods": [
     {
       "lod": 0,
@@ -194,9 +194,33 @@
   "game_test_verified": false,
   "game_cloth_solver_used": false,
   "limitations": "Offline native skeletal motion. In-game cloth, weapon IK, face animation, body sliders and horse collision require user testing.",
+  "eye_repair": {
+    "status": "pass",
+    "baseline_version": "v1.0.0",
+    "changed_uv_meshes": [
+      "rq1_head_03",
+      "rq1_head_03.lod1",
+      "rq1_head_03.lod2",
+      "rq1_head_03.lod3"
+    ],
+    "positions_indices_weights_unchanged_all_60_meshes": true,
+    "cloth_and_vertex_colors_unchanged": true,
+    "eye_material_unchanged": true,
+    "lash_material": {
+      "Name": "rq1_lash",
+      "Guid": "4365a355-534b-6c03-14f2-4a0f658512ca",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.4,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    "game_verified": false
+  },
   "editable_source_verified": true,
   "visual_review": {
-    "reviewed": "final rest front/side/back and worst native motion/contact frames",
+    "reviewed": "final eye/lash close-ups, rest front/side/back and worst native motion/contact frames",
     "result": "reviewed with offline limitations",
     "game_verified": false
   }

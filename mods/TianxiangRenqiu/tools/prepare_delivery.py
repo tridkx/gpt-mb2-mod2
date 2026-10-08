@@ -8,7 +8,7 @@ package=ROOT/'module/TianxiangRenqiu/AssetPackages/rq1.tpac'
 assert report['status']=='pass' and report['final_package_sha256']==hashlib.sha256(package.read_bytes()).hexdigest()
 preview=json.loads((ROOT/'reports/final_preview_manifest.json').read_text());assert preview['package_sha256']==report['final_package_sha256']
 report['editable_source_verified']=True
-report['visual_review']={'reviewed':'final rest front/side/back and worst native motion/contact frames','result':'reviewed with offline limitations','game_verified':False}
+report['visual_review']={'reviewed':'final eye/lash close-ups, rest front/side/back and worst native motion/contact frames','result':'reviewed with offline limitations','game_verified':False}
 report_path.write_text(json.dumps(report,indent=2))
 files=['README.md','mod.json']
 for folder in ['input','source','tools','module','reports']:
