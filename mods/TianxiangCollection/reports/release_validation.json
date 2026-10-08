@@ -1,0 +1,96 @@
+{
+  "status": "pass",
+  "version": "v1.0.0",
+  "check_scope": "collection assembly; upstream geometry retained byte for byte",
+  "final_package_sha256": "133eb6c0584caf09590555b9e2d7f04a315dd2a54f144704ac2ae4e32b4f8425",
+  "package_hash_field_note": "primary tx5.tpac for shared installer; packages lists all eight SHA256 values",
+  "packages": [
+    {
+      "component": "TianxiangT5",
+      "version": "v1.4.2",
+      "file": "tx5.tpac",
+      "sha256": "133eb6c0584caf09590555b9e2d7f04a315dd2a54f144704ac2ae4e32b4f8425",
+      "assets": 23,
+      "metadata_audit": "pass",
+      "bytes_identical_to_component": true
+    },
+    {
+      "component": "TianxiangRenqiu",
+      "version": "v1.0.1",
+      "file": "rq1.tpac",
+      "sha256": "3e5a2a0bdd0995e65480b4dc761a302527f36fb7af3c3aafd332c9c05d07e92e",
+      "assets": 23,
+      "metadata_audit": "pass",
+      "bytes_identical_to_component": true
+    },
+    {
+      "component": "TianxiangMufeng",
+      "version": "v1.0.3",
+      "file": "mf2.tpac",
+      "sha256": "87b497252409667e8a959dc2135100b21fca35d382417170810436df0c2ee4a8",
+      "assets": 23,
+      "metadata_audit": "pass",
+      "bytes_identical_to_component": true
+    },
+    {
+      "component": "TianxiangQingmei",
+      "version": "v1.0.1",
+      "file": "qm3.tpac",
+      "sha256": "5437e1e9a723eafded00583aefe5d88871b34340ac4e30958180e124d182035a",
+      "assets": 23,
+      "metadata_audit": "pass",
+      "bytes_identical_to_component": true
+    },
+    {
+      "component": "TianxiangMuyu",
+      "version": "v1.0.1",
+      "file": "my4.tpac",
+      "sha256": "11ce9771982ca64791abb1f2bb11027dd18b81dace6da24b24b1fe8c467e6034",
+      "assets": 21,
+      "metadata_audit": "pass",
+      "bytes_identical_to_component": true
+    },
+    {
+      "component": "TianxiangFangzi",
+      "version": "v1.0.0",
+      "file": "fz5.tpac",
+      "sha256": "3880790654c617da59942e5e4781c33ea676f4ab806ff211f8b32ecd0f7551b1",
+      "assets": 23,
+      "metadata_audit": "pass",
+      "bytes_identical_to_component": true
+    },
+    {
+      "component": "TianxiangSuimeng",
+      "version": "v1.0.0",
+      "file": "sm6.tpac",
+      "sha256": "ac50df369eabc6835d0147e431db792e47515ecd2222153617440f85faef8136",
+      "assets": 21,
+      "metadata_audit": "pass",
+      "bytes_identical_to_component": true
+    },
+    {
+      "component": "TianxiangXuezhi",
+      "version": "v1.0.1",
+      "file": "xz7.tpac",
+      "sha256": "d23c2fdef17b33f8fcadf8c1eb0bd0e7ad3d0929a75f34a62b464001d5a6ada4",
+      "assets": 21,
+      "metadata_audit": "pass",
+      "bytes_identical_to_component": true
+    }
+  ],
+  "sets": 8,
+  "items": 24,
+  "unique_resource_names_and_guids": true,
+  "all_item_definitions_preserved": true,
+  "source_snapshots_present": true,
+  "game_test_verified": false,
+  "user_confirmed_components": [
+    {
+      "id": "TianxiangXuezhi",
+      "version": "v1.0.1",
+      "feedback": "第七套我已验证，没问题。",
+      "date": "2026-10-08"
+    }
+  ],
+  "limitations": "Collection loading is not game-tested. Disable all eight standalone modules when enabling this collection to avoid duplicate item IDs and resources."
+}

@@ -5,11 +5,14 @@ mesh plans, fitting landmarks or baseline assertions are inherited.
 """
 import sys,json,shutil
 from pathlib import Path
-WS=Path(__file__).resolve().parents[1];root=WS/'mods'/sys.argv[1]
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from project_paths import resolve_project
+WS=Path(__file__).resolve().parents[1];root=resolve_project(WS,sys.argv[1])
 cfg=json.loads((root/'tools/model_config.json').read_text());ident=cfg['id'];prefix=cfg['prefix'];title=cfg['title'];display=cfg['display_name']
 inspection=json.loads((root/'reports/source_inspection.json').read_text());assert inspection['armatures']==0
 assert set(cfg['parts'])=={m['name'] for m in inspection['meshes']}
-base=WS/'mods/TianxiangRenqiu'
+base=resolve_project(WS,'TianxiangRenqiu')
 def adapt(s):return s.replace('TianxiangRenqiu',ident).replace('rq1',prefix).replace('Renqiu',ident)
 for name in ['rig_model.py','export_geometry.py','build_package.py','verify_release.py','verify_source.py','render_review.py','prepare_delivery.py']:
     s=adapt((base/'tools'/name).read_text())

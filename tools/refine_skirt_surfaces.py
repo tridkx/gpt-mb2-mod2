@@ -1,10 +1,13 @@
 """Refine a pose fit against the actual leg meshes, rather than capsules."""
 import bpy,sys,json
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from project_paths import resolve_project
 import numpy as np
 from mathutils.bvhtree import BVHTree
 from mathutils.kdtree import KDTree
-WS=Path(__file__).resolve().parents[1];ROOT=WS/'mods'/sys.argv[sys.argv.index('--')+1];BASE=ROOT/'build/repair_baseline_v1.0.0'
+WS=Path(__file__).resolve().parents[1];ROOT=resolve_project(WS,sys.argv[sys.argv.index('--')+1]);BASE=ROOT/'build/repair_baseline_v1.0.0'
 sys.path.insert(0,str(WS/'tools/asset_helpers/tools'));sys.path.insert(0,str(WS/'tools/asset_helpers/previewer'))
 from georead import read_geo
 from baker.skeleton import parse_skeljson

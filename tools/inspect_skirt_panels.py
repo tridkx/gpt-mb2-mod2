@@ -1,6 +1,9 @@
 import bpy,sys,json
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1]/'mods'/sys.argv[sys.argv.index('--')+1];BASE=ROOT/'build/repair_baseline_v1.0.0'
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from project_paths import resolve_project
+ROOT=resolve_project(Path(__file__).resolve().parents[1],sys.argv[sys.argv.index('--')+1]);BASE=ROOT/'build/repair_baseline_v1.0.0'
 bpy.ops.wm.open_mainfile(filepath=str(BASE/f'source/{ROOT.name}_Rigged.blend'))
 r=json.loads((BASE/'rig_manifest.json').read_text());o=bpy.data.objects[next(r['object'] for r in r if r['kind']=='skirt')]
 parent=list(range(len(o.data.vertices)))

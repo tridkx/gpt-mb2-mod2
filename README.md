@@ -1,6 +1,8 @@
 # 骑砍 2 多模组工作区
 
-每个模组在 `mods/<模组名>/` 中独立维护。当前模组：[天香 T5 v1.3.1](mods/TianxiangT5/README.md)。
+一般模组在 `mods/<模组名>/` 中独立维护。天香八套已归入 [Tianxiang Collection](mods/TianxiangCollection/README.md)：运行模块在 `mods/TianxiangCollection/module/TianxiangCollection/`，八个完整原工程在 `mods/TianxiangCollection/sets/<原模组名>/`，合集交付包在其 `dist/`。其他模组布局保持原样。
+
+原 `mods/TianxiangT5/` 及七套校服工程统一映射到 `mods/TianxiangCollection/sets/<原ModId>/`。单套原始输入、用户修改、缓存、历史报告、旧交付包与 Git 标签保留。下文的初次迁移记录保留其生成时路径；当前命令用此新路径，共用打包与安装入口仍可使用原单套 ID。目录整理不改变各单套版本。
 
 ```text
 mods/<模组名>/
@@ -27,8 +29,8 @@ docs/                      工作区说明与技能审查记录
 共用打包入口：
 
 ```powershell
-python tools/package_delivery.py --mod TianxiangT5 --version v1.3.1 --check-only
-python tools/package_delivery.py --mod TianxiangT5 --version v1.3.1
+python tools/package_delivery.py --mod TianxiangCollection --version v1.0.0 --check-only
+python tools/package_delivery.py --mod TianxiangCollection --version v1.0.0
 ```
 
 第一条只检查输入；第二条生成并逐项验证 ZIP。Mod ZIP 顶层是模组名，源包保留 `source/` 与 `tex/` 层级。重新发布前保留原有压缩包。
@@ -36,7 +38,7 @@ python tools/package_delivery.py --mod TianxiangT5 --version v1.3.1
 安装入口：
 
 ```powershell
-./tools/install_release.ps1 -Mod TianxiangT5 -Version v1.3.1 -CheckOnly
+./tools/install_release.ps1 -Mod TianxiangCollection -Version v1.0.0 -CheckOnly
 ```
 
 实际安装需去掉 `-CheckOnly`，已有交付包时必须提供 `-PreviousVersion`；可用 `-GameRoot` 和 `-Python` 覆盖本机路径。安装前核对配置中的报告版本与最终 TPAC SHA256，准备并验证交付包，再仅复制自己的模块。它不会自动提交 Git 或打标签。发布时使用 `TianxiangT5/v1.3.1` 这类带模组名的标签；本次只迁移工程，不新建发布标签或更改游戏文件。

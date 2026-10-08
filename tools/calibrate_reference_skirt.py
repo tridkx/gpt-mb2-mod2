@@ -1,8 +1,11 @@
 """Evaluate reference-style calf follow without moving the accepted contour."""
 import sys,json
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from project_paths import resolve_project
 import numpy as np
-WS=Path(__file__).resolve().parents[1];ROOT=WS/'mods'/sys.argv[1];BASE=ROOT/'build/repair_baseline_v1.0.0'
+WS=Path(__file__).resolve().parents[1];ROOT=resolve_project(WS,sys.argv[1]);BASE=ROOT/'build/repair_baseline_v1.0.0'
 sys.path.insert(0,str(WS/'tools/asset_helpers/previewer'))
 from baker.skeleton import parse_skeljson
 from baker.animation import parse_animjson,skin_matrices,pose,lbs

@@ -1,5 +1,8 @@
 """Apply the user's launcher display-name preference; preserve IDs and versions."""
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from project_paths import resolve_project
 import re, json, hashlib, zipfile, shutil, xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
 GAME=Path('D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord')
@@ -20,7 +23,7 @@ def renamed(data,name):
     assert root.find('Version').attrib==updated.find('Version').attrib
     return result,old
 for mod,name in [('TianxiangT5','Tianxiang T5'),('HanfuBlueRed','Hanfu Blue Red')]:
-    project=ROOT/'mods'/mod;path=project/'module'/mod/'SubModule.xml'
+    project=resolve_project(ROOT,mod);path=project/'module'/mod/'SubModule.xml'
     data,old=renamed(path.read_bytes(),name);path.write_bytes(data)
     installed=GAME/'Modules'/mod/'SubModule.xml'
     if installed.exists():

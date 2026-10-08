@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import zipfile
 import xml.etree.ElementTree as ET
+from project_paths import resolve_project
 WORKSPACE = Path(__file__).resolve().parents[1]
 
 
@@ -14,7 +15,7 @@ def validate_name(name):
 
 def load_project(name):
     validate_name(name)
-    root = WORKSPACE / 'mods' / name
+    root = resolve_project(WORKSPACE, name)
     config = json.loads((root / 'mod.json').read_text(encoding='utf-8'))
     if config['id'] != name:
         raise ValueError('Mod configuration ID differs from directory name')

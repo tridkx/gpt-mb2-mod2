@@ -1,8 +1,11 @@
 """Contact sheet of final package previews for manual review."""
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from project_paths import resolve_project
 from PIL import Image,ImageDraw
 import sys
-root=Path(__file__).resolve().parents[1]/'mods'/sys.argv[1]
+root=resolve_project(Path(__file__).resolve().parents[1],sys.argv[1])
 names=['rest_front','rest_side','rest_back','run_contact','riding_worst','face_all']
 out=Image.new('RGB',(1800,620),(32,32,32));draw=ImageDraw.Draw(out)
 for i,name in enumerate(names):

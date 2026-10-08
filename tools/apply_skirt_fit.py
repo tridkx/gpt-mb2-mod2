@@ -2,7 +2,10 @@
 import bpy,sys,json,shutil
 import numpy as np
 from pathlib import Path
-WS=Path(__file__).resolve().parents[1];ROOT=WS/'mods'/sys.argv[sys.argv.index('--')+1];BASE=ROOT/'build/repair_baseline_v1.0.0'
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from project_paths import resolve_project
+WS=Path(__file__).resolve().parents[1];ROOT=resolve_project(WS,sys.argv[sys.argv.index('--')+1]);BASE=ROOT/'build/repair_baseline_v1.0.0'
 bpy.ops.wm.open_mainfile(filepath=str(BASE/f'source/{ROOT.name}_Rigged.blend'))
 f=np.load(ROOT/'build/skirt_clearance_fit.npz');name=str(f['object']);o=bpy.data.objects[name];assert len(o.data.vertices)==len(f['P'])
 for v,p in zip(o.data.vertices,f['P']):v.co=p

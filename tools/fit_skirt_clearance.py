@@ -3,9 +3,12 @@ No game solver. Stores a reproducible per-vertex correction, never hides legs.
 """
 import sys,json
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from project_paths import resolve_project
 import numpy as np
 from scipy.spatial import cKDTree
-WS=Path(__file__).resolve().parents[1];ROOT=WS/'mods'/sys.argv[1];BASE=ROOT/'build/repair_baseline_v1.0.0'
+WS=Path(__file__).resolve().parents[1];ROOT=resolve_project(WS,sys.argv[1]);BASE=ROOT/'build/repair_baseline_v1.0.0'
 sys.path.insert(0,str(WS/'tools/asset_helpers/tools'));sys.path.insert(0,str(WS/'tools/asset_helpers/previewer'))
 from georead import read_geo
 from subprocess import run

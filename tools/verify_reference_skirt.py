@@ -1,8 +1,11 @@
 """Verify final skirt-only weight repair preserves every rest vertex."""
 import sys,json,hashlib
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from project_paths import resolve_project
 import numpy as np
-WS=Path(__file__).resolve().parents[1];ROOT=WS/'mods'/sys.argv[1];BASE=ROOT/'build/repair_baseline_v1.0.0'
+WS=Path(__file__).resolve().parents[1];ROOT=resolve_project(WS,sys.argv[1]);BASE=ROOT/'build/repair_baseline_v1.0.0'
 sys.path.insert(0,str(WS/'tools/asset_helpers/tools'));from georead import read_geo
 parts=json.loads((ROOT/'reports/rig_fit.json').read_text())['parts'];skirt=next(r['object'] for r in parts if r['kind']=='skirt');old={m['name']:m for f in (BASE/'export/geo').glob('*.bin') for m in read_geo(f)};new={m['name']:m for f in (ROOT/'build/final_export/geo').glob('*.bin') for m in read_geo(f)};assert old.keys()==new.keys();unchanged=[]
 for name,m in old.items():

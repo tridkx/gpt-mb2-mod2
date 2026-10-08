@@ -1,8 +1,11 @@
 """Ensure skirt repair does not remove legs or change unrelated LOD0 meshes."""
 import sys,json,hashlib
 from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from project_paths import resolve_project
 import numpy as np
-WS=Path(__file__).resolve().parents[1];ROOT=WS/'mods'/sys.argv[1];BASE=ROOT/'build/repair_baseline_v1.0.0'
+WS=Path(__file__).resolve().parents[1];ROOT=resolve_project(WS,sys.argv[1]);BASE=ROOT/'build/repair_baseline_v1.0.0'
 sys.path.insert(0,str(WS/'tools/asset_helpers/tools'))
 from georead import read_geo
 old={m['name']:m for p in (BASE/'export/geo').glob('*.bin') for m in read_geo(p)}
