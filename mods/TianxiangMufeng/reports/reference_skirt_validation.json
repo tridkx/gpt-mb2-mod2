@@ -1,0 +1,95 @@
+{
+  "status": "pass",
+  "final_package_sha256": "87b497252409667e8a959dc2135100b21fca35d382417170810436df0c2ee4a8",
+  "scope": "preserved accepted rest contour and smooth calf-follow weight repair; offline improvement, game cloth untested",
+  "rest_vertex_max_delta_m": 0,
+  "leg_geometry_removed": false,
+  "unchanged_lod0_meshes": [
+    "mf2_body_03",
+    "mf2_body_06",
+    "mf2_body_07",
+    "mf2_body_13",
+    "mf2_head_00",
+    "mf2_head_01",
+    "mf2_head_04",
+    "mf2_head_08",
+    "mf2_head_09",
+    "mf2_head_10",
+    "mf2_head_11",
+    "mf2_legs_02",
+    "mf2_legs_05"
+  ],
+  "skirt_cloth_distance_unchanged": true,
+  "all_lods_skirt_geometry_and_weights_identical": true,
+  "candidate": {
+    "key": "pelvis_0.9_0.45",
+    "waist": "pelvis",
+    "follow": 0.9,
+    "calf": 0.45,
+    "score": 0.3560375546805787,
+    "stats": {
+      "run": {
+        "depth": 0.046045265517969496,
+        "contacts": 408,
+        "stretch": 3.2445663699811456,
+        "p99": 2.1357411861283238,
+        "severity": 0.514742619230186
+      },
+      "bow": {
+        "depth": 0.018706983279193096,
+        "contacts": 190,
+        "stretch": 2.611328071226457,
+        "p99": 2.1291731656200406,
+        "severity": 0.9246967263667047
+      },
+      "riding": {
+        "depth": 0.03266774714926377,
+        "contacts": 374,
+        "stretch": 3.4597014495091005,
+        "p99": 2.571488132049299,
+        "severity": 0.3510635891210187
+      },
+      "idle": {
+        "depth": 0.011341215863506907,
+        "contacts": 85,
+        "stretch": 1.5707108265008203,
+        "p99": 1.361159068515327,
+        "severity": 0.045107043077047965
+      }
+    },
+    "safe_deformation": true
+  },
+  "baseline": {
+    "run": {
+      "depth": 0.06995571812191258,
+      "contacts": 555,
+      "stretch": 2.7959462142174543,
+      "p99": 1.8521328964457613,
+      "severity": 3.2386714850337954
+    },
+    "bow": {
+      "depth": 0.03872742496789399,
+      "contacts": 508,
+      "stretch": 2.385217672937973,
+      "p99": 1.8604957286369086,
+      "severity": 6.878044818037293
+    },
+    "riding": {
+      "depth": 0.07404559034134911,
+      "contacts": 838,
+      "stretch": 3.059205463380552,
+      "p99": 2.2370397224928014,
+      "severity": 5.602727666013459
+    },
+    "idle": {
+      "depth": 0.01170355749952419,
+      "contacts": 143,
+      "stretch": 1.4774732587833086,
+      "p99": 1.2859628391537437,
+      "severity": 0.06432283156414734
+    }
+  },
+  "reference": "TianxiangRenqiu user-accepted recipe, re-calibrated for this skirt",
+  "game_verified": false,
+  "zero_intersections_claimed": false
+}

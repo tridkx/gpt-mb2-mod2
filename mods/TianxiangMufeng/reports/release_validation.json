@@ -1,10 +1,11 @@
 {
-  "version": "v1.0.2",
+  "version": "v1.0.3",
   "status": "pass",
   "check_scope": "offline_checks",
-  "final_package_sha256": "9bbf5543044971cf367689273b7f465e29b3b8fb041d8303c8b92a531eaf7f9a",
+  "final_package_sha256": "87b497252409667e8a959dc2135100b21fca35d382417170810436df0c2ee4a8",
   "baseline_package_sha256": "9bbf5543044971cf367689273b7f465e29b3b8fb041d8303c8b92a531eaf7f9a",
-  "baseline_reason": "v1.0.2 withdraws rejected rear-contour changes; restores v1.0.0 geometry",
+  "baseline_reason": "smooth calf-follow repair; preserve accepted rest contour",
+  "rear_contour_restored": true,
   "lods": [
     {
       "lod": 0,
@@ -13,18 +14,18 @@
     },
     {
       "lod": 1,
-      "vertices": 10558,
-      "triangles": 13213
+      "vertices": 11727,
+      "triangles": 15256
     },
     {
       "lod": 2,
-      "vertices": 7611,
-      "triangles": 9170
+      "vertices": 9780,
+      "triangles": 12643
     },
     {
       "lod": 3,
-      "vertices": 5602,
-      "triangles": 6864
+      "vertices": 8510,
+      "triangles": 11153
     }
   ],
   "seams": [
@@ -60,9 +61,9 @@
       "worst_frame": 507,
       "worst_mesh": "mf2_head_01",
       "skirt_leg_proxy": {
-        "deepest_overlap_m": 0.01170355749952419,
+        "deepest_overlap_m": 0.011341215863506907,
         "worst_frame": 507,
-        "maximum_contact_samples": 143,
+        "maximum_contact_samples": 85,
         "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
       }
     },
@@ -71,14 +72,14 @@
       "asset": "anim_run_forward_unarmed",
       "frames_checked": 25,
       "total_frames": 26,
-      "max_edge_extension": 2.7959462142174543,
-      "max_p99_edge_extension": 1.8521328964457613,
+      "max_edge_extension": 3.2445663699811456,
+      "max_p99_edge_extension": 2.1357411861283238,
       "worst_frame": 22,
       "worst_mesh": "mf2_body_12",
       "skirt_leg_proxy": {
-        "deepest_overlap_m": 0.06995571812191258,
-        "worst_frame": 8,
-        "maximum_contact_samples": 559,
+        "deepest_overlap_m": 0.046045265517969496,
+        "worst_frame": 18,
+        "maximum_contact_samples": 412,
         "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
       }
     },
@@ -92,9 +93,9 @@
       "worst_frame": 76,
       "worst_mesh": "mf2_head_01",
       "skirt_leg_proxy": {
-        "deepest_overlap_m": 0.03872742496789399,
-        "worst_frame": 90,
-        "maximum_contact_samples": 508,
+        "deepest_overlap_m": 0.018706983279193096,
+        "worst_frame": 82,
+        "maximum_contact_samples": 190,
         "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
       }
     },
@@ -103,14 +104,14 @@
       "asset": "anim_rider_gallop_bow",
       "frames_checked": 20,
       "total_frames": 21,
-      "max_edge_extension": 3.059205463380552,
-      "max_p99_edge_extension": 2.2370397224928014,
+      "max_edge_extension": 3.4597014495091005,
+      "max_p99_edge_extension": 2.571488132049299,
       "worst_frame": 9,
       "worst_mesh": "mf2_body_12",
       "skirt_leg_proxy": {
-        "deepest_overlap_m": 0.07404559034134911,
-        "worst_frame": 11,
-        "maximum_contact_samples": 838,
+        "deepest_overlap_m": 0.03266774714926377,
+        "worst_frame": 9,
+        "maximum_contact_samples": 374,
         "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
       }
     }
@@ -193,9 +194,8 @@
   "metadata_audit": "pass",
   "game_test_verified": false,
   "game_cloth_solver_used": false,
-  "limitations": "Offline native skeletal motion. In-game cloth, weapon IK, face animation, body sliders and horse collision require user testing.",
-  "skirt_leg_penetration_repair_complete": false,
-  "rear_contour_restored": true,
+  "limitations": "Offline native skeletal motion. Original skirt/leg contact remains unresolved. In-game cloth, weapon IK, face animation, body sliders and horse collision require user testing.",
+  "skirt_leg_penetration_game_confirmed": false,
   "editable_source_verified": true,
   "visual_review": {
     "reviewed": "final eye/lash close-ups, rest front/side/back and worst native motion/contact frames",

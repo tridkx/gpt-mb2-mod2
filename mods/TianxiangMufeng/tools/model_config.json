@@ -216,5 +216,24 @@
   "measurement_notes": "Eyes and face: z121-133. Wrist components x35.3 z83.3, palm x40.4 z77.7. Leg components x9.7 z38.7; feet x13 z1.7. Upperarm skin spans z87-109. Long front/back skirt z10-91. Lash mesh04 needs V correction against source face preview. Full-cycle run detected high long-skirt stretching at follow .85; reduced to .25 with .055m limited cloth. Use stable pelvis/spine/two-thigh anchors to avoid discontinuities from trimming seven influences.",
   "skirt_weight_mode": "four_anchor",
   "original_fbx_backup": "D:\\dsh-tiandao\\天香少女校服8套\\02沐风为裳\\backup_before_lash_fix_20261008\\model.fbx",
-  "skirt_physics_enabled": true
+  "skirt_physics_enabled": true,
+  "skirt_clearance_fit": "source/SkirtClearanceFit.npz",
+  "reference_skirt_candidate": "pelvis_0.9_0.45",
+  "skirt_reference_calibration": {
+    "waist_modes": [
+      "pelvis",
+      "reference"
+    ],
+    "follow_candidates": [
+      0.7,
+      0.8,
+      0.9
+    ],
+    "calf_candidates": [
+      0.15,
+      0.25,
+      0.35,
+      0.45
+    ]
+  }
 }
