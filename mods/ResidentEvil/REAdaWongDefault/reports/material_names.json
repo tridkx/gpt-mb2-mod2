@@ -1,0 +1,508 @@
+{
+  "reada_knit_mat": {
+    "name": "reada_knit_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_2",
+      "1": "reada_tex_3",
+      "2": "reada_tex_3",
+      "4": "reada_tex_4"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_skin_mat": {
+    "name": "reada_skin_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_5",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_leg_mat": {
+    "name": "reada_leg_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_5",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_glove_mat": {
+    "name": "reada_glove_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_2",
+      "1": "reada_tex_6",
+      "2": "reada_tex_6",
+      "4": "reada_tex_7"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_holsterstrap_mat": {
+    "name": "reada_holsterstrap_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_8",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_holstermetal_mat": {
+    "name": "reada_holstermetal_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_8",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_beltholster_leather_mat": {
+    "name": "reada_beltholster_leather_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_9",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_beltholster_inside_mat": {
+    "name": "reada_beltholster_inside_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_9",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_beltholster_metal_mat": {
+    "name": "reada_beltholster_metal_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_9",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_hookholster_mat": {
+    "name": "reada_hookholster_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_10",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_bootsmetal_mat": {
+    "name": "reada_bootsmetal_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_11",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_bootssole_mat": {
+    "name": "reada_bootssole_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_11",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_bootsleather_mat": {
+    "name": "reada_bootsleather_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_11",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_hookgun_mat": {
+    "name": "reada_hookgun_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_12",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_gun_mat": {
+    "name": "reada_gun_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_13",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_face_mat": {
+    "name": "reada_face_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_14",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_mouth_mat": {
+    "name": "reada_mouth_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_15",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_eye_in_mat": {
+    "name": "reada_eye_in_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_16",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_eyelash_mat": {
+    "name": "reada_eyelash_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_17",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_blow_mat": {
+    "name": "reada_blow_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_17",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_hair00_mat": {
+    "name": "reada_hair00_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_18",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_hair01_mat": {
+    "name": "reada_hair01_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_18",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "reada_hair02_mat": {
+    "name": "reada_hair02_mat",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "reada_tex_19",
+      "1": "reada_tex_0",
+      "2": "reada_tex_0",
+      "4": "reada_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "version": "v1.0.0",
+  "final_package_sha256": "a63d697f009fd2b97c2b3d235ab189c196d94604b0dfc95cd37c3e7250676355",
+  "status": "reviewed_with_documented_limits",
+  "method": "Manual inspection of offline Blender renders from final TPAC geometry, decoded diffuse, and quantized native motion weights. Not a game render.",
+  "reviewed_images": {
+    "final_rest_front.png": "ab6a6fdc6d2cac23d68e352cb012a91781255282c3e907dbd76d33806712638b",
+    "final_rest_back.png": "cc2c8b60757b214464d0c36970854691c699810bf8f26f84295ea969f10f6c12",
+    "final_rest_side.png": "74522aebb35ae9311aa7885d8e7b075423491d04912a24965364396d83f76d89",
+    "final_head.png": "b17353cefa7392a192b2edc37a2e6f5f17f3282f6bcdae33910289022f5af121",
+    "final_idle_worst.png": "cb0fb8f714947e19ff5e478e5541874690f76ff139b6831d7509d5fa32f6df5c",
+    "final_run_worst.png": "2120aec209240d1ae00024e5fcbee19121a56671c82152d1a4ce48a098b4321d",
+    "final_run_side.png": "512b63aff9e16d76b40ce46c249d5eb4c76892ac877bb68356dc6908e3c47d7c",
+    "final_bow_worst.png": "0a5dd3d51bb798ab8534c7bcf5434a292fa0c4b78d4ac6cbe803ef435f84c659",
+    "final_riding_worst.png": "927d60dec3d1825bc6ab1513dca45f1b6553f2d735231d0e7bf83196fe2d5541",
+    "final_riding_side.png": "a770606e2849467afac66ab999afe1336c25d3d6f96f3334c84a142b162a90bb",
+    "final_lod1_head.png": "d3a464d3baaf64467074f973b23dc90741ca75261394ecc9eb1417c8c87b270c",
+    "final_lod2_head.png": "e96b5ebc3ee8fbf448ca9fc9e936ff57fb509addcc196e9fc3264061473e4563",
+    "final_lod3_head.png": "be7cc9be9feed4914f1951e98e2833b1d6d68059898143bd2f529df0d1ed6ad7"
+  },
+  "findings": [
+    "Rest views and sampled worst native motion frames show no gross sleeve/waist/boot tears after fixes.",
+    "Head-neck collar appears continuous in all four delivered rest LOD previews; there are no identical cross-equipment vertices, so this is visual evidence rather than a welded neck assertion.",
+    "Opaque fallback hair cards are visible; low LOD hair is coarse at close range.",
+    "Fixed fingers retain open shape; weapon grip, body scaling, horse collision, cloth intersections and mixed equipment require user game tests.",
+    "Studio diffuse preview does not certify in-game PBR lighting."
+  ]
+}

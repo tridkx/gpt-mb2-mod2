@@ -22,6 +22,8 @@ docs/                      工作区说明与技能审查记录
 
 ## 新增模组
 
+生化危机系列工程集中在 `mods/ResidentEvil/<ModId>/`，每个子工程独立保存 source/tex、缓存与交付。共用打包和安装入口按英文模组 ID 查找该分组；当前艾达默认服装为 [REAdaWongDefault](mods/ResidentEvil/REAdaWongDefault/README.md)。
+
 在本目录运行 `python tools/new_mod.py NewMod`。它创建独立目录和 `mod.json`，不会复制天香的模型、参数、资源名或 GUID，也不会生成假定可用的游戏模块。模组名只使用英文字母、数字、下划线和连字符。
 
 将原始模型放入新工程的 `input/`，贴图放入 `tex/`。按实际模型制作专用脚本，建立 `module/NewMod/SubModule.xml` 和装备 XML，使用独立资源命名空间。完善 `mod.json` 的源包文件清单、最终包和检查报告路径。

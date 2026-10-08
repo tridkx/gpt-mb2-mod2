@@ -1,0 +1,721 @@
+{
+  "version": "v1.0.0",
+  "status": "pass",
+  "check_scope": "offline_structural_and_native_motion_checks",
+  "final_package_sha256": "a63d697f009fd2b97c2b3d235ab189c196d94604b0dfc95cd37c3e7250676355",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release",
+  "lods": [
+    {
+      "lod": 0,
+      "vertices": 83962,
+      "triangles": 111171,
+      "submeshes": 24
+    },
+    {
+      "lod": 1,
+      "vertices": 45660,
+      "triangles": 54859,
+      "submeshes": 23
+    },
+    {
+      "lod": 2,
+      "vertices": 24733,
+      "triangles": 25108,
+      "submeshes": 23
+    },
+    {
+      "lod": 3,
+      "vertices": 14522,
+      "triangles": 12874,
+      "submeshes": 23
+    }
+  ],
+  "seams": [
+    {
+      "lod": 0,
+      "shared_points": 1773,
+      "cross_equipment_points": 0,
+      "max_position_error": 5.963374150388733e-08
+    },
+    {
+      "lod": 1,
+      "shared_points": 1773,
+      "cross_equipment_points": 0,
+      "max_position_error": 5.963374150388733e-08
+    },
+    {
+      "lod": 2,
+      "shared_points": 1773,
+      "cross_equipment_points": 0,
+      "max_position_error": 5.963374150388733e-08
+    },
+    {
+      "lod": 3,
+      "shared_points": 1773,
+      "cross_equipment_points": 0,
+      "max_position_error": 5.963374150388733e-08
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "asset": "anim_inventory_idle",
+      "frames_checked": 16,
+      "total_frames": 1268,
+      "worst_frame": 254,
+      "worst_mesh": "reada_body_knit",
+      "max_edge_extension": 2.0405161221911343,
+      "max_mesh_p99_extension": 1.4855647948164221,
+      "meshes": [
+        {
+          "name": "reada_body_knit",
+          "max_extension": 2.0405161221911343,
+          "p99_extension": 1.3456510755768267
+        },
+        {
+          "name": "reada_body_knit.b2",
+          "max_extension": 1.5234070249252618,
+          "p99_extension": 1.276800020709799
+        },
+        {
+          "name": "reada_body_skin",
+          "max_extension": 1.053761169589796,
+          "p99_extension": 1.0292743136722344
+        },
+        {
+          "name": "reada_body_leg",
+          "max_extension": 1.2944650884999513,
+          "p99_extension": 1.2040282875343484
+        },
+        {
+          "name": "reada_body_holsterstrap",
+          "max_extension": 1.9782701087076833,
+          "p99_extension": 1.4855647948164221
+        },
+        {
+          "name": "reada_body_holstermetal",
+          "max_extension": 1.0000001076156737,
+          "p99_extension": 0.9999970086715452
+        },
+        {
+          "name": "reada_body_beltholster_leather",
+          "max_extension": 1.283549223967013,
+          "p99_extension": 1.121607576573157
+        },
+        {
+          "name": "reada_body_beltholster_inside",
+          "max_extension": 1.3566005740394893,
+          "p99_extension": 1.1216016512986369
+        },
+        {
+          "name": "reada_body_beltholster_metal",
+          "max_extension": 1.0000006442402132,
+          "p99_extension": 1.0000005902057374
+        },
+        {
+          "name": "reada_body_hookholster",
+          "max_extension": 1.1106791968864769,
+          "p99_extension": 1.062061104318008
+        },
+        {
+          "name": "reada_body_hookgun",
+          "max_extension": 1.0000006391293292,
+          "p99_extension": 1.0000005949311768
+        },
+        {
+          "name": "reada_body_gun",
+          "max_extension": 1.000000265246236,
+          "p99_extension": 0.9999996283561695
+        },
+        {
+          "name": "reada_gloves_glove",
+          "max_extension": 1.000001024911442,
+          "p99_extension": 1.0000009072656748
+        },
+        {
+          "name": "reada_head_face",
+          "max_extension": 1.6367042043189104,
+          "p99_extension": 1.3996246729432809
+        },
+        {
+          "name": "reada_head_mouth",
+          "max_extension": 1.0000004397853233,
+          "p99_extension": 1.0000003527589836
+        },
+        {
+          "name": "reada_head_eye_in",
+          "max_extension": 1.0000003722171489,
+          "p99_extension": 1.0000003152746884
+        },
+        {
+          "name": "reada_head_eyelash",
+          "max_extension": 1.000000405426359,
+          "p99_extension": 1.0000003562845161
+        },
+        {
+          "name": "reada_head_blow",
+          "max_extension": 1.0000004491677414,
+          "p99_extension": 1.000000390691365
+        },
+        {
+          "name": "reada_head_hair00",
+          "max_extension": 1.0000004559279294,
+          "p99_extension": 1.0000003315731079
+        },
+        {
+          "name": "reada_head_hair01",
+          "max_extension": 1.0000004280446662,
+          "p99_extension": 1.00000034449091
+        },
+        {
+          "name": "reada_head_hair02",
+          "max_extension": 1.0000002279066356,
+          "p99_extension": 1.0000000292988784
+        },
+        {
+          "name": "reada_legs_bootsmetal",
+          "max_extension": 1.1018227451002978,
+          "p99_extension": 1.0565385067089803
+        },
+        {
+          "name": "reada_legs_bootssole",
+          "max_extension": 1.0766963480144702,
+          "p99_extension": 1.0603549608785392
+        },
+        {
+          "name": "reada_legs_bootsleather",
+          "max_extension": 1.1171975768396336,
+          "p99_extension": 1.0624427436258759
+        }
+      ]
+    },
+    {
+      "label": "run",
+      "asset": "anim_run_forward_unarmed",
+      "frames_checked": 25,
+      "total_frames": 26,
+      "worst_frame": 22,
+      "worst_mesh": "reada_body_knit",
+      "max_edge_extension": 3.93141452167409,
+      "max_mesh_p99_extension": 2.2822561588823778,
+      "meshes": [
+        {
+          "name": "reada_body_knit",
+          "max_extension": 3.93141452167409,
+          "p99_extension": 1.7708291978846407
+        },
+        {
+          "name": "reada_body_knit.b2",
+          "max_extension": 2.5539566920595185,
+          "p99_extension": 2.245512694761038
+        },
+        {
+          "name": "reada_body_skin",
+          "max_extension": 1.0539056068035588,
+          "p99_extension": 1.0245956427506617
+        },
+        {
+          "name": "reada_body_leg",
+          "max_extension": 2.313077569860537,
+          "p99_extension": 1.9975712816180153
+        },
+        {
+          "name": "reada_body_holsterstrap",
+          "max_extension": 2.21134999319407,
+          "p99_extension": 1.6858169274007777
+        },
+        {
+          "name": "reada_body_holstermetal",
+          "max_extension": 1.0000002370612344,
+          "p99_extension": 0.9999715904903674
+        },
+        {
+          "name": "reada_body_beltholster_leather",
+          "max_extension": 1.8472596579857108,
+          "p99_extension": 1.666190658750327
+        },
+        {
+          "name": "reada_body_beltholster_inside",
+          "max_extension": 1.8740307372101084,
+          "p99_extension": 1.6930728044022825
+        },
+        {
+          "name": "reada_body_beltholster_metal",
+          "max_extension": 1.0000006442402216,
+          "p99_extension": 1.0000005902057412
+        },
+        {
+          "name": "reada_body_hookholster",
+          "max_extension": 2.59202066625854,
+          "p99_extension": 2.2822561588823778
+        },
+        {
+          "name": "reada_body_hookgun",
+          "max_extension": 1.000000639129333,
+          "p99_extension": 1.0000005949311839
+        },
+        {
+          "name": "reada_body_gun",
+          "max_extension": 1.000000154737014,
+          "p99_extension": 0.9999876380904179
+        },
+        {
+          "name": "reada_gloves_glove",
+          "max_extension": 1.0000010249114444,
+          "p99_extension": 1.0000009072656608
+        },
+        {
+          "name": "reada_head_face",
+          "max_extension": 1.355622302539098,
+          "p99_extension": 1.1801874734042876
+        },
+        {
+          "name": "reada_head_mouth",
+          "max_extension": 1.0000004397853248,
+          "p99_extension": 1.0000003527589738
+        },
+        {
+          "name": "reada_head_eye_in",
+          "max_extension": 1.0000003722171509,
+          "p99_extension": 1.0000003152747075
+        },
+        {
+          "name": "reada_head_eyelash",
+          "max_extension": 1.000000405426372,
+          "p99_extension": 1.0000003562845066
+        },
+        {
+          "name": "reada_head_blow",
+          "max_extension": 1.0000004491677623,
+          "p99_extension": 1.0000003906913404
+        },
+        {
+          "name": "reada_head_hair00",
+          "max_extension": 1.0000004559279252,
+          "p99_extension": 1.000000331573108
+        },
+        {
+          "name": "reada_head_hair01",
+          "max_extension": 1.0000004280446635,
+          "p99_extension": 1.0000003444909105
+        },
+        {
+          "name": "reada_head_hair02",
+          "max_extension": 1.0000002279066647,
+          "p99_extension": 1.0000000292988749
+        },
+        {
+          "name": "reada_legs_bootsmetal",
+          "max_extension": 1.4409705170223523,
+          "p99_extension": 1.3486302758635074
+        },
+        {
+          "name": "reada_legs_bootssole",
+          "max_extension": 1.1914033610950057,
+          "p99_extension": 1.1513051906103167
+        },
+        {
+          "name": "reada_legs_bootsleather",
+          "max_extension": 1.6513399164052955,
+          "p99_extension": 1.30205138512428
+        }
+      ]
+    },
+    {
+      "label": "bow",
+      "asset": "anim_bow",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 82,
+      "worst_mesh": "reada_body_knit",
+      "max_edge_extension": 4.492271951020322,
+      "max_mesh_p99_extension": 3.3145856210407305,
+      "meshes": [
+        {
+          "name": "reada_body_knit",
+          "max_extension": 4.492271951020322,
+          "p99_extension": 2.1400414563961845
+        },
+        {
+          "name": "reada_body_knit.b2",
+          "max_extension": 2.96748374590016,
+          "p99_extension": 2.3208648307277944
+        },
+        {
+          "name": "reada_body_skin",
+          "max_extension": 1.1522089825810424,
+          "p99_extension": 1.043009713076776
+        },
+        {
+          "name": "reada_body_leg",
+          "max_extension": 2.09586739649311,
+          "p99_extension": 1.7388927746640614
+        },
+        {
+          "name": "reada_body_holsterstrap",
+          "max_extension": 4.165315052268908,
+          "p99_extension": 3.3145856210407305
+        },
+        {
+          "name": "reada_body_holstermetal",
+          "max_extension": 1.0000004636487918,
+          "p99_extension": 1.0000003451069432
+        },
+        {
+          "name": "reada_body_beltholster_leather",
+          "max_extension": 2.0605983265003176,
+          "p99_extension": 1.6338421947341066
+        },
+        {
+          "name": "reada_body_beltholster_inside",
+          "max_extension": 1.9107080713051696,
+          "p99_extension": 1.6087490502693729
+        },
+        {
+          "name": "reada_body_beltholster_metal",
+          "max_extension": 1.000000644240229,
+          "p99_extension": 1.0000005902057407
+        },
+        {
+          "name": "reada_body_hookholster",
+          "max_extension": 2.89493161518863,
+          "p99_extension": 2.398219207802558
+        },
+        {
+          "name": "reada_body_hookgun",
+          "max_extension": 1.0000006391293388,
+          "p99_extension": 1.0000005949311828
+        },
+        {
+          "name": "reada_body_gun",
+          "max_extension": 1.0000001795767988,
+          "p99_extension": 0.9999881589991728
+        },
+        {
+          "name": "reada_gloves_glove",
+          "max_extension": 1.0000010249114566,
+          "p99_extension": 1.000000907265695
+        },
+        {
+          "name": "reada_head_face",
+          "max_extension": 1.9111563716249271,
+          "p99_extension": 1.5548639417357746
+        },
+        {
+          "name": "reada_head_mouth",
+          "max_extension": 1.0000004397853315,
+          "p99_extension": 1.000000352758991
+        },
+        {
+          "name": "reada_head_eye_in",
+          "max_extension": 1.0000003722171595,
+          "p99_extension": 1.000000315274702
+        },
+        {
+          "name": "reada_head_eyelash",
+          "max_extension": 1.0000004054263862,
+          "p99_extension": 1.0000003562845068
+        },
+        {
+          "name": "reada_head_blow",
+          "max_extension": 1.0000004491677679,
+          "p99_extension": 1.0000003906913635
+        },
+        {
+          "name": "reada_head_hair00",
+          "max_extension": 1.000000455927926,
+          "p99_extension": 1.000000331573109
+        },
+        {
+          "name": "reada_head_hair01",
+          "max_extension": 1.0000004280446668,
+          "p99_extension": 1.0000003444909127
+        },
+        {
+          "name": "reada_head_hair02",
+          "max_extension": 1.0000002279066724,
+          "p99_extension": 1.000000029298886
+        },
+        {
+          "name": "reada_legs_bootsmetal",
+          "max_extension": 1.1551436921784473,
+          "p99_extension": 1.1189456216756
+        },
+        {
+          "name": "reada_legs_bootssole",
+          "max_extension": 1.1336384638796564,
+          "p99_extension": 1.0977405522815622
+        },
+        {
+          "name": "reada_legs_bootsleather",
+          "max_extension": 1.3190263216440041,
+          "p99_extension": 1.1607967292764112
+        }
+      ]
+    },
+    {
+      "label": "riding",
+      "asset": "anim_rider_gallop_bow",
+      "frames_checked": 20,
+      "total_frames": 21,
+      "worst_frame": 14,
+      "worst_mesh": "reada_body_knit",
+      "max_edge_extension": 4.673017685323185,
+      "max_mesh_p99_extension": 2.7065507323812166,
+      "meshes": [
+        {
+          "name": "reada_body_knit",
+          "max_extension": 4.673017685323185,
+          "p99_extension": 1.742894609145201
+        },
+        {
+          "name": "reada_body_knit.b2",
+          "max_extension": 3.3450221002317964,
+          "p99_extension": 2.7065507323812166
+        },
+        {
+          "name": "reada_body_skin",
+          "max_extension": 1.0626333099520333,
+          "p99_extension": 1.0368954095863203
+        },
+        {
+          "name": "reada_body_leg",
+          "max_extension": 2.2424995128108707,
+          "p99_extension": 1.8029236709709782
+        },
+        {
+          "name": "reada_body_holsterstrap",
+          "max_extension": 2.967771112149692,
+          "p99_extension": 1.8395327299422681
+        },
+        {
+          "name": "reada_body_holstermetal",
+          "max_extension": 1.0000001786453017,
+          "p99_extension": 0.9999958804341016
+        },
+        {
+          "name": "reada_body_beltholster_leather",
+          "max_extension": 1.8432159558751746,
+          "p99_extension": 1.4157595731477979
+        },
+        {
+          "name": "reada_body_beltholster_inside",
+          "max_extension": 1.721271482385108,
+          "p99_extension": 1.4047073407303101
+        },
+        {
+          "name": "reada_body_beltholster_metal",
+          "max_extension": 1.0000006442402383,
+          "p99_extension": 1.0000005902057445
+        },
+        {
+          "name": "reada_body_hookholster",
+          "max_extension": 1.211074534830766,
+          "p99_extension": 1.1058644543048146
+        },
+        {
+          "name": "reada_body_hookgun",
+          "max_extension": 1.000000639129351,
+          "p99_extension": 1.0000005949311819
+        },
+        {
+          "name": "reada_body_gun",
+          "max_extension": 1.0000002549168636,
+          "p99_extension": 0.999992946375745
+        },
+        {
+          "name": "reada_gloves_glove",
+          "max_extension": 1.0000010249114353,
+          "p99_extension": 1.0000009072656766
+        },
+        {
+          "name": "reada_head_face",
+          "max_extension": 1.9454496744684615,
+          "p99_extension": 1.4738974621266894
+        },
+        {
+          "name": "reada_head_mouth",
+          "max_extension": 1.000000439785326,
+          "p99_extension": 1.0000003527589685
+        },
+        {
+          "name": "reada_head_eye_in",
+          "max_extension": 1.0000003722171504,
+          "p99_extension": 1.000000315274703
+        },
+        {
+          "name": "reada_head_eyelash",
+          "max_extension": 1.0000004054263651,
+          "p99_extension": 1.0000003562845046
+        },
+        {
+          "name": "reada_head_blow",
+          "max_extension": 1.0000004491677716,
+          "p99_extension": 1.0000003906913424
+        },
+        {
+          "name": "reada_head_hair00",
+          "max_extension": 1.0000004559279254,
+          "p99_extension": 1.0000003315731096
+        },
+        {
+          "name": "reada_head_hair01",
+          "max_extension": 1.0000004280446628,
+          "p99_extension": 1.000000344490912
+        },
+        {
+          "name": "reada_head_hair02",
+          "max_extension": 1.0000002279066673,
+          "p99_extension": 1.0000000292988998
+        },
+        {
+          "name": "reada_legs_bootsmetal",
+          "max_extension": 1.2620281818739751,
+          "p99_extension": 1.2031291067724346
+        },
+        {
+          "name": "reada_legs_bootssole",
+          "max_extension": 1.2041624656749166,
+          "p99_extension": 1.1429896445689065
+        },
+        {
+          "name": "reada_legs_bootsleather",
+          "max_extension": 1.4484036264933988,
+          "p99_extension": 1.2434736095950978
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "reada_tex_0",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_1",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_10",
+      "mips": 11,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_11",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_12",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_13",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_14",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_15",
+      "mips": 11,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_16",
+      "mips": 11,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_17",
+      "mips": 8,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_18",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_19",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_2",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_3",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_4",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_5",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_6",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_7",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_8",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "reada_tex_9",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    }
+  ],
+  "gross_motion_tear_guard_max_extension": 6.0,
+  "metadata_audit": "pass",
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "limitations": [
+    "Missing original head alpha/PBR maps use documented conservative materials.",
+    "Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.",
+    "No facial animation or face/body customization support."
+  ]
+}
