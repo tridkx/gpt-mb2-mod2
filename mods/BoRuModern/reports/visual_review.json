@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "final_package_sha256": "f7ca34965a9637fdf6add39f85e02b7f7ba41c12355b973ce6d6c91ed94fe01a",
+  "scope": "Offline final-package diffuse previews; no game rendering or cloth solver",
+  "reviewed": [
+    "LOD0 front/back/side/head/eyes/feet",
+    "LOD1/2/3 head and LOD1 front",
+    "LOD3 front/back/side",
+    "LOD0 native run, bow and riding worst-frame previews"
+  ],
+  "findings": [
+    "Eye UV now separates pupil, iris and sclera.",
+    "Head, hair and glasses share 1.12 scale. Shoes retain length and height at 0.85 width.",
+    "Layered torso clothing and foot surfaces retained across all LODs; aggressive collapse rejected after visual review.",
+    "No obvious skin exposure through pants in reviewed riding pose."
+  ],
+  "limitations": [
+    "Preview uses decoded final diffuse and quantized skin weights, not the Bannerlord renderer.",
+    "Game body sliders, gripping, IK and horse collision remain for user testing."
+  ]
+}

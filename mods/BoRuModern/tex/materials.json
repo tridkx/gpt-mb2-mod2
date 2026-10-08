@@ -1,0 +1,57 @@
+{
+  "skin": {
+    "diffuse": "T_RoRu_Body_D.png",
+    "normal": "T_RoRu_Body_N.png",
+    "specular": "boru_spec_T_RoRu_Body_ORM.png",
+    "cutout": false
+  },
+  "cloth": {
+    "diffuse": "T_RoRu_2012Cloth_D.png",
+    "normal": "T_RoRu_Cloth_N.png",
+    "specular": "boru_cloth_spec.png",
+    "cutout": false
+  },
+  "hair": {
+    "diffuse": "boru_T_Hair_D.png",
+    "normal": "T_Hair_N.png",
+    "specular": "boru_hair_spec.png",
+    "cutout": true
+  },
+  "eyes": {
+    "diffuse": "boru_eye_atlas.png",
+    "normal": null,
+    "specular": "boru_eyes_spec.png",
+    "cutout": false
+  },
+  "sclera": {
+    "diffuse": "boru_sclera.png",
+    "normal": null,
+    "specular": "boru_eyes_spec.png",
+    "cutout": false
+  },
+  "lashes": {
+    "diffuse": "boru_T_RoRu_Body_D.png",
+    "normal": null,
+    "specular": "boru_spec_T_RoRu_Body_ORM.png",
+    "cutout": true
+  },
+  "mouth": {
+    "diffuse": "T_RoRu_Body_D.png",
+    "normal": "T_RoRu_Body_N.png",
+    "specular": "boru_spec_T_RoRu_Body_ORM.png",
+    "cutout": false
+  },
+  "glass": {
+    "diffuse": "boru_glass.png",
+    "normal": null,
+    "specular": "boru_glass_spec.png",
+    "cutout": false,
+    "blend": true
+  },
+  "accessory": {
+    "diffuse": "boru_accessory.png",
+    "normal": null,
+    "specular": "boru_accessory_spec.png",
+    "cutout": false
+  }
+}

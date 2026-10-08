@@ -1,0 +1,770 @@
+{
+  "materials": [
+    {
+      "Name": "boru_skin",
+      "Guid": "13a05e5e-15d4-1298-20a5-47b3b4bff7b5",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "boru_cloth",
+      "Guid": "26c2e121-c727-7217-6b65-2f2de6ece708",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "boru_hair",
+      "Guid": "bb1928de-7290-5981-eee0-784cef04df2c",
+      "BlendMode": "factor",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
+    },
+    {
+      "Name": "boru_eyes",
+      "Guid": "5574c2b8-e60e-9773-462d-a86fe66b2b34",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "boru_sclera",
+      "Guid": "8bd43ebe-3ba6-ae25-6069-37464ecb8367",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "boru_lashes",
+      "Guid": "23740386-9178-f8fa-b581-7462ca127383",
+      "BlendMode": "factor",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
+    },
+    {
+      "Name": "boru_mouth",
+      "Guid": "b08d44b4-532f-7d85-9dc5-f5a5ae2d487a",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "boru_glass",
+      "Guid": "e3e841a9-08f6-2dbb-44dc-d624c6c2e44d",
+      "BlendMode": "factor",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "boru_accessory",
+      "Guid": "0a91b4f6-d33e-3337-7df7-86b29b544a88",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "Name": "boru_head_skin",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "13a05e5e-15d4-1298-20a5-47b3b4bff7b5",
+      "Vertices": 1385,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "9E589D395FD054AC99872936614FD774D068352A3DD09E49416E8ACF7FE508AC",
+      "VertexStreamSHA256": "AD6D9849F5FB269167D2011C2732069803A3D9FAD3CE0F8B146F2D4BFC9D2E06",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_skin.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "13a05e5e-15d4-1298-20a5-47b3b4bff7b5",
+      "Vertices": 1385,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "9E589D395FD054AC99872936614FD774D068352A3DD09E49416E8ACF7FE508AC",
+      "VertexStreamSHA256": "AD6D9849F5FB269167D2011C2732069803A3D9FAD3CE0F8B146F2D4BFC9D2E06",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_skin.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "13a05e5e-15d4-1298-20a5-47b3b4bff7b5",
+      "Vertices": 1385,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "9E589D395FD054AC99872936614FD774D068352A3DD09E49416E8ACF7FE508AC",
+      "VertexStreamSHA256": "AD6D9849F5FB269167D2011C2732069803A3D9FAD3CE0F8B146F2D4BFC9D2E06",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_skin.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "13a05e5e-15d4-1298-20a5-47b3b4bff7b5",
+      "Vertices": 1385,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "9E589D395FD054AC99872936614FD774D068352A3DD09E49416E8ACF7FE508AC",
+      "VertexStreamSHA256": "AD6D9849F5FB269167D2011C2732069803A3D9FAD3CE0F8B146F2D4BFC9D2E06",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_lashes",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "23740386-9178-f8fa-b581-7462ca127383",
+      "Vertices": 360,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "333E0D6CB69B42D3E10970274437BD7D250EE18CD25DF2F5FC9E7BFD024735CA",
+      "VertexStreamSHA256": "603892BB06F764D193FD47F4DE5514F6319269E9BC1999457EFA57D87651DB56",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_lashes.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "23740386-9178-f8fa-b581-7462ca127383",
+      "Vertices": 360,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "333E0D6CB69B42D3E10970274437BD7D250EE18CD25DF2F5FC9E7BFD024735CA",
+      "VertexStreamSHA256": "603892BB06F764D193FD47F4DE5514F6319269E9BC1999457EFA57D87651DB56",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_lashes.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "23740386-9178-f8fa-b581-7462ca127383",
+      "Vertices": 360,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "333E0D6CB69B42D3E10970274437BD7D250EE18CD25DF2F5FC9E7BFD024735CA",
+      "VertexStreamSHA256": "603892BB06F764D193FD47F4DE5514F6319269E9BC1999457EFA57D87651DB56",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_lashes.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "23740386-9178-f8fa-b581-7462ca127383",
+      "Vertices": 360,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "333E0D6CB69B42D3E10970274437BD7D250EE18CD25DF2F5FC9E7BFD024735CA",
+      "VertexStreamSHA256": "603892BB06F764D193FD47F4DE5514F6319269E9BC1999457EFA57D87651DB56",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_mouth",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "b08d44b4-532f-7d85-9dc5-f5a5ae2d487a",
+      "Vertices": 2122,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "6176C0D36AA6BEE97E8F1096DD892106D7F62065110862A6832137C124E1EE9B",
+      "VertexStreamSHA256": "35EE1B684877D9FD4B43A8EE39F1EA94101CD54D5FF48111CA6ABE5ED4CF1338",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_mouth.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "b08d44b4-532f-7d85-9dc5-f5a5ae2d487a",
+      "Vertices": 1236,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "6D7B803F22D958858A71757E101D3728C88531D95C355891D48B1141ADE51FCE",
+      "VertexStreamSHA256": "06318A3B3140FA686FE3F204003FF0D107FCAF0AFA4860D99AE0C1924E16CFC2",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_mouth.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "b08d44b4-532f-7d85-9dc5-f5a5ae2d487a",
+      "Vertices": 781,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "6DF04314E63FF4A211E898B8B4A2062538F30BE2E2DAAE2336642495D063FD50",
+      "VertexStreamSHA256": "B0B0FDDF8BF0D1B6E879039DA0AC6B30AC89B39E8F287EBFFC0245116DFCA2EA",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_mouth.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "b08d44b4-532f-7d85-9dc5-f5a5ae2d487a",
+      "Vertices": 518,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "2930CCBF7924CA4A54E77BEAB9429AF47B625C906E58D49450E52B2DDCFD3567",
+      "VertexStreamSHA256": "5AC04C149D11B7895983DB2706CFADC36D694FD381556E626DAA1D6251590546",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_sclera",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "8bd43ebe-3ba6-ae25-6069-37464ecb8367",
+      "Vertices": 528,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A895BDB50EF26F16155279503B8D8720B0F5F1BABD3C1A77A6520CC1EA8EB172",
+      "VertexStreamSHA256": "21052D7AFE4A1030C8194F7100EA37D47A1BBE39EA4F08C07728EE8CD4F839DF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_sclera.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "8bd43ebe-3ba6-ae25-6069-37464ecb8367",
+      "Vertices": 528,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A895BDB50EF26F16155279503B8D8720B0F5F1BABD3C1A77A6520CC1EA8EB172",
+      "VertexStreamSHA256": "21052D7AFE4A1030C8194F7100EA37D47A1BBE39EA4F08C07728EE8CD4F839DF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_sclera.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "8bd43ebe-3ba6-ae25-6069-37464ecb8367",
+      "Vertices": 528,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A895BDB50EF26F16155279503B8D8720B0F5F1BABD3C1A77A6520CC1EA8EB172",
+      "VertexStreamSHA256": "21052D7AFE4A1030C8194F7100EA37D47A1BBE39EA4F08C07728EE8CD4F839DF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_sclera.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "8bd43ebe-3ba6-ae25-6069-37464ecb8367",
+      "Vertices": 528,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A895BDB50EF26F16155279503B8D8720B0F5F1BABD3C1A77A6520CC1EA8EB172",
+      "VertexStreamSHA256": "21052D7AFE4A1030C8194F7100EA37D47A1BBE39EA4F08C07728EE8CD4F839DF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_eyes",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "5574c2b8-e60e-9773-462d-a86fe66b2b34",
+      "Vertices": 284,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "8F47E812216B1BCA5DE9CA708723806D3050762B22BBB0B3B7C84A4FE18225BA",
+      "VertexStreamSHA256": "3237226F9C98E16ACCFCB8D83873C7FE217071FFD754517AAFE77C870BA33599",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_eyes.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "5574c2b8-e60e-9773-462d-a86fe66b2b34",
+      "Vertices": 284,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "8F47E812216B1BCA5DE9CA708723806D3050762B22BBB0B3B7C84A4FE18225BA",
+      "VertexStreamSHA256": "3237226F9C98E16ACCFCB8D83873C7FE217071FFD754517AAFE77C870BA33599",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_eyes.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "5574c2b8-e60e-9773-462d-a86fe66b2b34",
+      "Vertices": 284,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "8F47E812216B1BCA5DE9CA708723806D3050762B22BBB0B3B7C84A4FE18225BA",
+      "VertexStreamSHA256": "3237226F9C98E16ACCFCB8D83873C7FE217071FFD754517AAFE77C870BA33599",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_eyes.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "5574c2b8-e60e-9773-462d-a86fe66b2b34",
+      "Vertices": 284,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "8F47E812216B1BCA5DE9CA708723806D3050762B22BBB0B3B7C84A4FE18225BA",
+      "VertexStreamSHA256": "3237226F9C98E16ACCFCB8D83873C7FE217071FFD754517AAFE77C870BA33599",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_glass",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "e3e841a9-08f6-2dbb-44dc-d624c6c2e44d",
+      "Vertices": 40,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "0052516839B94EE314A4E3B398C8036DE3790D672194987A394EE60323848539",
+      "VertexStreamSHA256": "1C11538A42B1358DE3F74FA6E575DE644F105ED6952E49F8D8F618FE9554612B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_glass.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "e3e841a9-08f6-2dbb-44dc-d624c6c2e44d",
+      "Vertices": 40,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "0052516839B94EE314A4E3B398C8036DE3790D672194987A394EE60323848539",
+      "VertexStreamSHA256": "1C11538A42B1358DE3F74FA6E575DE644F105ED6952E49F8D8F618FE9554612B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_glass.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "e3e841a9-08f6-2dbb-44dc-d624c6c2e44d",
+      "Vertices": 40,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "0052516839B94EE314A4E3B398C8036DE3790D672194987A394EE60323848539",
+      "VertexStreamSHA256": "1C11538A42B1358DE3F74FA6E575DE644F105ED6952E49F8D8F618FE9554612B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_glass.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "e3e841a9-08f6-2dbb-44dc-d624c6c2e44d",
+      "Vertices": 40,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "0052516839B94EE314A4E3B398C8036DE3790D672194987A394EE60323848539",
+      "VertexStreamSHA256": "1C11538A42B1358DE3F74FA6E575DE644F105ED6952E49F8D8F618FE9554612B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_hair",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "bb1928de-7290-5981-eee0-784cef04df2c",
+      "Vertices": 8963,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "0EC9D3B67A3B490EEDFBFEC886420B9C573F8419DF6BD65D80E9C9E7B77CB1CF",
+      "VertexStreamSHA256": "ADAFB3C9582D583794B17532E13ABBDA29487A13AB5056BC15FBE427EDC81FFE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_hair.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "bb1928de-7290-5981-eee0-784cef04df2c",
+      "Vertices": 6413,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "4AFED1032F9F06C8E3E07FE92DE0F575F6E0B9C04542EBF2610DFEFA3CE6F496",
+      "VertexStreamSHA256": "02D602C6A28408E8F31121745327DB71F3A51275B06A219B4BF2C39C6DD88F80",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_hair.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "bb1928de-7290-5981-eee0-784cef04df2c",
+      "Vertices": 5139,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B846044732185479B427BBF648DFC12229A265BC1330C14D22923E7CAA3A1225",
+      "VertexStreamSHA256": "E08FEB1DD15F8AB28675620ACB02AECBAB3968D97869CFB59E69AAF42807D600",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_head_hair.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "bb1928de-7290-5981-eee0-784cef04df2c",
+      "Vertices": 3864,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A9954083FD01D8CE272119BE1AFAB67818122B4233A6271B27AB878CFCFB7070",
+      "VertexStreamSHA256": "7A0B351031A9E685321504962A5909C5E51A1DBECDF0F7030D0866DDAA87DD21",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_body_skin",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "13a05e5e-15d4-1298-20a5-47b3b4bff7b5",
+      "Vertices": 734,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "6D90830860EA76CAF51EF24852DDFDCEEFB58F1559F7C97A541E7C58DD6E33DC",
+      "VertexStreamSHA256": "1A9722C7712619ED420ABED2235B1D37683D6B2D911C728C55F488469F8D0384",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_body_skin.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "13a05e5e-15d4-1298-20a5-47b3b4bff7b5",
+      "Vertices": 734,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "6D90830860EA76CAF51EF24852DDFDCEEFB58F1559F7C97A541E7C58DD6E33DC",
+      "VertexStreamSHA256": "1A9722C7712619ED420ABED2235B1D37683D6B2D911C728C55F488469F8D0384",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_body_skin.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "13a05e5e-15d4-1298-20a5-47b3b4bff7b5",
+      "Vertices": 734,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "6D90830860EA76CAF51EF24852DDFDCEEFB58F1559F7C97A541E7C58DD6E33DC",
+      "VertexStreamSHA256": "1A9722C7712619ED420ABED2235B1D37683D6B2D911C728C55F488469F8D0384",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_body_skin.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "13a05e5e-15d4-1298-20a5-47b3b4bff7b5",
+      "Vertices": 734,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "6D90830860EA76CAF51EF24852DDFDCEEFB58F1559F7C97A541E7C58DD6E33DC",
+      "VertexStreamSHA256": "1A9722C7712619ED420ABED2235B1D37683D6B2D911C728C55F488469F8D0384",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_body_cloth",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "26c2e121-c727-7217-6b65-2f2de6ece708",
+      "Vertices": 3286,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "240A75658CDE22E94FC27FAD81E8BD37DAD92EE9ADA5A53A482CCB2ED6C2AABC",
+      "VertexStreamSHA256": "00FD343978CDBB2E52A1C95E1DEE102CD2260964E57AC1AEB53F47A6C1D898D4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_body_cloth.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "26c2e121-c727-7217-6b65-2f2de6ece708",
+      "Vertices": 3286,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "240A75658CDE22E94FC27FAD81E8BD37DAD92EE9ADA5A53A482CCB2ED6C2AABC",
+      "VertexStreamSHA256": "00FD343978CDBB2E52A1C95E1DEE102CD2260964E57AC1AEB53F47A6C1D898D4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_body_cloth.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "26c2e121-c727-7217-6b65-2f2de6ece708",
+      "Vertices": 3286,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "240A75658CDE22E94FC27FAD81E8BD37DAD92EE9ADA5A53A482CCB2ED6C2AABC",
+      "VertexStreamSHA256": "00FD343978CDBB2E52A1C95E1DEE102CD2260964E57AC1AEB53F47A6C1D898D4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_body_cloth.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "26c2e121-c727-7217-6b65-2f2de6ece708",
+      "Vertices": 3286,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "240A75658CDE22E94FC27FAD81E8BD37DAD92EE9ADA5A53A482CCB2ED6C2AABC",
+      "VertexStreamSHA256": "00FD343978CDBB2E52A1C95E1DEE102CD2260964E57AC1AEB53F47A6C1D898D4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_hands_skin",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "13a05e5e-15d4-1298-20a5-47b3b4bff7b5",
+      "Vertices": 1806,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A9C28333A0C4C6490FB2EC15D85732483DD12A922814A80D6421083D2E23DE84",
+      "VertexStreamSHA256": "7941BFA2AFB641D618D4E765697CF9118B13764825794703B21662A2CF048AA5",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_hands_skin.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "13a05e5e-15d4-1298-20a5-47b3b4bff7b5",
+      "Vertices": 1160,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5344556C7C6D49D8D244C8063BDD111DDBEB07F9345AE9C6F535B71C2F34304C",
+      "VertexStreamSHA256": "99943EA7960D26E75B03EBE7F2564B09C4842BA6C8B0CF95E30D7D6CD7988E02",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_hands_skin.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "13a05e5e-15d4-1298-20a5-47b3b4bff7b5",
+      "Vertices": 816,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "84B333C46C066D782E3E1FB595DB6FD99EA690C6C230C457119A796583813F79",
+      "VertexStreamSHA256": "2C9BE6CE28C7790F82DD6E83A7A5A174180DE432959245460BBC917BE3C7B90E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_hands_skin.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "13a05e5e-15d4-1298-20a5-47b3b4bff7b5",
+      "Vertices": 553,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "4E237543D8478BD565B89D8DF10230E0F17595028F1238E1CC5219F445A62EF6",
+      "VertexStreamSHA256": "83023089CB36E735319119727F3D4EE065B6FA4F630F7418B19829F8A8414909",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_hands_accessory",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "0a91b4f6-d33e-3337-7df7-86b29b544a88",
+      "Vertices": 8,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "AF9613760F72635FBDB44A5A0A63C39F12AF30F950A6EE5C971BE188E89C4051",
+      "VertexStreamSHA256": "9527837699913051578B8374A4F2233752D3F43953CEAAF6204AC45C8818CA10",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_hands_accessory.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "0a91b4f6-d33e-3337-7df7-86b29b544a88",
+      "Vertices": 8,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "AF9613760F72635FBDB44A5A0A63C39F12AF30F950A6EE5C971BE188E89C4051",
+      "VertexStreamSHA256": "9527837699913051578B8374A4F2233752D3F43953CEAAF6204AC45C8818CA10",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_hands_accessory.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "0a91b4f6-d33e-3337-7df7-86b29b544a88",
+      "Vertices": 8,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "AF9613760F72635FBDB44A5A0A63C39F12AF30F950A6EE5C971BE188E89C4051",
+      "VertexStreamSHA256": "9527837699913051578B8374A4F2233752D3F43953CEAAF6204AC45C8818CA10",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_hands_accessory.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "0a91b4f6-d33e-3337-7df7-86b29b544a88",
+      "Vertices": 8,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "AF9613760F72635FBDB44A5A0A63C39F12AF30F950A6EE5C971BE188E89C4051",
+      "VertexStreamSHA256": "9527837699913051578B8374A4F2233752D3F43953CEAAF6204AC45C8818CA10",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_hands_cloth",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "26c2e121-c727-7217-6b65-2f2de6ece708",
+      "Vertices": 2656,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "727943AEA6BFEDEE5AE2BE83859BC0536CB2E946DEBA4DE07FCA5BE3556892F8",
+      "VertexStreamSHA256": "3D24BB900DCABEAC1075ECEC2BBEDB7703B4CBC290DDDB3EE86B526C2DEA9BB9",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_hands_cloth.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "26c2e121-c727-7217-6b65-2f2de6ece708",
+      "Vertices": 1682,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "C7A3F8BF9C1C5310CE70CACFA68A282A55B847CC01528814429AAFA7202C1218",
+      "VertexStreamSHA256": "ABF3AD440D17506EBAA22396AECA82E1019EC1876A62EF562B2845FFF0BFC47E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_hands_cloth.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "26c2e121-c727-7217-6b65-2f2de6ece708",
+      "Vertices": 1195,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "2BBA90F7BC776897DFAB3D4F60280B973FBF9D0087939C7D2A88B74514362BC9",
+      "VertexStreamSHA256": "68129FC6F8DBD0948BA8E67E75F6B4748FD93AE67E486C7EBDCC41E39C555D14",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_hands_cloth.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "26c2e121-c727-7217-6b65-2f2de6ece708",
+      "Vertices": 872,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "8BBD417A12528014406798FE8BB1183BB4DD6DB68632C7F2D2C94B20ECDADBB4",
+      "VertexStreamSHA256": "9BE1045847AF178585839AFECBBE6350D492EC23F34F826C69529B314F4E6FBE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_legs_skin",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "13a05e5e-15d4-1298-20a5-47b3b4bff7b5",
+      "Vertices": 44,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E0F927B817CCE657B4A9967CA2B69F164BD9129F1E5DE56C379C4E5F5C4B91C7",
+      "VertexStreamSHA256": "28654132EEC1EC1447B31012EF6DC0206F7CEA988143714B80B97D8832DC61BB",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_legs_skin.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "13a05e5e-15d4-1298-20a5-47b3b4bff7b5",
+      "Vertices": 44,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E0F927B817CCE657B4A9967CA2B69F164BD9129F1E5DE56C379C4E5F5C4B91C7",
+      "VertexStreamSHA256": "28654132EEC1EC1447B31012EF6DC0206F7CEA988143714B80B97D8832DC61BB",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_legs_skin.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "13a05e5e-15d4-1298-20a5-47b3b4bff7b5",
+      "Vertices": 44,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E0F927B817CCE657B4A9967CA2B69F164BD9129F1E5DE56C379C4E5F5C4B91C7",
+      "VertexStreamSHA256": "28654132EEC1EC1447B31012EF6DC0206F7CEA988143714B80B97D8832DC61BB",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_legs_skin.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "13a05e5e-15d4-1298-20a5-47b3b4bff7b5",
+      "Vertices": 44,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E0F927B817CCE657B4A9967CA2B69F164BD9129F1E5DE56C379C4E5F5C4B91C7",
+      "VertexStreamSHA256": "28654132EEC1EC1447B31012EF6DC0206F7CEA988143714B80B97D8832DC61BB",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_legs_cloth",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "26c2e121-c727-7217-6b65-2f2de6ece708",
+      "Vertices": 1360,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E38C5CDB4F41FC6F497178B5DE59E1CEF1623775F078B1B68C7A4D743CE3A591",
+      "VertexStreamSHA256": "D86C90E92F08D1430890D8672ABB999D63C0F12692347CA2E5ED045659745E9A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_legs_cloth.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "26c2e121-c727-7217-6b65-2f2de6ece708",
+      "Vertices": 1360,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E38C5CDB4F41FC6F497178B5DE59E1CEF1623775F078B1B68C7A4D743CE3A591",
+      "VertexStreamSHA256": "D86C90E92F08D1430890D8672ABB999D63C0F12692347CA2E5ED045659745E9A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_legs_cloth.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "26c2e121-c727-7217-6b65-2f2de6ece708",
+      "Vertices": 1360,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E38C5CDB4F41FC6F497178B5DE59E1CEF1623775F078B1B68C7A4D743CE3A591",
+      "VertexStreamSHA256": "D86C90E92F08D1430890D8672ABB999D63C0F12692347CA2E5ED045659745E9A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "boru_legs_cloth.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "26c2e121-c727-7217-6b65-2f2de6ece708",
+      "Vertices": 1360,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E38C5CDB4F41FC6F497178B5DE59E1CEF1623775F078B1B68C7A4D743CE3A591",
+      "VertexStreamSHA256": "D86C90E92F08D1430890D8672ABB999D63C0F12692347CA2E5ED045659745E9A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    }
+  ]
+}

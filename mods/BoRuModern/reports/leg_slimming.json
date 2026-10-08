@@ -1,0 +1,123 @@
+{
+  "status": "pass",
+  "local_cross_section_width_scale": 0.8,
+  "depth_scale": 0.85,
+  "transition": "At source ankle height 0.145-0.215m and hip height 0.90-1.00m",
+  "leg_length_unchanged": true,
+  "shoes_unchanged": true,
+  "objects": [
+    {
+      "object": "boru_hands_skin",
+      "max_coordinate_change_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "object": "boru_head_skin",
+      "max_coordinate_change_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "object": "boru_body_skin",
+      "max_coordinate_change_m": [
+        0.015558779239654541,
+        0.007863163948059082,
+        0.0
+      ]
+    },
+    {
+      "object": "boru_legs_skin",
+      "max_coordinate_change_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "object": "boru_head_lashes",
+      "max_coordinate_change_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "object": "boru_head_mouth",
+      "max_coordinate_change_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "object": "boru_head_sclera",
+      "max_coordinate_change_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "object": "boru_head_eyes",
+      "max_coordinate_change_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "object": "boru_hands_accessory",
+      "max_coordinate_change_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "object": "boru_head_glass",
+      "max_coordinate_change_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "object": "boru_hands_cloth",
+      "max_coordinate_change_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "object": "boru_body_cloth",
+      "max_coordinate_change_m": [
+        0.02131185680627823,
+        0.01648542284965515,
+        0.0
+      ]
+    },
+    {
+      "object": "boru_legs_cloth",
+      "max_coordinate_change_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "object": "boru_head_hair",
+      "max_coordinate_change_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "report_scope": "Historical first leg-only adjustment; superseded for final head/feet by proportion_validation.json"
+}

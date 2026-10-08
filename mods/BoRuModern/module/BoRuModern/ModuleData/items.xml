@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item id="boru_head" name="孟柏汝 · 发容与眼镜" mesh="boru_head" culture="Culture.empire" weight="0.3" appearance="2.5" value="2600" Type="HeadArmor" is_merchandise="true">
+    <ItemComponent><Armor head_armor="8" covers_head="true" hair_cover_type="all" beard_cover_type="all" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" /></ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
+  <Item id="boru_body" name="孟柏汝 · 白衬衫与牛仔裤" mesh="boru_body" culture="Culture.empire" weight="2.0" appearance="2.5" value="4200" Type="BodyArmor" is_merchandise="true">
+    <ItemComponent><Armor body_armor="10" arm_armor="5" leg_armor="3" covers_body="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" /></ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
+  <Item id="boru_hands" name="孟柏汝 · 双手与腕饰" mesh="boru_hands" culture="Culture.empire" weight="0.2" appearance="2.5" value="900" Type="HandArmor" is_merchandise="true">
+    <ItemComponent><Armor arm_armor="5" covers_hands="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Leather" /></ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
+  <Item id="boru_legs" name="孟柏汝 · 帆布鞋" mesh="boru_legs" culture="Culture.empire" weight="1.1" appearance="2.5" value="2400" Type="LegArmor" is_merchandise="true">
+    <ItemComponent><Armor leg_armor="5" covers_legs="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Leather" /></ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
+</Items>
