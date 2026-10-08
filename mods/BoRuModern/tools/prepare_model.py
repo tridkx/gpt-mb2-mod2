@@ -8,6 +8,7 @@ ROOT=Path(__file__).resolve().parents[1]; WORKSPACE=ROOT.parents[1]
 LEG_WIDTH_SCALE=.64  # v1.0.0 .80, further 20% narrower per user feedback.
 LEG_DEPTH_SCALE=.85
 SHOE_WIDTH_SCALE=.6375  # v1.0.0 .85, further 25% narrower.
+SHOE_EXTRA_WIDTH_SCALE=.90  # v1.0.3: another 10%, taper to unchanged sock rim.
 sys.path.insert(0,str(WORKSPACE/'tools/asset_helpers/previewer'))
 from baker.skeleton import parse_skeljson
 import psk_lib
@@ -81,7 +82,15 @@ def narrow_feet(q,out):
         out[:,:2]-=(1-SHOE_WIDTH_SCALE)*amount[:,None]*transverse[:,None]*lateral
     return out
 
-def deform_shoes(q):return narrow_feet(q,deform_base(q))
+def deform_shoes(q):
+    out=narrow_feet(q,deform_base(q))
+    for side in ['l','r']:
+        anchor=target[ni[side+'_foot']];axis=target[ni[side+'_toe0']][:2]-anchor[:2];axis/=np.linalg.norm(axis)
+        lateral=np.array([-axis[1],axis[0]])
+        amount=(1-smooth(.105,.135,q[:,2]))*(q[:,0]<0 if side=='l' else q[:,0]>=0)
+        transverse=(out[:,:2]-anchor[:2])@lateral
+        out[:,:2]-=(1-SHOE_EXTRA_WIDTH_SCALE)*amount[:,None]*transverse[:,None]*lateral
+    return out
 
 def deform(q):
     out=deform_base(q)

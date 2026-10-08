@@ -55,5 +55,5 @@ for lod in range(4):
         assert minimum>.02,(lod,label,minimum,worst)
         rows.append({'lod':lod,'motion':label,'frames_checked':anim['frames']-max(1,anim['start']),'minimum_overlap_m':minimum,'worst':worst})
 package=ROOT/'module/BoRuModern/AssetPackages/boru.tpac'
-report={'status':'pass','version':'v1.0.2','final_package_sha256':hashlib.sha256(package.read_bytes()).hexdigest(),'hidden_source_cut_extension_m':.045,'measurement':'Sock opening minimum height minus hidden skin-cut maximum height in moving foot bind frame; final quantized weights, all frames and all LODs','motions':rows,'limitations':'Axial overlap is a seam coverage guard, not a complete surface intersection or game IK test.'}
+report={'status':'pass','version':'v1.0.3','final_package_sha256':hashlib.sha256(package.read_bytes()).hexdigest(),'hidden_source_cut_extension_m':.045,'measurement':'Sock opening minimum height minus hidden skin-cut maximum height in moving foot bind frame; final quantized weights, all frames and all LODs','motions':rows,'limitations':'Axial overlap is a seam coverage guard, not a complete surface intersection or game IK test.'}
 (ROOT/'reports/ankle_validation.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))

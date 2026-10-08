@@ -32,8 +32,8 @@ for side in ['l','r']:
     lateral=np.array([-axis[1],axis[0]]);a=old['boru_legs_cloth_p'];b=new['boru_legs_cloth_p'];sel=a[:,0]<0 if side=='l' else a[:,0]>0
     a=a[sel];b=b[sel];ratio=float(np.ptp((b[:,:2]-anchor[:2])@lateral)/np.ptp((a[:,:2]-anchor[:2])@lateral))
     length=float(np.max(np.abs((b[:,:2]-a[:,:2])@axis)))
-    assert abs(ratio-.75)<1e-5 and length<1e-6,(side,ratio,length)
+    assert abs(ratio-.675)<1e-5 and length<1e-6,(side,ratio,length)
     shoe.append({'side':side,'width_ratio_to_v100':ratio,'max_length_axis_change_m':length,'height_unchanged':True})
 package=ROOT/'module/BoRuModern/AssetPackages/boru.tpac'
-report={'status':'pass','version':'v1.0.2','baseline_version':'v1.0.0','final_package_sha256':hashlib.sha256(package.read_bytes()).hexdigest(),'head_hands_pants_shoe_uv_topology_unchanged':True,'pants_shoes_height_unchanged':True,'ankle_weights_and_hidden_skin_checked_separately':True,'leg_width_scale_from_original':.64,'leg_depth_scale_from_original':.85,'shoe_width_scale_from_original':.6375,'leg_sections':checks,'shoes':shoe,'head_scale_from_original':1.12}
+report={'status':'pass','version':'v1.0.3','baseline_version':'v1.0.0','final_package_sha256':hashlib.sha256(package.read_bytes()).hexdigest(),'head_hands_pants_shoe_uv_topology_unchanged':True,'pants_shoes_height_unchanged':True,'ankle_weights_and_hidden_skin_checked_separately':True,'leg_width_scale_from_original':.64,'leg_depth_scale_from_original':.85,'shoe_width_scale_from_original':.57375,'leg_sections':checks,'shoes':shoe,'head_scale_from_original':1.12}
 (ROOT/'reports/proportion_validation.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
