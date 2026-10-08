@@ -1,27 +1,70 @@
 {
   "status": "pass",
-  "head_scale": 1.12,
-  "glass_xyz_extent_ratio": [
-    1.119999885559082,
-    1.119999885559082,
-    1.119999885559082
+  "version": "v1.0.1",
+  "baseline_version": "v1.0.0",
+  "final_package_sha256": "fd9e8a92de71dac6ed1c0b2564edc463ff99c782161b447468366eafd8b6ea42",
+  "head_hands_uv_weights_topology_unchanged": true,
+  "leg_shoe_height_unchanged": true,
+  "leg_width_scale_from_original": 0.64,
+  "leg_depth_scale_from_original": 0.85,
+  "shoe_width_scale_from_original": 0.6375,
+  "leg_sections": [
+    {
+      "height_m": 0.35,
+      "side": -1,
+      "old_width_m": 0.14290595054626465,
+      "new_width_m": 0.11428024619817734,
+      "ratio": 0.799688506751019
+    },
+    {
+      "height_m": 0.35,
+      "side": 1,
+      "old_width_m": 0.14427858591079712,
+      "new_width_m": 0.11536174267530441,
+      "ratio": 0.799576333154727
+    },
+    {
+      "height_m": 0.5,
+      "side": -1,
+      "old_width_m": 0.14419591426849365,
+      "new_width_m": 0.11529018729925156,
+      "ratio": 0.7995385159428341
+    },
+    {
+      "height_m": 0.5,
+      "side": 1,
+      "old_width_m": 0.14396148920059204,
+      "new_width_m": 0.11508109420537949,
+      "ratio": 0.7993880505433547
+    },
+    {
+      "height_m": 0.7,
+      "side": -1,
+      "old_width_m": 0.16296428442001343,
+      "new_width_m": 0.13028600811958313,
+      "ratio": 0.7994758396495796
+    },
+    {
+      "height_m": 0.7,
+      "side": 1,
+      "old_width_m": 0.1628267467021942,
+      "new_width_m": 0.13015250861644745,
+      "ratio": 0.7993312600815695
+    }
   ],
-  "shoe_width_scale": 0.85,
-  "shoe_checks": [
+  "shoes": [
     {
       "side": "l",
-      "shoe_width_ratio": 0.8500000059341641,
-      "max_length_axis_change_m": 1.1395053491327358e-08,
-      "max_height_change_m": 0.0
+      "width_ratio_to_v100": 0.7499999881159137,
+      "max_length_axis_change_m": 1.2818654172773138e-08,
+      "height_unchanged": true
     },
     {
       "side": "r",
-      "shoe_width_ratio": 0.8500000422771912,
-      "max_length_axis_change_m": 1.0260960878920979e-08,
-      "max_height_change_m": 0.0
+      "width_ratio_to_v100": 0.7500000253312485,
+      "max_length_axis_change_m": 1.146978680939949e-08,
+      "height_unchanged": true
     }
   ],
-  "legs_width_scale": 0.8,
-  "legs_depth_scale": 0.85,
-  "eye_uv": "Measured front corneal centers with planar original iris disc; no facial animation"
+  "head_scale_from_original": 1.12
 }

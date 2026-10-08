@@ -5,6 +5,9 @@ import numpy as np
 from scipy.spatial.transform import Rotation
 from scipy.interpolate import RBFInterpolator
 ROOT=Path(__file__).resolve().parents[1]; WORKSPACE=ROOT.parents[1]
+LEG_WIDTH_SCALE=.64  # v1.0.0 .80, further 20% narrower per user feedback.
+LEG_DEPTH_SCALE=.85
+SHOE_WIDTH_SCALE=.6375  # v1.0.0 .85, further 25% narrower.
 sys.path.insert(0,str(WORKSPACE/'tools/asset_helpers/previewer'))
 from baker.skeleton import parse_skeljson
 import psk_lib
@@ -75,7 +78,7 @@ def narrow_feet(q,out):
         lateral=np.array([-axis[1],axis[0]])
         amount=(1-smooth(.14,.23,q[:,2]))*(q[:,0]<0 if side=='l' else q[:,0]>=0)
         transverse=(out[:,:2]-anchor[:2])@lateral
-        out[:,:2]-=.15*amount[:,None]*transverse[:,None]*lateral
+        out[:,:2]-=(1-SHOE_WIDTH_SCALE)*amount[:,None]*transverse[:,None]*lateral
     return out
 
 def deform_shoes(q):return narrow_feet(q,deform_base(q))
@@ -93,8 +96,8 @@ def deform(q):
         centers[:,1]=np.interp(q[:,2],joints[:,2],joints[:,1])
         fitted_centers=deform_base(centers)
         a=amount*select
-        out[:,0]=fitted_centers[:,0]+(out[:,0]-fitted_centers[:,0])*(1-.20*a)
-        out[:,1]=fitted_centers[:,1]+(out[:,1]-fitted_centers[:,1])*(1-.15*a)
+        out[:,0]=fitted_centers[:,0]+(out[:,0]-fitted_centers[:,0])*(1-(1-LEG_WIDTH_SCALE)*a)
+        out[:,1]=fitted_centers[:,1]+(out[:,1]-fitted_centers[:,1])*(1-(1-LEG_DEPTH_SCALE)*a)
     return narrow_feet(q,out)
 
 # Map original UE/CC body skin; merge face and separate digit influences.
