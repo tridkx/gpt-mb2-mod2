@@ -1,4 +1,4 @@
-# Shengxiu Collection v1.1.4（明玉长发活动距离测试候选）
+# Shengxiu Collection v1.1.5（明玉后发造型与绑骨测试候选）
 
 圣绣明玉、白凤（女）、素问三套装备，统一运行于 ShengxiuCollection，管理器显示 Shengxiu Collection。每套三件：发容、衣裙与手饰、腿部与绣鞋。
 
@@ -18,7 +18,7 @@ Mod ZIP 的 ShengxiuCollection/ 放入游戏 Modules，启用合集后搜索相�
 
 ## 当前模型与布料
 
-明玉 LOD0 包含长发、裙摆和袖纱布料，LOD1 仅袖纱，LOD2/3 使用蒙皮。当前候选保留全部几何、蒙皮、渲染 Alpha、材料和布料约束，固定发根不变，仅调整长发求解数据的活动距离：活动点至少取原距离三倍，并覆盖站立、跑步胶囊投影所需距离加 5mm 余量，当前最大约 7.1cm。此覆盖保存在 tools/hair_clearance_policy.json 和生成脚本中，不改 Blend/FBX 的原始 Alpha 绘制。
+明玉 LOD0 包含长发、裙摆和袖纱布料，LOD1 仅袖纱，LOD2/3 使用蒙皮。后发按本套衣服背面重新留出间距，变形只沿后颈到下段平滑展开；头顶发根、脸、眼睛、头饰与正前方发束保持原样。后发下段的上身权重逐渐增加至 spine2 98%，上端仍随头部，避免整片长发随头骨前倾而切入后背。后发活动距离上限为 12mm（量化后约 11.8mm），保留布料；前发沿用原 Alpha。四级长发 LOD 与 LOD0 预处理数据均由更新后的可编辑 Blend/FBX 生成。
 
 身体 MetaMesh 引用已获裙子修复反馈的 sx_mingyu_leg_collision，四个腿部胶囊及身体引用保持 v1.1.2 设置。头部引用 sx_mingyu_back_collision，含三个竖向背部胶囊，端点分别随 spine、spine2 运动；边界位于拟合背面外侧 2mm，上端中心降至 z=1.27m，避开发根、领口和胸前，不恢复原生全身碰撞体。袖纱与衣裙共享腿部碰撞引用。白凤、素问资源包保持 v1.1.0 字节，在 LOD0/1 包含自有布料预处理数据，LOD2/3 使用蒙皮。
 
@@ -28,11 +28,11 @@ Mod ZIP 的 ShengxiuCollection/ 放入游戏 Modules，启用合集后搜索相�
 
 ## 验证状态与限制
 
-当前候选检查见 [hair_clearance_validation.json](reports/hair_clearance_validation.json)，背部拟合见 [hair_clearance_fit.json](reports/hair_clearance_fit.json)。腿部拟合记录见 [leg_collision_fit.json](reports/leg_collision_fit.json)。候选相对 v1.1.3 回读确认 56 个网格元数据、几何哈希、全部编辑器数据和其余三段布料不变；长发布料段仅 max_distances 数组改变。原腿部碰撞定义逐项不变。v1.1.0 的完整静态检查记录见 [collection_release_validation.json](reports/collection_release_validation.json)，其包哈希适用于历史基线。
+当前候选检查见 [hair_shape_validation.json](reports/hair_shape_validation.json)，造型参数和源文件检查见 [hair_source_fit.json](reports/hair_source_fit.json)、[source_validation.json](reports/source_validation.json)。从最终 TPAC 回读全部四级 LOD，核对长发布料的位置、骨骼、映射、约束和并行分组；其余 52 个网格元数据与几何、衣裙袖纱的预处理和编辑器数据、碰撞 XML 保持 v1.1.4 字节。白凤、素问包哈希不变。v1.1.0 的完整基线检查另见 [collection_release_validation.json](reports/collection_release_validation.json)，不作为当前包哈希依据。
 
-最终 TPAC 已回读检查所有四级 LOD、28 骨索引与权重、皮肤接缝、全部贴图 mip、布料映射/骨骼/约束/锚点及并行分组。站立抽查 16 帧，跑步完整 25 帧、拉弓 150 帧、骑乘 20 帧。活动布料的离线蒙皮拉伸仅记录为诊断，因为预览未运行游戏布料求解器；固定皮肤和连接处另做拉伸检查。原生腿部胶囊接触只是诊断，不代表已消除所有裙摆穿模。鞋底用各套原始鞋子单独拟合，低处鞋长约 24.5cm、最低鞋底为 z=1mm。
+对原生待机、跑步、持弓与骑乘从第 1 帧起的完整周期，检查后发顶点、面片中心和边中点与实际躯干三角面。检查限定原始后发 Y<-25mm、Z<1.50m；在上胸骨动画局部坐标沿前后方向投射，排除袖纱外侧与低处裙摆。各级 LOD 的具体最小间距和帧数见候选报告。这项检查证明所查蒙皮姿态与躯干的间距，不能代替游戏布料求解、不同体型、武器碰撞或 IK。源包中保留旧版原生姿态报告作为历史参考。
 
-用户确认 v1.1.1 恢复自然下垂，v1.1.2 修复所反馈的裙子穿腿问题；v1.1.3 站立自然下垂但长发仍穿模，v1.1.4 也未修复长发问题。当前已安装包与工程包、碰撞 XML 哈希一致。活动距离不足不能认定为实际根因，需结合当前跑动的背面/侧面画面继续检查受影响发束、完整求解约束与头盔槽资源的运行时碰撞行为。站立和完整 25 帧跑步的活动发点碰撞投影虽均在新距离预算内，但这仅是投影可达性检查，不是游戏布料求解通过。站立最大投影上推约 2.6mm。反馈不覆盖所有动作、距离和体型；明玉 LOD1、远距离和全部动作范围未确认。白凤、素问尚待游戏验收。离线预览不运行游戏布料求解器、武器 IK 或真实马体碰撞，代理接触仅为诊断。
+用户确认自然下垂和裙子穿腿问题已修复，但 v1.1.4 整片后发在待机站立时仍穿衣。相同姿态的最终包预览复现了旧版后发进入背部，新候选后发位于衣服外侧，见 [修复前侧面](reports/hair_before_idle_side.png)、[修复后侧面](reports/hair_after_idle_side.png)、[修复后背面](reports/hair_after_idle_back.png)。预览未运行游戏布料求解器。v1.1.5 尚待用户确认站立、跑步的后发位置与自然摆动；白凤、素问和明玉远距离布料仍待游戏验收。
 
 ## 重建与交付
 
@@ -44,17 +44,23 @@ python -X utf8 mods/ShengxiuCollection/tools/build_new_sets.py
 # prepare_collection_release.py 为 v1.1.0 基线组装入口，会要求旧明玉哈希。
 ```
 
-当前 v1.1.4 候选从保留的 v1.1.3 明玉包增量生成，在工作区根运行：
+当前 v1.1.5 候选从保留的 v1.1.4 源文件和包增量生成，在工作区根依次运行：
 
 ```powershell
-dotnet build mods/ShengxiuCollection/tools/ClothPatch.csproj -o mods/ShengxiuCollection/build/cloth_patch
-python -X utf8 mods/ShengxiuCollection/tools/prepare_hair_clearance.py
-./tools/install_release.ps1 -Mod ShengxiuCollection -Version v1.1.4 -PreviousVersion v1.1.3
+& 'D:/Blender Foundation/Blender 5.2/blender.exe' --background --python-exit-code 1 --python mods/ShengxiuCollection/tools/fit_hair_source.py
+& 'D:/Blender Foundation/Blender 5.2/blender.exe' --background --python-exit-code 1 --python mods/ShengxiuCollection/tools/export_geometry.py
+& 'D:/Blender Foundation/Blender 5.2/blender.exe' --background --python-exit-code 1 --python mods/ShengxiuCollection/tools/verify_source.py
+dotnet build mods/ShengxiuCollection/tools/HairGeometry.csproj -o mods/ShengxiuCollection/build/hair_geometry
+python -X utf8 mods/ShengxiuCollection/tools/prepare_hair_shape.py
+python -X utf8 mods/ShengxiuCollection/tools/verify_hair_shape.py
+& 'D:/Blender Foundation/Blender 5.2/blender.exe' --background --python-exit-code 1 --python mods/ShengxiuCollection/tools/render_hair_fit.py
+python -X utf8 mods/ShengxiuCollection/tools/finalize_hair_shape.py
+./tools/install_release.ps1 -Mod ShengxiuCollection -Version v1.1.5 -PreviousVersion v1.1.4
 ```
 
-增量基线缓存为 build/hair_clearance_baseline_v1.1.3/，保留明玉 TPAC 与 cloth_bodies.xml；缺失时可从保留的 v1.1.3 Mod ZIP 提取，脚本核对固定哈希。拟合读取 build/final_export/geo 的明玉静态几何（与已回读确认不变的运行包一致）。prepare_hair_clearance.py 调用背部拟合，再单独替换长发求解数据，不重新生成其它布料。实际安装需退出游戏与启动器，保留被替换交付包。依赖本机 Blender、Python、mbtool、原生资源和工作区 asset_helpers。源 ZIP 保持 source/、tex/ 相邻，并附带 workspace_tools/cloth_compiler/。
+增量基线缓存为 build/hair_shape_baseline_v1.1.4/，包括 TPAC、Blend/FBX、rig_arrays.npz 和 rig_manifest.json；脚本核对旧包哈希。首次重建需从 v1.1.4 Mod/Source 回退包和旧版模型流程恢复这些基线。prepare_hair_shape.py 使用既有 build/spec.json、本机模板和编译好的 cloth_probe、cloth_patch；完整基线流程见历史更新日志。候选只移植重新生成的四个长发流并编译长发，不采用完整重建包的衣裙或材料数据。render_hair_fit.py 使用保留的旧版 final_export/geo、贴图解码缓存和新候选回读数据做相同视角对比。
 
-明玉完整几何与布料基线的重建流程、旧版验证断言见更新日志；原有 build_package.py 和 prepare_collection_release.py 生成 v1.1.0 基线设置。当前候选使用上面的增量入口，不将旧版碰撞体断言当成候选验收依据。
+实际安装需退出游戏与启动器，旧交付包自动保留。依赖本机 Blender、Python、mbtool、原生资源和工作区 asset_helpers；源 ZIP 保持 source/、tex/ 相邻，并附带 workspace_tools/cloth_compiler/。
 
 ## 注意事项
 

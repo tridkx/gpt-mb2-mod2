@@ -1,0 +1,482 @@
+{
+  "status": "pass",
+  "baseline_package_sha256": "4e4e921944451b8612471426177159d8f1ee1ec96a35b9a1892e541edeb3a0ef",
+  "candidate_sha256": "578da1d8839be6f4ac7d9504eeb15d1a1f4a1538755c6c9c965a79fef1d18159",
+  "changed_meshes": [
+    "sx_mingyu_head_00",
+    "sx_mingyu_head_00.lod1",
+    "sx_mingyu_head_00.lod2",
+    "sx_mingyu_head_00.lod3"
+  ],
+  "other_52_meshes_identical": true,
+  "accepted_body_cloth_and_editor_segments_identical": true,
+  "cloth_cook": {
+    "mesh": "sx_mingyu_head_00",
+    "guid": "3297406e-4529-80ea-4f63-592a2f5a57de",
+    "metamesh": "sx_mingyu_head",
+    "lod": 0,
+    "bytes": 326368,
+    "render_vertices": 4946,
+    "simulation_vertices": 4088,
+    "fixed_positions": 1216,
+    "boundary_fixed_positions": 208,
+    "active_positions": 2872,
+    "stretch_constraints": 6389,
+    "bend_constraints": 4079,
+    "shear_constraints": 0,
+    "parallel_sets": 19,
+    "dummy_sets": 12,
+    "max_geodesic_anchor_length": 0.6191584006978303,
+    "sha256": "8a9793269d65a7c2d54f5e144555ad82a5a015778267e470f6cc0c8b3db2e9a3",
+    "root_fixes": [
+      {
+        "component_positions": 26,
+        "reason": "pin upper edge of detached hair strand or skirt ornament",
+        "pinned_render_vertices": [
+          1377,
+          1378,
+          1379,
+          1380
+        ],
+        "bounds": [
+          [
+            -0.0065499106,
+            -0.20199521,
+            0.95327747
+          ],
+          [
+            0.0025000891,
+            -0.1869577,
+            1.1689875
+          ]
+        ]
+      },
+      {
+        "component_positions": 60,
+        "reason": "pin upper edge of detached hair strand or skirt ornament",
+        "pinned_render_vertices": [
+          1381,
+          1384,
+          1385,
+          1388,
+          1390,
+          1391,
+          1503
+        ],
+        "bounds": [
+          [
+            -0.018819911,
+            -0.2022977,
+            0.9578975
+          ],
+          [
+            0.015120089,
+            -0.18664521,
+            1.1717374
+          ]
+        ]
+      },
+      {
+        "component_positions": 38,
+        "reason": "pin upper edge of detached hair strand or skirt ornament",
+        "pinned_render_vertices": [
+          2288,
+          2289
+        ],
+        "bounds": [
+          [
+            -0.05728991,
+            -0.20057568,
+            0.9317375
+          ],
+          [
+            -0.00081991084,
+            -0.17470771,
+            1.4540474
+          ]
+        ]
+      },
+      {
+        "component_positions": 32,
+        "reason": "pin upper edge of detached hair strand or skirt ornament",
+        "pinned_render_vertices": [
+          2298,
+          2299
+        ],
+        "bounds": [
+          [
+            -0.08866991,
+            -0.1989012,
+            0.99193746
+          ],
+          [
+            -0.03097991,
+            -0.1792577,
+            1.4386874
+          ]
+        ]
+      },
+      {
+        "component_positions": 34,
+        "reason": "pin upper edge of detached hair strand or skirt ornament",
+        "pinned_render_vertices": [
+          2355,
+          2356
+        ],
+        "bounds": [
+          [
+            -0.113349915,
+            -0.19408314,
+            1.0145475
+          ],
+          [
+            -0.07449991,
+            -0.17938021,
+            1.3610674
+          ]
+        ]
+      },
+      {
+        "component_positions": 34,
+        "reason": "pin upper edge of detached hair strand or skirt ornament",
+        "pinned_render_vertices": [
+          2389,
+          2390
+        ],
+        "bounds": [
+          [
+            0.09429009,
+            -0.19418502,
+            1.0221275
+          ],
+          [
+            0.12439009,
+            -0.1792352,
+            1.3657374
+          ]
+        ]
+      },
+      {
+        "component_positions": 32,
+        "reason": "pin upper edge of detached hair strand or skirt ornament",
+        "pinned_render_vertices": [
+          2400,
+          2401
+        ],
+        "bounds": [
+          [
+            0.027770089,
+            -0.19941595,
+            1.0066974
+          ],
+          [
+            0.08890009,
+            -0.1802252,
+            1.4420174
+          ]
+        ]
+      },
+      {
+        "component_positions": 38,
+        "reason": "pin upper edge of detached hair strand or skirt ornament",
+        "pinned_render_vertices": [
+          2458,
+          2459
+        ],
+        "bounds": [
+          [
+            -0.014679911,
+            -0.20062213,
+            0.9485075
+          ],
+          [
+            0.03784009,
+            -0.1768227,
+            1.4544975
+          ]
+        ]
+      },
+      {
+        "component_positions": 24,
+        "reason": "pin upper edge of detached hair strand or skirt ornament",
+        "pinned_render_vertices": [
+          2488,
+          2491
+        ],
+        "bounds": [
+          [
+            0.01988009,
+            -0.20249258,
+            1.0640274
+          ],
+          [
+            0.07049009,
+            -0.18477166,
+            1.4773475
+          ]
+        ]
+      },
+      {
+        "component_positions": 24,
+        "reason": "pin upper edge of detached hair strand or skirt ornament",
+        "pinned_render_vertices": [
+          2512,
+          2513
+        ],
+        "bounds": [
+          [
+            -0.06757991,
+            -0.20212388,
+            1.0576375
+          ],
+          [
+            -0.01928991,
+            -0.18595897,
+            1.4758174
+          ]
+        ]
+      },
+      {
+        "component_positions": 21,
+        "reason": "pin upper edge of detached hair strand or skirt ornament",
+        "pinned_render_vertices": [
+          2520,
+          2521,
+          2523,
+          2524,
+          2525,
+          2533,
+          2534,
+          2536,
+          2541
+        ],
+        "bounds": [
+          [
+            -0.0135599105,
+            -0.2100766,
+            1.2286974
+          ],
+          [
+            0.02321009,
+            -0.20712757,
+            1.2622775
+          ]
+        ]
+      },
+      {
+        "component_positions": 22,
+        "reason": "pin upper edge of detached hair strand or skirt ornament",
+        "pinned_render_vertices": [
+          2546,
+          2547,
+          2548,
+          2549,
+          2550,
+          2551,
+          2552,
+          2553,
+          2554,
+          2560,
+          2561,
+          2562,
+          2563,
+          2564,
+          2565,
+          2567,
+          2568
+        ],
+        "bounds": [
+          [
+            -0.010669911,
+            -0.2068128,
+            1.1866275
+          ],
+          [
+            0.012010089,
+            -0.20510657,
+            1.2052875
+          ]
+        ]
+      },
+      {
+        "component_positions": 10,
+        "reason": "pin upper edge of detached hair strand or skirt ornament",
+        "pinned_render_vertices": [
+          2572,
+          2573,
+          2575,
+          2576,
+          2579
+        ],
+        "bounds": [
+          [
+            -0.009099911,
+            -0.2028277,
+            1.1610575
+          ],
+          [
+            0.007700089,
+            -0.20007771,
+            1.1741874
+          ]
+        ]
+      },
+      {
+        "component_positions": 40,
+        "reason": "pin upper edge of detached hair strand or skirt ornament",
+        "pinned_render_vertices": [
+          2618,
+          2619
+        ],
+        "bounds": [
+          [
+            -0.09064991,
+            -0.19903156,
+            1.0057374
+          ],
+          [
+            -0.04972991,
+            -0.18802205,
+            1.4415874
+          ]
+        ]
+      },
+      {
+        "component_positions": 26,
+        "reason": "pin upper edge of detached hair strand or skirt ornament",
+        "pinned_render_vertices": [
+          2895,
+          2896,
+          2897,
+          2898
+        ],
+        "bounds": [
+          [
+            -0.005099911,
+            -0.2002227,
+            0.9633775
+          ],
+          [
+            0.02287009,
+            -0.1908952,
+            1.1815275
+          ]
+        ]
+      },
+      {
+        "component_positions": 24,
+        "reason": "pin upper edge of detached hair strand or skirt ornament",
+        "pinned_render_vertices": [
+          2921,
+          2922
+        ],
+        "bounds": [
+          [
+            -0.024039911,
+            -0.2014852,
+            0.96330744
+          ],
+          [
+            0.004460089,
+            -0.19088021,
+            1.1734174
+          ]
+        ]
+      }
+    ],
+    "solver_pinned_render_vertices": [
+      1377,
+      1378,
+      1379,
+      1380,
+      1381,
+      1384,
+      1385,
+      1388,
+      1390,
+      1391,
+      1503,
+      2288,
+      2289,
+      2298,
+      2299,
+      2355,
+      2356,
+      2389,
+      2390,
+      2400,
+      2401,
+      2458,
+      2459,
+      2488,
+      2491,
+      2512,
+      2513,
+      2520,
+      2521,
+      2523,
+      2524,
+      2525,
+      2533,
+      2534,
+      2536,
+      2541,
+      2546,
+      2547,
+      2548,
+      2549,
+      2550,
+      2551,
+      2552,
+      2553,
+      2554,
+      2560,
+      2561,
+      2562,
+      2563,
+      2564,
+      2565,
+      2567,
+      2568,
+      2572,
+      2573,
+      2575,
+      2576,
+      2579,
+      2618,
+      2619,
+      2895,
+      2896,
+      2897,
+      2898,
+      2921,
+      2922
+    ],
+    "path": "D:\\gpt-mb2-mod2\\mods\\ShengxiuCollection\\build\\hair_shape_cooked\\3297406e-4529-80ea-4f63-592a2f5a57de.bin"
+  },
+  "package_audit": {
+    "package": "D:\\gpt-mb2-mod2\\mods\\ShengxiuCollection\\build\\hair_shape_candidate_v1.1.5.tpac",
+    "status": "pass",
+    "scope": "Metadata round-trip, references and standard shader vertex-alpha risk only; textures, custom shader paths, geometry, weights, cloth dynamics and game behavior are not validated",
+    "cloth_vertex_alpha": true,
+    "errors": [],
+    "incomplete": [],
+    "observations": [],
+    "package_sha256": "578da1d8839be6f4ac7d9504eeb15d1a1f4a1538755c6c9c965a79fef1d18159",
+    "tool_output": {
+      "metacheck": "D:\\gpt-mb2-mod2\\mods\\ShengxiuCollection\\build\\hair_shape_candidate_v1.1.5.tpac: 23 assets | checksum ok=23 bad=0 | metadata identical=23 differ=0 noSerializer=0",
+      "mataudit": "D:\\gpt-mb2-mod2\\mods\\ShengxiuCollection\\build\\hair_shape_candidate_v1.1.5.tpac: 9 materials, 23 assets\n  metamesh-level material missing=0 | submesh Material present=56 missing=0 | submesh SecondMaterial present=0 missing=0 | metameshes with no material at all=0"
+    },
+    "counts": {
+      "materials": 9,
+      "submeshes": 56,
+      "cloth_submeshes": 4,
+      "lods": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  }
+}

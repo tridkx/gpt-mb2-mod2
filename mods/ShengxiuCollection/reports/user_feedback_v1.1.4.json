@@ -7,7 +7,9 @@
   "workspace_package_sha256": "4e4e921944451b8612471426177159d8f1ee1ec96a35b9a1892e541edeb3a0ef",
   "installed_package_sha256": "4e4e921944451b8612471426177159d8f1ee1ec96a35b9a1892e541edeb3a0ef",
   "workspace_and_installed_collision_xml_sha256": "3897c0bb96804c375e2aa135d10ec868fdadc2c46c4710f5f1255b7df6aae2e6",
-  "interpretation": "Distance-budget feasibility did not resolve the reported game clipping. Collision fit, full cloth constraints and head-equipment runtime behavior remain unconfirmed; do not present distance shortage as established root cause.",
-  "next_evidence": "Current back/side running clip or worst-frame screenshot to identify affected strands and collision direction; no further runtime edits in this feedback turn.",
-  "assistant_ran_game": false
+  "interpretation": "User confirms whole rear sheet clips at inventory idle. Final baseline skeletal preview reproduces this; rest shape and head-only weights both permit garment intersections. Game cloth collision behavior is still not established.",
+  "next_evidence": "v1.1.5 reshapes rear hair, blends lower weights toward spine2 and preserves cloth; user must verify standing and running in game.",
+  "assistant_ran_game": false,
+  "additional_user_text": "哪怕是待机站立姿态也会穿模。整个后方的头发穿进衣服里",
+  "screenshot": "reports/hair_game_feedback_v1.1.4.png"
 }
