@@ -1,0 +1,66 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "scope": "offline structural checks and experimental predicted skinning only",
+  "final_package_sha256": "3773c31590b2a18e1a86b091cc9868f5944881820dc57862dd668cbc61621700",
+  "baseline_sha256": null,
+  "runtime_dll_sha256": "77cace6783e60023e429495309fb1f4049b7abdabe5215d81c6308696a1ee20f",
+  "source_multiplier": 1.5,
+  "source_total_height_m": 2.5415565112978222,
+  "input_hashes": {
+    "model.fbx": "b62ed23fa92bf22c0e77d955e4fe14f175ac61038039c98811c943e1b631a868",
+    "model.mtl": "5ca02d583d95e22f0f59bfe599dc044c22fbe131a320ef9055fd5418b487e6a9",
+    "model.obj": "1202be0eb923c1603b62efeee7885122ac79c9b22f71648be4fb0148b16eb77d",
+    "parts.json": "f80c6a2ff00e71c9246614b69772fefaa815c3e5e3d458a570a78bcd0148e4fb",
+    "repair_config.json": "1c597fad18e2e35352a52a9fde8ff428b5b80e865b4197c2dcf5fc821d176c34",
+    "repair_report.json": "88cf82b1a5896939f6d46da1fd73b33685fefee3dbdf9174598bc24bfc087cb6"
+  },
+  "metameshes": 6,
+  "mesh_groups": 80,
+  "lods": 4,
+  "items": 6,
+  "motions": {
+    "A_run": {
+      "animation": "anim_run_forward_unarmed",
+      "frames": 25,
+      "worst_frame": 24,
+      "edge_ratio_p99": 4.948621641188435,
+      "finite": true,
+      "method": "experimental local scale hierarchy; no engine physics or IK"
+    },
+    "A_bow": {
+      "animation": "anim_bow",
+      "frames": 150,
+      "worst_frame": 1,
+      "edge_ratio_p99": 7.261395733650272,
+      "finite": true,
+      "method": "experimental local scale hierarchy; no engine physics or IK"
+    },
+    "B_run": {
+      "animation": "anim_run_forward_unarmed",
+      "frames": 25,
+      "worst_frame": 23,
+      "edge_ratio_p99": 5.770594239996039,
+      "finite": true,
+      "method": "experimental local scale hierarchy; no engine physics or IK"
+    },
+    "B_bow": {
+      "animation": "anim_bow",
+      "frames": 150,
+      "worst_frame": 1,
+      "edge_ratio_p99": 10.496503020856304,
+      "finite": true,
+      "method": "experimental local scale hierarchy; no engine physics or IK"
+    }
+  },
+  "cloth_enabled": false,
+  "game_verified": false,
+  "engine_scale_convention_verified": false,
+  "inventory_preview_supported": false,
+  "appearance_quality_verified": false,
+  "known_visual_issues": [
+    "sleeve/cuff and shoulder deformation",
+    "skirt/panel deformation in predicted motion"
+  ],
+  "delivery_type": "experimental mechanism probe, not production equipment"
+}
