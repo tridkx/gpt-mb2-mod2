@@ -1,0 +1,293 @@
+{
+  "status": "pass",
+  "final_package_sha256": "8ca857fc5a2b0ccd4c00b7c41f57a5c019606ccd17891362829d35c8cfdc9504",
+  "root_positions": 1088,
+  "maximum_solver_travel_m": 0.20000000298023224,
+  "bending_stiffness": 0.18,
+  "gravity": 7,
+  "poses": [
+    {
+      "animation": "rest",
+      "frame": 0,
+      "settle_seconds": 3,
+      "before": {
+        "covered_samples": 10406,
+        "inside_samples": 0,
+        "minimum_gap_m": 0.019663785984034038,
+        "median_gap_m": 0.03722979208867762,
+        "worst_sample_local": [
+          0.0015735633724034412,
+          -0.10819440278740443,
+          1.201391792961019
+        ]
+      },
+      "settled": {
+        "covered_samples": 12047,
+        "inside_samples": 0,
+        "minimum_gap_m": 0.003638211296289065,
+        "median_gap_m": 0.04418664886931131,
+        "worst_sample_local": [
+          0.02228653287351175,
+          -0.11025769133586708,
+          1.4075862954165044
+        ]
+      },
+      "maximum_rear_motion_m": 0.07555555671329851,
+      "median_rear_motion_m": 0.026772473365431745,
+      "median_rear_drop_m": 0.01295186716522978,
+      "maximum_fixed_root_drift_m": 0.0,
+      "maximum_distance_excess_m": 1.0928757898653885e-16,
+      "remaining_capsule_penetration_m": 0.00017886708135411732,
+      "initial_collision_lift_m": 0.006237509330240254,
+      "worst_collision_rest": [
+        0.08053783442395002,
+        -0.07376674354875945,
+        1.4401919556579372
+      ],
+      "worst_collision_travel": 0.019607843831181526
+    },
+    {
+      "animation": "idle",
+      "frame": 169,
+      "settle_seconds": 3,
+      "before": {
+        "covered_samples": 10362,
+        "inside_samples": 0,
+        "minimum_gap_m": 0.020449191473839,
+        "median_gap_m": 0.036843464347220786,
+        "worst_sample_local": [
+          0.02930239127880611,
+          -0.13068071577020265,
+          1.3963109587011875
+        ]
+      },
+      "settled": {
+        "covered_samples": 11301,
+        "inside_samples": 0,
+        "minimum_gap_m": 0.005780276621487224,
+        "median_gap_m": 0.04268799856793859,
+        "worst_sample_local": [
+          0.037675740689572496,
+          -0.11641268726332425,
+          1.3544275474082337
+        ]
+      },
+      "maximum_rear_motion_m": 0.09430621890732697,
+      "median_rear_motion_m": 0.03552606828770909,
+      "median_rear_drop_m": 0.007459876911501073,
+      "maximum_fixed_root_drift_m": 0.0,
+      "maximum_distance_excess_m": 1.0755285551056204e-16,
+      "remaining_capsule_penetration_m": 0.0005041987896140962,
+      "initial_collision_lift_m": 0.007077768013270647,
+      "worst_collision_rest": [
+        -0.09493832346836939,
+        -0.12459760885124638,
+        1.4220721350060188
+      ],
+      "worst_collision_travel": 0.03921568766236305
+    },
+    {
+      "animation": "idle",
+      "frame": 1000,
+      "settle_seconds": 3,
+      "before": {
+        "covered_samples": 10387,
+        "inside_samples": 0,
+        "minimum_gap_m": 0.019535203949915883,
+        "median_gap_m": 0.03694661332350034,
+        "worst_sample_local": [
+          0.0019981602570419933,
+          -0.1085644850023648,
+          1.2050387076209441
+        ]
+      },
+      "settled": {
+        "covered_samples": 11407,
+        "inside_samples": 0,
+        "minimum_gap_m": 0.005155499531706548,
+        "median_gap_m": 0.04109705319249246,
+        "worst_sample_local": [
+          0.06225763455024244,
+          -0.11679336621260426,
+          1.377862333992762
+        ]
+      },
+      "maximum_rear_motion_m": 0.08722100917590296,
+      "median_rear_motion_m": 0.03349454230379779,
+      "median_rear_drop_m": 0.0013035598973143436,
+      "maximum_fixed_root_drift_m": 0.0,
+      "maximum_distance_excess_m": 1.0581813203458523e-16,
+      "remaining_capsule_penetration_m": 0.00020293020753901867,
+      "initial_collision_lift_m": 0.00703196337046319,
+      "worst_collision_rest": [
+        -0.09074215447529355,
+        -0.1266956933477843,
+        1.4216906650975574
+      ],
+      "worst_collision_travel": 0.03921568766236305
+    },
+    {
+      "animation": "run",
+      "frame": 1,
+      "settle_seconds": 3,
+      "before": {
+        "covered_samples": 10753,
+        "inside_samples": 0,
+        "minimum_gap_m": 0.021623883651370177,
+        "median_gap_m": 0.03888507668132496,
+        "worst_sample_local": [
+          -0.0076849826349042845,
+          -0.0709389629984013,
+          1.0434110833079449
+        ]
+      },
+      "settled": {
+        "covered_samples": 11872,
+        "inside_samples": 0,
+        "minimum_gap_m": 0.003185784179067147,
+        "median_gap_m": 0.027903337868185784,
+        "worst_sample_local": [
+          0.007728851098702045,
+          -0.08751359878480494,
+          1.205372094189983
+        ]
+      },
+      "maximum_rear_motion_m": 0.07991138545570926,
+      "median_rear_motion_m": 0.02829341868205225,
+      "median_rear_drop_m": 0.01974155230543939,
+      "maximum_fixed_root_drift_m": 0.0,
+      "maximum_distance_excess_m": 1.1102230246251565e-16,
+      "remaining_capsule_penetration_m": 0.0005608998862376289,
+      "initial_collision_lift_m": 0.008461061534867254,
+      "worst_collision_rest": [
+        0.07491115327414377,
+        -0.11143689700932669,
+        1.4482981912127428
+      ],
+      "worst_collision_travel": 0.019607843831181526
+    },
+    {
+      "animation": "run",
+      "frame": 13,
+      "settle_seconds": 3,
+      "before": {
+        "covered_samples": 10457,
+        "inside_samples": 0,
+        "minimum_gap_m": 0.021585923499208695,
+        "median_gap_m": 0.03846688173174216,
+        "worst_sample_local": [
+          -0.021056051776341966,
+          -0.10526297850810147,
+          1.206576419558707
+        ]
+      },
+      "settled": {
+        "covered_samples": 11625,
+        "inside_samples": 0,
+        "minimum_gap_m": 0.003080438694684176,
+        "median_gap_m": 0.026903758436219713,
+        "worst_sample_local": [
+          -0.02056918760135726,
+          -0.08583716998286603,
+          1.202382136343971
+        ]
+      },
+      "maximum_rear_motion_m": 0.08576904515322953,
+      "median_rear_motion_m": 0.02717607499150785,
+      "median_rear_drop_m": 0.021378518688196957,
+      "maximum_fixed_root_drift_m": 0.0,
+      "maximum_distance_excess_m": 1.0755285551056204e-16,
+      "remaining_capsule_penetration_m": 0.00014106831884345514,
+      "initial_collision_lift_m": 0.007746770062043162,
+      "worst_collision_rest": [
+        0.06213191134068552,
+        -0.10142331191221388,
+        1.4651782346621616
+      ],
+      "worst_collision_travel": 0.01568627543747425
+    },
+    {
+      "animation": "bow",
+      "frame": 75,
+      "settle_seconds": 3,
+      "before": {
+        "covered_samples": 10798,
+        "inside_samples": 0,
+        "minimum_gap_m": 0.022197667481705208,
+        "median_gap_m": 0.03865605722201526,
+        "worst_sample_local": [
+          0.0780788020396137,
+          -0.07552042102254977,
+          1.0582100256500107
+        ]
+      },
+      "settled": {
+        "covered_samples": 11664,
+        "inside_samples": 0,
+        "minimum_gap_m": 0.00522124662022061,
+        "median_gap_m": 0.04037382936860888,
+        "worst_sample_local": [
+          -0.05343388572763363,
+          -0.11602322050453054,
+          1.3338369376202135
+        ]
+      },
+      "maximum_rear_motion_m": 0.0782631211502207,
+      "median_rear_motion_m": 0.03180171464065194,
+      "median_rear_drop_m": 0.01709173135378772,
+      "maximum_fixed_root_drift_m": 0.0,
+      "maximum_distance_excess_m": 1.0755285551056204e-16,
+      "remaining_capsule_penetration_m": 0.00023227061388019497,
+      "initial_collision_lift_m": 0.010371729210672864,
+      "worst_collision_rest": [
+        0.07491115327414377,
+        -0.11143689700932669,
+        1.4482981912127428
+      ],
+      "worst_collision_travel": 0.019607843831181526
+    },
+    {
+      "animation": "riding",
+      "frame": 10,
+      "settle_seconds": 3,
+      "before": {
+        "covered_samples": 10837,
+        "inside_samples": 0,
+        "minimum_gap_m": 0.018653689368752543,
+        "median_gap_m": 0.04299713826395082,
+        "worst_sample_local": [
+          -0.012474572703992947,
+          -0.12994715580728253,
+          1.4174550377658668
+        ]
+      },
+      "settled": {
+        "covered_samples": 11777,
+        "inside_samples": 16,
+        "minimum_gap_m": -0.003790954069274821,
+        "median_gap_m": 0.016832687724944874,
+        "worst_sample_local": [
+          -0.00811547065180126,
+          -0.07458075687734547,
+          1.1834430669455045
+        ]
+      },
+      "maximum_rear_motion_m": 0.08868834095408216,
+      "median_rear_motion_m": 0.034123835057132616,
+      "median_rear_drop_m": -0.0049880595068398925,
+      "maximum_fixed_root_drift_m": 0.0,
+      "maximum_distance_excess_m": 2.220446049250313e-16,
+      "remaining_capsule_penetration_m": 0.00040983053594640306,
+      "initial_collision_lift_m": 0.0066685845597769244,
+      "worst_collision_rest": [
+        0.07491115327414377,
+        -0.11143689700932669,
+        1.4482981912127428
+      ],
+      "worst_collision_travel": 0.019607843831181526
+    }
+  ],
+  "game_test_verified": false,
+  "acceptance": "User prioritizes natural silhouette and accepts visually minor clipping; CPU rear-ray inside sample fraction must remain below 1% per sampled pose. This does not measure visual severity in game.",
+  "scope": "Approximate CPU constraint/gravity/capsule relaxation of seven static native poses, 120Hz for 3s. No engine solver, animated inertia, wind, dummy triangle collisions, body sliders or IK. A diagnostic, not game acceptance."
+}

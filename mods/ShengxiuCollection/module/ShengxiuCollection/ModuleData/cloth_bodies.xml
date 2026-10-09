@@ -70,44 +70,450 @@
   </body>
   <body name="sx_mingyu_back_collision" owner_skeleton="human_skeleton">
     <capsules>
-      <capsule name="sx_mingyu_back_-0.065" length="0.310074" origin="0.000, 0.000, 0.000" frame="0.000000, -0.021919, 0.999760, 0.000000, 0.000000, 0.999760, 0.021919, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.065000, -0.044354, 0.960000, 1.000000">
+      <capsule name="sx_mingyu_free_back_-0.120_0" length="0.332752" origin="0.000, 0.000, 0.000" frame="0.000000, 0.274189, 0.961676, 0.000000, 0.000000, 0.961676, -0.274189, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.120000, -0.106441, 0.840000, 1.000000">
         <points>
-          <point radius="0.045000">
+          <point radius="0.070000">
             <bones>
-              <bone name="spine" weight="1.000" />
+              <bone name="pelvis" weight="0.567586" />
+              <bone name="spine" weight="0.432414" />
             </bones>
           </point>
-          <point radius="0.045000">
+          <point radius="0.070000">
             <bones>
-              <bone name="spine2" weight="1.000" />
+              <bone name="spine" weight="0.503095" />
+              <bone name="spine1" weight="0.496905" />
             </bones>
           </point>
         </points>
       </capsule>
-      <capsule name="sx_mingyu_back_0.000" length="0.310074" origin="0.000, 0.000, 0.000" frame="0.000000, -0.021919, 0.999760, 0.000000, 0.000000, 0.999760, 0.021919, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, -0.044354, 0.960000, 1.000000">
+      <capsule name="sx_mingyu_free_back_-0.120_1" length="0.144768" origin="0.000, 0.000, 0.000" frame="0.000000, -0.254530, 0.967065, 0.000000, 0.000000, 0.967065, 0.254530, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.120000, -0.015204, 1.160000, 1.000000">
         <points>
-          <point radius="0.045000">
+          <point radius="0.070000">
             <bones>
-              <bone name="spine" weight="1.000" />
+              <bone name="spine" weight="0.503095" />
+              <bone name="spine1" weight="0.496905" />
             </bones>
           </point>
-          <point radius="0.045000">
+          <point radius="0.065000">
             <bones>
-              <bone name="spine2" weight="1.000" />
+              <bone name="spine1" weight="0.505531" />
+              <bone name="spine2" weight="0.494469" />
             </bones>
           </point>
         </points>
       </capsule>
-      <capsule name="sx_mingyu_back_0.065" length="0.310074" origin="0.000, 0.000, 0.000" frame="0.000000, -0.021919, 0.999760, 0.000000, 0.000000, 0.999760, 0.021919, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.065000, -0.044354, 0.960000, 1.000000">
+      <capsule name="sx_mingyu_free_back_-0.120_2" length="0.094043" origin="0.000, 0.000, 0.000" frame="0.000000, -0.290056, 0.957010, 0.000000, 0.000000, 0.957010, 0.290056, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.120000, -0.052052, 1.300000, 1.000000">
         <points>
-          <point radius="0.045000">
+          <point radius="0.065000">
             <bones>
-              <bone name="spine" weight="1.000" />
+              <bone name="spine1" weight="0.505531" />
+              <bone name="spine2" weight="0.494469" />
             </bones>
           </point>
-          <point radius="0.045000">
+          <point radius="0.040000">
             <bones>
-              <bone name="spine2" weight="1.000" />
+              <bone name="spine2" weight="0.802251" />
+              <bone name="spine1" weight="0.197749" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_-0.120_3" length="0.051341" origin="0.000, 0.000, 0.000" frame="0.000000, -0.227030, 0.973888, 0.000000, 0.000000, 0.973888, 0.227030, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.120000, -0.079330, 1.390000, 1.000000">
+        <points>
+          <point radius="0.040000">
+            <bones>
+              <bone name="spine2" weight="0.802251" />
+              <bone name="spine1" weight="0.197749" />
+            </bones>
+          </point>
+          <point radius="0.025000">
+            <bones>
+              <bone name="spine2" weight="0.934037" />
+              <bone name="neck" weight="0.065963" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_-0.080_0" length="0.332752" origin="0.000, 0.000, 0.000" frame="0.000000, 0.274189, 0.961676, 0.000000, 0.000000, 0.961676, -0.274189, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.080000, -0.106441, 0.840000, 1.000000">
+        <points>
+          <point radius="0.070000">
+            <bones>
+              <bone name="pelvis" weight="0.567586" />
+              <bone name="spine" weight="0.432414" />
+            </bones>
+          </point>
+          <point radius="0.070000">
+            <bones>
+              <bone name="spine" weight="0.503095" />
+              <bone name="spine1" weight="0.496905" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_-0.080_1" length="0.144768" origin="0.000, 0.000, 0.000" frame="0.000000, -0.254530, 0.967065, 0.000000, 0.000000, 0.967065, 0.254530, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.080000, -0.015204, 1.160000, 1.000000">
+        <points>
+          <point radius="0.070000">
+            <bones>
+              <bone name="spine" weight="0.503095" />
+              <bone name="spine1" weight="0.496905" />
+            </bones>
+          </point>
+          <point radius="0.065000">
+            <bones>
+              <bone name="spine1" weight="0.505531" />
+              <bone name="spine2" weight="0.494469" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_-0.080_2" length="0.094043" origin="0.000, 0.000, 0.000" frame="0.000000, -0.290056, 0.957010, 0.000000, 0.000000, 0.957010, 0.290056, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.080000, -0.052052, 1.300000, 1.000000">
+        <points>
+          <point radius="0.065000">
+            <bones>
+              <bone name="spine1" weight="0.505531" />
+              <bone name="spine2" weight="0.494469" />
+            </bones>
+          </point>
+          <point radius="0.040000">
+            <bones>
+              <bone name="spine2" weight="0.802251" />
+              <bone name="spine1" weight="0.197749" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_-0.080_3" length="0.051341" origin="0.000, 0.000, 0.000" frame="0.000000, -0.227030, 0.973888, 0.000000, 0.000000, 0.973888, 0.227030, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.080000, -0.079330, 1.390000, 1.000000">
+        <points>
+          <point radius="0.040000">
+            <bones>
+              <bone name="spine2" weight="0.802251" />
+              <bone name="spine1" weight="0.197749" />
+            </bones>
+          </point>
+          <point radius="0.025000">
+            <bones>
+              <bone name="spine2" weight="0.934037" />
+              <bone name="neck" weight="0.065963" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_-0.040_0" length="0.332752" origin="0.000, 0.000, 0.000" frame="0.000000, 0.274189, 0.961676, 0.000000, 0.000000, 0.961676, -0.274189, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.040000, -0.106441, 0.840000, 1.000000">
+        <points>
+          <point radius="0.070000">
+            <bones>
+              <bone name="pelvis" weight="0.567586" />
+              <bone name="spine" weight="0.432414" />
+            </bones>
+          </point>
+          <point radius="0.070000">
+            <bones>
+              <bone name="spine" weight="0.503095" />
+              <bone name="spine1" weight="0.496905" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_-0.040_1" length="0.144768" origin="0.000, 0.000, 0.000" frame="0.000000, -0.254530, 0.967065, 0.000000, 0.000000, 0.967065, 0.254530, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.040000, -0.015204, 1.160000, 1.000000">
+        <points>
+          <point radius="0.070000">
+            <bones>
+              <bone name="spine" weight="0.503095" />
+              <bone name="spine1" weight="0.496905" />
+            </bones>
+          </point>
+          <point radius="0.065000">
+            <bones>
+              <bone name="spine1" weight="0.505531" />
+              <bone name="spine2" weight="0.494469" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_-0.040_2" length="0.094043" origin="0.000, 0.000, 0.000" frame="0.000000, -0.290056, 0.957010, 0.000000, 0.000000, 0.957010, 0.290056, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.040000, -0.052052, 1.300000, 1.000000">
+        <points>
+          <point radius="0.065000">
+            <bones>
+              <bone name="spine1" weight="0.505531" />
+              <bone name="spine2" weight="0.494469" />
+            </bones>
+          </point>
+          <point radius="0.040000">
+            <bones>
+              <bone name="spine2" weight="0.802251" />
+              <bone name="spine1" weight="0.197749" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_-0.040_3" length="0.051341" origin="0.000, 0.000, 0.000" frame="0.000000, -0.227030, 0.973888, 0.000000, 0.000000, 0.973888, 0.227030, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.040000, -0.079330, 1.390000, 1.000000">
+        <points>
+          <point radius="0.040000">
+            <bones>
+              <bone name="spine2" weight="0.802251" />
+              <bone name="spine1" weight="0.197749" />
+            </bones>
+          </point>
+          <point radius="0.025000">
+            <bones>
+              <bone name="spine2" weight="0.934037" />
+              <bone name="neck" weight="0.065963" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_0.000_0" length="0.332752" origin="0.000, 0.000, 0.000" frame="0.000000, 0.274189, 0.961676, 0.000000, 0.000000, 0.961676, -0.274189, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, -0.106441, 0.840000, 1.000000">
+        <points>
+          <point radius="0.070000">
+            <bones>
+              <bone name="pelvis" weight="0.567586" />
+              <bone name="spine" weight="0.432414" />
+            </bones>
+          </point>
+          <point radius="0.070000">
+            <bones>
+              <bone name="spine" weight="0.503095" />
+              <bone name="spine1" weight="0.496905" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_0.000_1" length="0.144768" origin="0.000, 0.000, 0.000" frame="0.000000, -0.254530, 0.967065, 0.000000, 0.000000, 0.967065, 0.254530, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, -0.015204, 1.160000, 1.000000">
+        <points>
+          <point radius="0.070000">
+            <bones>
+              <bone name="spine" weight="0.503095" />
+              <bone name="spine1" weight="0.496905" />
+            </bones>
+          </point>
+          <point radius="0.065000">
+            <bones>
+              <bone name="spine1" weight="0.505531" />
+              <bone name="spine2" weight="0.494469" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_0.000_2" length="0.094043" origin="0.000, 0.000, 0.000" frame="0.000000, -0.290056, 0.957010, 0.000000, 0.000000, 0.957010, 0.290056, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, -0.052052, 1.300000, 1.000000">
+        <points>
+          <point radius="0.065000">
+            <bones>
+              <bone name="spine1" weight="0.505531" />
+              <bone name="spine2" weight="0.494469" />
+            </bones>
+          </point>
+          <point radius="0.040000">
+            <bones>
+              <bone name="spine2" weight="0.802251" />
+              <bone name="spine1" weight="0.197749" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_0.000_3" length="0.051341" origin="0.000, 0.000, 0.000" frame="0.000000, -0.227030, 0.973888, 0.000000, 0.000000, 0.973888, 0.227030, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, -0.079330, 1.390000, 1.000000">
+        <points>
+          <point radius="0.040000">
+            <bones>
+              <bone name="spine2" weight="0.802251" />
+              <bone name="spine1" weight="0.197749" />
+            </bones>
+          </point>
+          <point radius="0.025000">
+            <bones>
+              <bone name="spine2" weight="0.934037" />
+              <bone name="neck" weight="0.065963" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_0.040_0" length="0.332752" origin="0.000, 0.000, 0.000" frame="0.000000, 0.274189, 0.961676, 0.000000, 0.000000, 0.961676, -0.274189, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.040000, -0.106441, 0.840000, 1.000000">
+        <points>
+          <point radius="0.070000">
+            <bones>
+              <bone name="pelvis" weight="0.567586" />
+              <bone name="spine" weight="0.432414" />
+            </bones>
+          </point>
+          <point radius="0.070000">
+            <bones>
+              <bone name="spine" weight="0.503095" />
+              <bone name="spine1" weight="0.496905" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_0.040_1" length="0.144768" origin="0.000, 0.000, 0.000" frame="0.000000, -0.254530, 0.967065, 0.000000, 0.000000, 0.967065, 0.254530, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.040000, -0.015204, 1.160000, 1.000000">
+        <points>
+          <point radius="0.070000">
+            <bones>
+              <bone name="spine" weight="0.503095" />
+              <bone name="spine1" weight="0.496905" />
+            </bones>
+          </point>
+          <point radius="0.065000">
+            <bones>
+              <bone name="spine1" weight="0.505531" />
+              <bone name="spine2" weight="0.494469" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_0.040_2" length="0.094043" origin="0.000, 0.000, 0.000" frame="0.000000, -0.290056, 0.957010, 0.000000, 0.000000, 0.957010, 0.290056, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.040000, -0.052052, 1.300000, 1.000000">
+        <points>
+          <point radius="0.065000">
+            <bones>
+              <bone name="spine1" weight="0.505531" />
+              <bone name="spine2" weight="0.494469" />
+            </bones>
+          </point>
+          <point radius="0.040000">
+            <bones>
+              <bone name="spine2" weight="0.802251" />
+              <bone name="spine1" weight="0.197749" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_0.040_3" length="0.051341" origin="0.000, 0.000, 0.000" frame="0.000000, -0.227030, 0.973888, 0.000000, 0.000000, 0.973888, 0.227030, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.040000, -0.079330, 1.390000, 1.000000">
+        <points>
+          <point radius="0.040000">
+            <bones>
+              <bone name="spine2" weight="0.802251" />
+              <bone name="spine1" weight="0.197749" />
+            </bones>
+          </point>
+          <point radius="0.025000">
+            <bones>
+              <bone name="spine2" weight="0.934037" />
+              <bone name="neck" weight="0.065963" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_0.080_0" length="0.332752" origin="0.000, 0.000, 0.000" frame="0.000000, 0.274189, 0.961676, 0.000000, 0.000000, 0.961676, -0.274189, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.080000, -0.106441, 0.840000, 1.000000">
+        <points>
+          <point radius="0.070000">
+            <bones>
+              <bone name="pelvis" weight="0.567586" />
+              <bone name="spine" weight="0.432414" />
+            </bones>
+          </point>
+          <point radius="0.070000">
+            <bones>
+              <bone name="spine" weight="0.503095" />
+              <bone name="spine1" weight="0.496905" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_0.080_1" length="0.144768" origin="0.000, 0.000, 0.000" frame="0.000000, -0.254530, 0.967065, 0.000000, 0.000000, 0.967065, 0.254530, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.080000, -0.015204, 1.160000, 1.000000">
+        <points>
+          <point radius="0.070000">
+            <bones>
+              <bone name="spine" weight="0.503095" />
+              <bone name="spine1" weight="0.496905" />
+            </bones>
+          </point>
+          <point radius="0.065000">
+            <bones>
+              <bone name="spine1" weight="0.505531" />
+              <bone name="spine2" weight="0.494469" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_0.080_2" length="0.094043" origin="0.000, 0.000, 0.000" frame="0.000000, -0.290056, 0.957010, 0.000000, 0.000000, 0.957010, 0.290056, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.080000, -0.052052, 1.300000, 1.000000">
+        <points>
+          <point radius="0.065000">
+            <bones>
+              <bone name="spine1" weight="0.505531" />
+              <bone name="spine2" weight="0.494469" />
+            </bones>
+          </point>
+          <point radius="0.040000">
+            <bones>
+              <bone name="spine2" weight="0.802251" />
+              <bone name="spine1" weight="0.197749" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_0.080_3" length="0.051341" origin="0.000, 0.000, 0.000" frame="0.000000, -0.227030, 0.973888, 0.000000, 0.000000, 0.973888, 0.227030, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.080000, -0.079330, 1.390000, 1.000000">
+        <points>
+          <point radius="0.040000">
+            <bones>
+              <bone name="spine2" weight="0.802251" />
+              <bone name="spine1" weight="0.197749" />
+            </bones>
+          </point>
+          <point radius="0.025000">
+            <bones>
+              <bone name="spine2" weight="0.934037" />
+              <bone name="neck" weight="0.065963" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_0.120_0" length="0.332752" origin="0.000, 0.000, 0.000" frame="0.000000, 0.274189, 0.961676, 0.000000, 0.000000, 0.961676, -0.274189, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.120000, -0.106441, 0.840000, 1.000000">
+        <points>
+          <point radius="0.070000">
+            <bones>
+              <bone name="pelvis" weight="0.567586" />
+              <bone name="spine" weight="0.432414" />
+            </bones>
+          </point>
+          <point radius="0.070000">
+            <bones>
+              <bone name="spine" weight="0.503095" />
+              <bone name="spine1" weight="0.496905" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_0.120_1" length="0.144768" origin="0.000, 0.000, 0.000" frame="0.000000, -0.254530, 0.967065, 0.000000, 0.000000, 0.967065, 0.254530, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.120000, -0.015204, 1.160000, 1.000000">
+        <points>
+          <point radius="0.070000">
+            <bones>
+              <bone name="spine" weight="0.503095" />
+              <bone name="spine1" weight="0.496905" />
+            </bones>
+          </point>
+          <point radius="0.065000">
+            <bones>
+              <bone name="spine1" weight="0.505531" />
+              <bone name="spine2" weight="0.494469" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_0.120_2" length="0.094043" origin="0.000, 0.000, 0.000" frame="0.000000, -0.290056, 0.957010, 0.000000, 0.000000, 0.957010, 0.290056, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.120000, -0.052052, 1.300000, 1.000000">
+        <points>
+          <point radius="0.065000">
+            <bones>
+              <bone name="spine1" weight="0.505531" />
+              <bone name="spine2" weight="0.494469" />
+            </bones>
+          </point>
+          <point radius="0.040000">
+            <bones>
+              <bone name="spine2" weight="0.802251" />
+              <bone name="spine1" weight="0.197749" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_free_back_0.120_3" length="0.051341" origin="0.000, 0.000, 0.000" frame="0.000000, -0.227030, 0.973888, 0.000000, 0.000000, 0.973888, 0.227030, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.120000, -0.079330, 1.390000, 1.000000">
+        <points>
+          <point radius="0.040000">
+            <bones>
+              <bone name="spine2" weight="0.802251" />
+              <bone name="spine1" weight="0.197749" />
+            </bones>
+          </point>
+          <point radius="0.025000">
+            <bones>
+              <bone name="spine2" weight="0.934037" />
+              <bone name="neck" weight="0.065963" />
             </bones>
           </point>
         </points>
