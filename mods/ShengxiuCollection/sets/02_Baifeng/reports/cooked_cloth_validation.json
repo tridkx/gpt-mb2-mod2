@@ -1,0 +1,1871 @@
+{
+  "status": "pass",
+  "final_package_sha256": "368ebcf077393ee65bc903f1f63faefbfc30a90e776a9d2e4d32b477374ada4f",
+  "uncooked_package_sha256": "1c1aa82bf00815ae209dfa6005187f19124e24658b76858e5e0b4c5ec2213c4e",
+  "all_runtime_geometry_alpha_and_skin_streams_preserved": true,
+  "cooked_meshes": [
+    {
+      "mesh": "sx_baifeng_body_13.lod1",
+      "guid": "236b3b97-62a4-d1d9-0b8b-d143842788b1",
+      "metamesh": "sx_baifeng_body",
+      "lod": 1,
+      "bytes": 182096,
+      "render_vertices": 2804,
+      "simulation_vertices": 2316,
+      "fixed_positions": 855,
+      "boundary_fixed_positions": 200,
+      "active_positions": 1461,
+      "stretch_constraints": 3471,
+      "bend_constraints": 2147,
+      "shear_constraints": 0,
+      "parallel_sets": 24,
+      "dummy_sets": 16,
+      "max_geodesic_anchor_length": 0.932967721490344,
+      "sha256": "17c35e814e5355d8325c103e2c5f2cea6617453f427fc129de32e2e9b91aa7d6",
+      "root_fixes": [
+        {
+          "component_positions": 10,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            435,
+            436,
+            437,
+            438,
+            439,
+            440,
+            485,
+            486
+          ],
+          "bounds": [
+            [
+              -0.021245344,
+              0.1853958,
+              0.43135056
+            ],
+            [
+              -0.0011263234,
+              0.18747996,
+              0.49469283
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            441,
+            442,
+            443,
+            468,
+            469,
+            488,
+            504,
+            505
+          ],
+          "bounds": [
+            [
+              -0.0046294,
+              0.18538138,
+              0.4759017
+            ],
+            [
+              0.011964661,
+              0.1860963,
+              0.49477416
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            445,
+            447,
+            448,
+            449
+          ],
+          "bounds": [
+            [
+              -0.0011268508,
+              0.18392232,
+              0.49299312
+            ],
+            [
+              0.016099522,
+              0.1855707,
+              0.5140985
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            452,
+            453,
+            454,
+            455
+          ],
+          "bounds": [
+            [
+              -0.017905416,
+              0.1838891,
+              0.49301714
+            ],
+            [
+              -0.0011237469,
+              0.18557349,
+              0.5139828
+            ]
+          ]
+        },
+        {
+          "component_positions": 13,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            501,
+            502,
+            503
+          ],
+          "bounds": [
+            [
+              -0.0048561846,
+              0.13864377,
+              0.5115701
+            ],
+            [
+              0.0030090315,
+              0.18485914,
+              0.9420228
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            470,
+            471
+          ],
+          "bounds": [
+            [
+              -0.0038975577,
+              0.18610337,
+              0.40824765
+            ],
+            [
+              0.005924135,
+              0.18819176,
+              0.47593072
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            474,
+            475
+          ],
+          "bounds": [
+            [
+              -0.012516805,
+              0.18610896,
+              0.4083563
+            ],
+            [
+              -0.0011711667,
+              0.18818438,
+              0.4759321
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            479,
+            487
+          ],
+          "bounds": [
+            [
+              0.0064624827,
+              0.1857047,
+              0.4314013
+            ],
+            [
+              0.014717768,
+              0.18747006,
+              0.48426574
+            ]
+          ]
+        },
+        {
+          "component_positions": 11,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            598,
+            599,
+            600,
+            604,
+            605,
+            606
+          ],
+          "bounds": [
+            [
+              -0.24961074,
+              0.13265301,
+              0.14717448
+            ],
+            [
+              -0.1986734,
+              0.1562013,
+              0.18682912
+            ]
+          ]
+        },
+        {
+          "component_positions": 11,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            704,
+            705,
+            706,
+            710,
+            711,
+            712
+          ],
+          "bounds": [
+            [
+              0.1979169,
+              0.13268915,
+              0.14665289
+            ],
+            [
+              0.24886252,
+              0.15624253,
+              0.1863094
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1594,
+            1595,
+            1600,
+            1601
+          ],
+          "bounds": [
+            [
+              -0.1223604,
+              -0.23308931,
+              0.36167875
+            ],
+            [
+              -0.10993068,
+              -0.22848192,
+              0.37880424
+            ]
+          ]
+        },
+        {
+          "component_positions": 13,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1597,
+            1598,
+            1599,
+            1654,
+            1655,
+            1672
+          ],
+          "bounds": [
+            [
+              -0.14392146,
+              -0.24737419,
+              0.30737224
+            ],
+            [
+              -0.119043924,
+              -0.22847004,
+              0.3788376
+            ]
+          ]
+        },
+        {
+          "component_positions": 27,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1619,
+            1670,
+            1671
+          ],
+          "bounds": [
+            [
+              -0.12426108,
+              -0.22901466,
+              0.37681195
+            ],
+            [
+              -0.07235038,
+              -0.06493723,
+              0.9330236
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1611,
+            1612,
+            1613
+          ],
+          "bounds": [
+            [
+              -0.1370842,
+              -0.22895478,
+              0.37699562
+            ],
+            [
+              -0.12057637,
+              -0.22228715,
+              0.4013718
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1639,
+            1642
+          ],
+          "bounds": [
+            [
+              -0.12841435,
+              -0.25379285,
+              0.28181505
+            ],
+            [
+              -0.11933458,
+              -0.23436394,
+              0.3572327
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1643,
+            1646
+          ],
+          "bounds": [
+            [
+              -0.13662884,
+              -0.2537075,
+              0.2822001
+            ],
+            [
+              -0.12254214,
+              -0.23430958,
+              0.3573626
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1650,
+            1656
+          ],
+          "bounds": [
+            [
+              -0.11819112,
+              -0.24748439,
+              0.30635515
+            ],
+            [
+              -0.10990065,
+              -0.23177171,
+              0.3664723
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1676,
+            1677,
+            1681,
+            1682
+          ],
+          "bounds": [
+            [
+              0.10935136,
+              -0.23434643,
+              0.35673192
+            ],
+            [
+              0.12526819,
+              -0.22846758,
+              0.37844428
+            ]
+          ]
+        },
+        {
+          "component_positions": 10,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1678,
+            1679,
+            1680,
+            1735,
+            1736,
+            1754
+          ],
+          "bounds": [
+            [
+              0.12098617,
+              -0.24735849,
+              0.3069799
+            ],
+            [
+              0.14328958,
+              -0.2284557,
+              0.37847757
+            ]
+          ]
+        },
+        {
+          "component_positions": 27,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1700,
+            1751,
+            1752
+          ],
+          "bounds": [
+            [
+              0.07236243,
+              -0.2290005,
+              0.37645614
+            ],
+            [
+              0.12371088,
+              -0.064920835,
+              0.93290746
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1692,
+            1693,
+            1694
+          ],
+          "bounds": [
+            [
+              0.12002816,
+              -0.22894023,
+              0.37663096
+            ],
+            [
+              0.13652919,
+              -0.22227292,
+              0.40101472
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1720,
+            1721
+          ],
+          "bounds": [
+            [
+              0.118747346,
+              -0.2537786,
+              0.28145787
+            ],
+            [
+              0.12775712,
+              -0.23434941,
+              0.35687017
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1724,
+            1725
+          ],
+          "bounds": [
+            [
+              0.12195513,
+              -0.25369254,
+              0.2818243
+            ],
+            [
+              0.13597316,
+              -0.2342947,
+              0.35699293
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1729,
+            1737
+          ],
+          "bounds": [
+            [
+              0.10932166,
+              -0.24747105,
+              0.30602068
+            ],
+            [
+              0.117556654,
+              -0.23175822,
+              0.36613265
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1876,
+            1877,
+            1879,
+            1880,
+            1912,
+            1913
+          ],
+          "bounds": [
+            [
+              -0.06727205,
+              0.13733734,
+              0.8844929
+            ],
+            [
+              -0.047734328,
+              0.13855915,
+              0.9536308
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1881,
+            1882,
+            1883,
+            1979
+          ],
+          "bounds": [
+            [
+              -0.05096475,
+              0.13733697,
+              0.9319339
+            ],
+            [
+              -0.036282852,
+              0.13751619,
+              0.95359033
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1887,
+            1888,
+            1889
+          ],
+          "bounds": [
+            [
+              -0.047733568,
+              0.13548496,
+              0.9515972
+            ],
+            [
+              -0.032387633,
+              0.137389,
+              0.9802541
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1893,
+            1894,
+            1895
+          ],
+          "bounds": [
+            [
+              -0.06298808,
+              0.13549806,
+              0.951599
+            ],
+            [
+              -0.047733568,
+              0.13739029,
+              0.98025256
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1900,
+            1901
+          ],
+          "bounds": [
+            [
+              -0.051852357,
+              0.13730142,
+              0.85984284
+            ],
+            [
+              -0.043568138,
+              0.13979729,
+              0.9320029
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1905,
+            1908
+          ],
+          "bounds": [
+            [
+              -0.059879713,
+              0.13739039,
+              0.8599589
+            ],
+            [
+              -0.04772969,
+              0.13973227,
+              0.93196636
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1910,
+            1916
+          ],
+          "bounds": [
+            [
+              -0.04249044,
+              0.13724443,
+              0.88462704
+            ],
+            [
+              -0.034729198,
+              0.13877349,
+              0.94143057
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1927,
+            1928,
+            1933,
+            1934
+          ],
+          "bounds": [
+            [
+              0.035063155,
+              0.13733971,
+              0.93632704
+            ],
+            [
+              0.046590835,
+              0.13743643,
+              0.95354086
+            ]
+          ]
+        },
+        {
+          "component_positions": 16,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1930,
+            1931,
+            1932,
+            1963,
+            1966,
+            1977
+          ],
+          "bounds": [
+            [
+              0.04346266,
+              0.13734005,
+              0.85981774
+            ],
+            [
+              0.06600349,
+              0.13975196,
+              0.9535808
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1938,
+            1939,
+            1940
+          ],
+          "bounds": [
+            [
+              0.03117332,
+              0.13550061,
+              0.9515489
+            ],
+            [
+              0.046518225,
+              0.1373917,
+              0.98021704
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1944,
+            1945,
+            1946
+          ],
+          "bounds": [
+            [
+              0.046518225,
+              0.13548675,
+              0.9515465
+            ],
+            [
+              0.061784174,
+              0.13739307,
+              0.9802173
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1951,
+            1954
+          ],
+          "bounds": [
+            [
+              0.042240255,
+              0.13730186,
+              0.8597011
+            ],
+            [
+              0.05052661,
+              0.13981457,
+              0.9319459
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1961,
+            1967
+          ],
+          "bounds": [
+            [
+              0.033444647,
+              0.13724802,
+              0.8845295
+            ],
+            [
+              0.04121977,
+              0.13878298,
+              0.9413897
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        445,
+        447,
+        448,
+        449,
+        452,
+        453,
+        454,
+        455,
+        468,
+        469,
+        470,
+        471,
+        474,
+        475,
+        479,
+        485,
+        486,
+        487,
+        488,
+        501,
+        502,
+        503,
+        504,
+        505,
+        598,
+        599,
+        600,
+        604,
+        605,
+        606,
+        704,
+        705,
+        706,
+        710,
+        711,
+        712,
+        1594,
+        1595,
+        1597,
+        1598,
+        1599,
+        1600,
+        1601,
+        1611,
+        1612,
+        1613,
+        1619,
+        1639,
+        1642,
+        1643,
+        1646,
+        1650,
+        1654,
+        1655,
+        1656,
+        1670,
+        1671,
+        1672,
+        1676,
+        1677,
+        1678,
+        1679,
+        1680,
+        1681,
+        1682,
+        1692,
+        1693,
+        1694,
+        1700,
+        1720,
+        1721,
+        1724,
+        1725,
+        1729,
+        1735,
+        1736,
+        1737,
+        1751,
+        1752,
+        1754,
+        1876,
+        1877,
+        1879,
+        1880,
+        1881,
+        1882,
+        1883,
+        1887,
+        1888,
+        1889,
+        1893,
+        1894,
+        1895,
+        1900,
+        1901,
+        1905,
+        1908,
+        1910,
+        1912,
+        1913,
+        1916,
+        1927,
+        1928,
+        1930,
+        1931,
+        1932,
+        1933,
+        1934,
+        1938,
+        1939,
+        1940,
+        1944,
+        1945,
+        1946,
+        1951,
+        1954,
+        1961,
+        1963,
+        1966,
+        1967,
+        1977,
+        1979
+      ]
+    },
+    {
+      "mesh": "sx_baifeng_body_04",
+      "guid": "4e586f88-8b6b-2c07-bee5-3f184c0a9dc9",
+      "metamesh": "sx_baifeng_body",
+      "lod": 0,
+      "bytes": 329312,
+      "render_vertices": 8176,
+      "simulation_vertices": 5291,
+      "fixed_positions": 4349,
+      "boundary_fixed_positions": 208,
+      "active_positions": 942,
+      "stretch_constraints": 2729,
+      "bend_constraints": 2471,
+      "shear_constraints": 0,
+      "parallel_sets": 21,
+      "dummy_sets": 11,
+      "max_geodesic_anchor_length": 0.8733613530788165,
+      "sha256": "ad659c9d6ec4e02c868f7864ad8534bd064b98adad72d98c8311a5212ff94149",
+      "root_fixes": [
+        {
+          "component_positions": 66,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            3954,
+            3955,
+            3956,
+            3957,
+            3958,
+            3959,
+            3960
+          ],
+          "bounds": [
+            [
+              -0.3580623,
+              -0.5287429,
+              0.46316642
+            ],
+            [
+              -0.28181106,
+              -0.028231908,
+              1.18711
+            ]
+          ]
+        },
+        {
+          "component_positions": 17,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            3981,
+            3982,
+            3989,
+            3990,
+            3991,
+            3992
+          ],
+          "bounds": [
+            [
+              -0.34105057,
+              -0.07654935,
+              1.1104952
+            ],
+            [
+              -0.298487,
+              -0.042044304,
+              1.1611606
+            ]
+          ]
+        },
+        {
+          "component_positions": 17,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            4253,
+            4255,
+            4261,
+            4262,
+            4263,
+            4264
+          ],
+          "bounds": [
+            [
+              -0.34110576,
+              -0.08124935,
+              1.1137851
+            ],
+            [
+              -0.298487,
+              -0.04667661,
+              1.1641586
+            ]
+          ]
+        },
+        {
+          "component_positions": 66,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            4946,
+            4947,
+            4948,
+            4949,
+            4950,
+            4951,
+            4952
+          ],
+          "bounds": [
+            [
+              0.28023633,
+              -0.52867967,
+              0.46286717
+            ],
+            [
+              0.35647056,
+              -0.028168267,
+              1.1868483
+            ]
+          ]
+        },
+        {
+          "component_positions": 17,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            4973,
+            4975,
+            4981,
+            4982,
+            4983,
+            4984
+          ],
+          "bounds": [
+            [
+              0.2968985,
+              -0.07648667,
+              1.1101972
+            ],
+            [
+              0.33974373,
+              -0.041985773,
+              1.1608799
+            ]
+          ]
+        },
+        {
+          "component_positions": 17,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            5245,
+            5246,
+            5253,
+            5254,
+            5255,
+            5256
+          ],
+          "bounds": [
+            [
+              0.2968985,
+              -0.08118667,
+              1.1134871
+            ],
+            [
+              0.3397932,
+              -0.04661284,
+              1.1638554
+            ]
+          ]
+        },
+        {
+          "component_positions": 16,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            5300,
+            5301,
+            5302,
+            5303,
+            5304,
+            5305
+          ],
+          "bounds": [
+            [
+              -0.3720462,
+              -0.08088182,
+              1.1763736
+            ],
+            [
+              -0.31370893,
+              -0.0049267365,
+              1.2130302
+            ]
+          ]
+        },
+        {
+          "component_positions": 16,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            5314,
+            5317,
+            5318,
+            5319,
+            5321,
+            5322
+          ],
+          "bounds": [
+            [
+              0.3137022,
+              -0.080886886,
+              1.176358
+            ],
+            [
+              0.3723433,
+              -0.0049311733,
+              1.2130158
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        3954,
+        3955,
+        3956,
+        3957,
+        3958,
+        3959,
+        3960,
+        3981,
+        3982,
+        3989,
+        3990,
+        3991,
+        3992,
+        4253,
+        4255,
+        4261,
+        4262,
+        4263,
+        4264,
+        4946,
+        4947,
+        4948,
+        4949,
+        4950,
+        4951,
+        4952,
+        4973,
+        4975,
+        4981,
+        4982,
+        4983,
+        4984,
+        5245,
+        5246,
+        5253,
+        5254,
+        5255,
+        5256,
+        5300,
+        5301,
+        5302,
+        5303,
+        5304,
+        5305,
+        5314,
+        5317,
+        5318,
+        5319,
+        5321,
+        5322
+      ]
+    },
+    {
+      "mesh": "sx_baifeng_body_04.lod1",
+      "guid": "baf3edb1-7f62-761e-71e1-de21e19e1a9e",
+      "metamesh": "sx_baifeng_body",
+      "lod": 1,
+      "bytes": 260292,
+      "render_vertices": 5721,
+      "simulation_vertices": 4519,
+      "fixed_positions": 3791,
+      "boundary_fixed_positions": 230,
+      "active_positions": 728,
+      "stretch_constraints": 1877,
+      "bend_constraints": 1237,
+      "shear_constraints": 0,
+      "parallel_sets": 17,
+      "dummy_sets": 9,
+      "max_geodesic_anchor_length": 0.5038796328094985,
+      "sha256": "f6fc3f183bfcd3a610f30d33f7c54b5f9b51a192f2c97201dca5704c7d7e9049",
+      "root_fixes": [
+        {
+          "component_positions": 12,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            2627,
+            2628,
+            2640,
+            2641
+          ],
+          "bounds": [
+            [
+              -0.3419942,
+              -0.52874357,
+              0.46316642
+            ],
+            [
+              -0.29765943,
+              -0.39731234,
+              0.65780616
+            ]
+          ]
+        },
+        {
+          "component_positions": 26,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            2659,
+            2661,
+            2662,
+            2663,
+            2672,
+            2673
+          ],
+          "bounds": [
+            [
+              -0.358156,
+              -0.39945635,
+              0.64984167
+            ],
+            [
+              -0.28181106,
+              -0.3012824,
+              0.79887754
+            ]
+          ]
+        },
+        {
+          "component_positions": 29,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            2704,
+            2705,
+            2706,
+            2707,
+            2708
+          ],
+          "bounds": [
+            [
+              -0.3420083,
+              -0.30962706,
+              0.78016764
+            ],
+            [
+              -0.29767215,
+              -0.028231908,
+              1.18711
+            ]
+          ]
+        },
+        {
+          "component_positions": 11,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            2715,
+            2721,
+            2722,
+            2723
+          ],
+          "bounds": [
+            [
+              -0.34105057,
+              -0.063215174,
+              1.1294246
+            ],
+            [
+              -0.298487,
+              -0.042044304,
+              1.1611606
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            2724,
+            2726
+          ],
+          "bounds": [
+            [
+              -0.33641165,
+              -0.07656137,
+              1.1104807
+            ],
+            [
+              -0.3202046,
+              -0.06154454,
+              1.1323004
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            2727,
+            2729
+          ],
+          "bounds": [
+            [
+              -0.3204052,
+              -0.07654313,
+              1.110507
+            ],
+            [
+              -0.30391696,
+              -0.06154962,
+              1.1321968
+            ]
+          ]
+        },
+        {
+          "component_positions": 11,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            2908,
+            2913,
+            2914,
+            2915
+          ],
+          "bounds": [
+            [
+              -0.34110576,
+              -0.06790437,
+              1.1326945
+            ],
+            [
+              -0.298487,
+              -0.04667661,
+              1.1641586
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            2916,
+            2917
+          ],
+          "bounds": [
+            [
+              -0.33641535,
+              -0.08126596,
+              1.1137831
+            ],
+            [
+              -0.32021484,
+              -0.06623011,
+              1.1355453
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            2919,
+            2920
+          ],
+          "bounds": [
+            [
+              -0.32034972,
+              -0.081255354,
+              1.1137984
+            ],
+            [
+              -0.30391696,
+              -0.06624487,
+              1.1354462
+            ]
+          ]
+        },
+        {
+          "component_positions": 13,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            3352,
+            3353,
+            3366,
+            3367
+          ],
+          "bounds": [
+            [
+              0.29608744,
+              -0.5286803,
+              0.46286717
+            ],
+            [
+              0.34041312,
+              -0.39724973,
+              0.657503
+            ]
+          ]
+        },
+        {
+          "component_positions": 13,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            3394,
+            3395,
+            3396,
+            3397,
+            3398
+          ],
+          "bounds": [
+            [
+              0.28023633,
+              -0.39880556,
+              0.64973193
+            ],
+            [
+              0.31826884,
+              -0.30121842,
+              0.7884271
+            ]
+          ]
+        },
+        {
+          "component_positions": 13,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            3385,
+            3386,
+            3387,
+            3388
+          ],
+          "bounds": [
+            [
+              0.31825688,
+              -0.39939362,
+              0.6535836
+            ],
+            [
+              0.3565682,
+              -0.3035696,
+              0.79857445
+            ]
+          ]
+        },
+        {
+          "component_positions": 28,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            3428,
+            3429,
+            3431,
+            3432,
+            3433
+          ],
+          "bounds": [
+            [
+              0.2961008,
+              -0.30956486,
+              0.7798713
+            ],
+            [
+              0.34041318,
+              -0.028168267,
+              1.1868483
+            ]
+          ]
+        },
+        {
+          "component_positions": 11,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            3441,
+            3446,
+            3447,
+            3448
+          ],
+          "bounds": [
+            [
+              0.2968985,
+              -0.0631586,
+              1.1291304
+            ],
+            [
+              0.33974373,
+              -0.041985773,
+              1.1608799
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            3449,
+            3450
+          ],
+          "bounds": [
+            [
+              0.3186193,
+              -0.07649929,
+              1.1101761
+            ],
+            [
+              0.33486828,
+              -0.06148749,
+              1.1320239
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            3452,
+            3453
+          ],
+          "bounds": [
+            [
+              0.3023282,
+              -0.076475255,
+              1.1102108
+            ],
+            [
+              0.31883764,
+              -0.061486408,
+              1.1319152
+            ]
+          ]
+        },
+        {
+          "component_positions": 11,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            3632,
+            3638,
+            3639,
+            3640
+          ],
+          "bounds": [
+            [
+              0.2968985,
+              -0.06784528,
+              1.1323956
+            ],
+            [
+              0.3397932,
+              -0.04661284,
+              1.1638554
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            3641,
+            3643
+          ],
+          "bounds": [
+            [
+              0.3186318,
+              -0.08120402,
+              1.1134804
+            ],
+            [
+              0.33485776,
+              -0.06617023,
+              1.1352584
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            3644,
+            3646
+          ],
+          "bounds": [
+            [
+              0.3023282,
+              -0.081189215,
+              1.1135017
+            ],
+            [
+              0.31877062,
+              -0.06618122,
+              1.135155
+            ]
+          ]
+        },
+        {
+          "component_positions": 14,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            3680,
+            3681,
+            3682,
+            3683,
+            3684,
+            3685
+          ],
+          "bounds": [
+            [
+              -0.3720462,
+              -0.08088182,
+              1.1767067
+            ],
+            [
+              -0.31370893,
+              -0.0049267365,
+              1.2130302
+            ]
+          ]
+        },
+        {
+          "component_positions": 14,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            3692,
+            3695,
+            3696,
+            3697,
+            3699,
+            3700
+          ],
+          "bounds": [
+            [
+              0.3137022,
+              -0.080886886,
+              1.1767273
+            ],
+            [
+              0.3723433,
+              -0.0049311733,
+              1.2130158
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        2627,
+        2628,
+        2640,
+        2641,
+        2659,
+        2661,
+        2662,
+        2663,
+        2672,
+        2673,
+        2704,
+        2705,
+        2706,
+        2707,
+        2708,
+        2715,
+        2721,
+        2722,
+        2723,
+        2724,
+        2726,
+        2727,
+        2729,
+        2908,
+        2913,
+        2914,
+        2915,
+        2916,
+        2917,
+        2919,
+        2920,
+        3352,
+        3353,
+        3366,
+        3367,
+        3385,
+        3386,
+        3387,
+        3388,
+        3394,
+        3395,
+        3396,
+        3397,
+        3398,
+        3428,
+        3429,
+        3431,
+        3432,
+        3433,
+        3441,
+        3446,
+        3447,
+        3448,
+        3449,
+        3450,
+        3452,
+        3453,
+        3632,
+        3638,
+        3639,
+        3640,
+        3641,
+        3643,
+        3644,
+        3646,
+        3680,
+        3681,
+        3682,
+        3683,
+        3684,
+        3685,
+        3692,
+        3695,
+        3696,
+        3697,
+        3699,
+        3700
+      ]
+    },
+    {
+      "mesh": "sx_baifeng_body_13",
+      "guid": "e18e4132-e535-8526-42d2-b50f5d3647fa",
+      "metamesh": "sx_baifeng_body",
+      "lod": 0,
+      "bytes": 265620,
+      "render_vertices": 4109,
+      "simulation_vertices": 2891,
+      "fixed_positions": 770,
+      "boundary_fixed_positions": 95,
+      "active_positions": 2121,
+      "stretch_constraints": 5519,
+      "bend_constraints": 4534,
+      "shear_constraints": 0,
+      "parallel_sets": 19,
+      "dummy_sets": 11,
+      "max_geodesic_anchor_length": 0.8607750206537111,
+      "sha256": "ddd3ddabc17bb7c80beb698d34a45ac7aeb201b7e8c0710edfb091a10a4213ba",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": []
+    },
+    {
+      "mesh": "sx_baifeng_head_00.lod1",
+      "guid": "0d5ee4ca-d601-1b62-e096-aad300f1674c",
+      "metamesh": "sx_baifeng_head",
+      "lod": 1,
+      "bytes": 287956,
+      "render_vertices": 3931,
+      "simulation_vertices": 3460,
+      "fixed_positions": 455,
+      "boundary_fixed_positions": 214,
+      "active_positions": 3005,
+      "stretch_constraints": 6485,
+      "bend_constraints": 3426,
+      "shear_constraints": 0,
+      "parallel_sets": 17,
+      "dummy_sets": 10,
+      "max_geodesic_anchor_length": 0.9050320323082138,
+      "sha256": "42f9759e9f461d0e829bfd8733cef8583870f60a906ed4b4b6746e50a3981371",
+      "root_fixes": [
+        {
+          "component_positions": 4,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            3334,
+            3346
+          ],
+          "bounds": [
+            [
+              -0.10196616,
+              -0.09538595,
+              1.3357052
+            ],
+            [
+              -0.09279681,
+              -0.09105806,
+              1.3727425
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        3334,
+        3346
+      ]
+    },
+    {
+      "mesh": "sx_baifeng_head_00",
+      "guid": "bbe7e003-b0d3-77c1-aba8-8162854b123f",
+      "metamesh": "sx_baifeng_head",
+      "lod": 0,
+      "bytes": 426280,
+      "render_vertices": 6247,
+      "simulation_vertices": 4580,
+      "fixed_positions": 574,
+      "boundary_fixed_positions": 218,
+      "active_positions": 4006,
+      "stretch_constraints": 9566,
+      "bend_constraints": 6963,
+      "shear_constraints": 0,
+      "parallel_sets": 23,
+      "dummy_sets": 12,
+      "max_geodesic_anchor_length": 0.8017279429574693,
+      "sha256": "1efcceaa25561206029347eba5bdfdd838a8b9757d1c70f6de343abc6b8ddc10",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": []
+    }
+  ],
+  "native_format_structure_checked": true,
+  "game_solver_verified": false,
+  "limitations": "Offline triangle network compiler; game simulation and natural falling require user testing."
+}

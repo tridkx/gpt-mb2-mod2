@@ -1,0 +1,834 @@
+{
+  "materials": [
+    {
+      "Name": "sx_baifeng_hair",
+      "Guid": "6bb68672-e80c-11e5-e92e-e20f168a17fa",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sx_baifeng_lash",
+      "Guid": "f8d2ce38-99c1-2b76-21fa-99d60df1c21a",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.35,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sx_baifeng_skin",
+      "Guid": "487e3169-2480-e089-cb52-e7c0e42955f2",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sx_baifeng_cloth",
+      "Guid": "aea6e0c0-1fc9-d999-108b-49124f0e03f7",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.08,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sx_baifeng_eye",
+      "Guid": "e5a5c86b-cf0b-1479-44f1-2d6fb2b546f7",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sx_baifeng_face",
+      "Guid": "2d16a6a5-144a-4a50-97a5-37f5da7791bc",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sx_baifeng_ornament",
+      "Guid": "1c55ef4e-7084-f1e6-6692-69d7f22a265b",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sx_baifeng_pants",
+      "Guid": "a86c5144-d6f8-57ad-775b-4d66978439cc",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sx_baifeng_wrist",
+      "Guid": "c3207060-2a5f-3573-c024-c6b7aa78586d",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "Name": "sx_baifeng_head_00",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "6bb68672-e80c-11e5-e92e-e20f168a17fa",
+      "Vertices": 6247,
+      "AlphaMin": 0,
+      "AlphaMax": 10,
+      "ColorsSHA256": "DFBA32C1E8D20B85937E04AE2A3B5EC2855C51AFF80AE63832DE44658BEDAB0F",
+      "VertexStreamSHA256": "D016CC1C5F17DF8FF98C6E3C3CF10B07BEAE4F1EA568BBCB7401AD6C5729D6E7",
+      "ClothMetadataSHA256": "E5DF91943008596B9C7EAFBA8485627EF1B869CD6A18A9468D1D414989556B6D"
+    },
+    {
+      "Name": "sx_baifeng_head_00.lod1",
+      "Lod": 1,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "6bb68672-e80c-11e5-e92e-e20f168a17fa",
+      "Vertices": 3931,
+      "AlphaMin": 0,
+      "AlphaMax": 10,
+      "ColorsSHA256": "65BE319557E6CD20B8F0BFDC2AF984CAFFA270009AE63CC8799E7A7267B3EC89",
+      "VertexStreamSHA256": "5F3AE78F5F12F4D59846F422D3759BC6A98ECFDA077EA00AAF2D8513F7C042B7",
+      "ClothMetadataSHA256": "E5DF91943008596B9C7EAFBA8485627EF1B869CD6A18A9468D1D414989556B6D"
+    },
+    {
+      "Name": "sx_baifeng_head_00.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "6bb68672-e80c-11e5-e92e-e20f168a17fa",
+      "Vertices": 2234,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "BC0D1F7D633D76B92E4DA69E0783E475E928C6A8A08B912E89D0B97E55C3D8B2",
+      "VertexStreamSHA256": "F7B57500100F13E731CFBF117B6DCD8E5EAAAD9EF15DAD97E342C8045910A801",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_00.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "6bb68672-e80c-11e5-e92e-e20f168a17fa",
+      "Vertices": 1294,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "04825A48194CB079912CC52C8B413D28F92C406C29BF9972BB48A02B2980B7FD",
+      "VertexStreamSHA256": "6A1E9687358499131D7E6F401674CB9B6C9CF647A841BDA6E5AF1DBE9B117058",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_01",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "6bb68672-e80c-11e5-e92e-e20f168a17fa",
+      "Vertices": 1179,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "7E78E36A8643EE4EC812B16E0BEB86055DC84D113D3B27859E0CDDD2563EDA92",
+      "VertexStreamSHA256": "8ED91F2C055CA19DFD0D5F042F8685B868F67823794AF678FE644257ABDB8F81",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_01.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "6bb68672-e80c-11e5-e92e-e20f168a17fa",
+      "Vertices": 753,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "400A3C8B3BA61DA3824075CD81AD086C4B20E77D74CF493F72795A9B5E718602",
+      "VertexStreamSHA256": "577B83DAE257C524D06FF40C86BB5385582F77B4A8F115EBB4EAAB0DDEB396FC",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_01.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "6bb68672-e80c-11e5-e92e-e20f168a17fa",
+      "Vertices": 422,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "8A0F1586CC7C38B2EEF3F8737B232A48A911B12D9B64A3CB14F460EB0FD38CF6",
+      "VertexStreamSHA256": "BB1A5279586A3DF7FB4524624F983E15A5A21D51AB69866CC2E2EB7BD771DEDA",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_01.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "6bb68672-e80c-11e5-e92e-e20f168a17fa",
+      "Vertices": 241,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "4BBFAAB00A4E917BCCCD285ABDB8A819E4B7DB51FBA5A5AA552B8BB6BE4D24FD",
+      "VertexStreamSHA256": "2FEF36FBC16F0DDFA527B155786F3B5FDD345EAC5ADCAEF7E097756FB125AE18",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_02",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "f8d2ce38-99c1-2b76-21fa-99d60df1c21a",
+      "Vertices": 289,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "A1916D3342A87B0F81539CE5B31B0221129F5E10482A27BAC65E68083D11AE45",
+      "VertexStreamSHA256": "87F803BC051A9A2D7CBBA2231BACAA271FEE4BDD8B8908153449AB6117E6CB36",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_02.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "f8d2ce38-99c1-2b76-21fa-99d60df1c21a",
+      "Vertices": 289,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "A1916D3342A87B0F81539CE5B31B0221129F5E10482A27BAC65E68083D11AE45",
+      "VertexStreamSHA256": "87F803BC051A9A2D7CBBA2231BACAA271FEE4BDD8B8908153449AB6117E6CB36",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_02.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "f8d2ce38-99c1-2b76-21fa-99d60df1c21a",
+      "Vertices": 289,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "A1916D3342A87B0F81539CE5B31B0221129F5E10482A27BAC65E68083D11AE45",
+      "VertexStreamSHA256": "87F803BC051A9A2D7CBBA2231BACAA271FEE4BDD8B8908153449AB6117E6CB36",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_02.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "f8d2ce38-99c1-2b76-21fa-99d60df1c21a",
+      "Vertices": 289,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "A1916D3342A87B0F81539CE5B31B0221129F5E10482A27BAC65E68083D11AE45",
+      "VertexStreamSHA256": "87F803BC051A9A2D7CBBA2231BACAA271FEE4BDD8B8908153449AB6117E6CB36",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_05",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "e5a5c86b-cf0b-1479-44f1-2d6fb2b546f7",
+      "Vertices": 227,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B4C07B5B3A2E7BF48278C6F0F7CC4C4D8A39C619B439A28446CAE390DA1854EB",
+      "VertexStreamSHA256": "1C797C63338D525D189138F1DF94A4FC43975564BC7837B9F8EE7407454DE48E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_05.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "e5a5c86b-cf0b-1479-44f1-2d6fb2b546f7",
+      "Vertices": 227,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B4C07B5B3A2E7BF48278C6F0F7CC4C4D8A39C619B439A28446CAE390DA1854EB",
+      "VertexStreamSHA256": "1C797C63338D525D189138F1DF94A4FC43975564BC7837B9F8EE7407454DE48E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_05.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "e5a5c86b-cf0b-1479-44f1-2d6fb2b546f7",
+      "Vertices": 227,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B4C07B5B3A2E7BF48278C6F0F7CC4C4D8A39C619B439A28446CAE390DA1854EB",
+      "VertexStreamSHA256": "1C797C63338D525D189138F1DF94A4FC43975564BC7837B9F8EE7407454DE48E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_05.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "e5a5c86b-cf0b-1479-44f1-2d6fb2b546f7",
+      "Vertices": 227,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B4C07B5B3A2E7BF48278C6F0F7CC4C4D8A39C619B439A28446CAE390DA1854EB",
+      "VertexStreamSHA256": "1C797C63338D525D189138F1DF94A4FC43975564BC7837B9F8EE7407454DE48E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_06",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "2d16a6a5-144a-4a50-97a5-37f5da7791bc",
+      "Vertices": 1682,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "C6096D570510511C42E2FB4B2F8784F28EF4162D449F465FDAA31B6F54C6F2B0",
+      "VertexStreamSHA256": "E48C96C73052E555F16A09ADB89CEF74694521EEB1616FF14DDE0C671F93C399",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_06.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "2d16a6a5-144a-4a50-97a5-37f5da7791bc",
+      "Vertices": 1682,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "C6096D570510511C42E2FB4B2F8784F28EF4162D449F465FDAA31B6F54C6F2B0",
+      "VertexStreamSHA256": "E48C96C73052E555F16A09ADB89CEF74694521EEB1616FF14DDE0C671F93C399",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_06.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "2d16a6a5-144a-4a50-97a5-37f5da7791bc",
+      "Vertices": 1682,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "C6096D570510511C42E2FB4B2F8784F28EF4162D449F465FDAA31B6F54C6F2B0",
+      "VertexStreamSHA256": "E48C96C73052E555F16A09ADB89CEF74694521EEB1616FF14DDE0C671F93C399",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_06.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "2d16a6a5-144a-4a50-97a5-37f5da7791bc",
+      "Vertices": 1682,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "C6096D570510511C42E2FB4B2F8784F28EF4162D449F465FDAA31B6F54C6F2B0",
+      "VertexStreamSHA256": "E48C96C73052E555F16A09ADB89CEF74694521EEB1616FF14DDE0C671F93C399",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_07",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "1c55ef4e-7084-f1e6-6692-69d7f22a265b",
+      "Vertices": 810,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D01CB2D511E65F02E9E3C76A75190CA44945397F0FCC0A78EAD54B5DE9F7E0B1",
+      "VertexStreamSHA256": "0D1B2BE266AB8E0DCE2CE25B70A2B82A29E3F574D78CD241502009F4C0933007",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_07.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "1c55ef4e-7084-f1e6-6692-69d7f22a265b",
+      "Vertices": 603,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "649B3DD20BCE9E3D8AC07F12DF15B637A09FA1A39AD2D76962669C0E715B0F66",
+      "VertexStreamSHA256": "D12CA1E3ED5B10EF859FA4482102F45AFFEBBDCC802A8A616F197B05F2AD4A3E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_07.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "1c55ef4e-7084-f1e6-6692-69d7f22a265b",
+      "Vertices": 400,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "96B5DC337CFAA63D6536725CE58672EDEFAA6BC4159FB406C3581AF76A0E2313",
+      "VertexStreamSHA256": "4843097F48D50A78DF64533D3C252906304379A996FB9250571DE45F2ED32025",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_07.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "1c55ef4e-7084-f1e6-6692-69d7f22a265b",
+      "Vertices": 268,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "74EDB138F6D650D78CA9C4E6BC98E25165AFAEFD6DECA21E11AA017E6FB646FD",
+      "VertexStreamSHA256": "8DEE641E28357C27619B94CF6F0BE3AA1EC0CE554E6BC5EE19B046E455DB5837",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_08",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "1c55ef4e-7084-f1e6-6692-69d7f22a265b",
+      "Vertices": 197,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "413405E54E36F710E7C94B7A4F396C76D57FA8100BC9EFEF9943B47E611E5548",
+      "VertexStreamSHA256": "8E6E7515ABD89251FF7F317CDFB8EAACF9E114BC9AEFCC2CBE724D9D32E806A0",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_08.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "1c55ef4e-7084-f1e6-6692-69d7f22a265b",
+      "Vertices": 136,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "AC2D83ACA7B25B31E236F30288C3F38160D77861F5B8882A5BD2FE8AE9B02D87",
+      "VertexStreamSHA256": "ED799905000E65EDE9C349A864E1D69BC934A3ECC45161428C9E2586335AB6AC",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_08.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "1c55ef4e-7084-f1e6-6692-69d7f22a265b",
+      "Vertices": 85,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "46C0D992BB98A7B7222B4AB5309B23EECB4CA684F50CECB057EF370FA626475D",
+      "VertexStreamSHA256": "60AAE6052B99B91437BEDE4021D3242CBEFD144F1537089C2D1324D383FCB235",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_head_08.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "1c55ef4e-7084-f1e6-6692-69d7f22a265b",
+      "Vertices": 53,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1496CB5D8D8D763EF30D78022C1AB286F1A05B599482C2FD4763E831417CCD57",
+      "VertexStreamSHA256": "8AD900289A4BDE8F140D5B3769173F9FB6127825D66A6E38A0167240961F920A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_03",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "487e3169-2480-e089-cb52-e7c0e42955f2",
+      "Vertices": 190,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "6F18135FDC691EE71FCFDCE25B1BAB0FACB0729107B22CC00F0AA800A34D3C14",
+      "VertexStreamSHA256": "D01F5A2656B6D4BED2D1055E556F4F9202C5C066CAB6B6E7ADA414B652C2C362",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_03.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "487e3169-2480-e089-cb52-e7c0e42955f2",
+      "Vertices": 124,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D32C93B9CC4C3C498938C9D28B176B0420979AAF7E9AF4A3C969CDBD7F8316AE",
+      "VertexStreamSHA256": "5DE7380F760240778DD79F786F2229831B2344B2251A5E9AEBFF5E12CA7854FA",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_03.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "487e3169-2480-e089-cb52-e7c0e42955f2",
+      "Vertices": 80,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "C3EA86B65D0BB3E062BB63F19FFE39165C5FD47B382E35083840F9005668B2E6",
+      "VertexStreamSHA256": "A2EDBE17FBE00BF2E2C31004CDAD65EEF81D2E255D0C6245F77F0A69A3D430D9",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_03.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "487e3169-2480-e089-cb52-e7c0e42955f2",
+      "Vertices": 49,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "323EA857596E6CC59581E2F34C34B97F66FE72151C38E87C2571091E04B8B62B",
+      "VertexStreamSHA256": "B16859A87DB7B004E8C2E458297DBE5D466BFFB4F2668F6193D2F56086E137EB",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_04",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "aea6e0c0-1fc9-d999-108b-49124f0e03f7",
+      "Vertices": 8176,
+      "AlphaMin": 0,
+      "AlphaMax": 128,
+      "ColorsSHA256": "E16BA0950354499229A869534895F296AD076C3E8FA8F10C0259801307FE7EB6",
+      "VertexStreamSHA256": "5009E9BBC83583F8B7545A8A8182BB67F0FE42AC325D4ECABA2485784109E942",
+      "ClothMetadataSHA256": "62CB29948189322609938D53F06BD10BCB2DD94F794A4298052DBE546849FAB5"
+    },
+    {
+      "Name": "sx_baifeng_body_04.lod1",
+      "Lod": 1,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "aea6e0c0-1fc9-d999-108b-49124f0e03f7",
+      "Vertices": 5721,
+      "AlphaMin": 0,
+      "AlphaMax": 128,
+      "ColorsSHA256": "064E39576C2AB6AABA4D666F189FDC7E8D1AB662E91071A8E163A5424B693939",
+      "VertexStreamSHA256": "C54E0859B4CB61A78CEC20706D9C7E4A6EB15625C4A5FFC1F67093C298015F11",
+      "ClothMetadataSHA256": "62CB29948189322609938D53F06BD10BCB2DD94F794A4298052DBE546849FAB5"
+    },
+    {
+      "Name": "sx_baifeng_body_04.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "aea6e0c0-1fc9-d999-108b-49124f0e03f7",
+      "Vertices": 3689,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "3D8C5EFAAB5D0B57ABF264BBCA737058B93D9AC16F10985FCBEFF999975C66BA",
+      "VertexStreamSHA256": "205AFAEA5C9D71D76CE12E89207B3986F85B2D1DA1EF62C4DD86BE8B4EB64EE6",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_04.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "aea6e0c0-1fc9-d999-108b-49124f0e03f7",
+      "Vertices": 2283,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "7F476CA3389212B52CD689FBB2B86D30CD6BADC842AADDDCCAC9CC47B57EF927",
+      "VertexStreamSHA256": "08CEF69BC79DFA80BF58BC5B3FCD143372643AB741F78E233FA35923010D5027",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_09",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "aea6e0c0-1fc9-d999-108b-49124f0e03f7",
+      "Vertices": 7679,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "BD033A704AC0E8EF85848327DFEC7694F9B10D5805A5A01C2ECB0C3428948AED",
+      "VertexStreamSHA256": "82B0C9D9F02FFEF3D5B480A72355EC85B8EA4A44BE504A2CE2BDD63B534384C3",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_09.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "aea6e0c0-1fc9-d999-108b-49124f0e03f7",
+      "Vertices": 5514,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "E86C69A43829CBFA318B013C74B3A0A6691284A2BE1933B86A05AC03515E1004",
+      "VertexStreamSHA256": "9F0B0ECACE2384D69B8E10F6C8017428D724B4F402DE8C5B6A85F25B540BEBA1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_09.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "aea6e0c0-1fc9-d999-108b-49124f0e03f7",
+      "Vertices": 3632,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "46D13AFB34963B9C5E81CCA73BF9CC19985A079B66BA103892C786A197983143",
+      "VertexStreamSHA256": "D93F781B9AF80E121C0CE5BB9C07DA9A4F27888B31AF39EEAE5B3321342CA651",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_09.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "aea6e0c0-1fc9-d999-108b-49124f0e03f7",
+      "Vertices": 2461,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "ACE11DC0C9CA23236E6E51E8887D4A76CB1D6E30C814A189C279780BE09CE98A",
+      "VertexStreamSHA256": "043741DEA24A177A1E0DB9EAC91D1CFDF946221B423D8AB2D0E3EE99BD294843",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_10",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "487e3169-2480-e089-cb52-e7c0e42955f2",
+      "Vertices": 1200,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "DE48138ADD4F0CC582CA9478048A81502B4CAA7611AE4DA23B763F06AFC56958",
+      "VertexStreamSHA256": "3DB6417ADE647BCDFFA9D556D51F7250E3C1A41656507AB250839767C5A2E721",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_10.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "487e3169-2480-e089-cb52-e7c0e42955f2",
+      "Vertices": 691,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "A337CA7AEE5DBC0A04E3A01E5B16C95D354E9082ADDFD9C0FEE704BCA00A4A30",
+      "VertexStreamSHA256": "EBD9704E2D998A5FC27931ACFD42761660263C623D29618147757A0FBD293363",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_10.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "487e3169-2480-e089-cb52-e7c0e42955f2",
+      "Vertices": 388,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B75928C084659D231A00A052612760EB5DCD90B5B5AB3101325DA0A07FB25D2A",
+      "VertexStreamSHA256": "8050F701E41BADF4F520A297F189946A7DE490462DB5D26502399FB9742BCC2A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_10.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "487e3169-2480-e089-cb52-e7c0e42955f2",
+      "Vertices": 214,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "BBC1125CA71F7C6780BD47FF43AF6C7A3EAF50060ABBD834F9705456E7271C42",
+      "VertexStreamSHA256": "3114543378B772622DBA0047E8F2E7EED5ADC37FCB08F6038B7F3463FD5E94C5",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_13",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "aea6e0c0-1fc9-d999-108b-49124f0e03f7",
+      "Vertices": 4109,
+      "AlphaMin": 0,
+      "AlphaMax": 31,
+      "ColorsSHA256": "0DDC2A060649C2500975F09F6D4895BA792CEC3DADDA6A70610B979B1D308937",
+      "VertexStreamSHA256": "74A66530806DAB3B33E8EF37B6FCD10D3CCF71994515DFC5E113743874B12F32",
+      "ClothMetadataSHA256": "1F47F3E1A5222A9232ABFD8A86A69CF5EE03A0E52760F598607580827F0A66A1"
+    },
+    {
+      "Name": "sx_baifeng_body_13.lod1",
+      "Lod": 1,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "aea6e0c0-1fc9-d999-108b-49124f0e03f7",
+      "Vertices": 2804,
+      "AlphaMin": 0,
+      "AlphaMax": 31,
+      "ColorsSHA256": "307BEDEFA6C5DC084AE5B305513BE4FDC4B45CF7F17893DAD886FD7EF2A133DD",
+      "VertexStreamSHA256": "151EEF6B2624744BB2FDA1BCBD756583666403C5F2EC49B2093EAB06990F4690",
+      "ClothMetadataSHA256": "1F47F3E1A5222A9232ABFD8A86A69CF5EE03A0E52760F598607580827F0A66A1"
+    },
+    {
+      "Name": "sx_baifeng_body_13.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "aea6e0c0-1fc9-d999-108b-49124f0e03f7",
+      "Vertices": 1749,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "70E64EA6F7D9F8A7DFDC880EFE9E2C7E2F3979AFE66EB5AB9A6173C0CB4E09CB",
+      "VertexStreamSHA256": "95FDF7F496143FFDF5BBAD2B7A42AAEFD84806D473C20C3D0203D496FF666286",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_13.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "aea6e0c0-1fc9-d999-108b-49124f0e03f7",
+      "Vertices": 1044,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "2EAF12277E3F47222FAA7D118E32F9322BF6B6E45432B8CC4F1FEFE886023380",
+      "VertexStreamSHA256": "721D3A35090553ACC919601F20066253DB8D12D2571282A839BC71ABD782F743",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_14",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "c3207060-2a5f-3573-c024-c6b7aa78586d",
+      "Vertices": 838,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "36955D5DE9FE1153CDAC99A1CB756FD20C410D40A783458FA78372C81F9B286C",
+      "VertexStreamSHA256": "D1BF6DFC3995B266A46FFF05324F2B8B1C71D8B2760FE2BEB0EF2B48C559F5B6",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_14.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "c3207060-2a5f-3573-c024-c6b7aa78586d",
+      "Vertices": 580,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "80245C8A46996706ACADFED9F16FFA5A6B383FCFD0FD9184CC7A2A3F8E833846",
+      "VertexStreamSHA256": "BC9245E5030FE55B14EB25E3FA70121A786B809E85E48B525C9D33BB23D063F8",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_14.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "c3207060-2a5f-3573-c024-c6b7aa78586d",
+      "Vertices": 347,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "7AD92D7F1C60AF8DADAFE6C8937082C01A38AEA1227F515DABB12724F88FE60A",
+      "VertexStreamSHA256": "44AE15DAEBA8B348EAF80DCDDFED0BD975AF72C1CD4ABE01390CABC4CD575FBC",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_body_14.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "c3207060-2a5f-3573-c024-c6b7aa78586d",
+      "Vertices": 209,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "E6963F08720F75286A0905243F5902E65935779D21146033FE24CE430B45202F",
+      "VertexStreamSHA256": "8ADEFB7CAC21391A91D36820D111A6D63F84ADAA3835D749FB3F9D8CBFE63262",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_legs_11",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "487e3169-2480-e089-cb52-e7c0e42955f2",
+      "Vertices": 176,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "22D17B6A0BE4C485EE07C0CDE6476C0E2063B7A230AD4122D37D6E9C846E440B",
+      "VertexStreamSHA256": "298B762B8A1B5723FCDF8CD809DA4E41F50FC0977E0D75C0ADCF780C0BAC9C40",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_legs_11.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "487e3169-2480-e089-cb52-e7c0e42955f2",
+      "Vertices": 122,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "3773A95FAAED072C267503884A48249AA7296DAF797A29377F80E78D496C9DDF",
+      "VertexStreamSHA256": "85131BD93FE3E0DED8013166660FBE943536521A2C4D4F6F4752AA3D71F01A3A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_legs_11.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "487e3169-2480-e089-cb52-e7c0e42955f2",
+      "Vertices": 116,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "DD072E0C006EA02A9A9C7FAA837075BEC5AE168FCF27BEF170B549AA16DD5B0E",
+      "VertexStreamSHA256": "477DF00870CAF0879A10D03465FA6443E3B6C0278094D700C3210172F301E3D2",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_legs_11.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "487e3169-2480-e089-cb52-e7c0e42955f2",
+      "Vertices": 116,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "DD072E0C006EA02A9A9C7FAA837075BEC5AE168FCF27BEF170B549AA16DD5B0E",
+      "VertexStreamSHA256": "477DF00870CAF0879A10D03465FA6443E3B6C0278094D700C3210172F301E3D2",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_legs_12",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "a86c5144-d6f8-57ad-775b-4d66978439cc",
+      "Vertices": 2457,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "BFD91A6A607FB308072EF6B07CF57816CB5FA40FFB0F441CA4F3181B45C5D20C",
+      "VertexStreamSHA256": "3A15A57C8B59C0CC63F7C1D56C96E743D33CBC4AFFF1DE9472C4E478D6989268",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_legs_12.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "a86c5144-d6f8-57ad-775b-4d66978439cc",
+      "Vertices": 1683,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "354C60C3595A8809DE005663699B6F2D66AC6763F18336A91A79DD3A0AE4CFE0",
+      "VertexStreamSHA256": "F97181C8A460DF4B74CE53521BD10906CCEB64F5546EE0A31E2E96C317E3F098",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_legs_12.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "a86c5144-d6f8-57ad-775b-4d66978439cc",
+      "Vertices": 1053,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "7910383489174F9D04F5E37B0735781D9369103392F9CCD6E2AC7409DEB9AD03",
+      "VertexStreamSHA256": "34076A516F59A0F49BEB128792AA32E3925091BE44A51305DB9685E86F3BE24C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_baifeng_legs_12.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "a86c5144-d6f8-57ad-775b-4d66978439cc",
+      "Vertices": 577,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "612150A17FD202A7552077EFA401A7438745A3FB59BD1FD0B4425C22772683C7",
+      "VertexStreamSHA256": "CD82E844484482DBE5A3DB95E795F796F095732088104D27B38085D270F77E6F",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    }
+  ]
+}

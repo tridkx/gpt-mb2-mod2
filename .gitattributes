@@ -11,5 +11,7 @@
 *.png binary
 backups/** -text
 maintenance/backups/** -text
+
+mods/ShengxiuCollection/sets/**/input/** -text
 **/REAdaWongDefault_Rigged.blend filter=lfs diff=lfs merge=lfs -text
 **/REAdaWongDefault_Rigged.fbx filter=lfs diff=lfs merge=lfs -text

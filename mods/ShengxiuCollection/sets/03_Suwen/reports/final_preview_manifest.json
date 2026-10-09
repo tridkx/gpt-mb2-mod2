@@ -1,0 +1,55 @@
+{
+  "package_sha256": "6125def32ab0af2722b1118760be051b74728c4471400425025586217821d5ec",
+  "source": "Final TPAC re-export with decoded textures and quantized weights",
+  "game_cloth_solver_used": false,
+  "previews": [
+    {
+      "label": "face_all",
+      "path": "reports/final_face_all.png"
+    },
+    {
+      "label": "idle",
+      "frame": 676,
+      "path": "reports/final_idle_worst.png"
+    },
+    {
+      "label": "idle",
+      "frame": 338,
+      "path": "reports/final_idle_contact.png",
+      "reason": "worst skirt proxy contact"
+    },
+    {
+      "label": "run",
+      "frame": 24,
+      "path": "reports/final_run_worst.png"
+    },
+    {
+      "label": "run",
+      "frame": 7,
+      "path": "reports/final_run_contact.png",
+      "reason": "worst skirt proxy contact"
+    },
+    {
+      "label": "bow",
+      "frame": 12,
+      "path": "reports/final_bow_worst.png"
+    },
+    {
+      "label": "bow",
+      "frame": 54,
+      "path": "reports/final_bow_contact.png",
+      "reason": "worst skirt proxy contact"
+    },
+    {
+      "label": "riding",
+      "frame": 6,
+      "path": "reports/final_riding_worst.png"
+    },
+    {
+      "label": "riding",
+      "frame": 16,
+      "path": "reports/final_riding_contact.png",
+      "reason": "worst skirt proxy contact"
+    }
+  ]
+}

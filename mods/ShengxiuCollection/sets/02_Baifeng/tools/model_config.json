@@ -1,0 +1,351 @@
+{
+  "id": "ShengxiuCollection",
+  "prefix": "sx_baifeng",
+  "title": "圣绣 · 白凤",
+  "display_name": "Shengxiu Collection",
+  "original_directory": "D:/dsh-tiandao/圣绣 白凤 女",
+  "source_coordinate_to_meters": 1,
+  "input_scale": 0.0107,
+  "input_axis": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "source_landmarks": {
+    "pelvis": [
+      0.0,
+      -0.0107,
+      1.05395
+    ],
+    "spine": [
+      0.0,
+      -0.0107,
+      1.17165
+    ],
+    "spine1": [
+      0.0,
+      -0.0107,
+      1.30005
+    ],
+    "spine2": [
+      0.0,
+      -0.0107,
+      1.41775
+    ],
+    "neck": [
+      0.0,
+      -0.0107,
+      1.5408
+    ],
+    "head": [
+      0.0,
+      0.0,
+      1.6478
+    ],
+    "thigh": [
+      0.0963,
+      -0.0107,
+      1.05395
+    ],
+    "calf": [
+      0.1177,
+      -0.0214,
+      0.58315
+    ],
+    "foot": [
+      0.1391,
+      -0.0107,
+      0.08025
+    ],
+    "toe0": [
+      0.1391,
+      0.0856,
+      0.0107
+    ],
+    "clavicle": [
+      0.0535,
+      -0.0107,
+      1.49265
+    ],
+    "upperarm_twist": [
+      0.1605,
+      -0.0107,
+      1.48195
+    ],
+    "foretwist": [
+      0.34775,
+      -0.0107,
+      1.27865
+    ],
+    "hand": [
+      0.47615,
+      0.03745,
+      1.1128
+    ],
+    "finger0": [
+      0.53714,
+      0.0749,
+      1.01115
+    ]
+  },
+  "parts": {
+    "baifeng hair": [
+      "head",
+      "hair",
+      "long_hair"
+    ],
+    "baifeng hair top": [
+      "head",
+      "hair",
+      "rigid_head"
+    ],
+    "baifeng lash": [
+      "head",
+      "lash",
+      "rigid_head"
+    ],
+    "baifeng nv body": [
+      "body",
+      "skin",
+      "arms"
+    ],
+    "baifeng nv cloth": [
+      "body",
+      "cloth",
+      "hanging_clothes"
+    ],
+    "baifeng nv eye": [
+      "head",
+      "eye",
+      "rigid_head"
+    ],
+    "baifeng nv face": [
+      "head",
+      "face",
+      "skin"
+    ],
+    "baifeng nv fashi": [
+      "head",
+      "ornament",
+      "rigid_head"
+    ],
+    "baifeng nv fashi golden": [
+      "head",
+      "ornament",
+      "rigid_head"
+    ],
+    "baifeng nv fur": [
+      "body",
+      "cloth",
+      "arm_ornament"
+    ],
+    "baifeng nv hands": [
+      "body",
+      "skin",
+      "arms"
+    ],
+    "baifeng nv leg": [
+      "legs",
+      "skin",
+      "legs"
+    ],
+    "baifeng pants": [
+      "legs",
+      "pants",
+      "legs"
+    ],
+    "baifeng qun": [
+      "body",
+      "cloth",
+      "skirt"
+    ],
+    "baifeng wan": [
+      "body",
+      "wrist",
+      "arms"
+    ]
+  },
+  "material_slots": {
+    "baifeng hair": 4,
+    "baifeng hair top": 4,
+    "baifeng lash": 6,
+    "baifeng nv body": 1,
+    "baifeng nv cloth": 2,
+    "baifeng nv eye": 8,
+    "baifeng nv face": 0,
+    "baifeng nv fashi": 5,
+    "baifeng nv fashi golden": 5,
+    "baifeng nv fur": 2,
+    "baifeng nv hands": 1,
+    "baifeng nv leg": 1,
+    "baifeng pants": 3,
+    "baifeng qun": 2,
+    "baifeng wan": 7
+  },
+  "textures": {
+    "hair": [
+      "baifeng_hair-d.png",
+      "cutout"
+    ],
+    "lash": [
+      "baifeng_lash.png",
+      "cutout"
+    ],
+    "skin": [
+      "baifeng_body-d.png",
+      "opaque"
+    ],
+    "cloth": [
+      "baifeng_coat-d.png",
+      "cutout"
+    ],
+    "eye": [
+      "eye.png",
+      "opaque"
+    ],
+    "face": [
+      "baifeng_face-d.png",
+      "opaque"
+    ],
+    "ornament": [
+      "baifeng_fashi-d.png",
+      "cutout"
+    ],
+    "pants": [
+      "baifeng_pants-d.png",
+      "cutout"
+    ],
+    "wrist": [
+      "baifeng_wan-d.png",
+      "cutout"
+    ]
+  },
+  "material_overrides": {
+    "lash": {
+      "alphaTest": 0.35
+    },
+    "cloth": {
+      "alphaTest": 0.08
+    }
+  },
+  "cloth_max_distance": {
+    "skirt": 0.12,
+    "long_hair": 0.04,
+    "hanging_clothes": 0.5
+  },
+  "skirt_thigh_follow": 0.38,
+  "lod_ratios": [
+    1,
+    0.6,
+    0.32,
+    0.16
+  ],
+  "cloth_lods": {
+    "skirt": [
+      0,
+      1
+    ],
+    "long_hair": [
+      0,
+      1
+    ],
+    "hanging_clothes": [
+      0,
+      1
+    ]
+  },
+  "measurement_notes": "Measured source meshes and material face slots. Baifeng Z-up centimetre coordinates; Suwen Y-up coordinates 100 times larger. Canonical conversion is a proper rotation (determinant +1), no mirrored geometry. Native skeleton matrices shared, no Mingyu repair parameters.",
+  "cloth_profiles": {
+    "skirt": {
+      "UnknownFloat1": 1,
+      "UnknownBool3": true,
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "material": {
+        "Name": "sx_baifeng_skirt_fabric",
+        "BendingStiffness": 0.3,
+        "ShearingStiffness": 0.9,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.65,
+        "Gravity": 9.81,
+        "LinearInertia": 0.25,
+        "AirDragMultiplier": 0.1,
+        "Wind": 0.04,
+        "MaxLinearVelocity": 8,
+        "LinearVelocityMultiplier": 1
+      }
+    },
+    "long_hair": {
+      "UnknownFloat1": 1,
+      "UnknownBool3": true,
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "material": {
+        "Name": "sx_baifeng_long_hair_fabric",
+        "BendingStiffness": 0.3,
+        "ShearingStiffness": 0.9,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.65,
+        "Gravity": 9.81,
+        "LinearInertia": 0.25,
+        "AirDragMultiplier": 0.1,
+        "Wind": 0.04,
+        "MaxLinearVelocity": 8,
+        "LinearVelocityMultiplier": 1
+      }
+    },
+    "hanging_clothes": {
+      "UnknownFloat1": 2,
+      "UnknownBool3": true,
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "material": {
+        "Name": "sx_baifeng_hanging_clothes_fabric",
+        "BendingStiffness": 0.12,
+        "ShearingStiffness": 0.9,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.65,
+        "Gravity": 9.81,
+        "LinearInertia": 0.25,
+        "AirDragMultiplier": 0.1,
+        "Wind": 0.04,
+        "MaxLinearVelocity": 8,
+        "LinearVelocityMultiplier": 1
+      }
+    }
+  },
+  "foot_fit": {
+    "pitch_degrees": 10.405212140167412,
+    "pivot": [
+      0.0,
+      -0.056194168568113705,
+      0.09280169413943745
+    ],
+    "length_scale": 0.9165898359251222,
+    "ground_shift_m": -0.000320872802878445,
+    "target_length_m": 0.245,
+    "method": "Independently fitted sole plane from this outfit source boots; corrections fade between z=.13 and .27m."
+  },
+  "runtime_head_neck_follow": 0.7
+}

@@ -1,0 +1,209 @@
+{
+  "version": "v1.1.0",
+  "status": "pass",
+  "check_scope": "offline_checks",
+  "final_package_sha256": "368ebcf077393ee65bc903f1f63faefbfc30a90e776a9d2e4d32b477374ada4f",
+  "baseline_package_sha256": null,
+  "baseline_reason": "new set, original inputs retained",
+  "lods": [
+    {
+      "lod": 0,
+      "vertices": 35456,
+      "triangles": 37186
+    },
+    {
+      "lod": 1,
+      "vertices": 24860,
+      "triangles": 23741
+    },
+    {
+      "lod": 2,
+      "vertices": 16393,
+      "triangles": 14383
+    },
+    {
+      "lod": 3,
+      "vertices": 11007,
+      "triangles": 9047
+    }
+  ],
+  "seams": [
+    {
+      "lod": 0,
+      "shared_skin_points": 16,
+      "max_position_error": 5.846614833304139e-08
+    },
+    {
+      "lod": 1,
+      "shared_skin_points": 16,
+      "max_position_error": 5.846614833304139e-08
+    },
+    {
+      "lod": 2,
+      "shared_skin_points": 16,
+      "max_position_error": 5.846614833304139e-08
+    },
+    {
+      "lod": 3,
+      "shared_skin_points": 16,
+      "max_position_error": 5.846614833304139e-08
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "asset": "anim_inventory_idle",
+      "frames_checked": 16,
+      "total_frames": 1268,
+      "max_edge_extension": 3.0021854391241787,
+      "max_p99_edge_extension": 1.5250846233504969,
+      "fixed_max_edge_extension": 1.7926286868907009,
+      "fixed_max_p99_edge_extension": 1.4464985339837562,
+      "cloth_skinning_diagnostic_only": true,
+      "worst_frame": 760,
+      "worst_mesh": "sx_baifeng_body_04",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0.03670653035811616,
+        "worst_frame": 507,
+        "maximum_contact_samples": 774,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    },
+    {
+      "label": "run",
+      "asset": "anim_run_forward_unarmed",
+      "frames_checked": 25,
+      "total_frames": 26,
+      "max_edge_extension": 5.5852267504005555,
+      "max_p99_edge_extension": 2.6150125873643453,
+      "fixed_max_edge_extension": 2.7107875629587443,
+      "fixed_max_p99_edge_extension": 1.568342134329241,
+      "cloth_skinning_diagnostic_only": true,
+      "worst_frame": 19,
+      "worst_mesh": "sx_baifeng_body_04",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0.07412341859322542,
+        "worst_frame": 11,
+        "maximum_contact_samples": 1484,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    },
+    {
+      "label": "bow",
+      "asset": "anim_bow",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "max_edge_extension": 9.340412964306333,
+      "max_p99_edge_extension": 2.6162129992727086,
+      "fixed_max_edge_extension": 3.2280365667818582,
+      "fixed_max_p99_edge_extension": 2.0064456060331035,
+      "cloth_skinning_diagnostic_only": true,
+      "worst_frame": 12,
+      "worst_mesh": "sx_baifeng_body_04",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0.0747794747969876,
+        "worst_frame": 31,
+        "maximum_contact_samples": 1194,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    },
+    {
+      "label": "riding",
+      "asset": "anim_rider_gallop_bow",
+      "frames_checked": 20,
+      "total_frames": 21,
+      "max_edge_extension": 5.780068031182129,
+      "max_p99_edge_extension": 2.089593683572877,
+      "fixed_max_edge_extension": 3.294957983826835,
+      "fixed_max_p99_edge_extension": 1.8248037622421842,
+      "cloth_skinning_diagnostic_only": true,
+      "worst_frame": 6,
+      "worst_mesh": "sx_baifeng_body_04",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0.0749547456950121,
+        "worst_frame": 9,
+        "maximum_contact_samples": 1347,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    }
+  ],
+  "textures": [
+    {
+      "name": "sx_baifeng_cloth_d",
+      "mips": 11,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.9048182169596354,
+      "alpha_mean_error_255": 0.23346900939941406
+    },
+    {
+      "name": "sx_baifeng_eye_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.2635943094889323,
+      "alpha_mean_error_255": 0.0
+    },
+    {
+      "name": "sx_baifeng_face_d",
+      "mips": 11,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.42630799611409503,
+      "alpha_mean_error_255": 0.0
+    },
+    {
+      "name": "sx_baifeng_flat_n",
+      "mips": 7,
+      "decoded_all_mips": true
+    },
+    {
+      "name": "sx_baifeng_hair_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.18312581380208334,
+      "alpha_mean_error_255": 0.8507919311523438
+    },
+    {
+      "name": "sx_baifeng_lash_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.8784052530924479,
+      "alpha_mean_error_255": 0.47425079345703125
+    },
+    {
+      "name": "sx_baifeng_neutral_s",
+      "mips": 7,
+      "decoded_all_mips": true
+    },
+    {
+      "name": "sx_baifeng_ornament_d",
+      "mips": 9,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.423736572265625,
+      "alpha_mean_error_255": 1.3531646728515625
+    },
+    {
+      "name": "sx_baifeng_pants_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.6332689921061198,
+      "alpha_mean_error_255": 0.4463691711425781
+    },
+    {
+      "name": "sx_baifeng_skin_d",
+      "mips": 11,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.7017431259155273,
+      "alpha_mean_error_255": 0.0
+    },
+    {
+      "name": "sx_baifeng_wrist_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.7729212443033854,
+      "alpha_mean_error_255": 0.4204216003417969
+    }
+  ],
+  "metadata_audit": "pass",
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "limitations": "Offline native skeletal motion. In-game cloth, weapon IK, face animation, body sliders and horse collision require user testing."
+}

@@ -1,0 +1,49 @@
+{
+  "default": {
+    "unanchored": "error"
+  },
+  "meshes": {
+    "sx_suwen_body_01": {
+      "unanchored": "pin_upper",
+      "axis": 2,
+      "band_m": 0.015,
+      "min_vertices": 2,
+      "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band."
+    },
+    "sx_suwen_body_01.lod1": {
+      "unanchored": "pin_upper",
+      "axis": 2,
+      "band_m": 0.015,
+      "min_vertices": 2,
+      "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band."
+    },
+    "sx_suwen_head_05": {
+      "unanchored": "pin_upper",
+      "axis": 2,
+      "band_m": 0.015,
+      "min_vertices": 2,
+      "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band."
+    },
+    "sx_suwen_head_05.lod1": {
+      "unanchored": "pin_upper",
+      "axis": 2,
+      "band_m": 0.015,
+      "min_vertices": 2,
+      "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band."
+    },
+    "sx_suwen_body_13": {
+      "unanchored": "pin_upper",
+      "axis": 2,
+      "band_m": 0.015,
+      "min_vertices": 2,
+      "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band."
+    },
+    "sx_suwen_body_13.lod1": {
+      "unanchored": "pin_upper",
+      "axis": 2,
+      "band_m": 0.015,
+      "min_vertices": 2,
+      "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band."
+    }
+  }
+}

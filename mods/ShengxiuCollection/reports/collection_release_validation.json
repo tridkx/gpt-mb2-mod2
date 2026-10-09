@@ -1,0 +1,112 @@
+{
+  "status": "pass",
+  "version": "v1.1.0",
+  "check_scope": "offline_checks",
+  "final_package_sha256": "616b97186624b1cc220385e017224e2ad8e3d5046fe10d276cc1b1a8e6ad1708",
+  "mingyu_v1_0_4_package_unchanged": true,
+  "packages": [
+    {
+      "set": "圣绣 · 明玉",
+      "prefix": "sx_mingyu",
+      "path": "module/ShengxiuCollection/AssetPackages/sx_mingyu.tpac",
+      "sha256": "616b97186624b1cc220385e017224e2ad8e3d5046fe10d276cc1b1a8e6ad1708",
+      "package_guid": "61b5685b-e677-5611-a508-75e712e41bfd",
+      "report": "reports/release_validation.json",
+      "cloth_meshes": 4,
+      "lods": [
+        {
+          "lod": 0,
+          "vertices": 18529,
+          "triangles": 22215
+        },
+        {
+          "lod": 1,
+          "vertices": 13031,
+          "triangles": 14760
+        },
+        {
+          "lod": 2,
+          "vertices": 8798,
+          "triangles": 9548
+        },
+        {
+          "lod": 3,
+          "vertices": 5948,
+          "triangles": 6575
+        }
+      ]
+    },
+    {
+      "set": "圣绣 · 白凤",
+      "prefix": "sx_baifeng",
+      "path": "module/ShengxiuCollection/AssetPackages/sx_baifeng.tpac",
+      "sha256": "368ebcf077393ee65bc903f1f63faefbfc30a90e776a9d2e4d32b477374ada4f",
+      "package_guid": "4afd33cc-1975-56cb-9de6-9614d79d5ca7",
+      "report": "sets/02_Baifeng/reports/release_validation.json",
+      "cloth_meshes": 6,
+      "lods": [
+        {
+          "lod": 0,
+          "vertices": 35456,
+          "triangles": 37186
+        },
+        {
+          "lod": 1,
+          "vertices": 24860,
+          "triangles": 23741
+        },
+        {
+          "lod": 2,
+          "vertices": 16393,
+          "triangles": 14383
+        },
+        {
+          "lod": 3,
+          "vertices": 11007,
+          "triangles": 9047
+        }
+      ]
+    },
+    {
+      "set": "圣绣 · 素问",
+      "prefix": "sx_suwen",
+      "path": "module/ShengxiuCollection/AssetPackages/sx_suwen.tpac",
+      "sha256": "6125def32ab0af2722b1118760be051b74728c4471400425025586217821d5ec",
+      "package_guid": "74179f6f-8070-5fd6-838c-12a141449ec4",
+      "report": "sets/03_Suwen/reports/release_validation.json",
+      "cloth_meshes": 6,
+      "lods": [
+        {
+          "lod": 0,
+          "vertices": 11431,
+          "triangles": 14919
+        },
+        {
+          "lod": 1,
+          "vertices": 8258,
+          "triangles": 10375
+        },
+        {
+          "lod": 2,
+          "vertices": 5872,
+          "triangles": 7202
+        },
+        {
+          "lod": 3,
+          "vertices": 4339,
+          "triangles": 5389
+        }
+      ]
+    }
+  ],
+  "registered_items": 9,
+  "resource_and_guid_collisions": false,
+  "native_28_bone_binding": true,
+  "new_cloth_lods": [
+    0,
+    1
+  ],
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "limitations": "New outfits validated offline. Natural cloth motion, weapon IK, body sliders and mounted collision require user game testing."
+}

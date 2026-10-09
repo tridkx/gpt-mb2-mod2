@@ -1,0 +1,58 @@
+{
+  "status": "pass",
+  "package_sha256": "368ebcf077393ee65bc903f1f63faefbfc30a90e776a9d2e4d32b477374ada4f",
+  "rest_geometry_max_change_m": 0.0,
+  "neck_follow_fraction": 0.7,
+  "final_tpac_eye_neck_weight": 0.7019607843137253,
+  "final_quantized_weights_verified": true,
+  "chin_and_face_uniform_transform_verified": [
+    {
+      "lod": 0,
+      "protected_face_vertices": 1666,
+      "maximum_weight_difference_from_eye": 0.0
+    },
+    {
+      "lod": 1,
+      "protected_face_vertices": 1666,
+      "maximum_weight_difference_from_eye": 0.0
+    },
+    {
+      "lod": 2,
+      "protected_face_vertices": 1666,
+      "maximum_weight_difference_from_eye": 0.0
+    },
+    {
+      "lod": 3,
+      "protected_face_vertices": 1666,
+      "maximum_weight_difference_from_eye": 0.0
+    }
+  ],
+  "measure": "lateral head-center drift relative to neck coordinate frame; native animation rotations retained",
+  "motions": [
+    {
+      "label": "idle",
+      "old_max_lateral_drift_m": 0.04463401196743743,
+      "new_max_lateral_drift_m": 0.013390203590231176,
+      "frames_checked": 1267
+    },
+    {
+      "label": "run",
+      "old_max_lateral_drift_m": 0.010126531160609476,
+      "new_max_lateral_drift_m": 0.0030379593481828417,
+      "frames_checked": 25
+    },
+    {
+      "label": "bow",
+      "old_max_lateral_drift_m": 0.05042500176297596,
+      "new_max_lateral_drift_m": 0.015127500528892742,
+      "frames_checked": 150
+    },
+    {
+      "label": "riding",
+      "old_max_lateral_drift_m": 0.014084780335808667,
+      "new_max_lateral_drift_m": 0.004225434100742582,
+      "frames_checked": 20
+    }
+  ],
+  "scope": "offline skeletal motion; game test by user"
+}

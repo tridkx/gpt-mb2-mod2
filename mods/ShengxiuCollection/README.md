@@ -1,4 +1,30 @@
-# Shengxiu Collection v1.0.4
+下颌补修：已将胸椎到头部的权重渐变从下巴收回颈环；四级 LOD 验证完整脸部与眼睛同步，避免下巴被胸椎拉歪。
+
+白凤与素问已补充动作头颈随动修正（静态造型不变）；素问恢复睫毛 Alpha 并补齐虹膜。专项报告位于各套装 reports/head_follow_validation.json 与素问 reports/eye_material_repair.json。
+
+# Shengxiu Collection v1.1.0
+
+本版加入「圣绣 · 白凤（女）」和「圣绣 · 素问」，与已有明玉放在同一个 `ShengxiuCollection` 模块。管理器显示英文 Shengxiu Collection；游戏内按「圣绣 · 白凤」「圣绣 · 素问」查找装备。每套三件：发容（头盔）、衣裙与手饰（身体）、腿部与绣鞋（靴子）。同套三件一起装备，手套、披肩槽留空。
+
+| 套装 | 工程 | 资源包 |
+| --- | --- | --- |
+| 明玉 | 现有根 input/source/tex/tools | sx_mingyu.tpac |
+| 白凤（女） | sets/02_Baifeng/ | sx_baifeng.tpac |
+| 素问 | sets/03_Suwen/ | sx_suwen.tpac |
+
+明玉运行时 TPAC 与 v1.0.4 逐字节一致。两套新增装备分别测量尺度、朝向、材质槽与解剖标记，使用独立资源名和 GUID；不覆盖输入目录。素问原模型导入后 Y 轴向上，预览错拍成头顶；本版将它旋转到 Z 轴向上，重新生成正常正面、侧面、背面、面部和原生动作预览。白凤实际面片使用的材质槽不是第一个槽，已正确读取并用贴图透明裁切，避免衣服整体半透明或羽饰变黑。
+
+新两套长袖/垂带、裙摆、长发在 LOD0、LOD1 都生成自己的布料预处理数据，LOD2/3 仅蒙皮。肩口保留手臂权重，垂带避免跟随腿部；腰部挂饰另按所属部件绑定，白凤肩羽固定跟随上臂。UV 切分点按位置恢复布料拓扑，活动范围与固定根部逐顶点检查；实际根部修补在每套 reports/cooked_cloth_validation.json 中记录。共用编译器是三角网格约束网络，未复刻原生重构网格算法。
+
+最终 TPAC 已回读检查所有四级 LOD、28 骨索引与权重、皮肤接缝、全部贴图 mip、布料映射/骨骼/约束/锚点及并行分组。站立抽查 16 帧，跑步完整 25 帧、拉弓 150 帧、骑乘 20 帧。活动布料的离线蒙皮拉伸仅记录为诊断，因为预览未运行游戏布料求解器；固定皮肤和连接处另做拉伸检查。原生腿部胶囊接触只是诊断，不代表已消除所有裙摆穿模。鞋底用各套原始鞋子单独拟合，低处鞋长约 24.5cm、最低鞋底为 z=1mm。
+
+交付包含 Mod ZIP 与 Source ZIP。源码包保留每套相邻的 source/、tex/，Blend 内打包贴图，FBX 可重新导入；旧包和 Git 标签保留。只安装此合集模块，不启动游戏。**新两套尚未由用户游戏验证；自然回落、挥砍、骑乘碰撞和远处 LOD 求解仍需游戏测试。**
+
+新两套重建：在本工作区执行 `python -X utf8 mods/ShengxiuCollection/tools/build_new_sets.py`，可用 `--set 02_Baifeng` 或 `--set 03_Suwen` 指定一套。它直接运行各套已提交的模型参数和脚本，不重新套用明玉参数。检查最终预览后执行 tools/prepare_collection_release.py，再用工作区 tools/install_release.ps1 -Mod ShengxiuCollection -Version v1.1.0 -PreviousVersion v1.0.4 打包安装。Blender、mbtool、原生游戏包和 asset_helpers 为本机外部依赖；布料共用源码随 Source ZIP 放在 workspace_tools/cloth_compiler/。
+
+以下保留明玉 v1.0.4 及之前的制作和反馈记录，所述历史版本不表示新两套已经通过游戏测试。
+
+## 明玉 v1.0.4 历史记录
 
 2026-10-09 用户反馈「可以生效，但是只有很近的时候才生效」，确认 v1.0.4 安装期间的近距离布料效果；用户未明确指定测试版本，不扩展为所有 LOD/距离/动作已通过。助手未启动游戏。当前是包内 LOD0 三类布料、LOD1 仅袖纱、LOD2/3 无布料。最高画质的[官方默认网格切换点](https://moddocs.bannerlord.com/asset-management/asset-types/meshes/)为 15、22.5、30 米；对应参考区间 LOD0 约 0–15m、LOD1 约 15–22.5m、LOD2 约 22.5–30m、本模组最后的 LOD3 约 30m 以后直到剔除。画质设置可缩短距离，这不是本机实测布料截止值；LOD1 的求解效果和引擎是否独立限距仍待确认。
 

@@ -1,0 +1,309 @@
+{
+  "status": "pass",
+  "final_package_sha256": "6125def32ab0af2722b1118760be051b74728c4471400425025586217821d5ec",
+  "uncooked_package_sha256": "7d8cec277fee8663c71c20c67f8a108f674f22adc7743311b2aeeef5cab1b1cd",
+  "all_runtime_geometry_alpha_and_skin_streams_preserved": true,
+  "cooked_meshes": [
+    {
+      "mesh": "sx_suwen_body_13",
+      "guid": "181f9dc4-1f52-7820-a4de-20857e9bb8f4",
+      "metamesh": "sx_suwen_body",
+      "lod": 0,
+      "bytes": 84260,
+      "render_vertices": 812,
+      "simulation_vertices": 782,
+      "fixed_positions": 21,
+      "boundary_fixed_positions": 17,
+      "active_positions": 761,
+      "stretch_constraints": 2042,
+      "bend_constraints": 1779,
+      "shear_constraints": 0,
+      "parallel_sets": 16,
+      "dummy_sets": 10,
+      "max_geodesic_anchor_length": 0.9015550396041713,
+      "sha256": "94a6b88400479ea14f15f2eb84e8345f3864d13502dbfed5d1d7f1ef6d7343a0",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": []
+    },
+    {
+      "mesh": "sx_suwen_body_01",
+      "guid": "1d0c17e1-16c8-19c7-1abc-ae98c2b12554",
+      "metamesh": "sx_suwen_body",
+      "lod": 0,
+      "bytes": 97396,
+      "render_vertices": 1513,
+      "simulation_vertices": 1309,
+      "fixed_positions": 811,
+      "boundary_fixed_positions": 62,
+      "active_positions": 498,
+      "stretch_constraints": 1424,
+      "bend_constraints": 1316,
+      "shear_constraints": 0,
+      "parallel_sets": 17,
+      "dummy_sets": 11,
+      "max_geodesic_anchor_length": 0.6857234404977092,
+      "sha256": "e221d8a0ca7df10969695c810ddb1df5b14929b21daee0a047c45efa7f9acaae",
+      "root_fixes": [
+        {
+          "component_positions": 8,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1127,
+            1130,
+            1131,
+            1132
+          ],
+          "bounds": [
+            [
+              -0.30965778,
+              -0.066287555,
+              1.2546058
+            ],
+            [
+              -0.2664636,
+              -0.019927276,
+              1.2904707
+            ]
+          ]
+        },
+        {
+          "component_positions": 8,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1135,
+            1136,
+            1139,
+            1140
+          ],
+          "bounds": [
+            [
+              0.2664323,
+              -0.06628925,
+              1.2545677
+            ],
+            [
+              0.30961293,
+              -0.019929186,
+              1.2904496
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        1127,
+        1130,
+        1131,
+        1132,
+        1135,
+        1136,
+        1139,
+        1140
+      ]
+    },
+    {
+      "mesh": "sx_suwen_body_01.lod1",
+      "guid": "dff8ce25-66ff-8a31-5615-4cf3314e3c4c",
+      "metamesh": "sx_suwen_body",
+      "lod": 1,
+      "bytes": 64636,
+      "render_vertices": 1024,
+      "simulation_vertices": 910,
+      "fixed_positions": 598,
+      "boundary_fixed_positions": 58,
+      "active_positions": 312,
+      "stretch_constraints": 872,
+      "bend_constraints": 760,
+      "shear_constraints": 0,
+      "parallel_sets": 18,
+      "dummy_sets": 11,
+      "max_geodesic_anchor_length": 0.6928807560952003,
+      "sha256": "f3b9fcb5de3ddc1ff8bd7bba80b54b1a509197c900f0446e4d23ace21462b69e",
+      "root_fixes": [
+        {
+          "component_positions": 6,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            706,
+            709,
+            711
+          ],
+          "bounds": [
+            [
+              -0.3092982,
+              -0.066287555,
+              1.2542087
+            ],
+            [
+              -0.2663581,
+              -0.019927276,
+              1.2903241
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            712,
+            713,
+            716
+          ],
+          "bounds": [
+            [
+              0.26633248,
+              -0.06628925,
+              1.2541827
+            ],
+            [
+              0.3092633,
+              -0.019929186,
+              1.2903101
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        706,
+        709,
+        711,
+        712,
+        713,
+        716
+      ]
+    },
+    {
+      "mesh": "sx_suwen_body_13.lod1",
+      "guid": "e30dc23f-e2ef-8ef0-6c3f-34b31e2dc4b9",
+      "metamesh": "sx_suwen_body",
+      "lod": 1,
+      "bytes": 52748,
+      "render_vertices": 533,
+      "simulation_vertices": 512,
+      "fixed_positions": 24,
+      "boundary_fixed_positions": 20,
+      "active_positions": 488,
+      "stretch_constraints": 1257,
+      "bend_constraints": 1019,
+      "shear_constraints": 0,
+      "parallel_sets": 16,
+      "dummy_sets": 10,
+      "max_geodesic_anchor_length": 0.884919604203544,
+      "sha256": "a6caeb3e423a7cbf9c2ec8c795e6cc5664ba9094f8c545849b920f4230010fe8",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": []
+    },
+    {
+      "mesh": "sx_suwen_head_05.lod1",
+      "guid": "4caee03e-af8b-51ff-e1f6-fe34edd27637",
+      "metamesh": "sx_suwen_head",
+      "lod": 1,
+      "bytes": 97436,
+      "render_vertices": 1335,
+      "simulation_vertices": 1174,
+      "fixed_positions": 129,
+      "boundary_fixed_positions": 99,
+      "active_positions": 1045,
+      "stretch_constraints": 2213,
+      "bend_constraints": 1091,
+      "shear_constraints": 0,
+      "parallel_sets": 14,
+      "dummy_sets": 9,
+      "max_geodesic_anchor_length": 1.3152213614002395,
+      "sha256": "9ea536111cde0e1b7a0fa3db05f9627b30ef59fd0ae5f390b082d84f9277f9e3",
+      "root_fixes": [
+        {
+          "component_positions": 20,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            306,
+            309
+          ],
+          "bounds": [
+            [
+              0.064730085,
+              -0.10110318,
+              1.0800074
+            ],
+            [
+              0.1262101,
+              -0.014881813,
+              1.564231
+            ]
+          ]
+        },
+        {
+          "component_positions": 20,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            475,
+            476
+          ],
+          "bounds": [
+            [
+              -0.12620991,
+              -0.10110318,
+              1.0800074
+            ],
+            [
+              -0.06399991,
+              -0.01488261,
+              1.5642416
+            ]
+          ]
+        },
+        {
+          "component_positions": 16,
+          "reason": "Restore the upper component attachment edge after runtime split or LOD decimation; measured 15mm root band.",
+          "pinned_render_vertices": [
+            1123,
+            1124
+          ],
+          "bounds": [
+            [
+              -0.0022699109,
+              -0.15333031,
+              0.95378745
+            ],
+            [
+              0.03945009,
+              -0.07552083,
+              1.6266345
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        306,
+        309,
+        475,
+        476,
+        1123,
+        1124
+      ]
+    },
+    {
+      "mesh": "sx_suwen_head_05",
+      "guid": "f46b29bb-ac24-a32f-9448-42d59c70378b",
+      "metamesh": "sx_suwen_head",
+      "lod": 0,
+      "bytes": 140472,
+      "render_vertices": 2107,
+      "simulation_vertices": 1511,
+      "fixed_positions": 152,
+      "boundary_fixed_positions": 82,
+      "active_positions": 1359,
+      "stretch_constraints": 3169,
+      "bend_constraints": 2221,
+      "shear_constraints": 0,
+      "parallel_sets": 17,
+      "dummy_sets": 10,
+      "max_geodesic_anchor_length": 0.7890548246243961,
+      "sha256": "4b4add310d11fd496c896ac922e1e0566e8db292c45c0a41e231d98d8f425dfb",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": []
+    }
+  ],
+  "native_format_structure_checked": true,
+  "game_solver_verified": false,
+  "limitations": "Offline triangle network compiler; game simulation and natural falling require user testing."
+}

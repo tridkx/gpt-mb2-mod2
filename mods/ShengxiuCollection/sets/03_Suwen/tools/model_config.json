@@ -1,0 +1,345 @@
+{
+  "id": "ShengxiuCollection",
+  "prefix": "sx_suwen",
+  "title": "圣绣 · 素问",
+  "display_name": "Shengxiu Collection",
+  "original_directory": "D:/dsh-tiandao/圣绣.素问",
+  "source_coordinate_to_meters": 1,
+  "input_scale": 0.000107,
+  "input_axis": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "source_landmarks": {
+    "pelvis": [
+      0.0,
+      -0.0107,
+      1.05395
+    ],
+    "spine": [
+      0.0,
+      -0.0107,
+      1.17165
+    ],
+    "spine1": [
+      0.0,
+      -0.0107,
+      1.30005
+    ],
+    "spine2": [
+      0.0,
+      -0.0107,
+      1.41775
+    ],
+    "neck": [
+      0.0,
+      -0.0107,
+      1.54615
+    ],
+    "head": [
+      0.0,
+      0.0,
+      1.6478
+    ],
+    "thigh": [
+      0.0963,
+      -0.0107,
+      1.05395
+    ],
+    "calf": [
+      0.1177,
+      -0.0214,
+      0.58315
+    ],
+    "foot": [
+      0.1391,
+      -0.0107,
+      0.08025
+    ],
+    "toe0": [
+      0.1391,
+      0.0856,
+      0.0107
+    ],
+    "clavicle": [
+      0.0535,
+      -0.0107,
+      1.49265
+    ],
+    "upperarm_twist": [
+      0.1605,
+      -0.0107,
+      1.48195
+    ],
+    "foretwist": [
+      0.3424,
+      -0.0214,
+      1.2733
+    ],
+    "hand": [
+      0.47615,
+      0.0321,
+      1.1128
+    ],
+    "finger0": [
+      0.535,
+      0.0642,
+      1.01115
+    ]
+  },
+  "parts": {
+    "mesh_00_188027": [
+      "legs",
+      "skin",
+      "legs"
+    ],
+    "mesh_01_220678": [
+      "body",
+      "cloth",
+      "hanging_clothes"
+    ],
+    "mesh_02_330137": [
+      "head",
+      "ornament",
+      "rigid_head"
+    ],
+    "mesh_03_343972": [
+      "body",
+      "skin",
+      "arms"
+    ],
+    "mesh_04_371055": [
+      "head",
+      "ornament",
+      "rigid_head"
+    ],
+    "mesh_05_387546": [
+      "head",
+      "hair",
+      "long_hair"
+    ],
+    "mesh_06_502645": [
+      "head",
+      "hair",
+      "rigid_head"
+    ],
+    "mesh_07_603760": [
+      "head",
+      "lash",
+      "rigid_head"
+    ],
+    "mesh_08_624283": [
+      "head",
+      "eye",
+      "rigid_head"
+    ],
+    "mesh_09_642886": [
+      "head",
+      "face",
+      "skin"
+    ],
+    "mesh_10_777537": [
+      "body",
+      "wrist",
+      "arms"
+    ],
+    "mesh_11_795132": [
+      "body",
+      "skin",
+      "arms"
+    ],
+    "mesh_12_868807": [
+      "legs",
+      "pants",
+      "legs"
+    ],
+    "mesh_13_913938": [
+      "body",
+      "cloth",
+      "skirt"
+    ]
+  },
+  "material_slots": {
+    "mesh_00_188027": 0,
+    "mesh_01_220678": 0,
+    "mesh_02_330137": 0,
+    "mesh_03_343972": 0,
+    "mesh_04_371055": 0,
+    "mesh_05_387546": 0,
+    "mesh_06_502645": 0,
+    "mesh_07_603760": 0,
+    "mesh_08_624283": 0,
+    "mesh_09_642886": 0,
+    "mesh_10_777537": 0,
+    "mesh_11_795132": 0,
+    "mesh_12_868807": 0,
+    "mesh_13_913938": 0
+  },
+  "textures": {
+    "skin": [
+      "Tex_0021_0.png",
+      "opaque"
+    ],
+    "cloth": [
+      "Tex_0018_0_opaque.png",
+      "opaque"
+    ],
+    "ornament": [
+      "Tex_0020_0_opaque.png",
+      "opaque"
+    ],
+    "hair": [
+      "Tex_0016_0_opaque.png",
+      "opaque"
+    ],
+    "lash": [
+      "Tex_0044_0_alpha.png",
+      "alpha"
+    ],
+    "eye": [
+      "Suwen_eye_iris.png",
+      "opaque"
+    ],
+    "face": [
+      "Tex_0007_0.png",
+      "opaque"
+    ],
+    "wrist": [
+      "Tex_0012_0_opaque.png",
+      "opaque"
+    ],
+    "pants": [
+      "Tex_0019_0_opaque.png",
+      "opaque"
+    ]
+  },
+  "material_overrides": {
+    "lash": {
+      "alphaTest": 0.12
+    },
+    "cloth": {
+      "alphaTest": 0.08
+    }
+  },
+  "cloth_max_distance": {
+    "skirt": 0.12,
+    "long_hair": 0.04,
+    "hanging_clothes": 0.5
+  },
+  "skirt_thigh_follow": 0.38,
+  "lod_ratios": [
+    1,
+    0.6,
+    0.32,
+    0.16
+  ],
+  "cloth_lods": {
+    "skirt": [
+      0,
+      1
+    ],
+    "long_hair": [
+      0,
+      1
+    ],
+    "hanging_clothes": [
+      0,
+      1
+    ]
+  },
+  "measurement_notes": "Measured source meshes and material face slots. Baifeng Z-up centimetre coordinates; Suwen Y-up coordinates 100 times larger. Canonical conversion is a proper rotation (determinant +1), no mirrored geometry. Native skeleton matrices shared, no Mingyu repair parameters.",
+  "cloth_profiles": {
+    "skirt": {
+      "UnknownFloat1": 1,
+      "UnknownBool3": true,
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "material": {
+        "Name": "sx_suwen_skirt_fabric",
+        "BendingStiffness": 0.3,
+        "ShearingStiffness": 0.9,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.65,
+        "Gravity": 9.81,
+        "LinearInertia": 0.25,
+        "AirDragMultiplier": 0.1,
+        "Wind": 0.04,
+        "MaxLinearVelocity": 8,
+        "LinearVelocityMultiplier": 1
+      }
+    },
+    "long_hair": {
+      "UnknownFloat1": 1,
+      "UnknownBool3": true,
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "material": {
+        "Name": "sx_suwen_long_hair_fabric",
+        "BendingStiffness": 0.3,
+        "ShearingStiffness": 0.9,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.65,
+        "Gravity": 9.81,
+        "LinearInertia": 0.25,
+        "AirDragMultiplier": 0.1,
+        "Wind": 0.04,
+        "MaxLinearVelocity": 8,
+        "LinearVelocityMultiplier": 1
+      }
+    },
+    "hanging_clothes": {
+      "UnknownFloat1": 2,
+      "UnknownBool3": true,
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "material": {
+        "Name": "sx_suwen_hanging_clothes_fabric",
+        "BendingStiffness": 0.12,
+        "ShearingStiffness": 0.9,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.65,
+        "Gravity": 9.81,
+        "LinearInertia": 0.25,
+        "AirDragMultiplier": 0.1,
+        "Wind": 0.04,
+        "MaxLinearVelocity": 8,
+        "LinearVelocityMultiplier": 1
+      }
+    }
+  },
+  "foot_fit": {
+    "pitch_degrees": 10.345892033421213,
+    "pivot": [
+      0.0,
+      -0.056194168568113705,
+      0.09280169413943745
+    ],
+    "length_scale": 0.9173528176939969,
+    "ground_shift_m": -0.005156776929491153,
+    "target_length_m": 0.245,
+    "method": "Independently fitted sole plane from this outfit source boots; corrections fade between z=.13 and .27m."
+  },
+  "runtime_head_neck_follow": 0.7
+}

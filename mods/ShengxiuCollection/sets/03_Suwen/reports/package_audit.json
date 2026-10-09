@@ -1,0 +1,25 @@
+{
+  "package": "D:\\gpt-mb2-mod2\\mods\\ShengxiuCollection\\sets\\03_Suwen\\module\\ShengxiuCollection\\AssetPackages\\sx_suwen.tpac",
+  "status": "pass",
+  "scope": "Metadata round-trip, references and standard shader vertex-alpha risk only; textures, custom shader paths, geometry, weights, cloth dynamics and game behavior are not validated",
+  "cloth_vertex_alpha": true,
+  "errors": [],
+  "incomplete": [],
+  "observations": [],
+  "package_sha256": "6125def32ab0af2722b1118760be051b74728c4471400425025586217821d5ec",
+  "tool_output": {
+    "metacheck": "D:\\gpt-mb2-mod2\\mods\\ShengxiuCollection\\sets\\03_Suwen\\module\\ShengxiuCollection\\AssetPackages\\sx_suwen.tpac: 23 assets | checksum ok=23 bad=0 | metadata identical=23 differ=0 noSerializer=0",
+    "mataudit": "D:\\gpt-mb2-mod2\\mods\\ShengxiuCollection\\sets\\03_Suwen\\module\\ShengxiuCollection\\AssetPackages\\sx_suwen.tpac: 9 materials, 23 assets\n  metamesh-level material missing=0 | submesh Material present=56 missing=0 | submesh SecondMaterial present=0 missing=0 | metameshes with no material at all=0"
+  },
+  "counts": {
+    "materials": 9,
+    "submeshes": 56,
+    "cloth_submeshes": 6,
+    "lods": [
+      0,
+      1,
+      2,
+      3
+    ]
+  }
+}
