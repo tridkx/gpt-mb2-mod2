@@ -1,0 +1,207 @@
+{
+  "version": "v1.0.0",
+  "status": "pass",
+  "check_scope": "offline_checks",
+  "final_package_sha256": "f163e4d104e674da22fe5513e751f71ffa9ce15abf2367e253234165a98d2323",
+  "baseline_package_sha256": null,
+  "baseline_reason": "Initial release; input SHA256 recorded in input_preservation.json",
+  "lods": [
+    {
+      "lod": 0,
+      "vertices": 12564,
+      "triangles": 16144
+    },
+    {
+      "lod": 1,
+      "vertices": 9219,
+      "triangles": 11360
+    },
+    {
+      "lod": 2,
+      "vertices": 6607,
+      "triangles": 8014
+    },
+    {
+      "lod": 3,
+      "vertices": 4926,
+      "triangles": 6103
+    }
+  ],
+  "seams": [
+    {
+      "lod": 0,
+      "shared_skin_points": 21,
+      "max_position_error": 0
+    },
+    {
+      "lod": 1,
+      "shared_skin_points": 21,
+      "max_position_error": 0
+    },
+    {
+      "lod": 2,
+      "shared_skin_points": 21,
+      "max_position_error": 0
+    },
+    {
+      "lod": 3,
+      "shared_skin_points": 21,
+      "max_position_error": 0
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "asset": "anim_inventory_idle",
+      "frames_checked": 16,
+      "total_frames": 1268,
+      "max_edge_extension": 2.451712394861998,
+      "max_p99_edge_extension": 1.5901298943604019,
+      "worst_frame": 507,
+      "worst_mesh": "zw_yunhai_head_01",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0.036535750487695605,
+        "worst_frame": 507,
+        "maximum_contact_samples": 90,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    },
+    {
+      "label": "run",
+      "asset": "anim_run_forward_unarmed",
+      "frames_checked": 25,
+      "total_frames": 26,
+      "max_edge_extension": 3.6953050995089196,
+      "max_p99_edge_extension": 1.9548476592256376,
+      "worst_frame": 8,
+      "worst_mesh": "zw_yunhai_body_08",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0.047284328754823586,
+        "worst_frame": 20,
+        "maximum_contact_samples": 204,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    },
+    {
+      "label": "bow",
+      "asset": "anim_bow",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "max_edge_extension": 2.9636657782214026,
+      "max_p99_edge_extension": 2.2151161530310204,
+      "worst_frame": 68,
+      "worst_mesh": "zw_yunhai_body_08",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0.04106812768473898,
+        "worst_frame": 82,
+        "maximum_contact_samples": 105,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    },
+    {
+      "label": "riding",
+      "asset": "anim_rider_gallop_bow",
+      "frames_checked": 20,
+      "total_frames": 21,
+      "max_edge_extension": 3.635798192047429,
+      "max_p99_edge_extension": 2.2964651132899125,
+      "worst_frame": 9,
+      "worst_mesh": "zw_yunhai_body_08",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0.04855330577826917,
+        "worst_frame": 10,
+        "maximum_contact_samples": 123,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    }
+  ],
+  "textures": [
+    {
+      "name": "zw_yunhai_cloth_d",
+      "mips": 11,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.33362897237141925,
+      "alpha_mean_error_255": 0.09392929077148438
+    },
+    {
+      "name": "zw_yunhai_cuff_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.16988372802734375,
+      "alpha_mean_error_255": 0.0302581787109375
+    },
+    {
+      "name": "zw_yunhai_eye_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.24217732747395834,
+      "alpha_mean_error_255": 0.0
+    },
+    {
+      "name": "zw_yunhai_face_d",
+      "mips": 11,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.4814567565917969,
+      "alpha_mean_error_255": 0.0
+    },
+    {
+      "name": "zw_yunhai_flat_n",
+      "mips": 7,
+      "decoded_all_mips": true
+    },
+    {
+      "name": "zw_yunhai_hair_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.06529617309570312,
+      "alpha_mean_error_255": 0.8559150695800781
+    },
+    {
+      "name": "zw_yunhai_lash_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.633721669514974,
+      "alpha_mean_error_255": 0.4771614074707031
+    },
+    {
+      "name": "zw_yunhai_neutral_s",
+      "mips": 7,
+      "decoded_all_mips": true
+    },
+    {
+      "name": "zw_yunhai_ornament_d",
+      "mips": 9,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.10404459635416667,
+      "alpha_mean_error_255": 0.14508056640625
+    },
+    {
+      "name": "zw_yunhai_pants_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.08369700113932292,
+      "alpha_mean_error_255": 0.04022979736328125
+    },
+    {
+      "name": "zw_yunhai_skin_d",
+      "mips": 11,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 1.0055821736653645,
+      "alpha_mean_error_255": 0.0
+    }
+  ],
+  "metadata_audit": "pass",
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "limitations": "Offline native skeletal motion. In-game cloth, weapon IK, face animation, body sliders and horse collision require user testing.",
+  "editable_source_verified": true,
+  "all_lod_motion_and_seam_normals_verified": true,
+  "visual_review": {
+    "observer": "assistant",
+    "scope": "Final rest front/side/back, face/eye close-ups and native idle/run/bow/riding worst and contact frames; source back view compared",
+    "eye_uv": "V flip resolves upside-down eye-shadow patches and places lashes at eyelid margins",
+    "source_design": "Open rear sleeve panels and skirt slits exist in original source; retained",
+    "remaining": "Skirt/leg proxy contact and some pose intersections remain in skeletal previews; game cloth, weapon IK, horse collision, body sliders and transparency sorting require user acceptance",
+    "game_verified": false
+  }
+}

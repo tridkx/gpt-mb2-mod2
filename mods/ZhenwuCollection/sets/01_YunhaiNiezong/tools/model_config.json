@@ -1,0 +1,302 @@
+{
+  "id": "ZhenwuCollection",
+  "prefix": "zw_yunhai",
+  "title": "真武 · 云海蹑踪",
+  "display_name": "Zhenwu Collection",
+  "original_directory": "D:\\dsh-tiandao\\真武少女校服8套\\01云海蹑踪",
+  "source_coordinate_to_meters": 0.0125,
+  "source_landmarks": {
+    "pelvis": [
+      0,
+      -1,
+      77
+    ],
+    "spine": [
+      0,
+      -1,
+      84
+    ],
+    "spine1": [
+      0,
+      -1,
+      94
+    ],
+    "spine2": [
+      0,
+      -1,
+      104
+    ],
+    "neck": [
+      0,
+      -2,
+      113.7
+    ],
+    "head": [
+      0,
+      -2,
+      122
+    ],
+    "thigh": [
+      8,
+      -1,
+      77
+    ],
+    "calf": [
+      11,
+      -1.5,
+      40
+    ],
+    "foot": [
+      12.9,
+      -3,
+      7
+    ],
+    "toe0": [
+      12.9,
+      5,
+      1.5
+    ],
+    "clavicle": [
+      5,
+      -1,
+      110
+    ],
+    "upperarm_twist": [
+      15,
+      -1,
+      107
+    ],
+    "foretwist": [
+      27.5,
+      -1,
+      94
+    ],
+    "hand": [
+      37.5,
+      1,
+      81
+    ],
+    "finger0": [
+      42,
+      4,
+      76
+    ]
+  },
+  "parts": {
+    "mesh_00_123833": [
+      "head",
+      "eye",
+      "rigid_head"
+    ],
+    "mesh_01_142231": [
+      "head",
+      "face",
+      "skin"
+    ],
+    "mesh_02_302444": [
+      "legs",
+      "pants",
+      "legs"
+    ],
+    "mesh_03_360017": [
+      "body",
+      "cuff",
+      "arms"
+    ],
+    "mesh_04_399558": [
+      "head",
+      "lash",
+      "rigid_head"
+    ],
+    "mesh_05_421610": [
+      "body",
+      "skin",
+      "hands"
+    ],
+    "mesh_06_488887": [
+      "legs",
+      "skin",
+      "legs"
+    ],
+    "mesh_07_513772": [
+      "body",
+      "cloth",
+      "upper_clothes"
+    ],
+    "mesh_08_548563": [
+      "body",
+      "cloth",
+      "mixed_coat"
+    ],
+    "mesh_09_658987": [
+      "body",
+      "skin",
+      "arms"
+    ],
+    "mesh_10_675858": [
+      "head",
+      "hair",
+      "long_hair"
+    ],
+    "mesh_11_770011": [
+      "head",
+      "hair",
+      "rigid_head"
+    ],
+    "mesh_12_963872": [
+      "head",
+      "ornament",
+      "rigid_head"
+    ],
+    "mesh_13_968231": [
+      "head",
+      "ornament",
+      "rigid_head"
+    ]
+  },
+  "textures": {
+    "eye": [
+      "eye_D.png",
+      "opaque"
+    ],
+    "face": [
+      "face_D.png",
+      "opaque"
+    ],
+    "skin": [
+      "body_D.png",
+      "opaque"
+    ],
+    "pants": [
+      "pants_D.png",
+      "cutout"
+    ],
+    "cuff": [
+      "cuff_D.png",
+      "cutout"
+    ],
+    "lash": [
+      "eyelash_D.png",
+      "cutout"
+    ],
+    "hair": [
+      "hair_D.png",
+      "cutout"
+    ],
+    "ornament": [
+      "head_D.png",
+      "cutout"
+    ],
+    "cloth": [
+      "tunic_D.png",
+      "cutout"
+    ]
+  },
+  "material_overrides": {
+    "lash": {
+      "alphaTest": 0.4,
+      "blendMode": "factor"
+    },
+    "cloth": {
+      "alphaTest": 0.08
+    },
+    "hair": {
+      "alphaTest": 0.05
+    }
+  },
+  "cloth_max_distance": {
+    "skirt": 0.13,
+    "upper_clothes": 0.025,
+    "long_hair": 0.035
+  },
+  "skirt_thigh_follow": 0.5,
+  "lod_ratios": [
+    1,
+    0.6,
+    0.32,
+    0.16
+  ],
+  "cloth_lods": {
+    "mixed_coat": [
+      0
+    ],
+    "upper_clothes": [
+      0
+    ],
+    "long_hair": [
+      0
+    ]
+  },
+  "measurement_notes": "Independently measured Yunhai: source eyes/face point +Y, no Z rotation. Body is 133 source units without bun, separate hands at x36..44/z74..82, thigh skin z37..74, shoulder skin z87..115. Foot sole is initially horizontal. Coat includes torso/neck and waist-to-calf panels, so height-region assignment required. No inherited Tianxiang IDs, rig thresholds or GUIDs.",
+  "cloth_profiles": {
+    "mixed_coat": {
+      "UnknownFloat1": 1,
+      "material": {
+        "Name": "zw_yunhai_mixed_coat_cloth",
+        "BendingStiffness": 0.18,
+        "ShearingStiffness": 0.95,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.85,
+        "Gravity": 9.81,
+        "LinearInertia": 0.15,
+        "AirDragMultiplier": 0.1,
+        "Wind": 0.02,
+        "MaxLinearVelocity": 6,
+        "LinearVelocityMultiplier": 1
+      },
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "UnknownBool3": true
+    },
+    "upper_clothes": {
+      "UnknownFloat1": 1,
+      "material": {
+        "Name": "zw_yunhai_upper_clothes_cloth",
+        "BendingStiffness": 0.35,
+        "ShearingStiffness": 0.95,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.85,
+        "Gravity": 9.81,
+        "LinearInertia": 0.15,
+        "AirDragMultiplier": 0.1,
+        "Wind": 0.02,
+        "MaxLinearVelocity": 6,
+        "LinearVelocityMultiplier": 1
+      },
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "UnknownBool3": true
+    },
+    "long_hair": {
+      "UnknownFloat1": 1,
+      "material": {
+        "Name": "zw_yunhai_long_hair_cloth",
+        "BendingStiffness": 0.35,
+        "ShearingStiffness": 0.95,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.85,
+        "Gravity": 9.81,
+        "LinearInertia": 0.15,
+        "AirDragMultiplier": 0.1,
+        "Wind": 0.02,
+        "MaxLinearVelocity": 6,
+        "LinearVelocityMultiplier": 1
+      },
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "UnknownBool3": true
+    }
+  },
+  "uv_flip_v_objects": [
+    "mesh_04_399558"
+  ]
+}

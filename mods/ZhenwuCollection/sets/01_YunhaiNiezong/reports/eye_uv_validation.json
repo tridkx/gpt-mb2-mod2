@@ -1,0 +1,82 @@
+{
+  "status": "pass",
+  "final_package_sha256": "f163e4d104e674da22fe5513e751f71ffa9ce15abf2367e253234165a98d2323",
+  "flipped_mesh": "mesh_04_399558",
+  "operation": "V -> 1 - V",
+  "other_meshes_unchanged": 13,
+  "texture_files_unchanged": true,
+  "source_uv_report": [
+    {
+      "source_mesh": "mesh_00_123833",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_01_142231",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_02_302444",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_03_360017",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_04_399558",
+      "flip_v": true,
+      "max_error": 2.9802322387695312e-08
+    },
+    {
+      "source_mesh": "mesh_05_421610",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_06_488887",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_07_513772",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_08_548563",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_09_658987",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_10_675858",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_11_770011",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_12_963872",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_13_968231",
+      "flip_v": false,
+      "max_error": 0.0
+    }
+  ],
+  "comparison": "reports/eye_uv_comparison.jpg",
+  "scope": "Source UV checked against input; final package UV checked against export geometry by release verifier; final near-eye render inspected separately"
+}
