@@ -13,6 +13,10 @@ assert cloth['status']=='pass' and cloth['final_package_sha256']==report['final_
 proportions=json.loads((ROOT/'reports/proportion_validation.json').read_text())
 assert proportions['status']=='pass' and proportions['final_package_sha256']==report['final_package_sha256']
 report['proportion_repair_verified']=True
+travel=json.loads((ROOT/'reports/veil_travel_validation.json').read_text())
+assert travel['status']=='pass' and travel['final_package_sha256']==report['final_package_sha256']
+report['sleeve_travel_feasibility_checked']=True
+report['sleeve_distance_scale_assumption']=travel['assumption']
 report['editable_source_verified']=True
 report['visual_review']={'reviewed':'final eye/lash close-ups, rest front/side/back and worst native motion/contact frames','result':'reviewed; sleeve veils remain rigidly skinned in previews because the game cloth solver was not run; skirt leg proxy contacts remain for user testing','game_verified':False}
 report_path.write_text(json.dumps(report,indent=2))

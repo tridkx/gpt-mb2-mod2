@@ -1,46 +1,56 @@
 {
-  "installed_module": "D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules/ShengxiuCollection",
+  "installed_module": "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\ShengxiuCollection",
   "status": "pass",
-  "verification": "ZIP entries verified against workspace by package_delivery.py; installed bytes verified by install_release.ps1 and hash comparison",
-  "version": "v1.0.1",
+  "version": "v1.0.2",
+  "verification": "ZIP byte comparisons and installed module hashes match workspace",
   "archives": [
     {
       "name": "ShengxiuCollection_Mod.zip",
-      "sha256": "164777948A7EC9751D4874020CAED4A9873DD979620F3EC864F8F431B7281566",
-      "bytes": 8135191
+      "sha256": "1eef25db5626f7e9c84a6bfdf8637c2492ba11e6c391ac7d2d906a2844f0a1ac",
+      "bytes": 8137479
     },
     {
       "name": "ShengxiuCollection_Source.zip",
-      "sha256": "D114071402588724A4C0A024AAA1F03BFE252FE60D5E64D712F38A7ADA8CDC12",
-      "bytes": 37117865
+      "sha256": "969fc65429f60e3577fd96c64db3570c79a2d19effc0d9c5f5b952e13b4c1d41",
+      "bytes": 40440344
     },
     {
       "name": "ShengxiuCollection_v1.0.0_Mod.zip",
-      "sha256": "CE967613984D3035C498E3AC55053612C6D7D62E12EBF88EC663D02E624FEC23",
+      "sha256": "ce967613984d3035c498e3ac55053612c6d7d62e12ebf88ec663d02e624fec23",
       "bytes": 8139651
     },
     {
       "name": "ShengxiuCollection_v1.0.0_Source.zip",
-      "sha256": "F6E705C83E74F25FC945381A345ACFA784654042BEDFFAE8438662EBA21A9AB7",
+      "sha256": "f6e705c83e74f25fc945381a345acfa784654042bedffae8438662eba21a9ab7",
       "bytes": 31962211
+    },
+    {
+      "name": "ShengxiuCollection_v1.0.1_Mod.zip",
+      "sha256": "164777948a7ec9751d4874020caed4a9873dd979620f3ec864f8f431b7281566",
+      "bytes": 8135191
+    },
+    {
+      "name": "ShengxiuCollection_v1.0.1_Source.zip",
+      "sha256": "d114071402588724a4c0a024aaa1f03bfe252fe60d5e64d712f38a7ada8cdc12",
+      "bytes": 37117865
     }
   ],
   "game_launched": false,
   "files": [
     {
-      "file": "SubModule.xml",
+      "file": "AssetPackages/sx_mingyu.tpac",
       "installed_matches": true,
-      "sha256": "DC0AF9EAC561F28812FD8F754B1AB75C72FD493289B7E1D05EA5BF9F470E94DD"
+      "sha256": "e8d095b6bdcbb436c0603b9eacefce8b9706178936079d9df698d97f53b8a024"
     },
     {
       "file": "ModuleData/items.xml",
       "installed_matches": true,
-      "sha256": "04208B707D7D077B6A842536F5C96B9F1D8A96C299121B404AF4653F24FBC746"
+      "sha256": "04208b707d7d077b6a842536f5c96b9f1d8a96c299121b404af4653f24fbc746"
     },
     {
-      "file": "AssetPackages/sx_mingyu.tpac",
+      "file": "SubModule.xml",
       "installed_matches": true,
-      "sha256": "44165260EC93F4DB63C32524590798C661744217B0652A84E1B1A0CC042F782E"
+      "sha256": "5ac585432807a47e746e9753ed663d4b2763021fc3bef9bd4a0777b4da58ba52"
     }
   ]
 }

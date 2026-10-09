@@ -1,5 +1,5 @@
 """Mingyu original meshes, measured source landmarks and native human binding."""
-import bpy, json, sys, re
+import bpy, json, sys, re, heapq
 from pathlib import Path
 import numpy as np
 from mathutils import Matrix, Vector
@@ -69,7 +69,7 @@ bpy.ops.wm.read_factory_settings(use_empty=True)
 bpy.ops.import_scene.fbx(filepath=str(ROOT/'input/model.fbx'),use_anim=False)
 objects=sorted([o for o in bpy.context.scene.objects if o.type=='MESH'],key=lambda o:o.name)
 assert {o.name for o in objects}==set(cfg['parts'])
-arrays={};records=[];seams={};veil_panels={}
+arrays={};records=[];seams={};veil_panels={};veil_report=[]
 arm_skin=np.concatenate([np.array([o.matrix_world@v.co for v in o.data.vertices])*scale*np.array([-1,-1,1]) for o in objects if cfg['parts'][o.name][1]=='skin' and cfg['parts'][o.name][2]=='arms'])
 arm_skin_weights=body_weights(arm_skin)
 for o in objects:
@@ -155,6 +155,31 @@ for o,rec in zip(objects,records):
         rad/=np.maximum(np.linalg.norm(rad,axis=1,keepdims=True),1e-6);d[:,:2]+=rad*(.009*free[:,None])
     if rec['kind']=='long_hair':d[:,1]-=.006*(1-smooth(1.26,1.66,p[:,2]))
     if cfg.get('proportion_repair'):d=apply_proportions(d,cfg['proportion_repair'],rec['part'],p)
+    if rec['kind']=='upper_clothes':
+        settings=cfg['veil_repair'];alpha/=settings['reader_unknown_float1']
+        # Distance follows the actual panel topology, starting at its cuff seam.
+        # Geometry and bone weights remain exactly as the accepted v1.0.1.
+        for ids,anchor in a['veils']:
+            ids=np.array(ids);roots=ids[p[ids,2]>p[ids,2].max()-.025]
+            allowed=set(ids.tolist());graph={int(i):[] for i in ids}
+            for edge in o.data.edges:
+                u,v=map(int,edge.vertices)
+                if u in allowed and v in allowed:
+                    length=float(np.linalg.norm(d[u]-d[v]));graph[u].append((v,length));graph[v].append((u,length))
+            distance={i:float('inf') for i in allowed};queue=[]
+            for i in roots:distance[int(i)]=0;heapq.heappush(queue,(0,int(i)))
+            while queue:
+                value,u=heapq.heappop(queue)
+                if value!=distance[u]:continue
+                for v,length in graph[u]:
+                    trial=value+length
+                    if trial<distance[v]:distance[v]=trial;heapq.heappush(queue,(trial,v))
+            travel=np.array([distance[int(i)] for i in ids]);assert np.isfinite(travel).all()
+            desired=settings['travel_length_factor']*travel
+            painted=desired/settings['reader_unknown_float1']
+            assert painted.max()<=1,'Panel travel exceeds byte-alpha capacity'
+            alpha[ids]=painted
+            veil_report.append({'mesh':o.name,'bone':anchor,'vertices':ids.tolist(),'fixed_vertices':roots.tolist(),'path_distance_m':travel.tolist(),'painted_alpha':painted.tolist(),'max_path_m':float(travel.max())})
     a['P']=d;o.matrix_world=Matrix.Identity(4)
     for v,co in zip(o.data.vertices,d):v.co=co
     for f in o.data.polygons:f.use_smooth=True
@@ -192,4 +217,5 @@ bpy.ops.export_scene.fbx(filepath=str(ROOT/'source/ShengxiuCollection_Rigged.fbx
 (ROOT/'build/rig_manifest.json').write_text(json.dumps(records,indent=2))
 np.savez_compressed(ROOT/'build/rig_arrays.npz',source=source,target=target,world=world,**{n+'_'+k:v for n,a in arrays.items() for k,v in a.items() if k!='veils'})
 (ROOT/'reports/rig_fit.json').write_text(json.dumps({'source_scale':scale,'source_landmarks':source.tolist(),'target_landmarks':target.tolist(),'bone_names':names,'shared_skin_boundaries':shared,'native_skeleton_guid':rigdata['guid'],'parts':records},indent=2))
+(ROOT/'reports/veil_distance_plan.json').write_text(json.dumps({'panels':veil_report,'settings':cfg['veil_repair'],'scope':'painted travel budgets; UnknownFloat1 scale equivalence remains inferred, game solver not run'},indent=2))
 print('RIG_READY',len(objects),'meshes',sum(r['vertices'] for r in records),'vertices',len(shared),'shared skin points')

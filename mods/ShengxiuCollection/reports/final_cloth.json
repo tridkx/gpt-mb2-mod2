@@ -1261,52 +1261,54 @@
           "no_team_color",
           "no_tattoo"
         ],
-        "UnknownFloat1": 1,
+        "UnknownFloat1": 3,
         "UnknownInt3": 120,
         "UnknownBool1": true,
         "UnknownBool2": false,
         "UnknownBool3": false,
         "ClothingMaterial": {
-          "Name": "sx_mingyu_limited_fabric",
-          "BendingStiffness": 0.35,
-          "ShearingStiffness": 0.96,
+          "Name": "sx_mingyu_sleeve_silk",
+          "BendingStiffness": 0.04,
+          "ShearingStiffness": 0.85,
           "StretchingStiffness": 1,
           "AnchorStiffness": 1,
-          "Damping": 0.48,
-          "Gravity": 7,
-          "LinearInertia": 0.16,
-          "MaxLinearVelocity": 5,
-          "LinearVelocityMultiplier": 0.5,
-          "AirDragMultiplier": 0.12,
-          "Wind": 0.06
+          "Damping": 0.9,
+          "Gravity": 9.81,
+          "LinearInertia": 0.3,
+          "MaxLinearVelocity": 8,
+          "LinearVelocityMultiplier": 1,
+          "AirDragMultiplier": 0.06,
+          "Wind": 0.03
         }
       },
       {
         "Name": "sx_mingyu_body_13.lod1",
         "Lod": 1,
-        "Flags": [],
+        "Flags": [
+          "uses_cloth_simulation"
+        ],
         "MaterialFlags": [
           "no_team_color",
           "no_tattoo"
         ],
-        "UnknownFloat1": 1,
+        "UnknownFloat1": 3,
         "UnknownInt3": 120,
-        "UnknownBool1": false,
+        "UnknownBool1": true,
         "UnknownBool2": false,
         "UnknownBool3": false,
         "ClothingMaterial": {
-          "Name": "",
-          "BendingStiffness": 0,
-          "ShearingStiffness": 0,
-          "StretchingStiffness": 0,
-          "AnchorStiffness": 0,
-          "Damping": 0,
-          "Gravity": 0,
-          "LinearInertia": 0,
-          "MaxLinearVelocity": -1,
+          "Name": "sx_mingyu_sleeve_silk",
+          "BendingStiffness": 0.04,
+          "ShearingStiffness": 0.85,
+          "StretchingStiffness": 1,
+          "AnchorStiffness": 1,
+          "Damping": 0.9,
+          "Gravity": 9.81,
+          "LinearInertia": 0.3,
+          "MaxLinearVelocity": 8,
           "LinearVelocityMultiplier": 1,
-          "AirDragMultiplier": 0,
-          "Wind": 0
+          "AirDragMultiplier": 0.06,
+          "Wind": 0.03
         }
       },
       {

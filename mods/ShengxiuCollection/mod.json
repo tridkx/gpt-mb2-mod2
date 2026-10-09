@@ -27,6 +27,7 @@
     "tools/verify_proportions.py",
     "tools/verify_release.py",
     "tools/verify_source.py",
+    "tools/verify_veil_travel.py",
     "module/ShengxiuCollection/ModuleData/items.xml",
     "module/ShengxiuCollection/SubModule.xml",
     "reports/bow.json",
@@ -48,6 +49,9 @@
     "reports/final_run_contact.png",
     "reports/final_run_worst.png",
     "reports/final_visibility.json",
+    "reports/final_weapon_cuff_left.png",
+    "reports/final_weapon_cuff_right.png",
+    "reports/final_weapon_slash.png",
     "reports/human_skeleton.json",
     "reports/idle.json",
     "reports/input_preservation.json",
@@ -66,7 +70,11 @@
     "reports/rig_fit.json",
     "reports/run.json",
     "reports/source_inspection.json",
-    "reports/source_validation.json"
+    "reports/source_validation.json",
+    "reports/veil_distance_plan.json",
+    "reports/veil_travel_validation.json",
+    "reports/weapon_downswing.json",
+    "reports/weapon_slash.json"
   ],
   "package": "module/ShengxiuCollection/AssetPackages/sx_mingyu.tpac",
   "validation_report": "reports/release_validation.json"

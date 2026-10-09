@@ -1,17 +1,16 @@
 {
   "status": "pass",
-  "final_package_sha256": "44165260ec93f4db63c32524590798c661744217b0652a84e1b1a0cc042f782e",
-  "scope": "Final TPAC metadata and vertex alpha only; no game cloth solver or tcc/tcm cooking",
+  "final_package_sha256": "e8d095b6bdcbb436c0603b9eacefce8b9706178936079d9df698d97f53b8a024",
+  "scope": "Final TPAC metadata and byte-alpha; no game solver or tcc/tcm cooking",
   "cloth_meshes": [
     {
       "mesh": "sx_mingyu_head_00",
-      "region": "long_hair",
+      "lod": 0,
       "alpha_byte_range": [
         0,
         6
       ],
-      "maximum_distance_m": 0.023529411764705882,
-      "fixed_anchor_vertices_present": true,
+      "reader_unknown_float1": 1,
       "cloth_material": {
         "Name": "sx_mingyu_limited_fabric",
         "BendingStiffness": 0.35,
@@ -29,13 +28,12 @@
     },
     {
       "mesh": "sx_mingyu_body_06",
-      "region": "skirt",
+      "lod": 0,
       "alpha_byte_range": [
         0,
         23
       ],
-      "maximum_distance_m": 0.09019607843137255,
-      "fixed_anchor_vertices_present": true,
+      "reader_unknown_float1": 1,
       "cloth_material": {
         "Name": "sx_mingyu_limited_fabric",
         "BendingStiffness": 0.35,
@@ -53,26 +51,48 @@
     },
     {
       "mesh": "sx_mingyu_body_13",
-      "region": "sleeve_veils",
+      "lod": 0,
       "alpha_byte_range": [
         0,
-        41
+        170
       ],
-      "maximum_distance_m": 0.1607843137254902,
-      "fixed_anchor_vertices_present": true,
+      "reader_unknown_float1": 3,
       "cloth_material": {
-        "Name": "sx_mingyu_limited_fabric",
-        "BendingStiffness": 0.35,
-        "ShearingStiffness": 0.96,
+        "Name": "sx_mingyu_sleeve_silk",
+        "BendingStiffness": 0.04,
+        "ShearingStiffness": 0.85,
         "StretchingStiffness": 1,
         "AnchorStiffness": 1,
-        "Damping": 0.48,
-        "Gravity": 7,
-        "LinearInertia": 0.16,
-        "MaxLinearVelocity": 5,
-        "LinearVelocityMultiplier": 0.5,
-        "AirDragMultiplier": 0.12,
-        "Wind": 0.06
+        "Damping": 0.9,
+        "Gravity": 9.81,
+        "LinearInertia": 0.3,
+        "MaxLinearVelocity": 8,
+        "LinearVelocityMultiplier": 1,
+        "AirDragMultiplier": 0.06,
+        "Wind": 0.03
+      }
+    },
+    {
+      "mesh": "sx_mingyu_body_13.lod1",
+      "lod": 1,
+      "alpha_byte_range": [
+        0,
+        170
+      ],
+      "reader_unknown_float1": 3,
+      "cloth_material": {
+        "Name": "sx_mingyu_sleeve_silk",
+        "BendingStiffness": 0.04,
+        "ShearingStiffness": 0.85,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.9,
+        "Gravity": 9.81,
+        "LinearInertia": 0.3,
+        "MaxLinearVelocity": 8,
+        "LinearVelocityMultiplier": 1,
+        "AirDragMultiplier": 0.06,
+        "Wind": 0.03
       }
     }
   ],
@@ -87,5 +107,7 @@
     ]
   },
   "game_solver_verified": false,
-  "collision_reference": "human_body; in-game capsule response not verified"
+  "fixed_veil_panels": 6,
+  "unrelated_cloth_metadata_preserved": true,
+  "unknown_float1_interpretation": "Candidate distance scale inferred from reader layout; editor equivalence not proven on this game version"
 }

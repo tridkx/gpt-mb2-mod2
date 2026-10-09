@@ -207,16 +207,24 @@
     "upper_clothes": 0.075,
     "long_hair": 0.025
   },
-  "skirt_thigh_follow": 0.40,
+  "skirt_thigh_follow": 0.4,
   "veil_max_distance": 0.16,
-  "veil_horizontal_fit": 0.60,
+  "veil_horizontal_fit": 0.6,
   "proportion_repair": {
     "baseline_version": "v1.0.0",
-    "head_scale": 1.10,
-    "head_pivot": [0, 0.02273, 1.53],
+    "head_scale": 1.1,
+    "head_pivot": [
+      0,
+      0.02273,
+      1.53
+    ],
     "neck_backward_m": 0.018,
     "foot_pitch_degrees": 10.343848121969408,
-    "foot_pivot": [0, -0.05615, 0.09223],
+    "foot_pivot": [
+      0,
+      -0.05615,
+      0.09223
+    ],
     "foot_length_scale": 0.86,
     "foot_ground_shift_m": 0.006498210786149468,
     "sole_ground_m": 0.001
@@ -227,5 +235,69 @@
     0.32,
     0.16
   ],
-  "measurement_notes": "14 original meshes, no rig. Source face looks -Y; rotate 180 degrees about Z once. Anatomical landmarks independently measured from skin/hands/leg bounds. Pao is entirely below waist, sleeve includes torso ornaments and long separate side veils; sleeve panels use arm projection only when separated from central torso. No copied model IDs or GUIDs."
+  "measurement_notes": "14 original meshes, no rig. Source face looks -Y; rotate 180 degrees about Z once. Anatomical landmarks independently measured from skin/hands/leg bounds. Pao is entirely below waist, sleeve includes torso ornaments and long separate side veils; sleeve panels use arm projection only when separated from central torso. No copied model IDs or GUIDs.",
+  "veil_repair": {
+    "baseline_version": "v1.0.1",
+    "reader_unknown_float1": 3,
+    "travel_length_factor": 2.08
+  },
+  "cloth_lods": {
+    "upper_clothes": [
+      0,
+      1
+    ]
+  },
+  "cloth_profiles": {
+    "upper_clothes": {
+      "UnknownFloat1": 3,
+      "material": {
+        "Name": "sx_mingyu_sleeve_silk",
+        "BendingStiffness": 0.04,
+        "ShearingStiffness": 0.85,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.9,
+        "Gravity": 9.81,
+        "LinearInertia": 0.3,
+        "AirDragMultiplier": 0.06,
+        "Wind": 0.03,
+        "MaxLinearVelocity": 8,
+        "LinearVelocityMultiplier": 1
+      }
+    },
+    "skirt": {
+      "UnknownFloat1": 1,
+      "material": {
+        "Name": "sx_mingyu_limited_fabric",
+        "BendingStiffness": 0.35,
+        "ShearingStiffness": 0.96,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.48,
+        "Gravity": 7,
+        "LinearInertia": 0.16,
+        "AirDragMultiplier": 0.12,
+        "Wind": 0.06,
+        "MaxLinearVelocity": 5,
+        "LinearVelocityMultiplier": 0.5
+      }
+    },
+    "long_hair": {
+      "UnknownFloat1": 1,
+      "material": {
+        "Name": "sx_mingyu_limited_fabric",
+        "BendingStiffness": 0.35,
+        "ShearingStiffness": 0.96,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.48,
+        "Gravity": 7,
+        "LinearInertia": 0.16,
+        "AirDragMultiplier": 0.12,
+        "Wind": 0.06,
+        "MaxLinearVelocity": 5,
+        "LinearVelocityMultiplier": 0.5
+      }
+    }
+  }
 }

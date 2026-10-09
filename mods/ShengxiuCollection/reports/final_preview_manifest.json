@@ -1,5 +1,5 @@
 {
-  "package_sha256": "44165260ec93f4db63c32524590798c661744217b0652a84e1b1a0cc042f782e",
+  "package_sha256": "e8d095b6bdcbb436c0603b9eacefce8b9706178936079d9df698d97f53b8a024",
   "source": "Final TPAC re-export with decoded textures and quantized weights",
   "game_cloth_solver_used": false,
   "previews": [
@@ -58,6 +58,24 @@
       "frame": 2,
       "path": "reports/final_riding_contact.png",
       "reason": "worst skirt proxy contact"
+    },
+    {
+      "label": "weapon_slash",
+      "frame": 26,
+      "path": "reports/final_weapon_slash.png",
+      "scope": "native skeletal pose only; no weapon mesh, IK or cloth solver"
+    },
+    {
+      "label": "weapon_cuff_left",
+      "frame": 26,
+      "path": "reports/final_weapon_cuff_left.png",
+      "scope": "cuff attachment close-up, skeletal pose only"
+    },
+    {
+      "label": "weapon_cuff_right",
+      "frame": 26,
+      "path": "reports/final_weapon_cuff_right.png",
+      "scope": "cuff attachment close-up, skeletal pose only"
     }
   ]
 }

@@ -30,7 +30,7 @@ geometry=json.loads((BUILD/'geometry.json').read_text());recipe={}
 for part in ['head','body','legs']:
     rows=[g for g in geometry if g['part']==part]
     spec['meshes'].append({'name':'sx_mingyu_'+part,'bodyPart':'human_body','template':'mesh','groups':[{k:g[k] for k in ['name','geometry','material','flags','materialFlags']} for g in rows]})
-    recipe['sx_mingyu_'+part]={g['name']:{'kind':g['kind']} for g in rows if g['cloth']}
+    recipe['sx_mingyu_'+part]={g['name']:{'kind':g['kind'], 'profile':cfg['cloth_profiles'][g['kind']]} for g in rows if g['cloth']}
 (BUILD/'spec.json').write_text(json.dumps(spec,indent=2));(BUILD/'cloth_recipe.json').write_text(json.dumps(recipe,indent=2))
 subprocess.run([MB,'build',str(BUILD/'spec.json')],check=True)
 subprocess.run(['dotnet',str(BUILD/'package_patch/PackagePatch.dll'),str(BUILD/'base.tpac'),str(BUILD/'cloth_recipe.json'),str(ROOT/'module/ShengxiuCollection/AssetPackages/sx_mingyu.tpac')],check=True)

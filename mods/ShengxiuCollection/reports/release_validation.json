@@ -1,10 +1,10 @@
 {
-  "version": "v1.0.1",
+  "version": "v1.0.2",
   "status": "pass",
   "check_scope": "offline_checks",
-  "final_package_sha256": "44165260ec93f4db63c32524590798c661744217b0652a84e1b1a0cc042f782e",
-  "baseline_package_sha256": "10e7d59fff426b7c082013ef19bbec7600e91949cd8170f1f91e0446d3b0611c",
-  "baseline_reason": "v1.0.0 proportion repair baseline",
+  "final_package_sha256": "e8d095b6bdcbb436c0603b9eacefce8b9706178936079d9df698d97f53b8a024",
+  "baseline_package_sha256": "44165260ec93f4db63c32524590798c661744217b0652a84e1b1a0cc042f782e",
+  "baseline_reason": "v1.0.1 sleeve cloth repair baseline",
   "lods": [
     {
       "lod": 0,
@@ -13,7 +13,7 @@
     },
     {
       "lod": 1,
-      "vertices": 13027,
+      "vertices": 13031,
       "triangles": 14760
     },
     {
@@ -195,6 +195,8 @@
   "game_cloth_solver_used": false,
   "limitations": "Offline native skeletal motion. In-game cloth, weapon IK, face animation, body sliders and horse collision require user testing.",
   "proportion_repair_verified": true,
+  "sleeve_travel_feasibility_checked": true,
+  "sleeve_distance_scale_assumption": "UnknownFloat1=3 acts as alpha-distance scale. This mapping is inferred and requires game verification.",
   "editable_source_verified": true,
   "visual_review": {
     "reviewed": "final eye/lash close-ups, rest front/side/back and worst native motion/contact frames",

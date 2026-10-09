@@ -60,7 +60,9 @@ for m in visibility['materials']:assert 'disable_vertex_color_alpha' in m['Shade
 for mm in inspect:
     assert mm['UnknownString']=='human_body'
     for m in mm['meshes']:
-        if 'uses_cloth_simulation' in m['Flags']:assert m['Lod']==0 and m['ClothingMaterial']['Name']=='sx_mingyu_limited_fabric'
+        if 'uses_cloth_simulation' in m['Flags']:
+            assert m['Lod'] in [0,1]
+            assert m['ClothingMaterial']['Name'] in ['sx_mingyu_limited_fabric','sx_mingyu_sleeve_silk']
 geometry=json.loads((ROOT/'build/geometry.json').read_text());exports={};lods=[];seams=[]
 fit=json.loads((ROOT/'reports/rig_fit.json').read_text());arrays=np.load(ROOT/'build/rig_arrays.npz')
 for lod in range(4):
@@ -81,6 +83,10 @@ for lod in range(4):
         keys={tuple(np.round(np.r_[p,uv],6)) for p,uv in zip(expected['pos'],expected['uv'])}
         assert all(tuple(np.round(np.r_[p,uv],6)) in keys for p,uv in zip(m['pos'],m['uv']))
         assert np.array_equal(colors[m['name']],expected['color'][idx]),(m['name'],'cloth alpha')
+        if m['name']=='sx_mingyu_body_13':
+            np.savez_compressed(ROOT/'build/final_sleeve_channels.npz',positions=m['pos'],colors=colors[m['name']],bone_indices=m['bi'],bone_weights=m['bw'])
+        if m['name']=='sx_mingyu_body_13.lod1':
+            np.savez_compressed(ROOT/'build/final_sleeve_channels_lod1.npz',positions=m['pos'],colors=colors[m['name']],bone_indices=m['bi'],bone_weights=m['bw'])
         assert m['nidx']//3==g['tris']
     lookup={re.sub(r'\.lod\d+$','',m['name']):(m,cKDTree(m['pos'])) for m in meshes}
     max_error=0
@@ -147,6 +153,6 @@ descriptor=ET.parse(ROOT/'module/ShengxiuCollection/SubModule.xml');items=ET.par
 assert descriptor.find('Name').get('value').isascii() and descriptor.find('Id').get('value')=='ShengxiuCollection'
 assert {i.get('mesh') for i in items.getroot()}=={'sx_mingyu_head','sx_mingyu_body','sx_mingyu_legs'}
 assert sha(PACKAGE)==package_hash
-baseline=ROOT/'build/proportion_baseline_v1.0.0/sx_mingyu.tpac'
-report={'version':descriptor.find('Version').get('value'),'status':'pass','check_scope':'offline_checks','final_package_sha256':package_hash,'baseline_package_sha256':sha(baseline),'baseline_reason':'v1.0.0 proportion repair baseline','lods':lods,'seams':seams,'motions':motion,'textures':textures,'metadata_audit':'pass','game_test_verified':False,'game_cloth_solver_used':False,'limitations':'Offline native skeletal motion. In-game cloth, weapon IK, face animation, body sliders and horse collision require user testing.'}
+baseline=ROOT/'build/cloth_baseline_v1.0.1/sx_mingyu.tpac'
+report={'version':descriptor.find('Version').get('value'),'status':'pass','check_scope':'offline_checks','final_package_sha256':package_hash,'baseline_package_sha256':sha(baseline),'baseline_reason':'v1.0.1 sleeve cloth repair baseline','lods':lods,'seams':seams,'motions':motion,'textures':textures,'metadata_audit':'pass','game_test_verified':False,'game_cloth_solver_used':False,'limitations':'Offline native skeletal motion. In-game cloth, weapon IK, face animation, body sliders and horse collision require user testing.'}
 (ROOT/'reports/release_validation.json').write_text(json.dumps(report,indent=2));print(json.dumps({'lods':lods,'motions':motion,'status':report['status']},indent=2))

@@ -83,5 +83,20 @@ if not quick:
                 for o,m in zip(objects,meshes):
                     posed=lbs(m['pos'],m['bi'],m['bw'],skin);o.data.vertices.foreach_set('co',posed.astype('f4').ravel());o.data.update()
                 render(label+'_contact',(2.8,4,0));previews.append({'label':label,'frame':int(contact_frame),'path':'reports/'+prefix+'_'+label+'_contact.png','reason':'worst skirt proxy contact'})
+    if final and (ROOT/'reports/veil_travel_validation.json').exists():
+        travel=json.loads((ROOT/'reports/veil_travel_validation.json').read_text())
+        frame=next(m['largest_travel_frame'] for m in travel['motions'] if m['label']=='weapon_slash')
+        anim=parse_animjson(json.loads((ROOT/'reports/weapon_slash.json').read_text()));skin=skin_matrices(rig,anim,frame)
+        for o,m in zip(objects,meshes):
+            posed=lbs(m['pos'],m['bi'],m['bw'],skin);o.data.vertices.foreach_set('co',posed.astype('f4').ravel());o.data.update()
+        render('weapon_slash',(1.8,4,0));previews.append({'label':'weapon_slash','frame':frame,'path':'reports/final_weapon_slash.png','scope':'native skeletal pose only; no weapon mesh, IK or cloth solver'})
+        arrays=np.load(ROOT/'build/rig_arrays.npz');plan=json.loads((ROOT/'reports/veil_distance_plan.json').read_text())
+        for bone,side in [(17,'left'),(24,'right')]:
+            panel=next(p for p in plan['panels'] if p['bone']==bone)
+            roots=arrays[panel['mesh']+'_P'][panel['fixed_vertices']]
+            center=Vector((roots@skin[bone,:3,:3].T+skin[bone,:3,3]).mean(0));center.z-=.24
+            cam.location=center+Vector((1.8,4,0));cam.rotation_euler=(center-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=1.05
+            label='weapon_cuff_'+side;s.render.filepath=str(ROOT/'reports'/('final_'+label+'.png'));bpy.ops.render.render(write_still=True)
+            previews.append({'label':label,'frame':frame,'path':'reports/final_'+label+'.png','scope':'cuff attachment close-up, skeletal pose only'})
     if final:(ROOT/'reports/final_preview_manifest.json').write_text(json.dumps({'package_sha256':report['final_package_sha256'],'source':'Final TPAC re-export with decoded textures and quantized weights','game_cloth_solver_used':False,'previews':previews},indent=2))
 print('PREVIEWS_READY',prefix)

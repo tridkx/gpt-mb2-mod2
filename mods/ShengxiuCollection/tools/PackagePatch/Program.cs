@@ -10,17 +10,13 @@ foreach (var mm in pkg.Items.OfType<Metamesh>()) {
         var match = Regex.Match(m.Name, @"\.lod(\d+)");
         m.Lod = match.Success ? int.Parse(match.Groups[1].Value) : 0;
         var baseName = Regex.Replace(m.Name, @"\.b\d+$", "");
-        var cloth = m.Lod == 0 && recipe.TryGetProperty(baseName, out _);
+        var cloth = recipe.TryGetProperty(baseName, out var settings);
         m.Flags = cloth ? new List<string>{"uses_cloth_simulation"} : new List<string>();
         if (cloth) {
             // Reader field names are unverified; no editor-option equivalence is claimed.
-            m.UnknownFloat1=1f; m.UnknownInt3=120; m.UnknownBool1=true; m.UnknownBool2=false; m.UnknownBool3=false;
-            m.ClothingMaterial=new ClothingMaterial {
-                Name="sx_mingyu_limited_fabric", BendingStiffness=.35f, ShearingStiffness=.96f,
-                StretchingStiffness=1f, AnchorStiffness=1f, Damping=.48f, Gravity=7.0f,
-                LinearInertia=.16f, AirDragMultiplier=.12f, Wind=.06f,
-                MaxLinearVelocity=5f, LinearVelocityMultiplier=.50f
-            };
+            var profile=settings.GetProperty("profile");
+            m.UnknownFloat1=profile.GetProperty("UnknownFloat1").GetSingle(); m.UnknownInt3=120; m.UnknownBool1=true; m.UnknownBool2=false; m.UnknownBool3=false;
+            m.ClothingMaterial=JsonSerializer.Deserialize<ClothingMaterial>(profile.GetProperty("material").GetRawText())!;
         }
     }
 }

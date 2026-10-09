@@ -1,0 +1,68 @@
+{
+  "status": "pass",
+  "version": "v1.0.2",
+  "final_package_sha256": "e8d095b6bdcbb436c0603b9eacefce8b9706178936079d9df698d97f53b8a024",
+  "method": "Final TPAC byte-alpha and weights, current native weapon/bow rotations, vertical travel feasibility and 2*lever bound",
+  "assumption": "UnknownFloat1=3 acts as alpha-distance scale. This mapping is inferred and requires game verification.",
+  "game_solver_verified": false,
+  "motions": [
+    {
+      "label": "weapon_slash",
+      "asset": "anim_twohanded_slashright_quick_balanced_left_stance",
+      "frames_checked": 75,
+      "sample_count": 35850,
+      "old_insufficient_samples": 35710,
+      "candidate_insufficient_samples": 0,
+      "largest_required_travel_m": 1.8346244839901218,
+      "largest_travel_frame": 26
+    },
+    {
+      "label": "bow",
+      "asset": "anim_bow",
+      "frames_checked": 150,
+      "sample_count": 71700,
+      "old_insufficient_samples": 71648,
+      "candidate_insufficient_samples": 0,
+      "largest_required_travel_m": 1.8407199065316369,
+      "largest_travel_frame": 1
+    }
+  ],
+  "panels": [
+    {
+      "vertices": 95,
+      "fixed_vertices": 6,
+      "path_length_max_m": 0.9213589346787818,
+      "alpha_max": 0.6388088613772888
+    },
+    {
+      "vertices": 101,
+      "fixed_vertices": 6,
+      "path_length_max_m": 0.9612000356190005,
+      "alpha_max": 0.6664320246958403
+    },
+    {
+      "vertices": 60,
+      "fixed_vertices": 5,
+      "path_length_max_m": 0.5907657139822852,
+      "alpha_max": 0.4095975616943844
+    },
+    {
+      "vertices": 95,
+      "fixed_vertices": 6,
+      "path_length_max_m": 0.9232248163432276,
+      "alpha_max": 0.6401025393313046
+    },
+    {
+      "vertices": 101,
+      "fixed_vertices": 6,
+      "path_length_max_m": 0.9622970659155963,
+      "alpha_max": 0.6671926323681467
+    },
+    {
+      "vertices": 60,
+      "fixed_vertices": 5,
+      "path_length_max_m": 0.5928013015062071,
+      "alpha_max": 0.41100890237763693
+    }
+  ]
+}

@@ -1,29 +1,23 @@
-# Shengxiu Collection v1.0.1
+# Shengxiu Collection v1.0.2
 
-圣绣系列独立模组工程；当前收录「圣绣 · 明玉」。游戏模块 ID 为 `ShengxiuCollection`，管理器显示英文 `Shengxiu Collection`。后续同系列装备继续放本项目，使用各自资源前缀和源文件，明玉资源前缀为 `sx_mingyu_`。
+圣绣系列独立模组工程，当前收录「圣绣 · 明玉」。模块 ID 为 ShengxiuCollection，管理器显示英文 Shengxiu Collection。三件装备分别为发容、衣裙与手饰、腿部与绣鞋；装备三件获得完整人物。依赖 Native、SandBoxCore、Sandbox，可在作弊物品列表按「圣绣 · 明玉」查找。
 
-v1.0.1 根据用户对 v1.0.0 的外观反馈修正：头部上段放大 10%，颈部上端向后收 18 毫米，头颈与领口采用连续过渡；脚部回转 10.34°，鞋底前后长度从 26.95 厘米减至 23.51 厘米，原始鞋底平面顶点落在 z=0 上方 1 毫米。脚踝渐变过渡，皮肤与鞋使用一致变形。原生骨架、绑骨权重、布料 Alpha、全部运行时布料元数据和裙摆几何保持不变。布料问题按用户要求暂不处理。报告 reports/proportion_validation.json，固定镜头对比为 reports/proportion_*_before/after.png。这是离线几何与动作验证，游戏中的比例和落地表现由用户复测。
+v1.0.2 针对「长袖薄纱挥舞武器时悬空、不回落」调整布料。六片悬垂薄纱各有 5–6 个袖口固定顶点，其余顶点按距固定边的实际网格路径长度绘制 Alpha，取 2.08 倍路径长度作为目标活动预算。薄纱路径长度约 0.59–0.96 米，旧版末端最多只有 0.16 米活动范围。袖口仍随前臂，悬垂部分不能绑到腿部。模型位置和全部骨骼权重与 v1.0.1 完全一致。
 
-配套装备三件：圣绣 · 明玉 · 发容（头盔），圣绣 · 明玉 · 衣裙与手饰（身体），圣绣 · 明玉 · 腿部与绣鞋（靴子）。手套和披肩槽留空。可在作弊物品列表按名称找到，装备三件获得完整人物；商店生成需要等待游戏刷新。依赖 Native、SandBoxCore、Sandbox。
+袖纱使用独立材料 sx_mingyu_sleeve_silk：弯曲刚度 0.04、剪切刚度 0.85、抗拉和锚定为 1、速度保留系数 Damping 0.90、Gravity 9.81、惯性 0.30、空气阻力 0.06、风力系数 0.03。按照官方文档，Damping 表示传到下一帧的速度比例，不能将较低值直接理解为阻尼更低。保留运动惯性，减少过强弯曲约束，并允许重力使薄纱回落。袖纱 LOD0、LOD1 启用布料，LOD1 保护固定边，LOD2–3 仍仅蒙皮。裙摆和长发的 Alpha、布料参数保留原版。
 
-原始输入来自 `D:/dsh-tiandao/圣秀_明玉`，原始模型与修复记录保存在 input/，PNG 原样保存在 tex/。14 个无骨网格独立测量后适配当前原生 28 骨骨架，面向转换一次，保留 UV 和贴图 Alpha。固定脸型，不提供原版面部表情。源 Blend 内打包贴图，FBX 重新导入验证。
+活动距离需要超过顶点 Alpha 的 0–1 范围。第三方 reader 的 UnknownFloat1 设为 3，作为候选距离倍率；其位置和用途支持这一推断，但尚未在当前游戏版本的编辑器确认字段对应关系。包中已回读确认此字段和全部 Alpha。挥砍 75 帧、拉弓 150 帧的活动空间检查在「该字段确为倍率」的前提下通过，最长约 1.84 米的回落位移可进入活动范围；这只是几何可达性分析，不是布料求解结果。详见 reports/veil_travel_validation.json、cloth_validation.json。若游戏中仍完全悬空，需继续确认引擎是否实际启用了模拟及倍率解释，不能把参数回读通过当作动态效果验证。
 
-## 布料
+保留 v1.0.1 的比例修复：头部上段放大 10%，上颈后收 18 毫米，脚部回转 10.34°，鞋底长度约 23.51 厘米，原始平面鞋底顶点落在 z=0 上方 1 毫米。当前报告 proportion_validation.json 验证这次布料调整没有改变这些位置或权重。历史版本和报告可通过本地发布标签及旧交付包恢复。
 
-最终 TPAC 的 LOD0 启用原生直接布料模拟。腰与肩袖连接处固定，裙摆渐变活动距离最高约 9 厘米；分离长袖薄纱顶部跟随袖口，尖端最高约 16 厘米；长发尖端约 2.5 厘米。贴肤袖片采用邻近皮肤权重，悬垂薄纱单独锚定，避免错误跟随腿部。薄纱在静态适配时保持悬垂形状，减少因手臂姿态转换造成的外张。采用较低弯曲刚度、高抗拉与锚定、适度阻尼和较低风力。远处 LOD1–3 仅蒙皮。参数在 tools/model_config.json、tools/PackagePatch/Program.cs。
+原始输入来自 D:/dsh-tiandao/圣秀_明玉，原始模型及记录保存在 input/，PNG 原样保存在 tex/。14 个网格适配当前原生 28 骨骨架，保留 UV、贴图 Alpha。源 Blend 已打包贴图，FBX 重导入检查通过。固定脸型，不提供原版面部表情。
 
-已回读确认顶点活动距离、uses_cloth_simulation 标记、human_body 引用、布料材料和元数据往返。未运行游戏布料求解器，未生成编辑器预处理 tcc/tcm 文件；引擎字段 UnknownFloat1 等保留工具原字段名，不声称其与编辑器选项一一对应。无需 Blender Cloth 修改器即可在游戏资源中携带布料设置。官方参考：https://moddocs.bannerlord.com/editor/resource-editors/cloth_simulation/
+最终 TPAC 回读检查所有 LOD、XML、引用、几何、骨骼、量化权重、19 个皮肤接缝和贴图 mip。站立、跑步、拉弓、骑乘使用本机原生动作。离线蒙皮渲染在 reports/final_*.png，未模拟游戏布料。腿部代理仍有接触，游戏中的衣料碰撞、透明排序、武器握持、体型和性能需要用户测试。未启动游戏，未修改 Native。
 
-## 检查与边界
+未交付官方编辑器生成的 tcc/tcm 预处理缓存；离线路线携带模拟配置，不能声称完成编辑器烘焙或游戏求解验证。官方布料文档：https://moddocs.bannerlord.com/editor/resource-editors/cloth_simulation/
 
-最终 TPAC 回读检查 XML、独立资源名/GUID、所有引用、有限几何、四骨 byte 权重和为 255、四级 LOD、UV/颜色与构建数据一致、19 个跨网格皮肤接缝、所有贴图 mip 解码。原生站立采样 16 帧，跑步 25 帧，拉弓 150 帧，骑乘 20 帧；动作文件重新从当前已安装游戏读取核对。报告与预览在 reports/。
+重建：后台 Blender 依次执行 tools/rig_model.py、export_geometry.py（加 --python-exit-code 1）。dotnet build tools/PackagePatch/PackagePatch.csproj -o build/package_patch，然后 Python 执行 build_package.py、verify_release.py、verify_cloth.py、verify_proportions.py、verify_veil_travel.py、verify_native_provenance.py；后台 Blender 执行 verify_source.py、render_review.py -- final face。最后复核预览，执行 prepare_delivery.py。依赖工作区 tools/asset_helpers、本机 Blender、Anaconda Python、mbtool 和已安装游戏资源。
 
-预览是最终 TPAC 的离线蒙皮渲染，衣料以低阈值裁切加原贴图透明度近似，其余材质采用阈值裁切；不是引擎半透明或布料模拟画面。衣料 AlphaTest 为 0.025，避免大量薄纱被裁掉。腿部代理检测仍有接触：跑步/拉弓/骑乘最大约 7.5 厘米，不能据此声称没有穿模。游戏中的布料摆动、腿部与马匹碰撞、薄纱透明排序、武器握持、角色体型滑块和性能由用户测试。未启动游戏，未修改 Native。
+布料回归基线在 build/cloth_baseline_v1.0.1/。缓存缺失时从保留的 v1.0.1 源 ZIP 或本地 ShengxiuCollection/v1.0.1 标签恢复旧工程并重建，不把新版本当旧基线。动作 weapon_slash.json 来自原生双手右劈资源；另一个名为 downswing 的资源未包含关键帧，已排除动作验证。
 
-## 重建
-
-后台 Blender 执行 tools/rig_model.py，再执行 tools/export_geometry.py，均加 `--python-exit-code 1` 并检查退出码。用 dotnet build tools/PackagePatch/PackagePatch.csproj -o build/package_patch 编译独立补丁器；Python 执行 tools/build_package.py、tools/verify_release.py、tools/verify_native_provenance.py。后台 Blender 执行 tools/verify_source.py 和 tools/render_review.py -- final face。依赖工作区共用 tools/asset_helpers、本机 Blender、Anaconda Python、D:/mb-tools 和已安装游戏资源。
-
-本次返修重建需额外执行 tools/verify_proportions.py、tools/verify_cloth.py 和 tools/render_proportion_compare.py。比例回归基线在 build/proportion_baseline_v1.0.0/，缓存缺失时从保留的 v1.0.0 源 ZIP 或本地 ShengxiuCollection/v1.0.0 标签恢复旧工程并重建，不将新版本当旧基线。
-
-通过检查并人工复核预览后执行 tools/prepare_delivery.py，再从工作区运行 tools/install_release.ps1 -Mod ShengxiuCollection -Version v1.0.1 -PreviousVersion v1.0.0。交付 Mod ZIP 顶层为 ShengxiuCollection，可解压至游戏 Modules；源 ZIP 保持 source/ 与 tex/ 相邻。只安装自己的模块，本地 Git 管理，不上传远程。更新发布时保留上一版交付包。
+安装：从工作区运行 tools/install_release.ps1 -Mod ShengxiuCollection -Version v1.0.2 -PreviousVersion v1.0.1。Mod ZIP 顶层为 ShengxiuCollection，源 ZIP 保持 source/ 与 tex/ 相邻。保留旧版包，仅更新本模组，用本地 Git 提交及 ShengxiuCollection/v1.0.2 标签，不上传远程。

@@ -13,27 +13,34 @@ for r in manifest:
     for v in bpy.data.objects[r['object']].data.vertices:owners.setdefault(tuple(round(c,5) for c in v.co),set()).add(r['object'])
 shared={p for p,names in owners.items() if len(names)>1}
 groups=[]
+veil_plan=json.loads((ROOT/'reports/veil_distance_plan.json').read_text())
 for r in manifest:
     original=bpy.data.objects[r['object']]
     saved={tuple(round(c,5) for c in v.co):[(original.vertex_groups[g.group].name,g.weight) for g in v.groups] for v in original.data.vertices if tuple(round(c,5) for c in v.co) in shared}
     # Keep the full face in all LODs: a small mesh whose cuts define the neck.
     for lod,ratio in enumerate(cfg['lod_ratios']):
+        saved_lod=dict(saved)
+        if lod==1 and r['kind']=='upper_clothes':
+            for panel in veil_plan['panels']:
+                for vi in panel['fixed_vertices']:
+                    v=original.data.vertices[vi]
+                    saved_lod[tuple(round(c,5) for c in v.co)]=[(original.vertex_groups[g.group].name,g.weight) for g in v.groups]
         o=original.copy();o.data=original.data.copy();bpy.context.scene.collection.objects.link(o)
         for mod in list(o.modifiers):o.modifiers.remove(mod)
         bpy.context.view_layer.objects.active=o;fallback=False
         if lod and r['texture_key'] not in ['face','eye','lash']:
             guard=o.vertex_groups.new(name='SeamGuard')
-            ids=[v.index for v in o.data.vertices if tuple(round(c,5) for c in v.co) in saved]
+            ids=[v.index for v in o.data.vertices if tuple(round(c,5) for c in v.co) in saved_lod]
             if ids:guard.add(ids,1,'REPLACE')
             dec=o.modifiers.new('LOD','DECIMATE');dec.ratio=ratio
             dec.vertex_group=guard.name;dec.vertex_group_factor=1000;dec.invert_vertex_group=True
             bpy.ops.object.modifier_apply(modifier=dec.name)
             coords={tuple(round(c,5) for c in v.co) for v in o.data.vertices}
-            if not set(saved).issubset(coords):o.data=original.data.copy();fallback=True
+            if not set(saved_lod).issubset(coords):o.data=original.data.copy();fallback=True
             guard=o.vertex_groups.get('SeamGuard')
             if guard:o.vertex_groups.remove(guard)
             for v in o.data.vertices:
-                ws=saved.get(tuple(round(c,5) for c in v.co))
+                ws=saved_lod.get(tuple(round(c,5) for c in v.co))
                 if ws is not None:
                     for group in o.vertex_groups:group.remove([v.index])
                     for name,weight in ws:o.vertex_groups[name].add([v.index],weight,'REPLACE')
@@ -53,7 +60,8 @@ for r in manifest:
                     idx=[i for i,w in inf];w=np.array([w for i,w in inf]);w/=w.sum()
                     q=np.floor(w*255).astype(int);q[w.argmax()]+=255-q.sum()
                     while len(idx)<4:idx.append(0);q=np.append(q,0)
-                    a=alpha.data[vi].color[3] if alpha and lod==0 else 0
+                    cloth_lod=lod in cfg.get('cloth_lods',{}).get(r['kind'],[0])
+                    a=alpha.data[vi].color[3] if alpha and cloth_lod else 0
                     records.append((list(v.co),list(n),u,idx,q.tolist(),[255,255,255,round(a*255)]));dedup[key]=len(records)-1
                 face.append(dedup[key])
             faces.append(face)
@@ -65,7 +73,7 @@ for r in manifest:
             for a in [p,n,tangent,uvs,np.zeros((len(p),2))]:out.write(np.asarray(a,'<f4').tobytes())
             for a in [[v[5] for v in records],[v[3] for v in records],[v[4] for v in records]]:out.write(np.asarray(a,'u1').tobytes())
             out.write(f.astype('<u4').tobytes())
-        groups.append({'part':r['part'],'kind':r['kind'],'name':name,'geometry':str(path),'material':r['material'],'flags':[],'materialFlags':['no_team_color','no_tattoo'],'lod':lod,'vertices':len(p),'tris':len(f),'cloth':r['cloth'] and lod==0,'boundary_fallback':fallback})
+        groups.append({'part':r['part'],'kind':r['kind'],'name':name,'geometry':str(path),'material':r['material'],'flags':[],'materialFlags':['no_team_color','no_tattoo'],'lod':lod,'vertices':len(p),'tris':len(f),'cloth':r['cloth'] and cloth_lod,'boundary_fallback':fallback})
         bpy.data.objects.remove(o,do_unlink=True)
 (ROOT/'build/geometry.json').write_text(json.dumps(groups,indent=2))
 stats=[{'lod':i,'triangles':sum(g['tris'] for g in groups if g['lod']==i),'fallbacks':[g['name'] for g in groups if g['lod']==i and g['boundary_fallback']]} for i in range(4)]
