@@ -43,7 +43,7 @@ def rear_surface(points,tri):
   result[ids]=y.min(1)
  return result
 
-def evaluate(meshes,changed=False,posterior_mask=None,sample_faces=False,full_cycles=False):
+def evaluate(meshes,changed=False,posterior_mask=None,sample_faces=False,full_cycles=False,debug=False):
  hair=next(m for m in meshes if m['name']=='sx_mingyu_head_00')
  p=hair['pos'];mask=(p[:,1]<-.025)&(p[:,2]<1.50)
  if posterior_mask is not None:mask=posterior_mask
@@ -69,13 +69,17 @@ def evaluate(meshes,changed=False,posterior_mask=None,sample_faces=False,full_cy
    for m,f in garments:
     gp=lbs(m['pos'],m['bi'],m['bw'],skin);gp=gp@inv[:3,:3].T+inv[:3,3];triangles.append(gp[f])
    samples=hp[mask]
+   rest_samples=p[mask]
    if sample_faces:
     faces=hair['idx'].reshape(-1,3);faces=faces[np.all(mask[faces],axis=1)]
     tri=hp[faces]
     samples=np.concatenate([samples,tri.mean(1),(tri[:,0]+tri[:,1])/2,(tri[:,1]+tri[:,2])/2,(tri[:,2]+tri[:,0])/2])
+    if debug:
+     rest_tri=p[faces];rest_samples=np.concatenate([rest_samples,rest_tri.mean(1),(rest_tri[:,0]+rest_tri[:,1])/2,(rest_tri[:,1]+rest_tri[:,2])/2,(rest_tri[:,2]+rest_tri[:,0])/2])
    surface=rear_surface(samples,np.concatenate(triangles));hit=np.isfinite(surface)
    margin=surface[hit]-samples[hit,1]
    rows.append(dict(animation=label,frame=int(frame),covered_vertices=int(hit.sum()),inside_vertices=int((margin<0).sum()),minimum_gap_m=float(margin.min()) if len(margin) else None))
+   if debug and len(margin):rows[-1]['worst_rest_position']=rest_samples[np.flatnonzero(hit)[margin.argmin()]].tolist()
  return rows
 
 if __name__=='__main__':
