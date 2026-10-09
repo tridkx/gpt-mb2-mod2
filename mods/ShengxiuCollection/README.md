@@ -1,5 +1,13 @@
 # Shengxiu Collection v1.0.3
 
+2026-10-09 追加反馈「没变化」：当前布料返修未完成，不发布新版本。扩展 TPAC 检查发现，原生红缨 spear_banner_16/17 和披风的蒙皮模拟代理 clo_battania_shoulder_strap_cloak 都有类型 b97e0f10-df49-4666-8f1d-ada6630d4b4e 的额外网格数据段，分别为 120484 和 35772 字节；刚性刀头没有。明玉四个已标记为布料的子网格全部缺少这一段。原生代理的编辑器骨骼数据也完整，而明玉此数据为空。现有 builder 没有生成这些数据。此前的标记、参数、活动范围检查无法证明布料求解已经启动。
+
+这是缺少布料预处理数据的强线索，尚未通过引擎确认其为唯一原因。原生段初步解析可读出 4986 个正的约束长度和对应顶点索引，其索引均落在原生 2295 个编辑器位置内，不能移植到明玉。官方文档说明布料预处理保存约束索引、长度等数据。当前未找到独立布料编译器或托管 API 的布料生成接口，Windows 编辑器 UI 也不在本会话可控制范围；未启动游戏或编辑器。
+
+工具 NativeClothProbe 支持只读数据段检查；编译后执行 `python tools/audit_cloth_payload.py`。本版预期返回 1，报告为 reports/cloth_payload_diagnosis.json。prepare_delivery.py 已加入该检查，缺项时阻止再次发布仅修改参数的布料返修。检查通过也仅代表数据段存在，仍需核验约束与游戏动态。
+
+后续实际修复路径：在官方编辑器中重新导入已保留比例和顶点颜色的 source/ShengxiuCollection_Rigged.fbx，确认蒙皮编辑数据，打开 Cloth Editor，以 native human 骨架和 human_body 碰撞体设置长发、裙摆、袖纱，保存网格设置并生成预处理资源；回读最终 TPAC 检查自有网格对应的数据段、约束索引与几何一致性，再验证造型、材质、骨骼、LOD 和三处接缝，最后打包安装新版本。官方操作参考 https://moddocs.bannerlord.com/editor/resource-editors/cloth_simulation/ 。不要复制原生红缨的数据段，也不要把原生武器碰撞体用于衣服。
+
 圣绣系列独立模组工程，当前收录「圣绣 · 明玉」。模块 ID 为 ShengxiuCollection，管理器显示英文 Shengxiu Collection。三件装备分别为发容、衣裙与手饰、腿部与绣鞋；装备三件获得完整人物。依赖 Native、SandBoxCore、Sandbox，可在作弊物品列表按「圣绣 · 明玉」查找。
 
 v1.0.3 根据用户反馈「外观很好，但完全看不出布料模拟」核查原生偃月刀。单人原版 khuzait_polearm_1_t4 的缨是 Guard 零件 spear_banner_16；spear_banner_17 是同形的红色马尾缨。它们独立于刀头，采用直接布料模拟，无专用动画骨链。LOD0 的 Alpha 范围 0–255：1295 个固定顶点、1227 个活动顶点。资源来自当前安装的 Native/EmAssetPackages/crafting/crafting.tpac。

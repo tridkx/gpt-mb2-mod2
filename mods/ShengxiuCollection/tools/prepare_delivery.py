@@ -2,6 +2,9 @@
 import json,hashlib,xml.etree.ElementTree as ET
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
+from audit_cloth_payload import audit
+payload=audit()
+assert not payload['missing_direct_cloth_meshes'], 'Cloth payload missing: do not publish another parameter-only cloth fix. See reports/cloth_payload_diagnosis.json.'
 report_path=ROOT/'reports/release_validation.json';report=json.loads(report_path.read_text())
 source=json.loads((ROOT/'reports/source_validation.json').read_text());assert source['status']=='pass'
 package=ROOT/'module/ShengxiuCollection/AssetPackages/sx_mingyu.tpac'
