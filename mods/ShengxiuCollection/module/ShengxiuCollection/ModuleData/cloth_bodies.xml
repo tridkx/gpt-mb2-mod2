@@ -68,4 +68,50 @@
       </capsule>
     </capsules>
   </body>
+  <body name="sx_mingyu_back_collision" owner_skeleton="human_skeleton">
+    <capsules>
+      <capsule name="sx_mingyu_back_-0.065" length="0.340348" origin="0.000, 0.000, 0.000" frame="0.000000, -0.045195, 0.998978, 0.000000, 0.000000, 0.998978, 0.045195, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.065000, -0.034354, 0.960000, 1.000000">
+        <points>
+          <point radius="0.045000">
+            <bones>
+              <bone name="spine" weight="1.000" />
+            </bones>
+          </point>
+          <point radius="0.045000">
+            <bones>
+              <bone name="spine2" weight="1.000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_back_0.000" length="0.340348" origin="0.000, 0.000, 0.000" frame="0.000000, -0.045195, 0.998978, 0.000000, 0.000000, 0.998978, 0.045195, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, -0.034354, 0.960000, 1.000000">
+        <points>
+          <point radius="0.045000">
+            <bones>
+              <bone name="spine" weight="1.000" />
+            </bones>
+          </point>
+          <point radius="0.045000">
+            <bones>
+              <bone name="spine2" weight="1.000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="sx_mingyu_back_0.065" length="0.340348" origin="0.000, 0.000, 0.000" frame="0.000000, -0.045195, 0.998978, 0.000000, 0.000000, 0.998978, 0.045195, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.065000, -0.034354, 0.960000, 1.000000">
+        <points>
+          <point radius="0.045000">
+            <bones>
+              <bone name="spine" weight="1.000" />
+            </bones>
+          </point>
+          <point radius="0.045000">
+            <bones>
+              <bone name="spine2" weight="1.000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
 </bodies>

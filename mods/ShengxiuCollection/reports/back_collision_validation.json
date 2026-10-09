@@ -1,0 +1,152 @@
+{
+  "status": "pass",
+  "version": "v1.1.3",
+  "check_scope": "offline_hair_back_collision_candidate",
+  "final_package_sha256": "78ba100f6fb9ff27a1699ce5ee5230bd827dec283271a5e0f0a1e77e3f469b16",
+  "baseline_package_sha256": "1bed45f0e763815e7cd3dd6f0b74e19cdc843730f8a26f9a2221a4952fc9d649",
+  "own_hair_back_collision_body": "sx_mingyu_back_collision",
+  "collision_xml_sha256": "ad0705913897554a23f8c12fad73d1cf116e559c3357be70b2e69de94554b45b",
+  "accepted_leg_body_canonical_xml_unchanged": true,
+  "native_cloth_bodies_preserved": true,
+  "all_56_mesh_metadata_and_geometry_hashes_identical": true,
+  "all_metamesh_segment_checksums_identical": true,
+  "cloth_and_editor_blob_sha256": {
+    "sx_mingyu_body_0013d18c-bb0d-f14f-0f86-638c51381e56.bin": "3ad71ef23b9d65e5cbfeaf89a043014b84d4414d5660d60ffb78fe1f4c8020d0",
+    "sx_mingyu_body_0013d18c-bb0d-f14f-0f86-638c51381e56.edit.bin": "adf5da9d85ddb0217fd52ab7a5a3da708c70f27745daa1cf0076fc3befbc1f03",
+    "sx_mingyu_body_c089e2f0-0f05-9273-878f-4bf72ef6a8d8.bin": "5e6b41badb9648935e6281d611e61a62a72d2d00119148348ff0885cf146ee88",
+    "sx_mingyu_body_c089e2f0-0f05-9273-878f-4bf72ef6a8d8.edit.bin": "e5993173ea8e61f977795ff0277aabe179c4ba7f56ac93646715991394360893",
+    "sx_mingyu_body_e6546a5e-7ef3-d344-ec91-40d238ffbb79.bin": "ca475887ecf50592da481192883edd28a719d0479b1f38e2c440a41c2be7f7e4",
+    "sx_mingyu_body_e6546a5e-7ef3-d344-ec91-40d238ffbb79.edit.bin": "f9ee4e96d555ea65be13f5b49d38295b3347ab0d2bec613459f25ce6372ccd5b",
+    "sx_mingyu_head_3297406e-4529-80ea-4f63-592a2f5a57de.bin": "15ea30f5882daab53c1f27de457c881b72f23136ca9f5485a6a3f5099276c510",
+    "sx_mingyu_head_3297406e-4529-80ea-4f63-592a2f5a57de.edit.bin": "cb0cf1e9284b024400e680985b40fadd9c83596b285e7b8636a69a82fc6caa9d"
+  },
+  "all_four_cloth_payloads_and_parameters_identical": true,
+  "other_set_package_hashes_unchanged": {
+    "sx_baifeng.tpac": "368ebcf077393ee65bc903f1f63faefbfc30a90e776a9d2e4d32b477374ada4f",
+    "sx_suwen.tpac": "6125def32ab0af2722b1118760be051b74728c4471400425025586217821d5ec"
+  },
+  "packages": [
+    {
+      "set": "圣绣 · 明玉",
+      "prefix": "sx_mingyu",
+      "path": "module/ShengxiuCollection/AssetPackages/sx_mingyu.tpac",
+      "sha256": "78ba100f6fb9ff27a1699ce5ee5230bd827dec283271a5e0f0a1e77e3f469b16",
+      "package_guid": "61b5685b-e677-5611-a508-75e712e41bfd",
+      "report": "reports/back_collision_validation.json",
+      "cloth_meshes": 4,
+      "lods": [
+        {
+          "lod": 0,
+          "vertices": 18529,
+          "triangles": 22215
+        },
+        {
+          "lod": 1,
+          "vertices": 13031,
+          "triangles": 14760
+        },
+        {
+          "lod": 2,
+          "vertices": 8798,
+          "triangles": 9548
+        },
+        {
+          "lod": 3,
+          "vertices": 5948,
+          "triangles": 6575
+        }
+      ]
+    },
+    {
+      "set": "圣绣 · 白凤",
+      "prefix": "sx_baifeng",
+      "path": "module/ShengxiuCollection/AssetPackages/sx_baifeng.tpac",
+      "sha256": "368ebcf077393ee65bc903f1f63faefbfc30a90e776a9d2e4d32b477374ada4f",
+      "package_guid": "4afd33cc-1975-56cb-9de6-9614d79d5ca7",
+      "report": "sets/02_Baifeng/reports/release_validation.json",
+      "cloth_meshes": 6,
+      "lods": [
+        {
+          "lod": 0,
+          "vertices": 35456,
+          "triangles": 37186
+        },
+        {
+          "lod": 1,
+          "vertices": 24860,
+          "triangles": 23741
+        },
+        {
+          "lod": 2,
+          "vertices": 16393,
+          "triangles": 14383
+        },
+        {
+          "lod": 3,
+          "vertices": 11007,
+          "triangles": 9047
+        }
+      ]
+    },
+    {
+      "set": "圣绣 · 素问",
+      "prefix": "sx_suwen",
+      "path": "module/ShengxiuCollection/AssetPackages/sx_suwen.tpac",
+      "sha256": "6125def32ab0af2722b1118760be051b74728c4471400425025586217821d5ec",
+      "package_guid": "74179f6f-8070-5fd6-838c-12a141449ec4",
+      "report": "sets/03_Suwen/reports/release_validation.json",
+      "cloth_meshes": 6,
+      "lods": [
+        {
+          "lod": 0,
+          "vertices": 11431,
+          "triangles": 14919
+        },
+        {
+          "lod": 1,
+          "vertices": 8258,
+          "triangles": 10375
+        },
+        {
+          "lod": 2,
+          "vertices": 5872,
+          "triangles": 7202
+        },
+        {
+          "lod": 3,
+          "vertices": 4339,
+          "triangles": 5389
+        }
+      ]
+    }
+  ],
+  "back_fit_report": "reports/back_collision_fit.json",
+  "registered_items": 9,
+  "package_audit": {
+    "package": "D:\\gpt-mb2-mod2\\mods\\ShengxiuCollection\\build\\back_collision_candidate_v1.1.3.tpac",
+    "status": "pass",
+    "scope": "Metadata round-trip, references and standard shader vertex-alpha risk only; textures, custom shader paths, geometry, weights, cloth dynamics and game behavior are not validated",
+    "cloth_vertex_alpha": true,
+    "errors": [],
+    "incomplete": [],
+    "observations": [],
+    "package_sha256": "78ba100f6fb9ff27a1699ce5ee5230bd827dec283271a5e0f0a1e77e3f469b16",
+    "tool_output": {
+      "metacheck": "D:\\gpt-mb2-mod2\\mods\\ShengxiuCollection\\build\\back_collision_candidate_v1.1.3.tpac: 23 assets | checksum ok=23 bad=0 | metadata identical=23 differ=0 noSerializer=0",
+      "mataudit": "D:\\gpt-mb2-mod2\\mods\\ShengxiuCollection\\build\\back_collision_candidate_v1.1.3.tpac: 9 materials, 23 assets\n  metamesh-level material missing=0 | submesh Material present=56 missing=0 | submesh SecondMaterial present=0 missing=0 | metameshes with no material at all=0"
+    },
+    "counts": {
+      "materials": 9,
+      "submeshes": 56,
+      "cloth_submeshes": 4,
+      "lods": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "game_test_verified": false,
+  "limitations": "Hair-only posterior torso collider with three vertical capsules; does not restore native full human_body. No engine cloth, dummy collision, sliders or horse collision verified. Some projected hair points exceed existing 25mm travel budget. User must confirm running back clearance and unchanged natural drape; skirt fix is user-confirmed for v1.1.2 only."
+}

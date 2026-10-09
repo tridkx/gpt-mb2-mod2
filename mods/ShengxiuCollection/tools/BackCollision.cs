@@ -1,0 +1,11 @@
+using TpacTool.Lib;
+if(args.Length!=2 || Path.GetFullPath(args[0])==Path.GetFullPath(args[1]))throw new Exception("Use distinct baseline and output paths");
+var pkg=new AssetPackage(args[0],true,false);
+var body=pkg.Items.OfType<Metamesh>().Single(m=>m.Name=="sx_mingyu_body");
+var head=pkg.Items.OfType<Metamesh>().Single(m=>m.Name=="sx_mingyu_head");
+if(body.UnknownString!="sx_mingyu_leg_collision" || head.UnknownString!="")throw new Exception("Expected verified v1.1.2 baseline");
+head.UnknownString="sx_mingyu_back_collision";
+var field=head.GetType().BaseType!.GetField("_rawMetadata",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic);
+field?.SetValue(head,null);
+pkg.Save(args[1]);
+Console.WriteLine("Mingyu hair uses own back collision; validated skirt leg body preserved");

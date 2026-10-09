@@ -1,0 +1,395 @@
+{
+  "status": "pass",
+  "body_name": "sx_mingyu_back_collision",
+  "xml_sha256": "ad0705913897554a23f8c12fad73d1cf116e559c3357be70b2e69de94554b45b",
+  "leg_body_unchanged": true,
+  "capsules": [
+    {
+      "name": "sx_mingyu_back_-0.065",
+      "back_surface_y_m": [
+        -0.0873536765575409,
+        -0.102735735476017
+      ],
+      "radius_m": 0.045,
+      "endpoints_m": [
+        [
+          -0.065,
+          -0.034353676557540895,
+          0.96
+        ],
+        [
+          -0.065,
+          -0.049735735476017,
+          1.3
+        ]
+      ],
+      "endpoint_bones": [
+        "spine",
+        "spine2"
+      ]
+    },
+    {
+      "name": "sx_mingyu_back_0.000",
+      "back_surface_y_m": [
+        -0.0873536765575409,
+        -0.102735735476017
+      ],
+      "radius_m": 0.045,
+      "endpoints_m": [
+        [
+          0.0,
+          -0.034353676557540895,
+          0.96
+        ],
+        [
+          0.0,
+          -0.049735735476017,
+          1.3
+        ]
+      ],
+      "endpoint_bones": [
+        "spine",
+        "spine2"
+      ]
+    },
+    {
+      "name": "sx_mingyu_back_0.065",
+      "back_surface_y_m": [
+        -0.0873536765575409,
+        -0.102735735476017
+      ],
+      "radius_m": 0.045,
+      "endpoints_m": [
+        [
+          0.065,
+          -0.034353676557540895,
+          0.96
+        ],
+        [
+          0.065,
+          -0.049735735476017,
+          1.3
+        ]
+      ],
+      "endpoint_bones": [
+        "spine",
+        "spine2"
+      ]
+    }
+  ],
+  "hair_projection_diagnostics": [
+    {
+      "animation": "idle",
+      "frame": 1,
+      "projected_vertices": 573,
+      "max_lift_m": 0.0043744372353671235,
+      "max_projection_m": 0.04144804875144711,
+      "worst_lift_rest_position": [
+        -0.027439910918474197,
+        -0.12396777421236038,
+        1.3252074718475342
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 1,
+      "projected_vertices": 1177,
+      "max_lift_m": 0.016624035235047074,
+      "max_projection_m": 0.04415565899537055,
+      "worst_lift_rest_position": [
+        -0.10195991396903992,
+        -0.088538259267807,
+        1.3580974340438843
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 2,
+      "projected_vertices": 1183,
+      "max_lift_m": 0.019666953132241094,
+      "max_projection_m": 0.04331413088201639,
+      "worst_lift_rest_position": [
+        -0.103879913687706,
+        -0.09518712013959885,
+        1.3576375246047974
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 3,
+      "projected_vertices": 1049,
+      "max_lift_m": 0.021669120224862892,
+      "max_projection_m": 0.04325786914176409,
+      "worst_lift_rest_position": [
+        -0.0996399074792862,
+        -0.10285347700119019,
+        1.359987497329712
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 4,
+      "projected_vertices": 889,
+      "max_lift_m": 0.02569641109232168,
+      "max_projection_m": 0.04457141314773263,
+      "worst_lift_rest_position": [
+        -0.09239991009235382,
+        -0.11280383914709091,
+        1.3576774597167969
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 5,
+      "projected_vertices": 746,
+      "max_lift_m": 0.03516198386649849,
+      "max_projection_m": 0.04253249219836739,
+      "worst_lift_rest_position": [
+        -0.02697991020977497,
+        -0.13604897260665894,
+        1.3550174236297607
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 6,
+      "projected_vertices": 720,
+      "max_lift_m": 0.030455053069339044,
+      "max_projection_m": 0.04433392101717762,
+      "worst_lift_rest_position": [
+        0.04818008840084076,
+        -0.14141550660133362,
+        1.3557875156402588
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 7,
+      "projected_vertices": 758,
+      "max_lift_m": 0.0288192868409185,
+      "max_projection_m": 0.043487682776398646,
+      "worst_lift_rest_position": [
+        -0.06809990853071213,
+        -0.13013716042041779,
+        1.3572274446487427
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 8,
+      "projected_vertices": 833,
+      "max_lift_m": 0.028446503710774396,
+      "max_projection_m": 0.042961512320743044,
+      "worst_lift_rest_position": [
+        -0.05717990919947624,
+        -0.13515786826610565,
+        1.3497275114059448
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 9,
+      "projected_vertices": 945,
+      "max_lift_m": 0.03231449636759076,
+      "max_projection_m": 0.043946803787263865,
+      "worst_lift_rest_position": [
+        0.091200090944767,
+        -0.10797170549631119,
+        1.3457374572753906
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 10,
+      "projected_vertices": 991,
+      "max_lift_m": 0.02649783605716416,
+      "max_projection_m": 0.043136842416813544,
+      "worst_lift_rest_position": [
+        0.09705008566379547,
+        -0.09917347133159637,
+        1.3467274904251099
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 11,
+      "projected_vertices": 1049,
+      "max_lift_m": 0.01646556820038869,
+      "max_projection_m": 0.044051736879213016,
+      "worst_lift_rest_position": [
+        0.11404009163379669,
+        -0.08760884404182434,
+        1.3596274852752686
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 12,
+      "projected_vertices": 1018,
+      "max_lift_m": 0.019631403727685903,
+      "max_projection_m": 0.0433170029462602,
+      "worst_lift_rest_position": [
+        0.11404009163379669,
+        -0.08760884404182434,
+        1.3596274852752686
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 13,
+      "projected_vertices": 1053,
+      "max_lift_m": 0.022457986777494332,
+      "max_projection_m": 0.04362451206701903,
+      "worst_lift_rest_position": [
+        0.11404009163379669,
+        -0.08760884404182434,
+        1.3596274852752686
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 14,
+      "projected_vertices": 1044,
+      "max_lift_m": 0.02366628367055368,
+      "max_projection_m": 0.04421153949298238,
+      "worst_lift_rest_position": [
+        0.11886008828878403,
+        -0.09488940984010696,
+        1.3627774715423584
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 15,
+      "projected_vertices": 945,
+      "max_lift_m": 0.02517869814003637,
+      "max_projection_m": 0.04409167129958825,
+      "worst_lift_rest_position": [
+        0.11886008828878403,
+        -0.09488940984010696,
+        1.3627774715423584
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 16,
+      "projected_vertices": 857,
+      "max_lift_m": 0.028253445303919378,
+      "max_projection_m": 0.04481881920297658,
+      "worst_lift_rest_position": [
+        0.11794009059667587,
+        -0.10400880128145218,
+        1.3634774684906006
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 17,
+      "projected_vertices": 797,
+      "max_lift_m": 0.02451569456899505,
+      "max_projection_m": 0.044322349963691214,
+      "worst_lift_rest_position": [
+        0.10315009206533432,
+        -0.11437893658876419,
+        1.366147518157959
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 18,
+      "projected_vertices": 757,
+      "max_lift_m": 0.03011120959835978,
+      "max_projection_m": 0.043199274256777595,
+      "worst_lift_rest_position": [
+        0.03158009052276611,
+        -0.13678649067878723,
+        1.358277440071106
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 19,
+      "projected_vertices": 766,
+      "max_lift_m": 0.025720153940872903,
+      "max_projection_m": 0.04207665152162618,
+      "worst_lift_rest_position": [
+        0.08248008787631989,
+        -0.12432179600000381,
+        1.3611674308776855
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 20,
+      "projected_vertices": 831,
+      "max_lift_m": 0.025119810119446973,
+      "max_projection_m": 0.043427303712970725,
+      "worst_lift_rest_position": [
+        -9.991086699301377e-05,
+        -0.12317749857902527,
+        1.354677438735962
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 21,
+      "projected_vertices": 894,
+      "max_lift_m": 0.017489842531869693,
+      "max_projection_m": 0.04125426384176052,
+      "worst_lift_rest_position": [
+        -9.991086699301377e-05,
+        -0.12317749857902527,
+        1.354677438735962
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 22,
+      "projected_vertices": 953,
+      "max_lift_m": 0.013851306485829218,
+      "max_projection_m": 0.04427316176185833,
+      "worst_lift_rest_position": [
+        -0.023259911686182022,
+        -0.11867249757051468,
+        1.353297472000122
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 23,
+      "projected_vertices": 1074,
+      "max_lift_m": 0.012166185464540069,
+      "max_projection_m": 0.04396512274973815,
+      "worst_lift_rest_position": [
+        0.02967008948326111,
+        -0.1264474093914032,
+        1.3243974447250366
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 24,
+      "projected_vertices": 1162,
+      "max_lift_m": 0.014292165996889539,
+      "max_projection_m": 0.042966077289499756,
+      "worst_lift_rest_position": [
+        -0.10195991396903992,
+        -0.088538259267807,
+        1.3580974340438843
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 25,
+      "projected_vertices": 1177,
+      "max_lift_m": 0.01662414581065197,
+      "max_projection_m": 0.04415598132035482,
+      "worst_lift_rest_position": [
+        -0.10195991396903992,
+        -0.088538259267807,
+        1.3580974340438843
+      ]
+    }
+  ],
+  "scope": "Own back surface fitting and native skeletal motion, no engine cloth/dummy collision. Only posterior torso, no scalp or chest capsule; all hair geometry and solver distances unchanged."
+}
