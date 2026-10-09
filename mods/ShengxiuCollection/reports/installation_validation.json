@@ -1,0 +1,36 @@
+{
+  "installed_module": "D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules/ShengxiuCollection",
+  "status": "pass",
+  "verification": "ZIP entries verified against workspace by package_delivery.py; installed bytes verified by install_release.ps1 and hash comparison",
+  "version": "v1.0.0",
+  "archives": [
+    {
+      "bytes": 8139651,
+      "sha256": "CE967613984D3035C498E3AC55053612C6D7D62E12EBF88EC663D02E624FEC23",
+      "name": "ShengxiuCollection_Mod.zip"
+    },
+    {
+      "bytes": 31962211,
+      "sha256": "F6E705C83E74F25FC945381A345ACFA784654042BEDFFAE8438662EBA21A9AB7",
+      "name": "ShengxiuCollection_Source.zip"
+    }
+  ],
+  "game_launched": false,
+  "files": [
+    {
+      "file": "SubModule.xml",
+      "installed_matches": true,
+      "sha256": "060F2B252DB6DD6F93874466FFE230B2393F2E0640F0E0C852A9941C56D6DC4D"
+    },
+    {
+      "file": "ModuleData/items.xml",
+      "installed_matches": true,
+      "sha256": "04208B707D7D077B6A842536F5C96B9F1D8A96C299121B404AF4653F24FBC746"
+    },
+    {
+      "file": "AssetPackages/sx_mingyu.tpac",
+      "installed_matches": true,
+      "sha256": "10E7D59FFF426B7C082013EF19BBEC7600E91949CD8170F1F91E0446D3B0611C"
+    }
+  ]
+}

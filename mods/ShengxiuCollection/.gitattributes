@@ -1,0 +1,5 @@
+# Keep original inputs and installed-module bytes intact across Git checkouts.
+input/** -text
+tex/** -text
+source/** -text
+module/** -text

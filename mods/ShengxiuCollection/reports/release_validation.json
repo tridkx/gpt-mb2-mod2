@@ -1,0 +1,203 @@
+{
+  "version": "v1.0.0",
+  "status": "pass",
+  "check_scope": "offline_checks",
+  "final_package_sha256": "10e7d59fff426b7c082013ef19bbec7600e91949cd8170f1f91e0446d3b0611c",
+  "baseline_package_sha256": null,
+  "baseline_reason": "first release, original FBX retained",
+  "lods": [
+    {
+      "lod": 0,
+      "vertices": 18529,
+      "triangles": 22215
+    },
+    {
+      "lod": 1,
+      "vertices": 13036,
+      "triangles": 14761
+    },
+    {
+      "lod": 2,
+      "vertices": 8796,
+      "triangles": 9548
+    },
+    {
+      "lod": 3,
+      "vertices": 5942,
+      "triangles": 6578
+    }
+  ],
+  "seams": [
+    {
+      "lod": 0,
+      "shared_skin_points": 19,
+      "max_position_error": 5.810237060696339e-08
+    },
+    {
+      "lod": 1,
+      "shared_skin_points": 19,
+      "max_position_error": 5.810237060696339e-08
+    },
+    {
+      "lod": 2,
+      "shared_skin_points": 19,
+      "max_position_error": 5.810237060696339e-08
+    },
+    {
+      "lod": 3,
+      "shared_skin_points": 19,
+      "max_position_error": 5.810237060696339e-08
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "asset": "anim_inventory_idle",
+      "frames_checked": 16,
+      "total_frames": 1268,
+      "max_edge_extension": 2.3733743389670177,
+      "max_p99_edge_extension": 1.6214181410033859,
+      "worst_frame": 507,
+      "worst_mesh": "sx_mingyu_body_13",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0.033079101758817994,
+        "worst_frame": 676,
+        "maximum_contact_samples": 616,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    },
+    {
+      "label": "run",
+      "asset": "anim_run_forward_unarmed",
+      "frames_checked": 25,
+      "total_frames": 26,
+      "max_edge_extension": 2.251054997143492,
+      "max_p99_edge_extension": 1.8120387422466289,
+      "worst_frame": 21,
+      "worst_mesh": "sx_mingyu_legs_05",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0.07436631858785572,
+        "worst_frame": 9,
+        "maximum_contact_samples": 881,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    },
+    {
+      "label": "bow",
+      "asset": "anim_bow",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "max_edge_extension": 3.1317455162165193,
+      "max_p99_edge_extension": 2.508369553410447,
+      "worst_frame": 12,
+      "worst_mesh": "sx_mingyu_body_13",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0.07472503003944267,
+        "worst_frame": 40,
+        "maximum_contact_samples": 951,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    },
+    {
+      "label": "riding",
+      "asset": "anim_rider_gallop_bow",
+      "frames_checked": 20,
+      "total_frames": 21,
+      "max_edge_extension": 2.963095740121349,
+      "max_p99_edge_extension": 2.161408020960356,
+      "worst_frame": 8,
+      "worst_mesh": "sx_mingyu_legs_05",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0.07404600567833435,
+        "worst_frame": 2,
+        "maximum_contact_samples": 873,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    }
+  ],
+  "textures": [
+    {
+      "name": "sx_mingyu_cloth_d",
+      "mips": 11,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.48868338267008465,
+      "alpha_mean_error_255": 0.6041383743286133
+    },
+    {
+      "name": "sx_mingyu_eye_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.6908683776855469,
+      "alpha_mean_error_255": 0.0
+    },
+    {
+      "name": "sx_mingyu_face_d",
+      "mips": 11,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.4245789845784505,
+      "alpha_mean_error_255": 0.0
+    },
+    {
+      "name": "sx_mingyu_flat_n",
+      "mips": 7,
+      "decoded_all_mips": true
+    },
+    {
+      "name": "sx_mingyu_hair_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.2038396199544271,
+      "alpha_mean_error_255": 1.0847816467285156
+    },
+    {
+      "name": "sx_mingyu_lash_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.8784052530924479,
+      "alpha_mean_error_255": 0.4539833068847656
+    },
+    {
+      "name": "sx_mingyu_neutral_s",
+      "mips": 7,
+      "decoded_all_mips": true
+    },
+    {
+      "name": "sx_mingyu_ornament_d",
+      "mips": 9,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.2838541666666667,
+      "alpha_mean_error_255": 1.04608154296875
+    },
+    {
+      "name": "sx_mingyu_pants_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.36076609293619794,
+      "alpha_mean_error_255": 0.59967041015625
+    },
+    {
+      "name": "sx_mingyu_skin_d",
+      "mips": 11,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.7017431259155273,
+      "alpha_mean_error_255": 0.0
+    },
+    {
+      "name": "sx_mingyu_wrist_d",
+      "mips": 9,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.30621337890625,
+      "alpha_mean_error_255": 1.077880859375
+    }
+  ],
+  "metadata_audit": "pass",
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "limitations": "Offline native skeletal motion. In-game cloth, weapon IK, face animation, body sliders and horse collision require user testing.",
+  "editable_source_verified": true,
+  "visual_review": {
+    "reviewed": "final eye/lash close-ups, rest front/side/back and worst native motion/contact frames",
+    "result": "reviewed; sleeve veils remain rigidly skinned in previews because the game cloth solver was not run; skirt leg proxy contacts remain for user testing",
+    "game_verified": false
+  }
+}

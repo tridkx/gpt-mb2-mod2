@@ -1,0 +1,91 @@
+{
+  "status": "pass",
+  "final_package_sha256": "10e7d59fff426b7c082013ef19bbec7600e91949cd8170f1f91e0446d3b0611c",
+  "scope": "Final TPAC metadata and vertex alpha only; no game cloth solver or tcc/tcm cooking",
+  "cloth_meshes": [
+    {
+      "mesh": "sx_mingyu_head_00",
+      "region": "long_hair",
+      "alpha_byte_range": [
+        0,
+        6
+      ],
+      "maximum_distance_m": 0.023529411764705882,
+      "fixed_anchor_vertices_present": true,
+      "cloth_material": {
+        "Name": "sx_mingyu_limited_fabric",
+        "BendingStiffness": 0.35,
+        "ShearingStiffness": 0.96,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.48,
+        "Gravity": 7,
+        "LinearInertia": 0.16,
+        "MaxLinearVelocity": 5,
+        "LinearVelocityMultiplier": 0.5,
+        "AirDragMultiplier": 0.12,
+        "Wind": 0.06
+      }
+    },
+    {
+      "mesh": "sx_mingyu_body_06",
+      "region": "skirt",
+      "alpha_byte_range": [
+        0,
+        23
+      ],
+      "maximum_distance_m": 0.09019607843137255,
+      "fixed_anchor_vertices_present": true,
+      "cloth_material": {
+        "Name": "sx_mingyu_limited_fabric",
+        "BendingStiffness": 0.35,
+        "ShearingStiffness": 0.96,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.48,
+        "Gravity": 7,
+        "LinearInertia": 0.16,
+        "MaxLinearVelocity": 5,
+        "LinearVelocityMultiplier": 0.5,
+        "AirDragMultiplier": 0.12,
+        "Wind": 0.06
+      }
+    },
+    {
+      "mesh": "sx_mingyu_body_13",
+      "region": "sleeve_veils",
+      "alpha_byte_range": [
+        0,
+        41
+      ],
+      "maximum_distance_m": 0.1607843137254902,
+      "fixed_anchor_vertices_present": true,
+      "cloth_material": {
+        "Name": "sx_mingyu_limited_fabric",
+        "BendingStiffness": 0.35,
+        "ShearingStiffness": 0.96,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.48,
+        "Gravity": 7,
+        "LinearInertia": 0.16,
+        "MaxLinearVelocity": 5,
+        "LinearVelocityMultiplier": 0.5,
+        "AirDragMultiplier": 0.12,
+        "Wind": 0.06
+      }
+    }
+  ],
+  "cloth_material_visibility": {
+    "Name": "sx_mingyu_cloth",
+    "Guid": "c020d1b0-7079-c05c-df07-d505e86737fc",
+    "BlendMode": "factor",
+    "AlphaTest": 0.025,
+    "ShaderMaterialFlags": [
+      "alpha_test",
+      "disable_vertex_color_alpha"
+    ]
+  },
+  "game_solver_verified": false,
+  "collision_reference": "human_body; in-game capsule response not verified"
+}

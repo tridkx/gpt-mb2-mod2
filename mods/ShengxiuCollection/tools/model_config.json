@@ -1,0 +1,220 @@
+{
+  "id": "ShengxiuCollection",
+  "prefix": "sx_mingyu",
+  "title": "圣绣 · 明玉",
+  "display_name": "Shengxiu Collection",
+  "original_directory": "D:/dsh-tiandao/圣秀_明玉",
+  "source_coordinate_to_meters": 0.0108,
+  "source_landmarks": {
+    "pelvis": [
+      0,
+      1,
+      98
+    ],
+    "spine": [
+      0,
+      1,
+      109
+    ],
+    "spine1": [
+      0,
+      1,
+      121
+    ],
+    "spine2": [
+      0,
+      1,
+      132
+    ],
+    "neck": [
+      0,
+      1,
+      143
+    ],
+    "head": [
+      0,
+      0,
+      153
+    ],
+    "thigh": [
+      9,
+      1,
+      98
+    ],
+    "calf": [
+      11,
+      2,
+      54
+    ],
+    "foot": [
+      13,
+      1,
+      8
+    ],
+    "toe0": [
+      13,
+      8,
+      2
+    ],
+    "clavicle": [
+      5,
+      1,
+      139
+    ],
+    "upperarm_twist": [
+      15,
+      1,
+      138
+    ],
+    "foretwist": [
+      33,
+      1,
+      121
+    ],
+    "hand": [
+      44,
+      2,
+      109
+    ],
+    "finger0": [
+      51,
+      5,
+      96
+    ]
+  },
+  "parts": {
+    "mingyu hairbk": [
+      "head",
+      "hair",
+      "long_hair"
+    ],
+    "shengxiu mingyu coat": [
+      "body",
+      "cloth",
+      "torso"
+    ],
+    "shengxiu minyu body": [
+      "body",
+      "skin",
+      "arms"
+    ],
+    "shengxiu minyu fashi": [
+      "head",
+      "ornament",
+      "rigid_head"
+    ],
+    "shengxiu minyu leg": [
+      "legs",
+      "skin",
+      "legs"
+    ],
+    "shengxiu minyu pants": [
+      "legs",
+      "pants",
+      "legs"
+    ],
+    "shengxiu minyu pao": [
+      "body",
+      "cloth",
+      "skirt"
+    ],
+    "shengxiu minyu_eye": [
+      "head",
+      "eye",
+      "rigid_head"
+    ],
+    "shengxiu minyu_face": [
+      "head",
+      "face",
+      "skin"
+    ],
+    "shengxiu minyu_hair top": [
+      "head",
+      "hair",
+      "rigid_head"
+    ],
+    "shengxiu minyu_hands": [
+      "body",
+      "skin",
+      "arms"
+    ],
+    "shengxiu minyu_lash": [
+      "head",
+      "lash",
+      "rigid_head"
+    ],
+    "shengxiu minyu_wandai": [
+      "body",
+      "wrist",
+      "arms"
+    ],
+    "shengxiu minyu_xiuzi": [
+      "body",
+      "cloth",
+      "upper_clothes"
+    ]
+  },
+  "textures": {
+    "hair": [
+      "shengxiu_minyu_hairtop-d.png",
+      "cutout"
+    ],
+    "cloth": [
+      "shengxiu_mingyu_cloth-d.png",
+      "cutout"
+    ],
+    "skin": [
+      "shengxiu_mingyu_body-d.png",
+      "opaque"
+    ],
+    "ornament": [
+      "shengxiu_minyu_fashi-d.png",
+      "cutout"
+    ],
+    "pants": [
+      "shengxiu_mingyu_pants-d.png",
+      "cutout"
+    ],
+    "eye": [
+      "shengxiu_mingyu_eye_ok.png",
+      "opaque"
+    ],
+    "face": [
+      "shengxiu_face-d_ok.png",
+      "opaque"
+    ],
+    "lash": [
+      "shengxiu_lash.png",
+      "cutout"
+    ],
+    "wrist": [
+      "shengxiu_minyu_wan-d.png",
+      "cutout"
+    ]
+  },
+  "uv_flip_v_objects": [],
+  "material_overrides": {
+    "cloth": {
+      "alphaTest": 0.025
+    },
+    "lash": {
+      "alphaTest": 0.4,
+      "blendMode": "no_alpha_blend"
+    }
+  },
+  "cloth_max_distance": {
+    "skirt": 0.09,
+    "upper_clothes": 0.075,
+    "long_hair": 0.025
+  },
+  "skirt_thigh_follow": 0.40,
+  "veil_max_distance": 0.16,
+  "veil_horizontal_fit": 0.60,
+  "lod_ratios": [
+    1,
+    0.6,
+    0.32,
+    0.16
+  ],
+  "measurement_notes": "14 original meshes, no rig. Source face looks -Y; rotate 180 degrees about Z once. Anatomical landmarks independently measured from skin/hands/leg bounds. Pao is entirely below waist, sleeve includes torso ornaments and long separate side veils; sleeve panels use arm projection only when separated from central torso. No copied model IDs or GUIDs."
+}

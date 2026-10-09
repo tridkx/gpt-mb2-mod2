@@ -1,0 +1,774 @@
+{
+  "materials": [
+    {
+      "Name": "sx_mingyu_hair",
+      "Guid": "28c1f93e-4123-d992-d677-4a3e265a3474",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sx_mingyu_cloth",
+      "Guid": "c020d1b0-7079-c05c-df07-d505e86737fc",
+      "BlendMode": "factor",
+      "AlphaTest": 0.025,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sx_mingyu_skin",
+      "Guid": "97dffe21-e4a8-46b5-28bb-e14d6e42ecc7",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sx_mingyu_ornament",
+      "Guid": "2ca73468-0eca-ce9b-9c00-491c6b8df06f",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sx_mingyu_pants",
+      "Guid": "281c4e40-9c7b-cccb-1bd9-97bd8e0f529c",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sx_mingyu_eye",
+      "Guid": "b49c0d1a-0abf-1231-6211-fba89a99db9b",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sx_mingyu_face",
+      "Guid": "1f0d72cb-c426-cb4c-68db-11f076dd3f8d",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sx_mingyu_lash",
+      "Guid": "5d01adae-3bf0-36af-1c0a-c569a1233282",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.4,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "sx_mingyu_wrist",
+      "Guid": "1cf2fbfe-3201-5676-c1d1-4ce4f9419b85",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "Name": "sx_mingyu_head_00",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation"
+      ],
+      "Material": "28c1f93e-4123-d992-d677-4a3e265a3474",
+      "Vertices": 4946,
+      "AlphaMin": 0,
+      "AlphaMax": 6,
+      "ColorsSHA256": "48C77D12DB7560E463910EEB4D362B992AB42D1E6E7A2555921A111FF06BCC8C",
+      "VertexStreamSHA256": "5F6CDC242B95D50666EAD225BC1068BF4FDC83773AC4A77F001FE8180744ABD6",
+      "ClothMetadataSHA256": "5FCED6A2684C51E1A632E4A55653560896A6992F11B8B1107960093D960CECF9"
+    },
+    {
+      "Name": "sx_mingyu_head_00.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "28c1f93e-4123-d992-d677-4a3e265a3474",
+      "Vertices": 3138,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "F11F233D8D61BA46AE22C810D473384C51A44B3D757A80C81F291553564FB16D",
+      "VertexStreamSHA256": "473E91FD3A748709A5EFF7AE714307B8782F016A18D4596E33BF37336FEEBA4D",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_00.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "28c1f93e-4123-d992-d677-4a3e265a3474",
+      "Vertices": 1814,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B598364EC1163F4FA57A805E0E81E382F10517DB5310348BB720D734238A36CF",
+      "VertexStreamSHA256": "41728FE59FB83984D647F1B4198629503EC356AF7E2DAB33C78E250621711C77",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_00.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "28c1f93e-4123-d992-d677-4a3e265a3474",
+      "Vertices": 1052,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "947244E329D7B8196C8E64355CACF130C67283FFDA9ACCCACDFD49D876FEFF5C",
+      "VertexStreamSHA256": "213D654C42FCF966BD281F12B375BE299E6EA1305F855EE3601DF285A06F16BA",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_03",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "2ca73468-0eca-ce9b-9c00-491c6b8df06f",
+      "Vertices": 196,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "CD91BF8FB1281B12437D43FBC6C371AB59961DC534052E8980149AC93A731EF4",
+      "VertexStreamSHA256": "8F48FE0F5B40A7C149B000FFCC7A3221CE356869654E0465B7B4CB1113C7F216",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_03.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "2ca73468-0eca-ce9b-9c00-491c6b8df06f",
+      "Vertices": 140,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "7AF513A289C09C5BE9B3450CD5837FE63BAF17BF1653875AB6DCB6EB696B9BFC",
+      "VertexStreamSHA256": "618AFA1394C72A276B9B7CDF3529110E3103DF406DE7FE5D9D4B98AF327CC31C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_03.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "2ca73468-0eca-ce9b-9c00-491c6b8df06f",
+      "Vertices": 88,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "3C9BA4E6D23C85043C3E0AD47FEDDB28D7047F1602F6D2E069472569B16DFD08",
+      "VertexStreamSHA256": "E2D73162E80C14803E6230C11D2389FA3A09B83CB28E18AC0B5BE3D4BD9C88A6",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_03.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "2ca73468-0eca-ce9b-9c00-491c6b8df06f",
+      "Vertices": 45,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B5F1524E7BB7E56233058D8A911DA2B88693497909C9F196FAF989E9FCED89BC",
+      "VertexStreamSHA256": "CB025653819FA7EA8156C3298F4C37BAA97EE5A92229A48D10BAF1C7B48CB5F1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_07",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "b49c0d1a-0abf-1231-6211-fba89a99db9b",
+      "Vertices": 225,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "29C00D3066FD9AFD1F420ABA3C95BE69170FCB2797981B279BE21A8535BBB353",
+      "VertexStreamSHA256": "8E330001E8A97BA7D827D84D00C92EB98CD5E2360C8E852F2A09EF568F9097E4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_07.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "b49c0d1a-0abf-1231-6211-fba89a99db9b",
+      "Vertices": 225,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "29C00D3066FD9AFD1F420ABA3C95BE69170FCB2797981B279BE21A8535BBB353",
+      "VertexStreamSHA256": "8E330001E8A97BA7D827D84D00C92EB98CD5E2360C8E852F2A09EF568F9097E4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_07.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "b49c0d1a-0abf-1231-6211-fba89a99db9b",
+      "Vertices": 225,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "29C00D3066FD9AFD1F420ABA3C95BE69170FCB2797981B279BE21A8535BBB353",
+      "VertexStreamSHA256": "8E330001E8A97BA7D827D84D00C92EB98CD5E2360C8E852F2A09EF568F9097E4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_07.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "b49c0d1a-0abf-1231-6211-fba89a99db9b",
+      "Vertices": 225,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "29C00D3066FD9AFD1F420ABA3C95BE69170FCB2797981B279BE21A8535BBB353",
+      "VertexStreamSHA256": "8E330001E8A97BA7D827D84D00C92EB98CD5E2360C8E852F2A09EF568F9097E4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_08",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "1f0d72cb-c426-cb4c-68db-11f076dd3f8d",
+      "Vertices": 1769,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "AF19D631587709C4B604DCDECC3E30674F395F438C4C5EA8A9C19B8506796335",
+      "VertexStreamSHA256": "AB602AF7C15241255B2A16AA8B26782A0082B2FEDADF5DE59B59353F617F9922",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_08.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "1f0d72cb-c426-cb4c-68db-11f076dd3f8d",
+      "Vertices": 1769,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "AF19D631587709C4B604DCDECC3E30674F395F438C4C5EA8A9C19B8506796335",
+      "VertexStreamSHA256": "AB602AF7C15241255B2A16AA8B26782A0082B2FEDADF5DE59B59353F617F9922",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_08.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "1f0d72cb-c426-cb4c-68db-11f076dd3f8d",
+      "Vertices": 1769,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "AF19D631587709C4B604DCDECC3E30674F395F438C4C5EA8A9C19B8506796335",
+      "VertexStreamSHA256": "AB602AF7C15241255B2A16AA8B26782A0082B2FEDADF5DE59B59353F617F9922",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_08.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "1f0d72cb-c426-cb4c-68db-11f076dd3f8d",
+      "Vertices": 1769,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "AF19D631587709C4B604DCDECC3E30674F395F438C4C5EA8A9C19B8506796335",
+      "VertexStreamSHA256": "AB602AF7C15241255B2A16AA8B26782A0082B2FEDADF5DE59B59353F617F9922",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_09",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "28c1f93e-4123-d992-d677-4a3e265a3474",
+      "Vertices": 1356,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "43B4401F426D5F7E6FEA133ACEBB45804A80E78FBFFF59F4258002CD18E8C669",
+      "VertexStreamSHA256": "30699948FCA00CB91C4D563F55AC2176E5D053299C981BF7DDFF981F0B6ED613",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_09.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "28c1f93e-4123-d992-d677-4a3e265a3474",
+      "Vertices": 885,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B7831F98DC37E5965AEE7D5FE7B814523B7B778AF09C3561B91AB7FA8F27045F",
+      "VertexStreamSHA256": "EFF57EF924C7D72D07C5EB928C32ADB199FE92D9BC5E0C0EB8E17D39A0396429",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_09.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "28c1f93e-4123-d992-d677-4a3e265a3474",
+      "Vertices": 524,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "48C638AAF3E1F480E36E23CB3849F4756A14AA392AAC179877CCEE68252D0AB6",
+      "VertexStreamSHA256": "3D5FD59BA1E8CF786C39C567A0A3AADA8E0ACBE4F25EF713CCEC2385EEF60883",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_09.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "28c1f93e-4123-d992-d677-4a3e265a3474",
+      "Vertices": 305,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1ED929FC97E2044D273096864D7ED51EB3FFAF58A9F3A480C492CFAECCEDEB2D",
+      "VertexStreamSHA256": "DDB44CC23EE8636589417143E27973CEA97115FC80EBA415CCDC46A2DB937E2F",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_11",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "5d01adae-3bf0-36af-1c0a-c569a1233282",
+      "Vertices": 290,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B022CCBF9409CC85715821A8F5C013FD72DB36E1D8BA071BFD82CB377C324576",
+      "VertexStreamSHA256": "22C5D8359A05DDFC31AAA28A4ED1EBA903F81730B08C945D58521C7738AB42D2",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_11.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "5d01adae-3bf0-36af-1c0a-c569a1233282",
+      "Vertices": 290,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B022CCBF9409CC85715821A8F5C013FD72DB36E1D8BA071BFD82CB377C324576",
+      "VertexStreamSHA256": "22C5D8359A05DDFC31AAA28A4ED1EBA903F81730B08C945D58521C7738AB42D2",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_11.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "5d01adae-3bf0-36af-1c0a-c569a1233282",
+      "Vertices": 290,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B022CCBF9409CC85715821A8F5C013FD72DB36E1D8BA071BFD82CB377C324576",
+      "VertexStreamSHA256": "22C5D8359A05DDFC31AAA28A4ED1EBA903F81730B08C945D58521C7738AB42D2",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_head_11.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "5d01adae-3bf0-36af-1c0a-c569a1233282",
+      "Vertices": 290,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B022CCBF9409CC85715821A8F5C013FD72DB36E1D8BA071BFD82CB377C324576",
+      "VertexStreamSHA256": "22C5D8359A05DDFC31AAA28A4ED1EBA903F81730B08C945D58521C7738AB42D2",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_01",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "c020d1b0-7079-c05c-df07-d505e86737fc",
+      "Vertices": 1517,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D373050CE03B08D59146D2DC81FDFD4C40CA8098D199DCB69E4D162EB0412D11",
+      "VertexStreamSHA256": "54D9411058E1C0499FC01A8C685C705152FC9B8E2332648FDBBF5A5D2B6BD926",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_01.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "c020d1b0-7079-c05c-df07-d505e86737fc",
+      "Vertices": 1053,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "7910383489174F9D04F5E37B0735781D9369103392F9CCD6E2AC7409DEB9AD03",
+      "VertexStreamSHA256": "48DCF80F93A8F5FA0EA84DEBB25F256369EEF2AACD61D3B17CBFD4B4DE2930BE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_01.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "c020d1b0-7079-c05c-df07-d505e86737fc",
+      "Vertices": 646,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "7A6412A14CED06E15EC9E86EA05A2027A17BE06C6A58CB81B55F68AE3811295A",
+      "VertexStreamSHA256": "46F102FD3A196D799EADDE4BB1D39ADB64CAA20DB01396FDF6D7718A6582802F",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_01.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "c020d1b0-7079-c05c-df07-d505e86737fc",
+      "Vertices": 367,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "2D7A6D17F0BE8C7C7674B1E906CD01667F4A2C6B0810EC5CC4399172A2821F47",
+      "VertexStreamSHA256": "B5B8206DEC226B33C7A6A26C5D0F66FF3422B7827A390CB05CA480DACAD884C8",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_02",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "97dffe21-e4a8-46b5-28bb-e14d6e42ecc7",
+      "Vertices": 673,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "F47FD92D94F329E48822FA6E7462530F5CBDBD67FDCCC59CCC66BF75CAA673F9",
+      "VertexStreamSHA256": "4B3288A8A3279CD8A27C63D692599D0BB3115F16F4AD06DF3CDEB7AEB8F08A1E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_02.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "97dffe21-e4a8-46b5-28bb-e14d6e42ecc7",
+      "Vertices": 449,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "4DE50F9316371AC77BE98EFFED44047638D54CA138C7BCE9965ABB0A91B255B2",
+      "VertexStreamSHA256": "549F7CCC61B7215B61B097AB8F0CA861E34C2690ED20AEDE297D2F64EBEEDF79",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_02.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "97dffe21-e4a8-46b5-28bb-e14d6e42ecc7",
+      "Vertices": 257,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "BE9A6022EEB7006B6BFF5B20E6E59FECC4089468E1DA417E117369EF494D66F2",
+      "VertexStreamSHA256": "146F2831956DAD6B9891EC5966BE148C58E45BE02E4EC3E5E3787824F23169B4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_02.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "97dffe21-e4a8-46b5-28bb-e14d6e42ecc7",
+      "Vertices": 146,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D2682AE9FB38F501ADF3E88E1E5241C35BC5AD429B517F96CB8B5A92E6911DDD",
+      "VertexStreamSHA256": "0C029BBCCB4CF26D9EA60F264AF19FC86C9644F4A602DCEC0AF8207CBC8CE236",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_06",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation"
+      ],
+      "Material": "c020d1b0-7079-c05c-df07-d505e86737fc",
+      "Vertices": 1775,
+      "AlphaMin": 0,
+      "AlphaMax": 23,
+      "ColorsSHA256": "0CFF01E1A22729237A42A76EA3A049CEECCBF4A690B9179D83C66D6DE4AACEBE",
+      "VertexStreamSHA256": "2E38E6B5351B151ADD7FC4B15B68225AFDBA9F4FC2FBB213992E5DC0638B22AC",
+      "ClothMetadataSHA256": "5FCED6A2684C51E1A632E4A55653560896A6992F11B8B1107960093D960CECF9"
+    },
+    {
+      "Name": "sx_mingyu_body_06.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "c020d1b0-7079-c05c-df07-d505e86737fc",
+      "Vertices": 1206,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "757017243C8B110A6489F644132ED79C8C339B4AF0B96CE4C5B859E0FB6990EF",
+      "VertexStreamSHA256": "EE64D725F6449EF8033A9517D23401DFDD7F58A6F8A81B43712171DB6EF74B52",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_06.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "c020d1b0-7079-c05c-df07-d505e86737fc",
+      "Vertices": 781,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "73EE0D9FA76060A0C4126D366F609CB4504B9C94C9DD114C90731217E8E0FC30",
+      "VertexStreamSHA256": "DF5F9814F7EDFA3E005B98962E0C35BC4C259C6B7731C73C91C499AF748872A0",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_06.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "c020d1b0-7079-c05c-df07-d505e86737fc",
+      "Vertices": 393,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "3A5F65858B1DE42A267B843D60D725B513FAB492973ED6ECADFCE7B40A6F903A",
+      "VertexStreamSHA256": "4EE72145A26BCB1A612B33ED15FC3C27CF6352814B171ED8A0F31FC81237147F",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_10",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "97dffe21-e4a8-46b5-28bb-e14d6e42ecc7",
+      "Vertices": 1136,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "5839743FDF8E5C3B8173D2DB2E38EC74E3C15EA74836262232C564D42A5C72F2",
+      "VertexStreamSHA256": "6694B77C459C641ED323A60377DFFC95401EAB12955831882B75405A09BC5B88",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_10.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "97dffe21-e4a8-46b5-28bb-e14d6e42ecc7",
+      "Vertices": 671,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "57B31DF6CCEDD7B04B071288E79B3242E5AA78560DA53E002979E805A6A8C69E",
+      "VertexStreamSHA256": "1ACDE72B921EB0BFC263115E93B0876F1F56385090078259495E8DF8232E1BEE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_10.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "97dffe21-e4a8-46b5-28bb-e14d6e42ecc7",
+      "Vertices": 383,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "344AE46D19E19AB381E62255121B1FDDDB48394E7D71262692DDCB2F48471EE2",
+      "VertexStreamSHA256": "8617A658A397939602D741617FAF4B45DEE8015843A9A6CA0E1F09892416C25B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_10.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "97dffe21-e4a8-46b5-28bb-e14d6e42ecc7",
+      "Vertices": 215,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "BA6BBD2DA28AE8F733C99600D51FF28ADECE6A0B04A975C17515B752581D0E75",
+      "VertexStreamSHA256": "2AF654ED38A6ED9FD3826635B4F166740500428DB6304A58866DC557715FC545",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_12",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "1cf2fbfe-3201-5676-c1d1-4ce4f9419b85",
+      "Vertices": 595,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "FEBDDB69128F9D084D4596E67F29D6C73BBB1E699D748D1AEFB8B4D50E961500",
+      "VertexStreamSHA256": "85A4DA745A0438C95E91E6D048E1113FF9229256132754D36D981425581F224C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_12.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "1cf2fbfe-3201-5676-c1d1-4ce4f9419b85",
+      "Vertices": 408,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D052DBEEDD505081B5A2C25A60DB976211F2B49C578A5854965F2283330FD150",
+      "VertexStreamSHA256": "8B8A588891A62104DA5B606973C1B31E25D430185FB31C86072CA770C1846033",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_12.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "1cf2fbfe-3201-5676-c1d1-4ce4f9419b85",
+      "Vertices": 265,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "531C96A790E903AF22420764A36416192ED3D7B5D10F16C4B5A2441C057C2CE4",
+      "VertexStreamSHA256": "D40BA76447EF463A86011C1E0EF9322EEFDC31A53CA94DC1C8982B1AE81BCC23",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_12.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "1cf2fbfe-3201-5676-c1d1-4ce4f9419b85",
+      "Vertices": 137,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "C23A1B3AA5B5F599A5E5050828182E26C43D16DBEBDC65E6C77CD226650FEC3C",
+      "VertexStreamSHA256": "EFA43BAA2958E4F5012315CE7A098DB8CDE2C083415825D5C760BB72E778B252",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_13",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation"
+      ],
+      "Material": "c020d1b0-7079-c05c-df07-d505e86737fc",
+      "Vertices": 2244,
+      "AlphaMin": 0,
+      "AlphaMax": 41,
+      "ColorsSHA256": "E6307F3E019481E51DA1FFC5B6471CBDF252BC8AC209B9920C2F345832131F24",
+      "VertexStreamSHA256": "6A2712252ED17221B0B26F51795B0C3F98A01EC934521D278AA8A48384679FF9",
+      "ClothMetadataSHA256": "5FCED6A2684C51E1A632E4A55653560896A6992F11B8B1107960093D960CECF9"
+    },
+    {
+      "Name": "sx_mingyu_body_13.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "c020d1b0-7079-c05c-df07-d505e86737fc",
+      "Vertices": 1567,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "37D9E2BA8D08CE8A6833FFA4B5C9087179865A7041C4DCB99A33F7F9E59378A6",
+      "VertexStreamSHA256": "BA84030ACF49CF77E96D24F3345A05FAE011784A48B9BA1EC9A52D321EFD2E24",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_13.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "c020d1b0-7079-c05c-df07-d505e86737fc",
+      "Vertices": 987,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1FB69BF64CC9389ED45E6457213F66E67AD2FD4DF4FCCFB6A4258E2052DA1F65",
+      "VertexStreamSHA256": "D3115EBABBDF10E645DBE5723D189D1991525565B9B44770630443A984001900",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_body_13.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "c020d1b0-7079-c05c-df07-d505e86737fc",
+      "Vertices": 538,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "F4CD50219CDFB9264EA9E17D9AC692E49917D4A9A05519A9F873E1DAD6B17AAF",
+      "VertexStreamSHA256": "D9439AC01B2B1DDB11D7B55202B1247F85693BAE94ED9BC66DCBA6E45C93F1D8",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_legs_04",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "97dffe21-e4a8-46b5-28bb-e14d6e42ecc7",
+      "Vertices": 603,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "649B3DD20BCE9E3D8AC07F12DF15B637A09FA1A39AD2D76962669C0E715B0F66",
+      "VertexStreamSHA256": "1DD845111BCF8A55B8D419730FFC310D3E37BB6638DA8B68ADF032D771AC0B1A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_legs_04.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "97dffe21-e4a8-46b5-28bb-e14d6e42ecc7",
+      "Vertices": 390,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "3513CE8B1A84B0DE5CFBC2A2CFF718789796CBA2AD934AE45E65E19C93E1FDF0",
+      "VertexStreamSHA256": "4AF58477A3D9AFA4B2D0D0B0CBCEDF4E4AE57B390094629078409EAA1F7B167B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_legs_04.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "97dffe21-e4a8-46b5-28bb-e14d6e42ecc7",
+      "Vertices": 251,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "992E4970276491DF34604A08919276A37A906C93413A7076EEEB6BA6D145A7D9",
+      "VertexStreamSHA256": "7CC8B8770FDEBF335E225BA5D8FA4C6AA2FC6E6AF6AA4F3FCB231F88E434CF2C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_legs_04.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "97dffe21-e4a8-46b5-28bb-e14d6e42ecc7",
+      "Vertices": 179,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "E99977A18807FBA85484F6F64C4F3774B72C23DC804F06F9B958F49842594092",
+      "VertexStreamSHA256": "5FCEDBE8019B5C6CD434AF5967D91EA33575B41781434ED273FD49E49E8240DC",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_legs_05",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "281c4e40-9c7b-cccb-1bd9-97bd8e0f529c",
+      "Vertices": 1204,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "7F9CC90F3ABC2A1A24C66000B272991C4FD6116AC6898B722402EA167B363DDD",
+      "VertexStreamSHA256": "EAC908D09BE1566670226192AF01E1D17229BDB2F54B0A0A5EA81643A2384F11",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_legs_05.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "281c4e40-9c7b-cccb-1bd9-97bd8e0f529c",
+      "Vertices": 845,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "638A30501C0E3E03FA893D6C20B0DDF007506F613037021DC7D577BF682867DB",
+      "VertexStreamSHA256": "AC1E3F50BF53B4CFD6C13AD8D020CAB5663F387DA4071EA874F2C35C41FD03D1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_legs_05.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "281c4e40-9c7b-cccb-1bd9-97bd8e0f529c",
+      "Vertices": 516,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "BB404F6D9C3711BEF5CFE87C376EB90EBFB1E33AFD18BF7EA6B051B2D689D3B1",
+      "VertexStreamSHA256": "731B19D4DD3E044FBB527EFF2F96E2603C4239894FE7C38038C1BCDD81A90F65",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "sx_mingyu_legs_05.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "281c4e40-9c7b-cccb-1bd9-97bd8e0f529c",
+      "Vertices": 281,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "42E27323164A914256C53AD1644B12DA3C828FB57F57CA1622543F4C8A6B3A07",
+      "VertexStreamSHA256": "033B6499A8B959AE2934C99F584B9EF14210601EFA0293104C86A4623DA1520F",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    }
+  ]
+}
