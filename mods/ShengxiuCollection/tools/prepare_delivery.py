@@ -10,6 +10,9 @@ preview=json.loads((ROOT/'reports/final_preview_manifest.json').read_text());ass
 assert json.loads((ROOT/'reports/native_provenance.json').read_text())['status']=='pass'
 cloth=json.loads((ROOT/'reports/cloth_validation.json').read_text())
 assert cloth['status']=='pass' and cloth['final_package_sha256']==report['final_package_sha256']
+proportions=json.loads((ROOT/'reports/proportion_validation.json').read_text())
+assert proportions['status']=='pass' and proportions['final_package_sha256']==report['final_package_sha256']
+report['proportion_repair_verified']=True
 report['editable_source_verified']=True
 report['visual_review']={'reviewed':'final eye/lash close-ups, rest front/side/back and worst native motion/contact frames','result':'reviewed; sleeve veils remain rigidly skinned in previews because the game cloth solver was not run; skirt leg proxy contacts remain for user testing','game_verified':False}
 report_path.write_text(json.dumps(report,indent=2))
@@ -18,8 +21,9 @@ for folder in ['input','source','tools','module','reports']:
     for p in sorted((ROOT/folder).rglob('*')):
         if not p.is_file() or any(part in ['__pycache__','obj','bin'] for part in p.relative_to(ROOT).parts):continue
         if p.name=='.gitkeep' or p.suffix in ['.pyc','.blend1','.log']:continue
+        if p.name=='installation_validation.json':continue
         if folder=='module' and p.suffix=='.tpac':continue
-        if folder=='reports' and p.suffix=='.png' and not p.name.startswith('final_'):continue
+        if folder=='reports' and p.suffix=='.png' and not p.name.startswith(('final_','proportion_')):continue
         files.append(p.relative_to(ROOT).as_posix())
 cfg={'id':'ShengxiuCollection','source_files':files,'package':'module/ShengxiuCollection/AssetPackages/sx_mingyu.tpac','validation_report':'reports/release_validation.json'}
 (ROOT/'mod.json').write_text(json.dumps(cfg,indent=2))

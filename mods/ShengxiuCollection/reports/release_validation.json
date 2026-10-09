@@ -1,10 +1,10 @@
 {
-  "version": "v1.0.0",
+  "version": "v1.0.1",
   "status": "pass",
   "check_scope": "offline_checks",
-  "final_package_sha256": "10e7d59fff426b7c082013ef19bbec7600e91949cd8170f1f91e0446d3b0611c",
-  "baseline_package_sha256": null,
-  "baseline_reason": "first release, original FBX retained",
+  "final_package_sha256": "44165260ec93f4db63c32524590798c661744217b0652a84e1b1a0cc042f782e",
+  "baseline_package_sha256": "10e7d59fff426b7c082013ef19bbec7600e91949cd8170f1f91e0446d3b0611c",
+  "baseline_reason": "v1.0.0 proportion repair baseline",
   "lods": [
     {
       "lod": 0,
@@ -13,40 +13,40 @@
     },
     {
       "lod": 1,
-      "vertices": 13036,
-      "triangles": 14761
+      "vertices": 13027,
+      "triangles": 14760
     },
     {
       "lod": 2,
-      "vertices": 8796,
+      "vertices": 8798,
       "triangles": 9548
     },
     {
       "lod": 3,
-      "vertices": 5942,
-      "triangles": 6578
+      "vertices": 5948,
+      "triangles": 6575
     }
   ],
   "seams": [
     {
       "lod": 0,
       "shared_skin_points": 19,
-      "max_position_error": 5.810237060696339e-08
+      "max_position_error": 4.961974938533057e-08
     },
     {
       "lod": 1,
       "shared_skin_points": 19,
-      "max_position_error": 5.810237060696339e-08
+      "max_position_error": 4.961974938533057e-08
     },
     {
       "lod": 2,
       "shared_skin_points": 19,
-      "max_position_error": 5.810237060696339e-08
+      "max_position_error": 4.961974938533057e-08
     },
     {
       "lod": 3,
       "shared_skin_points": 19,
-      "max_position_error": 5.810237060696339e-08
+      "max_position_error": 4.961974938533057e-08
     }
   ],
   "motions": [
@@ -55,8 +55,8 @@
       "asset": "anim_inventory_idle",
       "frames_checked": 16,
       "total_frames": 1268,
-      "max_edge_extension": 2.3733743389670177,
-      "max_p99_edge_extension": 1.6214181410033859,
+      "max_edge_extension": 2.7422880878696874,
+      "max_p99_edge_extension": 1.8348325817634146,
       "worst_frame": 507,
       "worst_mesh": "sx_mingyu_body_13",
       "skirt_leg_proxy": {
@@ -72,7 +72,7 @@
       "frames_checked": 25,
       "total_frames": 26,
       "max_edge_extension": 2.251054997143492,
-      "max_p99_edge_extension": 1.8120387422466289,
+      "max_p99_edge_extension": 1.812081707494549,
       "worst_frame": 21,
       "worst_mesh": "sx_mingyu_legs_05",
       "skirt_leg_proxy": {
@@ -87,9 +87,9 @@
       "asset": "anim_bow",
       "frames_checked": 150,
       "total_frames": 151,
-      "max_edge_extension": 3.1317455162165193,
-      "max_p99_edge_extension": 2.508369553410447,
-      "worst_frame": 12,
+      "max_edge_extension": 3.526968546187995,
+      "max_p99_edge_extension": 2.606747038863949,
+      "worst_frame": 69,
       "worst_mesh": "sx_mingyu_body_13",
       "skirt_leg_proxy": {
         "deepest_overlap_m": 0.07472503003944267,
@@ -104,7 +104,7 @@
       "frames_checked": 20,
       "total_frames": 21,
       "max_edge_extension": 2.963095740121349,
-      "max_p99_edge_extension": 2.161408020960356,
+      "max_p99_edge_extension": 2.1766439293198503,
       "worst_frame": 8,
       "worst_mesh": "sx_mingyu_legs_05",
       "skirt_leg_proxy": {
@@ -194,6 +194,7 @@
   "game_test_verified": false,
   "game_cloth_solver_used": false,
   "limitations": "Offline native skeletal motion. In-game cloth, weapon IK, face animation, body sliders and horse collision require user testing.",
+  "proportion_repair_verified": true,
   "editable_source_verified": true,
   "visual_review": {
     "reviewed": "final eye/lash close-ups, rest front/side/back and worst native motion/contact frames",

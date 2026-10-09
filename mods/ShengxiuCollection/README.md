@@ -1,6 +1,8 @@
-# Shengxiu Collection v1.0.0
+# Shengxiu Collection v1.0.1
 
 圣绣系列独立模组工程；当前收录「圣绣 · 明玉」。游戏模块 ID 为 `ShengxiuCollection`，管理器显示英文 `Shengxiu Collection`。后续同系列装备继续放本项目，使用各自资源前缀和源文件，明玉资源前缀为 `sx_mingyu_`。
+
+v1.0.1 根据用户对 v1.0.0 的外观反馈修正：头部上段放大 10%，颈部上端向后收 18 毫米，头颈与领口采用连续过渡；脚部回转 10.34°，鞋底前后长度从 26.95 厘米减至 23.51 厘米，原始鞋底平面顶点落在 z=0 上方 1 毫米。脚踝渐变过渡，皮肤与鞋使用一致变形。原生骨架、绑骨权重、布料 Alpha、全部运行时布料元数据和裙摆几何保持不变。布料问题按用户要求暂不处理。报告 reports/proportion_validation.json，固定镜头对比为 reports/proportion_*_before/after.png。这是离线几何与动作验证，游戏中的比例和落地表现由用户复测。
 
 配套装备三件：圣绣 · 明玉 · 发容（头盔），圣绣 · 明玉 · 衣裙与手饰（身体），圣绣 · 明玉 · 腿部与绣鞋（靴子）。手套和披肩槽留空。可在作弊物品列表按名称找到，装备三件获得完整人物；商店生成需要等待游戏刷新。依赖 Native、SandBoxCore、Sandbox。
 
@@ -22,4 +24,6 @@
 
 后台 Blender 执行 tools/rig_model.py，再执行 tools/export_geometry.py，均加 `--python-exit-code 1` 并检查退出码。用 dotnet build tools/PackagePatch/PackagePatch.csproj -o build/package_patch 编译独立补丁器；Python 执行 tools/build_package.py、tools/verify_release.py、tools/verify_native_provenance.py。后台 Blender 执行 tools/verify_source.py 和 tools/render_review.py -- final face。依赖工作区共用 tools/asset_helpers、本机 Blender、Anaconda Python、D:/mb-tools 和已安装游戏资源。
 
-通过检查并人工复核预览后执行 tools/prepare_delivery.py，再从工作区运行 tools/install_release.ps1 -Mod ShengxiuCollection -Version v1.0.0。交付 Mod ZIP 顶层为 ShengxiuCollection，可解压至游戏 Modules；源 ZIP 保持 source/ 与 tex/ 相邻。只安装自己的模块，本地 Git 管理，不上传远程。更新发布时保留上一版交付包。
+本次返修重建需额外执行 tools/verify_proportions.py、tools/verify_cloth.py 和 tools/render_proportion_compare.py。比例回归基线在 build/proportion_baseline_v1.0.0/，缓存缺失时从保留的 v1.0.0 源 ZIP 或本地 ShengxiuCollection/v1.0.0 标签恢复旧工程并重建，不将新版本当旧基线。
+
+通过检查并人工复核预览后执行 tools/prepare_delivery.py，再从工作区运行 tools/install_release.ps1 -Mod ShengxiuCollection -Version v1.0.1 -PreviousVersion v1.0.0。交付 Mod ZIP 顶层为 ShengxiuCollection，可解压至游戏 Modules；源 ZIP 保持 source/ 与 tex/ 相邻。只安装自己的模块，本地 Git 管理，不上传远程。更新发布时保留上一版交付包。

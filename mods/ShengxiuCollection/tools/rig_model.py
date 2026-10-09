@@ -3,6 +3,8 @@ import bpy, json, sys, re
 from pathlib import Path
 import numpy as np
 from mathutils import Matrix, Vector
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from proportion_fit import apply_proportions
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(next(p for p in ROOT.parents if (p/'tools/asset_helpers').is_dir())/'tools/asset_helpers/previewer'))
 from baker.skeleton import parse_skeljson
@@ -152,6 +154,7 @@ for o,rec in zip(objects,records):
         free=1-smooth(.85,1.10,p[:,2]);rad=d[:,:2].copy();rad[:,1]-=.01
         rad/=np.maximum(np.linalg.norm(rad,axis=1,keepdims=True),1e-6);d[:,:2]+=rad*(.009*free[:,None])
     if rec['kind']=='long_hair':d[:,1]-=.006*(1-smooth(1.26,1.66,p[:,2]))
+    if cfg.get('proportion_repair'):d=apply_proportions(d,cfg['proportion_repair'],rec['part'],p)
     a['P']=d;o.matrix_world=Matrix.Identity(4)
     for v,co in zip(o.data.vertices,d):v.co=co
     for f in o.data.polygons:f.use_smooth=True
