@@ -1,207 +1,236 @@
 {
-  "version": "v1.0.0",
+  "version": "v1.1.0",
   "status": "pass",
-  "check_scope": "offline_checks",
-  "final_package_sha256": "f163e4d104e674da22fe5513e751f71ffa9ce15abf2367e253234165a98d2323",
-  "baseline_package_sha256": null,
-  "baseline_reason": "Initial release; input SHA256 recorded in input_preservation.json",
-  "lods": [
+  "check_scope": "offline checks and cumulative module consistency",
+  "final_package_sha256": "c51cc04439565cb97ce74291e9c6085fd93035dcb3a72a29b3f6ed87c215b8df",
+  "baseline_package_sha256": "f163e4d104e674da22fe5513e751f71ffa9ce15abf2367e253234165a98d2323",
+  "packages": [
     {
-      "lod": 0,
-      "vertices": 12564,
-      "triangles": 16144
+      "set": "01_YunhaiNiezong",
+      "file": "module/ZhenwuCollection/AssetPackages/zw_yunhai.tpac",
+      "sha256": "f163e4d104e674da22fe5513e751f71ffa9ce15abf2367e253234165a98d2323",
+      "offline_status": "pass",
+      "user_acceptance": "accepted_v1.0.0"
     },
     {
-      "lod": 1,
-      "vertices": 9219,
-      "triangles": 11360
-    },
-    {
-      "lod": 2,
-      "vertices": 6607,
-      "triangles": 8014
-    },
-    {
-      "lod": 3,
-      "vertices": 4926,
-      "triangles": 6103
+      "set": "02_XuanxuQingjing",
+      "file": "module/ZhenwuCollection/AssetPackages/zw_xuanxu.tpac",
+      "sha256": "c51cc04439565cb97ce74291e9c6085fd93035dcb3a72a29b3f6ed87c215b8df",
+      "offline_status": "pass",
+      "user_acceptance": "pending"
     }
   ],
-  "seams": [
+  "asset_inventory": [
     {
-      "lod": 0,
-      "shared_skin_points": 21,
-      "max_position_error": 0
+      "set": "01_YunhaiNiezong",
+      "package_guid": "bed789e3-f9bf-55ad-87ce-9974dc44739a",
+      "asset_count": 23,
+      "assets": [
+        {
+          "name": "zw_yunhai_body",
+          "guid": "2a94967b-8e4b-4a2f-7bba-abdb1289d1b7"
+        },
+        {
+          "name": "zw_yunhai_head",
+          "guid": "8add1a5c-c897-6367-b1d3-2668b819756b"
+        },
+        {
+          "name": "zw_yunhai_legs",
+          "guid": "4e63cc63-9575-4ab6-88da-cd484decbc66"
+        },
+        {
+          "name": "zw_yunhai_cloth",
+          "guid": "2ace15b1-d19c-cb76-d2d5-8e63558b661d"
+        },
+        {
+          "name": "zw_yunhai_cuff",
+          "guid": "1b6b73e5-7c7f-69cc-164a-8f8479aa7612"
+        },
+        {
+          "name": "zw_yunhai_eye",
+          "guid": "cd63b660-41f8-2f76-bcfd-1b0335f21ddd"
+        },
+        {
+          "name": "zw_yunhai_face",
+          "guid": "59f51c48-1816-8e9e-19dd-2f25536c17a7"
+        },
+        {
+          "name": "zw_yunhai_hair",
+          "guid": "a40d4eb5-fb9c-6a6e-fc4f-5569d1bbce6e"
+        },
+        {
+          "name": "zw_yunhai_lash",
+          "guid": "8a3f40c6-abb3-37f4-d92a-883c2beb9879"
+        },
+        {
+          "name": "zw_yunhai_ornament",
+          "guid": "d053a05e-5112-3a9d-7e33-4254f4903d2b"
+        },
+        {
+          "name": "zw_yunhai_pants",
+          "guid": "6cb8c8e6-60b3-483f-18d4-b31a1151dc50"
+        },
+        {
+          "name": "zw_yunhai_skin",
+          "guid": "a1721998-de10-aa06-ca92-9ef3180717ee"
+        },
+        {
+          "name": "zw_yunhai_cloth_d",
+          "guid": "5bc141ec-33f1-4c0b-e104-a60189a8ba56"
+        },
+        {
+          "name": "zw_yunhai_cuff_d",
+          "guid": "9ea9da45-9da6-9d98-213d-e3ea848f9f62"
+        },
+        {
+          "name": "zw_yunhai_eye_d",
+          "guid": "e9469008-ca50-d233-e927-847e8e72011d"
+        },
+        {
+          "name": "zw_yunhai_face_d",
+          "guid": "29465f17-1003-e572-6234-138ee186e1a9"
+        },
+        {
+          "name": "zw_yunhai_flat_n",
+          "guid": "f206e0b0-e9a3-7f30-0f7d-b7d5f4cb628f"
+        },
+        {
+          "name": "zw_yunhai_hair_d",
+          "guid": "6b9d2928-a556-75c5-51f4-1be19bd8738f"
+        },
+        {
+          "name": "zw_yunhai_lash_d",
+          "guid": "f77aa6f1-a4f5-568a-2ed3-4524f22251a1"
+        },
+        {
+          "name": "zw_yunhai_neutral_s",
+          "guid": "74eb79d3-ca0a-d27e-df15-08a99d66a8c6"
+        },
+        {
+          "name": "zw_yunhai_ornament_d",
+          "guid": "102a24c1-f92a-a06d-5053-6fd35774abfe"
+        },
+        {
+          "name": "zw_yunhai_pants_d",
+          "guid": "3d91ea13-7e1f-f8c2-1e60-871bb7a5f062"
+        },
+        {
+          "name": "zw_yunhai_skin_d",
+          "guid": "64ccf0d5-7985-093e-4619-8be34600436c"
+        }
+      ]
     },
     {
-      "lod": 1,
-      "shared_skin_points": 21,
-      "max_position_error": 0
-    },
-    {
-      "lod": 2,
-      "shared_skin_points": 21,
-      "max_position_error": 0
-    },
-    {
-      "lod": 3,
-      "shared_skin_points": 21,
-      "max_position_error": 0
+      "set": "02_XuanxuQingjing",
+      "package_guid": "9fc35878-1d7f-58ce-b414-066f0692e2c6",
+      "asset_count": 23,
+      "assets": [
+        {
+          "name": "zw_xuanxu_body",
+          "guid": "ebe37c92-ef2e-ac6f-2504-66b88634406c"
+        },
+        {
+          "name": "zw_xuanxu_head",
+          "guid": "7c2b6176-e244-29d8-f1a5-1d1682b9b341"
+        },
+        {
+          "name": "zw_xuanxu_legs",
+          "guid": "c408ef2f-508c-6018-84fe-4f024d52d5a7"
+        },
+        {
+          "name": "zw_xuanxu_cloth",
+          "guid": "0ccfa36b-d31a-7f4f-8939-a25a681bb0fe"
+        },
+        {
+          "name": "zw_xuanxu_cuff",
+          "guid": "d209ce87-1426-3729-fe72-02d06038951d"
+        },
+        {
+          "name": "zw_xuanxu_eye",
+          "guid": "dbd32837-01e9-b90d-e83b-7aff990cd01b"
+        },
+        {
+          "name": "zw_xuanxu_face",
+          "guid": "75072d60-4f74-25de-f606-72f8184db4ac"
+        },
+        {
+          "name": "zw_xuanxu_hair",
+          "guid": "c11e5301-5ace-55e1-26dd-a70fa1fb8711"
+        },
+        {
+          "name": "zw_xuanxu_lash",
+          "guid": "c88e6ada-0f38-522a-fafd-7244434d065e"
+        },
+        {
+          "name": "zw_xuanxu_ornament",
+          "guid": "2308c718-d886-7862-a3b7-d828a2e4f4b0"
+        },
+        {
+          "name": "zw_xuanxu_pants",
+          "guid": "a5154f6a-a381-e7cc-49ad-e5e28e14a19a"
+        },
+        {
+          "name": "zw_xuanxu_skin",
+          "guid": "bce5c7f5-28f2-952f-73a3-eea590d82c08"
+        },
+        {
+          "name": "zw_xuanxu_cloth_d",
+          "guid": "d75c8096-0be1-c6d8-143a-6a76d2881941"
+        },
+        {
+          "name": "zw_xuanxu_cuff_d",
+          "guid": "1a1e5c9f-cd7c-aec9-cf1f-c19984a4bbe6"
+        },
+        {
+          "name": "zw_xuanxu_eye_d",
+          "guid": "c8b36b7d-aa5a-c397-8dce-40e597881aba"
+        },
+        {
+          "name": "zw_xuanxu_face_d",
+          "guid": "276dbc0d-d0a5-c707-1324-e473f5ee2ee4"
+        },
+        {
+          "name": "zw_xuanxu_flat_n",
+          "guid": "14792413-5910-000f-0ea6-8d88b8a42747"
+        },
+        {
+          "name": "zw_xuanxu_hair_d",
+          "guid": "b0c2ac3c-a10e-b529-e064-469ef6d127c0"
+        },
+        {
+          "name": "zw_xuanxu_lash_d",
+          "guid": "4bf03e68-18db-0f26-125f-e804aab68841"
+        },
+        {
+          "name": "zw_xuanxu_neutral_s",
+          "guid": "d9cefcf8-4c31-5411-2f9c-6421d12adf10"
+        },
+        {
+          "name": "zw_xuanxu_ornament_d",
+          "guid": "87cdce30-8333-87c4-350e-081de4c50418"
+        },
+        {
+          "name": "zw_xuanxu_pants_d",
+          "guid": "1513aa82-b8bd-ac6b-64ec-b535c524ce9f"
+        },
+        {
+          "name": "zw_xuanxu_skin_d",
+          "guid": "4d0b7dc7-5ff0-4dec-650b-4c620c2cbca6"
+        }
+      ]
     }
   ],
-  "motions": [
-    {
-      "label": "idle",
-      "asset": "anim_inventory_idle",
-      "frames_checked": 16,
-      "total_frames": 1268,
-      "max_edge_extension": 2.451712394861998,
-      "max_p99_edge_extension": 1.5901298943604019,
-      "worst_frame": 507,
-      "worst_mesh": "zw_yunhai_head_01",
-      "skirt_leg_proxy": {
-        "deepest_overlap_m": 0.036535750487695605,
-        "worst_frame": 507,
-        "maximum_contact_samples": 90,
-        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
-      }
-    },
-    {
-      "label": "run",
-      "asset": "anim_run_forward_unarmed",
-      "frames_checked": 25,
-      "total_frames": 26,
-      "max_edge_extension": 3.6953050995089196,
-      "max_p99_edge_extension": 1.9548476592256376,
-      "worst_frame": 8,
-      "worst_mesh": "zw_yunhai_body_08",
-      "skirt_leg_proxy": {
-        "deepest_overlap_m": 0.047284328754823586,
-        "worst_frame": 20,
-        "maximum_contact_samples": 204,
-        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
-      }
-    },
-    {
-      "label": "bow",
-      "asset": "anim_bow",
-      "frames_checked": 150,
-      "total_frames": 151,
-      "max_edge_extension": 2.9636657782214026,
-      "max_p99_edge_extension": 2.2151161530310204,
-      "worst_frame": 68,
-      "worst_mesh": "zw_yunhai_body_08",
-      "skirt_leg_proxy": {
-        "deepest_overlap_m": 0.04106812768473898,
-        "worst_frame": 82,
-        "maximum_contact_samples": 105,
-        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
-      }
-    },
-    {
-      "label": "riding",
-      "asset": "anim_rider_gallop_bow",
-      "frames_checked": 20,
-      "total_frames": 21,
-      "max_edge_extension": 3.635798192047429,
-      "max_p99_edge_extension": 2.2964651132899125,
-      "worst_frame": 9,
-      "worst_mesh": "zw_yunhai_body_08",
-      "skirt_leg_proxy": {
-        "deepest_overlap_m": 0.04855330577826917,
-        "worst_frame": 10,
-        "maximum_contact_samples": 123,
-        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
-      }
-    }
+  "resource_name_and_guid_collisions": false,
+  "first_set_assets_and_source_unchanged": true,
+  "item_count": 6,
+  "included_sets": [
+    "01_YunhaiNiezong",
+    "02_XuanxuQingjing"
   ],
-  "textures": [
-    {
-      "name": "zw_yunhai_cloth_d",
-      "mips": 11,
-      "decoded_all_mips": true,
-      "rgb_mean_error_255": 0.33362897237141925,
-      "alpha_mean_error_255": 0.09392929077148438
-    },
-    {
-      "name": "zw_yunhai_cuff_d",
-      "mips": 10,
-      "decoded_all_mips": true,
-      "rgb_mean_error_255": 0.16988372802734375,
-      "alpha_mean_error_255": 0.0302581787109375
-    },
-    {
-      "name": "zw_yunhai_eye_d",
-      "mips": 10,
-      "decoded_all_mips": true,
-      "rgb_mean_error_255": 0.24217732747395834,
-      "alpha_mean_error_255": 0.0
-    },
-    {
-      "name": "zw_yunhai_face_d",
-      "mips": 11,
-      "decoded_all_mips": true,
-      "rgb_mean_error_255": 0.4814567565917969,
-      "alpha_mean_error_255": 0.0
-    },
-    {
-      "name": "zw_yunhai_flat_n",
-      "mips": 7,
-      "decoded_all_mips": true
-    },
-    {
-      "name": "zw_yunhai_hair_d",
-      "mips": 10,
-      "decoded_all_mips": true,
-      "rgb_mean_error_255": 0.06529617309570312,
-      "alpha_mean_error_255": 0.8559150695800781
-    },
-    {
-      "name": "zw_yunhai_lash_d",
-      "mips": 10,
-      "decoded_all_mips": true,
-      "rgb_mean_error_255": 0.633721669514974,
-      "alpha_mean_error_255": 0.4771614074707031
-    },
-    {
-      "name": "zw_yunhai_neutral_s",
-      "mips": 7,
-      "decoded_all_mips": true
-    },
-    {
-      "name": "zw_yunhai_ornament_d",
-      "mips": 9,
-      "decoded_all_mips": true,
-      "rgb_mean_error_255": 0.10404459635416667,
-      "alpha_mean_error_255": 0.14508056640625
-    },
-    {
-      "name": "zw_yunhai_pants_d",
-      "mips": 10,
-      "decoded_all_mips": true,
-      "rgb_mean_error_255": 0.08369700113932292,
-      "alpha_mean_error_255": 0.04022979736328125
-    },
-    {
-      "name": "zw_yunhai_skin_d",
-      "mips": 11,
-      "decoded_all_mips": true,
-      "rgb_mean_error_255": 1.0055821736653645,
-      "alpha_mean_error_255": 0.0
-    }
-  ],
-  "metadata_audit": "pass",
+  "editable_sources_verified": true,
+  "all_lod_motion_and_seam_normals_verified": true,
+  "second_set_user_acceptance": "pending",
   "game_test_verified": false,
   "game_cloth_solver_used": false,
-  "limitations": "Offline native skeletal motion. In-game cloth, weapon IK, face animation, body sliders and horse collision require user testing.",
-  "editable_source_verified": true,
-  "all_lod_motion_and_seam_normals_verified": true,
-  "visual_review": {
-    "observer": "assistant",
-    "scope": "Final rest front/side/back, face/eye close-ups and native idle/run/bow/riding worst and contact frames; source back view compared",
-    "eye_uv": "V flip resolves upside-down eye-shadow patches and places lashes at eyelid margins",
-    "source_design": "Open rear sleeve panels and skirt slits exist in original source; retained",
-    "remaining": "Skirt/leg proxy contact and some pose intersections remain in skeletal previews; game cloth, weapon IK, horse collision, body sliders and transparency sorting require user acceptance",
-    "game_verified": false
-  }
+  "limitations": "User accepted first set v1.0.0 without reporting individual motions. Second-set in-game cloth, IK, body sliders and horse collision await user testing."
 }

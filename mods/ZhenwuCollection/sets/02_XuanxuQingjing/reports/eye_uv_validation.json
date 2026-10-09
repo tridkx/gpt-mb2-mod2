@@ -1,0 +1,73 @@
+{
+  "status": "pass",
+  "final_package_sha256": "c51cc04439565cb97ce74291e9c6085fd93035dcb3a72a29b3f6ed87c215b8df",
+  "flipped_mesh": "mesh_04_358718",
+  "operation": "V -> 1 - V",
+  "other_meshes_unchanged": 11,
+  "texture_files_unchanged": true,
+  "source_uv_report": [
+    {
+      "source_mesh": "mesh_00_123833",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_01_142231",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_02_302444",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_03_313265",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_04_358718",
+      "flip_v": true,
+      "max_error": 2.9802322387695312e-08
+    },
+    {
+      "source_mesh": "mesh_05_380770",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_06_459215",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_07_489068",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_08_621581",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_09_632392",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_10_730256",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_11_762679",
+      "flip_v": false,
+      "max_error": 0.0
+    }
+  ],
+  "geometry_uv_texture_identity_evidence": "reports/source_measurement.json",
+  "visual_review": "reports/final_face_all.png",
+  "scope": "Original lash geometry/UV/texture match accepted Yunhai; source and final UV independently checked; final near-eye render requires visual review."
+}

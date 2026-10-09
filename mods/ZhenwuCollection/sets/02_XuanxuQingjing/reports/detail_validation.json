@@ -1,0 +1,150 @@
+{
+  "status": "pass",
+  "final_package_sha256": "c51cc04439565cb97ce74291e9c6085fd93035dcb3a72a29b3f6ed87c215b8df",
+  "lods": [
+    {
+      "lod": 0,
+      "max_seam_normal_difference": 0.00018224804080091417,
+      "shoe_min_z_m": 0.0010000000474974513,
+      "motions": [
+        {
+          "label": "idle",
+          "frames_checked": 16,
+          "max_edge_extension": 2.451712394861998,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "run",
+          "frames_checked": 25,
+          "max_edge_extension": 3.4276173388912845,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "bow",
+          "frames_checked": 150,
+          "max_edge_extension": 3.9211672119388705,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "riding",
+          "frames_checked": 20,
+          "max_edge_extension": 3.4446153792258523,
+          "max_shared_seam_error_m": 0
+        }
+      ]
+    },
+    {
+      "lod": 1,
+      "max_seam_normal_difference": 0.00018390879267826676,
+      "shoe_min_z_m": 0.0010000000474974513,
+      "motions": [
+        {
+          "label": "idle",
+          "frames_checked": 16,
+          "max_edge_extension": 2.451712394861998,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "run",
+          "frames_checked": 25,
+          "max_edge_extension": 3.513423692611276,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "bow",
+          "frames_checked": 150,
+          "max_edge_extension": 3.770402534166789,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "riding",
+          "frames_checked": 20,
+          "max_edge_extension": 3.431024642824325,
+          "max_shared_seam_error_m": 0
+        }
+      ]
+    },
+    {
+      "lod": 2,
+      "max_seam_normal_difference": 0.00018131115939468145,
+      "shoe_min_z_m": 0.0010000000474974513,
+      "motions": [
+        {
+          "label": "idle",
+          "frames_checked": 16,
+          "max_edge_extension": 2.451712394861998,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "run",
+          "frames_checked": 25,
+          "max_edge_extension": 2.5823070115178273,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "bow",
+          "frames_checked": 150,
+          "max_edge_extension": 2.887875128641472,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "riding",
+          "frames_checked": 20,
+          "max_edge_extension": 2.8705051414640037,
+          "max_shared_seam_error_m": 0
+        }
+      ]
+    },
+    {
+      "lod": 3,
+      "max_seam_normal_difference": 0.00017060345271602273,
+      "shoe_min_z_m": 0.0010000000474974513,
+      "motions": [
+        {
+          "label": "idle",
+          "frames_checked": 16,
+          "max_edge_extension": 2.451712394861998,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "run",
+          "frames_checked": 25,
+          "max_edge_extension": 2.5823070115178273,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "bow",
+          "frames_checked": 150,
+          "max_edge_extension": 2.887875128641472,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "riding",
+          "frames_checked": 20,
+          "max_edge_extension": 2.697328745308433,
+          "max_shared_seam_error_m": 0
+        }
+      ]
+    }
+  ],
+  "cloth": [
+    {
+      "mesh": "zw_xuanxu_head_07",
+      "profile": "long_hair",
+      "lod": 0
+    },
+    {
+      "mesh": "zw_xuanxu_body_09",
+      "profile": "mixed_coat",
+      "lod": 0
+    },
+    {
+      "mesh": "zw_xuanxu_body_11",
+      "profile": "upper_clothes",
+      "lod": 0
+    }
+  ],
+  "game_solver_used": false,
+  "cloth_preprocess_cache_generated": false,
+  "scope": "Actual final geometry, normals, colors and configuration; native skeletal motion only"
+}

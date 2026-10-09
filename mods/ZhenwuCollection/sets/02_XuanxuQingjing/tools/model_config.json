@@ -1,0 +1,292 @@
+{
+  "id": "ZhenwuCollection",
+  "prefix": "zw_xuanxu",
+  "title": "真武 · 玄虚清镜",
+  "display_name": "Zhenwu Collection",
+  "original_directory": "D:\\dsh-tiandao\\真武少女校服8套\\02玄虚清镜",
+  "source_coordinate_to_meters": 0.0125,
+  "source_landmarks": {
+    "pelvis": [
+      0,
+      -1,
+      77
+    ],
+    "spine": [
+      0,
+      -1,
+      84
+    ],
+    "spine1": [
+      0,
+      -1,
+      94
+    ],
+    "spine2": [
+      0,
+      -1,
+      104
+    ],
+    "neck": [
+      0,
+      -2,
+      113.7
+    ],
+    "head": [
+      0,
+      -2,
+      122
+    ],
+    "thigh": [
+      8,
+      -1,
+      77
+    ],
+    "calf": [
+      11,
+      -1.5,
+      40
+    ],
+    "foot": [
+      12.9,
+      -3,
+      7
+    ],
+    "toe0": [
+      12.9,
+      5,
+      1.5
+    ],
+    "clavicle": [
+      5,
+      -1,
+      110
+    ],
+    "upperarm_twist": [
+      15,
+      -1,
+      107
+    ],
+    "foretwist": [
+      27.5,
+      -1,
+      94
+    ],
+    "hand": [
+      37.5,
+      1,
+      81
+    ],
+    "finger0": [
+      42,
+      4,
+      76
+    ]
+  },
+  "parts": {
+    "mesh_00_123833": [
+      "head",
+      "eye",
+      "rigid_head"
+    ],
+    "mesh_01_142231": [
+      "head",
+      "face",
+      "skin"
+    ],
+    "mesh_02_302444": [
+      "body",
+      "cuff",
+      "arms"
+    ],
+    "mesh_03_313265": [
+      "legs",
+      "pants",
+      "legs"
+    ],
+    "mesh_04_358718": [
+      "head",
+      "lash",
+      "rigid_head"
+    ],
+    "mesh_05_380770": [
+      "body",
+      "skin",
+      "hands"
+    ],
+    "mesh_06_459215": [
+      "legs",
+      "skin",
+      "legs"
+    ],
+    "mesh_07_489068": [
+      "head",
+      "hair",
+      "long_hair"
+    ],
+    "mesh_08_621581": [
+      "head",
+      "ornament",
+      "rigid_head"
+    ],
+    "mesh_09_632392": [
+      "body",
+      "cloth",
+      "mixed_coat"
+    ],
+    "mesh_10_730256": [
+      "body",
+      "skin",
+      "arms"
+    ],
+    "mesh_11_762679": [
+      "body",
+      "cloth",
+      "upper_clothes"
+    ]
+  },
+  "textures": {
+    "eye": [
+      "eye_D.png",
+      "opaque"
+    ],
+    "face": [
+      "face_D.png",
+      "opaque"
+    ],
+    "skin": [
+      "body_D.png",
+      "opaque"
+    ],
+    "pants": [
+      "pants_D.png",
+      "cutout"
+    ],
+    "cuff": [
+      "cuff_D.png",
+      "cutout"
+    ],
+    "lash": [
+      "eyelash_D.png",
+      "cutout"
+    ],
+    "hair": [
+      "hair_D.png",
+      "cutout"
+    ],
+    "ornament": [
+      "head_D.png",
+      "cutout"
+    ],
+    "cloth": [
+      "tunic_D.png",
+      "cutout"
+    ]
+  },
+  "material_overrides": {
+    "lash": {
+      "alphaTest": 0.4,
+      "blendMode": "factor"
+    },
+    "cloth": {
+      "alphaTest": 0.08
+    },
+    "hair": {
+      "alphaTest": 0.05
+    }
+  },
+  "cloth_max_distance": {
+    "skirt": 0.13,
+    "upper_clothes": 0.025,
+    "long_hair": 0.035
+  },
+  "skirt_thigh_follow": 0.5,
+  "lod_ratios": [
+    1,
+    0.6,
+    0.32,
+    0.16
+  ],
+  "cloth_lods": {
+    "mixed_coat": [
+      0
+    ],
+    "upper_clothes": [
+      0
+    ],
+    "long_hair": [
+      0
+    ]
+  },
+  "measurement_notes": "Xuanxu measured separately: eyes z121.297..123.982, face z114.051..132.668, palms x35.223..43.609 z74.131..83.925; legs z33.868..85.456, shoes sole z-0.0476. Upper skin z93.412..115.745, cuffs x30.288..41.071 z79.922..90.465. Main robe z15.153..117.211 and sleeves z82.404..111.523; rear hair z85.673..138.234. Common anatomical landmarks only retained after actual source coordinate comparison. Unique package GUID and zw_xuanxu namespace.",
+  "cloth_profiles": {
+    "mixed_coat": {
+      "UnknownFloat1": 1,
+      "material": {
+        "Name": "zw_xuanxu_mixed_coat_cloth",
+        "BendingStiffness": 0.18,
+        "ShearingStiffness": 0.95,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.85,
+        "Gravity": 9.81,
+        "LinearInertia": 0.15,
+        "AirDragMultiplier": 0.1,
+        "Wind": 0.02,
+        "MaxLinearVelocity": 6,
+        "LinearVelocityMultiplier": 1
+      },
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "UnknownBool3": true
+    },
+    "upper_clothes": {
+      "UnknownFloat1": 1,
+      "material": {
+        "Name": "zw_xuanxu_upper_clothes_cloth",
+        "BendingStiffness": 0.35,
+        "ShearingStiffness": 0.95,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.85,
+        "Gravity": 9.81,
+        "LinearInertia": 0.15,
+        "AirDragMultiplier": 0.1,
+        "Wind": 0.02,
+        "MaxLinearVelocity": 6,
+        "LinearVelocityMultiplier": 1
+      },
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "UnknownBool3": true
+    },
+    "long_hair": {
+      "UnknownFloat1": 1,
+      "material": {
+        "Name": "zw_xuanxu_long_hair_cloth",
+        "BendingStiffness": 0.35,
+        "ShearingStiffness": 0.95,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.85,
+        "Gravity": 9.81,
+        "LinearInertia": 0.15,
+        "AirDragMultiplier": 0.1,
+        "Wind": 0.02,
+        "MaxLinearVelocity": 6,
+        "LinearVelocityMultiplier": 1
+      },
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "UnknownBool3": true
+    }
+  },
+  "uv_flip_v_objects": [
+    "mesh_04_358718"
+  ]
+}

@@ -1,0 +1,681 @@
+{
+  "materials": [
+    {
+      "Name": "zw_xuanxu_eye",
+      "Guid": "dbd32837-01e9-b90d-e83b-7aff990cd01b",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_xuanxu_face",
+      "Guid": "75072d60-4f74-25de-f606-72f8184db4ac",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_xuanxu_skin",
+      "Guid": "bce5c7f5-28f2-952f-73a3-eea590d82c08",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_xuanxu_pants",
+      "Guid": "a5154f6a-a381-e7cc-49ad-e5e28e14a19a",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_xuanxu_cuff",
+      "Guid": "d209ce87-1426-3729-fe72-02d06038951d",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_xuanxu_lash",
+      "Guid": "c88e6ada-0f38-522a-fafd-7244434d065e",
+      "BlendMode": "factor",
+      "AlphaTest": 0.4,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_xuanxu_hair",
+      "Guid": "c11e5301-5ace-55e1-26dd-a70fa1fb8711",
+      "BlendMode": "factor",
+      "AlphaTest": 0.05,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_xuanxu_ornament",
+      "Guid": "2308c718-d886-7862-a3b7-d828a2e4f4b0",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_xuanxu_cloth",
+      "Guid": "0ccfa36b-d31a-7f4f-8939-a25a681bb0fe",
+      "BlendMode": "factor",
+      "AlphaTest": 0.08,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "Name": "zw_xuanxu_head_00",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "dbd32837-01e9-b90d-e83b-7aff990cd01b",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "8ECA945D8AF7C6A44A2A5F68BE4C485C069E2E0329C1C74F42A437F986C31B8C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_head_00.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "dbd32837-01e9-b90d-e83b-7aff990cd01b",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "8ECA945D8AF7C6A44A2A5F68BE4C485C069E2E0329C1C74F42A437F986C31B8C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_head_00.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "dbd32837-01e9-b90d-e83b-7aff990cd01b",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "8ECA945D8AF7C6A44A2A5F68BE4C485C069E2E0329C1C74F42A437F986C31B8C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_head_00.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "dbd32837-01e9-b90d-e83b-7aff990cd01b",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "8ECA945D8AF7C6A44A2A5F68BE4C485C069E2E0329C1C74F42A437F986C31B8C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_head_01",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "75072d60-4f74-25de-f606-72f8184db4ac",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "887FB4800DC8DA31EE4AF85DE40D1DA956F0F820874FFA346689CC8CF6F5CBA1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_head_01.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "75072d60-4f74-25de-f606-72f8184db4ac",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "887FB4800DC8DA31EE4AF85DE40D1DA956F0F820874FFA346689CC8CF6F5CBA1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_head_01.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "75072d60-4f74-25de-f606-72f8184db4ac",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "887FB4800DC8DA31EE4AF85DE40D1DA956F0F820874FFA346689CC8CF6F5CBA1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_head_01.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "75072d60-4f74-25de-f606-72f8184db4ac",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "887FB4800DC8DA31EE4AF85DE40D1DA956F0F820874FFA346689CC8CF6F5CBA1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_head_04",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "c88e6ada-0f38-522a-fafd-7244434d065e",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "7E97F373356B02DC88C773820E5860C2CD44FCEC9AE29C90EA386B3888E9E0A1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_head_04.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "c88e6ada-0f38-522a-fafd-7244434d065e",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "7E97F373356B02DC88C773820E5860C2CD44FCEC9AE29C90EA386B3888E9E0A1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_head_04.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "c88e6ada-0f38-522a-fafd-7244434d065e",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "7E97F373356B02DC88C773820E5860C2CD44FCEC9AE29C90EA386B3888E9E0A1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_head_04.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "c88e6ada-0f38-522a-fafd-7244434d065e",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "7E97F373356B02DC88C773820E5860C2CD44FCEC9AE29C90EA386B3888E9E0A1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_head_07",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "c11e5301-5ace-55e1-26dd-a70fa1fb8711",
+      "Vertices": 2375,
+      "AlphaMin": 0,
+      "AlphaMax": 9,
+      "ColorsSHA256": "6D82BF48AEC1298DFA226D059A3782F58C6BCF14CF474D3A0F3BDEF157BDA71F",
+      "VertexStreamSHA256": "4A78D9D29C878849534429F7E48DFE26AAA849AD455E7431587B3E8C93281B59",
+      "ClothMetadataSHA256": "35FDD7600EAF21BF95B3AABBFB664254FFF01C53B2DFAD417DB05DFBFF7E05BF"
+    },
+    {
+      "Name": "zw_xuanxu_head_07.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "c11e5301-5ace-55e1-26dd-a70fa1fb8711",
+      "Vertices": 1559,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "46C4D6E7ED342C1864D5CCDAC04D8080AA45D7F5F80A0B392FB4D8B0F2A87DBD",
+      "VertexStreamSHA256": "7F875B22C5139CF2994E1EF67308AEF43477BF06E5C1B67C36AA1512F7053958",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_head_07.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "c11e5301-5ace-55e1-26dd-a70fa1fb8711",
+      "Vertices": 939,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "8B648F4D8AD0D9215AB0C2BAF88CC494EB4E1388FA7B3CFDB717DFAC952DB8A2",
+      "VertexStreamSHA256": "7F900AA11366F873471916B0EB1E3D903DEE64F8EE569B1E3226A953345D4256",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_head_07.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "c11e5301-5ace-55e1-26dd-a70fa1fb8711",
+      "Vertices": 560,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "4D41C4A76AFF4962130F0EB7B2EE89C5C7E982FCBD11C6FFE43CFA37413925F7",
+      "VertexStreamSHA256": "DDB8D0F2B261F091591AC7FC424B2BBC15BB7B7CCFC015787AA97D0B15E30AB4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_head_08",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "2308c718-d886-7862-a3b7-d828a2e4f4b0",
+      "Vertices": 142,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "699DB1DD8D855DADD45A16E937A5E0D17B63F959D4B90170F462DF52A3137838",
+      "VertexStreamSHA256": "563CD1DA93FCEBC0C308D76E434F1E80B0A5BBC49ACF9CE52DEC2D3DEDCBA6EA",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_head_08.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "2308c718-d886-7862-a3b7-d828a2e4f4b0",
+      "Vertices": 100,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "4B576330A5FB8D83AEF0FC9D179BA6889D2882282CB0498B7BEEA754FFB76DFE",
+      "VertexStreamSHA256": "A86A8E401B71E13B026044A1C96A9D2931845D86FADF9227578677913734356A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_head_08.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "2308c718-d886-7862-a3b7-d828a2e4f4b0",
+      "Vertices": 66,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "BEF73E09549AC483FE6C3E5AC40EE8B6AAA9838B3CF404B1E17F07900C7A7982",
+      "VertexStreamSHA256": "B2D0361B3388FA723720C6788B7A08F39D847D15976446FD8E16F054185DD80E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_head_08.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "2308c718-d886-7862-a3b7-d828a2e4f4b0",
+      "Vertices": 38,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B1EC10101E923667CFA37C12E93C769D13D14679D84ACDCDBB2BDD541E91E20D",
+      "VertexStreamSHA256": "D0F619853C2A072D13D6DF1BCE0718BFE3FC948F969D46ECBEDD49DB12FA4A21",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_body_02",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "d209ce87-1426-3729-fe72-02d06038951d",
+      "Vertices": 118,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "2A1DA78A4972ECCE779E62DCAE23F1F974CE4FCA3A9DEF11009C4B1F80D99096",
+      "VertexStreamSHA256": "7257FB272B624A0EC3C803E6F9A50207C216A754E04937A2B629141A2E4AFAB5",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_body_02.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "d209ce87-1426-3729-fe72-02d06038951d",
+      "Vertices": 77,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "3EEE6B1857D566D0798000991AC7B33E6A19CE3FE3EE0C85233056DA346AE3C1",
+      "VertexStreamSHA256": "C864292E57243F23F329276B522F849160E109AC2C86EC9FAA705DE67D9B23C0",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_body_02.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "d209ce87-1426-3729-fe72-02d06038951d",
+      "Vertices": 50,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "9103E3380116A148FB98B6397FAAB87B1E252DAB6DD28283E752AB44903E4D5F",
+      "VertexStreamSHA256": "2DA1F189CD809E2F1A996FB4783AFF39E566D4FAC1F1D56661FD9E14C63539AE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_body_02.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "d209ce87-1426-3729-fe72-02d06038951d",
+      "Vertices": 30,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "72BBB0DC9F6D4BDBB7A81731C6C3FDDE6C02F93B87BB42D6ADB73719D8B200FC",
+      "VertexStreamSHA256": "43F820A5A151B9B4EDAD76C2B952960B254F5DF9CCAB10A4B2521E4580608F22",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_body_05",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "bce5c7f5-28f2-952f-73a3-eea590d82c08",
+      "Vertices": 1031,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "00631476ED7D7A681CD541F5554BEA41C9A11493E1E22AAB7839E2F05304D83A",
+      "VertexStreamSHA256": "F933633E28F4148A04B171CB3B06924DCA5BE8B624F5D5718D5BE83191EAB5F2",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_body_05.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "bce5c7f5-28f2-952f-73a3-eea590d82c08",
+      "Vertices": 660,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D56E1D45D385F3FA38552A110DBA25EAD727C56CF31355647E8BC18BE696160E",
+      "VertexStreamSHA256": "BC1443268E778ABD2B8F867A008D4703AE9141433860BDDC0D67763E00520A55",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_body_05.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "bce5c7f5-28f2-952f-73a3-eea590d82c08",
+      "Vertices": 388,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B75928C084659D231A00A052612760EB5DCD90B5B5AB3101325DA0A07FB25D2A",
+      "VertexStreamSHA256": "12D78004F020C896D3E3E838DE2CEE5370DF123DBBF758A877D7542620A77C73",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_body_05.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "bce5c7f5-28f2-952f-73a3-eea590d82c08",
+      "Vertices": 218,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "C0F18CFE609F5E3FE1E707C2AC001CE2CDE020B3E673EF8AD1B47E3EA65757D7",
+      "VertexStreamSHA256": "B8BBBC2E9AD18F582348EBC193BCDF2F3BA715DD355D2FB71A8F707D58D4B1A7",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_body_09",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "0ccfa36b-d31a-7f4f-8939-a25a681bb0fe",
+      "Vertices": 1291,
+      "AlphaMin": 0,
+      "AlphaMax": 33,
+      "ColorsSHA256": "CBD5EC8CE983C95239F918D897C12944B0150727DF8859F614772095FE0F2D5E",
+      "VertexStreamSHA256": "591CA8A7D152143C76A1F977098ABC502BF6CF9F81BB5D22109159B9948FC784",
+      "ClothMetadataSHA256": "8836AFA74A0E59306E2E8CB34367ECEF3E41FEB8B6C5AEB2C519A93F0EC5884E"
+    },
+    {
+      "Name": "zw_xuanxu_body_09.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "0ccfa36b-d31a-7f4f-8939-a25a681bb0fe",
+      "Vertices": 867,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "88633B85FC46FCF693128D9F682B94F3DFD17D2FE4D4DB4CAB88C7E8EADA6ACA",
+      "VertexStreamSHA256": "105177463FA8442850D032B88A9A9E66E7D1D7821467B7E1B16C357C4D83CADC",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_body_09.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "0ccfa36b-d31a-7f4f-8939-a25a681bb0fe",
+      "Vertices": 538,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "F4CD50219CDFB9264EA9E17D9AC692E49917D4A9A05519A9F873E1DAD6B17AAF",
+      "VertexStreamSHA256": "7E8E95B01365CA3445C73CF007553AA0FD905D528EBA166B6AE36D84B8E9B463",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_body_09.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "0ccfa36b-d31a-7f4f-8939-a25a681bb0fe",
+      "Vertices": 314,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "FDF6E3B1CCDE863589CB99A4194F46BF15875715CB05883C98C7B426F2F504D1",
+      "VertexStreamSHA256": "CA4F1B1093EB13768737F2318766F86D9896EDF982A88C2BE11F767B9EBA3514",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_body_10",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "bce5c7f5-28f2-952f-73a3-eea590d82c08",
+      "Vertices": 424,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "29F14CA26EE349807A48B61E00D33013F168F2259C0CCC685A1C1A54FF7FE2FE",
+      "VertexStreamSHA256": "ECF2BC75E24F871DD0A354365C32BE068E275FB864D20C617DBD1D6B4068F0EE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_body_10.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "bce5c7f5-28f2-952f-73a3-eea590d82c08",
+      "Vertices": 292,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "0C759A75CE18939236EAD93ED3068C733B5549C3E077AB3FE7531E064520ABA5",
+      "VertexStreamSHA256": "CD24A4DBC212109C1CD645F03D3D9F76A8C6265E022D2C27FC995AAEEE819366",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_body_10.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "bce5c7f5-28f2-952f-73a3-eea590d82c08",
+      "Vertices": 185,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "4361BC888C589E5241C0C4DEDAB7384AEA08692B220DA7BD6B4C8DD35E07796C",
+      "VertexStreamSHA256": "870AC3DBE0B83B14FC795054053E3CF7B536F070405E1FC7D6A89017D61B23A9",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_body_10.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "bce5c7f5-28f2-952f-73a3-eea590d82c08",
+      "Vertices": 115,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1F38E6DE60BBA37E6EE44AB78FBB39A742274CAEC535BB5E73A7B70EBE7D0F84",
+      "VertexStreamSHA256": "292178D4BBA96D136176256498AF12BBDD498EC5CFAC56AD8D7E435E584308CA",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_body_11",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "0ccfa36b-d31a-7f4f-8939-a25a681bb0fe",
+      "Vertices": 575,
+      "AlphaMin": 0,
+      "AlphaMax": 6,
+      "ColorsSHA256": "140AD1585F59E09AFE2B512FC52344A3643EFAB8182F5EFA4D3DA4B730F3936D",
+      "VertexStreamSHA256": "89AA6DC5187C9A0C29C9315E7690B111E418D170C37E903A19409FD58EA50A97",
+      "ClothMetadataSHA256": "D8701D454AA592258CFB097683DEF14260856F6C7827A352B016862EF30173F2"
+    },
+    {
+      "Name": "zw_xuanxu_body_11.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "0ccfa36b-d31a-7f4f-8939-a25a681bb0fe",
+      "Vertices": 399,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "84B724FF63306F0AAA7D3A8BF2B2FF44820CD12BF8FCDA715EE8CD30024E58D4",
+      "VertexStreamSHA256": "7AEE79F3381988DC3E35E2345E9B674A56B00E9E58228C0791CFB51B56670A1C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_body_11.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "0ccfa36b-d31a-7f4f-8939-a25a681bb0fe",
+      "Vertices": 253,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "42018525D805C285A0BE5917D6EA634AF198CF251D490855135B864C7B40202E",
+      "VertexStreamSHA256": "3ACA5B334E7EDF0CFF89F5410BC8508F228AB48D89F9F5AD5E75F925D200DEB4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_body_11.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "0ccfa36b-d31a-7f4f-8939-a25a681bb0fe",
+      "Vertices": 149,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D1AB04E11EB6210CE129EDEBD08926113AF573A664C4C76A5CF1854E92E52966",
+      "VertexStreamSHA256": "DB9CC3C2B8843924036DE195A319A964BE4A5070B4019A98DA3D71832A830A5E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_legs_03",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "a5154f6a-a381-e7cc-49ad-e5e28e14a19a",
+      "Vertices": 627,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "7AF1A9C1C9F12C7446E2637EEAFD6045D89DB28F1FFB97D1B411F0E8175863B2",
+      "VertexStreamSHA256": "32BC5C291339729EB3F465397472A21D44968AEF1A82E0E4F71EE3795B03198B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_legs_03.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "a5154f6a-a381-e7cc-49ad-e5e28e14a19a",
+      "Vertices": 438,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "A46DAC257E578B37B1B397B4C45482218C7313F6F8B2FD44B4651F84A1B2DF66",
+      "VertexStreamSHA256": "33B18D19CAE409438216A17771E05785BF43A496A5D17B5776D1237BFD8AB5E7",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_legs_03.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "a5154f6a-a381-e7cc-49ad-e5e28e14a19a",
+      "Vertices": 266,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B7C49494860A2D8A7BA6FDFABC1912367C7D488AD7BEC71A60FAAB1933511BDB",
+      "VertexStreamSHA256": "137E779ECFF0F2C218EAACC707FADEAD8CA435F03071267556BBB099A9BB6741",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_legs_03.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "a5154f6a-a381-e7cc-49ad-e5e28e14a19a",
+      "Vertices": 229,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "BB7C268F555AEC695940606714B436B6EB18C78E0C139AB361F020DFBCDF8DE2",
+      "VertexStreamSHA256": "2E9648CFE918D6869E5C3265FB585AE8F4EBEAD64C46CD3941C349D177A5F65E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_legs_06",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "bce5c7f5-28f2-952f-73a3-eea590d82c08",
+      "Vertices": 371,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "44A2187A8CB7DD721AF7E7B3A8EFE09B85ACDA9D1B809AF7E9AF0BC9F9D465A2",
+      "VertexStreamSHA256": "E1B18C8EC5EB75762619BE31BA14EEB4CD9E6B4F73336A6858C6F040330D7AAD",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_legs_06.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "bce5c7f5-28f2-952f-73a3-eea590d82c08",
+      "Vertices": 249,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "AF7FC9A9D22411784E2E29378B8844792C8E80AB78CF68D5282F3A69EF9AD2F4",
+      "VertexStreamSHA256": "C97A2DE8826FB1E0A86BB1B75A28629FD915A34AEBD9CE5EA05899D94399314D",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_legs_06.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "bce5c7f5-28f2-952f-73a3-eea590d82c08",
+      "Vertices": 154,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "25BE075DDBEC94D61AC550D43CF451CFE367C4EE39F461E764E0A505F09FA915",
+      "VertexStreamSHA256": "2C4DDEBA5E425F5A2688FE052BBE8E33FA5E125C7E27EF9CBC39E0EF753510D9",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanxu_legs_06.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "bce5c7f5-28f2-952f-73a3-eea590d82c08",
+      "Vertices": 97,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D12FC76A1F45F151FD0E8ACE71F6BC6CB1657EA3DD91A078CAFF5AE708DEFF5D",
+      "VertexStreamSHA256": "FDF12BB340EA34F626DC88E9480C89B40EACA58CC6349E552C4BC28C5862FA3C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    }
+  ]
+}

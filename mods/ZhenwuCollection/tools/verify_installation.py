@@ -7,6 +7,7 @@ INSTALLED=Path('D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Mod
 config=json.loads((ROOT/'mod.json').read_text());release=json.loads((ROOT/'reports/release_validation.json').read_text())
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 assert sha(ROOT/config['package'])==release['final_package_sha256']
+for pkg in release['packages']:assert sha(ROOT/pkg['file'])==pkg['sha256']
 records=[]
 with zipfile.ZipFile(ROOT/'dist/ZhenwuCollection_Mod.zip') as z:
  assert z.testzip() is None
@@ -23,7 +24,11 @@ with zipfile.ZipFile(ROOT/'dist/ZhenwuCollection_Source.zip') as z:
  assert z.testzip() is None and set(z.namelist())==set(config['source_files'])
  for rel in config['source_files']:assert z.read(rel)==(ROOT/rel).read_bytes(),rel
  for rel in ['sets/01_YunhaiNiezong/source/ZhenwuYunhai_Rigged.blend','sets/01_YunhaiNiezong/source/ZhenwuYunhai_Rigged.fbx','sets/01_YunhaiNiezong/tex/eyelash_D.png']:assert rel in z.namelist()
+ for rel in ['sets/02_XuanxuQingjing/source/ZhenwuXuanxu_Rigged.blend','sets/02_XuanxuQingjing/source/ZhenwuXuanxu_Rigged.fbx','sets/02_XuanxuQingjing/tex/eyelash_D.png']:assert rel in z.namelist()
+with zipfile.ZipFile(ROOT/'dist/ZhenwuCollection_v1.0.0_Mod.zip') as z:
+ assert z.read('ZhenwuCollection/AssetPackages/zw_yunhai.tpac')==(MODULE/'AssetPackages/zw_yunhai.tpac').read_bytes()
+assert len(ET.parse(MODULE/'ModuleData/items.xml').getroot())==6
 version=ET.parse(MODULE/'SubModule.xml').find('Version').get('value')
 assert version==release['version']
-report={'status':'pass','version':version,'installed_path':str(INSTALLED),'files':records,'module_zip_sha256':sha(ROOT/'dist/ZhenwuCollection_Mod.zip'),'source_zip_sha256':sha(ROOT/'dist/ZhenwuCollection_Source.zip'),'module_archive_installed_bytes_match':True,'all_source_archive_bytes_match':True,'game_launched':False,'game_acceptance':'pending'}
+report={'status':'pass','version':version,'installed_path':str(INSTALLED),'files':records,'module_zip_sha256':sha(ROOT/'dist/ZhenwuCollection_Mod.zip'),'source_zip_sha256':sha(ROOT/'dist/ZhenwuCollection_Source.zip'),'module_archive_installed_bytes_match':True,'all_source_archive_bytes_match':True,'game_launched':False,'game_acceptance':{'01_YunhaiNiezong':'accepted_v1.0.0','02_XuanxuQingjing':'pending'},'first_accepted_package_unchanged':True}
 (ROOT/'reports/installation_validation.json').write_text(json.dumps(report,indent=2));print('INSTALLATION_AND_ZIPS_VERIFIED',version,len(records),'module files',len(config['source_files']),'source files')
