@@ -17,10 +17,10 @@ for file in (ROOT/'build/final_export/geo').glob('*.bin'):
  for mesh in read_geo(file):assert cKDTree(new[mesh['name']+'_P']).query(mesh['pos'])[0].max()<2e-6
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 previous=json.loads((base/'proportion_validation.json').read_text())
-report={'status':'pass','version':'v1.0.3','final_package_sha256':sha(ROOT/'module/ShengxiuCollection/AssetPackages/sx_mingyu.tpac'),
+report={'status':'pass','version':'v1.0.4','final_package_sha256':sha(ROOT/'module/ShengxiuCollection/AssetPackages/sx_mingyu.tpac'),
  'baseline_package_sha256':sha(base/'sx_mingyu.tpac'),'all_bind_geometry_exactly_preserved':True,
  'all_weights_exactly_preserved':True,'native_skeleton_unchanged':True,
  'preserved_v1_0_1_measurements':previous['preserved_v1_0_1_measurements'],
- 'all_cloth_alpha_preserved':True,'intentional_changes':'force_enable_cloth and observed native UnknownBool3 only','game_test_verified':False}
+ 'all_cloth_alpha_preserved':True,'intentional_changes':'Own cooked cloth payloads, explicit solver roots and editor skin records; runtime geometry and alpha unchanged','game_test_verified':False}
 (ROOT/'reports/proportion_validation.json').write_text(json.dumps(report,indent=2))
 print('ACCEPTED_HEAD_NECK_FEET_AND_ALL_GEOMETRY_PRESERVED')

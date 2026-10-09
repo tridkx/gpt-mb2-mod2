@@ -1,41 +1,8 @@
 {
-  "status": "missing_native_cloth_payload",
-  "final_package_sha256": "81ccef076612638398f6fffe1ee5471547eedd60040fbe8e2c1c39343340f7d0",
+  "status": "structure_present",
+  "final_package_sha256": "616b97186624b1cc220385e017224e2ad8e3d5046fe10d276cc1b1a8e6ad1708",
   "payload_type_guid": "b97e0f10-df49-4666-8f1d-ada6630d4b4e",
-  "missing_direct_cloth_meshes": [
-    {
-      "metamesh": "sx_mingyu_head",
-      "mesh": "sx_mingyu_head_00",
-      "lod": 0,
-      "mesh_guid": "3297406e-4529-80ea-4f63-592a2f5a57de",
-      "editor_bones": 0,
-      "runtime_skin_data_size": 4946
-    },
-    {
-      "metamesh": "sx_mingyu_body",
-      "mesh": "sx_mingyu_body_06",
-      "lod": 0,
-      "mesh_guid": "e6546a5e-7ef3-d344-ec91-40d238ffbb79",
-      "editor_bones": 0,
-      "runtime_skin_data_size": 1775
-    },
-    {
-      "metamesh": "sx_mingyu_body",
-      "mesh": "sx_mingyu_body_13",
-      "lod": 0,
-      "mesh_guid": "0013d18c-bb0d-f14f-0f86-638c51381e56",
-      "editor_bones": 0,
-      "runtime_skin_data_size": 2244
-    },
-    {
-      "metamesh": "sx_mingyu_body",
-      "mesh": "sx_mingyu_body_13.lod1",
-      "lod": 1,
-      "mesh_guid": "c089e2f0-0f05-9273-878f-4bf72ef6a8d8",
-      "editor_bones": 0,
-      "runtime_skin_data_size": 1573
-    }
-  ],
+  "missing_direct_cloth_meshes": [],
   "native_direct_tassels_and_rigid_control": [
     {
       "Name": "spear_banner_17",
@@ -1082,9 +1049,9 @@
         {
           "TypeGuid": "3d41985f-24d2-4fc1-82e4-6a6e0da3f4e2",
           "OwnerGuid": "3297406e-4529-80ea-4f63-592a2f5a57de",
-          "ActualSize": 670080,
+          "ActualSize": 769000,
           "UnknownUint": 0,
-          "UnknownUlong": 15299573966937404707
+          "UnknownUlong": 6223174576478484632
         },
         {
           "TypeGuid": "bb1df897-584f-4770-abf2-663fe449f247",
@@ -1414,6 +1381,13 @@
           "ActualSize": 33768,
           "UnknownUint": 1,
           "UnknownUlong": 13131517817496861724
+        },
+        {
+          "TypeGuid": "b97e0f10-df49-4666-8f1d-ada6630d4b4e",
+          "OwnerGuid": "3297406e-4529-80ea-4f63-592a2f5a57de",
+          "ActualSize": 326368,
+          "UnknownUint": 1,
+          "UnknownUlong": 3008457421980819823
         }
       ],
       "meshes": [
@@ -1456,7 +1430,7 @@
           "edit_positions": 4946,
           "edit_vertices": 4946,
           "edit_faces": 4729,
-          "edit_bones": 0,
+          "edit_bones": 4946,
           "edit_alpha_min": 0,
           "edit_alpha_max": 6
         },
@@ -2512,9 +2486,9 @@
         {
           "TypeGuid": "3d41985f-24d2-4fc1-82e4-6a6e0da3f4e2",
           "OwnerGuid": "e6546a5e-7ef3-d344-ec91-40d238ffbb79",
-          "ActualSize": 251508,
+          "ActualSize": 287008,
           "UnknownUint": 0,
-          "UnknownUlong": 15497083630756753503
+          "UnknownUlong": 3705824634741892346
         },
         {
           "TypeGuid": "bb1df897-584f-4770-abf2-663fe449f247",
@@ -2680,9 +2654,9 @@
         {
           "TypeGuid": "3d41985f-24d2-4fc1-82e4-6a6e0da3f4e2",
           "OwnerGuid": "0013d18c-bb0d-f14f-0f86-638c51381e56",
-          "ActualSize": 311536,
+          "ActualSize": 356416,
           "UnknownUint": 0,
-          "UnknownUlong": 9244612532166283400
+          "UnknownUlong": 5054947079066145965
         },
         {
           "TypeGuid": "bb1df897-584f-4770-abf2-663fe449f247",
@@ -2694,9 +2668,9 @@
         {
           "TypeGuid": "3d41985f-24d2-4fc1-82e4-6a6e0da3f4e2",
           "OwnerGuid": "c089e2f0-0f05-9273-878f-4bf72ef6a8d8",
-          "ActualSize": 215024,
+          "ActualSize": 246484,
           "UnknownUint": 0,
-          "UnknownUlong": 4543673330497254349
+          "UnknownUlong": 2747093769220516320
         },
         {
           "TypeGuid": "bb1df897-584f-4770-abf2-663fe449f247",
@@ -2732,6 +2706,27 @@
           "ActualSize": 60876,
           "UnknownUint": 1,
           "UnknownUlong": 9606152408227288063
+        },
+        {
+          "TypeGuid": "b97e0f10-df49-4666-8f1d-ada6630d4b4e",
+          "OwnerGuid": "0013d18c-bb0d-f14f-0f86-638c51381e56",
+          "ActualSize": 126312,
+          "UnknownUint": 1,
+          "UnknownUlong": 10631600309232465861
+        },
+        {
+          "TypeGuid": "b97e0f10-df49-4666-8f1d-ada6630d4b4e",
+          "OwnerGuid": "c089e2f0-0f05-9273-878f-4bf72ef6a8d8",
+          "ActualSize": 83564,
+          "UnknownUint": 1,
+          "UnknownUlong": 9970014560202487235
+        },
+        {
+          "TypeGuid": "b97e0f10-df49-4666-8f1d-ada6630d4b4e",
+          "OwnerGuid": "e6546a5e-7ef3-d344-ec91-40d238ffbb79",
+          "ActualSize": 167232,
+          "UnknownUint": 1,
+          "UnknownUlong": 10455265509358429014
         }
       ],
       "meshes": [
@@ -3094,7 +3089,7 @@
           "edit_positions": 1775,
           "edit_vertices": 1775,
           "edit_faces": 2615,
-          "edit_bones": 0,
+          "edit_bones": 1775,
           "edit_alpha_min": 0,
           "edit_alpha_max": 23
         },
@@ -3577,7 +3572,7 @@
           "edit_positions": 2244,
           "edit_vertices": 2244,
           "edit_faces": 2771,
-          "edit_bones": 0,
+          "edit_bones": 2244,
           "edit_alpha_min": 0,
           "edit_alpha_max": 170
         },
@@ -3620,7 +3615,7 @@
           "edit_positions": 1573,
           "edit_vertices": 1573,
           "edit_faces": 1662,
-          "edit_bones": 0,
+          "edit_bones": 1573,
           "edit_alpha_min": 0,
           "edit_alpha_max": 170
         },
@@ -4158,7 +4153,7 @@
       ]
     }
   ],
-  "interpretation": "Strong evidence of missing cloth preprocessed data, not a proven engine diagnosis. Native direct tassels and a skinned cloak simulation proxy have this segment; the rigid blade does not. The current builder emits no such segment. Native proxy also has editor bone data; current skinned cloth has none.",
+  "interpretation": "All four existing Mingyu cloth meshes have a native-type preprocessing segment. The separate cooked_cloth_validation.json checks its contents; presence alone is not engine verification.",
   "limitations": "Undocumented payload format; no native solver run. No native payload may be copied to unrelated geometry. Presence alone does not validate constraints, indices, mapping or dynamics.",
   "official_reference": "https://moddocs.bannerlord.com/editor/resource-editors/cloth_simulation/",
   "game_dynamic_verified": false

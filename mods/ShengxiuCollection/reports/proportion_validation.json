@@ -1,7 +1,7 @@
 {
   "status": "pass",
-  "version": "v1.0.3",
-  "final_package_sha256": "81ccef076612638398f6fffe1ee5471547eedd60040fbe8e2c1c39343340f7d0",
+  "version": "v1.0.4",
+  "final_package_sha256": "616b97186624b1cc220385e017224e2ad8e3d5046fe10d276cc1b1a8e6ad1708",
   "baseline_package_sha256": "e8d095b6bdcbb436c0603b9eacefce8b9706178936079d9df698d97f53b8a024",
   "all_bind_geometry_exactly_preserved": true,
   "all_weights_exactly_preserved": true,
@@ -25,6 +25,6 @@
     "sole_slope_after": -1.5323211484629264e-18
   },
   "all_cloth_alpha_preserved": true,
-  "intentional_changes": "force_enable_cloth and observed native UnknownBool3 only",
+  "intentional_changes": "Own cooked cloth payloads, explicit solver roots and editor skin records; runtime geometry and alpha unchanged",
   "game_test_verified": false
 }

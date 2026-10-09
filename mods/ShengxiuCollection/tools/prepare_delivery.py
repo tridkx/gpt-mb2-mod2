@@ -5,6 +5,8 @@ ROOT=Path(__file__).resolve().parents[1]
 from audit_cloth_payload import audit
 payload=audit()
 assert not payload['missing_direct_cloth_meshes'], 'Cloth payload missing: do not publish another parameter-only cloth fix. See reports/cloth_payload_diagnosis.json.'
+from verify_cooked_cloth import verify
+cooked=verify(ROOT/'module/ShengxiuCollection/AssetPackages/sx_mingyu.tpac')
 report_path=ROOT/'reports/release_validation.json';report=json.loads(report_path.read_text())
 source=json.loads((ROOT/'reports/source_validation.json').read_text());assert source['status']=='pass'
 package=ROOT/'module/ShengxiuCollection/AssetPackages/sx_mingyu.tpac'
@@ -24,7 +26,10 @@ report['editable_source_verified']=True
 activation=json.loads((ROOT/'reports/cloth_activation_validation.json').read_text())
 assert activation['status']=='pass' and activation['final_package_sha256']==report['final_package_sha256']
 report['native_tassel_activation_alignment_verified']=True
-report['baseline_reason']='v1.0.2 native tassel activation comparison'
+report['baseline_reason']='v1.0.3 own cooked cloth payload revision'
+report['baseline_package_sha256']=cooked['baseline_package_sha256']
+report['cooked_cloth_payloads_verified']=True
+report['cooked_cloth_format_native_samples']=len(cooked['native_samples'])
 report['visual_review']={'reviewed':'final eye/lash close-ups, rest front/side/back and worst native motion/contact frames','result':'reviewed; sleeve veils remain rigidly skinned in previews because the game cloth solver was not run; skirt leg proxy contacts remain for user testing','game_verified':False}
 report_path.write_text(json.dumps(report,indent=2))
 files=['README.md','mod.json']

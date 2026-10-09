@@ -1,5 +1,5 @@
 {
-  "package_sha256": "81ccef076612638398f6fffe1ee5471547eedd60040fbe8e2c1c39343340f7d0",
+  "package_sha256": "616b97186624b1cc220385e017224e2ad8e3d5046fe10d276cc1b1a8e6ad1708",
   "source": "Final TPAC re-export with decoded textures and quantized weights",
   "game_cloth_solver_used": false,
   "previews": [
@@ -79,5 +79,5 @@
     }
   ],
   "rendered_package_sha256": "e8d095b6bdcbb436c0603b9eacefce8b9706178936079d9df698d97f53b8a024",
-  "reuse_basis": "Final TPAC re-export checked. All 56 geometry/index streams and material metadata identical to v1.0.2; final texture blobs checked against unchanged build inputs. Only cloth activation metadata differs; no dynamic effect shown."
+  "reuse_basis": "Final TPAC re-export checked. All 56 geometry/index streams, runtime alpha and materials identical to v1.0.3; final textures checked against unchanged build inputs. Own cloth payloads and editor bones added; static previews show no cloth dynamics."
 }

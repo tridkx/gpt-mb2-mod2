@@ -52,7 +52,7 @@ def audit():
         'native_direct_tassels_and_rigid_control': tassels,
         'native_skinned_simulation_proxy': proxy,
         'current_package': current,
-        'interpretation': 'Strong evidence of missing cloth preprocessed data, not a proven engine diagnosis. Native direct tassels and a skinned cloak simulation proxy have this segment; the rigid blade does not. The current builder emits no such segment. Native proxy also has editor bone data; current skinned cloth has none.',
+        'interpretation': ('Strong evidence of missing cloth preprocessed data, not a proven engine diagnosis. Native direct tassels and a skinned cloak simulation proxy have this segment; the rigid blade does not.' if missing else 'All four existing Mingyu cloth meshes have a native-type preprocessing segment. The separate cooked_cloth_validation.json checks its contents; presence alone is not engine verification.'),
         'limitations': 'Undocumented payload format; no native solver run. No native payload may be copied to unrelated geometry. Presence alone does not validate constraints, indices, mapping or dynamics.',
         'official_reference': 'https://moddocs.bannerlord.com/editor/resource-editors/cloth_simulation/',
         'game_dynamic_verified': False,

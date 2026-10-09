@@ -1,4 +1,18 @@
-# Shengxiu Collection v1.0.3
+# Shengxiu Collection v1.0.4
+
+v1.0.4 是离线逆向生成布料预处理数据的测试版本，全程未使用 Computer Use、未启动游戏或官方编辑器。原生红缨和披风共七个样本的 b97e0f10 数据段均完整解析并逐字节重写一致；约束长度与原始位置核对误差低于 2e-7 米，压缩位置误差低于 0.18 毫米。格式记录在 tools/cloth_payload.py 与 reports/cloth_format_research.json。
+
+新增自己的三角网格布料编译器 tools/cook_cloth.py，为长发、裙摆、袖纱 LOD0/LOD1 分别生成 326368、167232、126312、83564 字节的预处理数据，并补全四个布料网格的编辑器蒙皮数据。按网格边生成抗拉约束、按相邻三角形的对角点生成弯曲约束；生成互不争写活动顶点的并行分组、法线/碰撞三角分组、顶点映射、位置和法线压缩、骨骼权重、测地距离锚点。此算法采用三角网格网络，没有复刻原生的重构网格或经纬分类算法；剪切分组为空，由三角形边长约束维持形状。
+
+六片长袖纱的已有固定边保持不变。编译器检查连通片：20 个无根部的小袖饰固定随蒙皮；没有固定根部的独立发束和裙饰按最高处 1 厘米范围固定上缘，至少固定两个点。这些是求解数据中的显式根部覆盖，不修改渲染顶点的 Alpha。全部 56 个网格的几何、索引、运行时颜色与蒙皮数据不变，贴图和材质不变，头颈鞋子修复与 Blend/FBX 完全保留。根部覆盖位置在 reports/cooked_cloth_validation.json 中逐项记录。
+
+最终 TPAC 已重新读出：四段新增数据与编译输出 SHA256 一致，约束长度、索引、映射、权重和分组通过检查，锚点不跨独立连通片。相同输入重复编译可得到相同的整个 TPAC。尚未运行 Bannerlord 求解器，不能把这些检查当作游戏中的回落效果确认；若仍无效果，继续核查引擎接收路径和剩余元数据字段。此版本为可回退的游戏测试候选。
+
+重建时先编译 tools/PackagePatch/PackagePatch.csproj、tools/NativeClothProbe.csproj、tools/ClothPatch.csproj，分别输出到 build/package_patch、build/cloth_probe、build/cloth_patch；沿用已有几何导出与贴图流程，然后执行 tools/build_package.py，它会调用 build_cooked_cloth.py 生成自有数据。仅补数据可执行 `python tools/build_cooked_cloth.py build/cloth_baseline_v1.0.3/sx_mingyu.tpac build/cloth_candidate_v1.0.4.tpac`。执行 verify_release.py、verify_cloth_activation.py（包含 verify_cooked_cloth.py）、verify_cloth.py、verify_proportions.py、verify_veil_travel.py、verify_native_provenance.py，再执行 reuse_static_previews.py 和 prepare_delivery.py。静态预览复用已确认不变的外观，不能显示新增布料动态。
+
+增量基线保存在 build/cloth_baseline_v1.0.3/。缓存缺失时从本地 ShengxiuCollection/v1.0.3 标签或保留的 v1.0.3 源包恢复，原生样本通过 NativeClothProbe --dump-segments 从当前安装的 crafting.tpac 和 armor666.tpac 只读提取。不要将任何原生约束数据复制到明玉。
+
+以下为 v1.0.3 及此前版本的历史调查和参数说明；当时提出的官方编辑器路径现由上述离线编译路径替代。
 
 2026-10-09 追加反馈「没变化」：当前布料返修未完成，不发布新版本。扩展 TPAC 检查发现，原生红缨 spear_banner_16/17 和披风的蒙皮模拟代理 clo_battania_shoulder_strap_cloak 都有类型 b97e0f10-df49-4666-8f1d-ada6630d4b4e 的额外网格数据段，分别为 120484 和 35772 字节；刚性刀头没有。明玉四个已标记为布料的子网格全部缺少这一段。原生代理的编辑器骨骼数据也完整，而明玉此数据为空。现有 builder 没有生成这些数据。此前的标记、参数、活动范围检查无法证明布料求解已经启动。
 
@@ -35,6 +49,6 @@ v1.0.2 针对「长袖薄纱挥舞武器时悬空、不回落」调整布料。�
 
 启用回归基线在 build/cloth_baseline_v1.0.2/；活动空间分析仍使用 build/cloth_baseline_v1.0.1/。缓存缺失时从保留的 v1.0.2 源 ZIP 或本地 ShengxiuCollection/v1.0.2 标签恢复旧工程并重建，不把新版本当旧基线。动作 weapon_slash.json 来自原生双手右劈资源；另一个名为 downswing 的资源未包含关键帧，已排除动作验证。
 
-安装：从工作区运行 tools/install_release.ps1 -Mod ShengxiuCollection -Version v1.0.3 -PreviousVersion v1.0.2。Mod ZIP 顶层为 ShengxiuCollection，源 ZIP 保持 source/ 与 tex/ 相邻。保留旧版包，仅更新本模组，用本地 Git 提交及 ShengxiuCollection/v1.0.3 标签，不上传远程。
+安装本版：从工作区运行 tools/install_release.ps1 -Mod ShengxiuCollection -Version v1.0.4 -PreviousVersion v1.0.3。Mod ZIP 顶层为 ShengxiuCollection，源 ZIP 保持 source/ 与 tex/ 相邻。保留旧版包，仅更新本模组，用本地 Git 提交及 ShengxiuCollection/v1.0.4 标签，不上传远程。
 
 启用验证需编译 tools/NativeClothProbe.csproj -o build/cloth_probe，执行 tools/verify_cloth_activation.py。静态预览可在验证全部几何和材质不变后执行 reuse_static_previews.py 复用，清楚记录实际渲染版本；这些预览无法显示本次启用字段的动态效果。

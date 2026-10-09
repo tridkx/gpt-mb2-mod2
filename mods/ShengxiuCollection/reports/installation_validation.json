@@ -1,18 +1,16 @@
 {
-  "installed_module": "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\ShengxiuCollection",
+  "version": "v1.0.4",
   "status": "pass",
-  "version": "v1.0.3",
-  "verification": "ZIP byte comparisons and installed module hashes match workspace",
   "archives": [
     {
       "name": "ShengxiuCollection_Mod.zip",
-      "sha256": "dddc6b0de1bd86a40781a2b1afaddd2da04807e56efdf2cf99119bbb0e51a5bf",
-      "bytes": 8137493
+      "sha256": "816a8e7ffa5191daaea609903e7f339781f7d13427be2f4265271d9ce86899c0",
+      "bytes": 8565253
     },
     {
       "name": "ShengxiuCollection_Source.zip",
-      "sha256": "daca7773890cc5d436d8dafe9e5c4502787fed2820559e21be62f0f567f9f276",
-      "bytes": 40449360
+      "sha256": "76c57c45cb7f8a48ba73dfdcf0bf0780cf1608fbe8c80dda862d45373adb3407",
+      "bytes": 40505082
     },
     {
       "name": "ShengxiuCollection_v1.0.0_Mod.zip",
@@ -43,24 +41,44 @@
       "name": "ShengxiuCollection_v1.0.2_Source.zip",
       "sha256": "969fc65429f60e3577fd96c64db3570c79a2d19effc0d9c5f5b952e13b4c1d41",
       "bytes": 40440344
+    },
+    {
+      "name": "ShengxiuCollection_v1.0.3_Mod.zip",
+      "sha256": "dddc6b0de1bd86a40781a2b1afaddd2da04807e56efdf2cf99119bbb0e51a5bf",
+      "bytes": 8137493
+    },
+    {
+      "name": "ShengxiuCollection_v1.0.3_Source.zip",
+      "sha256": "daca7773890cc5d436d8dafe9e5c4502787fed2820559e21be62f0f567f9f276",
+      "bytes": 40449360
     }
   ],
-  "game_launched": false,
   "files": [
+    {
+      "file": "SubModule.xml",
+      "installed_matches": true,
+      "sha256": "ea0e3c0adde5df81e2f426dfa137e08737c452a5d129e0743723dc50bbd5c377"
+    },
     {
       "file": "AssetPackages/sx_mingyu.tpac",
       "installed_matches": true,
-      "sha256": "81ccef076612638398f6fffe1ee5471547eedd60040fbe8e2c1c39343340f7d0"
+      "sha256": "616b97186624b1cc220385e017224e2ad8e3d5046fe10d276cc1b1a8e6ad1708"
     },
     {
       "file": "ModuleData/items.xml",
       "installed_matches": true,
       "sha256": "04208b707d7d077b6a842536f5c96b9f1d8a96c299121b404af4653f24fbc746"
-    },
-    {
-      "file": "SubModule.xml",
-      "installed_matches": true,
-      "sha256": "844422de8ebd01e13464a2fa4c1163b60b82d79645affd4bf6ca02fc2a43818f"
     }
-  ]
+  ],
+  "previous_archives_verified": [
+    "ShengxiuCollection_v1.0.3_Mod.zip",
+    "ShengxiuCollection_v1.0.3_Source.zip",
+    "ShengxiuCollection_v1.0.0_Mod.zip",
+    "ShengxiuCollection_v1.0.0_Source.zip",
+    "ShengxiuCollection_v1.0.1_Mod.zip",
+    "ShengxiuCollection_v1.0.1_Source.zip",
+    "ShengxiuCollection_v1.0.2_Mod.zip",
+    "ShengxiuCollection_v1.0.2_Source.zip"
+  ],
+  "game_launched": false
 }

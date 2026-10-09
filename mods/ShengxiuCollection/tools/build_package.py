@@ -33,5 +33,6 @@ for part in ['head','body','legs']:
     recipe['sx_mingyu_'+part]={g['name']:{'kind':g['kind'], 'profile':cfg['cloth_profiles'][g['kind']]} for g in rows if g['cloth']}
 (BUILD/'spec.json').write_text(json.dumps(spec,indent=2));(BUILD/'cloth_recipe.json').write_text(json.dumps(recipe,indent=2))
 subprocess.run([MB,'build',str(BUILD/'spec.json')],check=True)
-subprocess.run(['dotnet',str(BUILD/'package_patch/PackagePatch.dll'),str(BUILD/'base.tpac'),str(BUILD/'cloth_recipe.json'),str(ROOT/'module/ShengxiuCollection/AssetPackages/sx_mingyu.tpac')],check=True)
+subprocess.run(['dotnet',str(BUILD/'package_patch/PackagePatch.dll'),str(BUILD/'base.tpac'),str(BUILD/'cloth_recipe.json'),str(BUILD/'uncooked.tpac')],check=True)
+subprocess.run([__import__('sys').executable,str(ROOT/'tools/build_cooked_cloth.py'),str(BUILD/'uncooked.tpac'),str(ROOT/'module/ShengxiuCollection/AssetPackages/sx_mingyu.tpac')],check=True)
 print('PACKAGE_READY')

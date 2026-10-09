@@ -1,0 +1,1690 @@
+{
+  "status": "pass",
+  "final_package_sha256": "616b97186624b1cc220385e017224e2ad8e3d5046fe10d276cc1b1a8e6ad1708",
+  "baseline_package_sha256": "81ccef076612638398f6fffe1ee5471547eedd60040fbe8e2c1c39343340f7d0",
+  "native_samples": [
+    {
+      "sample": "clo_battania_shoulder_strap_cloak_b4c64ab7-4a71-4973-8948-b4ed0c9293de.bin",
+      "bytes": 35772,
+      "vertex_count": 398,
+      "render_count": 400,
+      "triangles": 710,
+      "active_faces": 326,
+      "stored_dummy_faces": 326,
+      "starts": [
+        206,
+        223
+      ],
+      "boundary_fixed_count": 17,
+      "active_count": 175,
+      "rest_position_error": 0.00014283593288679463,
+      "constraint_length_error": 8.79068937087446e-09,
+      "alpha_error": 3.646401797174903e-08,
+      "constraint_types": {
+        "stretch": {
+          "count": 830,
+          "direct_edges": 389,
+          "opposite_vertices": 188,
+          "fixed_fixed": 0
+        },
+        "shear": {
+          "count": 278,
+          "direct_edges": 0,
+          "opposite_vertices": 41,
+          "fixed_fixed": 0
+        },
+        "bend": {
+          "count": 370,
+          "direct_edges": 112,
+          "opposite_vertices": 243,
+          "fixed_fixed": 0
+        },
+        "stitch": {
+          "count": 0,
+          "direct_edges": 0,
+          "opposite_vertices": 0,
+          "fixed_fixed": 0
+        }
+      },
+      "parallel_set_conflicts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "d89530c0f2346b148064833a270d2e2e8c0516e9dce2ea57ab8fff7715dffb39",
+      "byte_exact_roundtrip": true
+    },
+    {
+      "sample": "spear_banner_15_f815e8cf-1ec3-4b4e-a989-24bddc46406d.bin",
+      "bytes": 33304,
+      "vertex_count": 904,
+      "render_count": 1553,
+      "triangles": 1647,
+      "active_faces": 108,
+      "stored_dummy_faces": 108,
+      "starts": [
+        796,
+        817
+      ],
+      "boundary_fixed_count": 21,
+      "active_count": 87,
+      "rest_position_error": 0.00014260311699408325,
+      "constraint_length_error": 8.454503486188258e-09,
+      "alpha_error": 0.0,
+      "constraint_types": {
+        "stretch": {
+          "count": 221,
+          "direct_edges": 135,
+          "opposite_vertices": 42,
+          "fixed_fixed": 0
+        },
+        "shear": {
+          "count": 99,
+          "direct_edges": 0,
+          "opposite_vertices": 24,
+          "fixed_fixed": 0
+        },
+        "bend": {
+          "count": 115,
+          "direct_edges": 60,
+          "opposite_vertices": 53,
+          "fixed_fixed": 0
+        },
+        "stitch": {
+          "count": 0,
+          "direct_edges": 0,
+          "opposite_vertices": 0,
+          "fixed_fixed": 0
+        }
+      },
+      "parallel_set_conflicts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "b831810c5b1f0c78672381e5f85c7ed614268a3b212d3fb7cb3a2f991b0de2c8",
+      "byte_exact_roundtrip": true
+    },
+    {
+      "sample": "spear_banner_16_83dc4226-41e0-425c-9bde-2853d813964e.bin",
+      "bytes": 120484,
+      "vertex_count": 2295,
+      "render_count": 2522,
+      "triangles": 2452,
+      "active_faces": 1232,
+      "stored_dummy_faces": 1232,
+      "starts": [
+        981,
+        1104
+      ],
+      "boundary_fixed_count": 123,
+      "active_count": 1191,
+      "rest_position_error": 0.0001499008931667102,
+      "constraint_length_error": 7.196091944550176e-09,
+      "alpha_error": 2.9685450542160652e-08,
+      "constraint_types": {
+        "stretch": {
+          "count": 2453,
+          "direct_edges": 1709,
+          "opposite_vertices": 670,
+          "fixed_fixed": 0
+        },
+        "shear": {
+          "count": 1256,
+          "direct_edges": 0,
+          "opposite_vertices": 34,
+          "fixed_fixed": 0
+        },
+        "bend": {
+          "count": 1277,
+          "direct_edges": 714,
+          "opposite_vertices": 561,
+          "fixed_fixed": 0
+        },
+        "stitch": {
+          "count": 0,
+          "direct_edges": 0,
+          "opposite_vertices": 0,
+          "fixed_fixed": 0
+        }
+      },
+      "parallel_set_conflicts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "ccf6350909b6ae2c7e3a5458fa2e59b8ed1e18d10203278a459cc83b4b0c9cc1",
+      "byte_exact_roundtrip": true
+    },
+    {
+      "sample": "spear_banner_17_20157051-2d1f-4675-b23d-2eabb5458ad5.bin",
+      "bytes": 120484,
+      "vertex_count": 2295,
+      "render_count": 2522,
+      "triangles": 2452,
+      "active_faces": 1232,
+      "stored_dummy_faces": 1232,
+      "starts": [
+        981,
+        1104
+      ],
+      "boundary_fixed_count": 123,
+      "active_count": 1191,
+      "rest_position_error": 0.0001499008931667102,
+      "constraint_length_error": 7.196091944550176e-09,
+      "alpha_error": 2.9685450542160652e-08,
+      "constraint_types": {
+        "stretch": {
+          "count": 2453,
+          "direct_edges": 1709,
+          "opposite_vertices": 670,
+          "fixed_fixed": 0
+        },
+        "shear": {
+          "count": 1256,
+          "direct_edges": 0,
+          "opposite_vertices": 34,
+          "fixed_fixed": 0
+        },
+        "bend": {
+          "count": 1277,
+          "direct_edges": 714,
+          "opposite_vertices": 561,
+          "fixed_fixed": 0
+        },
+        "stitch": {
+          "count": 0,
+          "direct_edges": 0,
+          "opposite_vertices": 0,
+          "fixed_fixed": 0
+        }
+      },
+      "parallel_set_conflicts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "ccf6350909b6ae2c7e3a5458fa2e59b8ed1e18d10203278a459cc83b4b0c9cc1",
+      "byte_exact_roundtrip": true
+    },
+    {
+      "sample": "spear_banner_1_88c0c705-7909-471a-87e4-2bdffdc59b2d.bin",
+      "bytes": 49624,
+      "vertex_count": 852,
+      "render_count": 1017,
+      "triangles": 1522,
+      "active_faces": 512,
+      "stored_dummy_faces": 512,
+      "starts": [
+        545,
+        586
+      ],
+      "boundary_fixed_count": 41,
+      "active_count": 266,
+      "rest_position_error": 0.0001457918471861552,
+      "constraint_length_error": 8.764030459684768e-09,
+      "alpha_error": 2.8750475666861064e-08,
+      "constraint_types": {
+        "stretch": {
+          "count": 1099,
+          "direct_edges": 614,
+          "opposite_vertices": 366,
+          "fixed_fixed": 0
+        },
+        "shear": {
+          "count": 823,
+          "direct_edges": 8,
+          "opposite_vertices": 197,
+          "fixed_fixed": 0
+        },
+        "bend": {
+          "count": 329,
+          "direct_edges": 156,
+          "opposite_vertices": 158,
+          "fixed_fixed": 0
+        },
+        "stitch": {
+          "count": 0,
+          "direct_edges": 0,
+          "opposite_vertices": 0,
+          "fixed_fixed": 0
+        }
+      },
+      "parallel_set_conflicts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "5d10e139fa059f67c3b10afc511095855f7c1a21e3bc04c0c3a906278d92562a",
+      "byte_exact_roundtrip": true
+    },
+    {
+      "sample": "spear_banner_20_18ce9232-3e9f-4a7f-96a7-38fe53f1b700.bin",
+      "bytes": 74236,
+      "vertex_count": 932,
+      "render_count": 1116,
+      "triangles": 1698,
+      "active_faces": 974,
+      "stored_dummy_faces": 974,
+      "starts": [
+        390,
+        407
+      ],
+      "boundary_fixed_count": 17,
+      "active_count": 525,
+      "rest_position_error": 0.00013825529194640918,
+      "constraint_length_error": 3.803644198219214e-09,
+      "alpha_error": 2.7348013520445136e-08,
+      "constraint_types": {
+        "stretch": {
+          "count": 1965,
+          "direct_edges": 1044,
+          "opposite_vertices": 824,
+          "fixed_fixed": 0
+        },
+        "shear": {
+          "count": 1392,
+          "direct_edges": 0,
+          "opposite_vertices": 60,
+          "fixed_fixed": 0
+        },
+        "bend": {
+          "count": 996,
+          "direct_edges": 463,
+          "opposite_vertices": 522,
+          "fixed_fixed": 0
+        },
+        "stitch": {
+          "count": 0,
+          "direct_edges": 0,
+          "opposite_vertices": 0,
+          "fixed_fixed": 0
+        }
+      },
+      "parallel_set_conflicts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "e9ce90665c4d13fc425dabb6124d633f66937b9c494fbc76a16912a12067ad1c",
+      "byte_exact_roundtrip": true
+    },
+    {
+      "sample": "spear_banner_9_2dca4712-48be-4378-b235-fe267b0d52e2.bin",
+      "bytes": 37072,
+      "vertex_count": 522,
+      "render_count": 567,
+      "triangles": 892,
+      "active_faces": 440,
+      "stored_dummy_faces": 440,
+      "starts": [
+        259,
+        267
+      ],
+      "boundary_fixed_count": 8,
+      "active_count": 255,
+      "rest_position_error": 0.00013441899423706277,
+      "constraint_length_error": 5.533771982313418e-09,
+      "alpha_error": 2.7114269829375814e-08,
+      "constraint_types": {
+        "stretch": {
+          "count": 945,
+          "direct_edges": 480,
+          "opposite_vertices": 287,
+          "fixed_fixed": 0
+        },
+        "shear": {
+          "count": 584,
+          "direct_edges": 0,
+          "opposite_vertices": 94,
+          "fixed_fixed": 0
+        },
+        "bend": {
+          "count": 488,
+          "direct_edges": 218,
+          "opposite_vertices": 233,
+          "fixed_fixed": 0
+        },
+        "stitch": {
+          "count": 0,
+          "direct_edges": 0,
+          "opposite_vertices": 0,
+          "fixed_fixed": 0
+        }
+      },
+      "parallel_set_conflicts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "0b78b60441ba6e202c5e79b0b17b913c0807ebabb56f131bd8ec2ecf9f0ef3ea",
+      "byte_exact_roundtrip": true
+    }
+  ],
+  "cooked_meshes": [
+    {
+      "mesh": "sx_mingyu_body_13",
+      "guid": "0013d18c-bb0d-f14f-0f86-638c51381e56",
+      "metamesh": "sx_mingyu_body",
+      "lod": 0,
+      "bytes": 126312,
+      "render_vertices": 2244,
+      "simulation_vertices": 1755,
+      "fixed_positions": 1135,
+      "boundary_fixed_positions": 96,
+      "active_positions": 620,
+      "stretch_constraints": 1728,
+      "bend_constraints": 1532,
+      "shear_constraints": 0,
+      "parallel_sets": 17,
+      "dummy_sets": 11,
+      "max_geodesic_anchor_length": 0.9622970466503858,
+      "sha256": "3ad71ef23b9d65e5cbfeaf89a043014b84d4414d5660d60ffb78fe1f4c8020d0",
+      "root_fixes": [
+        {
+          "component_positions": 6,
+          "reason": "small detached sleeve decoration stays skinned",
+          "pinned_render_vertices": [
+            1989,
+            1990,
+            1991,
+            1992,
+            1993,
+            1994
+          ],
+          "bounds": [
+            [
+              0.45153067,
+              -0.18195483,
+              1.100835
+            ],
+            [
+              0.5076493,
+              -0.15213375,
+              1.1610394
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "small detached sleeve decoration stays skinned",
+          "pinned_render_vertices": [
+            1995,
+            1996,
+            1997,
+            1998
+          ],
+          "bounds": [
+            [
+              0.43834975,
+              -0.15500821,
+              1.1535606
+            ],
+            [
+              0.46181503,
+              -0.1455265,
+              1.1743996
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "small detached sleeve decoration stays skinned",
+          "pinned_render_vertices": [
+            2004,
+            2005,
+            2006,
+            2007,
+            2008,
+            2009
+          ],
+          "bounds": [
+            [
+              -0.5227297,
+              -0.1757636,
+              1.0871149
+            ],
+            [
+              -0.46101803,
+              -0.14818193,
+              1.1469558
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "small detached sleeve decoration stays skinned",
+          "pinned_render_vertices": [
+            2010,
+            2011,
+            2012,
+            2013
+          ],
+          "bounds": [
+            [
+              -0.46585593,
+              -0.14982809,
+              1.1431403
+            ],
+            [
+              -0.44145435,
+              -0.14213838,
+              1.1655653
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        1989,
+        1990,
+        1991,
+        1992,
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013
+      ],
+      "from_final_tpac_sha256": "3ad71ef23b9d65e5cbfeaf89a043014b84d4414d5660d60ffb78fe1f4c8020d0"
+    },
+    {
+      "mesh": "sx_mingyu_body_13.lod1",
+      "guid": "c089e2f0-0f05-9273-878f-4bf72ef6a8d8",
+      "metamesh": "sx_mingyu_body",
+      "lod": 1,
+      "bytes": 83564,
+      "render_vertices": 1573,
+      "simulation_vertices": 1268,
+      "fixed_positions": 914,
+      "boundary_fixed_positions": 81,
+      "active_positions": 354,
+      "stretch_constraints": 949,
+      "bend_constraints": 758,
+      "shear_constraints": 0,
+      "parallel_sets": 17,
+      "dummy_sets": 10,
+      "max_geodesic_anchor_length": 0.9622957054746757,
+      "sha256": "5e6b41badb9648935e6281d611e61a62a72d2d00119148348ff0885cf146ee88",
+      "root_fixes": [
+        {
+          "component_positions": 6,
+          "reason": "small detached sleeve decoration stays skinned",
+          "pinned_render_vertices": [
+            1404,
+            1405,
+            1406,
+            1407,
+            1408,
+            1409
+          ],
+          "bounds": [
+            [
+              0.45153067,
+              -0.18195483,
+              1.100835
+            ],
+            [
+              0.5076493,
+              -0.15213375,
+              1.1610394
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "small detached sleeve decoration stays skinned",
+          "pinned_render_vertices": [
+            1410,
+            1411,
+            1412,
+            1413
+          ],
+          "bounds": [
+            [
+              0.43834975,
+              -0.15500821,
+              1.1535606
+            ],
+            [
+              0.46181503,
+              -0.1455265,
+              1.1743996
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "small detached sleeve decoration stays skinned",
+          "pinned_render_vertices": [
+            1419,
+            1420,
+            1421,
+            1422,
+            1423,
+            1424
+          ],
+          "bounds": [
+            [
+              -0.5227297,
+              -0.1757636,
+              1.0871149
+            ],
+            [
+              -0.46101803,
+              -0.14818193,
+              1.1469558
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "small detached sleeve decoration stays skinned",
+          "pinned_render_vertices": [
+            1425,
+            1426,
+            1427,
+            1428
+          ],
+          "bounds": [
+            [
+              -0.46585593,
+              -0.14982809,
+              1.1431403
+            ],
+            [
+              -0.44145435,
+              -0.14213838,
+              1.1655653
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        1404,
+        1405,
+        1406,
+        1407,
+        1408,
+        1409,
+        1410,
+        1411,
+        1412,
+        1413,
+        1419,
+        1420,
+        1421,
+        1422,
+        1423,
+        1424,
+        1425,
+        1426,
+        1427,
+        1428
+      ],
+      "from_final_tpac_sha256": "5e6b41badb9648935e6281d611e61a62a72d2d00119148348ff0885cf146ee88"
+    },
+    {
+      "mesh": "sx_mingyu_body_06",
+      "guid": "e6546a5e-7ef3-d344-ec91-40d238ffbb79",
+      "metamesh": "sx_mingyu_body",
+      "lod": 0,
+      "bytes": 167232,
+      "render_vertices": 1775,
+      "simulation_vertices": 1629,
+      "fixed_positions": 215,
+      "boundary_fixed_positions": 104,
+      "active_positions": 1414,
+      "stretch_constraints": 3863,
+      "bend_constraints": 3432,
+      "shear_constraints": 0,
+      "parallel_sets": 17,
+      "dummy_sets": 10,
+      "max_geodesic_anchor_length": 0.9205044726984097,
+      "sha256": "ca475887ecf50592da481192883edd28a719d0479b1f38e2c440a41c2be7f7e4",
+      "root_fixes": [
+        {
+          "component_positions": 8,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            18,
+            19
+          ],
+          "bounds": [
+            [
+              0.18765673,
+              0.04782883,
+              0.68511736
+            ],
+            [
+              0.19272955,
+              0.07237255,
+              0.7432423
+            ]
+          ]
+        },
+        {
+          "component_positions": 54,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            44,
+            47
+          ],
+          "bounds": [
+            [
+              0.12457539,
+              0.031706035,
+              0.52189267
+            ],
+            [
+              0.20595492,
+              0.0808968,
+              0.9979476
+            ]
+          ]
+        },
+        {
+          "component_positions": 8,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            127,
+            128,
+            129,
+            322,
+            323,
+            324,
+            327
+          ],
+          "bounds": [
+            [
+              0.13450892,
+              0.038712002,
+              0.937824
+            ],
+            [
+              0.15386741,
+              0.05720134,
+              0.956322
+            ]
+          ]
+        },
+        {
+          "component_positions": 8,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            134,
+            135
+          ],
+          "bounds": [
+            [
+              0.20366913,
+              0.01353318,
+              0.61155957
+            ],
+            [
+              0.22630286,
+              0.04227856,
+              0.66537225
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            141,
+            142
+          ],
+          "bounds": [
+            [
+              0.052384153,
+              0.10705283,
+              0.97217375
+            ],
+            [
+              0.0663409,
+              0.10971604,
+              0.9858904
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            145,
+            146,
+            147,
+            148
+          ],
+          "bounds": [
+            [
+              0.065319344,
+              0.10149487,
+              0.96657723
+            ],
+            [
+              0.08058495,
+              0.1079193,
+              0.9743717
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            149,
+            150,
+            151,
+            152
+          ],
+          "bounds": [
+            [
+              0.08114563,
+              0.09020434,
+              0.9665015
+            ],
+            [
+              0.09594858,
+              0.10161549,
+              0.97240704
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            153,
+            154,
+            156
+          ],
+          "bounds": [
+            [
+              0.095274456,
+              0.076893665,
+              0.96971023
+            ],
+            [
+              0.10608682,
+              0.09002775,
+              0.9822753
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            159,
+            160
+          ],
+          "bounds": [
+            [
+              0.10420518,
+              0.06342577,
+              0.98053294
+            ],
+            [
+              0.10961966,
+              0.077994905,
+              0.99571514
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            165,
+            166,
+            167,
+            168
+          ],
+          "bounds": [
+            [
+              0.07488931,
+              0.08784007,
+              0.98296154
+            ],
+            [
+              0.08812224,
+              0.09904467,
+              0.9906852
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            169,
+            170,
+            171,
+            172
+          ],
+          "bounds": [
+            [
+              0.057349302,
+              0.09950178,
+              0.98314047
+            ],
+            [
+              0.074746676,
+              0.10901178,
+              0.9883083
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            173,
+            174,
+            175
+          ],
+          "bounds": [
+            [
+              0.039697018,
+              0.10855527,
+              0.9853089
+            ],
+            [
+              0.057008147,
+              0.11621005,
+              0.9956895
+            ]
+          ]
+        },
+        {
+          "component_positions": 8,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            186,
+            187
+          ],
+          "bounds": [
+            [
+              0.13927412,
+              0.08989904,
+              0.72446525
+            ],
+            [
+              0.15438771,
+              0.10808718,
+              0.7830038
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            263,
+            264,
+            265,
+            320
+          ],
+          "bounds": [
+            [
+              0.06983081,
+              0.10935095,
+              0.90168613
+            ],
+            [
+              0.088763036,
+              0.11992762,
+              0.9173399
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            290,
+            291,
+            292,
+            293
+          ],
+          "bounds": [
+            [
+              -0.003931796,
+              -0.0909127,
+              0.9808374
+            ],
+            [
+              0.004848891,
+              -0.08802196,
+              0.98931485
+            ]
+          ]
+        },
+        {
+          "component_positions": 16,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            310,
+            311
+          ],
+          "bounds": [
+            [
+              -0.013341963,
+              -0.21796678,
+              0.76591897
+            ],
+            [
+              0.002199793,
+              -0.08938229,
+              0.983226
+            ]
+          ]
+        },
+        {
+          "component_positions": 17,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            1512,
+            1513
+          ],
+          "bounds": [
+            [
+              -0.028222186,
+              0.119858876,
+              0.82837737
+            ],
+            [
+              0.039896805,
+              0.17039333,
+              0.99457973
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            1763,
+            1764,
+            1765,
+            1768
+          ],
+          "bounds": [
+            [
+              -0.19258828,
+              0.16730803,
+              0.5444878
+            ],
+            [
+              -0.17013599,
+              0.1704741,
+              0.5626815
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            1769,
+            1770,
+            1771,
+            1774
+          ],
+          "bounds": [
+            [
+              -0.12735596,
+              0.11957348,
+              0.7858528
+            ],
+            [
+              -0.11119437,
+              0.12483445,
+              0.79777956
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        18,
+        19,
+        44,
+        47,
+        127,
+        128,
+        129,
+        134,
+        135,
+        141,
+        142,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        156,
+        159,
+        160,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        186,
+        187,
+        263,
+        264,
+        265,
+        290,
+        291,
+        292,
+        293,
+        310,
+        311,
+        320,
+        322,
+        323,
+        324,
+        327,
+        1512,
+        1513,
+        1763,
+        1764,
+        1765,
+        1768,
+        1769,
+        1770,
+        1771,
+        1774
+      ],
+      "from_final_tpac_sha256": "ca475887ecf50592da481192883edd28a719d0479b1f38e2c440a41c2be7f7e4"
+    },
+    {
+      "mesh": "sx_mingyu_head_00",
+      "guid": "3297406e-4529-80ea-4f63-592a2f5a57de",
+      "metamesh": "sx_mingyu_head",
+      "lod": 0,
+      "bytes": 326368,
+      "render_vertices": 4946,
+      "simulation_vertices": 4088,
+      "fixed_positions": 1216,
+      "boundary_fixed_positions": 208,
+      "active_positions": 2872,
+      "stretch_constraints": 6389,
+      "bend_constraints": 4079,
+      "shear_constraints": 0,
+      "parallel_sets": 19,
+      "dummy_sets": 12,
+      "max_geodesic_anchor_length": 0.6297311915768274,
+      "sha256": "15ea30f5882daab53c1f27de457c881b72f23136ca9f5485a6a3f5099276c510",
+      "root_fixes": [
+        {
+          "component_positions": 26,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            1377,
+            1378,
+            1379,
+            1380
+          ],
+          "bounds": [
+            [
+              -0.0065499106,
+              -0.14798082,
+              0.95327747
+            ],
+            [
+              0.0025000891,
+              -0.08783083,
+              1.1689875
+            ]
+          ]
+        },
+        {
+          "component_positions": 60,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            1381,
+            1384,
+            1385,
+            1388,
+            1390,
+            1391,
+            1503
+          ],
+          "bounds": [
+            [
+              -0.018819911,
+              -0.14919083,
+              0.9578975
+            ],
+            [
+              0.015120089,
+              -0.08658083,
+              1.1717374
+            ]
+          ]
+        },
+        {
+          "component_positions": 38,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            2288,
+            2289
+          ],
+          "bounds": [
+            [
+              -0.05728991,
+              -0.1423027,
+              0.9317375
+            ],
+            [
+              -0.00081991084,
+              -0.038830828,
+              1.4540474
+            ]
+          ]
+        },
+        {
+          "component_positions": 32,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            2298,
+            2299
+          ],
+          "bounds": [
+            [
+              -0.08866991,
+              -0.13560483,
+              0.99193746
+            ],
+            [
+              -0.03097991,
+              -0.05703083,
+              1.4386874
+            ]
+          ]
+        },
+        {
+          "component_positions": 34,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            2355,
+            2356
+          ],
+          "bounds": [
+            [
+              -0.113349915,
+              -0.11633256,
+              1.0145475
+            ],
+            [
+              -0.07449991,
+              -0.05752083,
+              1.3610674
+            ]
+          ]
+        },
+        {
+          "component_positions": 34,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            2389,
+            2390
+          ],
+          "bounds": [
+            [
+              0.09429009,
+              -0.11674008,
+              1.0221275
+            ],
+            [
+              0.12439009,
+              -0.056940828,
+              1.3657374
+            ]
+          ]
+        },
+        {
+          "component_positions": 32,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            2400,
+            2401
+          ],
+          "bounds": [
+            [
+              0.027770089,
+              -0.13766378,
+              1.0066974
+            ],
+            [
+              0.08890009,
+              -0.06090083,
+              1.4420174
+            ]
+          ]
+        },
+        {
+          "component_positions": 38,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            2458,
+            2459
+          ],
+          "bounds": [
+            [
+              -0.014679911,
+              -0.14248852,
+              0.9485075
+            ],
+            [
+              0.03784009,
+              -0.047290828,
+              1.4544975
+            ]
+          ]
+        },
+        {
+          "component_positions": 24,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            2488,
+            2491
+          ],
+          "bounds": [
+            [
+              0.01988009,
+              -0.14997032,
+              1.0640274
+            ],
+            [
+              0.07049009,
+              -0.08378833,
+              1.4773475
+            ]
+          ]
+        },
+        {
+          "component_positions": 24,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            2512,
+            2513
+          ],
+          "bounds": [
+            [
+              -0.06757991,
+              -0.14849554,
+              1.0576375
+            ],
+            [
+              -0.01928991,
+              -0.08694438,
+              1.4758174
+            ]
+          ]
+        },
+        {
+          "component_positions": 21,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            2520,
+            2521,
+            2523,
+            2524,
+            2525,
+            2533,
+            2534,
+            2536,
+            2541
+          ],
+          "bounds": [
+            [
+              -0.0135599105,
+              -0.18030639,
+              1.2286974
+            ],
+            [
+              0.02321009,
+              -0.16851027,
+              1.2622775
+            ]
+          ]
+        },
+        {
+          "component_positions": 22,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            2546,
+            2547,
+            2548,
+            2549,
+            2550,
+            2551,
+            2552,
+            2553,
+            2554,
+            2560,
+            2561,
+            2562,
+            2563,
+            2564,
+            2565,
+            2567,
+            2568
+          ],
+          "bounds": [
+            [
+              -0.010669911,
+              -0.16725121,
+              1.1866275
+            ],
+            [
+              0.012010089,
+              -0.1604263,
+              1.2052875
+            ]
+          ]
+        },
+        {
+          "component_positions": 10,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            2572,
+            2573,
+            2575,
+            2576,
+            2579
+          ],
+          "bounds": [
+            [
+              -0.009099911,
+              -0.15131083,
+              1.1610575
+            ],
+            [
+              0.007700089,
+              -0.14031082,
+              1.1741874
+            ]
+          ]
+        },
+        {
+          "component_positions": 40,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            2618,
+            2619
+          ],
+          "bounds": [
+            [
+              -0.09064991,
+              -0.13612626,
+              1.0057374
+            ],
+            [
+              -0.04972991,
+              -0.092088245,
+              1.4415874
+            ]
+          ]
+        },
+        {
+          "component_positions": 26,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            2895,
+            2896,
+            2897,
+            2898
+          ],
+          "bounds": [
+            [
+              -0.005099911,
+              -0.14089084,
+              0.9633775
+            ],
+            [
+              0.02287009,
+              -0.10358083,
+              1.1815275
+            ]
+          ]
+        },
+        {
+          "component_positions": 24,
+          "reason": "pin upper edge of detached hair strand or skirt ornament",
+          "pinned_render_vertices": [
+            2921,
+            2922
+          ],
+          "bounds": [
+            [
+              -0.024039911,
+              -0.14594083,
+              0.96330744
+            ],
+            [
+              0.004460089,
+              -0.10352083,
+              1.1734174
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        1377,
+        1378,
+        1379,
+        1380,
+        1381,
+        1384,
+        1385,
+        1388,
+        1390,
+        1391,
+        1503,
+        2288,
+        2289,
+        2298,
+        2299,
+        2355,
+        2356,
+        2389,
+        2390,
+        2400,
+        2401,
+        2458,
+        2459,
+        2488,
+        2491,
+        2512,
+        2513,
+        2520,
+        2521,
+        2523,
+        2524,
+        2525,
+        2533,
+        2534,
+        2536,
+        2541,
+        2546,
+        2547,
+        2548,
+        2549,
+        2550,
+        2551,
+        2552,
+        2553,
+        2554,
+        2560,
+        2561,
+        2562,
+        2563,
+        2564,
+        2565,
+        2567,
+        2568,
+        2572,
+        2573,
+        2575,
+        2576,
+        2579,
+        2618,
+        2619,
+        2895,
+        2896,
+        2897,
+        2898,
+        2921,
+        2922
+      ],
+      "from_final_tpac_sha256": "15ea30f5882daab53c1f27de457c881b72f23136ca9f5485a6a3f5099276c510"
+    }
+  ],
+  "all_56_geometry_streams_and_indices_identical": true,
+  "all_runtime_alpha_and_skin_weights_preserved": true,
+  "editable_source_identical": true,
+  "unrelated_segments_identical": true,
+  "solver_root_overrides_explicit": true,
+  "limitations": "Experimental triangle-network cooker; does not replicate the native remeshing algorithm. Native shader format and indices checked; engine acceptance and dynamics require user testing.",
+  "game_solver_verified": false
+}

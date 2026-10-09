@@ -15,6 +15,21 @@ if(dumpAt>=0) {
   using var writer=new BinaryWriter(stream);
   data.WriteData(writer,s.UserData);
  }
+ foreach(var mm in pkg.Items.OfType<Metamesh>().Where(x=>selected.Contains(x.Name)))
+ foreach(var mesh in mm.Meshes.Where(m=>m.Flags.Contains("uses_cloth_simulation"))) {
+  using var stream=File.Create(Path.Combine(dir,$"{mm.Name}_{mesh.Guid}.edit.bin"));
+  using var writer=new BinaryWriter(stream);
+  mesh.EditData.Data.WriteData(writer,mesh.EditData.UserData);
+  var v=mesh.VertexStream.Data;
+  File.WriteAllText(Path.Combine(dir,$"{mm.Name}_{mesh.Guid}.mesh.json"),JsonSerializer.Serialize(new {
+   name=mesh.Name,guid=mesh.Guid,metamesh=mm.Name,lod=mesh.Lod,
+   positions=v.Positions.Select(p=>new[]{p.X,p.Y,p.Z}),
+   normals=v.Normals.Select(p=>new[]{p.X,p.Y,p.Z}),indices=v.Indices,
+   alpha=v.Colors1.Select(c=>c.A),
+   weights=v.BoneWeights.Select(w=>new[]{(int)w.W1,w.W2,w.W3,w.W4}),
+   bones=v.BoneIndices.Select(b=>new[]{(int)b.B1,b.B2,b.B3,b.B4})
+  }));
+ }
 }
 var rows=pkg.Items.OfType<Metamesh>().Where(x=>selected.Contains(x.Name)).Select(mm=>new {
  mm.Name,mm.Guid,mm.ClothMetamesh,mm.ClothUint,mm.ClothString,body=mm.UnknownString,

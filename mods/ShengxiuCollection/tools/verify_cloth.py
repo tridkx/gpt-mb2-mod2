@@ -38,7 +38,7 @@ for panel in plan['panels']:
  assert len(panel['fixed_vertices'])>=2 and max(panel['painted_alpha'])<=1
  assert sum(a==0 for a in panel['painted_alpha'])==len(panel['fixed_vertices'])
 report={'status':'pass','final_package_sha256':hashlib.sha256(PACKAGE.read_bytes()).hexdigest(),
- 'scope':'Final TPAC metadata and byte-alpha; no game solver or tcc/tcm cooking',
+ 'scope':'Final TPAC metadata and runtime byte-alpha; cooked cloth validated separately in cooked_cloth_validation.json; no game solver',
  'cloth_meshes':rows,'cloth_material_visibility':cloth,'game_solver_verified':False,
  'fixed_veil_panels':len(plan['panels']),'unrelated_cloth_metadata_preserved':True,
  'unknown_float1_interpretation':'Candidate distance scale inferred from reader layout; editor equivalence not proven on this game version'}
