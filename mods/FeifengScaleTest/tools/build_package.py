@@ -23,7 +23,7 @@ for row in json.loads((B/'material_plan.json').read_text()):
 geo=json.loads((B/'geometry.json').read_text())
 for profile in ['A','B']:
  for part in ['head','body','legs']:
-  spec['meshes'].append(dict(name=f'ffs_{profile}_{part}',bodyPart='human_body',template='mesh',groups=[{k:g[k] for k in ['name','geometry','material','flags','materialFlags']} for g in geo if g['profile']==profile and g['part']==part]))
+  spec['meshes'].append(dict(name=f'ffs_{profile.lower()}_{part}',bodyPart='human_body',template='mesh',groups=[{k:(g[k].lower() if k=='name' else g[k]) for k in ['name','geometry','material','flags','materialFlags']} for g in geo if g['profile']==profile and g['part']==part]))
 (B/'spec.json').write_text(json.dumps(spec,indent=2));subprocess.run([MB,'build',str(B/'spec.json')],check=True)
 subprocess.run(['dotnet','build',str(R/'tools/PackagePatch/PackagePatch.csproj'),'--ignore-failed-sources','-o',str(B/'package_patch')],check=True)
 subprocess.run(['dotnet',str(B/'package_patch/PackagePatch.dll'),str(B/'base.tpac'),str(R/'module/FeifengScaleTest/AssetPackages/ffs.tpac')],check=True)

@@ -1,0 +1,43 @@
+{
+  "version": "v0.1.1",
+  "status": "pass",
+  "baseline_sha256": "3773c31590b2a18e1a86b091cc9868f5944881820dc57862dd668cbc61621700",
+  "checks": [
+    {
+      "lod": 0,
+      "groups": 20,
+      "geometry_uv_indices_weights_materials_unchanged": true
+    },
+    {
+      "lod": 1,
+      "groups": 20,
+      "geometry_uv_indices_weights_materials_unchanged": true
+    },
+    {
+      "lod": 2,
+      "groups": 20,
+      "geometry_uv_indices_weights_materials_unchanged": true
+    },
+    {
+      "lod": 3,
+      "groups": 20,
+      "geometry_uv_indices_weights_materials_unchanged": true
+    }
+  ],
+  "repair": "lowercase mesh resource names and matching XML references; item IDs retained",
+  "cause_status": "suspected lookup naming issue; visibility awaits game retest",
+  "user_feedback": {
+    "version": "v0.1.0",
+    "scope": "both A and B outfits invisible when equipped"
+  },
+  "game_scale_log": {
+    "profile": "B",
+    "immediate_before_after_positions_identical": true,
+    "conclusion": "immediate snapshot does not establish runtime scale success"
+  },
+  "opacity": {
+    "vertex_alpha_min": 255,
+    "vertex_alpha_max": 255,
+    "opaque_materials_present": true
+  }
+}

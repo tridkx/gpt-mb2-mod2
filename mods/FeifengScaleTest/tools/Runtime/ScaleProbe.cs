@@ -4,6 +4,8 @@ using System.Globalization;
 using System.IO;
 using System.Text;
 using TaleWorlds.Core;
+using TaleWorlds.Engine;
+using Path = System.IO.Path;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
 
@@ -15,7 +17,7 @@ namespace FeifengScaleTest {
  }
  public sealed class ScaleProbe : MissionBehavior {
   public override MissionBehaviorType BehaviorType { get { return MissionBehaviorType.Other; } }
-  private sealed class State { public string Profile; public UIntPtr Skeleton; }
+  private sealed class State { public string Profile; public UIntPtr Skeleton; public bool PendingSnapshot; }
   private readonly Dictionary<Agent,State> states=new Dictionary<Agent,State>();
   private float elapsed;
   public override void OnMissionTick(float dt) {
@@ -28,7 +30,10 @@ namespace FeifengScaleTest {
     var profile=id=="ffs_A_body"?"A":id=="ffs_B_body"?"B":"";
     var skeleton=agent.AgentVisuals.GetSkeleton();if(skeleton==null)continue;
     State previous;states.TryGetValue(agent,out previous);
-    if(previous!=null && previous.Profile==profile && previous.Skeleton==skeleton.Pointer)continue;
+    if(previous!=null && previous.Profile==profile && previous.Skeleton==skeleton.Pointer) {
+     if(previous.PendingSnapshot) { Snapshot(agent,profile,"after-next-tick-v0.1.1");previous.PendingSnapshot=false; }
+     continue;
+    }
     if(profile=="" && previous==null)continue;
     try {
      if(skeleton.GetBoneCount()!=28) { Write("skip: unexpected skeleton count "+skeleton.GetBoneCount());continue; }
@@ -38,12 +43,17 @@ namespace FeifengScaleTest {
       agent.AgentVisuals.UpdateSkeletonScale(deform);
      }
      if(profile!="") {
+      foreach(var slot in new [] {EquipmentIndex.Head,EquipmentIndex.Body,EquipmentIndex.Leg}) {
+       var equipped=equipment[slot].Item;if(equipped==null)continue;
+       var mesh=MetaMesh.GetCopy(equipped.MultiMeshName,false,true);
+       Write("v0.1.1 mesh="+equipped.MultiMeshName+" loaded="+(mesh!=null)+" groups="+(mesh==null?0:mesh.MeshCount));
+      }
       Snapshot(agent,profile,"before");
       Apply(agent,profile=="A"?Profiles.A:Profiles.B);
       Snapshot(agent,profile,"after");
       InformationManager.DisplayMessage(new InformationMessage("Feifeng scale probe "+profile+" applied; game validation required."));
      } else Write("restored agent "+agent.Index);
-     states[agent]=new State {Profile=profile,Skeleton=skeleton.Pointer};
+     states[agent]=new State {Profile=profile,Skeleton=skeleton.Pointer,PendingSnapshot=profile!=""};
     } catch(Exception exception) {
      Write("ERROR "+exception);
      states[agent]=new State {Profile=profile,Skeleton=skeleton.Pointer};

@@ -1,4 +1,4 @@
-# Feifeng Skeleton Scale Test v0.1.0
+# Feifeng Skeleton Scale Test v0.1.1
 
 飞凤苗银（女）的全身装备骨架缩放原型。原始输入来自 `D:/dsh-tiandao/飞凤苗银(女)`，源模型按当前尺寸等比例乘以 **1.5**，连头饰总高约 **2.542 米**。独立模块 `FeifengScaleTest`，仅单机任务场景启用缩放。
 
@@ -27,9 +27,9 @@
 
 预测动作中仍可见袖口、肩部和裙片变形，边长变化指标也偏高；这版通过的是结构检查，**尚未通过外观质量验证**。确认引擎缩放约定后再继续精修绑骨，不能用当前预览证明没有穿模或源比例完全还原。
 
-运行诊断日志：Windows“文档”目录下 `Mount and Blade II Bannerlord/FeifengScaleTest/scale_probe.log`。记录每次应用前后的骨骼名称、rest/current 位置及 AgentScale。判断不符时结合截图、A/B 组别、动作与该日志继续修正。
+运行诊断日志：Windows“文档”目录下 `Mount and Blade II Bannerlord/FeifengScaleTest/scale_probe.log`。记录装备网格能否加载、子网格数量，以及应用前、应用后和下一次 tick 的骨骼位置与 AgentScale。若出现透明人，先看 `mesh=ffs_a/b_* loaded=... groups=...`；判断不符时结合截图、A/B 组别、动作与该日志继续修正。
 
-预测预览保存在 `reports/predicted_A_rest.png`、`predicted_B_rest.png`、`predicted_B_run.png`，由最终 TPAC 计算；它们不是游戏截图。完整结果见 [离线检查](reports/release_validation.json)、[源文件检查](reports/source_validation.json)、[缩放参数与假定](reports/scale_plan.json)。
+预测预览保存在 `reports/predicted_A_rest.png`、`predicted_B_rest.png`、`predicted_B_run.png`，由最终 TPAC 计算；它们不是游戏截图。完整结果见 [离线检查](reports/release_validation.json)、[源文件检查](reports/source_validation.json)、[缩放参数与假定](reports/scale_plan.json)、[资源可见性返修检查](reports/visibility_repair.json)。当前网格资源及 XML 引用均用小写；可见性仍待本版游戏复测确认。
 
 ## 文件与重建
 
@@ -56,6 +56,6 @@ dotnet build "$taskMod/tools/Runtime/FeifengScaleTest.csproj" -o "$taskMod/modul
 & $taskBlender --background --python-exit-code 1 --python "$taskMod/tools/render_review.py"
 ```
 
-动作 JSON 从当前游戏导出：骨架在 `Native/EmAssetPackages/human/human.tpac`，跑步在 `Native/EmAssetPackages/pack_anim_run/pack_anim_run.tpac`，拉弓在 `Native/EmAssetPackages/pack_anim_1/pack_anim_1.tpac`；命令分别为 mbtool `skeljson` 与 `anim`。使用工作区 `tools/package_delivery.py --mod FeifengScaleTest --version v0.1.0` 打包，首次安装执行本模组 `tools/install_test.ps1`（可先加 `-CheckOnly`）。安装脚本只接受不存在的目标模块并校验 TPAC/DLL，不覆盖旧安装；后续版本使用工作区共用发布安装器，保留上版包并更新版本。
+动作 JSON 从当前游戏导出：骨架在 `Native/EmAssetPackages/human/human.tpac`，跑步在 `Native/EmAssetPackages/pack_anim_run/pack_anim_run.tpac`，拉弓在 `Native/EmAssetPackages/pack_anim_1/pack_anim_1.tpac`；命令分别为 mbtool `skeljson` 与 `anim`。使用工作区 `tools/package_delivery.py --mod FeifengScaleTest --version v0.1.1` 打包，首次安装执行本模组 `tools/install_test.ps1`（可先加 `-CheckOnly`）。安装脚本只接受不存在的目标模块并校验 TPAC/DLL，不覆盖旧安装；已有 v0.1.0 时使用工作区 `tools/install_release.ps1 -Mod FeifengScaleTest -Version v0.1.1 -PreviousVersion v0.1.0`，保留上版包并更新安装。
 
 变更记录见 [CHANGELOG](CHANGELOG.md)。本地 Git，不上传远程。

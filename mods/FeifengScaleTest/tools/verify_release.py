@@ -8,6 +8,8 @@ from georead import read_geo
 from baker.skeleton import parse_skeljson
 from baker.animation import parse_animjson,q2R,lbs
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+baseline= B/'baseline_v0.1.0.tpac'
+baseline_hash=sha(baseline) if baseline.exists() else json.loads((R/'reports/visibility_repair.json').read_text())['baseline_sha256']
 def run(cmd,path):
  process=subprocess.run(cmd,capture_output=True,text=True,encoding='utf-8',errors='replace');path.write_text((process.stdout+'\n'+process.stderr).rstrip()+'\n');assert process.returncode==0,(cmd,process.stderr);return process.stdout
 run([MB,'metacheck',str(PKG)],R/'reports/metacheck.txt');run([MB,'mataudit',str(PKG)],R/'reports/mataudit.txt')
@@ -22,7 +24,7 @@ for group in groups:
  assert group['idx'].min()>=0 and group['idx'].max()<len(group['pos'])
  assert group['material'] in {'ffs_mat_'+str(i) for i in range(9)}
 # Check every mesh against actual exported geometry, including UV and weights.
-geometry={row['name']:row for row in json.loads((B/'geometry.json').read_text())}
+geometry={row['name'].lower():row for row in json.loads((B/'geometry.json').read_text())}
 for group in groups:
  row=geometry[group['name']];data=Path(row['geometry']).read_bytes();_,count,indices=struct.unpack_from('<iii',data);offset=12
  p=np.frombuffer(data,'<f4',count*3,offset).reshape(-1,3);offset+=count*(3+3+4+2+2)*4
@@ -31,8 +33,10 @@ for group in groups:
 assert {g['lod'] for g in groups}=={0,1,2,3}
 for p in ['A','B']:
  for part in ['head','body','legs']:
-  for lod in range(4):assert any(g['name'].startswith(f'ffs_{p}_{part}_') and g['lod']==lod for g in groups)
+  for lod in range(4):assert any(g['name'].startswith(f'ffs_{p.lower()}_{part}_') and g['lod']==lod for g in groups)
 ET.parse(R/'module/FeifengScaleTest/SubModule.xml');items=ET.parse(R/'module/FeifengScaleTest/ModuleData/items.xml');assert len(items.findall('Item'))==6
+for item in items.findall('Item'):assert item.get('mesh')==item.get('mesh').lower()
+assert all(g['name']==g['name'].lower() for g in groups)
 original=Path('D:/dsh-tiandao/飞凤苗银(女)');input_hashes={}
 for path in (R/'input').iterdir():
  if path.name=='.gitkeep':continue
@@ -41,7 +45,7 @@ for path in (R/'tex').glob('*.png'):assert sha(path)==sha(original/'tex'/path.na
 motions={};preview={}
 animations={name:parse_animjson(json.loads((R/'reports'/f'{name}.json').read_text())) for name in ['run','bow']}
 for profile in ['A','B']:
- scales=np.array(plan['profiles'][profile]);selected=[g for g in groups if g['lod']==0 and g['name'].startswith('ffs_'+profile+'_')]
+ scales=np.array(plan['profiles'][profile]);selected=[g for g in groups if g['lod']==0 and g['name'].startswith('ffs_'+profile.lower()+'_')]
  def matrices(animation=None,frame=0):
   out=np.zeros_like(native)
   for i in range(28):
@@ -66,5 +70,5 @@ for profile in ['A','B']:
   motions[profile+'_'+name]=dict(animation=animation['name'],frames=animation['frames']-animation['start'],worst_frame=worst[1],edge_ratio_p99=worst[0],finite=True,method='experimental local scale hierarchy; no engine physics or IK')
   mats=matrices(animation,worst[1]);preview[profile+'_'+name]={g['name']:lbs(g['pos'],g['bi'],g['bw'],mats) for g in selected}
 np.savez_compressed(B/'preview_positions.npz',**{scene+'__'+name:positions for scene,meshes in preview.items() for name,positions in meshes.items()})
-report=dict(status='pass',version='v0.1.0',scope='offline structural checks and experimental predicted skinning only',final_package_sha256=sha(PKG),baseline_sha256=None,runtime_dll_sha256=sha(R/'module/FeifengScaleTest/bin/Win64_Shipping_Client/FeifengScaleTest.dll'),source_multiplier=1.5,source_total_height_m=plan['source_total_height_m'],input_hashes=input_hashes,metameshes=6,mesh_groups=80,lods=4,items=6,motions=motions,cloth_enabled=False,game_verified=False,engine_scale_convention_verified=False,inventory_preview_supported=False,appearance_quality_verified=False,known_visual_issues=['sleeve/cuff and shoulder deformation','skirt/panel deformation in predicted motion'],delivery_type='experimental mechanism probe, not production equipment')
+report=dict(status='pass',version='v0.1.1',scope='offline structural checks and experimental predicted skinning only',final_package_sha256=sha(PKG),baseline_sha256=baseline_hash,runtime_dll_sha256=sha(R/'module/FeifengScaleTest/bin/Win64_Shipping_Client/FeifengScaleTest.dll'),source_multiplier=1.5,source_total_height_m=plan['source_total_height_m'],input_hashes=input_hashes,metameshes=6,mesh_groups=80,lods=4,items=6,motions=motions,cloth_enabled=False,game_verified=False,engine_scale_convention_verified=False,inventory_preview_supported=False,appearance_quality_verified=False,known_visual_issues=['sleeve/cuff and shoulder deformation','skirt/panel deformation in predicted motion'],delivery_type='experimental mechanism probe, not production equipment')
 (R/'reports/release_validation.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))

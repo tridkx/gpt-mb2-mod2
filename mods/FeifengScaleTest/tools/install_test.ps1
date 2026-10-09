@@ -6,7 +6,7 @@ $taskModules=[IO.Path]::GetFullPath('D:/SteamLibrary/steamapps/common/Mount & Bl
 $taskTarget=[IO.Path]::GetFullPath((Join-Path $taskModules 'FeifengScaleTest'))
 if (-not $taskTarget.StartsWith($taskModules+'\',[StringComparison]::OrdinalIgnoreCase)) { throw 'Target outside Modules' }
 $taskReport=Get-Content -LiteralPath (Join-Path $taskRoot 'reports/release_validation.json') -Raw -Encoding UTF8 | ConvertFrom-Json
-if ($taskReport.status -ne 'pass' -or $taskReport.version -ne 'v0.1.0') { throw 'Missing structural validation for test version' }
+if ($taskReport.status -ne 'pass' -or $taskReport.version -ne 'v0.1.1') { throw 'Missing structural validation for test version' }
 if ((Get-FileHash -LiteralPath (Join-Path $taskSource 'AssetPackages/ffs.tpac') -Algorithm SHA256).Hash -ne $taskReport.final_package_sha256) { throw 'TPAC hash differs from report' }
 if ((Get-FileHash -LiteralPath (Join-Path $taskSource 'bin/Win64_Shipping_Client/FeifengScaleTest.dll') -Algorithm SHA256).Hash -ne $taskReport.runtime_dll_sha256) { throw 'DLL hash differs from report' }
 if ($CheckOnly) { Write-Output "Test inputs validated: $taskTarget"; return }
@@ -22,4 +22,4 @@ foreach ($taskFile in Get-ChildItem -LiteralPath $taskSource -Recurse -File) {
  Copy-Item -LiteralPath $taskFile.FullName -Destination $taskDestination
  if ((Get-FileHash -LiteralPath $taskDestination -Algorithm SHA256).Hash -ne (Get-FileHash -LiteralPath $taskFile.FullName -Algorithm SHA256).Hash) { throw "Installed file differs: $taskRelative" }
 }
-Write-Output "Installed and verified FeifengScaleTest v0.1.0 at $taskTarget"
+Write-Output "Installed and verified FeifengScaleTest v0.1.1 at $taskTarget"
