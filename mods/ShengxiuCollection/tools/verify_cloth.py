@@ -12,6 +12,8 @@ for mm in meta:
   channel=next(x for x in vis['meshes'] if x['Name']==mesh['Name'])
   name=mesh['Name'];active=name in recipe[mm['Name']]
   assert ('uses_cloth_simulation' in mesh['Flags'])==active
+  assert ('force_enable_cloth' in mesh['Flags'])==active
+  assert mesh['UnknownBool3']==active
   if not active:assert channel['AlphaMax']==0
   else:
    planned=recipe[mm['Name']][name]['profile']
@@ -21,11 +23,14 @@ for mm in meta:
    rows.append({'mesh':name,'lod':mesh['Lod'],'alpha_byte_range':[channel['AlphaMin'],channel['AlphaMax']],
     'reader_unknown_float1':mesh['UnknownFloat1'],'cloth_material':mesh['ClothingMaterial']})
 assert {r['mesh'] for r in rows}=={'sx_mingyu_head_00','sx_mingyu_body_06','sx_mingyu_body_13','sx_mingyu_body_13.lod1'}
-before=json.loads((ROOT/'build/cloth_baseline_v1.0.1/final_cloth.json').read_text())
+before=json.loads((ROOT/'build/cloth_baseline_v1.0.2/final_cloth.json').read_text())
 for mm in meta:
  old=next(x for x in before if x['Name']==mm['Name'])
  for mesh in mm['meshes']:
-  if mesh['Name'] not in ['sx_mingyu_body_13','sx_mingyu_body_13.lod1']:assert mesh==next(x for x in old['meshes'] if x['Name']==mesh['Name'])
+  previous=next(x for x in old['meshes'] if x['Name']==mesh['Name'])
+  if 'uses_cloth_simulation' in mesh['Flags']:
+   assert {k:v for k,v in mesh.items() if k not in ['Flags','UnknownBool3']}=={k:v for k,v in previous.items() if k not in ['Flags','UnknownBool3']}
+  else:assert mesh==previous
 cloth=next(m for m in vis['materials'] if m['Name']=='sx_mingyu_cloth')
 assert cloth['AlphaTest']==.025 and 'disable_vertex_color_alpha' in cloth['ShaderMaterialFlags']
 plan=json.loads((ROOT/'reports/veil_distance_plan.json').read_text());assert len(plan['panels'])==6

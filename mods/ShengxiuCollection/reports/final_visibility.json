@@ -96,7 +96,8 @@
       "Name": "sx_mingyu_head_00",
       "Lod": 0,
       "Flags": [
-        "uses_cloth_simulation"
+        "uses_cloth_simulation",
+        "force_enable_cloth"
       ],
       "Material": "28c1f93e-4123-d992-d677-4a3e265a3474",
       "Vertices": 4946,
@@ -104,7 +105,7 @@
       "AlphaMax": 6,
       "ColorsSHA256": "48C77D12DB7560E463910EEB4D362B992AB42D1E6E7A2555921A111FF06BCC8C",
       "VertexStreamSHA256": "C9DB9C582E71B1DB8FF5FCCEAF8F12C8B14F460DF0F055FEE40CE3E987206F51",
-      "ClothMetadataSHA256": "5FCED6A2684C51E1A632E4A55653560896A6992F11B8B1107960093D960CECF9"
+      "ClothMetadataSHA256": "12EE7A58C488274C6C7023F72ECE102E12F83BDF2E4165A7A01A2011C7A9191A"
     },
     {
       "Name": "sx_mingyu_head_00.lod1",
@@ -482,7 +483,8 @@
       "Name": "sx_mingyu_body_06",
       "Lod": 0,
       "Flags": [
-        "uses_cloth_simulation"
+        "uses_cloth_simulation",
+        "force_enable_cloth"
       ],
       "Material": "c020d1b0-7079-c05c-df07-d505e86737fc",
       "Vertices": 1775,
@@ -490,7 +492,7 @@
       "AlphaMax": 23,
       "ColorsSHA256": "0CFF01E1A22729237A42A76EA3A049CEECCBF4A690B9179D83C66D6DE4AACEBE",
       "VertexStreamSHA256": "2E38E6B5351B151ADD7FC4B15B68225AFDBA9F4FC2FBB213992E5DC0638B22AC",
-      "ClothMetadataSHA256": "5FCED6A2684C51E1A632E4A55653560896A6992F11B8B1107960093D960CECF9"
+      "ClothMetadataSHA256": "12EE7A58C488274C6C7023F72ECE102E12F83BDF2E4165A7A01A2011C7A9191A"
     },
     {
       "Name": "sx_mingyu_body_06.lod1",
@@ -628,7 +630,8 @@
       "Name": "sx_mingyu_body_13",
       "Lod": 0,
       "Flags": [
-        "uses_cloth_simulation"
+        "uses_cloth_simulation",
+        "force_enable_cloth"
       ],
       "Material": "c020d1b0-7079-c05c-df07-d505e86737fc",
       "Vertices": 2244,
@@ -636,13 +639,14 @@
       "AlphaMax": 170,
       "ColorsSHA256": "D0C159DCA51AB6F265C13E17DCD3C91C0FE0A64B316885B8BB8B0B6B8CD3EDBB",
       "VertexStreamSHA256": "1BA19D568B028A622B74F6FED31EA2A0869C440C24A8773D1431451A57EE1D0D",
-      "ClothMetadataSHA256": "9ED1A8AC62F97988CDFFFFA0B3DB95A5B80D496133D68A816996632D19AD04FC"
+      "ClothMetadataSHA256": "9F4ED42FEEA321A4E68227D0B429ED4740790DCC10DD7F2019B9477DC07DE240"
     },
     {
       "Name": "sx_mingyu_body_13.lod1",
       "Lod": 1,
       "Flags": [
-        "uses_cloth_simulation"
+        "uses_cloth_simulation",
+        "force_enable_cloth"
       ],
       "Material": "c020d1b0-7079-c05c-df07-d505e86737fc",
       "Vertices": 1573,
@@ -650,7 +654,7 @@
       "AlphaMax": 170,
       "ColorsSHA256": "D50A83082ADF50B4EC963B1BA01F812BADB0B8F8C98BC3A871804381962677E3",
       "VertexStreamSHA256": "13532DDDCFD7E78C24FAA6E5138D35CFE19AD32A9536D60A6EC34718DCA14417",
-      "ClothMetadataSHA256": "9ED1A8AC62F97988CDFFFFA0B3DB95A5B80D496133D68A816996632D19AD04FC"
+      "ClothMetadataSHA256": "9F4ED42FEEA321A4E68227D0B429ED4740790DCC10DD7F2019B9477DC07DE240"
     },
     {
       "Name": "sx_mingyu_body_13.lod2",

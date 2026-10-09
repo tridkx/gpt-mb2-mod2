@@ -1,6 +1,13 @@
-# Shengxiu Collection v1.0.2
+# Shengxiu Collection v1.0.3
 
 圣绣系列独立模组工程，当前收录「圣绣 · 明玉」。模块 ID 为 ShengxiuCollection，管理器显示英文 Shengxiu Collection。三件装备分别为发容、衣裙与手饰、腿部与绣鞋；装备三件获得完整人物。依赖 Native、SandBoxCore、Sandbox，可在作弊物品列表按「圣绣 · 明玉」查找。
+
+v1.0.3 根据用户反馈「外观很好，但完全看不出布料模拟」核查原生偃月刀。单人原版 khuzait_polearm_1_t4 的缨是 Guard 零件 spear_banner_16；spear_banner_17 是同形的红色马尾缨。它们独立于刀头，采用直接布料模拟，无专用动画骨链。LOD0 的 Alpha 范围 0–255：1295 个固定顶点、1227 个活动顶点。资源来自当前安装的 Native/EmAssetPackages/crafting/crafting.tpac。
+
+相较 v1.0.2，原生缨还包含 force_enable_cloth，并且第三方 reader 的 UnknownBool3=true。此次仅将四个已有布料子网格（长发、裙摆、袖纱 LOD0 和袖纱 LOD1）的这两个字段对齐原生样本，其他材质参数、倍率、Alpha、骨骼和全部 56 个 LOD 网格数据完全保留。布料开关配置只读检查为 enable_cloth_simulation=1。UnknownBool3 的编辑器意义未确认，不把相关性当作已证实因果；游戏中的求解是否启动需用户复测。
+
+检测报告为 reports/native_glaive_cloth.json、cloth_activation_validation.json，用户反馈另存 user_feedback_v1.0.2.json。为隔离启用问题，本次没有套用红缨较强的重力或风参数，也没有复制武器碰撞体到衣服。以下 v1.0.2 参数说明是此版本沿用的活动范围方案。
+
 
 v1.0.2 针对「长袖薄纱挥舞武器时悬空、不回落」调整布料。六片悬垂薄纱各有 5–6 个袖口固定顶点，其余顶点按距固定边的实际网格路径长度绘制 Alpha，取 2.08 倍路径长度作为目标活动预算。薄纱路径长度约 0.59–0.96 米，旧版末端最多只有 0.16 米活动范围。袖口仍随前臂，悬垂部分不能绑到腿部。模型位置和全部骨骼权重与 v1.0.1 完全一致。
 
@@ -18,6 +25,8 @@ v1.0.2 针对「长袖薄纱挥舞武器时悬空、不回落」调整布料。�
 
 重建：后台 Blender 依次执行 tools/rig_model.py、export_geometry.py（加 --python-exit-code 1）。dotnet build tools/PackagePatch/PackagePatch.csproj -o build/package_patch，然后 Python 执行 build_package.py、verify_release.py、verify_cloth.py、verify_proportions.py、verify_veil_travel.py、verify_native_provenance.py；后台 Blender 执行 verify_source.py、render_review.py -- final face。最后复核预览，执行 prepare_delivery.py。依赖工作区 tools/asset_helpers、本机 Blender、Anaconda Python、mbtool 和已安装游戏资源。
 
-布料回归基线在 build/cloth_baseline_v1.0.1/。缓存缺失时从保留的 v1.0.1 源 ZIP 或本地 ShengxiuCollection/v1.0.1 标签恢复旧工程并重建，不把新版本当旧基线。动作 weapon_slash.json 来自原生双手右劈资源；另一个名为 downswing 的资源未包含关键帧，已排除动作验证。
+启用回归基线在 build/cloth_baseline_v1.0.2/；活动空间分析仍使用 build/cloth_baseline_v1.0.1/。缓存缺失时从保留的 v1.0.2 源 ZIP 或本地 ShengxiuCollection/v1.0.2 标签恢复旧工程并重建，不把新版本当旧基线。动作 weapon_slash.json 来自原生双手右劈资源；另一个名为 downswing 的资源未包含关键帧，已排除动作验证。
 
-安装：从工作区运行 tools/install_release.ps1 -Mod ShengxiuCollection -Version v1.0.2 -PreviousVersion v1.0.1。Mod ZIP 顶层为 ShengxiuCollection，源 ZIP 保持 source/ 与 tex/ 相邻。保留旧版包，仅更新本模组，用本地 Git 提交及 ShengxiuCollection/v1.0.2 标签，不上传远程。
+安装：从工作区运行 tools/install_release.ps1 -Mod ShengxiuCollection -Version v1.0.3 -PreviousVersion v1.0.2。Mod ZIP 顶层为 ShengxiuCollection，源 ZIP 保持 source/ 与 tex/ 相邻。保留旧版包，仅更新本模组，用本地 Git 提交及 ShengxiuCollection/v1.0.3 标签，不上传远程。
+
+启用验证需编译 tools/NativeClothProbe.csproj -o build/cloth_probe，执行 tools/verify_cloth_activation.py。静态预览可在验证全部几何和材质不变后执行 reuse_static_previews.py 复用，清楚记录实际渲染版本；这些预览无法显示本次启用字段的动态效果。

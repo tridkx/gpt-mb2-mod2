@@ -47,7 +47,7 @@ for label in ['weapon_slash','bow']:
   'sample_count':total,'old_insufficient_samples':blocked_before,'candidate_insufficient_samples':blocked_after,
   'largest_required_travel_m':max_required,'largest_travel_frame':int(worst_frame)})
 package=ROOT/'module/ShengxiuCollection/AssetPackages/sx_mingyu.tpac'
-report={'status':'pass','version':'v1.0.2','final_package_sha256':hashlib.sha256(package.read_bytes()).hexdigest(),
+report={'status':'pass','version':'v1.0.3','final_package_sha256':hashlib.sha256(package.read_bytes()).hexdigest(),
  'method':'Final TPAC byte-alpha and weights, current native weapon/bow rotations, vertical travel feasibility and 2*lever bound',
  'assumption':'UnknownFloat1=3 acts as alpha-distance scale. This mapping is inferred and requires game verification.',
  'game_solver_verified':False,'motions':motions,'panels':[{'vertices':len(p['vertices']),'fixed_vertices':len(p['fixed_vertices']),

@@ -15,7 +15,11 @@ foreach (var mm in pkg.Items.OfType<Metamesh>()) {
         if (cloth) {
             // Reader field names are unverified; no editor-option equivalence is claimed.
             var profile=settings.GetProperty("profile");
-            m.UnknownFloat1=profile.GetProperty("UnknownFloat1").GetSingle(); m.UnknownInt3=120; m.UnknownBool1=true; m.UnknownBool2=false; m.UnknownBool3=false;
+            m.Flags=profile.GetProperty("flags").EnumerateArray().Select(v=>v.GetString()).ToList();
+            m.UnknownFloat1=profile.GetProperty("UnknownFloat1").GetSingle(); m.UnknownInt3=120; m.UnknownBool1=true; m.UnknownBool2=false;
+            // Native spear_banner_16/17 contain both force_enable_cloth and
+            // this true raw field. Its editor-option identity is unverified.
+            m.UnknownBool3=profile.GetProperty("UnknownBool3").GetBoolean();
             m.ClothingMaterial=JsonSerializer.Deserialize<ClothingMaterial>(profile.GetProperty("material").GetRawText())!;
         }
     }

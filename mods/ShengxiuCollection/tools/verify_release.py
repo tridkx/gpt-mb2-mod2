@@ -153,6 +153,6 @@ descriptor=ET.parse(ROOT/'module/ShengxiuCollection/SubModule.xml');items=ET.par
 assert descriptor.find('Name').get('value').isascii() and descriptor.find('Id').get('value')=='ShengxiuCollection'
 assert {i.get('mesh') for i in items.getroot()}=={'sx_mingyu_head','sx_mingyu_body','sx_mingyu_legs'}
 assert sha(PACKAGE)==package_hash
-baseline=ROOT/'build/cloth_baseline_v1.0.1/sx_mingyu.tpac'
-report={'version':descriptor.find('Version').get('value'),'status':'pass','check_scope':'offline_checks','final_package_sha256':package_hash,'baseline_package_sha256':sha(baseline),'baseline_reason':'v1.0.1 sleeve cloth repair baseline','lods':lods,'seams':seams,'motions':motion,'textures':textures,'metadata_audit':'pass','game_test_verified':False,'game_cloth_solver_used':False,'limitations':'Offline native skeletal motion. In-game cloth, weapon IK, face animation, body sliders and horse collision require user testing.'}
+baseline=ROOT/'build/cloth_baseline_v1.0.2/sx_mingyu.tpac'
+report={'version':descriptor.find('Version').get('value'),'status':'pass','check_scope':'offline_checks','final_package_sha256':package_hash,'baseline_package_sha256':sha(baseline),'baseline_reason':'v1.0.2 cloth activation baseline','lods':lods,'seams':seams,'motions':motion,'textures':textures,'metadata_audit':'pass','game_test_verified':False,'game_cloth_solver_used':False,'limitations':'Offline native skeletal motion. In-game cloth, weapon IK, face animation, body sliders and horse collision require user testing.'}
 (ROOT/'reports/release_validation.json').write_text(json.dumps(report,indent=2));print(json.dumps({'lods':lods,'motions':motion,'status':report['status']},indent=2))

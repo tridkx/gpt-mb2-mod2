@@ -1,10 +1,10 @@
 {
-  "version": "v1.0.2",
+  "version": "v1.0.3",
   "status": "pass",
   "check_scope": "offline_checks",
-  "final_package_sha256": "e8d095b6bdcbb436c0603b9eacefce8b9706178936079d9df698d97f53b8a024",
-  "baseline_package_sha256": "44165260ec93f4db63c32524590798c661744217b0652a84e1b1a0cc042f782e",
-  "baseline_reason": "v1.0.1 sleeve cloth repair baseline",
+  "final_package_sha256": "81ccef076612638398f6fffe1ee5471547eedd60040fbe8e2c1c39343340f7d0",
+  "baseline_package_sha256": "e8d095b6bdcbb436c0603b9eacefce8b9706178936079d9df698d97f53b8a024",
+  "baseline_reason": "v1.0.2 native tassel activation comparison",
   "lods": [
     {
       "lod": 0,
@@ -198,6 +198,7 @@
   "sleeve_travel_feasibility_checked": true,
   "sleeve_distance_scale_assumption": "UnknownFloat1=3 acts as alpha-distance scale. This mapping is inferred and requires game verification.",
   "editable_source_verified": true,
+  "native_tassel_activation_alignment_verified": true,
   "visual_review": {
     "reviewed": "final eye/lash close-ups, rest front/side/back and worst native motion/contact frames",
     "result": "reviewed; sleeve veils remain rigidly skinned in previews because the game cloth solver was not run; skirt leg proxy contacts remain for user testing",

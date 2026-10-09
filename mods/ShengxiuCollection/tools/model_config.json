@@ -263,7 +263,12 @@
         "Wind": 0.03,
         "MaxLinearVelocity": 8,
         "LinearVelocityMultiplier": 1
-      }
+      },
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "UnknownBool3": true
     },
     "skirt": {
       "UnknownFloat1": 1,
@@ -280,7 +285,12 @@
         "Wind": 0.06,
         "MaxLinearVelocity": 5,
         "LinearVelocityMultiplier": 0.5
-      }
+      },
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "UnknownBool3": true
     },
     "long_hair": {
       "UnknownFloat1": 1,
@@ -297,7 +307,12 @@
         "Wind": 0.06,
         "MaxLinearVelocity": 5,
         "LinearVelocityMultiplier": 0.5
-      }
+      },
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "UnknownBool3": true
     }
   }
 }

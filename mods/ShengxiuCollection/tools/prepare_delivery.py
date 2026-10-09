@@ -18,6 +18,10 @@ assert travel['status']=='pass' and travel['final_package_sha256']==report['fina
 report['sleeve_travel_feasibility_checked']=True
 report['sleeve_distance_scale_assumption']=travel['assumption']
 report['editable_source_verified']=True
+activation=json.loads((ROOT/'reports/cloth_activation_validation.json').read_text())
+assert activation['status']=='pass' and activation['final_package_sha256']==report['final_package_sha256']
+report['native_tassel_activation_alignment_verified']=True
+report['baseline_reason']='v1.0.2 native tassel activation comparison'
 report['visual_review']={'reviewed':'final eye/lash close-ups, rest front/side/back and worst native motion/contact frames','result':'reviewed; sleeve veils remain rigidly skinned in previews because the game cloth solver was not run; skirt leg proxy contacts remain for user testing','game_verified':False}
 report_path.write_text(json.dumps(report,indent=2))
 files=['README.md','mod.json']

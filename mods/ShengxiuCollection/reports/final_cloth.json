@@ -10,7 +10,8 @@
         "Name": "sx_mingyu_head_00",
         "Lod": 0,
         "Flags": [
-          "uses_cloth_simulation"
+          "uses_cloth_simulation",
+          "force_enable_cloth"
         ],
         "MaterialFlags": [
           "no_team_color",
@@ -20,7 +21,7 @@
         "UnknownInt3": 120,
         "UnknownBool1": true,
         "UnknownBool2": false,
-        "UnknownBool3": false,
+        "UnknownBool3": true,
         "ClothingMaterial": {
           "Name": "sx_mingyu_limited_fabric",
           "BendingStiffness": 0.35,
@@ -917,7 +918,8 @@
         "Name": "sx_mingyu_body_06",
         "Lod": 0,
         "Flags": [
-          "uses_cloth_simulation"
+          "uses_cloth_simulation",
+          "force_enable_cloth"
         ],
         "MaterialFlags": [
           "no_team_color",
@@ -927,7 +929,7 @@
         "UnknownInt3": 120,
         "UnknownBool1": true,
         "UnknownBool2": false,
-        "UnknownBool3": false,
+        "UnknownBool3": true,
         "ClothingMaterial": {
           "Name": "sx_mingyu_limited_fabric",
           "BendingStiffness": 0.35,
@@ -1255,7 +1257,8 @@
         "Name": "sx_mingyu_body_13",
         "Lod": 0,
         "Flags": [
-          "uses_cloth_simulation"
+          "uses_cloth_simulation",
+          "force_enable_cloth"
         ],
         "MaterialFlags": [
           "no_team_color",
@@ -1265,7 +1268,7 @@
         "UnknownInt3": 120,
         "UnknownBool1": true,
         "UnknownBool2": false,
-        "UnknownBool3": false,
+        "UnknownBool3": true,
         "ClothingMaterial": {
           "Name": "sx_mingyu_sleeve_silk",
           "BendingStiffness": 0.04,
@@ -1285,7 +1288,8 @@
         "Name": "sx_mingyu_body_13.lod1",
         "Lod": 1,
         "Flags": [
-          "uses_cloth_simulation"
+          "uses_cloth_simulation",
+          "force_enable_cloth"
         ],
         "MaterialFlags": [
           "no_team_color",
@@ -1295,7 +1299,7 @@
         "UnknownInt3": 120,
         "UnknownBool1": true,
         "UnknownBool2": false,
-        "UnknownBool3": false,
+        "UnknownBool3": true,
         "ClothingMaterial": {
           "Name": "sx_mingyu_sleeve_silk",
           "BendingStiffness": 0.04,
