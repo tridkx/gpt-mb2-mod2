@@ -36,7 +36,7 @@ Mod ZIP 的 ShengxiuCollection/ 放入游戏 Modules，启用合集后搜索相�
 
 [free_hair_diagnostic.json](reports/free_hair_diagnostic.json) 另记录七个静态原生姿态的近似 CPU 重力与胶囊约束诊断：每个姿态以 120Hz 松弛 3 秒，核对发根不漂移、活动距离与碰撞的冲突、后发下落和局部穿模。它没有运行游戏求解器或连续动画惯性，不能代替游戏测试。模型参考前后侧面见 [原后发](reports/back_hair_before_idle_side.png)、[新参考造型](reports/back_hair_after_idle_side.png)；近似重力诊断图见 [侧面](reports/back_hair_gravity_idle_side.png)、[背面](reports/back_hair_gravity_idle_back.png)。
 
-用户已确认此前裙子修复，并要求优先自然下垂和整体观感，接受轻微局部穿模。当前长发候选尚待游戏确认贴背程度、待机/跑动摆动和明显穿模；不同体型、武器、IK、远距离布料和其它套装不属于本次离线诊断的游戏验收范围。助手未启动游戏。
+用户已确认 v1.1.7 的头发整体效果可接受，此前裙子修复也已确认；整体观感和自然下垂优先，允许轻微局部穿模。这些反馈不涵盖全部动作、不同体型、武器、IK、远距离布料和其它套装。助手未启动游戏。战斗结束后物品界面的崩溃检查见 [2026-10-10 检查报告](reports/inventory_crash_20261010.md)，两份转储均直接指向 TroopDesigner 搜索功能的空引用异常。
 
 ## 重建与交付
 

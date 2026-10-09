@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-10",
+  "game_version": "v1.4.8.119303",
+  "ShengxiuCollection_version": "v1.1.7",
+  "TroopDesigner_version": "v1.3.6",
+  "status": "cause_identified_no_fix_applied",
+  "direct_fault": "TroopDesigner.SubModule.EnableSearch() throws System.NullReferenceException from OnApplicationTick(Single) in both dumps",
+  "cause": "TroopDesigner reads GauntletInventoryScreen._dataSource and dereferences IsSearchAvailable without a null check. Game v1.4.8 constructs _dataSource in OnReady rather than OnInitialize, so the screen may already be topmost while its view model is still null.",
+  "evidence": [
+    {
+      "pid": 28488,
+      "thread": 42084,
+      "dump_path": "C:\\Users\\DKX\\AppData\\Local\\CrashDumps\\TaleWorlds.MountAndBlade.Launcher.exe.28488.dmp",
+      "dump_sha256": "713376db8b365c78924b5594d7fda8a2b51f787191fe7529caa5e3c9a79e3438",
+      "log_path": "C:\\ProgramData\\Mount and Blade II Bannerlord\\logs\\rgl_log_28488.txt",
+      "log_sha256": "728625855392808e60db34033dd53f016b30fb1ff340d2ee721615ed6bcc6a7c",
+      "log_tail": "[07:45:26.863] CheckMissionEnded::ended \n\n[07:45:26.864] Player MapEvent BattleState: DefenderVictory \n\n[07:45:29.840] 你获胜了！ \n\n[07:45:36.841] 战斗胜利，按<img src=\"General\\InputKeys\\tab\" extend=\"12\">键查看结果 \n\n[07:45:42.342] I called EndMission \n\n[07:45:42.352] I called EndMissionInternal \n\n[07:45:42.567] -------MissionScreen-OnDeactivate \n\n[07:45:42.934] PopScreen \n\n[07:45:42.934] TaleWorlds.MountAndBlade.View.Screens.MissionScreen::HandlePause \n\n[07:45:42.934] TaleWorlds.MountAndBlade.View.Screens.MissionScreen::HandleDeactivate \n\n[07:45:42.934] -------MissionScreen-OnDeactivate \n\n[07:45:42.934] TaleWorlds.MountAndBlade.View.Screens.MissionScreen::HandleFinalize \n\n[07:45:42.935] -------MissionScreen-OnFinalize \n\n[07:45:42.990] Scene_view::clear_all(battle_terrain_L)\n[07:45:42.993] PopScreen - TaleWorlds.MountAndBlade.View.Screens.MissionScreen \n\n[07:45:42.993] OnScreenListChanged \n\n[07:45:42.993] SandBox.View.Map.MapScreen::HandleActivate \n\n[07:45:42.996] SandBox.View.Map.MapScreen::HandleResume \n\n[07:45:43.372] [GAME MENU] encounter \n\n[07:45:43.372] Release Sound Event -1 \n\n[07:45:43.415] 你掠夺了83第纳尔。 \n\n[07:45:43.426] Force VSync State is now ACTIVE \n\n[07:45:43.426] PushScreen \n\n[07:45:43.426] SandBox.View.Map.MapScreen::HandlePause \n\n[07:45:43.427] SandBox.View.Map.MapScreen::HandleDeactivate \n\n[07:45:43.427] Release Sound Event 319 \n\n[07:45:43.427] OnScreenListChanged \n\n[07:45:43.427] SandBox.GauntletUI.GauntletInventoryScreen::HandleInitialize \n\n[07:45:43.427] SandBox.GauntletUI.GauntletInventoryScreen::HandleActivate \n\n[07:45:43.427] SandBox.GauntletUI.GauntletInventoryScreen::HandleResume \n\n[07:45:43.826] Release Sound Event -1 \n\n",
+      "managed_fault": {
+        "thread": 42084,
+        "exception": "System.NullReferenceException",
+        "message": "Object reference not set to an instance of an object.",
+        "frames": [
+          {
+            "ip": "0x7ffe1c8341ca",
+            "sp": "0xa2243fedd0",
+            "kind": "Runtime",
+            "name": "[FaultingExceptionFrame]"
+          },
+          {
+            "ip": "0x7ffda631fc69",
+            "sp": "0xa2243ff2d0",
+            "kind": "ManagedMethod",
+            "name": "TroopDesigner.SubModule.EnableSearch()"
+          },
+          {
+            "ip": "0x7ffda631fac4",
+            "sp": "0xa2243ff360",
+            "kind": "ManagedMethod",
+            "name": "TroopDesigner.SubModule.OnApplicationTick(Single)"
+          },
+          {
+            "ip": "0x7ffda6307b3e",
+            "sp": "0xa2243ff3c0",
+            "kind": "ManagedMethod",
+            "name": "TaleWorlds.MountAndBlade.Module.OnApplicationTick(Single)"
+          },
+          {
+            "ip": "0x7ffda6305d30",
+            "sp": "0xa2243ff4b0",
+            "kind": "ManagedMethod",
+            "name": "TaleWorlds.DotNet.Managed.ApplicationTick(Single)"
+          },
+          {
+            "ip": "0x7ffda1cc99cd",
+            "sp": "0xa2243ff500",
+            "kind": "ManagedMethod",
+            "name": "DomainBoundILStubClass.IL_STUB_ReversePInvoke(Single)"
+          }
+        ]
+      }
+    },
+    {
+      "pid": 35760,
+      "thread": 30656,
+      "dump_path": "C:\\Users\\DKX\\AppData\\Local\\CrashDumps\\TaleWorlds.MountAndBlade.Launcher.exe.35760.dmp",
+      "dump_sha256": "e50f1ebb373c1ffc8bc5f5a7ba28080f86f4ab319523695810ddfd5514107ae7",
+      "log_path": "C:\\ProgramData\\Mount and Blade II Bannerlord\\logs\\rgl_log_35760.txt",
+      "log_sha256": "48d22afdcd97b4ad476b75803bcd6522bdfa3ad25d3e204c181dc57faa13b51a",
+      "log_tail": "[07:47:53.365] CheckMissionEnded::ended \n\n[07:47:53.368] Player MapEvent BattleState: DefenderVictory \n\n[07:47:56.343] 你获胜了！ \n\n[07:48:03.341] 战斗胜利，按<img src=\"General\\InputKeys\\tab\" extend=\"12\">键查看结果 \n\n[07:48:05.606] I called EndMission \n\n[07:48:05.615] I called EndMissionInternal \n\n[07:48:05.838] -------MissionScreen-OnDeactivate \n\n[07:48:05.950] PopScreen \n\n[07:48:05.950] TaleWorlds.MountAndBlade.View.Screens.MissionScreen::HandlePause \n\n[07:48:05.951] TaleWorlds.MountAndBlade.View.Screens.MissionScreen::HandleDeactivate \n\n[07:48:05.951] -------MissionScreen-OnDeactivate \n\n[07:48:05.951] TaleWorlds.MountAndBlade.View.Screens.MissionScreen::HandleFinalize \n\n[07:48:05.951] -------MissionScreen-OnFinalize \n\n[07:48:06.000] Scene_view::clear_all(battle_terrain_L)\n[07:48:06.003] PopScreen - TaleWorlds.MountAndBlade.View.Screens.MissionScreen \n\n[07:48:06.003] OnScreenListChanged \n\n[07:48:06.003] SandBox.View.Map.MapScreen::HandleActivate \n\n[07:48:06.009] SandBox.View.Map.MapScreen::HandleResume \n\n[07:48:06.114] [GAME MENU] encounter \n\n[07:48:06.115] Release Sound Event 21 \n\n[07:48:06.158] 你掠夺了83第纳尔。 \n\n[07:48:06.176] Force VSync State is now ACTIVE \n\n[07:48:06.176] PushScreen \n\n[07:48:06.176] SandBox.View.Map.MapScreen::HandlePause \n\n[07:48:06.177] SandBox.View.Map.MapScreen::HandleDeactivate \n\n[07:48:06.177] Release Sound Event 318 \n\n[07:48:06.177] OnScreenListChanged \n\n[07:48:06.177] SandBox.GauntletUI.GauntletInventoryScreen::HandleInitialize \n\n[07:48:06.178] SandBox.GauntletUI.GauntletInventoryScreen::HandleActivate \n\n[07:48:06.178] SandBox.GauntletUI.GauntletInventoryScreen::HandleResume \n\n[07:48:06.282] Release Sound Event -1 \n\n",
+      "managed_fault": {
+        "thread": 30656,
+        "exception": "System.NullReferenceException",
+        "message": "Object reference not set to an instance of an object.",
+        "frames": [
+          {
+            "ip": "0x7ffe1c8341ca",
+            "sp": "0xe5007fecc0",
+            "kind": "Runtime",
+            "name": "[FaultingExceptionFrame]"
+          },
+          {
+            "ip": "0x7ffda63e7a79",
+            "sp": "0xe5007ff1c0",
+            "kind": "ManagedMethod",
+            "name": "TroopDesigner.SubModule.EnableSearch()"
+          },
+          {
+            "ip": "0x7ffda63e78d4",
+            "sp": "0xe5007ff250",
+            "kind": "ManagedMethod",
+            "name": "TroopDesigner.SubModule.OnApplicationTick(Single)"
+          },
+          {
+            "ip": "0x7ffda63b3afe",
+            "sp": "0xe5007ff2b0",
+            "kind": "ManagedMethod",
+            "name": "TaleWorlds.MountAndBlade.Module.OnApplicationTick(Single)"
+          },
+          {
+            "ip": "0x7ffda63ae7e0",
+            "sp": "0xe5007ff3a0",
+            "kind": "ManagedMethod",
+            "name": "TaleWorlds.DotNet.Managed.ApplicationTick(Single)"
+          },
+          {
+            "ip": "0x7ffda1ccdd6d",
+            "sp": "0xe5007ff3f0",
+            "kind": "ManagedMethod",
+            "name": "DomainBoundILStubClass.IL_STUB_ReversePInvoke(Single)"
+          }
+        ]
+      }
+    }
+  ],
+  "troop_designer_dll": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\3618618171\\bin\\Win64_Shipping_Client\\TroopDesigner.dll",
+  "troop_designer_dll_sha256": "11625569287ef384a3ae3c3d40d08aea62f38d440725d91b82de87599e2b20b6",
+  "proposed_fix": "Return without modifying _lastScreen when InventoryDataSourceField is missing or its value is not an SPInventoryVM; retry on the next application tick.",
+  "appearance_feedback": {
+    "version": "v1.1.7",
+    "user_text": "效果可以了。但是现在战斗结束返回地图时会崩溃。检查日志看看怎么回事",
+    "scope": "Hair overall appearance accepted; does not confirm all poses, body sizes or other sets."
+  },
+  "installed_mingyu_sha256": "8ca857fc5a2b0ccd4c00b7c41f57a5c019606ccd17891362829d35c8cfdc9504",
+  "installed_module_matches_workspace": true,
+  "game_launched_by_assistant": false,
+  "game_files_modified": false,
+  "external_mod_files_modified": false
+}
