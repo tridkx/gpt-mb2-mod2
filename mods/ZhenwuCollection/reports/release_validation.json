@@ -1,8 +1,8 @@
 {
-  "version": "v1.1.0",
+  "version": "v1.2.0",
   "status": "pass",
   "check_scope": "offline checks and cumulative module consistency",
-  "final_package_sha256": "c51cc04439565cb97ce74291e9c6085fd93035dcb3a72a29b3f6ed87c215b8df",
+  "final_package_sha256": "67a47208ff2c8a7a82aa4ae54385eb82a966fc6a215ba443f762f52dde35ce56",
   "baseline_package_sha256": "f163e4d104e674da22fe5513e751f71ffa9ce15abf2367e253234165a98d2323",
   "packages": [
     {
@@ -16,6 +16,13 @@
       "set": "02_XuanxuQingjing",
       "file": "module/ZhenwuCollection/AssetPackages/zw_xuanxu.tpac",
       "sha256": "c51cc04439565cb97ce74291e9c6085fd93035dcb3a72a29b3f6ed87c215b8df",
+      "offline_status": "pass",
+      "user_acceptance": "accepted_v1.1.0"
+    },
+    {
+      "set": "03_HuashuiWeiming",
+      "file": "module/ZhenwuCollection/AssetPackages/zw_huashui.tpac",
+      "sha256": "67a47208ff2c8a7a82aa4ae54385eb82a966fc6a215ba443f762f52dde35ce56",
       "offline_status": "pass",
       "user_acceptance": "pending"
     }
@@ -218,19 +225,120 @@
           "guid": "4d0b7dc7-5ff0-4dec-650b-4c620c2cbca6"
         }
       ]
+    },
+    {
+      "set": "03_HuashuiWeiming",
+      "package_guid": "fd670c58-7cb9-5f6b-a5e8-97d0ac29edca",
+      "asset_count": 23,
+      "assets": [
+        {
+          "name": "zw_huashui_body",
+          "guid": "e5a34a6c-2956-e4dc-b8f6-39159ba05def"
+        },
+        {
+          "name": "zw_huashui_head",
+          "guid": "59dff5a0-d071-f2f8-5cb0-bfee71306a91"
+        },
+        {
+          "name": "zw_huashui_legs",
+          "guid": "631a362e-1175-ab03-cc4b-ef5c44c653ff"
+        },
+        {
+          "name": "zw_huashui_cloth",
+          "guid": "dadc246c-e990-1bdb-2b64-f68e89642a93"
+        },
+        {
+          "name": "zw_huashui_cuff",
+          "guid": "ffcb255f-a977-8d71-08f8-b29e000e734d"
+        },
+        {
+          "name": "zw_huashui_eye",
+          "guid": "29525ddf-be62-6b3b-b102-6fe441af7339"
+        },
+        {
+          "name": "zw_huashui_face",
+          "guid": "f727c2d6-9290-23eb-8bc5-1b853b44a249"
+        },
+        {
+          "name": "zw_huashui_hair",
+          "guid": "8a7d26c2-d572-bbbc-6914-08f61d074b63"
+        },
+        {
+          "name": "zw_huashui_lash",
+          "guid": "6020e7f0-91a3-485a-9beb-5899aa1d8c8e"
+        },
+        {
+          "name": "zw_huashui_ornament",
+          "guid": "bbab50ba-cf95-cdc9-cb83-638c51d7e2eb"
+        },
+        {
+          "name": "zw_huashui_pants",
+          "guid": "10a1db65-d0ee-4ca6-712e-9e9ca3b62f6c"
+        },
+        {
+          "name": "zw_huashui_skin",
+          "guid": "ca374118-49c7-2fb9-44f1-92ddb03dd533"
+        },
+        {
+          "name": "zw_huashui_cloth_d",
+          "guid": "435d80ed-1fe0-1622-e3d9-1477d216c737"
+        },
+        {
+          "name": "zw_huashui_cuff_d",
+          "guid": "9e208c26-50cc-49af-5baa-1b19b158eee7"
+        },
+        {
+          "name": "zw_huashui_eye_d",
+          "guid": "627b1b23-e7d6-2433-cf11-78f4cc099e76"
+        },
+        {
+          "name": "zw_huashui_face_d",
+          "guid": "8a1047b5-9b8f-49f6-cd29-3d606b52eaec"
+        },
+        {
+          "name": "zw_huashui_flat_n",
+          "guid": "da4ea71d-e4ea-6b9a-bcf1-c55f6842cec2"
+        },
+        {
+          "name": "zw_huashui_hair_d",
+          "guid": "cf776dbc-bac5-9bc6-5348-de1577eed6cc"
+        },
+        {
+          "name": "zw_huashui_lash_d",
+          "guid": "6874aad0-b1c0-3f2c-25b5-2995d73ebd9b"
+        },
+        {
+          "name": "zw_huashui_neutral_s",
+          "guid": "ba99a24d-d3b0-25d9-9c89-794880d01d97"
+        },
+        {
+          "name": "zw_huashui_ornament_d",
+          "guid": "fedcad43-505f-75bc-60e0-79172719721c"
+        },
+        {
+          "name": "zw_huashui_pants_d",
+          "guid": "399202eb-93bf-8708-2431-94ada9d3b97c"
+        },
+        {
+          "name": "zw_huashui_skin_d",
+          "guid": "4d3c2dd3-6bc7-66ec-6e75-ea9e5be55893"
+        }
+      ]
     }
   ],
   "resource_name_and_guid_collisions": false,
   "first_set_assets_and_source_unchanged": true,
-  "item_count": 6,
+  "previous_two_sets_assets_items_and_source_unchanged": true,
+  "item_count": 9,
   "included_sets": [
     "01_YunhaiNiezong",
-    "02_XuanxuQingjing"
+    "02_XuanxuQingjing",
+    "03_HuashuiWeiming"
   ],
   "editable_sources_verified": true,
   "all_lod_motion_and_seam_normals_verified": true,
-  "second_set_user_acceptance": "pending",
+  "third_set_user_acceptance": "pending",
   "game_test_verified": false,
   "game_cloth_solver_used": false,
-  "limitations": "User accepted first set v1.0.0 without reporting individual motions. Second-set in-game cloth, IK, body sliders and horse collision await user testing."
+  "limitations": "User accepted sets 1 and 2 without reporting individual motions. Third-set in-game cloth, IK, body sliders and horse collision await user testing."
 }

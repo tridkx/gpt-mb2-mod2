@@ -27,8 +27,12 @@ with zipfile.ZipFile(ROOT/'dist/ZhenwuCollection_Source.zip') as z:
  for rel in ['sets/02_XuanxuQingjing/source/ZhenwuXuanxu_Rigged.blend','sets/02_XuanxuQingjing/source/ZhenwuXuanxu_Rigged.fbx','sets/02_XuanxuQingjing/tex/eyelash_D.png']:assert rel in z.namelist()
 with zipfile.ZipFile(ROOT/'dist/ZhenwuCollection_v1.0.0_Mod.zip') as z:
  assert z.read('ZhenwuCollection/AssetPackages/zw_yunhai.tpac')==(MODULE/'AssetPackages/zw_yunhai.tpac').read_bytes()
-assert len(ET.parse(MODULE/'ModuleData/items.xml').getroot())==6
+assert len(ET.parse(MODULE/'ModuleData/items.xml').getroot())==9
+with zipfile.ZipFile(ROOT/'dist/ZhenwuCollection_v1.1.0_Mod.zip') as z:
+ for name in ['zw_yunhai.tpac','zw_xuanxu.tpac']:assert z.read('ZhenwuCollection/AssetPackages/'+name)==(MODULE/'AssetPackages'/name).read_bytes()
+with zipfile.ZipFile(ROOT/'dist/ZhenwuCollection_Source.zip') as z:
+ for rel in ['sets/03_HuashuiWeiming/source/ZhenwuHuashui_Rigged.blend','sets/03_HuashuiWeiming/source/ZhenwuHuashui_Rigged.fbx','sets/03_HuashuiWeiming/tex/eyelash_D.png']:assert rel in z.namelist()
 version=ET.parse(MODULE/'SubModule.xml').find('Version').get('value')
 assert version==release['version']
-report={'status':'pass','version':version,'installed_path':str(INSTALLED),'files':records,'module_zip_sha256':sha(ROOT/'dist/ZhenwuCollection_Mod.zip'),'source_zip_sha256':sha(ROOT/'dist/ZhenwuCollection_Source.zip'),'module_archive_installed_bytes_match':True,'all_source_archive_bytes_match':True,'game_launched':False,'game_acceptance':{'01_YunhaiNiezong':'accepted_v1.0.0','02_XuanxuQingjing':'pending'},'first_accepted_package_unchanged':True}
+report={'status':'pass','version':version,'installed_path':str(INSTALLED),'files':records,'module_zip_sha256':sha(ROOT/'dist/ZhenwuCollection_Mod.zip'),'source_zip_sha256':sha(ROOT/'dist/ZhenwuCollection_Source.zip'),'module_archive_installed_bytes_match':True,'all_source_archive_bytes_match':True,'game_launched':False,'game_acceptance':{'01_YunhaiNiezong':'accepted_v1.0.0','02_XuanxuQingjing':'accepted_v1.1.0','03_HuashuiWeiming':'pending'},'first_accepted_package_unchanged':True}
 (ROOT/'reports/installation_validation.json').write_text(json.dumps(report,indent=2));print('INSTALLATION_AND_ZIPS_VERIFIED',version,len(records),'module files',len(config['source_files']),'source files')

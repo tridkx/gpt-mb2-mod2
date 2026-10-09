@@ -1,28 +1,28 @@
-# Zhenwu Collection v1.1.0 — 真武少女八套
+# Zhenwu Collection v1.2.0 — 真武少女八套
 
-当前累计交付包含第一套「云海蹑踪」和第二套「玄虚清镜」；第一套 v1.0.0 已由用户验收，第二套等待验收，其余六套未开始。2026-10-09 完成源模型调研，随后制作第一套。神机韬略按用户后续指示仅用 PVP 版。
+当前累计交付包含「云海蹑踪」「玄虚清镜」「画水微明」三套；前两套已由用户验收，第三套等待验收，其余五套未开始。2026-10-09 完成源模型调研，随后制作第一套。神机韬略按用户后续指示仅用 PVP 版。
 
 用户要求：八套统一管理；按原编号制作，每完成一套、离线检查通过并安装后暂停汇报，由用户游戏验收；收到验收通过及继续指示后再处理下一套。返修仍属于当前套，不越过验收关口。游戏由用户测试，助手不启动游戏、不修改 Native、不上传远程。
 
 合集 ID 为 `ZhenwuCollection`，管理器英文名 `Zhenwu Collection`，游戏内使用中文套装名。运行模块位于 `module/ZhenwuCollection/`。逐套增加资源，保持已验收装备 ID、资源名和 GUID 稳定，保留旧版交付包。
 
-八套工程统一位于本目录 `sets/`；每套使用 input/、source/、tex/、tools/、build/、reports/，source/ 与 tex/ 相邻。合集顶层 tools/ 保存合集调研、构建及检查入口，dist/ 保存累计交付与旧版包。前两套已复制原始输入与贴图进入工程，其余套仍在用户提供目录中；用户原文件全部保留。
+八套工程统一位于本目录 `sets/`；每套使用 input/、source/、tex/、tools/、build/、reports/，source/ 与 tex/ 相邻。合集顶层 tools/ 保存合集调研、构建及检查入口，dist/ 保存累计交付与旧版包。前三套已复制原始输入与贴图进入工程，其余套仍在用户提供目录中；用户原文件全部保留。
 
-## 前两套交付与验收
+## 前三套交付与验收
 
-在启动器勾选 **Zhenwu Collection**。通过作弊物品列表搜索「云海蹑踪」或「玄虚清镜」，穿戴发容、衣裙与手饰、腿部与长靴三件；手套与披肩槽留空。本合集只依赖 Native、SandBoxCore、Sandbox。
+在启动器勾选 **Zhenwu Collection**。通过作弊物品列表搜索「云海蹑踪」「玄虚清镜」或「画水微明」，穿戴发容、衣裙与手饰、腿部与长靴三件；手套与披肩槽留空。本合集只依赖 Native、SandBoxCore、Sandbox。
 
-Mod 包在 dist/ZhenwuCollection_Mod.zip，源包在 dist/ZhenwuCollection_Source.zip。安装到 D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules/ZhenwuCollection。两套说明与重建步骤分别见 sets/01_YunhaiNiezong/README.md、sets/02_XuanxuQingjing/README.md。v1.0.0 旧版 Mod/Source ZIP 保留在 dist/，第一套 TPAC、装备 ID 和可编辑模型保持原字节。
+Mod 包在 dist/ZhenwuCollection_Mod.zip，源包在 dist/ZhenwuCollection_Source.zip。安装到 D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules/ZhenwuCollection。三套说明与重建步骤分别见 sets/01_YunhaiNiezong/README.md、sets/02_XuanxuQingjing/README.md、sets/03_HuashuiWeiming/README.md。v1.0.0、v1.1.0 旧版 Mod/Source ZIP 保留在 dist/，前两套 TPAC、装备 ID、可编辑模型与贴图保持原字节。
 
 最终 TPAC 已检查四级 LOD、XML、引用、四骨量化权重、头颈/肘部共享切口、法线、鞋底、布料配置与全部贴图 mip；跑步、拉弓、骑乘检查完整有效帧区间，站立动作抽查 16 帧，全部 LOD 检查动态接缝。可编辑 Blend 贴图打包与 FBX 重导入通过。最终预览为离线蒙皮，不是游戏布料求解效果；仍需用户确认衣裙/袖口碰撞、握持、骑乘、体型和透明排序。未运行游戏、未修改 Native。
 
-每次完成一套即暂停。本次等待第二套验收，不制作第三套。
+每次完成一套即暂停。本次等待第三套验收，不制作第四套。
 
 | 顺序 | 套装 | 子目录 | 网格数 | 源顶点 | 三角面 | 当前状态 |
 | --- | --- | --- | ---: | ---: | ---: | --- |
 | 01 | 云海蹑踪 | sets/01_YunhaiNiezong | 14 | 12,543 | 16,144 | v1.0.0 已验收，资源不变 |
-| 02 | 玄虚清镜 | sets/02_XuanxuQingjing | 12 | 9,408 | 13,358 | 加入 v1.1.0，等待验收 |
-| 03 | 画水微明 | sets/03_HuashuiWeiming | 13 | 11,522 | 15,597 | 已调研，待前套验收 |
+| 02 | 玄虚清镜 | sets/02_XuanxuQingjing | 12 | 9,408 | 13,358 | v1.1.0 已验收，资源不变 |
+| 03 | 画水微明 | sets/03_HuashuiWeiming | 13 | 11,522 | 15,597 | 加入 v1.2.0，等待验收 |
 | 04 | 澹云未雨 | sets/04_DanyunWeiyu | 13 | 14,641 | 18,332 | 已调研，待前套验收 |
 | 05 | 拂雨冲云 | sets/05_FuyuChongyun | 14 | 16,082 | 21,081 | 已调研，待前套验收 |
 | 06 | 玄机空濛 | sets/06_XuanjiKongmeng | 13 | 13,763 | 18,331 | 已调研，待前套验收 |
@@ -43,6 +43,12 @@ Mod 包在 dist/ZhenwuCollection_Mod.zip，源包在 dist/ZhenwuCollection_Sourc
 玄虚清镜实际测量、独立部件映射和资源命名；脸、眼、睫毛几何/UV/贴图与已验收第一套完全相同，因此应用同样的睫毛 V 翻转。其余 UV、原始 PNG 不变。12 个网格生成四级 LOD，16 处共享皮肤边界保持位置、权重及法线，远景 LOD 保护薄鞋底，防止简化移入地面。第二套包 GUID、所有内部资源名/GUID 与第一套互不重复。
 
 本套已从最终 TPAC 回读全部 LOD，检查原生跑步 25 帧、持弓 150 帧、骑乘 20 帧，站立抽查 16 帧；全部 LOD 动态接缝检查通过。最终包预览已审阅，源 Blend 贴图打包及 FBX 重导入通过。没有运行游戏布料求解器、生成官方编辑器 tcc/tcm 缓存或启动游戏；衣摆胶囊代理仍有接触，不能据此声称游戏穿模已解决。等待用户检查第二套长衣摆、袖口、握持、骑乘和透明排序。
+
+## 第三套检查与风险
+
+画水微明独立检查 13 网格、11,522 源顶点、15,597 三角面，分别适配主衣裙、袖片、长靴、前后发和高头饰；沿用经实际几何/UV/贴图对比确认的脸部标记和睫毛方向修正。21 处皮肤共享边界在四级 LOD 的位置、权重及法线保持一致，源鞋底及远景边界保持水平。独立 zw_huashui 资源命名和包 GUID，合集回读检查三套共 69 个资源名/GUID 无冲突。
+
+第三套回读最终 TPAC 检查所有 LOD、材质/贴图 mip、几何、量化权重、XML、鞋底、布料配置与原生动作；跑步 25 帧、持弓 150 帧、骑乘 20 帧，站立抽查 16 帧，各 LOD 检查动态接缝。可编辑源文件贴图打包及 FBX 重导入通过。离线衣摆代理仍有接触，未运行游戏布料求解器或生成官方 tcc/tcm 缓存；第三套的袖片、衣摆、握持、骑乘及体型表现待你验收。
 
 ## 制作路线与风险
 

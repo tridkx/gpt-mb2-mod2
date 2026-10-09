@@ -1,8 +1,12 @@
 {
   "status": "pass",
-  "version": "v1.1.0",
+  "version": "v1.2.0",
   "installed_path": "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\ZhenwuCollection",
   "files": [
+    {
+      "file": "AssetPackages/zw_huashui.tpac",
+      "sha256": "67a47208ff2c8a7a82aa4ae54385eb82a966fc6a215ba443f762f52dde35ce56"
+    },
     {
       "file": "AssetPackages/zw_xuanxu.tpac",
       "sha256": "c51cc04439565cb97ce74291e9c6085fd93035dcb3a72a29b3f6ed87c215b8df"
@@ -13,21 +17,22 @@
     },
     {
       "file": "ModuleData/items.xml",
-      "sha256": "dc98313c471c95c34173092927438f31c91eef08d4023a77607ac8b96c59a9b9"
+      "sha256": "e95af4759a2fedb98a644e372f29a471fa57b3c08337fde0b4299de44fe68261"
     },
     {
       "file": "SubModule.xml",
-      "sha256": "26800c13ea686263bd3e5680cf9818d22fd8eef284a4606450f6a92eca3003b9"
+      "sha256": "d763985cd86ff3b17f387a99d7a86f9a6592e8526c98b84e7a11a7f62534dcd9"
     }
   ],
-  "module_zip_sha256": "8330b39e6a20e5023d3b410e2005b38bb8dbeeaf18513703b99f853e0a19f09d",
-  "source_zip_sha256": "e564cba3e130effd3acd741f80f5aa4508032aea585ea70bb98391c3651e9294",
+  "module_zip_sha256": "ef0431e8235dfbd288b4cb325f9956501302d2ac22004c0fb8521db248952e31",
+  "source_zip_sha256": "e95eb6a09c2b6b5fc3fc4a8a5f36a814a3c3ec7c38f0ad479a80277bb1cb22f8",
   "module_archive_installed_bytes_match": true,
   "all_source_archive_bytes_match": true,
   "game_launched": false,
   "game_acceptance": {
     "01_YunhaiNiezong": "accepted_v1.0.0",
-    "02_XuanxuQingjing": "pending"
+    "02_XuanxuQingjing": "accepted_v1.1.0",
+    "03_HuashuiWeiming": "pending"
   },
   "first_accepted_package_unchanged": true
 }

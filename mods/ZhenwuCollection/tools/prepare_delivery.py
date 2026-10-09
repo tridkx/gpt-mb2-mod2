@@ -1,12 +1,12 @@
-"""Validate two independent sets and assemble the cumulative v1.1.0 module."""
+"""Validate three independent sets and assemble the cumulative v1.2.0 module."""
 from pathlib import Path
 import json,hashlib,shutil,zipfile,subprocess,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
-SETS=['01_YunhaiNiezong','02_XuanxuQingjing'];VERSION='v1.1.0'
+SETS=['01_YunhaiNiezong','02_XuanxuQingjing','03_HuashuiWeiming'];VERSION='v1.2.0'
 BASELINE='f163e4d104e674da22fe5513e751f71ffa9ce15abf2367e253234165a98d2323'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 packages=[];all_items=[];names=set();guids=set();inventories=[]
-for setname,prefix in zip(SETS,['zw_yunhai','zw_xuanxu']):
+for setname,prefix in zip(SETS,['zw_yunhai','zw_xuanxu','zw_huashui']):
  folder=ROOT/'sets'/setname;module=folder/'module/ZhenwuCollection';package=module/'AssetPackages'/(prefix+'.tpac');h=sha(package)
  release=json.loads((folder/'reports/release_validation.json').read_text())
  assert release['status']=='pass' and release['final_package_sha256']==h
@@ -27,7 +27,7 @@ for setname,prefix in zip(SETS,['zw_yunhai','zw_xuanxu']):
   assert asset['name'].startswith(prefix+'_') and asset['name'] not in names and asset['guid'] not in guids
   names.add(asset['name']);guids.add(asset['guid'])
  inventories.append({'set':setname,'package_guid':inventory['packGuid'],'asset_count':len(assets),'assets':[{'name':a['name'],'guid':a['guid']} for a in assets]})
- packages.append({'set':setname,'file':'module/ZhenwuCollection/AssetPackages/'+package.name,'sha256':h,'offline_status':'pass','user_acceptance':'accepted_v1.0.0' if setname==SETS[0] else 'pending'})
+ packages.append({'set':setname,'file':'module/ZhenwuCollection/AssetPackages/'+package.name,'sha256':h,'offline_status':'pass','user_acceptance':{'01_YunhaiNiezong':'accepted_v1.0.0','02_XuanxuQingjing':'accepted_v1.1.0'}.get(setname,'pending')})
  all_items.extend(list(ET.parse(module/'ModuleData/items.xml').getroot()))
 # First accepted assets and editable model must remain exactly as delivered.
 assert packages[0]['sha256']==BASELINE
@@ -44,16 +44,30 @@ with zipfile.ZipFile(oldsource) as z:
  for rel in ['source/ZhenwuYunhai_Rigged.blend','source/ZhenwuYunhai_Rigged.fbx',*['tex/'+p.name for p in (ROOT/'sets'/SETS[0]/'tex').glob('*.png')]]:
   path='sets/'+SETS[0]+'/'+rel
   assert z.read(path)==(ROOT/path).read_bytes(),path
+# Preserve the entire previously accepted v1.1.0 delivery as well.
+second_accept=json.loads((ROOT/'reports/acceptance_v1.1.0.json').read_text(encoding='utf8'))
+assert second_accept['status']=='accepted_by_user' and second_accept['accepted_package_sha256']==packages[1]['sha256']
+previous_mod=ROOT/'dist/ZhenwuCollection_v1.1.0_Mod.zip';previous_source=ROOT/'dist/ZhenwuCollection_v1.1.0_Source.zip'
+if not previous_mod.exists():previous_mod=ROOT/'dist/ZhenwuCollection_Mod.zip'
+if not previous_source.exists():previous_source=ROOT/'dist/ZhenwuCollection_Source.zip'
+def structural(element):return (element.tag,tuple(sorted(element.attrib.items())),(element.text or '').strip(),tuple(structural(c) for c in element))
+with zipfile.ZipFile(previous_mod) as z:
+ for pkg in packages[:2]:assert z.read('ZhenwuCollection/AssetPackages/'+Path(pkg['file']).name)==(ROOT/pkg['file']).read_bytes()
+ assert [structural(i) for i in ET.fromstring(z.read('ZhenwuCollection/ModuleData/items.xml'))]==[structural(i) for i in all_items[:6]]
+with zipfile.ZipFile(previous_source) as z:
+ for setname in SETS[:2]:
+  folder=ROOT/'sets'/setname
+  for p in [*sorted((folder/'source').glob('*.blend')),*sorted((folder/'source').glob('*.fbx')),*sorted((folder/'tex').glob('*.png'))]:assert z.read(p.relative_to(ROOT).as_posix())==p.read_bytes(),str(p)
 module=ROOT/'module/ZhenwuCollection';(module/'AssetPackages').mkdir(parents=True,exist_ok=True)
 for pkg in packages:
  shutil.copy2(ROOT/'sets'/pkg['set']/'module/ZhenwuCollection/AssetPackages'/Path(pkg['file']).name,ROOT/pkg['file'])
  assert sha(ROOT/pkg['file'])==pkg['sha256']
-shutil.copy2(ROOT/'sets'/SETS[1]/'module/ZhenwuCollection/SubModule.xml',module/'SubModule.xml')
-items=ET.Element('Items');items.extend(all_items);ids=[i.get('id') for i in items];assert len(ids)==6 and len(set(ids))==6
+shutil.copy2(ROOT/'sets'/SETS[-1]/'module/ZhenwuCollection/SubModule.xml',module/'SubModule.xml')
+items=ET.Element('Items');items.extend(all_items);ids=[i.get('id') for i in items];assert len(ids)==9 and len(set(ids))==9
 assert {i.get('mesh') for i in items}=={a['name'] for inv in inventories for a in inv['assets'] if a['name'].endswith(('_head','_body','_legs'))}
 ET.indent(items,space='  ');ET.ElementTree(items).write(module/'ModuleData/items.xml',encoding='utf-8',xml_declaration=True)
 assert ET.parse(module/'SubModule.xml').find('Version').get('value')==VERSION
-report={'version':VERSION,'status':'pass','check_scope':'offline checks and cumulative module consistency','final_package_sha256':packages[-1]['sha256'],'baseline_package_sha256':BASELINE,'packages':packages,'asset_inventory':inventories,'resource_name_and_guid_collisions':False,'first_set_assets_and_source_unchanged':True,'item_count':6,'included_sets':SETS,'editable_sources_verified':True,'all_lod_motion_and_seam_normals_verified':True,'second_set_user_acceptance':'pending','game_test_verified':False,'game_cloth_solver_used':False,'limitations':'User accepted first set v1.0.0 without reporting individual motions. Second-set in-game cloth, IK, body sliders and horse collision await user testing.'}
+report={'version':VERSION,'status':'pass','check_scope':'offline checks and cumulative module consistency','final_package_sha256':packages[-1]['sha256'],'baseline_package_sha256':BASELINE,'packages':packages,'asset_inventory':inventories,'resource_name_and_guid_collisions':False,'first_set_assets_and_source_unchanged':True,'previous_two_sets_assets_items_and_source_unchanged':True,'item_count':9,'included_sets':SETS,'editable_sources_verified':True,'all_lod_motion_and_seam_normals_verified':True,'third_set_user_acceptance':'pending','game_test_verified':False,'game_cloth_solver_used':False,'limitations':'User accepted sets 1 and 2 without reporting individual motions. Third-set in-game cloth, IK, body sliders and horse collision await user testing.'}
 (ROOT/'reports/release_validation.json').write_text(json.dumps(report,indent=2))
 files=['README.md','mod.json']
 for folder in ['tools','reports','module','sets']:
