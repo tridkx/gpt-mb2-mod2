@@ -1,0 +1,397 @@
+{
+  "status": "pass",
+  "body_name": "sx_mingyu_back_collision",
+  "back_surface_inset_m": -0.002,
+  "top_height_m": 1.27,
+  "xml_sha256": "3897c0bb96804c375e2aa135d10ec868fdadc2c46c4710f5f1255b7df6aae2e6",
+  "leg_body_unchanged": true,
+  "capsules": [
+    {
+      "name": "sx_mingyu_back_-0.065",
+      "back_surface_y_m": [
+        -0.0873536765575409,
+        -0.09415020048618317
+      ],
+      "radius_m": 0.045,
+      "endpoints_m": [
+        [
+          -0.065,
+          -0.0443536765575409,
+          0.96
+        ],
+        [
+          -0.065,
+          -0.05115020048618317,
+          1.27
+        ]
+      ],
+      "endpoint_bones": [
+        "spine",
+        "spine2"
+      ]
+    },
+    {
+      "name": "sx_mingyu_back_0.000",
+      "back_surface_y_m": [
+        -0.0873536765575409,
+        -0.09415020048618317
+      ],
+      "radius_m": 0.045,
+      "endpoints_m": [
+        [
+          0.0,
+          -0.0443536765575409,
+          0.96
+        ],
+        [
+          0.0,
+          -0.05115020048618317,
+          1.27
+        ]
+      ],
+      "endpoint_bones": [
+        "spine",
+        "spine2"
+      ]
+    },
+    {
+      "name": "sx_mingyu_back_0.065",
+      "back_surface_y_m": [
+        -0.0873536765575409,
+        -0.09415020048618317
+      ],
+      "radius_m": 0.045,
+      "endpoints_m": [
+        [
+          0.065,
+          -0.0443536765575409,
+          0.96
+        ],
+        [
+          0.065,
+          -0.05115020048618317,
+          1.27
+        ]
+      ],
+      "endpoint_bones": [
+        "spine",
+        "spine2"
+      ]
+    }
+  ],
+  "hair_projection_diagnostics": [
+    {
+      "animation": "idle",
+      "frame": 1,
+      "projected_vertices": 611,
+      "max_lift_m": 0.0025836289804770374,
+      "max_projection_m": 0.042042069096133755,
+      "worst_lift_rest_position": [
+        -0.02533991076052189,
+        -0.12841899693012238,
+        1.289847493171692
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 1,
+      "projected_vertices": 1131,
+      "max_lift_m": 0.0280835534073669,
+      "max_projection_m": 0.04260307337262235,
+      "worst_lift_rest_position": [
+        -0.1070399135351181,
+        -0.0994265079498291,
+        1.3177074193954468
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 2,
+      "projected_vertices": 1110,
+      "max_lift_m": 0.029864625771639952,
+      "max_projection_m": 0.0440987858555607,
+      "worst_lift_rest_position": [
+        -0.1070399135351181,
+        -0.0994265079498291,
+        1.3177074193954468
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 3,
+      "projected_vertices": 933,
+      "max_lift_m": 0.027616149515331756,
+      "max_projection_m": 0.04436732959008871,
+      "worst_lift_rest_position": [
+        -0.1001599133014679,
+        -0.11396867036819458,
+        1.3251274824142456
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 4,
+      "projected_vertices": 725,
+      "max_lift_m": 0.021902997284427128,
+      "max_projection_m": 0.04316112411755658,
+      "worst_lift_rest_position": [
+        0.016000088304281235,
+        -0.1519901305437088,
+        1.322777509689331
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 5,
+      "projected_vertices": 573,
+      "max_lift_m": 0.01964517246937114,
+      "max_projection_m": 0.043113076656241874,
+      "worst_lift_rest_position": [
+        0.038900088518857956,
+        -0.16829341650009155,
+        1.3358074426651
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 6,
+      "projected_vertices": 556,
+      "max_lift_m": 0.026153093166306984,
+      "max_projection_m": 0.04176753883501996,
+      "worst_lift_rest_position": [
+        -0.019289910793304443,
+        -0.14771445095539093,
+        1.3359674215316772
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 7,
+      "projected_vertices": 606,
+      "max_lift_m": 0.037005927870003674,
+      "max_projection_m": 0.04381113582150164,
+      "worst_lift_rest_position": [
+        0.06030008941888809,
+        -0.14761973917484283,
+        1.3195174932479858
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 8,
+      "projected_vertices": 692,
+      "max_lift_m": 0.033173225587148414,
+      "max_projection_m": 0.043915003867758845,
+      "worst_lift_rest_position": [
+        -0.051679909229278564,
+        -0.14403308928012848,
+        1.3168874979019165
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 9,
+      "projected_vertices": 819,
+      "max_lift_m": 0.03218494409267514,
+      "max_projection_m": 0.04379365996718923,
+      "worst_lift_rest_position": [
+        0.027290089055895805,
+        -0.12590083479881287,
+        1.3160074949264526
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 10,
+      "projected_vertices": 918,
+      "max_lift_m": 0.026381300386037143,
+      "max_projection_m": 0.04430347451753467,
+      "worst_lift_rest_position": [
+        -0.020699910819530487,
+        -0.12449529767036438,
+        1.3117774724960327
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 11,
+      "projected_vertices": 985,
+      "max_lift_m": 0.02368441960090828,
+      "max_projection_m": 0.04358043670255873,
+      "worst_lift_rest_position": [
+        0.11394008994102478,
+        -0.10110975056886673,
+        1.322777509689331
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 12,
+      "projected_vertices": 981,
+      "max_lift_m": 0.026524606829742226,
+      "max_projection_m": 0.04415824962278392,
+      "worst_lift_rest_position": [
+        -0.000939910882152617,
+        -0.11759310215711594,
+        1.2983875274658203
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 13,
+      "projected_vertices": 1003,
+      "max_lift_m": 0.02680453323280574,
+      "max_projection_m": 0.044357944782035565,
+      "worst_lift_rest_position": [
+        -0.005009911023080349,
+        -0.12851887941360474,
+        1.3095674514770508
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 14,
+      "projected_vertices": 945,
+      "max_lift_m": 0.028331318814902584,
+      "max_projection_m": 0.044472848406329944,
+      "worst_lift_rest_position": [
+        0.12616008520126343,
+        -0.10780515521764755,
+        1.3289874792099
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 15,
+      "projected_vertices": 787,
+      "max_lift_m": 0.03238458524122034,
+      "max_projection_m": 0.04264989875466804,
+      "worst_lift_rest_position": [
+        0.12616008520126343,
+        -0.10780515521764755,
+        1.3289874792099
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 16,
+      "projected_vertices": 712,
+      "max_lift_m": 0.026032479902819095,
+      "max_projection_m": 0.04251354457910709,
+      "worst_lift_rest_position": [
+        0.0011400891235098243,
+        -0.14948490262031555,
+        1.3167974948883057
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 17,
+      "projected_vertices": 636,
+      "max_lift_m": 0.022288056103589637,
+      "max_projection_m": 0.04216723146048028,
+      "worst_lift_rest_position": [
+        0.052370090037584305,
+        -0.13431860506534576,
+        1.334957480430603
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 18,
+      "projected_vertices": 592,
+      "max_lift_m": 0.02848592261624372,
+      "max_projection_m": 0.044370330487051884,
+      "worst_lift_rest_position": [
+        -0.03214991092681885,
+        -0.1591513752937317,
+        1.320947527885437
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 19,
+      "projected_vertices": 615,
+      "max_lift_m": 0.02664575747260356,
+      "max_projection_m": 0.042444277349290974,
+      "worst_lift_rest_position": [
+        -0.051679909229278564,
+        -0.14403308928012848,
+        1.3168874979019165
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 20,
+      "projected_vertices": 681,
+      "max_lift_m": 0.029353863081637455,
+      "max_projection_m": 0.04224679607439752,
+      "worst_lift_rest_position": [
+        0.00878008920699358,
+        -0.14129044115543365,
+        1.3209974765777588
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 21,
+      "projected_vertices": 797,
+      "max_lift_m": 0.030187090147440365,
+      "max_projection_m": 0.04331987526344855,
+      "worst_lift_rest_position": [
+        -0.005009911023080349,
+        -0.12851887941360474,
+        1.3095674514770508
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 22,
+      "projected_vertices": 944,
+      "max_lift_m": 0.02490104886913236,
+      "max_projection_m": 0.043514832524156104,
+      "worst_lift_rest_position": [
+        -0.020699910819530487,
+        -0.12449529767036438,
+        1.3117774724960327
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 23,
+      "projected_vertices": 1034,
+      "max_lift_m": 0.026875724714373384,
+      "max_projection_m": 0.04401014854202375,
+      "worst_lift_rest_position": [
+        0.023460088297724724,
+        -0.11994532495737076,
+        1.2993375062942505
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 24,
+      "projected_vertices": 1140,
+      "max_lift_m": 0.03263834421651346,
+      "max_projection_m": 0.044449909553248686,
+      "worst_lift_rest_position": [
+        0.023460088297724724,
+        -0.11994532495737076,
+        1.2993375062942505
+      ]
+    },
+    {
+      "animation": "run",
+      "frame": 25,
+      "projected_vertices": 1131,
+      "max_lift_m": 0.02808374897563648,
+      "max_projection_m": 0.04260279082361031,
+      "worst_lift_rest_position": [
+        -0.1070399135351181,
+        -0.0994265079498291,
+        1.3177074193954468
+      ]
+    }
+  ],
+  "scope": "Own back surface fitting and native skeletal motion, no engine cloth/dummy collision. Only posterior torso, no scalp or chest capsule; all hair geometry and solver distances unchanged."
+}

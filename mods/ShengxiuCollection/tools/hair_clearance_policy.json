@@ -1,0 +1,11 @@
+{
+  "version": "v1.1.4",
+  "mesh": "sx_mingyu_head_00",
+  "back_surface_inset_m": -0.002,
+  "back_top_height_m": 1.27,
+  "minimum_existing_distance_scale": 3.0,
+  "projection_allowance_m": 0.005,
+  "maximum_solver_distance_m": 0.12,
+  "preserve_zero_distance_roots": true,
+  "scope": "Solver-only hair distance override derived from own back collision and native idle/run poses; renderer alpha, editable geometry, weights and other cloth are preserved."
+}

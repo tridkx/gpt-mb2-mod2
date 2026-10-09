@@ -1,8 +1,13 @@
 """Fit a Mingyu-only posterior torso collider; preserve validated leg body."""
-import json,sys,hashlib,xml.etree.ElementTree as ET
+import json,sys,hashlib,argparse,xml.etree.ElementTree as ET
 from pathlib import Path
 import numpy as np
 ROOT=Path(__file__).resolve().parents[1]
+parser=argparse.ArgumentParser()
+parser.add_argument('--back-inset',type=float,default=.008)
+parser.add_argument('--top-height',type=float,default=1.30)
+parser.add_argument('--report',default='reports/back_collision_fit.json')
+args=parser.parse_args()
 WS=next(p for p in ROOT.parents if (p/'tools/asset_helpers').is_dir())
 sys.path.insert(0,str(WS/'tools/asset_helpers/tools'));sys.path.insert(0,str(WS/'tools/asset_helpers/previewer'))
 from georead import read_geo
@@ -22,12 +27,12 @@ for b in list(root):
 body=ET.SubElement(root,'body',{'name':'sx_mingyu_back_collision','owner_skeleton':'human_skeleton'})
 caps=ET.SubElement(body,'capsules');rows=[]
 surface=[]
-for height in [.96,1.30]:
+for height in [.96,args.top_height]:
  band=torso[abs(torso[:,2]-height)<.055];assert len(band)>5
  surface.append(float(np.quantile(band[:,1],.04)))
 for column in [-.065,0,.065]:
  radius=.045
- ends=np.array([[column,surface[0]+radius+.008,.96],[column,surface[1]+radius+.008,1.30]])
+ ends=np.array([[column,surface[0]+radius+args.back_inset,.96],[column,surface[1]+radius+args.back_inset,args.top_height]])
  axis=ends[1]-ends[0];length=np.linalg.norm(axis);x=axis/length
  z=np.cross(x,[0,1,0]);z/=np.linalg.norm(z);y=np.cross(z,x)
  frame=np.eye(4);frame[:3,:3]=[x,y,z];frame[3,:3]=ends[0]
@@ -59,6 +64,6 @@ for label in ['idle','run']:
   for cap in caps:moved=project(moved,cap,skin)
   offset=moved-p
   diagnostics.append({'animation':label,'frame':int(frame),'projected_vertices':int((np.linalg.norm(offset,axis=1)>.0001).sum()),'max_lift_m':float(offset[:,2].max()),'max_projection_m':float(np.linalg.norm(offset,axis=1).max()),'worst_lift_rest_position':hair['pos'][np.argmax(offset[:,2])].tolist()})
-report={'status':'pass','body_name':body.get('name'),'xml_sha256':hashlib.sha256(xml.read_bytes()).hexdigest(),'leg_body_unchanged':True,'capsules':rows,'hair_projection_diagnostics':diagnostics,'scope':'Own back surface fitting and native skeletal motion, no engine cloth/dummy collision. Only posterior torso, no scalp or chest capsule; all hair geometry and solver distances unchanged.'}
-(ROOT/'reports/back_collision_fit.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
+report={'status':'pass','body_name':body.get('name'),'back_surface_inset_m':args.back_inset,'top_height_m':args.top_height,'xml_sha256':hashlib.sha256(xml.read_bytes()).hexdigest(),'leg_body_unchanged':True,'capsules':rows,'hair_projection_diagnostics':diagnostics,'scope':'Own back surface fitting and native skeletal motion, no engine cloth/dummy collision. Only posterior torso, no scalp or chest capsule; all hair geometry and solver distances unchanged.'}
+(ROOT/args.report).write_text(json.dumps(report,indent=2),encoding='utf-8')
 print('BACK_BODY_FITTED',diagnostics[0],'; run max lift',max(d['max_lift_m'] for d in diagnostics),flush=True)

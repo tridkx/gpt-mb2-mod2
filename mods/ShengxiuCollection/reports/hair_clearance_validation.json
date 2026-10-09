@@ -1,0 +1,312 @@
+{
+  "status": "pass",
+  "version": "v1.1.4",
+  "check_scope": "offline_hair_solver_distance_candidate",
+  "final_package_sha256": "4e4e921944451b8612471426177159d8f1ee1ec96a35b9a1892e541edeb3a0ef",
+  "baseline_package_sha256": "78ba100f6fb9ff27a1699ce5ee5230bd827dec283271a5e0f0a1e77e3f469b16",
+  "collision_xml_sha256": "3897c0bb96804c375e2aa135d10ec868fdadc2c46c4710f5f1255b7df6aae2e6",
+  "accepted_leg_collision_unchanged": true,
+  "all_56_mesh_metadata_and_geometry_hashes_identical": true,
+  "all_fixed_roots_preserved": true,
+  "all_editor_data_and_other_cloth_blobs_identical": true,
+  "changed_blob_sha256": "e6d2883638c1e015f874e0228b2d4f665738792bdc98290b0105b08b465e94ca",
+  "only_hair_max_distances_changed": true,
+  "old_max_solver_distance_m": 0.0235294122248888,
+  "new_max_solver_distance_m": 0.07058823853731155,
+  "offline_active_vertex_budget_conflicts_after": 0,
+  "motions": [
+    {
+      "animation": "idle",
+      "frame": 1,
+      "max_required_distance_m": 0.04199704666502435,
+      "old_budget_conflict_positions": 106
+    },
+    {
+      "animation": "run",
+      "frame": 1,
+      "max_required_distance_m": 0.042609582970042026,
+      "old_budget_conflict_positions": 271
+    },
+    {
+      "animation": "run",
+      "frame": 2,
+      "max_required_distance_m": 0.04405246216197595,
+      "old_budget_conflict_positions": 260
+    },
+    {
+      "animation": "run",
+      "frame": 3,
+      "max_required_distance_m": 0.044349241405840366,
+      "old_budget_conflict_positions": 194
+    },
+    {
+      "animation": "run",
+      "frame": 4,
+      "max_required_distance_m": 0.04316178088092433,
+      "old_budget_conflict_positions": 162
+    },
+    {
+      "animation": "run",
+      "frame": 5,
+      "max_required_distance_m": 0.04319344399134674,
+      "old_budget_conflict_positions": 114
+    },
+    {
+      "animation": "run",
+      "frame": 6,
+      "max_required_distance_m": 0.0416677609434094,
+      "old_budget_conflict_positions": 108
+    },
+    {
+      "animation": "run",
+      "frame": 7,
+      "max_required_distance_m": 0.043874814846579575,
+      "old_budget_conflict_positions": 135
+    },
+    {
+      "animation": "run",
+      "frame": 8,
+      "max_required_distance_m": 0.0438394436475884,
+      "old_budget_conflict_positions": 162
+    },
+    {
+      "animation": "run",
+      "frame": 9,
+      "max_required_distance_m": 0.04371977429146652,
+      "old_budget_conflict_positions": 165
+    },
+    {
+      "animation": "run",
+      "frame": 10,
+      "max_required_distance_m": 0.044270979474491184,
+      "old_budget_conflict_positions": 182
+    },
+    {
+      "animation": "run",
+      "frame": 11,
+      "max_required_distance_m": 0.0436360496455507,
+      "old_budget_conflict_positions": 225
+    },
+    {
+      "animation": "run",
+      "frame": 12,
+      "max_required_distance_m": 0.0441594441762017,
+      "old_budget_conflict_positions": 233
+    },
+    {
+      "animation": "run",
+      "frame": 13,
+      "max_required_distance_m": 0.04437611116092913,
+      "old_budget_conflict_positions": 240
+    },
+    {
+      "animation": "run",
+      "frame": 14,
+      "max_required_distance_m": 0.04445104624231431,
+      "old_budget_conflict_positions": 223
+    },
+    {
+      "animation": "run",
+      "frame": 15,
+      "max_required_distance_m": 0.042691844300184044,
+      "old_budget_conflict_positions": 182
+    },
+    {
+      "animation": "run",
+      "frame": 16,
+      "max_required_distance_m": 0.0425604981273205,
+      "old_budget_conflict_positions": 169
+    },
+    {
+      "animation": "run",
+      "frame": 17,
+      "max_required_distance_m": 0.04212164573645669,
+      "old_budget_conflict_positions": 142
+    },
+    {
+      "animation": "run",
+      "frame": 18,
+      "max_required_distance_m": 0.044264976226093614,
+      "old_budget_conflict_positions": 113
+    },
+    {
+      "animation": "run",
+      "frame": 19,
+      "max_required_distance_m": 0.04245859423374077,
+      "old_budget_conflict_positions": 135
+    },
+    {
+      "animation": "run",
+      "frame": 20,
+      "max_required_distance_m": 0.04225719041750843,
+      "old_budget_conflict_positions": 142
+    },
+    {
+      "animation": "run",
+      "frame": 21,
+      "max_required_distance_m": 0.043374209467704206,
+      "old_budget_conflict_positions": 154
+    },
+    {
+      "animation": "run",
+      "frame": 22,
+      "max_required_distance_m": 0.043457318924321926,
+      "old_budget_conflict_positions": 222
+    },
+    {
+      "animation": "run",
+      "frame": 23,
+      "max_required_distance_m": 0.043971817105977515,
+      "old_budget_conflict_positions": 256
+    },
+    {
+      "animation": "run",
+      "frame": 24,
+      "max_required_distance_m": 0.04437473996366826,
+      "old_budget_conflict_positions": 285
+    },
+    {
+      "animation": "run",
+      "frame": 25,
+      "max_required_distance_m": 0.04260930316643947,
+      "old_budget_conflict_positions": 271
+    }
+  ],
+  "policy": {
+    "version": "v1.1.4",
+    "mesh": "sx_mingyu_head_00",
+    "back_surface_inset_m": -0.002,
+    "back_top_height_m": 1.27,
+    "minimum_existing_distance_scale": 3.0,
+    "projection_allowance_m": 0.005,
+    "maximum_solver_distance_m": 0.12,
+    "preserve_zero_distance_roots": true,
+    "scope": "Solver-only hair distance override derived from own back collision and native idle/run poses; renderer alpha, editable geometry, weights and other cloth are preserved."
+  },
+  "other_set_package_hashes_unchanged": {
+    "sx_baifeng.tpac": "368ebcf077393ee65bc903f1f63faefbfc30a90e776a9d2e4d32b477374ada4f",
+    "sx_suwen.tpac": "6125def32ab0af2722b1118760be051b74728c4471400425025586217821d5ec"
+  },
+  "packages": [
+    {
+      "set": "圣绣 · 明玉",
+      "prefix": "sx_mingyu",
+      "path": "module/ShengxiuCollection/AssetPackages/sx_mingyu.tpac",
+      "sha256": "4e4e921944451b8612471426177159d8f1ee1ec96a35b9a1892e541edeb3a0ef",
+      "package_guid": "61b5685b-e677-5611-a508-75e712e41bfd",
+      "report": "reports/hair_clearance_validation.json",
+      "cloth_meshes": 4,
+      "lods": [
+        {
+          "lod": 0,
+          "vertices": 18529,
+          "triangles": 22215
+        },
+        {
+          "lod": 1,
+          "vertices": 13031,
+          "triangles": 14760
+        },
+        {
+          "lod": 2,
+          "vertices": 8798,
+          "triangles": 9548
+        },
+        {
+          "lod": 3,
+          "vertices": 5948,
+          "triangles": 6575
+        }
+      ]
+    },
+    {
+      "set": "圣绣 · 白凤",
+      "prefix": "sx_baifeng",
+      "path": "module/ShengxiuCollection/AssetPackages/sx_baifeng.tpac",
+      "sha256": "368ebcf077393ee65bc903f1f63faefbfc30a90e776a9d2e4d32b477374ada4f",
+      "package_guid": "4afd33cc-1975-56cb-9de6-9614d79d5ca7",
+      "report": "sets/02_Baifeng/reports/release_validation.json",
+      "cloth_meshes": 6,
+      "lods": [
+        {
+          "lod": 0,
+          "vertices": 35456,
+          "triangles": 37186
+        },
+        {
+          "lod": 1,
+          "vertices": 24860,
+          "triangles": 23741
+        },
+        {
+          "lod": 2,
+          "vertices": 16393,
+          "triangles": 14383
+        },
+        {
+          "lod": 3,
+          "vertices": 11007,
+          "triangles": 9047
+        }
+      ]
+    },
+    {
+      "set": "圣绣 · 素问",
+      "prefix": "sx_suwen",
+      "path": "module/ShengxiuCollection/AssetPackages/sx_suwen.tpac",
+      "sha256": "6125def32ab0af2722b1118760be051b74728c4471400425025586217821d5ec",
+      "package_guid": "74179f6f-8070-5fd6-838c-12a141449ec4",
+      "report": "sets/03_Suwen/reports/release_validation.json",
+      "cloth_meshes": 6,
+      "lods": [
+        {
+          "lod": 0,
+          "vertices": 11431,
+          "triangles": 14919
+        },
+        {
+          "lod": 1,
+          "vertices": 8258,
+          "triangles": 10375
+        },
+        {
+          "lod": 2,
+          "vertices": 5872,
+          "triangles": 7202
+        },
+        {
+          "lod": 3,
+          "vertices": 4339,
+          "triangles": 5389
+        }
+      ]
+    }
+  ],
+  "package_audit": {
+    "package": "D:\\gpt-mb2-mod2\\mods\\ShengxiuCollection\\build\\hair_clearance_candidate_v1.1.4.tpac",
+    "status": "pass",
+    "scope": "Metadata round-trip, references and standard shader vertex-alpha risk only; textures, custom shader paths, geometry, weights, cloth dynamics and game behavior are not validated",
+    "cloth_vertex_alpha": true,
+    "errors": [],
+    "incomplete": [],
+    "observations": [],
+    "package_sha256": "4e4e921944451b8612471426177159d8f1ee1ec96a35b9a1892e541edeb3a0ef",
+    "tool_output": {
+      "metacheck": "D:\\gpt-mb2-mod2\\mods\\ShengxiuCollection\\build\\hair_clearance_candidate_v1.1.4.tpac: 23 assets | checksum ok=23 bad=0 | metadata identical=23 differ=0 noSerializer=0",
+      "mataudit": "D:\\gpt-mb2-mod2\\mods\\ShengxiuCollection\\build\\hair_clearance_candidate_v1.1.4.tpac: 9 materials, 23 assets\n  metamesh-level material missing=0 | submesh Material present=56 missing=0 | submesh SecondMaterial present=0 missing=0 | metameshes with no material at all=0"
+    },
+    "counts": {
+      "materials": 9,
+      "submeshes": 56,
+      "cloth_submeshes": 4,
+      "lods": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  "game_test_verified": false,
+  "limitations": "Native skeletal capsule projection only, not a full cloth solver. Larger hair travel and fitted back boundary require game confirmation of natural drape and back clipping; anchors, fabric constraints, body sliders and IK can still affect motion."
+}
