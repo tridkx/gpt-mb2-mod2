@@ -1,0 +1,786 @@
+{
+  "materials": [
+    {
+      "Name": "zw_fuyu_eye",
+      "Guid": "cae34995-4247-4e14-05b3-171927e1cb67",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_fuyu_face",
+      "Guid": "0edfa465-faf4-0e63-43d6-a216b6e7b8fc",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_fuyu_skin",
+      "Guid": "2a1e769c-fa95-dd03-e880-f3d790ebb8bb",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_fuyu_pants",
+      "Guid": "02bb9bf1-8e8b-9b70-e5d4-8670a0fd971e",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_fuyu_cuff",
+      "Guid": "b07d1bfa-a0c2-6bd2-a102-2573068b7d58",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_fuyu_lash",
+      "Guid": "1a24e61e-b52b-0e70-0683-45c073923ceb",
+      "BlendMode": "factor",
+      "AlphaTest": 0.4,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_fuyu_hair",
+      "Guid": "75ddd5e9-076d-51f9-c950-618968fc945a",
+      "BlendMode": "factor",
+      "AlphaTest": 0.05,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_fuyu_ornament",
+      "Guid": "ba522d57-7cd8-44f3-aa6f-aa3f5b12f70e",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_fuyu_cloth",
+      "Guid": "318a3ac5-07ae-16eb-edd3-51da54e7a509",
+      "BlendMode": "factor",
+      "AlphaTest": 0.08,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "Name": "zw_fuyu_head_00",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "cae34995-4247-4e14-05b3-171927e1cb67",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "8ECA945D8AF7C6A44A2A5F68BE4C485C069E2E0329C1C74F42A437F986C31B8C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_00.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "cae34995-4247-4e14-05b3-171927e1cb67",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "8ECA945D8AF7C6A44A2A5F68BE4C485C069E2E0329C1C74F42A437F986C31B8C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_00.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "cae34995-4247-4e14-05b3-171927e1cb67",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "8ECA945D8AF7C6A44A2A5F68BE4C485C069E2E0329C1C74F42A437F986C31B8C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_00.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "cae34995-4247-4e14-05b3-171927e1cb67",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "8ECA945D8AF7C6A44A2A5F68BE4C485C069E2E0329C1C74F42A437F986C31B8C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_01",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "0edfa465-faf4-0e63-43d6-a216b6e7b8fc",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "96B6ABF47CC0B2E8CA78C06F343763851ACF28C47D7EB2C64AF17C4233AAEF5A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_01.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "0edfa465-faf4-0e63-43d6-a216b6e7b8fc",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "96B6ABF47CC0B2E8CA78C06F343763851ACF28C47D7EB2C64AF17C4233AAEF5A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_01.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "0edfa465-faf4-0e63-43d6-a216b6e7b8fc",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "96B6ABF47CC0B2E8CA78C06F343763851ACF28C47D7EB2C64AF17C4233AAEF5A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_01.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "0edfa465-faf4-0e63-43d6-a216b6e7b8fc",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "96B6ABF47CC0B2E8CA78C06F343763851ACF28C47D7EB2C64AF17C4233AAEF5A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_04",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "1a24e61e-b52b-0e70-0683-45c073923ceb",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "7E97F373356B02DC88C773820E5860C2CD44FCEC9AE29C90EA386B3888E9E0A1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_04.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "1a24e61e-b52b-0e70-0683-45c073923ceb",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "7E97F373356B02DC88C773820E5860C2CD44FCEC9AE29C90EA386B3888E9E0A1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_04.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "1a24e61e-b52b-0e70-0683-45c073923ceb",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "7E97F373356B02DC88C773820E5860C2CD44FCEC9AE29C90EA386B3888E9E0A1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_04.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "1a24e61e-b52b-0e70-0683-45c073923ceb",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "7E97F373356B02DC88C773820E5860C2CD44FCEC9AE29C90EA386B3888E9E0A1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_08",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "ba522d57-7cd8-44f3-aa6f-aa3f5b12f70e",
+      "Vertices": 386,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "DED93A068CDB6977F471B83E85BAD12361F9F763F6D3B060A4FDD78E5984D3F0",
+      "VertexStreamSHA256": "7634D2F75C22CDA3B50531D31EA32462A9ECCE7EBB19542507286493CE57AE7F",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_08.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "ba522d57-7cd8-44f3-aa6f-aa3f5b12f70e",
+      "Vertices": 259,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "646E230F10F6918CF07BDB033D2903A1FED3C0F9C5B4AA60CED042E0DF31A354",
+      "VertexStreamSHA256": "E02420BC7F0A4E8D41DC8BC5F160CC311C3649CE3B7954D3466EFD4B66E3E50C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_08.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "ba522d57-7cd8-44f3-aa6f-aa3f5b12f70e",
+      "Vertices": 176,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "22D17B6A0BE4C485EE07C0CDE6476C0E2063B7A230AD4122D37D6E9C846E440B",
+      "VertexStreamSHA256": "91F707221085EA27337BF662372777425144887E268815B906819E11AD9D7052",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_08.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "ba522d57-7cd8-44f3-aa6f-aa3f5b12f70e",
+      "Vertices": 111,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "FF32C8836250F5C0D291AF22A80C822F9F847B44B7F29A7BE8E6DDF3508D93E3",
+      "VertexStreamSHA256": "DDFC905E0D1B4342DF0849963DA0EEFFFB5F0733FF49A6E72FCBAE717F91CEDA",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_09",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "ba522d57-7cd8-44f3-aa6f-aa3f5b12f70e",
+      "Vertices": 319,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "C2D5E92FF2BF9E6684F32A693B84FF17FE5E8C83CB610942CD0618C6962CDCEF",
+      "VertexStreamSHA256": "98E525439DE7461AC072EC222D5AACE04DC107103E8DDDCB49849EA280AC47AF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_09.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "ba522d57-7cd8-44f3-aa6f-aa3f5b12f70e",
+      "Vertices": 224,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "825F1DCB55A9D1BA14B36645909A4BB6581396B69FC21A3BA52CAF996DD24EFB",
+      "VertexStreamSHA256": "CAA80BB977FC3542A0B637B041E54A375064291724DA5D3151E179AD18DF6E9F",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_09.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "ba522d57-7cd8-44f3-aa6f-aa3f5b12f70e",
+      "Vertices": 145,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "563BEFCF03ACB41A39C1F0EBDAAC100192A4DC48ADCC36F9E7F66ACD467015D4",
+      "VertexStreamSHA256": "A703DBC0F40267B5D374F92C00C9C668392F5FA04F8381C956CEA1689B555591",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_09.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "ba522d57-7cd8-44f3-aa6f-aa3f5b12f70e",
+      "Vertices": 90,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "99BF9D362830AF8572AC203D0F98C593EA5E74AB1ECCA14D0E1C41AB0C548E53",
+      "VertexStreamSHA256": "1803277869D2241F344F0F6B95FF04ABF25C9AFDC2D02FB141FD59A96395007D",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_10",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "75ddd5e9-076d-51f9-c950-618968fc945a",
+      "Vertices": 3427,
+      "AlphaMin": 0,
+      "AlphaMax": 9,
+      "ColorsSHA256": "645E42D045EAD4683BEF829D1733A84BBF85144169BB6BC820B2985C687323B6",
+      "VertexStreamSHA256": "622933B292D5CD8A8A3A82A4D7C0173EBF8DBCEC0DCD78B38434686DB3C32818",
+      "ClothMetadataSHA256": "543623C729FA1321E633ADA2C976044C38B04DD82CB789D26DD78C654247B698"
+    },
+    {
+      "Name": "zw_fuyu_head_10.lod1",
+      "Lod": 1,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "75ddd5e9-076d-51f9-c950-618968fc945a",
+      "Vertices": 2133,
+      "AlphaMin": 0,
+      "AlphaMax": 9,
+      "ColorsSHA256": "9C60A359976D740AD71059C155191738FE0B51D88AEF991A259D0AE9D1B477F8",
+      "VertexStreamSHA256": "8908334D298ED5850ABFE2A57CA6FC77497C4EA507C5C2EFEAAA1ABB58668F0E",
+      "ClothMetadataSHA256": "543623C729FA1321E633ADA2C976044C38B04DD82CB789D26DD78C654247B698"
+    },
+    {
+      "Name": "zw_fuyu_head_10.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "75ddd5e9-076d-51f9-c950-618968fc945a",
+      "Vertices": 1272,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "DF398E5A70A6E2600332436A74E386E207C491502D51BD76ECA3411EA5D758F5",
+      "VertexStreamSHA256": "385584DB3B1E2979D7A8F0F509460A91416D61DBA159EFB26D5280FB7B95DA04",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_10.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "75ddd5e9-076d-51f9-c950-618968fc945a",
+      "Vertices": 742,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "61CA2E40F80DDF5066AA07AFDF76ADF2645DC9FB44066E7B69DCCEDF4FA848DB",
+      "VertexStreamSHA256": "D6119930D208E021F2AAA26AAB64603239B268F1DF32015A492C46406E7F2402",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_11",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "75ddd5e9-076d-51f9-c950-618968fc945a",
+      "Vertices": 1790,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "7E463474A5DAAB2612B80DBE6619879939A01277043F2C91F8AE64E673752474",
+      "VertexStreamSHA256": "9397D9C52FFB2293EB97E31DDCACDBE31F8D0CA3C25E5EA73989C3AF7E1676B9",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_11.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "75ddd5e9-076d-51f9-c950-618968fc945a",
+      "Vertices": 1202,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "CA33D01FEAF21528FBD27DA4128AF81C12FAFEBC7DB6434FC6A92D2E27EA0489",
+      "VertexStreamSHA256": "B65B133406B165E28E1042131D6B5EB5A8E0771129E04AE6C6BD114C6AEC514C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_11.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "75ddd5e9-076d-51f9-c950-618968fc945a",
+      "Vertices": 742,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "61CA2E40F80DDF5066AA07AFDF76ADF2645DC9FB44066E7B69DCCEDF4FA848DB",
+      "VertexStreamSHA256": "BBC183942A8346FABE33488265396C497CC51F91EF11986C486FBA87B9F9F794",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_head_11.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "75ddd5e9-076d-51f9-c950-618968fc945a",
+      "Vertices": 447,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "53A0560254E7CBFEF4C44F48F38E4A67EF5CEB0306E380C2BDD5F22A3AB81021",
+      "VertexStreamSHA256": "203E57A224D26D7E760CBD829F688F176843E9C5630E76902B3F86F16F84E3C6",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_body_03",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "b07d1bfa-a0c2-6bd2-a102-2573068b7d58",
+      "Vertices": 312,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "7B8C2A4936A21C90BACFD782AAF44160CD998A6D0ED700E2B7497E8E0B6C278C",
+      "VertexStreamSHA256": "A472929C6F3A364959C4F874EF78F7D2F135CF372A3FF4406DCDD20EB7C99D4C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_body_03.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "b07d1bfa-a0c2-6bd2-a102-2573068b7d58",
+      "Vertices": 211,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "F22398D51B98C1D62CB1ED11A42CC2BD9B8E30857E6DB749B904259F1D3B8ED6",
+      "VertexStreamSHA256": "0E8C7A4D660B8123555DC994F1C81E337625782C47AD2D5D1754496F61BAA91E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_body_03.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "b07d1bfa-a0c2-6bd2-a102-2573068b7d58",
+      "Vertices": 131,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "582143604F31C5BA76078BA9BE1C109891DCC5A732916D4C17CB596DA8C8232D",
+      "VertexStreamSHA256": "E0B4AE696E5FF3AA0C5E44F0C0503725A200335C1F751FFE68D3B44A7DD5FB7B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_body_03.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "b07d1bfa-a0c2-6bd2-a102-2573068b7d58",
+      "Vertices": 77,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "3EEE6B1857D566D0798000991AC7B33E6A19CE3FE3EE0C85233056DA346AE3C1",
+      "VertexStreamSHA256": "A4A15B39F0F6A81A5A59C6EFF8D7EA401180A17E34D6F6BC9823B8CCF864A314",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_body_05",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "2a1e769c-fa95-dd03-e880-f3d790ebb8bb",
+      "Vertices": 1013,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "106676113B1226EB5625658CF82718A7572E46CC913F180144D61E80DFB5984C",
+      "VertexStreamSHA256": "F5A207639414056A6701B28DA97E1FA9865C9DF3B8711CA60CB7EA57C3E417EB",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_body_05.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "2a1e769c-fa95-dd03-e880-f3d790ebb8bb",
+      "Vertices": 655,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "AECD3E7BC6D465D09724669DF8FB582280C2875C11128F0BE54F47AB8B150EC2",
+      "VertexStreamSHA256": "84706434662EFBA32EC64223671C782FBEE6B4EF64AC9E981209D6E5192FCC79",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_body_05.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "2a1e769c-fa95-dd03-e880-f3d790ebb8bb",
+      "Vertices": 393,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "3A5F65858B1DE42A267B843D60D725B513FAB492973ED6ECADFCE7B40A6F903A",
+      "VertexStreamSHA256": "E92E3AEE2C3A2708638525CDDACF88E2388FD28E67AC53D6B0E6D87F86503499",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_body_05.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "2a1e769c-fa95-dd03-e880-f3d790ebb8bb",
+      "Vertices": 225,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "29C00D3066FD9AFD1F420ABA3C95BE69170FCB2797981B279BE21A8535BBB353",
+      "VertexStreamSHA256": "A5F3858AEC071DDD994F5061C8694A45CF62C9F17CB9639882D453C807D5ECBC",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_body_07",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "318a3ac5-07ae-16eb-edd3-51da54e7a509",
+      "Vertices": 2348,
+      "AlphaMin": 0,
+      "AlphaMax": 41,
+      "ColorsSHA256": "54B86885970B80222A419EB6842AA9E0B3B3ABB069CBBC8883C742D369D92BDC",
+      "VertexStreamSHA256": "023CE8B5746427BEC621B363D95725230DBE737BE90E2226C2E94B5E81796D00",
+      "ClothMetadataSHA256": "47716DD693B1EC84B70C090C34993F697FCACE062230372F7997D5FEC301D517"
+    },
+    {
+      "Name": "zw_fuyu_body_07.lod1",
+      "Lod": 1,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "318a3ac5-07ae-16eb-edd3-51da54e7a509",
+      "Vertices": 1469,
+      "AlphaMin": 0,
+      "AlphaMax": 41,
+      "ColorsSHA256": "FDD6D3C343C4BC70D39E30CEC30B3A94E660EF3DFA0932B15C0E1153D66139BB",
+      "VertexStreamSHA256": "50749626C39798050DB60B7A28CCD2A5D47F9924549508D8E96C89938339F32D",
+      "ClothMetadataSHA256": "47716DD693B1EC84B70C090C34993F697FCACE062230372F7997D5FEC301D517"
+    },
+    {
+      "Name": "zw_fuyu_body_07.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "318a3ac5-07ae-16eb-edd3-51da54e7a509",
+      "Vertices": 1015,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "C782A56D3B4310B580AB316ABAF4A5B822313C0D07F8F2A426513DAE04F0C03D",
+      "VertexStreamSHA256": "5FFC8F726AF03D53746B47B12755141FA5108A6AD74CB71021F32A2B9AE52340",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_body_07.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "318a3ac5-07ae-16eb-edd3-51da54e7a509",
+      "Vertices": 593,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "FFA2FD440317181F7D11F00F2FF8A994A3447DF6C3BAC5591E9CB4A9ED3D5D7D",
+      "VertexStreamSHA256": "3A502B08A7431A575DE1085123B8C48A67BE6641FB81A3BF8437EB9F5EA1E199",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_body_12",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "318a3ac5-07ae-16eb-edd3-51da54e7a509",
+      "Vertices": 2133,
+      "AlphaMin": 0,
+      "AlphaMax": 41,
+      "ColorsSHA256": "5CDBC69590C1D21FEF1C17DA1BA870CDC8B2F178429547568123AF180F92FE9B",
+      "VertexStreamSHA256": "30E6F25FBAE655EE8AF527EB751903AC95C921B198E4A029863849D9465BBA95",
+      "ClothMetadataSHA256": "590EEE50D8DDA1803521A37C49D7C1A6364393CE93A1A5F7B18200925F3550B2"
+    },
+    {
+      "Name": "zw_fuyu_body_12.lod1",
+      "Lod": 1,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "318a3ac5-07ae-16eb-edd3-51da54e7a509",
+      "Vertices": 1499,
+      "AlphaMin": 0,
+      "AlphaMax": 41,
+      "ColorsSHA256": "6BCC98546A243E8B81D24C962A77894F5EFD3C48583008768ED0E53EBE29B298",
+      "VertexStreamSHA256": "BB78CEC0506F1FD89E9AFE87ACFD6220A9A07B358E6F6E5D4445F529B80FB585",
+      "ClothMetadataSHA256": "590EEE50D8DDA1803521A37C49D7C1A6364393CE93A1A5F7B18200925F3550B2"
+    },
+    {
+      "Name": "zw_fuyu_body_12.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "318a3ac5-07ae-16eb-edd3-51da54e7a509",
+      "Vertices": 902,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "17CDC74BA8790E0713194F74526919CC3D36A5B6BF222E65AC3AB9A7299FAB3F",
+      "VertexStreamSHA256": "52CD370EBE0FD266C80A6D0340C75922B411E34838CB22CA5A95524BFA6D07D7",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_body_12.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "318a3ac5-07ae-16eb-edd3-51da54e7a509",
+      "Vertices": 526,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "10E25D9B756D50C0533B558B6ADF6D674DC661372A700CAF3EE015776018FC35",
+      "VertexStreamSHA256": "B12AE77C211ADAEA05CFFA5B76D9D7EF1E92EFB86FCE2006611E084BA2772A48",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_body_13",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "2a1e769c-fa95-dd03-e880-f3d790ebb8bb",
+      "Vertices": 363,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "6291EE8CD40630063E4939965FF76C99268B5DD565A3CF142954D9B69C1ECCDC",
+      "VertexStreamSHA256": "4B040DDAEBB2190EB231AA4C0C2A950AEBD1D0E3F02A6DC3B6B404616DCF8DDF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_body_13.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "2a1e769c-fa95-dd03-e880-f3d790ebb8bb",
+      "Vertices": 258,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "296C69C4D0968C747FB7419F814785C3BDAD758FA86EECCF6185E2036ED0C2CA",
+      "VertexStreamSHA256": "A9115A6AF1E8DA0F9A1C5C240967F6DD728C72A85C8ACE4FBCF16D4A4965ED06",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_body_13.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "2a1e769c-fa95-dd03-e880-f3d790ebb8bb",
+      "Vertices": 164,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "56AE51368C3B24FB5C9CF9BFD16031FC63509721D355217421FBBAE5D690ED04",
+      "VertexStreamSHA256": "DB6B2A4CBEFAB2D845CC31D3EBD6CC1AD2DCAE17DEC04FE1B91E7AC402147175",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_body_13.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "2a1e769c-fa95-dd03-e880-f3d790ebb8bb",
+      "Vertices": 102,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "DCA83D4FC09445587828A2FCA2C5314FADFC38AE179FAFC9A791194B46564665",
+      "VertexStreamSHA256": "21AE379BC6C4864D4A12865B599DABBAD6067F9BD761AE492C9649578E2FC85B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_legs_02",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "02bb9bf1-8e8b-9b70-e5d4-8670a0fd971e",
+      "Vertices": 1406,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "A07E699D029427832000C105B446772129550FD59A35AED84D1E57D6EA7B8084",
+      "VertexStreamSHA256": "1CFF4314DF6A4C3856F427D549B01D155124F745B9E8F18E0D207A5DF2A34EE4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_legs_02.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "02bb9bf1-8e8b-9b70-e5d4-8670a0fd971e",
+      "Vertices": 945,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "60BC4F25921ECCD83BA6B077ABD79C76FB9C479CB7FB926240A7B2E3632E1ABD",
+      "VertexStreamSHA256": "41B5E873BCF47DD285E4D51E9D7A2307B0EB7D2AE780DF459D5A6451F0BE6075",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_legs_02.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "02bb9bf1-8e8b-9b70-e5d4-8670a0fd971e",
+      "Vertices": 583,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B4140A25B8B27073B5143795A1FECFD0FEB753D4600393ECB7ADCD496A79AA53",
+      "VertexStreamSHA256": "F0B99ADF68BE8F357F6618D1FEEE7351CE242BEA6E53D8F024D1E49DB0C8EDEF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_legs_02.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "02bb9bf1-8e8b-9b70-e5d4-8670a0fd971e",
+      "Vertices": 314,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "FDF6E3B1CCDE863589CB99A4194F46BF15875715CB05883C98C7B426F2F504D1",
+      "VertexStreamSHA256": "7B9B0533D8FB8857A78401BA7F54CDF3DD8BA24796A70F7EC346D47B6300C04C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_legs_06",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "2a1e769c-fa95-dd03-e880-f3d790ebb8bb",
+      "Vertices": 146,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D2682AE9FB38F501ADF3E88E1E5241C35BC5AD429B517F96CB8B5A92E6911DDD",
+      "VertexStreamSHA256": "FDF896877068C2D27F16EF6E0DFD063CC61E46C7DC2AD45C66373CD402F78BF4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_legs_06.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "2a1e769c-fa95-dd03-e880-f3d790ebb8bb",
+      "Vertices": 100,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "4B576330A5FB8D83AEF0FC9D179BA6889D2882282CB0498B7BEEA754FFB76DFE",
+      "VertexStreamSHA256": "7F1616AACADA8ED1F1F88CE7BB975FC5B01B242838EB171CA4384E0BBDDCE924",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_legs_06.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "2a1e769c-fa95-dd03-e880-f3d790ebb8bb",
+      "Vertices": 61,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "FB8D4F7C20F71E43EBFEFB92E15AD7DE871AFD02CC804EB8B73E95BA6CF06E78",
+      "VertexStreamSHA256": "99CE0B254341278A13DE786E6F9E432ED5252B8664FB4EB5E238B2BE182C19B8",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_fuyu_legs_06.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "2a1e769c-fa95-dd03-e880-f3d790ebb8bb",
+      "Vertices": 39,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "6676080BE5BD696EB68B2FD13BD29C783F46CB137078EF3A0FB64250760D2A37",
+      "VertexStreamSHA256": "E05B4C51CC96C369AB20C8C8DBA1CD2CE130A101DB0E1FCCBD6FBD2B63C9F0FC",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    }
+  ]
+}

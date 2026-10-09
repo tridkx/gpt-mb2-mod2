@@ -1,0 +1,71 @@
+{
+  "package_sha256": "65474f5d5d25c585acbdbee5842cb4022e85aa42b29bd0c1c6eb2c9678867bbf",
+  "source": "Final TPAC re-export with decoded textures and quantized weights",
+  "game_cloth_solver_used": false,
+  "previews": [
+    {
+      "label": "rest_front",
+      "path": "reports/final_rest_front.png"
+    },
+    {
+      "label": "rest_side",
+      "path": "reports/final_rest_side.png"
+    },
+    {
+      "label": "rest_back",
+      "path": "reports/final_rest_back.png"
+    },
+    {
+      "label": "face_all",
+      "path": "reports/final_face_all.png"
+    },
+    {
+      "label": "face_no_lash",
+      "path": "reports/final_face_no_lash.png"
+    },
+    {
+      "label": "face_eye_only",
+      "path": "reports/final_face_eye_only.png"
+    },
+    {
+      "label": "idle",
+      "frame": 507,
+      "path": "reports/final_idle_worst.png"
+    },
+    {
+      "label": "run",
+      "frame": 8,
+      "path": "reports/final_run_worst.png"
+    },
+    {
+      "label": "run",
+      "frame": 2,
+      "path": "reports/final_run_contact.png",
+      "reason": "worst skirt proxy contact"
+    },
+    {
+      "label": "bow",
+      "frame": 76,
+      "path": "reports/final_bow_worst.png"
+    },
+    {
+      "label": "bow",
+      "frame": 89,
+      "path": "reports/final_bow_contact.png",
+      "reason": "worst skirt proxy contact"
+    },
+    {
+      "label": "riding",
+      "frame": 7,
+      "path": "reports/final_riding_worst.png"
+    },
+    {
+      "label": "riding",
+      "frame": 11,
+      "path": "reports/final_riding_contact.png",
+      "reason": "worst skirt proxy contact"
+    }
+  ],
+  "visually_reviewed": true,
+  "review_scope": "Final rest, face, motion/contact sheet reviewed; UV seam hanging attachments and riding skirt transitions checked. In-game dynamics pending."
+}

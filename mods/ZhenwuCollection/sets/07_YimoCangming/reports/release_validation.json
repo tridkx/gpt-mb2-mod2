@@ -1,0 +1,197 @@
+{
+  "version": "v1.3.0",
+  "status": "pass",
+  "check_scope": "offline_checks",
+  "final_package_sha256": "9d1e16548d419d4790b5a4d6dbc298c5bd0ef607fefacb1b585d6094ab247a93",
+  "baseline_package_sha256": null,
+  "baseline_reason": "Initial release; input SHA256 recorded in input_preservation.json",
+  "lods": [
+    {
+      "lod": 0,
+      "vertices": 11051,
+      "triangles": 14764
+    },
+    {
+      "lod": 1,
+      "vertices": 8246,
+      "triangles": 10865
+    },
+    {
+      "lod": 2,
+      "vertices": 6061,
+      "triangles": 7601
+    },
+    {
+      "lod": 3,
+      "vertices": 4654,
+      "triangles": 5970
+    }
+  ],
+  "seams": [
+    {
+      "lod": 0,
+      "shared_skin_points": 30,
+      "max_position_error": 0
+    },
+    {
+      "lod": 1,
+      "shared_skin_points": 30,
+      "max_position_error": 0
+    },
+    {
+      "lod": 2,
+      "shared_skin_points": 30,
+      "max_position_error": 0
+    },
+    {
+      "lod": 3,
+      "shared_skin_points": 30,
+      "max_position_error": 0
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "asset": "anim_inventory_idle",
+      "frames_checked": 16,
+      "total_frames": 1268,
+      "max_edge_extension": 2.451712394861998,
+      "max_p99_edge_extension": 1.6337894402460142,
+      "worst_frame": 507,
+      "worst_mesh": "zw_yimo_head_01",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0,
+        "worst_frame": 1,
+        "maximum_contact_samples": 0,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    },
+    {
+      "label": "run",
+      "asset": "anim_run_forward_unarmed",
+      "frames_checked": 25,
+      "total_frames": 26,
+      "max_edge_extension": 3.0001100041624835,
+      "max_p99_edge_extension": 1.9431770685404082,
+      "worst_frame": 8,
+      "worst_mesh": "zw_yimo_body_12",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0.057196232801721425,
+        "worst_frame": 19,
+        "maximum_contact_samples": 23,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    },
+    {
+      "label": "bow",
+      "asset": "anim_bow",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "max_edge_extension": 3.260289080091795,
+      "max_p99_edge_extension": 2.0634545623379594,
+      "worst_frame": 82,
+      "worst_mesh": "zw_yimo_legs_02",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0,
+        "worst_frame": 1,
+        "maximum_contact_samples": 0,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    },
+    {
+      "label": "riding",
+      "asset": "anim_rider_gallop_bow",
+      "frames_checked": 20,
+      "total_frames": 21,
+      "max_edge_extension": 3.4928170146258037,
+      "max_p99_edge_extension": 2.3550076817381003,
+      "worst_frame": 6,
+      "worst_mesh": "zw_yimo_legs_02",
+      "skirt_leg_proxy": {
+        "deepest_overlap_m": 0,
+        "worst_frame": 1,
+        "maximum_contact_samples": 0,
+        "method": "skirt vertices and triangle centres vs 75mm thigh / 50mm calf capsules; diagnostic only"
+      }
+    }
+  ],
+  "textures": [
+    {
+      "name": "zw_yimo_cloth_d",
+      "mips": 11,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.181640625,
+      "alpha_mean_error_255": 0.39275550842285156
+    },
+    {
+      "name": "zw_yimo_cuff_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.2516428629557292,
+      "alpha_mean_error_255": 0.0
+    },
+    {
+      "name": "zw_yimo_eye_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.24217732747395834,
+      "alpha_mean_error_255": 0.0
+    },
+    {
+      "name": "zw_yimo_face_d",
+      "mips": 11,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.4814567565917969,
+      "alpha_mean_error_255": 0.0
+    },
+    {
+      "name": "zw_yimo_flat_n",
+      "mips": 7,
+      "decoded_all_mips": true
+    },
+    {
+      "name": "zw_yimo_hair_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.06529617309570312,
+      "alpha_mean_error_255": 0.8559150695800781
+    },
+    {
+      "name": "zw_yimo_lash_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.633721669514974,
+      "alpha_mean_error_255": 0.4771614074707031
+    },
+    {
+      "name": "zw_yimo_neutral_s",
+      "mips": 7,
+      "decoded_all_mips": true
+    },
+    {
+      "name": "zw_yimo_ornament_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.1602630615234375,
+      "alpha_mean_error_255": 0.9871978759765625
+    },
+    {
+      "name": "zw_yimo_pants_d",
+      "mips": 10,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 0.16661834716796875,
+      "alpha_mean_error_255": 0.0
+    },
+    {
+      "name": "zw_yimo_skin_d",
+      "mips": 11,
+      "decoded_all_mips": true,
+      "rgb_mean_error_255": 1.0055821736653645,
+      "alpha_mean_error_255": 0.0
+    }
+  ],
+  "metadata_audit": "pass",
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "limitations": "Offline native skeletal motion. In-game cloth, weapon IK, face animation, body sliders and horse collision require user testing."
+}

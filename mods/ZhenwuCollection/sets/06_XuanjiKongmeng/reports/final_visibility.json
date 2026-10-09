@@ -1,0 +1,744 @@
+{
+  "materials": [
+    {
+      "Name": "zw_xuanji_eye",
+      "Guid": "9c2885b9-2a01-0ae0-8ea7-c0e05c45c820",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_xuanji_face",
+      "Guid": "7ae41f15-2435-2c70-d539-9996d19fdb32",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_xuanji_skin",
+      "Guid": "2d3e6cae-824a-4d4b-a459-4796d5e580d1",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_xuanji_pants",
+      "Guid": "80d52362-1eb1-94b8-14fc-c6c7904938ee",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_xuanji_cuff",
+      "Guid": "ef318ecb-9a06-93d6-d496-d6dbddda56f0",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_xuanji_lash",
+      "Guid": "ae34c8b9-5aca-8f80-b4a9-184dbc84bd5a",
+      "BlendMode": "factor",
+      "AlphaTest": 0.4,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_xuanji_hair",
+      "Guid": "46cb5821-90b4-c7ca-4d42-ac1a48dcb63a",
+      "BlendMode": "factor",
+      "AlphaTest": 0.05,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_xuanji_ornament",
+      "Guid": "c70dd5a6-8a15-7024-0da1-3b5d8188d750",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_xuanji_cloth",
+      "Guid": "84ba7bd9-0f0e-283c-fe6c-6087ae6647d7",
+      "BlendMode": "factor",
+      "AlphaTest": 0.08,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "Name": "zw_xuanji_head_00",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "9c2885b9-2a01-0ae0-8ea7-c0e05c45c820",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "8ECA945D8AF7C6A44A2A5F68BE4C485C069E2E0329C1C74F42A437F986C31B8C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_00.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "9c2885b9-2a01-0ae0-8ea7-c0e05c45c820",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "8ECA945D8AF7C6A44A2A5F68BE4C485C069E2E0329C1C74F42A437F986C31B8C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_00.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "9c2885b9-2a01-0ae0-8ea7-c0e05c45c820",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "8ECA945D8AF7C6A44A2A5F68BE4C485C069E2E0329C1C74F42A437F986C31B8C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_00.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "9c2885b9-2a01-0ae0-8ea7-c0e05c45c820",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "8ECA945D8AF7C6A44A2A5F68BE4C485C069E2E0329C1C74F42A437F986C31B8C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_01",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "7ae41f15-2435-2c70-d539-9996d19fdb32",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "0CE75ABCA85479729A8BABA92753EA9FD778E5A49F0F2636EC46E405F2C5E452",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_01.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "7ae41f15-2435-2c70-d539-9996d19fdb32",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "0CE75ABCA85479729A8BABA92753EA9FD778E5A49F0F2636EC46E405F2C5E452",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_01.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "7ae41f15-2435-2c70-d539-9996d19fdb32",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "0CE75ABCA85479729A8BABA92753EA9FD778E5A49F0F2636EC46E405F2C5E452",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_01.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "7ae41f15-2435-2c70-d539-9996d19fdb32",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "0CE75ABCA85479729A8BABA92753EA9FD778E5A49F0F2636EC46E405F2C5E452",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_04",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "ae34c8b9-5aca-8f80-b4a9-184dbc84bd5a",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "7E97F373356B02DC88C773820E5860C2CD44FCEC9AE29C90EA386B3888E9E0A1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_04.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "ae34c8b9-5aca-8f80-b4a9-184dbc84bd5a",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "7E97F373356B02DC88C773820E5860C2CD44FCEC9AE29C90EA386B3888E9E0A1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_04.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "ae34c8b9-5aca-8f80-b4a9-184dbc84bd5a",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "7E97F373356B02DC88C773820E5860C2CD44FCEC9AE29C90EA386B3888E9E0A1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_04.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "ae34c8b9-5aca-8f80-b4a9-184dbc84bd5a",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "7E97F373356B02DC88C773820E5860C2CD44FCEC9AE29C90EA386B3888E9E0A1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_08",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "c70dd5a6-8a15-7024-0da1-3b5d8188d750",
+      "Vertices": 396,
+      "AlphaMin": 0,
+      "AlphaMax": 15,
+      "ColorsSHA256": "64B0244403EAA14D80DBC8228CE02E710C8B15276EF7AF096D895766BC3C6051",
+      "VertexStreamSHA256": "8EF5E26EF828AF6843CD076611957364D121E53B9C3DD794C59AF09C936EDD6C",
+      "ClothMetadataSHA256": "0CEEE1CE38CAC5AA62C40CCA27BA2235858F4EFF90422223B6850744A89D2D5B"
+    },
+    {
+      "Name": "zw_xuanji_head_08.lod1",
+      "Lod": 1,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "c70dd5a6-8a15-7024-0da1-3b5d8188d750",
+      "Vertices": 264,
+      "AlphaMin": 0,
+      "AlphaMax": 15,
+      "ColorsSHA256": "B7EFCB59F09BBC4A7584E47D9CFB297F51DAF526E42B5CE1BF0A600232DEBFDB",
+      "VertexStreamSHA256": "AB86729671AA5AE5DD77E1E2669849758321D3F0DCDF0879DC12C87189FAECC5",
+      "ClothMetadataSHA256": "0CEEE1CE38CAC5AA62C40CCA27BA2235858F4EFF90422223B6850744A89D2D5B"
+    },
+    {
+      "Name": "zw_xuanji_head_08.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "c70dd5a6-8a15-7024-0da1-3b5d8188d750",
+      "Vertices": 176,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "22D17B6A0BE4C485EE07C0CDE6476C0E2063B7A230AD4122D37D6E9C846E440B",
+      "VertexStreamSHA256": "DD7F7CC9B9FA5F75E210A3A2EAB998C980B4C5CCD26F877DD55C17E21362CB46",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_08.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "c70dd5a6-8a15-7024-0da1-3b5d8188d750",
+      "Vertices": 106,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "3BED70187DB7CF2FB2F67F99A72355C1224178577B84E20A5C2A2468F03A365D",
+      "VertexStreamSHA256": "F3F0D78F544F038AD68302C6B96C5953452165AFE637FCD0A28809BCB55FC449",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_09",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "c70dd5a6-8a15-7024-0da1-3b5d8188d750",
+      "Vertices": 524,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "48C638AAF3E1F480E36E23CB3849F4756A14AA392AAC179877CCEE68252D0AB6",
+      "VertexStreamSHA256": "39AFE1AD59F701F9318B007C430B912581430A1F30E21BB485843FE1DAE357CF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_09.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "c70dd5a6-8a15-7024-0da1-3b5d8188d750",
+      "Vertices": 383,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "344AE46D19E19AB381E62255121B1FDDDB48394E7D71262692DDCB2F48471EE2",
+      "VertexStreamSHA256": "40109EB0CB3242A3D9A36589481B1C0F05C0D33FB93B2290833E7F6738F5AF1D",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_09.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "c70dd5a6-8a15-7024-0da1-3b5d8188d750",
+      "Vertices": 268,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "74EDB138F6D650D78CA9C4E6BC98E25165AFAEFD6DECA21E11AA017E6FB646FD",
+      "VertexStreamSHA256": "F1DB87F2A957248CF7E28D1728BEAAF003B4FB3117D14341F026DE59D31A2865",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_09.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "c70dd5a6-8a15-7024-0da1-3b5d8188d750",
+      "Vertices": 130,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "BE6CCEEB49546EA6291AE8097D6025CDC17A4CB0ED99EC13F9EEE9D1740F1A2B",
+      "VertexStreamSHA256": "78B0DCC5237145E7538439B318B2ACB4256CC34E18F58B4DA3E074AAD1A90B52",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_10",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "46cb5821-90b4-c7ca-4d42-ac1a48dcb63a",
+      "Vertices": 3572,
+      "AlphaMin": 0,
+      "AlphaMax": 15,
+      "ColorsSHA256": "413E0BF2AE66D0AA9757F7B08960ACE0CE571A220D52C116EB43E3E37091D993",
+      "VertexStreamSHA256": "91AD4BB116E4C77B2CA9B88436454CC662671DD03D183D71E867298BA9D171F4",
+      "ClothMetadataSHA256": "0CEEE1CE38CAC5AA62C40CCA27BA2235858F4EFF90422223B6850744A89D2D5B"
+    },
+    {
+      "Name": "zw_xuanji_head_10.lod1",
+      "Lod": 1,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "46cb5821-90b4-c7ca-4d42-ac1a48dcb63a",
+      "Vertices": 2258,
+      "AlphaMin": 0,
+      "AlphaMax": 15,
+      "ColorsSHA256": "3283151CDF0121580EDA26268AEC3EFB04D8D6559ACF7AB4EDF4718F9B8A2E76",
+      "VertexStreamSHA256": "F466397BF9882C6D8183AF048BB33BDFF2EA18D833C85B92F5654A177A6AAF5B",
+      "ClothMetadataSHA256": "0CEEE1CE38CAC5AA62C40CCA27BA2235858F4EFF90422223B6850744A89D2D5B"
+    },
+    {
+      "Name": "zw_xuanji_head_10.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "46cb5821-90b4-c7ca-4d42-ac1a48dcb63a",
+      "Vertices": 1370,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "7F61A1FBFD0455DC4B65EE180DC7E458D27C456BCC72C3BF74AE6A6AA19CB6D6",
+      "VertexStreamSHA256": "FBC6B509C8FDD38736A65E028FB2A975D3308CE86C0820F83BF76F26F592EED4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_head_10.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "46cb5821-90b4-c7ca-4d42-ac1a48dcb63a",
+      "Vertices": 818,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "0DFAC580E05BD8449FCF0F5D9556E5DD11FA5F45D93D2BC0DB886E0E79529543",
+      "VertexStreamSHA256": "DD1C23CC4CE4B73A93D01609F1E57562B4EC8E32764BFE6EB20DCB54C86B428C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_body_02",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "ef318ecb-9a06-93d6-d496-d6dbddda56f0",
+      "Vertices": 1626,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "83BAEDFE103FFC5DB4FCDCEF008C33C01A2DD8E20DC82BBEB77AF8CF21348F3E",
+      "VertexStreamSHA256": "1556B4ED09540B362AF7CAAFBBAFED71404CE39378915396D42CBF3F304D49C0",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_body_02.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "ef318ecb-9a06-93d6-d496-d6dbddda56f0",
+      "Vertices": 1112,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1A9738AC1539D2DD0C241225AD0621BC868C2D9EB3C020D4F555CF6903584CDF",
+      "VertexStreamSHA256": "746FD82187332B1EF254514D065A80555C1FEAB4D32B739C84248337CD94B1B8",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_body_02.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "ef318ecb-9a06-93d6-d496-d6dbddda56f0",
+      "Vertices": 707,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "F26B3A4546940FDAFCCE4F0B69F72755775A3867866B5037CD9886CA4F073B8F",
+      "VertexStreamSHA256": "96F545590F62352EB552EA879555C0E48107F1C95D4368096487C1C89A6C5ADB",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_body_02.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "ef318ecb-9a06-93d6-d496-d6dbddda56f0",
+      "Vertices": 404,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "8B36DAF8E0DAA3BDC2C46A5E9693F9E59C5B4781E12A783F6E1A9ADDDFB32B95",
+      "VertexStreamSHA256": "E532B99E3E473DABEFE356BD290B180E18B53FDE3571793758B21B912F38DF42",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_body_05",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "2d3e6cae-824a-4d4b-a459-4796d5e580d1",
+      "Vertices": 76,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "159F388C43E9508D09B792BBA2E08C15BE5F2E6DD9AE51FAE170A82D9BF38B4C",
+      "VertexStreamSHA256": "C6452534F501B2CFE706968A817CF1BED647A2C6FBB7DA846DD02114BDE79E5F",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_body_05.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "2d3e6cae-824a-4d4b-a459-4796d5e580d1",
+      "Vertices": 55,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "F5E1B086A0B5909D5B6D898615DE53FC12EA7BA4BC8A7A5D71A873606C9F5D57",
+      "VertexStreamSHA256": "5E406F2D07F803D2500E96E94CA4AE5DA50B405D9A4EB4BBDEC7132B5837BA1B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_body_05.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "2d3e6cae-824a-4d4b-a459-4796d5e580d1",
+      "Vertices": 46,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "5A247590D1E8624D212A40BC5DD7F7BE1FDA9A247A1CDBDDCB02F6B14A718A6A",
+      "VertexStreamSHA256": "33B951D9EF3EA728A9668CEEE29C1236842A9DD9EAF4649903D24A6BFBA31414",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_body_05.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "2d3e6cae-824a-4d4b-a459-4796d5e580d1",
+      "Vertices": 46,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "5A247590D1E8624D212A40BC5DD7F7BE1FDA9A247A1CDBDDCB02F6B14A718A6A",
+      "VertexStreamSHA256": "33B951D9EF3EA728A9668CEEE29C1236842A9DD9EAF4649903D24A6BFBA31414",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_body_07",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "84ba7bd9-0f0e-283c-fe6c-6087ae6647d7",
+      "Vertices": 959,
+      "AlphaMin": 0,
+      "AlphaMax": 41,
+      "ColorsSHA256": "B65B9088140EBE1BB28A801231EC933B2541D48D8D2AF7E1F7F28C57F9655DA3",
+      "VertexStreamSHA256": "EA6923821A8EF07A37AA9155D2021DA3EBE2ED0A61FDAD7A11618649899D4F2F",
+      "ClothMetadataSHA256": "257D631A0533EC98C34D7521404E6A920CD519FC554A4857603AE64BC754A0A7"
+    },
+    {
+      "Name": "zw_xuanji_body_07.lod1",
+      "Lod": 1,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "84ba7bd9-0f0e-283c-fe6c-6087ae6647d7",
+      "Vertices": 647,
+      "AlphaMin": 0,
+      "AlphaMax": 41,
+      "ColorsSHA256": "2BDB5E676B7407AF015F089618C083BF541609CC85DDFB01BB850C155363547B",
+      "VertexStreamSHA256": "0EA05C1E00C777C63A10006A65C0AFD3DFC63B9F63EDA365BC1B67310848234B",
+      "ClothMetadataSHA256": "257D631A0533EC98C34D7521404E6A920CD519FC554A4857603AE64BC754A0A7"
+    },
+    {
+      "Name": "zw_xuanji_body_07.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "84ba7bd9-0f0e-283c-fe6c-6087ae6647d7",
+      "Vertices": 408,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D052DBEEDD505081B5A2C25A60DB976211F2B49C578A5854965F2283330FD150",
+      "VertexStreamSHA256": "9BD1313E30ECF170A22485E0783D7CFDC4951FC490EA805AA4C7F9330F2290D6",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_body_07.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "84ba7bd9-0f0e-283c-fe6c-6087ae6647d7",
+      "Vertices": 246,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "22840897054C6A53B2EBDED48BF8EB1396FEF4D65BAFBA46F27B67640A3584C0",
+      "VertexStreamSHA256": "F33A9D20B2F92051254118FCB14C969D95252CF9B8A373B8CD34FCBE41960B56",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_body_11",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "84ba7bd9-0f0e-283c-fe6c-6087ae6647d7",
+      "Vertices": 2497,
+      "AlphaMin": 0,
+      "AlphaMax": 33,
+      "ColorsSHA256": "CE2AB93659ED12A9DBF40574752DC33F1761E2A83D7A36F8849C5302EE428CFE",
+      "VertexStreamSHA256": "AEED00D547AD0405A6018F01E736D19DAA2375BCD5C4BCB060EE77C47F9AA505",
+      "ClothMetadataSHA256": "24E3B1308AD6F8B542065B99534F0FA724AF55BD9643D88836F031C5D8A66808"
+    },
+    {
+      "Name": "zw_xuanji_body_11.lod1",
+      "Lod": 1,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "84ba7bd9-0f0e-283c-fe6c-6087ae6647d7",
+      "Vertices": 1984,
+      "AlphaMin": 0,
+      "AlphaMax": 31,
+      "ColorsSHA256": "6AD449A3DBE707FDBBE1616EDD13C56F9C706AC72EDF589DB78197164629755A",
+      "VertexStreamSHA256": "493B90624A0FBBB88BFEB2C8CE5D2F00058AE74C7ED12C249F2EEF91257576E3",
+      "ClothMetadataSHA256": "24E3B1308AD6F8B542065B99534F0FA724AF55BD9643D88836F031C5D8A66808"
+    },
+    {
+      "Name": "zw_xuanji_body_11.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "84ba7bd9-0f0e-283c-fe6c-6087ae6647d7",
+      "Vertices": 1069,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "C74B2F339C02278523CA9A256760C6B955E8FCA8B5BBBEB91FF9CEA748CF2B95",
+      "VertexStreamSHA256": "A7A8DDCE0D24473D48CE0658273C8393CB88F042A92CC2784AD470A1ED2EE9B1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_body_11.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "84ba7bd9-0f0e-283c-fe6c-6087ae6647d7",
+      "Vertices": 631,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "6AF2A6B1732C3D9337C820E06361EDC1303EF55D3D084AC12206F917CF6F24E7",
+      "VertexStreamSHA256": "2AE7CE0A03F67F26D78F3AC201CB19A1A23FF7ABEDC624A8E9515B92EF41AF31",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_body_12",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "2d3e6cae-824a-4d4b-a459-4796d5e580d1",
+      "Vertices": 408,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D052DBEEDD505081B5A2C25A60DB976211F2B49C578A5854965F2283330FD150",
+      "VertexStreamSHA256": "CAFC7FC69539AAEC653B66D5A551115A23476E03AEF3C9C0DFA117E27CF97322",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_body_12.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "2d3e6cae-824a-4d4b-a459-4796d5e580d1",
+      "Vertices": 292,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "0C759A75CE18939236EAD93ED3068C733B5549C3E077AB3FE7531E064520ABA5",
+      "VertexStreamSHA256": "3687CC3C09C625E4E949D20D3B399DD952DFB2B278B8FF5845958F5DEE0EDE38",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_body_12.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "2d3e6cae-824a-4d4b-a459-4796d5e580d1",
+      "Vertices": 188,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "E316F46C701ED8412ABBF02F450571043444D9BD4E4CB9694B07AF032CC519D7",
+      "VertexStreamSHA256": "000CEC892ACCFE67E09B8AC9FEDA35C2E717967BC1632CE71257C9030295FC33",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_body_12.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "2d3e6cae-824a-4d4b-a459-4796d5e580d1",
+      "Vertices": 121,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "CBFA2FB9AA6CA0767BAC6251851CDE64C0C5D88C8FE6DFE4040E88F6F0F55045",
+      "VertexStreamSHA256": "D613D343DB0B930FC237378FDB2A807117B5CAB94C111675988C2C18B6B55660",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_legs_03",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "80d52362-1eb1-94b8-14fc-c6c7904938ee",
+      "Vertices": 1008,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "FB3A09553932BCCC52D063BDE13169223E2048D11B0AB88EBAE56CA3941E6DA7",
+      "VertexStreamSHA256": "2CE8DAF4F52EDE9427E90253CA9D876C09AEB3440C56FA750242372FCC16B7AC",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_legs_03.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "80d52362-1eb1-94b8-14fc-c6c7904938ee",
+      "Vertices": 685,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "8A941DDB8CEAD16350FC4C9BFC0384A771D841F41C725654D40AFD8B3B6EB750",
+      "VertexStreamSHA256": "95DD5756F7A38A6B6F9C9138950F4C066DFEE27108A47969FA1DE78C1F91E94D",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_legs_03.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "80d52362-1eb1-94b8-14fc-c6c7904938ee",
+      "Vertices": 435,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "A0783EC2CC5B23EAE27ED7CA8F75038B7B63E946EF5560D4AB663B48EAC47043",
+      "VertexStreamSHA256": "37135735451718E4D5017715328409847C56002BDA795680C692C813F17D1D82",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_legs_03.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "80d52362-1eb1-94b8-14fc-c6c7904938ee",
+      "Vertices": 243,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "74EEE303B853BE5144DA608B6CDD6503262D3CC8605C9081ABC1E1E5705B6DBF",
+      "VertexStreamSHA256": "15ABB46C928C28CDBFDEB281F0588C6179B98474313BA3FAC4DADC2808B31F9E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_legs_06",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "2d3e6cae-824a-4d4b-a459-4796d5e580d1",
+      "Vertices": 238,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "A9D0928DE3F8A00576C17AE5D8E76B649533ABF5F3D9C8853C1F48FF085411C2",
+      "VertexStreamSHA256": "4050BD60D4691583A4BC888F4C032AE120C0E3758924C66F42F5068926DFC08E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_legs_06.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "2d3e6cae-824a-4d4b-a459-4796d5e580d1",
+      "Vertices": 159,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "35E3FAA72C11A688C21E678673B291C855F849F055958B42A99141F21CD8A811",
+      "VertexStreamSHA256": "18134052125CFBB2B1D9A6583169C98BA6930EBCD4DDE76E32BA4125EFCB99A1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_legs_06.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "2d3e6cae-824a-4d4b-a459-4796d5e580d1",
+      "Vertices": 96,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "393FE6607B32D8F4CE2A9E1D8ECFBBED4E355B2C254D33D66498D432B118A334",
+      "VertexStreamSHA256": "40E54CF61865C3DBFD2B85CA006AA224842E1FA82114C54EEF7EE50A3E6C674F",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_xuanji_legs_06.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "2d3e6cae-824a-4d4b-a459-4796d5e580d1",
+      "Vertices": 65,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "5D970285188E87CDACFBC97CDFB9C85BD95403DDBE8340046850F86FC8764060",
+      "VertexStreamSHA256": "8B6AA5376DAAC98763CE151A00B57E6CCFA3A3339DFA107BEACFB0FCCBF73018",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    }
+  ]
+}

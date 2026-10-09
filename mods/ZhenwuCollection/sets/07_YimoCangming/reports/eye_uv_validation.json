@@ -1,0 +1,83 @@
+{
+  "status": "pass",
+  "final_package_sha256": "9d1e16548d419d4790b5a4d6dbc298c5bd0ef607fefacb1b585d6094ab247a93",
+  "flipped_mesh": "mesh_04_443376",
+  "operation": "V -> 1 - V",
+  "other_meshes_unchanged": 13,
+  "texture_files_unchanged": true,
+  "source_uv_report": [
+    {
+      "source_mesh": "mesh_00_122067",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_01_140465",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_02_300678",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_03_362443",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_04_443376",
+      "flip_v": true,
+      "max_error": 2.9802322387695312e-08
+    },
+    {
+      "source_mesh": "mesh_05_465525",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_06_496506",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_07_502495",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_08_577318",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_09_671079",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_10_718836",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_11_724523",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_12_741038",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_13_871847",
+      "flip_v": false,
+      "max_error": 0.0
+    }
+  ],
+  "geometry_uv_texture_identity_evidence": "reports/source_measurement.json",
+  "visual_review": "reports/final_face_all.png",
+  "scope": "Original lash geometry/UV/texture match accepted Yunhai; source and final UV independently checked; final near-eye render requires visual review."
+}

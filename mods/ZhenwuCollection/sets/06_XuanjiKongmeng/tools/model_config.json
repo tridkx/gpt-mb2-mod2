@@ -1,0 +1,303 @@
+{
+  "id": "ZhenwuCollection",
+  "prefix": "zw_xuanji",
+  "title": "真武 · 玄机空濛",
+  "display_name": "Zhenwu Collection",
+  "original_directory": "D:\\dsh-tiandao\\真武少女校服8套\\06玄机空濛",
+  "source_coordinate_to_meters": 0.0125,
+  "source_landmarks": {
+    "pelvis": [
+      0,
+      -1,
+      77
+    ],
+    "spine": [
+      0,
+      -1,
+      84
+    ],
+    "spine1": [
+      0,
+      -1,
+      94
+    ],
+    "spine2": [
+      0,
+      -1,
+      104
+    ],
+    "neck": [
+      0,
+      -2,
+      113.7
+    ],
+    "head": [
+      0,
+      -2,
+      122
+    ],
+    "thigh": [
+      8,
+      -1,
+      77
+    ],
+    "calf": [
+      11,
+      -1.5,
+      40
+    ],
+    "foot": [
+      12.9,
+      -3,
+      7
+    ],
+    "toe0": [
+      12.9,
+      5,
+      1.5
+    ],
+    "clavicle": [
+      5,
+      -1,
+      110
+    ],
+    "upperarm_twist": [
+      15,
+      -1,
+      107
+    ],
+    "foretwist": [
+      27.5,
+      -1,
+      94
+    ],
+    "hand": [
+      37.5,
+      1,
+      81
+    ],
+    "finger0": [
+      42,
+      4,
+      76
+    ]
+  },
+  "parts": {
+    "mesh_00_123841": [
+      "head",
+      "eye",
+      "rigid_head"
+    ],
+    "mesh_01_142239": [
+      "head",
+      "face",
+      "skin"
+    ],
+    "mesh_02_302452": [
+      "body",
+      "cuff",
+      "arms"
+    ],
+    "mesh_03_417417": [
+      "legs",
+      "pants",
+      "legs"
+    ],
+    "mesh_04_491150": [
+      "head",
+      "lash",
+      "rigid_head"
+    ],
+    "mesh_05_513299": [
+      "body",
+      "skin",
+      "arms"
+    ],
+    "mesh_06_520744": [
+      "legs",
+      "skin",
+      "legs"
+    ],
+    "mesh_07_540973": [
+      "body",
+      "cloth",
+      "upper_clothes"
+    ],
+    "mesh_08_611852": [
+      "head",
+      "ornament",
+      "long_hair"
+    ],
+    "mesh_09_634915": [
+      "head",
+      "ornament",
+      "rigid_head"
+    ],
+    "mesh_10_668014": [
+      "head",
+      "hair",
+      "long_hair"
+    ],
+    "mesh_11_862127": [
+      "body",
+      "cloth",
+      "mixed_coat"
+    ],
+    "mesh_12_1041800": [
+      "body",
+      "skin",
+      "arms"
+    ]
+  },
+  "textures": {
+    "eye": [
+      "eye_D.png",
+      "opaque"
+    ],
+    "face": [
+      "face_D.png",
+      "opaque"
+    ],
+    "skin": [
+      "body_D.png",
+      "opaque"
+    ],
+    "pants": [
+      "pants_D.png",
+      "cutout"
+    ],
+    "cuff": [
+      "cuff_D.png",
+      "cutout"
+    ],
+    "lash": [
+      "eyelash_D.png",
+      "cutout"
+    ],
+    "hair": [
+      "hair_D.png",
+      "cutout"
+    ],
+    "ornament": [
+      "head_D.png",
+      "cutout"
+    ],
+    "cloth": [
+      "tunic_D.png",
+      "cutout"
+    ]
+  },
+  "material_overrides": {
+    "lash": {
+      "alphaTest": 0.4,
+      "blendMode": "factor"
+    },
+    "cloth": {
+      "alphaTest": 0.08
+    },
+    "hair": {
+      "alphaTest": 0.05
+    }
+  },
+  "cloth_max_distance": {
+    "skirt": 0.13,
+    "upper_clothes": 0.025,
+    "long_hair": 0.06
+  },
+  "skirt_thigh_follow": 0.5,
+  "lod_ratios": [
+    1,
+    0.6,
+    0.32,
+    0.16
+  ],
+  "cloth_lods": {
+    "mixed_coat": [
+      0,
+      1
+    ],
+    "upper_clothes": [
+      0,
+      1
+    ],
+    "long_hair": [
+      0,
+      1
+    ]
+  },
+  "measurement_notes": "Independently mapped 玄机空濛 meshes and components from source_survey.json; measured face, hand/forearm, thigh and shoe coordinates checked with actual FBX. Main skirt index 11, mixed sleeve/decor index 7. Long connected panels bind to their measured upper attachment rather than leg proximity. Tall head decoration excluded from body scaling. Cuff/bracer/glove transitions use continuous forearm-to-hand projection; no abrupt palm-only skin threshold on cuff meshes.",
+  "cloth_profiles": {
+    "mixed_coat": {
+      "UnknownFloat1": 1,
+      "material": {
+        "Name": "zw_xuanji_mixed_coat_cloth",
+        "BendingStiffness": 0.18,
+        "ShearingStiffness": 0.95,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.85,
+        "Gravity": 9.81,
+        "LinearInertia": 0.15,
+        "AirDragMultiplier": 0.1,
+        "Wind": 0.02,
+        "MaxLinearVelocity": 6,
+        "LinearVelocityMultiplier": 1
+      },
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "UnknownBool3": true
+    },
+    "upper_clothes": {
+      "UnknownFloat1": 1,
+      "material": {
+        "Name": "zw_xuanji_upper_clothes_cloth",
+        "BendingStiffness": 0.35,
+        "ShearingStiffness": 0.95,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.85,
+        "Gravity": 9.81,
+        "LinearInertia": 0.15,
+        "AirDragMultiplier": 0.1,
+        "Wind": 0.02,
+        "MaxLinearVelocity": 6,
+        "LinearVelocityMultiplier": 1
+      },
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "UnknownBool3": true
+    },
+    "long_hair": {
+      "UnknownFloat1": 1,
+      "material": {
+        "Name": "zw_xuanji_long_hair_cloth",
+        "BendingStiffness": 0.35,
+        "ShearingStiffness": 0.95,
+        "StretchingStiffness": 1,
+        "AnchorStiffness": 1,
+        "Damping": 0.85,
+        "Gravity": 9.81,
+        "LinearInertia": 0.15,
+        "AirDragMultiplier": 0.1,
+        "Wind": 0.02,
+        "MaxLinearVelocity": 6,
+        "LinearVelocityMultiplier": 1
+      },
+      "flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "UnknownBool3": true
+    }
+  },
+  "uv_flip_v_objects": [
+    "mesh_04_491150"
+  ],
+  "hanging_panel_max_distance": 0.16,
+  "cooked_cloth": true,
+  "pin_central_skirt_panels": false
+}

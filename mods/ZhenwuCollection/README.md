@@ -1,71 +1,42 @@
-# Zhenwu Collection v1.2.0 — 真武少女八套
+# Zhenwu Collection v1.3.0 — 真武少女八套合集
 
-当前累计交付包含「云海蹑踪」「玄虚清镜」「画水微明」三套；前两套已由用户验收，第三套等待验收，其余五套未开始。2026-10-09 完成源模型调研，随后制作第一套。神机韬略按用户后续指示仅用 PVP 版。
+八套统一管理在本工程 sets/ 下，运行时为一个 ZhenwuCollection 模块，共 24 件头、身、腿装备。管理器英文名 Zhenwu Collection；游戏内使用中文套装名。神机韬略只包含用户指定的 PVP 版。源输入、上游贴图及历史交付包保留；前已验收三套资源、装备定义、可编辑模型和贴图保持原字节。
 
-用户要求：八套统一管理；按原编号制作，每完成一套、离线检查通过并安装后暂停汇报，由用户游戏验收；收到验收通过及继续指示后再处理下一套。返修仍属于当前套，不越过验收关口。游戏由用户测试，助手不启动游戏、不修改 Native、不上传远程。
+用户最初要求逐套暂停；前三套已验收。2026-10-09 用户指示「ok，都没有问题，这次直接做完吧」，授权连续完成第四至第八套并统一交付，原逐套暂停要求对本批次已解除。游戏由用户测试，助手不启动游戏、不修改 Native、不上传远程。
 
-合集 ID 为 `ZhenwuCollection`，管理器英文名 `Zhenwu Collection`，游戏内使用中文套装名。运行模块位于 `module/ZhenwuCollection/`。逐套增加资源，保持已验收装备 ID、资源名和 GUID 稳定，保留旧版交付包。
+## 安装和穿戴
 
-八套工程统一位于本目录 `sets/`；每套使用 input/、source/、tex/、tools/、build/、reports/，source/ 与 tex/ 相邻。合集顶层 tools/ 保存合集调研、构建及检查入口，dist/ 保存累计交付与旧版包。前三套已复制原始输入与贴图进入工程，其余套仍在用户提供目录中；用户原文件全部保留。
+模块自动安装到 D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules/ZhenwuCollection。启动器勾选 Zhenwu Collection，游戏作弊物品列表搜索相应套装名，穿戴发容、衣裙与手饰、腿部与长靴三件；手套和披肩槽留空。只依赖 Native、SandBoxCore、Sandbox。保留源固定脸型，未实现原生表情和捏脸。
 
-## 前三套交付与验收
+最新交付在 dist/ZhenwuCollection_Mod.zip、dist/ZhenwuCollection_Source.zip，Mod ZIP 顶层为 ZhenwuCollection，可解压到 Modules。dist/ 保留 v1.0.0、v1.1.0、v1.2.0 旧包。源 ZIP 中每套 source/ 与 tex/ 相邻，Blend 内打包贴图，FBX 能重导入。各套独立 input/、source/、tex/、tools/、build/、reports/；通用依赖在根 tools/asset_helpers。集合 source_files 排除缓存、日志、ZIP、备份 Blend 和重复运行时 TPAC。
 
-在启动器勾选 **Zhenwu Collection**。通过作弊物品列表搜索「云海蹑踪」「玄虚清镜」或「画水微明」，穿戴发容、衣裙与手饰、腿部与长靴三件；手套与披肩槽留空。本合集只依赖 Native、SandBoxCore、Sandbox。
+| 顺序 | 套装 | 子目录 | 验收状态 |
+| --- | --- | --- | --- |
+| 01 | 云海蹑踪 | sets/01_YunhaiNiezong | 用户已验收，资源保持原字节 |
+| 02 | 玄虚清镜 | sets/02_XuanxuQingjing | 用户已验收，资源保持原字节 |
+| 03 | 画水微明 | sets/03_HuashuiWeiming | 用户已验收，资源保持原字节 |
+| 04 | 澹云未雨 | sets/04_DanyunWeiyu | v1.3.0 离线完成，游戏待验收 |
+| 05 | 拂雨冲云 | sets/05_FuyuChongyun | v1.3.0 离线完成，游戏待验收 |
+| 06 | 玄机空濛 | sets/06_XuanjiKongmeng | v1.3.0 离线完成，游戏待验收 |
+| 07 | 弈墨苍冥 | sets/07_YimoCangming | v1.3.0 离线完成，游戏待验收 |
+| 08 | 神机韬略 PVP | sets/08_ShenjiTaolue | v1.3.0 离线完成，游戏待验收 |
 
-Mod 包在 dist/ZhenwuCollection_Mod.zip，源包在 dist/ZhenwuCollection_Source.zip。安装到 D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules/ZhenwuCollection。三套说明与重建步骤分别见 sets/01_YunhaiNiezong/README.md、sets/02_XuanxuQingjing/README.md、sets/03_HuashuiWeiming/README.md。v1.0.0、v1.1.0 旧版 Mod/Source ZIP 保留在 dist/，前两套 TPAC、装备 ID、可编辑模型与贴图保持原字节。
+## 制作与验证
 
-最终 TPAC 已检查四级 LOD、XML、引用、四骨量化权重、头颈/肘部共享切口、法线、鞋底、布料配置与全部贴图 mip；跑步、拉弓、骑乘检查完整有效帧区间，站立动作抽查 16 帧，全部 LOD 检查动态接缝。可编辑 Blend 贴图打包与 FBX 重导入通过。最终预览为离线蒙皮，不是游戏布料求解效果；仍需用户确认衣裙/袖口碰撞、握持、骑乘、体型和透明排序。未运行游戏、未修改 Native。
+每套按实际 FBX、UV、材质和连通块独立映射，使用自身资源名、包 GUID 和断言。当前原生 human 骨架 28 骨，保持骨序及绑定矩阵；头饰高度不用于缩放身体。所有套装脸/眼/睫毛实测几何、UV、贴图与已验收第一套相同，因此只对本套睫毛做 V→1−V 修正，其余 UV 和原 PNG 保留。皮肤共享切口的位置、权重与法线在各级 LOD 一致；薄鞋底保护简化边界。
 
-每次完成一套即暂停。本次等待第三套验收，不制作第四套。
+第四至第八套的悬垂袖片和披挂按连通块上沿测量肩臂或躯干锚点，避免下垂部分因位置较低被绑到腿上。固定端平滑过渡到活动区，配置有限活动距离、布料材料与模拟标记。澹云未雨远离身体的后裙片降低腿部随动，减少双腿交替造成的拉伸。护腕和手套使用连续前臂至手骨过渡。长发和长头饰按自身高度配置活动区。
 
-| 顺序 | 套装 | 子目录 | 网格数 | 源顶点 | 三角面 | 当前状态 |
-| --- | --- | --- | ---: | ---: | ---: | --- |
-| 01 | 云海蹑踪 | sets/01_YunhaiNiezong | 14 | 12,543 | 16,144 | v1.0.0 已验收，资源不变 |
-| 02 | 玄虚清镜 | sets/02_XuanxuQingjing | 12 | 9,408 | 13,358 | v1.1.0 已验收，资源不变 |
-| 03 | 画水微明 | sets/03_HuashuiWeiming | 13 | 11,522 | 15,597 | 加入 v1.2.0，等待验收 |
-| 04 | 澹云未雨 | sets/04_DanyunWeiyu | 13 | 14,641 | 18,332 | 已调研，待前套验收 |
-| 05 | 拂雨冲云 | sets/05_FuyuChongyun | 14 | 16,082 | 21,081 | 已调研，待前套验收 |
-| 06 | 玄机空濛 | sets/06_XuanjiKongmeng | 13 | 13,763 | 18,331 | 已调研，待前套验收 |
-| 07 | 弈墨苍冥 | sets/07_YimoCangming | 14 | 11,013 | 14,764 | 已调研，待前套验收 |
-| 08 | 神机韬略 | sets/08_ShenjiTaolue | 14 | 19,132 | 23,265 | 已调研，待前套验收 |
+每套从最终 TPAC 回读四级 LOD，检查 XML/引用、有限坐标、骨索引、最多四权重且字节和 255、法线/切线、接缝、鞋底、材质 Alpha 与布料字段，完整解码所有贴图 mip。跑步检查 25 有效帧、持弓 150 帧、骑乘 20 帧，站立抽查 16 帧，全部 LOD 检查动态接缝；渲染最差拉伸和腿部代理接触帧，再审阅正侧背面和面部近景。重新打开 Blend 核对打包贴图、原生骨矩阵与权重，FBX 重导入检查通过。合集回读所有八包，确保 24 件装备及所有资源名/GUID 不冲突。
 
-## 初次调研结论
+按用户更新要求，已完成的前四套保持原有布料配置。第五至第八套在 LOD0、LOD1 分别生成原生类型的直接布料预处理段：各级使用自己的拓扑、活动距离、固定根部和约束；LOD2、LOD3 保留蒙皮。最终包回读验证约束长度、无写冲突分组、映射、骨权重、锚点与压缩误差，布料 blob 与生成字节一致。双面重合衣料只在求解输入中合并重复三角面并处理相反法线抵消，运行时几何、材质、UV、Alpha 和蒙皮保留原字节。各套 tools/cloth_policy.json 与 reports/cooked_cloth_validation.json 记录额外固定点及拓扑适配。
 
-- Blender 5.2.0 LTS 实际导入八套及第八套的 PVP/PVE，共十份 FBX；全部为静态模型，armature、顶点组及带权顶点均为零。所有网格坐标有限、存在 UV 层；没有检查或生成游戏资源。
-- 前七套各 9 张 PNG，第八套 13 张；全部能实际解码，尺寸最大 1024×1024。FBX 导入图像均能在本套 tex/ 找到对应文件。贴图仅为 D 色图，没有提供法线/粗糙度/金属度图；后续采用保守材质，不能称作恢复原作完整 PBR。
-- 每套 prior repair_report.json 的 unresolved 都是空数组，仅代表上游修复记录。不能由此推断骑砍绑骨、动作、碰撞或布料已通过。
-- 模型导入高度范围约 136–145 源坐标单位（含头饰），不能直接当米使用。适配时根据脚底、骨盆、肩肘腕、颈部与头顶实测标记确定尺度，保留每套头饰差异，不按总包围盒机械拉伸。
-- 第八套 model.fbx 与 model_PVP.fbx SHA256 相同；PVE 文件不同。三个版本导入后的几何、面索引及 UV SHA256 完全一致。用户已选择仅制作 PVP；PVE 原文件仍保留，不加入交付。
-- 已核对本机 Native/SubModule.xml 为 v1.4.8。技能工具预检指定迁移后的 TianxiangT5 示例路径后 ready，依赖导入通过；这只证明工具就绪，不能证明本合集与游戏兼容。
+最终预览是原生骨骼的离线蒙皮结果，未使用游戏布料求解器、官方编辑器 tcc/tcm 缓存、武器 IK 或真实马体碰撞。部分裙摆/悬垂部件与腿的代理仍有接触，不能将离线通过称为游戏穿模全部解决。新增五套的衣摆、袖口、握持、骑乘、透明排序和体型表现由用户游戏验收。
 
-## 第二套检查与风险
+## 报告和重建
 
-玄虚清镜实际测量、独立部件映射和资源命名；脸、眼、睫毛几何/UV/贴图与已验收第一套完全相同，因此应用同样的睫毛 V 翻转。其余 UV、原始 PNG 不变。12 个网格生成四级 LOD，16 处共享皮肤边界保持位置、权重及法线，远景 LOD 保护薄鞋底，防止简化移入地面。第二套包 GUID、所有内部资源名/GUID 与第一套互不重复。
+各套 reports/ 保存 source_measurement、native_provenance、rig_fit、source_validation、release_validation、detail_validation、package_audit、eye_uv_validation 和 final_preview_manifest；final_*.png / final_motion_review.jpg 使用最终包几何、量化权重和解码贴图。合集 reports/ 保存八套源调研、前三套用户验收记录、最终资产清单、发布及安装一致性检查。源调研只表示静态输入可导入，与已生成的游戏资源检查是不同阶段。
 
-本套已从最终 TPAC 回读全部 LOD，检查原生跑步 25 帧、持弓 150 帧、骑乘 20 帧，站立抽查 16 帧；全部 LOD 动态接缝检查通过。最终包预览已审阅，源 Blend 贴图打包及 FBX 重导入通过。没有运行游戏布料求解器、生成官方编辑器 tcc/tcm 缓存或启动游戏；衣摆胶囊代理仍有接触，不能据此声称游戏穿模已解决。等待用户检查第二套长衣摆、袖口、握持、骑乘和透明排序。
+工具入口 tools/build_remaining.py build 按依赖顺序构建并验证剩余五套，失败即停止；render 阶段最多并发两个后台 Blender 进程。全部后台 Blender 使用 --factory-startup，避免加载用户插件，使用 --python-exit-code 1；该脚本不安装或启动游戏。build 阶段对第五至第八套自动构建共用编译器、写入布料段并重新检查最终包；随后执行 render。单独使用 tools/compile_cloth.py 时必须紧随未编译的新包构建，之后重新运行各套 verify_release.py 与 verify_details.py。源包通过 shared_source_files 包含 workspace_tools/cloth_compiler 共用编译器。各套 README 记录专用参数与重建顺序。审阅最终图后 tools/prepare_delivery.py 校验报告、保留基线并合并模块；根 tools/install_release.ps1 打包和安装自身模块；tools/verify_installation.py 核对所有包内与安装字节。
 
-## 第三套检查与风险
-
-画水微明独立检查 13 网格、11,522 源顶点、15,597 三角面，分别适配主衣裙、袖片、长靴、前后发和高头饰；沿用经实际几何/UV/贴图对比确认的脸部标记和睫毛方向修正。21 处皮肤共享边界在四级 LOD 的位置、权重及法线保持一致，源鞋底及远景边界保持水平。独立 zw_huashui 资源命名和包 GUID，合集回读检查三套共 69 个资源名/GUID 无冲突。
-
-第三套回读最终 TPAC 检查所有 LOD、材质/贴图 mip、几何、量化权重、XML、鞋底、布料配置与原生动作；跑步 25 帧、持弓 150 帧、骑乘 20 帧，站立抽查 16 帧，各 LOD 检查动态接缝。可编辑源文件贴图打包及 FBX 重导入通过。离线衣摆代理仍有接触，未运行游戏布料求解器或生成官方 tcc/tcm 缓存；第三套的袖片、衣摆、握持、骑乘及体型表现待你验收。
-
-## 制作路线与风险
-
-先做 01 云海蹑踪，建立真武专用的物体映射、解剖标记、稳定命名和 GUID。按头部（脸、眼、发、头饰）、身体（衣服、手臂、手饰）、腿靴三个装备槽制作完整角色，后续可按实测部件调整。使用固定源脸型，不默认实现原生表情或捏脸。
-
-每套分别测量，不能使用天香物体编号和绑骨参数。从本机原生资源重新读取骨架与有效动画；各级 LOD 保持颈缝位置、权重和法线一致。长袖按肩口、包臂区、袖口和悬垂片分区；多部位共用材质时结合连通块与位置判断。裙摆与长发先完善蒙皮，再根据实际拓扑配置游戏布料。04–08 的袖片、披挂与饰物更繁复；08 网格最多，优先控制布料模拟面数与远景 LOD。
-
-透明贴图裁切与布料顶点 Alpha 分开处理，避免使用活动距离后衣服/头发消失。官方说明顶点 Alpha 用于控制布料活动距离，游戏布料需专门配置；离线蒙皮不能验证引擎求解器。依据：[TaleWorlds 布料说明](https://moddocs.bannerlord.com/editor/resource-editors/cloth_simulation/)。模块布局依据：[官方模块快速入门](https://moddocs.bannerlord.com/asset-management/quickguide_create_a_mod/)。
-
-每套完成后从最终 TPAC 回读全部交付 LOD，检查几何、骨索引、四骨权重和为 255、材质引用、透明裁切、XML、接缝与原生站立/跑步/持弓/骑乘等动作。生成预览、可编辑 Blend/FBX、Mod ZIP 与源 ZIP，核对包/工程/安装文件字节一致后只安装本合集，再暂停等待用户验收。离线动作检查不替代游戏布料、握持、骑乘碰撞及角色体型测试。
-
-## 调研证据与复现
-
-- reports/source_survey.json：每份输入 SHA256、对象/连通块、坐标、UV、权重、图像引用、贴图 Alpha、全量原始文件清单。
-- reports/source_overview.jpg：拼接用户目录已有正面预览，不是骑砍效果图。
-- reports/toolchain_preflight.json：指定真实示例路径后的工具依赖预检。
-- tools/survey_sources.py：后台 Blender 只读导入检查，不保存或修改源模型。
-- tools/summarize_survey.py：Python/Pillow 贴图解码、源文件清单及概览。
-
-复现：先用本机 Blender --background --python-exit-code 1 --python tools/survey_sources.py，再用 Anaconda Python -B -X utf8 tools/summarize_survey.py。两个脚本按自身路径定位本合集，输入目录固定为本次用户指定路径。
+本地 Git 保存源输入、编辑源、脚本、模块和报告；发布标签为 ZhenwuCollection/v<版本>。旧版本标签保留，不上传远程。

@@ -1,0 +1,175 @@
+{
+  "status": "pass",
+  "final_package_sha256": "65474f5d5d25c585acbdbee5842cb4022e85aa42b29bd0c1c6eb2c9678867bbf",
+  "lods": [
+    {
+      "lod": 0,
+      "max_seam_normal_difference": 0.00018409555195830762,
+      "shoe_min_z_m": 0.0010000000474974513,
+      "motions": [
+        {
+          "label": "idle",
+          "frames_checked": 16,
+          "max_edge_extension": 2.451712394861998,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "run",
+          "frames_checked": 25,
+          "max_edge_extension": 2.587513104293721,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "bow",
+          "frames_checked": 150,
+          "max_edge_extension": 2.887875128641472,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "riding",
+          "frames_checked": 20,
+          "max_edge_extension": 3.5073479216537806,
+          "max_shared_seam_error_m": 0
+        }
+      ]
+    },
+    {
+      "lod": 1,
+      "max_seam_normal_difference": 0.00018409555195830762,
+      "shoe_min_z_m": 0.0010000000474974513,
+      "motions": [
+        {
+          "label": "idle",
+          "frames_checked": 16,
+          "max_edge_extension": 2.451712394861998,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "run",
+          "frames_checked": 25,
+          "max_edge_extension": 2.587513104293721,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "bow",
+          "frames_checked": 150,
+          "max_edge_extension": 2.887875128641472,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "riding",
+          "frames_checked": 20,
+          "max_edge_extension": 3.1079343989226125,
+          "max_shared_seam_error_m": 0
+        }
+      ]
+    },
+    {
+      "lod": 2,
+      "max_seam_normal_difference": 0.00018409555195830762,
+      "shoe_min_z_m": 0.0010000000474974513,
+      "motions": [
+        {
+          "label": "idle",
+          "frames_checked": 16,
+          "max_edge_extension": 2.451712394861998,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "run",
+          "frames_checked": 25,
+          "max_edge_extension": 2.4392780836652035,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "bow",
+          "frames_checked": 150,
+          "max_edge_extension": 2.887875128641472,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "riding",
+          "frames_checked": 20,
+          "max_edge_extension": 3.114803592650066,
+          "max_shared_seam_error_m": 0
+        }
+      ]
+    },
+    {
+      "lod": 3,
+      "max_seam_normal_difference": 0.00018409555195830762,
+      "shoe_min_z_m": 0.0010000000474974513,
+      "motions": [
+        {
+          "label": "idle",
+          "frames_checked": 16,
+          "max_edge_extension": 2.451712394861998,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "run",
+          "frames_checked": 25,
+          "max_edge_extension": 2.515539112092285,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "bow",
+          "frames_checked": 150,
+          "max_edge_extension": 2.887875128641472,
+          "max_shared_seam_error_m": 0
+        },
+        {
+          "label": "riding",
+          "frames_checked": 20,
+          "max_edge_extension": 3.2708293549967773,
+          "max_shared_seam_error_m": 0
+        }
+      ]
+    }
+  ],
+  "cloth": [
+    {
+      "mesh": "zw_shenji_head_08",
+      "profile": "long_hair",
+      "lod": 0
+    },
+    {
+      "mesh": "zw_shenji_head_08.lod1",
+      "profile": "long_hair",
+      "lod": 1
+    },
+    {
+      "mesh": "zw_shenji_head_12",
+      "profile": "long_hair",
+      "lod": 0
+    },
+    {
+      "mesh": "zw_shenji_head_12.lod1",
+      "profile": "long_hair",
+      "lod": 1
+    },
+    {
+      "mesh": "zw_shenji_body_07",
+      "profile": "upper_clothes",
+      "lod": 0
+    },
+    {
+      "mesh": "zw_shenji_body_07.lod1",
+      "profile": "upper_clothes",
+      "lod": 1
+    },
+    {
+      "mesh": "zw_shenji_body_10",
+      "profile": "mixed_coat",
+      "lod": 0
+    },
+    {
+      "mesh": "zw_shenji_body_10.lod1",
+      "profile": "mixed_coat",
+      "lod": 1
+    }
+  ],
+  "game_solver_used": false,
+  "cloth_preprocess_cache_generated": false,
+  "scope": "Actual final geometry, normals, colors and configuration; native skeletal motion only"
+}

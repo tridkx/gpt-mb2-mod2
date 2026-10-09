@@ -1,0 +1,83 @@
+{
+  "status": "pass",
+  "final_package_sha256": "65474f5d5d25c585acbdbee5842cb4022e85aa42b29bd0c1c6eb2c9678867bbf",
+  "flipped_mesh": "mesh_04_496128",
+  "operation": "V -> 1 - V",
+  "other_meshes_unchanged": 13,
+  "texture_files_unchanged": true,
+  "source_uv_report": [
+    {
+      "source_mesh": "mesh_00_122075",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_01_140473",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_02_300686",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_03_384171",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_04_496128",
+      "flip_v": true,
+      "max_error": 2.9802322387695312e-08
+    },
+    {
+      "source_mesh": "mesh_05_518277",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_06_522794",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_07_535359",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_08_701022",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_09_733957",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_10_770016",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_11_959161",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_12_980760",
+      "flip_v": false,
+      "max_error": 0.0
+    },
+    {
+      "source_mesh": "mesh_13_1215313",
+      "flip_v": false,
+      "max_error": 0.0
+    }
+  ],
+  "geometry_uv_texture_identity_evidence": "reports/source_measurement.json",
+  "visual_review": "reports/final_face_all.png",
+  "scope": "Original lash geometry/UV/texture match accepted Yunhai; source and final UV independently checked; final near-eye render requires visual review."
+}

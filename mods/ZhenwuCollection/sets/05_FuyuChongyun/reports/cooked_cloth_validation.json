@@ -1,0 +1,3948 @@
+{
+  "status": "pass",
+  "final_package_sha256": "e6be3bda93135e04f710501a3c615226f7dd6af86da2ff9484250ed200f08ccd",
+  "baseline_package_sha256": "aae5239680023c09f14a50a0d4c05ee33fe20e82fe06afa1970aa830f28457f4",
+  "cooked_meshes": [
+    {
+      "mesh": "zw_fuyu_body_12",
+      "guid": "2f4f6fb0-2b2a-f18a-475a-faf98a99273c",
+      "metamesh": "zw_fuyu_body",
+      "lod": 0,
+      "bytes": 121432,
+      "render_vertices": 2133,
+      "simulation_vertices": 1828,
+      "fixed_positions": 1306,
+      "boundary_fixed_positions": 73,
+      "active_positions": 522,
+      "stretch_constraints": 1410,
+      "bend_constraints": 1229,
+      "shear_constraints": 0,
+      "parallel_sets": 16,
+      "dummy_sets": 10,
+      "max_geodesic_anchor_length": 0.7610373043448565,
+      "sha256": "c8902ef8e50c959bdbaa43666630411c9b430395c2a0c87a844b7be67bc21e71",
+      "root_fixes": [
+        {
+          "component_positions": 36,
+          "reason": "Measured upper attachment of mixed_coat component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            0,
+            3,
+            8,
+            9,
+            15,
+            20,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ],
+          "bounds": [
+            [
+              0.24979287,
+              -0.034156565,
+              0.36144456
+            ],
+            [
+              0.2694061,
+              -0.01696793,
+              0.41474873
+            ]
+          ]
+        },
+        {
+          "component_positions": 36,
+          "reason": "Measured upper attachment of mixed_coat component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            41,
+            44,
+            49,
+            50,
+            56,
+            61,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72
+          ],
+          "bounds": [
+            [
+              0.18045777,
+              0.080058485,
+              0.249637
+            ],
+            [
+              0.20219189,
+              0.08995619,
+              0.29992288
+            ]
+          ]
+        },
+        {
+          "component_positions": 36,
+          "reason": "Measured upper attachment of mixed_coat component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            81,
+            84,
+            89,
+            90,
+            96,
+            101,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112
+          ],
+          "bounds": [
+            [
+              0.16406488,
+              -0.2459251,
+              0.27343422
+            ],
+            [
+              0.18238509,
+              -0.21868376,
+              0.32117844
+            ]
+          ]
+        },
+        {
+          "component_positions": 36,
+          "reason": "Measured upper attachment of mixed_coat component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            121,
+            122,
+            129,
+            132,
+            136,
+            141,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153
+          ],
+          "bounds": [
+            [
+              -0.27065957,
+              -0.034212865,
+              0.362716
+            ],
+            [
+              -0.2509947,
+              -0.01702974,
+              0.41602406
+            ]
+          ]
+        },
+        {
+          "component_positions": 36,
+          "reason": "Measured upper attachment of mixed_coat component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            162,
+            163,
+            170,
+            173,
+            177,
+            182,
+            185,
+            186,
+            187,
+            188,
+            189,
+            190,
+            191,
+            192,
+            193
+          ],
+          "bounds": [
+            [
+              -0.20362109,
+              0.079937376,
+              0.25079197
+            ],
+            [
+              -0.18183419,
+              0.08983339,
+              0.30106118
+            ]
+          ]
+        },
+        {
+          "component_positions": 36,
+          "reason": "Measured upper attachment of mixed_coat component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            202,
+            203,
+            210,
+            213,
+            217,
+            222,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233
+          ],
+          "bounds": [
+            [
+              -0.18383953,
+              -0.24595845,
+              0.27457502
+            ],
+            [
+              -0.16546448,
+              -0.21871492,
+              0.32229915
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        0,
+        3,
+        8,
+        9,
+        15,
+        20,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        41,
+        44,
+        49,
+        50,
+        56,
+        61,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        81,
+        84,
+        89,
+        90,
+        96,
+        101,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        121,
+        122,
+        129,
+        132,
+        136,
+        141,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        162,
+        163,
+        170,
+        173,
+        177,
+        182,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        202,
+        203,
+        210,
+        213,
+        217,
+        222,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233
+      ],
+      "max_position_compression_error_m": 0.00015898775682473033
+    },
+    {
+      "mesh": "zw_fuyu_body_12.lod1",
+      "guid": "42849bbd-8820-09d2-8439-d86e09619505",
+      "metamesh": "zw_fuyu_body",
+      "lod": 1,
+      "bytes": 63552,
+      "render_vertices": 1499,
+      "simulation_vertices": 1246,
+      "fixed_positions": 1228,
+      "boundary_fixed_positions": 37,
+      "active_positions": 18,
+      "stretch_constraints": 74,
+      "bend_constraints": 66,
+      "shear_constraints": 0,
+      "parallel_sets": 23,
+      "dummy_sets": 12,
+      "max_geodesic_anchor_length": 0.6754874376257781,
+      "sha256": "bb8ac11d47158ca20fb3e2c0f8f07031697ca453ea866d31710002728de74772",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "max_position_compression_error_m": 0.00015898775682473033
+    },
+    {
+      "mesh": "zw_fuyu_body_07",
+      "guid": "5eaa59e7-43f2-6db5-31e7-4e3f97ff1dc6",
+      "metamesh": "zw_fuyu_body",
+      "lod": 0,
+      "bytes": 135852,
+      "render_vertices": 2348,
+      "simulation_vertices": 1908,
+      "fixed_positions": 1302,
+      "boundary_fixed_positions": 126,
+      "active_positions": 606,
+      "stretch_constraints": 1788,
+      "bend_constraints": 1650,
+      "shear_constraints": 0,
+      "parallel_sets": 18,
+      "dummy_sets": 11,
+      "max_geodesic_anchor_length": 0.6614767036987974,
+      "sha256": "1d3301cff89422f27946c468fc2b4c80344f504128f2290fafd5257d6629c1fc",
+      "root_fixes": [
+        {
+          "component_positions": 34,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            544,
+            545,
+            546,
+            547,
+            548,
+            551,
+            552,
+            553,
+            554,
+            558,
+            559,
+            560,
+            561,
+            562,
+            563,
+            564,
+            565,
+            566,
+            567,
+            569,
+            570,
+            574,
+            575,
+            576,
+            577,
+            578,
+            579,
+            580,
+            581,
+            582,
+            583,
+            585,
+            586,
+            587,
+            588,
+            591,
+            592,
+            593,
+            594,
+            595,
+            596,
+            597,
+            606,
+            607,
+            608,
+            609,
+            610,
+            611,
+            612,
+            613
+          ],
+          "bounds": [
+            [
+              -0.41135365,
+              -0.23104076,
+              0.7895577
+            ],
+            [
+              -0.37856364,
+              -0.20302077,
+              0.8159777
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            670,
+            671,
+            672,
+            673,
+            674
+          ],
+          "bounds": [
+            [
+              -0.27226472,
+              -0.046950515,
+              1.3593974
+            ],
+            [
+              -0.25810245,
+              -0.03769049,
+              1.3656304
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            675,
+            676,
+            677,
+            678,
+            679
+          ],
+          "bounds": [
+            [
+              -0.25792506,
+              -0.036259938,
+              1.3584452
+            ],
+            [
+              -0.24316974,
+              -0.027824527,
+              1.3648642
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            680,
+            681,
+            682,
+            683,
+            684
+          ],
+          "bounds": [
+            [
+              -0.27452725,
+              -0.06866224,
+              1.3614575
+            ],
+            [
+              -0.25938153,
+              -0.0599709,
+              1.3676602
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            685,
+            686,
+            687,
+            688,
+            689
+          ],
+          "bounds": [
+            [
+              -0.25986725,
+              -0.0764243,
+              1.3610936
+            ],
+            [
+              -0.24664743,
+              -0.06845735,
+              1.3666955
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            690,
+            691,
+            692,
+            693,
+            694
+          ],
+          "bounds": [
+            [
+              -0.28076333,
+              -0.058429893,
+              1.3591357
+            ],
+            [
+              -0.26465794,
+              -0.048187073,
+              1.3666174
+            ]
+          ]
+        },
+        {
+          "component_positions": 36,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            695,
+            696,
+            697,
+            698,
+            699,
+            701,
+            702,
+            703,
+            704,
+            705,
+            706,
+            707,
+            708,
+            709,
+            710,
+            711,
+            712,
+            715,
+            716,
+            717,
+            718,
+            719,
+            720,
+            721,
+            722,
+            723,
+            724,
+            725,
+            726,
+            727,
+            728,
+            729,
+            730,
+            731,
+            732,
+            733,
+            734,
+            735
+          ],
+          "bounds": [
+            [
+              -0.29316095,
+              -0.04235506,
+              1.3441889
+            ],
+            [
+              -0.26830232,
+              -0.025998801,
+              1.3597219
+            ]
+          ]
+        },
+        {
+          "component_positions": 36,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            736,
+            737,
+            738,
+            739,
+            740,
+            742,
+            743,
+            744,
+            745,
+            746,
+            747,
+            748,
+            749,
+            750,
+            751,
+            752,
+            753,
+            754,
+            756,
+            757,
+            758,
+            759,
+            760,
+            761,
+            762,
+            763,
+            764,
+            765,
+            766,
+            767,
+            768,
+            769,
+            770,
+            771,
+            772,
+            773,
+            774,
+            775,
+            776
+          ],
+          "bounds": [
+            [
+              -0.2703477,
+              -0.0298261,
+              1.3448645
+            ],
+            [
+              -0.25160417,
+              -0.009741298,
+              1.3604511
+            ]
+          ]
+        },
+        {
+          "component_positions": 36,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            777,
+            778,
+            779,
+            780,
+            781,
+            783,
+            784,
+            785,
+            786,
+            787,
+            788,
+            789,
+            790,
+            791,
+            792,
+            793,
+            795,
+            797,
+            798,
+            799,
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            813,
+            814,
+            815,
+            816,
+            817
+          ],
+          "bounds": [
+            [
+              -0.29488686,
+              -0.08341558,
+              1.3471916
+            ],
+            [
+              -0.2716581,
+              -0.06546434,
+              1.3627399
+            ]
+          ]
+        },
+        {
+          "component_positions": 36,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            818,
+            819,
+            820,
+            821,
+            822,
+            823,
+            824,
+            825,
+            826,
+            827,
+            828,
+            829,
+            830,
+            831,
+            832,
+            833,
+            834,
+            835,
+            836,
+            837,
+            838,
+            839,
+            840,
+            841,
+            842,
+            843,
+            844,
+            845,
+            846,
+            847,
+            848,
+            849,
+            850,
+            851,
+            852,
+            853,
+            854,
+            855,
+            856,
+            857,
+            858
+          ],
+          "bounds": [
+            [
+              -0.2695036,
+              -0.0967023,
+              1.3490264
+            ],
+            [
+              -0.25477755,
+              -0.07459808,
+              1.3635049
+            ]
+          ]
+        },
+        {
+          "component_positions": 36,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            859,
+            860,
+            861,
+            862,
+            867,
+            868,
+            869,
+            870,
+            873,
+            874,
+            875,
+            876,
+            879,
+            880,
+            882,
+            883,
+            884,
+            885,
+            886,
+            887,
+            888,
+            889,
+            890,
+            891,
+            892,
+            894,
+            895,
+            896,
+            897,
+            899
+          ],
+          "bounds": [
+            [
+              -0.30439326,
+              -0.060438838,
+              1.342136
+            ],
+            [
+              -0.27823767,
+              -0.05089586,
+              1.3606565
+            ]
+          ]
+        },
+        {
+          "component_positions": 34,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1718,
+            1719,
+            1720,
+            1721,
+            1723,
+            1724,
+            1726,
+            1727,
+            1728,
+            1732,
+            1733,
+            1734,
+            1735,
+            1736,
+            1737,
+            1738,
+            1739,
+            1740,
+            1742,
+            1743,
+            1744,
+            1748,
+            1749,
+            1750,
+            1751,
+            1752,
+            1753,
+            1754,
+            1755,
+            1756,
+            1757,
+            1759,
+            1760,
+            1761,
+            1762,
+            1763,
+            1766,
+            1767,
+            1768,
+            1769,
+            1770,
+            1771,
+            1780,
+            1781,
+            1782,
+            1783,
+            1784,
+            1785,
+            1786,
+            1787
+          ],
+          "bounds": [
+            [
+              0.3785592,
+              -0.23104236,
+              0.7895568
+            ],
+            [
+              0.4113492,
+              -0.20302236,
+              0.8159768
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1844,
+            1845,
+            1846,
+            1847,
+            1848
+          ],
+          "bounds": [
+            [
+              0.25809842,
+              -0.046953563,
+              1.3593917
+            ],
+            [
+              0.27226013,
+              -0.03769337,
+              1.3656259
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1849,
+            1850,
+            1851,
+            1852,
+            1853
+          ],
+          "bounds": [
+            [
+              0.24316598,
+              -0.036262784,
+              1.3584409
+            ],
+            [
+              0.25792083,
+              -0.027827336,
+              1.3648605
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1854,
+            1855,
+            1856,
+            1857,
+            1858
+          ],
+          "bounds": [
+            [
+              0.25937733,
+              -0.06866516,
+              1.3614519
+            ],
+            [
+              0.27452242,
+              -0.059973944,
+              1.3676559
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1859,
+            1860,
+            1861,
+            1862,
+            1863
+          ],
+          "bounds": [
+            [
+              0.24664305,
+              -0.07642719,
+              1.3610893
+            ],
+            [
+              0.25986266,
+              -0.068460226,
+              1.3666921
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1864,
+            1865,
+            1866,
+            1867,
+            1868
+          ],
+          "bounds": [
+            [
+              0.26465374,
+              -0.058432993,
+              1.3591295
+            ],
+            [
+              0.2807585,
+              -0.048190165,
+              1.3666126
+            ]
+          ]
+        },
+        {
+          "component_positions": 36,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1869,
+            1870,
+            1871,
+            1872,
+            1873,
+            1874,
+            1875,
+            1877,
+            1878,
+            1879,
+            1880,
+            1881,
+            1882,
+            1883,
+            1884,
+            1885,
+            1888,
+            1889,
+            1890,
+            1891,
+            1892,
+            1893,
+            1894,
+            1895,
+            1896,
+            1897,
+            1898,
+            1899,
+            1900,
+            1901,
+            1902,
+            1903,
+            1904,
+            1905,
+            1906,
+            1907,
+            1908,
+            1909
+          ],
+          "bounds": [
+            [
+              0.2682977,
+              -0.042358212,
+              1.3441818
+            ],
+            [
+              0.29315537,
+              -0.026002279,
+              1.3597163
+            ]
+          ]
+        },
+        {
+          "component_positions": 36,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1910,
+            1911,
+            1912,
+            1913,
+            1914,
+            1915,
+            1916,
+            1918,
+            1919,
+            1920,
+            1921,
+            1922,
+            1923,
+            1924,
+            1925,
+            1926,
+            1928,
+            1929,
+            1930,
+            1931,
+            1932,
+            1933,
+            1934,
+            1935,
+            1936,
+            1937,
+            1938,
+            1939,
+            1940,
+            1941,
+            1942,
+            1943,
+            1944,
+            1945,
+            1946,
+            1947,
+            1948,
+            1949,
+            1950
+          ],
+          "bounds": [
+            [
+              0.25160006,
+              -0.029828973,
+              1.3448594
+            ],
+            [
+              0.27034253,
+              -0.009744292,
+              1.3604466
+            ]
+          ]
+        },
+        {
+          "component_positions": 36,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1951,
+            1952,
+            1953,
+            1954,
+            1955,
+            1956,
+            1957,
+            1959,
+            1960,
+            1961,
+            1962,
+            1963,
+            1964,
+            1965,
+            1966,
+            1967,
+            1970,
+            1971,
+            1972,
+            1973,
+            1974,
+            1975,
+            1976,
+            1977,
+            1978,
+            1979,
+            1980,
+            1981,
+            1982,
+            1983,
+            1984,
+            1985,
+            1986,
+            1987,
+            1988,
+            1989,
+            1990,
+            1991
+          ],
+          "bounds": [
+            [
+              0.27165335,
+              -0.08341905,
+              1.3471847
+            ],
+            [
+              0.29488084,
+              -0.06546751,
+              1.3627343
+            ]
+          ]
+        },
+        {
+          "component_positions": 36,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1992,
+            1993,
+            1994,
+            1995,
+            1996,
+            1997,
+            1998,
+            1999,
+            2000,
+            2001,
+            2002,
+            2003,
+            2004,
+            2005,
+            2006,
+            2007,
+            2008,
+            2009,
+            2010,
+            2011,
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026,
+            2027,
+            2028,
+            2029,
+            2030,
+            2031,
+            2032
+          ],
+          "bounds": [
+            [
+              0.2547728,
+              -0.09670525,
+              1.3490222
+            ],
+            [
+              0.26949757,
+              -0.07460091,
+              1.3635006
+            ]
+          ]
+        },
+        {
+          "component_positions": 36,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2033,
+            2034,
+            2035,
+            2036,
+            2041,
+            2042,
+            2043,
+            2044,
+            2045,
+            2048,
+            2049,
+            2052,
+            2053,
+            2055,
+            2056,
+            2057,
+            2058,
+            2059,
+            2060,
+            2061,
+            2062,
+            2063,
+            2064,
+            2065,
+            2066,
+            2067,
+            2069,
+            2070,
+            2071,
+            2073
+          ],
+          "bounds": [
+            [
+              0.27823296,
+              -0.06044258,
+              1.3421282
+            ],
+            [
+              0.30438733,
+              -0.050899126,
+              1.3606504
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        544,
+        545,
+        546,
+        547,
+        548,
+        551,
+        552,
+        553,
+        554,
+        558,
+        559,
+        560,
+        561,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        569,
+        570,
+        574,
+        575,
+        576,
+        577,
+        578,
+        579,
+        580,
+        581,
+        582,
+        583,
+        585,
+        586,
+        587,
+        588,
+        591,
+        592,
+        593,
+        594,
+        595,
+        596,
+        597,
+        606,
+        607,
+        608,
+        609,
+        610,
+        611,
+        612,
+        613,
+        670,
+        671,
+        672,
+        673,
+        674,
+        675,
+        676,
+        677,
+        678,
+        679,
+        680,
+        681,
+        682,
+        683,
+        684,
+        685,
+        686,
+        687,
+        688,
+        689,
+        690,
+        691,
+        692,
+        693,
+        694,
+        695,
+        696,
+        697,
+        698,
+        699,
+        701,
+        702,
+        703,
+        704,
+        705,
+        706,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712,
+        715,
+        716,
+        717,
+        718,
+        719,
+        720,
+        721,
+        722,
+        723,
+        724,
+        725,
+        726,
+        727,
+        728,
+        729,
+        730,
+        731,
+        732,
+        733,
+        734,
+        735,
+        736,
+        737,
+        738,
+        739,
+        740,
+        742,
+        743,
+        744,
+        745,
+        746,
+        747,
+        748,
+        749,
+        750,
+        751,
+        752,
+        753,
+        754,
+        756,
+        757,
+        758,
+        759,
+        760,
+        761,
+        762,
+        763,
+        764,
+        765,
+        766,
+        767,
+        768,
+        769,
+        770,
+        771,
+        772,
+        773,
+        774,
+        775,
+        776,
+        777,
+        778,
+        779,
+        780,
+        781,
+        783,
+        784,
+        785,
+        786,
+        787,
+        788,
+        789,
+        790,
+        791,
+        792,
+        793,
+        795,
+        797,
+        798,
+        799,
+        800,
+        801,
+        802,
+        803,
+        804,
+        805,
+        806,
+        807,
+        808,
+        809,
+        810,
+        811,
+        812,
+        813,
+        814,
+        815,
+        816,
+        817,
+        818,
+        819,
+        820,
+        821,
+        822,
+        823,
+        824,
+        825,
+        826,
+        827,
+        828,
+        829,
+        830,
+        831,
+        832,
+        833,
+        834,
+        835,
+        836,
+        837,
+        838,
+        839,
+        840,
+        841,
+        842,
+        843,
+        844,
+        845,
+        846,
+        847,
+        848,
+        849,
+        850,
+        851,
+        852,
+        853,
+        854,
+        855,
+        856,
+        857,
+        858,
+        859,
+        860,
+        861,
+        862,
+        867,
+        868,
+        869,
+        870,
+        873,
+        874,
+        875,
+        876,
+        879,
+        880,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888,
+        889,
+        890,
+        891,
+        892,
+        894,
+        895,
+        896,
+        897,
+        899,
+        1718,
+        1719,
+        1720,
+        1721,
+        1723,
+        1724,
+        1726,
+        1727,
+        1728,
+        1732,
+        1733,
+        1734,
+        1735,
+        1736,
+        1737,
+        1738,
+        1739,
+        1740,
+        1742,
+        1743,
+        1744,
+        1748,
+        1749,
+        1750,
+        1751,
+        1752,
+        1753,
+        1754,
+        1755,
+        1756,
+        1757,
+        1759,
+        1760,
+        1761,
+        1762,
+        1763,
+        1766,
+        1767,
+        1768,
+        1769,
+        1770,
+        1771,
+        1780,
+        1781,
+        1782,
+        1783,
+        1784,
+        1785,
+        1786,
+        1787,
+        1844,
+        1845,
+        1846,
+        1847,
+        1848,
+        1849,
+        1850,
+        1851,
+        1852,
+        1853,
+        1854,
+        1855,
+        1856,
+        1857,
+        1858,
+        1859,
+        1860,
+        1861,
+        1862,
+        1863,
+        1864,
+        1865,
+        1866,
+        1867,
+        1868,
+        1869,
+        1870,
+        1871,
+        1872,
+        1873,
+        1874,
+        1875,
+        1877,
+        1878,
+        1879,
+        1880,
+        1881,
+        1882,
+        1883,
+        1884,
+        1885,
+        1888,
+        1889,
+        1890,
+        1891,
+        1892,
+        1893,
+        1894,
+        1895,
+        1896,
+        1897,
+        1898,
+        1899,
+        1900,
+        1901,
+        1902,
+        1903,
+        1904,
+        1905,
+        1906,
+        1907,
+        1908,
+        1909,
+        1910,
+        1911,
+        1912,
+        1913,
+        1914,
+        1915,
+        1916,
+        1918,
+        1919,
+        1920,
+        1921,
+        1922,
+        1923,
+        1924,
+        1925,
+        1926,
+        1928,
+        1929,
+        1930,
+        1931,
+        1932,
+        1933,
+        1934,
+        1935,
+        1936,
+        1937,
+        1938,
+        1939,
+        1940,
+        1941,
+        1942,
+        1943,
+        1944,
+        1945,
+        1946,
+        1947,
+        1948,
+        1949,
+        1950,
+        1951,
+        1952,
+        1953,
+        1954,
+        1955,
+        1956,
+        1957,
+        1959,
+        1960,
+        1961,
+        1962,
+        1963,
+        1964,
+        1965,
+        1966,
+        1967,
+        1970,
+        1971,
+        1972,
+        1973,
+        1974,
+        1975,
+        1976,
+        1977,
+        1978,
+        1979,
+        1980,
+        1981,
+        1982,
+        1983,
+        1984,
+        1985,
+        1986,
+        1987,
+        1988,
+        1989,
+        1990,
+        1991,
+        1992,
+        1993,
+        1994,
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026,
+        2027,
+        2028,
+        2029,
+        2030,
+        2031,
+        2032,
+        2033,
+        2034,
+        2035,
+        2036,
+        2041,
+        2042,
+        2043,
+        2044,
+        2045,
+        2048,
+        2049,
+        2052,
+        2053,
+        2055,
+        2056,
+        2057,
+        2058,
+        2059,
+        2060,
+        2061,
+        2062,
+        2063,
+        2064,
+        2065,
+        2066,
+        2067,
+        2069,
+        2070,
+        2071,
+        2073
+      ],
+      "max_position_compression_error_m": 0.00016017239331970752
+    },
+    {
+      "mesh": "zw_fuyu_body_07.lod1",
+      "guid": "f2f9553d-4b18-dd40-1c46-39c3f44637df",
+      "metamesh": "zw_fuyu_body",
+      "lod": 1,
+      "bytes": 66012,
+      "render_vertices": 1469,
+      "simulation_vertices": 1193,
+      "fixed_positions": 1106,
+      "boundary_fixed_positions": 84,
+      "active_positions": 87,
+      "stretch_constraints": 299,
+      "bend_constraints": 244,
+      "shear_constraints": 0,
+      "parallel_sets": 17,
+      "dummy_sets": 10,
+      "max_geodesic_anchor_length": 0.692793499064784,
+      "sha256": "f6110f603f27db5495561eb55f81e499ae1234671d92d261c5eeaf360e715d26",
+      "root_fixes": [
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            347,
+            348,
+            349,
+            350,
+            351
+          ],
+          "bounds": [
+            [
+              -0.27226472,
+              -0.046950515,
+              1.3593974
+            ],
+            [
+              -0.25810245,
+              -0.03769049,
+              1.3656304
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            352,
+            353,
+            354,
+            355,
+            356
+          ],
+          "bounds": [
+            [
+              -0.25792506,
+              -0.036259938,
+              1.3584452
+            ],
+            [
+              -0.24316974,
+              -0.027824527,
+              1.3648642
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            357,
+            358,
+            359,
+            360,
+            361
+          ],
+          "bounds": [
+            [
+              -0.27452725,
+              -0.06866224,
+              1.3614575
+            ],
+            [
+              -0.25938153,
+              -0.0599709,
+              1.3676602
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            362,
+            363,
+            364,
+            365,
+            366
+          ],
+          "bounds": [
+            [
+              -0.25986725,
+              -0.0764243,
+              1.3610936
+            ],
+            [
+              -0.24664743,
+              -0.06845735,
+              1.3666955
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            367,
+            368,
+            369,
+            370,
+            371
+          ],
+          "bounds": [
+            [
+              -0.28076333,
+              -0.058429893,
+              1.3591357
+            ],
+            [
+              -0.26465794,
+              -0.048187073,
+              1.3666174
+            ]
+          ]
+        },
+        {
+          "component_positions": 14,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            372,
+            373,
+            374,
+            375,
+            376,
+            377,
+            378,
+            379,
+            380,
+            381,
+            382,
+            383,
+            384,
+            385,
+            386,
+            387,
+            388
+          ],
+          "bounds": [
+            [
+              -0.2906758,
+              -0.04235506,
+              1.3470882
+            ],
+            [
+              -0.26830232,
+              -0.030048253,
+              1.3597219
+            ]
+          ]
+        },
+        {
+          "component_positions": 26,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            389,
+            390,
+            391,
+            392,
+            393,
+            394,
+            395,
+            396,
+            397,
+            398,
+            399,
+            400,
+            401,
+            402,
+            403,
+            404,
+            405,
+            406,
+            407,
+            408,
+            409,
+            410,
+            411,
+            412,
+            413,
+            414,
+            415,
+            416,
+            417,
+            418
+          ],
+          "bounds": [
+            [
+              -0.26718724,
+              -0.0298261,
+              1.3467356
+            ],
+            [
+              -0.25160417,
+              -0.009741298,
+              1.3604511
+            ]
+          ]
+        },
+        {
+          "component_positions": 14,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            419,
+            420,
+            421,
+            422,
+            423,
+            424,
+            425,
+            426,
+            427,
+            428,
+            429,
+            430,
+            431,
+            432,
+            433,
+            434,
+            435
+          ],
+          "bounds": [
+            [
+              -0.29189542,
+              -0.07989873,
+              1.3497279
+            ],
+            [
+              -0.2716581,
+              -0.06546434,
+              1.3627399
+            ]
+          ]
+        },
+        {
+          "component_positions": 29,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            436,
+            437,
+            438,
+            439,
+            440,
+            441,
+            442,
+            443,
+            444,
+            445,
+            446,
+            447,
+            448,
+            449,
+            450,
+            451,
+            452,
+            453,
+            454,
+            455,
+            456,
+            457,
+            458,
+            459,
+            460,
+            461,
+            462,
+            463,
+            464,
+            465,
+            466,
+            467,
+            468
+          ],
+          "bounds": [
+            [
+              -0.26698938,
+              -0.0967023,
+              1.35013
+            ],
+            [
+              -0.25477755,
+              -0.07459808,
+              1.3635049
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            469,
+            470,
+            472,
+            473,
+            475,
+            476,
+            477,
+            478
+          ],
+          "bounds": [
+            [
+              -0.30276522,
+              -0.055727664,
+              1.3445301
+            ],
+            [
+              -0.27823767,
+              -0.05089586,
+              1.3606565
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1082,
+            1083,
+            1084,
+            1085,
+            1086
+          ],
+          "bounds": [
+            [
+              0.25809842,
+              -0.046953563,
+              1.3593917
+            ],
+            [
+              0.27226013,
+              -0.03769337,
+              1.3656259
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1087,
+            1088,
+            1089,
+            1090,
+            1091
+          ],
+          "bounds": [
+            [
+              0.24316598,
+              -0.036262784,
+              1.3584409
+            ],
+            [
+              0.25792083,
+              -0.027827336,
+              1.3648605
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1092,
+            1093,
+            1094,
+            1095,
+            1096
+          ],
+          "bounds": [
+            [
+              0.25937733,
+              -0.06866516,
+              1.3614519
+            ],
+            [
+              0.27452242,
+              -0.059973944,
+              1.3676559
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1097,
+            1098,
+            1099,
+            1100,
+            1101
+          ],
+          "bounds": [
+            [
+              0.24664305,
+              -0.07642719,
+              1.3610893
+            ],
+            [
+              0.25986266,
+              -0.068460226,
+              1.3666921
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1102,
+            1103,
+            1104,
+            1105,
+            1106
+          ],
+          "bounds": [
+            [
+              0.26465374,
+              -0.058432993,
+              1.3591295
+            ],
+            [
+              0.2807585,
+              -0.048190165,
+              1.3666126
+            ]
+          ]
+        },
+        {
+          "component_positions": 14,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1107,
+            1108,
+            1109,
+            1110,
+            1111,
+            1112,
+            1113,
+            1114,
+            1115,
+            1116,
+            1117,
+            1118,
+            1119,
+            1120,
+            1121,
+            1122,
+            1123
+          ],
+          "bounds": [
+            [
+              0.2682977,
+              -0.042358212,
+              1.347081
+            ],
+            [
+              0.29067028,
+              -0.03005182,
+              1.3597163
+            ]
+          ]
+        },
+        {
+          "component_positions": 26,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1124,
+            1125,
+            1126,
+            1127,
+            1128,
+            1129,
+            1130,
+            1131,
+            1132,
+            1133,
+            1134,
+            1135,
+            1136,
+            1137,
+            1138,
+            1139,
+            1140,
+            1141,
+            1142,
+            1143,
+            1144,
+            1145,
+            1146,
+            1147,
+            1148,
+            1149,
+            1150,
+            1151,
+            1152,
+            1153
+          ],
+          "bounds": [
+            [
+              0.25160006,
+              -0.029828973,
+              1.3467308
+            ],
+            [
+              0.26718202,
+              -0.009744292,
+              1.3604466
+            ]
+          ]
+        },
+        {
+          "component_positions": 14,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1154,
+            1155,
+            1156,
+            1157,
+            1158,
+            1159,
+            1160,
+            1161,
+            1162,
+            1163,
+            1164,
+            1165,
+            1166,
+            1167,
+            1168,
+            1169,
+            1170
+          ],
+          "bounds": [
+            [
+              0.27165335,
+              -0.07990221,
+              1.3497211
+            ],
+            [
+              0.2918894,
+              -0.06546751,
+              1.3627343
+            ]
+          ]
+        },
+        {
+          "component_positions": 29,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1171,
+            1172,
+            1173,
+            1174,
+            1175,
+            1176,
+            1177,
+            1178,
+            1179,
+            1180,
+            1181,
+            1182,
+            1183,
+            1184,
+            1185,
+            1186,
+            1187,
+            1188,
+            1189,
+            1190,
+            1191,
+            1192,
+            1193,
+            1194,
+            1195,
+            1196,
+            1197,
+            1198,
+            1199,
+            1200,
+            1201,
+            1202,
+            1203
+          ],
+          "bounds": [
+            [
+              0.2547728,
+              -0.09670525,
+              1.3501259
+            ],
+            [
+              0.26698393,
+              -0.07460091,
+              1.3635006
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of upper_clothes component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1205,
+            1206,
+            1208,
+            1209,
+            1210,
+            1211,
+            1212,
+            1213
+          ],
+          "bounds": [
+            [
+              0.27823296,
+              -0.055731323,
+              1.3445221
+            ],
+            [
+              0.30275914,
+              -0.050899126,
+              1.3606504
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431,
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456,
+        457,
+        458,
+        459,
+        460,
+        461,
+        462,
+        463,
+        464,
+        465,
+        466,
+        467,
+        468,
+        469,
+        470,
+        472,
+        473,
+        475,
+        476,
+        477,
+        478,
+        1082,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1092,
+        1093,
+        1094,
+        1095,
+        1096,
+        1097,
+        1098,
+        1099,
+        1100,
+        1101,
+        1102,
+        1103,
+        1104,
+        1105,
+        1106,
+        1107,
+        1108,
+        1109,
+        1110,
+        1111,
+        1112,
+        1113,
+        1114,
+        1115,
+        1116,
+        1117,
+        1118,
+        1119,
+        1120,
+        1121,
+        1122,
+        1123,
+        1124,
+        1125,
+        1126,
+        1127,
+        1128,
+        1129,
+        1130,
+        1131,
+        1132,
+        1133,
+        1134,
+        1135,
+        1136,
+        1137,
+        1138,
+        1139,
+        1140,
+        1141,
+        1142,
+        1143,
+        1144,
+        1145,
+        1146,
+        1147,
+        1148,
+        1149,
+        1150,
+        1151,
+        1152,
+        1153,
+        1154,
+        1155,
+        1156,
+        1157,
+        1158,
+        1159,
+        1160,
+        1161,
+        1162,
+        1163,
+        1164,
+        1165,
+        1166,
+        1167,
+        1168,
+        1169,
+        1170,
+        1171,
+        1172,
+        1173,
+        1174,
+        1175,
+        1176,
+        1177,
+        1178,
+        1179,
+        1180,
+        1181,
+        1182,
+        1183,
+        1184,
+        1185,
+        1186,
+        1187,
+        1188,
+        1189,
+        1190,
+        1191,
+        1192,
+        1193,
+        1194,
+        1195,
+        1196,
+        1197,
+        1198,
+        1199,
+        1200,
+        1201,
+        1202,
+        1203,
+        1205,
+        1206,
+        1208,
+        1209,
+        1210,
+        1211,
+        1212,
+        1213
+      ],
+      "max_position_compression_error_m": 0.00015414182451613712
+    },
+    {
+      "mesh": "zw_fuyu_head_10",
+      "guid": "57c98ec1-6275-719a-66e8-b7a3265750d0",
+      "metamesh": "zw_fuyu_head",
+      "lod": 0,
+      "bytes": 228420,
+      "render_vertices": 3427,
+      "simulation_vertices": 3096,
+      "fixed_positions": 1156,
+      "boundary_fixed_positions": 195,
+      "active_positions": 1940,
+      "stretch_constraints": 4115,
+      "bend_constraints": 2352,
+      "shear_constraints": 0,
+      "parallel_sets": 16,
+      "dummy_sets": 10,
+      "max_geodesic_anchor_length": 0.3346912040260106,
+      "sha256": "7df9d86e6e2619c200e4235fe9a247845fb51b9c8bb0174e6692d05a4af3a398",
+      "root_fixes": [
+        {
+          "component_positions": 86,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            803,
+            804,
+            805,
+            806,
+            863,
+            864,
+            865,
+            866,
+            867,
+            868,
+            869,
+            870,
+            871,
+            872,
+            873,
+            874,
+            875,
+            876,
+            877,
+            878
+          ],
+          "bounds": [
+            [
+              -0.021149911,
+              -0.13469084,
+              1.3337575
+            ],
+            [
+              0.01726009,
+              -0.09130082,
+              1.4812775
+            ]
+          ]
+        },
+        {
+          "component_positions": 26,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            879,
+            880,
+            903,
+            904
+          ],
+          "bounds": [
+            [
+              0.0007100891,
+              -0.13357083,
+              1.3422074
+            ],
+            [
+              0.01553009,
+              -0.09390082,
+              1.4817675
+            ]
+          ]
+        },
+        {
+          "component_positions": 33,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            909,
+            910,
+            911,
+            912,
+            931,
+            932,
+            933,
+            934
+          ],
+          "bounds": [
+            [
+              -0.009699911,
+              -0.13727084,
+              1.3297675
+            ],
+            [
+              0.006510089,
+              -0.09480082,
+              1.4807675
+            ]
+          ]
+        },
+        {
+          "component_positions": 28,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1151,
+            1154,
+            1177,
+            1178
+          ],
+          "bounds": [
+            [
+              -0.01944991,
+              -0.13312083,
+              1.3418975
+            ],
+            [
+              -0.003929911,
+              -0.09389082,
+              1.4817675
+            ]
+          ]
+        },
+        {
+          "component_positions": 30,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2643,
+            2644
+          ],
+          "bounds": [
+            [
+              -0.07773991,
+              -0.016660834,
+              1.3625774
+            ],
+            [
+              -0.06513991,
+              0.12418917,
+              1.5874075
+            ]
+          ]
+        },
+        {
+          "component_positions": 30,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2673,
+            2674
+          ],
+          "bounds": [
+            [
+              -0.082609914,
+              -0.024150828,
+              1.3608075
+            ],
+            [
+              -0.06556991,
+              0.12522916,
+              1.5846775
+            ]
+          ]
+        },
+        {
+          "component_positions": 91,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2753,
+            2754,
+            2759,
+            2760,
+            2811,
+            2812
+          ],
+          "bounds": [
+            [
+              -0.07719991,
+              -0.02019083,
+              1.3083274
+            ],
+            [
+              -0.05574991,
+              0.14093916,
+              1.5898775
+            ]
+          ]
+        },
+        {
+          "component_positions": 30,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2845,
+            2848
+          ],
+          "bounds": [
+            [
+              0.063880086,
+              -0.021020832,
+              1.3589275
+            ],
+            [
+              0.08044009,
+              0.124819174,
+              1.5880975
+            ]
+          ]
+        },
+        {
+          "component_positions": 28,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2911,
+            2912
+          ],
+          "bounds": [
+            [
+              0.06344009,
+              -0.018730829,
+              1.3630375
+            ],
+            [
+              0.092760086,
+              0.13292916,
+              1.5664675
+            ]
+          ]
+        },
+        {
+          "component_positions": 30,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2971,
+            2974
+          ],
+          "bounds": [
+            [
+              0.06410009,
+              -0.01697083,
+              1.3621775
+            ],
+            [
+              0.077870086,
+              0.12332917,
+              1.5883275
+            ]
+          ]
+        },
+        {
+          "component_positions": 30,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            3001,
+            3004
+          ],
+          "bounds": [
+            [
+              0.064500086,
+              -0.02379083,
+              1.3603874
+            ],
+            [
+              0.08246009,
+              0.12415917,
+              1.5856274
+            ]
+          ]
+        },
+        {
+          "component_positions": 90,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            3081,
+            3084,
+            3086,
+            3087,
+            3139,
+            3142
+          ],
+          "bounds": [
+            [
+              0.05736009,
+              -0.020450832,
+              1.3081375
+            ],
+            [
+              0.081650086,
+              0.13787916,
+              1.5916475
+            ]
+          ]
+        },
+        {
+          "component_positions": 28,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            3175,
+            3176,
+            3357,
+            3358
+          ],
+          "bounds": [
+            [
+              -0.08529991,
+              -0.024910832,
+              1.3624475
+            ],
+            [
+              -0.06738991,
+              0.12387917,
+              1.5543575
+            ]
+          ]
+        },
+        {
+          "component_positions": 28,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            3236,
+            3237
+          ],
+          "bounds": [
+            [
+              -0.09158991,
+              -0.017660828,
+              1.3634275
+            ],
+            [
+              -0.064389914,
+              0.13335916,
+              1.5662274
+            ]
+          ]
+        },
+        {
+          "component_positions": 30,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            3297,
+            3298
+          ],
+          "bounds": [
+            [
+              -0.08065991,
+              -0.022130826,
+              1.3593775
+            ],
+            [
+              -0.06482991,
+              0.12615916,
+              1.5869175
+            ]
+          ]
+        },
+        {
+          "component_positions": 28,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            3328,
+            3329
+          ],
+          "bounds": [
+            [
+              0.06630009,
+              -0.024820829,
+              1.3620775
+            ],
+            [
+              0.08549009,
+              0.12319917,
+              1.5544175
+            ]
+          ]
+        },
+        {
+          "component_positions": 28,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            3384,
+            3385
+          ],
+          "bounds": [
+            [
+              0.06729009,
+              -0.0050408295,
+              1.3664675
+            ],
+            [
+              0.08666009,
+              0.13133916,
+              1.5697275
+            ]
+          ]
+        },
+        {
+          "component_positions": 28,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            3413,
+            3414
+          ],
+          "bounds": [
+            [
+              -0.08487991,
+              -0.0050408295,
+              1.3664675
+            ],
+            [
+              -0.06633991,
+              0.13150917,
+              1.5697275
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        803,
+        804,
+        805,
+        806,
+        863,
+        864,
+        865,
+        866,
+        867,
+        868,
+        869,
+        870,
+        871,
+        872,
+        873,
+        874,
+        875,
+        876,
+        877,
+        878,
+        879,
+        880,
+        903,
+        904,
+        909,
+        910,
+        911,
+        912,
+        931,
+        932,
+        933,
+        934,
+        1151,
+        1154,
+        1177,
+        1178,
+        2643,
+        2644,
+        2673,
+        2674,
+        2753,
+        2754,
+        2759,
+        2760,
+        2811,
+        2812,
+        2845,
+        2848,
+        2911,
+        2912,
+        2971,
+        2974,
+        3001,
+        3004,
+        3081,
+        3084,
+        3086,
+        3087,
+        3139,
+        3142,
+        3175,
+        3176,
+        3236,
+        3237,
+        3297,
+        3298,
+        3328,
+        3329,
+        3357,
+        3358,
+        3384,
+        3385,
+        3413,
+        3414
+      ],
+      "max_position_compression_error_m": 0.0001542758223576882
+    },
+    {
+      "mesh": "zw_fuyu_head_10.lod1",
+      "guid": "b4872d5a-56dc-1dfc-bab0-06658ff354f2",
+      "metamesh": "zw_fuyu_head",
+      "lod": 1,
+      "bytes": 129832,
+      "render_vertices": 2133,
+      "simulation_vertices": 2023,
+      "fixed_positions": 1154,
+      "boundary_fixed_positions": 206,
+      "active_positions": 869,
+      "stretch_constraints": 1762,
+      "bend_constraints": 862,
+      "shear_constraints": 0,
+      "parallel_sets": 13,
+      "dummy_sets": 7,
+      "max_geodesic_anchor_length": 0.3248051807021441,
+      "sha256": "61159edaf55a3831d3d7141a319dc03b040c8f8e11e8c32e7467f4b9146b7566",
+      "root_fixes": [
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            50,
+            52
+          ],
+          "bounds": [
+            [
+              -0.06594887,
+              -0.10229441,
+              1.3032588
+            ],
+            [
+              -0.035201743,
+              -0.061541103,
+              1.4924818
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            406,
+            407
+          ],
+          "bounds": [
+            [
+              0.0035337186,
+              -0.1331696,
+              1.3420342
+            ],
+            [
+              0.01738567,
+              -0.092753194,
+              1.4805634
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            409,
+            410
+          ],
+          "bounds": [
+            [
+              -0.0009924878,
+              -0.13681623,
+              1.3354248
+            ],
+            [
+              0.012494632,
+              -0.09420674,
+              1.4814736
+            ]
+          ]
+        },
+        {
+          "component_positions": 8,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            420,
+            421
+          ],
+          "bounds": [
+            [
+              -0.02075279,
+              -0.13469803,
+              1.3362596
+            ],
+            [
+              -0.004578528,
+              -0.091703825,
+              1.4794731
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            424,
+            425
+          ],
+          "bounds": [
+            [
+              -0.019544497,
+              -0.13456412,
+              1.3368534
+            ],
+            [
+              -0.004249314,
+              -0.094271034,
+              1.4805937
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            433,
+            436
+          ],
+          "bounds": [
+            [
+              -0.012715727,
+              -0.13339595,
+              1.3337028
+            ],
+            [
+              -0.0003451945,
+              -0.09655753,
+              1.4827665
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            440,
+            442
+          ],
+          "bounds": [
+            [
+              0.0013264174,
+              -0.13599443,
+              1.3425736
+            ],
+            [
+              0.015785482,
+              -0.09522892,
+              1.482448
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            453,
+            454
+          ],
+          "bounds": [
+            [
+              -0.0024027557,
+              -0.1325856,
+              1.3303249
+            ],
+            [
+              0.00691557,
+              -0.09431151,
+              1.480614
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            457,
+            458
+          ],
+          "bounds": [
+            [
+              -0.010218899,
+              -0.13680927,
+              1.3302922
+            ],
+            [
+              -0.0009989174,
+              -0.09583139,
+              1.4813045
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            601,
+            602
+          ],
+          "bounds": [
+            [
+              -0.018977733,
+              -0.13670482,
+              1.3420669
+            ],
+            [
+              -0.0049524503,
+              -0.09500237,
+              1.4821347
+            ]
+          ]
+        },
+        {
+          "component_positions": 12,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1794,
+            1795
+          ],
+          "bounds": [
+            [
+              -0.077973075,
+              -0.0165995,
+              1.3616866
+            ],
+            [
+              -0.064495094,
+              0.12275799,
+              1.5874075
+            ]
+          ]
+        },
+        {
+          "component_positions": 11,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1809,
+            1810
+          ],
+          "bounds": [
+            [
+              -0.08197876,
+              -0.025139077,
+              1.3627746
+            ],
+            [
+              -0.065351956,
+              0.12590685,
+              1.5846775
+            ]
+          ]
+        },
+        {
+          "component_positions": 23,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1834,
+            1835,
+            1840,
+            1841
+          ],
+          "bounds": [
+            [
+              -0.07741803,
+              -0.02019083,
+              1.3285351
+            ],
+            [
+              -0.05971231,
+              0.13943511,
+              1.5898775
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1845,
+            1846
+          ],
+          "bounds": [
+            [
+              -0.07450991,
+              0.11969917,
+              1.3086303
+            ],
+            [
+              -0.05412597,
+              0.13960703,
+              1.3652775
+            ]
+          ]
+        },
+        {
+          "component_positions": 16,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1871,
+            1872
+          ],
+          "bounds": [
+            [
+              -0.07531991,
+              -0.019310826,
+              1.3256875
+            ],
+            [
+              -0.05574991,
+              0.13697916,
+              1.5871075
+            ]
+          ]
+        },
+        {
+          "component_positions": 13,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1883,
+            1886
+          ],
+          "bounds": [
+            [
+              0.064860165,
+              -0.020788956,
+              1.3590907
+            ],
+            [
+              0.07997413,
+              0.12435046,
+              1.5880975
+            ]
+          ]
+        },
+        {
+          "component_positions": 12,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1918,
+            1919
+          ],
+          "bounds": [
+            [
+              0.061894547,
+              -0.019203916,
+              1.3630375
+            ],
+            [
+              0.092808,
+              0.13258864,
+              1.5664675
+            ]
+          ]
+        },
+        {
+          "component_positions": 11,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1939,
+            1941
+          ],
+          "bounds": [
+            [
+              0.06279391,
+              -0.0147908265,
+              1.3637552
+            ],
+            [
+              0.077870086,
+              0.12338358,
+              1.5883275
+            ]
+          ]
+        },
+        {
+          "component_positions": 12,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1951,
+            1952
+          ],
+          "bounds": [
+            [
+              0.064565,
+              -0.024529422,
+              1.3609535
+            ],
+            [
+              0.08203951,
+              0.12499082,
+              1.5856274
+            ]
+          ]
+        },
+        {
+          "component_positions": 22,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1986,
+            1988,
+            1990,
+            1991
+          ],
+          "bounds": [
+            [
+              0.06206472,
+              -0.020413848,
+              1.3283192
+            ],
+            [
+              0.081650086,
+              0.1369112,
+              1.5916475
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1996,
+            1997
+          ],
+          "bounds": [
+            [
+              0.05735279,
+              0.119179174,
+              1.3082479
+            ],
+            [
+              0.07627009,
+              0.13702102,
+              1.3649375
+            ]
+          ]
+        },
+        {
+          "component_positions": 17,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2007,
+            2010
+          ],
+          "bounds": [
+            [
+              0.045346998,
+              -0.019499533,
+              1.3326657
+            ],
+            [
+              0.07757009,
+              0.1313418,
+              1.5881975
+            ]
+          ]
+        },
+        {
+          "component_positions": 12,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2026,
+            2027,
+            2102,
+            2103
+          ],
+          "bounds": [
+            [
+              -0.085598215,
+              -0.024910832,
+              1.3645539
+            ],
+            [
+              -0.066263326,
+              0.12482566,
+              1.5543575
+            ]
+          ]
+        },
+        {
+          "component_positions": 11,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2046,
+            2052
+          ],
+          "bounds": [
+            [
+              -0.09230895,
+              -0.017924717,
+              1.3634275
+            ],
+            [
+              -0.064494856,
+              0.1331722,
+              1.564916
+            ]
+          ]
+        },
+        {
+          "component_positions": 13,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2072,
+            2073
+          ],
+          "bounds": [
+            [
+              -0.080457985,
+              -0.022130826,
+              1.3611276
+            ],
+            [
+              -0.065884925,
+              0.12678011,
+              1.5869175
+            ]
+          ]
+        },
+        {
+          "component_positions": 12,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2090,
+            2091
+          ],
+          "bounds": [
+            [
+              0.06650106,
+              -0.024820829,
+              1.3635759
+            ],
+            [
+              0.08680316,
+              0.12396537,
+              1.5544175
+            ]
+          ]
+        },
+        {
+          "component_positions": 12,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2119,
+            2120
+          ],
+          "bounds": [
+            [
+              0.06818929,
+              -0.005331245,
+              1.3678232
+            ],
+            [
+              0.085287005,
+              0.13479504,
+              1.5690655
+            ]
+          ]
+        },
+        {
+          "component_positions": 12,
+          "reason": "Measured upper attachment of long_hair component in 05_FuyuChongyun; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2124,
+            2126
+          ],
+          "bounds": [
+            [
+              -0.08349264,
+              -0.0050408295,
+              1.3678179
+            ],
+            [
+              -0.06483433,
+              0.13498633,
+              1.5697275
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        50,
+        52,
+        406,
+        407,
+        409,
+        410,
+        420,
+        421,
+        424,
+        425,
+        433,
+        436,
+        440,
+        442,
+        453,
+        454,
+        457,
+        458,
+        601,
+        602,
+        1794,
+        1795,
+        1809,
+        1810,
+        1834,
+        1835,
+        1840,
+        1841,
+        1845,
+        1846,
+        1871,
+        1872,
+        1883,
+        1886,
+        1918,
+        1919,
+        1939,
+        1941,
+        1951,
+        1952,
+        1986,
+        1988,
+        1990,
+        1991,
+        1996,
+        1997,
+        2007,
+        2010,
+        2026,
+        2027,
+        2046,
+        2052,
+        2072,
+        2073,
+        2090,
+        2091,
+        2102,
+        2103,
+        2119,
+        2120,
+        2124,
+        2126
+      ],
+      "max_position_compression_error_m": 0.00015699589687714332
+    }
+  ],
+  "solver_topology_adapters": {
+    "zw_fuyu_body_12": {
+      "normal_cancellation_groups": [
+        {
+          "render_vertices": [
+            581,
+            768
+          ],
+          "solver_normal": [
+            0.9999999999686997,
+            7.757806999757177e-06,
+            1.5546929999513377e-06
+          ],
+          "reason": "Coincident opposing front/back normals cancel; canonical source orientation used only for simulation."
+        }
+      ],
+      "duplicate_solver_faces_removed": 1,
+      "degenerate_solver_faces_removed": 0,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 3023,
+      "source_faces": 3024
+    },
+    "zw_fuyu_body_12.lod1": {
+      "normal_cancellation_groups": [
+        {
+          "render_vertices": [
+            271,
+            458
+          ],
+          "solver_normal": [
+            0.9999999999686997,
+            7.757806999757177e-06,
+            1.5546929999513377e-06
+          ],
+          "reason": "Coincident opposing front/back normals cancel; canonical source orientation used only for simulation."
+        }
+      ],
+      "duplicate_solver_faces_removed": 1,
+      "degenerate_solver_faces_removed": 0,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 2083,
+      "source_faces": 2084
+    },
+    "zw_fuyu_body_07": {
+      "normal_cancellation_groups": [],
+      "duplicate_solver_faces_removed": 0,
+      "degenerate_solver_faces_removed": 0,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 3132,
+      "source_faces": 3132
+    },
+    "zw_fuyu_body_07.lod1": {
+      "normal_cancellation_groups": [],
+      "duplicate_solver_faces_removed": 0,
+      "degenerate_solver_faces_removed": 0,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 1878,
+      "source_faces": 1878
+    },
+    "zw_fuyu_head_10": {
+      "normal_cancellation_groups": [],
+      "duplicate_solver_faces_removed": 26,
+      "degenerate_solver_faces_removed": 0,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 3253,
+      "source_faces": 3279
+    },
+    "zw_fuyu_head_10.lod1": {
+      "normal_cancellation_groups": [],
+      "duplicate_solver_faces_removed": 10,
+      "degenerate_solver_faces_removed": 0,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 1957,
+      "source_faces": 1967
+    }
+  },
+  "enabled_lods": [
+    0,
+    1
+  ],
+  "all_runtime_geometry_alpha_uv_and_skin_preserved": true,
+  "all_materials_unchanged": true,
+  "noncloth_lods_unchanged": true,
+  "editor_skin_completed": true,
+  "explicit_solver_root_overrides_recorded": true,
+  "game_solver_verified": false,
+  "scope": "Native-type direct triangle-network preprocessing, final blob byte identity, constraints, groups, compression, mapping and skin validated; no proxy mapping or engine physics test."
+}

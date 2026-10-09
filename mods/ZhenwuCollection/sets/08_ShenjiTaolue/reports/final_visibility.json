@@ -1,0 +1,792 @@
+{
+  "materials": [
+    {
+      "Name": "zw_shenji_eye",
+      "Guid": "7093bdc5-871e-6ef4-b25c-896ff8037154",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_shenji_face",
+      "Guid": "cc20fea6-c776-8096-17ea-ecda688c8850",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_shenji_skin",
+      "Guid": "96500eaa-32e8-a489-6ec3-87ad585ca5d5",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_shenji_pants",
+      "Guid": "25198377-b123-fd2f-2612-58349b1a0626",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_shenji_cuff",
+      "Guid": "eac539d4-dab3-746b-747b-5db240e927bb",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_shenji_lash",
+      "Guid": "e4621645-6372-f82c-df52-70d6d9550954",
+      "BlendMode": "factor",
+      "AlphaTest": 0.4,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_shenji_hair",
+      "Guid": "1fd960bd-ba97-9c21-17a5-b0a7547cbc3c",
+      "BlendMode": "factor",
+      "AlphaTest": 0.05,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_shenji_ornament",
+      "Guid": "84ee9dea-21b7-70b3-0ccc-0b606a959a1f",
+      "BlendMode": "factor",
+      "AlphaTest": 0.2,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "zw_shenji_cloth",
+      "Guid": "e0f40872-080f-8a24-f5c5-cdcdb384a463",
+      "BlendMode": "factor",
+      "AlphaTest": 0.08,
+      "ShaderMaterialFlags": [
+        "alpha_test",
+        "disable_vertex_color_alpha"
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "Name": "zw_shenji_head_00",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "7093bdc5-871e-6ef4-b25c-896ff8037154",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "8ECA945D8AF7C6A44A2A5F68BE4C485C069E2E0329C1C74F42A437F986C31B8C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_00.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "7093bdc5-871e-6ef4-b25c-896ff8037154",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "8ECA945D8AF7C6A44A2A5F68BE4C485C069E2E0329C1C74F42A437F986C31B8C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_00.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "7093bdc5-871e-6ef4-b25c-896ff8037154",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "8ECA945D8AF7C6A44A2A5F68BE4C485C069E2E0329C1C74F42A437F986C31B8C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_00.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "7093bdc5-871e-6ef4-b25c-896ff8037154",
+      "Vertices": 194,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "314765C4D419D7C6A78D036CB8D416FEF25E37C4D7ECB3A8221DCE4B72F256F8",
+      "VertexStreamSHA256": "8ECA945D8AF7C6A44A2A5F68BE4C485C069E2E0329C1C74F42A437F986C31B8C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_01",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "cc20fea6-c776-8096-17ea-ecda688c8850",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "3367AEB3F8F8028DB289BB7D2E7C938864AF725EAC68C2046BB7027BE2C43412",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_01.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "cc20fea6-c776-8096-17ea-ecda688c8850",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "3367AEB3F8F8028DB289BB7D2E7C938864AF725EAC68C2046BB7027BE2C43412",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_01.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "cc20fea6-c776-8096-17ea-ecda688c8850",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "3367AEB3F8F8028DB289BB7D2E7C938864AF725EAC68C2046BB7027BE2C43412",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_01.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "cc20fea6-c776-8096-17ea-ecda688c8850",
+      "Vertices": 2004,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "1E3382A79A419CFFD299BAAE7ABA0F093A4F19B273AAC1D2FEE3DAFA88D6EB69",
+      "VertexStreamSHA256": "3367AEB3F8F8028DB289BB7D2E7C938864AF725EAC68C2046BB7027BE2C43412",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_04",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "e4621645-6372-f82c-df52-70d6d9550954",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "7E97F373356B02DC88C773820E5860C2CD44FCEC9AE29C90EA386B3888E9E0A1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_04.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "e4621645-6372-f82c-df52-70d6d9550954",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "7E97F373356B02DC88C773820E5860C2CD44FCEC9AE29C90EA386B3888E9E0A1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_04.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "e4621645-6372-f82c-df52-70d6d9550954",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "7E97F373356B02DC88C773820E5860C2CD44FCEC9AE29C90EA386B3888E9E0A1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_04.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "e4621645-6372-f82c-df52-70d6d9550954",
+      "Vertices": 278,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "906A7A1A9EC55E4CFECFB3004414A55BC26152D8094B0C93BCE045FFB0CC5AE9",
+      "VertexStreamSHA256": "7E97F373356B02DC88C773820E5860C2CD44FCEC9AE29C90EA386B3888E9E0A1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_08",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "84ee9dea-21b7-70b3-0ccc-0b606a959a1f",
+      "Vertices": 570,
+      "AlphaMin": 0,
+      "AlphaMax": 9,
+      "ColorsSHA256": "608BD797F19E0C9DEBF1A56B86371B707FECE2E89E6F19A52B8E6488AABCDEC5",
+      "VertexStreamSHA256": "67C9B10250EFCB756E9D8073E04A0167147F5B0C1392BB4037372F46D4964A97",
+      "ClothMetadataSHA256": "0811F62814C4827F38B1B94EFC3069B627A8BDB69FE5F50596A72754E5F37FEE"
+    },
+    {
+      "Name": "zw_shenji_head_08.lod1",
+      "Lod": 1,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "84ee9dea-21b7-70b3-0ccc-0b606a959a1f",
+      "Vertices": 386,
+      "AlphaMin": 0,
+      "AlphaMax": 9,
+      "ColorsSHA256": "067E528CE48997A1B42BB2F7105C1F8838D25B95736404491A841875DDE961DD",
+      "VertexStreamSHA256": "00A1389A1C6DFF4DF2567EF31A9DF05422415473BF665AF1A1984B4E9DE79B5A",
+      "ClothMetadataSHA256": "0811F62814C4827F38B1B94EFC3069B627A8BDB69FE5F50596A72754E5F37FEE"
+    },
+    {
+      "Name": "zw_shenji_head_08.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "84ee9dea-21b7-70b3-0ccc-0b606a959a1f",
+      "Vertices": 240,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B751B1F8AEBD50C8106AF24096043271360FD7C071CDE65DD132A0CD352BF564",
+      "VertexStreamSHA256": "22EDC51640CD8FCB4B53C204B38187769D929156697D6AF064C82984441DDFAD",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_08.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "84ee9dea-21b7-70b3-0ccc-0b606a959a1f",
+      "Vertices": 124,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D32C93B9CC4C3C498938C9D28B176B0420979AAF7E9AF4A3C969CDBD7F8316AE",
+      "VertexStreamSHA256": "06E8A7DF0129732F2E25FB8049814B1C1C66563052D6DBFCD6E74FE948134D50",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_09",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "84ee9dea-21b7-70b3-0ccc-0b606a959a1f",
+      "Vertices": 722,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "72378AD7940F1090CE329611005A03DEFABE48C4943F5054E753C75F0618223C",
+      "VertexStreamSHA256": "6D0C7FBB80FE0949A534354404E11314BE2C175660AE942550B2F874D6A8528B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_09.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "84ee9dea-21b7-70b3-0ccc-0b606a959a1f",
+      "Vertices": 503,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "86F4E89E346F84AEADDECD237FC22FF1E174C3AE971CE91DB05547ACA8180AE3",
+      "VertexStreamSHA256": "6B4E79BDA7A87753B29003BD5ECDA5357F2B46C6E2FC1F499550FEFF10009885",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_09.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "84ee9dea-21b7-70b3-0ccc-0b606a959a1f",
+      "Vertices": 279,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "F6D3E2F931CE7C17D1AC1944ADC74C9C87221FD205C8047F9F20EA3F191D1EE5",
+      "VertexStreamSHA256": "945D48247FB618FC475F039C710BA15BFF56F445D44DA251BDBE11D7AA072677",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_09.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "84ee9dea-21b7-70b3-0ccc-0b606a959a1f",
+      "Vertices": 127,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "F5558477B7EBEC9A6BEE6CD14BBFDE9EF9B43639FBE07F8C4477ED9B7CCEE54E",
+      "VertexStreamSHA256": "C60BC9929A8B4487679A6AD6D0C953311AA87CCFF6F2071FC8D86E4A3D0141DB",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_12",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "1fd960bd-ba97-9c21-17a5-b0a7547cbc3c",
+      "Vertices": 4246,
+      "AlphaMin": 0,
+      "AlphaMax": 9,
+      "ColorsSHA256": "0DD975F75A7A2CC0DB9D0A7CD5EAF006DAE4300260357F398F025C989415559F",
+      "VertexStreamSHA256": "00D3137F6FEE50F35E860AFEEBA0A2914E22C49DFB253ACF10A6B1A8FDC7A5BC",
+      "ClothMetadataSHA256": "0811F62814C4827F38B1B94EFC3069B627A8BDB69FE5F50596A72754E5F37FEE"
+    },
+    {
+      "Name": "zw_shenji_head_12.lod1",
+      "Lod": 1,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "1fd960bd-ba97-9c21-17a5-b0a7547cbc3c",
+      "Vertices": 2714,
+      "AlphaMin": 0,
+      "AlphaMax": 9,
+      "ColorsSHA256": "3198BE03330F77676A13D66986E7EAEDEF7DB1D7436698D03E174537FF72499B",
+      "VertexStreamSHA256": "BCA35708B5B043497EDDEE55C6A717496841E44AC59D3A07E31EF075711A0A9B",
+      "ClothMetadataSHA256": "0811F62814C4827F38B1B94EFC3069B627A8BDB69FE5F50596A72754E5F37FEE"
+    },
+    {
+      "Name": "zw_shenji_head_12.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "1fd960bd-ba97-9c21-17a5-b0a7547cbc3c",
+      "Vertices": 1613,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B84F265887A564415783FD25D27516BAE54BCB8E665A15D2D461D6B08927CE29",
+      "VertexStreamSHA256": "E3439359042FF8BB39A408C5EC39C703F0BCFFBBCB3D24A9A3850791D1E71602",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_12.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "1fd960bd-ba97-9c21-17a5-b0a7547cbc3c",
+      "Vertices": 959,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "2C8E0FC07795914B677E3D0063661C8231D6FC4401DE91C9B75A8E6A7E3FA44F",
+      "VertexStreamSHA256": "036AD96A94ECD06DF10E99F53810B5F3B096C4F5A8C993B60882556E350A396C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_13",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "1fd960bd-ba97-9c21-17a5-b0a7547cbc3c",
+      "Vertices": 2515,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "6E2818DE9FC4773A226FAB5AFB56F3DE45E708C426373512E9BC4D81D63D43A5",
+      "VertexStreamSHA256": "E03181081D4DA89CDC293FC1A62E5225BD3BC1D0BF6A380968EE5876429C01EE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_13.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "1fd960bd-ba97-9c21-17a5-b0a7547cbc3c",
+      "Vertices": 1750,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "77939A9302D75602609972757FE20F63E7F7C6E3BCABF5133E266BDD1898D383",
+      "VertexStreamSHA256": "361621C891C0D5830EC8C2C7710A6A8A0523FB7B957D02F369866236A15BA49A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_13.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "1fd960bd-ba97-9c21-17a5-b0a7547cbc3c",
+      "Vertices": 1106,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "D34E45BDF9385DC84E9FD1A1612BE20DC173FF9F2674BCB4F83FFC1ADAEFD7ED",
+      "VertexStreamSHA256": "87EAE5916D7285F4074FE5718BB279785467926EE7CBD211D2E98BBD7648AE44",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_head_13.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "1fd960bd-ba97-9c21-17a5-b0a7547cbc3c",
+      "Vertices": 680,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "283DF4DB19AB13633B048DA5539D368CBC95556A00CA74B323FC3EDBC51825AC",
+      "VertexStreamSHA256": "BE5060E8B3674FDBA35958CB9585F78AF0218737F482262F25AA54F8F2492FB1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_body_03",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "eac539d4-dab3-746b-747b-5db240e927bb",
+      "Vertices": 1588,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "5CD59C75A1A36B628858C4FF1149617244B3EAC5FF9C36E42909A9E1C3C4FB3A",
+      "VertexStreamSHA256": "170C431C01EA7CD597D148318E7D3433645566ABCE0216EFB5581D11977153FC",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_body_03.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "eac539d4-dab3-746b-747b-5db240e927bb",
+      "Vertices": 1055,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "35E39134A52A013261B95FC9F84D8D8F8A5346B7172D7755ED441370967C6641",
+      "VertexStreamSHA256": "A73425E184E39AC874069AAC1D94F8968213B78367E984B5EFF607DC015E7181",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_body_03.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "eac539d4-dab3-746b-747b-5db240e927bb",
+      "Vertices": 646,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "7A6412A14CED06E15EC9E86EA05A2027A17BE06C6A58CB81B55F68AE3811295A",
+      "VertexStreamSHA256": "52981CFF90EE8892520443E7A5FF3D7E5DF107BC2FB9568019B12EEEFE059699",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_body_03.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "eac539d4-dab3-746b-747b-5db240e927bb",
+      "Vertices": 390,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "3513CE8B1A84B0DE5CFBC2A2CFF718789796CBA2AD934AE45E65E19C93E1FDF0",
+      "VertexStreamSHA256": "AB8BB287B748A5F65B41EF98777F81918EFEF9A86758E180E2799904B91DBB45",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_body_05",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "96500eaa-32e8-a489-6ec3-87ad585ca5d5",
+      "Vertices": 44,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "5CF9D7AC408B15308341615C73D42311B1E7A34DBAA8BDA25ABB30BBA74F965A",
+      "VertexStreamSHA256": "3C24D357BC8031E2B6F1054D334633BEFB45FE5061D7EFD65D6D415990C72E40",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_body_05.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "96500eaa-32e8-a489-6ec3-87ad585ca5d5",
+      "Vertices": 44,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "5CF9D7AC408B15308341615C73D42311B1E7A34DBAA8BDA25ABB30BBA74F965A",
+      "VertexStreamSHA256": "3C24D357BC8031E2B6F1054D334633BEFB45FE5061D7EFD65D6D415990C72E40",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_body_05.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "96500eaa-32e8-a489-6ec3-87ad585ca5d5",
+      "Vertices": 44,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "5CF9D7AC408B15308341615C73D42311B1E7A34DBAA8BDA25ABB30BBA74F965A",
+      "VertexStreamSHA256": "3C24D357BC8031E2B6F1054D334633BEFB45FE5061D7EFD65D6D415990C72E40",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_body_05.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "96500eaa-32e8-a489-6ec3-87ad585ca5d5",
+      "Vertices": 44,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "5CF9D7AC408B15308341615C73D42311B1E7A34DBAA8BDA25ABB30BBA74F965A",
+      "VertexStreamSHA256": "3C24D357BC8031E2B6F1054D334633BEFB45FE5061D7EFD65D6D415990C72E40",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_body_07",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "e0f40872-080f-8a24-f5c5-cdcdb384a463",
+      "Vertices": 2597,
+      "AlphaMin": 0,
+      "AlphaMax": 51,
+      "ColorsSHA256": "5C9164DDD046B4BD1759E5086499E616066D97EB942667D41C7C9526E3DE3199",
+      "VertexStreamSHA256": "9756EBA46B376F390C6096D8D02216DD5BFEEABCA2B28FE7869E0A7A00E7BA5E",
+      "ClothMetadataSHA256": "84146F96554EC9CB0191BA16E650E6CA0F3768A68BD17762E3FFFA52F5556254"
+    },
+    {
+      "Name": "zw_shenji_body_07.lod1",
+      "Lod": 1,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "e0f40872-080f-8a24-f5c5-cdcdb384a463",
+      "Vertices": 1867,
+      "AlphaMin": 0,
+      "AlphaMax": 51,
+      "ColorsSHA256": "28E5F439A726E931EBDCF58573A573E5F5E51F08567BBD04284F7B1782BCF452",
+      "VertexStreamSHA256": "D8E3CE0F348597659DE4C355F07D9A3AEF9C71F8D9520A5EDE4FEE2BEFF25707",
+      "ClothMetadataSHA256": "84146F96554EC9CB0191BA16E650E6CA0F3768A68BD17762E3FFFA52F5556254"
+    },
+    {
+      "Name": "zw_shenji_body_07.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "e0f40872-080f-8a24-f5c5-cdcdb384a463",
+      "Vertices": 1234,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "5D6E629BB90F539ACED64314DE896D1E4C0C824E18A9467152D161FE8702335C",
+      "VertexStreamSHA256": "5E68D9239211FDA49328AC79358799B43D42DFBBFC277C298D2B6D7779FEDB2D",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_body_07.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "e0f40872-080f-8a24-f5c5-cdcdb384a463",
+      "Vertices": 698,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "2F478F601CF66AE5E5267D7DB4FD47292695D752AE021E5E325EDE27C30C7E40",
+      "VertexStreamSHA256": "C826D31AF75DBFBB1EC4C3FA1528ED7F487F59864B452C0E511C2499F0A09BAD",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_body_10",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "e0f40872-080f-8a24-f5c5-cdcdb384a463",
+      "Vertices": 2849,
+      "AlphaMin": 0,
+      "AlphaMax": 33,
+      "ColorsSHA256": "6E9693BBE594821475F666001E058B47C27B4DE3D0FD5C75FBD4E3B4ED4F4C89",
+      "VertexStreamSHA256": "BB9CC8E5FF3E7C74E9B68323499E7E5A78440E0CB7915F0FDB2FACDC920EDB36",
+      "ClothMetadataSHA256": "EED406404438890C253453A17430CDCEC1A47F5B6CE0A03A0A173C5D6F38C0B5"
+    },
+    {
+      "Name": "zw_shenji_body_10.lod1",
+      "Lod": 1,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "e0f40872-080f-8a24-f5c5-cdcdb384a463",
+      "Vertices": 1982,
+      "AlphaMin": 0,
+      "AlphaMax": 33,
+      "ColorsSHA256": "06AC5BB146C29D8C49F1DE732EEBA881BBD6871908F8A276A5592E245922A1CB",
+      "VertexStreamSHA256": "2AB83A7F2E9AA2BEA2973D37C6B4054A8A5CA7C21503BF96498462B5058EF64B",
+      "ClothMetadataSHA256": "EED406404438890C253453A17430CDCEC1A47F5B6CE0A03A0A173C5D6F38C0B5"
+    },
+    {
+      "Name": "zw_shenji_body_10.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "e0f40872-080f-8a24-f5c5-cdcdb384a463",
+      "Vertices": 1327,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "E5DD6CA240CBF8B63CCE7411DFDF0CC664BCA2CFA914D19F7F66E6AA2485A6EC",
+      "VertexStreamSHA256": "D98CE20521949F3671FCDA245C7B80B4298FDAEE3FD5CB676CC981C856872063",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_body_10.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "e0f40872-080f-8a24-f5c5-cdcdb384a463",
+      "Vertices": 765,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "2181F17D799D2ACCBE2F509D596AC5CFBEAF76C6940F87C5B7B8C63923ED601A",
+      "VertexStreamSHA256": "4743462E8084EBBD848889003811E8C88A8BF7D0D07398C696B1EF2E4EAE08AB",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_body_11",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "96500eaa-32e8-a489-6ec3-87ad585ca5d5",
+      "Vertices": 280,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "C7466F2BF28D38383320B203B4D4506A43FE53054EE60AC1F92931DD2ADCD75B",
+      "VertexStreamSHA256": "B17CDD2035D045E6C19F33350BA2078DA0A6B35028ACC436B84AAC5F176EEEE8",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_body_11.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "96500eaa-32e8-a489-6ec3-87ad585ca5d5",
+      "Vertices": 196,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "CD91BF8FB1281B12437D43FBC6C371AB59961DC534052E8980149AC93A731EF4",
+      "VertexStreamSHA256": "D8C30FC801371247C885901ADA0CFB07E7159789D559C8BEE9A3E75C738A7C13",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_body_11.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "96500eaa-32e8-a489-6ec3-87ad585ca5d5",
+      "Vertices": 127,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "F5558477B7EBEC9A6BEE6CD14BBFDE9EF9B43639FBE07F8C4477ED9B7CCEE54E",
+      "VertexStreamSHA256": "FFD43090C92449BEE55ADE73E183131642077C501A707AF782B091503C0B6FC4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_body_11.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "96500eaa-32e8-a489-6ec3-87ad585ca5d5",
+      "Vertices": 87,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "CA81824A42B1255B0CCD5D2D0E6D42453F7DDFE3C8743DE101451274CB03B3E6",
+      "VertexStreamSHA256": "2C4ABE1C3C73FC2FBBCAE4EAA37A23FBF3FED37F4CD5EEB65D3391045DE45662",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_legs_02",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "25198377-b123-fd2f-2612-58349b1a0626",
+      "Vertices": 1135,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "7C0D0C8456F445D6313D2BA584DD9CC4685F1CF5765C2C4E03868A3DF465C848",
+      "VertexStreamSHA256": "7B9953D763756521C3192FDC1F3FEDF45ED2F672959EC7217F81B0873C556164",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_legs_02.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "25198377-b123-fd2f-2612-58349b1a0626",
+      "Vertices": 773,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "244521F42A0DBE80D3E887BEE5C22335E02739031ABD88D99498E89D2D76EC50",
+      "VertexStreamSHA256": "433EA37180BDD8597572327FE8F63079D463E0FDBE94D188398C5C3915B8BA35",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_legs_02.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "25198377-b123-fd2f-2612-58349b1a0626",
+      "Vertices": 480,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "98AA6F25D906EBC7068FFCFADF1932C66615D861D80628DD7AAB4880248333C7",
+      "VertexStreamSHA256": "3C280BF1F2F8D4AF28CDF04A08DACDAB0D417D99ADC89FDEA695CAAA3ED9C12C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_legs_02.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "25198377-b123-fd2f-2612-58349b1a0626",
+      "Vertices": 257,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "BE9A6022EEB7006B6BFF5B20E6E59FECC4089468E1DA417E117369EF494D66F2",
+      "VertexStreamSHA256": "796874CFF6846F6A4AEDDA674B9FB2B37E059443C1D481555899E458573380A8",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_legs_06",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "96500eaa-32e8-a489-6ec3-87ad585ca5d5",
+      "Vertices": 144,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "B247DB57B29C535BBF880ED7965D335CA3A857F610E63B7143E8D32E4300958D",
+      "VertexStreamSHA256": "962B95A21480E319F9D53C369BE3396CF0BE67B8DE9521C5C8813CAB27AB08E2",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_legs_06.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "96500eaa-32e8-a489-6ec3-87ad585ca5d5",
+      "Vertices": 99,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "5BBB3E7D6D8018E05036DE86F94441ABF4E156C597D0FA075E29C97E2C7C7E15",
+      "VertexStreamSHA256": "B67893ABA91B20A4E50B4641DB323F6CDEBD826C4274A752C95984E64BCD4FAB",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_legs_06.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "96500eaa-32e8-a489-6ec3-87ad585ca5d5",
+      "Vertices": 63,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "5041114BC94547D6DD438E98B1A18BE1C5C9E15552E9C454B50EC76D0EC51B43",
+      "VertexStreamSHA256": "B3C1E911A099137F8D7240830F9D14091162165B90781C96D7760990C76CF37D",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "zw_shenji_legs_06.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "96500eaa-32e8-a489-6ec3-87ad585ca5d5",
+      "Vertices": 39,
+      "AlphaMin": 0,
+      "AlphaMax": 0,
+      "ColorsSHA256": "6676080BE5BD696EB68B2FD13BD29C783F46CB137078EF3A0FB64250760D2A37",
+      "VertexStreamSHA256": "C8074133961600750FD8AD2551AA69CC277300161B3BD5BFC67478EC6601BD26",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    }
+  ]
+}

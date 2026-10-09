@@ -1,0 +1,2422 @@
+{
+  "status": "pass",
+  "final_package_sha256": "7a0e717942dd8e8281ce007f8308a9d983d9841c3285e439ab8b63388ce4183d",
+  "baseline_package_sha256": "fb04cca4c3be86ee5740ea3c298905a0843d2e59beea6fb3444e8ed63caad1cb",
+  "cooked_meshes": [
+    {
+      "mesh": "zw_xuanji_body_07",
+      "guid": "476498b8-5a9c-3a21-35f2-c243f776f8ee",
+      "metamesh": "zw_xuanji_body",
+      "lod": 0,
+      "bytes": 83268,
+      "render_vertices": 959,
+      "simulation_vertices": 877,
+      "fixed_positions": 267,
+      "boundary_fixed_positions": 108,
+      "active_positions": 610,
+      "stretch_constraints": 1750,
+      "bend_constraints": 1560,
+      "shear_constraints": 0,
+      "parallel_sets": 16,
+      "dummy_sets": 11,
+      "max_geodesic_anchor_length": 0.5586869492057345,
+      "sha256": "b76890fdd398b1396f479270a30a013275db4f2c6ee3e6b30a54868fbb43d643",
+      "root_fixes": [
+        {
+          "component_positions": 9,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            74,
+            75,
+            76,
+            77,
+            78
+          ],
+          "bounds": [
+            [
+              -0.4211818,
+              -0.035474494,
+              1.2439433
+            ],
+            [
+              -0.36815935,
+              -0.010967978,
+              1.2763033
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            82,
+            97,
+            98
+          ],
+          "bounds": [
+            [
+              -0.4434601,
+              -0.34431928,
+              0.76925623
+            ],
+            [
+              -0.4118201,
+              -0.31376928,
+              0.80280626
+            ]
+          ]
+        },
+        {
+          "component_positions": 12,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            87,
+            89,
+            90,
+            91
+          ],
+          "bounds": [
+            [
+              -0.4445701,
+              -0.39329928,
+              0.7185562
+            ],
+            [
+              -0.4266401,
+              -0.34296927,
+              0.77335626
+            ]
+          ]
+        },
+        {
+          "component_positions": 12,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            103,
+            104,
+            105,
+            107
+          ],
+          "bounds": [
+            [
+              -0.46166012,
+              -0.3935693,
+              0.73495626
+            ],
+            [
+              -0.43550012,
+              -0.34062928,
+              0.7860063
+            ]
+          ]
+        },
+        {
+          "component_positions": 12,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            115,
+            117,
+            118,
+            119
+          ],
+          "bounds": [
+            [
+              -0.4225301,
+              -0.37856928,
+              0.72037625
+            ],
+            [
+              -0.4076101,
+              -0.3326293,
+              0.77751625
+            ]
+          ]
+        },
+        {
+          "component_positions": 13,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            128,
+            129,
+            130,
+            131,
+            136,
+            140
+          ],
+          "bounds": [
+            [
+              -0.43941343,
+              -0.13707991,
+              1.1270621
+            ],
+            [
+              -0.38896406,
+              -0.095247544,
+              1.1957121
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            389,
+            390,
+            391,
+            392,
+            393
+          ],
+          "bounds": [
+            [
+              0.36814758,
+              -0.035480753,
+              1.2439246
+            ],
+            [
+              0.42116958,
+              -0.010974109,
+              1.2762876
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            397,
+            411,
+            413
+          ],
+          "bounds": [
+            [
+              0.41178733,
+              -0.3443028,
+              0.7691566
+            ],
+            [
+              0.44342732,
+              -0.3137528,
+              0.8027066
+            ]
+          ]
+        },
+        {
+          "component_positions": 12,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            402,
+            403,
+            404,
+            406
+          ],
+          "bounds": [
+            [
+              0.4266073,
+              -0.3932828,
+              0.71845657
+            ],
+            [
+              0.4445373,
+              -0.3429528,
+              0.7732566
+            ]
+          ]
+        },
+        {
+          "component_positions": 12,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            418,
+            420,
+            421,
+            422
+          ],
+          "bounds": [
+            [
+              0.43545732,
+              -0.3935528,
+              0.7348566
+            ],
+            [
+              0.46162733,
+              -0.3406128,
+              0.7859066
+            ]
+          ]
+        },
+        {
+          "component_positions": 12,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            430,
+            431,
+            432,
+            434
+          ],
+          "bounds": [
+            [
+              0.4075773,
+              -0.3785528,
+              0.7202766
+            ],
+            [
+              0.42248732,
+              -0.3326128,
+              0.7774166
+            ]
+          ]
+        },
+        {
+          "component_positions": 13,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            442,
+            444,
+            445,
+            446,
+            451,
+            454
+          ],
+          "bounds": [
+            [
+              0.38895458,
+              -0.13708514,
+              1.1270435
+            ],
+            [
+              0.43939716,
+              -0.09525351,
+              1.195691
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        74,
+        75,
+        76,
+        77,
+        78,
+        82,
+        87,
+        89,
+        90,
+        91,
+        97,
+        98,
+        103,
+        104,
+        105,
+        107,
+        115,
+        117,
+        118,
+        119,
+        128,
+        129,
+        130,
+        131,
+        136,
+        140,
+        389,
+        390,
+        391,
+        392,
+        393,
+        397,
+        402,
+        403,
+        404,
+        406,
+        411,
+        413,
+        418,
+        420,
+        421,
+        422,
+        430,
+        431,
+        432,
+        434,
+        442,
+        444,
+        445,
+        446,
+        451,
+        454
+      ],
+      "max_position_compression_error_m": 0.00015520090143844432
+    },
+    {
+      "mesh": "zw_xuanji_body_11.lod1",
+      "guid": "85ac6c5c-e4aa-f754-745d-60a0a0749659",
+      "metamesh": "zw_xuanji_body",
+      "lod": 1,
+      "bytes": 90816,
+      "render_vertices": 1984,
+      "simulation_vertices": 1811,
+      "fixed_positions": 1779,
+      "boundary_fixed_positions": 38,
+      "active_positions": 32,
+      "stretch_constraints": 104,
+      "bend_constraints": 82,
+      "shear_constraints": 0,
+      "parallel_sets": 20,
+      "dummy_sets": 12,
+      "max_geodesic_anchor_length": 0.7654075339731131,
+      "sha256": "7e0f132e894e719c03690d3a0291e19809e4edea5e3a7d584682e3cec7f1010a",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "max_position_compression_error_m": 0.00015654334640249464
+    },
+    {
+      "mesh": "zw_xuanji_body_11",
+      "guid": "aac51c2b-7ff2-d60c-080b-50a257c37200",
+      "metamesh": "zw_xuanji_body",
+      "lod": 0,
+      "bytes": 142132,
+      "render_vertices": 2497,
+      "simulation_vertices": 2295,
+      "fixed_positions": 1787,
+      "boundary_fixed_positions": 46,
+      "active_positions": 508,
+      "stretch_constraints": 1362,
+      "bend_constraints": 1161,
+      "shear_constraints": 0,
+      "parallel_sets": 17,
+      "dummy_sets": 10,
+      "max_geodesic_anchor_length": 0.9056092919821589,
+      "sha256": "d4bac038cb71a92b8cd4fb274ae667fe50f691e823614f0e37abd05e9481d27e",
+      "root_fixes": [
+        {
+          "component_positions": 14,
+          "reason": "Measured upper attachment of mixed_coat component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            274,
+            282,
+            285,
+            292
+          ],
+          "bounds": [
+            [
+              0.10098822,
+              0.11154784,
+              0.57805985
+            ],
+            [
+              0.13815388,
+              0.14603285,
+              0.66853213
+            ]
+          ]
+        },
+        {
+          "component_positions": 8,
+          "reason": "Measured upper attachment of mixed_coat component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            353,
+            354,
+            359,
+            360
+          ],
+          "bounds": [
+            [
+              0.08960298,
+              -0.10886888,
+              0.79035
+            ],
+            [
+              0.13790256,
+              -0.06804784,
+              0.89164424
+            ]
+          ]
+        },
+        {
+          "component_positions": 14,
+          "reason": "Measured upper attachment of mixed_coat component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            466,
+            473,
+            475,
+            483
+          ],
+          "bounds": [
+            [
+              -0.13882983,
+              0.11143735,
+              0.5789298
+            ],
+            [
+              -0.101555586,
+              0.1459565,
+              0.6693238
+            ]
+          ]
+        },
+        {
+          "component_positions": 8,
+          "reason": "Measured upper attachment of mixed_coat component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            543,
+            545,
+            550,
+            551
+          ],
+          "bounds": [
+            [
+              -0.13818212,
+              -0.10889975,
+              0.7912151
+            ],
+            [
+              -0.089671224,
+              -0.06808925,
+              0.89194196
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        274,
+        282,
+        285,
+        292,
+        353,
+        354,
+        359,
+        360,
+        466,
+        473,
+        475,
+        483,
+        543,
+        545,
+        550,
+        551
+      ],
+      "max_position_compression_error_m": 0.00015654334640249464
+    },
+    {
+      "mesh": "zw_xuanji_body_07.lod1",
+      "guid": "c6d723e2-92ea-227f-dcf6-250501a9c6a6",
+      "metamesh": "zw_xuanji_body",
+      "lod": 1,
+      "bytes": 49664,
+      "render_vertices": 647,
+      "simulation_vertices": 593,
+      "fixed_positions": 255,
+      "boundary_fixed_positions": 100,
+      "active_positions": 338,
+      "stretch_constraints": 925,
+      "bend_constraints": 728,
+      "shear_constraints": 0,
+      "parallel_sets": 18,
+      "dummy_sets": 10,
+      "max_geodesic_anchor_length": 0.5579826059652739,
+      "sha256": "d33ecb2a343d3f66514bc73bbade93f24f6967fdf086d2ed430f4b8f46599f49",
+      "root_fixes": [
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            69,
+            70
+          ],
+          "bounds": [
+            [
+              -0.42272776,
+              -0.036158722,
+              1.2436665
+            ],
+            [
+              -0.36737582,
+              -0.010967978,
+              1.2774038
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            74,
+            83,
+            84
+          ],
+          "bounds": [
+            [
+              -0.4434601,
+              -0.34431928,
+              0.76925623
+            ],
+            [
+              -0.4118201,
+              -0.31376928,
+              0.80280626
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            76,
+            78,
+            79
+          ],
+          "bounds": [
+            [
+              -0.4445701,
+              -0.39329928,
+              0.7185562
+            ],
+            [
+              -0.4265288,
+              -0.34280756,
+              0.77335876
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            86,
+            88,
+            89
+          ],
+          "bounds": [
+            [
+              -0.46166012,
+              -0.3935693,
+              0.73495626
+            ],
+            [
+              -0.43543136,
+              -0.34045446,
+              0.7860202
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            92,
+            94,
+            95
+          ],
+          "bounds": [
+            [
+              -0.4225301,
+              -0.37856928,
+              0.72020614
+            ],
+            [
+              -0.4076101,
+              -0.33246922,
+              0.77750236
+            ]
+          ]
+        },
+        {
+          "component_positions": 10,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            101,
+            102,
+            103,
+            107
+          ],
+          "bounds": [
+            [
+              -0.439495,
+              -0.13707991,
+              1.1270621
+            ],
+            [
+              -0.38896406,
+              -0.095136814,
+              1.1958613
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            299,
+            300
+          ],
+          "bounds": [
+            [
+              0.36736417,
+              -0.036165003,
+              1.2436478
+            ],
+            [
+              0.4227154,
+              -0.010974109,
+              1.2773882
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            304,
+            312,
+            314
+          ],
+          "bounds": [
+            [
+              0.41178733,
+              -0.3443028,
+              0.7691566
+            ],
+            [
+              0.44342732,
+              -0.3137528,
+              0.8027066
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            306,
+            308,
+            309
+          ],
+          "bounds": [
+            [
+              0.42649603,
+              -0.3932828,
+              0.71845657
+            ],
+            [
+              0.4445373,
+              -0.3427903,
+              0.77325916
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            316,
+            318,
+            319
+          ],
+          "bounds": [
+            [
+              0.43539518,
+              -0.3935528,
+              0.7348566
+            ],
+            [
+              0.46162733,
+              -0.3404399,
+              0.78592056
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            322,
+            324,
+            325
+          ],
+          "bounds": [
+            [
+              0.4075773,
+              -0.3785528,
+              0.72010624
+            ],
+            [
+              0.42248732,
+              -0.3324529,
+              0.77740294
+            ]
+          ]
+        },
+        {
+          "component_positions": 10,
+          "reason": "Measured upper attachment of upper_clothes component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            330,
+            332,
+            333,
+            337
+          ],
+          "bounds": [
+            [
+              0.38895458,
+              -0.13708514,
+              1.1270435
+            ],
+            [
+              0.43947884,
+              -0.09514281,
+              1.1958402
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        69,
+        70,
+        74,
+        76,
+        78,
+        79,
+        83,
+        84,
+        86,
+        88,
+        89,
+        92,
+        94,
+        95,
+        101,
+        102,
+        103,
+        107,
+        299,
+        300,
+        304,
+        306,
+        308,
+        309,
+        312,
+        314,
+        316,
+        318,
+        319,
+        322,
+        324,
+        325,
+        330,
+        332,
+        333,
+        337
+      ],
+      "max_position_compression_error_m": 0.00015504422799164205
+    },
+    {
+      "mesh": "zw_xuanji_head_08.lod1",
+      "guid": "64f82f9e-45a6-5dcb-2f4c-dd5aa986f45c",
+      "metamesh": "zw_xuanji_head",
+      "lod": 1,
+      "bytes": 15668,
+      "render_vertices": 264,
+      "simulation_vertices": 248,
+      "fixed_positions": 161,
+      "boundary_fixed_positions": 47,
+      "active_positions": 87,
+      "stretch_constraints": 183,
+      "bend_constraints": 83,
+      "shear_constraints": 0,
+      "parallel_sets": 9,
+      "dummy_sets": 6,
+      "max_geodesic_anchor_length": 0.4754513975605285,
+      "sha256": "6b5abf3ce156c3f38126447848b63b8325a13f20e37b1998cba84ca034f52135",
+      "root_fixes": [
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            9,
+            10,
+            13
+          ],
+          "bounds": [
+            [
+              -0.016169911,
+              -0.13819084,
+              1.5183775
+            ],
+            [
+              0.01998009,
+              -0.112530835,
+              1.5729575
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            16,
+            17,
+            18,
+            21
+          ],
+          "bounds": [
+            [
+              -0.09474145,
+              0.09718274,
+              1.3168075
+            ],
+            [
+              -0.062305503,
+              0.13804917,
+              1.3936211
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            22,
+            25,
+            28,
+            29
+          ],
+          "bounds": [
+            [
+              0.06230422,
+              0.09718295,
+              1.3168075
+            ],
+            [
+              0.09474605,
+              0.13804917,
+              1.393621
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            49,
+            52
+          ],
+          "bounds": [
+            [
+              0.07446009,
+              0.04920186,
+              1.3810201
+            ],
+            [
+              0.08712074,
+              0.10212917,
+              1.5288727
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            74,
+            76
+          ],
+          "bounds": [
+            [
+              -0.090810955,
+              0.05155195,
+              1.3810152
+            ],
+            [
+              -0.07445991,
+              0.10212917,
+              1.5289645
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            112,
+            113
+          ],
+          "bounds": [
+            [
+              -0.102437735,
+              -0.43307576,
+              0.80722415
+            ],
+            [
+              -0.03378286,
+              -0.28867194,
+              1.2608033
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            132,
+            135
+          ],
+          "bounds": [
+            [
+              -0.10752991,
+              -0.44009084,
+              0.78060746
+            ],
+            [
+              -0.04940991,
+              -0.42271084,
+              0.8415975
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            140,
+            141
+          ],
+          "bounds": [
+            [
+              0.03379638,
+              -0.4330758,
+              0.80722415
+            ],
+            [
+              0.10244792,
+              -0.28867206,
+              1.2608037
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            161,
+            162
+          ],
+          "bounds": [
+            [
+              0.04840009,
+              -0.44009084,
+              0.78060746
+            ],
+            [
+              0.10652009,
+              -0.42271084,
+              0.8415975
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            211,
+            212
+          ],
+          "bounds": [
+            [
+              -0.10243758,
+              -0.43191272,
+              0.8071232
+            ],
+            [
+              -0.03378241,
+              -0.28750834,
+              1.2607119
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            231,
+            232
+          ],
+          "bounds": [
+            [
+              -0.10752991,
+              -0.43789083,
+              0.7804275
+            ],
+            [
+              -0.04940991,
+              -0.42052084,
+              0.8414175
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            240,
+            241
+          ],
+          "bounds": [
+            [
+              0.03379593,
+              -0.43191272,
+              0.8071232
+            ],
+            [
+              0.10244776,
+              -0.2875085,
+              1.2607123
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            260,
+            263
+          ],
+          "bounds": [
+            [
+              0.04840009,
+              -0.43789083,
+              0.7804275
+            ],
+            [
+              0.10652009,
+              -0.42052084,
+              0.8414175
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        9,
+        10,
+        13,
+        16,
+        17,
+        18,
+        21,
+        22,
+        25,
+        28,
+        29,
+        49,
+        52,
+        74,
+        76,
+        112,
+        113,
+        132,
+        135,
+        140,
+        141,
+        161,
+        162,
+        211,
+        212,
+        231,
+        232,
+        240,
+        241,
+        260,
+        263
+      ],
+      "max_position_compression_error_m": 0.00014893977792467732
+    },
+    {
+      "mesh": "zw_xuanji_head_10",
+      "guid": "6fd176be-cae2-e6ef-8e7a-72600f66f46a",
+      "metamesh": "zw_xuanji_head",
+      "lod": 0,
+      "bytes": 190976,
+      "render_vertices": 3572,
+      "simulation_vertices": 2445,
+      "fixed_positions": 1136,
+      "boundary_fixed_positions": 142,
+      "active_positions": 1309,
+      "stretch_constraints": 3231,
+      "bend_constraints": 2438,
+      "shear_constraints": 0,
+      "parallel_sets": 19,
+      "dummy_sets": 12,
+      "max_geodesic_anchor_length": 0.6915373950777731,
+      "sha256": "d77317504ae14b64c93e9a9c051071423f46075d9d74e0219cbfa8a80094bed4",
+      "root_fixes": [
+        {
+          "component_positions": 38,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            316,
+            317
+          ],
+          "bounds": [
+            [
+              -0.08240991,
+              -0.17921084,
+              1.1721375
+            ],
+            [
+              -0.06727991,
+              0.0053391703,
+              1.5961275
+            ]
+          ]
+        },
+        {
+          "component_positions": 38,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            355,
+            356
+          ],
+          "bounds": [
+            [
+              0.06717009,
+              -0.17921084,
+              1.1721375
+            ],
+            [
+              0.08046009,
+              0.0061491714,
+              1.5965475
+            ]
+          ]
+        },
+        {
+          "component_positions": 40,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            412,
+            413
+          ],
+          "bounds": [
+            [
+              -0.08179991,
+              -0.18833083,
+              1.1479775
+            ],
+            [
+              -0.044099912,
+              0.006659171,
+              1.5965275
+            ]
+          ]
+        },
+        {
+          "component_positions": 40,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            452,
+            453
+          ],
+          "bounds": [
+            [
+              0.044010088,
+              -0.18833083,
+              1.1479775
+            ],
+            [
+              0.07962009,
+              0.007499172,
+              1.5965575
+            ]
+          ]
+        },
+        {
+          "component_positions": 12,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2003,
+            2004
+          ],
+          "bounds": [
+            [
+              0.0018000891,
+              -0.23308083,
+              0.9585175
+            ],
+            [
+              0.01702009,
+              -0.19769083,
+              1.1272475
+            ]
+          ]
+        },
+        {
+          "component_positions": 14,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2015,
+            2016
+          ],
+          "bounds": [
+            [
+              0.01030009,
+              -0.21730083,
+              1.0049775
+            ],
+            [
+              0.028280089,
+              -0.18562083,
+              1.1434575
+            ]
+          ]
+        },
+        {
+          "component_positions": 12,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2028,
+            2029
+          ],
+          "bounds": [
+            [
+              -0.01693991,
+              -0.23309085,
+              0.9585175
+            ],
+            [
+              -0.0020199108,
+              -0.19769083,
+              1.1272475
+            ]
+          ]
+        },
+        {
+          "component_positions": 14,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2040,
+            2041
+          ],
+          "bounds": [
+            [
+              -0.02725991,
+              -0.21730083,
+              0.9626875
+            ],
+            [
+              -0.010399911,
+              -0.18549083,
+              1.1434575
+            ]
+          ]
+        },
+        {
+          "component_positions": 10,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2054,
+            2057,
+            2058,
+            2060,
+            2061,
+            2064
+          ],
+          "bounds": [
+            [
+              -0.018099912,
+              -0.20568085,
+              1.1143475
+            ],
+            [
+              0.01733009,
+              -0.17933084,
+              1.1423975
+            ]
+          ]
+        },
+        {
+          "component_positions": 24,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            2070,
+            2071,
+            2074,
+            2075,
+            2085,
+            2088,
+            2089,
+            2090
+          ],
+          "bounds": [
+            [
+              -0.02787991,
+              -0.21709085,
+              1.1085275
+            ],
+            [
+              0.02791009,
+              -0.19409083,
+              1.1653975
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        316,
+        317,
+        355,
+        356,
+        412,
+        413,
+        452,
+        453,
+        2003,
+        2004,
+        2015,
+        2016,
+        2028,
+        2029,
+        2040,
+        2041,
+        2054,
+        2057,
+        2058,
+        2060,
+        2061,
+        2064,
+        2070,
+        2071,
+        2074,
+        2075,
+        2085,
+        2088,
+        2089,
+        2090
+      ],
+      "max_position_compression_error_m": 0.00015880605636258205
+    },
+    {
+      "mesh": "zw_xuanji_head_08",
+      "guid": "d0e4d7b7-7f33-c5ba-c574-25f52bee6a0d",
+      "metamesh": "zw_xuanji_head",
+      "lod": 0,
+      "bytes": 26380,
+      "render_vertices": 396,
+      "simulation_vertices": 362,
+      "fixed_positions": 147,
+      "boundary_fixed_positions": 33,
+      "active_positions": 215,
+      "stretch_constraints": 449,
+      "bend_constraints": 239,
+      "shear_constraints": 0,
+      "parallel_sets": 12,
+      "dummy_sets": 8,
+      "max_geodesic_anchor_length": 0.8877595379602228,
+      "sha256": "cc242bc1fee04353b77d380beb96b044a934ca7c4b3240c6f6c626a9b33f8622",
+      "root_fixes": [
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            9,
+            10,
+            13
+          ],
+          "bounds": [
+            [
+              -0.016169911,
+              -0.13819084,
+              1.5183775
+            ],
+            [
+              0.01998009,
+              -0.112530835,
+              1.5729575
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            18,
+            19,
+            24,
+            25
+          ],
+          "bounds": [
+            [
+              -0.09427991,
+              0.09723917,
+              1.3168075
+            ],
+            [
+              -0.06276991,
+              0.13804917,
+              1.3936474
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            30,
+            31,
+            36,
+            37
+          ],
+          "bounds": [
+            [
+              0.06277009,
+              0.09723917,
+              1.3168075
+            ],
+            [
+              0.09428009,
+              0.13804917,
+              1.3936474
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            182,
+            185
+          ],
+          "bounds": [
+            [
+              -0.10752991,
+              -0.44009084,
+              0.78060746
+            ],
+            [
+              -0.04940991,
+              -0.42271084,
+              0.8415975
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            236,
+            237
+          ],
+          "bounds": [
+            [
+              0.04840009,
+              -0.44009084,
+              0.78060746
+            ],
+            [
+              0.10652009,
+              -0.42271084,
+              0.8415975
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            338,
+            339
+          ],
+          "bounds": [
+            [
+              -0.10752991,
+              -0.43789083,
+              0.7804275
+            ],
+            [
+              -0.04940991,
+              -0.42052084,
+              0.8414175
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            392,
+            395
+          ],
+          "bounds": [
+            [
+              0.04840009,
+              -0.43789083,
+              0.7804275
+            ],
+            [
+              0.10652009,
+              -0.42052084,
+              0.8414175
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        9,
+        10,
+        13,
+        18,
+        19,
+        24,
+        25,
+        30,
+        31,
+        36,
+        37,
+        182,
+        185,
+        236,
+        237,
+        338,
+        339,
+        392,
+        395
+      ],
+      "max_position_compression_error_m": 0.00014893977792467732
+    },
+    {
+      "mesh": "zw_xuanji_head_10.lod1",
+      "guid": "dd291e9b-4c14-0bed-3033-f831a03fd651",
+      "metamesh": "zw_xuanji_head",
+      "lod": 1,
+      "bytes": 107400,
+      "render_vertices": 2258,
+      "simulation_vertices": 1749,
+      "fixed_positions": 1184,
+      "boundary_fixed_positions": 191,
+      "active_positions": 565,
+      "stretch_constraints": 1161,
+      "bend_constraints": 549,
+      "shear_constraints": 0,
+      "parallel_sets": 15,
+      "dummy_sets": 8,
+      "max_geodesic_anchor_length": 0.6249410158167047,
+      "sha256": "79e74dc679db6329c14024304401a9d7e1d61fddde4055518e1f03422b856c54",
+      "root_fixes": [
+        {
+          "component_positions": 11,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            218,
+            219
+          ],
+          "bounds": [
+            [
+              -0.08240991,
+              -0.17968072,
+              1.1722323
+            ],
+            [
+              -0.068466574,
+              0.0053391703,
+              1.5961275
+            ]
+          ]
+        },
+        {
+          "component_positions": 11,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            230,
+            231
+          ],
+          "bounds": [
+            [
+              0.06836563,
+              -0.1796903,
+              1.1722329
+            ],
+            [
+              0.08046009,
+              0.0061491714,
+              1.5965475
+            ]
+          ]
+        },
+        {
+          "component_positions": 11,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            247,
+            248
+          ],
+          "bounds": [
+            [
+              -0.08179991,
+              -0.18833083,
+              1.1479775
+            ],
+            [
+              -0.044099912,
+              0.00823255,
+              1.5965275
+            ]
+          ]
+        },
+        {
+          "component_positions": 11,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            256,
+            257
+          ],
+          "bounds": [
+            [
+              0.044010088,
+              -0.18833083,
+              1.1479775
+            ],
+            [
+              0.07962009,
+              0.008280398,
+              1.5965575
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            572,
+            616
+          ],
+          "bounds": [
+            [
+              -0.06842169,
+              -0.19292967,
+              1.1553048
+            ],
+            [
+              -0.019117283,
+              -0.067966,
+              1.4350013
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            626,
+            728
+          ],
+          "bounds": [
+            [
+              -0.012062594,
+              -0.20095004,
+              1.1446265
+            ],
+            [
+              -2.4242925e-05,
+              -0.1530286,
+              1.3255525
+            ]
+          ]
+        },
+        {
+          "component_positions": 8,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            664,
+            713
+          ],
+          "bounds": [
+            [
+              0.015245076,
+              -0.19751528,
+              1.1519928
+            ],
+            [
+              0.06808337,
+              -0.073453285,
+              1.4316722
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            730,
+            731
+          ],
+          "bounds": [
+            [
+              -0.012894195,
+              -0.22599725,
+              0.9582648
+            ],
+            [
+              -9.652395e-05,
+              -0.19263743,
+              1.1446794
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            732,
+            733
+          ],
+          "bounds": [
+            [
+              -0.020657632,
+              -0.21595941,
+              0.9645856
+            ],
+            [
+              -0.001178011,
+              -0.18852308,
+              1.143676
+            ]
+          ]
+        },
+        {
+          "component_positions": 13,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            739,
+            742,
+            748,
+            749
+          ],
+          "bounds": [
+            [
+              0.006930082,
+              -0.22473587,
+              0.95936763
+            ],
+            [
+              0.02558548,
+              -0.18818478,
+              1.1438017
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            745,
+            746
+          ],
+          "bounds": [
+            [
+              0.00013669052,
+              -0.2273909,
+              0.958247
+            ],
+            [
+              0.010434794,
+              -0.19270574,
+              1.1446825
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            758,
+            759
+          ],
+          "bounds": [
+            [
+              0.009195161,
+              -0.20907763,
+              0.9728366
+            ],
+            [
+              0.024487069,
+              -0.18511535,
+              1.1424732
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            763,
+            764
+          ],
+          "bounds": [
+            [
+              -0.0003527422,
+              -0.1954143,
+              0.95781404
+            ],
+            [
+              0.010627069,
+              -0.1825384,
+              1.14201
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            796,
+            797
+          ],
+          "bounds": [
+            [
+              0.005991297,
+              -0.19676833,
+              0.9570457
+            ],
+            [
+              0.021945283,
+              -0.1842649,
+              1.142598
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            774,
+            775
+          ],
+          "bounds": [
+            [
+              -0.010471257,
+              -0.19487093,
+              0.957612
+            ],
+            [
+              0.00034625034,
+              -0.18029445,
+              1.1415675
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            776,
+            777
+          ],
+          "bounds": [
+            [
+              -0.02078508,
+              -0.19661717,
+              0.95742536
+            ],
+            [
+              -0.0031682863,
+              -0.18075444,
+              1.1410958
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            780,
+            781
+          ],
+          "bounds": [
+            [
+              -0.023062352,
+              -0.20721865,
+              0.96205324
+            ],
+            [
+              -0.013169553,
+              -0.18413173,
+              1.1425817
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            794,
+            795
+          ],
+          "bounds": [
+            [
+              -0.021433474,
+              -0.22273134,
+              0.95958745
+            ],
+            [
+              -0.0056153894,
+              -0.19063298,
+              1.1428888
+            ]
+          ]
+        },
+        {
+          "component_positions": 33,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            866,
+            868,
+            869,
+            871,
+            905,
+            908,
+            909,
+            912
+          ],
+          "bounds": [
+            [
+              -0.023460178,
+              -0.18142435,
+              1.1355426
+            ],
+            [
+              0.06992316,
+              0.009214534,
+              1.5741606
+            ]
+          ]
+        },
+        {
+          "component_positions": 12,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            911,
+            913
+          ],
+          "bounds": [
+            [
+              0.01452251,
+              -0.1830146,
+              1.1389629
+            ],
+            [
+              0.07925564,
+              0.01179667,
+              1.5672075
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            969,
+            970
+          ],
+          "bounds": [
+            [
+              -0.0068855975,
+              -0.18109132,
+              1.1413075
+            ],
+            [
+              0.0309198,
+              -0.06346673,
+              1.4441466
+            ]
+          ]
+        },
+        {
+          "component_positions": 45,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            918,
+            921,
+            922,
+            924,
+            954,
+            956,
+            959,
+            960,
+            961,
+            962
+          ],
+          "bounds": [
+            [
+              -0.08000269,
+              -0.18301502,
+              1.1376809
+            ],
+            [
+              5.1510204e-05,
+              0.007549169,
+              1.5744399
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            939,
+            948
+          ],
+          "bounds": [
+            [
+              -0.03114315,
+              -0.13089083,
+              1.2809374
+            ],
+            [
+              -0.009322345,
+              -0.053757742,
+              1.4739769
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            974,
+            975
+          ],
+          "bounds": [
+            [
+              -0.04143991,
+              -0.1796667,
+              1.1409693
+            ],
+            [
+              -0.00015200503,
+              -0.106850825,
+              1.3146675
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1026,
+            1027
+          ],
+          "bounds": [
+            [
+              0.0018400892,
+              -0.23308083,
+              0.9585175
+            ],
+            [
+              0.018140184,
+              -0.19769083,
+              1.127792
+            ]
+          ]
+        },
+        {
+          "component_positions": 6,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1031,
+            1033
+          ],
+          "bounds": [
+            [
+              0.0071380697,
+              -0.2135186,
+              1.0049775
+            ],
+            [
+              0.02690009,
+              -0.18556668,
+              1.1432995
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1037,
+            1038
+          ],
+          "bounds": [
+            [
+              -0.017663086,
+              -0.23143855,
+              0.9601362
+            ],
+            [
+              0.004312846,
+              -0.19769083,
+              1.127609
+            ]
+          ]
+        },
+        {
+          "component_positions": 5,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1042,
+            1044
+          ],
+          "bounds": [
+            [
+              -0.028737701,
+              -0.21556082,
+              0.9626875
+            ],
+            [
+              -0.0073158722,
+              -0.1854287,
+              1.1433887
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1047,
+            1050
+          ],
+          "bounds": [
+            [
+              -0.018099912,
+              -0.20568085,
+              1.1140791
+            ],
+            [
+              -0.00048647658,
+              -0.17604133,
+              1.1423975
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1051,
+            1052
+          ],
+          "bounds": [
+            [
+              0.0005765685,
+              -0.20568085,
+              1.1140772
+            ],
+            [
+              0.01733009,
+              -0.17600882,
+              1.1423975
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1055,
+            1056
+          ],
+          "bounds": [
+            [
+              -0.021986688,
+              -0.21467084,
+              1.1079597
+            ],
+            [
+              0.00040694524,
+              -0.19467488,
+              1.1655099
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Measured upper attachment of long_hair component in 06_XuanjiKongmeng; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1059,
+            1060
+          ],
+          "bounds": [
+            [
+              -0.00041630556,
+              -0.21467489,
+              1.1079582
+            ],
+            [
+              0.022011215,
+              -0.19467504,
+              1.1655078
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        218,
+        219,
+        230,
+        231,
+        247,
+        248,
+        256,
+        257,
+        572,
+        616,
+        626,
+        664,
+        713,
+        728,
+        730,
+        731,
+        732,
+        733,
+        739,
+        742,
+        745,
+        746,
+        748,
+        749,
+        758,
+        759,
+        763,
+        764,
+        774,
+        775,
+        776,
+        777,
+        780,
+        781,
+        794,
+        795,
+        796,
+        797,
+        866,
+        868,
+        869,
+        871,
+        905,
+        908,
+        909,
+        911,
+        912,
+        913,
+        918,
+        921,
+        922,
+        924,
+        939,
+        948,
+        954,
+        956,
+        959,
+        960,
+        961,
+        962,
+        969,
+        970,
+        974,
+        975,
+        1026,
+        1027,
+        1031,
+        1033,
+        1037,
+        1038,
+        1042,
+        1044,
+        1047,
+        1050,
+        1051,
+        1052,
+        1055,
+        1056,
+        1059,
+        1060
+      ],
+      "max_position_compression_error_m": 0.0001535028610714495
+    }
+  ],
+  "solver_topology_adapters": {
+    "zw_xuanji_body_07": {
+      "normal_cancellation_groups": [],
+      "duplicate_solver_faces_removed": 0,
+      "degenerate_solver_faces_removed": 0,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 1422,
+      "source_faces": 1422
+    },
+    "zw_xuanji_body_11.lod1": {
+      "normal_cancellation_groups": [],
+      "duplicate_solver_faces_removed": 0,
+      "degenerate_solver_faces_removed": 2,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 2885,
+      "source_faces": 2887
+    },
+    "zw_xuanji_body_11": {
+      "normal_cancellation_groups": [],
+      "duplicate_solver_faces_removed": 0,
+      "degenerate_solver_faces_removed": 2,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 3667,
+      "source_faces": 3669
+    },
+    "zw_xuanji_body_07.lod1": {
+      "normal_cancellation_groups": [],
+      "duplicate_solver_faces_removed": 0,
+      "degenerate_solver_faces_removed": 0,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 853,
+      "source_faces": 853
+    },
+    "zw_xuanji_head_08.lod1": {
+      "normal_cancellation_groups": [],
+      "duplicate_solver_faces_removed": 0,
+      "degenerate_solver_faces_removed": 0,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 210,
+      "source_faces": 210
+    },
+    "zw_xuanji_head_10": {
+      "normal_cancellation_groups": [],
+      "duplicate_solver_faces_removed": 0,
+      "degenerate_solver_faces_removed": 2,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 3311,
+      "source_faces": 3313
+    },
+    "zw_xuanji_head_08": {
+      "normal_cancellation_groups": [],
+      "duplicate_solver_faces_removed": 0,
+      "degenerate_solver_faces_removed": 0,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 350,
+      "source_faces": 350
+    },
+    "zw_xuanji_head_10.lod1": {
+      "normal_cancellation_groups": [],
+      "duplicate_solver_faces_removed": 0,
+      "degenerate_solver_faces_removed": 2,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 1985,
+      "source_faces": 1987
+    }
+  },
+  "enabled_lods": [
+    0,
+    1
+  ],
+  "all_runtime_geometry_alpha_uv_and_skin_preserved": true,
+  "all_materials_unchanged": true,
+  "noncloth_lods_unchanged": true,
+  "editor_skin_completed": true,
+  "explicit_solver_root_overrides_recorded": true,
+  "game_solver_verified": false,
+  "scope": "Native-type direct triangle-network preprocessing, final blob byte identity, constraints, groups, compression, mapping and skin validated; no proxy mapping or engine physics test."
+}

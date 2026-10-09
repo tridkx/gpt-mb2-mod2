@@ -1,15 +1,35 @@
 {
   "status": "pass",
-  "version": "v1.2.0",
+  "version": "v1.3.0",
   "installed_path": "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\ZhenwuCollection",
   "files": [
+    {
+      "file": "AssetPackages/zw_danyun.tpac",
+      "sha256": "7a47f1e2649a9e06230bb41129fab096a4a6b8e82dcce5838443c3390ccdc249"
+    },
+    {
+      "file": "AssetPackages/zw_fuyu.tpac",
+      "sha256": "e6be3bda93135e04f710501a3c615226f7dd6af86da2ff9484250ed200f08ccd"
+    },
     {
       "file": "AssetPackages/zw_huashui.tpac",
       "sha256": "67a47208ff2c8a7a82aa4ae54385eb82a966fc6a215ba443f762f52dde35ce56"
     },
     {
+      "file": "AssetPackages/zw_shenji.tpac",
+      "sha256": "65474f5d5d25c585acbdbee5842cb4022e85aa42b29bd0c1c6eb2c9678867bbf"
+    },
+    {
+      "file": "AssetPackages/zw_xuanji.tpac",
+      "sha256": "7a0e717942dd8e8281ce007f8308a9d983d9841c3285e439ab8b63388ce4183d"
+    },
+    {
       "file": "AssetPackages/zw_xuanxu.tpac",
       "sha256": "c51cc04439565cb97ce74291e9c6085fd93035dcb3a72a29b3f6ed87c215b8df"
+    },
+    {
+      "file": "AssetPackages/zw_yimo.tpac",
+      "sha256": "9d1e16548d419d4790b5a4d6dbc298c5bd0ef607fefacb1b585d6094ab247a93"
     },
     {
       "file": "AssetPackages/zw_yunhai.tpac",
@@ -17,22 +37,28 @@
     },
     {
       "file": "ModuleData/items.xml",
-      "sha256": "e95af4759a2fedb98a644e372f29a471fa57b3c08337fde0b4299de44fe68261"
+      "sha256": "bc210417e12c6eb4eec5ce20bbff1f7b1eea598e97f6ce3805017024d0525d6c"
     },
     {
       "file": "SubModule.xml",
-      "sha256": "d763985cd86ff3b17f387a99d7a86f9a6592e8526c98b84e7a11a7f62534dcd9"
+      "sha256": "cf7c23bf0cd51ef43953158075ea398114d55821f5f040f8e042accf2feca862"
     }
   ],
-  "module_zip_sha256": "ef0431e8235dfbd288b4cb325f9956501302d2ac22004c0fb8521db248952e31",
-  "source_zip_sha256": "e95eb6a09c2b6b5fc3fc4a8a5f36a814a3c3ec7c38f0ad479a80277bb1cb22f8",
+  "module_zip_sha256": "e321a3d15a32b54251fe121581570e6026ea07a7636ec2b97798267906d82e67",
+  "source_zip_sha256": "7395e300afbbf0147754604b6323991cb28838c27b9348174f4e32fada50991e",
   "module_archive_installed_bytes_match": true,
   "all_source_archive_bytes_match": true,
   "game_launched": false,
   "game_acceptance": {
     "01_YunhaiNiezong": "accepted_v1.0.0",
     "02_XuanxuQingjing": "accepted_v1.1.0",
-    "03_HuashuiWeiming": "pending"
+    "03_HuashuiWeiming": "accepted_v1.2.0",
+    "04_DanyunWeiyu": "pending",
+    "05_FuyuChongyun": "pending",
+    "06_XuanjiKongmeng": "pending",
+    "07_YimoCangming": "pending",
+    "08_ShenjiTaolue": "pending"
   },
-  "first_accepted_package_unchanged": true
+  "previous_three_accepted_packages_unchanged": true,
+  "eighth_variant": "PVP"
 }

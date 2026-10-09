@@ -1,0 +1,1266 @@
+{
+  "status": "pass",
+  "final_package_sha256": "9d1e16548d419d4790b5a4d6dbc298c5bd0ef607fefacb1b585d6094ab247a93",
+  "baseline_package_sha256": "c9ddb2e3ea8875a91ea8bbae31cf129434f7d3743e34ab1334e8a440f9f4a177",
+  "cooked_meshes": [
+    {
+      "mesh": "zw_yimo_body_12.lod1",
+      "guid": "56375c46-6565-ea1c-2543-002782ad5fd4",
+      "metamesh": "zw_yimo_body",
+      "lod": 1,
+      "bytes": 60060,
+      "render_vertices": 1423,
+      "simulation_vertices": 1166,
+      "fixed_positions": 1128,
+      "boundary_fixed_positions": 55,
+      "active_positions": 38,
+      "stretch_constraints": 117,
+      "bend_constraints": 79,
+      "shear_constraints": 0,
+      "parallel_sets": 12,
+      "dummy_sets": 7,
+      "max_geodesic_anchor_length": 0.7016387440534789,
+      "sha256": "6d919a39ec671e489e6dff5b9ab8b5e9859757ccdde148effc8bb89550a242f9",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "max_position_compression_error_m": 0.00015901086632158355
+    },
+    {
+      "mesh": "zw_yimo_body_12",
+      "guid": "b729a0df-afd4-27dd-8d6f-24a45eb1beca",
+      "metamesh": "zw_yimo_body",
+      "lod": 0,
+      "bytes": 107828,
+      "render_vertices": 1934,
+      "simulation_vertices": 1628,
+      "fixed_positions": 1136,
+      "boundary_fixed_positions": 63,
+      "active_positions": 492,
+      "stretch_constraints": 1272,
+      "bend_constraints": 1028,
+      "shear_constraints": 0,
+      "parallel_sets": 16,
+      "dummy_sets": 10,
+      "max_geodesic_anchor_length": 0.77675282025748,
+      "sha256": "9dbbb3b14aa6e53e92289d4d431105f6361e4efeaf60362bde398f91de2c26d6",
+      "root_fixes": [
+        {
+          "component_positions": 8,
+          "reason": "Measured upper attachment of mixed_coat component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            96,
+            99,
+            100,
+            103,
+            104,
+            106
+          ],
+          "bounds": [
+            [
+              -0.19709128,
+              0.085659534,
+              0.20459421
+            ],
+            [
+              -0.1720331,
+              0.11179082,
+              0.25029168
+            ]
+          ]
+        },
+        {
+          "component_positions": 8,
+          "reason": "Measured upper attachment of mixed_coat component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            311,
+            312,
+            315,
+            319,
+            320,
+            322
+          ],
+          "bounds": [
+            [
+              0.17051756,
+              0.08579131,
+              0.20345835
+            ],
+            [
+              0.19558069,
+              0.11192892,
+              0.249154
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        96,
+        99,
+        100,
+        103,
+        104,
+        106,
+        311,
+        312,
+        315,
+        319,
+        320,
+        322
+      ],
+      "max_position_compression_error_m": 0.00015901086632158355
+    },
+    {
+      "mesh": "zw_yimo_body_07.lod1",
+      "guid": "d0fd0f0c-8160-16d1-81e9-198b36edacc5",
+      "metamesh": "zw_yimo_body",
+      "lod": 1,
+      "bytes": 40304,
+      "render_vertices": 679,
+      "simulation_vertices": 623,
+      "fixed_positions": 430,
+      "boundary_fixed_positions": 116,
+      "active_positions": 193,
+      "stretch_constraints": 480,
+      "bend_constraints": 299,
+      "shear_constraints": 0,
+      "parallel_sets": 14,
+      "dummy_sets": 8,
+      "max_geodesic_anchor_length": 0.8342138107242941,
+      "sha256": "3830c330dfee09511279be55904f22eb798af7c87b572bfa1e33db8510917cd4",
+      "root_fixes": [
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            155,
+            160,
+            161
+          ],
+          "bounds": [
+            [
+              -0.5183974,
+              -0.0005158384,
+              1.1423253
+            ],
+            [
+              -0.41167518,
+              0.033195756,
+              1.2216494
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            162,
+            164
+          ],
+          "bounds": [
+            [
+              -0.62983686,
+              -0.085026965,
+              1.0939347
+            ],
+            [
+              -0.53155667,
+              -0.06166062,
+              1.1323762
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            165,
+            166
+          ],
+          "bounds": [
+            [
+              -0.62956125,
+              -0.07629614,
+              1.097772
+            ],
+            [
+              -0.5377323,
+              -0.06885407,
+              1.1432289
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            168,
+            170
+          ],
+          "bounds": [
+            [
+              -0.74375224,
+              -0.13453266,
+              0.6643572
+            ],
+            [
+              -0.67837733,
+              -0.112391144,
+              0.8044771
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            183,
+            184
+          ],
+          "bounds": [
+            [
+              -0.30152985,
+              -0.3304105,
+              0.45769548
+            ],
+            [
+              -0.27942348,
+              -0.29803485,
+              0.52121186
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            186,
+            188
+          ],
+          "bounds": [
+            [
+              -0.26332986,
+              -0.32717052,
+              0.46493554
+            ],
+            [
+              -0.24796987,
+              -0.29628393,
+              0.5293043
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            189,
+            191
+          ],
+          "bounds": [
+            [
+              -0.23411113,
+              -0.3152705,
+              0.48405552
+            ],
+            [
+              -0.21206987,
+              -0.28731123,
+              0.54877895
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            192,
+            193
+          ],
+          "bounds": [
+            [
+              -0.33262986,
+              -0.31943053,
+              0.47809553
+            ],
+            [
+              -0.29608038,
+              -0.28927124,
+              0.5391649
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            195,
+            196
+          ],
+          "bounds": [
+            [
+              -0.35408986,
+              -0.30483052,
+              0.5101555
+            ],
+            [
+              -0.30144864,
+              -0.27812716,
+              0.563012
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            372,
+            375,
+            377
+          ],
+          "bounds": [
+            [
+              0.41079307,
+              0.001473851,
+              1.142189
+            ],
+            [
+              0.5192074,
+              0.032167763,
+              1.2214713
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            378,
+            380
+          ],
+          "bounds": [
+            [
+              0.53107345,
+              -0.08500915,
+              1.0938317
+            ],
+            [
+              0.6293567,
+              -0.06164245,
+              1.1322678
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            382,
+            383
+          ],
+          "bounds": [
+            [
+              0.53724813,
+              -0.07627864,
+              1.0976727
+            ],
+            [
+              0.62908095,
+              -0.06883629,
+              1.1431212
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            386,
+            398
+          ],
+          "bounds": [
+            [
+              0.677971,
+              -0.13450937,
+              0.6642165
+            ],
+            [
+              0.7433471,
+              -0.11236791,
+              0.80433613
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            400,
+            401
+          ],
+          "bounds": [
+            [
+              0.2789889,
+              -0.3304088,
+              0.457687
+            ],
+            [
+              0.30109015,
+              -0.29803333,
+              0.52120346
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            402,
+            404
+          ],
+          "bounds": [
+            [
+              0.24754013,
+              -0.32716882,
+              0.46492705
+            ],
+            [
+              0.26289016,
+              -0.29627728,
+              0.5292931
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            405,
+            407
+          ],
+          "bounds": [
+            [
+              0.21163015,
+              -0.3152688,
+              0.48404703
+            ],
+            [
+              0.23367782,
+              -0.28732303,
+              0.5487764
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            409,
+            410
+          ],
+          "bounds": [
+            [
+              0.29564065,
+              -0.31942883,
+              0.47808704
+            ],
+            [
+              0.33219016,
+              -0.28927225,
+              0.5391574
+            ]
+          ]
+        },
+        {
+          "component_positions": 3,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            412,
+            413
+          ],
+          "bounds": [
+            [
+              0.30100894,
+              -0.30482882,
+              0.510147
+            ],
+            [
+              0.35365015,
+              -0.27812546,
+              0.5630034
+            ]
+          ]
+        },
+        {
+          "component_positions": 11,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            440,
+            441
+          ],
+          "bounds": [
+            [
+              -0.64216477,
+              -0.07019826,
+              1.0611196
+            ],
+            [
+              -0.5119041,
+              0.04195825,
+              1.1892704
+            ]
+          ]
+        },
+        {
+          "component_positions": 27,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            454,
+            514,
+            515,
+            516,
+            517
+          ],
+          "bounds": [
+            [
+              -0.62522626,
+              -0.09778958,
+              1.0689076
+            ],
+            [
+              -0.24533434,
+              0.029858649,
+              1.2982061
+            ]
+          ]
+        },
+        {
+          "component_positions": 11,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            563,
+            564
+          ],
+          "bounds": [
+            [
+              0.51190096,
+              -0.07020338,
+              1.0611161
+            ],
+            [
+              0.64216155,
+              0.041952346,
+              1.1892645
+            ]
+          ]
+        },
+        {
+          "component_positions": 28,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            576,
+            637,
+            638,
+            639,
+            641
+          ],
+          "bounds": [
+            [
+              0.24532358,
+              -0.09779439,
+              1.0696385
+            ],
+            [
+              0.6252418,
+              0.029853093,
+              1.2981921
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        155,
+        160,
+        161,
+        162,
+        164,
+        165,
+        166,
+        168,
+        170,
+        183,
+        184,
+        186,
+        188,
+        189,
+        191,
+        192,
+        193,
+        195,
+        196,
+        372,
+        375,
+        377,
+        378,
+        380,
+        382,
+        383,
+        386,
+        398,
+        400,
+        401,
+        402,
+        404,
+        405,
+        407,
+        409,
+        410,
+        412,
+        413,
+        440,
+        441,
+        454,
+        514,
+        515,
+        516,
+        517,
+        563,
+        564,
+        576,
+        637,
+        638,
+        639,
+        641
+      ],
+      "max_position_compression_error_m": 0.00015653994794145756
+    },
+    {
+      "mesh": "zw_yimo_body_07",
+      "guid": "e392627d-47bd-5163-398c-666f25144182",
+      "metamesh": "zw_yimo_body",
+      "lod": 0,
+      "bytes": 77236,
+      "render_vertices": 1080,
+      "simulation_vertices": 952,
+      "fixed_positions": 416,
+      "boundary_fixed_positions": 102,
+      "active_positions": 536,
+      "stretch_constraints": 1402,
+      "bend_constraints": 1096,
+      "shear_constraints": 0,
+      "parallel_sets": 16,
+      "dummy_sets": 10,
+      "max_geodesic_anchor_length": 0.8371349741702898,
+      "sha256": "3b4b2c8df00e6d228141a515af3bfed3fa36b932927e4cafac3d5c83b0e0fb7a",
+      "root_fixes": [
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            164,
+            168,
+            169
+          ],
+          "bounds": [
+            [
+              -0.5183974,
+              -0.0005158384,
+              1.1423253
+            ],
+            [
+              -0.412165,
+              0.033195756,
+              1.2216494
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            174,
+            177,
+            178,
+            179
+          ],
+          "bounds": [
+            [
+              -0.6298249,
+              -0.07877045,
+              1.0939347
+            ],
+            [
+              -0.5315385,
+              -0.06166062,
+              1.1436971
+            ]
+          ]
+        },
+        {
+          "component_positions": 8,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            213,
+            214
+          ],
+          "bounds": [
+            [
+              -0.74375737,
+              -0.13453266,
+              0.6643572
+            ],
+            [
+              -0.67837733,
+              -0.11239266,
+              0.8044772
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            215,
+            218
+          ],
+          "bounds": [
+            [
+              -0.30152985,
+              -0.3304105,
+              0.45769548
+            ],
+            [
+              -0.27531984,
+              -0.2985005,
+              0.5220555
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            219,
+            222
+          ],
+          "bounds": [
+            [
+              -0.26332986,
+              -0.32717052,
+              0.46493554
+            ],
+            [
+              -0.24796987,
+              -0.2961105,
+              0.52927554
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            223,
+            226
+          ],
+          "bounds": [
+            [
+              -0.23811987,
+              -0.3152705,
+              0.48405552
+            ],
+            [
+              -0.21206987,
+              -0.2864505,
+              0.5491955
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            227,
+            230
+          ],
+          "bounds": [
+            [
+              -0.33262986,
+              -0.31943053,
+              0.47809553
+            ],
+            [
+              -0.29224986,
+              -0.29035053,
+              0.5412255
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            231,
+            234
+          ],
+          "bounds": [
+            [
+              -0.35408986,
+              -0.30483052,
+              0.5101555
+            ],
+            [
+              -0.29834986,
+              -0.2790305,
+              0.5661255
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            464,
+            468,
+            469
+          ],
+          "bounds": [
+            [
+              0.41123337,
+              0.001473851,
+              1.142189
+            ],
+            [
+              0.5192074,
+              0.032167763,
+              1.2214713
+            ]
+          ]
+        },
+        {
+          "component_positions": 7,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            474,
+            476,
+            478,
+            479
+          ],
+          "bounds": [
+            [
+              0.5310544,
+              -0.07875271,
+              1.0938317
+            ],
+            [
+              0.62934464,
+              -0.06164245,
+              1.143591
+            ]
+          ]
+        },
+        {
+          "component_positions": 8,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            513,
+            514
+          ],
+          "bounds": [
+            [
+              0.677969,
+              -0.13450944,
+              0.6642162
+            ],
+            [
+              0.743349,
+              -0.11236944,
+              0.80433625
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            515,
+            516
+          ],
+          "bounds": [
+            [
+              0.27489015,
+              -0.3304088,
+              0.457687
+            ],
+            [
+              0.30109015,
+              -0.2984988,
+              0.522047
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            519,
+            520
+          ],
+          "bounds": [
+            [
+              0.24754013,
+              -0.32716882,
+              0.46492705
+            ],
+            [
+              0.26289016,
+              -0.2961088,
+              0.529267
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            523,
+            524
+          ],
+          "bounds": [
+            [
+              0.21163015,
+              -0.3152688,
+              0.48404703
+            ],
+            [
+              0.23768015,
+              -0.2864488,
+              0.549187
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            527,
+            528
+          ],
+          "bounds": [
+            [
+              0.29181015,
+              -0.31942883,
+              0.47808704
+            ],
+            [
+              0.33219016,
+              -0.29034883,
+              0.54121697
+            ]
+          ]
+        },
+        {
+          "component_positions": 4,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            531,
+            532
+          ],
+          "bounds": [
+            [
+              0.29791015,
+              -0.30482882,
+              0.510147
+            ],
+            [
+              0.35365015,
+              -0.2790288,
+              0.566117
+            ]
+          ]
+        },
+        {
+          "component_positions": 20,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            612,
+            617
+          ],
+          "bounds": [
+            [
+              -0.64052594,
+              -0.07019826,
+              1.0575745
+            ],
+            [
+              -0.51480633,
+              0.03721712,
+              1.1896566
+            ]
+          ]
+        },
+        {
+          "component_positions": 20,
+          "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            852,
+            856
+          ],
+          "bounds": [
+            [
+              0.5148026,
+              -0.07020338,
+              1.0575691
+            ],
+            [
+              0.64052415,
+              0.037211683,
+              1.189651
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        164,
+        168,
+        169,
+        174,
+        177,
+        178,
+        179,
+        213,
+        214,
+        215,
+        218,
+        219,
+        222,
+        223,
+        226,
+        227,
+        230,
+        231,
+        234,
+        464,
+        468,
+        469,
+        474,
+        476,
+        478,
+        479,
+        513,
+        514,
+        515,
+        516,
+        519,
+        520,
+        523,
+        524,
+        527,
+        528,
+        531,
+        532,
+        612,
+        617,
+        852,
+        856
+      ],
+      "max_position_compression_error_m": 0.0001581142043237445
+    },
+    {
+      "mesh": "zw_yimo_head_08.lod1",
+      "guid": "7a980dc1-ae6f-1c18-8da2-cca384c2a655",
+      "metamesh": "zw_yimo_head",
+      "lod": 1,
+      "bytes": 70032,
+      "render_vertices": 1076,
+      "simulation_vertices": 1015,
+      "fixed_positions": 428,
+      "boundary_fixed_positions": 97,
+      "active_positions": 587,
+      "stretch_constraints": 1164,
+      "bend_constraints": 542,
+      "shear_constraints": 0,
+      "parallel_sets": 11,
+      "dummy_sets": 6,
+      "max_geodesic_anchor_length": 0.6853393839826549,
+      "sha256": "210fdb7b3ee07060ab101e96d7796fd9a6f431517d061e1b3279648bdadccd93",
+      "root_fixes": [
+        {
+          "component_positions": 11,
+          "reason": "Measured upper attachment of long_hair component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1022,
+            1023
+          ],
+          "bounds": [
+            [
+              0.06177009,
+              -0.03878083,
+              1.4183275
+            ],
+            [
+              0.09257009,
+              0.014923196,
+              1.5913975
+            ]
+          ]
+        },
+        {
+          "component_positions": 11,
+          "reason": "Measured upper attachment of long_hair component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1045,
+            1046
+          ],
+          "bounds": [
+            [
+              -0.09275991,
+              -0.03878083,
+              1.4183275
+            ],
+            [
+              -0.06176991,
+              0.014748111,
+              1.5912075
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        1022,
+        1023,
+        1045,
+        1046
+      ],
+      "max_position_compression_error_m": 0.00015993091465409955
+    },
+    {
+      "mesh": "zw_yimo_head_08",
+      "guid": "9847e97b-c1a9-788e-85be-f0a94f4ab0a5",
+      "metamesh": "zw_yimo_head",
+      "lod": 0,
+      "bytes": 116612,
+      "render_vertices": 1708,
+      "simulation_vertices": 1496,
+      "fixed_positions": 428,
+      "boundary_fixed_positions": 97,
+      "active_positions": 1068,
+      "stretch_constraints": 2277,
+      "bend_constraints": 1319,
+      "shear_constraints": 0,
+      "parallel_sets": 16,
+      "dummy_sets": 9,
+      "max_geodesic_anchor_length": 0.6267527111227801,
+      "sha256": "8f7f3a9134d63b8dcaf2ce4b939f62a6e3e14761dcc3e9c4365ba85ebff959cb",
+      "root_fixes": [
+        {
+          "component_positions": 16,
+          "reason": "Measured upper attachment of long_hair component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1636,
+            1637
+          ],
+          "bounds": [
+            [
+              0.06177009,
+              -0.03878083,
+              1.4183275
+            ],
+            [
+              0.09257009,
+              0.0133591695,
+              1.5913975
+            ]
+          ]
+        },
+        {
+          "component_positions": 16,
+          "reason": "Measured upper attachment of long_hair component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD.",
+          "pinned_render_vertices": [
+            1668,
+            1669
+          ],
+          "bounds": [
+            [
+              -0.09275991,
+              -0.03878083,
+              1.4183275
+            ],
+            [
+              -0.06176991,
+              0.0133591695,
+              1.5912075
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        1636,
+        1637,
+        1668,
+        1669
+      ],
+      "max_position_compression_error_m": 0.00015539389323777743
+    }
+  ],
+  "solver_topology_adapters": {
+    "zw_yimo_body_12.lod1": {
+      "normal_cancellation_groups": [],
+      "duplicate_solver_faces_removed": 0,
+      "degenerate_solver_faces_removed": 0,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 1867,
+      "source_faces": 1867
+    },
+    "zw_yimo_body_12": {
+      "normal_cancellation_groups": [],
+      "duplicate_solver_faces_removed": 0,
+      "degenerate_solver_faces_removed": 0,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 2568,
+      "source_faces": 2568
+    },
+    "zw_yimo_body_07.lod1": {
+      "normal_cancellation_groups": [],
+      "duplicate_solver_faces_removed": 0,
+      "degenerate_solver_faces_removed": 0,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 873,
+      "source_faces": 873
+    },
+    "zw_yimo_body_07": {
+      "normal_cancellation_groups": [],
+      "duplicate_solver_faces_removed": 0,
+      "degenerate_solver_faces_removed": 0,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 1456,
+      "source_faces": 1456
+    },
+    "zw_yimo_head_08.lod1": {
+      "normal_cancellation_groups": [],
+      "duplicate_solver_faces_removed": 0,
+      "degenerate_solver_faces_removed": 0,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 946,
+      "source_faces": 946
+    },
+    "zw_yimo_head_08": {
+      "normal_cancellation_groups": [],
+      "duplicate_solver_faces_removed": 0,
+      "degenerate_solver_faces_removed": 0,
+      "runtime_geometry_changed": false,
+      "simulation_faces": 1578,
+      "source_faces": 1578
+    }
+  },
+  "enabled_lods": [
+    0,
+    1
+  ],
+  "all_runtime_geometry_alpha_uv_and_skin_preserved": true,
+  "all_materials_unchanged": true,
+  "noncloth_lods_unchanged": true,
+  "editor_skin_completed": true,
+  "explicit_solver_root_overrides_recorded": true,
+  "game_solver_verified": false,
+  "scope": "Native-type direct triangle-network preprocessing, final blob byte identity, constraints, groups, compression, mapping and skin validated; no proxy mapping or engine physics test."
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item id="zw_xuanji_head" name="真武 · 玄机空濛 · 发容" mesh="zw_xuanji_head" culture="Culture.empire" weight="0.4" appearance="2.5" value="2600" Type="HeadArmor" is_merchandise="true">
+    <ItemComponent><Armor head_armor="8" covers_head="true" hair_cover_type="all" beard_cover_type="all" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" /></ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
+  <Item id="zw_xuanji_body" name="真武 · 玄机空濛 · 衣裙与手饰" mesh="zw_xuanji_body" culture="Culture.empire" weight="2.0" appearance="2.5" value="4200" Type="BodyArmor" is_merchandise="true">
+    <ItemComponent><Armor body_armor="16" arm_armor="5" leg_armor="3" covers_body="true" covers_hands="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" /></ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
+  <Item id="zw_xuanji_legs" name="真武 · 玄机空濛 · 腿部与长靴" mesh="zw_xuanji_legs" culture="Culture.empire" weight="1.0" appearance="2.3" value="2400" Type="LegArmor" is_merchandise="true">
+    <ItemComponent><Armor leg_armor="10" covers_legs="true" has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" /></ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
+</Items>

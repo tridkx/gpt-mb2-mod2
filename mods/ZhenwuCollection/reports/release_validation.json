@@ -1,9 +1,32 @@
 {
-  "version": "v1.2.0",
+  "version": "v1.3.0",
   "status": "pass",
   "check_scope": "offline checks and cumulative module consistency",
-  "final_package_sha256": "67a47208ff2c8a7a82aa4ae54385eb82a966fc6a215ba443f762f52dde35ce56",
-  "baseline_package_sha256": "f163e4d104e674da22fe5513e751f71ffa9ce15abf2367e253234165a98d2323",
+  "final_package_sha256": "65474f5d5d25c585acbdbee5842cb4022e85aa42b29bd0c1c6eb2c9678867bbf",
+  "baseline_version": "v1.2.0",
+  "baseline_packages": [
+    {
+      "set": "01_YunhaiNiezong",
+      "file": "module/ZhenwuCollection/AssetPackages/zw_yunhai.tpac",
+      "sha256": "f163e4d104e674da22fe5513e751f71ffa9ce15abf2367e253234165a98d2323",
+      "offline_status": "pass",
+      "user_acceptance": "accepted_v1.0.0"
+    },
+    {
+      "set": "02_XuanxuQingjing",
+      "file": "module/ZhenwuCollection/AssetPackages/zw_xuanxu.tpac",
+      "sha256": "c51cc04439565cb97ce74291e9c6085fd93035dcb3a72a29b3f6ed87c215b8df",
+      "offline_status": "pass",
+      "user_acceptance": "accepted_v1.1.0"
+    },
+    {
+      "set": "03_HuashuiWeiming",
+      "file": "module/ZhenwuCollection/AssetPackages/zw_huashui.tpac",
+      "sha256": "67a47208ff2c8a7a82aa4ae54385eb82a966fc6a215ba443f762f52dde35ce56",
+      "offline_status": "pass",
+      "user_acceptance": "accepted_v1.2.0"
+    }
+  ],
   "packages": [
     {
       "set": "01_YunhaiNiezong",
@@ -23,6 +46,41 @@
       "set": "03_HuashuiWeiming",
       "file": "module/ZhenwuCollection/AssetPackages/zw_huashui.tpac",
       "sha256": "67a47208ff2c8a7a82aa4ae54385eb82a966fc6a215ba443f762f52dde35ce56",
+      "offline_status": "pass",
+      "user_acceptance": "accepted_v1.2.0"
+    },
+    {
+      "set": "04_DanyunWeiyu",
+      "file": "module/ZhenwuCollection/AssetPackages/zw_danyun.tpac",
+      "sha256": "7a47f1e2649a9e06230bb41129fab096a4a6b8e82dcce5838443c3390ccdc249",
+      "offline_status": "pass",
+      "user_acceptance": "pending"
+    },
+    {
+      "set": "05_FuyuChongyun",
+      "file": "module/ZhenwuCollection/AssetPackages/zw_fuyu.tpac",
+      "sha256": "e6be3bda93135e04f710501a3c615226f7dd6af86da2ff9484250ed200f08ccd",
+      "offline_status": "pass",
+      "user_acceptance": "pending"
+    },
+    {
+      "set": "06_XuanjiKongmeng",
+      "file": "module/ZhenwuCollection/AssetPackages/zw_xuanji.tpac",
+      "sha256": "7a0e717942dd8e8281ce007f8308a9d983d9841c3285e439ab8b63388ce4183d",
+      "offline_status": "pass",
+      "user_acceptance": "pending"
+    },
+    {
+      "set": "07_YimoCangming",
+      "file": "module/ZhenwuCollection/AssetPackages/zw_yimo.tpac",
+      "sha256": "9d1e16548d419d4790b5a4d6dbc298c5bd0ef607fefacb1b585d6094ab247a93",
+      "offline_status": "pass",
+      "user_acceptance": "pending"
+    },
+    {
+      "set": "08_ShenjiTaolue",
+      "file": "module/ZhenwuCollection/AssetPackages/zw_shenji.tpac",
+      "sha256": "65474f5d5d25c585acbdbee5842cb4022e85aa42b29bd0c1c6eb2c9678867bbf",
       "offline_status": "pass",
       "user_acceptance": "pending"
     }
@@ -324,21 +382,539 @@
           "guid": "4d3c2dd3-6bc7-66ec-6e75-ea9e5be55893"
         }
       ]
+    },
+    {
+      "set": "04_DanyunWeiyu",
+      "package_guid": "57b13db0-4340-5f0f-a668-abdbb5fba251",
+      "asset_count": 23,
+      "assets": [
+        {
+          "name": "zw_danyun_body",
+          "guid": "deb82db6-6d5c-5be1-e538-5162cb2a348b"
+        },
+        {
+          "name": "zw_danyun_head",
+          "guid": "986925a1-a5e7-2ff5-a5c4-5b26e1fa74c4"
+        },
+        {
+          "name": "zw_danyun_legs",
+          "guid": "886ff25a-d499-5b29-358e-2215b9ece388"
+        },
+        {
+          "name": "zw_danyun_cloth",
+          "guid": "3c7b41d0-0253-e40e-ff18-5a2ade4f4972"
+        },
+        {
+          "name": "zw_danyun_cuff",
+          "guid": "126ccfa9-62a2-5ca1-3f57-8c36bdf1be70"
+        },
+        {
+          "name": "zw_danyun_eye",
+          "guid": "bba01681-1f98-1039-b8aa-b711bbe550fa"
+        },
+        {
+          "name": "zw_danyun_face",
+          "guid": "0b497d7f-523b-4939-3efa-b405c5a401e7"
+        },
+        {
+          "name": "zw_danyun_hair",
+          "guid": "bb9d80ba-0161-c589-640e-f120e77f72eb"
+        },
+        {
+          "name": "zw_danyun_lash",
+          "guid": "bfdd89e5-cf39-316f-f213-1102a59f874b"
+        },
+        {
+          "name": "zw_danyun_ornament",
+          "guid": "e1b70d98-8b56-d9db-5f3a-208e509fb6a0"
+        },
+        {
+          "name": "zw_danyun_pants",
+          "guid": "316b0627-7478-2fb5-dd56-7d9d6a334a14"
+        },
+        {
+          "name": "zw_danyun_skin",
+          "guid": "ee43a8a5-2359-f23d-7f05-94478bcd142b"
+        },
+        {
+          "name": "zw_danyun_cloth_d",
+          "guid": "4d15b812-42f2-cfde-1177-01ebaec27ff1"
+        },
+        {
+          "name": "zw_danyun_cuff_d",
+          "guid": "dc69c7b0-46e6-b626-38f8-6eec964ca415"
+        },
+        {
+          "name": "zw_danyun_eye_d",
+          "guid": "e7fed0ee-cd44-cdb2-373d-39df5c3e0083"
+        },
+        {
+          "name": "zw_danyun_face_d",
+          "guid": "6e5f88c1-b880-ce57-b555-4c68105e8c71"
+        },
+        {
+          "name": "zw_danyun_flat_n",
+          "guid": "1be33331-ae04-9f35-2517-3e478a5cf294"
+        },
+        {
+          "name": "zw_danyun_hair_d",
+          "guid": "615a48d7-5436-54aa-f45e-525bc350a02b"
+        },
+        {
+          "name": "zw_danyun_lash_d",
+          "guid": "f5ccbb24-0149-431d-4221-412cd862e6b6"
+        },
+        {
+          "name": "zw_danyun_neutral_s",
+          "guid": "5961b235-6348-8d7e-cf9b-9dd613b3a1be"
+        },
+        {
+          "name": "zw_danyun_ornament_d",
+          "guid": "c6c91d8c-c77d-af8f-aa25-99c404f9ded5"
+        },
+        {
+          "name": "zw_danyun_pants_d",
+          "guid": "8a151a9b-3253-363d-7830-32ee814abdd9"
+        },
+        {
+          "name": "zw_danyun_skin_d",
+          "guid": "ba587f76-0a5d-6750-0094-210b299f3190"
+        }
+      ]
+    },
+    {
+      "set": "05_FuyuChongyun",
+      "package_guid": "19a3f70c-f756-52b9-8851-7133202298f6",
+      "asset_count": 23,
+      "assets": [
+        {
+          "name": "zw_fuyu_body",
+          "guid": "3c424175-8550-b327-b6f7-3f70e82361de"
+        },
+        {
+          "name": "zw_fuyu_head",
+          "guid": "4568ebee-823f-6d12-e198-cbfe5dbaf5b6"
+        },
+        {
+          "name": "zw_fuyu_legs",
+          "guid": "a19f0faf-2732-c804-7d03-a9e7e09b532f"
+        },
+        {
+          "name": "zw_fuyu_cloth",
+          "guid": "318a3ac5-07ae-16eb-edd3-51da54e7a509"
+        },
+        {
+          "name": "zw_fuyu_cuff",
+          "guid": "b07d1bfa-a0c2-6bd2-a102-2573068b7d58"
+        },
+        {
+          "name": "zw_fuyu_eye",
+          "guid": "cae34995-4247-4e14-05b3-171927e1cb67"
+        },
+        {
+          "name": "zw_fuyu_face",
+          "guid": "0edfa465-faf4-0e63-43d6-a216b6e7b8fc"
+        },
+        {
+          "name": "zw_fuyu_hair",
+          "guid": "75ddd5e9-076d-51f9-c950-618968fc945a"
+        },
+        {
+          "name": "zw_fuyu_lash",
+          "guid": "1a24e61e-b52b-0e70-0683-45c073923ceb"
+        },
+        {
+          "name": "zw_fuyu_ornament",
+          "guid": "ba522d57-7cd8-44f3-aa6f-aa3f5b12f70e"
+        },
+        {
+          "name": "zw_fuyu_pants",
+          "guid": "02bb9bf1-8e8b-9b70-e5d4-8670a0fd971e"
+        },
+        {
+          "name": "zw_fuyu_skin",
+          "guid": "2a1e769c-fa95-dd03-e880-f3d790ebb8bb"
+        },
+        {
+          "name": "zw_fuyu_cloth_d",
+          "guid": "f9cefd20-a88a-df04-9dbd-0321a76a9c65"
+        },
+        {
+          "name": "zw_fuyu_cuff_d",
+          "guid": "05e1d1f7-ab3f-d711-47a2-e6d7089e2757"
+        },
+        {
+          "name": "zw_fuyu_eye_d",
+          "guid": "2c563466-7c84-73b6-9fc6-df7dc9c56f89"
+        },
+        {
+          "name": "zw_fuyu_face_d",
+          "guid": "9f99dd89-6a7d-78a8-8beb-09e6d54cce0d"
+        },
+        {
+          "name": "zw_fuyu_flat_n",
+          "guid": "a4bd3da8-5140-e3d6-482e-dcedf8cede19"
+        },
+        {
+          "name": "zw_fuyu_hair_d",
+          "guid": "7e130e08-0352-3f96-df29-efff0cc3f4ee"
+        },
+        {
+          "name": "zw_fuyu_lash_d",
+          "guid": "e3fc33e2-974b-a86a-288a-379912fc82e8"
+        },
+        {
+          "name": "zw_fuyu_neutral_s",
+          "guid": "01196f73-2fd0-d2b1-9b59-7b8a143b9218"
+        },
+        {
+          "name": "zw_fuyu_ornament_d",
+          "guid": "3fb548b6-bad3-6008-6738-dcb47378c44a"
+        },
+        {
+          "name": "zw_fuyu_pants_d",
+          "guid": "3700f1ea-f2a2-fc9a-8cde-a09873d09d53"
+        },
+        {
+          "name": "zw_fuyu_skin_d",
+          "guid": "c386c39b-b277-f695-b8a6-620a503408d5"
+        }
+      ]
+    },
+    {
+      "set": "06_XuanjiKongmeng",
+      "package_guid": "683db9a6-4603-51be-8a1f-b3825463d640",
+      "asset_count": 23,
+      "assets": [
+        {
+          "name": "zw_xuanji_body",
+          "guid": "e1da21a4-7aaf-5314-8c1d-4accda8eac76"
+        },
+        {
+          "name": "zw_xuanji_head",
+          "guid": "e6a7def2-f576-9645-345a-3912556d46c5"
+        },
+        {
+          "name": "zw_xuanji_legs",
+          "guid": "c58f1217-833c-679a-e7e0-b74da94bc06f"
+        },
+        {
+          "name": "zw_xuanji_cloth",
+          "guid": "84ba7bd9-0f0e-283c-fe6c-6087ae6647d7"
+        },
+        {
+          "name": "zw_xuanji_cuff",
+          "guid": "ef318ecb-9a06-93d6-d496-d6dbddda56f0"
+        },
+        {
+          "name": "zw_xuanji_eye",
+          "guid": "9c2885b9-2a01-0ae0-8ea7-c0e05c45c820"
+        },
+        {
+          "name": "zw_xuanji_face",
+          "guid": "7ae41f15-2435-2c70-d539-9996d19fdb32"
+        },
+        {
+          "name": "zw_xuanji_hair",
+          "guid": "46cb5821-90b4-c7ca-4d42-ac1a48dcb63a"
+        },
+        {
+          "name": "zw_xuanji_lash",
+          "guid": "ae34c8b9-5aca-8f80-b4a9-184dbc84bd5a"
+        },
+        {
+          "name": "zw_xuanji_ornament",
+          "guid": "c70dd5a6-8a15-7024-0da1-3b5d8188d750"
+        },
+        {
+          "name": "zw_xuanji_pants",
+          "guid": "80d52362-1eb1-94b8-14fc-c6c7904938ee"
+        },
+        {
+          "name": "zw_xuanji_skin",
+          "guid": "2d3e6cae-824a-4d4b-a459-4796d5e580d1"
+        },
+        {
+          "name": "zw_xuanji_cloth_d",
+          "guid": "d5648477-963d-dcc5-162a-44eba09599ee"
+        },
+        {
+          "name": "zw_xuanji_cuff_d",
+          "guid": "e3e1b98a-e7aa-555e-6452-2585ef611eed"
+        },
+        {
+          "name": "zw_xuanji_eye_d",
+          "guid": "80411f9d-3cd7-bb70-5669-599f8b462c2a"
+        },
+        {
+          "name": "zw_xuanji_face_d",
+          "guid": "2d2f2515-b495-600f-f72d-3909cbaadf9f"
+        },
+        {
+          "name": "zw_xuanji_flat_n",
+          "guid": "6653a0fc-e99a-d64a-7d10-5d39640d4098"
+        },
+        {
+          "name": "zw_xuanji_hair_d",
+          "guid": "88231920-b628-7b3c-9434-6c5cff9af9ae"
+        },
+        {
+          "name": "zw_xuanji_lash_d",
+          "guid": "d9a65293-0d20-98f1-88b2-34ea3717daa0"
+        },
+        {
+          "name": "zw_xuanji_neutral_s",
+          "guid": "1ccb7819-9b17-25a9-2c90-1da0f7dd52b5"
+        },
+        {
+          "name": "zw_xuanji_ornament_d",
+          "guid": "b0169bc2-16c0-7c8b-c748-5af7b3731e4c"
+        },
+        {
+          "name": "zw_xuanji_pants_d",
+          "guid": "d18af263-25ae-e81f-10e0-88a90266efac"
+        },
+        {
+          "name": "zw_xuanji_skin_d",
+          "guid": "449ba8be-c0cb-ddc1-0710-c5ae42099ae6"
+        }
+      ]
+    },
+    {
+      "set": "07_YimoCangming",
+      "package_guid": "d506b6be-a4fb-5bf7-97ef-872bd32b2a36",
+      "asset_count": 23,
+      "assets": [
+        {
+          "name": "zw_yimo_body",
+          "guid": "1bc52dda-f183-1e62-5476-c3b7d3a079fc"
+        },
+        {
+          "name": "zw_yimo_head",
+          "guid": "82305d67-a27e-221c-ca29-243ff946d672"
+        },
+        {
+          "name": "zw_yimo_legs",
+          "guid": "d34c099c-cdb8-8ddd-b1b4-8fee31256f11"
+        },
+        {
+          "name": "zw_yimo_cloth",
+          "guid": "58de1dac-578a-d700-02b2-280eaacf685c"
+        },
+        {
+          "name": "zw_yimo_cuff",
+          "guid": "2e5a5a9d-1688-7f5c-26f6-8b3036157167"
+        },
+        {
+          "name": "zw_yimo_eye",
+          "guid": "09ea952b-aba3-ffb8-2893-4ae3c1520b22"
+        },
+        {
+          "name": "zw_yimo_face",
+          "guid": "4bbb9c58-5fe5-e63e-2997-2f659cdef5ef"
+        },
+        {
+          "name": "zw_yimo_hair",
+          "guid": "1a8ade51-4867-4ed2-0b28-9294ca829541"
+        },
+        {
+          "name": "zw_yimo_lash",
+          "guid": "3400d41f-3c37-3264-dffd-9ec2fa6a496e"
+        },
+        {
+          "name": "zw_yimo_ornament",
+          "guid": "a6ec7791-2f51-6013-f528-4f8b789984bc"
+        },
+        {
+          "name": "zw_yimo_pants",
+          "guid": "b9a76864-558b-ccb3-5603-df0c7b52634a"
+        },
+        {
+          "name": "zw_yimo_skin",
+          "guid": "f5c99288-d9c5-c576-c0b4-292875c2775b"
+        },
+        {
+          "name": "zw_yimo_cloth_d",
+          "guid": "52b47870-bfbb-39a5-ad70-8aff5646a198"
+        },
+        {
+          "name": "zw_yimo_cuff_d",
+          "guid": "5c8ea858-19d2-bb40-8ef9-06db599b40b1"
+        },
+        {
+          "name": "zw_yimo_eye_d",
+          "guid": "cd4f6884-e164-f28f-4bab-3fbe03bb3eb6"
+        },
+        {
+          "name": "zw_yimo_face_d",
+          "guid": "6f53f914-7985-69d3-4d6e-0fb46f315297"
+        },
+        {
+          "name": "zw_yimo_flat_n",
+          "guid": "e5baa6d1-38a1-923c-0f6a-a16d8dc527cf"
+        },
+        {
+          "name": "zw_yimo_hair_d",
+          "guid": "80df0726-ec0c-9547-d23b-b62bc499b1fa"
+        },
+        {
+          "name": "zw_yimo_lash_d",
+          "guid": "5c05f425-0c3b-6572-31dd-8f90d874888d"
+        },
+        {
+          "name": "zw_yimo_neutral_s",
+          "guid": "6b9df93c-68e3-4c59-d6ec-c90a3f783afa"
+        },
+        {
+          "name": "zw_yimo_ornament_d",
+          "guid": "ddd0cfa6-26d5-4bde-3629-2af58ab0e21a"
+        },
+        {
+          "name": "zw_yimo_pants_d",
+          "guid": "45f612ae-ca24-0b74-95e6-80f6d2db8319"
+        },
+        {
+          "name": "zw_yimo_skin_d",
+          "guid": "24e8a62f-5976-5a6b-69aa-2038299b481a"
+        }
+      ]
+    },
+    {
+      "set": "08_ShenjiTaolue",
+      "package_guid": "d38c3b9e-6686-527b-bdc7-efda3f0ed450",
+      "asset_count": 23,
+      "assets": [
+        {
+          "name": "zw_shenji_body",
+          "guid": "de375f0f-3a05-a550-d2ed-a3343f82ffa9"
+        },
+        {
+          "name": "zw_shenji_head",
+          "guid": "3ceb3396-8467-9c9c-ac68-12caafc03282"
+        },
+        {
+          "name": "zw_shenji_legs",
+          "guid": "0e035a4e-85b3-1c0f-9478-5977c22f5b16"
+        },
+        {
+          "name": "zw_shenji_cloth",
+          "guid": "e0f40872-080f-8a24-f5c5-cdcdb384a463"
+        },
+        {
+          "name": "zw_shenji_cuff",
+          "guid": "eac539d4-dab3-746b-747b-5db240e927bb"
+        },
+        {
+          "name": "zw_shenji_eye",
+          "guid": "7093bdc5-871e-6ef4-b25c-896ff8037154"
+        },
+        {
+          "name": "zw_shenji_face",
+          "guid": "cc20fea6-c776-8096-17ea-ecda688c8850"
+        },
+        {
+          "name": "zw_shenji_hair",
+          "guid": "1fd960bd-ba97-9c21-17a5-b0a7547cbc3c"
+        },
+        {
+          "name": "zw_shenji_lash",
+          "guid": "e4621645-6372-f82c-df52-70d6d9550954"
+        },
+        {
+          "name": "zw_shenji_ornament",
+          "guid": "84ee9dea-21b7-70b3-0ccc-0b606a959a1f"
+        },
+        {
+          "name": "zw_shenji_pants",
+          "guid": "25198377-b123-fd2f-2612-58349b1a0626"
+        },
+        {
+          "name": "zw_shenji_skin",
+          "guid": "96500eaa-32e8-a489-6ec3-87ad585ca5d5"
+        },
+        {
+          "name": "zw_shenji_cloth_d",
+          "guid": "3932632c-e20a-9ecb-d9e8-d8c023447da5"
+        },
+        {
+          "name": "zw_shenji_cuff_d",
+          "guid": "03d52776-b1dc-f671-4f79-1ae138130162"
+        },
+        {
+          "name": "zw_shenji_eye_d",
+          "guid": "15ac46c8-a0cf-d493-a037-80cbdcdec4cc"
+        },
+        {
+          "name": "zw_shenji_face_d",
+          "guid": "407ecb90-8d79-4792-cffb-e823eb4ac059"
+        },
+        {
+          "name": "zw_shenji_flat_n",
+          "guid": "bc88070e-fa5f-821a-9f80-ddc95907af4a"
+        },
+        {
+          "name": "zw_shenji_hair_d",
+          "guid": "1f08feaf-ad97-c419-d049-a64d2fa901a1"
+        },
+        {
+          "name": "zw_shenji_lash_d",
+          "guid": "a8adf24b-ca09-ad91-4ec7-5ef653a74db6"
+        },
+        {
+          "name": "zw_shenji_neutral_s",
+          "guid": "f46cbaa6-c6b6-8d38-d43b-0fd0c1458a04"
+        },
+        {
+          "name": "zw_shenji_ornament_d",
+          "guid": "c588e362-40c2-ac4c-9528-b415537ba2a8"
+        },
+        {
+          "name": "zw_shenji_pants_d",
+          "guid": "f6404276-49c7-3a8a-b464-46d3b86fe955"
+        },
+        {
+          "name": "zw_shenji_skin_d",
+          "guid": "1201d9f6-995a-057b-2698-547f466cb0f5"
+        }
+      ]
     }
   ],
   "resource_name_and_guid_collisions": false,
-  "first_set_assets_and_source_unchanged": true,
-  "previous_two_sets_assets_items_and_source_unchanged": true,
-  "item_count": 9,
+  "previous_three_sets_assets_items_and_source_unchanged": true,
+  "item_count": 24,
   "included_sets": [
     "01_YunhaiNiezong",
     "02_XuanxuQingjing",
-    "03_HuashuiWeiming"
+    "03_HuashuiWeiming",
+    "04_DanyunWeiyu",
+    "05_FuyuChongyun",
+    "06_XuanjiKongmeng",
+    "07_YimoCangming",
+    "08_ShenjiTaolue"
   ],
   "editable_sources_verified": true,
   "all_lod_motion_and_seam_normals_verified": true,
-  "third_set_user_acceptance": "pending",
+  "remaining_five_user_acceptance": "pending",
+  "eighth_variant": "PVP",
   "game_test_verified": false,
   "game_cloth_solver_used": false,
-  "limitations": "User accepted sets 1 and 2 without reporting individual motions. Third-set in-game cloth, IK, body sliders and horse collision await user testing."
+  "cloth_scope": {
+    "existing_sets_preserved": [
+      "01_YunhaiNiezong",
+      "02_XuanxuQingjing",
+      "03_HuashuiWeiming",
+      "04_DanyunWeiyu"
+    ],
+    "cooked_sets": [
+      "05_FuyuChongyun",
+      "06_XuanjiKongmeng",
+      "07_YimoCangming",
+      "08_ShenjiTaolue"
+    ],
+    "independent_cooked_lods": [
+      0,
+      1
+    ]
+  },
+  "limitations": "First three sets accepted by user. Final five offline checked only; in-game cloth, IK, body sliders and horse collision await user testing. Sets 5-8 include independently cooked LOD0/LOD1 native-type direct cloth data. Sets 1-4 retain existing cloth setup. Engine dynamics await user testing."
 }

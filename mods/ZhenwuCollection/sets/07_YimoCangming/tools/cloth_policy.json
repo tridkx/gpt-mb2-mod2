@@ -1,0 +1,49 @@
+{
+  "default": {
+    "unanchored": "error"
+  },
+  "meshes": {
+    "zw_yimo_body_07": {
+      "unanchored": "pin_upper",
+      "axis": 2,
+      "band_m": 0.015,
+      "min_vertices": 2,
+      "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD."
+    },
+    "zw_yimo_body_07.lod1": {
+      "unanchored": "pin_upper",
+      "axis": 2,
+      "band_m": 0.015,
+      "min_vertices": 2,
+      "reason": "Measured upper attachment of upper_clothes component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD."
+    },
+    "zw_yimo_head_08": {
+      "unanchored": "pin_upper",
+      "axis": 2,
+      "band_m": 0.012,
+      "min_vertices": 2,
+      "reason": "Measured upper attachment of long_hair component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD."
+    },
+    "zw_yimo_head_08.lod1": {
+      "unanchored": "pin_upper",
+      "axis": 2,
+      "band_m": 0.012,
+      "min_vertices": 2,
+      "reason": "Measured upper attachment of long_hair component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD."
+    },
+    "zw_yimo_body_12": {
+      "unanchored": "pin_upper",
+      "axis": 2,
+      "band_m": 0.015,
+      "min_vertices": 2,
+      "reason": "Measured upper attachment of mixed_coat component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD."
+    },
+    "zw_yimo_body_12.lod1": {
+      "unanchored": "pin_upper",
+      "axis": 2,
+      "band_m": 0.015,
+      "min_vertices": 2,
+      "reason": "Measured upper attachment of mixed_coat component in 07_YimoCangming; existing source fixed vertices retained. Solver-only extra roots recorded per component and per LOD."
+    }
+  }
+}
