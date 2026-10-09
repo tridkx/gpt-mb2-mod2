@@ -1,0 +1,286 @@
+{
+  "status": "pass",
+  "body_name": "sx_mingyu_leg_collision",
+  "native_cloth_bodies_sha256": "21cf4584dfd32a004faabd69b9a8408a7e0eceac3ffd3f21667241036dfe7d0a",
+  "custom_xml_sha256": "762e6cc822d943a6c6d27c4ee719d114f6bfd99a343804268b53a5a9c451a8c2",
+  "capsules": [
+    {
+      "name": "l_thigh",
+      "bone": 1,
+      "sample_vertices": 78,
+      "original_radii_m": [
+        0.1,
+        0.1
+      ],
+      "fitted_radius_m": 0.08647045943469872,
+      "skin_radial_p98_m": 0.08347045943469872,
+      "fitted_endpoints_m": [
+        [
+          -0.08831440294347034,
+          0.006917118761803606,
+          0.82
+        ],
+        [
+          -0.11916033833013415,
+          -0.03191095604796185,
+          0.51
+        ]
+      ]
+    },
+    {
+      "name": "r_thigh",
+      "bone": 5,
+      "sample_vertices": 74,
+      "original_radii_m": [
+        0.1,
+        0.1
+      ],
+      "fitted_radius_m": 0.0865981479503016,
+      "skin_radial_p98_m": 0.0835981479503016,
+      "fitted_endpoints_m": [
+        [
+          0.08794804913585692,
+          0.007014858676957655,
+          0.82
+        ],
+        [
+          0.11827806225260798,
+          -0.03138618450820521,
+          0.51
+        ]
+      ]
+    },
+    {
+      "name": "l_calf",
+      "bone": 2,
+      "sample_vertices": 77,
+      "original_radii_m": [
+        0.09,
+        0.08
+      ],
+      "fitted_radius_m": 0.0664500136180226,
+      "skin_radial_p98_m": 0.06345001361802259,
+      "fitted_endpoints_m": [
+        [
+          -0.1362945416074793,
+          -0.05667662408684496,
+          0.48
+        ],
+        [
+          -0.1697606775764939,
+          -0.11729771149915191,
+          0.14
+        ]
+      ]
+    },
+    {
+      "name": "r_calf",
+      "bone": 6,
+      "sample_vertices": 55,
+      "original_radii_m": [
+        0.09,
+        0.08
+      ],
+      "fitted_radius_m": 0.06667225394374476,
+      "skin_radial_p98_m": 0.06367225394374476,
+      "fitted_endpoints_m": [
+        [
+          0.13527209904583812,
+          -0.05672747894357598,
+          0.48
+        ],
+        [
+          0.1683583657798526,
+          -0.11685090911156049,
+          0.14
+        ]
+      ]
+    }
+  ],
+  "skirt_projection_diagnostics": [
+    {
+      "animation": "idle",
+      "frame": 1,
+      "inside_vertices": 119,
+      "max_lift_m": 0.006600221226183645,
+      "max_projection_m": 0.024225535388953435
+    },
+    {
+      "animation": "run",
+      "frame": 1,
+      "inside_vertices": 230,
+      "max_lift_m": 0.03814721784399616,
+      "max_projection_m": 0.07901985439696471
+    },
+    {
+      "animation": "run",
+      "frame": 2,
+      "inside_vertices": 227,
+      "max_lift_m": 0.0389536118534034,
+      "max_projection_m": 0.07336987060318256
+    },
+    {
+      "animation": "run",
+      "frame": 3,
+      "inside_vertices": 217,
+      "max_lift_m": 0.05258002401415973,
+      "max_projection_m": 0.07718298655874091
+    },
+    {
+      "animation": "run",
+      "frame": 4,
+      "inside_vertices": 232,
+      "max_lift_m": 0.035041122254011126,
+      "max_projection_m": 0.09103025863658097
+    },
+    {
+      "animation": "run",
+      "frame": 5,
+      "inside_vertices": 268,
+      "max_lift_m": 0.049803758793933284,
+      "max_projection_m": 0.10935662596512867
+    },
+    {
+      "animation": "run",
+      "frame": 6,
+      "inside_vertices": 211,
+      "max_lift_m": 0.043834741898788665,
+      "max_projection_m": 0.07842326754254131
+    },
+    {
+      "animation": "run",
+      "frame": 7,
+      "inside_vertices": 200,
+      "max_lift_m": 0.04818035732755588,
+      "max_projection_m": 0.07988332265497748
+    },
+    {
+      "animation": "run",
+      "frame": 8,
+      "inside_vertices": 258,
+      "max_lift_m": 0.05446756353699722,
+      "max_projection_m": 0.08365722650457914
+    },
+    {
+      "animation": "run",
+      "frame": 9,
+      "inside_vertices": 253,
+      "max_lift_m": 0.04902832623761655,
+      "max_projection_m": 0.07820722271075636
+    },
+    {
+      "animation": "run",
+      "frame": 10,
+      "inside_vertices": 247,
+      "max_lift_m": 0.043016846038989254,
+      "max_projection_m": 0.08502991373160246
+    },
+    {
+      "animation": "run",
+      "frame": 11,
+      "inside_vertices": 234,
+      "max_lift_m": 0.04491047188103492,
+      "max_projection_m": 0.08043565420446597
+    },
+    {
+      "animation": "run",
+      "frame": 12,
+      "inside_vertices": 270,
+      "max_lift_m": 0.031917271905226974,
+      "max_projection_m": 0.07959227287221021
+    },
+    {
+      "animation": "run",
+      "frame": 13,
+      "inside_vertices": 253,
+      "max_lift_m": 0.058985564352685094,
+      "max_projection_m": 0.0993876398746314
+    },
+    {
+      "animation": "run",
+      "frame": 14,
+      "inside_vertices": 230,
+      "max_lift_m": 0.04722238968830095,
+      "max_projection_m": 0.07960958474521374
+    },
+    {
+      "animation": "run",
+      "frame": 15,
+      "inside_vertices": 216,
+      "max_lift_m": 0.030073054778006814,
+      "max_projection_m": 0.07584072277734225
+    },
+    {
+      "animation": "run",
+      "frame": 16,
+      "inside_vertices": 256,
+      "max_lift_m": 0.03466452892848115,
+      "max_projection_m": 0.08043369801918572
+    },
+    {
+      "animation": "run",
+      "frame": 17,
+      "inside_vertices": 298,
+      "max_lift_m": 0.051798054920301095,
+      "max_projection_m": 0.07544288968130923
+    },
+    {
+      "animation": "run",
+      "frame": 18,
+      "inside_vertices": 194,
+      "max_lift_m": 0.038379739486277265,
+      "max_projection_m": 0.08438800401211703
+    },
+    {
+      "animation": "run",
+      "frame": 19,
+      "inside_vertices": 154,
+      "max_lift_m": 0.041666609951978795,
+      "max_projection_m": 0.07660948697545841
+    },
+    {
+      "animation": "run",
+      "frame": 20,
+      "inside_vertices": 183,
+      "max_lift_m": 0.03601055924023866,
+      "max_projection_m": 0.07359739021133707
+    },
+    {
+      "animation": "run",
+      "frame": 21,
+      "inside_vertices": 227,
+      "max_lift_m": 0.04126838360326257,
+      "max_projection_m": 0.07397993539524146
+    },
+    {
+      "animation": "run",
+      "frame": 22,
+      "inside_vertices": 232,
+      "max_lift_m": 0.03885779045554405,
+      "max_projection_m": 0.07673273873687406
+    },
+    {
+      "animation": "run",
+      "frame": 23,
+      "inside_vertices": 216,
+      "max_lift_m": 0.04432495000227632,
+      "max_projection_m": 0.08558103352250808
+    },
+    {
+      "animation": "run",
+      "frame": 24,
+      "inside_vertices": 218,
+      "max_lift_m": 0.03548051557416931,
+      "max_projection_m": 0.08028484626536286
+    },
+    {
+      "animation": "run",
+      "frame": 25,
+      "inside_vertices": 230,
+      "max_lift_m": 0.03815430425005428,
+      "max_projection_m": 0.07902030942315978
+    }
+  ],
+  "head_collision_remains_disabled": true,
+  "scope": "Own leg skin radius fitting and native skeletal poses. Capsule interpretation assumes frame X length. Does not run game cloth or dummy collision; custom XML engine loading requires game confirmation."
+}

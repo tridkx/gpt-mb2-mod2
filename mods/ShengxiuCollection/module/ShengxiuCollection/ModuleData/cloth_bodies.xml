@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<bodies>
+  <body name="sx_mingyu_leg_collision" owner_skeleton="human_skeleton">
+    <capsules>
+      <capsule name="l_thigh" length="0.313941" origin="0.000, 0.000, 0.000" frame="-0.098254, -0.123679, -0.987446, 0.000000, -0.012246, 0.992322, -0.123072, 0.000000, 0.995086, 0.000000, -0.099014, 0.000000, -0.088314, 0.006917, 0.820000, 1.000000">
+        <points>
+          <point radius="0.086470">
+            <bones>
+              <bone name="l_thigh" weight="1.000" />
+              <bone name="l_thigh" weight="0.000" />
+            </bones>
+          </point>
+          <point radius="0.086470">
+            <bones>
+              <bone name="l_thigh" weight="1.000" />
+              <bone name="l_thigh" weight="0.000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="r_thigh" length="0.313838" origin="0.000, 0.000, 0.000" frame="0.096642, -0.122359, -0.987769, 0.000000, 0.011915, 0.992486, -0.121778, 0.000000, 0.995248, -0.000000, 0.097374, 0.000000, 0.087948, 0.007015, 0.820000, 1.000000">
+        <points>
+          <point radius="0.086598">
+            <bones>
+              <bone name="r_thigh" weight="1.000" />
+              <bone name="r_thigh" weight="0.000" />
+            </bones>
+          </point>
+          <point radius="0.086598">
+            <bones>
+              <bone name="r_thigh" weight="1.000" />
+              <bone name="r_thigh" weight="0.000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="l_calf" length="0.346980" origin="0.000, 0.000, 0.000" frame="-0.096450, -0.174711, -0.979884, 0.000000, -0.017114, 0.984620, -0.173871, 0.000000, 0.995191, 0.000000, -0.097956, 0.000000, -0.136295, -0.056677, 0.480000, 1.000000">
+        <points>
+          <point radius="0.066450">
+            <bones>
+              <bone name="l_calf" weight="1.000" />
+              <bone name="l_calf" weight="0.000" />
+            </bones>
+          </point>
+          <point radius="0.066450">
+            <bones>
+              <bone name="l_calf" weight="1.000" />
+              <bone name="l_calf" weight="0.000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="r_calf" length="0.346857" origin="0.000, 0.000, 0.000" frame="0.095389, -0.173338, -0.980232, 0.000000, 0.016789, 0.984862, -0.172523, 0.000000, 0.995298, -0.000000, 0.096855, 0.000000, 0.135272, -0.056727, 0.480000, 1.000000">
+        <points>
+          <point radius="0.066672">
+            <bones>
+              <bone name="r_calf" weight="1.000" />
+              <bone name="r_calf" weight="0.000" />
+            </bones>
+          </point>
+          <point radius="0.066672">
+            <bones>
+              <bone name="r_calf" weight="1.000" />
+              <bone name="r_calf" weight="0.000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

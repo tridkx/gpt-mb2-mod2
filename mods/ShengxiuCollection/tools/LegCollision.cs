@@ -1,0 +1,11 @@
+using TpacTool.Lib;
+if(args.Length!=2 || Path.GetFullPath(args[0])==Path.GetFullPath(args[1]))throw new Exception("Use distinct baseline and output paths");
+var pkg=new AssetPackage(args[0],true,false);
+var body=pkg.Items.OfType<Metamesh>().Single(m=>m.Name=="sx_mingyu_body");
+var head=pkg.Items.OfType<Metamesh>().Single(m=>m.Name=="sx_mingyu_head");
+if(body.UnknownString!="" || head.UnknownString!="")throw new Exception("Expected v1.1.1 collision-isolation baseline");
+body.UnknownString="sx_mingyu_leg_collision";
+var field=body.GetType().BaseType!.GetField("_rawMetadata",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic);
+field?.SetValue(body,null);
+pkg.Save(args[1]);
+Console.WriteLine("Mingyu body uses own leg-only collision; head retains collision isolation");
