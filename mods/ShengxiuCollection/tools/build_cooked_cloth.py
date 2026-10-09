@@ -15,4 +15,5 @@ subprocess.run(['dotnet',str(ROOT/'build/cloth_probe/NativeClothProbe.dll'),str(
 assert len(list(inputs.glob('*.mesh.json')))==4
 subprocess.run([sys.executable,str(ROOT/'tools/cook_cloth.py'),str(inputs),str(ROOT/'build/cooked_cloth')],check=True)
 subprocess.run(['dotnet',str(ROOT/'build/cloth_patch/ClothPatch.dll'),str(args.input),
-                str(ROOT/'build/cooked_cloth/manifest.json'),str(args.output)],check=True)
+                str(ROOT/'build/cooked_cloth/manifest.json'),str(args.output),
+                '--allow-metameshes','sx_mingyu_head','sx_mingyu_body'],check=True)

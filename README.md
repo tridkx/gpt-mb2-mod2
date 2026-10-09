@@ -45,6 +45,12 @@ python tools/package_delivery.py --mod TianxiangCollection --version v1.0.0
 
 实际安装需去掉 `-CheckOnly`，已有交付包时必须提供 `-PreviousVersion`；可用 `-GameRoot` 和 `-Python` 覆盖本机路径。安装前核对配置中的报告版本与最终 TPAC SHA256，准备并验证交付包，再仅复制自己的模块。它不会自动提交 Git 或打标签。发布时使用 `TianxiangT5/v1.3.1` 这类带模组名的标签；本次只迁移工程，不新建发布标签或更改游戏文件。
 
+## 共用布料编译器
+
+[tools/cloth_compiler](tools/cloth_compiler/README.md) 保存 TPAC 布料预处理格式、离线编译、回读验证与插入工具，支持直接模拟；模型的固定根部策略、资源名、骨骼、材料和 LOD 配置留在各模组 tools 中。明玉 v1.0.4 的近距离效果已由用户确认，LOD1 和远距离范围尚未确认。共用实现不硬编码明玉网格名或四网格数量。
+
+源包可以在 mod.json 中配置 `shared_source_files`（仅允许工作区 tools 内文件）；打包器将其收录到 `workspace_tools/`，保持 source/tex 原层级。旧版包、版本和标签保留；此次工具迁移不改游戏模块。
+
 ## 技能的唯一维护位置
 
 只维护 `C:/Users/DKX/.codex/skills/bannerlord-equipment-mod/`。工作区不保存技能副本。[只读审查记录](docs/equipment_skill_review.md)列出本次发现。

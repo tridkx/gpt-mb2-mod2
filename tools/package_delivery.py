@@ -37,10 +37,16 @@ def package(name, version, check_only=False):
         raise ValueError('Module ID/version differs from requested package')
     sources = [project_file(root, p) for p in config['source_files']]
     sources.extend(project_file(root, p.relative_to(root)) for p in (root / 'tex').rglob('*') if p.is_file() and p.name != '.gitkeep')
+    shared_sources = []
+    for relative in config.get('shared_source_files', []):
+        path = (WORKSPACE / relative).resolve()
+        if not path.is_relative_to((WORKSPACE / 'tools').resolve()) or not path.is_file():
+            raise ValueError(f'Shared source must be a file inside workspace tools: {relative}')
+        shared_sources.append((path, 'workspace_tools/' + path.relative_to(WORKSPACE / 'tools').as_posix()))
     deliveries = [
         ('Mod', [(project_file(root, p.relative_to(root)), name + '/' + p.relative_to(module).as_posix())
                  for p in module.rglob('*') if p.is_file() and p.name != '.gitkeep']),
-        ('Source', [(p, p.relative_to(root).as_posix()) for p in sources]),
+        ('Source', [(p, p.relative_to(root).as_posix()) for p in sources] + shared_sources),
     ]
     if check_only:
         print(f'{name} {version}: package inputs valid; no archives written.')

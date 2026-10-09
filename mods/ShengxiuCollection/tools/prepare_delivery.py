@@ -42,5 +42,7 @@ for folder in ['input','source','tools','module','reports']:
         if folder=='reports' and p.suffix=='.png' and not p.name.startswith(('final_','proportion_')):continue
         files.append(p.relative_to(ROOT).as_posix())
 cfg={'id':'ShengxiuCollection','source_files':files,'package':'module/ShengxiuCollection/AssetPackages/sx_mingyu.tpac','validation_report':'reports/release_validation.json'}
+from shared_cloth import SHARED
+cfg['shared_source_files']=['tools/cloth_compiler/'+p.name for p in sorted(SHARED.iterdir()) if p.is_file() and p.suffix in ['.py','.cs','.csproj','.md']]
 (ROOT/'mod.json').write_text(json.dumps(cfg,indent=2))
 print('DELIVERY_MANIFEST_READY',len(files),'files plus textures')
