@@ -57,11 +57,6 @@ def world_scaled(scale):
 # accumulated anisotropic scales by averages. Root remains uniformly 1.5.
 adjustable=[i for i in range(1,n) if i in parent]
 goal=N[0,:3,3]+(D[:,:3,3]-D[0,:3,3])*1.5
-def scale_array(x):
- scale=np.ones((n,3));scale[0]=1.5;scale[adjustable]=np.exp(x.reshape(-1,3));return scale
-def residual(x):
- points=world_scaled(scale_array(x))[:,:3,3]
- return np.r_[(points-goal).ravel(),.003*x]
 np.savez_compressed(R/'build/scale_fit_input.npz',native_local=L,parent=parent,goal=goal)
 subprocess.run(['C:/ProgramData/anaconda3/python.exe','-B',str(R/'tools/fit_scales.py')],check=True)
 scales=np.load(R/'build/scale_fit_output.npy')

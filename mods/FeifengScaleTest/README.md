@@ -56,6 +56,6 @@ dotnet build "$taskMod/tools/Runtime/FeifengScaleTest.csproj" -o "$taskMod/modul
 & $taskBlender --background --python-exit-code 1 --python "$taskMod/tools/render_review.py"
 ```
 
-动作 JSON 从当前游戏导出：骨架在 `Native/EmAssetPackages/human/human.tpac`，跑步在 `Native/EmAssetPackages/pack_anim_run/pack_anim_run.tpac`，拉弓在 `Native/EmAssetPackages/pack_anim_1/pack_anim_1.tpac`；命令分别为 mbtool `skeljson` 与 `anim`。发布前使用工作区 `tools/install_release.ps1 -Mod FeifengScaleTest -Version v0.1.0 -CheckOnly`，然后移除 CheckOnly 安装；重发已有交付时须保留上版包并更新版本。
+动作 JSON 从当前游戏导出：骨架在 `Native/EmAssetPackages/human/human.tpac`，跑步在 `Native/EmAssetPackages/pack_anim_run/pack_anim_run.tpac`，拉弓在 `Native/EmAssetPackages/pack_anim_1/pack_anim_1.tpac`；命令分别为 mbtool `skeljson` 与 `anim`。使用工作区 `tools/package_delivery.py --mod FeifengScaleTest --version v0.1.0` 打包，首次安装执行本模组 `tools/install_test.ps1`（可先加 `-CheckOnly`）。安装脚本只接受不存在的目标模块并校验 TPAC/DLL，不覆盖旧安装；后续版本使用工作区共用发布安装器，保留上版包并更新版本。
 
 变更记录见 [CHANGELOG](CHANGELOG.md)。本地 Git，不上传远程。

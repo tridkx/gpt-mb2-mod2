@@ -9,7 +9,7 @@ from baker.skeleton import parse_skeljson
 from baker.animation import parse_animjson,q2R,lbs
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def run(cmd,path):
- process=subprocess.run(cmd,capture_output=True,text=True,encoding='utf-8',errors='replace');path.write_text(process.stdout+'\n'+process.stderr);assert process.returncode==0,(cmd,process.stderr);return process.stdout
+ process=subprocess.run(cmd,capture_output=True,text=True,encoding='utf-8',errors='replace');path.write_text((process.stdout+'\n'+process.stderr).rstrip()+'\n');assert process.returncode==0,(cmd,process.stderr);return process.stdout
 run([MB,'metacheck',str(PKG)],R/'reports/metacheck.txt');run([MB,'mataudit',str(PKG)],R/'reports/mataudit.txt')
 visibility=json.loads(run(['dotnet',str(WS/'tools/AssetTool/AssetTool.dll'),'visibility',str(PKG)],R/'reports/visibility.json'))
 rig=parse_skeljson(json.loads((R/'reports/human_skeleton.json').read_text()));plan=json.loads((R/'reports/scale_plan.json').read_text());native=rig['restWorld'];inv=np.linalg.inv(native)
