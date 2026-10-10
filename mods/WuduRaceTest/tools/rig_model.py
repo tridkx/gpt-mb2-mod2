@@ -8,12 +8,13 @@ sys.path.insert(0,str(WS/'tools/asset_helpers/previewer'))
 from baker.skeleton import parse_skeljson
 data=json.loads((R/'reports/human_skeleton.json').read_text())
 native=parse_skeljson(data);n=native['boneCount'];assert n==28
+cfg=json.loads((R/'tools/model_config.json').read_text());U=cfg['unit_scale'];K=U/.01
 names=[name+'_'+str(i) for i,name in enumerate(native['names'])]
 # Anatomical pivots measured in the original model's centimetre coordinates.
 # They affect skinning only: every source vertex is kept at its original ratio.
 landmarks={0:[0,0,75],1:[-7.5,0,75],2:[-9,0,41],3:[-10,-1,7],4:[-10,6,1],5:[7.5,0,75],6:[9,0,41],7:[10,-1,7],8:[10,6,1],9:[0,0,85],10:[0,0,97],11:[0,0,106],12:[0,0,114],13:[0,0,121],14:[-4,0,109],15:[-13,0,107],17:[-27,0,92],19:[-38,0,82],20:[-42,0,77],21:[4,0,109],22:[13,0,107],24:[27,0,92],26:[38,0,82],27:[42,0,77]}
 S=np.zeros((n,3))
-for i,p in landmarks.items():S[i]=np.array(p)*.01
+for i,p in landmarks.items():S[i]=np.array(p)*U
 for i,a,b in [(16,15,17),(18,17,19),(23,22,24),(25,24,26)]:S[i]=(S[a]+S[b])/2
 world=native['restWorld'].copy();world[:,:3,3]=S
 local=np.array([world[i] if p<0 else np.linalg.inv(world[p])@world[i] for i,p in enumerate(native['parent'])])
@@ -29,7 +30,7 @@ def smooth(a,b,x):
 def near(p,ids):
     ds=[]
     for i in ids:
-        a=S[i];b=S[nextbone[i]] if i in nextbone else a+(a-S[native['parent'][i]])*.5
+        a=S[i]/K;b=S[nextbone[i]]/K if i in nextbone else a+(a-S[native['parent'][i]]/K)*.5
         v=b-a;t=np.clip((p-a)@v/max(v@v,1e-10),0,1)
         ds.append(np.linalg.norm(p-a-t[:,None]*v,axis=1))
     ds=np.array(ds).T;v=np.exp(np.maximum(-(ds-ds.min(1,keepdims=True))/.025,-30));w=np.zeros((len(p),n));w[:,ids]=v
@@ -53,17 +54,60 @@ bpy.ops.wm.read_factory_settings(use_empty=True)
 bpy.ops.import_scene.fbx(filepath=str(R/'input/model.fbx'),use_anim=False)
 parts=json.loads((R/'input/parts.json').read_text());manifest=[];arrays={};maxerr=0
 for row in parts:
-    ob=bpy.data.objects[row['name']];raw=np.array([ob.matrix_world@v.co for v in ob.data.vertices]);p=raw*np.array([-1,-1,1])*.01
+    ob=bpy.data.objects[row['name']];raw=np.array([ob.matrix_world@v.co for v in ob.data.vertices]);p=raw*np.array(cfg['orientation'])*U
     for v,co in zip(ob.data.vertices,p):v.co=co
     ob.matrix_world=Matrix.Identity(4)
     head=row['tex'] in ['eye_D','face_D','eyelash_D','hair_D','head_D']
-    w=weights(p,head,allow_arms=row['name'] in ['mesh_02_153203','mesh_07_535767','mesh_09_689493'],hands=row['name']=='mesh_04_281363')
+    w=weights(p/K,head,allow_arms=row['name'] in ['mesh_02_153203','mesh_07_535767','mesh_09_689493'],hands=row['name']=='mesh_04_281363')
+    if len(manifest)==8:w[:]=0;w[:,0]=1
     for i,name in enumerate(names):
         group=ob.vertex_groups.new(name=name)
         for vi in np.where(w[:,i]>0)[0]:group.add([int(vi)],float(w[vi,i]),'REPLACE')
     index=len(manifest);ob.name=f'wdr_part_{index:02d}'
     manifest.append(dict(object=ob.name,source_object=row['name'],texture=row['tex']+'.png',material='wdr_mat_'+row['tex'],cutout=row['alpha']))
-    arrays[ob.name+'_p']=p;maxerr=max(maxerr,float(abs(p-raw*np.array([-1,-1,1])*.01).max()))
+    arrays[ob.name+'_p']=p;maxerr=max(maxerr,float(abs(p-raw*np.array(cfg['orientation'])*U).max()))
+# Component-aware cloth distances: fixed garment roots, mobile hanging ends.
+cloth_rows=[]
+for row in manifest:
+    if row['object'] not in cfg['cloth_parts']:continue
+    ob=bpy.data.objects[row['object']];me=ob.data;p=np.array([v.co[:] for v in me.vertices]);q=p/K
+    parents=list(range(len(p)))
+    def root(i):
+        while parents[i]!=i:parents[i]=parents[parents[i]];i=parents[i]
+        return i
+    def join(a,b):
+        a=root(a);b=root(b)
+        if a!=b:parents[b]=a
+    identical={}
+    for i,pos in enumerate(q):
+        key=tuple(np.round(pos,5))
+        if key in identical:join(i,identical[key])
+        else:identical[key]=i
+    for poly in me.polygons:
+        for i in poly.vertices[1:]:join(poly.vertices[0],i)
+    comps={}
+    for i in range(len(p)):comps.setdefault(root(i),[]).append(i)
+    alpha=np.zeros(len(p));kind=cfg['cloth_parts'][row['object']]
+    for ids in comps.values():
+        ids=np.array(ids);z=q[ids,2];x=abs(q[ids,0]);span=np.ptp(z)
+        if len(ids)<12:continue
+        if kind=='skirt' and span>.25:
+            travel=1-smooth(z.max()-.065,z.max()-.025,z)
+        elif kind=='sleeve' and len(ids)>80 and x.min()>.07:
+            travel=smooth(x.min()+.025,x.max(),x)
+        elif kind=='cuff' and len(ids)>100:
+            travel=1-smooth(z.max()-.035,z.max()-.012,z)
+        elif kind=='hair' and span>.06:
+            travel=1-smooth(z.max()-.055,z.max()-.02,z)
+        else:continue
+        # Ensure each selected component has an explicit root before cooking.
+        travel[z>=z.max()-.008]=0
+        alpha[ids]=travel*cfg['cloth_max_distance_m'][kind]
+    layer=me.color_attributes.new(name='ClothDistance',type='FLOAT_COLOR',domain='POINT')
+    for i,a in enumerate(alpha):layer.data[i].color=(1,1,1,float(a))
+    cloth_rows.append(dict(object=ob.name,kind=kind,active=int(np.sum(alpha>0)),fixed=int(np.sum(alpha==0)),max_distance_m=float(alpha.max())))
+(R/'reports/cloth_source.json').write_text(json.dumps(cloth_rows,indent=2))
+
 for image in bpy.data.images:
     if image.source=='FILE':
         path=R/'tex'/(image.name.split('.png')[0]+'.png')
@@ -77,7 +121,7 @@ for i,name in enumerate(names):
 bpy.ops.object.mode_set(mode='OBJECT')
 for row in manifest:
     ob=bpy.data.objects[row['object']];mod=ob.modifiers.new('Race binding','ARMATURE');mod.object=arm;ob.parent=arm
-allp=np.concatenate(list(arrays.values()));report=dict(unit_scale=.01,uniform_orientation=[-1,-1,1],source_geometry_max_error_m=maxerr,total_height_m=float(np.ptp(allp[:,2])),vertices=len(allp),source_proportions_preserved=True,custom_skeleton=True,engine_verified=False,cloth_enabled=False)
+allp=np.concatenate(list(arrays.values()));report=dict(unit_scale=U,uniform_orientation=cfg['orientation'],source_geometry_max_error_m=maxerr,total_height_m=float(np.ptp(allp[:,2])),vertices=len(allp),source_proportions_preserved=True,custom_skeleton=True,engine_verified=False,cloth_enabled=True)
 (R/'build/rig_manifest.json').write_text(json.dumps(manifest,indent=2));np.savez_compressed(R/'build/source_positions.npz',**arrays)
 (R/'reports/source_validation.json').write_text(json.dumps(report,indent=2))
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'source/WuduCanglan_Rigged.blend'))

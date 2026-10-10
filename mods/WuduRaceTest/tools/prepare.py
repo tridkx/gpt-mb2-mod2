@@ -11,6 +11,7 @@ SC=GAME/'Modules/SandBoxCore/ModuleData'
 SOURCE=Path('D:/dsh-tiandao/五毒少女校服8套/01苍蓝流苏')
 M=R/'module/WuduRaceTest'
 RACE='wdr_canglan'
+cfg=json.loads((R/'tools/model_config.json').read_text());K=cfg['unit_scale']/.01
 def write(path, root):
     ET.indent(root, space='  ')
     ET.ElementTree(root).write(path,encoding='utf-8',xml_declaration=True)
@@ -27,7 +28,7 @@ skins=ET.Element('skins');race=ET.SubElement(skins,'race',id=RACE,name=RACE)
 human=ET.parse(N/'skins.xml').getroot().find("race[@id='human']")
 for old in human.findall('skin'):
     skin=copy.deepcopy(old); skin.set('name',RACE+'_'+old.get('name'))
-    skin.set('skeleton','wdr_skeleton');skin.set('min_scale','1.0')
+    skin.set('skeleton','wdr_skeleton');skin.set('min_scale',str(cfg['skin_min_scale']))
     skin.set('uses_stitching','false');skin.set('body_mesh_suffix','')
     skin.set('body_meta_mesh','wdr_canglan_body')
     for attr in ['body_meta_mesh_shoulders','body_meta_mesh_upperbody','legs_mesh','hands_mesh','face_meta_mesh','underwear_bottom_mesh','underwear_top_mesh']:
@@ -54,9 +55,9 @@ native_monsters=ET.parse(N/'monsters.xml').getroot()
 monster=copy.deepcopy(native_monsters.find("Monster[@id='human']"))
 monster.set('id',RACE);monster.set('action_set','as_wdr_warrior');monster.set('female_action_set','as_wdr_female_warrior')
 # Basic camera/capsule sizes; detailed combat collision fitting is out of scope.
-for k,v in {'standing_chest_height':'1.00','standing_pelvis_height':'.75','standing_eye_height':'1.23','crouch_eye_height':'.80','mounted_eye_height':'.55','arm_length':'.55'}.items():monster.set(k,v)
+for k,v in {'standing_chest_height':'1.00','standing_pelvis_height':'.75','standing_eye_height':'1.23','crouch_eye_height':'.80','mounted_eye_height':'.55','arm_length':'.55'}.items():monster.set(k,str(float(v)*K))
 for capsule in monster.findall('Capsules/*'):
-    capsule.set('radius','.25');capsule.set('pos1','0.0, 0.0, 1.10');capsule.set('pos2','0.0, 0.0, 0.55')
+    capsule.set('radius',str(.16*K));capsule.set('pos1',f'0.0, 0.0, {1.15*K}');capsule.set('pos2',f'0.0, 0.0, {.35*K}')
 monsters.append(monster)
 for suffix in ['_settlement','_settlement_slow','_settlement_fast','_child']:
     ET.SubElement(monsters,'Monster',id=RACE+suffix,base_monster=RACE,action_set='as_wdr_villager',female_action_set='as_wdr_villager')
@@ -64,7 +65,7 @@ write(M/'ModuleData/monsters.xml',monsters)
 
 troop=copy.deepcopy(ET.parse(SC/'spnpccharacters.xml').getroot().find("NPCCharacter[@id='imperial_recruit']"))
 troop.set('race',RACE);troop.set('is_female','true');troop.set('age','25');troop.set('face_mesh_cache','false')
-troop.set('name','五毒苍蓝新兵（种族验证）')
+troop.set('name','五毒苍蓝新兵')
 troop.find('face').clear()
 ET.SubElement(troop.find('face'),'BodyProperties',version='4',age='25',weight='0.5',build='0.5',key='0'*128)
 ET.SubElement(troop.find('face'),'BodyPropertiesMax',version='4',age='25',weight='0.5',build='0.5',key='0'*128)
@@ -91,7 +92,7 @@ for id,filename,type in [('soln_skins','skins.xml','skin'),('soln_action_sets','
     ET.SubElement(project,'file',id=id,name='ModuleData/'+filename,type=type)
 write(M/'ModuleData/project.mbproj',project)
 sub=ET.Element('Module')
-for name,value in [('Name','Wudu Canglan Race Test'),('Id','WuduRaceTest'),('Version','v0.1.2'),('DefaultModule','false'),('ModuleCategory','Singleplayer'),('ModuleType','Community'),('SingleplayerModule','true'),('MultiplayerModule','false')]:ET.SubElement(sub,name,value=value)
+for name,value in [('Name','Wudu Canglan Race Test'),('Id','WuduRaceTest'),('Version','v0.2.0'),('DefaultModule','false'),('ModuleCategory','Singleplayer'),('ModuleType','Community'),('SingleplayerModule','true'),('MultiplayerModule','false')]:ET.SubElement(sub,name,value=value)
 deps=ET.SubElement(sub,'DependedModules')
 for dep in ['Native','SandBoxCore','Sandbox']:ET.SubElement(deps,'DependedModule',Id=dep)
 submodules=ET.SubElement(sub,'SubModules');observer=ET.SubElement(submodules,'SubModule')

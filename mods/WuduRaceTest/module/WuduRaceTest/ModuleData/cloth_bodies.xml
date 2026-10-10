@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='utf-8'?>
+<bodies>
+  <body name="wdr_canglan_collision" owner_skeleton="wdr_skeleton">
+    <capsules>
+      <capsule name="wdr_torso_low" length="0.233097" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.805243, 1.000000">
+        <points>
+          <point radius="0.068869">
+            <bones>
+              <bone name="pelvis" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.068869">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="wdr_torso_high" length="0.116548" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.038340, 1.000000">
+        <points>
+          <point radius="0.068869">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.068869">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="wdr_neck" length="0.063572" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.165483, 1.000000">
+        <points>
+          <point radius="0.032845">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.032845">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="wdr_head" length="0.084762" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, -0.005298, 1.260841, 1.000000">
+        <points>
+          <point radius="0.055096">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.055096">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="wdr_l_thigh" length="0.307675" origin="0, 0, 0" frame="-0.051655, 0.000000, -0.998665, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.998665, 0.000000, -0.051655, 0.000000, -0.079465, 0.000000, 0.762862, 1.000000">
+        <points>
+          <point radius="0.058274">
+            <bones>
+              <bone name="l_thigh" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.058274">
+            <bones>
+              <bone name="l_thigh" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="wdr_l_calf" length="0.307629" origin="0, 0, 0" frame="-0.034442, -0.034442, -0.998813, 0.000000, -0.001187, 0.999407, -0.034421, 0.000000, 0.999406, 0.000000, -0.034462, 0.000000, -0.095358, 0.000000, 0.423812, 1.000000">
+        <points>
+          <point radius="0.044500">
+            <bones>
+              <bone name="l_calf" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.044500">
+            <bones>
+              <bone name="l_calf" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="wdr_l_upperarm" length="0.179964" origin="0, 0, 0" frame="-0.735931, 0.000000, -0.677057, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.677057, 0.000000, -0.735931, 0.000000, -0.148334, 0.000000, 1.117804, 1.000000">
+        <points>
+          <point radius="0.010595">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.010595">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="wdr_l_forearm" length="0.138653" origin="0, 0, 0" frame="-0.725953, 0.000000, -0.687745, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.687745, 0.000000, -0.725953, 0.000000, -0.296668, 0.000000, 0.974768, 1.000000">
+        <points>
+          <point radius="0.010066">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.010066">
+            <bones>
+              <bone name="l_hand" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="wdr_r_thigh" length="0.307675" origin="0, 0, 0" frame="0.051655, 0.000000, -0.998665, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.998665, -0.000000, 0.051655, 0.000000, 0.079465, 0.000000, 0.762862, 1.000000">
+        <points>
+          <point radius="0.058274">
+            <bones>
+              <bone name="r_thigh" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.058274">
+            <bones>
+              <bone name="r_thigh" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="wdr_r_calf" length="0.307629" origin="0, 0, 0" frame="0.034442, -0.034442, -0.998813, 0.000000, 0.001187, 0.999407, -0.034421, 0.000000, 0.999406, -0.000000, 0.034462, 0.000000, 0.095358, 0.000000, 0.423812, 1.000000">
+        <points>
+          <point radius="0.044500">
+            <bones>
+              <bone name="r_calf" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.044500">
+            <bones>
+              <bone name="r_calf" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="wdr_r_upperarm" length="0.179964" origin="0, 0, 0" frame="0.735931, 0.000000, -0.677057, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.677057, -0.000000, 0.735931, 0.000000, 0.148334, 0.000000, 1.117804, 1.000000">
+        <points>
+          <point radius="0.010595">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.010595">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="wdr_r_forearm" length="0.138653" origin="0, 0, 0" frame="0.725953, 0.000000, -0.687745, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.687745, -0.000000, 0.725953, 0.000000, 0.296668, 0.000000, 0.974768, 1.000000">
+        <points>
+          <point radius="0.010066">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.010066">
+            <bones>
+              <bone name="r_hand" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

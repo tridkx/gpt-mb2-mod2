@@ -1,0 +1,21 @@
+{
+  "default": {
+    "unanchored": "error"
+  },
+  "meshes": {
+    "wdr_part_10.lod1": {
+      "unanchored": "pin_upper",
+      "axis": 2,
+      "band_m": 0.012,
+      "min_vertices": 2,
+      "reason": "LOD1 hair reduction can remove the thin root strip; restore the surviving upper attachment edge"
+    },
+    "wdr_part_11.lod1": {
+      "unanchored": "pin_upper",
+      "axis": 2,
+      "band_m": 0.012,
+      "min_vertices": 2,
+      "reason": "LOD1 hair reduction can remove the thin root strip; restore the surviving upper attachment edge"
+    }
+  }
+}

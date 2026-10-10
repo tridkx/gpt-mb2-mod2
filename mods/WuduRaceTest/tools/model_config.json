@@ -1,0 +1,35 @@
+{
+  "version": "v0.2.0",
+  "target_mesh_height_m": 1.45,
+  "original_height_cm": 136.85309748575673,
+  "unit_scale": 0.010595302748999976,
+  "orientation": [
+    1,
+    1,
+    1
+  ],
+  "skin_min_scale": 1.1,
+  "cloth_lods": [
+    0,
+    1
+  ],
+  "lod_ratios": [
+    1,
+    0.7,
+    0.4,
+    0.2
+  ],
+  "cloth_parts": {
+    "wdr_part_02": "cuff",
+    "wdr_part_07": "sleeve",
+    "wdr_part_08": "skirt",
+    "wdr_part_10": "hair",
+    "wdr_part_11": "hair"
+  },
+  "cloth_max_distance_m": {
+    "cuff": 0.025,
+    "sleeve": 0.03,
+    "skirt": 0.14,
+    "hair": 0.03
+  }
+}

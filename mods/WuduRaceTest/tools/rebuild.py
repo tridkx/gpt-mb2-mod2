@@ -10,4 +10,5 @@ for script in ['rig_model.py','export_geometry.py']:run([BLENDER,'--background',
 run([PY,'-B','-X','utf8',str(R/'tools/build_package.py')])
 run(['dotnet','build',str(R/'tools/Runtime/WuduRaceTest.csproj'),'--ignore-failed-sources','-o',str(R/'module/WuduRaceTest/bin/Win64_Shipping_Client')])
 run([PY,'-B','-X','utf8',str(R/'tools/verify_release.py')])
+run([PY,'-B','-X','utf8',str(R/'tools/verify_cloth.py')])
 for script in ['verify_source.py','render_review.py']:run([BLENDER,'--background','--factory-startup','--python-exit-code','1','--python',str(R/'tools'/script)])

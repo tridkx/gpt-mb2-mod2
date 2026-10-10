@@ -5,6 +5,7 @@ import numpy as np
 from scipy.spatial import cKDTree
 from lxml import etree as ET
 R=Path(__file__).resolve().parents[1];WS=R.parents[1];B=R/'build';M=R/'module/WuduRaceTest';PKG=M/'AssetPackages/wdr.tpac'
+cfg=json.loads((R/'tools/model_config.json').read_text());K=cfg['unit_scale']/.01
 GAME=Path('D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord');MB='D:/mb-tools/mbtool/bin/Release/net9.0/mbtool.exe'
 sys.path[:0]=[str(WS/'tools/asset_helpers/tools'),str(WS/'tools/asset_helpers/previewer')]
 from georead import read_geo
@@ -21,7 +22,7 @@ data=json.loads((R/'reports/final_skeleton.json').read_text());rig=parse_skeljso
 native=parse_skeljson(json.loads((R/'reports/human_skeleton.json').read_text()));expected=json.loads((B/'skeleton_spec.json').read_text())
 assert rig['names']==native['names'] and np.array_equal(rig['parent'],native['parent'])
 assert np.max(abs(np.array([b['rest'] for b in data['bones']])-np.array([b['rest'] for b in expected])))<1e-6
-assert np.linalg.norm(rig['restWorld'][0,:3,3]-[0,0,.75])<1e-6
+assert np.linalg.norm(rig['restWorld'][0,:3,3]-[0,0,.75*K])<1e-6
 geometry={g['name']:g for g in json.loads((B/'geometry.json').read_text())};allgroups=[];source=np.load(B/'source_positions.npz');maxerror=0
 for lod in range(4):
     run([MB,'exportmod',str(PKG),str(B/f'final_export{lod}'),str(lod)],R/'reports'/f'export_lod{lod}.txt')
@@ -35,7 +36,7 @@ for lod in range(4):
         p=np.frombuffer(buf,'<f4',count*3,offset).reshape(-1,3);offset+=count*(3+3+4+2+2)*4+count*4
         bi=np.frombuffer(buf,'u1',count*4,offset).reshape(-1,4);offset+=count*4;bw=np.frombuffer(buf,'u1',count*4,offset).reshape(-1,4)
         assert np.array_equal(p,g['pos']) and np.array_equal(bi,g['bi']) and np.array_equal(bw,g['bw'])
-        if rec['part']=='body':
+        if rec['part']=='body' and lod==0:
             key=g['name'].split('.lod')[0]+'_p';err=float(cKDTree(source[key]).query(g['pos'])[0].max());maxerror=max(maxerror,err);assert err<1e-6
 assert len(allgroups)==56
 native_npc=ET.parse(str(GAME/'Modules/SandBoxCore/ModuleData/spnpccharacters.xml'))
@@ -77,6 +78,7 @@ for frame in range(animation['start'],animation['frames']):
         if frame==animation['start']:preview[g['name']]=points
 np.savez_compressed(B/'run_preview.npz',**preview)
 game_files=[GAME/'Modules/Native/ModuleData/skins.xml',GAME/'Modules/Native/ModuleData/monsters.xml',GAME/'Modules/Native/ModuleData/action_sets.xml',GAME/'Modules/SandBoxCore/ModuleData/spnpccharacters.xml']
-report=dict(status='pass',version='v0.1.2',scope='offline structure/source fidelity/XML replacement; game appearance is pending',final_package_sha256=sha(PKG),runtime_dll_sha256=sha(M/'bin/Win64_Shipping_Client/WuduRaceTest.dll'),source_vertex_max_error_m=maxerror,source_height_m=json.loads((R/'reports/source_validation.json').read_text())['total_height_m'],custom_skeleton_bones=28,metameshes=2,mesh_groups=56,lods=4,lod_geometry_identical=True,cloth_enabled=False,intrinsic_armor_added=False,autoresolve_modified=False,other_troops_unchanged=len(before),predicted_run_frames=animation['frames']-animation['start'],game_verified=False,proportions_in_game_verified=False,native_file_hashes={str(p):sha(p) for p in game_files},known_limits=['fixed source face','no cloth or clipping fixes','native animation retargeting and IK unverified','no equipment armor','only imperial_recruit is replaced'])
+report=dict(status='pass',version='v0.2.0',scope='offline structure/source fidelity/XML replacement; game appearance is pending',final_package_sha256=sha(PKG),runtime_dll_sha256=sha(M/'bin/Win64_Shipping_Client/WuduRaceTest.dll'),source_vertex_max_error_m=maxerror,source_height_m=json.loads((R/'reports/source_validation.json').read_text())['total_height_m'],custom_skeleton_bones=28,metameshes=2,mesh_groups=56,lods=4,lod_geometry_identical=False,cloth_enabled=True,intrinsic_armor_added=False,autoresolve_modified=False,other_troops_unchanged=len(before),predicted_run_frames=animation['frames']-animation['start'],game_verified=False,proportions_in_game_verified=False,native_file_hashes={str(p):sha(p) for p in game_files},known_limits=['fixed source face','cloth engine dynamics pending','native animation retargeting and IK unverified','no equipment armor','only imperial_recruit is replaced'])
+report.update(baseline_version='v0.1.2',baseline_package_sha256='1f88c350853ce9f9e898df8b80b8b50a0c95a91dc76ca10ef6ffdb171b0992e6',baseline_user_verified=['model loading','sword animation'],height_target_in_game_m=1.45,height_cause_fully_confirmed=False,cloth_validation_report='cloth_validation.json')
 (R/'reports/release_validation.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps(report,indent=2))

@@ -1,17 +1,17 @@
 {
   "status": "pass",
-  "version": "v0.1.2",
+  "version": "v0.2.0",
   "scope": "offline structure/source fidelity/XML replacement; game appearance is pending",
-  "final_package_sha256": "1f88c350853ce9f9e898df8b80b8b50a0c95a91dc76ca10ef6ffdb171b0992e6",
-  "runtime_dll_sha256": "8bda271bfdec48c9cbc3ed3cce2d95dc6099b67e247873edfc3e51c1fbb2b0ea",
-  "source_vertex_max_error_m": 5.75370092193031e-08,
-  "source_height_m": 1.3685309748575674,
+  "final_package_sha256": "8698b3bd6a8767adb4aada6083a7c92e01ce1ff20511a6e624adc879faebb244",
+  "runtime_dll_sha256": "a753003bc02cff77dbd0d49da1d6332ee919892d199dca8d809d43f25a9528cc",
+  "source_vertex_max_error_m": 5.972363618217064e-08,
+  "source_height_m": 1.45,
   "custom_skeleton_bones": 28,
   "metameshes": 2,
   "mesh_groups": 56,
   "lods": 4,
-  "lod_geometry_identical": true,
-  "cloth_enabled": false,
+  "lod_geometry_identical": false,
+  "cloth_enabled": true,
   "intrinsic_armor_added": false,
   "autoresolve_modified": false,
   "other_troops_unchanged": 547,
@@ -26,9 +26,18 @@
   },
   "known_limits": [
     "fixed source face",
-    "no cloth or clipping fixes",
+    "cloth engine dynamics pending",
     "native animation retargeting and IK unverified",
     "no equipment armor",
     "only imperial_recruit is replaced"
-  ]
+  ],
+  "baseline_version": "v0.1.2",
+  "baseline_package_sha256": "1f88c350853ce9f9e898df8b80b8b50a0c95a91dc76ca10ef6ffdb171b0992e6",
+  "baseline_user_verified": [
+    "model loading",
+    "sword animation"
+  ],
+  "height_target_in_game_m": 1.45,
+  "height_cause_fully_confirmed": false,
+  "cloth_validation_report": "cloth_validation.json"
 }
