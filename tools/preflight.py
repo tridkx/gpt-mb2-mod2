@@ -10,9 +10,6 @@ def main():
     if not skill.is_file():
         raise SystemExit(f'Missing installed skill preflight: {skill}')
     args = sys.argv[1:]
-    grouped = root / 'mods/TianxiangCollection/sets/TianxiangT5'
-    if grouped.is_dir() and not any(arg == '--example-workspace' or arg.startswith('--example-workspace=') for arg in args):
-        args.extend(['--example-workspace', str(grouped)])
     if not any(arg == '--workspace' or arg.startswith('--workspace=') for arg in args):
         args.extend(['--workspace', str(root)])
     sys.argv = [str(skill), *args]
