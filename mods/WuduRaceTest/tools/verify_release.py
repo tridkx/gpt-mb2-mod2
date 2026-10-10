@@ -50,6 +50,14 @@ assert len(before)==len(after) and all(ET.tostring(a)==ET.tostring(b) for a,b in
 for path in M.rglob('*.xml'):ET.parse(str(path))
 skins=ET.parse(str(M/'ModuleData/skins.xml'));assert len(skins.xpath('//race'))==1 and len(skins.xpath('//skin'))==10
 assert all(s.get('skeleton')=='wdr_skeleton' and len(s.findall('deform_keys/deform_key'))==0 for s in skins.xpath('//skin'))
+native_skins=ET.parse(str(GAME/'Modules/Native/ModuleData/skins.xml')).xpath("//race[@id='human']/skin")
+for skin,baseline in zip(skins.xpath('//skin'),native_skins):
+    for tag in ['hair_meshes','beard_meshes']:
+        node=skin.find(tag);original=baseline.find(tag)
+        assert node is not None,('Required native skin container missing',skin.get('name'),tag)
+        assert dict(node.attrib)==dict(original.attrib),('Native skin container attributes changed',tag)
+        assert len(node)==0,('Fixed source hair must not receive generated variants',tag)
+
 for k,v in json.loads((R/'reports/input_hashes.json').read_text()).items():assert sha(R/k)==v
 origfolder=Path('D:/dsh-tiandao/五毒少女校服8套/01苍蓝流苏')
 for p in (R/'input').iterdir():
@@ -69,6 +77,6 @@ for frame in range(animation['start'],animation['frames']):
         if frame==animation['start']:preview[g['name']]=points
 np.savez_compressed(B/'run_preview.npz',**preview)
 game_files=[GAME/'Modules/Native/ModuleData/skins.xml',GAME/'Modules/Native/ModuleData/monsters.xml',GAME/'Modules/Native/ModuleData/action_sets.xml',GAME/'Modules/SandBoxCore/ModuleData/spnpccharacters.xml']
-report=dict(status='pass',version='v0.1.0',scope='offline structure/source fidelity/XML replacement; game appearance is pending',final_package_sha256=sha(PKG),runtime_dll_sha256=sha(M/'bin/Win64_Shipping_Client/WuduRaceTest.dll'),source_vertex_max_error_m=maxerror,source_height_m=json.loads((R/'reports/source_validation.json').read_text())['total_height_m'],custom_skeleton_bones=28,metameshes=2,mesh_groups=56,lods=4,lod_geometry_identical=True,cloth_enabled=False,intrinsic_armor_added=False,autoresolve_modified=False,other_troops_unchanged=len(before),predicted_run_frames=animation['frames']-animation['start'],game_verified=False,proportions_in_game_verified=False,native_file_hashes={str(p):sha(p) for p in game_files},known_limits=['fixed source face','no cloth or clipping fixes','native animation retargeting and IK unverified','no equipment armor','only imperial_recruit is replaced'])
+report=dict(status='pass',version='v0.1.1',scope='offline structure/source fidelity/XML replacement; game appearance is pending',final_package_sha256=sha(PKG),runtime_dll_sha256=sha(M/'bin/Win64_Shipping_Client/WuduRaceTest.dll'),source_vertex_max_error_m=maxerror,source_height_m=json.loads((R/'reports/source_validation.json').read_text())['total_height_m'],custom_skeleton_bones=28,metameshes=2,mesh_groups=56,lods=4,lod_geometry_identical=True,cloth_enabled=False,intrinsic_armor_added=False,autoresolve_modified=False,other_troops_unchanged=len(before),predicted_run_frames=animation['frames']-animation['start'],game_verified=False,proportions_in_game_verified=False,native_file_hashes={str(p):sha(p) for p in game_files},known_limits=['fixed source face','no cloth or clipping fixes','native animation retargeting and IK unverified','no equipment armor','only imperial_recruit is replaced'])
 (R/'reports/release_validation.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps(report,indent=2))

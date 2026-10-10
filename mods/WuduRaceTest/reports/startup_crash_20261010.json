@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-10",
+  "failed_version": "v0.1.0",
+  "fixed_version": "v0.1.1",
+  "pid": 40616,
+  "log": "C:/ProgramData/Mount and Blade II Bannerlord/logs/rgl_log_40616.txt",
+  "dump": "C:/Users/DKX/AppData/Local/CrashDumps/TaleWorlds.MountAndBlade.Launcher.exe.40616.dmp",
+  "exception": "0xc0000005 read address 0x40",
+  "fault_module": "TaleWorlds.Native.dll",
+  "fault_rva": "0xab169",
+  "instruction": "mov rdx, qword ptr [rcx+0x40]",
+  "rcx": "0x0",
+  "argument_literal": "group_id",
+  "unwound_callers_rva": [
+    "0x7301d2",
+    "0x5880bc"
+  ],
+  "caller_searched_child_literal": "hair_meshes",
+  "unwind_method": "fault function sub rsp,8; next function push rdi/sub rsp,0x20; read return addresses at RSP+8 and original RSP+0x38; no stack scanning",
+  "cause": "hair_meshes removed; native reads group_id on absent child before checking child pointer",
+  "old_all_ten_skins_missing_hair_container": true,
+  "new_all_ten_skins_preserve_group_id": true,
+  "geometry_package_unchanged": true,
+  "native_unchanged": true,
+  "game_retest_pending": true
+}

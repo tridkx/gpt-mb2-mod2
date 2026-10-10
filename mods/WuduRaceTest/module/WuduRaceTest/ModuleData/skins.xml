@@ -2,7 +2,8 @@
 <skins>
   <race id="wdr_canglan" name="wdr_canglan">
     <skin gender="0" name="wdr_canglan_man" mesh_maturity_type="adult" morph_key="0" uses_stitching="false" body_mesh_suffix="" min_scale="1.0" skeleton="wdr_skeleton" body_meta_mesh="wdr_canglan_body" body_meta_mesh_shoulders="wdr_hidden" body_meta_mesh_upperbody="wdr_hidden" legs_mesh="wdr_hidden" hands_mesh="wdr_hidden" face_meta_mesh="wdr_hidden" underwear_bottom_mesh="wdr_hidden" underwear_top_mesh="wdr_hidden">
-      <deform_keys />
+      <deform_keys>
+				</deform_keys>
       <voice_types>
         <voice_type name="male_02" />
         <voice_type name="male_03" />
@@ -12,6 +13,8 @@
         <voice_type name="male_07" />
         <voice_type name="male_08" />
       </voice_types>
+      <hair_meshes group_id="7">
+				</hair_meshes>
       <eyebrow_meshes>
         <eyebrow_mesh name="male_eyebrow_1" />
         <eyebrow_mesh name="male_eyebrow_2" />
@@ -24,6 +27,8 @@
         <eyebrow_mesh name="male_eyebrow_10" />
         <eyebrow_mesh name="male_eyebrow_6" />
       </eyebrow_meshes>
+      <beard_meshes>
+				</beard_meshes>
       <tattoo_materials group_id="8" zero_probability="0">
         <tattoo_material>
           <style_tags>
@@ -512,7 +517,11 @@
       </constraints>
     </skin>
     <skin gender="1" name="wdr_canglan_woman" mesh_maturity_type="adult" morph_key="1" uses_stitching="false" body_mesh_suffix="" min_scale="1.0" skeleton="wdr_skeleton" body_meta_mesh="wdr_canglan_body" body_meta_mesh_shoulders="wdr_hidden" body_meta_mesh_upperbody="wdr_hidden" legs_mesh="wdr_hidden" hands_mesh="wdr_hidden" face_meta_mesh="wdr_hidden" underwear_bottom_mesh="wdr_hidden" underwear_top_mesh="wdr_hidden">
-      <deform_keys />
+      <deform_keys>
+				</deform_keys>
+      <hair_meshes group_id="7">
+				
+				</hair_meshes>
       <eyebrow_meshes>
         <eyebrow_mesh name="female_eyebrow_2" />
         <eyebrow_mesh name="female_eyebrow_3" />
@@ -520,6 +529,8 @@
         <eyebrow_mesh name="female_eyebrow_6" />
         <eyebrow_mesh name="female_eyebrow_7" />
       </eyebrow_meshes>
+      <beard_meshes>
+				</beard_meshes>
       <tattoo_materials group_id="8" zero_probability="0">
         <tattoo_material>
           <style_tags>
@@ -1050,7 +1061,8 @@
       </constraints>
     </skin>
     <skin gender="0" name="wdr_canglan_kid_2_male" morph_key="0" mesh_maturity_type="teenager" uses_stitching="false" body_mesh_suffix="" min_scale="1.0" skeleton="wdr_skeleton" body_meta_mesh="wdr_canglan_body" body_meta_mesh_shoulders="wdr_hidden" body_meta_mesh_upperbody="wdr_hidden" legs_mesh="wdr_hidden" hands_mesh="wdr_hidden" face_meta_mesh="wdr_hidden" underwear_bottom_mesh="wdr_hidden" underwear_top_mesh="wdr_hidden">
-      <deform_keys />
+      <deform_keys>
+				</deform_keys>
       <voice_types>
         <voice_type name="male_02" />
         <voice_type name="male_03" />
@@ -1058,6 +1070,8 @@
         <voice_type name="male_05" />
         <voice_type name="male_06" />
       </voice_types>
+      <hair_meshes group_id="7">
+				</hair_meshes>
       <eyebrow_meshes>
         <eyebrow_mesh name="male_eyebrow_1" />
         <eyebrow_mesh name="male_eyebrow_2" />
@@ -1070,6 +1084,8 @@
         <eyebrow_mesh name="male_eyebrow_10" />
         <eyebrow_mesh name="male_eyebrow_6" />
       </eyebrow_meshes>
+      <beard_meshes>
+				</beard_meshes>
       <tattoo_materials group_id="8" zero_probability="0">
         <tattoo_material>
           <style_tags>
@@ -1558,7 +1574,11 @@
       </constraints>
     </skin>
     <skin gender="1" name="wdr_canglan_kid_2_female" mesh_maturity_type="teenager" morph_key="1" uses_stitching="false" body_mesh_suffix="" min_scale="1.0" skeleton="wdr_skeleton" body_meta_mesh="wdr_canglan_body" body_meta_mesh_shoulders="wdr_hidden" body_meta_mesh_upperbody="wdr_hidden" legs_mesh="wdr_hidden" hands_mesh="wdr_hidden" face_meta_mesh="wdr_hidden" underwear_bottom_mesh="wdr_hidden" underwear_top_mesh="wdr_hidden">
-      <deform_keys />
+      <deform_keys>
+				</deform_keys>
+      <hair_meshes group_id="7">
+				
+				</hair_meshes>
       <eyebrow_meshes>
         <eyebrow_mesh name="female_eyebrow_2" />
         <eyebrow_mesh name="female_eyebrow_3" />
@@ -1566,6 +1586,8 @@
         <eyebrow_mesh name="female_eyebrow_6" />
         <eyebrow_mesh name="female_eyebrow_7" />
       </eyebrow_meshes>
+      <beard_meshes>
+				</beard_meshes>
       <tattoo_materials group_id="8" zero_probability="0">
         <tattoo_material>
           <style_tags>
@@ -2095,10 +2117,13 @@
       </constraints>
     </skin>
     <skin gender="0" name="wdr_canglan_kid_1_male" mesh_maturity_type="tween" morph_key="0" uses_stitching="false" body_mesh_suffix="" min_scale="1.0" skeleton="wdr_skeleton" body_meta_mesh="wdr_canglan_body" body_meta_mesh_shoulders="wdr_hidden" body_meta_mesh_upperbody="wdr_hidden" legs_mesh="wdr_hidden" hands_mesh="wdr_hidden" face_meta_mesh="wdr_hidden" underwear_bottom_mesh="wdr_hidden" underwear_top_mesh="wdr_hidden">
-      <deform_keys />
+      <deform_keys>
+				</deform_keys>
       <voice_types>
         <voice_type name="male_03" />
       </voice_types>
+      <hair_meshes group_id="7">
+				</hair_meshes>
       <eyebrow_meshes>
         <eyebrow_mesh name="male_eyebrow_1" />
         <eyebrow_mesh name="male_eyebrow_2" />
@@ -2112,6 +2137,8 @@
         <eyebrow_mesh name="male_eyebrow_6" />
       </eyebrow_meshes>
       <default_beard_meshes cover_type1="beards_c_a" cover_type2="beards_c_b" cover_type3="beards_c_c" />
+      <beard_meshes>
+				</beard_meshes>
       <tattoo_materials group_id="8" zero_probability="85">
         <tattoo_material>
           <style_tags>
@@ -2598,7 +2625,11 @@
       </constraints>
     </skin>
     <skin gender="1" name="wdr_canglan_kid_1_female" mesh_maturity_type="tween" morph_key="1" uses_stitching="false" body_mesh_suffix="" min_scale="1.0" skeleton="wdr_skeleton" body_meta_mesh="wdr_canglan_body" body_meta_mesh_shoulders="wdr_hidden" body_meta_mesh_upperbody="wdr_hidden" legs_mesh="wdr_hidden" hands_mesh="wdr_hidden" face_meta_mesh="wdr_hidden" underwear_bottom_mesh="wdr_hidden" underwear_top_mesh="wdr_hidden">
-      <deform_keys />
+      <deform_keys>
+				</deform_keys>
+      <hair_meshes group_id="7">
+				
+				</hair_meshes>
       <eyebrow_meshes>
         <eyebrow_mesh name="female_eyebrow_2" />
         <eyebrow_mesh name="female_eyebrow_3" />
@@ -2606,6 +2637,8 @@
         <eyebrow_mesh name="female_eyebrow_6" />
         <eyebrow_mesh name="female_eyebrow_7" />
       </eyebrow_meshes>
+      <beard_meshes>
+				</beard_meshes>
       <tattoo_materials group_id="8" zero_probability="85">
         <tattoo_material>
           <style_tags>
@@ -3132,14 +3165,20 @@
       </constraints>
     </skin>
     <skin gender="0" name="wdr_canglan_kid_3_male" mesh_maturity_type="child" morph_key="0" uses_stitching="false" body_mesh_suffix="" min_scale="1.0" skeleton="wdr_skeleton" body_meta_mesh="wdr_canglan_body" body_meta_mesh_shoulders="wdr_hidden" body_meta_mesh_upperbody="wdr_hidden" legs_mesh="wdr_hidden" hands_mesh="wdr_hidden" face_meta_mesh="wdr_hidden" underwear_bottom_mesh="wdr_hidden" underwear_top_mesh="wdr_hidden">
-      <deform_keys />
+      <deform_keys>
+				</deform_keys>
+      <presets />
       <voice_types>
         <voice_type name="male_03" />
       </voice_types>
+      <hair_meshes group_id="7">
+				</hair_meshes>
       <eyebrow_meshes>
         <eyebrow_mesh name="male_eyebrow_1" />
       </eyebrow_meshes>
       <default_beard_meshes cover_type1="beards_c_a" cover_type2="beards_c_b" cover_type3="beards_c_c" />
+      <beard_meshes>
+				</beard_meshes>
       <tattoo_materials group_id="8" zero_probability="85">
         <tattoo_material>
           <style_tags>
@@ -3627,10 +3666,16 @@
       </constraints>
     </skin>
     <skin gender="1" name="wdr_canglan_kid_3_female" mesh_maturity_type="child" morph_key="1" uses_stitching="false" body_mesh_suffix="" min_scale="1.0" skeleton="wdr_skeleton" body_meta_mesh="wdr_canglan_body" body_meta_mesh_shoulders="wdr_hidden" body_meta_mesh_upperbody="wdr_hidden" legs_mesh="wdr_hidden" hands_mesh="wdr_hidden" face_meta_mesh="wdr_hidden" underwear_bottom_mesh="wdr_hidden" underwear_top_mesh="wdr_hidden">
-      <deform_keys />
+      <deform_keys>
+				</deform_keys>
+      <default_hair_meshes cover_type1="hair_female_a" cover_type2="hair_female_b" cover_type3="hair_female_c" cover_type4="hair_female_c" />
+      <hair_meshes group_id="7">
+				</hair_meshes>
       <eyebrow_meshes>
         <eyebrow_mesh name="female_eyebrow_6" />
       </eyebrow_meshes>
+      <beard_meshes>
+				</beard_meshes>
       <tattoo_materials group_id="8" zero_probability="85">
         <tattoo_material>
           <style_tags>
@@ -4150,11 +4195,16 @@
       </constraints>
     </skin>
     <skin gender="0" name="wdr_canglan_toddler_male" mesh_maturity_type="toddler" morph_key="0" uses_stitching="false" body_mesh_suffix="" min_scale="1.0" skeleton="wdr_skeleton" body_meta_mesh="wdr_canglan_body" body_meta_mesh_shoulders="wdr_hidden" body_meta_mesh_upperbody="wdr_hidden" legs_mesh="wdr_hidden" hands_mesh="wdr_hidden" face_meta_mesh="wdr_hidden" underwear_bottom_mesh="wdr_hidden" underwear_top_mesh="wdr_hidden">
-      <deform_keys />
+      <deform_keys>
+				</deform_keys>
+      <hair_meshes group_id="7">
+				</hair_meshes>
       <eyebrow_meshes>
         <eyebrow_mesh name="male_eyebrow_1" />
       </eyebrow_meshes>
       <default_beard_meshes cover_type1="beards_c_a" cover_type2="beards_c_b" cover_type3="beards_c_c" />
+      <beard_meshes>
+				</beard_meshes>
       <tattoo_materials group_id="8" zero_probability="85">
         <tattoo_material>
           <style_tags>
@@ -4639,10 +4689,16 @@
       </constraints>
     </skin>
     <skin gender="1" name="wdr_canglan_toddler_female" mesh_maturity_type="toddler" morph_key="1" uses_stitching="false" body_mesh_suffix="" min_scale="1.0" skeleton="wdr_skeleton" body_meta_mesh="wdr_canglan_body" body_meta_mesh_shoulders="wdr_hidden" body_meta_mesh_upperbody="wdr_hidden" legs_mesh="wdr_hidden" hands_mesh="wdr_hidden" face_meta_mesh="wdr_hidden" underwear_bottom_mesh="wdr_hidden" underwear_top_mesh="wdr_hidden">
-      <deform_keys />
+      <deform_keys>
+				</deform_keys>
+      <default_hair_meshes cover_type1="hair_female_a" cover_type2="hair_female_b" cover_type3="hair_female_c" cover_type4="hair_female_c" />
+      <hair_meshes group_id="7">
+				</hair_meshes>
       <eyebrow_meshes>
         <eyebrow_mesh name="female_eyebrow_6" />
       </eyebrow_meshes>
+      <beard_meshes>
+				</beard_meshes>
       <tattoo_materials group_id="8" zero_probability="85">
         <tattoo_material>
           <style_tags>
