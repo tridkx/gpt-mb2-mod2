@@ -1,24 +1,18 @@
 {
-  "version": "v0.2.0",
-  "date": "2026-10-10",
-  "package_sha256": "f71e36438e71160302928b812f9712c4d2a7821be724c0f2a2cdca555f717b3e",
+  "version": "v0.2.1",
+  "date": "2026-10-11",
+  "package_sha256": "8d959a82324c796d46b215b2d0c58739d962f64acb0c001bc5a17c2779fa1644",
   "preview_count": 26,
-  "scope": "Final-package skinning reference previews, not engine cloth simulation",
+  "scope": "Final-package skinning reference previews; studio materials do not validate Bannerlord AO or cloth solver",
   "reviewed": [
-    "rest front versus v0.1.0",
-    "rest side",
-    "head",
-    "idle worst",
-    "run worst",
-    "bow worst",
-    "riding worst",
-    "slash worst",
-    "LOD3 head"
+    "rest front",
+    "pelvis support front and side proxy"
   ],
   "observations": [
-    "Final geometry, UV, skinning, skeleton and texture bytes match user-accepted v0.1.1 at every LOD.",
-    "Face, outfit, limbs and hands retain accepted shape.",
-    "Images show skinning references; cloth-driven motion and clearance must be checked in game."
+    "Source geometry, skinning and skeleton unchanged from accepted v0.1.1 in all LODs.",
+    "Original color and normal texture bytes unchanged; only generated control texture changes.",
+    "AO control and pelvis support checks pass; engine dark lighting and dynamic collision unverified.",
+    "Source total mesh height 1.6760067 m; no Wudu body dimensions applied; runtime AgentScale not measured."
   ],
   "game_verified": false
 }

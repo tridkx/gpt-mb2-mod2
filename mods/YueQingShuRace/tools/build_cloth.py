@@ -9,6 +9,17 @@ caps=[]
 def cap(name,a,b,r,ba,bb):caps.append((name,np.array(a),np.array(b),r,ba,bb))
 # These radii are specific to this source: no native adult collision body.
 cap('waist',[0,.080,1.00],[0,.082,1.15],.067,'spine','spine1')
+# Bridge the waist and thigh caps across the actual source pelvis. The body
+# extends behind the joint origins; thigh capsules alone leave the buttocks
+# unsupported. Keep both endpoints on pelvis so support follows hip rotation.
+source=np.load(B/'fitted_model.npz');body_p=source['yqs_part_08_p']
+hip=body_p[(np.abs(body_p[:,0])<.15)&(body_p[:,2]>.88)&(body_p[:,2]<1.04)]
+assert len(hip)>100
+rear,front=np.percentile(hip[:,1],[1,99]);cy=float((rear+front)/2)
+radius=float((front-rear)/2)
+assert .07<radius<.11 and -.01<cy<.10
+for x in [-.055,0,.055]:
+    cap('pelvis_'+str(x),[x,cy,.90],[x,cy,1.01],radius,'pelvis','pelvis')
 for x in [-.045,0,.045]:cap('back_'+str(x),[x,.060,1.17],[x,.058,1.36],.045,'spine1','spine2')
 cap('neck',[0,.039,1.39],[0,.047,1.46],.030,'spine2','neck')
 cap('head',[0,.065,1.48],[0,.065,1.59],.060,'head','head')

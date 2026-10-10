@@ -1,0 +1,89 @@
+{
+  "status": "pass",
+  "version": "v0.2.1",
+  "final_package_sha256": "8d959a82324c796d46b215b2d0c58739d962f64acb0c001bc5a17c2779fa1644",
+  "pelvis_support": {
+    "samples": 808,
+    "old_coverage_within_10mm": 0.09282178217821782,
+    "new_coverage_within_10mm": 1.0,
+    "max_surface_outside_support_m": 0.007786258945646801,
+    "capsules": [
+      {
+        "name": "pelvis_-0.055",
+        "endpoints_m": [
+          [
+            -0.055,
+            0.0624261114001274,
+            0.9
+          ],
+          [
+            -0.055,
+            0.0624261114001274,
+            1.01
+          ]
+        ],
+        "radius_m": 0.0955138000845909,
+        "bones": [
+          "pelvis",
+          "pelvis"
+        ]
+      },
+      {
+        "name": "pelvis_0",
+        "endpoints_m": [
+          [
+            0.0,
+            0.0624261114001274,
+            0.9
+          ],
+          [
+            0.0,
+            0.0624261114001274,
+            1.01
+          ]
+        ],
+        "radius_m": 0.0955138000845909,
+        "bones": [
+          "pelvis",
+          "pelvis"
+        ]
+      },
+      {
+        "name": "pelvis_0.055",
+        "endpoints_m": [
+          [
+            0.055,
+            0.0624261114001274,
+            0.9
+          ],
+          [
+            0.055,
+            0.0624261114001274,
+            1.01
+          ]
+        ],
+        "radius_m": 0.0955138000845909,
+        "bones": [
+          "pelvis",
+          "pelvis"
+        ]
+      }
+    ],
+    "scope": "Rest-pose source body vertex proxy, not game solver or full continuous surface"
+  },
+  "material": {
+    "ao_blue_min": 255,
+    "metallic_red_max": 0,
+    "gloss_green_mean": 65.0,
+    "self_illumination": false,
+    "game_dark_scene_verified": false
+  },
+  "dimensions": {
+    "source_height_m": 1.6760067177528981,
+    "source_geometry_error_m": 0,
+    "skin_min_scale": 1,
+    "source_dimensions_preserved": true,
+    "wudu_settings_used": false,
+    "game_agent_scale_verified": false
+  }
+}

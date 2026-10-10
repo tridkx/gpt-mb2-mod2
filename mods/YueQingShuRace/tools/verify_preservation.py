@@ -32,7 +32,10 @@ before=parse_skeljson(json.loads((B/'accepted_skeleton.json').read_text()));afte
 assert before['names']==after['names'] and np.array_equal(before['parent'],after['parent']) and np.array_equal(before['restWorld'],after['restWorld'])
 before=json.loads((B/'accepted_export_lod0/pack.json').read_text());after=json.loads((B/'final_export_lod0/pack.json').read_text())
 assert [t['name'] for t in before['textures']]==[t['name'] for t in after['textures']]
+changed=[]
 for a,b in zip(before['textures'],after['textures']):
-    assert (B/'accepted_export_lod0'/a['file']).read_bytes()==(B/'final_export_lod0'/b['file']).read_bytes()
-report=dict(status='pass',version='v0.2.0',baseline_version='v0.1.1',baseline_package_sha256=sha(baseline),final_package_sha256=sha(R/'module/YueQingShuRace/AssetPackages/yqs.tpac'),lods=rows,source_skeleton_identical=True,all_texture_mips_identical=True,user_feedback='User accepted v0.1.1 appearance; scope of tested gameplay unspecified',game_cloth_verified=False)
+    equal=(B/'accepted_export_lod0'/a['file']).read_bytes()==(B/'final_export_lod0'/b['file']).read_bytes()
+    if not equal:changed.append(a['name'])
+assert changed==['yqs_tex_1'],changed  # Only generated metallic/gloss/AO fallback changes.
+report=dict(status='pass',version=json.loads((R/'tools/model_config.json').read_text())['version'],baseline_version='v0.1.1',baseline_package_sha256=sha(baseline),final_package_sha256=sha(R/'module/YueQingShuRace/AssetPackages/yqs.tpac'),lods=rows,source_skeleton_identical=True,all_source_texture_mips_identical=True,changed_generated_textures=changed,user_feedback='User accepted v0.1.1 shape; v0.2.0 reports missing pelvis collision, excessive shadow darkness and small apparent size',game_cloth_verified=False)
 (R/'reports/preservation_validation.json').write_text(json.dumps(report,indent=2));print('ACCEPTED_APPEARANCE_PRESERVED',rows)

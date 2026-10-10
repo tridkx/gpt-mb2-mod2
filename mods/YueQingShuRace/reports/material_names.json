@@ -3,8 +3,9 @@
     "name": "yqs_mi_maj02_01_hair",
     "template": "alpha",
     "shaderMaterialFlags": [
-      "alpha_test",
-      "disable_vertex_color_alpha"
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
     ],
     "textures": {
       "0": "yqs_tex_2",
@@ -104,8 +105,9 @@
     "name": "yqs_maj02_01_eyelash_eyebrow",
     "template": "alpha",
     "shaderMaterialFlags": [
-      "alpha_test",
-      "disable_vertex_color_alpha"
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
     ],
     "textures": {
       "0": "yqs_tex_8",
@@ -205,8 +207,9 @@
     "name": "yqs_mi_maj02_01_tassel",
     "template": "alpha",
     "shaderMaterialFlags": [
-      "alpha_test",
-      "disable_vertex_color_alpha"
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
     ],
     "textures": {
       "0": "yqs_tex_15",

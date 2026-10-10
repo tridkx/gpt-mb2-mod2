@@ -1,0 +1,24 @@
+{
+  "version": "v0.2.0",
+  "date": "2026-10-10",
+  "package_sha256": "f71e36438e71160302928b812f9712c4d2a7821be724c0f2a2cdca555f717b3e",
+  "preview_count": 26,
+  "scope": "Final-package skinning reference previews, not engine cloth simulation",
+  "reviewed": [
+    "rest front versus v0.1.0",
+    "rest side",
+    "head",
+    "idle worst",
+    "run worst",
+    "bow worst",
+    "riding worst",
+    "slash worst",
+    "LOD3 head"
+  ],
+  "observations": [
+    "Final geometry, UV, skinning, skeleton and texture bytes match user-accepted v0.1.1 at every LOD.",
+    "Face, outfit, limbs and hands retain accepted shape.",
+    "Images show skinning references; cloth-driven motion and clearance must be checked in game."
+  ],
+  "game_verified": false
+}
