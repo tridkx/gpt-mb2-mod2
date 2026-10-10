@@ -34,10 +34,10 @@ assert {g['lod'] for g in groups}=={0,1,2,3}
 for p in ['A','B']:
  for part in ['head','body','legs']:
   for lod in range(4):assert any(g['name'].startswith(f'ffs_{p.lower()}_{part}_') and g['lod']==lod for g in groups)
-ET.parse(R/'module/FeifengScaleTest/SubModule.xml');items=ET.parse(R/'module/FeifengScaleTest/ModuleData/items.xml');assert len(items.findall('Item'))==12
+ET.parse(R/'module/FeifengScaleTest/SubModule.xml');items=ET.parse(R/'module/FeifengScaleTest/ModuleData/items.xml');assert len(items.findall('Item'))==18
 for item in items.findall('Item'):assert item.get('mesh')==item.get('mesh').lower()
 for part in ['head','body','legs']:
- for profile in 'CD':
+ for profile in 'CDEF':
   assert items.find("Item[@id='ffs_%s_%s']"%(profile,part)).get('mesh')=='ffs_a_'+part
 assert all(g['name']==g['name'].lower() for g in groups)
 original=Path('D:/dsh-tiandao/飞凤苗银(女)');input_hashes={}
@@ -73,5 +73,5 @@ for profile in ['A','B']:
   motions[profile+'_'+name]=dict(animation=animation['name'],frames=animation['frames']-animation['start'],worst_frame=worst[1],edge_ratio_p99=worst[0],finite=True,method='experimental local scale hierarchy; no engine physics or IK')
   mats=matrices(animation,worst[1]);preview[profile+'_'+name]={g['name']:lbs(g['pos'],g['bi'],g['bw'],mats) for g in selected}
 np.savez_compressed(B/'preview_positions.npz',**{scene+'__'+name:positions for scene,meshes in preview.items() for name,positions in meshes.items()})
-report=dict(status='pass',version='v0.1.2',scope='offline structural checks and experimental predicted skinning only',final_package_sha256=sha(PKG),baseline_sha256=baseline_hash,runtime_dll_sha256=sha(R/'module/FeifengScaleTest/bin/Win64_Shipping_Client/FeifengScaleTest.dll'),source_multiplier=1.5,source_total_height_m=plan['source_total_height_m'],input_hashes=input_hashes,metameshes=6,mesh_groups=80,lods=4,items=12,motions=motions,cloth_enabled=False,game_verified=False,engine_scale_convention_verified=False,inventory_preview_supported=False,appearance_quality_verified=False,known_visual_issues=['sleeve/cuff and shoulder deformation','skirt/panel deformation in predicted motion'],delivery_type='experimental mechanism probe, not production equipment')
+report=dict(status='pass',version='v0.1.3',scope='offline structural checks and experimental predicted skinning only',final_package_sha256=sha(PKG),baseline_sha256=baseline_hash,runtime_dll_sha256=sha(R/'module/FeifengScaleTest/bin/Win64_Shipping_Client/FeifengScaleTest.dll'),source_multiplier=1.5,source_total_height_m=plan['source_total_height_m'],input_hashes=input_hashes,metameshes=6,mesh_groups=80,lods=4,items=18,motions=motions,cloth_enabled=False,game_verified=False,engine_scale_convention_verified=False,inventory_preview_supported=False,appearance_quality_verified=False,known_visual_issues=['sleeve/cuff and shoulder deformation','skirt/panel deformation in predicted motion'],delivery_type='experimental mechanism probe, not production equipment')
 (R/'reports/release_validation.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))

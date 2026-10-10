@@ -14,26 +14,40 @@ try {
  $taskMethod=$taskType.GetMethod('PhaseAt',[Reflection.BindingFlags]'Static,NonPublic')
  $taskCases=@(@(0,0),@(5.99,0),@(6,1),@(17.99,1),@(18,2),@(23.99,2),@(24,3),@(35.99,3),@(36,4),@(1000,4))
  foreach($taskCase in $taskCases) {
-  $taskActual=$taskMethod.Invoke($null,@([single]$taskCase[0]))
-  if($taskActual -ne $taskCase[1]){throw "Phase boundary failed at $($taskCase[0])"}
+  if($taskMethod.Invoke($null,@([single]$taskCase[0])) -ne $taskCase[1]){throw 'Phase boundary failed'}
  }
- $taskHead=$taskType.GetField('Head',[Reflection.BindingFlags]'Static,NonPublic').GetValue($null)
- $taskScale=$taskType.GetField('DoubleHead',[Reflection.BindingFlags]'Static,NonPublic').GetValue($null)
- if($taskHead.Length -ne 1 -or $taskHead[0] -ne 13){throw 'Not a sparse head-only call'}
- if($taskScale.Length -ne 1){throw 'Incorrect diagnostic scale count'}
- Add-Type -TypeDefinition @"
-public static class HeadScaleCheck {
- public static void Verify(object value) {
-  object v=((System.Array)value).GetValue(0);
-  foreach(string axis in new[]{"x","y","z"})
-   if((float)v.GetType().GetField(axis).GetValue(v)!=2f)
-    throw new System.Exception("Incorrect diagnostic multiplier");
+ Add-Type -ReferencedAssemblies @([IO.Path]::Combine($taskGameBin,'TaleWorlds.Library.dll'),[IO.Path]::Combine($taskGameBin,'System.Numerics.Vectors.dll'),'C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.7.2/Facades/netstandard.dll') -TypeDefinition @"
+using System;
+using System.Reflection;
+using TaleWorlds.Library;
+public static class LocalFrameCheck {
+ static MatrixFrame Build(MethodInfo method,MatrixFrame parent,MatrixFrame current,MatrixFrame reference,float scale) {
+  return (MatrixFrame)method.Invoke(null,new object[]{parent,current,reference,scale});
+ }
+ static void Near(float a,float b) {if(Math.Abs(a-b)>0.0001f)throw new Exception("Matrix check failed: "+a+" vs "+b);}
+ static void Vector(Vec3 a,Vec3 b) {Near(a.x,b.x);Near(a.y,b.y);Near(a.z,b.z);}
+ public static void Verify(Type type) {
+  var method=type.GetMethod("BuildHeadLocal",BindingFlags.Static|BindingFlags.NonPublic);
+  var parent=MatrixFrame.Identity;parent.rotation.s=new Vec3(.8f,.6f,0);parent.rotation.f=new Vec3(-.6f,.8f,0);parent.origin=new Vec3(.3f,-.4f,1.2f);
+  var local=MatrixFrame.Identity;local.rotation.s=new Vec3(.6f,0,-.8f);local.rotation.u=new Vec3(.8f,0,.6f);local.origin=new Vec3(.07f,-.03f,.12f);
+  var original=parent.TransformToParent(ref local);
+  var reference=MatrixFrame.Identity;
+  var scaled=Build(method,parent,original,reference,2f);
+  Vector(scaled.origin,local.origin);
+  Vector(parent.TransformToParent(ref scaled).origin,original.origin);
+  Vector(scaled.rotation.s,local.rotation.s*2f);
+  Vector(scaled.rotation.f,local.rotation.f*2f);
+  Vector(scaled.rotation.u,local.rotation.u*2f);
+  // Repeated writes must stay at x2 instead of growing exponentially.
+  for(int i=0;i<1000;i++)scaled=Build(method,parent,parent.TransformToParent(ref scaled),reference,2f);
+  Near(scaled.rotation.s.Length,2f);Near(scaled.rotation.f.Length,2f);Near(scaled.rotation.u.Length,2f);
+  Vector(scaled.origin,local.origin);
+  var restored=Build(method,parent,parent.TransformToParent(ref scaled),reference,1f);
+  Vector(restored.origin,local.origin);
+  Vector(restored.rotation.s,local.rotation.s);Vector(restored.rotation.f,local.rotation.f);Vector(restored.rotation.u,local.rotation.u);
  }
 }
 "@
- [HeadScaleCheck]::Verify($taskScale)
- $taskAll=$taskType.GetField('All',[Reflection.BindingFlags]'Static,NonPublic').GetValue($null)
- if($taskAll.Length -ne 28){throw 'Incomplete restore indices'}
- for($taskI=0;$taskI -lt 28;$taskI++){if($taskAll[$taskI] -ne $taskI){throw 'Incorrect restore index'}}
- Write-Output 'COMPILED_DIAGNOSTIC_CHECKS_PASS: 10 phase boundaries; sparse head 13 x2; restore 0..27'
+ [LocalFrameCheck]::Verify($taskType)
+ Write-Output 'COMPILED_LOCAL_FRAME_CHECKS_PASS: phase boundaries; rotated parent conversion; head origin unchanged; x2 axes; 1000 writes without accumulation; x1 restore'
 } finally {[AppDomain]::CurrentDomain.remove_AssemblyResolve($taskResolver)}

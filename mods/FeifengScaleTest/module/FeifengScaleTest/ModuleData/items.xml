@@ -72,4 +72,40 @@
     </ItemComponent>
     <Flags Civilian="true" UseTeamColor="false" />
   </Item>
+  <Item id="ffs_E_head" name="飞凤苗银矩阵E一次 · 头部" mesh="ffs_a_head" culture="Culture.empire" weight="0.5" appearance="2" value="100" Type="HeadArmor" is_merchandise="true">
+    <ItemComponent>
+      <Armor has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" head_armor="1" covers_head="true" hair_cover_type="all" beard_cover_type="all" />
+    </ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
+  <Item id="ffs_E_body" name="飞凤苗银矩阵E一次 · 衣裙与手部" mesh="ffs_a_body" culture="Culture.empire" weight="0.5" appearance="2" value="100" Type="BodyArmor" is_merchandise="true">
+    <ItemComponent>
+      <Armor has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" body_armor="1" arm_armor="1" leg_armor="1" covers_body="true" covers_hands="true" />
+    </ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
+  <Item id="ffs_E_legs" name="飞凤苗银矩阵E一次 · 腿部与鞋" mesh="ffs_a_legs" culture="Culture.empire" weight="0.5" appearance="2" value="100" Type="LegArmor" is_merchandise="true">
+    <ItemComponent>
+      <Armor has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" leg_armor="1" covers_legs="true" />
+    </ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
+  <Item id="ffs_F_head" name="飞凤苗银矩阵F持续 · 头部" mesh="ffs_a_head" culture="Culture.empire" weight="0.5" appearance="2" value="100" Type="HeadArmor" is_merchandise="true">
+    <ItemComponent>
+      <Armor has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" head_armor="1" covers_head="true" hair_cover_type="all" beard_cover_type="all" />
+    </ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
+  <Item id="ffs_F_body" name="飞凤苗银矩阵F持续 · 衣裙与手部" mesh="ffs_a_body" culture="Culture.empire" weight="0.5" appearance="2" value="100" Type="BodyArmor" is_merchandise="true">
+    <ItemComponent>
+      <Armor has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" body_armor="1" arm_armor="1" leg_armor="1" covers_body="true" covers_hands="true" />
+    </ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
+  <Item id="ffs_F_legs" name="飞凤苗银矩阵F持续 · 腿部与鞋" mesh="ffs_a_legs" culture="Culture.empire" weight="0.5" appearance="2" value="100" Type="LegArmor" is_merchandise="true">
+    <ItemComponent>
+      <Armor has_gender_variations="false" modifier_group="cloth_unarmoured" material_type="Cloth" leg_armor="1" covers_legs="true" />
+    </ItemComponent>
+    <Flags Civilian="true" UseTeamColor="false" />
+  </Item>
 </Items>

@@ -1,0 +1,20 @@
+{
+  "version": "v0.1.2",
+  "date": "2026-10-10",
+  "scope": "user feedback and diagnostic log; not all actions tested",
+  "user_feedback": "C and D similar to previous A; C head did not visibly enlarge",
+  "C": {
+    "samples": 80,
+    "calls": 2,
+    "head_axis_min": 0.9999996,
+    "head_axis_max": 1.0000009
+  },
+  "D": {
+    "samples": 80,
+    "calls": 2278,
+    "head_axis_min": 0.9999993,
+    "head_axis_max": 1.0000006
+  },
+  "errors": 0,
+  "conclusion": "No observed head scaling with ApplySkeletonScale; per-frame repetition did not produce the expected effect. Native implementation remains unverified."
+}

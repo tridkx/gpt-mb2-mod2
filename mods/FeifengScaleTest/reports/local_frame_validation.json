@@ -1,0 +1,38 @@
+{
+  "version": "v0.1.3",
+  "status": "pass",
+  "scope": "offline diagnostic setup; no native engine execution",
+  "final_package_sha256": "df4b0e372800f38cc24e7f6b6439b9ca34683203d4bc6b6351190d445c01acd3",
+  "baseline_v0_1_2_package_sha256": "df4b0e372800f38cc24e7f6b6439b9ca34683203d4bc6b6351190d445c01acd3",
+  "runtime_dll_sha256": "ed2d87112c940bec522ea8e2a562036a2e1e197f2af93a43fcdd999c29571638",
+  "identical_E_F_meshes": true,
+  "head_only_vertex_groups": [
+    "ffs_a_head_04",
+    "ffs_a_head_05",
+    "ffs_a_head_07",
+    "ffs_a_head_08"
+  ],
+  "compiled_checks": "COMPILED_LOCAL_FRAME_CHECKS_PASS: phase boundaries; rotated parent conversion; head origin unchanged; x2 axes; 1000 writes without accumulation; x1 restore",
+  "phase_seconds": [
+    6,
+    12,
+    6,
+    12
+  ],
+  "bone": 13,
+  "bone_name": "head",
+  "scale": [
+    2,
+    2,
+    2
+  ],
+  "once_profile": "E",
+  "continuous_profile": "F",
+  "callback": "OnPreDisplayMissionTick",
+  "player_only": true,
+  "game_verified": false,
+  "api_reference": "https://apidoc.bannerlord.com/v/1.3.4/class_tale_worlds_1_1_engine_1_1_skeleton.html",
+  "method": "SetBoneLocalFrame(13) then UpdateEntitialFramesFromLocalFrames; local origin preserved; absolute axis lengths avoid accumulation",
+  "restore": "reference axis lengths with current head orientation and local origin",
+  "native_engine_execution_verified": false
+}
