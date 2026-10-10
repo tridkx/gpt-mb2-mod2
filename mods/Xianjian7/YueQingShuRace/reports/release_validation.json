@@ -1,0 +1,634 @@
+{
+  "version": "v0.3.0",
+  "status": "pass",
+  "check_scope": "final_resource_source_geometry_preservation_and_cloth_checks",
+  "final_package_sha256": "65db38e9ba1f5182fb912c8b07eedbbdc40768a0968ee6b2ea5ea7d126d898bc",
+  "baseline_package_sha256": "e72aa5730a220565d29a81c558b66e08cf8d4e5a28636e923350349910e9283b",
+  "baseline_reason": "User-accepted v0.1.1 source-proportioned geometry and skeleton",
+  "registration": {
+    "status": "pass",
+    "race": "yqs_default",
+    "changed_troops": [],
+    "unaffected_troops": 548,
+    "troop_overrides_present": false,
+    "skin_variants": 10,
+    "skeleton": "yqs_skeleton",
+    "native_monster_dimensions_preserved": true,
+    "native_ui_actions_inherited": true,
+    "cloth_simulation": true
+  },
+  "lods": [
+    {
+      "lod": 0,
+      "vertices": 112204,
+      "triangles": 147508,
+      "submeshes": 14
+    },
+    {
+      "lod": 1,
+      "vertices": 75337,
+      "triangles": 96580,
+      "submeshes": 12
+    },
+    {
+      "lod": 2,
+      "vertices": 44472,
+      "triangles": 52932,
+      "submeshes": 10
+    },
+    {
+      "lod": 3,
+      "vertices": 23945,
+      "triangles": 23835,
+      "submeshes": 10
+    }
+  ],
+  "seams": [
+    {
+      "lod": 0,
+      "shared_points": 37,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 1,
+      "shared_points": 37,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 2,
+      "shared_points": 37,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 3,
+      "shared_points": 37,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "asset": "anim_inventory_idle",
+      "frames_checked": 16,
+      "total_frames": 1268,
+      "worst_frame": 507,
+      "worst_mesh": "yqs_part_07",
+      "max_edge_extension": 2.5049215212489733,
+      "max_mesh_p99_extension": 1.52577888990044,
+      "meshes": [
+        {
+          "name": "yqs_part_00",
+          "max_extension": 1.0000004588703673,
+          "p99_extension": 1.0000003476616317
+        },
+        {
+          "name": "yqs_part_00.b2",
+          "max_extension": 1.000000435088142,
+          "p99_extension": 1.000000335497917
+        },
+        {
+          "name": "yqs_part_00.b3",
+          "max_extension": 1.0000004302314935,
+          "p99_extension": 1.0000003434113318
+        },
+        {
+          "name": "yqs_part_01",
+          "max_extension": 1.0000004201397161,
+          "p99_extension": 1.0000003984496997
+        },
+        {
+          "name": "yqs_part_02",
+          "max_extension": 1.000000376852287,
+          "p99_extension": 1.0000003284145655
+        },
+        {
+          "name": "yqs_part_03",
+          "max_extension": 2.076070752197704,
+          "p99_extension": 1.1749553873349945
+        },
+        {
+          "name": "yqs_part_05",
+          "max_extension": 1.0000004374237688,
+          "p99_extension": 1.000000371213077
+        },
+        {
+          "name": "yqs_part_07",
+          "max_extension": 2.5049215212489733,
+          "p99_extension": 1.52577888990044
+        },
+        {
+          "name": "yqs_part_08",
+          "max_extension": 1.6242798637943257,
+          "p99_extension": 1.1977865703031287
+        },
+        {
+          "name": "yqs_part_10",
+          "max_extension": 1.268803664261667,
+          "p99_extension": 1.0214662771640726
+        },
+        {
+          "name": "yqs_part_10.b2",
+          "max_extension": 1.2964676361810563,
+          "p99_extension": 1.0453367389275607
+        },
+        {
+          "name": "yqs_part_10.b3",
+          "max_extension": 1.0544787528655872,
+          "p99_extension": 1.0000008872379207
+        },
+        {
+          "name": "yqs_part_11",
+          "max_extension": 1.0000004481438836,
+          "p99_extension": 1.0000003636378247
+        },
+        {
+          "name": "yqs_part_12",
+          "max_extension": 1.0000004088289314,
+          "p99_extension": 1.0000003400458044
+        }
+      ]
+    },
+    {
+      "label": "run",
+      "asset": "anim_run_forward_unarmed",
+      "frames_checked": 25,
+      "total_frames": 26,
+      "worst_frame": 10,
+      "worst_mesh": "yqs_part_03",
+      "max_edge_extension": 3.445754051944802,
+      "max_mesh_p99_extension": 1.6920377078665632,
+      "meshes": [
+        {
+          "name": "yqs_part_00",
+          "max_extension": 1.0000004588703681,
+          "p99_extension": 1.0000003476616273
+        },
+        {
+          "name": "yqs_part_00.b2",
+          "max_extension": 1.000000435088143,
+          "p99_extension": 1.00000033549791
+        },
+        {
+          "name": "yqs_part_00.b3",
+          "max_extension": 1.0000004302314942,
+          "p99_extension": 1.0000003434113438
+        },
+        {
+          "name": "yqs_part_01",
+          "max_extension": 1.0000004201396957,
+          "p99_extension": 1.000000398449688
+        },
+        {
+          "name": "yqs_part_02",
+          "max_extension": 1.0000003768522694,
+          "p99_extension": 1.0000003284145766
+        },
+        {
+          "name": "yqs_part_03",
+          "max_extension": 3.445754051944802,
+          "p99_extension": 1.3025558637390529
+        },
+        {
+          "name": "yqs_part_05",
+          "max_extension": 1.0000004374237772,
+          "p99_extension": 1.0000003712130758
+        },
+        {
+          "name": "yqs_part_07",
+          "max_extension": 1.7432980908002342,
+          "p99_extension": 1.1526233936076224
+        },
+        {
+          "name": "yqs_part_08",
+          "max_extension": 3.168542654375272,
+          "p99_extension": 1.6920377078665632
+        },
+        {
+          "name": "yqs_part_10",
+          "max_extension": 1.965154147115634,
+          "p99_extension": 1.0830541486411889
+        },
+        {
+          "name": "yqs_part_10.b2",
+          "max_extension": 2.2242426618514,
+          "p99_extension": 1.1748860100941674
+        },
+        {
+          "name": "yqs_part_10.b3",
+          "max_extension": 1.4588299256798756,
+          "p99_extension": 1.000275251556237
+        },
+        {
+          "name": "yqs_part_11",
+          "max_extension": 1.000000448143893,
+          "p99_extension": 1.000000363637825
+        },
+        {
+          "name": "yqs_part_12",
+          "max_extension": 1.0000004088289538,
+          "p99_extension": 1.000000340045804
+        }
+      ]
+    },
+    {
+      "label": "bow",
+      "asset": "anim_bow",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 74,
+      "worst_mesh": "yqs_part_07",
+      "max_edge_extension": 3.1941962720159416,
+      "max_mesh_p99_extension": 1.748160893930507,
+      "meshes": [
+        {
+          "name": "yqs_part_00",
+          "max_extension": 1.0000004588703737,
+          "p99_extension": 1.0000003476616288
+        },
+        {
+          "name": "yqs_part_00.b2",
+          "max_extension": 1.0000004350881537,
+          "p99_extension": 1.0000003354979146
+        },
+        {
+          "name": "yqs_part_00.b3",
+          "max_extension": 1.0000004302314986,
+          "p99_extension": 1.000000343411361
+        },
+        {
+          "name": "yqs_part_01",
+          "max_extension": 1.000000420139707,
+          "p99_extension": 1.000000398449704
+        },
+        {
+          "name": "yqs_part_02",
+          "max_extension": 1.0000003768522978,
+          "p99_extension": 1.000000328414599
+        },
+        {
+          "name": "yqs_part_03",
+          "max_extension": 3.1450496539579516,
+          "p99_extension": 1.7150509846055477
+        },
+        {
+          "name": "yqs_part_05",
+          "max_extension": 1.0000004374237816,
+          "p99_extension": 1.0000003712130874
+        },
+        {
+          "name": "yqs_part_07",
+          "max_extension": 3.1941962720159416,
+          "p99_extension": 1.748160893930507
+        },
+        {
+          "name": "yqs_part_08",
+          "max_extension": 3.055554254322337,
+          "p99_extension": 1.60983318835963
+        },
+        {
+          "name": "yqs_part_10",
+          "max_extension": 1.8684063773906476,
+          "p99_extension": 1.0627273847406686
+        },
+        {
+          "name": "yqs_part_10.b2",
+          "max_extension": 1.757764457341892,
+          "p99_extension": 1.1025720611552152
+        },
+        {
+          "name": "yqs_part_10.b3",
+          "max_extension": 1.1706467601872363,
+          "p99_extension": 1.0000008300706418
+        },
+        {
+          "name": "yqs_part_11",
+          "max_extension": 1.0000004481438856,
+          "p99_extension": 1.0000003636378307
+        },
+        {
+          "name": "yqs_part_12",
+          "max_extension": 1.0000004088289414,
+          "p99_extension": 1.0000003400458162
+        }
+      ]
+    },
+    {
+      "label": "riding",
+      "asset": "anim_rider_gallop_bow",
+      "frames_checked": 20,
+      "total_frames": 21,
+      "worst_frame": 11,
+      "worst_mesh": "yqs_part_08",
+      "max_edge_extension": 3.5062249226290856,
+      "max_mesh_p99_extension": 1.867180185774719,
+      "meshes": [
+        {
+          "name": "yqs_part_00",
+          "max_extension": 1.0000004588703681,
+          "p99_extension": 1.0000003476616286
+        },
+        {
+          "name": "yqs_part_00.b2",
+          "max_extension": 1.000000435088151,
+          "p99_extension": 1.0000003354979141
+        },
+        {
+          "name": "yqs_part_00.b3",
+          "max_extension": 1.0000004302314964,
+          "p99_extension": 1.000000343411339
+        },
+        {
+          "name": "yqs_part_01",
+          "max_extension": 1.0000004201396901,
+          "p99_extension": 1.0000003984496906
+        },
+        {
+          "name": "yqs_part_02",
+          "max_extension": 1.000000376852286,
+          "p99_extension": 1.000000328414574
+        },
+        {
+          "name": "yqs_part_03",
+          "max_extension": 3.016870041897659,
+          "p99_extension": 1.4228820617803755
+        },
+        {
+          "name": "yqs_part_05",
+          "max_extension": 1.0000004374237756,
+          "p99_extension": 1.00000037121308
+        },
+        {
+          "name": "yqs_part_07",
+          "max_extension": 2.6870000940350156,
+          "p99_extension": 1.240454760708354
+        },
+        {
+          "name": "yqs_part_08",
+          "max_extension": 3.5062249226290856,
+          "p99_extension": 1.867180185774719
+        },
+        {
+          "name": "yqs_part_10",
+          "max_extension": 2.1855142875803195,
+          "p99_extension": 1.14515352927143
+        },
+        {
+          "name": "yqs_part_10.b2",
+          "max_extension": 2.102369929916671,
+          "p99_extension": 1.1269513798202915
+        },
+        {
+          "name": "yqs_part_10.b3",
+          "max_extension": 1.1788650136151175,
+          "p99_extension": 1.0000007463298712
+        },
+        {
+          "name": "yqs_part_11",
+          "max_extension": 1.0000004481438842,
+          "p99_extension": 1.0000003636378267
+        },
+        {
+          "name": "yqs_part_12",
+          "max_extension": 1.0000004088289345,
+          "p99_extension": 1.0000003400458048
+        }
+      ]
+    },
+    {
+      "label": "slash",
+      "asset": "anim_dagger_slashleft_1h_balance",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 122,
+      "worst_mesh": "yqs_part_08",
+      "max_edge_extension": 3.2637516014204406,
+      "max_mesh_p99_extension": 1.6755403792336172,
+      "meshes": [
+        {
+          "name": "yqs_part_00",
+          "max_extension": 1.0000004588703697,
+          "p99_extension": 1.000000347661627
+        },
+        {
+          "name": "yqs_part_00.b2",
+          "max_extension": 1.0000004350881497,
+          "p99_extension": 1.0000003354979037
+        },
+        {
+          "name": "yqs_part_00.b3",
+          "max_extension": 1.0000004302314918,
+          "p99_extension": 1.0000003434113458
+        },
+        {
+          "name": "yqs_part_01",
+          "max_extension": 1.000000420139704,
+          "p99_extension": 1.0000003984497128
+        },
+        {
+          "name": "yqs_part_02",
+          "max_extension": 1.0000003768522818,
+          "p99_extension": 1.0000003284145964
+        },
+        {
+          "name": "yqs_part_03",
+          "max_extension": 2.505784749597485,
+          "p99_extension": 1.5440428498049503
+        },
+        {
+          "name": "yqs_part_05",
+          "max_extension": 1.0000004374237788,
+          "p99_extension": 1.0000003712130787
+        },
+        {
+          "name": "yqs_part_07",
+          "max_extension": 2.9385368543164585,
+          "p99_extension": 1.5148998667926812
+        },
+        {
+          "name": "yqs_part_08",
+          "max_extension": 3.2637516014204406,
+          "p99_extension": 1.6755403792336172
+        },
+        {
+          "name": "yqs_part_10",
+          "max_extension": 3.0437177525092687,
+          "p99_extension": 1.1287349765866774
+        },
+        {
+          "name": "yqs_part_10.b2",
+          "max_extension": 3.1346513562040887,
+          "p99_extension": 1.1335023865405864
+        },
+        {
+          "name": "yqs_part_10.b3",
+          "max_extension": 1.3144601352217713,
+          "p99_extension": 1.0000008872379196
+        },
+        {
+          "name": "yqs_part_11",
+          "max_extension": 1.0000004481438873,
+          "p99_extension": 1.0000003636378274
+        },
+        {
+          "name": "yqs_part_12",
+          "max_extension": 1.0000004088289383,
+          "p99_extension": 1.000000340045812
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "yqs_tex_0",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_1",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_10",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_11",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_12",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_13",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_14",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_15",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_16",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_17",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_18",
+      "mips": 6,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_2",
+      "mips": 11,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_3",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_4",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_5",
+      "mips": 9,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_6",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_7",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_8",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_9",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    }
+  ],
+  "gross_motion_tear_guard_max_extension": 6.0,
+  "metadata_audit": "pass",
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "limitations": [
+    "UE eye occlusion and tear overlays omitted; original default face/hair/clothes retained with conservative native materials.",
+    "Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.",
+    "No facial animation or face/body customization support."
+  ],
+  "integrated_hands_all_lods": true,
+  "cloth_enabled": true,
+  "body_metamesh": "yqs_body",
+  "hidden_placeholder_triangles": 4,
+  "source_proportions_preserved": true,
+  "custom_skeleton_bones": 28,
+  "source_geometry_max_error_m": 0.0,
+  "source_height_m": 1.6760067177528981,
+  "accepted_appearance_baseline": "v0.1.1",
+  "accepted_appearance_preserved": true,
+  "cloth_lods": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "cooked_cloth_meshes": 18,
+  "cloth_engine_verified": false,
+  "user_game_acceptance": {
+    "version": "v0.2.2",
+    "date": "2026-10-11",
+    "accepted": true,
+    "runtime_assets_unchanged": true,
+    "assistant_ran_game": false
+  }
+}

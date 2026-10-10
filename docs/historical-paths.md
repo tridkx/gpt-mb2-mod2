@@ -4,6 +4,7 @@
 
 | 历史位置 | 当前位置 |
 | --- | --- |
+| mods/YueQingShuRace/ | mods/Xianjian7/YueQingShuRace/ |
 | 根目录的 source/、tex/、module/、build/、reports/、dist/ 及天香专用脚本 | mods/TianxiangCollection/sets/TianxiangT5/ 下对应目录，专用脚本在 tools/ |
 | mods/TianxiangT5/ | mods/TianxiangCollection/sets/TianxiangT5/ |
 | mods/TianxiangRenqiu/ 等七套天香工程 | mods/TianxiangCollection/sets/<原ModId>/ |

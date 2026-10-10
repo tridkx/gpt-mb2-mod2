@@ -1,6 +1,6 @@
 # 骑砍 2 多模组工作区
 
-此工作区独立维护骑砍 2 模组的原始输入、可编辑源文件、工具、运行模块和交付包。合集中的套装工程保存在各合集的 sets/ 下；生化危机工程位于 ResidentEvil/<ModId>/。
+此工作区独立维护骑砍 2 模组的原始输入、可编辑源文件、工具、运行模块和交付包。合集中的套装工程保存在各合集的 sets/ 下；生化危机工程位于 ResidentEvil/<ModId>/，仙剑7角色工程位于 Xianjian7/<ModId>/。
 
 ## 模组导航
 
@@ -13,6 +13,7 @@
 | [BoRu Modern](mods/BoRuModern/README.md) | 孟柏汝现代衣装 |
 | [Hanfu Blue Red](mods/HanfuBlueRed/README.md) | 蓝红汉服少女 |
 | [Resident Evil](mods/ResidentEvil/README.md) | 系列工程入口，包含艾达王默认服装装备与固定外观种族 |
+| [仙剑奇侠传七](mods/Xianjian7/README.md) | 角色种族工程入口，目前包含月清疏默认时装种族资源 |
 
 ## 目录结构
 
@@ -76,7 +77,7 @@ python tools/package_delivery.py --mod TianxiangCollection --version v1.0.0
 
 Mod ZIP 顶层是模组 ID，源包保持 source/ 与 tex/ 相邻。mod.json.shared_source_files 可列入工作区 tools/ 文件，源包将其保存到 workspace_tools/。保留旧包，只复制任务涉及的模块；安装器不自动提交 Git 或打标签。
 
-共用入口支持顶层独立模组、天香单套 ID 和 ResidentEvil 内独立 ID。圣绣、真武内部套装从合集根打包和安装。
+共用入口支持顶层独立模组、天香单套 ID、ResidentEvil 和 Xianjian7 内独立 ID。圣绣、真武内部套装从合集根打包和安装。
 
 ## 文档与检查边界
 
