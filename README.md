@@ -12,7 +12,7 @@
 | [Beauty Banners](mods/BeautyBanners/README.md) | 九款彩色旗徽 |
 | [BoRu Modern](mods/BoRuModern/README.md) | 孟柏汝现代衣装 |
 | [Hanfu Blue Red](mods/HanfuBlueRed/README.md) | 蓝红汉服少女 |
-| [Resident Evil](mods/ResidentEvil/README.md) | 系列工程入口，包含艾达王默认服装 |
+| [Resident Evil](mods/ResidentEvil/README.md) | 系列工程入口，包含艾达王默认服装装备与固定外观种族 |
 
 ## 目录结构
 

@@ -1,0 +1,95 @@
+{
+  "materials": [
+    {
+      "material": "Knit_Mat",
+      "normal_available": true,
+      "original_alpha_available": true,
+      "opaque_fallback": false
+    },
+    {
+      "material": "Skin_Mat",
+      "normal_available": false,
+      "original_alpha_available": false,
+      "opaque_fallback": false
+    },
+    {
+      "material": "Leg_Mat",
+      "normal_available": false,
+      "original_alpha_available": false,
+      "opaque_fallback": false
+    },
+    {
+      "material": "Glove_Mat",
+      "normal_available": true,
+      "original_alpha_available": true,
+      "opaque_fallback": false
+    },
+    {
+      "material": "BootsMetal_Mat",
+      "normal_available": false,
+      "original_alpha_available": false,
+      "opaque_fallback": false
+    },
+    {
+      "material": "BootsSole_Mat",
+      "normal_available": false,
+      "original_alpha_available": false,
+      "opaque_fallback": false
+    },
+    {
+      "material": "BootsLeather_Mat",
+      "normal_available": false,
+      "original_alpha_available": false,
+      "opaque_fallback": false
+    },
+    {
+      "material": "Face_mat",
+      "normal_available": false,
+      "original_alpha_available": false,
+      "opaque_fallback": false
+    },
+    {
+      "material": "Mouth_mat",
+      "normal_available": false,
+      "original_alpha_available": false,
+      "opaque_fallback": false
+    },
+    {
+      "material": "Eye_in_mat",
+      "normal_available": false,
+      "original_alpha_available": false,
+      "opaque_fallback": false
+    },
+    {
+      "material": "EyeLash_mat",
+      "normal_available": false,
+      "original_alpha_available": false,
+      "opaque_fallback": true
+    },
+    {
+      "material": "Blow_mat",
+      "normal_available": false,
+      "original_alpha_available": false,
+      "opaque_fallback": true
+    },
+    {
+      "material": "Hair00_mat",
+      "normal_available": false,
+      "original_alpha_available": false,
+      "opaque_fallback": true
+    },
+    {
+      "material": "Hair01_mat",
+      "normal_available": false,
+      "original_alpha_available": false,
+      "opaque_fallback": true
+    },
+    {
+      "material": "Hair02_mat",
+      "normal_available": false,
+      "original_alpha_available": false,
+      "opaque_fallback": true
+    }
+  ],
+  "limitation": "Missing cha200 source maps use flat normal and conservative material response; missing hair/lash alpha remains opaque, not reconstructed or claimed original."
+}

@@ -1,0 +1,33 @@
+# Material library (albedo only)
+newmtl Face_mat
+Kd 0.8 0.8 0.8
+map_Kd ../../textures/cha200_10_face_albd.png
+
+newmtl Mouth_mat
+Kd 0.8 0.8 0.8
+map_Kd ../../textures/mouth_albd.png
+
+newmtl Eyewet_mat
+Kd 0.8 0.8 0.8
+d 0.0
+
+newmtl Ao_mat
+Kd 0.8 0.8 0.8
+d 0.0
+
+newmtl Eye_out_mat
+Kd 0.8 0.8 0.8
+d 0.0
+
+newmtl Eye_in_mat
+Kd 0.8 0.8 0.8
+map_Kd ../../textures/cha200_10_eye_albd.png
+
+newmtl EyeLash_mat
+Kd 0.8 0.8 0.8
+map_Kd ../../textures/cha200_10_eyelash_albd.png
+
+newmtl Blow_mat
+Kd 0.8 0.8 0.8
+map_Kd ../../textures/cha200_10_eyelash_albd.png
+

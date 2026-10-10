@@ -4,6 +4,7 @@
 
 - [艾达王 RE4 重制版默认服装调研](reports/AdaWong_RE4_Default_research_2026-10-08.md)
 - [REAdaWongDefault：默认服装工程](REAdaWongDefault/README.md)
+- [REAdaWongRace：艾达王固定外观种族](REAdaWongRace/README.md)：去除携行配件，替换帝国普通新兵。
 
 独立工程放在 `mods/ResidentEvil/<ModId>/`，每个工程保持自己的 `input/`、`source/`、`tex/`、`tools/`、`module/<ModId>/`、`build/`、`reports/`、`dist/`。`source/` 与 `tex/` 相邻。
 

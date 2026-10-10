@@ -1,0 +1,729 @@
+{
+  "version": "v0.1.0",
+  "status": "pass",
+  "check_scope": "offline_structural_and_native_motion_checks",
+  "final_package_sha256": "f3f14d7eb1366f59b66c277e3f8b06bbdd5cf427af289dbc90a8ca75c90f0340",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release",
+  "registration": {
+    "status": "pass",
+    "race": "reada_wong",
+    "changed_troops": [
+      "imperial_recruit"
+    ],
+    "unaffected_troops": 547,
+    "native_level_skills_weapons_upgrades_preserved": true,
+    "armor_rosters_empty": true,
+    "skin_variants": 10,
+    "skeleton": "adar_skeleton",
+    "native_monster_dimensions_preserved": true,
+    "native_ui_actions_inherited": true,
+    "accessory_materials_absent": true
+  },
+  "lods": [
+    {
+      "lod": 0,
+      "vertices": 110616,
+      "triangles": 154473,
+      "submeshes": 19
+    },
+    {
+      "lod": 1,
+      "vertices": 31990,
+      "triangles": 39498,
+      "submeshes": 15
+    },
+    {
+      "lod": 2,
+      "vertices": 20763,
+      "triangles": 24077,
+      "submeshes": 15
+    },
+    {
+      "lod": 3,
+      "vertices": 18581,
+      "triangles": 21200,
+      "submeshes": 15
+    }
+  ],
+  "seams": [
+    {
+      "lod": 0,
+      "shared_points": 365,
+      "cross_equipment_points": 0,
+      "max_position_error": 9.313225746154785e-10
+    },
+    {
+      "lod": 1,
+      "shared_points": 365,
+      "cross_equipment_points": 0,
+      "max_position_error": 9.313225746154785e-10
+    },
+    {
+      "lod": 2,
+      "shared_points": 365,
+      "cross_equipment_points": 0,
+      "max_position_error": 9.313225746154785e-10
+    },
+    {
+      "lod": 3,
+      "shared_points": 365,
+      "cross_equipment_points": 0,
+      "max_position_error": 9.313225746154785e-10
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "asset": "anim_inventory_idle",
+      "frames_checked": 16,
+      "total_frames": 1268,
+      "worst_frame": 507,
+      "worst_mesh": "adar_body_knit",
+      "max_edge_extension": 2.47712516465183,
+      "max_mesh_p99_extension": 1.5126234175706152,
+      "meshes": [
+        {
+          "name": "adar_body_knit",
+          "max_extension": 2.47712516465183,
+          "p99_extension": 1.5126234175706152
+        },
+        {
+          "name": "adar_body_knit.b2",
+          "max_extension": 2.1230800367455616,
+          "p99_extension": 1.3965867658128073
+        },
+        {
+          "name": "adar_body_knit.b3",
+          "max_extension": 1.22926261559876,
+          "p99_extension": 1.1126919056579505
+        },
+        {
+          "name": "adar_body_skin",
+          "max_extension": 1.612639444491355,
+          "p99_extension": 1.4463496119489894
+        },
+        {
+          "name": "adar_body_leg",
+          "max_extension": 1.470436803505888,
+          "p99_extension": 1.1963944097234782
+        },
+        {
+          "name": "adar_gloves_glove",
+          "max_extension": 1.000001017066208,
+          "p99_extension": 1.0000008874017154
+        },
+        {
+          "name": "adar_legs_bootsmetal",
+          "max_extension": 1.0837528977093887,
+          "p99_extension": 1.0372419276454758
+        },
+        {
+          "name": "adar_legs_bootssole",
+          "max_extension": 1.199766051256719,
+          "p99_extension": 1.0531837038369989
+        },
+        {
+          "name": "adar_legs_bootsleather",
+          "max_extension": 2.022362294003465,
+          "p99_extension": 1.453461919661915
+        },
+        {
+          "name": "adar_head_face",
+          "max_extension": 2.0601446660813973,
+          "p99_extension": 1.2951132999968997
+        },
+        {
+          "name": "adar_head_face.b2",
+          "max_extension": 1.0000004432018825,
+          "p99_extension": 1.000000408337356
+        },
+        {
+          "name": "adar_head_mouth",
+          "max_extension": 1.000000459221226,
+          "p99_extension": 1.0000003846149852
+        },
+        {
+          "name": "adar_head_eye_in",
+          "max_extension": 1.0000004042711117,
+          "p99_extension": 1.0000003226389969
+        },
+        {
+          "name": "adar_head_eyelash",
+          "max_extension": 1.0000004194205743,
+          "p99_extension": 1.0000003783266125
+        },
+        {
+          "name": "adar_head_blow",
+          "max_extension": 1.0000004747015976,
+          "p99_extension": 1.000000421531644
+        },
+        {
+          "name": "adar_head_hair00",
+          "max_extension": 1.000000462040618,
+          "p99_extension": 1.0000003668891988
+        },
+        {
+          "name": "adar_head_hair00.b2",
+          "max_extension": 1.0000004731000876,
+          "p99_extension": 1.0000003371863164
+        },
+        {
+          "name": "adar_head_hair01",
+          "max_extension": 1.000000466893644,
+          "p99_extension": 1.0000003685826133
+        },
+        {
+          "name": "adar_head_hair02",
+          "max_extension": 1.000000216886715,
+          "p99_extension": 1.0000000597234466
+        }
+      ]
+    },
+    {
+      "label": "run",
+      "asset": "anim_run_forward_unarmed",
+      "frames_checked": 25,
+      "total_frames": 26,
+      "worst_frame": 8,
+      "worst_mesh": "adar_body_leg",
+      "max_edge_extension": 3.15270144071749,
+      "max_mesh_p99_extension": 1.5925870172762038,
+      "meshes": [
+        {
+          "name": "adar_body_knit",
+          "max_extension": 2.032858255425145,
+          "p99_extension": 1.4735295270448172
+        },
+        {
+          "name": "adar_body_knit.b2",
+          "max_extension": 1.8975990871528114,
+          "p99_extension": 1.4243549805815023
+        },
+        {
+          "name": "adar_body_knit.b3",
+          "max_extension": 1.9281026181686762,
+          "p99_extension": 1.5925870172762038
+        },
+        {
+          "name": "adar_body_skin",
+          "max_extension": 1.3202420205841907,
+          "p99_extension": 1.2470156074745449
+        },
+        {
+          "name": "adar_body_leg",
+          "max_extension": 3.15270144071749,
+          "p99_extension": 1.5878407435054
+        },
+        {
+          "name": "adar_gloves_glove",
+          "max_extension": 1.0000010170662175,
+          "p99_extension": 1.0000008874017365
+        },
+        {
+          "name": "adar_legs_bootsmetal",
+          "max_extension": 1.7564618966936125,
+          "p99_extension": 1.345615200551775
+        },
+        {
+          "name": "adar_legs_bootssole",
+          "max_extension": 1.2527299462621846,
+          "p99_extension": 1.0526897168015543
+        },
+        {
+          "name": "adar_legs_bootsleather",
+          "max_extension": 2.180117724497619,
+          "p99_extension": 1.535781923223072
+        },
+        {
+          "name": "adar_head_face",
+          "max_extension": 1.2874735956620442,
+          "p99_extension": 1.0687318045801808
+        },
+        {
+          "name": "adar_head_face.b2",
+          "max_extension": 1.0000004432018976,
+          "p99_extension": 1.000000408337339
+        },
+        {
+          "name": "adar_head_mouth",
+          "max_extension": 1.0000004592212022,
+          "p99_extension": 1.000000384614975
+        },
+        {
+          "name": "adar_head_eye_in",
+          "max_extension": 1.0000004042711166,
+          "p99_extension": 1.0000003226389846
+        },
+        {
+          "name": "adar_head_eyelash",
+          "max_extension": 1.0000004194205654,
+          "p99_extension": 1.0000003783266118
+        },
+        {
+          "name": "adar_head_blow",
+          "max_extension": 1.0000004747015867,
+          "p99_extension": 1.0000004215316254
+        },
+        {
+          "name": "adar_head_hair00",
+          "max_extension": 1.0000004620406142,
+          "p99_extension": 1.0000003668891877
+        },
+        {
+          "name": "adar_head_hair00.b2",
+          "max_extension": 1.0000004731000771,
+          "p99_extension": 1.0000003371863198
+        },
+        {
+          "name": "adar_head_hair01",
+          "max_extension": 1.0000004668936446,
+          "p99_extension": 1.00000036858261
+        },
+        {
+          "name": "adar_head_hair02",
+          "max_extension": 1.0000002168867381,
+          "p99_extension": 1.0000000597234497
+        }
+      ]
+    },
+    {
+      "label": "bow",
+      "asset": "anim_bow",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 12,
+      "worst_mesh": "adar_body_knit",
+      "max_edge_extension": 5.425878773952397,
+      "max_mesh_p99_extension": 2.2502018553501872,
+      "meshes": [
+        {
+          "name": "adar_body_knit",
+          "max_extension": 5.425878773952397,
+          "p99_extension": 2.2502018553501872
+        },
+        {
+          "name": "adar_body_knit.b2",
+          "max_extension": 3.551967604037195,
+          "p99_extension": 1.827941105446088
+        },
+        {
+          "name": "adar_body_knit.b3",
+          "max_extension": 1.8713076666603448,
+          "p99_extension": 1.5152509147855509
+        },
+        {
+          "name": "adar_body_skin",
+          "max_extension": 1.8545242093707535,
+          "p99_extension": 1.4436647848763142
+        },
+        {
+          "name": "adar_body_leg",
+          "max_extension": 3.374142425741915,
+          "p99_extension": 1.7382348043962133
+        },
+        {
+          "name": "adar_gloves_glove",
+          "max_extension": 1.0000010170662128,
+          "p99_extension": 1.0000008874017359
+        },
+        {
+          "name": "adar_legs_bootsmetal",
+          "max_extension": 1.2497151539740863,
+          "p99_extension": 1.138636792151
+        },
+        {
+          "name": "adar_legs_bootssole",
+          "max_extension": 1.240249693094564,
+          "p99_extension": 1.0655407198579905
+        },
+        {
+          "name": "adar_legs_bootsleather",
+          "max_extension": 2.02017788461732,
+          "p99_extension": 1.4902178802431263
+        },
+        {
+          "name": "adar_head_face",
+          "max_extension": 2.366522383326424,
+          "p99_extension": 1.3994004144587964
+        },
+        {
+          "name": "adar_head_face.b2",
+          "max_extension": 1.0000004432019007,
+          "p99_extension": 1.0000004083373502
+        },
+        {
+          "name": "adar_head_mouth",
+          "max_extension": 1.0000004592212342,
+          "p99_extension": 1.0000003846149914
+        },
+        {
+          "name": "adar_head_eye_in",
+          "max_extension": 1.0000004042711224,
+          "p99_extension": 1.0000003226389917
+        },
+        {
+          "name": "adar_head_eyelash",
+          "max_extension": 1.0000004194205743,
+          "p99_extension": 1.000000378326629
+        },
+        {
+          "name": "adar_head_blow",
+          "max_extension": 1.000000474701611,
+          "p99_extension": 1.0000004215316396
+        },
+        {
+          "name": "adar_head_hair00",
+          "max_extension": 1.0000004620406187,
+          "p99_extension": 1.0000003668891884
+        },
+        {
+          "name": "adar_head_hair00.b2",
+          "max_extension": 1.0000004731000787,
+          "p99_extension": 1.0000003371863224
+        },
+        {
+          "name": "adar_head_hair01",
+          "max_extension": 1.0000004668936457,
+          "p99_extension": 1.0000003685826129
+        },
+        {
+          "name": "adar_head_hair02",
+          "max_extension": 1.0000002168867579,
+          "p99_extension": 1.000000059723468
+        }
+      ]
+    },
+    {
+      "label": "riding",
+      "asset": "anim_rider_gallop_bow",
+      "frames_checked": 20,
+      "total_frames": 21,
+      "worst_frame": 11,
+      "worst_mesh": "adar_body_leg",
+      "max_edge_extension": 3.892498406404067,
+      "max_mesh_p99_extension": 2.018344176972796,
+      "meshes": [
+        {
+          "name": "adar_body_knit",
+          "max_extension": 3.4350965624482557,
+          "p99_extension": 1.964001395906787
+        },
+        {
+          "name": "adar_body_knit.b2",
+          "max_extension": 3.251240213385072,
+          "p99_extension": 1.7967656208695026
+        },
+        {
+          "name": "adar_body_knit.b3",
+          "max_extension": 2.34358784661642,
+          "p99_extension": 2.018344176972796
+        },
+        {
+          "name": "adar_body_skin",
+          "max_extension": 1.684456338109706,
+          "p99_extension": 1.517482337124818
+        },
+        {
+          "name": "adar_body_leg",
+          "max_extension": 3.892498406404067,
+          "p99_extension": 1.940231295594851
+        },
+        {
+          "name": "adar_gloves_glove",
+          "max_extension": 1.00000101706618,
+          "p99_extension": 1.0000008874017527
+        },
+        {
+          "name": "adar_legs_bootsmetal",
+          "max_extension": 1.443933036643354,
+          "p99_extension": 1.2659978783162724
+        },
+        {
+          "name": "adar_legs_bootssole",
+          "max_extension": 1.139282825169725,
+          "p99_extension": 1.0483439078376449
+        },
+        {
+          "name": "adar_legs_bootsleather",
+          "max_extension": 1.9951036746592818,
+          "p99_extension": 1.4817296041924968
+        },
+        {
+          "name": "adar_head_face",
+          "max_extension": 1.7801466730237903,
+          "p99_extension": 1.3831790118100606
+        },
+        {
+          "name": "adar_head_face.b2",
+          "max_extension": 1.0000004432018972,
+          "p99_extension": 1.000000408337352
+        },
+        {
+          "name": "adar_head_mouth",
+          "max_extension": 1.0000004592212006,
+          "p99_extension": 1.0000003846149776
+        },
+        {
+          "name": "adar_head_eye_in",
+          "max_extension": 1.0000004042711217,
+          "p99_extension": 1.0000003226389993
+        },
+        {
+          "name": "adar_head_eyelash",
+          "max_extension": 1.0000004194205652,
+          "p99_extension": 1.0000003783266453
+        },
+        {
+          "name": "adar_head_blow",
+          "max_extension": 1.0000004747015883,
+          "p99_extension": 1.0000004215316114
+        },
+        {
+          "name": "adar_head_hair00",
+          "max_extension": 1.0000004620406133,
+          "p99_extension": 1.000000366889187
+        },
+        {
+          "name": "adar_head_hair00.b2",
+          "max_extension": 1.0000004731000767,
+          "p99_extension": 1.0000003371863226
+        },
+        {
+          "name": "adar_head_hair01",
+          "max_extension": 1.0000004668936444,
+          "p99_extension": 1.0000003685826107
+        },
+        {
+          "name": "adar_head_hair02",
+          "max_extension": 1.0000002168867455,
+          "p99_extension": 1.0000000597234904
+        }
+      ]
+    },
+    {
+      "label": "slash",
+      "asset": "anim_dagger_slashleft_1h_balance",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 72,
+      "worst_mesh": "adar_body_knit",
+      "max_edge_extension": 4.811968067035236,
+      "max_mesh_p99_extension": 2.050683629430728,
+      "meshes": [
+        {
+          "name": "adar_body_knit",
+          "max_extension": 4.811968067035236,
+          "p99_extension": 2.050683629430728
+        },
+        {
+          "name": "adar_body_knit.b2",
+          "max_extension": 2.9101833805143804,
+          "p99_extension": 1.5375501997854963
+        },
+        {
+          "name": "adar_body_knit.b3",
+          "max_extension": 1.9757888077582018,
+          "p99_extension": 1.6246223301887466
+        },
+        {
+          "name": "adar_body_skin",
+          "max_extension": 1.667205263899543,
+          "p99_extension": 1.5773984918550992
+        },
+        {
+          "name": "adar_body_leg",
+          "max_extension": 3.6271212078800814,
+          "p99_extension": 1.6699694546569022
+        },
+        {
+          "name": "adar_gloves_glove",
+          "max_extension": 1.000001017066194,
+          "p99_extension": 1.0000008874017263
+        },
+        {
+          "name": "adar_legs_bootsmetal",
+          "max_extension": 1.428449550201143,
+          "p99_extension": 1.188817002165527
+        },
+        {
+          "name": "adar_legs_bootssole",
+          "max_extension": 1.294339820445944,
+          "p99_extension": 1.0782330391869697
+        },
+        {
+          "name": "adar_legs_bootsleather",
+          "max_extension": 2.4579748947497446,
+          "p99_extension": 1.522319535463998
+        },
+        {
+          "name": "adar_head_face",
+          "max_extension": 1.7892806020715242,
+          "p99_extension": 1.2964646818761625
+        },
+        {
+          "name": "adar_head_face.b2",
+          "max_extension": 1.0000004432019003,
+          "p99_extension": 1.0000004083373406
+        },
+        {
+          "name": "adar_head_mouth",
+          "max_extension": 1.0000004592212077,
+          "p99_extension": 1.0000003846149856
+        },
+        {
+          "name": "adar_head_eye_in",
+          "max_extension": 1.000000404271118,
+          "p99_extension": 1.0000003226389904
+        },
+        {
+          "name": "adar_head_eyelash",
+          "max_extension": 1.000000419420574,
+          "p99_extension": 1.0000003783266236
+        },
+        {
+          "name": "adar_head_blow",
+          "max_extension": 1.0000004747015887,
+          "p99_extension": 1.0000004215316358
+        },
+        {
+          "name": "adar_head_hair00",
+          "max_extension": 1.0000004620406182,
+          "p99_extension": 1.00000036688919
+        },
+        {
+          "name": "adar_head_hair00.b2",
+          "max_extension": 1.0000004731000787,
+          "p99_extension": 1.0000003371863213
+        },
+        {
+          "name": "adar_head_hair01",
+          "max_extension": 1.0000004668936455,
+          "p99_extension": 1.000000368582612
+        },
+        {
+          "name": "adar_head_hair02",
+          "max_extension": 1.000000216886753,
+          "p99_extension": 1.0000000597234535
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "adar_tex_0",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "adar_tex_1",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "adar_tex_10",
+      "mips": 11,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "adar_tex_11",
+      "mips": 11,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "adar_tex_12",
+      "mips": 8,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "adar_tex_13",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "adar_tex_14",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "adar_tex_2",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "adar_tex_3",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "adar_tex_4",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "adar_tex_5",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "adar_tex_6",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "adar_tex_7",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "adar_tex_8",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "adar_tex_9",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    }
+  ],
+  "gross_motion_tear_guard_max_extension": 6.0,
+  "metadata_audit": "pass",
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "limitations": [
+    "Missing original head alpha/PBR maps use documented conservative materials.",
+    "Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.",
+    "No facial animation or face/body customization support."
+  ],
+  "source_geometry_max_error_m": 4.991888999938965e-07,
+  "source_proportions_preserved": true,
+  "custom_bind_skeleton": "adar_skeleton",
+  "integrated_hands_all_lods": true,
+  "fixed_hands_single_native_bone": true,
+  "removed_accessories_absent_all_lods": true,
+  "body_metamesh": "adar_body",
+  "hidden_placeholder_triangles": 4,
+  "face_above_neck_rigid_with_head": true,
+  "asset_namespace": {
+    "status": "pass",
+    "asset_count": 33,
+    "compared_with": "REAdaWongDefault",
+    "duplicate_asset_guids": [],
+    "final_package_sha256": "f3f14d7eb1366f59b66c277e3f8b06bbdd5cf427af289dbc90a8ca75c90f0340"
+  }
+}
