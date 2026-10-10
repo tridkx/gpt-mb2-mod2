@@ -1,5 +1,13 @@
 {
-  "version": "v0.2.4",
+  "version": "v0.2.5",
+  "hair_root_band_m": [1.16, 1.20],
+  "head_cloth_capsule": {
+    "a_m": [0, -0.025, 1.21],
+    "b_m": [0, -0.025, 1.265],
+    "radius_m": 0.061
+  },
+  "alpha_blend_materials": ["wdr_mat_eyelash_D"],
+  "uv_flip_v_parts": ["wdr_part_06"],
   "hands_render_mode": "body",
   "hand_rig": {
     "wrist_cm": [37.0, 2.5, 81.1],

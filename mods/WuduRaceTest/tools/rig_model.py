@@ -77,6 +77,8 @@ for row in parts:
         group=ob.vertex_groups.new(name=name)
         for vi in np.where(w[:,i]>0)[0]:group.add([int(vi)],float(w[vi,i]),'REPLACE')
     index=len(manifest);ob.name=f'wdr_part_{index:02d}'
+    if ob.name in cfg['uv_flip_v_parts']:
+        for loop in ob.data.uv_layers.active.data:loop.uv.y=1-loop.uv.y
     if ob.name=='wdr_part_04':
         for face in ob.data.polygons:face.use_smooth=True
     manifest.append(dict(object=ob.name,source_object=row['name'],texture=row['tex']+'.png',material='wdr_mat_'+row['tex'],cutout=row['alpha']))
@@ -114,6 +116,9 @@ for row in manifest:
             travel=1-smooth(z.max()-.035,z.max()-.012,z)
         elif kind=='hair' and span>.06:
             travel=1-smooth(z.max()-.055,z.max()-.02,z)
+            # Scalp and face-framing hair follow the head rigidly. Height-only
+            # component roots allowed these close-fitting cards to sink inward.
+            travel*=1-smooth(*cfg['hair_root_band_m'],z)
         else:continue
         # Ensure each selected component has an explicit root before cooking.
         travel[z>=z.max()-.008]=0

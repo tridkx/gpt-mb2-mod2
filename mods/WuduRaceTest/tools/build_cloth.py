@@ -24,7 +24,7 @@ run(['dotnet',B/'cloth_patch/ClothPatch.dll',B/'uncooked.tpac',B/'cooked_cloth/m
 caps=[('torso_low',[0,0,.76],[0,0,.98],.065,'pelvis','spine1'),
       ('torso_high',[0,0,.98],[0,0,1.09],.065,'spine1','spine2'),
       ('neck',[0,0,1.10],[0,0,1.16],.031,'spine2','neck'),
-      ('head',[0,-.005,1.19],[0,-.005,1.27],.052,'head','head')]
+      ('head',cfg['head_cloth_capsule']['a_m'],cfg['head_cloth_capsule']['b_m'],cfg['head_cloth_capsule']['radius_m'],'head','head')]
 for side,sign in [('l',-1),('r',1)]:
     wrist=np.array(cfg['hand_rig']['wrist_cm'])/100;wrist[0]*=sign
     caps.extend([(side+'_thigh',[sign*.075,0,.72],[sign*.09,0,.43],.055,side+'_thigh',side+'_thigh'),

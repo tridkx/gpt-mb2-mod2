@@ -12,12 +12,12 @@ namespace WuduRaceTest {
             try {
                 string dir=Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),"Mount and Blade II Bannerlord","WuduRaceTest");
                 Directory.CreateDirectory(dir);
-                File.AppendAllText(Path.Combine(dir,"probe_v0.2.4.log"),DateTime.Now.ToString("s")+" "+message+Environment.NewLine);
+                File.AppendAllText(Path.Combine(dir,"probe_v0.2.5.log"),DateTime.Now.ToString("s")+" "+message+Environment.NewLine);
             } catch(Exception) { /* Diagnostics must not interrupt the game. */ }
         }
         public override void OnGameInitializationFinished(Game game) {
             try {
-                Log("BEGIN v0.2.4 races="+string.Join(",",TaleWorlds.Core.FaceGen.GetRaceNames()));
+                Log("BEGIN v0.2.5 races="+string.Join(",",TaleWorlds.Core.FaceGen.GetRaceNames()));
                 var hands=TaleWorlds.Engine.MetaMesh.GetCopy("wdr_canglan_body",true,true);
                 if(hands==null)Log("HAND_ASSET missing");
                 else for(int i=0;i<hands.MeshCount;i++) {

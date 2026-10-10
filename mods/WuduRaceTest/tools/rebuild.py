@@ -12,6 +12,7 @@ run(['dotnet','build',str(R/'tools/Runtime/WuduRaceTest.csproj'),'--ignore-faile
 run([PY,'-B','-X','utf8',str(R/'tools/verify_release.py')])
 run([PY,'-B','-X','utf8',str(R/'tools/verify_cloth.py')])
 run([PY,'-B','-X','utf8',str(R/'tools/verify_hands.py')])
-scripts=['add_hand_shape_keys.py','verify_source.py','render_review.py','render_wrist_review.py']
+run([PY,'-B','-X','utf8',str(R/'tools/verify_inventory.py')])
+scripts=['add_hand_shape_keys.py','verify_source.py','verify_face_uv.py','render_review.py','render_wrist_review.py']
 if json.loads((R/'tools/model_config.json').read_text()).get('hands_render_mode')!='body':scripts.insert(-1,'render_hands.py')
 for script in scripts:run([BLENDER,'--background','--factory-startup','--python-exit-code','1','--python',str(R/'tools'/script)])

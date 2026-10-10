@@ -25,6 +25,9 @@ for row in json.loads((B/'rig_manifest.json').read_text()):
     seen.add(row['material']);name=Path(row['texture']).stem;cut=row['cutout'];a=np.array(Image.open(R/'tex'/row['texture']).convert('RGBA'));tex('wdr_'+name,a,'DXT5' if cut else 'DXT1',cut)
     mat=dict(name=row['material'],template='alpha' if cut else 'opaque',shaderMaterialFlags=['alpha_test' if cut else 'use_specular','disable_vertex_color_alpha'],textures={'0':'wdr_'+name,'1':'wdr_flat_n','2':'wdr_flat_n','4':'wdr_neutral_s'},dropTextureSlots=[3,5,6,7,8,9])
     if cut:mat['alphaTest']=.25
+    if row['material'] in cfg['alpha_blend_materials']:
+        # The source eyelash map includes soft makeup, not a binary cutout.
+        mat.update(blendMode='factor',alphaTest=0,flags=['two_sided','gbuffer_alpha_blend','no_modify_depth_buffer'],shaderMaterialFlags=['use_specular','disable_vertex_color_alpha'])
     spec['materials'].append(mat)
 geo=json.loads((B/'geometry.json').read_text())
 parts=[('body','wdr_canglan_body'),('hidden','wdr_hidden')] if integrated else [('body','wdr_canglan_body'),('hands','wdr_canglan_hands'),('hidden','wdr_hidden')]

@@ -49,20 +49,20 @@ for old in human.findall('skin'):
 write(M/'ModuleData/skins.xml',skins)
 
 actions=ET.Element('action_sets')
-for base,new in [('as_human_warrior','as_wdr_warrior'),('as_human_female_warrior','as_wdr_female_warrior'),('as_human_villager','as_wdr_villager')]:
+for base,new in [('as_human_warrior','as_wdr_canglan_warrior'),('as_human_female_warrior','as_wdr_canglan_female_warrior'),('as_human_villager','as_wdr_canglan_villager'),('as_human_female_villager','as_wdr_canglan_female_villager')]:
     node=ET.SubElement(actions,'action_set',id=new,skeleton='wdr_skeleton',movement_system='bipedal',base_set=base)
 write(M/'ModuleData/action_sets.xml',actions)
 monsters=ET.Element('Monsters')
 native_monsters=ET.parse(N/'monsters.xml').getroot()
 monster=copy.deepcopy(native_monsters.find("Monster[@id='human']"))
-monster.set('id',RACE);monster.set('action_set','as_wdr_warrior');monster.set('female_action_set','as_wdr_female_warrior')
+monster.set('id',RACE);monster.set('action_set','as_wdr_canglan_warrior');monster.set('female_action_set','as_wdr_canglan_female_warrior')
 # Basic camera/capsule sizes; detailed combat collision fitting is out of scope.
 for k,v in {'standing_chest_height':'1.00','standing_pelvis_height':'.75','standing_eye_height':'1.23','crouch_eye_height':'.80','mounted_eye_height':'.55','arm_length':'.55'}.items():monster.set(k,str(float(v)*K))
 for capsule in monster.findall('Capsules/*'):
     capsule.set('radius',str(.16*K));capsule.set('pos1',f'0.0, 0.0, {1.15*K}');capsule.set('pos2',f'0.0, 0.0, {.35*K}')
 monsters.append(monster)
 for suffix in ['_settlement','_settlement_slow','_settlement_fast','_child']:
-    ET.SubElement(monsters,'Monster',id=RACE+suffix,base_monster=RACE,action_set='as_wdr_villager',female_action_set='as_wdr_villager')
+    ET.SubElement(monsters,'Monster',id=RACE+suffix,base_monster=RACE,action_set='as_wdr_canglan_villager',female_action_set='as_wdr_canglan_female_villager')
 write(M/'ModuleData/monsters.xml',monsters)
 
 troop=copy.deepcopy(ET.parse(SC/'spnpccharacters.xml').getroot().find("NPCCharacter[@id='imperial_recruit']"))

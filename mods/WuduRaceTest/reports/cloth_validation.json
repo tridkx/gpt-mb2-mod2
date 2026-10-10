@@ -1,65 +1,43 @@
 {
   "status": "pass",
   "travel_shortfall_tolerance_m": 0.002,
-  "final_package_sha256": "b9820dff91e073b13f5f04e395ed290575935d510ea7cbf70963c46e170f573a",
+  "final_package_sha256": "b76b79aa1117b0711d83c52c394254e6641cd432d540fa233d74c0531219e2b9",
   "cooked_meshes": [
     {
       "mesh": "wdr_part_11.lod1",
       "lod": 1,
       "render_vertices": 12420,
       "simulation_vertices": 3834,
-      "active_positions": 412,
-      "fixed_positions": 3422,
-      "stretch_constraints": 997,
-      "bend_constraints": 640,
-      "root_fixes": [
-        {
-          "component_positions": 11,
-          "reason": "LOD1 hair reduction can remove the thin root strip; restore the surviving upper attachment edge",
-          "pinned_render_vertices": [
-            0,
-            1,
-            9
-          ],
-          "bounds": [
-            [
-              0.05538058,
-              -0.061516017,
-              1.3067515
-            ],
-            [
-              0.07694626,
-              -0.02882528,
-              1.381851
-            ]
-          ]
-        }
-      ],
-      "sha256": "fb3fe241e275eade6012e6940d91d7f602b8eb4c17222d992461babf598e8016"
+      "active_positions": 5,
+      "fixed_positions": 3829,
+      "stretch_constraints": 10,
+      "bend_constraints": 5,
+      "root_fixes": [],
+      "sha256": "4714b3c41710e48c4f9c02e8ca0550e7f99b71e922ae1a996d21d2f8da918a13"
     },
     {
       "mesh": "wdr_part_11",
       "lod": 0,
       "render_vertices": 17745,
       "simulation_vertices": 3850,
-      "active_positions": 437,
-      "fixed_positions": 3413,
-      "stretch_constraints": 1176,
-      "bend_constraints": 1013,
+      "active_positions": 5,
+      "fixed_positions": 3845,
+      "stretch_constraints": 10,
+      "bend_constraints": 5,
       "root_fixes": [],
-      "sha256": "9ca759c913b1e8b39d0d8eab9eb47556da361edf0b90eb1fe76dd311a1d4c125"
+      "sha256": "538ae1a63f826e70614fdd18660e52f0ba7050c39122f8fc28b4b322a7dda654"
     },
     {
       "mesh": "wdr_part_10",
       "lod": 0,
       "render_vertices": 5709,
       "simulation_vertices": 1577,
-      "active_positions": 1110,
-      "fixed_positions": 467,
-      "stretch_constraints": 2594,
-      "bend_constraints": 1800,
+      "active_positions": 630,
+      "fixed_positions": 947,
+      "stretch_constraints": 1426,
+      "bend_constraints": 950,
       "root_fixes": [],
-      "sha256": "168e74ff516b7b1d8304c299eadd0ea48ff5f64b7454529e9be36ed02a957242"
+      "sha256": "f1f525d489e8572aae4048dd0a7fa44c3c549081039712e0ec6de334682b6ea3"
     },
     {
       "mesh": "wdr_part_08.lod1",
@@ -138,10 +116,10 @@
       "lod": 1,
       "render_vertices": 3996,
       "simulation_vertices": 1316,
-      "active_positions": 891,
-      "fixed_positions": 425,
-      "stretch_constraints": 1970,
-      "bend_constraints": 1066,
+      "active_positions": 483,
+      "fixed_positions": 833,
+      "stretch_constraints": 1092,
+      "bend_constraints": 616,
       "root_fixes": [
         {
           "component_positions": 6,
@@ -165,7 +143,7 @@
           ]
         }
       ],
-      "sha256": "7f0fa4898b53d92519876b3628423383949ef2e5ff2f750fe3dd14cd79263299"
+      "sha256": "94a7a8de1e558a2ba703631324e1087722ea86dd7956f8f84954dd4945c75c38"
     }
   ],
   "pose_diagnostics": [
@@ -174,20 +152,20 @@
       "frames": 1,
       "preview_frame": 0,
       "max_reference_capsule_overlap_m": 0.013975094294364554,
-      "max_travel_shortfall_m": 0,
+      "max_travel_shortfall_m": 0.0015147174403037991,
       "finite": true,
       "worst_by_mesh": {
         "wdr_part_11": {
-          "shortfall_m": 0.0,
+          "shortfall_m": 0.0015147174403037991,
           "frame": 0,
-          "overlap_m": 0.004194539428886264,
-          "worst_capsule": ""
+          "overlap_m": 0.0054362860677547795,
+          "worst_capsule": "head"
         },
         "wdr_part_10": {
           "shortfall_m": 0.0,
           "frame": 0,
           "overlap_m": 0.011286911311852214,
-          "worst_capsule": ""
+          "worst_capsule": "head"
         },
         "wdr_part_02": {
           "shortfall_m": 0.0,
@@ -212,22 +190,22 @@
     {
       "pose": "run",
       "frames": 25,
-      "preview_frame": 1,
+      "preview_frame": 14,
       "max_reference_capsule_overlap_m": 0.05695208447937613,
-      "max_travel_shortfall_m": 0,
+      "max_travel_shortfall_m": 0.0015146995153046058,
       "finite": true,
       "worst_by_mesh": {
         "wdr_part_11": {
-          "shortfall_m": 0.0,
-          "frame": 1,
-          "overlap_m": 0.004194527833658035,
-          "worst_capsule": ""
+          "shortfall_m": 0.0015146995153046058,
+          "frame": 14,
+          "overlap_m": 0.005436268142755586,
+          "worst_capsule": "head"
         },
         "wdr_part_10": {
           "shortfall_m": 0.0,
           "frame": 1,
           "overlap_m": 0.0212976483639305,
-          "worst_capsule": ""
+          "worst_capsule": "head"
         },
         "wdr_part_02": {
           "shortfall_m": 0.0,
@@ -252,22 +230,22 @@
     {
       "pose": "idle",
       "frames": 16,
-      "preview_frame": 1,
+      "preview_frame": 1217,
       "max_reference_capsule_overlap_m": 0.05250020287992432,
-      "max_travel_shortfall_m": 0,
+      "max_travel_shortfall_m": 0.0015146995153046197,
       "finite": true,
       "worst_by_mesh": {
         "wdr_part_11": {
-          "shortfall_m": 0.0,
-          "frame": 1,
-          "overlap_m": 0.004194527833658028,
-          "worst_capsule": ""
+          "shortfall_m": 0.0015146995153046197,
+          "frame": 1217,
+          "overlap_m": 0.0054362681427556,
+          "worst_capsule": "head"
         },
         "wdr_part_10": {
           "shortfall_m": 0.0,
           "frame": 1,
           "overlap_m": 0.02003509331177536,
-          "worst_capsule": ""
+          "worst_capsule": "head"
         },
         "wdr_part_02": {
           "shortfall_m": 0.0,
@@ -292,22 +270,22 @@
     {
       "pose": "bow",
       "frames": 16,
-      "preview_frame": 1,
+      "preview_frame": 230,
       "max_reference_capsule_overlap_m": 0.05473689811843485,
-      "max_travel_shortfall_m": 0,
+      "max_travel_shortfall_m": 0.0015146995153046267,
       "finite": true,
       "worst_by_mesh": {
         "wdr_part_11": {
-          "shortfall_m": 0.0,
-          "frame": 1,
-          "overlap_m": 0.004194527833657993,
-          "worst_capsule": ""
+          "shortfall_m": 0.0015146995153046267,
+          "frame": 230,
+          "overlap_m": 0.005436268142755607,
+          "worst_capsule": "head"
         },
         "wdr_part_10": {
           "shortfall_m": 0.0,
           "frame": 1,
           "overlap_m": 0.018422554782058488,
-          "worst_capsule": ""
+          "worst_capsule": "head"
         },
         "wdr_part_02": {
           "shortfall_m": 0.0,
@@ -334,20 +312,20 @@
       "frames": 16,
       "preview_frame": 1,
       "max_reference_capsule_overlap_m": 0.05608518636553709,
-      "max_travel_shortfall_m": 0,
+      "max_travel_shortfall_m": 0.0015146995153045711,
       "finite": true,
       "worst_by_mesh": {
         "wdr_part_11": {
-          "shortfall_m": 0.0,
+          "shortfall_m": 0.0015146995153045711,
           "frame": 1,
-          "overlap_m": 0.004194527833658014,
-          "worst_capsule": ""
+          "overlap_m": 0.0054362681427555515,
+          "worst_capsule": "head"
         },
         "wdr_part_10": {
           "shortfall_m": 0.0,
           "frame": 1,
           "overlap_m": 0.015202470411255609,
-          "worst_capsule": ""
+          "worst_capsule": "head"
         },
         "wdr_part_02": {
           "shortfall_m": 0.0,
@@ -378,10 +356,10 @@
       "finite": true,
       "worst_by_mesh": {
         "wdr_part_11": {
-          "shortfall_m": 0.0,
-          "frame": 1,
-          "overlap_m": 0.004194527833658035,
-          "worst_capsule": ""
+          "shortfall_m": 0.0015146995153045711,
+          "frame": 165,
+          "overlap_m": 0.0054362681427555515,
+          "worst_capsule": "head"
         },
         "wdr_part_10": {
           "shortfall_m": 0.0016504543231023808,
@@ -406,6 +384,46 @@
           "frame": 310,
           "overlap_m": 0.005679220794464013,
           "worst_capsule": "r_upperarm"
+        }
+      }
+    },
+    {
+      "pose": "inventory_idle",
+      "frames": 16,
+      "preview_frame": 1013,
+      "max_reference_capsule_overlap_m": 0.029817470766414764,
+      "max_travel_shortfall_m": 0.0015146995153046058,
+      "finite": true,
+      "worst_by_mesh": {
+        "wdr_part_11": {
+          "shortfall_m": 0.0015146995153046058,
+          "frame": 1013,
+          "overlap_m": 0.005436268142755586,
+          "worst_capsule": "head"
+        },
+        "wdr_part_10": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.019140799150987098,
+          "worst_capsule": "head"
+        },
+        "wdr_part_02": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.008268600015249388,
+          "worst_capsule": ""
+        },
+        "wdr_part_08": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.021241427901436766,
+          "worst_capsule": ""
+        },
+        "wdr_part_07": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0006280426128717192,
+          "worst_capsule": "l_upperarm"
         }
       }
     }

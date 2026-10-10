@@ -52,6 +52,12 @@ assert all(x.get('slot','Item0').startswith('Item') for x in troop.findall('Equi
 before=native_npc.xpath("//NPCCharacter[not(@id='imperial_recruit')]");after=result.xpath("//NPCCharacter[not(@id='imperial_recruit')]")
 assert len(before)==len(after) and all(ET.tostring(a)==ET.tostring(b) for a,b in zip(before,after))
 for path in M.rglob('*.xml'):ET.parse(str(path))
+actions=ET.parse(str(M/'ModuleData/action_sets.xml'))
+for female in [False,True]:
+    for suffix in ['_warrior','_villager']:
+        name='as_wdr_canglan'+('_female' if female else '')+suffix
+        nodes=actions.xpath("//action_set[@id=$name]",name=name)
+        assert len(nodes)==1 and nodes[0].get('skeleton')=='wdr_skeleton', 'Action sets are derived from the race ID'
 skins=ET.parse(str(M/'ModuleData/skins.xml'));assert len(skins.xpath('//race'))==1 and len(skins.xpath('//skin'))==10
 integrated=cfg.get('hands_render_mode')=='body'
 assert all(s.get('skeleton')=='wdr_skeleton' and s.get('hands_mesh')==('wdr_hidden' if integrated else 'wdr_canglan_hands') and s.get('uses_stitching')==('false' if integrated else 'true') and len(s.findall('deform_keys/deform_key'))==0 for s in skins.xpath('//skin'))

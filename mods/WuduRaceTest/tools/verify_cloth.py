@@ -43,7 +43,7 @@ caps=json.loads((R/'reports/cloth_collision.json').read_text())['capsules'];name
 meshes=[json.loads(p.read_text()) for p in out.glob('*.mesh.json') if json.loads(p.read_text())['lod']==0]
 poses=[('rest',None,[0])]
 render_groups=[g for path in (B/'final_export0/geo').glob('*.bin') for g in read_geo(path) if g['name'].startswith('wdr_part_')]
-for label in ['run','idle','bow','rider','sword']:
+for label in ['run','idle','bow','rider','sword','inventory_idle']:
     animation=parse_animjson(json.loads((R/'reports'/(label+'.json')).read_text()))
     frames=list(range(animation['start'],animation['frames'])) if label=='run' else sorted(set(np.linspace(animation['start'],animation['frames']-1,16).astype(int)))
     poses.append((label,animation,frames))
