@@ -12,12 +12,12 @@ namespace WuduRaceTest {
             try {
                 string dir=Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),"Mount and Blade II Bannerlord","WuduRaceTest");
                 Directory.CreateDirectory(dir);
-                File.AppendAllText(Path.Combine(dir,"probe_v0.2.1.log"),DateTime.Now.ToString("s")+" "+message+Environment.NewLine);
+                File.AppendAllText(Path.Combine(dir,"probe_v0.2.2.log"),DateTime.Now.ToString("s")+" "+message+Environment.NewLine);
             } catch(Exception) { /* Diagnostics must not interrupt the game. */ }
         }
         public override void OnGameInitializationFinished(Game game) {
             try {
-                Log("BEGIN v0.2.1 races="+string.Join(",",TaleWorlds.Core.FaceGen.GetRaceNames()));
+                Log("BEGIN v0.2.2 races="+string.Join(",",TaleWorlds.Core.FaceGen.GetRaceNames()));
                 var troop=game.ObjectManager.GetObject<CharacterObject>("imperial_recruit");
                 if(troop!=null)Log("troop=imperial_recruit race="+troop.Race+" female="+troop.IsFemale+" level="+troop.Level+" monster="+TaleWorlds.Core.FaceGen.GetBaseMonsterNameFromRace(troop.Race)+" power="+(Campaign.Current==null?"n/a":Campaign.Current.Models.MilitaryPowerModel.GetDefaultTroopPower(troop).ToString(CultureInfo.InvariantCulture)));
             } catch(Exception e) { Log("INIT_ERROR "+e); }
@@ -40,9 +40,19 @@ namespace WuduRaceTest {
             foreach(var agent in samples)try {
                 if(!agent.IsActive())continue;
                 var visual=agent.AgentVisuals;var sk=visual.GetSkeleton();var entity=visual.GetEntity();
+                if(agent.Character.StringId=="imperial_recruit")LogMeshes(entity,0);
                 SubModule.Log("HEIGHT_SAMPLE troop="+agent.Character.StringId+" scale="+agent.AgentScale.ToString(CultureInfo.InvariantCulture)+" global="+visual.GetGlobalFrame()+" local_box_min="+entity.GetBoundingBoxMin()+" local_box_max="+entity.GetBoundingBoxMax());
                 foreach(sbyte b in new sbyte[]{0,3,7,12,13})SubModule.Log("HEIGHT_POSE troop="+agent.Character.StringId+" bone="+b+" frame="+sk.GetBoneEntitialFrame(b));
             } catch(Exception e) {SubModule.Log("HEIGHT_ERROR "+e);}
+        }
+        private static void LogMeshes(TaleWorlds.Engine.GameEntity entity,int depth) {
+            if(depth>8)return;
+            for(int i=0;i<entity.MultiMeshComponentCount;i++) {
+                var mesh=entity.GetMetaMesh(i);
+                SubModule.Log("SKIN_MESH depth="+depth+" name="+mesh.GetName()+" groups="+mesh.MeshCount);
+                for(int j=0;j<mesh.MeshCount;j++)SubModule.Log("SKIN_GROUP name="+mesh.GetMeshAtIndex(j).Name);
+            }
+            for(int i=0;i<entity.ChildCount;i++)LogMeshes(entity.GetChild(i),depth+1);
         }
         public override void OnAgentBuild(Agent agent, Banner banner) {
             if(agent.Character==null)return;

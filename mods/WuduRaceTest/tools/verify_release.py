@@ -50,7 +50,7 @@ before=native_npc.xpath("//NPCCharacter[not(@id='imperial_recruit')]");after=res
 assert len(before)==len(after) and all(ET.tostring(a)==ET.tostring(b) for a,b in zip(before,after))
 for path in M.rglob('*.xml'):ET.parse(str(path))
 skins=ET.parse(str(M/'ModuleData/skins.xml'));assert len(skins.xpath('//race'))==1 and len(skins.xpath('//skin'))==10
-assert all(s.get('skeleton')=='wdr_skeleton' and s.get('hands_mesh')=='wdr_canglan_hands' and len(s.findall('deform_keys/deform_key'))==0 for s in skins.xpath('//skin'))
+assert all(s.get('skeleton')=='wdr_skeleton' and s.get('hands_mesh')=='wdr_canglan_hands' and s.get('uses_stitching')=='true' and len(s.findall('deform_keys/deform_key'))==0 for s in skins.xpath('//skin'))
 native_skins=ET.parse(str(GAME/'Modules/Native/ModuleData/skins.xml')).xpath("//race[@id='human']/skin")
 for skin,baseline in zip(skins.xpath('//skin'),native_skins):
     for tag in ['hair_meshes','beard_meshes']:

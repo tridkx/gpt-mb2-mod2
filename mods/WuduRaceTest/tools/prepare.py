@@ -29,7 +29,8 @@ human=ET.parse(N/'skins.xml').getroot().find("race[@id='human']")
 for old in human.findall('skin'):
     skin=copy.deepcopy(old); skin.set('name',RACE+'_'+old.get('name'))
     skin.set('skeleton','wdr_skeleton');skin.set('min_scale',str(cfg['skin_min_scale']))
-    skin.set('uses_stitching','false');skin.set('body_mesh_suffix','')
+    # Independent hands must participate in the native stitched-skin path.
+    skin.set('uses_stitching','true');skin.set('body_mesh_suffix','')
     skin.set('body_meta_mesh','wdr_canglan_body')
     for attr in ['body_meta_mesh_shoulders','body_meta_mesh_upperbody','legs_mesh','hands_mesh','face_meta_mesh','underwear_bottom_mesh','underwear_top_mesh']:
         skin.set(attr,'wdr_hidden')
