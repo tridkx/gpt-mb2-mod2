@@ -1,4 +1,4 @@
-# Shengxiu Collection v1.1.7（明玉长发自然下垂测试候选）
+# Shengxiu Collection v1.1.7（明玉长发布料）
 
 圣绣明玉、白凤（女）、素问三套装备，统一运行于 ShengxiuCollection，管理器显示 Shengxiu Collection。每套三件：发容、衣裙与手饰、腿部与绣鞋。
 
@@ -32,7 +32,7 @@ Mod ZIP 的 ShengxiuCollection/ 放入游戏 Modules，启用合集后搜索相�
 
 ## 验证状态与限制
 
-当前候选检查见 [back_hair_validation.json](reports/back_hair_validation.json)，源文件检查见 [source_validation.json](reports/source_validation.json)。最终 TPAC 回读覆盖全部四级 LOD、完整待机/跑步/持弓/骑乘周期中的后发蒙皮参考间距，以及长发布料位置、量化权重、映射、固定点和并行约束。其余 52 个网格的元数据与几何、衣裙袖纱三段布料及编辑器数据保持 v1.1.6 字节；头颈、脸、眼、饰物、原生骨架和动画不变，裙子腿部碰撞体不变。
+当前版本检查见 [back_hair_validation.json](reports/back_hair_validation.json)，源文件检查见 [source_validation.json](reports/source_validation.json)。最终 TPAC 回读覆盖全部四级 LOD、完整待机/跑步/持弓/骑乘周期中的后发蒙皮参考间距，以及长发布料位置、量化权重、映射、固定点和并行约束。其余 52 个网格的元数据与几何、衣裙袖纱三段布料及编辑器数据保持 v1.1.6 字节；头颈、脸、眼、饰物、原生骨架和动画不变，裙子腿部碰撞体不变。
 
 [free_hair_diagnostic.json](reports/free_hair_diagnostic.json) 另记录七个静态原生姿态的近似 CPU 重力与胶囊约束诊断：每个姿态以 120Hz 松弛 3 秒，核对发根不漂移、活动距离与碰撞的冲突、后发下落和局部穿模。它没有运行游戏求解器或连续动画惯性，不能代替游戏测试。模型参考前后侧面见 [原后发](reports/back_hair_before_idle_side.png)、[新参考造型](reports/back_hair_after_idle_side.png)；近似重力诊断图见 [侧面](reports/back_hair_gravity_idle_side.png)、[背面](reports/back_hair_gravity_idle_back.png)。
 
@@ -48,7 +48,7 @@ python -X utf8 mods/ShengxiuCollection/tools/build_new_sets.py
 # prepare_collection_release.py 为 v1.1.0 基线组装入口，会要求旧明玉哈希。
 ```
 
-当前 v1.1.7 候选从保留的 v1.1.6 源文件和包增量生成，在工作区根依次运行：
+当前 v1.1.7 从保留的 v1.1.6 源文件和包增量生成，在工作区根依次运行：
 
 ```powershell
 & 'D:/Blender Foundation/Blender 5.2/blender.exe' --background --python-exit-code 1 --python mods/ShengxiuCollection/tools/fit_back_hair_source.py
@@ -75,3 +75,13 @@ python -X utf8 mods/ShengxiuCollection/tools/finalize_back_hair.py
 - 活动 Alpha、模拟标记和材料参数存在，不代表布料数据完整或游戏求解生效；检查方法见 [共用编译器](../../tools/cloth_compiler/README.md)。
 
 历史版本与调查见 [更新日志](CHANGELOG.md)。
+
+## 常见问题
+
+### 后发被顶起、远离身体或后颈外折
+
+先比较源造型、原生待机蒙皮参考和近似重力结果。活动 Alpha 是相对蒙皮位置的移动上限，范围过小会限制下垂；碰撞体则应贴合外层衣服，检查覆盖、端帽和上端半径。当前模型的后颈平滑处理见 [源造型脚本](tools/fit_back_hair_source.py)，背部胶囊拟合见 [碰撞脚本](tools/fit_free_hair_collision.py)。上述数值只适用于明玉；返修须保留已确认的裙子配置，以自然观感为准接受轻微交叉。修改源几何、权重或 Alpha 后需重新编译受影响布料，而非只修改碰撞 XML。
+
+### 战斗结束后进入物品界面崩溃
+
+先核对同次日志、进程和转储，确认崩溃发生阶段。当前两份转储指向 TroopDesigner 搜索功能的空引用，详细证据与修复建议见 [检查报告](reports/inventory_crash_20261010.md)。该外部 Mod 尚未修改或验证修复，不以回退明玉布料代替处理实际异常。
