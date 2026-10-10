@@ -47,10 +47,20 @@ JSON 网格输入包含 `name/guid/metamesh/lod`、`positions/normals`（每顶�
 
 七个原生样本、具体网格与最终 TPAC 检查见明玉的 `reports/cloth_format_research.json`、`cooked_cloth_validation.json`。新模型使用自己的数量、骨骼、GUID 与回读断言。模型流程仍需检查最终 blob 与生成结果相同，约束长度符合原网格、压缩误差、映射、量化蒙皮和跨连通片锚点，再检查未请求改动的几何/材质/Alpha 与原包相同。
 
-TpacTool 的外部加载器可能只持有弱引用；修改编辑器数据后调用 `MarkLongLive()` 保持到保存结束。最终重新回读，否则可能只有最后一个网格的骨骼改动被写入。当前 mbtool 保存器会计算解压数据的 XXH64。
-
 这是三角网络编译器，没有复刻原生网格重构或经纬分类。剪切组为空，三角边抗拉维持形状；不生成 `af41613e...` 映射数据，也不实现代理模拟。别复制其他网格的约束。每个启用 LOD 必须有自身 Alpha、固定点和匹配数据；LOD0 的数据不能直接挂到减面网格。
 
 [官方 LOD 文档](https://moddocs.bannerlord.com/asset-management/asset-types/meshes/)给出的最高画质默认切换点为 15、22.5、30、50、70、130、210 米，角色/环境质量可缩短距离。它们是网格切换的默认值，不是布料引擎的实测截止距离；布料标记、包内数据与该级实际求解需要分别确认。
 
 源包可用模组 `mod.json.shared_source_files` 明确列入这些共用文件，`tools/package_delivery.py` 将其放到 `workspace_tools/cloth_compiler/`。明玉兼容入口会自动识别工作区和这种源包布局。source/tex 仍保持相邻，不把技能副本放入工程或源包。
+
+## 注意事项
+
+TpacTool 的外部加载器可能只持有弱引用；修改编辑器数据后调用 `MarkLongLive()` 保持到保存结束。最终重新回读，否则可能只有最后一个网格的骨骼改动被写入。当前 mbtool 保存器会计算解压数据的 XXH64。
+
+透明裁切材料须区分贴图 Alpha 和布料活动 Alpha。固定顶点的活动 Alpha 为零时，若材质同时乘算顶点 Alpha，会使衣物消失；使用对应材质标志并从最终包核对。
+
+模拟标记和活动距离不是布料预处理数据的替代品；字段回读、约束验证和游戏求解应分别记录。直接模拟与代理映射有不同资源需求，不能把另一网格的约束或 LOD 数据移植到本模型。
+
+共享位置应检查 UV 接缝、连通片和骨权重；下垂部件的固定根部按真实连接点配置，不能仅按空间高度分配到腿部。
+
+历史布料试验及用户反馈见 [天香 T5 更新记录](../../mods/TianxiangCollection/sets/TianxiangT5/CHANGELOG.md) 和 [圣绣更新日志](../../mods/ShengxiuCollection/CHANGELOG.md)。

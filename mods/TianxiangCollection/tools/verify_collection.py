@@ -56,6 +56,7 @@ for name in ['grouping_preservation.json','grouped_source_validation.json']:
     if (ROOT/'reports'/name).is_file():files.append('reports/'+name)
 files.extend(p.relative_to(ROOT).as_posix() for p in (ROOT/'reports').glob('*_package_audit.json'))
 files.extend(rel for c in manifest['components'] for rel in c['source_files'])
+files.extend(p.relative_to(ROOT).as_posix() for p in (ROOT/'sets').glob('*/CHANGELOG.md'))
 # Include runtime packages in editable archive once, so assembly is reproducible without rebuilding models.
 files.extend(p.relative_to(ROOT).as_posix() for p in module.rglob('*') if p.is_file() and p.name!='.gitkeep')
 config={'id':manifest['collection_id'],'source_files':sorted(set(files)),'package':f'module/{manifest["collection_id"]}/AssetPackages/{packages[0]["file"]}','validation_report':'reports/release_validation.json'}

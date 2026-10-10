@@ -61,6 +61,7 @@ assert ET.parse(module/'SubModule.xml').find('Version').get('value')==VERSION
 report={'version':VERSION,'status':'pass','check_scope':'offline checks and cumulative module consistency','final_package_sha256':packages[-1]['sha256'],'baseline_version':'v1.2.0','baseline_packages':packages[:3],'packages':packages,'asset_inventory':inventories,'resource_name_and_guid_collisions':False,'previous_three_sets_assets_items_and_source_unchanged':True,'item_count':24,'included_sets':SETS,'editable_sources_verified':True,'all_lod_motion_and_seam_normals_verified':True,'remaining_five_user_acceptance':'pending','eighth_variant':'PVP','game_test_verified':False,'game_cloth_solver_used':False,'cloth_scope':{'existing_sets_preserved':SETS[:4],'cooked_sets':SETS[4:],'independent_cooked_lods':[0,1]},'limitations':'First three sets accepted by user. Final five offline checked only; in-game cloth, IK, body sliders and horse collision await user testing. Sets 5-8 include independently cooked LOD0/LOD1 native-type direct cloth data. Sets 1-4 retain existing cloth setup. Engine dynamics await user testing.'}
 (ROOT/'reports/release_validation.json').write_text(json.dumps(report,indent=2))
 files=['README.md','mod.json']
+if (ROOT/'CHANGELOG.md').is_file():files.append('CHANGELOG.md')
 for folder in ['tools','reports','module','sets']:
  for p in sorted((ROOT/folder).rglob('*')):
   if not p.is_file():continue

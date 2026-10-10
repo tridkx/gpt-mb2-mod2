@@ -12,9 +12,9 @@ Mod ZIP 顶层为 TianxiangRenqiu，可解压到游戏 Modules。依赖 Native�
 
 三件配套穿戴，手套和披肩槽先留空，避免其他装备叠在皮套上。三件均注册为可交易、可用于平民装的装备；商店何时刷新由游戏决定，测试时可使用你已有的装备获取方式。脸是头部装备的固定造型，不含原版捏脸或面部表情形变。
 
-## v1.0.1 修复
+## 当前材料
 
-纠正睫毛片（mesh_03）的 V 方向，避免眼睑贴图遮住眼球；睫毛使用 0.4 阈值透明裁切和 no_alpha_blend。眼球、其他网格位置、绑骨、布料活动距离和原始贴图保持不变。保留 v1.0.0 交付包用于回退。
+睫毛片 mesh_03 使用修正后的 V 方向、0.4 阈值透明裁切和 no_alpha_blend；原始贴图保持不变。
 
 ## 验证范围
 
@@ -35,3 +35,5 @@ Mod ZIP 顶层为 TianxiangRenqiu，可解压到游戏 Modules。依赖 Native�
 5. 工作区 tools/install_release.ps1 使用 `-Mod TianxiangRenqiu -Version v1.0.1 -PreviousVersion v1.0.0` 检查、打包并只安装此模块。
 
 所需工具位置以已安装装备技能中的本机工具表为准。本工程依赖工作区 tools/asset_helpers、D:/mb-tools、游戏资源、Blender、Python 和 .NET 10；源包不包含这些第三方工具。
+
+版本变化见 [更新日志](CHANGELOG.md)。

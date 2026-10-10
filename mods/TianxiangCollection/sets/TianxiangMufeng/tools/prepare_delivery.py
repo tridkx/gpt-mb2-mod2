@@ -11,6 +11,7 @@ report['editable_source_verified']=True
 report['visual_review']={'reviewed':'final eye/lash close-ups, rest front/side/back and worst native motion/contact frames','result':'reviewed with offline limitations','game_verified':False}
 report_path.write_text(json.dumps(report,indent=2))
 files=['README.md','mod.json']
+if (ROOT/'CHANGELOG.md').is_file():files.append('CHANGELOG.md')
 for folder in ['input','source','tools','module','reports']:
     for p in sorted((ROOT/folder).rglob('*')):
         if not p.is_file() or any(part in ['__pycache__','obj','bin'] for part in p.relative_to(ROOT).parts):continue

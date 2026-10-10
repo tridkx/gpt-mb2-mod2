@@ -33,6 +33,7 @@ report['cooked_cloth_format_native_samples']=len(cooked['native_samples'])
 report['visual_review']={'reviewed':'final eye/lash close-ups, rest front/side/back and worst native motion/contact frames','result':'reviewed; sleeve veils remain rigidly skinned in previews because the game cloth solver was not run; skirt leg proxy contacts remain for user testing','game_verified':False}
 report_path.write_text(json.dumps(report,indent=2))
 files=['README.md','mod.json']
+if (ROOT/'CHANGELOG.md').is_file():files.append('CHANGELOG.md')
 for folder in ['input','source','tools','module','reports']:
     for p in sorted((ROOT/folder).rglob('*')):
         if not p.is_file() or any(part in ['__pycache__','obj','bin'] for part in p.relative_to(ROOT).parts):continue
