@@ -27,6 +27,7 @@ def validate_registration(root):
     for skin, old in zip(skins, native_skins):
         assert (skin.get('gender'), skin.get('mesh_maturity_type')) == (old.get('gender'), old.get('mesh_maturity_type'))
         assert skin.get('skeleton') == cfg['skeleton']
+        assert float(skin.get('min_scale')) == cfg['skin_min_scale']
         assert skin.get('uses_stitching') == 'false'
         assert skin.get('body_meta_mesh') == 'adar_body'
         for attr in ['hands_mesh', 'face_meta_mesh', 'legs_mesh']:
@@ -74,7 +75,7 @@ def validate_registration(root):
     report = {'status':'pass', 'race':cfg['race'], 'changed_troops':changed,
               'unaffected_troops':len(before)-1, 'native_level_skills_weapons_upgrades_preserved':True,
               'armor_rosters_empty':True, 'skin_variants':len(skins),
-              'skeleton':cfg['skeleton'], 'native_monster_dimensions_preserved':True,
+              'skeleton':cfg['skeleton'], 'skin_min_scale':cfg['skin_min_scale'], 'native_monster_dimensions_preserved':True,
               'native_ui_actions_inherited':True, 'accessory_materials_absent':True}
     (root / 'reports/registration_validation.json').write_text(json.dumps(report, indent=2))
     return report

@@ -155,6 +155,10 @@
     "reports/history/v0.1.0/user_feedback.json",
     "reports/history/v0.1.0/visual_review.json",
     "reports/history/v0.1.0/weight_transfer.json",
+    "reports/history/v0.1.1/installation_validation.json",
+    "reports/history/v0.1.1/model_config.json",
+    "reports/history/v0.1.1/registration_validation.json",
+    "reports/history/v0.1.1/release_validation.json",
     "reports/human_skeleton.json",
     "reports/idle.json",
     "reports/input_hashes.json",
@@ -169,6 +173,7 @@
     "reports/release_validation.json",
     "reports/riding.json",
     "reports/run.json",
+    "reports/scale_validation.json",
     "reports/slash.json",
     "reports/source_validation.json",
     "reports/visual_review.json",
@@ -190,6 +195,7 @@
     "tools/verify_heels.py",
     "tools/verify_registration.py",
     "tools/verify_release.py",
+    "tools/verify_scale.py",
     "tools/verify_source.py"
   ],
   "shared_source_files": [

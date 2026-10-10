@@ -1,0 +1,49 @@
+{
+  "id": "REAdaWongRace",
+  "race": "reada_wong",
+  "version": "v0.1.1",
+  "target_troop": "imperial_recruit",
+  "skin_min_scale": 1.0,
+  "skeleton": "adar_skeleton",
+  "hands_render_mode": "body",
+  "hand_pose": "fixed",
+  "cloth_simulation": false,
+  "removed_materials": [
+    "HolsterStrap_Mat",
+    "HolsterMetal_Mat",
+    "BeltHolster_Leather_Mat",
+    "BeltHolster_Inside_Mat",
+    "BeltHolster_Metal_Mat",
+    "HookHolster_Mat",
+    "HookGun_Mat",
+    "Gun_Mat"
+  ],
+  "lod_ratios": {
+    "hair": 0.45,
+    "face": 0.65,
+    "cloth": 0.4
+  },
+  "lod_multipliers": [
+    1,
+    0.48,
+    0.2,
+    0.075
+  ],
+  "minimum_ratios": {
+    "Knit_Mat": 0.12,
+    "Skin_Mat": 1.0,
+    "Leg_Mat": 1.0,
+    "Glove_Mat": 0.15,
+    "BootsLeather_Mat": 0.22,
+    "BootsSole_Mat": 0.25,
+    "BootsMetal_Mat": 0.12,
+    "Hair00_mat": 0.1,
+    "Hair01_mat": 0.1,
+    "Hair02_mat": 0.1
+  },
+  "geometry_policy": "Original cha200 positions; rotation of axes only; no anatomy warp",
+  "lod0_original_geometry": true,
+  "foot_bind_axes": "native_neutral_orientation_at_original_ankle",
+  "shoe_rigid_top_offset_m": 0.015,
+  "shoe_ankle_blend_length_m": 0.06
+}

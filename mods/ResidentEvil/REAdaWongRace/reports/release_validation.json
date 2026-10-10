@@ -1,10 +1,10 @@
 {
-  "version": "v0.1.1",
+  "version": "v0.1.2",
   "status": "pass",
-  "check_scope": "offline_structural_and_native_motion_checks",
+  "check_scope": "runtime_scale_registration_and_exact_asset_baseline_comparison",
   "final_package_sha256": "555627368a6e4acafefd1dc60944360e8a12066bf60a873a48c95d14528aeffa",
-  "baseline_package_sha256": "f3f14d7eb1366f59b66c277e3f8b06bbdd5cf427af289dbc90a8ca75c90f0340",
-  "baseline_reason": "Heel repair against v0.1.0",
+  "baseline_package_sha256": "555627368a6e4acafefd1dc60944360e8a12066bf60a873a48c95d14528aeffa",
+  "baseline_reason": "Uniform runtime scale increase from 1.0 to 1.1; assets unchanged",
   "registration": {
     "status": "pass",
     "race": "reada_wong",
@@ -16,6 +16,7 @@
     "armor_rosters_empty": true,
     "skin_variants": 10,
     "skeleton": "adar_skeleton",
+    "skin_min_scale": 1.1,
     "native_monster_dimensions_preserved": true,
     "native_ui_actions_inherited": true,
     "accessory_materials_absent": true
@@ -725,5 +726,22 @@
     "compared_with": "REAdaWongDefault",
     "duplicate_asset_guids": [],
     "final_package_sha256": "555627368a6e4acafefd1dc60944360e8a12066bf60a873a48c95d14528aeffa"
+  },
+  "inherited_asset_validation": "reports/history/v0.1.1/release_validation.json",
+  "scale_validation": {
+    "version": "v0.1.2",
+    "status": "pass",
+    "baseline_version": "v0.1.1",
+    "previous_skin_min_scale": 1.0,
+    "skin_min_scale": 1.1,
+    "uniform_scale_ratio": 1.1,
+    "changed_module_files": [
+      "ModuleData/skins.xml",
+      "SubModule.xml"
+    ],
+    "final_package_sha256": "555627368a6e4acafefd1dc60944360e8a12066bf60a873a48c95d14528aeffa",
+    "tpac_source_mesh_rig_weights_textures_unchanged": true,
+    "skin_variants_checked": 10,
+    "game_test_verified": false
   }
 }

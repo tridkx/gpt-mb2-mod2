@@ -1,6 +1,6 @@
 # Resident Evil - Ada Wong Race
 
-v0.1.1 为本机 Native v1.4.8 制作固定外观的艾达王种族 `reada_wong`。只替换帝国普通新兵 `imperial_recruit`，游戏内名称为“艾达王新兵”；保留原兵种等级、技能、武器与升级目标，升级后进入原版兵种。贵族新兵及其他兵种不在修改范围内。
+v0.1.2 为本机 Native v1.4.8 制作固定外观的艾达王种族 `reada_wong`。只替换帝国普通新兵 `imperial_recruit`，游戏内名称为“艾达王新兵”；保留原兵种等级、技能、武器与升级目标，升级后进入原版兵种。贵族新兵及其他兵种不在修改范围内。
 
 ## 外观与行为
 
@@ -8,7 +8,7 @@ v0.1.1 为本机 Native v1.4.8 制作固定外观的艾达王种族 `reada_wong`
 
 从原始 cha200 OBJ 制作，所有保留部件的顶点只做 Y-up → Z-up 的坐标轴转换，不做人体拉伸、RBF 变形、手脚位置拟合或鞋底抬升。源模型的头身比、肩宽、臂长、腿长、衣服与脸部轮廓保留。最高精度 LOD0 保留原始顶点位置，清除退化三角形；去除头部模型附带、永久藏在高领衫内部的下颈部扩展面，避免动作中穿出衣服，外露颈部与腕部保留。远景 LOD 另做简化。
 
-自定义绑定骨架 `adar_skeleton` 保留骑砍原生 28 骨语义、顺序和层级，关节位置按艾达原始骨架测量建立；躯干及四肢骨段按原模型绑定方向建立，脚骨保留原生动作的中立方向，维持原始高跟鞋的足部倾角。骨架适配模型，网格不适配原生成人体型。沿用原生动作轨道，离线检查采用最终绑定骨架计算；游戏的动作合成、重定向与 IK 仍需验收。基础模型含头发高约 1.729 米，skin 的 min_scale 为 1.0；实际游戏身高仍需确认。
+自定义绑定骨架 `adar_skeleton` 保留骑砍原生 28 骨语义、顺序和层级，关节位置按艾达原始骨架测量建立；躯干及四肢骨段按原模型绑定方向建立，脚骨保留原生动作的中立方向，维持原始高跟鞋的足部倾角。骨架适配模型，网格不适配原生成人体型。沿用原生动作轨道，离线检查采用最终绑定骨架计算；游戏的动作合成、重定向与 IK 仍需验收。基础模型含头发高约 1.729 米，skin 的 min_scale 为 1.10，通过运行时统一缩放放大整体身体与骨架；基础模型和绑定数据保持原始比例。实际游戏身高与站姿由用户验收。
 
 双手始终在身体网格中。左右手分别刚性绑定到原生手骨，手指保持固定张开姿态，腕部与前臂使用渐变过渡；本版不启用手势形变。短裙、头发与衣服采用蒙皮随动，没有游戏布料模拟。近景至远景四级 LOD 为 154,473 / 39,498 / 24,077 / 21,200 三角面，不含内部四面占位网格。
 
@@ -46,7 +46,7 @@ v0.1.1 为本机 Native v1.4.8 制作固定外观的艾达王种族 `reada_wong`
 & 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/ResidentEvil/REAdaWongRace/tools/rebuild.py
 ```
 
-主流程：注册 → 模型与纹理 → 可编辑源文件 → LOD → TPAC → 最终包回读及动作检查 → 源文件重开 → 四级预览。原始外形对照见 [geometry_fidelity.json](reports/geometry_fidelity.json)。发布检查入口为 [release_validation.json](reports/release_validation.json)，兵种替换验证为 [registration_validation.json](reports/registration_validation.json)。保留 v0.1.0 模块 ZIP 时，将其放在 `dist/REAdaWongRace_v0.1.0_Mod.zip`，重建流程会自动补做高跟鞋基线回归与近景对比；原始数据缓存缺失时会从该包恢复基线。
+主流程：注册 → 模型与纹理 → 可编辑源文件 → LOD → TPAC → 最终包回读及动作检查 → 源文件重开 → 四级预览。原始外形对照见 [geometry_fidelity.json](reports/geometry_fidelity.json)。发布检查入口为 [release_validation.json](reports/release_validation.json)，兵种替换验证为 [registration_validation.json](reports/registration_validation.json)。整体放大检查见 [scale_validation.json](reports/scale_validation.json)；现有离线预览展示基础模型与动作蒙皮，不包含游戏运行时的 skin 缩放。保留 v0.1.0 模块 ZIP 时，将其放在 `dist/REAdaWongRace_v0.1.0_Mod.zip`，重建流程会自动补做高跟鞋基线回归与近景对比；原始数据缓存缺失时会从该包恢复基线。
 
 源 ZIP 保持 `source/`、`tex/` 相邻，并在 `workspace_tools/` 保存所用共享助手。恢复时将共享源码放回工作区 `tools/`，本工程放在 `mods/ResidentEvil/REAdaWongRace/`。工具二进制与第三方模型再分发授权不随源包提供。
 
