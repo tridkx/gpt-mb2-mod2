@@ -16,6 +16,9 @@ foreach(var mesh in package.Items.OfType<Metamesh>()) {
         group.Flags=cloth?new List<string>{"uses_cloth_simulation","force_enable_cloth"}:new List<string>();
         if(mesh.Name=="wdr_canglan_hands") {
             var frames=handMorphs.RootElement.GetProperty(group.Name);var ed=group.EditData.Data;
+            // Morph skin generation uses editor positions, unlike ordinary armor.
+            // The generic builder stores vertex indices in W; native hands use W=1.
+            ed.Positions=ed.Positions.Select(p=>new Vector4(p.X,p.Y,p.Z,1)).ToArray();
             ed.MorphFrames.Clear();
             foreach(var f in frames.EnumerateArray()) {
                 Vector4[] ReadVectors(string key,bool position)=>f.GetProperty(key).EnumerateArray().Select(v=>new Vector4(v[0].GetSingle(),v[1].GetSingle(),v[2].GetSingle(),1)).ToArray();

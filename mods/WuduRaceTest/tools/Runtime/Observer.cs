@@ -12,12 +12,18 @@ namespace WuduRaceTest {
             try {
                 string dir=Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),"Mount and Blade II Bannerlord","WuduRaceTest");
                 Directory.CreateDirectory(dir);
-                File.AppendAllText(Path.Combine(dir,"probe_v0.2.2.log"),DateTime.Now.ToString("s")+" "+message+Environment.NewLine);
+                File.AppendAllText(Path.Combine(dir,"probe_v0.2.3.log"),DateTime.Now.ToString("s")+" "+message+Environment.NewLine);
             } catch(Exception) { /* Diagnostics must not interrupt the game. */ }
         }
         public override void OnGameInitializationFinished(Game game) {
             try {
-                Log("BEGIN v0.2.2 races="+string.Join(",",TaleWorlds.Core.FaceGen.GetRaceNames()));
+                Log("BEGIN v0.2.3 races="+string.Join(",",TaleWorlds.Core.FaceGen.GetRaceNames()));
+                var hands=TaleWorlds.Engine.MetaMesh.GetCopy("wdr_canglan_hands",true,true);
+                if(hands==null)Log("HAND_ASSET missing");
+                else for(int i=0;i<hands.MeshCount;i++) {
+                    var part=hands.GetMeshAtIndex(i);
+                    Log("HAND_ASSET name="+part.Name+" faces="+part.GetFaceCount()+" color="+part.Color.ToString("X8")+" min="+part.GetBoundingBoxMin()+" max="+part.GetBoundingBoxMax());
+                }
                 var troop=game.ObjectManager.GetObject<CharacterObject>("imperial_recruit");
                 if(troop!=null)Log("troop=imperial_recruit race="+troop.Race+" female="+troop.IsFemale+" level="+troop.Level+" monster="+TaleWorlds.Core.FaceGen.GetBaseMonsterNameFromRace(troop.Race)+" power="+(Campaign.Current==null?"n/a":Campaign.Current.Models.MilitaryPowerModel.GetDefaultTroopPower(troop).ToString(CultureInfo.InvariantCulture)));
             } catch(Exception e) { Log("INIT_ERROR "+e); }
@@ -50,7 +56,10 @@ namespace WuduRaceTest {
             for(int i=0;i<entity.MultiMeshComponentCount;i++) {
                 var mesh=entity.GetMetaMesh(i);
                 SubModule.Log("SKIN_MESH depth="+depth+" name="+mesh.GetName()+" groups="+mesh.MeshCount);
-                for(int j=0;j<mesh.MeshCount;j++)SubModule.Log("SKIN_GROUP name="+mesh.GetMeshAtIndex(j).Name);
+                for(int j=0;j<mesh.MeshCount;j++) {
+                    var part=mesh.GetMeshAtIndex(j);
+                    SubModule.Log("SKIN_GROUP name="+part.Name+" faces="+part.GetFaceCount()+" color="+part.Color.ToString("X8")+" min="+part.GetBoundingBoxMin()+" max="+part.GetBoundingBoxMax());
+                }
             }
             for(int i=0;i<entity.ChildCount;i++)LogMeshes(entity.GetChild(i),depth+1);
         }
@@ -64,6 +73,7 @@ namespace WuduRaceTest {
             samples.Add(agent);
             try {
                 var sk=agent.AgentVisuals.GetSkeleton();
+                SubModule.Log("SKIN_MASK value="+(int)agent.SpawnEquipment.GetSkinMeshesMask());
                 SubModule.Log("visual_frame="+agent.AgentVisuals.GetGlobalFrame());
                 foreach(sbyte b in new sbyte[]{0,3,7,12,13})SubModule.Log("posed bone="+b+" frame="+sk.GetBoneEntitialFrame(b));
                 SubModule.Log("SPAWN agent="+agent.Index+" race="+agent.Character.Race+" scale="+agent.AgentScale.ToString(CultureInfo.InvariantCulture)+" bones="+sk.GetBoneCount());

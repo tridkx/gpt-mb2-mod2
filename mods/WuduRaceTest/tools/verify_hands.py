@@ -15,6 +15,7 @@ for mesh in data:
     p=np.array(mesh['positions']);mapping=np.array(mesh['edit_vertex_position_indices']);frames=mesh['frames'];assert mesh['VertexKeyCount']==len(frames)==26
     assert len(mesh['bones'])==len(p) and np.all(np.sum(mesh['weights'],axis=1)==255)
     assert np.array_equal(np.array(frames[0]['positions'])[:,:3][mapping],p)
+    assert np.all(np.array(mesh['edit_positions'])[:,3]==1), 'Morph rest positions require homogeneous W=1, matching native hands'
     assert [f['Time'] for f in frames]==np.arange(26,dtype='<f4').view('<i4').tolist()
     allp=np.array([f['positions'] for f in frames])[:,:,:3]
     target=expected[mesh['Name']]
