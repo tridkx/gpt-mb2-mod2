@@ -4,6 +4,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 R=Path(__file__).resolve().parents[1];WS=R.parents[1];B=R/'build'
+cfg=json.loads((R/'tools/model_config.json').read_text());integrated=cfg.get('hands_render_mode')=='body'
 N=Path('D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules/Native');MB='D:/mb-tools/mbtool/bin/Release/net9.0/mbtool.exe'
 sys.path.insert(0,str(WS/'tools/asset_helpers/pipeline'))
 from convert_textures import encode_mips
@@ -26,8 +27,10 @@ for row in json.loads((B/'rig_manifest.json').read_text()):
     if cut:mat['alphaTest']=.25
     spec['materials'].append(mat)
 geo=json.loads((B/'geometry.json').read_text())
-for part,name in [('body','wdr_canglan_body'),('hands','wdr_canglan_hands'),('hidden','wdr_hidden')]:
-    spec['meshes'].append(dict(name=name,bodyPart='human_body',template='mesh',groups=[{k:g[k] for k in ['name','geometry','material','flags','materialFlags']} for g in geo if g['part']==part]))
+parts=[('body','wdr_canglan_body'),('hidden','wdr_hidden')] if integrated else [('body','wdr_canglan_body'),('hands','wdr_canglan_hands'),('hidden','wdr_hidden')]
+for part,name in parts:
+    accepted=[part,'hands'] if integrated and part=='body' else [part]
+    spec['meshes'].append(dict(name=name,bodyPart='human_body',template='mesh',groups=[{k:g[k] for k in ['name','geometry','material','flags','materialFlags']} for g in geo if g['part'] in accepted]))
 (B/'spec.json').write_text(json.dumps(spec,indent=2));subprocess.run([MB,'build',str(B/'spec.json')],check=True)
 subprocess.run([sys.executable,'-B','-X','utf8',str(R/'tools/build_hand_morphs.py')],check=True)
 subprocess.run(['dotnet','build',str(R/'tools/PackagePatch/PackagePatch.csproj'),'--ignore-failed-sources','-o',str(B/'package_patch')],check=True)

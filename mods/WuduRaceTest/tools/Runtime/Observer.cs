@@ -12,16 +12,16 @@ namespace WuduRaceTest {
             try {
                 string dir=Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),"Mount and Blade II Bannerlord","WuduRaceTest");
                 Directory.CreateDirectory(dir);
-                File.AppendAllText(Path.Combine(dir,"probe_v0.2.3.log"),DateTime.Now.ToString("s")+" "+message+Environment.NewLine);
+                File.AppendAllText(Path.Combine(dir,"probe_v0.2.4.log"),DateTime.Now.ToString("s")+" "+message+Environment.NewLine);
             } catch(Exception) { /* Diagnostics must not interrupt the game. */ }
         }
         public override void OnGameInitializationFinished(Game game) {
             try {
-                Log("BEGIN v0.2.3 races="+string.Join(",",TaleWorlds.Core.FaceGen.GetRaceNames()));
-                var hands=TaleWorlds.Engine.MetaMesh.GetCopy("wdr_canglan_hands",true,true);
+                Log("BEGIN v0.2.4 races="+string.Join(",",TaleWorlds.Core.FaceGen.GetRaceNames()));
+                var hands=TaleWorlds.Engine.MetaMesh.GetCopy("wdr_canglan_body",true,true);
                 if(hands==null)Log("HAND_ASSET missing");
                 else for(int i=0;i<hands.MeshCount;i++) {
-                    var part=hands.GetMeshAtIndex(i);
+                    var part=hands.GetMeshAtIndex(i); if(!part.Name.StartsWith("wdr_part_04"))continue;
                     Log("HAND_ASSET name="+part.Name+" faces="+part.GetFaceCount()+" color="+part.Color.ToString("X8")+" min="+part.GetBoundingBoxMin()+" max="+part.GetBoundingBoxMax());
                 }
                 var troop=game.ObjectManager.GetObject<CharacterObject>("imperial_recruit");

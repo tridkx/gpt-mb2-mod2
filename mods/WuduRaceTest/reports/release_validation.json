@@ -1,13 +1,13 @@
 {
   "status": "pass",
-  "version": "v0.2.3",
+  "version": "v0.2.4",
   "scope": "offline structure/source fidelity/XML replacement; game appearance is pending",
-  "final_package_sha256": "3227b27d769e695f0dba50b059cb6d6b4eacb12b682122e1d3e8ab2c0c832e89",
-  "runtime_dll_sha256": "20334d3568d42a25c82d65d374277741eb3ea08b56db923d60e46304e46e646c",
+  "final_package_sha256": "b9820dff91e073b13f5f04e395ed290575935d510ea7cbf70963c46e170f573a",
+  "runtime_dll_sha256": "36330761be00caa1f12824abe1d32995c4673ec64e2ae1fcae0eef046358c650",
   "source_vertex_max_error_m": 5.972363618217064e-08,
   "source_height_m": 1.45,
   "custom_skeleton_bones": 28,
-  "metameshes": 3,
+  "metameshes": 2,
   "mesh_groups": 56,
   "lods": 4,
   "lod_geometry_identical": false,
@@ -39,7 +39,9 @@
   ],
   "height_target_in_game_m": 1.45,
   "height_parameters_unchanged": true,
-  "hand_morph_channels": 26,
+  "hand_render_mode": "body",
+  "hand_morph_channels": 0,
+  "source_hand_shape_channels": 26,
   "cloth_validation_report": "cloth_validation.json",
   "hand_validation_report": "hand_validation.json"
 }

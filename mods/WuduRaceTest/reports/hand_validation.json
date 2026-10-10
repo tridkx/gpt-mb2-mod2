@@ -1,71 +1,75 @@
 {
   "status": "pass",
-  "version": "v0.2.3",
-  "final_package_sha256": "3227b27d769e695f0dba50b059cb6d6b4eacb12b682122e1d3e8ab2c0c832e89",
+  "version": "v0.2.4",
+  "final_package_sha256": "b9820dff91e073b13f5f04e395ed290575935d510ea7cbf70963c46e170f573a",
   "baseline_source_and_height_unchanged": true,
   "meshes": [
     {
       "lod": 0,
       "vertices": 955,
-      "channels": 26,
+      "channels": 0,
+      "source_shape_channels": 26,
       "mixed_wrist_vertices": {
         "-1": 67,
         "1": 67
       },
       "pinned_root_vertices": 90,
-      "max_displacement_m": 0.06891259456530177,
+      "max_displacement_m": 0.06891259477492748,
       "edge_ratio_percentiles": [
-        0.3792873822672967,
-        0.9989915976948823,
-        1.4455729018214085
+        0.3792836425518821,
+        0.9989908804467642,
+        1.4455719735563788
       ]
     },
     {
       "lod": 1,
       "vertices": 707,
-      "channels": 26,
+      "channels": 0,
+      "source_shape_channels": 26,
       "mixed_wrist_vertices": {
         "-1": 63,
         "1": 63
       },
       "pinned_root_vertices": 88,
-      "max_displacement_m": 0.0690012562345331,
+      "max_displacement_m": 0.06900125981579476,
       "edge_ratio_percentiles": [
-        0.38312413916265736,
-        0.9988118653052975,
-        1.3681945282335428
+        0.38312976924778736,
+        0.9988122621545514,
+        1.3681966615096164
       ]
     },
     {
       "lod": 2,
       "vertices": 428,
-      "channels": 26,
+      "channels": 0,
+      "source_shape_channels": 26,
       "mixed_wrist_vertices": {
         "-1": 43,
         "1": 44
       },
       "pinned_root_vertices": 66,
-      "max_displacement_m": 0.06938310973503922,
+      "max_displacement_m": 0.06938309317631283,
       "edge_ratio_percentiles": [
-        0.34813633046168657,
-        0.9930578610002971,
-        1.3499477403827778
+        0.3481356111478062,
+        0.9930577517471479,
+        1.3499471204640756
       ]
     },
     {
       "lod": 3,
       "vertices": 236,
-      "channels": 26,
+      "channels": 0,
+      "source_shape_channels": 26,
       "mixed_wrist_vertices": {
         "-1": 29,
         "1": 29
       },
       "pinned_root_vertices": 46,
-      "max_displacement_m": 0.06944865934493757,
+      "max_displacement_m": 0.06944865235918264,
       "edge_ratio_percentiles": [
-        0.3437558313896294,
-        0.9901768843614113,
-        1.3211095022610222
+        0.3437563727118233,
+        0.9901774000928947,
+        1.3211095677403226
       ]
     }
   ],
@@ -127,5 +131,8 @@
     }
   ],
   "hand_engine_verified": false,
-  "scope": "Final hand slot/morph payload, wrist weights, source fidelity and sampled native-animation deformation; engine hand-pose selection and weapon contact require game testing"
+  "scope": "Final body includes all four hand LODs with no runtime morph frames; source-only 26 shapes retained and checked; visibility and wrist effects require user game testing",
+  "render_mode": "body",
+  "engine_morph_channels": 0,
+  "source_shape_channels": 26
 }
