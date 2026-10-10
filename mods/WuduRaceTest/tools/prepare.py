@@ -33,6 +33,7 @@ for old in human.findall('skin'):
     skin.set('body_meta_mesh','wdr_canglan_body')
     for attr in ['body_meta_mesh_shoulders','body_meta_mesh_upperbody','legs_mesh','hands_mesh','face_meta_mesh','underwear_bottom_mesh','underwear_top_mesh']:
         skin.set(attr,'wdr_hidden')
+    skin.set('hands_mesh','wdr_canglan_hands')
     # Native reads hair_meshes/group_id before testing for a missing node.
     # Preserve container attributes and order; remove only variant entries.
     for node in list(skin):
@@ -92,7 +93,7 @@ for id,filename,type in [('soln_skins','skins.xml','skin'),('soln_action_sets','
     ET.SubElement(project,'file',id=id,name='ModuleData/'+filename,type=type)
 write(M/'ModuleData/project.mbproj',project)
 sub=ET.Element('Module')
-for name,value in [('Name','Wudu Canglan Race Test'),('Id','WuduRaceTest'),('Version','v0.2.0'),('DefaultModule','false'),('ModuleCategory','Singleplayer'),('ModuleType','Community'),('SingleplayerModule','true'),('MultiplayerModule','false')]:ET.SubElement(sub,name,value=value)
+for name,value in [('Name','Wudu Canglan Race Test'),('Id','WuduRaceTest'),('Version',cfg['version']),('DefaultModule','false'),('ModuleCategory','Singleplayer'),('ModuleType','Community'),('SingleplayerModule','true'),('MultiplayerModule','false')]:ET.SubElement(sub,name,value=value)
 deps=ET.SubElement(sub,'DependedModules')
 for dep in ['Native','SandBoxCore','Sandbox']:ET.SubElement(deps,'DependedModule',Id=dep)
 submodules=ET.SubElement(sub,'SubModules');observer=ET.SubElement(submodules,'SubModule')

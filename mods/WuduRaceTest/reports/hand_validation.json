@@ -1,0 +1,131 @@
+{
+  "status": "pass",
+  "version": "v0.2.1",
+  "final_package_sha256": "74267b8aff801cab448f1c37a1c91502b2a330417ac1fc1c70cd8fb0789a6215",
+  "baseline_source_and_height_unchanged": true,
+  "meshes": [
+    {
+      "lod": 0,
+      "vertices": 955,
+      "channels": 26,
+      "mixed_wrist_vertices": {
+        "-1": 67,
+        "1": 67
+      },
+      "pinned_root_vertices": 90,
+      "max_displacement_m": 0.06891259456530177,
+      "edge_ratio_percentiles": [
+        0.3792873822672967,
+        0.9989915976948823,
+        1.4455729018214085
+      ]
+    },
+    {
+      "lod": 1,
+      "vertices": 707,
+      "channels": 26,
+      "mixed_wrist_vertices": {
+        "-1": 63,
+        "1": 63
+      },
+      "pinned_root_vertices": 88,
+      "max_displacement_m": 0.0690012562345331,
+      "edge_ratio_percentiles": [
+        0.38312413916265736,
+        0.9988118653052975,
+        1.3681945282335428
+      ]
+    },
+    {
+      "lod": 2,
+      "vertices": 428,
+      "channels": 26,
+      "mixed_wrist_vertices": {
+        "-1": 43,
+        "1": 44
+      },
+      "pinned_root_vertices": 66,
+      "max_displacement_m": 0.06938310973503922,
+      "edge_ratio_percentiles": [
+        0.34813633046168657,
+        0.9930578610002971,
+        1.3499477403827778
+      ]
+    },
+    {
+      "lod": 3,
+      "vertices": 236,
+      "channels": 26,
+      "mixed_wrist_vertices": {
+        "-1": 29,
+        "1": 29
+      },
+      "pinned_root_vertices": 46,
+      "max_displacement_m": 0.06944865934493757,
+      "edge_ratio_percentiles": [
+        0.3437558313896294,
+        0.9901768843614113,
+        1.3211095022610222
+      ]
+    }
+  ],
+  "native_animation_samples": [
+    {
+      "animation": "run",
+      "frames": 25,
+      "hand_shapes_checked": [
+        0,
+        13,
+        25
+      ],
+      "max_right_wrist_local_angle_deg": 46.24731540313677,
+      "preview_frame": 23
+    },
+    {
+      "animation": "idle",
+      "frames": 16,
+      "hand_shapes_checked": [
+        0,
+        13,
+        25
+      ],
+      "max_right_wrist_local_angle_deg": 58.22448778376866,
+      "preview_frame": 1
+    },
+    {
+      "animation": "sword",
+      "frames": 16,
+      "hand_shapes_checked": [
+        0,
+        13,
+        25
+      ],
+      "max_right_wrist_local_angle_deg": 68.75902555899798,
+      "preview_frame": 207
+    },
+    {
+      "animation": "bow",
+      "frames": 16,
+      "hand_shapes_checked": [
+        0,
+        13,
+        25
+      ],
+      "max_right_wrist_local_angle_deg": 68.53488907207597,
+      "preview_frame": 184
+    },
+    {
+      "animation": "rider",
+      "frames": 16,
+      "hand_shapes_checked": [
+        0,
+        13,
+        25
+      ],
+      "max_right_wrist_local_angle_deg": 69.23292605458374,
+      "preview_frame": 4
+    }
+  ],
+  "hand_engine_verified": false,
+  "scope": "Final hand slot/morph payload, wrist weights, source fidelity and sampled native-animation deformation; engine hand-pose selection and weapon contact require game testing"
+}

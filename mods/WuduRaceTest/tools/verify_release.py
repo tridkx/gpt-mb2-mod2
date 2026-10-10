@@ -36,7 +36,7 @@ for lod in range(4):
         p=np.frombuffer(buf,'<f4',count*3,offset).reshape(-1,3);offset+=count*(3+3+4+2+2)*4+count*4
         bi=np.frombuffer(buf,'u1',count*4,offset).reshape(-1,4);offset+=count*4;bw=np.frombuffer(buf,'u1',count*4,offset).reshape(-1,4)
         assert np.array_equal(p,g['pos']) and np.array_equal(bi,g['bi']) and np.array_equal(bw,g['bw'])
-        if rec['part']=='body' and lod==0:
+        if rec['part'] in ['body','hands'] and lod==0:
             key=g['name'].split('.lod')[0]+'_p';err=float(cKDTree(source[key]).query(g['pos'])[0].max());maxerror=max(maxerror,err);assert err<1e-6
 assert len(allgroups)==56
 native_npc=ET.parse(str(GAME/'Modules/SandBoxCore/ModuleData/spnpccharacters.xml'))
@@ -50,7 +50,7 @@ before=native_npc.xpath("//NPCCharacter[not(@id='imperial_recruit')]");after=res
 assert len(before)==len(after) and all(ET.tostring(a)==ET.tostring(b) for a,b in zip(before,after))
 for path in M.rglob('*.xml'):ET.parse(str(path))
 skins=ET.parse(str(M/'ModuleData/skins.xml'));assert len(skins.xpath('//race'))==1 and len(skins.xpath('//skin'))==10
-assert all(s.get('skeleton')=='wdr_skeleton' and len(s.findall('deform_keys/deform_key'))==0 for s in skins.xpath('//skin'))
+assert all(s.get('skeleton')=='wdr_skeleton' and s.get('hands_mesh')=='wdr_canglan_hands' and len(s.findall('deform_keys/deform_key'))==0 for s in skins.xpath('//skin'))
 native_skins=ET.parse(str(GAME/'Modules/Native/ModuleData/skins.xml')).xpath("//race[@id='human']/skin")
 for skin,baseline in zip(skins.xpath('//skin'),native_skins):
     for tag in ['hair_meshes','beard_meshes']:
@@ -79,6 +79,6 @@ for frame in range(animation['start'],animation['frames']):
 np.savez_compressed(B/'run_preview.npz',**preview)
 game_files=[GAME/'Modules/Native/ModuleData/skins.xml',GAME/'Modules/Native/ModuleData/monsters.xml',GAME/'Modules/Native/ModuleData/action_sets.xml',GAME/'Modules/SandBoxCore/ModuleData/spnpccharacters.xml']
 report=dict(status='pass',version='v0.2.0',scope='offline structure/source fidelity/XML replacement; game appearance is pending',final_package_sha256=sha(PKG),runtime_dll_sha256=sha(M/'bin/Win64_Shipping_Client/WuduRaceTest.dll'),source_vertex_max_error_m=maxerror,source_height_m=json.loads((R/'reports/source_validation.json').read_text())['total_height_m'],custom_skeleton_bones=28,metameshes=2,mesh_groups=56,lods=4,lod_geometry_identical=False,cloth_enabled=True,intrinsic_armor_added=False,autoresolve_modified=False,other_troops_unchanged=len(before),predicted_run_frames=animation['frames']-animation['start'],game_verified=False,proportions_in_game_verified=False,native_file_hashes={str(p):sha(p) for p in game_files},known_limits=['fixed source face','cloth engine dynamics pending','native animation retargeting and IK unverified','no equipment armor','only imperial_recruit is replaced'])
-report.update(baseline_version='v0.1.2',baseline_package_sha256='1f88c350853ce9f9e898df8b80b8b50a0c95a91dc76ca10ef6ffdb171b0992e6',baseline_user_verified=['model loading','sword animation'],height_target_in_game_m=1.45,height_cause_fully_confirmed=False,cloth_validation_report='cloth_validation.json')
+report.update(version=cfg['version'],metameshes=3,baseline_version='v0.2.0',baseline_package_sha256='8698b3bd6a8767adb4aada6083a7c92e01ce1ff20511a6e624adc879faebb244',baseline_user_verified=['version usable','height at native adult chest'],height_target_in_game_m=1.45,height_parameters_unchanged=True,hand_morph_channels=26,cloth_validation_report='cloth_validation.json',hand_validation_report='hand_validation.json')
 (R/'reports/release_validation.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps(report,indent=2))

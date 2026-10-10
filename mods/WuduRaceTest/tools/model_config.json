@@ -1,5 +1,11 @@
 {
-  "version": "v0.2.0",
+  "version": "v0.2.1",
+  "hand_rig": {
+    "wrist_cm": [37.0, 2.5, 81.1],
+    "wrist_blend_m": [-0.025, 0.018],
+    "native_local_scale": [0.47, 0.50, 0.53],
+    "native_local_offset_m": [0.0, 0.013, 0.025]
+  },
   "target_mesh_height_m": 1.45,
   "original_height_cm": 136.85309748575673,
   "unit_scale": 0.010595302748999976,
@@ -13,6 +19,7 @@
     0,
     1
   ],
+  "skirt_root_extra_m": 0.004,
   "lod_ratios": [
     1,
     0.7,
@@ -27,7 +34,7 @@
     "wdr_part_11": "hair"
   },
   "cloth_max_distance_m": {
-    "cuff": 0.025,
+    "cuff": 0.033,
     "sleeve": 0.03,
     "skirt": 0.14,
     "hair": 0.03

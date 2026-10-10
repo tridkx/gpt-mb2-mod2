@@ -1,5 +1,5 @@
 """Cook only this race's cloth and write its skeleton-sized collision capsules."""
-import json,sys,subprocess,xml.etree.ElementTree as ET
+import json,sys,subprocess,shutil,xml.etree.ElementTree as ET
 from pathlib import Path
 import numpy as np
 R=Path(__file__).resolve().parents[1];WS=R.parents[1];B=R/'build';C=WS/'tools/cloth_compiler'
@@ -7,7 +7,11 @@ cfg=json.loads((R/'tools/model_config.json').read_text());K=cfg['unit_scale']/.0
 def run(args):subprocess.run([str(x) for x in args],check=True)
 for project,folder in [('NativeClothProbe','cloth_probe'),('ClothPatch','cloth_patch')]:
     run(['dotnet','build',C/(project+'.csproj'),'--ignore-failed-sources','-o',B/folder])
-inputs=B/'cloth_inputs';inputs.mkdir(exist_ok=True)
+inputs=B/'cloth_inputs'
+for folder in [inputs,B/'cooked_cloth']:
+    assert folder.resolve().parent==B.resolve()
+    if folder.exists():shutil.rmtree(folder)
+inputs.mkdir()
 # Each build has deterministic mesh GUIDs; no stale unrelated JSON inputs allowed.
 run(['dotnet',B/'cloth_probe/NativeClothProbe.dll',B/'uncooked.tpac','wdr_canglan_body','--dump-segments',inputs])
 expected={g['name'] for g in json.loads((B/'geometry.json').read_text()) if g['cloth']}
@@ -22,10 +26,11 @@ caps=[('torso_low',[0,0,.76],[0,0,.98],.065,'pelvis','spine1'),
       ('neck',[0,0,1.10],[0,0,1.16],.031,'spine2','neck'),
       ('head',[0,-.005,1.19],[0,-.005,1.27],.052,'head','head')]
 for side,sign in [('l',-1),('r',1)]:
+    wrist=np.array(cfg['hand_rig']['wrist_cm'])/100;wrist[0]*=sign
     caps.extend([(side+'_thigh',[sign*.075,0,.72],[sign*.09,0,.43],.055,side+'_thigh',side+'_thigh'),
                  (side+'_calf',[sign*.09,0,.40],[sign*.10,-.01,.11],.042,side+'_calf',side+'_calf'),
                  (side+'_upperarm',[sign*.14,0,1.055],[sign*.265,0,.94],.010,side+'_upperarm_twist',side+'_foretwist'),
-                 (side+'_forearm',[sign*.28,0,.92],[sign*.375,0,.83],.0095,side+'_foretwist',side+'_hand')])
+                 (side+'_forearm',[sign*.28,0,.92],wrist.tolist(),.0095,side+'_foretwist',side+'_hand')])
 root=ET.Element('bodies');body=ET.SubElement(root,'body',name='wdr_canglan_collision',owner_skeleton='wdr_skeleton');container=ET.SubElement(body,'capsules');report=[]
 for name,a,b,radius,ba,bb in caps:
     a=np.array(a)*K;b=np.array(b)*K;u=b-a;length=np.linalg.norm(u);u/=length

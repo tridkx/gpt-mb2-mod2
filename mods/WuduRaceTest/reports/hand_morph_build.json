@@ -1,0 +1,37 @@
+{
+  "version": "v0.2.1",
+  "native_template": "hands_female_a",
+  "channels": 26,
+  "meshes": [
+    {
+      "mesh": "wdr_part_04",
+      "lod": 0,
+      "vertices": 955,
+      "channels": 26,
+      "max_displacement_m": 0.06891259722667424
+    },
+    {
+      "mesh": "wdr_part_04.lod1",
+      "lod": 1,
+      "vertices": 707,
+      "channels": 26,
+      "max_displacement_m": 0.06900126189779549
+    },
+    {
+      "mesh": "wdr_part_04.lod2",
+      "lod": 2,
+      "vertices": 428,
+      "channels": 26,
+      "max_displacement_m": 0.06938308572900889
+    },
+    {
+      "mesh": "wdr_part_04.lod3",
+      "lod": 3,
+      "vertices": 236,
+      "channels": 26,
+      "max_displacement_m": 0.06944867448380841
+    }
+  ],
+  "method": "Local anatomical scale and nearest-surface displacement transfer with pinned wrist",
+  "game_verified": false
+}

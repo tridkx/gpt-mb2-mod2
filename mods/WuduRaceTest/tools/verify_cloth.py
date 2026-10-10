@@ -1,5 +1,5 @@
 """Read final native cloth bytes; check roots, mappings, constraints and collision fit."""
-import json,sys,subprocess,hashlib
+import json,sys,subprocess,hashlib,shutil
 from pathlib import Path
 import numpy as np
 from scipy.sparse import coo_matrix
@@ -11,7 +11,9 @@ from cloth_compiler.cloth_payload import read,write,decode_positions
 from cloth_compiler.validation import check_structure
 from baker.skeleton import parse_skeljson
 from baker.animation import parse_animjson,q2R,lbs
-out=B/'cloth_final';out.mkdir(exist_ok=True)
+out=B/'cloth_final';assert out.resolve().parent==B.resolve()
+if out.exists():shutil.rmtree(out)
+out.mkdir()
 pkg=R/'module/WuduRaceTest/AssetPackages/wdr.tpac'
 data=json.loads(subprocess.check_output(['dotnet',str(B/'cloth_probe/NativeClothProbe.dll'),str(pkg),'wdr_canglan_body','--dump-segments',str(out)],encoding='utf-8'))
 assert data[0]['body']=='wdr_canglan_collision'
@@ -81,6 +83,7 @@ for label,anim,frames in poses:
             world[i]=local if parent<0 else world[parent]@local
     np.savez_compressed(B/(label+'_worst_preview.npz'),**{g['name']:lbs(g['pos'],g['bi'],g['bw'],world@inverse) for g in render_groups})
     diagnostics.append(dict(pose=label,frames=len(frames),preview_frame=int(worst_frame),max_reference_capsule_overlap_m=maximum,max_travel_shortfall_m=max_conflict,finite=True,worst_by_mesh=worst))
+print('CAPSULE_TRAVEL_SCREEN',[(d['pose'],d['max_travel_shortfall_m'],max(d['worst_by_mesh'].items(),key=lambda item:item[1]['shortfall_m'])) for d in diagnostics])
 assert max(d['max_travel_shortfall_m'] for d in diagnostics)<=.002, 'Collision and cloth travel conflict exceeds 2 mm screening tolerance'
 report=dict(status='pass',travel_shortfall_tolerance_m=.002,final_package_sha256=hashlib.sha256(pkg.read_bytes()).hexdigest(),cooked_meshes=rows,pose_diagnostics=diagnostics,cloth_engine_verified=False,scope='Final payload structure and sampled native-animation capsule/travel screening; overlaps are skinning-reference measurements before the engine cloth solver')
 (R/'reports/cloth_validation.json').write_text(json.dumps(report,indent=2))

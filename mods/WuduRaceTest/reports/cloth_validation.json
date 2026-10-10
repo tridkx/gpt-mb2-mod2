@@ -1,8 +1,92 @@
 {
   "status": "pass",
   "travel_shortfall_tolerance_m": 0.002,
-  "final_package_sha256": "8698b3bd6a8767adb4aada6083a7c92e01ce1ff20511a6e624adc879faebb244",
+  "final_package_sha256": "74267b8aff801cab448f1c37a1c91502b2a330417ac1fc1c70cd8fb0789a6215",
   "cooked_meshes": [
+    {
+      "mesh": "wdr_part_07",
+      "lod": 0,
+      "render_vertices": 6186,
+      "simulation_vertices": 1386,
+      "active_positions": 245,
+      "fixed_positions": 1141,
+      "stretch_constraints": 740,
+      "bend_constraints": 686,
+      "root_fixes": [],
+      "sha256": "12c2eea8d0d66ca1f4fea47bb130cc6a744b159162ffc995d488bcf11fa63aa1"
+    },
+    {
+      "mesh": "wdr_part_07.lod1",
+      "lod": 1,
+      "render_vertices": 4329,
+      "simulation_vertices": 1072,
+      "active_positions": 188,
+      "fixed_positions": 884,
+      "stretch_constraints": 550,
+      "bend_constraints": 466,
+      "root_fixes": [],
+      "sha256": "0dee416794b81e19196303558bbd4cc1e53c46ac10b96682ce1877bc6d7fae35"
+    },
+    {
+      "mesh": "wdr_part_11",
+      "lod": 0,
+      "render_vertices": 17745,
+      "simulation_vertices": 3850,
+      "active_positions": 437,
+      "fixed_positions": 3413,
+      "stretch_constraints": 1176,
+      "bend_constraints": 1013,
+      "root_fixes": [],
+      "sha256": "9ca759c913b1e8b39d0d8eab9eb47556da361edf0b90eb1fe76dd311a1d4c125"
+    },
+    {
+      "mesh": "wdr_part_08.lod1",
+      "lod": 1,
+      "render_vertices": 1929,
+      "simulation_vertices": 473,
+      "active_positions": 200,
+      "fixed_positions": 273,
+      "stretch_constraints": 569,
+      "bend_constraints": 518,
+      "root_fixes": [],
+      "sha256": "d7e124391c73c9f09112ecfe807a9fd6fe34e48344d041d4c24685f4780767bb"
+    },
+    {
+      "mesh": "wdr_part_02",
+      "lod": 0,
+      "render_vertices": 1848,
+      "simulation_vertices": 376,
+      "active_positions": 248,
+      "fixed_positions": 128,
+      "stretch_constraints": 738,
+      "bend_constraints": 686,
+      "root_fixes": [],
+      "sha256": "505c3a5ffbb33735367a4068664237d220eac9a5f842bc17373fd0b6943050c3"
+    },
+    {
+      "mesh": "wdr_part_08",
+      "lod": 0,
+      "render_vertices": 2757,
+      "simulation_vertices": 617,
+      "active_positions": 289,
+      "fixed_positions": 328,
+      "stretch_constraints": 836,
+      "bend_constraints": 797,
+      "root_fixes": [],
+      "sha256": "49e9a7c8f021b0f8080ed2d3a8772e1e88976edf4c45d28caaa24a2bf7e5a0a4"
+    },
+    {
+      "mesh": "wdr_part_02.lod1",
+      "lod": 1,
+      "render_vertices": 1290,
+      "simulation_vertices": 314,
+      "active_positions": 194,
+      "fixed_positions": 120,
+      "stretch_constraints": 532,
+      "bend_constraints": 422,
+      "root_fixes": [],
+      "sha256": "14ac8049e1ce017c8d09212a4061f41934d9a87b67ca79a958c0cb24ae0491fb"
+    },
     {
       "mesh": "wdr_part_11.lod1",
       "lod": 1,
@@ -38,18 +122,6 @@
       "sha256": "fb3fe241e275eade6012e6940d91d7f602b8eb4c17222d992461babf598e8016"
     },
     {
-      "mesh": "wdr_part_11",
-      "lod": 0,
-      "render_vertices": 17745,
-      "simulation_vertices": 3850,
-      "active_positions": 437,
-      "fixed_positions": 3413,
-      "stretch_constraints": 1176,
-      "bend_constraints": 1013,
-      "root_fixes": [],
-      "sha256": "9ca759c913b1e8b39d0d8eab9eb47556da361edf0b90eb1fe76dd311a1d4c125"
-    },
-    {
       "mesh": "wdr_part_10",
       "lod": 0,
       "render_vertices": 5709,
@@ -60,78 +132,6 @@
       "bend_constraints": 1800,
       "root_fixes": [],
       "sha256": "168e74ff516b7b1d8304c299eadd0ea48ff5f64b7454529e9be36ed02a957242"
-    },
-    {
-      "mesh": "wdr_part_08.lod1",
-      "lod": 1,
-      "render_vertices": 1929,
-      "simulation_vertices": 473,
-      "active_positions": 200,
-      "fixed_positions": 273,
-      "stretch_constraints": 569,
-      "bend_constraints": 518,
-      "root_fixes": [],
-      "sha256": "6610e9d81c32b639ba09ffe8872ee378f62ad323656e46fd757fd982eac14dc6"
-    },
-    {
-      "mesh": "wdr_part_07.lod1",
-      "lod": 1,
-      "render_vertices": 4329,
-      "simulation_vertices": 1072,
-      "active_positions": 188,
-      "fixed_positions": 884,
-      "stretch_constraints": 550,
-      "bend_constraints": 466,
-      "root_fixes": [],
-      "sha256": "1aeec7b08b11869895c7fb8d7458f2f7a24c1e330499431875a20100a272aa4b"
-    },
-    {
-      "mesh": "wdr_part_02",
-      "lod": 0,
-      "render_vertices": 1848,
-      "simulation_vertices": 376,
-      "active_positions": 246,
-      "fixed_positions": 130,
-      "stretch_constraints": 732,
-      "bend_constraints": 684,
-      "root_fixes": [],
-      "sha256": "2df6e667d486aa32deea8dca19bebaebe46de226d6078e8747dbdc1adbc7c2e9"
-    },
-    {
-      "mesh": "wdr_part_08",
-      "lod": 0,
-      "render_vertices": 2757,
-      "simulation_vertices": 617,
-      "active_positions": 288,
-      "fixed_positions": 329,
-      "stretch_constraints": 834,
-      "bend_constraints": 796,
-      "root_fixes": [],
-      "sha256": "4d57b612b71a7f5cd0b191183d7f0b2abf3db71f3d5740cb9eefee7f43b6394c"
-    },
-    {
-      "mesh": "wdr_part_07",
-      "lod": 0,
-      "render_vertices": 6186,
-      "simulation_vertices": 1386,
-      "active_positions": 245,
-      "fixed_positions": 1141,
-      "stretch_constraints": 740,
-      "bend_constraints": 686,
-      "root_fixes": [],
-      "sha256": "c2221dbba0ffc15586c563cf9d5837f2bd1637fee562dbf69539432f84efdd7e"
-    },
-    {
-      "mesh": "wdr_part_02.lod1",
-      "lod": 1,
-      "render_vertices": 1290,
-      "simulation_vertices": 314,
-      "active_positions": 192,
-      "fixed_positions": 122,
-      "stretch_constraints": 526,
-      "bend_constraints": 420,
-      "root_fixes": [],
-      "sha256": "d619439fe7c0ce89fa6823d88acc6a04b1b75320bacf4d595b79d60703e4fcf4"
     },
     {
       "mesh": "wdr_part_10.lod1",
@@ -177,23 +177,23 @@
       "max_travel_shortfall_m": 0,
       "finite": true,
       "worst_by_mesh": {
+        "wdr_part_07": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.00046848434889857835,
+          "worst_capsule": ""
+        },
         "wdr_part_11": {
           "shortfall_m": 0.0,
           "frame": 0,
           "overlap_m": 0.004194539428886264,
           "worst_capsule": ""
         },
-        "wdr_part_10": {
-          "shortfall_m": 0.0,
-          "frame": 0,
-          "overlap_m": 0.011286911311852214,
-          "worst_capsule": ""
-        },
         "wdr_part_02": {
           "shortfall_m": 0.0,
           "frame": 0,
-          "overlap_m": 0.00790770248017452,
-          "worst_capsule": "l_forearm"
+          "overlap_m": 0.008761004793889346,
+          "worst_capsule": ""
         },
         "wdr_part_08": {
           "shortfall_m": 0.0,
@@ -201,10 +201,10 @@
           "overlap_m": 0.013975094294364554,
           "worst_capsule": ""
         },
-        "wdr_part_07": {
+        "wdr_part_10": {
           "shortfall_m": 0.0,
           "frame": 0,
-          "overlap_m": 0.002901164321843062,
+          "overlap_m": 0.011286911311852214,
           "worst_capsule": ""
         }
       }
@@ -212,39 +212,39 @@
     {
       "pose": "run",
       "frames": 25,
-      "preview_frame": 8,
+      "preview_frame": 1,
       "max_reference_capsule_overlap_m": 0.05695208447937613,
-      "max_travel_shortfall_m": 0.00032365489530484723,
+      "max_travel_shortfall_m": 0,
       "finite": true,
       "worst_by_mesh": {
+        "wdr_part_07": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.004997622305646592,
+          "worst_capsule": ""
+        },
         "wdr_part_11": {
           "shortfall_m": 0.0,
           "frame": 1,
           "overlap_m": 0.004194527833658035,
           "worst_capsule": ""
         },
+        "wdr_part_02": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.00876100291169685,
+          "worst_capsule": ""
+        },
+        "wdr_part_08": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.04943914756023521,
+          "worst_capsule": ""
+        },
         "wdr_part_10": {
           "shortfall_m": 0.0,
           "frame": 1,
           "overlap_m": 0.0212976483639305,
-          "worst_capsule": ""
-        },
-        "wdr_part_02": {
-          "shortfall_m": 0.0,
-          "frame": 1,
-          "overlap_m": 0.008910515979250341,
-          "worst_capsule": ""
-        },
-        "wdr_part_08": {
-          "shortfall_m": 0.00032365489530484723,
-          "frame": 8,
-          "overlap_m": 0.047090852736987036,
-          "worst_capsule": "l_forearm"
-        },
-        "wdr_part_07": {
-          "shortfall_m": 0.0,
-          "frame": 1,
-          "overlap_m": 0.004888790812848676,
           "worst_capsule": ""
         }
       }
@@ -257,23 +257,23 @@
       "max_travel_shortfall_m": 0,
       "finite": true,
       "worst_by_mesh": {
+        "wdr_part_07": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.000592486267532678,
+          "worst_capsule": ""
+        },
         "wdr_part_11": {
           "shortfall_m": 0.0,
           "frame": 1,
           "overlap_m": 0.004194527833658028,
           "worst_capsule": ""
         },
-        "wdr_part_10": {
-          "shortfall_m": 0.0,
-          "frame": 1,
-          "overlap_m": 0.02003509331177536,
-          "worst_capsule": ""
-        },
         "wdr_part_02": {
           "shortfall_m": 0.0,
           "frame": 1,
-          "overlap_m": 0.00846987249966668,
-          "worst_capsule": "r_forearm"
+          "overlap_m": 0.008761005813010066,
+          "worst_capsule": ""
         },
         "wdr_part_08": {
           "shortfall_m": 0.0,
@@ -281,10 +281,10 @@
           "overlap_m": 0.02500845400130602,
           "worst_capsule": ""
         },
-        "wdr_part_07": {
+        "wdr_part_10": {
           "shortfall_m": 0.0,
           "frame": 1,
-          "overlap_m": 0.003564942613302891,
+          "overlap_m": 0.02003509331177536,
           "worst_capsule": ""
         }
       }
@@ -297,23 +297,23 @@
       "max_travel_shortfall_m": 0,
       "finite": true,
       "worst_by_mesh": {
+        "wdr_part_07": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0024869139450839958,
+          "worst_capsule": ""
+        },
         "wdr_part_11": {
           "shortfall_m": 0.0,
           "frame": 1,
           "overlap_m": 0.004194527833657993,
           "worst_capsule": ""
         },
-        "wdr_part_10": {
-          "shortfall_m": 0.0,
-          "frame": 1,
-          "overlap_m": 0.018422554782058488,
-          "worst_capsule": ""
-        },
         "wdr_part_02": {
           "shortfall_m": 0.0,
           "frame": 1,
-          "overlap_m": 0.00856416823774477,
-          "worst_capsule": "l_forearm"
+          "overlap_m": 0.006128756281343494,
+          "worst_capsule": ""
         },
         "wdr_part_08": {
           "shortfall_m": 0.0,
@@ -321,10 +321,10 @@
           "overlap_m": 0.05365170851803469,
           "worst_capsule": ""
         },
-        "wdr_part_07": {
+        "wdr_part_10": {
           "shortfall_m": 0.0,
           "frame": 1,
-          "overlap_m": 0.002940168735608999,
+          "overlap_m": 0.018422554782058488,
           "worst_capsule": ""
         }
       }
@@ -337,22 +337,22 @@
       "max_travel_shortfall_m": 0,
       "finite": true,
       "worst_by_mesh": {
+        "wdr_part_07": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.003477905274111545,
+          "worst_capsule": "r_upperarm"
+        },
         "wdr_part_11": {
           "shortfall_m": 0.0,
           "frame": 1,
           "overlap_m": 0.004194527833658014,
           "worst_capsule": ""
         },
-        "wdr_part_10": {
-          "shortfall_m": 0.0,
-          "frame": 1,
-          "overlap_m": 0.015202470411255609,
-          "worst_capsule": ""
-        },
         "wdr_part_02": {
           "shortfall_m": 0.0,
           "frame": 1,
-          "overlap_m": 0.008219748198798341,
+          "overlap_m": 0.008564883289171096,
           "worst_capsule": ""
         },
         "wdr_part_08": {
@@ -361,11 +361,11 @@
           "overlap_m": 0.056074826138705194,
           "worst_capsule": ""
         },
-        "wdr_part_07": {
+        "wdr_part_10": {
           "shortfall_m": 0.0,
           "frame": 1,
-          "overlap_m": 0.0035356179574398145,
-          "worst_capsule": "r_upperarm"
+          "overlap_m": 0.015202470411255609,
+          "worst_capsule": ""
         }
       }
     },
@@ -377,22 +377,22 @@
       "max_travel_shortfall_m": 0.001757652167013033,
       "finite": true,
       "worst_by_mesh": {
+        "wdr_part_07": {
+          "shortfall_m": 0.001757652167013033,
+          "frame": 310,
+          "overlap_m": 0.005679220794464013,
+          "worst_capsule": "r_upperarm"
+        },
         "wdr_part_11": {
           "shortfall_m": 0.0,
           "frame": 1,
           "overlap_m": 0.004194527833658035,
           "worst_capsule": ""
         },
-        "wdr_part_10": {
-          "shortfall_m": 0.0016504543231023808,
-          "frame": 42,
-          "overlap_m": 0.033023003342710223,
-          "worst_capsule": "torso_high"
-        },
         "wdr_part_02": {
           "shortfall_m": 0.0,
           "frame": 1,
-          "overlap_m": 0.009534061495122176,
+          "overlap_m": 0.00871058715515815,
           "worst_capsule": ""
         },
         "wdr_part_08": {
@@ -401,11 +401,11 @@
           "overlap_m": 0.0534003095323296,
           "worst_capsule": ""
         },
-        "wdr_part_07": {
-          "shortfall_m": 0.001757652167013033,
-          "frame": 310,
-          "overlap_m": 0.005679220794464013,
-          "worst_capsule": "r_upperarm"
+        "wdr_part_10": {
+          "shortfall_m": 0.0016504543231023808,
+          "frame": 42,
+          "overlap_m": 0.033023003342710223,
+          "worst_capsule": "torso_high"
         }
       }
     }

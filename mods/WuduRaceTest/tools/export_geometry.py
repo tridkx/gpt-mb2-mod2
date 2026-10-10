@@ -43,7 +43,8 @@ for row in json.loads((R/'build/rig_manifest.json').read_text()):
                 face.append(dedup[key])
             faces.append(face)
         p=np.array([v[0] for v in records]);normal=np.array([v[1] for v in records]);uvs=np.array([v[2] for v in records]);f=np.array(faces)
-        save(row['object'],p,normal,uvs,[v[3] for v in records],[v[4] for v in records],f,row['material'],'body',lod,np.array([v[5] for v in records]))
+        part='hands' if row['object']=='wdr_part_04' else 'body'
+        save(row['object'],p,normal,uvs,[v[3] for v in records],[v[4] for v in records],f,row['material'],part,lod,np.array([v[5] for v in records]))
         bpy.data.objects.remove(ob,do_unlink=True)
 # Submillimetre internal triangles replace generated head/hands/feet/underwear.
 # Source head and hair are already part of the complete body mesh.

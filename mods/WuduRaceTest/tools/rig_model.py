@@ -14,6 +14,8 @@ names=[name+'_'+str(i) for i,name in enumerate(native['names'])]
 # They affect skinning only: every source vertex is kept at its original ratio.
 landmarks={0:[0,0,75],1:[-7.5,0,75],2:[-9,0,41],3:[-10,-1,7],4:[-10,6,1],5:[7.5,0,75],6:[9,0,41],7:[10,-1,7],8:[10,6,1],9:[0,0,85],10:[0,0,97],11:[0,0,106],12:[0,0,114],13:[0,0,121],14:[-4,0,109],15:[-13,0,107],17:[-27,0,92],19:[-38,0,82],20:[-42,0,77],21:[4,0,109],22:[13,0,107],24:[27,0,92],26:[38,0,82],27:[42,0,77]}
 S=np.zeros((n,3))
+for i,sign in [(19,-1),(26,1)]:
+    wrist=np.array(cfg['hand_rig']['wrist_cm']);wrist[0]*=sign;landmarks[i]=wrist.tolist()
 for i,p in landmarks.items():S[i]=np.array(p)*U
 for i,a,b in [(16,15,17),(18,17,19),(23,22,24),(25,24,26)]:S[i]=(S[a]+S[b])/2
 world=native['restWorld'].copy();world[:,:3,3]=S
@@ -39,7 +41,11 @@ def weights(p,head=False,allow_arms=True,hands=False):
     if head:
         w=np.zeros((len(p),n));w[:,13]=1;return w
     if hands:
-        w=np.zeros((len(p),n));w[p[:,0]<0,19]=1;w[p[:,0]>=0,26]=1;return w
+        w=np.zeros((len(p),n))
+        for sign,hand,twist in [(-1,19,18),(1,26,25)]:
+            ix=np.where(p[:,0]*sign>=0)[0];u=(p[ix]-S[hand]/K)@world[hand,:3,0]
+            h=smooth(*cfg['hand_rig']['wrist_blend_m'],u);w[ix,hand]=h;w[ix,twist]=1-h
+        return w
     w=near(p,[0,9,10,11,12]);lo=1-smooth(.72,.84,p[:,2]);side=smooth(-.025,.025,p[:,0])
     legs=near(p,[0,1,2,3])*(1-side[:,None])+near(p,[0,5,6,7])*side[:,None]
     w=w*(1-lo[:,None])+legs*lo[:,None]
@@ -48,6 +54,13 @@ def weights(p,head=False,allow_arms=True,hands=False):
             ix=np.where(p[:,0]*sign>=0)[0];q=p[ix];a=smooth(.08,.16,abs(q[:,0]))*smooth(.68,.74,q[:,2])
             w[ix]=w[ix]*(1-a[:,None])+near(q,ids)*a[:,None]
     h=smooth(1.12,1.18,p[:,2]);w*=1-h[:,None];w[:,13]+=h
+    if allow_arms:
+        for sign,fore,twist,hand in [(-1,17,18,19),(1,24,25,26)]:
+            ix=np.where((p[:,0]*sign>.29)&(p[:,2]>.76))[0];q=p[ix]-S[hand]/K
+            u=q@world[hand,:3,0];distance=np.linalg.norm(q-u[:,None]*world[hand,:3,0],axis=1)
+            blend=smooth(-.13,-.075,u)*(1-smooth(.045,.075,distance));h=smooth(*cfg['hand_rig']['wrist_blend_m'],u);t=smooth(-.105,-.030,u)
+            refined=np.zeros((len(ix),n));refined[:,fore]=(1-h)*(1-t);refined[:,twist]=(1-h)*t;refined[:,hand]=h
+            w[ix]=w[ix]*(1-blend[:,None])+refined*blend[:,None]
     ix=np.argsort(-w,axis=1)[:,:4];mask=np.zeros_like(w);np.put_along_axis(mask,ix,1,1);w*=mask
     return w/w.sum(1,keepdims=True)
 bpy.ops.wm.read_factory_settings(use_empty=True)
@@ -64,6 +77,8 @@ for row in parts:
         group=ob.vertex_groups.new(name=name)
         for vi in np.where(w[:,i]>0)[0]:group.add([int(vi)],float(w[vi,i]),'REPLACE')
     index=len(manifest);ob.name=f'wdr_part_{index:02d}'
+    if ob.name=='wdr_part_04':
+        for face in ob.data.polygons:face.use_smooth=True
     manifest.append(dict(object=ob.name,source_object=row['name'],texture=row['tex']+'.png',material='wdr_mat_'+row['tex'],cutout=row['alpha']))
     arrays[ob.name+'_p']=p;maxerr=max(maxerr,float(abs(p-raw*np.array(cfg['orientation'])*U).max()))
 # Component-aware cloth distances: fixed garment roots, mobile hanging ends.
@@ -103,6 +118,7 @@ for row in manifest:
         # Ensure each selected component has an explicit root before cooking.
         travel[z>=z.max()-.008]=0
         alpha[ids]=travel*cfg['cloth_max_distance_m'][kind]
+        if kind=='skirt':alpha[ids]+=cfg['skirt_root_extra_m']*smooth(0,.04,travel)*(1-smooth(.10,.20,travel))
     layer=me.color_attributes.new(name='ClothDistance',type='FLOAT_COLOR',domain='POINT')
     for i,a in enumerate(alpha):layer.data[i].color=(1,1,1,float(a))
     cloth_rows.append(dict(object=ob.name,kind=kind,active=int(np.sum(alpha>0)),fixed=int(np.sum(alpha==0)),max_distance_m=float(alpha.max())))
