@@ -10,7 +10,7 @@ from georead import read_geo
 rig=parse_skeljson(json.loads((R/'reports/final_skeleton.json').read_text()));inverse=np.linalg.inv(rig['restWorld'])
 groups=[g for path in (B/'final_export0/geo').glob('*.bin') for g in read_geo(path) if g['name'].startswith('wdr_part_')]
 rows=[]
-for label in ['inventory_idle']:
+for label in ['inventory_idle','facegen_male','facegen_female']:
     anim=parse_animjson(json.loads((R/'reports'/(label+'.json')).read_text()));samples=[]
     for frame in sorted(set(np.linspace(anim['start'],anim['frames']-1,24).astype(int))):
         world=rig['restWorld'].copy()
@@ -26,6 +26,7 @@ for label in ['inventory_idle']:
         samples.append(dict(frame=int(frame),wrists_torso_bind_m=local_wrists))
         if frame==anim['start']:np.savez_compressed(B/(label+'_preview.npz'),**points)
     rows.append(dict(pose=label,frames=len(samples),samples=samples))
-report=dict(status='pass',scope='Final skeleton skinning; no engine cloth or IK simulation',poses=rows,game_verified=False)
+cfg=json.loads((R/'tools/model_config.json').read_text())
+report=dict(status='pass',version=cfg['version'],scope='Final skeleton skinning for inventory and native male/female facegen references; selected facegen idle uses inventory_idle. No engine channel blending, cloth or IK simulation',poses=rows,selected_facegen_idle='inventory_idle',game_verified=False)
 (R/'reports/inventory_validation.json').write_text(json.dumps(report,indent=2)+'\n')
 print('INVENTORY_POSES',[(r['pose'],r['samples'][0]['wrists_torso_bind_m']) for r in rows])

@@ -54,10 +54,12 @@ assert len(before)==len(after) and all(ET.tostring(a)==ET.tostring(b) for a,b in
 for path in M.rglob('*.xml'):ET.parse(str(path))
 actions=ET.parse(str(M/'ModuleData/action_sets.xml'))
 for female in [False,True]:
-    for suffix in ['_warrior','_villager']:
+    for suffix in ['_warrior','_villager','_facegen']:
         name='as_wdr_canglan'+('_female' if female else '')+suffix
         nodes=actions.xpath("//action_set[@id=$name]",name=name)
         assert len(nodes)==1 and nodes[0].get('skeleton')=='wdr_skeleton', 'Action sets are derived from the race ID'
+        if suffix=='_facegen':
+            assert {x.get('type'):x.get('animation') for x in nodes[0].findall('action')}=={'act_inventory_idle_start':'inventory_idle_start','act_inventory_idle':'inventory_idle'}
 skins=ET.parse(str(M/'ModuleData/skins.xml'));assert len(skins.xpath('//race'))==1 and len(skins.xpath('//skin'))==10
 integrated=cfg.get('hands_render_mode')=='body'
 assert all(s.get('skeleton')=='wdr_skeleton' and s.get('hands_mesh')==('wdr_hidden' if integrated else 'wdr_canglan_hands') and s.get('uses_stitching')==('false' if integrated else 'true') and len(s.findall('deform_keys/deform_key'))==0 for s in skins.xpath('//skin'))
@@ -71,9 +73,14 @@ for skin,baseline in zip(skins.xpath('//skin'),native_skins):
 
 for k,v in json.loads((R/'reports/input_hashes.json').read_text()).items():assert sha(R/k)==v
 origfolder=Path('D:/dsh-tiandao/五毒少女校服8套/01苍蓝流苏')
+upstream_changes=[]
 for p in (R/'input').iterdir():
-    if p.is_file() and p.name!='.gitkeep':assert sha(p)==sha(origfolder/p.name)
-for p in (R/'tex').glob('*.png'):assert sha(p)==sha(origfolder/'tex'/p.name)
+    if p.is_file() and p.name!='.gitkeep':
+        upstream=origfolder/p.name;assert upstream.exists()
+        if sha(p)!=sha(upstream):upstream_changes.append(dict(snapshot=str(p.relative_to(R)),snapshot_sha256=sha(p),current_upstream_sha256=sha(upstream)))
+for p in (R/'tex').glob('*.png'):
+    upstream=origfolder/'tex'/p.name;assert upstream.exists()
+    if sha(p)!=sha(upstream):upstream_changes.append(dict(snapshot=str(p.relative_to(R)),snapshot_sha256=sha(p),current_upstream_sha256=sha(upstream)))
 # Offline prediction checks arithmetic only; native retargeting/IK are not emulated.
 animation=parse_animjson(json.loads((R/'reports/run.json').read_text()));assert animation['boneCount']==28 and animation['have'].all()
 selected=[g for g in allgroups if g['lod']==0 and g['name'].startswith('wdr_part_')];preview={};inverse=np.linalg.inv(rig['restWorld'])
@@ -90,5 +97,6 @@ np.savez_compressed(B/'run_preview.npz',**preview)
 game_files=[GAME/'Modules/Native/ModuleData/skins.xml',GAME/'Modules/Native/ModuleData/monsters.xml',GAME/'Modules/Native/ModuleData/action_sets.xml',GAME/'Modules/SandBoxCore/ModuleData/spnpccharacters.xml']
 report=dict(status='pass',version='v0.2.0',scope='offline structure/source fidelity/XML replacement; game appearance is pending',final_package_sha256=sha(PKG),runtime_dll_sha256=sha(M/'bin/Win64_Shipping_Client/WuduRaceTest.dll'),source_vertex_max_error_m=maxerror,source_height_m=json.loads((R/'reports/source_validation.json').read_text())['total_height_m'],custom_skeleton_bones=28,metameshes=2,mesh_groups=56,lods=4,lod_geometry_identical=False,cloth_enabled=True,intrinsic_armor_added=False,autoresolve_modified=False,other_troops_unchanged=len(before),predicted_run_frames=animation['frames']-animation['start'],game_verified=False,proportions_in_game_verified=False,native_file_hashes={str(p):sha(p) for p in game_files},known_limits=['fixed source face','cloth engine dynamics pending','native animation retargeting and IK unverified','no equipment armor','only imperial_recruit is replaced'])
 report.update(version=cfg['version'],metameshes=2 if integrated else 3,baseline_version='v0.2.0',baseline_package_sha256='8698b3bd6a8767adb4aada6083a7c92e01ce1ff20511a6e624adc879faebb244',baseline_user_verified=['version usable','height at native adult chest'],height_target_in_game_m=1.45,height_parameters_unchanged=True,hand_render_mode=cfg.get('hands_render_mode','independent'),hand_morph_channels=0 if integrated else 26,source_hand_shape_channels=26,cloth_validation_report='cloth_validation.json',hand_validation_report='hand_validation.json')
+report.update(input_snapshot_hashes_verified=True,upstream_changes_since_snapshot=upstream_changes)
 (R/'reports/release_validation.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps(report,indent=2))

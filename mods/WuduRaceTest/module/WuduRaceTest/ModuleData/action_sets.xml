@@ -4,4 +4,12 @@
   <action_set id="as_wdr_canglan_female_warrior" skeleton="wdr_skeleton" movement_system="bipedal" base_set="as_human_female_warrior" />
   <action_set id="as_wdr_canglan_villager" skeleton="wdr_skeleton" movement_system="bipedal" base_set="as_human_villager" />
   <action_set id="as_wdr_canglan_female_villager" skeleton="wdr_skeleton" movement_system="bipedal" base_set="as_human_female_villager" />
+  <action_set id="as_wdr_canglan_facegen" skeleton="wdr_skeleton" movement_system="bipedal" base_set="as_human_facegen">
+    <action type="act_inventory_idle_start" animation="inventory_idle_start" />
+    <action type="act_inventory_idle" animation="inventory_idle" />
+  </action_set>
+  <action_set id="as_wdr_canglan_female_facegen" skeleton="wdr_skeleton" movement_system="bipedal" base_set="as_human_female_facegen">
+    <action type="act_inventory_idle_start" animation="inventory_idle_start" />
+    <action type="act_inventory_idle" animation="inventory_idle" />
+  </action_set>
 </action_sets>

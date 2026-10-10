@@ -1,9 +1,9 @@
 {
   "status": "pass",
-  "version": "v0.2.5",
+  "version": "v0.2.6",
   "scope": "offline structure/source fidelity/XML replacement; game appearance is pending",
   "final_package_sha256": "b76b79aa1117b0711d83c52c394254e6641cd432d540fa233d74c0531219e2b9",
-  "runtime_dll_sha256": "2a2c23c3310c20e80d64f34f4440ca198efaf52b78cf42ba0c8de8aae56006c3",
+  "runtime_dll_sha256": "50599bd5d904fc479213e23861d3ca4c9ee08befd5919a8faa6ff10834ab27b0",
   "source_vertex_max_error_m": 5.972363618217064e-08,
   "source_height_m": 1.45,
   "custom_skeleton_bones": 28,
@@ -43,5 +43,38 @@
   "hand_morph_channels": 0,
   "source_hand_shape_channels": 26,
   "cloth_validation_report": "cloth_validation.json",
-  "hand_validation_report": "hand_validation.json"
+  "hand_validation_report": "hand_validation.json",
+  "input_snapshot_hashes_verified": true,
+  "upstream_changes_since_snapshot": [
+    {
+      "snapshot": "input\\model.fbx",
+      "snapshot_sha256": "5e8b435306ece6e8214f9b8b4074db47664464d97bf211a35a19e644cb97a0c2",
+      "current_upstream_sha256": "c0c2f119937ea49a74e099a205d9e4795803179f05c76a0503bc6ab582d33c48"
+    },
+    {
+      "snapshot": "input\\model.mtl",
+      "snapshot_sha256": "67ae4bced9975e669a271cf75f54f7d261d5e06f996c4d5f70516a2ad56fc4de",
+      "current_upstream_sha256": "febc3373e43aaa9c7216fdfdfe71d6db93887f58b2ac5548285835027c051853"
+    },
+    {
+      "snapshot": "input\\model.obj",
+      "snapshot_sha256": "28383c330e8e7c051ab61f636dfe65bfe08d7125cc2e9fde2013feaa2b75932c",
+      "current_upstream_sha256": "363970adf507991e151cc275c82f4fb5be874f1f2f15aa2f6f14ad965362f02a"
+    },
+    {
+      "snapshot": "input\\parts.json",
+      "snapshot_sha256": "7cedd656e9b4bb65424d8296c523b203e9934b1cc27079dc956fd99f633a4128",
+      "current_upstream_sha256": "27c90120d8adc23279a099db43388977c8c1dac3a56f6a581fa8d0d17aaa0896"
+    },
+    {
+      "snapshot": "input\\repair_config.json",
+      "snapshot_sha256": "aa7c48920fa363d308eb95065a20adca60524a2347d14a5b9d5d564bc5c5e01e",
+      "current_upstream_sha256": "bf73599a613602096ab4d3a11ae0443a02b49799ff0ab640e0a13f69ee09920e"
+    },
+    {
+      "snapshot": "input\\repair_report.json",
+      "snapshot_sha256": "2d6ddee7f1ae76e949c92603b0d11dd316d2edbda7d79218fd2798189d0026f7",
+      "current_upstream_sha256": "8cb72a166c1c32ddb7046ceccb799a44448316ca885efc66c7639c5f16c1f038"
+    }
+  ]
 }

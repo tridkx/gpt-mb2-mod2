@@ -1,5 +1,5 @@
 """Preserve source inputs and register an isolated v1.4.8 race probe."""
-import copy, json, shutil, hashlib
+import copy, json, shutil, hashlib, sys
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
@@ -15,10 +15,11 @@ cfg=json.loads((R/'tools/model_config.json').read_text());K=cfg['unit_scale']/.0
 def write(path, root):
     ET.indent(root, space='  ')
     ET.ElementTree(root).write(path,encoding='utf-8',xml_declaration=True)
-for p in SOURCE.iterdir():
-    if p.is_file(): shutil.copy2(p,R/'input'/p.name)
-for p in (SOURCE/'tex').iterdir():
-    if p.is_file(): shutil.copy2(p,R/'tex'/p.name)
+if '--preserve-input' not in sys.argv:
+    for p in SOURCE.iterdir():
+        if p.is_file(): shutil.copy2(p,R/'input'/p.name)
+    for p in (SOURCE/'tex').iterdir():
+        if p.is_file(): shutil.copy2(p,R/'tex'/p.name)
 hashes={str(p.relative_to(R)):hashlib.sha256(p.read_bytes()).hexdigest() for folder in ['input','tex'] for p in (R/folder).iterdir() if p.is_file() and p.name!='.gitkeep'}
 (R/'reports/input_hashes.json').write_text(json.dumps(hashes,indent=2),encoding='utf-8')
 
@@ -49,8 +50,13 @@ for old in human.findall('skin'):
 write(M/'ModuleData/skins.xml',skins)
 
 actions=ET.Element('action_sets')
-for base,new in [('as_human_warrior','as_wdr_canglan_warrior'),('as_human_female_warrior','as_wdr_canglan_female_warrior'),('as_human_villager','as_wdr_canglan_villager'),('as_human_female_villager','as_wdr_canglan_female_villager')]:
+for base,new in [('as_human_warrior','as_wdr_canglan_warrior'),('as_human_female_warrior','as_wdr_canglan_female_warrior'),('as_human_villager','as_wdr_canglan_villager'),('as_human_female_villager','as_wdr_canglan_female_villager'),('as_human_facegen','as_wdr_canglan_facegen'),('as_human_female_facegen','as_wdr_canglan_female_facegen')]:
     node=ET.SubElement(actions,'action_set',id=new,skeleton='wdr_skeleton',movement_system='bipedal',base_set=base)
+    if new.endswith('_facegen'):
+        # Character editing uses a separate derived action set, on channel 1.
+        # Use the checked neutral inventory stance for this race's UI previews.
+        for action,clip in [('act_inventory_idle_start','inventory_idle_start'),('act_inventory_idle','inventory_idle')]:
+            ET.SubElement(node,'action',type=action,animation=clip)
 write(M/'ModuleData/action_sets.xml',actions)
 monsters=ET.Element('Monsters')
 native_monsters=ET.parse(N/'monsters.xml').getroot()

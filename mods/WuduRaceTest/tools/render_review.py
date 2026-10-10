@@ -10,14 +10,16 @@ plan={x['material']:x for x in json.loads((R/'build/rig_manifest.json').read_tex
 cfg=json.loads((R/'tools/model_config.json').read_text())
 run=np.load(R/'build/run_preview.npz')
 poses=['head_closeup'] if '--head-only' in sys.argv else ['inventory_idle'] if '--inventory-only' in sys.argv else ['source_rest','source_side','source_back','predicted_run','worst_run','worst_sword','worst_bow','worst_rider','inventory_idle','head_closeup']
+if '--facegen-only' in sys.argv:poses=['facegen_male_side','facegen_female_side','inventory_idle_side']
 for pose in poses:
     if pose.startswith('worst_'):posed=np.load(R/'build'/(pose[6:]+'_worst_preview.npz'))
-    if pose.startswith('inventory_'):posed=np.load(R/'build'/(pose+'_preview.npz'))
+    if pose.startswith('inventory_') and not pose.endswith('_side'):posed=np.load(R/'build'/(pose+'_preview.npz'))
+    if pose.endswith('_side') and pose!='source_side':posed=np.load(R/'build'/(pose.removesuffix('_side')+'_preview.npz'))
     bpy.ops.wm.read_factory_settings(use_empty=True);s=bpy.context.scene;s.render.engine='CYCLES';s.cycles.samples=12;s.render.resolution_x=700;s.render.resolution_y=1000;s.render.resolution_percentage=100
     s.world=bpy.data.worlds.new('Preview');s.world.color=(.25,.25,.25)
     bounds=[]
     for g in groups:
-        p=posed[g['name']] if pose.startswith(('worst_','inventory_')) else run[g['name']] if pose=='predicted_run' else g['pos']
+        p=posed[g['name']] if pose.startswith(('worst_','inventory_','facegen_')) else run[g['name']] if pose=='predicted_run' else g['pos']
         bounds.extend([p.min(axis=0),p.max(axis=0)])
         me=bpy.data.meshes.new(g['name']);me.from_pydata(p.tolist(),[],g['idx'].reshape(-1,3).tolist());me.update();ob=bpy.data.objects.new(me.name,me);bpy.context.collection.objects.link(ob)
         uv=me.uv_layers.new(name='UVMap')
@@ -35,6 +37,8 @@ for pose in poses:
     bounds=np.array(bounds);center=Vector((bounds.min(axis=0)+bounds.max(axis=0))/2);offset={'source_side':(4,0,.15),'source_back':(0,-4,.15)}.get(pose,(0,4,.15));bpy.ops.object.camera_add(location=center+Vector(offset));cam=bpy.context.object;cam.rotation_euler=(center-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.type='ORTHO';cam.data.ortho_scale=1.7;s.camera=cam
     if pose=='head_closeup':
         center=Vector((0,0,1.34));cam.location=center+Vector((0,4,0));cam.rotation_euler=(center-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=.36;s.render.resolution_x=1200;s.render.resolution_y=1400;s.cycles.samples=48
+    if pose.endswith('_side') and pose!='source_side':
+        cam.location=center+Vector((4,0,.15));cam.rotation_euler=(center-cam.location).to_track_quat('-Z','Y').to_euler()
     for location,power,size in [((-2,3,3),350,4),((2,1,2),200,3),((0,-2,3),250,3)]:
         bpy.ops.object.light_add(type='AREA',location=center+Vector(location));light=bpy.context.object;light.data.energy=power;light.data.shape='DISK';light.data.size=size;light.rotation_euler=(center-light.location).to_track_quat('-Z','Y').to_euler()
     s.view_settings.view_transform='AgX';s.render.filepath=str(R/'reports'/(pose+'.png'));bpy.ops.render.render(write_still=True)
