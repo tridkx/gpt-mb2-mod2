@@ -3,7 +3,7 @@ import json,hashlib
 from pathlib import Path
 R=Path(__file__).resolve().parents[1]
 package=R/'module/YueQingShuRace/AssetPackages/yqs.tpac';sha=hashlib.sha256(package.read_bytes()).hexdigest()
-reports={n:json.loads((R/'reports'/(n+'.json')).read_text()) for n in ['release_validation','preservation_validation','cloth_validation','source_validation','feedback_fix_validation']}
+reports={n:json.loads((R/'reports'/(n+'.json')).read_text()) for n in ['release_validation','preservation_validation','cloth_validation','source_validation','feedback_fix_validation','settled_skirt_probe']}
 for name,report in reports.items():
     assert report['status']=='pass',(name,report)
     if 'final_package_sha256' in report:assert report['final_package_sha256']==sha,(name,'stale package')

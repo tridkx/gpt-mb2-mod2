@@ -1,48 +1,48 @@
 {
   "status": "pass",
-  "version": "v0.2.1",
-  "final_package_sha256": "8d959a82324c796d46b215b2d0c58739d962f64acb0c001bc5a17c2779fa1644",
+  "version": "v0.2.2",
+  "final_package_sha256": "65db38e9ba1f5182fb912c8b07eedbbdc40768a0968ee6b2ea5ea7d126d898bc",
   "pelvis_support": {
-    "samples": 808,
-    "old_coverage_within_10mm": 0.09282178217821782,
-    "new_coverage_within_10mm": 1.0,
-    "max_surface_outside_support_m": 0.007786258945646801,
+    "samples": 56784,
+    "old_surface_outside_support_fraction": 0.16479994364609749,
+    "new_surface_outside_support_fraction": 0.0,
+    "minimum_body_clearance_m": 0.005831964723703509,
     "capsules": [
       {
         "name": "pelvis_-0.055",
         "endpoints_m": [
           [
             -0.055,
-            0.0624261114001274,
-            0.9
+            0.061603009700775146,
+            0.84
           ],
           [
             -0.055,
-            0.0624261114001274,
-            1.01
+            0.061603009700775146,
+            1.08
           ]
         ],
-        "radius_m": 0.0955138000845909,
+        "radius_m": 0.11011887349719827,
         "bones": [
           "pelvis",
           "pelvis"
         ]
       },
       {
-        "name": "pelvis_0",
+        "name": "pelvis_0.0",
         "endpoints_m": [
           [
             0.0,
-            0.0624261114001274,
-            0.9
+            0.06304693222045898,
+            0.84
           ],
           [
             0.0,
-            0.0624261114001274,
-            1.01
+            0.06304693222045898,
+            1.08
           ]
         ],
-        "radius_m": 0.0955138000845909,
+        "radius_m": 0.10703857542795803,
         "bones": [
           "pelvis",
           "pelvis"
@@ -53,30 +53,30 @@
         "endpoints_m": [
           [
             0.055,
-            0.0624261114001274,
-            0.9
+            0.061602912843227386,
+            0.84
           ],
           [
             0.055,
-            0.0624261114001274,
-            1.01
+            0.061602912843227386,
+            1.08
           ]
         ],
-        "radius_m": 0.0955138000845909,
+        "radius_m": 0.11011853804633183,
         "bones": [
           "pelvis",
           "pelvis"
         ]
       }
     ],
-    "scope": "Rest-pose source body vertex proxy, not game solver or full continuous surface"
+    "scope": "Rest-pose final LOD0 body triangle lattice, not game solver"
   },
   "material": {
     "ao_blue_min": 255,
     "metallic_red_max": 0,
     "gloss_green_mean": 65.0,
     "self_illumination": false,
-    "game_dark_scene_verified": false
+    "user_confirmed_dark_scene_fix_version": "v0.2.1"
   },
   "dimensions": {
     "source_height_m": 1.6760067177528981,
