@@ -40,7 +40,7 @@ def render(label,offset,close=False):
 render('rest_front',(0,4,0));render('rest_back',(0,-4,0));render('rest_side',(4,0,0));render('head',(0,4,0),True)
 if lod:
     print('LOD_PREVIEWS_READY',lod);sys.exit(0)
-rig=parse_skeljson(json.loads((ROOT/'reports/human_skeleton.json').read_text()));report=json.loads((ROOT/'reports/release_validation.json').read_text());previews=[]
+rig=parse_skeljson(json.loads((ROOT/'reports/final_skeleton.json').read_text()));report=json.loads((ROOT/'reports/release_validation.json').read_text());previews=[]
 for motion in report['motions']:
     label=motion['label'];anim=parse_animjson(json.loads((ROOT/'reports'/(label+'.json')).read_text()));frame=motion['worst_frame'];skin=skin_matrices(rig,anim,frame)
     for o,m in zip(objects,meshes):p=lbs(m['pos'],m['bi'],m['bw'],skin);o.data.vertices.foreach_set('co',p.astype('f4').ravel());o.data.update()

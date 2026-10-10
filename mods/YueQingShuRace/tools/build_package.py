@@ -13,7 +13,8 @@ spec={'output':str(BUILD/'base.tpac'),'packageGuid':str(uuid.uuid5(uuid.NAMESPAC
  'mesh':{'tpac':str(NATIVE/'EmAssetPackages/armor555/armor555.tpac'),'name':'empire_legion_a'},
  'tex':{'tpac':str(NATIVE/'EmAssetPackages/Assets.tpac'),'name':'sturgia_light_armor_c'},
  'opaque':{'tpac':str(NATIVE/'AssetPackages/materials.tpac'),'name':'cloak_short'},
- 'alpha':{'tpac':str(NATIVE/'AssetPackages/materials.tpac'),'name':'battania_dress_c_alpha_mat'}},'textures':[],'materials':[],'meshes':[]}
+ 'skeleton':{'tpac':str(NATIVE/'EmAssetPackages/human/human.tpac'),'name':'human_skeleton'},
+ 'alpha':{'tpac':str(NATIVE/'AssetPackages/materials.tpac'),'name':'battania_dress_c_alpha_mat'}},'textures':[],'materials':[],'meshes':[],'skeletons':[{'name':'yqs_skeleton','template':'skeleton','bones':json.loads((BUILD/'skeleton_spec.json').read_text())}]}
 (BUILD/'tex').mkdir(exist_ok=True);seen={}
 previous=json.loads((BUILD/'spec.json').read_text()) if '--reuse-textures' in sys.argv else None
 def texture(key,a,fmt,alpha=False):

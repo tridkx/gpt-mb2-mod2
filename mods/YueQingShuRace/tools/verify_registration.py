@@ -26,7 +26,7 @@ def validate_registration(root):
     assert len(skins) == len(native_skins)
     for skin, old in zip(skins, native_skins):
         assert (skin.get('gender'), skin.get('mesh_maturity_type')) == (old.get('gender'), old.get('mesh_maturity_type'))
-        assert skin.get('skeleton') == 'human_skeleton'
+        assert skin.get('skeleton') == cfg['skeleton']
         assert skin.get('uses_stitching') == 'false'
         assert skin.get('body_meta_mesh') == 'yqs_body'
         for attr in ['hands_mesh', 'face_meta_mesh', 'legs_mesh']:
@@ -38,7 +38,7 @@ def validate_registration(root):
     actions = read(data / 'action_sets.xml')
     native_actions = read(native / 'action_sets.xml')
     for action in actions.getroot():
-        assert action.get('skeleton') == 'human_skeleton'
+        assert action.get('skeleton') == cfg['skeleton']
         assert native_actions.find(f"action_set[@id='{action.get('base_set')}']") is not None
         assert len(action) == 0  # Preserve native inventory/facegen action mapping.
     monsters = read(data / 'monsters.xml')
@@ -71,7 +71,7 @@ def validate_registration(root):
     report = {'status':'pass', 'race':cfg['race'], 'changed_troops':changed,
               'unaffected_troops':len(before)-1, 'native_level_skills_weapons_upgrades_preserved':True,
               'armor_rosters_empty':True, 'skin_variants':len(skins),
-              'skeleton':'human_skeleton', 'native_monster_dimensions_preserved':True,
+              'skeleton':cfg['skeleton'], 'native_monster_dimensions_preserved':True,
               'native_ui_actions_inherited':True, 'cloth_simulation':False}
     (root / 'reports/registration_validation.json').write_text(json.dumps(report, indent=2))
     return report

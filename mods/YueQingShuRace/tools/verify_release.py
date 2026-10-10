@@ -98,7 +98,11 @@ assert len(body['submeshes'])>=10
 assert body['lodAvailable']==[0,1,2,3]
 hidden=next(m for m in pack['meshes'] if m['name']=='yqs_hidden')
 assert sum(m['triangleCount'] for m in hidden['submeshes'])==4
-assert not pack['skeletons']  # This module resolves the shared native human skeleton.
+assert len(pack['skeletons'])==1
+run([MB,'skeljson',str(PACKAGE),cfg['skeleton'],str(ROOT/'reports/final_skeleton.json')])
+custom=parse_skeljson(json.loads((ROOT/'reports/final_skeleton.json').read_text()))
+expected=parse_skeljson({'bones':[dict(i=i,**b) for i,b in enumerate(json.loads((ROOT/'build/skeleton_spec.json').read_text()))]})
+assert custom['names']==expected['names'] and np.max(abs(custom['restWorld']-expected['restWorld']))<2e-6
 for t in pack['textures']:
     blob=(folder/t['file']).read_bytes();assert blob==(ROOT/'build/tex'/(t['name']+'.bc')).read_bytes()
     assert t['mipsExported']==t['mipCount'];w,h=t['width'],t['height']
@@ -108,10 +112,10 @@ for t in pack['textures']:
         w=max(w//2,1);h=max(h//2,1)
     texturechecks.append({'name':t['name'],'mips':t['mipCount'],'all_mips_decoded':True,'bytes_match':True})
 
-rig=parse_skeljson(json.loads((ROOT/'reports/human_skeleton.json').read_text()));motions=[]
+rig=custom;native=parse_skeljson(rigdata);motions=[]
 for label in ['idle','run','bow','riding','slash']:
     raw=json.loads((ROOT/'reports'/(label+'.json')).read_text());anim=parse_animjson(raw)
-    assert raw['skeletonGuid']==rig['guid'] and anim['have'].all() and anim['frames']>2
+    assert raw['skeletonGuid']==native['guid'] and anim['have'].all() and anim['frames']>2
     frames=list(range(max(1,anim['start']),anim['frames'])) if label!='idle' else sorted(set(np.linspace(max(1,anim['start']),anim['frames']-1,16).astype(int).tolist()))
     worst=0;worstframe=frames[0];worstmesh='';percentile=0;meshstats=[]
     for m in exports[0]:
@@ -135,9 +139,9 @@ for label in ['idle','run','bow','riding','slash']:
 from verify_registration import validate_registration
 registration=validate_registration(ROOT)
 descriptor=ET.parse(ROOT/'module/YueQingShuRace/SubModule.xml')
-assert descriptor.find('Id').get('value')=='YueQingShuRace' and descriptor.find('Version').get('value')=='v0.1.0'
+assert descriptor.find('Id').get('value')=='YueQingShuRace' and descriptor.find('Version').get('value')==cfg['version']
 assert sha(PACKAGE)==hash_before
 assert all(sha(ROOT/p)==h for p,h in json.loads((ROOT/'reports/input_hashes.json').read_text()).items())
-report={'version':'v0.1.0','status':'pass','check_scope':'offline_structural_and_native_motion_checks','final_package_sha256':hash_before,'baseline_package_sha256':None,'baseline_reason':'First release','registration':registration,'lods':lods,'seams':seams,'motions':motions,'textures':texturechecks,'gross_motion_tear_guard_max_extension':6.0,'metadata_audit':'pass','game_test_verified':False,'game_cloth_solver_used':False,'limitations':['UE eye occlusion and tear overlays omitted; original default face/hair/clothes retained with conservative native materials.','Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.','No facial animation or face/body customization support.']}
-report.update(integrated_hands_all_lods=True,cloth_enabled=False,body_metamesh='yqs_body',hidden_placeholder_triangles=4)
+report={'version':cfg['version'],'status':'pass','check_scope':'offline_structural_and_native_motion_checks','final_package_sha256':hash_before,'baseline_package_sha256':'2de3a53994e0b137e8ea1f7188c086f3c9e6add9d3f2b8a455dd97d670632df1','baseline_reason':'v0.1.0 native-sized geometry replaced with source-proportioned custom skeleton','registration':registration,'lods':lods,'seams':seams,'motions':motions,'textures':texturechecks,'gross_motion_tear_guard_max_extension':6.0,'metadata_audit':'pass','game_test_verified':False,'game_cloth_solver_used':False,'limitations':['UE eye occlusion and tear overlays omitted; original default face/hair/clothes retained with conservative native materials.','Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.','No facial animation or face/body customization support.']}
+report.update(integrated_hands_all_lods=True,cloth_enabled=False,body_metamesh='yqs_body',hidden_placeholder_triangles=4,source_proportions_preserved=True,custom_skeleton_bones=28)
 (ROOT/'reports/release_validation.json').write_text(json.dumps(report,indent=2));print(json.dumps({'status':report['status'],'registration':registration,'lods':lods,'seams':seams,'motions':motions},indent=2))

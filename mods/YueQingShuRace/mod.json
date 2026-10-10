@@ -100,7 +100,6 @@
     "reports/input_hashes.json",
     "reports/lod_stats.json",
     "reports/material_names.json",
-    "reports/motion_failure.json",
     "reports/package_audit.json",
     "reports/preflight.json",
     "reports/registration_validation.json",
@@ -126,7 +125,12 @@
     "tools/render_final.py",
     "tools/verify_registration.py",
     "tools/verify_release.py",
-    "tools/verify_source.py"
+    "tools/verify_source.py",
+    "reports/final_skeleton.json",
+    "reports/history/v0.1.0/release_validation.json",
+    "reports/history/v0.1.0/weight_transfer.json",
+    "reports/history/v0.1.0/visual_review.json",
+    "reports/history/v0.1.1-draft/motion_failure.json"
   ],
   "shared_source_files": [
     "tools/asset_helpers/config/spec.py",

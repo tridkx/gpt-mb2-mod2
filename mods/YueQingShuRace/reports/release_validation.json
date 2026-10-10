@@ -1,10 +1,10 @@
 {
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "status": "pass",
   "check_scope": "offline_structural_and_native_motion_checks",
-  "final_package_sha256": "2de3a53994e0b137e8ea1f7188c086f3c9e6add9d3f2b8a455dd97d670632df1",
-  "baseline_package_sha256": null,
-  "baseline_reason": "First release",
+  "final_package_sha256": "e72aa5730a220565d29a81c558b66e08cf8d4e5a28636e923350349910e9283b",
+  "baseline_package_sha256": "2de3a53994e0b137e8ea1f7188c086f3c9e6add9d3f2b8a455dd97d670632df1",
+  "baseline_reason": "v0.1.0 native-sized geometry replaced with source-proportioned custom skeleton",
   "registration": {
     "status": "pass",
     "race": "yqs_default",
@@ -15,7 +15,7 @@
     "native_level_skills_weapons_upgrades_preserved": true,
     "armor_rosters_empty": true,
     "skin_variants": 10,
-    "skeleton": "human_skeleton",
+    "skeleton": "yqs_skeleton",
     "native_monster_dimensions_preserved": true,
     "native_ui_actions_inherited": true,
     "cloth_simulation": false
@@ -23,25 +23,25 @@
   "lods": [
     {
       "lod": 0,
-      "vertices": 112205,
+      "vertices": 112204,
       "triangles": 147508,
       "submeshes": 14
     },
     {
       "lod": 1,
-      "vertices": 75388,
+      "vertices": 75337,
       "triangles": 96580,
       "submeshes": 12
     },
     {
       "lod": 2,
-      "vertices": 44460,
+      "vertices": 44472,
       "triangles": 52932,
       "submeshes": 10
     },
     {
       "lod": 3,
-      "vertices": 24086,
+      "vertices": 23945,
       "triangles": 23835,
       "submeshes": 10
     }
@@ -49,25 +49,25 @@
   "seams": [
     {
       "lod": 0,
-      "shared_points": 33,
+      "shared_points": 37,
       "cross_equipment_points": 0,
       "max_position_error": 0
     },
     {
       "lod": 1,
-      "shared_points": 33,
+      "shared_points": 37,
       "cross_equipment_points": 0,
       "max_position_error": 0
     },
     {
       "lod": 2,
-      "shared_points": 33,
+      "shared_points": 37,
       "cross_equipment_points": 0,
       "max_position_error": 0
     },
     {
       "lod": 3,
-      "shared_points": 33,
+      "shared_points": 37,
       "cross_equipment_points": 0,
       "max_position_error": 0
     }
@@ -78,80 +78,80 @@
       "asset": "anim_inventory_idle",
       "frames_checked": 16,
       "total_frames": 1268,
-      "worst_frame": 760,
-      "worst_mesh": "yqs_part_08",
-      "max_edge_extension": 2.5899188614252378,
-      "max_mesh_p99_extension": 1.4812672738132746,
+      "worst_frame": 507,
+      "worst_mesh": "yqs_part_07",
+      "max_edge_extension": 2.5049215212489733,
+      "max_mesh_p99_extension": 1.52577888990044,
       "meshes": [
         {
           "name": "yqs_part_00",
-          "max_extension": 1.0000004588703717,
-          "p99_extension": 1.0000003454484583
+          "max_extension": 1.0000004588703673,
+          "p99_extension": 1.0000003476616317
         },
         {
           "name": "yqs_part_00.b2",
-          "max_extension": 1.0000004350881475,
-          "p99_extension": 1.0000003358329586
+          "max_extension": 1.000000435088142,
+          "p99_extension": 1.000000335497917
         },
         {
           "name": "yqs_part_00.b3",
-          "max_extension": 1.0000004117153194,
-          "p99_extension": 1.0000003404496896
+          "max_extension": 1.0000004302314935,
+          "p99_extension": 1.0000003434113318
         },
         {
           "name": "yqs_part_01",
-          "max_extension": 1.0000004201397121,
-          "p99_extension": 1.0000003984497006
+          "max_extension": 1.0000004201397161,
+          "p99_extension": 1.0000003984496997
         },
         {
           "name": "yqs_part_02",
-          "max_extension": 1.0000003685097065,
-          "p99_extension": 1.000000326300201
+          "max_extension": 1.000000376852287,
+          "p99_extension": 1.0000003284145655
         },
         {
           "name": "yqs_part_03",
-          "max_extension": 2.1093316221710245,
-          "p99_extension": 1.402446808135568
+          "max_extension": 2.076070752197704,
+          "p99_extension": 1.1749553873349945
         },
         {
           "name": "yqs_part_05",
-          "max_extension": 1.0000004374237759,
-          "p99_extension": 1.0000003802735389
+          "max_extension": 1.0000004374237688,
+          "p99_extension": 1.000000371213077
         },
         {
           "name": "yqs_part_07",
-          "max_extension": 2.1336281227780804,
-          "p99_extension": 1.4812672738132746
+          "max_extension": 2.5049215212489733,
+          "p99_extension": 1.52577888990044
         },
         {
           "name": "yqs_part_08",
-          "max_extension": 2.5899188614252378,
-          "p99_extension": 1.2990938051201002
+          "max_extension": 1.6242798637943257,
+          "p99_extension": 1.1977865703031287
         },
         {
           "name": "yqs_part_10",
-          "max_extension": 1.5107941524173185,
-          "p99_extension": 1.0198666095912505
+          "max_extension": 1.268803664261667,
+          "p99_extension": 1.0214662771640726
         },
         {
           "name": "yqs_part_10.b2",
-          "max_extension": 1.5796208702599468,
-          "p99_extension": 1.0627190476094768
+          "max_extension": 1.2964676361810563,
+          "p99_extension": 1.0453367389275607
         },
         {
           "name": "yqs_part_10.b3",
-          "max_extension": 1.1225384927162838,
-          "p99_extension": 1.0000008873778836
+          "max_extension": 1.0544787528655872,
+          "p99_extension": 1.0000008872379207
         },
         {
           "name": "yqs_part_11",
-          "max_extension": 1.0000004360900494,
-          "p99_extension": 1.0000003857121342
+          "max_extension": 1.0000004481438836,
+          "p99_extension": 1.0000003636378247
         },
         {
           "name": "yqs_part_12",
-          "max_extension": 1.0000004270350975,
-          "p99_extension": 1.000000352152602
+          "max_extension": 1.0000004088289314,
+          "p99_extension": 1.0000003400458044
         }
       ]
     },
@@ -160,80 +160,80 @@
       "asset": "anim_run_forward_unarmed",
       "frames_checked": 25,
       "total_frames": 26,
-      "worst_frame": 3,
+      "worst_frame": 10,
       "worst_mesh": "yqs_part_03",
-      "max_edge_extension": 5.275075492087599,
-      "max_mesh_p99_extension": 2.756020623107374,
+      "max_edge_extension": 3.445754051944802,
+      "max_mesh_p99_extension": 1.6920377078665632,
       "meshes": [
         {
           "name": "yqs_part_00",
-          "max_extension": 1.0000004588703673,
-          "p99_extension": 1.0000003454484578
+          "max_extension": 1.0000004588703681,
+          "p99_extension": 1.0000003476616273
         },
         {
           "name": "yqs_part_00.b2",
-          "max_extension": 1.0000004350881504,
-          "p99_extension": 1.0000003358329574
+          "max_extension": 1.000000435088143,
+          "p99_extension": 1.00000033549791
         },
         {
           "name": "yqs_part_00.b3",
-          "max_extension": 1.0000004117153019,
-          "p99_extension": 1.0000003404496713
+          "max_extension": 1.0000004302314942,
+          "p99_extension": 1.0000003434113438
         },
         {
           "name": "yqs_part_01",
-          "max_extension": 1.000000420139698,
-          "p99_extension": 1.0000003984496881
+          "max_extension": 1.0000004201396957,
+          "p99_extension": 1.000000398449688
         },
         {
           "name": "yqs_part_02",
-          "max_extension": 1.000000368509724,
-          "p99_extension": 1.0000003263001975
+          "max_extension": 1.0000003768522694,
+          "p99_extension": 1.0000003284145766
         },
         {
           "name": "yqs_part_03",
-          "max_extension": 5.275075492087599,
-          "p99_extension": 2.756020623107374
+          "max_extension": 3.445754051944802,
+          "p99_extension": 1.3025558637390529
         },
         {
           "name": "yqs_part_05",
-          "max_extension": 1.0000004374237736,
-          "p99_extension": 1.0000003802735447
+          "max_extension": 1.0000004374237772,
+          "p99_extension": 1.0000003712130758
         },
         {
           "name": "yqs_part_07",
-          "max_extension": 1.4789194388916065,
-          "p99_extension": 1.1008890596187613
+          "max_extension": 1.7432980908002342,
+          "p99_extension": 1.1526233936076224
         },
         {
           "name": "yqs_part_08",
-          "max_extension": 4.154831632577468,
-          "p99_extension": 1.9676771336527912
+          "max_extension": 3.168542654375272,
+          "p99_extension": 1.6920377078665632
         },
         {
           "name": "yqs_part_10",
-          "max_extension": 2.4144899800083732,
-          "p99_extension": 1.093184110685696
+          "max_extension": 1.965154147115634,
+          "p99_extension": 1.0830541486411889
         },
         {
           "name": "yqs_part_10.b2",
-          "max_extension": 2.036438006693807,
-          "p99_extension": 1.2057099674381728
+          "max_extension": 2.2242426618514,
+          "p99_extension": 1.1748860100941674
         },
         {
           "name": "yqs_part_10.b3",
-          "max_extension": 1.6892788548618498,
-          "p99_extension": 1.0005862697553578
+          "max_extension": 1.4588299256798756,
+          "p99_extension": 1.000275251556237
         },
         {
           "name": "yqs_part_11",
-          "max_extension": 1.0000004360900532,
-          "p99_extension": 1.000000385712135
+          "max_extension": 1.000000448143893,
+          "p99_extension": 1.000000363637825
         },
         {
           "name": "yqs_part_12",
-          "max_extension": 1.0000004270350975,
-          "p99_extension": 1.0000003521525864
+          "max_extension": 1.0000004088289538,
+          "p99_extension": 1.000000340045804
         }
       ]
     },
@@ -242,80 +242,80 @@
       "asset": "anim_bow",
       "frames_checked": 150,
       "total_frames": 151,
-      "worst_frame": 89,
-      "worst_mesh": "yqs_part_08",
-      "max_edge_extension": 5.544479294563235,
-      "max_mesh_p99_extension": 2.456126073130267,
+      "worst_frame": 74,
+      "worst_mesh": "yqs_part_07",
+      "max_edge_extension": 3.1941962720159416,
+      "max_mesh_p99_extension": 1.748160893930507,
       "meshes": [
         {
           "name": "yqs_part_00",
-          "max_extension": 1.0000004588703744,
-          "p99_extension": 1.000000345448462
+          "max_extension": 1.0000004588703737,
+          "p99_extension": 1.0000003476616288
         },
         {
           "name": "yqs_part_00.b2",
-          "max_extension": 1.0000004350881544,
-          "p99_extension": 1.0000003358329634
+          "max_extension": 1.0000004350881537,
+          "p99_extension": 1.0000003354979146
         },
         {
           "name": "yqs_part_00.b3",
-          "max_extension": 1.0000004117153187,
-          "p99_extension": 1.0000003404496982
+          "max_extension": 1.0000004302314986,
+          "p99_extension": 1.000000343411361
         },
         {
           "name": "yqs_part_01",
-          "max_extension": 1.0000004201397144,
-          "p99_extension": 1.0000003984497097
+          "max_extension": 1.000000420139707,
+          "p99_extension": 1.000000398449704
         },
         {
           "name": "yqs_part_02",
-          "max_extension": 1.0000003685097316,
-          "p99_extension": 1.000000326300205
+          "max_extension": 1.0000003768522978,
+          "p99_extension": 1.000000328414599
         },
         {
           "name": "yqs_part_03",
-          "max_extension": 5.2974179132401025,
-          "p99_extension": 2.456126073130267
+          "max_extension": 3.1450496539579516,
+          "p99_extension": 1.7150509846055477
         },
         {
           "name": "yqs_part_05",
-          "max_extension": 1.000000437423789,
-          "p99_extension": 1.0000003802735569
+          "max_extension": 1.0000004374237816,
+          "p99_extension": 1.0000003712130874
         },
         {
           "name": "yqs_part_07",
-          "max_extension": 2.4969748592092067,
-          "p99_extension": 1.7254191519866344
+          "max_extension": 3.1941962720159416,
+          "p99_extension": 1.748160893930507
         },
         {
           "name": "yqs_part_08",
-          "max_extension": 5.544479294563235,
-          "p99_extension": 2.370283684243789
+          "max_extension": 3.055554254322337,
+          "p99_extension": 1.60983318835963
         },
         {
           "name": "yqs_part_10",
-          "max_extension": 2.734403378780872,
-          "p99_extension": 1.059441702019175
+          "max_extension": 1.8684063773906476,
+          "p99_extension": 1.0627273847406686
         },
         {
           "name": "yqs_part_10.b2",
-          "max_extension": 1.857919581288521,
-          "p99_extension": 1.137254553076289
+          "max_extension": 1.757764457341892,
+          "p99_extension": 1.1025720611552152
         },
         {
           "name": "yqs_part_10.b3",
-          "max_extension": 1.2363034096392738,
-          "p99_extension": 1.0000008232086564
+          "max_extension": 1.1706467601872363,
+          "p99_extension": 1.0000008300706418
         },
         {
           "name": "yqs_part_11",
-          "max_extension": 1.0000004360900534,
-          "p99_extension": 1.000000385712136
+          "max_extension": 1.0000004481438856,
+          "p99_extension": 1.0000003636378307
         },
         {
           "name": "yqs_part_12",
-          "max_extension": 1.0000004270351044,
-          "p99_extension": 1.000000352152604
+          "max_extension": 1.0000004088289414,
+          "p99_extension": 1.0000003400458162
         }
       ]
     },
@@ -324,80 +324,80 @@
       "asset": "anim_rider_gallop_bow",
       "frames_checked": 20,
       "total_frames": 21,
-      "worst_frame": 9,
+      "worst_frame": 11,
       "worst_mesh": "yqs_part_08",
-      "max_edge_extension": 4.930628183236833,
-      "max_mesh_p99_extension": 2.0892308997114766,
+      "max_edge_extension": 3.5062249226290856,
+      "max_mesh_p99_extension": 1.867180185774719,
       "meshes": [
         {
           "name": "yqs_part_00",
-          "max_extension": 1.0000004588703726,
-          "p99_extension": 1.0000003454484618
+          "max_extension": 1.0000004588703681,
+          "p99_extension": 1.0000003476616286
         },
         {
           "name": "yqs_part_00.b2",
-          "max_extension": 1.000000435088148,
-          "p99_extension": 1.0000003358329637
+          "max_extension": 1.000000435088151,
+          "p99_extension": 1.0000003354979141
         },
         {
           "name": "yqs_part_00.b3",
-          "max_extension": 1.000000411715311,
-          "p99_extension": 1.0000003404496984
+          "max_extension": 1.0000004302314964,
+          "p99_extension": 1.000000343411339
         },
         {
           "name": "yqs_part_01",
-          "max_extension": 1.0000004201396904,
-          "p99_extension": 1.0000003984496888
+          "max_extension": 1.0000004201396901,
+          "p99_extension": 1.0000003984496906
         },
         {
           "name": "yqs_part_02",
-          "max_extension": 1.0000003685097083,
-          "p99_extension": 1.0000003263002146
+          "max_extension": 1.000000376852286,
+          "p99_extension": 1.000000328414574
         },
         {
           "name": "yqs_part_03",
-          "max_extension": 4.538009727443711,
-          "p99_extension": 2.0892308997114766
+          "max_extension": 3.016870041897659,
+          "p99_extension": 1.4228820617803755
         },
         {
           "name": "yqs_part_05",
-          "max_extension": 1.000000437423782,
-          "p99_extension": 1.0000003802735504
+          "max_extension": 1.0000004374237756,
+          "p99_extension": 1.00000037121308
         },
         {
           "name": "yqs_part_07",
-          "max_extension": 2.275162949308107,
-          "p99_extension": 1.1866406710165767
+          "max_extension": 2.6870000940350156,
+          "p99_extension": 1.240454760708354
         },
         {
           "name": "yqs_part_08",
-          "max_extension": 4.930628183236833,
-          "p99_extension": 2.0460875966521357
+          "max_extension": 3.5062249226290856,
+          "p99_extension": 1.867180185774719
         },
         {
           "name": "yqs_part_10",
-          "max_extension": 2.6585552201296894,
-          "p99_extension": 1.1630055430224149
+          "max_extension": 2.1855142875803195,
+          "p99_extension": 1.14515352927143
         },
         {
           "name": "yqs_part_10.b2",
-          "max_extension": 2.1220283759722385,
-          "p99_extension": 1.1855801977187654
+          "max_extension": 2.102369929916671,
+          "p99_extension": 1.1269513798202915
         },
         {
           "name": "yqs_part_10.b3",
-          "max_extension": 1.379255987708004,
-          "p99_extension": 1.0000007912461764
+          "max_extension": 1.1788650136151175,
+          "p99_extension": 1.0000007463298712
         },
         {
           "name": "yqs_part_11",
-          "max_extension": 1.0000004360900545,
-          "p99_extension": 1.0000003857121365
+          "max_extension": 1.0000004481438842,
+          "p99_extension": 1.0000003636378267
         },
         {
           "name": "yqs_part_12",
-          "max_extension": 1.0000004270350986,
-          "p99_extension": 1.000000352152598
+          "max_extension": 1.0000004088289345,
+          "p99_extension": 1.0000003400458048
         }
       ]
     },
@@ -406,80 +406,80 @@
       "asset": "anim_dagger_slashleft_1h_balance",
       "frames_checked": 150,
       "total_frames": 151,
-      "worst_frame": 40,
-      "worst_mesh": "yqs_part_03",
-      "max_edge_extension": 4.703133782092988,
-      "max_mesh_p99_extension": 2.157229926116219,
+      "worst_frame": 122,
+      "worst_mesh": "yqs_part_08",
+      "max_edge_extension": 3.2637516014204406,
+      "max_mesh_p99_extension": 1.6755403792336172,
       "meshes": [
         {
           "name": "yqs_part_00",
-          "max_extension": 1.0000004588703681,
-          "p99_extension": 1.0000003454484605
+          "max_extension": 1.0000004588703697,
+          "p99_extension": 1.000000347661627
         },
         {
           "name": "yqs_part_00.b2",
-          "max_extension": 1.0000004350881482,
-          "p99_extension": 1.0000003358329583
+          "max_extension": 1.0000004350881497,
+          "p99_extension": 1.0000003354979037
         },
         {
           "name": "yqs_part_00.b3",
-          "max_extension": 1.0000004117153083,
-          "p99_extension": 1.0000003404497086
+          "max_extension": 1.0000004302314918,
+          "p99_extension": 1.0000003434113458
         },
         {
           "name": "yqs_part_01",
-          "max_extension": 1.0000004201397001,
-          "p99_extension": 1.000000398449699
+          "max_extension": 1.000000420139704,
+          "p99_extension": 1.0000003984497128
         },
         {
           "name": "yqs_part_02",
-          "max_extension": 1.0000003685097019,
-          "p99_extension": 1.0000003263001997
+          "max_extension": 1.0000003768522818,
+          "p99_extension": 1.0000003284145964
         },
         {
           "name": "yqs_part_03",
-          "max_extension": 4.703133782092988,
-          "p99_extension": 2.157229926116219
+          "max_extension": 2.505784749597485,
+          "p99_extension": 1.5440428498049503
         },
         {
           "name": "yqs_part_05",
-          "max_extension": 1.0000004374237754,
-          "p99_extension": 1.0000003802735378
+          "max_extension": 1.0000004374237788,
+          "p99_extension": 1.0000003712130787
         },
         {
           "name": "yqs_part_07",
-          "max_extension": 2.1714806238473727,
-          "p99_extension": 1.3996790858752348
+          "max_extension": 2.9385368543164585,
+          "p99_extension": 1.5148998667926812
         },
         {
           "name": "yqs_part_08",
-          "max_extension": 3.832402770706034,
-          "p99_extension": 1.755891361440764
+          "max_extension": 3.2637516014204406,
+          "p99_extension": 1.6755403792336172
         },
         {
           "name": "yqs_part_10",
-          "max_extension": 3.6338729587145613,
-          "p99_extension": 1.1700181512192167
+          "max_extension": 3.0437177525092687,
+          "p99_extension": 1.1287349765866774
         },
         {
           "name": "yqs_part_10.b2",
-          "max_extension": 2.970441838056689,
-          "p99_extension": 1.1428192266645243
+          "max_extension": 3.1346513562040887,
+          "p99_extension": 1.1335023865405864
         },
         {
           "name": "yqs_part_10.b3",
-          "max_extension": 1.440718477422165,
-          "p99_extension": 1.0000008873778716
+          "max_extension": 1.3144601352217713,
+          "p99_extension": 1.0000008872379196
         },
         {
           "name": "yqs_part_11",
-          "max_extension": 1.0000004360900527,
-          "p99_extension": 1.0000003857121367
+          "max_extension": 1.0000004481438873,
+          "p99_extension": 1.0000003636378274
         },
         {
           "name": "yqs_part_12",
-          "max_extension": 1.0000004270351002,
-          "p99_extension": 1.0000003521526133
+          "max_extension": 1.0000004088289383,
+          "p99_extension": 1.000000340045812
         }
       ]
     }
@@ -612,5 +612,9 @@
   "integrated_hands_all_lods": true,
   "cloth_enabled": false,
   "body_metamesh": "yqs_body",
-  "hidden_placeholder_triangles": 4
+  "hidden_placeholder_triangles": 4,
+  "source_proportions_preserved": true,
+  "custom_skeleton_bones": 28,
+  "source_geometry_max_error_m": 0.0,
+  "source_height_m": 1.6760067177528981
 }

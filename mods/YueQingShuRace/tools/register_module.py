@@ -44,7 +44,7 @@ for old in human.findall('skin'):
     race.append(skin)
 write(MODULE / 'ModuleData/skins.xml', skins)
 
-# Retain the native human skeleton, bind pose and inherited UI actions.
+# Use source-sized custom bind joints and inherit native actions.
 actions = ET.Element('action_sets')
 for suffix, base in [('warrior', 'as_human_warrior'), ('female_warrior', 'as_human_female_warrior'),
                      ('villager', 'as_human_villager'), ('female_villager', 'as_human_female_villager'),

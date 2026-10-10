@@ -21,5 +21,20 @@ image_count=len(images)
 bpy.ops.wm.read_factory_settings(use_empty=True);bpy.ops.import_scene.fbx(filepath=str(fbx),use_anim=False)
 arms=[o for o in bpy.data.objects if o.type=='ARMATURE'];fbxmeshes=[o for o in bpy.data.objects if o.type=='MESH']
 assert len(arms)==1 and len(arms[0].data.bones)==28 and len(fbxmeshes)==10
-(ROOT/'reports/source_validation.json').write_text(json.dumps({'status':'pass','blend_reopened':True,'fbx_reimported':True,'source_matches_final_fit':True,'bones':28,'meshes':10,'packed_images':image_count,'facial_animation':False},indent=2))
-print('SOURCE_VALIDATED')
+# Independent comparison against the preserved original, after re-opening it.
+cfg=json.loads((ROOT/'tools/model_config.json').read_text())
+bpy.ops.wm.open_mainfile(filepath=str(ROOT/cfg['source_blend']))
+original=next(o for o in bpy.data.objects if o.type=='MESH')
+rotation=np.diag([-1.,-1.,1.]);source=np.array([original.matrix_world@v.co for v in original.data.vertices])@rotation
+manifest=json.loads((ROOT/'build/manifest.json').read_text());errors=[]
+for rec in manifest:
+ mi=next(i for i,slot in enumerate(original.material_slots) if slot.material.name==rec['material'])
+ ids=set(v for face in original.data.polygons if face.material_index==mi for v in face.vertices)
+ points=source[sorted(ids)];final=arrays[rec['object']+'_p']
+ reference=np.unique(points.astype('f4'),axis=0);exported=np.unique(final,axis=0)
+ assert reference.shape==exported.shape,(rec['material'],reference.shape,exported.shape)
+ error=float(np.max(np.abs(reference-exported)));assert error<2e-6,(rec['material'],error)
+ errors.append(dict(material=rec['material'],max_geometry_error_m=error))
+report={'status':'pass','blend_reopened':True,'fbx_reimported':True,'source_matches_final_fit':True,'bones':28,'meshes':10,'packed_images':image_count,'facial_animation':False,'source_proportions_preserved':True,'source_height_m':float(np.ptp(source[:,2])),'source_geometry_checks':errors,'source_geometry_max_error_m':max(e['max_geometry_error_m'] for e in errors)}
+(ROOT/'reports/source_validation.json').write_text(json.dumps(report,indent=2))
+print('SOURCE_VALIDATED',report['source_geometry_max_error_m'])

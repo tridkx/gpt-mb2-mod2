@@ -1,4 +1,4 @@
-"""Fit the preserved default Blend to the current native human bind pose."""
+"""Preserve source geometry and fit custom race joint pivots to source anatomy."""
 import bpy,json,sys,hashlib
 import numpy as np
 from pathlib import Path
@@ -21,19 +21,21 @@ for side,pre in [('L','l'),('R','r')]:
  mapping[f'Bip001-{side}-ForeTwist']=f'{pre}_foretwist'
 source=target.copy()
 for dst,src in landmarks.items():source[ni[dst]]=anatomy[src]
-anchors=np.array([ni[k] for k in landmarks]);s=source[anchors][:,[0,2]];t=target[anchors]-source[anchors]
-def kernel(a,b):
- d=np.linalg.norm(a[:,None]-b[None],axis=2);return d*d*np.log(np.maximum(d,1e-12))
-poly=np.column_stack([np.ones(len(s)),s]);K=kernel(s,s)+np.eye(len(s))*1e-7
-system=np.block([[K,poly],[poly.T,np.zeros((3,3))]])
-solution=np.linalg.solve(system,np.vstack([t,np.zeros((3,3))]))
-def deform(p):
- out=p+kernel(p[:,[0,2]],s)@solution[:len(s)]+np.column_stack([np.ones(len(p)),p[:,[0,2]]])@solution[len(s):]
- h=np.clip((p[:,2]-1.425)/.08,0,1);h=h*h*(3-2*h)
- rigid=p+target[ni['head']]-source[ni['head']]
- return out*(1-h[:,None])+rigid*h[:,None]
+# Geometry is never warped to native anatomy. Only rotate the entire source.
+for pre in ['l','r']:
+ for mid,a,b in [('upperarm_twist1','upperarm_twist','foretwist'),('foretwist1','foretwist','hand')]:
+  source[ni[pre+'_'+mid]]=(source[ni[pre+'_'+a]]+source[ni[pre+'_'+b]])/2
+ # Finger pivots come from the original hand, without changing its shape.
+ source[ni[pre+'_finger0']]=anatomy['Bip001-'+pre.upper()+'-Finger0']
+world=rig['restWorld'].copy();world[:,:3,3]=source
+local=np.array([world[i] if parent<0 else np.linalg.inv(world[parent])@world[i] for i,parent in enumerate(rig['parent'])])
+bones=[]
+for i,bone in enumerate(json.loads((ROOT/'reports/human_skeleton.json').read_text())['bones']):
+ matrix=np.array(bone['rest']).reshape(4,4).T;matrix[:3,:3]=local[i,:3,:3];matrix[:3,3]=local[i,:3,3]
+ bones.append(dict(name=bone['name'],parent=bone['parent'],rest=matrix.T.reshape(-1).tolist()))
+(ROOT/'build/skeleton_spec.json').write_text(json.dumps(bones,indent=2))
 me=ob.data;me.calc_loop_triangles();raw=np.array([ob.matrix_world@v.co for v in me.vertices]);p=raw@C
-fitted=deform(p)
+fitted=p.copy()
 # Preserve original weights where semantic bones correspond; face, fingers,
 # hair and garment helper chains collapse to their nearest supported ancestor.
 w=np.zeros((len(p),28));group_map={}
@@ -44,39 +46,26 @@ for g in ob.vertex_groups:
 for v in me.vertices:
  for g in v.groups:w[v.index,group_map[g.group]]+=g.weight
 assert np.all(w.sum(1)>0);w/=w.sum(1,keepdims=True)
-# A continuous anatomical field removes abrupt UE helper-chain changes.
-# The same field is applied to skin and garments so attachments stay aligned.
+# Smooth the source shoulder helper transition, editing weights only.
 def smooth(a,b,x):
  t=np.clip((x-a)/(b-a),0,1);return t*t*(3-2*t)
-def chain_field(q,indices,values,coordinate):
- order=np.argsort(values);ids=np.array(indices)[order];values=np.array(values)[order]
- ix=np.clip(np.searchsorted(values,coordinate)-1,0,len(ids)-2);lo=ids[ix];hi=ids[ix+1]
- t=smooth(values[ix],values[ix+1],coordinate);out=np.zeros((len(q),28));out[np.arange(len(q)),lo]=1-t;out[np.arange(len(q)),hi]=t
- return out
-spine=[ni[n] for n in ['pelvis','spine','spine1','spine2','neck','head']]
-field=chain_field(fitted,spine,target[spine,2],fitted[:,2])
+mask=smooth(1.20,1.28,p[:,2])*(1-smooth(1.43,1.49,p[:,2]))*(1-smooth(.21,.27,np.abs(p[:,0])))
+field=np.zeros_like(w)
 for pre,sign in [('l',-1),('r',1)]:
- ids=[ni[pre+'_'+n] for n in ['clavicle','upperarm_twist','foretwist','hand']]
- armw=chain_field(fitted,ids,np.abs(target[ids,0]),np.abs(fitted[:,0]))
- amount=smooth(.09,.23,np.abs(fitted[:,0]))*smooth(.85,1.0,fitted[:,2])*(fitted[:,0]*sign>0)
- field=field*(1-amount[:,None])+armw*amount[:,None]
-legs=np.zeros_like(field);side=smooth(-.045,.045,fitted[:,0])
-for pre,amount in [('l',1-side),('r',side)]:
- ids=[ni[pre+'_'+n] for n in ['thigh','calf','foot']]
- legs+=chain_field(fitted,ids,target[ids,2],fitted[:,2])*amount[:,None]
-amount=1-smooth(.79,.96,fitted[:,2]);field=field*(1-amount[:,None])+legs*amount[:,None]
-# Keep source semantic weights outside the upper garment. Hanging tassels
-# follow their torso attachment rather than nearby moving legs without cloth.
-head_materials={slot.material.name for slot in ob.material_slots if slot.material.name not in cfg['anatomical_rebind_materials']}
-headverts=set(v for face in me.polygons if ob.material_slots[face.material_index].material.name in head_materials for v in face.vertices)
-nonhead=np.array([i for i in range(len(p)) if i not in headverts]);amount=smooth(1.05,1.20,fitted[nonhead,2])*(1-smooth(.45,.58,np.abs(fitted[nonhead,0])))
-bodyverts=set(v for face in me.polygons if ob.material_slots[face.material_index].material.name=='MI_MAJ02_01_body' for v in face.vertices)
-lower=(1-smooth(.90,1.05,fitted[nonhead,2]))*(1-smooth(.25,.35,np.abs(fitted[nonhead,0])))*np.isin(nonhead,list(bodyverts));amount=np.maximum(amount,lower)
-w[nonhead]=w[nonhead]*(1-amount[:,None])+field[nonhead]*amount[:,None]
+ side=(p[:,0]*sign>=0);t=smooth(.045,.20,np.abs(p[:,0]));field[:,ni['spine2']]+=side*(1-t);field[:,ni[pre+'_upperarm_twist']]+=side*t
+# Only upper garment / skin: hair, face, ornaments and hand weights retained.
+allowed=set(v for face in me.polygons if ob.material_slots[face.material_index].material.name in cfg['anatomical_rebind_materials'] for v in face.vertices)
+mask*=np.isin(np.arange(len(p)),list(allowed));w=w*(1-mask[:,None])+field*mask[:,None]
+# Collapse unsupported pelvic helpers with a smooth crotch transition.
+body_ids=set(v for face in me.polygons if ob.material_slots[face.material_index].material.name=='MI_MAJ02_01_body' for v in face.vertices)
+mask=smooth(.80,.86,p[:,2])*(1-smooth(.95,1.01,p[:,2]))*(1-smooth(.09,.14,np.abs(p[:,0])))*np.isin(np.arange(len(p)),list(body_ids))
+t=smooth(.005,.08,np.abs(p[:,0]));field=np.zeros_like(w);field[:,ni['pelvis']]=1-t
+field[:,ni['l_thigh']]=t*(p[:,0]<0);field[:,ni['r_thigh']]=t*(p[:,0]>=0)
+w=w*(1-mask[:,None])+field*mask[:,None]
 coords,owner=np.unique(np.round(p,6),axis=0,return_inverse=True);average=np.zeros((len(coords),28));np.add.at(average,owner,w);average/=np.bincount(owner)[:,None];w=average[owner]
 keep=np.argsort(-w,axis=1)[:,:4];mask=np.zeros_like(w);np.put_along_axis(mask,keep,1,1);w*=mask;w/=w.sum(1,keepdims=True)
 # Every digit stays in its source pose and follows the hand; no hand morphs.
-# The common spatial fit prevents clothing and skin from separating at seams.
+# Common weights at shared source coordinates keep material boundaries together.
 uv=me.uv_layers.active.data;data={};manifest=[];materials={}
 for mi,slot in enumerate(ob.material_slots):
  mat=slot.material;tris=[x for x in me.loop_triangles if x.material_index==mi]
@@ -107,21 +96,20 @@ for mi,slot in enumerate(ob.material_slots):
    face.append(dedup[key])
   faces.append(face)
  q=np.array(vertices);nn=np.array(normals);pp=p[[k[0] for k in dedup]]
- jac=np.stack([(deform(pp+np.eye(3)[i]*1e-4)-q)/1e-4 for i in range(3)],axis=2)
- nn=np.linalg.solve(jac.transpose(0,2,1),nn[:,:,None])[:,:,0];nn/=np.maximum(np.linalg.norm(nn,axis=1,keepdims=True),1e-12)
+ nn/=np.maximum(np.linalg.norm(nn,axis=1,keepdims=True),1e-12)
  objname='yqs_part_'+str(mi).zfill(2)
  for suffix,a in [('p',q),('n',nn),('uv',uvs),('w',weights),('f',faces)]:data[objname+'_'+suffix]=np.array(a,dtype='i4' if suffix=='f' else 'f4')
  manifest.append({'object':objname,'part':'body','material':name,'kind':'hair' if name=='MI_MAJ02_01_hair' else ('face' if head else 'cloth')})
 np.savez_compressed(ROOT/'build/fitted_model.npz',**data)
 (ROOT/'build/manifest.json').write_text(json.dumps(manifest,indent=2))
 (ROOT/'tex/materials.json').write_text(json.dumps(materials,indent=2))
-(ROOT/'reports/weight_transfer.json').write_text(json.dumps({'native_bones':rig['names'],'source_landmarks':source.tolist(),'target_landmarks':target.tolist(),'rotation':C.tolist(),'height_m':float(np.ptp(fitted[:,2])),'face_fit':'Rigid head offset blended through the neck','source':'Preserved default Blend','cloth':False,'source_bones':len(arm.data.bones),'no_expression_or_hand_morphs':True},indent=2))
+(ROOT/'reports/weight_transfer.json').write_text(json.dumps({'native_bones':rig['names'],'source_landmarks':source.tolist(),'target_landmarks':target.tolist(),'rotation':C.tolist(),'height_m':float(np.ptp(fitted[:,2])),'source_geometry_max_error_m':float(np.abs(fitted-p).max()),'source_proportions_preserved':True,'face_fit':'Original geometry, no shape deformation','source':'Preserved default Blend','cloth':False,'source_bones':len(arm.data.bones),'no_expression_or_hand_morphs':True},indent=2))
 (ROOT/'reports/input_hashes.json').write_text(json.dumps({str(x.relative_to(ROOT)):hashlib.sha256(x.read_bytes()).hexdigest() for x in (ROOT/'input').rglob('*') if x.is_file()},indent=2,ensure_ascii=False))
 bpy.ops.wm.read_factory_settings(use_empty=True)
-bpy.ops.object.armature_add();arm=bpy.context.object;arm.name='human_skeleton'
+bpy.ops.object.armature_add();arm=bpy.context.object;arm.name=cfg['skeleton']
 bpy.ops.object.mode_set(mode='EDIT');arm.data.edit_bones.remove(arm.data.edit_bones[0]);names=[n+'_'+str(i) for i,n in enumerate(rig['names'])]
 for i,n in enumerate(names):
- b=arm.data.edit_bones.new(n);b.matrix=Matrix(rig['restWorld'][i].tolist());b.length=.03
+ b=arm.data.edit_bones.new(n);b.matrix=Matrix(world[i].tolist());b.length=.03
 for i,n in enumerate(names):
  if rig['parent'][i]>=0:arm.data.edit_bones[n].parent=arm.data.edit_bones[names[rig['parent'][i]]]
 bpy.ops.object.mode_set(mode='OBJECT');cache={}
@@ -134,7 +122,7 @@ for rec in manifest:
  for i,n in enumerate(names):
   group=o.vertex_groups.new(name=n)
   for vi in np.flatnonzero(data[name+'_w'][:,i]>1e-7):group.add([int(vi)],float(data[name+'_w'][vi,i]),'REPLACE')
- mod=o.modifiers.new('Native human binding','ARMATURE');mod.object=arm;o.parent=arm
+ mod=o.modifiers.new('Source proportion race binding','ARMATURE');mod.object=arm;o.parent=arm
  info=materials[rec['material']];mat=bpy.data.materials.new('yqs_'+rec['material'].lower());mat.use_nodes=True;bs=mat.node_tree.nodes.get('Principled BSDF');bs.inputs['Roughness'].default_value=.6
  image=bpy.data.images.load(str(ROOT/'tex'/info['diffuse']),check_existing=True);image.pack();tex=mat.node_tree.nodes.new('ShaderNodeTexImage');tex.image=image;mat.node_tree.links.new(tex.outputs['Color'],bs.inputs['Base Color'])
  if info['cutout']:mat.node_tree.links.new(tex.outputs['Alpha'],bs.inputs['Alpha']);mat.surface_render_method='DITHERED'
