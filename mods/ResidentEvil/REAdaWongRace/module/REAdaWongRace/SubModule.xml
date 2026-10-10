@@ -13,7 +13,14 @@
     <DependedModule Id="SandBoxCore" />
     <DependedModule Id="Sandbox" />
   </DependedModules>
-  <SubModules />
+  <SubModules>
+    <SubModule>
+      <Name value="Ada UI Read-only Probe" />
+      <DLLName value="REAdaWongRace.UIProbe.dll" />
+      <SubModuleClassType value="REAdaWongRace.UIProbe.SubModule" />
+      <Tags />
+    </SubModule>
+  </SubModules>
   <Xmls>
     <XmlNode>
       <XmlName id="Monsters" path="monsters" />

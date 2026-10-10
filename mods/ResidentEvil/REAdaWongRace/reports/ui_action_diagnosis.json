@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-11",
+  "version": "v0.1.2",
+  "native_version": "v1.4.8",
+  "scope": "Local DLL call sites, Native XML action inheritance, TPAC animation GUIDs, offline Ada pose samples",
+  "user_feedback": {
+    "scale_adjustment_accepted": true,
+    "battle_character_normal": true,
+    "arms_behind_back_in_facegen_and_party_encyclopedia_inventory_preview": true,
+    "other_game_checks_not_inferred": true,
+    "precise_wrist_symptom": "Hand displaced; only a narrow zigzag strip connects arm to hand"
+  },
+  "installed_module_matches_workspace": true,
+  "runtime_module_changed": true,
+  "facegen": {
+    "call_site": "BodyGeneratorView.Create... AgentVisualsData.ActionSet(MBGlobals.GetActionSetWithSuffix(...,_facegen)); SetAgentActionChannel(channel=1,act_inventory_idle_start)",
+    "action_set": "as_reada_wong_female_facegen",
+    "inherits": "as_human_female_facegen",
+    "start_action": "act_inventory_idle_start",
+    "start_clip": "anim_female_custom_start",
+    "idle_action": "act_inventory_idle",
+    "idle_clip": "anim_female_custom",
+    "skeletal_animation": "anim_female_idle_long",
+    "animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac"
+  },
+  "character_preview": {
+    "call_site": "CharacterTableau.RefreshCharacterTableau/GetIdleAction, default act_inventory_idle_start; action set suffix _warrior",
+    "action_set": "as_reada_wong_female_warrior",
+    "inherits": "as_human_female_warrior",
+    "start_clip": "inventory_idle_start",
+    "idle_clip": "inventory_idle",
+    "skeletal_animation": "anim_inventory_idle",
+    "animation_guid": "ff08c5be-28ad-45ab-97d2-3f1a4216b1bf",
+    "explicit_IdleAction_or_custom_animation_can_override_default": true
+  },
+  "legacy_basic_preview": {
+    "call_site": "BasicCharacterTableau.RefreshCharacterTableau",
+    "hardcodes_native_human_animation_system": true,
+    "action": "act_inventory_idle",
+    "whether_used_by_reported_view_unconfirmed": true
+  },
+  "offline_results": {
+    "sampled_frames_per_animation": 64,
+    "first_frame_front_side_rendered": true,
+    "backwards_arm_pose_not_reproduced": true,
+    "pose_metrics": "build/ui_action_investigation/pose_metrics.json",
+    "images": [
+      "build/ui_action_investigation/facegen_female_front.png",
+      "build/ui_action_investigation/facegen_female_side.png",
+      "build/ui_action_investigation/inventory_idle_front.png",
+      "build/ui_action_investigation/inventory_idle_side.png"
+    ],
+    "runtime_blending_IK_or_skeleton_override_not_simulated": true,
+    "wrist_boundary_check": {
+      "method": "Pair glove boundary vertices with skin/sleeve vertices within 4 mm in original bind pose; skin final TPAC weights against both animations",
+      "sampled_frames_per_animation": 128,
+      "measurements": [
+        {
+          "animation": "inventory_idle",
+          "worst_near_boundary_pair": {
+            "side": "r",
+            "frame": 928,
+            "gap_m": 0.008225639800162022,
+            "bind_gap_m": 0.0038960503359350518,
+            "glove": "adar_gloves_glove",
+            "body": "adar_body_skin"
+          }
+        },
+        {
+          "animation": "facegen_female",
+          "worst_near_boundary_pair": {
+            "side": "r",
+            "frame": 304,
+            "gap_m": 0.0051400894197301105,
+            "bind_gap_m": 0.0038960503359350518,
+            "glove": "adar_gloves_glove",
+            "body": "adar_body_skin"
+          }
+        }
+      ],
+      "large_game_separation_not_reproduced": true,
+      "does_not_certify_runtime_blending_or_unexamined_frames": true
+    }
+  },
+  "confirmed_root_cause": null,
+  "next_diagnostic": "Capture actual preview skeleton rest and posed transforms, action-set identity, channel actions and mesh binding; the screenshot alone does not confirm an equipment or animation-file cause.",
+  "screenshot_evidence": {
+    "path": "C:/Users/DKX/Videos/Captures/Mount and Blade II BannerlordADA.png",
+    "hand_armor_displayed": 0,
+    "horse_harness_armor_displayed": 15,
+    "initial_arm_bracer_identification_retracted": true,
+    "user_reports_hand_arm_separation_in_inventory": true,
+    "detail_crop": "build/ui_action_investigation/user_wrist_detail.png"
+  },
+  "diagnostic_overlay_installed": true,
+  "appearance_fix_applied": false,
+  "runtime_capture_pending": true
+}
