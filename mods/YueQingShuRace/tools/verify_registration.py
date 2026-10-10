@@ -72,7 +72,7 @@ def validate_registration(root):
               'unaffected_troops':len(before)-1, 'native_level_skills_weapons_upgrades_preserved':True,
               'armor_rosters_empty':True, 'skin_variants':len(skins),
               'skeleton':cfg['skeleton'], 'native_monster_dimensions_preserved':True,
-              'native_ui_actions_inherited':True, 'cloth_simulation':False}
+              'native_ui_actions_inherited':True, 'cloth_simulation':cfg['cloth_enabled']}
     (root / 'reports/registration_validation.json').write_text(json.dumps(report, indent=2))
     return report
 

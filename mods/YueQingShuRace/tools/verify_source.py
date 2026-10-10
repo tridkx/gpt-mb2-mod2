@@ -16,6 +16,10 @@ for o in meshes:
     for v in o.data.vertices:
         for g in v.groups:w[v.index,int(o.vertex_groups[g.group].name.rsplit('_',1)[1])]=g.weight
     assert np.max(np.abs(w-arrays[o.name+'_w']))<1e-6
+alphas=np.load(ROOT/'build/cloth_alphas.npz')
+for o in meshes:
+    colors=o.data.color_attributes.get('ClothDistance');assert colors and colors.domain=='POINT'
+    actual=np.array([v.color[3] for v in colors.data]);assert np.max(abs(actual-alphas[o.name]))<1e-6
 assert fbx.is_file() and fbx.stat().st_size>1000000
 image_count=len(images)
 bpy.ops.wm.read_factory_settings(use_empty=True);bpy.ops.import_scene.fbx(filepath=str(fbx),use_anim=False)
@@ -35,6 +39,6 @@ for rec in manifest:
  assert reference.shape==exported.shape,(rec['material'],reference.shape,exported.shape)
  error=float(np.max(np.abs(reference-exported)));assert error<2e-6,(rec['material'],error)
  errors.append(dict(material=rec['material'],max_geometry_error_m=error))
-report={'status':'pass','blend_reopened':True,'fbx_reimported':True,'source_matches_final_fit':True,'bones':28,'meshes':10,'packed_images':image_count,'facial_animation':False,'source_proportions_preserved':True,'source_height_m':float(np.ptp(source[:,2])),'source_geometry_checks':errors,'source_geometry_max_error_m':max(e['max_geometry_error_m'] for e in errors)}
+report={'status':'pass','blend_reopened':True,'fbx_reimported':True,'source_matches_final_fit':True,'bones':28,'meshes':10,'packed_images':image_count,'facial_animation':False,'game_cloth_paint_verified':True,'cloth_engine_verified':False,'source_proportions_preserved':True,'source_height_m':float(np.ptp(source[:,2])),'source_geometry_checks':errors,'source_geometry_max_error_m':max(e['max_geometry_error_m'] for e in errors)}
 (ROOT/'reports/source_validation.json').write_text(json.dumps(report,indent=2))
 print('SOURCE_VALIDATED',report['source_geometry_max_error_m'])

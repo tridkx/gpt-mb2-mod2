@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<bodies>
+  <body name="yqs_collision" owner_skeleton="yqs_skeleton">
+    <capsules>
+      <capsule name="yqs_waist" length="0.150013" origin="0, 0, 0" frame="0.000000, 0.013332, 0.999911, 0.000000, 0.000000, 0.999911, -0.013332, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.080000, 1.000000, 1.000000">
+        <points>
+          <point radius="0.067000">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.067000">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yqs_back_-0.045" length="0.190011" origin="0, 0, 0" frame="0.000000, -0.010526, 0.999945, 0.000000, 0.000000, 0.999945, 0.010526, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.045000, 0.060000, 1.170000, 1.000000">
+        <points>
+          <point radius="0.045000">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.045000">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yqs_back_0" length="0.190011" origin="0, 0, 0" frame="0.000000, -0.010526, 0.999945, 0.000000, 0.000000, 0.999945, 0.010526, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.060000, 1.170000, 1.000000">
+        <points>
+          <point radius="0.045000">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.045000">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yqs_back_0.045" length="0.190011" origin="0, 0, 0" frame="0.000000, -0.010526, 0.999945, 0.000000, 0.000000, 0.999945, 0.010526, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.045000, 0.060000, 1.170000, 1.000000">
+        <points>
+          <point radius="0.045000">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.045000">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yqs_neck" length="0.070456" origin="0, 0, 0" frame="0.000000, 0.113547, 0.993533, 0.000000, 0.000000, 0.993533, -0.113547, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.039000, 1.390000, 1.000000">
+        <points>
+          <point radius="0.030000">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.030000">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yqs_head" length="0.110000" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.065000, 1.480000, 1.000000">
+        <points>
+          <point radius="0.060000">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.060000">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yqs_l_thigh" length="0.358669" origin="0, 0, 0" frame="-0.004365, -0.015179, -0.999875, 0.000000, -0.000066, 0.999885, -0.015179, 0.000000, 0.999990, 0.000000, -0.004365, 0.000000, -0.084821, 0.057890, 0.912088, 1.000000">
+        <points>
+          <point radius="0.059000">
+            <bones>
+              <bone name="l_thigh" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.059000">
+            <bones>
+              <bone name="l_calf" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yqs_l_calf" length="0.399548" origin="0, 0, 0" frame="-0.004373, -0.034963, -0.999379, 0.000000, -0.000153, 0.999389, -0.034963, 0.000000, 0.999990, 0.000000, -0.004376, 0.000000, -0.086647, 0.051035, 0.493822, 1.000000">
+        <points>
+          <point radius="0.043000">
+            <bones>
+              <bone name="l_calf" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.043000">
+            <bones>
+              <bone name="l_foot" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yqs_l_upperarm" length="0.226937" origin="0, 0, 0" frame="-0.636771, -0.066286, -0.768198, 0.000000, -0.042302, 0.997801, -0.051033, 0.000000, 0.769891, 0.000000, -0.638175, 0.000000, -0.130249, 0.024985, 1.357836, 1.000000">
+        <points>
+          <point radius="0.027000">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.027000">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yqs_l_forearm" length="0.217489" origin="0, 0, 0" frame="-0.645547, 0.235833, -0.726396, 0.000000, 0.156660, 0.971794, 0.176281, 0.000000, 0.747480, 0.000000, -0.664284, 0.000000, -0.274756, 0.009942, 1.183504, 1.000000">
+        <points>
+          <point radius="0.022000">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022000">
+            <bones>
+              <bone name="l_hand" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yqs_r_thigh" length="0.358668" origin="0, 0, 0" frame="0.004369, -0.015179, -0.999875, 0.000000, 0.000066, 0.999885, -0.015179, 0.000000, 0.999990, -0.000000, 0.004370, 0.000000, 0.084820, 0.057890, 0.912088, 1.000000">
+        <points>
+          <point radius="0.059000">
+            <bones>
+              <bone name="r_thigh" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.059000">
+            <bones>
+              <bone name="r_calf" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yqs_r_calf" length="0.399548" origin="0, 0, 0" frame="0.004377, -0.034964, -0.999379, 0.000000, 0.000153, 0.999389, -0.034963, 0.000000, 0.999990, -0.000000, 0.004380, 0.000000, 0.086648, 0.051035, 0.493822, 1.000000">
+        <points>
+          <point radius="0.043000">
+            <bones>
+              <bone name="r_calf" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.043000">
+            <bones>
+              <bone name="r_foot" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yqs_r_upperarm" length="0.226937" origin="0, 0, 0" frame="0.636774, -0.066287, -0.768196, 0.000000, 0.042303, 0.997801, -0.051033, 0.000000, 0.769889, -0.000000, 0.638178, 0.000000, 0.130246, 0.024985, 1.357836, 1.000000">
+        <points>
+          <point radius="0.027000">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.027000">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yqs_r_forearm" length="0.217489" origin="0, 0, 0" frame="0.645550, 0.235833, -0.726394, 0.000000, -0.156661, 0.971794, 0.176280, 0.000000, 0.747478, -0.000000, 0.664287, 0.000000, 0.274754, 0.009942, 1.183504, 1.000000">
+        <points>
+          <point radius="0.022000">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022000">
+            <bones>
+              <bone name="r_hand" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

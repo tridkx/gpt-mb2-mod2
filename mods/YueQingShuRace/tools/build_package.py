@@ -45,6 +45,6 @@ for part,name in [('body','yqs_body'),('hidden','yqs_hidden')]:
     spec['meshes'].append({'name':name,'bodyPart':'human_body','template':'mesh','groups':groups})
 (BUILD/'spec.json').write_text(json.dumps(spec,indent=2));subprocess.run([MB,'build',str(BUILD/'spec.json')],check=True)
 subprocess.run(['dotnet','build',str(ROOT/'tools/PackagePatch/PackagePatch.csproj'),'--ignore-failed-sources','-o',str(BUILD/'package_patch')],check=True)
-subprocess.run(['dotnet',str(BUILD/'package_patch/PackagePatch.dll'),str(BUILD/'base.tpac'),str(PACKAGE)],check=True)
+subprocess.run(['dotnet',str(BUILD/'package_patch/PackagePatch.dll'),str(BUILD/'base.tpac'),str(BUILD/'uncooked.tpac'),str(BUILD/'geometry.json')],check=True)
 (ROOT/'reports/material_names.json').write_text(json.dumps({r['name']:r for r in spec['materials']},indent=2))
 print('PACKAGE_READY',PACKAGE)

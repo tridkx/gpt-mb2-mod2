@@ -1,10 +1,10 @@
 {
-  "version": "v0.1.1",
+  "version": "v0.2.0",
   "status": "pass",
-  "check_scope": "offline_structural_and_native_motion_checks",
-  "final_package_sha256": "e72aa5730a220565d29a81c558b66e08cf8d4e5a28636e923350349910e9283b",
-  "baseline_package_sha256": "2de3a53994e0b137e8ea1f7188c086f3c9e6add9d3f2b8a455dd97d670632df1",
-  "baseline_reason": "v0.1.0 native-sized geometry replaced with source-proportioned custom skeleton",
+  "check_scope": "final_resource_source_geometry_preservation_and_cloth_checks",
+  "final_package_sha256": "f71e36438e71160302928b812f9712c4d2a7821be724c0f2a2cdca555f717b3e",
+  "baseline_package_sha256": "e72aa5730a220565d29a81c558b66e08cf8d4e5a28636e923350349910e9283b",
+  "baseline_reason": "User-accepted v0.1.1 source-proportioned geometry and skeleton",
   "registration": {
     "status": "pass",
     "race": "yqs_default",
@@ -18,7 +18,7 @@
     "skeleton": "yqs_skeleton",
     "native_monster_dimensions_preserved": true,
     "native_ui_actions_inherited": true,
-    "cloth_simulation": false
+    "cloth_simulation": true
   },
   "lods": [
     {
@@ -610,11 +610,21 @@
     "No facial animation or face/body customization support."
   ],
   "integrated_hands_all_lods": true,
-  "cloth_enabled": false,
+  "cloth_enabled": true,
   "body_metamesh": "yqs_body",
   "hidden_placeholder_triangles": 4,
   "source_proportions_preserved": true,
   "custom_skeleton_bones": 28,
   "source_geometry_max_error_m": 0.0,
-  "source_height_m": 1.6760067177528981
+  "source_height_m": 1.6760067177528981,
+  "accepted_appearance_baseline": "v0.1.1",
+  "accepted_appearance_preserved": true,
+  "cloth_lods": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "cooked_cloth_meshes": 18,
+  "cloth_engine_verified": false
 }

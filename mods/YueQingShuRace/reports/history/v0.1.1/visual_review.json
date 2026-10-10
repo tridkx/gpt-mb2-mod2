@@ -1,0 +1,26 @@
+{
+  "version": "v0.1.1",
+  "date": "2026-10-10",
+  "package_sha256": "e72aa5730a220565d29a81c558b66e08cf8d4e5a28636e923350349910e9283b",
+  "preview_count": 26,
+  "scope": "Final-package offline previews; no game launch",
+  "reviewed": [
+    "rest front versus v0.1.0",
+    "rest side",
+    "head",
+    "idle worst",
+    "run worst",
+    "bow worst",
+    "riding worst",
+    "slash worst",
+    "LOD3 head"
+  ],
+  "observations": [
+    "Original face and body geometry preserved; source comparison error 0 m.",
+    "Source limb widths and torso proportions restored.",
+    "Chest contour is rounded in reviewed rest, idle and combat poses.",
+    "Unsimulated skirts and sleeves intersect moving limbs.",
+    "Far LOD loses fine face, garment and hair detail."
+  ],
+  "game_verified": false
+}

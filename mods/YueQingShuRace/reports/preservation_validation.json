@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "version": "v0.2.0",
+  "baseline_version": "v0.1.1",
+  "baseline_package_sha256": "e72aa5730a220565d29a81c558b66e08cf8d4e5a28636e923350349910e9283b",
+  "final_package_sha256": "f71e36438e71160302928b812f9712c4d2a7821be724c0f2a2cdca555f717b3e",
+  "lods": [
+    {
+      "lod": 0,
+      "mesh_count": 15,
+      "max_position_error_m": 0,
+      "indices_uv_weights_identical": true
+    },
+    {
+      "lod": 1,
+      "mesh_count": 12,
+      "max_position_error_m": 0,
+      "indices_uv_weights_identical": true
+    },
+    {
+      "lod": 2,
+      "mesh_count": 10,
+      "max_position_error_m": 0,
+      "indices_uv_weights_identical": true
+    },
+    {
+      "lod": 3,
+      "mesh_count": 10,
+      "max_position_error_m": 0,
+      "indices_uv_weights_identical": true
+    }
+  ],
+  "source_skeleton_identical": true,
+  "all_texture_mips_identical": true,
+  "user_feedback": "User accepted v0.1.1 appearance; scope of tested gameplay unspecified",
+  "game_cloth_verified": false
+}

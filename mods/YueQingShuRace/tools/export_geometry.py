@@ -44,7 +44,7 @@ for rec in manifest:
             if key not in saved:continue
             for g in o.vertex_groups:g.remove([v.index])
             for name,w in saved[key]:o.vertex_groups[name].add([v.index],w,'REPLACE')
-        me=o.data;me.calc_loop_triangles();uv=me.uv_layers.active.data;records=[];faces=[];dedup={}
+        me=o.data;me.calc_loop_triangles();uv=me.uv_layers.active.data;cloth_layer=me.color_attributes.get("ClothDistance");records=[];faces=[];dedup={}
         for tri in me.loop_triangles:
             if tri.area<1e-12:continue
             face=[]
@@ -59,7 +59,7 @@ for rec in manifest:
                     inf=sorted([(int(o.vertex_groups[g.group].name.rsplit('_',1)[1]),g.weight) for g in v.groups if g.weight>1e-7],key=lambda x:-x[1])[:4]
                     idx=[i for i,w in inf];w=np.array([w for i,w in inf]);w/=w.sum();q=np.floor(w*255).astype(int);q[w.argmax()]+=255-q.sum()
                     while len(idx)<4:idx.append(0);q=np.append(q,0)
-                    records.append((list(v.co),list(normal),u,idx,q.tolist()));dedup[key]=len(records)-1
+                    records.append((list(v.co),list(normal),u,idx,q.tolist(),cloth_layer.data[vi].color[3] if cloth_layer else 0));dedup[key]=len(records)-1
                 face.append(dedup[key])
             faces.append(face)
         p=np.array([v[0] for v in records]);n=np.array([v[1] for v in records]);u=np.array([v[2] for v in records]);f=np.array(faces)
@@ -67,10 +67,12 @@ for rec in manifest:
         with path.open('wb') as out:
             out.write(np.array([0x4f45474d,len(p),f.size],'<i4').tobytes())
             for a in [p,n,tangent,u,np.zeros((len(p),2))]:out.write(np.asarray(a,'<f4').tobytes())
-            for a in [np.full((len(p),4),255,'u1'),[v[3] for v in records],[v[4] for v in records]]:out.write(np.asarray(a,'u1').tobytes())
+            color=np.full((len(p),4),255,'u1');active=any(v[5]>0 for v in records) and lod in cfg['cloth_lods']
+            if active:color[:,3]=np.rint(np.clip([v[5] for v in records],0,1)*255).astype('u1')
+            for a in [color,[v[3] for v in records],[v[4] for v in records]]:out.write(np.asarray(a,'u1').tobytes())
             out.write(f.astype('<u4').tobytes())
         assert np.isfinite(p).all() and np.isfinite(n).all() and np.isfinite(tangent).all()
-        geometry.append({'name':name,'part':rec['part'],'geometry':str(path),'material':'yqs_'+rec['material'].lower(),'flags':[],'materialFlags':['no_team_color','no_tattoo'],'lod':lod,'vertices':len(p),'triangles':len(f),'boundary_fallback':fallback})
+        geometry.append({'name':name,'part':rec['part'],'geometry':str(path),'material':'yqs_'+rec['material'].lower(),'flags':[],'materialFlags':['no_team_color','no_tattoo'],'lod':lod,'vertices':len(p),'triangles':len(f),'boundary_fallback':fallback,'cloth':active})
         bpy.data.objects.remove(o,do_unlink=True)
 # Tiny tetrahedron inside the pelvis supplies valid unused skin slots.
 from build_assets import vertex_tangents

@@ -130,7 +130,25 @@
     "reports/history/v0.1.0/release_validation.json",
     "reports/history/v0.1.0/weight_transfer.json",
     "reports/history/v0.1.0/visual_review.json",
-    "reports/history/v0.1.1-draft/motion_failure.json"
+    "reports/history/v0.1.1-draft/motion_failure.json",
+    "tools/prepare_cloth.py",
+    "tools/apply_cloth_source.py",
+    "tools/calibrate_cloth_travel.py",
+    "tools/calibrate_lod_cloth.py",
+    "tools/build_cloth.py",
+    "tools/cloth_policy.json",
+    "tools/verify_cloth.py",
+    "tools/verify_preservation.py",
+    "reports/cloth_paint.json",
+    "reports/cloth_collision.json",
+    "reports/cloth_validation.json",
+    "reports/cloth_travel_calibration.json",
+    "reports/cloth_lod_calibration.json",
+    "reports/preservation_validation.json",
+    "reports/history/v0.1.1/release_validation.json",
+    "reports/history/v0.1.1/source_validation.json",
+    "reports/history/v0.1.1/visual_review.json",
+    "tools/finalize_release.py"
   ],
   "shared_source_files": [
     "tools/asset_helpers/config/spec.py",
@@ -141,7 +159,15 @@
     "tools/asset_helpers/previewer/baker/animation.py",
     "tools/asset_helpers/previewer/baker/config.py",
     "tools/asset_helpers/previewer/baker/skeleton.py",
-    "tools/asset_helpers/tools/georead.py"
+    "tools/asset_helpers/tools/georead.py",
+    "tools/cloth_compiler/cloth_payload.py",
+    "tools/cloth_compiler/cook_cloth.py",
+    "tools/cloth_compiler/validation.py",
+    "tools/cloth_compiler/NativeClothProbe.cs",
+    "tools/cloth_compiler/NativeClothProbe.csproj",
+    "tools/cloth_compiler/ClothPatch.cs",
+    "tools/cloth_compiler/ClothPatch.csproj",
+    "tools/cloth_compiler/README.md"
   ],
   "package": "module/YueQingShuRace/AssetPackages/yqs.tpac",
   "validation_report": "reports/release_validation.json"

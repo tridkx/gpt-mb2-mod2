@@ -26,7 +26,8 @@ audit=json.loads(run([sys.executable,'-B','-X','utf8','C:/Users/DKX/.codex/skill
 visible=json.loads(run(['dotnet',str(WORKSPACE/'tools/AssetTool/AssetTool.dll'),'visibility',str(PACKAGE)]))
 (ROOT/'reports/final_visibility.json').write_text(json.dumps(visible,indent=2))
 assert all('disable_vertex_color_alpha' in m['ShaderMaterialFlags'] for m in visible['materials'])
-assert all(not m['Flags'] and m['AlphaMin']==255 and m['AlphaMax']==255 for m in visible['meshes']), 'Unexpected cloth or vertex transparency'
+assert all(set(m['Flags']).issubset({'uses_cloth_simulation','force_enable_cloth'}) for m in visible['meshes'])
+assert any('uses_cloth_simulation' in m['Flags'] and m['AlphaMin']==0 and m['AlphaMax']>0 for m in visible['meshes'])
 exports={};lods=[];geometry=json.loads((ROOT/'build/geometry.json').read_text())
 def mgeo(path):
     data=Path(path).read_bytes();magic,n,ni=np.frombuffer(data,'<i4',3);assert magic==0x4f45474d
@@ -142,6 +143,6 @@ descriptor=ET.parse(ROOT/'module/YueQingShuRace/SubModule.xml')
 assert descriptor.find('Id').get('value')=='YueQingShuRace' and descriptor.find('Version').get('value')==cfg['version']
 assert sha(PACKAGE)==hash_before
 assert all(sha(ROOT/p)==h for p,h in json.loads((ROOT/'reports/input_hashes.json').read_text()).items())
-report={'version':cfg['version'],'status':'pass','check_scope':'offline_structural_and_native_motion_checks','final_package_sha256':hash_before,'baseline_package_sha256':'2de3a53994e0b137e8ea1f7188c086f3c9e6add9d3f2b8a455dd97d670632df1','baseline_reason':'v0.1.0 native-sized geometry replaced with source-proportioned custom skeleton','registration':registration,'lods':lods,'seams':seams,'motions':motions,'textures':texturechecks,'gross_motion_tear_guard_max_extension':6.0,'metadata_audit':'pass','game_test_verified':False,'game_cloth_solver_used':False,'limitations':['UE eye occlusion and tear overlays omitted; original default face/hair/clothes retained with conservative native materials.','Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.','No facial animation or face/body customization support.']}
-report.update(integrated_hands_all_lods=True,cloth_enabled=False,body_metamesh='yqs_body',hidden_placeholder_triangles=4,source_proportions_preserved=True,custom_skeleton_bones=28)
+report={'version':cfg['version'],'status':'pass','check_scope':'offline_structural_and_native_motion_checks','final_package_sha256':hash_before,'baseline_package_sha256':'e72aa5730a220565d29a81c558b66e08cf8d4e5a28636e923350349910e9283b','baseline_reason':'User-accepted v0.1.1 source-proportioned geometry and skeleton','registration':registration,'lods':lods,'seams':seams,'motions':motions,'textures':texturechecks,'gross_motion_tear_guard_max_extension':6.0,'metadata_audit':'pass','game_test_verified':False,'game_cloth_solver_used':False,'limitations':['UE eye occlusion and tear overlays omitted; original default face/hair/clothes retained with conservative native materials.','Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.','No facial animation or face/body customization support.']}
+report.update(integrated_hands_all_lods=True,cloth_enabled=True,body_metamesh='yqs_body',hidden_placeholder_triangles=4,source_proportions_preserved=True,custom_skeleton_bones=28)
 (ROOT/'reports/release_validation.json').write_text(json.dumps(report,indent=2));print(json.dumps({'status':report['status'],'registration':registration,'lods':lods,'seams':seams,'motions':motions},indent=2))

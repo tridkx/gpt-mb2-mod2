@@ -103,7 +103,7 @@ for mi,slot in enumerate(ob.material_slots):
 np.savez_compressed(ROOT/'build/fitted_model.npz',**data)
 (ROOT/'build/manifest.json').write_text(json.dumps(manifest,indent=2))
 (ROOT/'tex/materials.json').write_text(json.dumps(materials,indent=2))
-(ROOT/'reports/weight_transfer.json').write_text(json.dumps({'native_bones':rig['names'],'source_landmarks':source.tolist(),'target_landmarks':target.tolist(),'rotation':C.tolist(),'height_m':float(np.ptp(fitted[:,2])),'source_geometry_max_error_m':float(np.abs(fitted-p).max()),'source_proportions_preserved':True,'face_fit':'Original geometry, no shape deformation','source':'Preserved default Blend','cloth':False,'source_bones':len(arm.data.bones),'no_expression_or_hand_morphs':True},indent=2))
+(ROOT/'reports/weight_transfer.json').write_text(json.dumps({'native_bones':rig['names'],'source_landmarks':source.tolist(),'target_landmarks':target.tolist(),'rotation':C.tolist(),'height_m':float(np.ptp(fitted[:,2])),'source_geometry_max_error_m':float(np.abs(fitted-p).max()),'source_proportions_preserved':True,'face_fit':'Original geometry, no shape deformation','source':'Preserved default Blend','cloth':cfg['cloth_enabled'],'source_bones':len(arm.data.bones),'no_expression_or_hand_morphs':True},indent=2))
 (ROOT/'reports/input_hashes.json').write_text(json.dumps({str(x.relative_to(ROOT)):hashlib.sha256(x.read_bytes()).hexdigest() for x in (ROOT/'input').rglob('*') if x.is_file()},indent=2,ensure_ascii=False))
 bpy.ops.wm.read_factory_settings(use_empty=True)
 bpy.ops.object.armature_add();arm=bpy.context.object;arm.name=cfg['skeleton']
