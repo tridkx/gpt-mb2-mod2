@@ -1,7 +1,7 @@
 {
   "status": "pass",
   "version": "v0.2.6",
-  "scope": "offline structure/source fidelity/XML replacement; game appearance is pending",
+  "scope": "offline structure/source fidelity/XML replacement passed; user confirmed preview stance remains incorrect in inventory and character editing",
   "final_package_sha256": "b76b79aa1117b0711d83c52c394254e6641cd432d540fa233d74c0531219e2b9",
   "runtime_dll_sha256": "50599bd5d904fc479213e23861d3ca4c9ee08befd5919a8faa6ff10834ab27b0",
   "source_vertex_max_error_m": 5.972363618217064e-08,
@@ -17,6 +17,16 @@
   "other_troops_unchanged": 547,
   "predicted_run_frames": 25,
   "game_verified": false,
+  "user_preview_stance_acceptance": {
+    "date": "2026-10-10",
+    "version": "v0.2.6",
+    "result": "failed",
+    "inventory_preview": "both hands remain behind the back",
+    "character_editing": "both hands remain behind the back",
+    "root_cause": "unconfirmed",
+    "work_state": "deferred at user request",
+    "record": "preview_stance_v0.2.6.md"
+  },
   "proportions_in_game_verified": false,
   "native_file_hashes": {
     "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\Native\\ModuleData\\skins.xml": "01b85bbe41f4898d93f7d1ff7ad78bf78ced662ba5fea3098ed4ef054ad9b03c",
@@ -25,6 +35,7 @@
     "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\SandBoxCore\\ModuleData\\spnpccharacters.xml": "d6023b03f0c80c3591d900a15a035698a8ee79156fa692cf21980a928e886290"
   },
   "known_limits": [
+    "user confirmed both inventory and character editing preview idle keep hands behind the back; unresolved",
     "fixed source face",
     "cloth engine dynamics pending",
     "native animation retargeting and IK unverified",
