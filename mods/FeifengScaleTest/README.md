@@ -1,35 +1,41 @@
-# Feifeng Skeleton Scale Test v0.1.1
+# Feifeng Skeleton Scale Test v0.1.2
 
 飞凤苗银（女）的全身装备骨架缩放原型。原始输入来自 `D:/dsh-tiandao/飞凤苗银(女)`，源模型按当前尺寸等比例乘以 **1.5**，连头饰总高约 **2.542 米**。独立模块 `FeifengScaleTest`，仅单机任务场景启用缩放。
 
-## 测试方法
+## 单骨诊断测试方法
 
-1. 在启动器启用 **Feifeng Skeleton Scale Test**，位于 Native、SandBoxCore、Sandbox 之后。
-2. 用已有作弊物品列表查找“飞凤苗银测试A”或“飞凤苗银测试B”，穿上同一字母的头部、衣裙与手部、腿部与鞋三件。手套、披肩槽留空。
-3. **先测 A，再测 B**，每次换好全套后进入村庄、城镇或战斗场景。场景内显示 `Feifeng scale probe A/B applied`，约半秒后应用。
-4. 看整体大小、脚是否落地、头颈是否连贯；然后跑步、屈肘、双手武器、拉弓、骑乘。最好与普通角色同框比较。
-5. 换回普通装备后重新进入场景，检查恢复。不要混穿 A/B，缩放配置由身体装备决定，其他部件不会自动替换。
+本版用 **C、D** 两组隔离头骨缩放。两组的头、身体和腿都引用同一套 A 网格，因此外观差异不再来自导出几何。旧 A/B 装备保留，但本版不触发它们的旧缩放方案。
 
-背包及角色预览界面不应用运行时补偿，可能显得大小或比例异常；**先以进入场景后的表现判断**。本原型不自动开启作弊、不赠送物品、不修改存档英雄的 BodyProperties。
+1. 启用 **Feifeng Skeleton Scale Test**，位于 Native、SandBoxCore、Sandbox 之后。
+2. 查找“飞凤苗银单骨C一次”，穿上头、衣裙与手部、腿部与鞋三件；手套、披肩槽留空。
+3. 进入村庄或战斗，下马，用能看到头部的镜头观察。只处理玩家角色，不处理士兵或坐骑。
+4. 场景自动运行：正常 **6 秒** → 头骨 2 倍 **12 秒** → 恢复 **6 秒** → 再次头骨 2 倍 **12 秒** → 恢复并结束。每个阶段有英文提示。保持场景正常运行，不要打开菜单或暂停。最好录制这一段，或在正常与 `HEAD x2` 阶段各截一张同角度近景。
+5. 换穿“飞凤苗银单骨D持续”全套，重新进入场景，重复观察。每次重进场景重新计时。
 
-| 组别 | 装备触发的实验配置 | 目的 |
+| 组别 | 调用方式 | 用途 |
 | --- | --- | --- |
-| A | 根骨统一 1.5，其他骨保持 1 | 判断根骨缩放是否向子骨及蒙皮传递 |
-| B | 根骨 1.5，加按源解剖标记拟合的逐骨三轴比例 | 判断能否用骨架调整减少源比例改动 |
+| C | 每个放大阶段仅调用一次，头骨索引 13，三轴均为 2 | 检查单次调用及其持续性 |
+| D | 放大阶段每次显示更新前调用相同参数 | 检查持续重施能否维持效果 |
 
-两组各自有导出补偿网格，在**假定的局部缩放层级模型**中恢复相同的源比例轮廓。动作姿态适配采用骨段旋转，没有把源肢体沿长度强行拉成原生比例；过渡区仍有蒙皮混合。原始尺寸 ×1.5 的独立源文件没有这些补偿变形。
+两组只调用单个头骨的缩放，不调用 `ForceUpdateBoneFrames`，以免主动重建骨架帧干扰结果。正常阶段、装备切换及场景结束时尝试将本角色逐骨缩放恢复为 1，并调用原有装备体型更新。若有累积放大、闪烁或头颈异常，记录阶段与组别；这些均是诊断结果，不能直接作为成品效果。
+
+背包界面不运行该测试。头骨索引和名称在运行时检查；只有 C/D 身体装备触发，头部也必须穿同组，否则原生头部或其他模组头部会混入观察。仅单机使用，不修改存档英雄的 BodyProperties 或 AgentScale。
+
+原始源文件仍是当前源尺寸 ×1.5；这一版的 **头骨 ×2 仅用于诊断接口**，不代表最终模型倍率。
 
 ## 验证范围与当前限制
 
 最终 TPAC 已回读检查四级 LOD、材质引用、骨骼索引、权重和、几何及跑步/拉弓预测蒙皮；运行 DLL 对本机游戏程序集编译。四级 LOD 暂用相同的约 1.48 万三角形模型，便于隔离缩放问题。原型不启用物理布料。
 
-**引擎的逐骨缩放传递方式尚未确认，不能据离线预览认定游戏中恢复了 1.5 倍或源比例。**运行时调用 `MBAgentVisuals.ApplySkeletonScale`，不改变 AgentScale；脚落地、碰撞、武器 IK 和骑乘可能与外观缩放不同步，正是此次测试需要确认的项目。游戏测试由你完成，未启动游戏。
+**引擎的逐骨缩放传递方式尚未确认，不能据离线预览认定游戏中恢复了 1.5 倍或源比例。**运行时调用 `MBAgentVisuals.ApplySkeletonScale`，不改变 AgentScale；脚落地、碰撞、武器 IK 和骑乘可能与外观缩放不同步，正是此次测试需要确认的项目。本版游戏测试由你完成，未启动游戏。
 
 预测动作中仍可见袖口、肩部和裙片变形，边长变化指标也偏高；这版通过的是结构检查，**尚未通过外观质量验证**。确认引擎缩放约定后再继续精修绑骨，不能用当前预览证明没有穿模或源比例完全还原。
 
-运行诊断日志：Windows“文档”目录下 `Mount and Blade II Bannerlord/FeifengScaleTest/scale_probe.log`。记录装备网格能否加载、子网格数量，以及应用前、应用后和下一次 tick 的骨骼位置与 AgentScale。若出现透明人，先看 `mesh=ffs_a/b_* loaded=... groups=...`；判断不符时结合截图、A/B 组别、动作与该日志继续修正。
+运行诊断日志：Windows“文档”目录下 `Mount and Blade II Bannerlord/FeifengScaleTest/single_bone_probe_v0.1.2.log`。记录版本、阶段、调用次数、骨索引映射、完整静止/当前骨骼矩阵、AgentScale，以及显示前和后续场景更新的采样。关节原点不变并不等于蒙皮没有缩放；应同时检查矩阵轴和实际头部外观。
 
-预测预览保存在 `reports/predicted_A_rest.png`、`predicted_B_rest.png`、`predicted_B_run.png`，由最终 TPAC 计算；它们不是游戏截图。完整结果见 [离线检查](reports/release_validation.json)、[源文件检查](reports/source_validation.json)、[缩放参数与假定](reports/scale_plan.json)、[资源可见性返修检查](reports/visibility_repair.json)。当前网格资源及 XML 引用均用小写；可见性仍待本版游戏复测确认。
+v0.1.1 用户截图已确认 A/B 在背包和战斗场景中可见；对应日志中骨段长度未出现预期变化，但旧日志未记录坐标轴，不能单独排除蒙皮缩放。完整阶段诊断见 [单骨检查](reports/single_bone_validation.json)。
+
+`reports/predicted_A_rest.png`、`predicted_B_rest.png`、`predicted_B_run.png` 仍是旧 A/B 假定缩放模型的离线预测，不是 C/D 的游戏结果。结构结果见 [离线检查](reports/release_validation.json)、[源文件检查](reports/source_validation.json)；旧方案见 [缩放参数与假定](reports/scale_plan.json)，历史可见性返修见 [检查记录](reports/visibility_repair.json)。
 
 ## 文件与重建
 
@@ -54,8 +60,11 @@ dotnet build "$taskMod/tools/Runtime/FeifengScaleTest.csproj" -o "$taskMod/modul
 & $taskPython -B -X utf8 "$taskMod/tools/verify_release.py"
 & $taskBlender --background --python-exit-code 1 --python "$taskMod/tools/verify_source.py"
 & $taskBlender --background --python-exit-code 1 --python "$taskMod/tools/render_review.py"
+& $taskPython -B -X utf8 "$taskMod/tools/verify_single_bone.py"
 ```
 
-动作 JSON 从当前游戏导出：骨架在 `Native/EmAssetPackages/human/human.tpac`，跑步在 `Native/EmAssetPackages/pack_anim_run/pack_anim_run.tpac`，拉弓在 `Native/EmAssetPackages/pack_anim_1/pack_anim_1.tpac`；命令分别为 mbtool `skeljson` 与 `anim`。使用工作区 `tools/package_delivery.py --mod FeifengScaleTest --version v0.1.1` 打包，首次安装执行本模组 `tools/install_test.ps1`（可先加 `-CheckOnly`）。安装脚本只接受不存在的目标模块并校验 TPAC/DLL，不覆盖旧安装；已有 v0.1.0 时使用工作区 `tools/install_release.ps1 -Mod FeifengScaleTest -Version v0.1.1 -PreviousVersion v0.1.0`，保留上版包并更新安装。
+单骨检查会比较 `dist/FeifengScaleTest_v0.1.1_Mod.zip` 的 TPAC 字节，需要保留该基线包。它同时执行编译后 DLL 的阶段边界与参数检查，但不会调用原生游戏接口。
+
+动作 JSON 从当前游戏导出：骨架在 `Native/EmAssetPackages/human/human.tpac`，跑步在 `Native/EmAssetPackages/pack_anim_run/pack_anim_run.tpac`，拉弓在 `Native/EmAssetPackages/pack_anim_1/pack_anim_1.tpac`；命令分别为 mbtool `skeljson` 与 `anim`。使用工作区 `tools/package_delivery.py --mod FeifengScaleTest --version v0.1.2` 打包，首次安装执行本模组 `tools/install_test.ps1`（可先加 `-CheckOnly`）。安装脚本只接受不存在的目标模块并校验 TPAC/DLL，不覆盖旧安装；已有 v0.1.1 时使用工作区 `tools/install_release.ps1 -Mod FeifengScaleTest -Version v0.1.2 -PreviousVersion v0.1.1`，保留上版包并更新安装。
 
 变更记录见 [CHANGELOG](CHANGELOG.md)。本地 Git，不上传远程。

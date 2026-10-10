@@ -1,6 +1,6 @@
 {
   "id": "FeifengScaleTest",
-  "version": "v0.1.1",
+  "version": "v0.1.2",
   "source_files": [
     "README.md",
     "CHANGELOG.md",
@@ -29,6 +29,7 @@
     "reports/release_validation.json",
     "reports/run.json",
     "reports/scale_plan.json",
+    "reports/single_bone_validation.json",
     "reports/source_inspection.json",
     "reports/source_validation.json",
     "reports/visibility.json",
@@ -52,6 +53,8 @@
     "tools/render_review.py",
     "tools/rig_model.py",
     "tools/verify_release.py",
+    "tools/verify_runtime.ps1",
+    "tools/verify_single_bone.py",
     "tools/verify_source.py",
     "tools/verify_visibility_repair.py"
   ],
