@@ -37,6 +37,11 @@ for old in human.findall('skin'):
     for node in list(skin):
         if node.tag in ['deform_keys','presets','default_hair_meshes','hair_meshes','beard_meshes']:
             for child in list(node):node.remove(child)
+            if node.tag in ['hair_meshes','beard_meshes']:
+                # Index zero is the native no-hair/no-beard descriptor, not an empty list.
+                baseline=old.find(node.tag)[0]
+                assert baseline.get('name') is None
+                node.append(copy.deepcopy(baseline))
     race.append(skin)
 write(M/'ModuleData/skins.xml',skins)
 
@@ -86,7 +91,7 @@ for id,filename,type in [('soln_skins','skins.xml','skin'),('soln_action_sets','
     ET.SubElement(project,'file',id=id,name='ModuleData/'+filename,type=type)
 write(M/'ModuleData/project.mbproj',project)
 sub=ET.Element('Module')
-for name,value in [('Name','Wudu Canglan Race Test'),('Id','WuduRaceTest'),('Version','v0.1.1'),('DefaultModule','false'),('ModuleCategory','Singleplayer'),('ModuleType','Community'),('SingleplayerModule','true'),('MultiplayerModule','false')]:ET.SubElement(sub,name,value=value)
+for name,value in [('Name','Wudu Canglan Race Test'),('Id','WuduRaceTest'),('Version','v0.1.2'),('DefaultModule','false'),('ModuleCategory','Singleplayer'),('ModuleType','Community'),('SingleplayerModule','true'),('MultiplayerModule','false')]:ET.SubElement(sub,name,value=value)
 deps=ET.SubElement(sub,'DependedModules')
 for dep in ['Native','SandBoxCore','Sandbox']:ET.SubElement(deps,'DependedModule',Id=dep)
 submodules=ET.SubElement(sub,'SubModules');observer=ET.SubElement(submodules,'SubModule')

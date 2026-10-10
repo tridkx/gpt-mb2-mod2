@@ -11,12 +11,12 @@ namespace WuduRaceTest {
             try {
                 string dir=Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),"Mount and Blade II Bannerlord","WuduRaceTest");
                 Directory.CreateDirectory(dir);
-                File.AppendAllText(Path.Combine(dir,"probe_v0.1.1.log"),DateTime.Now.ToString("s")+" "+message+Environment.NewLine);
+                File.AppendAllText(Path.Combine(dir,"probe_v0.1.2.log"),DateTime.Now.ToString("s")+" "+message+Environment.NewLine);
             } catch(Exception) { /* Diagnostics must not interrupt the game. */ }
         }
         public override void OnGameInitializationFinished(Game game) {
             try {
-                Log("BEGIN v0.1.1 races="+string.Join(",",TaleWorlds.Core.FaceGen.GetRaceNames()));
+                Log("BEGIN v0.1.2 races="+string.Join(",",TaleWorlds.Core.FaceGen.GetRaceNames()));
                 var troop=game.ObjectManager.GetObject<CharacterObject>("imperial_recruit");
                 if(troop!=null)Log("troop=imperial_recruit race="+troop.Race+" female="+troop.IsFemale+" level="+troop.Level+" monster="+TaleWorlds.Core.FaceGen.GetBaseMonsterNameFromRace(troop.Race)+" power="+(Campaign.Current==null?"n/a":Campaign.Current.Models.MilitaryPowerModel.GetDefaultTroopPower(troop).ToString(CultureInfo.InvariantCulture)));
             } catch(Exception e) { Log("INIT_ERROR "+e); }

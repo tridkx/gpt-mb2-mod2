@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-10",
+  "failed_version": "v0.1.1",
+  "fixed_version": "v0.1.2",
+  "pids": [
+    15080,
+    13456
+  ],
+  "contexts": [
+    "character creation preview",
+    "town_ES1 recruitment/new race preview"
+  ],
+  "fault_module": "TaleWorlds.Native.dll",
+  "fault_rva": "0x58fbd0",
+  "exception": "0xc0000005 read address 0x60",
+  "instruction": "mov rcx, qword ptr [rcx+rbx*8+0x40]",
+  "registers": {
+    "rcx": "0x0",
+    "rbx": "0x4"
+  },
+  "unwound_caller_rva": "0x620d55",
+  "unwind_method": "fault function pushes rsi,rdi,r14 and allocates 0x70; return address at RSP+0x88; no stack scanning",
+  "analysis": "Hair descriptor array at object+0x378 is null after hair_meshes list cleared. Native reads hair entry zero and cover slot four without checking empty array. Native skin has an unnamed hair_mesh at index zero; beard likewise. Restore those descriptors and their style tags.",
+  "regression_previous_config_rejected": true,
+  "all_ten_skins_have_zero_index_descriptors": true,
+  "native_unchanged": true,
+  "tpac_unchanged": true,
+  "runtime_retest_pending": true
+}
