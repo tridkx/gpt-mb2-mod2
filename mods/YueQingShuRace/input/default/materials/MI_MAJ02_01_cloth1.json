@@ -1,0 +1,80 @@
+{
+  "Textures": {
+    "PM_Diffuse": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse",
+    "BaseColor Tex": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_cloth1_D.T_MAJ02_01_cloth1_D",
+    "FabricMask": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_cloth1_Mask.T_MAJ02_01_cloth1_Mask",
+    "T_MAJ02_01_cloth1_Mask": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_cloth1_Mask.T_MAJ02_01_cloth1_Mask",
+    "Nornal Tex": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_cloth1_N.T_MAJ02_01_cloth1_N",
+    "PM_Normals": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_cloth1_N.T_MAJ02_01_cloth1_N",
+    "T_MAJ02_01_cloth1_N": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_cloth1_N.T_MAJ02_01_cloth1_N",
+    "PM_SpecularMasks": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_cloth1_ORM.T_MAJ02_01_cloth1_ORM",
+    "ORM": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_cloth1_ORM.T_MAJ02_01_cloth1_ORM",
+    "R_Tilling_Tex_NormalTex": "Pal7/Content/MaterialLib/ComTexture/Cloth/Fabric_012_N.Fabric_012_N",
+    "G_Tilling_Tex_NormalTex": "Pal7/Content/MaterialLib/ComTexture/Cloth/FabricDetail.FabricDetail",
+    "B_Tilling_Tex_NormalTex": "Pal7/Content/MaterialLib/ComTexture/Cloth/Fabric_012_N.Fabric_012_N",
+    "A_Tilling_Tex_NormalTex": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse"
+  },
+  "Parameters": {
+    "BlendMode": 1,
+    "ShadingModel": 0,
+    "Colors": {
+      "Base Color (V3)": {
+        "R": 1.3,
+        "G": 1.3,
+        "B": 1.3,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "LightColor_R": {
+        "R": 1.1,
+        "G": 1.1,
+        "B": 1.1,
+        "A": 1.0,
+        "Hex": "FFFFFF"
+      },
+      "LightColor_G": {
+        "R": 1.2,
+        "G": 1.2,
+        "B": 1.2,
+        "A": 1.0,
+        "Hex": "FFFFFF"
+      }
+    },
+    "Scalars": {
+      "Roughness (S)": 1.1,
+      "BaseColorWeight_R": 1.0,
+      "RoughnessWeight_R": -1.0,
+      "Tilling_R": 12.0,
+      "BaseColorWeight_G": 0.0,
+      "Tilling_G": 11.0,
+      "Tilling_B": 15.0,
+      "RoughnessMin_A": 0.3,
+      "RoughnessMax_A": 0.7,
+      "RoughnessWeight_A": 0.0,
+      "Flatness_A": 0.0,
+      "NormalWeight_A": 0.0,
+      "Tilling_A": 2.0,
+      "RefractionDepthBias": 0.0
+    },
+    "Switches": {
+      "EnableEmbroidery": true,
+      "EnableMaskG": true,
+      "EnableMaskB": true,
+      "EnableDistanceFade": true
+    },
+    "Properties": {
+      "bHasStaticPermutationResource": true,
+      "BasePropertyOverrides": {
+        "bOverride_TwoSided": true,
+        "BlendMode": "BLEND_Masked",
+        "OpacityMaskClipValue": 0.3333
+      }
+    },
+    "HasTopDiffuse": false,
+    "HasTopNormals": false,
+    "HasTopSpecularMasks": true,
+    "HasTopEmissive": false,
+    "IsTranslucent": false,
+    "IsNull": false
+  }
+}

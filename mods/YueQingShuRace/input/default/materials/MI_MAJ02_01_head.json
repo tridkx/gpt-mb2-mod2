@@ -1,0 +1,84 @@
+{
+  "Textures": {
+    "模型贴图": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_head_D.T_MAJ02_01_head_D",
+    "PM_Diffuse": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_head_D.T_MAJ02_01_head_D",
+    "T_MAJ02_01_head_D": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_head_D.T_MAJ02_01_head_D",
+    "PM_Normals": "Pal7/Content/MaterialLib/ComTexture/Character/Skin/skin_n.skin_n",
+    "Tears Normal And Mask": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/Tears_Mask_N.Tears_Mask_N",
+    "AO R Sp Sc": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_head_ORM.T_MAJ02_01_head_ORM",
+    "PM_SpecularMasks": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_head_ORM.T_MAJ02_01_head_ORM",
+    "T_MAJ02_01_head_ORM": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_head_ORM.T_MAJ02_01_head_ORM",
+    "BentNormal": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_head_bent_normals.T_MAJ02_01_head_bent_normals",
+    "Normal": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_head_N.T_MAJ02_01_head_N",
+    "BaseColor": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_head_D.T_MAJ02_01_head_D",
+    "细节法线": "Pal7/Content/MaterialLib/ComTexture/Character/Skin/skin_n.skin_n",
+    "skin_n": "Pal7/Content/MaterialLib/ComTexture/Character/Skin/skin_n.skin_n"
+  },
+  "Parameters": {
+    "BlendMode": 1,
+    "ShadingModel": 5,
+    "Colors": {
+      "lightPositionOffset": {
+        "R": -1.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "000000"
+      },
+      "BaseColor着色": {
+        "R": 1.0,
+        "G": 0.991667,
+        "B": 0.95,
+        "A": 0.0,
+        "Hex": "FFFFFA"
+      },
+      "Addative Tint": {
+        "R": 1.0,
+        "G": 0.122189,
+        "B": 0.082387,
+        "A": 0.0,
+        "Hex": "FF6251"
+      }
+    },
+    "Scalars": {
+      "光半径": 148200.0,
+      "光明部偏移": -0.92,
+      "补光亮度": 0.03,
+      "弯曲法线启用": 1.0,
+      "降低BaseColor贴图饱和度": 0.15,
+      "使用AO贴图": 1.0,
+      "粗糙度强度Max": 1.15,
+      "粗糙度强度Min": 0.13,
+      "Specular Max": 1.5,
+      "Addative Scatter Weight": 0.0,
+      "细节密度": 13.0,
+      "细节法线平滑": 0.5,
+      "RefractionDepthBias": 0.0
+    },
+    "Switches": {
+      "角色补光开关": true,
+      "EnableDistanceFade": true,
+      "Enable Tears FX": true,
+      "Enable Addative Tint": true
+    },
+    "Properties": {
+      "bHasStaticPermutationResource": true,
+      "bOverrideSubsurfaceProfile": true,
+      "BasePropertyOverrides": {
+        "BlendMode": "BLEND_Masked",
+        "ShadingModel": "MSM_SubsurfaceProfile",
+        "OpacityMaskClipValue": 0.3333
+      },
+      "SubsurfaceProfile": {
+        "ObjectName": "SubsurfaceProfile'SSP_female'",
+        "ObjectPath": "Pal7/Content/MaterialLib/Material/Character/SSP_female.0"
+      }
+    },
+    "HasTopDiffuse": true,
+    "HasTopNormals": true,
+    "HasTopSpecularMasks": false,
+    "HasTopEmissive": false,
+    "IsTranslucent": false,
+    "IsNull": false
+  }
+}

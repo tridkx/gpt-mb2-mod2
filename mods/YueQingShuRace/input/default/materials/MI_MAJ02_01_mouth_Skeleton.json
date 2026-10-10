@@ -1,0 +1,43 @@
+{
+  "Textures": {
+    "PM_Diffuse": "Pal7/Content/MaterialLib/ComTexture/Character/Mouth/T_Mouth_D.T_Mouth_D",
+    "BaseColor": "Pal7/Content/MaterialLib/ComTexture/Character/Mouth/T_Mouth_D.T_Mouth_D",
+    "PM_SpecularMasks": "Pal7/Content/MaterialLib/ComTexture/Character/Mouth/T_Mouth_ORM.T_Mouth_ORM",
+    "ORM": "Pal7/Content/MaterialLib/ComTexture/Character/Mouth/T_Mouth_ORM.T_Mouth_ORM",
+    "PM_Normals": "Pal7/Content/MaterialLib/ComTexture/Character/Mouth/T_Mouth_N.T_Mouth_N",
+    "Normal": "Pal7/Content/MaterialLib/ComTexture/Character/Mouth/T_Mouth_N.T_Mouth_N"
+  },
+  "Parameters": {
+    "BlendMode": 1,
+    "ShadingModel": 0,
+    "Colors": {
+      "Basecolor": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "FFFFFF"
+      }
+    },
+    "Scalars": {
+      "RefractionDepthBias": 0.0
+    },
+    "Switches": {
+      "EnableDistanceFade": true
+    },
+    "Properties": {
+      "bHasStaticPermutationResource": true,
+      "BasePropertyOverrides": {
+        "bOverride_BlendMode": true,
+        "BlendMode": "BLEND_Masked",
+        "OpacityMaskClipValue": 0.3333
+      }
+    },
+    "HasTopDiffuse": true,
+    "HasTopNormals": true,
+    "HasTopSpecularMasks": true,
+    "HasTopEmissive": false,
+    "IsTranslucent": false,
+    "IsNull": false
+  }
+}

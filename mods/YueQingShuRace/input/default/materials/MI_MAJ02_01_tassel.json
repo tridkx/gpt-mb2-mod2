@@ -1,0 +1,64 @@
+{
+  "Textures": {
+    "PM_Diffuse": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse",
+    "BaseColor Tex": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_tassel_D.T_MAJ02_01_tassel_D",
+    "FabricMask": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse",
+    "DefaultDiffuse": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse",
+    "Nornal Tex": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_tassel_N.T_MAJ02_01_tassel_N",
+    "PM_Normals": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_tassel_N.T_MAJ02_01_tassel_N",
+    "T_MAJ02_01_tassel_N": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_tassel_N.T_MAJ02_01_tassel_N",
+    "PM_SpecularMasks": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_tassel_ORM.T_MAJ02_01_tassel_ORM",
+    "ORM": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_tassel_ORM.T_MAJ02_01_tassel_ORM",
+    "OpacityMask": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse",
+    "R_Tilling_Tex_NormalTex": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse",
+    "G_Tilling_Tex_NormalTex": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse",
+    "B_Tilling_Tex_NormalTex": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse",
+    "A_Tilling_Tex_NormalTex": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse"
+  },
+  "Parameters": {
+    "BlendMode": 1,
+    "ShadingModel": 0,
+    "Colors": {},
+    "Scalars": {
+      "Edge Specular Scale (S)": 0.01,
+      "Metallic (S)": 0.0,
+      "Roughness (S)": 0.7,
+      "Opactiy Min": 0.0,
+      "Opacity Max": 1.0,
+      "Flatness_R": 0.7,
+      "NormalWeight_R": 0.0,
+      "Tilling_R": 30.0,
+      "Flatness_G": 0.769048,
+      "NormalWeight_G": 0.0,
+      "Tilling_G": 0.0,
+      "Flatness_B": 0.0,
+      "NormalWeight_B": 0.0,
+      "Tilling_B": 10.0,
+      "RoughnessMin_A": 0.3,
+      "RoughnessMax_A": 0.7,
+      "RoughnessWeight_A": 0.0,
+      "Flatness_A": 0.0,
+      "NormalWeight_A": 0.0,
+      "Tilling_A": 2.0,
+      "RefractionDepthBias": 0.0
+    },
+    "Switches": {
+      "EnableBaseColor": true,
+      "EnableScatterTex": false,
+      "EnableDistanceFade": true
+    },
+    "Properties": {
+      "bHasStaticPermutationResource": true,
+      "BasePropertyOverrides": {
+        "BlendMode": "BLEND_Masked",
+        "OpacityMaskClipValue": 0.3333
+      }
+    },
+    "HasTopDiffuse": false,
+    "HasTopNormals": false,
+    "HasTopSpecularMasks": true,
+    "HasTopEmissive": false,
+    "IsTranslucent": false,
+    "IsNull": false
+  }
+}
