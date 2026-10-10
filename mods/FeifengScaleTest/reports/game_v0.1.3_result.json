@@ -1,0 +1,330 @@
+{
+  "version": "v0.1.3",
+  "date": "2026-10-10",
+  "scope": "user E/F screenshots and feedback, plus full diagnostic log; no exhaustive animation tests",
+  "user_feedback": {
+    "head": "did not visibly enlarge in E or F",
+    "movement": "no additional abnormal motion observed, excluding existing model deformation"
+  },
+  "log_file": "game_v0.1.3_local_frame_probe.txt",
+  "log_sha256": "09c12c1fc8d9ab42f4c19b577e2d967b1913a5fc740c5082ef184dda90eaccbd",
+  "screenshots": [
+    {
+      "profile": "E",
+      "file": "game_v0.1.3_E.png",
+      "sha256": "92a8972ffb755e27ba10bdd489d2a003048d95eb53f4dc74d8e00a2e88eb89b4",
+      "original": "C:\\Users\\DKX\\Videos\\Captures\\Mount and Blade II BannerlordE.png"
+    },
+    {
+      "profile": "F",
+      "file": "game_v0.1.3_F.png",
+      "sha256": "0c41df7ef3c9ede28566e2ab54d042b401a0b0d0c93da34def824d73a8d7b2c7",
+      "original": "C:\\Users\\DKX\\Videos\\Captures\\Mount and Blade II BannerlordF.png"
+    }
+  ],
+  "profiles": {
+    "E": {
+      "samples": 80,
+      "max_calls": 2,
+      "head_axis_summary": [
+        {
+          "phase": 0,
+          "stage": "phase-entry-before",
+          "samples": 1,
+          "head_axis_min": 1.0000000226778762,
+          "head_axis_max": 1.0000003326699785
+        },
+        {
+          "phase": 0,
+          "stage": "phase-entry-after",
+          "samples": 1,
+          "head_axis_min": 1.0000000352620053,
+          "head_axis_max": 1.0000005692150253
+        },
+        {
+          "phase": 0,
+          "stage": "pre-display-sample",
+          "samples": 5,
+          "head_axis_min": 0.9999998697668683,
+          "head_axis_max": 1.0000005289062115
+        },
+        {
+          "phase": 0,
+          "stage": "mission-tick-observation",
+          "samples": 5,
+          "head_axis_min": 0.9999999705211086,
+          "head_axis_max": 1.0000004772305706
+        },
+        {
+          "phase": 1,
+          "stage": "phase-entry-before",
+          "samples": 1,
+          "head_axis_min": 0.9999999855281068,
+          "head_axis_max": 1.0000002572440545
+        },
+        {
+          "phase": 1,
+          "stage": "phase-entry-after",
+          "samples": 1,
+          "head_axis_min": 1.0035449721577079,
+          "head_axis_max": 1.9006636414029698
+        },
+        {
+          "phase": 1,
+          "stage": "pre-display-sample",
+          "samples": 12,
+          "head_axis_min": 0.9999993218598605,
+          "head_axis_max": 1.0000004649238168
+        },
+        {
+          "phase": 1,
+          "stage": "mission-tick-observation",
+          "samples": 12,
+          "head_axis_min": 0.999999552057154,
+          "head_axis_max": 1.0000008315916131
+        },
+        {
+          "phase": 2,
+          "stage": "phase-entry-before",
+          "samples": 1,
+          "head_axis_min": 0.9999999915469183,
+          "head_axis_max": 1.000000062122515
+        },
+        {
+          "phase": 2,
+          "stage": "phase-entry-after",
+          "samples": 1,
+          "head_axis_min": 0.9999999205576166,
+          "head_axis_max": 0.9999999935777453
+        },
+        {
+          "phase": 2,
+          "stage": "pre-display-sample",
+          "samples": 6,
+          "head_axis_min": 0.9999997475024752,
+          "head_axis_max": 1.0000005884294652
+        },
+        {
+          "phase": 2,
+          "stage": "mission-tick-observation",
+          "samples": 6,
+          "head_axis_min": 0.9999999458007972,
+          "head_axis_max": 1.0000002501890728
+        },
+        {
+          "phase": 3,
+          "stage": "phase-entry-before",
+          "samples": 1,
+          "head_axis_min": 1.0000000530108273,
+          "head_axis_max": 1.0000002665954508
+        },
+        {
+          "phase": 3,
+          "stage": "phase-entry-after",
+          "samples": 1,
+          "head_axis_min": 1.0792379823836429,
+          "head_axis_max": 1.8711784836543774
+        },
+        {
+          "phase": 3,
+          "stage": "pre-display-sample",
+          "samples": 12,
+          "head_axis_min": 0.9999997674731916,
+          "head_axis_max": 1.000000335882943
+        },
+        {
+          "phase": 3,
+          "stage": "mission-tick-observation",
+          "samples": 12,
+          "head_axis_min": 0.9999996093647178,
+          "head_axis_max": 1.0000005607417215
+        },
+        {
+          "phase": 4,
+          "stage": "phase-entry-before",
+          "samples": 1,
+          "head_axis_min": 0.9999999416888024,
+          "head_axis_max": 0.9999999899524421
+        },
+        {
+          "phase": 4,
+          "stage": "phase-entry-after",
+          "samples": 1,
+          "head_axis_min": 0.9999998278677908,
+          "head_axis_max": 0.9999999589767252
+        }
+      ],
+      "immediate_frame_deltas": [
+        {
+          "phase": 1,
+          "head_max_component_delta": 0.757255911,
+          "other_bones_max_component_delta": 0.04795500639
+        },
+        {
+          "phase": 3,
+          "head_max_component_delta": 0.74158684,
+          "other_bones_max_component_delta": 0.02916903500000001
+        }
+      ]
+    },
+    "F": {
+      "samples": 80,
+      "max_calls": 2277,
+      "head_axis_summary": [
+        {
+          "phase": 0,
+          "stage": "phase-entry-before",
+          "samples": 1,
+          "head_axis_min": 1.0000000226778762,
+          "head_axis_max": 1.0000003326699785
+        },
+        {
+          "phase": 0,
+          "stage": "phase-entry-after",
+          "samples": 1,
+          "head_axis_min": 1.0000000352620053,
+          "head_axis_max": 1.0000005692150253
+        },
+        {
+          "phase": 0,
+          "stage": "pre-display-sample",
+          "samples": 5,
+          "head_axis_min": 0.9999999126472333,
+          "head_axis_max": 1.0000003627055554
+        },
+        {
+          "phase": 0,
+          "stage": "mission-tick-observation",
+          "samples": 5,
+          "head_axis_min": 0.9999996387522858,
+          "head_axis_max": 1.0000002246746023
+        },
+        {
+          "phase": 1,
+          "stage": "phase-entry-before",
+          "samples": 1,
+          "head_axis_min": 0.9999998228030383,
+          "head_axis_max": 1.000000022899182
+        },
+        {
+          "phase": 1,
+          "stage": "phase-entry-after",
+          "samples": 1,
+          "head_axis_min": 1.1157008144919942,
+          "head_axis_max": 1.9177357426913517
+        },
+        {
+          "phase": 1,
+          "stage": "pre-display-sample",
+          "samples": 12,
+          "head_axis_min": 1.0212211908913402,
+          "head_axis_max": 1.9503710050883094
+        },
+        {
+          "phase": 1,
+          "stage": "mission-tick-observation",
+          "samples": 12,
+          "head_axis_min": 0.9999997932561185,
+          "head_axis_max": 1.0000003338702363
+        },
+        {
+          "phase": 2,
+          "stage": "phase-entry-before",
+          "samples": 1,
+          "head_axis_min": 1.0000000215552387,
+          "head_axis_max": 1.0000001825546918
+        },
+        {
+          "phase": 2,
+          "stage": "phase-entry-after",
+          "samples": 1,
+          "head_axis_min": 0.9999999210554095,
+          "head_axis_max": 1.0000000027602352
+        },
+        {
+          "phase": 2,
+          "stage": "pre-display-sample",
+          "samples": 6,
+          "head_axis_min": 0.9999998951105333,
+          "head_axis_max": 1.0000004035755066
+        },
+        {
+          "phase": 2,
+          "stage": "mission-tick-observation",
+          "samples": 6,
+          "head_axis_min": 0.9999997459759495,
+          "head_axis_max": 1.000000236442457
+        },
+        {
+          "phase": 3,
+          "stage": "phase-entry-before",
+          "samples": 1,
+          "head_axis_min": 1.0000000224705086,
+          "head_axis_max": 1.000000078419553
+        },
+        {
+          "phase": 3,
+          "stage": "phase-entry-after",
+          "samples": 1,
+          "head_axis_min": 1.0509723817965662,
+          "head_axis_max": 1.8560433253538395
+        },
+        {
+          "phase": 3,
+          "stage": "pre-display-sample",
+          "samples": 12,
+          "head_axis_min": 1.0362561129331143,
+          "head_axis_max": 1.8881721260198296
+        },
+        {
+          "phase": 3,
+          "stage": "mission-tick-observation",
+          "samples": 12,
+          "head_axis_min": 0.9999997749901839,
+          "head_axis_max": 1.0000005943163186
+        },
+        {
+          "phase": 4,
+          "stage": "phase-entry-before",
+          "samples": 1,
+          "head_axis_min": 1.0000000203069848,
+          "head_axis_max": 1.0000004157107316
+        },
+        {
+          "phase": 4,
+          "stage": "phase-entry-after",
+          "samples": 1,
+          "head_axis_min": 1.0000000500126878,
+          "head_axis_max": 1.000000571482314
+        }
+      ],
+      "immediate_frame_deltas": [
+        {
+          "phase": 1,
+          "head_max_component_delta": 0.763174891,
+          "other_bones_max_component_delta": 0.06759594400000002
+        },
+        {
+          "phase": 3,
+          "head_max_component_delta": 0.7455689259999999,
+          "other_bones_max_component_delta": 0.027501792000000025
+        }
+      ]
+    }
+  },
+  "errors": 0,
+  "observations": [
+    "E immediate head matrix changed; later samples returned to unit axes",
+    "F writes repeated 2277 times; pre-display samples changed but next mission samples returned to unit axes",
+    "Immediate returned head axes were not uniformly x2",
+    "Other bone matrix components also changed slightly across immediate update snapshots; cause and visible impact not established"
+  ],
+  "conclusion": "Direct local-frame method did not achieve visible head enlargement. Animation/frame recomputation or skinning submission order may explain the loss, but exact cause is not established.",
+  "status": "experimental scaling objective not achieved",
+  "next_investigation": [
+    "Trace animation update, pre-display callback and render skinning submission order",
+    "Determine whether native frame conversion preserves scale components and which matrix data the renderer consumes",
+    "Establish a visible single-bone control before attempting full-body source-proportion compensation"
+  ],
+  "session_state": "stopped at user request; no new runtime release"
+}
