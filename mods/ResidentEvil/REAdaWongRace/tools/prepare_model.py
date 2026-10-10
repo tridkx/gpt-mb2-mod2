@@ -57,7 +57,7 @@ def align(a,b):
     return np.eye(3)+k+k@k/max(1+c,1e-12)
 world=native['restWorld'].copy();world[:,:3,3]=S
 for i,name in enumerate(names):
-    if name in next_name:
+    if name in next_name and name not in ['l_foot','r_foot']:
         j=ni[next_name[name]]
         world[i,:3,:3]=align(native['restWorld'][j,:3,3]-native['restWorld'][i,:3,3],S[j]-S[i])@native['restWorld'][i,:3,:3]
 local=np.array([world[i] if par<0 else np.linalg.inv(world[par])@world[i] for i,par in enumerate(native['parent'])])
@@ -128,6 +128,19 @@ for slot in ['00','10','20']:
         part='head' if slot!='00' else ('gloves' if mat=='Glove_Mat' else ('legs' if mat.startswith('Boots') else 'body'))
         if part=='gloves':
             w[:]=0;w[converted[:,0]<0,ni['l_hand']]=1;w[converted[:,0]>=0,ni['r_hand']]=1
+        if mat.startswith('Boots'):
+            # A heel is a rigid shoe component, not an articulated bare foot.
+            # Keep the shoe below the ankle on foot only, with a smooth boot
+            # shaft transition. Toe animation must not bend the sole or heel.
+            for side,pre in [(-1,'l'),(1,'r')]:
+                select=converted[:,0]*side>0
+                foot=ni[pre+'_foot'];toe=ni[pre+'_toe0']
+                w[select,foot]+=w[select,toe];w[select,toe]=0
+                z0=S[foot,2]+cfg['shoe_rigid_top_offset_m']
+                t=np.clip((converted[select,2]-z0)/cfg['shoe_ankle_blend_length_m'],0,1)
+                t=t*t*(3-2*t)
+                fixed=np.zeros_like(w[select]);fixed[:,foot]=1
+                w[select]=w[select]*t[:,None]+fixed*(1-t[:,None])
         # Continuous wrist blending in exposed skin/sleeve. Finger geometry stays rigid.
         if mat in ['Skin_Mat','Knit_Mat']:
             for side,pre in [(-1,'l'),(1,'r')]:
@@ -163,6 +176,10 @@ np.savez_compressed(ROOT/'build/fitted_model.npz',**data);np.savez_compressed(RO
 points=np.concatenate([data[r['object']+'_p'] for r in manifest]);assert maxerr<1e-6
 report={'source':'Original cha200 OBJ; cha800 per-material weight correspondence','source_geometry_preserved':True,'geometry_transform':C.tolist(),'geometry_max_error_m':maxerr,'uniform_scale':1.0,'anatomy_warp_applied':False,'height_m':float(np.ptp(points[:,2])),'width_m':float(np.ptp(points[:,0])),'source_landmarks':S.tolist(),'native_landmarks':native['restWorld'][:,:3,3].tolist(),'native_bone_order':names,'bind_axes_aligned_to_source_segments':True,'materials':transfer,'matched_attachment_positions':shared,'hand_pose':'fixed','facial_animation':False,'game_verified':False}
 report['hidden_lower_neck_faces_excluded']=hidden_skin_faces
+report['foot_bind_axes']=cfg['foot_bind_axes']
+report['shoe_lower_part_rigid']=True
+report['bind_axes_aligned_to_source_segments']=False
+report['bind_axes_source_alignment_exceptions']=['l_foot','r_foot']
 (ROOT/'reports/weight_transfer.json').write_text(json.dumps(report,indent=2));(ROOT/'reports/geometry_fidelity.json').write_text(json.dumps({k:report[k] for k in ['source_geometry_preserved','geometry_transform','geometry_max_error_m','uniform_scale','anatomy_warp_applied','height_m','width_m']},indent=2))
 originals={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in (ROOT/'input').rglob('*') if p.is_file()}
 (ROOT/'reports/input_hashes.json').write_text(json.dumps(originals,indent=2))

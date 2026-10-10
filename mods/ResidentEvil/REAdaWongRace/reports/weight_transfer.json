@@ -337,7 +337,7 @@
     "r_hand",
     "r_finger0"
   ],
-  "bind_axes_aligned_to_source_segments": true,
+  "bind_axes_aligned_to_source_segments": false,
   "materials": [
     {
       "material": "Knit_Mat",
@@ -419,5 +419,11 @@
   "hand_pose": "fixed",
   "facial_animation": false,
   "game_verified": false,
-  "hidden_lower_neck_faces_excluded": 871
+  "hidden_lower_neck_faces_excluded": 871,
+  "foot_bind_axes": "native_neutral_orientation_at_original_ankle",
+  "shoe_lower_part_rigid": true,
+  "bind_axes_source_alignment_exceptions": [
+    "l_foot",
+    "r_foot"
+  ]
 }

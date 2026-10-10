@@ -1,0 +1,83 @@
+{
+  "version": "v0.1.1",
+  "status": "pass",
+  "final_package_sha256": "555627368a6e4acafefd1dc60944360e8a12066bf60a873a48c95d14528aeffa",
+  "baseline_package_sha256": "f3f14d7eb1366f59b66c277e3f8b06bbdd5cf427af289dbc90a8ca75c90f0340",
+  "all_final_geometry_and_non_boot_weights_unchanged": true,
+  "original_joint_positions_unchanged": true,
+  "lods": [
+    {
+      "lod": 0,
+      "sole_single_foot_bone": true,
+      "boot_toe_influences_absent": true
+    },
+    {
+      "lod": 1,
+      "sole_single_foot_bone": true,
+      "boot_toe_influences_absent": true
+    },
+    {
+      "lod": 2,
+      "sole_single_foot_bone": true,
+      "boot_toe_influences_absent": true
+    },
+    {
+      "lod": 3,
+      "sole_single_foot_bone": true,
+      "boot_toe_influences_absent": true
+    }
+  ],
+  "motions": [
+    {
+      "motion": "idle",
+      "frames_checked": 1267,
+      "max_sole_edge_length_error_m": 2.0157210896959432e-08
+    },
+    {
+      "motion": "run",
+      "frames_checked": 25,
+      "max_sole_edge_length_error_m": 2.015721092124556e-08
+    },
+    {
+      "motion": "bow",
+      "frames_checked": 150,
+      "max_sole_edge_length_error_m": 2.015721090042888e-08
+    },
+    {
+      "motion": "riding",
+      "frames_checked": 20,
+      "max_sole_edge_length_error_m": 2.015721093512335e-08
+    },
+    {
+      "motion": "slash",
+      "frames_checked": 150,
+      "max_sole_edge_length_error_m": 2.0157210903898326e-08
+    }
+  ],
+  "idle_comparison_frame": 169,
+  "before": [
+    {
+      "side": "l",
+      "heel_vertical_height_m": 0.08922758930079785,
+      "toe_heel_contact_height_difference_m": 0.044918664301041994
+    },
+    {
+      "side": "r",
+      "heel_vertical_height_m": 0.09166548230988716,
+      "toe_heel_contact_height_difference_m": 0.04179643887355199
+    }
+  ],
+  "after": [
+    {
+      "side": "l",
+      "heel_vertical_height_m": 0.11437332425185948,
+      "toe_heel_contact_height_difference_m": 1.0497103231445898e-05
+    },
+    {
+      "side": "r",
+      "heel_vertical_height_m": 0.11687396845787502,
+      "toe_heel_contact_height_difference_m": 0.00422597934732412
+    }
+  ],
+  "game_IK_ground_contact_verified": false
+}

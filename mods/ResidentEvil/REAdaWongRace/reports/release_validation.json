@@ -1,10 +1,10 @@
 {
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "status": "pass",
   "check_scope": "offline_structural_and_native_motion_checks",
-  "final_package_sha256": "f3f14d7eb1366f59b66c277e3f8b06bbdd5cf427af289dbc90a8ca75c90f0340",
-  "baseline_package_sha256": null,
-  "baseline_reason": "First release",
+  "final_package_sha256": "555627368a6e4acafefd1dc60944360e8a12066bf60a873a48c95d14528aeffa",
+  "baseline_package_sha256": "f3f14d7eb1366f59b66c277e3f8b06bbdd5cf427af289dbc90a8ca75c90f0340",
+  "baseline_reason": "Heel repair against v0.1.0",
   "registration": {
     "status": "pass",
     "race": "reada_wong",
@@ -116,17 +116,17 @@
         {
           "name": "adar_legs_bootsmetal",
           "max_extension": 1.0837528977093887,
-          "p99_extension": 1.0372419276454758
+          "p99_extension": 1.0321016741122788
         },
         {
           "name": "adar_legs_bootssole",
-          "max_extension": 1.199766051256719,
-          "p99_extension": 1.0531837038369989
+          "max_extension": 1.0000004272187477,
+          "p99_extension": 1.0000003310654522
         },
         {
           "name": "adar_legs_bootsleather",
-          "max_extension": 2.022362294003465,
-          "p99_extension": 1.453461919661915
+          "max_extension": 1.200030053333442,
+          "p99_extension": 1.080750119738672
         },
         {
           "name": "adar_head_face",
@@ -223,17 +223,17 @@
         {
           "name": "adar_legs_bootsmetal",
           "max_extension": 1.7564618966936125,
-          "p99_extension": 1.345615200551775
+          "p99_extension": 1.5307522120179953
         },
         {
           "name": "adar_legs_bootssole",
-          "max_extension": 1.2527299462621846,
-          "p99_extension": 1.0526897168015543
+          "max_extension": 1.000000427218755,
+          "p99_extension": 1.0000003310654613
         },
         {
           "name": "adar_legs_bootsleather",
-          "max_extension": 2.180117724497619,
-          "p99_extension": 1.535781923223072
+          "max_extension": 2.2183455348924186,
+          "p99_extension": 1.432398646791153
         },
         {
           "name": "adar_head_face",
@@ -334,13 +334,13 @@
         },
         {
           "name": "adar_legs_bootssole",
-          "max_extension": 1.240249693094564,
-          "p99_extension": 1.0655407198579905
+          "max_extension": 1.0000004272187515,
+          "p99_extension": 1.0000003310654517
         },
         {
           "name": "adar_legs_bootsleather",
-          "max_extension": 2.02017788461732,
-          "p99_extension": 1.4902178802431263
+          "max_extension": 1.5977598068418926,
+          "p99_extension": 1.2403824657501397
         },
         {
           "name": "adar_head_face",
@@ -441,13 +441,13 @@
         },
         {
           "name": "adar_legs_bootssole",
-          "max_extension": 1.139282825169725,
-          "p99_extension": 1.0483439078376449
+          "max_extension": 1.0000004272187701,
+          "p99_extension": 1.000000331065469
         },
         {
           "name": "adar_legs_bootsleather",
-          "max_extension": 1.9951036746592818,
-          "p99_extension": 1.4817296041924968
+          "max_extension": 1.8040739308699425,
+          "p99_extension": 1.317837382077402
         },
         {
           "name": "adar_head_face",
@@ -543,18 +543,18 @@
         },
         {
           "name": "adar_legs_bootsmetal",
-          "max_extension": 1.428449550201143,
-          "p99_extension": 1.188817002165527
+          "max_extension": 1.3355833925775011,
+          "p99_extension": 1.2123378052993226
         },
         {
           "name": "adar_legs_bootssole",
-          "max_extension": 1.294339820445944,
-          "p99_extension": 1.0782330391869697
+          "max_extension": 1.0000004272187508,
+          "p99_extension": 1.0000003310654506
         },
         {
           "name": "adar_legs_bootsleather",
-          "max_extension": 2.4579748947497446,
-          "p99_extension": 1.522319535463998
+          "max_extension": 1.8048004056832974,
+          "p99_extension": 1.3639191995070519
         },
         {
           "name": "adar_head_face",
@@ -724,6 +724,6 @@
     "asset_count": 33,
     "compared_with": "REAdaWongDefault",
     "duplicate_asset_guids": [],
-    "final_package_sha256": "f3f14d7eb1366f59b66c277e3f8b06bbdd5cf427af289dbc90a8ca75c90f0340"
+    "final_package_sha256": "555627368a6e4acafefd1dc60944360e8a12066bf60a873a48c95d14528aeffa"
   }
 }

@@ -1,33 +1,27 @@
 {
   "date": "2026-10-10",
+  "version": "v0.1.1",
   "status": "offline_preview_reviewed",
-  "final_package_sha256": "f3f14d7eb1366f59b66c277e3f8b06bbdd5cf427af289dbc90a8ca75c90f0340",
-  "source": "Actual final TPAC geometry and decoded diffuse, custom bind skeleton and native animation tracks",
+  "final_package_sha256": "555627368a6e4acafefd1dc60944360e8a12066bf60a873a48c95d14528aeffa",
   "images": {
-    "final_rest_front.png": "6db855dd3701f5429f7a930b537eaffcc5b96240049eb0d5e927290b8bc5746d",
-    "final_rest_side.png": "c4d91651b8199f608b5689dabfed99f1300770a980c12d4b7205c5ad8b4bb7d9",
-    "final_rest_back.png": "e0fda3fd680707046924d8dcf817e08d2d3df99e7fa44a5d0da3462c359c1575",
-    "final_head.png": "5fcef2841ca28c307016e6b9d2748f90f1506149c26f64c6c2253702a1508ca3",
-    "final_idle_worst.png": "e2ea7a85468e73e5eaedbf8d6d0eaad8624240286504c26369037ab2df2919b9",
-    "final_run_worst.png": "18346a648f6e0999aaaf927c05cb116d8843eb57e9ac2b8319bd254e6398bd0a",
-    "final_run_side.png": "5792467413641264c83710838921e86c016d824d5e4baa3087d71662225988a7",
-    "final_bow_worst.png": "99d116cc156c8fedfd70754f4e424c72163b2edcbd6132c9010b4c31c3ffd94f",
-    "final_bow_side.png": "86dff83ac8bc44384ef612d750719bf7cc1d9a5b983e32adb51e5899bf4e803f",
-    "final_riding_worst.png": "1e7b0bf17ff7d2f6661e957645042058bc4d40a32cca79a8d3cd5ab6ed8ea619",
-    "final_slash_worst.png": "96cdfb1b53244bc156adfcb3950aa7c169ea0eafac88d03409f98ebec613e230",
-    "final_lod3_rest_front.png": "13a3982e5b199527aeecafae1f28a75c5b5c0a155114ea7b5ca982603583ad3f",
-    "final_lod3_rest_side.png": "b3d64d894a7844b7dc8a80b6a4a9cb6f55f587d9c27f71e30b237aefa2780424"
+    "heel_before.png": "748c41aefd67cc9e3afb6e5f41864e2f4acc3eab3f868282a8f3f7d7ff34e8ad",
+    "heel_after.png": "cd2819dcd6d475ee87e4bcc3b8d812f7feaf61c1bd90fbdd3ce182c85276dd68",
+    "final_idle_side.png": "bf61fd7bb17a5ceef39c57641cfded43d4a7a1d854b48dbc746a2f86dc8946d7",
+    "final_idle_worst.png": "3c3472d041ec9b13e550569f6f6881d2705da78dd57bb2b76a931c327c7d2095",
+    "final_run_side.png": "fedc78f1de8e38f5186dfc651fe68d4f0f02d63970648ad826d3c07db06e5a48",
+    "final_riding_side.png": "a4062d2f0aa61f30e07dc42ccad1425daf55a36b9a350fc38380c020ba2b0847",
+    "final_bow_side.png": "b24d37fd8d66b2826a0e281aada7232574ea2ec5cbdeb8d7bc0d0d07b16b30fb",
+    "final_rest_front.png": "74a6fb7631df95df40f999b5255ac53dc5155b7134f18ad4c3a27ca3b6ed4d3a",
+    "final_lod3_rest_side.png": "1c225757c8c2bed525b3000b8d55aa7795357e81b5ed84cebf5505d22ff842e2"
   },
   "observations": [
-    "Original proportions retained; no native adult mesh fitting.",
-    "Visible hands preserved in rest and sampled actions.",
-    "Face moves with eyes and mouth; lower neck lining excluded from beneath collar.",
-    "Sampled run frame no longer exposes lower neck flare through chest.",
-    "Lowest LOD retains body silhouette with visibly coarse hair."
+    "Heel no longer folds backward in the compared inventory idle pose.",
+    "Sole and heel retain rigid original shape in tested actions and all LODs.",
+    "Other geometry and non-boot influences unchanged against v0.1.0."
   ],
   "limitations": [
-    "Game rendering, action blending, IK and weapon grip pending user test.",
+    "Game IK and ground contact pending user retest.",
     "No cloth solver; skirt stretches in wide leg poses.",
-    "Missing hair alpha and PBR maps; baked strap shadows remain in original diffuse."
+    "Missing original hair alpha/PBR maps and baked strap shadows remain."
   ]
 }

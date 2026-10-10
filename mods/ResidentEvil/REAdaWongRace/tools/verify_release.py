@@ -77,6 +77,12 @@ for lod,meshes in exports.items():
     for m in gloves:
         assert (m['bw'].max(1)==255).all(),('hands not rigid',lod)
         assert set(m['bi'][m['bw']>0].tolist())<=hand_indices
+    for m in meshes:
+        if not m['name'].startswith('adar_legs_boots'):continue
+        toes={i for i,b in enumerate(rigdata['bones']) if b['name'] in ['l_toe0','r_toe0']}
+        assert not set(m['bi'][m['bw']>0])&toes,(lod,'Toe animation bends shoe')
+        if m['name'].startswith('adar_legs_bootssole'):
+            assert (m['bw'].max(1)==255).all(),(lod,'Sole/heel not rigid')
     assert not any(any(x in m['name'].lower() for x in ['holster','gun']) for m in meshes)
 assert all(any('gloves_glove' in m['name'] for m in rows) for rows in exports.values())
 
@@ -108,6 +114,9 @@ native_rig=parse_skeljson(json.loads((ROOT/'reports/human_skeleton.json').read_t
 expected=json.loads((ROOT/'build/skeleton_spec.json').read_text())
 assert rig['names']==native_rig['names'] and np.array_equal(rig['parent'],native_rig['parent'])
 assert np.max(abs(np.array([b['rest'] for b in final_rig['bones']])-np.array([b['rest'] for b in expected])))<1e-6
+for name in ['l_foot','r_foot']:
+    i=rig['names'].index(name)
+    assert np.max(abs(rig['restWorld'][i,:3,:3]-native_rig['restWorld'][i,:3,:3]))<1e-6,(name,'Incorrect shoe neutral axes')
 original=np.load(ROOT/'build/original_positions.npz');source_error=0
 for m in exports[0]:
     name=re.sub(r'\.b\d+$','',m['name']);distance=cKDTree(original[name+'_p']).query(m['pos'])[0]
@@ -153,7 +162,7 @@ for t in pack['textures']:
 from verify_registration import validate_registration
 registration=validate_registration(ROOT)
 descriptor=ET.parse(ROOT/'module/REAdaWongRace/SubModule.xml')
-assert descriptor.find('Id').get('value')=='REAdaWongRace' and descriptor.find('Version').get('value')=='v0.1.0'
+assert descriptor.find('Id').get('value')=='REAdaWongRace' and descriptor.find('Version').get('value')==cfg['version']
 assert sha(PACKAGE)==hash_before
 assert all(sha(ROOT/p)==h for p,h in json.loads((ROOT/'reports/input_hashes.json').read_text()).items())
 own_listing=run([MB,'list',str(PACKAGE)])
@@ -167,7 +176,9 @@ overlap=set(re.findall(guid_pattern,own_listing)) & set(re.findall(guid_pattern,
 assert not overlap,('asset GUID collision',overlap)
 namespace={'status':'pass','asset_count':len(own_listing.splitlines())-1,'compared_with':'REAdaWongDefault','duplicate_asset_guids':sorted(overlap),'final_package_sha256':hash_before}
 (ROOT/'reports/namespace_validation.json').write_text(json.dumps(namespace,indent=2))
-report={'version':'v0.1.0','status':'pass','check_scope':'offline_structural_and_native_motion_checks','final_package_sha256':hash_before,'baseline_package_sha256':None,'baseline_reason':'First release','registration':registration,'lods':lods,'seams':seams,'motions':motions,'textures':texturechecks,'gross_motion_tear_guard_max_extension':6.0,'metadata_audit':'pass','game_test_verified':False,'game_cloth_solver_used':False,'limitations':['Missing original head alpha/PBR maps use documented conservative materials.','Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.','No facial animation or face/body customization support.']}
+baseline_report=ROOT/'reports/history/v0.1.0/release_validation.json'
+baseline_sha=json.loads(baseline_report.read_text())['final_package_sha256'] if baseline_report.exists() else None
+report={'version':cfg['version'],'status':'pass','check_scope':'offline_structural_and_native_motion_checks','final_package_sha256':hash_before,'baseline_package_sha256':baseline_sha,'baseline_reason':'Heel repair against v0.1.0' if baseline_sha else 'First release','registration':registration,'lods':lods,'seams':seams,'motions':motions,'textures':texturechecks,'gross_motion_tear_guard_max_extension':6.0,'metadata_audit':'pass','game_test_verified':False,'game_cloth_solver_used':False,'limitations':['Missing original head alpha/PBR maps use documented conservative materials.','Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.','No facial animation or face/body customization support.']}
 report.update(source_geometry_max_error_m=source_error,source_proportions_preserved=True,custom_bind_skeleton='adar_skeleton',integrated_hands_all_lods=True,fixed_hands_single_native_bone=True,
               removed_accessories_absent_all_lods=True,body_metamesh='adar_body',hidden_placeholder_triangles=4,face_above_neck_rigid_with_head=True,asset_namespace=namespace)
 (ROOT/'reports/release_validation.json').write_text(json.dumps(report,indent=2));print(json.dumps({'status':report['status'],'registration':registration,'lods':lods,'seams':seams,'motions':motions},indent=2))

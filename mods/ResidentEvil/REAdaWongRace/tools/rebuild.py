@@ -21,3 +21,6 @@ for script in ['build_package.py', 'verify_release.py']:
 run([BLENDER, '--background', '--factory-startup', '--python-exit-code', '1', '--python', str(ROOT / 'tools/verify_source.py')])
 for lod in range(4):
     run([BLENDER, '--background', '--factory-startup', '--python-exit-code', '1', '--python', str(ROOT / 'tools/render_final.py'), '--', str(lod)])
+if (ROOT/'build/baseline_v0.1.0/adar.tpac').exists() or (ROOT/'dist/REAdaWongRace_v0.1.0_Mod.zip').exists():
+    run([PYTHON,'-B','-X','utf8',str(ROOT/'tools/verify_heels.py')])
+    run([BLENDER,'--background','--factory-startup','--python-exit-code','1','--python',str(ROOT/'tools/render_heels.py')])
