@@ -1,10 +1,10 @@
 {
-  "version": "v0.1.2",
+  "version": "v0.1.3",
   "status": "pass",
-  "check_scope": "runtime_scale_registration_and_exact_asset_baseline_comparison",
+  "check_scope": "UI repair assembly and exact accepted asset comparison; pre-repair runtime evidence",
   "final_package_sha256": "555627368a6e4acafefd1dc60944360e8a12066bf60a873a48c95d14528aeffa",
   "baseline_package_sha256": "555627368a6e4acafefd1dc60944360e8a12066bf60a873a48c95d14528aeffa",
-  "baseline_reason": "Uniform runtime scale increase from 1.0 to 1.1; assets unchanged",
+  "baseline_reason": "UI preview skeleton repair; accepted character assets unchanged",
   "registration": {
     "status": "pass",
     "race": "reada_wong",
@@ -727,7 +727,7 @@
     "duplicate_asset_guids": [],
     "final_package_sha256": "555627368a6e4acafefd1dc60944360e8a12066bf60a873a48c95d14528aeffa"
   },
-  "inherited_asset_validation": "reports/history/v0.1.1/release_validation.json",
+  "inherited_asset_validation": "reports/history/v0.1.2/release_validation.json",
   "scale_validation": {
     "version": "v0.1.2",
     "status": "pass",
@@ -743,5 +743,23 @@
     "tpac_source_mesh_rig_weights_textures_unchanged": true,
     "skin_variants_checked": 10,
     "game_test_verified": false
+  },
+  "ui_runtime_validation": {
+    "status": "pass",
+    "version": "v0.1.3",
+    "final_package_sha256": "555627368a6e4acafefd1dc60944360e8a12066bf60a873a48c95d14528aeffa",
+    "captured_screen": "SandBox.View.CharacterCreation.CharacterCreationScreen",
+    "captured_skeleton": "human_skeleton",
+    "captured_action_set": "as_human_warrior",
+    "runtime_rest_error_vs_native": 9.863000000000146e-07,
+    "runtime_rest_error_vs_ada": 1.09576797,
+    "module_changes": [
+      "SubModule.xml",
+      "bin/Win64_Shipping_Client/REAdaWongRace.UIRuntime.dll"
+    ],
+    "accepted_geometry_bind_rig_weights_materials_sources_unchanged": true,
+    "compiled_runtime": true,
+    "repair_scope": "Ada AgentVisuals reachable only from non-mission UI",
+    "runtime_after_repair_verified": false
   }
 }

@@ -1,6 +1,7 @@
 """Build only this module; delivery and installation are separate workspace commands."""
 import subprocess
 import sys
+import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -14,6 +15,8 @@ def run(args):
 
 for script in ['register_module.py', 'prepare_model.py', 'prepare_textures.py']:
     run([PYTHON, '-B', '-X', 'utf8', str(ROOT / 'tools' / script)])
+if json.loads((ROOT/'tools/model_config.json').read_text()).get('ui_preview_repair'):
+    run([PYTHON, '-B', '-X', 'utf8', str(ROOT/'tools/UIProbe/build_runtime.py')])
 for script in ['create_source.py', 'export_geometry.py']:
     run([BLENDER, '--background', '--factory-startup', '--python-exit-code', '1', '--python', str(ROOT / 'tools' / script)])
 for script in ['build_package.py', 'verify_release.py']:

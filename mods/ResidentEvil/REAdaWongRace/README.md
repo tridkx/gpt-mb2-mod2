@@ -1,6 +1,6 @@
 # Resident Evil - Ada Wong Race
 
-v0.1.2 为本机 Native v1.4.8 制作固定外观的艾达王种族 `reada_wong`。只替换帝国普通新兵 `imperial_recruit`，游戏内名称为“艾达王新兵”；保留原兵种等级、技能、武器与升级目标，升级后进入原版兵种。贵族新兵及其他兵种不在修改范围内。
+v0.1.3 为本机 Native v1.4.8 制作固定外观的艾达王种族 `reada_wong`。只替换帝国普通新兵 `imperial_recruit`，游戏内名称为“艾达王新兵”；保留原兵种等级、技能、武器与升级目标，升级后进入原版兵种。贵族新兵及其他兵种不在修改范围内。
 
 ## 外观与行为
 
@@ -27,7 +27,7 @@ v0.1.2 为本机 Native v1.4.8 制作固定外观的艾达王种族 `reada_wong`
 
 ## 当前限制
 
-- 用户反馈：创建角色和队伍／百科／物品栏预览中，手掌错位、腕部被拉成细折线；战场内反馈正常。当前尚未修复。工作区与游戏模块已临时加入只读 UI 诊断 DLL，原 v0.1.2 正式交付包保留。记录流程与停用方法见 [预览诊断](tools/UIProbe/README.md)。
+- UI 预览修正的实机效果待用户验收：已捕获创建角色预览回落至原版 human 骨架的证据。运行时助手检查非战场 UI 中的艾达预览，发现错误骨架后切回艾达动作集，并保留位置、缩放和动画进度。检查间隔为 0.25 秒，预览重建时可能短暂显示旧姿态；队伍／百科／物品栏效果也需复测。实现与日志见 [预览骨架修正](tools/UIProbe/README.md)。
 
 - 最高精度约 15.4 万面，第一版优先保留原始外形；大规模同屏性能尚未验收。
 - 固定脸和手型，没有捏脸、面部表情、眨眼、动态手指握持或玩家创建页种族选择功能。
@@ -48,7 +48,7 @@ v0.1.2 为本机 Native v1.4.8 制作固定外观的艾达王种族 `reada_wong`
 & 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/ResidentEvil/REAdaWongRace/tools/rebuild.py
 ```
 
-主流程：注册 → 模型与纹理 → 可编辑源文件 → LOD → TPAC → 最终包回读及动作检查 → 源文件重开 → 四级预览。原始外形对照见 [geometry_fidelity.json](reports/geometry_fidelity.json)。发布检查入口为 [release_validation.json](reports/release_validation.json)，兵种替换验证为 [registration_validation.json](reports/registration_validation.json)。整体放大检查见 [scale_validation.json](reports/scale_validation.json)；现有离线预览展示基础模型与动作蒙皮，不包含游戏运行时的 skin 缩放。保留 v0.1.0 模块 ZIP 时，将其放在 `dist/REAdaWongRace_v0.1.0_Mod.zip`，重建流程会自动补做高跟鞋基线回归与近景对比；原始数据缓存缺失时会从该包恢复基线。
+主流程：注册 → 模型与纹理 → 可编辑源文件 → LOD → TPAC → 最终包回读及动作检查 → 源文件重开 → 四级预览。原始外形对照见 [geometry_fidelity.json](reports/geometry_fidelity.json)。UI 骨架修正检查见 [ui_runtime_validation.json](reports/ui_runtime_validation.json)。发布检查入口为 [release_validation.json](reports/release_validation.json)，兵种替换验证为 [registration_validation.json](reports/registration_validation.json)。整体放大检查见 [scale_validation.json](reports/scale_validation.json)；现有离线预览展示基础模型与动作蒙皮，不包含游戏运行时的 skin 缩放。保留 v0.1.0 模块 ZIP 时，将其放在 `dist/REAdaWongRace_v0.1.0_Mod.zip`，重建流程会自动补做高跟鞋基线回归与近景对比；原始数据缓存缺失时会从该包恢复基线。
 
 源 ZIP 保持 `source/`、`tex/` 相邻，并在 `workspace_tools/` 保存所用共享助手。恢复时将共享源码放回工作区 `tools/`，本工程放在 `mods/ResidentEvil/REAdaWongRace/`。工具二进制与第三方模型再分发授权不随源包提供。
 

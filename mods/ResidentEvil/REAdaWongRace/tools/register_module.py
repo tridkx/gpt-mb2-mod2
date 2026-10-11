@@ -117,7 +117,13 @@ for tag, value in [('Name', 'Resident Evil - Ada Wong Race'), ('Id', CFG['id']),
 deps = ET.SubElement(sub, 'DependedModules')
 for dep in ['Native', 'SandBoxCore', 'Sandbox']:
     ET.SubElement(deps, 'DependedModule', Id=dep)
-ET.SubElement(sub, 'SubModules')
+submodules = ET.SubElement(sub, 'SubModules')
+if CFG.get('ui_preview_repair'):
+    runtime = ET.SubElement(submodules, 'SubModule')
+    ET.SubElement(runtime, 'Name', value='Ada UI Preview Skeleton Repair')
+    ET.SubElement(runtime, 'DLLName', value='REAdaWongRace.UIRuntime.dll')
+    ET.SubElement(runtime, 'SubModuleClassType', value='REAdaWongRace.UIProbe.SubModule')
+    ET.SubElement(runtime, 'Tags')
 xmls = ET.SubElement(sub, 'Xmls')
 for ident, path in [('Monsters', 'monsters'), ('NPCCharacters', 'adar_troops')]:
     node = ET.SubElement(xmls, 'XmlNode')

@@ -93,6 +93,9 @@
     "detail_crop": "build/ui_action_investigation/user_wrist_detail.png"
   },
   "diagnostic_overlay_installed": true,
-  "appearance_fix_applied": false,
-  "runtime_capture_pending": true
+  "appearance_fix_applied": true,
+  "runtime_capture_pending": false,
+  "repair_game_effect_verified": false,
+  "confirmed_runtime_fault": "Captured Ada creation UI uses native human rest skeleton instead of Ada bind skeleton",
+  "source_code_trigger": "BodyGeneratorView reconstructs AgentVisualsData without ActionSet; its default MBActionSet index resolves to as_human_warrior."
 }

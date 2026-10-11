@@ -161,7 +161,9 @@
     "reports/history/v0.1.1/release_validation.json",
     "reports/history/v0.1.2/SubModule.xml",
     "reports/history/v0.1.2/installation_validation.json",
+    "reports/history/v0.1.2/model_config.json",
     "reports/history/v0.1.2/release_validation.json",
+    "reports/history/v0.1.2/ui_runtime_capture.json",
     "reports/human_skeleton.json",
     "reports/idle.json",
     "reports/input_hashes.json",
@@ -181,6 +183,7 @@
     "reports/source_validation.json",
     "reports/ui_action_diagnosis.json",
     "reports/ui_probe_installation.json",
+    "reports/ui_runtime_validation.json",
     "reports/visual_review.json",
     "reports/weight_transfer.json",
     "source/REAdaWongRace_Rigged.blend",
@@ -190,6 +193,7 @@
     "tools/UIProbe/Probe.cs",
     "tools/UIProbe/README.md",
     "tools/UIProbe/UIProbe.csproj",
+    "tools/UIProbe/build_runtime.py",
     "tools/UIProbe/install_probe.py",
     "tools/build_package.py",
     "tools/create_source.py",
@@ -205,7 +209,8 @@
     "tools/verify_registration.py",
     "tools/verify_release.py",
     "tools/verify_scale.py",
-    "tools/verify_source.py"
+    "tools/verify_source.py",
+    "tools/verify_ui_runtime.py"
   ],
   "shared_source_files": [
     "tools/asset_helpers/config/spec.py",

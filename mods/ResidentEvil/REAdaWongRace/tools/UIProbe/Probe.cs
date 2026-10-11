@@ -17,9 +17,11 @@ using TaleWorlds.ScreenSystem;
 using Path = System.IO.Path;
 
 namespace REAdaWongRace.UIProbe {
-    // Read-only UI observer: no patches, action setters or mesh mutation.
+    // UIProbe assembly observes only; UIRuntime assembly repairs Ada UI skeletons.
     public sealed class SubModule : MBSubModuleBase {
         private float elapsed;
+        private float logElapsed;
+        private static readonly bool RepairEnabled = typeof(SubModule).Assembly.GetName().Name == "REAdaWongRace.UIRuntime";
         private int samples;
         private readonly string session = DateTime.Now.ToString("yyyyMMdd_HHmmss");
         private readonly Dictionary<Type, FieldInfo[]> fields = new Dictionary<Type, FieldInfo[]>();
@@ -27,20 +29,24 @@ namespace REAdaWongRace.UIProbe {
 
         protected override void OnSubModuleLoad() {
             base.OnSubModuleLoad();
-            Write(new { kind="loaded", probe="ui-v1", changes_game_state=false });
+            Write(new { kind="loaded", probe="ui-v2", changes_preview_skeleton=RepairEnabled });
         }
 
         protected override void OnApplicationTick(float dt) {
             base.OnApplicationTick(dt);
             elapsed += dt;
-            if (elapsed < 3 || samples >= 120) return;
+            logElapsed += dt;
+            if (elapsed < (RepairEnabled ? .25f : 3f) || (!RepairEnabled && samples >= 120)) return;
             elapsed = 0;
+            bool logNow=logElapsed>=3f && samples<120;
+            if (logNow) logElapsed=0;
             try {
                 var screen = ScreenManager.TopScreen;
-                if (screen == null) return;
+                if (screen == null || screen.GetType().FullName.Contains("MissionScreen")) return;
                 var visuals = new HashSet<AgentVisuals>();
+                var owners = new Dictionary<AgentVisuals,string>();
                 var seen = new HashSet<object>();
-                Inspect(screen, 0, seen, visuals);
+                Inspect(screen, 0, seen, visuals, owners, screen.GetType().FullName);
                 int widgets=0;
                 foreach (var layer in screen.Layers) {
                     var gauntlet=layer as GauntletLayer;
@@ -50,12 +56,15 @@ namespace REAdaWongRace.UIProbe {
                     while (queue.Count > 0 && widgets++ < 5000) {
                         var widget=queue.Dequeue();
                         if (widget == null) continue;
-                        Inspect(widget, 0, seen, visuals);
+                        Inspect(widget, 0, seen, visuals, owners, widget.GetType().FullName);
                         foreach (var child in widget.Children) queue.Enqueue(child);
                     }
                 }
-                Write(new { kind="scan", screen=screen.GetType().FullName, widgets, visuals=visuals.Count });
-                foreach (var visual in visuals) Capture(visual, screen.GetType().FullName);
+                if (logNow) Write(new { kind="scan", screen=screen.GetType().FullName, widgets, visuals=visuals.Count });
+                foreach (var visual in visuals) {
+                    if (RepairEnabled) CorrectPreview(visual,owners[visual],screen.GetType().FullName);
+                    if (logNow) Capture(visual,screen.GetType().FullName);
+                }
             } catch (Exception e) { Write(new { kind="error", error=e.ToString() }); }
         }
 
@@ -69,10 +78,11 @@ namespace REAdaWongRace.UIProbe {
             return result;
         }
 
-        private void Inspect(object obj, int depth, HashSet<object> seen, HashSet<AgentVisuals> visuals) {
+        private void Inspect(object obj, int depth, HashSet<object> seen, HashSet<AgentVisuals> visuals,
+                             Dictionary<AgentVisuals,string> owners, string owner) {
             if (obj == null || depth > 5 || seen.Count > 8000 || !seen.Add(obj)) return;
             var visual=obj as AgentVisuals;
-            if (visual != null) { visuals.Add(visual); return; }
+            if (visual != null) { visuals.Add(visual); owners[visual]=owner; return; }
             var type=obj.GetType();
             if (type.IsValueType || obj is string || obj is Delegate || obj is NativeObject) return;
             // Traverse UI-owned fields only, never the campaign/world object graph.
@@ -93,10 +103,58 @@ namespace REAdaWongRace.UIProbe {
                     foreach (var entry in enumerable) {
                         if (++n > 128) break;
                         var pair=entry as DictionaryEntry?;
-                        Inspect(pair.HasValue?pair.Value.Value:entry, depth+1, seen, visuals);
+                        Inspect(pair.HasValue?pair.Value.Value:entry,depth+1,seen,visuals,owners,type.FullName+"."+field.Name);
                     }
-                } else Inspect(value,depth+1,seen,visuals);
+                } else Inspect(value,depth+1,seen,visuals,owners,type.FullName+"."+field.Name);
             }
+        }
+
+        private void CorrectPreview(AgentVisuals visual, string owner, string screen) {
+            try {
+                var data=visual.GetCopyAgentVisualsData();
+                var races=TaleWorlds.Core.FaceGen.GetRaceNames().ToArray();
+                if (data.RaceData<0 || data.RaceData>=races.Length || races[data.RaceData]!="reada_wong") return;
+                var entity=visual.GetEntity();
+                var oldSkeleton=entity.Skeleton;
+                if (oldSkeleton==null || oldSkeleton.GetName()=="adar_skeleton") return;
+                string previousSkeleton=oldSkeleton.GetName();
+                string previousSet=data.ActionSetData.GetName();
+                bool facegen=owner.Contains("BodyGenerator") || previousSet.EndsWith("_facegen");
+                string setName="as_reada_wong"+(data.SkeletonTypeData==SkeletonType.Female?"_female":"")+
+                               (facegen?"_facegen":"_warrior");
+                var ownSet=MBActionSet.GetActionSet(setName);
+                if (!ownSet.IsValid || ownSet.GetSkeletonName()!="adar_skeleton") {
+                    Write(new { kind="repair_unavailable", screen, set=setName });
+                    return;
+                }
+                var actions=new [] { MBSkeletonExtensions.GetActionAtChannel(oldSkeleton,0),
+                                     MBSkeletonExtensions.GetActionAtChannel(oldSkeleton,1) };
+                var progress=new [] { oldSkeleton.GetAnimationParameterAtChannel(0),oldSkeleton.GetAnimationParameterAtChannel(1) };
+                float scale=visual.GetScale();
+                if (scale<=0) return;
+                var frame=entity.GetFrame();
+                var unscaledFrame=frame;
+                unscaledFrame.rotation.ApplyScaleLocal(1f/scale);
+                // Refresh with null oldEquipment forces skeleton recreation, including
+                // inventory views where unchanged weapon slots would skip recreation.
+                var refresh=typeof(AgentVisuals).GetMethod("Refresh",BindingFlags.Instance|BindingFlags.NonPublic,
+                    null,new [] { typeof(bool),typeof(bool),typeof(Equipment),typeof(bool),typeof(bool) },null);
+                var dataField=typeof(AgentVisuals).GetField("_data",BindingFlags.Instance|BindingFlags.NonPublic);
+                if (refresh==null || dataField==null) return;
+                data.ActionSet(ownSet).Frame(unscaledFrame).Scale(scale);
+                dataField.SetValue(visual,data);
+                refresh.Invoke(visual,new object[] { false,true,null,false,false });
+                var skeleton=visual.GetEntity().Skeleton;
+                for (int channel=0;channel<2;channel++) {
+                    var action=actions[channel];
+                    if (action!=ActionIndexCache.act_none)
+                        MBSkeletonExtensions.SetAgentActionChannel(skeleton,channel,in action,progress[channel],-.2f,true,0);
+                }
+                skeleton.TickAnimationsAndForceUpdate(.001f,frame,true);
+                Write(new { kind="preview_repair", screen, owner, previous_skeleton=previousSkeleton,
+                    previous_action_set=previousSet, skeleton=skeleton.GetName(), action_set=ownSet.GetName(),
+                    position_scale_and_channel_progress_preserved=true });
+            } catch (Exception e) { Write(new { kind="repair_error", error=e.ToString() }); }
         }
 
         private static float[] Matrix(MatrixFrame f) {
@@ -124,11 +182,12 @@ namespace REAdaWongRace.UIProbe {
                         rest_local_mapped=Matrix(skeleton.GetBoneLocalRestFrame(i,true)),
                         posed_entity=Matrix(skeleton.GetBoneEntitialFrame(i)) });
                 }
+                var equipment=visual.GetEquipment();
                 Write(new { kind="ada_pose", screen, race=data.RaceData, skeleton=skeleton.GetName(),
                     skeleton_type=data.SkeletonTypeData.ToString(), morph_anims=data.UseMorphAnimsData,
                     monster=data.MonsterData?.StringId, action_set=data.ActionSetData.GetName(),
                     action_set_skeleton=data.ActionSetData.GetSkeletonName(),
-                    gloves=visual.GetEquipment()[EquipmentIndex.Gloves].Item?.StringId,
+                    gloves=equipment==null?null:equipment[EquipmentIndex.Gloves].Item?.StringId,
                     action0=MBSkeletonExtensions.GetActionAtChannel(skeleton,0).ToString(),
                     action1=MBSkeletonExtensions.GetActionAtChannel(skeleton,1).ToString(),
                     animation0=skeleton.GetAnimationAtChannel(0), animation1=skeleton.GetAnimationAtChannel(1),
@@ -155,7 +214,7 @@ namespace REAdaWongRace.UIProbe {
                     "Mount and Blade II Bannerlord","REAdaWongRace");
                 Directory.CreateDirectory(dir);
                 var envelope=new { session, time=DateTime.Now.ToString("s"), record };
-                string path=Path.Combine(dir,"ui_probe_v1.jsonl");
+                string path=Path.Combine(dir,RepairEnabled?"ui_runtime_v0.1.3.jsonl":"ui_probe_v1.jsonl");
                 if (File.Exists(path) && new FileInfo(path).Length>12*1024*1024) return;
                 File.AppendAllText(path,serializer.Serialize(envelope)+Environment.NewLine);
             } catch { /* Diagnostics must never interrupt UI/gameplay. */ }
