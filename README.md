@@ -7,6 +7,7 @@
 | 工程 | 内容 |
 | --- | --- |
 | [Tianxiang Collection](mods/TianxiangCollection/README.md) | 天香八套装备 |
+| [Tianxiang Race Collection](mods/TianxiangRaceColletion/README.md) | 天香完整角色种族系列，目前包含 T5 成女校服 PVE |
 | [Shengxiu Collection](mods/ShengxiuCollection/README.md) | 明玉、白凤、素问 |
 | [Zhenwu Collection](mods/ZhenwuCollection/README.md) | 真武少女八套装备 |
 | [Beauty Banners](mods/BeautyBanners/README.md) | 九款彩色旗徽 |
@@ -78,7 +79,7 @@ python tools/package_delivery.py --mod TianxiangCollection --version v1.0.0
 
 Mod ZIP 顶层是模组 ID，源包保持 source/ 与 tex/ 相邻。mod.json.shared_source_files 可列入工作区 tools/ 文件，源包将其保存到 workspace_tools/。保留旧包，只复制任务涉及的模块；安装器不自动提交 Git 或打标签。
 
-共用入口支持顶层独立模组、天香单套 ID、ResidentEvil 和 Xianjian7Race 内独立 ID。圣绣、真武内部套装从合集根打包和安装。
+共用入口支持顶层独立模组、天香单套 ID、ResidentEvil、Xianjian7Race 和 TianxiangRaceColletion 内独立 ID。圣绣、真武内部套装从合集根打包和安装。
 
 ## 文档与检查边界
 

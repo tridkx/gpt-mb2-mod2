@@ -1,0 +1,239 @@
+{
+  "txt5pve_tunic_d-pve": {
+    "name": "txt5pve_tunic_d-pve",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "txt5pve_tex_2",
+      "1": "txt5pve_tex_0",
+      "2": "txt5pve_tex_0",
+      "4": "txt5pve_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ],
+    "alphaTest": 0.25
+  },
+  "txt5pve_hair_d": {
+    "name": "txt5pve_hair_d",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "txt5pve_tex_3",
+      "1": "txt5pve_tex_0",
+      "2": "txt5pve_tex_0",
+      "4": "txt5pve_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ],
+    "alphaTest": 0.25
+  },
+  "txt5pve_body_d": {
+    "name": "txt5pve_body_d",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "txt5pve_tex_4",
+      "1": "txt5pve_tex_0",
+      "2": "txt5pve_tex_0",
+      "4": "txt5pve_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "txt5pve_pants_d-pve": {
+    "name": "txt5pve_pants_d-pve",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "txt5pve_tex_5",
+      "1": "txt5pve_tex_0",
+      "2": "txt5pve_tex_0",
+      "4": "txt5pve_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ],
+    "alphaTest": 0.25
+  },
+  "txt5pve_cuff_d": {
+    "name": "txt5pve_cuff_d",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "txt5pve_tex_6",
+      "1": "txt5pve_tex_0",
+      "2": "txt5pve_tex_0",
+      "4": "txt5pve_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ],
+    "alphaTest": 0.25
+  },
+  "txt5pve_head_d": {
+    "name": "txt5pve_head_d",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "txt5pve_tex_7",
+      "1": "txt5pve_tex_0",
+      "2": "txt5pve_tex_0",
+      "4": "txt5pve_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ],
+    "alphaTest": 0.25
+  },
+  "txt5pve_face_d": {
+    "name": "txt5pve_face_d",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "txt5pve_tex_8",
+      "1": "txt5pve_tex_0",
+      "2": "txt5pve_tex_0",
+      "4": "txt5pve_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "txt5pve_eye_d": {
+    "name": "txt5pve_eye_d",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "txt5pve_tex_9",
+      "1": "txt5pve_tex_0",
+      "2": "txt5pve_tex_0",
+      "4": "txt5pve_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "txt5pve_eyelash_d": {
+    "name": "txt5pve_eyelash_d",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "txt5pve_tex_10",
+      "1": "txt5pve_tex_0",
+      "2": "txt5pve_tex_0",
+      "4": "txt5pve_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ],
+    "alphaTest": 0.25
+  }
+}

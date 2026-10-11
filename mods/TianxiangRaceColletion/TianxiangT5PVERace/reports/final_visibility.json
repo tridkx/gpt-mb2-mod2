@@ -1,0 +1,786 @@
+{
+  "materials": [
+    {
+      "Name": "txt5pve_tunic_d-pve",
+      "Guid": "1e280772-0227-93ac-b133-b2e0011fd268",
+      "BlendMode": "factor",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
+    },
+    {
+      "Name": "txt5pve_hair_d",
+      "Guid": "5a28f3c8-de47-a487-79c1-14d39542c535",
+      "BlendMode": "factor",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
+    },
+    {
+      "Name": "txt5pve_body_d",
+      "Guid": "20206dce-bb06-8501-78ec-5f0aee04b56c",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "txt5pve_pants_d-pve",
+      "Guid": "babd9b4a-8cc0-94cf-7f84-a466eed8fd6f",
+      "BlendMode": "factor",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
+    },
+    {
+      "Name": "txt5pve_cuff_d",
+      "Guid": "94127d6d-b2ff-0d61-f1a3-e25b7e7db675",
+      "BlendMode": "factor",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
+    },
+    {
+      "Name": "txt5pve_head_d",
+      "Guid": "f988a80b-0a85-4174-9d8c-a082179a979f",
+      "BlendMode": "factor",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
+    },
+    {
+      "Name": "txt5pve_face_d",
+      "Guid": "709df0ef-21f1-986c-39af-c91daa741502",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "txt5pve_eye_d",
+      "Guid": "455b2ecd-0350-62ea-08d0-f77311dff556",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "txt5pve_eyelash_d",
+      "Guid": "8e6b420b-45df-e983-3bef-c0d541579728",
+      "BlendMode": "factor",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "Name": "txt5pve_part_00",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "1e280772-0227-93ac-b133-b2e0011fd268",
+      "Vertices": 2107,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "EF132F7D7304691A3C105C11571B838887C79947BA62901974B1885F8470508B",
+      "VertexStreamSHA256": "7C58D42BCB68342E7F672AE4E312890DDE24922E0A74D379D6E0139CBAC4F388",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_00.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "1e280772-0227-93ac-b133-b2e0011fd268",
+      "Vertices": 1679,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "493192250F39128CDAD31711B2F82DC19F3261FA5E8EECEA043B2780295D8670",
+      "VertexStreamSHA256": "0537602381BD47B84897EF4041E13C17FBAAE8D6501F51CD4FAC8675D07AC48B",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_00.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "1e280772-0227-93ac-b133-b2e0011fd268",
+      "Vertices": 1324,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "CD66B593C1C458B26EFB4D453DAEBB519699B7CE176526F47574CADCECC7CBB1",
+      "VertexStreamSHA256": "14BB91ABAE6135072DC270B1CBB7C1B3565E734A58C7AE1F253E7E61CCF55130",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_00.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "1e280772-0227-93ac-b133-b2e0011fd268",
+      "Vertices": 1322,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E053B849BE4C2977F4130EB388E49414FB70118A1688BAEF6715D9AF9073E828",
+      "VertexStreamSHA256": "7A8AB30B8E34B4FFB6C69DE8D094C09B5E178BB779B9B3D79402CD3DD8772958",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_01",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "5a28f3c8-de47-a487-79c1-14d39542c535",
+      "Vertices": 1851,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "F196ABFCA316124AE099FEF5B513BB1ABFF3533182E1C7071B931B7049D67FC7",
+      "VertexStreamSHA256": "F409523167B23366377053B129901790558D9EF227D81D55642610A52A2F706E",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_01.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "5a28f3c8-de47-a487-79c1-14d39542c535",
+      "Vertices": 1370,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E5B596D37514994DE584D6CD3F936D9533D17042753661C3CF9561D80FC0B0B1",
+      "VertexStreamSHA256": "D9778B9170928DFBF89121A317A8372BDFDAAAFE05AA8D61225DBA89B4C60CD8",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_01.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "5a28f3c8-de47-a487-79c1-14d39542c535",
+      "Vertices": 954,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "9ED18162234E2C159CBB296DF5BB0732C75947A9DC63D4082906B97D327E1674",
+      "VertexStreamSHA256": "3C806310E2C5F6168EF3796543CBFE8DD1933804DE09825A4C64C3EA412034FA",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_01.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "5a28f3c8-de47-a487-79c1-14d39542c535",
+      "Vertices": 597,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "4C81DCED4EF3D29D9D18EC6BB92FD80FA7D23F5119F365D085DE6EB44ECB950A",
+      "VertexStreamSHA256": "22DFF3045F575324F5EE7AA6012E7924B2CE056A5A767FE099F3C05FBE4CC0BE",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_02",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "5a28f3c8-de47-a487-79c1-14d39542c535",
+      "Vertices": 2108,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "883EBC915AFDB1DEAA1AE002763051F11CCDA2BACDFC75D7CDF64AF8FE33EA26",
+      "VertexStreamSHA256": "CC0AA8A539EAECA57EC58191B46D5EC13E17C51CA0EC2B07DCEDC9B8A5757FD0",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_02.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "5a28f3c8-de47-a487-79c1-14d39542c535",
+      "Vertices": 1572,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "AF453C21500E63A1C2E5528BDC2A8B0351ADB5E7D1CD7417159818D0991D6170",
+      "VertexStreamSHA256": "2394595B074A3C04C979A1498DAD1E8A8057810B130476A39426563BD0ACB6E4",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_02.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "5a28f3c8-de47-a487-79c1-14d39542c535",
+      "Vertices": 1091,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "D45E68F6F580653B82F127B97A6C03530D756F0A1BE2B42F39894580C6BB2399",
+      "VertexStreamSHA256": "185BC0F3FBB7D77C6B220D1BA7B75471D5F0FD7E2C7A01B3DE2F9BD14C7B1B40",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_02.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "5a28f3c8-de47-a487-79c1-14d39542c535",
+      "Vertices": 688,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "947CA5C544A3BEEB3DD47C0F8C922E3766EB1FA4BDB77C238E639B6AFE1080C6",
+      "VertexStreamSHA256": "BCC84C3739DE0229BB8AF8C9079B2E3EA28738FC76BA38643EA239DA1B4230AB",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_03",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "1e280772-0227-93ac-b133-b2e0011fd268",
+      "Vertices": 1064,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "58AD5A2A69AA1CCE9F8B5EE7C1EA575EA045D58D580D0061B313857DF604CE38",
+      "VertexStreamSHA256": "F881EE46A094FA7F03DEBD799651C00A93B6DF54C6BE5E4548D67E9B8C4721B1",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_03.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "1e280772-0227-93ac-b133-b2e0011fd268",
+      "Vertices": 825,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "D2B7BAFE317AE1D3DEA987ABA9F7CF573C9FBAE1C043AF48968B6DC5199A148E",
+      "VertexStreamSHA256": "E17278B9CD7F16AFE4634B2FB556F8BC515C35AE47339F0EE97FDDAF7AE9DD3F",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_03.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "1e280772-0227-93ac-b133-b2e0011fd268",
+      "Vertices": 624,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "89F048D047881B23583CD5717C16CDA8C21824EDB30A0E0D9849978AA57E890D",
+      "VertexStreamSHA256": "D633728893AA89B82A3C11DB042FC9E15B3F39604DAC2F737C2833110689ED48",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_03.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "1e280772-0227-93ac-b133-b2e0011fd268",
+      "Vertices": 538,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B8F9214B929D351695CB2BEA9A31A6054A46A5058226123E4CC19F9DF4771FD5",
+      "VertexStreamSHA256": "C93D04F8DED2EF6283BB999E10AF860554C1163514F8261F1EBD6805EA892E63",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_04",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "20206dce-bb06-8501-78ec-5f0aee04b56c",
+      "Vertices": 464,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "945A30B9EAAE2B111AAB1A821C117A9A76384842B742160D64CC9BDC958A7D4A",
+      "VertexStreamSHA256": "2FC059912FB3931FE2D81BE98870A0F2D8E431C075C498485D875B954F2059BE",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_04.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "20206dce-bb06-8501-78ec-5f0aee04b56c",
+      "Vertices": 358,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "2A9CBFD65FBE39ECADDB1AE529A60369545C3080444E70FE6E1F26EA7AE53C0D",
+      "VertexStreamSHA256": "5D0649025C08F858AFECBDB3BC0BE2F0B123D7778C7BB7C6AEE2A2AAABEF7F55",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_04.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "20206dce-bb06-8501-78ec-5f0aee04b56c",
+      "Vertices": 256,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5F4ECDB7B71C3E403983FE405CDDCDC2F2576B655FDB3E80D94A6F7C32E58BC2",
+      "VertexStreamSHA256": "96DEFEFD2E9EC12DAB840BBCD440CE783FD08917A59B3150B71456F59EA9CB64",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_04.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "20206dce-bb06-8501-78ec-5f0aee04b56c",
+      "Vertices": 178,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "AC7828950D426DB64652D2CEE34351F0D9DAC85AC96F3488BD0B28862E18BC49",
+      "VertexStreamSHA256": "47B0D74561D308E88F903B8D306A7CE2F2907817C46853E5BFD72B6335916478",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_05",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "babd9b4a-8cc0-94cf-7f84-a466eed8fd6f",
+      "Vertices": 795,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "D7E175FBC69CFCE771CD7DB0D68BC324C47F01656998CBED4ECF1EDC918F7222",
+      "VertexStreamSHA256": "32874EA49A9873B750AACD3012A77E01BB39D61591BE025EC79A7F61330157AC",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_05.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "babd9b4a-8cc0-94cf-7f84-a466eed8fd6f",
+      "Vertices": 591,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A5C46601A0DBA06BF0497338BDAFE017DF3CB7912A14A5CD3BA971BF73451115",
+      "VertexStreamSHA256": "E213D89A401EE09E7ADF15B2FB7B6C79F69523E32481D6A5D72EE6B10EA00F40",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_05.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "babd9b4a-8cc0-94cf-7f84-a466eed8fd6f",
+      "Vertices": 417,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "14980A2D0D264DD3F2522BE82DAED06B3A63BEA08A45AD1B4E0A8D5CCB5F1AF3",
+      "VertexStreamSHA256": "4D6ECEDFB750A04FF7F0A5C45B16771CA35DC7F49FC91EC71981D86E9828110A",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_05.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "babd9b4a-8cc0-94cf-7f84-a466eed8fd6f",
+      "Vertices": 280,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "19FFD0C6E4723C5E3A55D6CB4BABBDA5C61C94F696620A2B9FF6002D84B00DEA",
+      "VertexStreamSHA256": "F9E16237C4E117C054E76AF608179338E67E9D87305B00C38BABC139895012A1",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_06",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "20206dce-bb06-8501-78ec-5f0aee04b56c",
+      "Vertices": 200,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "51E8E3057E7F4381071438308DA8D8EFB7DF35B998764735822190BC21F0F8ED",
+      "VertexStreamSHA256": "5609BD3ADCE11B81CD4B657E3026A08A71A6C20D8DE98174EADA93C82F0551B7",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_06.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "20206dce-bb06-8501-78ec-5f0aee04b56c",
+      "Vertices": 154,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "BA60A490E37E4C5A5A40CD872FDBFAFE95EB1630148BFDF227E73B03C4A232A9",
+      "VertexStreamSHA256": "8BF0C012683B2FF8A8924B7EE0CBAF6ACA227544AD28C92124343BFE06319670",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_06.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "20206dce-bb06-8501-78ec-5f0aee04b56c",
+      "Vertices": 114,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "533B679819F1499A60329C47CAF2AD7496FC6180FF3936EA2F39419B53ADDA34",
+      "VertexStreamSHA256": "D27313C84A82FFF5C3D95F94FBF79973BDB15CA3B61D90E39D80F84A2C7986BE",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_06.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "20206dce-bb06-8501-78ec-5f0aee04b56c",
+      "Vertices": 100,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "C323C96B39B5155A4788A606C6FC05571BEFD551E693AF4EC6B7F369CC42A834",
+      "VertexStreamSHA256": "4AF95833E0E57CD1B87511F59A8C86F423BCFA4D06F5BC44471EDDAF683D29D2",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_07",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "20206dce-bb06-8501-78ec-5f0aee04b56c",
+      "Vertices": 1072,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "8D9C6939DE85CEA33076D7DA6E5E789F49C3E98042CA2AE4872EDC452C634B82",
+      "VertexStreamSHA256": "E32ADCCC68667202B3292D44C1CF1B755B98ECF5B19E77E91C7CDD4D80F49C53",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_07.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "20206dce-bb06-8501-78ec-5f0aee04b56c",
+      "Vertices": 739,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "91ED1D8D5B0BFF7B31D2069D45CE9DF6360151EB55DB53938F6A875F6AB3E38B",
+      "VertexStreamSHA256": "C86B642B2683E43BB382EEDA6EC92C258F13104EA30AB39DB5FA0BFA8121A7A2",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_07.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "20206dce-bb06-8501-78ec-5f0aee04b56c",
+      "Vertices": 493,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "13EF29089592CD5628B43EFFCE6C6A99E05D11C42CD7F9C55BCCCCCDC754AD12",
+      "VertexStreamSHA256": "C2EB6B74FCF225E54C273FACBA8A22D04B9C52FF1F92B616E798366F07D83466",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_07.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "20206dce-bb06-8501-78ec-5f0aee04b56c",
+      "Vertices": 292,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "12A68D834A7CFB33D47098FA14C2DB863807D06FABD72EC0450CD10B002705ED",
+      "VertexStreamSHA256": "4A5AB69570BC8B48279C7D9284E238A71795D4267E41EBE532CA36C78C8E7118",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_08",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "94127d6d-b2ff-0d61-f1a3-e25b7e7db675",
+      "Vertices": 364,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A384B378BBDB17EA3FA54D38766FB32B91E701EAD6D3F901283F0581DBC25696",
+      "VertexStreamSHA256": "77E6DCE82F901173101AF40601E4737F6D9FBCD537CB0839B6DC1488946A8EF0",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_08.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "94127d6d-b2ff-0d61-f1a3-e25b7e7db675",
+      "Vertices": 354,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "FEA126CBD328BAA921B588B340B0FC8461543BC96E898372C4CAECF2D08D9D68",
+      "VertexStreamSHA256": "2EDD425967E860A1C71844755F81F4F313CF717241A9C23507F9A4D0DF54EAF7",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_08.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "94127d6d-b2ff-0d61-f1a3-e25b7e7db675",
+      "Vertices": 354,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "FEA126CBD328BAA921B588B340B0FC8461543BC96E898372C4CAECF2D08D9D68",
+      "VertexStreamSHA256": "2EDD425967E860A1C71844755F81F4F313CF717241A9C23507F9A4D0DF54EAF7",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_08.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "94127d6d-b2ff-0d61-f1a3-e25b7e7db675",
+      "Vertices": 354,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "FEA126CBD328BAA921B588B340B0FC8461543BC96E898372C4CAECF2D08D9D68",
+      "VertexStreamSHA256": "2EDD425967E860A1C71844755F81F4F313CF717241A9C23507F9A4D0DF54EAF7",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_09",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "f988a80b-0a85-4174-9d8c-a082179a979f",
+      "Vertices": 56,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "7C2D694D4C46ED5E7BD4243144E171C90D5A628324E239503536F05203339863",
+      "VertexStreamSHA256": "9A4DC78F72DE0E94A1F5A573DF5827F99D8005F657CCDB408AD80E544BB986B4",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_09.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "f988a80b-0a85-4174-9d8c-a082179a979f",
+      "Vertices": 46,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "BA151F705F188CD9FCAB95D6D24C0DA135A4F334778B139684F38B8B4FBE728F",
+      "VertexStreamSHA256": "0AB789CAD0CBD9C29CEBC3C577A32C32ED12DB0E0E6562DDC324BBE60B31F438",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_09.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "f988a80b-0a85-4174-9d8c-a082179a979f",
+      "Vertices": 30,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "9088FEE917E5A748C2F0B4F5458C1CBDABBD696291C69BE6E605BAE0EF779E8F",
+      "VertexStreamSHA256": "35F83E4D125FC61FE9E580D032442339AC30283418EF809260BA355B42E1E66F",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_09.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "f988a80b-0a85-4174-9d8c-a082179a979f",
+      "Vertices": 22,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "FC351643198AC4EC4E78649C99AD06B4CD45B554005990CDC70E520B49DD9BF0",
+      "VertexStreamSHA256": "44826A993DDF2664D0D360C2466AFADA5FD5599974A22892B7E55ADEB79F9FD0",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_10",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "f988a80b-0a85-4174-9d8c-a082179a979f",
+      "Vertices": 1149,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "4244CCA2DF03C0F3B589BAE8A41BBB4FADE4FD21054E40607FCCF41D89221EE4",
+      "VertexStreamSHA256": "1EE45D2C71BD8F6F699D0BC8B0744523B48C11E225F8890A2D62087F2D88B36C",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_10.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "f988a80b-0a85-4174-9d8c-a082179a979f",
+      "Vertices": 909,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "C3E4D6DAED5497AC405FF38B29B271291D242FB2EA8DFB3262209E320459AEDF",
+      "VertexStreamSHA256": "F983D1F431B309A40C86C9E67BAFBF930BE9F54341AF0D80BC02DAFE81665A95",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_10.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "f988a80b-0a85-4174-9d8c-a082179a979f",
+      "Vertices": 681,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "84CCDE6F62AE62083C7CF446FE891AAB1757EEB1B44A2C44FA534D3DB2DD25BB",
+      "VertexStreamSHA256": "D70B48DB10E281C1314245281C9F8A63A46FAA273EF5830831446519429E3EA8",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_10.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "f988a80b-0a85-4174-9d8c-a082179a979f",
+      "Vertices": 426,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5DF23267786025B42543D3C671ECE2D527B1FCEB822834FB5221E39614F8044A",
+      "VertexStreamSHA256": "60CA21C350A5EFC4B64E67BBCED47084B05DDD0688009359BB89229337D7FA69",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_11",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "709df0ef-21f1-986c-39af-c91daa741502",
+      "Vertices": 1640,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E5E2A9663BC0A8AA59C42091AAFAF3BB196658E2212D9CE9DBCD9E95E1B9A1FB",
+      "VertexStreamSHA256": "2BB73ECB1F82294B684431A86FF38B1F94CBC44C241FA029B76F2C1864210F84",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_11.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "709df0ef-21f1-986c-39af-c91daa741502",
+      "Vertices": 1179,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "AD103C754A21A996D231454871DD84E991E335D10CFA3EA22051B5AEA869EA1B",
+      "VertexStreamSHA256": "7BBC25B0D604E3326B93F874F0ACD4CD46D38A072FCF9919A0A67E72FA74CE3A",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_11.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "709df0ef-21f1-986c-39af-c91daa741502",
+      "Vertices": 794,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A17AD5E7E56739F0394C2588051E13A4EBDCB4D9CF1D750C0CC99DC5E9341069",
+      "VertexStreamSHA256": "786056D1304CFE1CD81C1932D67A0FBF27590A92C66626B08DBD006792BA9C8D",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_11.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "709df0ef-21f1-986c-39af-c91daa741502",
+      "Vertices": 485,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "25C04C1D08A20AF5C9F731A82F85ED54A761DCE69EE62D70E05526B198DB0068",
+      "VertexStreamSHA256": "EB2A56C7F313B71C4DB6C504A225B0C157E25BF0295F6A80F21E52BEBBAFA33E",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_12",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "455b2ecd-0350-62ea-08d0-f77311dff556",
+      "Vertices": 194,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "12B0282F3D6BE525428F561A0EE040E0AB621768B1AC08FDB45CC84E2D1891FA",
+      "VertexStreamSHA256": "206B0606D427B5813CBE36D5F82489D1723F8563990E4A8BD44E2D6FF1582098",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_12.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "455b2ecd-0350-62ea-08d0-f77311dff556",
+      "Vertices": 141,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B4FB93DEED88C91FDF6F1D79E1B9753166308C9FB91131C68DBA4315E5E88387",
+      "VertexStreamSHA256": "9A981F53642BA79BDB602CFE11C8C7918CA052D729E938385E18DDB6BF36E79C",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_12.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "455b2ecd-0350-62ea-08d0-f77311dff556",
+      "Vertices": 97,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A58FF1884B746A032B6EC99F459B509B968499263F1B8A35C40BEF524AEC7BE5",
+      "VertexStreamSHA256": "46B3140175D90EA4114B901E977EC00EE85A6BC02A9E47B9EB8B0F4B524F46CA",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_12.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "455b2ecd-0350-62ea-08d0-f77311dff556",
+      "Vertices": 62,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "02EAC1AE8A6A00237269D7713F65ED7AF685B76695978616E5CA1992B75A2101",
+      "VertexStreamSHA256": "2E00B9C5586C278466D92656829D1F9891A4F48BB39399320F3CE5D436CD6FD6",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_13",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "8e6b420b-45df-e983-3bef-c0d541579728",
+      "Vertices": 250,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B4F73DFF046400B76728AB32619E3D89E00132653725F660C62AB9FCA975B372",
+      "VertexStreamSHA256": "2F9A4582D5C31A38CDBE5A9EC06B7B0CFE57CE2E66D518F905204188217F1C99",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_13.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "8e6b420b-45df-e983-3bef-c0d541579728",
+      "Vertices": 194,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "12B0282F3D6BE525428F561A0EE040E0AB621768B1AC08FDB45CC84E2D1891FA",
+      "VertexStreamSHA256": "76A75E270B72BAF3E7278A316400C53225226AA4D0DF53086EFFF8EEE952B8A5",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_13.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "8e6b420b-45df-e983-3bef-c0d541579728",
+      "Vertices": 144,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A240FACB7A0D5897B5826BFA52DEE1963929A424E1E2D78DD2F72CD5A85CBCDF",
+      "VertexStreamSHA256": "6664204860474C466ADE0DA909EECB559BBCADD8A8A8E69316DF068665F127DB",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_part_13.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "8e6b420b-45df-e983-3bef-c0d541579728",
+      "Vertices": 96,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A292BC4A1D8D3CAA7DD32D1858F7D642A27373526B84CDE7DF8634FAAD708D2A",
+      "VertexStreamSHA256": "01F7BB353106029CC29297D887E8B2D144351876E3FF82DB56F148A83EDDBF47",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    },
+    {
+      "Name": "txt5pve_hidden",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "20206dce-bb06-8501-78ec-5f0aee04b56c",
+      "Vertices": 4,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5AC6A5945F16500911219129984BA8B387A06F24FE383CE4E81A73294065461B",
+      "VertexStreamSHA256": "3C0CCAA4FF88487101DDD2FF792A713D9D958832310414A50CD4F9BBE64E4FB3",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    }
+  ]
+}

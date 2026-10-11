@@ -1,5 +1,11 @@
 # 工作区更新日志
 
+## 2026-10-11 天香种族系列与 T5 PVE
+
+- 新建用户指定的 `mods/TianxiangRaceColletion/` 系列容器，首个独立工程为 `TianxiangT5PVERace`。
+- 共用打包与安装入口支持该系列内独立模组；系列目录本身不注册游戏模块。
+- T5 PVE v0.1.0 的资源、源文件与检查见[模组更新日志](../mods/TianxiangRaceColletion/TianxiangT5PVERace/CHANGELOG.md)。
+
 ## 2026-10-11 种族合集目录命名
 
 - 仙剑7系列工程容器由 `mods/Xianjian7/` 改为 `mods/Xianjian7Race/`，同步当前文档、历史路径对照和打包／安装入口。
