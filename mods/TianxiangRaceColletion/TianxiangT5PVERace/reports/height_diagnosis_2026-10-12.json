@@ -1,0 +1,160 @@
+{
+  "date": "2026-10-12",
+  "scope": "Existing configurations, installed XML, preserved source reports, actual UI captures and local DLL decompilation; no module writes or game launch",
+  "races": [
+    {
+      "id": "WuduRaceTest",
+      "configured_skin_min_scale": 1.1,
+      "configured_unit_scale": 0.010595302748999976,
+      "source_height_m": 1.45,
+      "adult_skins": [
+        {
+          "gender": "0",
+          "min_scale": 1.1,
+          "skeleton": "wdr_skeleton"
+        },
+        {
+          "gender": "1",
+          "min_scale": 1.1,
+          "skeleton": "wdr_skeleton"
+        }
+      ],
+      "installed_skins_match": true,
+      "ui_log": null,
+      "ui_capture_count": 0,
+      "ui_scales": [],
+      "ui_skeletons": [],
+      "last_ui_capture": null,
+      "rest_height_times_observed_ui_scale_m": [],
+      "height_estimate_scope": "Rest mesh height multiplied by logged scale, not a posed world-space head-to-ground measurement"
+    },
+    {
+      "id": "YueQingShuRace",
+      "configured_skin_min_scale": 1.0,
+      "configured_unit_scale": null,
+      "source_height_m": 1.6760067177528981,
+      "adult_skins": [
+        {
+          "gender": "0",
+          "min_scale": 1.0,
+          "skeleton": "yqs_skeleton"
+        },
+        {
+          "gender": "1",
+          "min_scale": 1.0,
+          "skeleton": "yqs_skeleton"
+        }
+      ],
+      "installed_skins_match": true,
+      "ui_log": null,
+      "ui_capture_count": 0,
+      "ui_scales": [],
+      "ui_skeletons": [],
+      "last_ui_capture": null,
+      "rest_height_times_observed_ui_scale_m": [],
+      "height_estimate_scope": "Rest mesh height multiplied by logged scale, not a posed world-space head-to-ground measurement"
+    },
+    {
+      "id": "REAdaWongRace",
+      "configured_skin_min_scale": 1.1,
+      "configured_unit_scale": null,
+      "source_height_m": 1.7287169694900513,
+      "adult_skins": [
+        {
+          "gender": "0",
+          "min_scale": 1.1,
+          "skeleton": "adar_skeleton"
+        },
+        {
+          "gender": "1",
+          "min_scale": 1.1,
+          "skeleton": "adar_skeleton"
+        }
+      ],
+      "installed_skins_match": true,
+      "ui_log": "C:\\Users\\DKX\\Documents\\Mount and Blade II Bannerlord\\REAdaWongRace\\ui_runtime_v0.1.3.jsonl",
+      "ui_capture_count": 2,
+      "ui_scales": [
+        0.993492067
+      ],
+      "ui_skeletons": [
+        "adar_skeleton"
+      ],
+      "last_ui_capture": {
+        "time": "2026-10-11T08:06:03",
+        "screen": "SandBox.View.CharacterCreation.CharacterCreationScreen",
+        "gender": "Male",
+        "scale": 0.993492067,
+        "action_set": "as_reada_wong_facegen"
+      },
+      "rest_height_times_observed_ui_scale_m": [
+        1.717466595276647
+      ],
+      "height_estimate_scope": "Rest mesh height multiplied by logged scale, not a posed world-space head-to-ground measurement"
+    },
+    {
+      "id": "TianxiangT5PVERace",
+      "configured_skin_min_scale": 1.0,
+      "configured_unit_scale": null,
+      "source_height_m": 1.654045820236206,
+      "adult_skins": [
+        {
+          "gender": "0",
+          "min_scale": 1.0,
+          "skeleton": "txt5pve_skeleton"
+        },
+        {
+          "gender": "1",
+          "min_scale": 1.0,
+          "skeleton": "txt5pve_skeleton"
+        }
+      ],
+      "installed_skins_match": true,
+      "ui_log": "C:\\Users\\DKX\\Documents\\Mount and Blade II Bannerlord\\TianxiangT5PVERace\\ui_runtime_v0.1.3.jsonl",
+      "ui_capture_count": 14,
+      "ui_scales": [
+        0.9031746
+      ],
+      "ui_skeletons": [
+        "txt5pve_skeleton"
+      ],
+      "last_ui_capture": {
+        "time": "2026-10-12T00:05:19",
+        "screen": "SandBox.View.CharacterCreation.CharacterCreationScreen",
+        "gender": "Male",
+        "scale": 0.9031746,
+        "action_set": "as_txt5pve_facegen"
+      },
+      "rest_height_times_observed_ui_scale_m": [
+        1.4938921720735074
+      ],
+      "height_estimate_scope": "Rest mesh height multiplied by logged scale, not a posed world-space head-to-ground measurement"
+    }
+  ],
+  "native_adult_skins": [
+    {
+      "gender": "0",
+      "min_scale": 1.07
+    },
+    {
+      "gender": "1",
+      "min_scale": 1.06
+    }
+  ],
+  "confirmed_findings": [
+    "Tianxiang uses its own 1.654 m mesh and measured T5 joint landmarks, not Wudu height data.",
+    "Tianxiang and Yue Qingshu registrations use skin_min_scale=1.0; this is a reused default requiring per-race runtime calibration.",
+    "Tianxiang actual male character-creation UI scale is 0.9031746 with its own skeleton.",
+    "Ada current UI scale is 0.993492067 with min_scale=1.1, approximately 1.1 times the Tianxiang recorded scale.",
+    "AgentVisuals.Refresh computes scale through MBBodyProperties.GetScaleFromKey(race,gender,bodyProperties) when ScaleData=0.",
+    "GetScaleFromKey delegates to native IMBFaceGen; its exact numeric formula is not present in managed DLLs.",
+    "Own UI repair preserves the observed scale; it does not impose a Wudu scale."
+  ],
+  "not_proven": [
+    "Battle AgentScale has no captured runtime sample for this feedback.",
+    "Female, different body keys and ages may yield other scales; male preview data does not calibrate every character.",
+    "Yue Qingshu has no captured scale in this audit; similarity of min_scale alone does not prove its runtime value."
+  ],
+  "user_feedback": "Both battlefield and character creation/preview appear short.",
+  "workflow_gap": "Original model proportions and offline resource dimensions were checked, but in-game effective adult size was not calibrated."
+}
