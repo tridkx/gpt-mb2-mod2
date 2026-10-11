@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework><LangVersion>latest</LangVersion><Nullable>disable</Nullable><ImplicitUsings>disable</ImplicitUsings>
+    <AssemblyName>RaceTroopBuilder.ArmorRuntime</AssemblyName><AutomaticallyUseReferenceAssemblyPackages>false</AutomaticallyUseReferenceAssemblyPackages>
+    <GameRoot Condition="'$(GameRoot)' == ''">D:/SteamLibrary/steamapps/common/Mount &amp; Blade II Bannerlord</GameRoot>
+    <GameBin>$(GameRoot)/bin/Win64_Shipping_Client</GameBin>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.4.2" />
+    <Compile Include="../Shared/ArmorProtocol.cs" Link="ArmorProtocol.cs" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TaleWorlds.ObjectSystem"><HintPath>$(GameBin)/TaleWorlds.ObjectSystem.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="TaleWorlds.DotNet"><HintPath>$(GameBin)/TaleWorlds.DotNet.dll</HintPath><Private>false</Private></Reference>
+
+    <Reference Include="TaleWorlds.MountAndBlade"><HintPath>$(GameBin)/TaleWorlds.MountAndBlade.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="TaleWorlds.Core"><HintPath>$(GameBin)/TaleWorlds.Core.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="TaleWorlds.Library"><HintPath>$(GameBin)/TaleWorlds.Library.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="TaleWorlds.Engine"><HintPath>$(GameBin)/TaleWorlds.Engine.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="TaleWorlds.ModuleManager"><HintPath>$(GameBin)/TaleWorlds.ModuleManager.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

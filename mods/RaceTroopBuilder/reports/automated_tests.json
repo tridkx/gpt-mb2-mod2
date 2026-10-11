@@ -1,8 +1,8 @@
 {
   "status": "pass",
-  "count": 27,
+  "count": 31,
   "failures": 0,
-  "fixture": "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261011-101905-529\\fixture-cd71f86cbfc942449ba2bcfd4eceb9a9",
+  "fixture": "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261011-132226-158\\fixture-87720af5db58441681dc671f23ccfce6",
   "tests": [
     {
       "name": "nested discovery, registered filename and excluded caches",
@@ -74,6 +74,22 @@
     },
     {
       "name": "strict JSON rejects mixed race field",
+      "status": "pass"
+    },
+    {
+      "name": "armor override rejects invalid mode and range",
+      "status": "pass"
+    },
+    {
+      "name": "racial default discovery and inheritance",
+      "status": "pass"
+    },
+    {
+      "name": "armor override expands selected tree and ships only own runtime",
+      "status": "pass"
+    },
+    {
+      "name": "official bilingual names, manifest paths and English fallback",
       "status": "pass"
     },
     {

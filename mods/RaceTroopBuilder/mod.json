@@ -1,10 +1,18 @@
 {
   "id": "RaceTroopBuilder",
   "project_type": "desktop_mod_generator",
-  "version": "v0.1.0",
+  "version": "v0.2.0",
   "game_version": "v1.4.8",
-  "source_files": ["README.md", "CHANGELOG.md", "source/", "schemas/", "examples/", "docs/", "tools/"],
+  "source_files": [
+    "README.md",
+    "CHANGELOG.md",
+    "source/",
+    "schemas/",
+    "examples/",
+    "docs/",
+    "tools/"
+  ],
   "validation_report": "reports/release_validation.json",
-  "tool_bundle": "dist/RaceTroopBuilder-v0.1.0-win-x64",
+  "tool_bundle": "dist/RaceTroopBuilder-v0.2.0-win-x64",
   "generated_mod_assets": "external_race_dependencies_only"
 }

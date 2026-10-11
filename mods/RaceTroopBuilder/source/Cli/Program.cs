@@ -28,10 +28,10 @@ try
     {
         case "help":
             Allowed();
-            Result(new { tool = "RaceTroopBuilder", version = "0.1.0", commands = new[]
+            Result(new { tool = "RaceTroopBuilder", version = "0.2.0", commands = new[]
             {
                 "scan [--game PATH] [--mods PATH ...]",
-                "catalog --kind troops|items|races [--filter TEXT] [--game PATH] [--mods PATH ...]",
+                "catalog --kind troops|items|races [--filter TEXT] [--lang zh-CN|en] [--game PATH] [--mods PATH ...]",
                 "troop --id ID [--game PATH] [--mods PATH ...]",
                 "new --out PROJECT.json [--id MyRaceTroops] [--name English Name] [--game PATH] [--mods PATH ...]",
                 "configure --project PROJECT.json --rule RULE.json [--index 0] [--game PATH] [--mods PATH ...]",
@@ -58,14 +58,17 @@ try
         }
         case "catalog":
         {
-            Allowed("kind", "filter", "game", "mods"); var catalog = Scan(); var filter = Get("filter") ?? "";
+            Allowed("kind", "filter", "game", "mods", "lang"); var catalog = Scan(); var filter = Get("filter") ?? "";
+            var language = Get("lang") ?? "zh-CN";
+            if (language is not ("zh-CN" or "en")) throw new ArgumentException("lang 应为 zh-CN 或 en。");
+            foreach (var item in catalog.Items.Values) item.Language = language;
             bool Matches(string text) => text.Contains(filter, StringComparison.OrdinalIgnoreCase);
             switch (Require("kind"))
             {
                 case "races": Result(catalog.Races.Where(x => Matches(x.Label))); break;
-                case "items": Result(catalog.Items.Values.Where(x => Matches(x.Label)).OrderBy(x => x.Id)); break;
-                case "troops": Result(catalog.Troops.Values.Where(x => Matches(x.Id + " " + x.Name + " " + x.Culture)).OrderBy(x => x.Id)
-                    .Select(x => new { x.Id, x.Name, x.Culture, x.Level, x.IsFemale, x.IsBasicTroop, x.Upgrades })); break;
+                case "items": Result(catalog.Items.Values.Where(x => Matches(x.SearchText)).OrderBy(x => x.Id)); break;
+                case "troops": Result(catalog.Troops.Values.Where(x => Matches(x.SearchText)).OrderBy(x => x.Id)
+                    .Select(x => new { x.Id, x.Name, x.NameEn, x.NameZh, x.NameKey, displayName = x.DisplayName(language), x.Culture, x.Level, x.IsFemale, x.IsBasicTroop, x.Upgrades })); break;
                 default: throw new ArgumentException("kind 应为 troops、items 或 races。");
             }
             break;
@@ -74,7 +77,7 @@ try
         {
             Allowed("id", "game", "mods"); var catalog = Scan();
             if (!catalog.Troops.TryGetValue(Require("id"), out var troop)) throw new ArgumentException("找不到兵种。");
-            Result(new { troop.Id, troop.Name, troop.Culture, troop.Level, troop.Upgrades,
+            Result(new { troop.Id, troop.Name, troop.NameEn, troop.NameZh, troop.NameKey, troop.Culture, troop.Level, troop.Upgrades,
                 loadouts = Builder.Loadouts(catalog, troop.Element).Select(x => new { type = x.Type, x.Loadout.Slots }), xml = troop.Element.ToString() }); break;
         }
         case "configure":

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "moduleId": "MyRaceTroops",
+  "moduleName": "My Race Troops",
+  "version": "v0.1.0",
+  "displayLanguage": "zh-CN",
+  "rules": [
+    {
+      "troopIds": [
+        "imperial_recruit"
+      ],
+      "raceModule": "ReplaceWithYourRaceModule",
+      "raceId": "replace_with_your_race_id",
+      "isFemale": true,
+      "faceMode": "fixed",
+      "stripArmor": true,
+      "armor": {
+        "mode": "override",
+        "head": 20,
+        "body": 40,
+        "arms": 25,
+        "legs": 30
+      }
+    }
+  ]
+}

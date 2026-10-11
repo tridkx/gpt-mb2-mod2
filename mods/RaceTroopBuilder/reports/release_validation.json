@@ -1,147 +1,166 @@
-﻿{
-    "tests":  [
-                  {
-                      "name":  "nested discovery, registered filename and excluded caches",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "single module directory as custom source",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "relative project paths resolve beside JSON",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "root selector follows full upgrade tree",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "unknown troop rejected",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "missing race rejected, no human fallback",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "missing adult gender rejected",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "overlapping rules rejected",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "cyclic upgrades rejected",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "module dependency cycle rejected",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "selected duplicate source rejected; unrelated duplicate only warns",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "native duplicate slots use last assignment",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "strip armor expands civilian templates and keeps weapons",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "explicit loadouts preserve weapon slot candidates",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "unknown slots and incompatible items rejected",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "unsafe random bow/ammunition combination warns",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "protected module ID and traversal rejected",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "strict JSON rejects mixed race field",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "XSLT transformation, localization and untouched heroes",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "package contains only generated module and report",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "build never silently overwrites old output",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "install missing dependency changes nothing",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "install matching dependencies and back up previous module",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "installed dependency mismatch rejected",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "locked existing module rolls back without data loss",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "modified output fails packaging and installation",
-                      "status":  "pass"
-                  },
-                  {
-                      "name":  "local v1.4.8 every soldier equipment resolves",
-                      "status":  "pass"
-                  }
-              ],
-    "version":  "v0.1.0",
-    "test_count":  27,
-    "game_started":  false,
-    "runtime_testing":  "pending user acceptance",
-    "check_directory":  "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261011-101905-529",
-    "binary_hashes":  {
-                          "app/gui/RaceTroopBuilder.exe":  "c3e93b330913a5e0779e166db3cf19bc1cbc8370c7e3bc52d36900639de72c42",
-                          "app/cli/RaceTroopBuilder.Cli.dll":  "850f2dbceba5a94fbe712e87045420ad38144eb0f607625f9a88c91520041aff",
-                          "app/cli/RaceTroopBuilder.Core.dll":  "fd0cfc2de84bd9c83896be49dbfa1f1b8c103166bb3ecda62fbee93018b28230",
-                          "app/gui/RaceTroopBuilder.dll":  "c826f86bdd817f28e8814ebc22dc34ad12aeb94ce4213c7e1fb36e5ea22bb64a",
-                          "app/gui/RaceTroopBuilder.Core.dll":  "fd0cfc2de84bd9c83896be49dbfa1f1b8c103166bb3ecda62fbee93018b28230",
-                          "app/cli/RaceTroopBuilder.Cli.exe":  "fb1d5fdebaba4c4d81faa9d67833f9e1809854a8eac7b062a5222148b0d335e6"
-                      },
-    "status":  "pass",
-    "catalog":  {
-                    "game_version":  "v1.4.8",
-                    "item_count":  1272,
-                    "race_count":  3,
-                    "troop_count":  244
-                },
-    "actual_game_module_installed":  false,
-    "framework":  ".NET 10",
-    "date":  "2026-10-11",
-    "gui":  {
-                "status":  "pass",
-                "scan":  true,
-                "treeSelection":  true,
-                "subtreeApply":  true,
-                "slotEdit":  true,
-                "loadoutCopy":  true,
-                "overlapUpdate":  true,
-                "aiFieldsRetained":  true,
-                "search":  true,
-                "screenshot":  "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261011-101905-529\\gui-preview.png"
-            }
+{
+  "check_directory": "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261011-132226-158",
+  "game_started": false,
+  "catalog": {
+    "troop_count": 244,
+    "race_count": 3,
+    "item_count": 1272,
+    "game_version": "v1.4.8"
+  },
+  "gui": {
+    "status": "pass",
+    "scan": true,
+    "treeSelection": true,
+    "subtreeApply": true,
+    "slotEdit": true,
+    "loadoutCopy": true,
+    "overlapUpdate": true,
+    "aiFieldsRetained": true,
+    "search": true,
+    "bilingualNames": true,
+    "armorOverride": true,
+    "screenshot": "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261011-132226-158\\gui-preview.png"
+  },
+  "armor_runtime_tests": 9,
+  "framework": ".NET 10",
+  "test_count": 31,
+  "version": "v0.2.0",
+  "date": "2026-10-11",
+  "status": "pass",
+  "actual_game_module_installed": false,
+  "binary_hashes": {
+    "app/cli/RaceTroopBuilder.Cli.exe": "16977e3568279cb7d3dd27b95b4cea81d95f30991badc2de00400e780f0a2a8c",
+    "app/cli/RaceTroopBuilder.Cli.dll": "5c1927a4afdf32f4838c13953c53c06b8195fa903fd21ec59eedf9a8c9f7fcaa",
+    "app/gui/RaceTroopBuilder.exe": "f9cf598fdcb7fcfb1078a178fcefc58a6853dad4fd00cf8b8701963bc309701e",
+    "app/gui/RaceTroopBuilder.Core.dll": "eba6e92e1726a168453233f9baf29f0ad27512b32d751f52318d8b702dfe11a6",
+    "app/gui/RaceTroopBuilder.dll": "23a7a9b00a2b35a9e9cc8af408382d6b68d73bc4f45fb6bce33c81b03639c7af",
+    "app/cli/RaceTroopBuilder.Core.dll": "eba6e92e1726a168453233f9baf29f0ad27512b32d751f52318d8b702dfe11a6"
+  },
+  "tests": [
+    {
+      "name": "nested discovery, registered filename and excluded caches",
+      "status": "pass"
+    },
+    {
+      "name": "single module directory as custom source",
+      "status": "pass"
+    },
+    {
+      "name": "relative project paths resolve beside JSON",
+      "status": "pass"
+    },
+    {
+      "name": "root selector follows full upgrade tree",
+      "status": "pass"
+    },
+    {
+      "name": "unknown troop rejected",
+      "status": "pass"
+    },
+    {
+      "name": "missing race rejected, no human fallback",
+      "status": "pass"
+    },
+    {
+      "name": "missing adult gender rejected",
+      "status": "pass"
+    },
+    {
+      "name": "overlapping rules rejected",
+      "status": "pass"
+    },
+    {
+      "name": "cyclic upgrades rejected",
+      "status": "pass"
+    },
+    {
+      "name": "module dependency cycle rejected",
+      "status": "pass"
+    },
+    {
+      "name": "selected duplicate source rejected; unrelated duplicate only warns",
+      "status": "pass"
+    },
+    {
+      "name": "native duplicate slots use last assignment",
+      "status": "pass"
+    },
+    {
+      "name": "strip armor expands civilian templates and keeps weapons",
+      "status": "pass"
+    },
+    {
+      "name": "explicit loadouts preserve weapon slot candidates",
+      "status": "pass"
+    },
+    {
+      "name": "unknown slots and incompatible items rejected",
+      "status": "pass"
+    },
+    {
+      "name": "unsafe random bow/ammunition combination warns",
+      "status": "pass"
+    },
+    {
+      "name": "protected module ID and traversal rejected",
+      "status": "pass"
+    },
+    {
+      "name": "strict JSON rejects mixed race field",
+      "status": "pass"
+    },
+    {
+      "name": "armor override rejects invalid mode and range",
+      "status": "pass"
+    },
+    {
+      "name": "racial default discovery and inheritance",
+      "status": "pass"
+    },
+    {
+      "name": "armor override expands selected tree and ships only own runtime",
+      "status": "pass"
+    },
+    {
+      "name": "official bilingual names, manifest paths and English fallback",
+      "status": "pass"
+    },
+    {
+      "name": "XSLT transformation, localization and untouched heroes",
+      "status": "pass"
+    },
+    {
+      "name": "package contains only generated module and report",
+      "status": "pass"
+    },
+    {
+      "name": "build never silently overwrites old output",
+      "status": "pass"
+    },
+    {
+      "name": "install missing dependency changes nothing",
+      "status": "pass"
+    },
+    {
+      "name": "install matching dependencies and back up previous module",
+      "status": "pass"
+    },
+    {
+      "name": "installed dependency mismatch rejected",
+      "status": "pass"
+    },
+    {
+      "name": "locked existing module rolls back without data loss",
+      "status": "pass"
+    },
+    {
+      "name": "modified output fails packaging and installation",
+      "status": "pass"
+    },
+    {
+      "name": "local v1.4.8 every soldier equipment resolves",
+      "status": "pass"
+    }
+  ],
+  "runtime_testing": "pending user acceptance"
 }

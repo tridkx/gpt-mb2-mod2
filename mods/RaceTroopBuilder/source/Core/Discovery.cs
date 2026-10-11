@@ -138,6 +138,7 @@ public static class Discovery
             catch (Exception e) when (e is IOException or XmlException or InvalidDataException)
             { catalog.Issues.Add(new("error", "module_scan", e.Message, path)); }
         }
+        var chinese = Localization.ReadChinese(catalog.Modules.Values.Where(x => OfficialIds.Contains(x.Id)));
         foreach (var id in new[] { "Native", "SandBoxCore", "Sandbox", "StoryMode", "BirthAndDeath" })
         {
             if (!catalog.Modules.TryGetValue(id, out var module)) continue;
@@ -149,7 +150,8 @@ public static class Discovery
                     if (itemId == null) continue;
                     catalog.Items[itemId] = new(itemId, DisplayName((string?)item.Attribute("name") ?? itemId),
                         (string?)item.Attribute("Type") ?? CraftedType((string?)item.Attribute("crafting_template") ?? ""), id,
-                        (string?)item.Element("ItemComponent")?.Element("Weapon")?.Attribute("weapon_class") ?? "");
+                        (string?)item.Element("ItemComponent")?.Element("Weapon")?.Attribute("weapon_class") ?? "")
+                        { NameKey = Localization.Key((string?)item.Attribute("name") ?? ""), NameZh = Localization.Chinese((string?)item.Attribute("name") ?? "", chinese) };
                 }
             foreach (var file in RegisteredFiles(module, "EquipmentRosters"))
                 foreach (var roster in Xml(file).Root?.Elements("EquipmentRoster") ?? [])
@@ -167,9 +169,25 @@ public static class Discovery
                     catalog.Troops[troopId] = new(troopId, DisplayName((string?)npc.Attribute("name") ?? troopId),
                         Ref((string?)npc.Attribute("culture") ?? ""), (int?)npc.Attribute("level") ?? 0,
                         (bool?)npc.Attribute("is_female") ?? false, (bool?)npc.Attribute("is_basic_troop") ?? false,
-                        npc.Element("upgrade_targets")?.Elements("upgrade_target").Select(x => Ref((string?)x.Attribute("id") ?? "")).ToList() ?? [], new(npc));
+                        npc.Element("upgrade_targets")?.Elements("upgrade_target").Select(x => Ref((string?)x.Attribute("id") ?? "")).ToList() ?? [], new(npc))
+                        { NameKey = Localization.Key((string?)npc.Attribute("name") ?? ""), NameZh = Localization.Chinese((string?)npc.Attribute("name") ?? "", chinese) };
                 }
             }
+        }
+        foreach (var module in catalog.Modules.Values.Where(x => !OfficialIds.Contains(x.Id)))
+        {
+            try
+            {
+                var defaults = RaceTroopBuilder.Armor.ArmorProtocol.ReadRaces(Path.Combine(module.Path, "ModuleData", RaceTroopBuilder.Armor.ArmorProtocol.RaceFile));
+                foreach (var entry in defaults)
+                {
+                    var index = catalog.Races.FindIndex(x => x.ModuleId == module.Id && x.Id == entry.Key);
+                    if (index < 0) throw new InvalidDataException("护甲引用未注册种族：" + entry.Key);
+                    catalog.Races[index] = catalog.Races[index] with { DefaultArmor = entry.Value };
+                }
+            }
+            catch (Exception e) when (e is InvalidDataException or XmlException or IOException)
+            { catalog.Issues.Add(new("error", "race_armor", e.Message, module.Id)); }
         }
         return catalog;
     }

@@ -32,6 +32,7 @@ public sealed class BuilderProject
     public string ModuleId { get; set; } = "MyRaceTroops";
     public string ModuleName { get; set; } = "My Race Troops";
     public string Version { get; set; } = "v0.1.0";
+    public string DisplayLanguage { get; set; } = "zh-CN";
     public string? GameRoot { get; set; }
     public List<string> ModRoots { get; set; } = [];
     public List<TroopRule> Rules { get; set; } = [];
@@ -48,10 +49,24 @@ public sealed class TroopRule
     public int? Age { get; set; }
     public string FaceMode { get; set; } = "preserve";
     public bool StripArmor { get; set; }
+    public ArmorSettings? Armor { get; set; }
     public string? Name { get; set; }
     // Null retains native equipment; an explicit list replaces battle equipment only.
     public List<Loadout>? BattleLoadouts { get; set; }
     public List<Loadout>? CivilianLoadouts { get; set; }
+}
+
+public sealed class ArmorSettings : RaceTroopBuilder.Armor.ArmorValues
+{
+    public string Mode { get; set; } = "inherit";
+    public new int Head { get => base.Head; set { base.Head = value; HeadSet = true; } }
+    public new int Body { get => base.Body; set { base.Body = value; BodySet = true; } }
+    public new int Arms { get => base.Arms; set { base.Arms = value; ArmsSet = true; } }
+    public new int Legs { get => base.Legs; set { base.Legs = value; LegsSet = true; } }
+    [JsonIgnore] public bool HeadSet { get; private set; }
+    [JsonIgnore] public bool BodySet { get; private set; }
+    [JsonIgnore] public bool ArmsSet { get; private set; }
+    [JsonIgnore] public bool LegsSet { get; private set; }
 }
 
 public sealed class Loadout
@@ -80,15 +95,27 @@ public sealed record ModuleInfo(string Id, string Name, string Version, string P
 public sealed record SkinInfo(int Gender, string Maturity, string Monster, string Skeleton);
 public sealed record RaceInfo(string ModuleId, string Id, string ModulePath, List<SkinInfo> Skins)
 {
+    public RaceTroopBuilder.Armor.ArmorValues? DefaultArmor { get; init; }
     public string Label => $"{Id}  [{ModuleId}]";
 }
 public sealed record ItemInfo(string Id, string Name, string Type, string ModuleId, string WeaponClass = "")
 {
-    public string Label => Id.Length == 0 ? "（空槽）" : $"{Id} · {Name} ({Type})";
+    public string NameEn => Name;
+    public string NameZh { get; init; } = "";
+    public string NameKey { get; init; } = "";
+    public string Language { get; set; } = "zh-CN";
+    public string DisplayName => Language == "zh-CN" && NameZh.Length > 0 ? NameZh : NameEn;
+    public string SearchText => $"{Id} {NameEn} {NameZh} {Type}";
+    public string Label => Id.Length == 0 ? "（空槽）" : $"{Id} · {DisplayName} ({Type})";
 }
 public sealed record TroopInfo(string Id, string Name, string Culture, int Level, bool IsFemale,
     bool IsBasicTroop, List<string> Upgrades, XElement Element)
 {
+    public string NameEn => Name;
+    public string NameZh { get; init; } = "";
+    public string NameKey { get; init; } = "";
+    public string DisplayName(string language) => language == "zh-CN" && NameZh.Length > 0 ? NameZh : NameEn;
+    public string SearchText => $"{Id} {NameEn} {NameZh} {Culture}";
     public string Label => $"{Name} [{Id}] · Lv{Level}";
 }
 

@@ -61,6 +61,7 @@ public static partial class Builder
     {
         var report = new CheckReport { GameVersion = catalog.GameVersion };
         void Error(string code, string message, string? subject = null) => report.Issues.Add(new("error", code, message, subject));
+        if (project.DisplayLanguage is not ("zh-CN" or "en")) Error("language", "displayLanguage 只能为 zh-CN 或 en。");
         if (project.SchemaVersion != 1) Error("schema_version", "仅支持 schemaVersion=1。");
         if (!IdPattern().IsMatch(project.ModuleId) || IsReserved(project.ModuleId)) Error("module_id", "模块 ID 无效或属于原版保留名称。");
         if (!VersionPattern().IsMatch(project.Version)) Error("version", "版本应为 v主.次.修订。");
@@ -86,6 +87,19 @@ public static partial class Builder
             }
             if (rule.FaceMode is not ("preserve" or "fixed")) Error("face_mode", "faceMode 只能是 preserve 或 fixed。", subject);
             if (rule.Age is < 18 or > 100) Error("age", "普通士兵年龄须在 18～100 岁之间。", subject);
+            if (rule.Armor != null)
+            {
+                var armor = rule.Armor;
+                if (armor.Mode == "override" && !(armor.HeadSet && armor.BodySet && armor.ArmsSet && armor.LegsSet))
+                    Error("armor_incomplete", "覆盖模式须明确提供 head/body/arms/legs，包括零值。", subject);
+                if (armor.Mode is not ("inherit" or "override")) Error("armor_mode", "护甲模式只能为 inherit 或 override。", subject);
+                if (new[] { armor.Head, armor.Body, armor.Arms, armor.Legs }.Any(x => x < 0 || x > 500))
+                    Error("armor_value", "四部位护甲须为 0～500 的整数。", subject);
+                if (armor.Mode == "inherit" && new[] { armor.Head, armor.Body, armor.Arms, armor.Legs }.Any(x => x != 0))
+                    Error("armor_inherit_values", "沿用模式不接受覆盖值；请改为 override。", subject);
+            }
+            if (race != null && rule.Armor?.Mode != "override" && race.DefaultArmor == null)
+                report.Issues.Add(new("warning", "race_armor_undeclared", "种族未声明固有护甲协议；不干预现有机制，不能确认其固定值。", subject));
             var targets = Select(catalog, rule);
             if (targets.Count == 0) Error("empty_selection", "规则没有选中任何兵种。", subject);
             foreach (var id in targets)
@@ -287,7 +301,7 @@ public static partial class Builder
         if (report.Status != "pass") return new { report, changes = Array.Empty<object>() };
         var changes = project.Rules.SelectMany(rule => Select(catalog, rule).Select(id => new
         {
-            id, beforeXml = catalog.Troops[id].Element.ToString(), afterXml = Replacement(catalog, catalog.Troops[id], rule).ToString()
+            id, beforeXml = catalog.Troops[id].Element.ToString(), afterXml = Replacement(catalog, catalog.Troops[id], rule).ToString(), armor = new { mode = rule.Armor?.Mode ?? "inherit", raceDefault = catalog.Races.First(x => x.Id == rule.RaceId && x.ModuleId == rule.RaceModule).DefaultArmor, troopOverride = rule.Armor?.Mode == "override" ? rule.Armor : null }
         })).ToList();
         return new { report, changes };
     }
@@ -332,19 +346,43 @@ public static partial class Builder
                 report.TransformChecks++;
             }
         }
+        var useArmor = project.Rules.Any(x => x.Armor?.Mode == "override") || report.LoadOrder.Where(x => x != project.ModuleId)
+            .Any(x => File.Exists(Path.Combine(catalog.Modules[x].Path, "ModuleData", RaceTroopBuilder.Armor.ArmorProtocol.RaceFile)));
+        var runtimeEntry = new XElement("SubModule", new XElement("Name", new XAttribute("value", "Race Troop Armor")),
+            new XElement("DLLName", new XAttribute("value", "RaceTroopBuilder.ArmorRuntime.dll")),
+            new XElement("SubModuleClassType", new XAttribute("value", "RaceTroopBuilder.ArmorRuntime.SubModule")),
+            new XElement("Tags", new XElement("Tag", new XAttribute("key", "DedicatedServerType"), new XAttribute("value", "none")),
+                new XElement("Tag", new XAttribute("key", "IsNoRenderModeElement"), new XAttribute("value", "false"))));
         var module = new XDocument(new XElement("Module",
             new XElement("Name", new XAttribute("value", project.ModuleName)), new XElement("Id", new XAttribute("value", project.ModuleId)),
             new XElement("Version", new XAttribute("value", project.Version)), new XElement("DefaultModule", new XAttribute("value", "false")),
             new XElement("ModuleCategory", new XAttribute("value", "Singleplayer")), new XElement("ModuleType", new XAttribute("value", "Community")),
             new XElement("SingleplayerModule", new XAttribute("value", "true")), new XElement("MultiplayerModule", new XAttribute("value", "false")),
             new XElement("DependedModules", report.LoadOrder.Where(x => x != project.ModuleId).Select(x => new XElement("DependedModule", new XAttribute("Id", x)))),
-            new XElement("SubModules"), new XElement("Xmls", new XElement("XmlNode", new XElement("XmlName", new XAttribute("id", "NPCCharacters"), new XAttribute("path", "rtb_troops")),
+            new XElement("SubModules", useArmor ? runtimeEntry : null), new XElement("Xmls", new XElement("XmlNode", new XElement("XmlName", new XAttribute("id", "NPCCharacters"), new XAttribute("path", "rtb_troops")),
                 new XElement("IncludedGameTypes", new XElement("GameType", new XAttribute("value", "Campaign")), new XElement("GameType", new XAttribute("value", "CampaignStoryMode")))))));
         Directory.CreateDirectory(Path.Combine(modulePath, "ModuleData"));
+        if (useArmor)
+        {
+            var bin = Path.Combine(modulePath, "bin", "Win64_Shipping_Client"); Directory.CreateDirectory(bin);
+            foreach (var name in new[] { "ArmorRuntime.dll", "0Harmony.dll", "Harmony-LICENSE.txt" })
+            {
+                using var input = typeof(Builder).Assembly.GetManifestResourceStream(name) ?? throw new InvalidDataException("缺少护甲运行组件：" + name);
+                using var output = File.Create(Path.Combine(bin, name == "ArmorRuntime.dll" ? "RaceTroopBuilder.ArmorRuntime.dll" : name)); input.CopyTo(output);
+            }
+            var armorXml = new XElement("TroopArmor", new XAttribute("schemaVersion", "1"));
+            foreach (var rule in project.Rules.Where(x => x.Armor?.Mode == "override"))
+            foreach (var id in Select(catalog, rule))
+            {
+                var entry = RaceTroopBuilder.Armor.ArmorProtocol.WriteValues("Troop", rule.Armor!);
+                entry.SetAttributeValue("id", id); entry.SetAttributeValue("race", rule.RaceId); armorXml.Add(entry);
+            }
+            new XDocument(armorXml).Save(Path.Combine(modulePath, "ModuleData", RaceTroopBuilder.Armor.ArmorProtocol.TroopFile));
+        }
         module.Save(Path.Combine(modulePath, "SubModule.xml"));
         stylesheet.Save(Path.Combine(modulePath, "ModuleData", "rtb_troops.xslt"));
         new XDocument(new XElement("NPCCharacters")).Save(Path.Combine(modulePath, "ModuleData", "rtb_troops.xml"));
-        Json.Save(Path.Combine(modulePath, "ModuleData", "rtb_manifest.json"), new { generator = "RaceTroopBuilder", generatorVersion = "0.1.0", project.ModuleId, project.Version });
+        Json.Save(Path.Combine(modulePath, "ModuleData", "rtb_manifest.json"), new { generator = "RaceTroopBuilder", generatorVersion = "0.2.0", project.ModuleId, project.Version });
         File.WriteAllText(Path.Combine(modulePath, "README.txt"), "Generated by RaceTroopBuilder\nLoad order (top to bottom):\n" + string.Join("\n", report.LoadOrder) +
             "\n\nRace assets are external dependencies. This package does not include them.\nOffline checks passed; in-game acceptance is required.\n");
         report.ModulePath = modulePath;
@@ -386,6 +424,8 @@ public static partial class Builder
     private static Dictionary<string, string> DependencyHashes(ModuleInfo module)
     {
         var files = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { Path.Combine(module.Path, "SubModule.xml") };
+        var armor = Path.Combine(module.Path, "ModuleData", RaceTroopBuilder.Armor.ArmorProtocol.RaceFile);
+        if (File.Exists(armor)) files.Add(armor);
         foreach (var folder in new[] { "ModuleData", "AssetPackages", "bin" })
         {
             var path = Path.Combine(module.Path, folder);

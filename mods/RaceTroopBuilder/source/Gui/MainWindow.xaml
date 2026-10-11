@@ -5,6 +5,7 @@
     <Border Background="#142C40" Padding="24,14">
       <DockPanel>
         <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" VerticalAlignment="Center">
+          <ComboBox x:Name="LanguageChoice" Width="120" SelectedIndex="0" SelectionChanged="LanguageChanged" ToolTip="兵种与物品名称语言"><ComboBoxItem Content="简体中文" /><ComboBoxItem Content="English" /></ComboBox>
           <Button Content="新建工程" Click="NewProjectClick" /><Button Content="打开 JSON" Click="OpenClick" /><Button Content="保存工程" Click="SaveClick" />
         </StackPanel>
         <StackPanel><TextBlock Text="RACE TROOP BUILDER" Foreground="White" FontSize="22" FontWeight="SemiBold" /><TextBlock Text="种族依赖 · 原版兵种树 · 自由武器配置" Foreground="#B8D0DD" FontSize="12" Margin="0,3,0,0" /></StackPanel>
@@ -38,11 +39,21 @@
             <TextBlock Text="02  种族与应用范围" Style="{StaticResource Section}" />
             <TextBlock x:Name="SelectedName" Text="先扫描目录，再选择兵种" FontWeight="SemiBold" TextWrapping="Wrap" />
             <TextBlock x:Name="SelectedMeta" Foreground="#59707D" FontSize="12" TextWrapping="Wrap" Margin="0,5,0,8" />
-            <TextBlock Text="依赖种族" Style="{StaticResource Caption}" /><ComboBox x:Name="RaceChoice" DisplayMemberPath="Label" />
+            <TextBlock Text="依赖种族" Style="{StaticResource Caption}" /><ComboBox x:Name="RaceChoice" DisplayMemberPath="Label" SelectionChanged="RaceChanged" />
             <TextBlock Text="性别" Style="{StaticResource Caption}" /><ComboBox x:Name="GenderChoice" SelectedIndex="0"><ComboBoxItem Content="保留原版性别" /><ComboBoxItem Content="女性" /><ComboBoxItem Content="男性" /></ComboBox>
             <TextBlock Text="脸参数" Style="{StaticResource Caption}" /><ComboBox x:Name="FaceChoice" SelectedIndex="0"><ComboBoxItem Content="保留原版（可变脸种族）" /><ComboBoxItem Content="固定参数（完整角色身体）" /></ComboBox>
             <TextBlock Text="年龄（空白保留；18～100）" Style="{StaticResource Caption}" /><TextBox x:Name="AgeText" />
             <CheckBox x:Name="StripArmor" Content="清除防具，保留武器 / 盾牌 / 坐骑" ToolTip="同时处理战斗与平民装备，适合自带衣服的完整身体" Checked="ArmorChanged" Unchecked="ArmorChanged" />
+            <TextBlock Text="固有护甲（不依赖防具物品）" Style="{StaticResource Caption}" />
+            <TextBlock x:Name="RaceArmorText" Text="选择种族后显示默认值" TextWrapping="Wrap" FontSize="12" Foreground="#59707D" />
+            <ComboBox x:Name="ArmorMode" SelectedIndex="0" SelectionChanged="ArmorModeChanged"><ComboBoxItem Content="沿用种族固有护甲" /><ComboBoxItem Content="覆盖种族固有护甲" /></ComboBox>
+            <UniformGrid x:Name="ArmorInputs" Columns="4" IsEnabled="False" Margin="0,5,0,8">
+              <StackPanel><TextBlock Text="头"/><TextBox x:Name="ArmorHead" Text="0" /></StackPanel>
+              <StackPanel><TextBlock Text="身"/><TextBox x:Name="ArmorBody" Text="0" /></StackPanel>
+              <StackPanel><TextBlock Text="臂"/><TextBox x:Name="ArmorArms" Text="0" /></StackPanel>
+              <StackPanel><TextBlock Text="腿"/><TextBox x:Name="ArmorLegs" Text="0" /></StackPanel>
+            </UniformGrid>
+            <TextBlock Text="0～500 整数；覆盖不与默认值叠加，原版特长继续生效。" TextWrapping="Wrap" FontSize="12" Foreground="#59707D" />
             <TextBlock Text="应用范围" Style="{StaticResource Caption}" /><ComboBox x:Name="ScopeChoice" SelectedIndex="0"><ComboBoxItem Content="仅当前兵种" /><ComboBoxItem Content="当前兵种及全部升级分支" /><ComboBoxItem Content="当前文化所有普通士兵" /></ComboBox>
           </StackPanel>
           </ScrollViewer>
@@ -55,7 +66,7 @@
             <CheckBox x:Name="ReplaceEquipment" Content="覆盖战斗装备：将当前装备套用于所选范围" />
             <TextBlock Text="未勾选时保留各兵种原装备。每槽随机选候选，不保证整套同时选中。" Foreground="#59707D" TextWrapping="Wrap" FontSize="12" Margin="0,0,0,8" />
             <DockPanel><Button DockPanel.Dock="Right" Content="复制套" Click="AddLoadoutClick" /><Button DockPanel.Dock="Right" Content="删除套" Click="DeleteLoadoutClick" /><ComboBox x:Name="LoadoutChoice" SelectionChanged="LoadoutChanged" Margin="0,0,8,0" /></DockPanel>
-            <TextBlock Text="搜索物品 ID / 英文名（仅原版物品）" Style="{StaticResource Caption}" /><TextBox x:Name="ItemSearch" TextChanged="ItemSearchChanged" Margin="0,0,0,8" />
+            <TextBlock Text="搜索物品 ID / 中文名 / 英文名（仅原版物品）" Style="{StaticResource Caption}" /><TextBox x:Name="ItemSearch" TextChanged="ItemSearchChanged" Margin="0,0,0,8" />
           </StackPanel>
           <ScrollViewer VerticalScrollBarVisibility="Auto"><StackPanel x:Name="SlotPanel" /></ScrollViewer>
         </DockPanel>

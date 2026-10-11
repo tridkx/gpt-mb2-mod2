@@ -1,0 +1,11 @@
+<Module>
+  <Name value="Race Troop Armor"/><Id value="RaceTroopArmor"/><Version value="v0.2.0"/>
+  <DefaultModule value="false"/><ModuleType value="Community"/>
+  <SingleplayerModule value="true"/><MultiplayerModule value="false"/>
+  <DependedModules><DependedModule Id="Native"/><DependedModule Id="SandBoxCore"/><DependedModule Id="Sandbox"/></DependedModules>
+  <SubModules><SubModule>
+    <Name value="Race Troop Armor"/><DLLName value="RaceTroopBuilder.ArmorRuntime.dll"/>
+    <SubModuleClassType value="RaceTroopBuilder.ArmorRuntime.SubModule"/>
+    <Tags><Tag key="DedicatedServerType" value="none"/><Tag key="IsNoRenderModeElement" value="false"/></Tags>
+  </SubModule></SubModules><Xmls/>
+</Module>

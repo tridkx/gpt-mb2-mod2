@@ -44,6 +44,38 @@ public partial class MainWindow : Window
         UpdateProjectText();
     }
 
+    private string NameLanguage => _project.DisplayLanguage;
+    private void LanguageChanged(object sender, SelectionChangedEventArgs e)
+    {
+        if (_loading || LanguageChoice == null || TroopTree == null) return;
+        var selected = _selected;
+        _project.DisplayLanguage = LanguageChoice.SelectedIndex == 1 ? "en" : "zh-CN";
+        if (_catalog != null) foreach (var item in _catalog.Items.Values) item.Language = NameLanguage;
+        RenderTree();
+        // Preserve unapplied equipment and armor drafts when changing display language.
+        _selected = selected;
+        if (selected != null) SelectedName.Text = selected.DisplayName(NameLanguage);
+        FillSlots(); UpdateProjectText();
+    }
+    private void RaceChanged(object sender, SelectionChangedEventArgs e)
+    {
+        if (RaceArmorText == null) return;
+        var race = RaceChoice.SelectedItem as RaceInfo;
+        var a = race?.DefaultArmor;
+        RaceArmorText.Text = a == null ? "未声明协议默认值；沿用时不干预现有机制。" : $"种族默认：头 {a.Head} / 身 {a.Body} / 臂 {a.Arms} / 腿 {a.Legs}";
+    }
+    private void ArmorModeChanged(object sender, SelectionChangedEventArgs e)
+    { if (ArmorInputs != null) ArmorInputs.IsEnabled = ArmorMode.SelectedIndex == 1; }
+    private ArmorSettings? CaptureArmor()
+    {
+        if (ArmorMode.SelectedIndex != 1) return null;
+        int Value(TextBox text)
+        {
+            if (!int.TryParse(text.Text, out var value) || value < 0 || value > 500) throw new InvalidDataException("护甲必须为 0～500 的整数。");
+            return value;
+        }
+        return new() { Mode = "override", Head = Value(ArmorHead), Body = Value(ArmorBody), Arms = Value(ArmorArms), Legs = Value(ArmorLegs) };
+    }
     private static string SlotLabel(string slot) => slot switch
     {
         "Item0" => "Item0 · 武器槽 1", "Item1" => "Item1 · 武器槽 2", "Item2" => "Item2 · 武器槽 3", "Item3" => "Item3 · 武器槽 4",
@@ -51,7 +83,7 @@ public partial class MainWindow : Window
         "Horse" => "Horse · 坐骑", _ => "HorseHarness · 马具"
     };
     private void SyncMetadata()
-    { ModuleIdText.Text = _project.ModuleId; ModuleNameText.Text = _project.ModuleName; VersionText.Text = _project.Version; }
+    { _loading = true; ModuleIdText.Text = _project.ModuleId; ModuleNameText.Text = _project.ModuleName; VersionText.Text = _project.Version; LanguageChoice.SelectedIndex = NameLanguage == "en" ? 1 : 0; _loading = false; }
     private void CaptureMetadata()
     {
         _project.ModuleId = ModuleIdText.Text.Trim(); _project.ModuleName = ModuleNameText.Text.Trim(); _project.Version = VersionText.Text.Trim();
@@ -84,6 +116,7 @@ public partial class MainWindow : Window
         var previousRace = (RaceChoice.SelectedItem as RaceInfo)?.Id;
         RaceChoice.ItemsSource = _catalog.Races.OrderBy(x => x.ModuleId).ToList();
         RaceChoice.SelectedItem = _catalog.Races.FirstOrDefault(x => x.Id == previousRace);
+        foreach (var item in _catalog.Items.Values) item.Language = NameLanguage;
         RenderTree();
         OutputText.Text = $"扫描完成：{_catalog.Troops.Count} 个普通士兵，{_catalog.Items.Count} 个原版物品，{_catalog.Races.Count} 个自定义种族。\n\n依赖种族 Mod 在上，生成的兵种替换 Mod 在下。\n请选择兵种和种族，再应用配置。\n\n" +
             string.Join("\n", _catalog.Issues.Select(x => x.Message));
@@ -105,7 +138,7 @@ public partial class MainWindow : Window
         var filter = TroopSearch.Text.Trim();
         foreach (var culture in _catalog.Troops.Values.GroupBy(x => x.Culture).OrderBy(x => x.Key))
         {
-            var matching = culture.Where(x => filter.Length == 0 || (x.Id + " " + x.Name + " " + x.Culture).Contains(filter, StringComparison.OrdinalIgnoreCase)).ToList();
+            var matching = culture.Where(x => filter.Length == 0 || x.SearchText.Contains(filter, StringComparison.OrdinalIgnoreCase)).ToList();
             if (matching.Count == 0) continue;
             var header = new TreeViewItem { Header = $"{CultureLabel(culture.Key)} · {culture.Count()} 兵种", IsExpanded = filter.Length > 0 };
             if (filter.Length > 0)
@@ -124,7 +157,7 @@ public partial class MainWindow : Window
     private TreeViewItem TreeNode(TroopInfo troop, HashSet<string> ancestors, bool descendants)
     {
         var configured = _project.Rules.Any(rule => Builder.Select(_catalog!, rule).Contains(troop.Id));
-        var node = new TreeViewItem { Header = (configured ? "● " : "") + troop.Label, Tag = troop, ToolTip = troop.Id };
+        var node = new TreeViewItem { Header = (configured ? "● " : "") + $"{troop.DisplayName(NameLanguage)} [{troop.Id}] · Lv{troop.Level}", Tag = troop, ToolTip = troop.Id };
         if (descendants && ancestors.Add(troop.Id))
             foreach (var id in troop.Upgrades)
                 if (!ancestors.Contains(id) && _catalog!.Troops.TryGetValue(id, out var child)) node.Items.Add(TreeNode(child, new(ancestors), true));
@@ -141,7 +174,7 @@ public partial class MainWindow : Window
     private void SelectTroop(TroopInfo troop)
     {
         _selected = troop;
-        SelectedName.Text = troop.Name; SelectedMeta.Text = $"{troop.Id} · Lv{troop.Level}";
+        SelectedName.Text = troop.DisplayName(NameLanguage); SelectedMeta.Text = $"{troop.Id} · Lv{troop.Level}";
         SelectedMeta.ToolTip = $"{CultureLabel(troop.Culture)} · {troop.Upgrades.Count} 个升级目标";
         var rule = _project.Rules.FirstOrDefault(x => Builder.Select(_catalog!, x).Contains(troop.Id));
         if (rule != null)
@@ -151,6 +184,9 @@ public partial class MainWindow : Window
             FaceChoice.SelectedIndex = rule.FaceMode == "fixed" ? 1 : 0;
             AgeText.Text = rule.Age?.ToString() ?? ""; StripArmor.IsChecked = rule.StripArmor;
         }
+        ArmorMode.SelectedIndex = rule?.Armor?.Mode == "override" ? 1 : 0;
+        ArmorHead.Text = (rule?.Armor?.Head ?? 0).ToString(); ArmorBody.Text = (rule?.Armor?.Body ?? 0).ToString();
+        ArmorArms.Text = (rule?.Armor?.Arms ?? 0).ToString(); ArmorLegs.Text = (rule?.Armor?.Legs ?? 0).ToString();
         ReplaceEquipment.IsChecked = rule?.BattleLoadouts != null;
         var originals = Builder.Loadouts(_catalog!, troop.Element).Where(x => x.Type == "Battle").Select(x => x.Loadout).ToList();
         _editedLoadouts = (rule?.BattleLoadouts ?? originals).Select(Clone).ToList();
@@ -176,7 +212,7 @@ public partial class MainWindow : Window
             {
                 "Head" => item.Type == "HeadArmor", "Cape" => item.Type == "Cape", "Body" => item.Type == "BodyArmor", "Leg" => item.Type == "LegArmor", "Gloves" => item.Type == "HandArmor",
                 "Horse" => item.Type == "Horse", "HorseHarness" => item.Type == "HorseHarness", _ => Builder.IsWeapon(item.Type)
-            }).Where(x => x.Label.Contains(filter, StringComparison.OrdinalIgnoreCase)).OrderBy(x => x.Id).ToList();
+            }).Where(x => x.SearchText.Contains(filter, StringComparison.OrdinalIgnoreCase)).OrderBy(x => x.Id).ToList();
             var cleared = StripArmor.IsChecked == true && Builder.ArmorSlots.Contains(slot);
             choice.IsEnabled = !cleared;
             var selectedId = cleared ? null : current.Slots.GetValueOrDefault(slot);
@@ -227,7 +263,7 @@ public partial class MainWindow : Window
         { if (!int.TryParse(AgeText.Text.Trim(), out var number)) throw new InvalidDataException("年龄应为整数。"); age = number; }
         var rule = new TroopRule { TroopIds = targets, RaceModule = race.ModuleId, RaceId = race.Id,
             IsFemale = GenderChoice.SelectedIndex switch { 1 => true, 2 => false, _ => null }, Age = age,
-            FaceMode = FaceChoice.SelectedIndex == 1 ? "fixed" : "preserve", StripArmor = StripArmor.IsChecked == true,
+            FaceMode = FaceChoice.SelectedIndex == 1 ? "fixed" : "preserve", StripArmor = StripArmor.IsChecked == true, Armor = CaptureArmor(),
             BattleLoadouts = ReplaceEquipment.IsChecked == true ? _editedLoadouts.Select(Clone).ToList() : null };
         CaptureMetadata();
         // Keep the prior project until the candidate passes validation.
@@ -346,6 +382,14 @@ public partial class MainWindow : Window
         if (retained.Name != "Imperial Recruit" || retained.CivilianLoadouts?.Single().Slots["Item0"] != sample.Id)
             throw new InvalidDataException("GUI 丢失了 AI 配置的显示名或平民装备。");
         retained.Name = null; retained.CivilianLoadouts = null;
+        LanguageChoice.SelectedIndex = 1;
+        if (SelectedName.Text != _catalog.Troops["imperial_recruit"].NameEn) throw new InvalidDataException("英文切换未生效。");
+        LanguageChoice.SelectedIndex = 0;
+        if (SelectedName.Text != "帝国新兵") throw new InvalidDataException("中文切换未生效。");
+        ArmorMode.SelectedIndex = 1; ArmorHead.Text = "15"; ArmorBody.Text = "30"; ArmorArms.Text = "20"; ArmorLegs.Text = "25";
+        ScopeChoice.SelectedIndex = 0; ApplyConfiguration();
+        if (_project.Rules.Single(x => x.TroopIds.Contains("imperial_recruit")).Armor?.Body != 30) throw new InvalidDataException("护甲覆盖未保存。");
+        ArmorMode.SelectedIndex = 0;
         // Restore a useful demo: native weapons per troop, one race for the complete regular empire branch.
         ReplaceEquipment.IsChecked = false; ScopeChoice.SelectedIndex = 1; ApplyConfiguration();
         var directory = Path.GetDirectoryName(Path.GetFullPath(pngPath))!; Directory.CreateDirectory(directory);
@@ -362,6 +406,6 @@ public partial class MainWindow : Window
         var bitmap = new RenderTargetBitmap((int)ActualWidth, (int)ActualHeight, 96, 96, PixelFormats.Pbgra32);
         bitmap.Render(this); var encoder = new PngBitmapEncoder(); encoder.Frames.Add(BitmapFrame.Create(bitmap));
         using var stream = File.Create(pngPath); encoder.Save(stream);
-        Json.Save(Path.Combine(directory, "gui-smoke.json"), new { status = "pass", scan = true, treeSelection = true, subtreeApply = true, slotEdit = true, loadoutCopy = true, overlapUpdate = true, aiFieldsRetained = true, search = true, screenshot = pngPath });
+        Json.Save(Path.Combine(directory, "gui-smoke.json"), new { status = "pass", scan = true, treeSelection = true, subtreeApply = true, slotEdit = true, loadoutCopy = true, overlapUpdate = true, aiFieldsRetained = true, search = true, bilingualNames = true, armorOverride = true, screenshot = pngPath });
     }
 }

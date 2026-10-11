@@ -1,1 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk" />
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <Compile Include="../Shared/ArmorProtocol.cs" Link="ArmorProtocol.cs" />
+    <ProjectReference Include="../Runtime/RaceTroopBuilder.ArmorRuntime.csproj" ReferenceOutputAssembly="false" SkipGetTargetFrameworkProperties="true" />
+    <EmbeddedResource Include="../Runtime/Harmony-LICENSE.txt" LogicalName="Harmony-LICENSE.txt" />
+    <EmbeddedResource Include="../Runtime/bin/$(Configuration)/net472/RaceTroopBuilder.ArmorRuntime.dll" LogicalName="ArmorRuntime.dll" />
+    <EmbeddedResource Include="../Runtime/bin/$(Configuration)/net472/0Harmony.dll" LogicalName="0Harmony.dll" />
+  </ItemGroup>
+</Project>

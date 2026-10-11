@@ -4,42 +4,254 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "schemaVersion": { "const": 1, "default": 1 },
-    "moduleId": { "type": "string", "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$", "default": "MyRaceTroops" },
-    "moduleName": { "type": "string", "minLength": 1, "pattern": "^[ -~]+$", "default": "My Race Troops" },
-    "version": { "type": "string", "pattern": "^v[0-9]+\\.[0-9]+\\.[0-9]+$", "default": "v0.1.0" },
-    "gameRoot": { "type": ["string", "null"] },
-    "modRoots": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
-    "rules": { "type": "array", "items": { "$ref": "#/$defs/rule" } }
+    "schemaVersion": {
+      "const": 1,
+      "default": 1
+    },
+    "moduleId": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$",
+      "default": "MyRaceTroops"
+    },
+    "moduleName": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[ -~]+$",
+      "default": "My Race Troops"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^v[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "default": "v0.1.0"
+    },
+    "gameRoot": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "modRoots": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/rule"
+      }
+    },
+    "displayLanguage": {
+      "enum": [
+        "zh-CN",
+        "en"
+      ],
+      "default": "zh-CN"
+    }
   },
   "$defs": {
-    "ids": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
     "loadout": {
-      "type": "object", "additionalProperties": false,
-      "properties": { "slots": {
-        "type": "object", "additionalProperties": false,
-        "properties": {
-          "Item0": { "type": "string", "minLength": 1 }, "Item1": { "type": "string", "minLength": 1 },
-          "Item2": { "type": "string", "minLength": 1 }, "Item3": { "type": "string", "minLength": 1 },
-          "Head": { "type": "string", "minLength": 1 }, "Cape": { "type": "string", "minLength": 1 },
-          "Body": { "type": "string", "minLength": 1 }, "Leg": { "type": "string", "minLength": 1 },
-          "Gloves": { "type": "string", "minLength": 1 }, "Horse": { "type": "string", "minLength": 1 },
-          "HorseHarness": { "type": "string", "minLength": 1 }
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "slots": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "Item0": {
+              "type": "string",
+              "minLength": 1
+            },
+            "Item1": {
+              "type": "string",
+              "minLength": 1
+            },
+            "Item2": {
+              "type": "string",
+              "minLength": 1
+            },
+            "Item3": {
+              "type": "string",
+              "minLength": 1
+            },
+            "Head": {
+              "type": "string",
+              "minLength": 1
+            },
+            "Cape": {
+              "type": "string",
+              "minLength": 1
+            },
+            "Body": {
+              "type": "string",
+              "minLength": 1
+            },
+            "Leg": {
+              "type": "string",
+              "minLength": 1
+            },
+            "Gloves": {
+              "type": "string",
+              "minLength": 1
+            },
+            "Horse": {
+              "type": "string",
+              "minLength": 1
+            },
+            "HorseHarness": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
         }
-      } }
+      }
     },
     "rule": {
-      "type": "object", "additionalProperties": false,
-      "required": ["raceModule", "raceId"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "raceModule",
+        "raceId"
+      ],
       "properties": {
-        "troopIds": { "$ref": "#/$defs/ids" }, "rootIds": { "$ref": "#/$defs/ids" },
-        "culture": { "type": ["string", "null"] },
-        "raceModule": { "type": "string", "minLength": 1 }, "raceId": { "type": "string", "minLength": 1 },
-        "isFemale": { "type": ["boolean", "null"] }, "age": { "type": ["integer", "null"], "minimum": 18, "maximum": 100 },
-        "faceMode": { "enum": ["preserve", "fixed"], "default": "preserve" },
-        "stripArmor": { "type": "boolean", "default": false }, "name": { "type": ["string", "null"] },
-        "battleLoadouts": { "type": ["array", "null"], "items": { "$ref": "#/$defs/loadout" } },
-        "civilianLoadouts": { "type": ["array", "null"], "items": { "$ref": "#/$defs/loadout" } }
+        "troopIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "rootIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "culture": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "raceModule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "raceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "isFemale": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "age": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 18,
+          "maximum": 100
+        },
+        "faceMode": {
+          "enum": [
+            "preserve",
+            "fixed"
+          ],
+          "default": "preserve"
+        },
+        "stripArmor": {
+          "type": "boolean",
+          "default": false
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "battleLoadouts": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/$defs/loadout"
+          }
+        },
+        "civilianLoadouts": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "$ref": "#/$defs/loadout"
+          }
+        },
+        "armor": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "mode": {
+              "enum": [
+                "inherit",
+                "override"
+              ],
+              "default": "inherit"
+            },
+            "head": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 500
+            },
+            "body": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 500
+            },
+            "arms": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 500
+            },
+            "legs": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 500
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "mode": {
+                    "const": "override"
+                  }
+                },
+                "required": [
+                  "mode"
+                ]
+              },
+              "then": {
+                "required": [
+                  "head",
+                  "body",
+                  "arms",
+                  "legs"
+                ]
+              }
+            }
+          ]
+        }
       }
     }
   }

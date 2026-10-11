@@ -92,6 +92,50 @@ Test("protected module ID and traversal rejected", () =>
 Test("strict JSON rejects mixed race field", () =>
 { var file = Path.Combine(fixture, "bad.json"); Write(file, "{\"raceIds\":[\"a\",\"b\"]}"); try { Json.Read<TroopRule>(file); throw new Exception("未知字段未拒绝"); } catch (System.Text.Json.JsonException) { } });
 
+Test("armor override rejects invalid mode and range", () =>
+{
+    var p = Profile(); p.Rules[0].Armor = new() { Mode = "unknown", Head = -1, Body = 501 };
+    var check = Builder.Validate(catalog, p); Assert(Error(check, "armor_mode") && Error(check, "armor_value"), "护甲检查缺失");
+    p.Rules[0].Armor = new() { Mode = "override", Body = 30 }; Assert(Error(Builder.Validate(catalog, p), "armor_incomplete"), "覆盖允许遗漏部位");
+    p.Rules[0].Armor = new() { Mode = "inherit", Body = 30 }; Assert(Error(Builder.Validate(catalog, p), "armor_inherit_values"), "继承模式接受了覆盖值");
+});
+Test("racial default discovery and inheritance", () =>
+{
+    var file = Path.Combine(racePath, "ModuleData", "rtb_race_armor.xml");
+    Write(file, "<RaceArmor schemaVersion='1'><Race id='race_one' head='10' body='30' arms='20' legs='25'/></RaceArmor>");
+    try
+    {
+        var scan = Discovery.Scan(game, [mods]); Assert(scan.Races.Single().DefaultArmor?.Body == 30, "默认值未读取");
+        var full = Builder.Build(scan, Profile(), Path.Combine(fixture, "inherit-output"));
+        Assert(full.Status == "pass", Json.Write(full));
+        Assert(File.Exists(Path.Combine(full.ModulePath!, "bin/Win64_Shipping_Client/RaceTroopBuilder.ArmorRuntime.dll")), "沿用默认值未启用运行组件");
+        Assert(XDocument.Load(Path.Combine(full.ModulePath!, "ModuleData/rtb_troop_armor.xml")).Root!.Elements().Count() == 0, "继承复制了依赖默认值");
+        Assert(!File.Exists(Path.Combine(full.ModulePath!, "ModuleData/rtb_race_armor.xml")), "输出复制了种族数据");
+        Assert(full.DependencyHashes["RaceOne"].ContainsKey("ModuleData/rtb_race_armor.xml"), "默认数据未加入安装校验");
+    }
+    finally { File.Delete(file); }
+});
+Test("armor override expands selected tree and ships only own runtime", () =>
+{
+    var p = Profile(); p.Rules[0].Armor = new() { Mode = "override", Head = 0, Body = 50, Arms = 40, Legs = 45 };
+    var full = Builder.Build(catalog, p, Path.Combine(fixture, "armor-output")); Assert(full.Status == "pass", Json.Write(full));
+    var entries = XDocument.Load(Path.Combine(full.ModulePath!, "ModuleData/rtb_troop_armor.xml")).Root!.Elements().ToList();
+    Assert(entries.Count == 3 && entries.All(x => (string?)x.Attribute("head") == "0" && (string?)x.Attribute("race") == "race_one"), "覆盖数据展开或零值错误");
+    Assert(File.Exists(Path.Combine(full.ModulePath!, "bin/Win64_Shipping_Client/0Harmony.dll")), "缺少补丁库");
+    Assert(!Directory.EnumerateFiles(full.ModulePath!, "TaleWorlds*.dll", SearchOption.AllDirectories).Any(), "交付了游戏 DLL");
+});
+Test("official bilingual names, manifest paths and English fallback", () =>
+{
+    var directory = Path.Combine(corePath, "ModuleData/Languages");
+    Write(Path.Combine(directory, "CNs/language_data.xml"), "<LanguageData><LanguageFile xml_path='CNs/strings.xml'/></LanguageData>");
+    Write(Path.Combine(directory, "CNs/strings.xml"), "<base><strings><string id='name_recruit' text='测试新兵'/><string id='item' text='测试武器'/></strings></base>");
+    var scan = Discovery.Scan(game, [mods]);
+    Assert(scan.Troops["recruit"].NameZh == "测试新兵" && scan.Troops["recruit"].NameEn == "recruit", "双语错误");
+    Assert(scan.Troops["veteran"].DisplayName("zh-CN") == "veteran", "缺失中文未回退");
+    Assert(scan.Items["sword1"].SearchText.Contains("测试武器") && scan.Items["sword1"].SearchText.Contains("sword1"), "搜索遗漏语言");
+    scan.Items["sword1"].Language = "en"; Assert(scan.Items["sword1"].DisplayName == "sword1", "英文切换错误");
+});
+
 CheckReport? built = null;
 var buildRoot = Path.Combine(fixture, "output"); var reportFile = Path.Combine(buildRoot, "TestReplacement.validation.json");
 Test("XSLT transformation, localization and untouched heroes", () =>
