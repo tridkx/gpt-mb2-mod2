@@ -1,0 +1,733 @@
+{
+  "version": "v0.1.1",
+  "status": "pass",
+  "check_scope": "scale_only_test_against_v0.1.0_delivery",
+  "final_package_sha256": "6128cde090b485a1c61d703a762cdca24398f87b20cace154fd877028e64e8c7",
+  "baseline_package_sha256": "6128cde090b485a1c61d703a762cdca24398f87b20cace154fd877028e64e8c7",
+  "baseline_reason": "Scale test preserves exact v0.1.0 TPAC and runtime DLL",
+  "registration": {
+    "status": "pass",
+    "race": "txt5pve",
+    "changed_troops": [],
+    "unaffected_troops": 548,
+    "troop_overrides_present": false,
+    "skin_variants": 10,
+    "skeleton": "txt5pve_skeleton",
+    "native_monster_dimensions_preserved": true,
+    "native_ui_actions_inherited": true,
+    "cloth_simulation": false
+  },
+  "lods": [
+    {
+      "lod": 0,
+      "vertices": 13314,
+      "triangles": 16311,
+      "submeshes": 14
+    },
+    {
+      "lod": 1,
+      "vertices": 10111,
+      "triangles": 11478,
+      "submeshes": 14
+    },
+    {
+      "lod": 2,
+      "vertices": 7373,
+      "triangles": 7470,
+      "submeshes": 14
+    },
+    {
+      "lod": 3,
+      "vertices": 5440,
+      "triangles": 4956,
+      "submeshes": 14
+    }
+  ],
+  "seams": [
+    {
+      "lod": 0,
+      "shared_points": 193,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 1,
+      "shared_points": 193,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 2,
+      "shared_points": 193,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 3,
+      "shared_points": 193,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "asset": "anim_inventory_idle",
+      "frames_checked": 16,
+      "total_frames": 1268,
+      "worst_frame": 507,
+      "worst_mesh": "txt5pve_part_11",
+      "max_edge_extension": 2.51641257373847,
+      "max_mesh_p99_extension": 1.6577942578316458,
+      "meshes": [
+        {
+          "name": "txt5pve_part_00",
+          "max_extension": 2.098649586506873,
+          "p99_extension": 1.3915226638688252
+        },
+        {
+          "name": "txt5pve_part_01",
+          "max_extension": 1.0000004113618584,
+          "p99_extension": 1.0000003328108242
+        },
+        {
+          "name": "txt5pve_part_02",
+          "max_extension": 1.000000454906429,
+          "p99_extension": 1.0000003328346594
+        },
+        {
+          "name": "txt5pve_part_03",
+          "max_extension": 1.6603881027153171,
+          "p99_extension": 1.3947760936784719
+        },
+        {
+          "name": "txt5pve_part_04",
+          "max_extension": 1.9526845440470215,
+          "p99_extension": 1.6577942578316458
+        },
+        {
+          "name": "txt5pve_part_05",
+          "max_extension": 1.4845386562289382,
+          "p99_extension": 1.296340460252067
+        },
+        {
+          "name": "txt5pve_part_06",
+          "max_extension": 1.7841924263255597,
+          "p99_extension": 1.5599374818095877
+        },
+        {
+          "name": "txt5pve_part_07",
+          "max_extension": 1.151653659264781,
+          "p99_extension": 1.0638554727289289
+        },
+        {
+          "name": "txt5pve_part_08",
+          "max_extension": 1.0618248380915998,
+          "p99_extension": 1.042122610542452
+        },
+        {
+          "name": "txt5pve_part_09",
+          "max_extension": 1.0000003617061817,
+          "p99_extension": 1.0000003610558097
+        },
+        {
+          "name": "txt5pve_part_10",
+          "max_extension": 1.0000003992976363,
+          "p99_extension": 1.0000003671542113
+        },
+        {
+          "name": "txt5pve_part_11",
+          "max_extension": 2.51641257373847,
+          "p99_extension": 1.6295784220579301
+        },
+        {
+          "name": "txt5pve_part_12",
+          "max_extension": 1.0000003578520984,
+          "p99_extension": 1.0000003358798288
+        },
+        {
+          "name": "txt5pve_part_13",
+          "max_extension": 1.0000004078957498,
+          "p99_extension": 1.0000003692629647
+        }
+      ]
+    },
+    {
+      "label": "run",
+      "asset": "anim_run_forward_unarmed",
+      "frames_checked": 25,
+      "total_frames": 26,
+      "worst_frame": 23,
+      "worst_mesh": "txt5pve_part_03",
+      "max_edge_extension": 4.869486079418118,
+      "max_mesh_p99_extension": 3.545552860254648,
+      "meshes": [
+        {
+          "name": "txt5pve_part_00",
+          "max_extension": 1.982738299736869,
+          "p99_extension": 1.5235513206252866
+        },
+        {
+          "name": "txt5pve_part_01",
+          "max_extension": 1.0000004113618584,
+          "p99_extension": 1.000000332810824
+        },
+        {
+          "name": "txt5pve_part_02",
+          "max_extension": 1.0000004549064292,
+          "p99_extension": 1.0000003328346516
+        },
+        {
+          "name": "txt5pve_part_03",
+          "max_extension": 4.869486079418118,
+          "p99_extension": 3.545552860254648
+        },
+        {
+          "name": "txt5pve_part_04",
+          "max_extension": 1.5227425576254918,
+          "p99_extension": 1.2483459709037532
+        },
+        {
+          "name": "txt5pve_part_05",
+          "max_extension": 2.834305683227508,
+          "p99_extension": 1.9674744012168197
+        },
+        {
+          "name": "txt5pve_part_06",
+          "max_extension": 3.13295064119647,
+          "p99_extension": 2.619675163512422
+        },
+        {
+          "name": "txt5pve_part_07",
+          "max_extension": 1.3758753574148628,
+          "p99_extension": 1.18234928325779
+        },
+        {
+          "name": "txt5pve_part_08",
+          "max_extension": 1.0894459259680975,
+          "p99_extension": 1.0590333353304646
+        },
+        {
+          "name": "txt5pve_part_09",
+          "max_extension": 1.0000003617061801,
+          "p99_extension": 1.0000003610557997
+        },
+        {
+          "name": "txt5pve_part_10",
+          "max_extension": 1.0000003992976303,
+          "p99_extension": 1.0000003671542155
+        },
+        {
+          "name": "txt5pve_part_11",
+          "max_extension": 1.413712470524517,
+          "p99_extension": 1.2018773614590097
+        },
+        {
+          "name": "txt5pve_part_12",
+          "max_extension": 1.0000003578520964,
+          "p99_extension": 1.0000003358798057
+        },
+        {
+          "name": "txt5pve_part_13",
+          "max_extension": 1.0000004078957465,
+          "p99_extension": 1.000000369262972
+        }
+      ]
+    },
+    {
+      "label": "bow",
+      "asset": "anim_bow",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 88,
+      "worst_mesh": "txt5pve_part_00",
+      "max_edge_extension": 4.018215754605468,
+      "max_mesh_p99_extension": 2.627216683866033,
+      "meshes": [
+        {
+          "name": "txt5pve_part_00",
+          "max_extension": 4.018215754605468,
+          "p99_extension": 2.627216683866033
+        },
+        {
+          "name": "txt5pve_part_01",
+          "max_extension": 1.0000004113618584,
+          "p99_extension": 1.0000003328108258
+        },
+        {
+          "name": "txt5pve_part_02",
+          "max_extension": 1.000000454906434,
+          "p99_extension": 1.0000003328346565
+        },
+        {
+          "name": "txt5pve_part_03",
+          "max_extension": 2.863010525216358,
+          "p99_extension": 2.2736133779681396
+        },
+        {
+          "name": "txt5pve_part_04",
+          "max_extension": 3.251989827090981,
+          "p99_extension": 2.309355609739339
+        },
+        {
+          "name": "txt5pve_part_05",
+          "max_extension": 2.6216098514808643,
+          "p99_extension": 1.7681012536719352
+        },
+        {
+          "name": "txt5pve_part_06",
+          "max_extension": 3.00112192975832,
+          "p99_extension": 2.4989932150063123
+        },
+        {
+          "name": "txt5pve_part_07",
+          "max_extension": 1.5569200500356872,
+          "p99_extension": 1.2808661765230929
+        },
+        {
+          "name": "txt5pve_part_08",
+          "max_extension": 1.2107162178368456,
+          "p99_extension": 1.1527677689795583
+        },
+        {
+          "name": "txt5pve_part_09",
+          "max_extension": 1.0000003617061852,
+          "p99_extension": 1.0000003610558088
+        },
+        {
+          "name": "txt5pve_part_10",
+          "max_extension": 1.000000399297639,
+          "p99_extension": 1.0000003671542315
+        },
+        {
+          "name": "txt5pve_part_11",
+          "max_extension": 3.030701490954533,
+          "p99_extension": 1.8735076998336107
+        },
+        {
+          "name": "txt5pve_part_12",
+          "max_extension": 1.000000357852103,
+          "p99_extension": 1.0000003358798177
+        },
+        {
+          "name": "txt5pve_part_13",
+          "max_extension": 1.0000004078957554,
+          "p99_extension": 1.0000003692629884
+        }
+      ]
+    },
+    {
+      "label": "riding",
+      "asset": "anim_rider_gallop_bow",
+      "frames_checked": 20,
+      "total_frames": 21,
+      "worst_frame": 8,
+      "worst_mesh": "txt5pve_part_03",
+      "max_edge_extension": 4.087896635710624,
+      "max_mesh_p99_extension": 3.3417283564884195,
+      "meshes": [
+        {
+          "name": "txt5pve_part_00",
+          "max_extension": 2.58679976439839,
+          "p99_extension": 1.6262033542498244
+        },
+        {
+          "name": "txt5pve_part_01",
+          "max_extension": 1.0000004113618577,
+          "p99_extension": 1.0000003328108238
+        },
+        {
+          "name": "txt5pve_part_02",
+          "max_extension": 1.0000004549064334,
+          "p99_extension": 1.0000003328346518
+        },
+        {
+          "name": "txt5pve_part_03",
+          "max_extension": 4.087896635710624,
+          "p99_extension": 3.3417283564884195
+        },
+        {
+          "name": "txt5pve_part_04",
+          "max_extension": 2.1905322710660418,
+          "p99_extension": 1.7366891313228057
+        },
+        {
+          "name": "txt5pve_part_05",
+          "max_extension": 3.7149867431654666,
+          "p99_extension": 2.2969807604976613
+        },
+        {
+          "name": "txt5pve_part_06",
+          "max_extension": 3.4822111765439723,
+          "p99_extension": 3.0604449790208506
+        },
+        {
+          "name": "txt5pve_part_07",
+          "max_extension": 1.494049033105654,
+          "p99_extension": 1.2625307280896556
+        },
+        {
+          "name": "txt5pve_part_08",
+          "max_extension": 1.1697595012591755,
+          "p99_extension": 1.1363419210818861
+        },
+        {
+          "name": "txt5pve_part_09",
+          "max_extension": 1.0000003617061823,
+          "p99_extension": 1.0000003610558017
+        },
+        {
+          "name": "txt5pve_part_10",
+          "max_extension": 1.0000003992976316,
+          "p99_extension": 1.0000003671542272
+        },
+        {
+          "name": "txt5pve_part_11",
+          "max_extension": 1.888167537790462,
+          "p99_extension": 1.4795050771636908
+        },
+        {
+          "name": "txt5pve_part_12",
+          "max_extension": 1.0000003578520968,
+          "p99_extension": 1.0000003358798166
+        },
+        {
+          "name": "txt5pve_part_13",
+          "max_extension": 1.0000004078957427,
+          "p99_extension": 1.0000003692629669
+        }
+      ]
+    },
+    {
+      "label": "slash",
+      "asset": "anim_dagger_slashleft_1h_balance",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 70,
+      "worst_mesh": "txt5pve_part_00",
+      "max_edge_extension": 4.141483380135067,
+      "max_mesh_p99_extension": 2.5777033826509563,
+      "meshes": [
+        {
+          "name": "txt5pve_part_00",
+          "max_extension": 4.141483380135067,
+          "p99_extension": 1.945457948597657
+        },
+        {
+          "name": "txt5pve_part_01",
+          "max_extension": 1.0000004113618584,
+          "p99_extension": 1.0000003328108242
+        },
+        {
+          "name": "txt5pve_part_02",
+          "max_extension": 1.0000004549064314,
+          "p99_extension": 1.0000003328346565
+        },
+        {
+          "name": "txt5pve_part_03",
+          "max_extension": 2.9416157009200687,
+          "p99_extension": 2.399989156307544
+        },
+        {
+          "name": "txt5pve_part_04",
+          "max_extension": 3.4601088921081056,
+          "p99_extension": 2.361714072894669
+        },
+        {
+          "name": "txt5pve_part_05",
+          "max_extension": 2.426550466156666,
+          "p99_extension": 1.8160274239959364
+        },
+        {
+          "name": "txt5pve_part_06",
+          "max_extension": 3.233840552504899,
+          "p99_extension": 2.5777033826509563
+        },
+        {
+          "name": "txt5pve_part_07",
+          "max_extension": 1.4059602229364554,
+          "p99_extension": 1.1586744030794056
+        },
+        {
+          "name": "txt5pve_part_08",
+          "max_extension": 1.1837518245093157,
+          "p99_extension": 1.105389006721064
+        },
+        {
+          "name": "txt5pve_part_09",
+          "max_extension": 1.0000003617061846,
+          "p99_extension": 1.0000003610558066
+        },
+        {
+          "name": "txt5pve_part_10",
+          "max_extension": 1.0000003992976327,
+          "p99_extension": 1.0000003671542204
+        },
+        {
+          "name": "txt5pve_part_11",
+          "max_extension": 2.3668157052822414,
+          "p99_extension": 1.6579047003114051
+        },
+        {
+          "name": "txt5pve_part_12",
+          "max_extension": 1.0000003578521044,
+          "p99_extension": 1.000000335879812
+        },
+        {
+          "name": "txt5pve_part_13",
+          "max_extension": 1.0000004078957463,
+          "p99_extension": 1.0000003692629735
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "txt5pve_tex_0",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txt5pve_tex_1",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txt5pve_tex_10",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txt5pve_tex_2",
+      "mips": 11,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txt5pve_tex_3",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txt5pve_tex_4",
+      "mips": 11,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txt5pve_tex_5",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txt5pve_tex_6",
+      "mips": 8,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txt5pve_tex_7",
+      "mips": 9,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txt5pve_tex_8",
+      "mips": 11,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txt5pve_tex_9",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    }
+  ],
+  "gross_motion_tear_guard_max_extension": 6.0,
+  "metadata_audit": "pass",
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "limitations": [
+    "Fixed source appearance with PVE textures; skirt and hair use skeletal skinning without physics.",
+    "Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.",
+    "No facial animation or face/body customization support."
+  ],
+  "integrated_hands_all_lods": true,
+  "cloth_enabled": false,
+  "body_metamesh": "txt5pve_body",
+  "hidden_placeholder_triangles": 4,
+  "source_proportions_preserved": true,
+  "custom_skeleton_bones": 28,
+  "date": "2026-10-12",
+  "final_lod0_source_geometry": [
+    {
+      "mesh": "txt5pve_part_00",
+      "source_distance_max_m": 7.465118328985478e-09
+    },
+    {
+      "mesh": "txt5pve_part_01",
+      "source_distance_max_m": 3.5762786865234375e-07
+    },
+    {
+      "mesh": "txt5pve_part_02",
+      "source_distance_max_m": 3.2782554626464844e-07
+    },
+    {
+      "mesh": "txt5pve_part_03",
+      "source_distance_max_m": 0.0
+    },
+    {
+      "mesh": "txt5pve_part_04",
+      "source_distance_max_m": 1.1926748300777466e-07
+    },
+    {
+      "mesh": "txt5pve_part_05",
+      "source_distance_max_m": 7.450580596923828e-09
+    },
+    {
+      "mesh": "txt5pve_part_06",
+      "source_distance_max_m": 0.0
+    },
+    {
+      "mesh": "txt5pve_part_07",
+      "source_distance_max_m": 5.972094663188382e-08
+    },
+    {
+      "mesh": "txt5pve_part_08",
+      "source_distance_max_m": 1.228790054294737e-07
+    },
+    {
+      "mesh": "txt5pve_part_09",
+      "source_distance_max_m": 0.0
+    },
+    {
+      "mesh": "txt5pve_part_10",
+      "source_distance_max_m": 4.76837158203125e-07
+    },
+    {
+      "mesh": "txt5pve_part_11",
+      "source_distance_max_m": 1.1927111915609665e-07
+    },
+    {
+      "mesh": "txt5pve_part_12",
+      "source_distance_max_m": 0.0
+    },
+    {
+      "mesh": "txt5pve_part_13",
+      "source_distance_max_m": 0.0
+    }
+  ],
+  "pve_texture_sha256": {
+    "tunic_D-PVE.png": "502ad4fc10e6501432ab5de1a1df0134d2e7f07238a1b130ff0ad3a1f2712c02",
+    "hair_D.png": "5784ba13b5f7eeb00ae084fd57b5bd20e3615191fefe9a72996bcd96a606b685",
+    "body_D.png": "7037a39cf4a9eea4602200e1bc9506805321779565a6c0433097702409c95f82",
+    "pants_D-PVE.png": "34eae29107405efc318b61ef2d9e4fcb1d7763b8b7f7767334298c7008e8a25a",
+    "cuff_D.png": "21e823327dc9be9dc113c8bafd6c4629dfe2cb94437f59c55807572e20e6f5dc",
+    "head_D.png": "28d8c48a58514e1c81391e58b632de16b64cd73ba51ce60eebcbefa9f948013f",
+    "face_D.png": "64d3842f951ade96b1e9a7d90644578cfe997b6f47c147765c9857c75f8cca69",
+    "eye_D.png": "4c7793e56df34b87274d1212139dc29f42182135928f320ef9aacb7f59f5f0f8",
+    "eyelash_D.png": "8ec56d9d94f4ccf6a3e9b5067d56d85b866125fb30ce1341ea18d724eb35c425"
+  },
+  "source_validation": {
+    "status": "pass",
+    "blend_reopened": true,
+    "fbx_reimported": true,
+    "packed_images": 17,
+    "meshes": 14,
+    "bones": 28,
+    "source_proportions_preserved": true,
+    "source_geometry_max_error_m": 0.0,
+    "parts": [
+      {
+        "part": "txt5pve_part_00",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txt5pve_part_01",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txt5pve_part_02",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txt5pve_part_03",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txt5pve_part_04",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txt5pve_part_05",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txt5pve_part_06",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txt5pve_part_07",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txt5pve_part_08",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txt5pve_part_09",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txt5pve_part_10",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txt5pve_part_11",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txt5pve_part_12",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txt5pve_part_13",
+        "max_error_m": 0.0
+      }
+    ]
+  },
+  "ui_runtime": {
+    "status": "compiled_and_offline_scope_checked",
+    "assembly_sha256": "1fbeb36ca4ffcdd8d028e9033cf4856173e02b1c24c8bc711ed023d64888ffd8",
+    "target_race": "txt5pve",
+    "target_skeleton": "txt5pve_skeleton",
+    "game_verified": false
+  },
+  "module_file_sha256": {
+    "SubModule.xml": "cfc63df81600f9ef57dc4098bfe9aa450832e8226527eb5a40aeec91a8a22ca1",
+    "AssetPackages/txt5pve.tpac": "6128cde090b485a1c61d703a762cdca24398f87b20cace154fd877028e64e8c7",
+    "ModuleData/action_sets.xml": "19186a4e931f529a49d2adbd26508ae06acd0253ae425ccf72d2d0ac0c2b2730",
+    "ModuleData/monsters.xml": "2ad0677415c7034ddb15fe050e37cbf72ac93793d7baa6145d4c2cc0ff89795c",
+    "ModuleData/project.mbproj": "964d68121f49ed596aa7a9afe1c998e867659f17631c1aeb7f96a9ec4f0971c6",
+    "ModuleData/skins.xml": "c5cc917179090c5ecb4dc7ca93a2c2a3932027dc0898b2e22422595668aa7a48",
+    "bin/Win64_Shipping_Client/TianxiangT5PVERace.UIRuntime.dll": "1fbeb36ca4ffcdd8d028e9033cf4856173e02b1c24c8bc711ed023d64888ffd8"
+  },
+  "scale_test": {
+    "previous_min_scale": 1.0,
+    "new_min_scale": 2.0,
+    "parameter_ratio": 2.0,
+    "changed_module_files": [
+      "ModuleData/skins.xml",
+      "SubModule.xml"
+    ],
+    "all_skin_variants": 10,
+    "runtime_effect_verified": false,
+    "expected_scale_same_body_key": 1.8063492
+  }
+}

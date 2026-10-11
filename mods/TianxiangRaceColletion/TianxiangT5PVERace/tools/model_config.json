@@ -1,9 +1,9 @@
 {
   "id": "TianxiangT5PVERace",
-  "version": "v0.1.1",
+  "version": "v0.1.2",
   "race": "txt5pve",
   "skeleton": "txt5pve_skeleton",
-  "skin_min_scale": 2.0,
+  "skin_min_scale": 1.10720562779334,
   "cloth_enabled": false,
   "cloth_lods": [],
   "lod_multipliers": [
@@ -155,6 +155,13 @@
       0.978
     ]
   ],
-  "scale_test": true,
-  "scale_baseline_version": "v0.1.0"
+  "scale_test": false,
+  "scale_baseline_version": "v0.1.1",
+  "scale_calibration": {
+    "target_runtime_scale": 1.0,
+    "baseline_parameter": 1.0,
+    "observed_baseline_ui_scale": 0.9031746,
+    "observed_double_parameter_ui_scale": 1.80634916,
+    "scope": "Male character creation, same body parameters; final battlefield/female scale pending"
+  }
 }

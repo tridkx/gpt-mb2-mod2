@@ -1,10 +1,10 @@
 {
-  "version": "v0.1.1",
+  "version": "v0.1.2",
   "status": "pass",
-  "check_scope": "scale_only_test_against_v0.1.0_delivery",
+  "check_scope": "scale_only_source_size_calibration_against_prior_delivery",
   "final_package_sha256": "6128cde090b485a1c61d703a762cdca24398f87b20cace154fd877028e64e8c7",
   "baseline_package_sha256": "6128cde090b485a1c61d703a762cdca24398f87b20cace154fd877028e64e8c7",
-  "baseline_reason": "Scale test preserves exact v0.1.0 TPAC and runtime DLL",
+  "baseline_reason": "Uniform display scale calibration; exact assets preserved",
   "registration": {
     "status": "pass",
     "race": "txt5pve",
@@ -710,24 +710,27 @@
     "game_verified": false
   },
   "module_file_sha256": {
-    "SubModule.xml": "cfc63df81600f9ef57dc4098bfe9aa450832e8226527eb5a40aeec91a8a22ca1",
+    "SubModule.xml": "0fa180b303582bcb269671f1fe5e6c3e991b58bd4569cf0ffd68e6419a1c3da6",
     "AssetPackages/txt5pve.tpac": "6128cde090b485a1c61d703a762cdca24398f87b20cace154fd877028e64e8c7",
     "ModuleData/action_sets.xml": "19186a4e931f529a49d2adbd26508ae06acd0253ae425ccf72d2d0ac0c2b2730",
     "ModuleData/monsters.xml": "2ad0677415c7034ddb15fe050e37cbf72ac93793d7baa6145d4c2cc0ff89795c",
     "ModuleData/project.mbproj": "964d68121f49ed596aa7a9afe1c998e867659f17631c1aeb7f96a9ec4f0971c6",
-    "ModuleData/skins.xml": "c5cc917179090c5ecb4dc7ca93a2c2a3932027dc0898b2e22422595668aa7a48",
+    "ModuleData/skins.xml": "25ac72c91fc29a847e9cd7a999bd102ce70202408b1c4b9b9afcd53bd644cabe",
     "bin/Win64_Shipping_Client/TianxiangT5PVERace.UIRuntime.dll": "1fbeb36ca4ffcdd8d028e9033cf4856173e02b1c24c8bc711ed023d64888ffd8"
   },
-  "scale_test": {
-    "previous_min_scale": 1.0,
-    "new_min_scale": 2.0,
-    "parameter_ratio": 2.0,
+  "scale_calibration": {
+    "target_runtime_scale": 1.0,
+    "baseline_parameter": 1.0,
+    "observed_baseline_ui_scale": 0.9031746,
+    "observed_double_parameter_ui_scale": 1.80634916,
+    "scope": "Male character creation, same body parameters; final battlefield/female scale pending",
+    "previous_min_scale": 2.0,
+    "new_min_scale": 1.10720562779334,
+    "expected_ui_scale_same_body_key": 0.9999999999999988,
     "changed_module_files": [
       "ModuleData/skins.xml",
       "SubModule.xml"
     ],
-    "all_skin_variants": 10,
-    "runtime_effect_verified": false,
-    "expected_scale_same_body_key": 1.8063492
+    "final_runtime_verified": false
   }
 }

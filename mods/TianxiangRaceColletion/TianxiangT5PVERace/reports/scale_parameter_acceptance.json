@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-12",
+  "versions": [
+    "v0.1.0",
+    "v0.1.1"
+  ],
+  "user_feedback": "User confirmed doubled parameter takes effect",
+  "parameter_ratio": 2.0,
+  "samples": [
+    {
+      "time": "2026-10-12T00:13:49",
+      "scale": 0.9031746,
+      "gender": "Male",
+      "skeleton": "txt5pve_skeleton",
+      "screen": "SandBox.View.CharacterCreation.CharacterCreationScreen"
+    },
+    {
+      "time": "2026-10-12T07:33:06",
+      "scale": 1.80634916,
+      "gender": "Male",
+      "skeleton": "txt5pve_skeleton",
+      "screen": "SandBox.View.CharacterCreation.CharacterCreationScreen"
+    }
+  ],
+  "actual_ui_scale_ratio": 1.9999999557117747,
+  "scope": "Male character creation preview, custom skeleton; no quantitative battlefield sample",
+  "new_parameter_for_source_runtime_scale": 1.1072056277933413,
+  "calibrated_release_game_verified": false
+}
