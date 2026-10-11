@@ -1,5 +1,12 @@
 # 工作区更新日志
 
+## 2026-10-11 替换器固有护甲与技能接入
+
+- RaceTroopBuilder v0.2.0 支持双语名称、外部种族默认固有护甲和按兵种覆盖；详细变更见 [模组更新日志](../mods/RaceTroopBuilder/CHANGELOG.md)。
+- 已安装的 bannerlord-race-troop-mod 技能新增替换器操作与默认护甲接入指引，协议主要规范仍由项目 docs/armor.md 维护。技能在其独立本地 Git 仓库提交，工作区不保存技能副本。
+- 更新工作区项目入口，删除替换器仅导出纯数据 Mod 的失效描述。
+
+
 ## 2026-10-11 自定义种族兵种树拼装器
 
 - 新增 mods/RaceTroopBuilder，提供共用 C# 核心、Windows GUI 和 AI JSON/CLI。
