@@ -14,6 +14,7 @@
 | [Hanfu Blue Red](mods/HanfuBlueRed/README.md) | 蓝红汉服少女 |
 | [Resident Evil](mods/ResidentEvil/README.md) | 系列工程入口，包含艾达王默认服装装备与固定外观种族 |
 | [仙剑奇侠传七](mods/Xianjian7/README.md) | 角色种族工程入口，目前包含月清疏默认时装种族资源 |
+| [Race Troop Builder](mods/RaceTroopBuilder/README.md) | 自定义种族兵种树拼装器，Windows GUI、AI JSON/CLI、纯数据 Mod 导出 |
 
 ## 目录结构
 

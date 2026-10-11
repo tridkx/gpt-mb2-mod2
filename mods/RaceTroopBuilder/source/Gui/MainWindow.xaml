@@ -1,0 +1,80 @@
+<Window x:Class="RaceTroopBuilder.Gui.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Race Troop Builder · 种族兵种树拼装器" Width="1440" Height="960" MinWidth="1160" MinHeight="780" Background="#F3F6F8" FontFamily="Microsoft YaHei UI" FontSize="13" WindowStartupLocation="CenterScreen">
+  <Grid>
+    <Grid.RowDefinitions><RowDefinition Height="74" /><RowDefinition Height="Auto" /><RowDefinition Height="*" /><RowDefinition Height="180" /><RowDefinition Height="32" /></Grid.RowDefinitions>
+    <Border Background="#142C40" Padding="24,14">
+      <DockPanel>
+        <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" VerticalAlignment="Center">
+          <Button Content="新建工程" Click="NewProjectClick" /><Button Content="打开 JSON" Click="OpenClick" /><Button Content="保存工程" Click="SaveClick" />
+        </StackPanel>
+        <StackPanel><TextBlock Text="RACE TROOP BUILDER" Foreground="White" FontSize="22" FontWeight="SemiBold" /><TextBlock Text="种族依赖 · 原版兵种树 · 自由武器配置" Foreground="#B8D0DD" FontSize="12" Margin="0,3,0,0" /></StackPanel>
+      </DockPanel>
+    </Border>
+    <Border Grid.Row="1" Background="White" BorderBrush="#DDE5E9" BorderThickness="0,0,0,1" Padding="22,10">
+      <Grid>
+        <Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="*" /><ColumnDefinition Width="Auto" /></Grid.ColumnDefinitions>
+        <StackPanel Margin="0,0,18,0"><TextBlock Text="游戏目录" Style="{StaticResource Caption}" /><DockPanel><Button DockPanel.Dock="Right" Content="浏览" Click="GameBrowseClick" /><TextBox x:Name="GamePath" /></DockPanel></StackPanel>
+        <StackPanel Grid.Column="1" Margin="0,0,18,0"><TextBlock Text="种族 Mod 来源目录（每行一个，可选工程或已安装模块）" Style="{StaticResource Caption}" /><DockPanel><Button DockPanel.Dock="Right" Content="添加" Click="ModsBrowseClick" /><TextBox x:Name="ModPaths" AcceptsReturn="True" Height="44" VerticalScrollBarVisibility="Auto" /></DockPanel></StackPanel>
+        <Button Grid.Column="2" x:Name="ScanButton" Content="扫描 / 刷新目录" Click="ScanClick" Background="#087F7B" Foreground="White" BorderThickness="0" VerticalAlignment="Bottom" Margin="0,0,0,2" />
+      </Grid>
+    </Border>
+    <Grid Grid.Row="2" x:Name="Editor" Margin="18,16,18,12">
+      <Grid.ColumnDefinitions><ColumnDefinition Width="0.9*" /><ColumnDefinition Width="12" /><ColumnDefinition Width="0.9*" /><ColumnDefinition Width="12" /><ColumnDefinition Width="1.35*" /></Grid.ColumnDefinitions>
+      <Border Background="White" CornerRadius="8" Padding="16" BorderBrush="#DDE5E9" BorderThickness="1">
+        <DockPanel>
+          <StackPanel DockPanel.Dock="Top"><TextBlock Text="01  原版兵种树" Style="{StaticResource Section}" /><TextBox x:Name="TroopSearch" TextChanged="TroopSearchChanged" ToolTip="搜索兵种 ID、名称或文化" Margin="0,0,0,10" /><TextBlock Text="选择节点后，可应用到整个升级分支。" Foreground="#59707D" FontSize="12" Margin="0,0,0,8" /></StackPanel>
+          <TreeView x:Name="TroopTree" SelectedItemChanged="TroopSelected" BorderThickness="0" HorizontalContentAlignment="Stretch" />
+        </DockPanel>
+      </Border>
+      <Border Grid.Column="2" Background="White" CornerRadius="8" Padding="18" BorderBrush="#DDE5E9" BorderThickness="1">
+        <DockPanel>
+          <StackPanel DockPanel.Dock="Bottom" Margin="0,8,0,0">
+            <Button Content="应用配置到所选范围" Click="ApplyClick" Background="#087F7B" Foreground="White" BorderThickness="0" Margin="0,0,0,8" />
+            <Button Content="撤销所选范围的替换" Click="RemoveRuleClick" Margin="0,0,0,8" />
+            <TextBlock Text="每兵种一个种族；升级节点可使用不同种族。" Foreground="#59707D" FontSize="12" TextWrapping="Wrap" />
+          </StackPanel>
+          <ScrollViewer VerticalScrollBarVisibility="Auto">
+          <StackPanel>
+            <TextBlock Text="02  种族与应用范围" Style="{StaticResource Section}" />
+            <TextBlock x:Name="SelectedName" Text="先扫描目录，再选择兵种" FontWeight="SemiBold" TextWrapping="Wrap" />
+            <TextBlock x:Name="SelectedMeta" Foreground="#59707D" FontSize="12" TextWrapping="Wrap" Margin="0,5,0,8" />
+            <TextBlock Text="依赖种族" Style="{StaticResource Caption}" /><ComboBox x:Name="RaceChoice" DisplayMemberPath="Label" />
+            <TextBlock Text="性别" Style="{StaticResource Caption}" /><ComboBox x:Name="GenderChoice" SelectedIndex="0"><ComboBoxItem Content="保留原版性别" /><ComboBoxItem Content="女性" /><ComboBoxItem Content="男性" /></ComboBox>
+            <TextBlock Text="脸参数" Style="{StaticResource Caption}" /><ComboBox x:Name="FaceChoice" SelectedIndex="0"><ComboBoxItem Content="保留原版（可变脸种族）" /><ComboBoxItem Content="固定参数（完整角色身体）" /></ComboBox>
+            <TextBlock Text="年龄（空白保留；18～100）" Style="{StaticResource Caption}" /><TextBox x:Name="AgeText" />
+            <CheckBox x:Name="StripArmor" Content="清除防具，保留武器 / 盾牌 / 坐骑" ToolTip="同时处理战斗与平民装备，适合自带衣服的完整身体" Checked="ArmorChanged" Unchecked="ArmorChanged" />
+            <TextBlock Text="应用范围" Style="{StaticResource Caption}" /><ComboBox x:Name="ScopeChoice" SelectedIndex="0"><ComboBoxItem Content="仅当前兵种" /><ComboBoxItem Content="当前兵种及全部升级分支" /><ComboBoxItem Content="当前文化所有普通士兵" /></ComboBox>
+          </StackPanel>
+          </ScrollViewer>
+        </DockPanel>
+      </Border>
+      <Border Grid.Column="4" Background="White" CornerRadius="8" Padding="18" BorderBrush="#DDE5E9" BorderThickness="1">
+        <DockPanel>
+          <StackPanel DockPanel.Dock="Top">
+            <TextBlock Text="03  装备候选套" Style="{StaticResource Section}" />
+            <CheckBox x:Name="ReplaceEquipment" Content="覆盖战斗装备：将当前装备套用于所选范围" />
+            <TextBlock Text="未勾选时保留各兵种原装备。每槽随机选候选，不保证整套同时选中。" Foreground="#59707D" TextWrapping="Wrap" FontSize="12" Margin="0,0,0,8" />
+            <DockPanel><Button DockPanel.Dock="Right" Content="复制套" Click="AddLoadoutClick" /><Button DockPanel.Dock="Right" Content="删除套" Click="DeleteLoadoutClick" /><ComboBox x:Name="LoadoutChoice" SelectionChanged="LoadoutChanged" Margin="0,0,8,0" /></DockPanel>
+            <TextBlock Text="搜索物品 ID / 英文名（仅原版物品）" Style="{StaticResource Caption}" /><TextBox x:Name="ItemSearch" TextChanged="ItemSearchChanged" Margin="0,0,0,8" />
+          </StackPanel>
+          <ScrollViewer VerticalScrollBarVisibility="Auto"><StackPanel x:Name="SlotPanel" /></ScrollViewer>
+        </DockPanel>
+      </Border>
+    </Grid>
+    <Border Grid.Row="3" Background="White" BorderBrush="#DDE5E9" BorderThickness="0,1,0,0" Padding="22,12">
+      <Grid>
+        <Grid.RowDefinitions><RowDefinition Height="Auto" /><RowDefinition Height="*" /></Grid.RowDefinitions>
+        <DockPanel Margin="0,0,0,10">
+          <StackPanel DockPanel.Dock="Right" Orientation="Horizontal"><Button Content="检查" Click="ValidateClick" /><Button Content="修改对比" Click="PreviewClick" /><Button Content="导出 Mod / ZIP" Click="BuildClick" Background="#087F7B" Foreground="White" BorderThickness="0" /><Button Content="安装最近构建" Click="InstallClick" /></StackPanel>
+          <StackPanel Orientation="Horizontal"><TextBlock Text="模块 ID" VerticalAlignment="Center" Margin="0,0,8,0" /><TextBox x:Name="ModuleIdText" Width="180" Margin="0,0,12,0" /><TextBlock Text="英文名称" VerticalAlignment="Center" Margin="0,0,8,0" /><TextBox x:Name="ModuleNameText" Width="190" Margin="0,0,12,0" /><TextBlock Text="版本" VerticalAlignment="Center" Margin="0,0,8,0" /><TextBox x:Name="VersionText" Width="85" /></StackPanel>
+        </DockPanel>
+        <TabControl Grid.Row="1" BorderBrush="#DDE5E9">
+          <TabItem Header="检查与加载顺序"><TextBox x:Name="OutputText" IsReadOnly="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" BorderThickness="0" FontFamily="Consolas, Microsoft YaHei UI" /></TabItem>
+          <TabItem Header="工程 JSON"><TextBox x:Name="ProjectText" IsReadOnly="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" BorderThickness="0" FontFamily="Consolas" /></TabItem>
+          <TabItem Header="修改对比"><TextBox x:Name="DiffText" IsReadOnly="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" BorderThickness="0" FontFamily="Consolas" /></TabItem>
+        </TabControl>
+      </Grid>
+    </Border>
+    <Border Grid.Row="4" Background="#E7EFF2" Padding="22,6"><TextBlock x:Name="StatusText" Text="就绪 · 扫描种族依赖和原版兵种后开始拼装" FontSize="12" /></Border>
+  </Grid>
+</Window>

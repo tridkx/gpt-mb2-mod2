@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "moduleId": "RaceTroopBuilderDemo",
+  "moduleName": "Race Troop Builder Demo",
+  "version": "v0.1.0",
+  "gameRoot": null,
+  "modRoots": [],
+  "rules": [
+    {
+      "rootIds": ["imperial_recruit"],
+      "raceModule": "YueQingShuRace",
+      "raceId": "yqs_default",
+      "isFemale": true,
+      "age": 25,
+      "faceMode": "fixed",
+      "stripArmor": true
+    }
+  ]
+}
