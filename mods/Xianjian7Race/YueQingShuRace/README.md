@@ -20,14 +20,14 @@
 
 ## 工程与重建
 
-工程位于 `mods/Xianjian7/YueQingShuRace/`。原始输入在 `input/default/`，来自 `D:/dsh-xianjian7/output/月清疏_YueQingShu/01_默认套装_MAJ02_01/`，原文件保留。`source/` 保存打包贴图的 Blend 和 FBX，`tex/` 与它相邻；`tools/` 为月清疏专用脚本和参数，`module/` 为运行模块，`reports/` 为检查与预览，`reports/history/` 为历史记录，`build/` 和 `dist/` 分别为缓存与交付包。
+工程位于 `mods/Xianjian7Race/YueQingShuRace/`。原始输入在 `input/default/`，来自 `D:/dsh-xianjian7/output/月清疏_YueQingShu/01_默认套装_MAJ02_01/`，原文件保留。`source/` 保存打包贴图的 Blend 和 FBX，`tex/` 与它相邻；`tools/` 为月清疏专用脚本和参数，`module/` 为运行模块，`reports/` 为检查与预览，`reports/history/` 为历史记录，`build/` 和 `dist/` 分别为缓存与交付包。
 
 依赖 Blender 5.2、Anaconda Python（NumPy、SciPy、Pillow、lxml、Matplotlib）、.NET 10、mbtool、AssetTool、游戏资源和工作区 `tools/asset_helpers/`、`tools/cloth_compiler/`。脚本向上定位共用工具，不依赖项目目录深度。历史报告保留原路径，不能当作当前操作依据。
 
 从工作区根运行：
 
 ```powershell
-& 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/Xianjian7/YueQingShuRace/tools/rebuild.py
+& 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/Xianjian7Race/YueQingShuRace/tools/rebuild.py
 ./tools/install_release.ps1 -Mod YueQingShuRace -Version v0.3.0 -CheckOnly
 ```
 

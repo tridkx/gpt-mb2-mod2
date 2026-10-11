@@ -5,7 +5,7 @@
 ## 工程布局
 
 ```text
-mods/Xianjian7/<ModId>/
+mods/Xianjian7Race/<ModId>/
   input/                  原始角色输入
   source/                 可编辑 Blend、FBX
   tex/                    与 source/ 相邻的贴图

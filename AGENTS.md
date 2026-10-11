@@ -1,7 +1,7 @@
 # 工作区约定
 
 - 模组工程放在 `mods/<ModId>/`，只能修改任务涉及的模组。模型专用脚本和参数放在该模组的 `tools/`，共用工具放根目录 `tools/`。
-- 系列工程可组织在 `mods/<Series>/<ModId>/`；仙剑7使用 `mods/Xianjian7/<ModId>/`。系列容器不是游戏模块，各角色保留独立 ID、源文件、参数和交付目录；工具向上定位工作区，不依赖固定目录深度。
+- 系列工程可组织在 `mods/<Series>/<ModId>/`；仙剑7使用 `mods/Xianjian7Race/<ModId>/`。系列容器不是游戏模块，各角色保留独立 ID、源文件、参数和交付目录；工具向上定位工作区，不依赖固定目录深度。
 - 骑砍装备技能仅从 `C:/Users/DKX/.codex/skills/bannerlord-equipment-mod/SKILL.md` 读取。不要在工作区创建、复制或维护 `skills/`；仅用户明确要求时修改已安装技能。
 - 已安装技能已适配多模组布局；历史路径参照 `docs/historical-paths.md`。天香预检可自动识别，其他模组通过 `--example-workspace` 指定工程。
 - 保留原始输入、用户改动、旧版交付包和历史 Git 标签。历史报告可保留生成时的旧路径，不当作当前路径使用。

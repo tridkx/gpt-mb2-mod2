@@ -16,7 +16,7 @@ if (-not (Test-Path -LiteralPath (Join-Path $projectRoot 'mod.json') -PathType L
     $projectRoot = [IO.Path]::GetFullPath((Join-Path $workspaceRoot "mods\ResidentEvil\$Mod"))
 }
 if (-not (Test-Path -LiteralPath (Join-Path $projectRoot 'mod.json') -PathType Leaf)) {
-    $projectRoot = [IO.Path]::GetFullPath((Join-Path $workspaceRoot "mods\Xianjian7\$Mod"))
+    $projectRoot = [IO.Path]::GetFullPath((Join-Path $workspaceRoot "mods\Xianjian7Race\$Mod"))
 }
 if (-not $projectRoot.StartsWith($workspaceRoot + '\', [StringComparison]::OrdinalIgnoreCase)) { throw 'Project outside workspace' }
 $config = Get-Content -LiteralPath (Join-Path $projectRoot 'mod.json') -Raw -Encoding UTF8 | ConvertFrom-Json
