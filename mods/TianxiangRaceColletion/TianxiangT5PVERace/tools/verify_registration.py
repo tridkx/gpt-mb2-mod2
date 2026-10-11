@@ -27,6 +27,7 @@ def validate_registration(root):
     for skin, old in zip(skins, native_skins):
         assert (skin.get('gender'), skin.get('mesh_maturity_type')) == (old.get('gender'), old.get('mesh_maturity_type'))
         assert skin.get('skeleton') == cfg['skeleton']
+        assert float(skin.get('min_scale')) == cfg['skin_min_scale']
         assert skin.get('uses_stitching') == 'false'
         assert skin.get('body_meta_mesh') == 'txt5pve_body'
         for attr in ['hands_mesh', 'face_meta_mesh', 'legs_mesh']:

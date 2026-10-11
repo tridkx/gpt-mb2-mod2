@@ -1,6 +1,6 @@
 # Tianxiang T5 PVE Race
 
-天香 T5 成女校服 PVE 完整角色种族，当前版本 `v0.1.0`，适配本机 Bannerlord Native `v1.4.8`。固定保留原模型的脸、头发、身体、双手和白粉配色服装；以自有骨架沿用原生动作，源网格只做厘米到米的统一换算，含头饰总高约 1.654 米。
+天香 T5 成女校服 PVE 完整角色种族，当前版本 `v0.1.1`（两倍缩放参数测试），适配本机 Bannerlord Native `v1.4.8`。固定保留原模型的脸、头发、身体、双手和白粉配色服装；以自有骨架沿用原生动作，源网格只做厘米到米的统一换算，含头饰源尺寸总高约 1.654 米。
 
 ## 使用
 
@@ -20,7 +20,7 @@
 
 ```powershell
 & 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/TianxiangRaceColletion/TianxiangT5PVERace/tools/rebuild.py
-./tools/install_release.ps1 -Mod TianxiangT5PVERace -Version v0.1.0 -CheckOnly
+./tools/install_release.ps1 -Mod TianxiangT5PVERace -Version v0.1.1 -CheckOnly
 ```
 
 重建不自动安装。首次实际安装去掉 `-CheckOnly`；后续发布新版本需更新配置，并通过 `-PreviousVersion` 保留旧交付包。
@@ -31,7 +31,7 @@
 
 本版本裙摆、袖带和头发采用骨骼蒙皮，没有游戏布料物理；极端动作仍可能穿模。固定脸不支持捏脸、表情或手指握持形变，身体滑块不作为支持功能。界面运行组件只修正本种族 UI 预览的骨架创建与重建，沿用人物性别、装备、位置、缩放及动作进度；战场不参与扫描。
 
-当前有用户反馈战场与人物预览偏矮。2026-10-12 已有男性创建角色日志记录自有骨架的实际缩放为 `0.9031746`，源网格含头饰高度乘此倍率约为 1.494 米；这是静态尺寸换算，不是战场站立实测。`skin_min_scale=1.0` 尚未完成游戏成年角色尺寸校准，战场实际 AgentScale 及女性分支仍缺记录。见[身高诊断](reports/height_diagnosis_2026-10-12.json)。
+当前全部 skin 变体设为 `min_scale=2.0`，用于用户检查缩放参数是否生效。模型、绑定骨架、权重、材质及 UI 运行 DLL 保持原交付资源，测试结果尚待游戏确认；该参数不是最终成人身高标定值。完整离线差异证据见发布检查中的 `scale_test`；此前运行倍率分析见[身高诊断](reports/height_diagnosis_2026-10-12.json)，该记录仅适用于 v0.1.0。
 
 游戏启动、人物界面首次显示与重建、队伍／百科／物品栏预览、武器握持、骑乘和战斗表现仍由用户测试。离线检查和 Blender 预览不代表游戏验收通过。
 

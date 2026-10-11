@@ -1,9 +1,9 @@
 {
   "id": "TianxiangT5PVERace",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "race": "txt5pve",
   "skeleton": "txt5pve_skeleton",
-  "skin_min_scale": 1.0,
+  "skin_min_scale": 2.0,
   "cloth_enabled": false,
   "cloth_lods": [],
   "lod_multipliers": [
@@ -154,5 +154,7 @@
       0.038,
       0.978
     ]
-  ]
+  ],
+  "scale_test": true,
+  "scale_baseline_version": "v0.1.0"
 }
