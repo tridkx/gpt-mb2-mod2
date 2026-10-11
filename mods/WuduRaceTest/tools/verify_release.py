@@ -20,7 +20,7 @@ visibility=json.loads(run(['dotnet',str(WS/'tools/AssetTool/AssetTool.dll'),'vis
 run([MB,'skeljson',str(PKG),'wdr_skeleton',str(R/'reports/final_skeleton.json')],R/'reports/skeleton_readback.txt')
 data=json.loads((R/'reports/final_skeleton.json').read_text());rig=parse_skeljson(data)
 native=parse_skeljson(json.loads((R/'reports/human_skeleton.json').read_text()));expected=json.loads((B/'skeleton_spec.json').read_text())
-assert rig['boneCount']==58 and rig['names'][:28]==native['names'] and np.array_equal(rig['parent'][:28],native['parent'])
+assert rig['names']==native['names'] and np.array_equal(rig['parent'],native['parent'])
 assert np.max(abs(np.array([b['rest'] for b in data['bones']])-np.array([b['rest'] for b in expected])))<1e-6
 assert np.linalg.norm(rig['restWorld'][0,:3,3]-[0,0,.75*K])<1e-6
 geometry={g['name']:g for g in json.loads((B/'geometry.json').read_text())};allgroups=[];source=np.load(B/'source_positions.npz');maxerror=0
@@ -33,7 +33,7 @@ for lod in range(4):
     assert len(groups)==14
     for g in groups:
         assert g['lod']==lod and np.isfinite(g['pos']).all() and np.isfinite(g['uv']).all()
-        assert g['bi'].max()<rig['boneCount'] and np.all(g['bw'].astype(int).sum(1)==255)
+        assert g['bi'].max()<28 and np.all(g['bw'].astype(int).sum(1)==255)
         assert g['idx'].min()>=0 and g['idx'].max()<len(g['pos'])
         rec=geometry[g['name']];buf=Path(rec['geometry']).read_bytes();_,count,indices=struct.unpack_from('<iii',buf);offset=12
         p=np.frombuffer(buf,'<f4',count*3,offset).reshape(-1,3);offset+=count*(3+3+4+2+2)*4+count*4
@@ -86,8 +86,8 @@ animation=parse_animjson(json.loads((R/'reports/run.json').read_text()));assert 
 selected=[g for g in allgroups if g['lod']==0 and g['name'].startswith('wdr_part_')];preview={};inverse=np.linalg.inv(rig['restWorld'])
 for frame in range(animation['start'],animation['frames']):
     world=np.zeros_like(inverse)
-    for i in range(rig['boneCount']):
-        local=rig['restLocal'][i].copy();local[:3,:3]=q2R(animation['quat'][i,frame]) if i<28 else local[:3,:3];parent=rig['parent'][i]
+    for i in range(28):
+        local=rig['restLocal'][i].copy();local[:3,:3]=q2R(animation['quat'][i,frame]);parent=rig['parent'][i]
         if parent<0:local[:3,3]+=animation['rootPos'][frame]
         world[i]=local if parent<0 else world[parent]@local
     for g in selected:
@@ -95,10 +95,8 @@ for frame in range(animation['start'],animation['frames']):
         if frame==animation['start']:preview[g['name']]=points
 np.savez_compressed(B/'run_preview.npz',**preview)
 game_files=[GAME/'Modules/Native/ModuleData/skins.xml',GAME/'Modules/Native/ModuleData/monsters.xml',GAME/'Modules/Native/ModuleData/action_sets.xml',GAME/'Modules/SandBoxCore/ModuleData/spnpccharacters.xml']
-report=dict(status='pass',version='v0.2.0',scope='offline structure/source fidelity/XML replacement; game appearance is pending',final_package_sha256=sha(PKG),runtime_dll_sha256=sha(M/'bin/Win64_Shipping_Client/WuduRaceTest.dll'),source_vertex_max_error_m=maxerror,source_height_m=json.loads((R/'reports/source_validation.json').read_text())['total_height_m'],custom_skeleton_bones=58,metameshes=2,mesh_groups=56,lods=4,lod_geometry_identical=False,cloth_enabled=True,intrinsic_armor_added=False,autoresolve_modified=False,other_troops_unchanged=len(before),predicted_run_frames=animation['frames']-animation['start'],game_verified=False,proportions_in_game_verified=False,native_file_hashes={str(p):sha(p) for p in game_files},known_limits=['fixed source face','cloth engine dynamics pending','native animation retargeting and IK unverified','no equipment armor','only imperial_recruit is replaced'])
+report=dict(status='pass',version='v0.2.0',scope='offline structure/source fidelity/XML replacement; game appearance is pending',final_package_sha256=sha(PKG),runtime_dll_sha256=sha(M/'bin/Win64_Shipping_Client/WuduRaceTest.dll'),source_vertex_max_error_m=maxerror,source_height_m=json.loads((R/'reports/source_validation.json').read_text())['total_height_m'],custom_skeleton_bones=28,metameshes=2,mesh_groups=56,lods=4,lod_geometry_identical=False,cloth_enabled=True,intrinsic_armor_added=False,autoresolve_modified=False,other_troops_unchanged=len(before),predicted_run_frames=animation['frames']-animation['start'],game_verified=False,proportions_in_game_verified=False,native_file_hashes={str(p):sha(p) for p in game_files},known_limits=['fixed source face','cloth engine dynamics pending','native animation retargeting and IK unverified','no equipment armor','only imperial_recruit is replaced'])
 report.update(version=cfg['version'],metameshes=2 if integrated else 3,baseline_version='v0.2.0',baseline_package_sha256='8698b3bd6a8767adb4aada6083a7c92e01ce1ff20511a6e624adc879faebb244',baseline_user_verified=['version usable','height at native adult chest'],height_target_in_game_m=1.45,height_parameters_unchanged=True,hand_render_mode=cfg.get('hands_render_mode','independent'),hand_morph_channels=0 if integrated else 26,source_hand_shape_channels=26,cloth_validation_report='cloth_validation.json',hand_validation_report='hand_validation.json')
 report.update(input_snapshot_hashes_verified=True,upstream_changes_since_snapshot=upstream_changes)
-report.update(finger_joints=30,finger_driver='singleplayer mission pre-display; wielded weapon grip',finger_validation_report='finger_validation.json',finger_game_verified=False)
-report['known_limits'].extend(['finger update order and weapon contact unverified in game','UI previews have no finger driver','inventory and facegen arms-behind-body issue remains unresolved'])
 (R/'reports/release_validation.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps(report,indent=2))

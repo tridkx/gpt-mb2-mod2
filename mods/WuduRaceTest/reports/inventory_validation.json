@@ -1,6 +1,14 @@
 {
   "status": "pass",
-  "version": "v0.2.7",
+  "version": "v0.2.6",
+  "user_game_result": {
+    "date": "2026-10-10",
+    "acceptance": "failed",
+    "affected_scenes": ["inventory preview", "character editing"],
+    "symptom": "both hands remain behind the back",
+    "state": "unresolved; deferred at user request",
+    "record": "preview_stance_v0.2.6.md"
+  },
   "scope": "Final skeleton skinning for inventory and native male/female facegen references; selected facegen idle uses inventory_idle. No engine channel blending, cloth or IK simulation",
   "poses": [
     {

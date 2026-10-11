@@ -1,7 +1,7 @@
 {
   "status": "pass",
-  "version": "v0.2.7",
-  "final_package_sha256": "b5541b922a5c7652a31186548515fc7d1de196f900646cc074e0d5cd67763664",
+  "version": "v0.2.6",
+  "final_package_sha256": "b76b79aa1117b0711d83c52c394254e6641cd432d540fa233d74c0531219e2b9",
   "baseline_source_and_height_unchanged": true,
   "meshes": [
     {
@@ -10,8 +10,8 @@
       "channels": 0,
       "source_shape_channels": 26,
       "mixed_wrist_vertices": {
-        "-1": 66,
-        "1": 66
+        "-1": 67,
+        "1": 67
       },
       "pinned_root_vertices": 90,
       "max_displacement_m": 0.06891259477492748,
@@ -131,7 +131,7 @@
     }
   ],
   "hand_engine_verified": false,
-  "scope": "Final body includes all four hand LODs with no runtime morph frames; source-only 26 shapes retained and checked; additional finger bone weights are checked by finger_validation.json; visibility, skeletal driver and wrist effects require user game testing",
+  "scope": "Final body includes all four hand LODs with no runtime morph frames; source-only 26 shapes retained and checked; visibility and wrist effects require user game testing",
   "render_mode": "body",
   "engine_morph_channels": 0,
   "source_shape_channels": 26

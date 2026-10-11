@@ -1,12 +1,12 @@
 {
   "status": "pass",
-  "version": "v0.2.7",
-  "scope": "offline structure/source fidelity/XML replacement; game appearance is pending",
-  "final_package_sha256": "b5541b922a5c7652a31186548515fc7d1de196f900646cc074e0d5cd67763664",
-  "runtime_dll_sha256": "c01a0d3fc30d8668a944f722fbfeec5af164161d4eb3391abaff594b08fd79be",
+  "version": "v0.2.6",
+  "scope": "offline structure/source fidelity/XML replacement passed; user confirmed preview stance remains incorrect in inventory and character editing",
+  "final_package_sha256": "b76b79aa1117b0711d83c52c394254e6641cd432d540fa233d74c0531219e2b9",
+  "runtime_dll_sha256": "50599bd5d904fc479213e23861d3ca4c9ee08befd5919a8faa6ff10834ab27b0",
   "source_vertex_max_error_m": 5.972363618217064e-08,
   "source_height_m": 1.45,
-  "custom_skeleton_bones": 58,
+  "custom_skeleton_bones": 28,
   "metameshes": 2,
   "mesh_groups": 56,
   "lods": 4,
@@ -17,6 +17,16 @@
   "other_troops_unchanged": 547,
   "predicted_run_frames": 25,
   "game_verified": false,
+  "user_preview_stance_acceptance": {
+    "date": "2026-10-10",
+    "version": "v0.2.6",
+    "result": "failed",
+    "inventory_preview": "both hands remain behind the back",
+    "character_editing": "both hands remain behind the back",
+    "root_cause": "unconfirmed",
+    "work_state": "deferred at user request",
+    "record": "preview_stance_v0.2.6.md"
+  },
   "proportions_in_game_verified": false,
   "native_file_hashes": {
     "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\Native\\ModuleData\\skins.xml": "01b85bbe41f4898d93f7d1ff7ad78bf78ced662ba5fea3098ed4ef054ad9b03c",
@@ -25,14 +35,12 @@
     "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\SandBoxCore\\ModuleData\\spnpccharacters.xml": "d6023b03f0c80c3591d900a15a035698a8ee79156fa692cf21980a928e886290"
   },
   "known_limits": [
+    "user confirmed both inventory and character editing preview idle keep hands behind the back; unresolved",
     "fixed source face",
     "cloth engine dynamics pending",
     "native animation retargeting and IK unverified",
     "no equipment armor",
-    "only imperial_recruit is replaced",
-    "finger update order and weapon contact unverified in game",
-    "UI previews have no finger driver",
-    "inventory and facegen arms-behind-body issue remains unresolved"
+    "only imperial_recruit is replaced"
   ],
   "baseline_version": "v0.2.0",
   "baseline_package_sha256": "8698b3bd6a8767adb4aada6083a7c92e01ce1ff20511a6e624adc879faebb244",
@@ -52,7 +60,7 @@
     {
       "snapshot": "input\\model.fbx",
       "snapshot_sha256": "5e8b435306ece6e8214f9b8b4074db47664464d97bf211a35a19e644cb97a0c2",
-      "current_upstream_sha256": "e8a7a08604df4142bf885c5890f70f2068717f282c96505aafa5f00b7390797e"
+      "current_upstream_sha256": "c0c2f119937ea49a74e099a205d9e4795803179f05c76a0503bc6ab582d33c48"
     },
     {
       "snapshot": "input\\model.mtl",
@@ -62,7 +70,7 @@
     {
       "snapshot": "input\\model.obj",
       "snapshot_sha256": "28383c330e8e7c051ab61f636dfe65bfe08d7125cc2e9fde2013feaa2b75932c",
-      "current_upstream_sha256": "5a0ed7760cb5475c27dd9ed23db4981ef89a6f206d452be7cc2e83b7e6328cc7"
+      "current_upstream_sha256": "363970adf507991e151cc275c82f4fb5be874f1f2f15aa2f6f14ad965362f02a"
     },
     {
       "snapshot": "input\\parts.json",
@@ -77,11 +85,7 @@
     {
       "snapshot": "input\\repair_report.json",
       "snapshot_sha256": "2d6ddee7f1ae76e949c92603b0d11dd316d2edbda7d79218fd2798189d0026f7",
-      "current_upstream_sha256": "fbbf206578e4ea61832906e1fc49272147f8ae6aa2c68baff8f9ee16c15cb1a4"
+      "current_upstream_sha256": "8cb72a166c1c32ddb7046ceccb799a44448316ca885efc66c7639c5f16c1f038"
     }
-  ],
-  "finger_joints": 30,
-  "finger_driver": "singleplayer mission pre-display; wielded weapon grip",
-  "finger_validation_report": "finger_validation.json",
-  "finger_game_verified": false
+  ]
 }

@@ -52,8 +52,8 @@ for label,anim,frames in poses:
     for frame in frames:
         world=rig['restWorld'].copy()
         if anim is not None:
-            for i in range(rig['boneCount']):
-                local=rig['restLocal'][i].copy();local[:3,:3]=q2R(anim['quat'][i,frame]) if i<28 else local[:3,:3];parent=rig['parent'][i]
+            for i in range(28):
+                local=rig['restLocal'][i].copy();local[:3,:3]=q2R(anim['quat'][i,frame]);parent=rig['parent'][i]
                 if parent<0:local[:3,3]+=anim['rootPos'][frame]
                 world[i]=local if parent<0 else world[parent]@local
         skin=world@inverse
@@ -77,8 +77,8 @@ for label,anim,frames in poses:
     worst_frame=max(worst.values(),key=lambda item:(item['shortfall_m'],item['overlap_m']))['frame']
     world=rig['restWorld'].copy()
     if anim is not None:
-        for i in range(rig['boneCount']):
-            local=rig['restLocal'][i].copy();local[:3,:3]=q2R(anim['quat'][i,worst_frame]) if i<28 else local[:3,:3];parent=rig['parent'][i]
+        for i in range(28):
+            local=rig['restLocal'][i].copy();local[:3,:3]=q2R(anim['quat'][i,worst_frame]);parent=rig['parent'][i]
             if parent<0:local[:3,3]+=anim['rootPos'][worst_frame]
             world[i]=local if parent<0 else world[parent]@local
     np.savez_compressed(B/(label+'_worst_preview.npz'),**{g['name']:lbs(g['pos'],g['bi'],g['bw'],world@inverse) for g in render_groups})
