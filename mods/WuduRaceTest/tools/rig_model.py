@@ -4,6 +4,8 @@ import numpy as np
 from pathlib import Path
 from mathutils import Matrix
 R=Path(__file__).resolve().parents[1];WS=R.parents[1]
+sys.path.insert(0,str(R/'tools'))
+from finger_rig import extend, skin_weights
 sys.path.insert(0,str(WS/'tools/asset_helpers/previewer'))
 from baker.skeleton import parse_skeljson
 data=json.loads((R/'reports/human_skeleton.json').read_text())
@@ -25,7 +27,15 @@ for i,b in enumerate(data['bones']):
     raw=np.array(b['rest']).reshape(4,4).T
     raw[:3,:3]=local[i,:3,:3];raw[:3,3]=local[i,:3,3]
     bones.append(dict(name=b['name'],parent=b['parent'],rest=raw.T.reshape(-1).tolist()))
+world, extended_parents, extended_names, finger_rows, finger_segments = extend(world, native['parent'], native['names'])
+names=[name+'_'+str(i) for i,name in enumerate(extended_names)]
+for i in range(28, len(world)):
+    parent=int(extended_parents[i]); raw=np.array(data['bones'][26]['rest']).reshape(4,4).T.copy()
+    frame=np.linalg.inv(world[parent])@world[i]
+    raw[:3,:3]=frame[:3,:3];raw[:3,3]=frame[:3,3]
+    bones.append(dict(name=extended_names[i],parent=parent,rest=raw.T.reshape(-1).tolist()))
 (R/'build/skeleton_spec.json').write_text(json.dumps(bones,indent=2))
+(R/'reports/finger_rig_layout.json').write_text(json.dumps(dict(version=cfg['version'],bones=58,added_joints=finger_rows,game_verified=False),indent=2))
 nextbone={0:9,1:2,2:3,3:4,5:6,6:7,7:8,9:10,10:11,11:12,12:13,14:15,15:17,16:17,17:19,18:19,19:20,21:22,22:24,23:24,24:26,25:26,26:27}
 def smooth(a,b,x):
     t=np.clip((x-a)/(b-a),0,1);return t*t*(3-2*t)
@@ -72,6 +82,7 @@ for row in parts:
     ob.matrix_world=Matrix.Identity(4)
     head=row['tex'] in ['eye_D','face_D','eyelash_D','hair_D','head_D']
     w=weights(p/K,head,allow_arms=row['name'] in ['mesh_02_153203','mesh_07_535767','mesh_09_689493'],hands=row['name']=='mesh_04_281363')
+    w=skin_weights(p,w,finger_segments) if row['name']=='mesh_04_281363' else np.pad(w,((0,0),(0,30)))
     if len(manifest)==8:w[:]=0;w[:,0]=1
     for i,name in enumerate(names):
         group=ob.vertex_groups.new(name=name)
@@ -136,13 +147,16 @@ for image in bpy.data.images:
 bpy.ops.object.armature_add();arm=bpy.context.object;arm.name='wdr_skeleton'
 bpy.ops.object.mode_set(mode='EDIT');arm.data.edit_bones.remove(arm.data.edit_bones[0])
 for i,name in enumerate(names):
-    b=arm.data.edit_bones.new(name);b.matrix=Matrix(world[i].tolist());b.length=.025
+    b=arm.data.edit_bones.new(name);b.length=.025;b.matrix=Matrix(world[i].tolist())
 for i,name in enumerate(names):
-    if native['parent'][i]>=0:arm.data.edit_bones[name].parent=arm.data.edit_bones[names[native['parent'][i]]]
+    if extended_parents[i]>=0:arm.data.edit_bones[name].parent=arm.data.edit_bones[names[extended_parents[i]]]
+    if i>=28:
+        arm.data.edit_bones[name].length=float(np.linalg.norm(np.array(finger_rows[i-28]['tail'])-world[i,:3,3]))
 bpy.ops.object.mode_set(mode='OBJECT')
 for row in manifest:
     ob=bpy.data.objects[row['object']];mod=ob.modifiers.new('Race binding','ARMATURE');mod.object=arm;ob.parent=arm
-allp=np.concatenate(list(arrays.values()));report=dict(unit_scale=U,uniform_orientation=cfg['orientation'],source_geometry_max_error_m=maxerr,total_height_m=float(np.ptp(allp[:,2])),vertices=len(allp),source_proportions_preserved=True,custom_skeleton=True,engine_verified=False,cloth_enabled=True)
+arm['finger_controls']='Rotate local X on l/r_thumb/index/middle/ring/little_1/2/3; positive closes the hand. Game driver: FingerController.'
+allp=np.concatenate(list(arrays.values()));report=dict(unit_scale=U,uniform_orientation=cfg['orientation'],source_geometry_max_error_m=maxerr,total_height_m=float(np.ptp(allp[:,2])),vertices=len(allp),source_proportions_preserved=True,custom_skeleton=True,bones=58,finger_joints=30,engine_verified=False,cloth_enabled=True)
 (R/'build/rig_manifest.json').write_text(json.dumps(manifest,indent=2));np.savez_compressed(R/'build/source_positions.npz',**arrays)
 (R/'reports/source_validation.json').write_text(json.dumps(report,indent=2))
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'source/WuduCanglan_Rigged.blend'))

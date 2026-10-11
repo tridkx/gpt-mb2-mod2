@@ -1,19 +1,49 @@
 {
-  "version": "v0.2.6",
-  "hair_root_band_m": [1.16, 1.20],
+  "version": "v0.2.7",
+  "hair_root_band_m": [
+    1.16,
+    1.2
+  ],
   "head_cloth_capsule": {
-    "a_m": [0, -0.025, 1.21],
-    "b_m": [0, -0.025, 1.265],
+    "a_m": [
+      0,
+      -0.025,
+      1.21
+    ],
+    "b_m": [
+      0,
+      -0.025,
+      1.265
+    ],
     "radius_m": 0.061
   },
-  "alpha_blend_materials": ["wdr_mat_eyelash_D"],
-  "uv_flip_v_parts": ["wdr_part_06"],
+  "alpha_blend_materials": [
+    "wdr_mat_eyelash_D"
+  ],
+  "uv_flip_v_parts": [
+    "wdr_part_06"
+  ],
   "hands_render_mode": "body",
   "hand_rig": {
-    "wrist_cm": [37.0, 2.5, 81.1],
-    "wrist_blend_m": [-0.025, 0.018],
-    "native_local_scale": [0.47, 0.50, 0.53],
-    "native_local_offset_m": [0.0, 0.013, 0.025]
+    "wrist_cm": [
+      37.0,
+      2.5,
+      81.1
+    ],
+    "wrist_blend_m": [
+      -0.025,
+      0.018
+    ],
+    "native_local_scale": [
+      0.47,
+      0.5,
+      0.53
+    ],
+    "native_local_offset_m": [
+      0.0,
+      0.013,
+      0.025
+    ]
   },
   "target_mesh_height_m": 1.45,
   "original_height_cm": 136.85309748575673,
@@ -47,5 +77,6 @@
     "sleeve": 0.03,
     "skirt": 0.14,
     "hair": 0.03
-  }
+  },
+  "finger_bones": 30
 }

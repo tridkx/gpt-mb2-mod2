@@ -49,7 +49,7 @@ source=np.load(B/'source_positions.npz');baseline=B/'hand_baseline_v0.2.0';basel
 if (baseline/'source_positions.npz').exists():
     old=np.load(baseline/'source_positions.npz');assert set(source.files)==set(old.files)
     assert all(np.array_equal(source[k],old[k]) for k in source.files)
-    old_rig=parse_skeljson(json.loads((baseline/'final_skeleton.json').read_text()));assert rig['names']==old_rig['names']
+    old_rig=parse_skeljson(json.loads((baseline/'final_skeleton.json').read_text()));assert rig['names'][:28]==old_rig['names']
     allowed={18,19,25,26};assert np.max(abs(rig['restWorld'][[i for i in range(28) if i not in allowed]]-old_rig['restWorld'][[i for i in range(28) if i not in allowed]]))<1e-6
     baseline_checked=True
 pose_rows=[];mesh=next(m for m in data if m['Lod']==0);p=np.array(mesh['positions']);bi=np.array(mesh['bones']);bw=np.array(mesh['weights']);inverse=np.linalg.inv(rig['restWorld'])
@@ -58,8 +58,8 @@ for label in ['run','idle','sword','bow','rider']:
     worst_angle=-1;worst_frame=frames[0]
     for frame in frames:
         world=rig['restWorld'].copy()
-        for i in range(28):
-            local=rig['restLocal'][i].copy();local[:3,:3]=q2R(anim['quat'][i,frame]);parent=rig['parent'][i]
+        for i in range(rig['boneCount']):
+            local=rig['restLocal'][i].copy();local[:3,:3]=q2R(anim['quat'][i,frame]) if i<28 else local[:3,:3];parent=rig['parent'][i]
             if parent<0:local[:3,3]+=anim['rootPos'][frame]
             world[i]=local if parent<0 else world[parent]@local
         for shape in [0,13,25]:
@@ -69,5 +69,5 @@ for label in ['run','idle','sword','bow','rider']:
     pose_rows.append(dict(animation=label,frames=len(frames),hand_shapes_checked=[0,13,25],max_right_wrist_local_angle_deg=float(np.degrees(worst_angle)),preview_frame=int(worst_frame)))
 report=dict(status='pass',version=cfg['version'],final_package_sha256=hashlib.sha256(pkg.read_bytes()).hexdigest(),baseline_source_and_height_unchanged=baseline_checked,meshes=rows,native_animation_samples=pose_rows,hand_engine_verified=False,scope='Final hand slot/morph payload, wrist weights, source fidelity and sampled native-animation deformation; engine hand-pose selection and weapon contact require game testing')
 report.update(render_mode='body' if integrated else 'independent',engine_morph_channels=0 if integrated else 26,source_shape_channels=26)
-if integrated:report['scope']='Final body includes all four hand LODs with no runtime morph frames; source-only 26 shapes retained and checked; visibility and wrist effects require user game testing'
+if integrated:report['scope']='Final body includes all four hand LODs with no runtime morph frames; source-only 26 shapes retained and checked; additional finger bone weights are checked by finger_validation.json; visibility, skeletal driver and wrist effects require user game testing'
 (R/'reports/hand_validation.json').write_text(json.dumps(report,indent=2));print('FINAL_HANDS_VERIFIED',rows)

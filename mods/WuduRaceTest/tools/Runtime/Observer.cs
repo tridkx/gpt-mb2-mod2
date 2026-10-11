@@ -12,12 +12,12 @@ namespace WuduRaceTest {
             try {
                 string dir=Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),"Mount and Blade II Bannerlord","WuduRaceTest");
                 Directory.CreateDirectory(dir);
-                File.AppendAllText(Path.Combine(dir,"probe_v0.2.6.log"),DateTime.Now.ToString("s")+" "+message+Environment.NewLine);
+                File.AppendAllText(Path.Combine(dir,"probe_v0.2.7.log"),DateTime.Now.ToString("s")+" "+message+Environment.NewLine);
             } catch(Exception) { /* Diagnostics must not interrupt the game. */ }
         }
         public override void OnGameInitializationFinished(Game game) {
             try {
-                Log("BEGIN v0.2.6 races="+string.Join(",",TaleWorlds.Core.FaceGen.GetRaceNames()));
+                Log("BEGIN v0.2.7 races="+string.Join(",",TaleWorlds.Core.FaceGen.GetRaceNames()));
                 foreach(string name in new[]{"as_wdr_canglan_warrior","as_wdr_canglan_female_warrior","as_wdr_canglan_facegen","as_wdr_canglan_female_facegen"})
                     Log("PREVIEW_ACTION_SET name="+name+" valid="+MBActionSet.GetActionSet(name).IsValid);
                 var hands=TaleWorlds.Engine.MetaMesh.GetCopy("wdr_canglan_body",true,true);
@@ -31,7 +31,7 @@ namespace WuduRaceTest {
             } catch(Exception e) { Log("INIT_ERROR "+e); }
         }
         public override void OnMissionBehaviorInitialize(Mission mission) {
-            if(!GameNetwork.IsMultiplayer)mission.AddMissionBehavior(new Observer());
+            if(!GameNetwork.IsMultiplayer) {mission.AddMissionBehavior(new Observer());mission.AddMissionBehavior(new FingerController());}
         }
     }
     public sealed class Observer : MissionBehavior {

@@ -14,8 +14,8 @@ for label in ['inventory_idle','facegen_male','facegen_female']:
     anim=parse_animjson(json.loads((R/'reports'/(label+'.json')).read_text()));samples=[]
     for frame in sorted(set(np.linspace(anim['start'],anim['frames']-1,24).astype(int))):
         world=rig['restWorld'].copy()
-        for i in range(28):
-            local=rig['restLocal'][i].copy();local[:3,:3]=q2R(anim['quat'][i,frame]);parent=rig['parent'][i]
+        for i in range(rig['boneCount']):
+            local=rig['restLocal'][i].copy();local[:3,:3]=q2R(anim['quat'][i,frame]) if i<28 else local[:3,:3];parent=rig['parent'][i]
             if parent<0:local[:3,3]+=anim['rootPos'][frame]
             world[i]=local if parent<0 else world[parent]@local
         skin=world@inverse

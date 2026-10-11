@@ -19,8 +19,8 @@ for label in ['sword','bow']:
     if old_export.exists():targets.append(('before',old_export,baseline/'final_skeleton.json'))
     for version,folder,skeleton in targets:
         rig=parse_skeljson(json.loads(skeleton.read_text()));world=rig['restWorld'].copy()
-        for i in range(28):
-            local=rig['restLocal'][i].copy();local[:3,:3]=q2R(animation['quat'][i,frame]);parent=rig['parent'][i]
+        for i in range(rig['boneCount']):
+            local=rig['restLocal'][i].copy();local[:3,:3]=q2R(animation['quat'][i,frame]) if i<28 else local[:3,:3];parent=rig['parent'][i]
             if parent<0:local[:3,3]+=animation['rootPos'][frame]
             world[i]=local if parent<0 else world[parent]@local
         skin=world@np.linalg.inv(rig['restWorld'])
