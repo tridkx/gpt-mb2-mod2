@@ -760,6 +760,14 @@
     "accepted_geometry_bind_rig_weights_materials_sources_unchanged": true,
     "compiled_runtime": true,
     "repair_scope": "Ada AgentVisuals reachable only from non-mission UI",
-    "runtime_after_repair_verified": false
-  }
+    "runtime_after_repair_verified": true,
+    "captured_skeleton_phase": "before repair",
+    "after_repair_capture": "reports/ui_runtime_capture_after.json",
+    "after_repair_screen": "SandBox.View.CharacterCreation.CharacterCreationScreen",
+    "after_repair_skeleton": "adar_skeleton",
+    "after_repair_action_set": "as_reada_wong_facegen",
+    "after_repair_action_set_skeleton": "adar_skeleton",
+    "user_acceptance": "reports/game_acceptance.json"
+  },
+  "user_acceptance": "reports/game_acceptance.json"
 }
