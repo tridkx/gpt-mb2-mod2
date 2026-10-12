@@ -1,10 +1,10 @@
 {
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "status": "pass",
   "check_scope": "offline_structural_and_native_motion_checks",
   "final_package_sha256": "b1fea7b2981eaa46c3384144a7d13376c47deb084fae122b68b1b17d8932e243",
-  "baseline_package_sha256": null,
-  "baseline_reason": "First release; input hashes provide geometry baseline",
+  "baseline_package_sha256": "b1fea7b2981eaa46c3384144a7d13376c47deb084fae122b68b1b17d8932e243",
+  "baseline_reason": "UI-only repair; final TPAC/source/cloth/collision compared byte-for-byte with published v0.1.0",
   "registration": {
     "status": "pass",
     "race": "txgirl1",
@@ -585,7 +585,8 @@
     "Original fixed appearance; skirt physics is authored for LOD0/1, LOD2/3 and hair/sleeves remain skeletal. Engine solver remains untested.",
     "Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.",
     "No facial animation or face/body customization support.",
-    "Unsimulated native-animation previews show reference leg/skirt intersections; authored cloth payload and capsule/travel screening do not certify dynamic collision."
+    "Unsimulated native-animation previews show reference leg/skirt intersections; authored cloth payload and capsule/travel screening do not certify dynamic collision.",
+    "v0.1.0 user reports crash returning from inventory to campaign map; v0.1.1 preview-owner restriction awaits game retest."
   ],
   "integrated_hands_all_lods": true,
   "cloth_enabled": true,
@@ -741,7 +742,7 @@
   },
   "ui_runtime": {
     "status": "compiled_and_offline_scope_checked",
-    "assembly_sha256": "20d3c659f5dc09a8ddc8602f1ec93c454da461023666dcf8901048b0e79eeb56",
+    "assembly_sha256": "6a9b103c1d4aa85a4da22a127232306b65de7bad77223a03ac53e4597932c2ff",
     "target_race": "txgirl1",
     "target_skeleton": "txgirl1_skeleton",
     "game_verified": false
@@ -920,7 +921,7 @@
     "scope": "Final payload structure and sampled native-animation capsule/travel screening; overlaps are skinning-reference measurements before the engine cloth solver"
   },
   "module_file_sha256": {
-    "SubModule.xml": "ba985f5fc90abbcfd7fb548446f1ef168f972951a5a92b5eeef3f2721286b802",
+    "SubModule.xml": "5abd06b38d9854f112867752000cec3cf288d4c4308cee8a5eaf5c912ac954d2",
     "AssetPackages/txgirl1.tpac": "b1fea7b2981eaa46c3384144a7d13376c47deb084fae122b68b1b17d8932e243",
     "ModuleData/action_sets.xml": "e37255e27324bf9e21a5e6852d73da00380444ff50a8eaed08fcf461568448bd",
     "ModuleData/cloth_bodies.xml": "e671f0c77094c763a81e67dfa3657d488188d24c3b68123ac8d9c4cb6d97b930",
@@ -928,6 +929,44 @@
     "ModuleData/project.mbproj": "964d68121f49ed596aa7a9afe1c998e867659f17631c1aeb7f96a9ec4f0971c6",
     "ModuleData/skins.xml": "71369840d118057e5a30c8be75e3aeca11c5e3d21119621204d7bc412099ea4a",
     "ModuleData/test_troop.xml": "63b42319eefd52c386e22873177030b8d792626e456dee9e6378f2dc1ae86d7c",
-    "bin/Win64_Shipping_Client/TianxiangGirlT1Race.UIRuntime.dll": "20d3c659f5dc09a8ddc8602f1ec93c454da461023666dcf8901048b0e79eeb56"
+    "bin/Win64_Shipping_Client/TianxiangGirlT1Race.UIRuntime.dll": "6a9b103c1d4aa85a4da22a127232306b65de7bad77223a03ac53e4597932c2ff"
+  },
+  "ui_scope_unchanged_resource_files": [
+    "module/TianxiangGirlT1Race/AssetPackages/txgirl1.tpac",
+    "module/TianxiangGirlT1Race/ModuleData/action_sets.xml",
+    "module/TianxiangGirlT1Race/ModuleData/cloth_bodies.xml",
+    "module/TianxiangGirlT1Race/ModuleData/monsters.xml",
+    "module/TianxiangGirlT1Race/ModuleData/project.mbproj",
+    "module/TianxiangGirlT1Race/ModuleData/skins.xml",
+    "module/TianxiangGirlT1Race/ModuleData/test_troop.xml",
+    "source/TianxiangGirlT1Race_Rigged.blend",
+    "source/TianxiangGirlT1Race_Rigged.fbx",
+    "tex/body_D.png",
+    "tex/cuff_D.png",
+    "tex/eyelash_D.png",
+    "tex/eye_D.png",
+    "tex/face_D.png",
+    "tex/hair_D.png",
+    "tex/head_D.png",
+    "tex/materials.json",
+    "tex/pants_D.png",
+    "tex/tunic_D.png"
+  ],
+  "ui_scope_validation": {
+    "status": "pass",
+    "cases": {
+      "SandBox.View.Map.MapScreen._mainPartyVisual": false,
+      "SandBox.View.Map.PartyVisual._humanAgentVisuals": false,
+      "SandBox.View.Map.MapConversationTableau._agentVisuals": false,
+      "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableau._agentVisuals": true,
+      "TaleWorlds.MountAndBlade.View.Tableaus.BasicCharacterTableau._agentVisuals": true,
+      "TaleWorlds.MountAndBlade.GauntletUI.BodyGenerator.BodyGeneratorView._visualToShow": true,
+      "Unknown.CharacterTableau._agentVisuals": false,
+      "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableauFake._agentVisuals": false
+    },
+    "null_owner_allowed": false,
+    "source_sha256": "9f0c5a97b8ea67d874fd160a09a3ecf88a20e05022bf9a922f87143262cb9801",
+    "assembly_sha256": "6a9b103c1d4aa85a4da22a127232306b65de7bad77223a03ac53e4597932c2ff",
+    "game_verified": false
   }
 }

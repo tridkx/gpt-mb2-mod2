@@ -31,6 +31,8 @@ assert all(token in runtime for token in ['races[data.RaceData]!="txgirl1"','old
 report.update(source_validation=source,ui_runtime={'status':'compiled_and_offline_scope_checked','assembly_sha256':sha(dll),'target_race':'txgirl1','target_skeleton':'txgirl1_skeleton','game_verified':False})
 cloth=json.loads((R/'reports/cloth_validation.json').read_text());assert cloth['status']=='pass' and cloth['final_package_sha256']==sha(package)
 report['cloth_validation']=cloth
+ui_scope=json.loads((R/'reports/ui_scope_validation.json').read_text());assert ui_scope['status']=='pass' and ui_scope['assembly_sha256']==sha(dll)
+report['ui_scope_validation']=ui_scope
 report['module_file_sha256']={p.relative_to(R/'module/TianxiangGirlT1Race').as_posix():sha(p) for p in (R/'module/TianxiangGirlT1Race').rglob('*') if p.is_file()}
 (R/'reports/release_validation.json').write_text(json.dumps(report,indent=2))
 files=[p.relative_to(R).as_posix() for directory in ['input','source','tools','reports'] for p in (R/directory).rglob('*') if p.is_file() and not any(x in p.parts for x in ['obj','bin','__pycache__']) and p.suffix not in ['.pyc','.log','.blend1']]

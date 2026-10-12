@@ -82,7 +82,13 @@ namespace TianxiangGirlT1Race.UIRuntime {
                              Dictionary<AgentVisuals,string> owners, string owner) {
             if (obj == null || depth > 5 || seen.Count > 8000 || !seen.Add(obj)) return;
             var visual=obj as AgentVisuals;
-            if (visual != null) { visuals.Add(visual); owners[visual]=owner; return; }
+            if (visual != null) {
+                // MapScreen also owns live campaign AgentVisuals. Never refresh
+                // those as UI previews: their weapons/native entities belong to
+                // the map lifecycle, which differs from a tableau scene.
+                if (IsPreviewOwner(owner)) { visuals.Add(visual); owners[visual]=owner; }
+                return;
+            }
             var type=obj.GetType();
             if (type.IsValueType || obj is string || obj is Delegate || obj is NativeObject) return;
             // Traverse UI-owned fields only, never the campaign/world object graph.
@@ -109,7 +115,14 @@ namespace TianxiangGirlT1Race.UIRuntime {
             }
         }
 
+        internal static bool IsPreviewOwner(string owner) {
+            return owner != null && (owner.StartsWith("TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableau.",StringComparison.Ordinal) ||
+                owner.StartsWith("TaleWorlds.MountAndBlade.View.Tableaus.BasicCharacterTableau.",StringComparison.Ordinal) ||
+                owner.StartsWith("TaleWorlds.MountAndBlade.GauntletUI.BodyGenerator.BodyGeneratorView.",StringComparison.Ordinal));
+        }
+
         private void CorrectPreview(AgentVisuals visual, string owner, string screen) {
+            if (!IsPreviewOwner(owner)) return;
             try {
                 var data=visual.GetCopyAgentVisualsData();
                 var races=TaleWorlds.Core.FaceGen.GetRaceNames().ToArray();
@@ -214,7 +227,7 @@ namespace TianxiangGirlT1Race.UIRuntime {
                     "Mount and Blade II Bannerlord","TianxiangGirlT1Race");
                 Directory.CreateDirectory(dir);
                 var envelope=new { session, time=DateTime.Now.ToString("s"), record };
-                string path=Path.Combine(dir,RepairEnabled?"ui_runtime_v0.1.0.jsonl":"ui_probe_v1.jsonl");
+                string path=Path.Combine(dir,RepairEnabled?"ui_runtime_v0.1.1.jsonl":"ui_probe_v1.jsonl");
                 if (File.Exists(path) && new FileInfo(path).Length>12*1024*1024) return;
                 File.AppendAllText(path,serializer.Serialize(envelope)+Environment.NewLine);
             } catch { /* Diagnostics must never interrupt UI/gameplay. */ }

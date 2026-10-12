@@ -10,6 +10,6 @@ py('prepare_references.py');py('register_module.py');blend('create_source.py');b
 subprocess.run(['dotnet','build',str(R/'tools/UIRuntime/UIRuntime.csproj'),'--ignore-failed-sources','-o',str(R/'build/ui_runtime')],check=True)
 out=R/'module/TianxiangGirlT1Race/bin/Win64_Shipping_Client';out.mkdir(parents=True,exist_ok=True)
 shutil.copy2(R/'build/ui_runtime/TianxiangGirlT1Race.UIRuntime.dll',out)
-blend('verify_source.py');py('verify_release.py');py('verify_cloth.py');blend('render_final.py')
+py('verify_ui_scope.py');blend('verify_source.py');py('verify_release.py');py('verify_cloth.py');blend('render_final.py')
 for lod in range(1,4):subprocess.run([BL,'--background','--factory-startup','--python-exit-code','1','--python',str(R/'tools/render_final.py'),'--',str(lod)],check=True)
 py('finalize_release.py')
