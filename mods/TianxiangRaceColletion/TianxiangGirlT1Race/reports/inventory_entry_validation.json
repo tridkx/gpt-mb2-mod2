@@ -1,38 +1,27 @@
 {
   "date": "2026-10-12",
-  "version": "v0.1.5",
-  "failed_version": "v0.1.4",
+  "version": "v0.1.6",
+  "failed_version": "v0.1.5",
   "user_feedback": "inventory idle still puts both hands behind back",
-  "prior_inventory_scans": [
-    {
-      "session": "20261012_160112",
-      "time": "2026-10-12T16:02:55",
-      "record": {
-        "kind": "scan",
-        "screen": "SandBox.GauntletUI.GauntletInventoryScreen",
-        "widgets": 5001,
-        "visuals": 0
-      }
-    },
-    {
-      "session": "20261012_160112",
-      "time": "2026-10-12T16:03:01",
-      "record": {
-        "kind": "scan",
-        "screen": "SandBox.GauntletUI.GauntletInventoryScreen",
-        "widgets": 5001,
-        "visuals": 0
-      }
+  "actual_runtime_exception": {
+    "session": "20261012_161745",
+    "time": "2026-10-12T16:18:38",
+    "record": {
+      "kind": "error",
+      "error": "System.InvalidCastException: Specified cast is not valid.\r\n   at TaleWorlds.MountAndBlade.ActionIndexCache.Equals(Object obj)\r\n   at System.Collections.Generic.ObjectEqualityComparer`1.Equals(T x, T y)\r\n   at System.Collections.Generic.HashSet`1.AddIfNotPresent(T value)\r\n   at TianxiangGirlT1Race.UIRuntime.SubModule.Inspect(Object obj, Int32 depth, HashSet`1 seen, HashSet`1 visuals, Dictionary`2 owners, String owner)\r\n   at TianxiangGirlT1Race.UIRuntime.SubModule.Inspect(Object obj, Int32 depth, HashSet`1 seen, HashSet`1 visuals, Dictionary`2 owners, String owner)\r\n   at TianxiangGirlT1Race.UIRuntime.SubModule.OnApplicationTick(Single dt)"
     }
-  ],
-  "prior_log_sha256": "d41f9916b4096e7dab784fbe8c0cfad222dd945ae90fa98c46aff86785f85c20",
-  "code_risk": "Screen traversal exhausts the shared seen budget before the inventory texture provider is visited",
+  },
+  "exception_count": 56,
+  "prior_log_sha256": "af5c24a443c29a935f4857d73d017607a483489d6615cf56035a209daf690524",
+  "code_failure": "Inspect inserts boxed ActionIndexCache into default HashSet<object> before filtering value types; hash collisions call its unchecked Equals(object) and abort the tick",
   "actual_prior_inventory_pose_captured": false,
+  "underlying_idle_pose_cause_not_yet_observed": true,
   "fixes": [
-    "Read CharacterTableauTextureProvider directly before screen traversal with independent seen budget",
-    "Skip only when skeleton and expected action set both match",
-    "Log real action names; sample each screen independently"
+    "Collect AgentVisuals-typed tableau fields directly without traversing unrelated fields",
+    "Filter values before seen.Add and use reference identity for cycle detection",
+    "Keep found previews even if secondary discovery fails; skip MapScreen entirely"
   ],
-  "new_log": "Mount and Blade II Bannerlord/TianxiangGirlT1Race/ui_runtime_v0.1.5.jsonl",
-  "status": "offline_entry_and_scope_checked_game_retest_pending"
+  "regression_test": "Previous boxed Equals failure reproduced; exact current CollectTableauVisuals, Fields and Inspect methods executed with scoped fixtures",
+  "new_log": "Mount and Blade II Bannerlord/TianxiangGirlT1Race/ui_runtime_v0.1.6.jsonl",
+  "status": "actual_runtime_exception_fixed_offline_game_retest_pending"
 }

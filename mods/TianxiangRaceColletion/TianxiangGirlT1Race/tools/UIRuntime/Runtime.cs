@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Web.Script.Serialization;
 using TaleWorlds.Core;
 using TaleWorlds.Engine;
@@ -19,6 +20,11 @@ using Path = System.IO.Path;
 namespace TianxiangGirlT1Race.UIRuntime {
     // Scope corrections to this race's UI previews; preserve all character data.
     public sealed class SubModule : MBSubModuleBase {
+        internal sealed class ReferenceComparer : IEqualityComparer<object> {
+            internal static readonly ReferenceComparer Instance=new ReferenceComparer();
+            public new bool Equals(object a,object b) { return ReferenceEquals(a,b); }
+            public int GetHashCode(object obj) { return RuntimeHelpers.GetHashCode(obj); }
+        }
         private float elapsed;
         private float logElapsed;
         private static readonly bool RepairEnabled = typeof(SubModule).Assembly.GetName().Name == "TianxiangGirlT1Race.UIRuntime";
@@ -30,7 +36,7 @@ namespace TianxiangGirlT1Race.UIRuntime {
 
         protected override void OnSubModuleLoad() {
             base.OnSubModuleLoad();
-            Write(new { kind="loaded", probe="ui-v3-direct-tableau", changes_preview_skeleton=RepairEnabled });
+            Write(new { kind="loaded", probe="ui-v4-direct-visual-fields", changes_preview_skeleton=RepairEnabled });
         }
 
         protected override void OnApplicationTick(float dt) {
@@ -44,9 +50,10 @@ namespace TianxiangGirlT1Race.UIRuntime {
             try {
                 var screen = ScreenManager.TopScreen;
                 if (screen == null || screen.GetType().FullName.Contains("MissionScreen")) return;
+                if (screen.GetType().FullName=="SandBox.View.Map.MapScreen") return;
                 var visuals = new HashSet<AgentVisuals>();
                 var owners = new Dictionary<AgentVisuals,string>();
-                var seen = new HashSet<object>();
+                var seen = new HashSet<object>(ReferenceComparer.Instance);
                 int widgets=0;
                 foreach (var layer in screen.Layers) {
                     var gauntlet=layer as GauntletLayer;
@@ -60,17 +67,30 @@ namespace TianxiangGirlT1Race.UIRuntime {
                         // preview provider before traversing any screen object graph.
                         var texture=widget as TextureWidget;
                         var tableau=FindCharacterTableau(texture?.TextureProvider);
-                        if (tableau!=null) Inspect(tableau,0,new HashSet<object>(),visuals,owners,tableau.GetType().FullName);
+                        if (tableau!=null) CollectTableauVisuals(tableau,visuals,owners);
                         foreach (var child in widget.Children) queue.Enqueue(child);
                     }
                 }
-                Inspect(screen, 0, seen, visuals, owners, screen.GetType().FullName);
+                // A separate discovery failure must not discard previews already found.
+                try { Inspect(screen, 0, seen, visuals, owners, screen.GetType().FullName); }
+                catch (Exception e) { if (logNow) Write(new {kind="discovery_error",error=e.ToString()}); }
                 if (logNow) Write(new { kind="scan", screen=screen.GetType().FullName, widgets, visuals=visuals.Count });
                 foreach (var visual in visuals) {
                     if (RepairEnabled) CorrectPreview(visual,owners[visual],screen.GetType().FullName);
                     if (logNow) Capture(visual,screen.GetType().FullName);
                 }
             } catch (Exception e) { Write(new { kind="error", error=e.ToString() }); }
+        }
+
+        private void CollectTableauVisuals(object tableau,HashSet<AgentVisuals> visuals,Dictionary<AgentVisuals,string> owners) {
+            foreach (var field in Fields(tableau.GetType())) {
+                if (!typeof(AgentVisuals).IsAssignableFrom(field.FieldType)) continue;
+                string owner=field.DeclaringType.FullName+"."+field.Name;
+                if (!IsPreviewOwner(owner)) continue;
+                var visual=field.GetValue(tableau) as AgentVisuals;
+                if (visual==null) continue;
+                visuals.Add(visual);owners[visual]=owner;
+            }
         }
 
         internal static object FindCharacterTableau(object provider) {
@@ -92,7 +112,12 @@ namespace TianxiangGirlT1Race.UIRuntime {
 
         private void Inspect(object obj, int depth, HashSet<object> seen, HashSet<AgentVisuals> visuals,
                              Dictionary<AgentVisuals,string> owners, string owner) {
-            if (obj == null || depth > 5 || seen.Count > 8000 || !seen.Add(obj)) return;
+            if (obj == null || depth > 5 || seen.Count > 8000) return;
+            var type=obj.GetType();
+            // Boxed ActionIndexCache.Equals(object) casts without checking type.
+            // Filter values first and use identity for graph cycle detection.
+            if (type.IsValueType || obj is string || obj is Delegate) return;
+            if (!seen.Add(obj)) return;
             var visual=obj as AgentVisuals;
             if (visual != null) {
                 // MapScreen also owns live campaign AgentVisuals. Never refresh
@@ -101,8 +126,7 @@ namespace TianxiangGirlT1Race.UIRuntime {
                 if (IsPreviewOwner(owner)) { visuals.Add(visual); owners[visual]=owner; }
                 return;
             }
-            var type=obj.GetType();
-            if (type.IsValueType || obj is string || obj is Delegate || obj is NativeObject) return;
+            if (obj is NativeObject) return;
             // Traverse UI-owned fields only, never the campaign/world object graph.
             string ns=type.Namespace??"";
             if (!(obj is Widget) && !(ns.StartsWith("TaleWorlds.ScreenSystem") ||
@@ -244,7 +268,7 @@ namespace TianxiangGirlT1Race.UIRuntime {
                     "Mount and Blade II Bannerlord","TianxiangGirlT1Race");
                 Directory.CreateDirectory(dir);
                 var envelope=new { session, time=DateTime.Now.ToString("s"), record };
-                string path=Path.Combine(dir,RepairEnabled?"ui_runtime_v0.1.5.jsonl":"ui_probe_v1.jsonl");
+                string path=Path.Combine(dir,RepairEnabled?"ui_runtime_v0.1.6.jsonl":"ui_probe_v1.jsonl");
                 if (File.Exists(path) && new FileInfo(path).Length>12*1024*1024) return;
                 File.AppendAllText(path,serializer.Serialize(envelope)+Environment.NewLine);
             } catch { /* Diagnostics must never interrupt UI/gameplay. */ }

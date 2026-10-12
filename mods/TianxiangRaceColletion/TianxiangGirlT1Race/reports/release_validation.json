@@ -1,10 +1,10 @@
 {
-  "version": "v0.1.5",
+  "version": "v0.1.6",
   "status": "pass",
   "check_scope": "offline_structural_and_native_motion_checks",
   "final_package_sha256": "013f4f8aea984945bfba4866371ff4bf76c76d5048785bbb67136e6fa2e19006",
   "baseline_package_sha256": "013f4f8aea984945bfba4866371ff4bf76c76d5048785bbb67136e6fa2e19006",
-  "baseline_reason": "Inventory runtime only; source, textures, complete resource package and registration XML match published v0.1.4",
+  "baseline_reason": "Inventory runtime only; source, textures, complete resource package and registration XML match published v0.1.5",
   "registration": {
     "status": "pass",
     "race": "txgirl1",
@@ -1695,15 +1695,18 @@
       "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableauFake._agentVisuals": false
     },
     "null_owner_allowed": false,
-    "direct_provider_cases": "actual runtime method compiled with matching provider/tableau stubs; valid/null/unknown provider/unknown tableau",
+    "direct_provider_cases": "actual runtime methods compiled with matching provider/tableau stubs; valid/null/unknown provider/unknown tableau",
+    "actual_field_collection_and_inspect_executed": true,
+    "boxed_action_invalid_cast_reproduced": true,
+    "reference_and_value_custom_equals_never_called": true,
     "inventory_discovery_independent_of_screen_seen_budget": true,
-    "source_sha256": "52bacacf062ee77dec142567a64b78dd3e373287d24903aee40f0560de1bb538",
-    "assembly_sha256": "9da8f925332a63b7d11da1fe299018c378b73ced3317e5aeb3197cd3cd00e459",
+    "source_sha256": "e524ac631cad1656f27afb8f2d0b7aa5507b9506680064b9058449b156fbce59",
+    "assembly_sha256": "1f1191501893d5f7f3d612fc35982dd499951c9cd2c6de909bed6e8293841a85",
     "game_verified": false
   },
   "preview_idle_validation": {
     "status": "pass",
-    "version": "v0.1.5",
+    "version": "v0.1.6",
     "default_inventory_clip": "inventory_idle",
     "preview_overrides": [
       {
@@ -1749,7 +1752,7 @@
   },
   "shorts_collision_validation": {
     "status": "pass_improved_rest_coverage",
-    "version": "v0.1.5",
+    "version": "v0.1.6",
     "rest_short_surface_screen": {
       "before": {
         "outside_capsule_samples": 737,
@@ -1873,12 +1876,12 @@
   },
   "fit_revision_validation": {
     "status": "pass",
-    "version": "v0.1.5",
+    "version": "v0.1.6",
     "source_geometry_and_weights_identical": true,
     "other_joint_positions_identical": true,
     "accepted_ui_dll_identical": false,
     "ui_scope_verified": true,
-    "ui_dll_sha256": "9da8f925332a63b7d11da1fe299018c378b73ced3317e5aeb3197cd3cd00e459",
+    "ui_dll_sha256": "1f1191501893d5f7f3d612fc35982dd499951c9cd2c6de909bed6e8293841a85",
     "grip_target_m": {
       "left": [
         -0.396,
@@ -2215,53 +2218,42 @@
     "module/TianxiangGirlT1Race/ModuleData/skins.xml",
     "module/TianxiangGirlT1Race/ModuleData/test_troop.xml"
   ],
+  "inventory_entry_validation": {
+    "date": "2026-10-12",
+    "version": "v0.1.6",
+    "failed_version": "v0.1.5",
+    "user_feedback": "inventory idle still puts both hands behind back",
+    "actual_runtime_exception": {
+      "session": "20261012_161745",
+      "time": "2026-10-12T16:18:38",
+      "record": {
+        "kind": "error",
+        "error": "System.InvalidCastException: Specified cast is not valid.\r\n   at TaleWorlds.MountAndBlade.ActionIndexCache.Equals(Object obj)\r\n   at System.Collections.Generic.ObjectEqualityComparer`1.Equals(T x, T y)\r\n   at System.Collections.Generic.HashSet`1.AddIfNotPresent(T value)\r\n   at TianxiangGirlT1Race.UIRuntime.SubModule.Inspect(Object obj, Int32 depth, HashSet`1 seen, HashSet`1 visuals, Dictionary`2 owners, String owner)\r\n   at TianxiangGirlT1Race.UIRuntime.SubModule.Inspect(Object obj, Int32 depth, HashSet`1 seen, HashSet`1 visuals, Dictionary`2 owners, String owner)\r\n   at TianxiangGirlT1Race.UIRuntime.SubModule.OnApplicationTick(Single dt)"
+      }
+    },
+    "exception_count": 56,
+    "prior_log_sha256": "af5c24a443c29a935f4857d73d017607a483489d6615cf56035a209daf690524",
+    "code_failure": "Inspect inserts boxed ActionIndexCache into default HashSet<object> before filtering value types; hash collisions call its unchecked Equals(object) and abort the tick",
+    "actual_prior_inventory_pose_captured": false,
+    "underlying_idle_pose_cause_not_yet_observed": true,
+    "fixes": [
+      "Collect AgentVisuals-typed tableau fields directly without traversing unrelated fields",
+      "Filter values before seen.Add and use reference identity for cycle detection",
+      "Keep found previews even if secondary discovery fails; skip MapScreen entirely"
+    ],
+    "regression_test": "Previous boxed Equals failure reproduced; exact current CollectTableauVisuals, Fields and Inspect methods executed with scoped fixtures",
+    "new_log": "Mount and Blade II Bannerlord/TianxiangGirlT1Race/ui_runtime_v0.1.6.jsonl",
+    "status": "actual_runtime_exception_fixed_offline_game_retest_pending"
+  },
   "ui_runtime": {
     "status": "compiled_and_offline_scope_checked",
-    "assembly_sha256": "9da8f925332a63b7d11da1fe299018c378b73ced3317e5aeb3197cd3cd00e459",
+    "assembly_sha256": "1f1191501893d5f7f3d612fc35982dd499951c9cd2c6de909bed6e8293841a85",
     "target_race": "txgirl1",
     "target_skeleton": "txgirl1_skeleton",
     "game_verified": false
   },
-  "inventory_entry_validation": {
-    "date": "2026-10-12",
-    "version": "v0.1.5",
-    "failed_version": "v0.1.4",
-    "user_feedback": "inventory idle still puts both hands behind back",
-    "prior_inventory_scans": [
-      {
-        "session": "20261012_160112",
-        "time": "2026-10-12T16:02:55",
-        "record": {
-          "kind": "scan",
-          "screen": "SandBox.GauntletUI.GauntletInventoryScreen",
-          "widgets": 5001,
-          "visuals": 0
-        }
-      },
-      {
-        "session": "20261012_160112",
-        "time": "2026-10-12T16:03:01",
-        "record": {
-          "kind": "scan",
-          "screen": "SandBox.GauntletUI.GauntletInventoryScreen",
-          "widgets": 5001,
-          "visuals": 0
-        }
-      }
-    ],
-    "prior_log_sha256": "d41f9916b4096e7dab784fbe8c0cfad222dd945ae90fa98c46aff86785f85c20",
-    "code_risk": "Screen traversal exhausts the shared seen budget before the inventory texture provider is visited",
-    "actual_prior_inventory_pose_captured": false,
-    "fixes": [
-      "Read CharacterTableauTextureProvider directly before screen traversal with independent seen budget",
-      "Skip only when skeleton and expected action set both match",
-      "Log real action names; sample each screen independently"
-    ],
-    "new_log": "Mount and Blade II Bannerlord/TianxiangGirlT1Race/ui_runtime_v0.1.5.jsonl",
-    "status": "offline_entry_and_scope_checked_game_retest_pending"
-  },
   "module_file_sha256": {
-    "SubModule.xml": "ecf38beff6823e0176be8e2ae373e9d2d610808835a9c0148d1f55a577201b90",
+    "SubModule.xml": "88a49a536529c3f98490ff6fe1fa845f6328dc1367e3f7315dae1ef5e27c3b5e",
     "AssetPackages/txgirl1.tpac": "013f4f8aea984945bfba4866371ff4bf76c76d5048785bbb67136e6fa2e19006",
     "ModuleData/action_sets.xml": "6c42ddfe13eccb45ce0e4a7bd9c7f8dd8d695e6fc698a93f31a6df6a091c5139",
     "ModuleData/cloth_bodies.xml": "f58d6853842a9fd34ae95d429e51fd1e97d14a3cc5608c0c4f9dcf008cbb53b2",
@@ -2269,6 +2261,6 @@
     "ModuleData/project.mbproj": "964d68121f49ed596aa7a9afe1c998e867659f17631c1aeb7f96a9ec4f0971c6",
     "ModuleData/skins.xml": "71369840d118057e5a30c8be75e3aeca11c5e3d21119621204d7bc412099ea4a",
     "ModuleData/test_troop.xml": "63b42319eefd52c386e22873177030b8d792626e456dee9e6378f2dc1ae86d7c",
-    "bin/Win64_Shipping_Client/TianxiangGirlT1Race.UIRuntime.dll": "9da8f925332a63b7d11da1fe299018c378b73ced3317e5aeb3197cd3cd00e459"
+    "bin/Win64_Shipping_Client/TianxiangGirlT1Race.UIRuntime.dll": "1f1191501893d5f7f3d612fc35982dd499951c9cd2c6de909bed6e8293841a85"
   }
 }

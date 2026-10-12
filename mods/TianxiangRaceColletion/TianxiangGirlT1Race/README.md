@@ -1,12 +1,12 @@
 # Tianxiang Girl T1 Ren Qiu Race
 
-第一套“纫秋为佩”完整人物种族 Mod，版本 v0.1.5，适用本机 Native v1.4.8。模块 ID 为 `TianxiangGirlT1Race`，种族 ID 为 `txgirl1`，独立骨架为 `txgirl1_skeleton`。
+第一套“纫秋为佩”完整人物种族 Mod，版本 v0.1.6，适用本机 Native v1.4.8。模块 ID 为 `TianxiangGirlT1Race`，种族 ID 为 `txgirl1`，独立骨架为 `txgirl1_skeleton`。
 
 ## 当前功能
 
 保留原始固定脸、头发、衣服和双手，源模型仅统一换算为米，没有拉伸头身或四肢。含头发的源网格总高约 1.332 米，skin 最小缩放参数为 1.0；实际游戏身高仍需实测校准。四级 LOD 面数为 15516、10850、7030、4096，使用当前 Native 的 28 骨语义和原生动作。上臂和前臂的绑定方向按源模型骨段对齐，肩、肘、腕支点和源网格坐标保持原样。
 
-双手包含在完整身体中，其他自动生成身体槽使用内部隐藏占位。保留输入文件已有的眼周 UV 修正；源纹理打包到 Blend。UI 运行组件优先从 CharacterTableauTextureProvider 读取人物预览，独立于宽泛 UI 扫描预算。仅处理明确属于 CharacterTableau、BasicCharacterTableau 或 BodyGeneratorView 的本种族预览，跳过地图人物；同时核对骨架和动作集，重建时保留位置、缩放、装备和动作进度。
+双手包含在完整身体中，其他自动生成身体槽使用内部隐藏占位。保留输入文件已有的眼周 UV 修正；源纹理打包到 Blend。UI 运行组件优先从 CharacterTableauTextureProvider 的预览容器直接读取人物字段，独立于宽泛 UI 扫描预算。辅助遍历排除值类型并按对象引用检测循环，辅助扫描失败仍处理已经找到的预览。仅处理明确属于 CharacterTableau、BasicCharacterTableau 或 BodyGeneratorView 的本种族预览，跳过地图人物；同时核对骨架和动作集，重建时保留位置、缩放、装备和动作进度。
 
 裙摆 LOD0/1 有直接布料模拟配置和各自拓扑的预处理数据，腰部约 30 毫米固定带，下摆最大活动距离 0.32 米。双腿各有上大腿、下大腿和小腿胶囊，另有 12 个安全裤腰臀区域的小碰撞体，共 18 个。上大腿胶囊上端随骨盆、下端随大腿，覆盖上移至 0.77 米；局部小碰撞体补足端帽之外的安全裤区域。下大腿和小腿外侧余量仍为 0.5 毫米。腰部以下裙片的活动距离增长斜率为 1.2，固定带和下摆最大 0.32 米保持原样。远处 LOD2/3 使用蒙皮。最终预处理数据、骨骼映射、固定点、约束和随动胶囊活动范围检查通过，本版站立裙摆的修正效果仍待游戏复测。
 
@@ -22,7 +22,7 @@ campaign.add_troops txgirl1_test | 5
 
 加入队伍后检查队伍预览与战场显示。使用本种族创建的角色可另外检查物品栏预览。种族资源和测试兵种的具体 ID 见上文。
 
-本版重点复测物品栏待机时双手是否自然垂落、换装后是否仍正确，以及退出物品栏返回地图是否正常，以及静态站立的安全裤是否仍穿出裙面；再回归跑步、抬腿、持弓与骑乘，确认腰部没有重新被顶起。物品栏所用本种族男女 warrior 集均使用已检查的自然垂手预览片段，保留所选性别和创建页面原动作。左右手握持间距继续按实际反馈验收。武器挂点已从指尖移到掌心附近，手腕和原始手部网格保持原样。然后检查脸和睫毛、整体身高、头颈连接、肩袖、左右手腕、待机及跑步。近处观察裙摆是否真正摆动、抬腿是否推开布料、静止时是否异常顶起；再检查持弓、挥刀、骑乘和远近 LOD 切换。诊断日志位于系统文档目录 `Mount and Blade II Bannerlord/TianxiangGirlT1Race/ui_runtime_v0.1.5.jsonl`。测试存档依赖本模块；关闭模块后不要继续使用依赖它的存档。
+本版重点复测物品栏待机时双手是否自然垂落、换装后是否仍正确，以及退出物品栏返回地图是否正常，以及静态站立的安全裤是否仍穿出裙面；再回归跑步、抬腿、持弓与骑乘，确认腰部没有重新被顶起。物品栏所用本种族男女 warrior 集均使用已检查的自然垂手预览片段，保留所选性别和创建页面原动作。左右手握持间距继续按实际反馈验收。武器挂点已从指尖移到掌心附近，手腕和原始手部网格保持原样。然后检查脸和睫毛、整体身高、头颈连接、肩袖、左右手腕、待机及跑步。近处观察裙摆是否真正摆动、抬腿是否推开布料、静止时是否异常顶起；再检查持弓、挥刀、骑乘和远近 LOD 切换。诊断日志位于系统文档目录 `Mount and Blade II Bannerlord/TianxiangGirlT1Race/ui_runtime_v0.1.6.jsonl`。测试存档依赖本模块；关闭模块后不要继续使用依赖它的存档。
 
 ## 当前限制
 
@@ -40,7 +40,7 @@ campaign.add_troops txgirl1_test | 5
 
 ```powershell
 & 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/TianxiangRaceColletion/TianxiangGirlT1Race/tools/rebuild.py
-./tools/install_release.ps1 -Mod TianxiangGirlT1Race -Version v0.1.5 -CheckOnly
+./tools/install_release.ps1 -Mod TianxiangGirlT1Race -Version v0.1.6 -CheckOnly
 ```
 
 首次安装去掉 `-CheckOnly`；已有交付包的升级安装需指定实际旧版本 `-PreviousVersion`。不要用首版命令覆盖已交付同版本包。流程不启动游戏。
