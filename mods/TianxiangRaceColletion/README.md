@@ -7,6 +7,11 @@
 | 独立模组 | 外观 | 种族 ID |
 | --- | --- | --- |
 | [TianxiangT5PVERace](TianxiangT5PVERace/README.md) | 天香 T5 成女校服，PVE 白粉配色 | `txt5pve` |
+| [TianxiangGirlT1Race](TianxiangGirlT1Race/README.md) | 天香少女第一套“纫秋为佩”，首版待游戏验收 | `txgirl1` |
+
+## 少女八套制作范围
+
+输入目录为 `D:/dsh-tiandao/天香少女校服8套/`。按顺序制作纫秋为佩、沐风为裳、轻梅映雪、暮雨亭兰、芳姿盈袖、碎梦繁花、雪芷丹华、臻姿凤仪；第八套仅制作 PVP 配色。当前只制作第一套，用户验收通过后再开始第二套，其余尚未制作。
 
 ## 目录约定
 

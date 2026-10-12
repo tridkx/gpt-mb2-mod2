@@ -1,5 +1,10 @@
 # 工作区更新日志
 
+## 2026-10-12 天香少女第一套种族
+
+- 天香种族系列新增 `TianxiangGirlT1Race` v0.1.0，第一套“纫秋为佩”保留源比例、固定脸与完整双手，提供独立测试兵种、UI 骨架适配、四级 LOD 及近处裙摆布料与腿部碰撞体。
+- 八套按用户验收顺序制作，第八套仅制作 PVP 配色；第二套尚未开始。详细范围与离线检查见[模组说明](../mods/TianxiangRaceColletion/TianxiangGirlT1Race/README.md)。
+
 ## 2026-10-11 天香种族系列与 T5 PVE
 
 - 新建用户指定的 `mods/TianxiangRaceColletion/` 系列容器，首个独立工程为 `TianxiangT5PVERace`。

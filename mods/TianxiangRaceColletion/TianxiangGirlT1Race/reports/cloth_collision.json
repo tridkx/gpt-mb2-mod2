@@ -1,0 +1,132 @@
+{
+  "capsules": [
+    {
+      "name": "l_upper_thigh",
+      "endpoints_m": [
+        [
+          -0.068,
+          -0.02,
+          0.72
+        ],
+        [
+          -0.083,
+          -0.014,
+          0.55
+        ]
+      ],
+      "radius_m": 0.08349697139315382,
+      "bones": [
+        "l_thigh",
+        "l_thigh"
+      ],
+      "sample_count": 582
+    },
+    {
+      "name": "l_lower_thigh",
+      "endpoints_m": [
+        [
+          -0.078,
+          -0.014,
+          0.6
+        ],
+        [
+          -0.1,
+          -0.012,
+          0.44
+        ]
+      ],
+      "radius_m": 0.0639767361473324,
+      "bones": [
+        "l_thigh",
+        "l_calf"
+      ],
+      "sample_count": 476
+    },
+    {
+      "name": "l_calf",
+      "endpoints_m": [
+        [
+          -0.1,
+          -0.012,
+          0.44
+        ],
+        [
+          -0.116,
+          -0.042,
+          0.22
+        ]
+      ],
+      "radius_m": 0.057235736764388874,
+      "bones": [
+        "l_calf",
+        "l_calf"
+      ],
+      "sample_count": 722
+    },
+    {
+      "name": "r_upper_thigh",
+      "endpoints_m": [
+        [
+          0.068,
+          -0.02,
+          0.72
+        ],
+        [
+          0.083,
+          -0.014,
+          0.55
+        ]
+      ],
+      "radius_m": 0.08991793885475612,
+      "bones": [
+        "r_thigh",
+        "r_thigh"
+      ],
+      "sample_count": 579
+    },
+    {
+      "name": "r_lower_thigh",
+      "endpoints_m": [
+        [
+          0.078,
+          -0.014,
+          0.6
+        ],
+        [
+          0.1,
+          -0.012,
+          0.44
+        ]
+      ],
+      "radius_m": 0.06397671619486615,
+      "bones": [
+        "r_thigh",
+        "r_calf"
+      ],
+      "sample_count": 476
+    },
+    {
+      "name": "r_calf",
+      "endpoints_m": [
+        [
+          0.1,
+          -0.012,
+          0.44
+        ],
+        [
+          0.116,
+          -0.042,
+          0.22
+        ]
+      ],
+      "radius_m": 0.05723576122475563,
+      "bones": [
+        "r_calf",
+        "r_calf"
+      ],
+      "sample_count": 722
+    }
+  ],
+  "body": "txgirl1_leg_collision",
+  "engine_verified": false
+}

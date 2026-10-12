@@ -1,0 +1,21 @@
+{
+  "default": {
+    "unanchored": "error"
+  },
+  "meshes": {
+    "txgirl1_part_12.lod1": {
+      "unanchored": "pin_upper",
+      "axis": 2,
+      "band_m": 0.02,
+      "min_vertices": 2,
+      "reason": "Skirt upper attachment retained on any separated or reduced panel"
+    },
+    "txgirl1_part_12": {
+      "unanchored": "pin_upper",
+      "axis": 2,
+      "band_m": 0.02,
+      "min_vertices": 2,
+      "reason": "Skirt upper attachment retained on any separated or reduced panel"
+    }
+  }
+}

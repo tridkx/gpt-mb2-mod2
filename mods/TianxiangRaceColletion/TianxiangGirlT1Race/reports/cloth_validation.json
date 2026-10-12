@@ -1,0 +1,173 @@
+{
+  "status": "pass",
+  "travel_shortfall_tolerance_m": 0.005,
+  "final_package_sha256": "b1fea7b2981eaa46c3384144a7d13376c47deb084fae122b68b1b17d8932e243",
+  "cooked_meshes": [
+    {
+      "mesh": "txgirl1_part_12.lod1",
+      "lod": 1,
+      "render_vertices": 330,
+      "simulation_vertices": 319,
+      "active_positions": 267,
+      "fixed_positions": 52,
+      "stretch_constraints": 746,
+      "bend_constraints": 652,
+      "root_fixes": [],
+      "sha256": "6ac3d916ba95a0413cb4b92da10cc2df9c7ad9f7caacc8c2e7e71577ad3485c7"
+    },
+    {
+      "mesh": "txgirl1_part_12",
+      "lod": 0,
+      "render_vertices": 448,
+      "simulation_vertices": 431,
+      "active_positions": 374,
+      "fixed_positions": 57,
+      "stretch_constraints": 1067,
+      "bend_constraints": 969,
+      "root_fixes": [],
+      "sha256": "c5135d6be3e4cbd7e4c7e82970b0c97087a476296cb74f7bc139ffec5e08480e"
+    }
+  ],
+  "pose_diagnostics": [
+    {
+      "pose": "rest",
+      "frames": 1,
+      "preview_frame": 0,
+      "max_reference_capsule_overlap_m": 0.03442604847723515,
+      "max_travel_shortfall_m": 0,
+      "max_fixed_root_capsule_overlap_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "txgirl1_part_12.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.03442604847723515,
+          "worst_capsule": ""
+        },
+        "txgirl1_part_12": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.03421522058523999,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "run",
+      "frames": 25,
+      "preview_frame": 1,
+      "max_reference_capsule_overlap_m": 0.07251673480792435,
+      "max_travel_shortfall_m": 0,
+      "max_fixed_root_capsule_overlap_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "txgirl1_part_12.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.05818111162275348,
+          "worst_capsule": ""
+        },
+        "txgirl1_part_12": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.05818111162275348,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "idle",
+      "frames": 16,
+      "preview_frame": 1,
+      "max_reference_capsule_overlap_m": 0.03610004815105437,
+      "max_travel_shortfall_m": 0,
+      "max_fixed_root_capsule_overlap_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "txgirl1_part_12.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.03563368161508284,
+          "worst_capsule": ""
+        },
+        "txgirl1_part_12": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.03540660438854015,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "bow",
+      "frames": 16,
+      "preview_frame": 1,
+      "max_reference_capsule_overlap_m": 0.042949136954456596,
+      "max_travel_shortfall_m": 0,
+      "max_fixed_root_capsule_overlap_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "txgirl1_part_12.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.03817839966371506,
+          "worst_capsule": ""
+        },
+        "txgirl1_part_12": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.038276239320798884,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "riding",
+      "frames": 16,
+      "preview_frame": 1,
+      "max_reference_capsule_overlap_m": 0.06391121927317256,
+      "max_travel_shortfall_m": 0,
+      "max_fixed_root_capsule_overlap_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "txgirl1_part_12.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.05687472205922352,
+          "worst_capsule": ""
+        },
+        "txgirl1_part_12": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.05687472205922352,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "slash",
+      "frames": 16,
+      "preview_frame": 0,
+      "max_reference_capsule_overlap_m": 0.05107312863725918,
+      "max_travel_shortfall_m": 0,
+      "max_fixed_root_capsule_overlap_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "txgirl1_part_12.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.034425151671497546,
+          "worst_capsule": ""
+        },
+        "txgirl1_part_12": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.03421401067142113,
+          "worst_capsule": ""
+        }
+      }
+    }
+  ],
+  "cloth_engine_verified": false,
+  "scope": "Final payload structure and sampled native-animation capsule/travel screening; overlaps are skinning-reference measurements before the engine cloth solver"
+}

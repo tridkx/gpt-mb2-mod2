@@ -1,0 +1,239 @@
+{
+  "txgirl1_eye_d": {
+    "name": "txgirl1_eye_d",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "txgirl1_tex_2",
+      "1": "txgirl1_tex_0",
+      "2": "txgirl1_tex_0",
+      "4": "txgirl1_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "txgirl1_face_d": {
+    "name": "txgirl1_face_d",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "txgirl1_tex_3",
+      "1": "txgirl1_tex_0",
+      "2": "txgirl1_tex_0",
+      "4": "txgirl1_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "txgirl1_cuff_d": {
+    "name": "txgirl1_cuff_d",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "txgirl1_tex_4",
+      "1": "txgirl1_tex_0",
+      "2": "txgirl1_tex_0",
+      "4": "txgirl1_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ],
+    "alphaTest": 0.25
+  },
+  "txgirl1_eyelash_d": {
+    "name": "txgirl1_eyelash_d",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "txgirl1_tex_5",
+      "1": "txgirl1_tex_0",
+      "2": "txgirl1_tex_0",
+      "4": "txgirl1_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ],
+    "alphaTest": 0.25
+  },
+  "txgirl1_pants_d": {
+    "name": "txgirl1_pants_d",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "txgirl1_tex_6",
+      "1": "txgirl1_tex_0",
+      "2": "txgirl1_tex_0",
+      "4": "txgirl1_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ],
+    "alphaTest": 0.25
+  },
+  "txgirl1_body_d": {
+    "name": "txgirl1_body_d",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "txgirl1_tex_7",
+      "1": "txgirl1_tex_0",
+      "2": "txgirl1_tex_0",
+      "4": "txgirl1_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "txgirl1_tunic_d": {
+    "name": "txgirl1_tunic_d",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "txgirl1_tex_8",
+      "1": "txgirl1_tex_0",
+      "2": "txgirl1_tex_0",
+      "4": "txgirl1_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ],
+    "alphaTest": 0.25
+  },
+  "txgirl1_head_d": {
+    "name": "txgirl1_head_d",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "txgirl1_tex_9",
+      "1": "txgirl1_tex_0",
+      "2": "txgirl1_tex_0",
+      "4": "txgirl1_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ],
+    "alphaTest": 0.25
+  },
+  "txgirl1_hair_d": {
+    "name": "txgirl1_hair_d",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "txgirl1_tex_10",
+      "1": "txgirl1_tex_0",
+      "2": "txgirl1_tex_0",
+      "4": "txgirl1_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ],
+    "alphaTest": 0.25
+  }
+}
