@@ -33,6 +33,9 @@ def near(p,ids):
     ds=[]
     for i in ids:
         a=S[i];b=S[nextbone[i]] if i in nextbone else a+(a-S[rig['parent'][i]])*.5
+        # Item bones sit in the palm; keep the accepted hand skinning extent.
+        if rig['names'][i] in cfg.get('hand_weight_tips_m',{}):
+            b=np.array(cfg['hand_weight_tips_m'][rig['names'][i]])
         v=b-a;t=np.clip((p-a)@v/max(v@v,1e-10),0,1);ds.append(np.linalg.norm(p-a-t[:,None]*v,axis=1))
     ds=np.array(ds).T;v=np.exp(np.maximum(-(ds-ds.min(1,keepdims=True))/.027,-25));w=np.zeros((len(p),28));w[:,ids]=v;return w/w.sum(1,keepdims=True)
 def body(p,arms=True):

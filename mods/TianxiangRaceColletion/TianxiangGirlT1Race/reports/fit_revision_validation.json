@@ -1,0 +1,250 @@
+{
+  "status": "pass",
+  "version": "v0.1.2",
+  "source_geometry_and_weights_identical": true,
+  "other_joint_positions_identical": true,
+  "accepted_ui_dll_identical": true,
+  "ui_dll_sha256": "6a9b103c1d4aa85a4da22a127232306b65de7bad77223a03ac53e4597932c2ff",
+  "grip_target_m": {
+    "left": [
+      -0.396,
+      0.032,
+      0.791
+    ],
+    "right": [
+      0.396,
+      0.032,
+      0.791
+    ]
+  },
+  "grip_point_distance_to_sampled_hand_surface": [
+    {
+      "pose": "rest",
+      "frames": 1,
+      "surface_distance_m": {
+        "l": {
+          "old": {
+            "maximum": 0.0038756771876024177,
+            "mean": 0.0038756771876024177
+          },
+          "new": {
+            "maximum": 0.005359522296403878,
+            "mean": 0.005359522296403878
+          }
+        },
+        "r": {
+          "old": {
+            "maximum": 0.0038757231025537816,
+            "mean": 0.0038757231025537816
+          },
+          "new": {
+            "maximum": 0.005359535107366315,
+            "mean": 0.005359535107366315
+          }
+        }
+      }
+    },
+    {
+      "pose": "idle",
+      "frames": 16,
+      "surface_distance_m": {
+        "l": {
+          "old": {
+            "maximum": 0.004502695140578812,
+            "mean": 0.004413787731695542
+          },
+          "new": {
+            "maximum": 0.006752185648999825,
+            "mean": 0.00621630875843936
+          }
+        },
+        "r": {
+          "old": {
+            "maximum": 0.003608495012571818,
+            "mean": 0.003504864939329234
+          },
+          "new": {
+            "maximum": 0.003805419558245054,
+            "mean": 0.0035232808904796416
+          }
+        }
+      }
+    },
+    {
+      "pose": "run",
+      "frames": 25,
+      "surface_distance_m": {
+        "l": {
+          "old": {
+            "maximum": 0.004938782052836847,
+            "mean": 0.004677859195511094
+          },
+          "new": {
+            "maximum": 0.006640594658075293,
+            "mean": 0.006137619875377798
+          }
+        },
+        "r": {
+          "old": {
+            "maximum": 0.005221994480747352,
+            "mean": 0.00503796249149794
+          },
+          "new": {
+            "maximum": 0.006030573685314171,
+            "mean": 0.0052989153055713655
+          }
+        }
+      }
+    },
+    {
+      "pose": "bow",
+      "frames": 16,
+      "surface_distance_m": {
+        "l": {
+          "old": {
+            "maximum": 0.005562649070632415,
+            "mean": 0.004606247812259769
+          },
+          "new": {
+            "maximum": 0.0071389059528919946,
+            "mean": 0.005667979936765922
+          }
+        },
+        "r": {
+          "old": {
+            "maximum": 0.006215729191652582,
+            "mean": 0.005498897269172244
+          },
+          "new": {
+            "maximum": 0.006525882114042194,
+            "mean": 0.0019927936618303783
+          }
+        }
+      }
+    },
+    {
+      "pose": "riding",
+      "frames": 16,
+      "surface_distance_m": {
+        "l": {
+          "old": {
+            "maximum": 0.004034408966131652,
+            "mean": 0.003911812901492872
+          },
+          "new": {
+            "maximum": 0.005890223261625616,
+            "mean": 0.005595155631528877
+          }
+        },
+        "r": {
+          "old": {
+            "maximum": 0.00599164799328954,
+            "mean": 0.005881243792943349
+          },
+          "new": {
+            "maximum": 0.002006219943809138,
+            "mean": 0.0014459772757293716
+          }
+        }
+      }
+    },
+    {
+      "pose": "slash",
+      "frames": 16,
+      "surface_distance_m": {
+        "l": {
+          "old": {
+            "maximum": 0.004462758243213339,
+            "mean": 0.003939281306811527
+          },
+          "new": {
+            "maximum": 0.00703860309163035,
+            "mean": 0.005546818385325384
+          }
+        },
+        "r": {
+          "old": {
+            "maximum": 0.004561022799322219,
+            "mean": 0.004087592636403899
+          },
+          "new": {
+            "maximum": 0.006742099481426003,
+            "mean": 0.004734514135284813
+          }
+        }
+      }
+    }
+  ],
+  "leg_capsule_comparison": [
+    {
+      "name": "l_upper_thigh",
+      "old_radius_m": 0.08349697139315382,
+      "new_radius_m": 0.06992998616976898,
+      "maximum_body_sample_exposure_m": 0.0
+    },
+    {
+      "name": "l_lower_thigh",
+      "old_radius_m": 0.0639767361473324,
+      "new_radius_m": 0.059674783947990244,
+      "maximum_body_sample_exposure_m": 0.0
+    },
+    {
+      "name": "l_calf",
+      "old_radius_m": 0.057235736764388874,
+      "new_radius_m": 0.04882350717475935,
+      "maximum_body_sample_exposure_m": 0.0
+    },
+    {
+      "name": "r_upper_thigh",
+      "old_radius_m": 0.08991793885475612,
+      "new_radius_m": 0.06945176587262678,
+      "maximum_body_sample_exposure_m": 0.0
+    },
+    {
+      "name": "r_lower_thigh",
+      "old_radius_m": 0.06397671619486615,
+      "new_radius_m": 0.05967477492685748,
+      "maximum_body_sample_exposure_m": 0.0
+    },
+    {
+      "name": "r_calf",
+      "old_radius_m": 0.05723576122475563,
+      "new_radius_m": 0.04614639168944139,
+      "maximum_body_sample_exposure_m": 0.0
+    }
+  ],
+  "game_retest_pending": true,
+  "scope": "Item bone origins and sampled skinning surface; does not simulate finger closure, weapon meshes or game cloth solver",
+  "reference_overlap_comparison": [
+    {
+      "pose": "rest",
+      "old_maximum_m": 0.03442604847723515,
+      "new_maximum_m": 0.02058839738752359
+    },
+    {
+      "pose": "run",
+      "old_maximum_m": 0.07251673480792435,
+      "new_maximum_m": 0.06581895035929779
+    },
+    {
+      "pose": "idle",
+      "old_maximum_m": 0.03610004815105437,
+      "new_maximum_m": 0.028166254276132938
+    },
+    {
+      "pose": "bow",
+      "old_maximum_m": 0.042949136954456596,
+      "new_maximum_m": 0.0468093597039372
+    },
+    {
+      "pose": "riding",
+      "old_maximum_m": 0.06391121927317256,
+      "new_maximum_m": 0.065219367511343
+    },
+    {
+      "pose": "slash",
+      "old_maximum_m": 0.05107312863725918,
+      "new_maximum_m": 0.05846965758868025
+    }
+  ]
+}

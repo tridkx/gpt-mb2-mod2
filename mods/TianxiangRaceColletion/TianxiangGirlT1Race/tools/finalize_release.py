@@ -33,10 +33,18 @@ cloth=json.loads((R/'reports/cloth_validation.json').read_text());assert cloth['
 report['cloth_validation']=cloth
 ui_scope=json.loads((R/'reports/ui_scope_validation.json').read_text());assert ui_scope['status']=='pass' and ui_scope['assembly_sha256']==sha(dll)
 report['ui_scope_validation']=ui_scope
+revision=R/'reports/fit_revision_validation.json'
+if revision.exists():
+    fit=json.loads(revision.read_text())
+    if fit['version']==report['version']:
+        assert fit['status']=='pass' and fit['ui_dll_sha256']==sha(dll)
+        report['fit_revision_validation']=fit
 report['module_file_sha256']={p.relative_to(R/'module/TianxiangGirlT1Race').as_posix():sha(p) for p in (R/'module/TianxiangGirlT1Race').rglob('*') if p.is_file()}
 (R/'reports/release_validation.json').write_text(json.dumps(report,indent=2))
 files=[p.relative_to(R).as_posix() for directory in ['input','source','tools','reports'] for p in (R/directory).rglob('*') if p.is_file() and not any(x in p.parts for x in ['obj','bin','__pycache__']) and p.suffix not in ['.pyc','.log','.blend1']]
 files+=['README.md','CHANGELOG.md','.gitignore','.gitattributes','mod.json']
+# Retain the exact user-tested UI binary for isolated resource rebuilds.
+files+=['module/TianxiangGirlT1Race/bin/Win64_Shipping_Client/TianxiangGirlT1Race.UIRuntime.dll']
 shared=['tools/asset_helpers/'+x for x in ['config/spec.py','pipeline/build_assets.py','pipeline/convert_textures.py','pipeline/paths.py','previewer/baker/__init__.py','previewer/baker/animation.py','previewer/baker/config.py','previewer/baker/skeleton.py','tools/georead.py']]
 shared+=['tools/cloth_compiler/'+x for x in ['README.md','cloth_payload.py','cook_cloth.py','validation.py','NativeClothProbe.cs','NativeClothProbe.csproj','ClothPatch.cs','ClothPatch.csproj']]
 (R/'mod.json').write_text(json.dumps({'id':'TianxiangGirlT1Race','source_files':sorted(files),'shared_source_files':shared,'package':'module/TianxiangGirlT1Race/AssetPackages/txgirl1.tpac','validation_report':'reports/release_validation.json'},indent=2))

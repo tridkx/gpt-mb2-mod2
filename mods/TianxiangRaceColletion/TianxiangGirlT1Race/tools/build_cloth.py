@@ -2,6 +2,7 @@
 import json,sys,subprocess,xml.etree.ElementTree as ET
 from pathlib import Path
 import numpy as np
+from scipy.optimize import minimize
 from workspace_paths import workspace_root
 R=Path(__file__).resolve().parents[1];W=workspace_root(R);B=R/'build';C=W/'tools/cloth_compiler'
 cfg=json.loads((R/'tools/model_config.json').read_text());j=np.array(cfg['landmarks_m'])
@@ -14,10 +15,24 @@ for name in ['txgirl1_part_04','txgirl1_part_05']:
     samples.extend([p,tri.mean(1),(tri[:,0]+tri[:,1])/2,(tri[:,1]+tri[:,2])/2,(tri[:,2]+tri[:,0])/2])
 surface=np.concatenate(samples);caps=[]
 def add(name,a,b,points,ba,bb):
-    axis=b-a;t=np.clip((points-a)@axis/(axis@axis),0,1)
-    radius=float(np.linalg.norm(points-a-t[:,None]*axis,axis=1).max()+.003)
+    # Fit centre as well as radius. A fixed off-centre axis inflated the whole
+    # thigh to accommodate crotch samples, pushing the standing skirt outward.
+    original_a=a.copy();original_b=b.copy()
+    def distance(x):
+        aa=a.copy();bb=b.copy();aa[:2]=x[:2];bb[:2]=x[2:]
+        axis=bb-aa;t=np.clip((points-aa)@axis/(axis@axis),0,1)
+        return np.linalg.norm(points-aa-t[:,None]*axis,axis=1)
+    initial=np.r_[a[:2],b[:2]]
+    fit=minimize(lambda x:distance(x).max(),initial,method='Powell',
+                 bounds=[(v-.025,v+.025) for v in initial],
+                 options={'xtol':1e-9,'ftol':1e-9,'maxiter':1000})
+    chosen=fit.x if distance(fit.x).max()<distance(initial).max() else initial
+    a=a.copy();b=b.copy();a[:2]=chosen[:2];b[:2]=chosen[2:]
+    radius=float(distance(chosen).max()+.0005)
     assert .02<radius<.13,(name,radius)
-    caps.append(dict(name=name,endpoints_m=[a.tolist(),b.tolist()],radius_m=radius,bones=[ba,bb],sample_count=len(points)))
+    caps.append(dict(name=name,endpoints_m=[a.tolist(),b.tolist()],radius_m=radius,bones=[ba,bb],sample_count=len(points),clearance_m=.0005,
+                     maximum_sample_exposure_m=float(np.maximum(distance(chosen)-radius,0).max()),
+                     initial_endpoints_m=[original_a.tolist(),original_b.tolist()],initial_radius_m=float(distance(initial).max()+.003)))
 for prefix,sign,hip,knee,ankle in [('l',-1,1,2,3),('r',1,5,6,7)]:
     side=surface[(surface[:,0]*sign>0)&(surface[:,2]>.075)&(surface[:,2]<.835)]
     # Stop below the fitted waist: treating the entire pelvis as a round thigh

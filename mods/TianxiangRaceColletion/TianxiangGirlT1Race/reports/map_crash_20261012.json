@@ -2,7 +2,7 @@
   "date": "2026-10-12",
   "failed_version": "v0.1.0",
   "repair_version": "v0.1.1",
-  "status": "ui_scope_risk_fixed_game_retest_pending",
+  "status": "user_reports_no_crash_after_v0.1.1",
   "pid": 3616,
   "dump_path": "C:\\Users\\DKX\\AppData\\Local\\CrashDumps\\TaleWorlds.MountAndBlade.Launcher.exe.3616.dmp",
   "dump_sha256": "8118512f5d5e9671c3f08e78ae138aefa2d0fa1bf24ced6bc508a1db95530b4b",
@@ -198,5 +198,11 @@
     "tex/pants_D.png",
     "tex/tunic_D.png"
   ],
-  "game_verified": false
+  "game_verified": false,
+  "user_feedback": {
+    "date": "2026-10-12",
+    "version": "v0.1.1",
+    "statement": "不崩溃了",
+    "scope": "User reports prior crash no longer occurs; no inference that all UI paths were tested"
+  }
 }

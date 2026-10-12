@@ -4,6 +4,26 @@
       "name": "l_upper_thigh",
       "endpoints_m": [
         [
+          -0.05452431166931763,
+          -0.020095028993606334,
+          0.72
+        ],
+        [
+          -0.09837765241979292,
+          0.0023381713900516403,
+          0.55
+        ]
+      ],
+      "radius_m": 0.06992998616976898,
+      "bones": [
+        "l_thigh",
+        "l_thigh"
+      ],
+      "sample_count": 582,
+      "clearance_m": 0.0005,
+      "maximum_sample_exposure_m": 0.0,
+      "initial_endpoints_m": [
+        [
           -0.068,
           -0.02,
           0.72
@@ -14,16 +34,31 @@
           0.55
         ]
       ],
-      "radius_m": 0.08349697139315382,
-      "bones": [
-        "l_thigh",
-        "l_thigh"
-      ],
-      "sample_count": 582
+      "initial_radius_m": 0.08349697139315382
     },
     {
       "name": "l_lower_thigh",
       "endpoints_m": [
+        [
+          -0.08247953341120602,
+          -0.01400000006663202,
+          0.6
+        ],
+        [
+          -0.10000000688015542,
+          -0.011999999130127269,
+          0.44
+        ]
+      ],
+      "radius_m": 0.059674783947990244,
+      "bones": [
+        "l_thigh",
+        "l_calf"
+      ],
+      "sample_count": 476,
+      "clearance_m": 0.0005,
+      "maximum_sample_exposure_m": 0.0,
+      "initial_endpoints_m": [
         [
           -0.078,
           -0.014,
@@ -35,16 +70,31 @@
           0.44
         ]
       ],
-      "radius_m": 0.0639767361473324,
-      "bones": [
-        "l_thigh",
-        "l_calf"
-      ],
-      "sample_count": 476
+      "initial_radius_m": 0.0639767361473324
     },
     {
       "name": "l_calf",
       "endpoints_m": [
+        [
+          -0.10206556312493102,
+          -0.023241186237012018,
+          0.44
+        ],
+        [
+          -0.11364719373922291,
+          -0.04256259620808702,
+          0.22
+        ]
+      ],
+      "radius_m": 0.04882350717475935,
+      "bones": [
+        "l_calf",
+        "l_calf"
+      ],
+      "sample_count": 722,
+      "clearance_m": 0.0005,
+      "maximum_sample_exposure_m": 0.0,
+      "initial_endpoints_m": [
         [
           -0.1,
           -0.012,
@@ -56,16 +106,31 @@
           0.22
         ]
       ],
-      "radius_m": 0.057235736764388874,
-      "bones": [
-        "l_calf",
-        "l_calf"
-      ],
-      "sample_count": 722
+      "initial_radius_m": 0.057235736764388874
     },
     {
       "name": "r_upper_thigh",
       "endpoints_m": [
+        [
+          0.04948688712456864,
+          -0.013324876943205537,
+          0.72
+        ],
+        [
+          0.10097749023040771,
+          -0.02014763018499539,
+          0.55
+        ]
+      ],
+      "radius_m": 0.06945176587262678,
+      "bones": [
+        "r_thigh",
+        "r_thigh"
+      ],
+      "sample_count": 579,
+      "clearance_m": 0.0005,
+      "maximum_sample_exposure_m": 0.0,
+      "initial_endpoints_m": [
         [
           0.068,
           -0.02,
@@ -77,16 +142,31 @@
           0.55
         ]
       ],
-      "radius_m": 0.08991793885475612,
-      "bones": [
-        "r_thigh",
-        "r_thigh"
-      ],
-      "sample_count": 579
+      "initial_radius_m": 0.08991793885475612
     },
     {
       "name": "r_lower_thigh",
       "endpoints_m": [
+        [
+          0.08247950075708756,
+          -0.014000000418637918,
+          0.6
+        ],
+        [
+          0.10000000678010823,
+          -0.01199999963582404,
+          0.44
+        ]
+      ],
+      "radius_m": 0.05967477492685748,
+      "bones": [
+        "r_thigh",
+        "r_calf"
+      ],
+      "sample_count": 476,
+      "clearance_m": 0.0005,
+      "maximum_sample_exposure_m": 0.0,
+      "initial_endpoints_m": [
         [
           0.078,
           -0.014,
@@ -98,16 +178,31 @@
           0.44
         ]
       ],
-      "radius_m": 0.06397671619486615,
-      "bones": [
-        "r_thigh",
-        "r_calf"
-      ],
-      "sample_count": 476
+      "initial_radius_m": 0.06397671619486615
     },
     {
       "name": "r_calf",
       "endpoints_m": [
+        [
+          0.09916454482400291,
+          -0.019774296434437823,
+          0.44
+        ],
+        [
+          0.12339988308638603,
+          -0.05185252304504878,
+          0.22
+        ]
+      ],
+      "radius_m": 0.04614639168944139,
+      "bones": [
+        "r_calf",
+        "r_calf"
+      ],
+      "sample_count": 722,
+      "clearance_m": 0.0005,
+      "maximum_sample_exposure_m": 0.0,
+      "initial_endpoints_m": [
         [
           0.1,
           -0.012,
@@ -119,12 +214,7 @@
           0.22
         ]
       ],
-      "radius_m": 0.05723576122475563,
-      "bones": [
-        "r_calf",
-        "r_calf"
-      ],
-      "sample_count": 722
+      "initial_radius_m": 0.05723576122475563
     }
   ],
   "body": "txgirl1_leg_collision",
