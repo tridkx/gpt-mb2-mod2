@@ -1,0 +1,18 @@
+{
+  "status": "pass_proxy_completed",
+  "version": "v0.1.1",
+  "pose": "Actual captured creation pose index 7",
+  "game_cloth_solver_used": false,
+  "meshes": [
+    {
+      "mesh": "txgirl2_part_12",
+      "frames": 180,
+      "fixed_root_drift_m": 0.0,
+      "maximum_displacement_m": 0.18039216101169592,
+      "p99_stretch_ratio": 1.197060410448267,
+      "scope": "180 fixed-pose frames; point capsule projection, stretch/bend/anchor constraints and displacement clamp; virtual triangle collisions/wind/inertia excluded; not engine proof"
+    }
+  ],
+  "final_package_sha256": "02efef4f2148cc89ddb5037d51c771cd1d2d53509c086f315c270f28a190f056",
+  "collision_xml_sha256": "b092cb9019751b048869c48f6bf49e39c8dc308ebf9e9aa39fa68a823d8068ec"
+}

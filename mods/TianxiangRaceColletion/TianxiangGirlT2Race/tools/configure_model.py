@@ -23,15 +23,15 @@ for sign,base in [(-1,1),(1,5)]:
 for sign,start in [(-1,14),(1,21)]:
     clavicle=np.array([.034,shoulder[1],shoulder[2]])
     for i,p in enumerate([clavicle,shoulder,(shoulder+elbow)/2,elbow,(elbow+wrist)/2,wrist,palm]):S[start+i]=p*np.array([sign,1,1])
-cfg=dict(id='TianxiangGirlT2Race',version='v0.1.0',race='txgirl2',skeleton='txgirl2_skeleton',skin_min_scale=1.0,
+cfg=dict(id='TianxiangGirlT2Race',version='v0.1.1',race='txgirl2',skeleton='txgirl2_skeleton',skin_min_scale=1.0,
          cloth_enabled=True,cloth_lods=[0,1],lod_multipliers=[1,.7,.45,.25],minimum_ratios={'tunic_D':1.0},
          landmarks_m=S.tolist(),align_arm_bind_axes=True,
          hand_weight_tips_m={'l_hand':(tip*[-1,1,1]).tolist(),'r_hand':tip.tolist()},
          source_height_range_m=[1.32,1.35],weight_softness_m=.025,
          skirt_source='mesh_12_947881',skirt_object='txgirl2_part_12',legs_sources=['mesh_02_302131','mesh_05_436959'],
          collision_parts=['txgirl2_part_02','txgirl2_part_05'],shorts_part='txgirl2_part_02',hand_part='txgirl2_part_06',
-         cloth_travel_slope=1.15,cloth_max_travel_m=.70,cloth_root_band_m=.012,
-         collision_clearance_m=.0007,shorts_height_band_m=[.55,.855],
+         cloth_travel_slope=.45,cloth_max_travel_m=.18,cloth_root_band_m=.012,
+         collision_clearance_m=.0047,shorts_height_band_m=[.55,.855],
          gross_motion_extension_limit=6.0,cloth_travel_shortfall_limit_m=.005,fixed_root_overlap_limit_m=.005)
 (R/'tools/model_config.json').write_text(json.dumps(cfg,indent=2))
 (R/'reports/landmark_measurements.json').write_text(json.dumps(dict(source='Own T2 source samples in metres; skin cross-section medians for shoulder, elbow, wrist, palm, knee and ankle; internal torso/hip centres chosen inside measured body',

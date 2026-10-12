@@ -22,7 +22,7 @@ bpy.ops.wm.read_factory_settings(use_empty=True);bpy.ops.import_scene.fbx(filepa
 arms=[o for o in bpy.data.objects if o.type=='ARMATURE'];assert len(arms)==1 and len(arms[0].data.bones)==28
 assert len([o for o in bpy.data.objects if o.type=='MESH'])==len(manifest)
 skirt=bpy.data.objects['txgirl2_part_12'];layer=skirt.data.color_attributes.get('ClothDistance');assert layer is not None
-fbx_alpha=np.array([c.color[3] for c in layer.data]);assert (fbx_alpha==0).any() and fbx_alpha.max()>.30
+fbx_alpha=np.array([c.color[3] for c in layer.data]);assert (fbx_alpha==0).any() and abs(fbx_alpha.max()-paint['max_travel_m'])<.006
 bpy.ops.wm.read_factory_settings(use_empty=True);bpy.ops.import_scene.fbx(filepath=str(R/'input/model.fbx'),use_anim=False)
 errors=[]
 for rec in manifest:

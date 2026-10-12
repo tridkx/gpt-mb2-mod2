@@ -18,8 +18,9 @@ for i in range(len(p)):groups.setdefault(root(i),[]).append(i)
 a=np.zeros(len(p));components=[]
 for ids in groups.values():
     q=p[ids];top=float(q[:,2].max());height=float(np.ptp(q[:,2]))
-    # Tiny metallic/flower ornaments remain skeletal; cloth panels and long
-    # ribbons have explicit fixed upper attachments.
+    # Long side panels use cloth. Upper covering flaps follow the protected
+    # body skinning, retaining their fitted shape rather than being inflated
+    # by nearby hip capsules. Decorative ornaments stay skeletal.
     if height>.4:
         distance=np.maximum(top-cfg['cloth_root_band_m']-q[:,2],0)
         travel=np.minimum(.10+distance*cfg['cloth_travel_slope'],cfg['cloth_max_travel_m'])

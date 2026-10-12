@@ -63,6 +63,7 @@ def body(p,arms=True):
             ix=np.where(p[:,0]*sign>=0)[0];a=smooth(.07,.13,abs(p[ix,0]))*smooth(.10,.18,abs(p[ix,0])+.6*(p[ix,2]-.89));w[ix]=w[ix]*(1-a[:,None])+near(p[ix],ids)*a[:,None]
     h=smooth(1.12,1.155,p[:,2])*(1-smooth(.052,.09,abs(p[:,0])));w*=1-h[:,None];w[:,13]+=h
     return w
+non_skirt_keys={tuple(np.round(v,5)) for name,p in positions.items() if name!=cfg['skirt_source'] for v in p}
 manifest=[];materials={};weights={};arrays={};inspection=[]
 for o in objects:
     p=positions[o.name];row=next(r for r in parts if r['name']==o.name);tex=row['tex']
@@ -82,12 +83,25 @@ for o in objects:
     for ids in comps.values():
         q=p[ids];low=q.min(0);high=q.max(0);mid=q.mean(0)
         if row['name']==cfg['skirt_source']:
-            # Long panels hang from the hip, with small thigh influence rather
-            # than inheriting a knee or foot rotation at the distant hem.
+            # Garment attachments follow this model's shorts/hip region.
             amount=1-smooth(.78,.88,q[:,2]);side=smooth(-.12,.12,q[:,0])
-            skirt=np.zeros((len(ids),28));skirt[:,0]=.90
-            skirt[:,1]=.10*(1-side);skirt[:,5]=.10*side
-            w[ids]=w[ids]*(1-amount[:,None])+skirt*amount[:,None]
+            reference=positions[cfg['legs_sources'][0]]
+            reference_weights=weights[cfg['legs_sources'][0]]
+            fitted=[]
+            for sign in [-1,1]:
+                band=(reference[:,0]*sign>.02)&(reference[:,2]>.70)&(reference[:,2]<.82)
+                assert band.sum()>20
+                fitted.append(reference_weights[band].mean(0))
+            # Continuous across coincident flap/panel/ornament attachments.
+            # Use this model's own protected surface binding; no knee/foot hem
+            # influence. The fitted waist transitions to the original body skin.
+            skirt=fitted[0][None,:]*(1-side[:,None])+fitted[1][None,:]*side[:,None]
+            previous=np.zeros((len(ids),28));previous[:,0]=.90;previous[:,1]=.10*(1-side);previous[:,5]=.10*side
+            boundary_reference=w[ids]*(1-amount[:,None])+previous*amount[:,None]
+            revised=w[ids]*(1-amount[:,None])+skirt*amount[:,None]
+            boundary=np.array([tuple(np.round(v,5)) in non_skirt_keys for v in q])
+            revised[boundary]=boundary_reference[boundary]
+            w[ids]=revised
         if tex=='cuff_D':w[ids]=near(q,[17,19] if mid[0]<0 else [24,26])
     weights[o.name]=w
     inspection.append({'object':o.name,'vertices':len(p),'bbox_m':[p.min(0).tolist(),p.max(0).tolist()],'diffuse':tex+'.png','cutout':row['alpha']})

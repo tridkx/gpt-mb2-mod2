@@ -19,5 +19,6 @@ if not preserve:
 else:print('PRESERVED_CHECKED_UI_DLL',sha(dll))
 py('verify_ui_scope.py');blend('verify_source.py');py('verify_release.py');py('verify_cloth.py');blend('render_final.py')
 for lod in range(1,4):subprocess.run([BL,'--background','--factory-startup','--python-exit-code','1','--python',str(R/'tools/render_final.py'),'--',str(lod)],check=True)
-py('verify_preview_idle.py');py('verify_body_collision.py');py('verify_binding.py')
+py('verify_preview_idle.py');py('verify_body_collision.py');py('verify_binding.py');py('verify_cloth_fit_revision.py');py('simulate_static_cloth.py')
+subprocess.run([BL,'--background','--factory-startup','--python-exit-code','1','--python',str(R/'tools/render_final.py'),'--','proxy'],check=True)
 py('finalize_release.py')

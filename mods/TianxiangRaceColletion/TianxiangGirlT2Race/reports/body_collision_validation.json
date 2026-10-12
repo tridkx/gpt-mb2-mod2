@@ -1,13 +1,143 @@
 {
   "status": "pass",
-  "version": "v0.1.0",
-  "capsules": 14,
+  "version": "v0.1.1",
+  "capsules": 24,
   "source_height_band_m": [
     0.55,
     0.855
   ],
-  "samples": 5220,
+  "samples": 5903820,
   "outside_samples": 0,
   "maximum_sample_exposure_m": 0.0,
-  "scope": "Whole protected shorts band; triangle interiors, edges and vertices versus rest capsule union; not engine cloth proof"
+  "poses": [
+    {
+      "pose": "rest",
+      "frames": 1,
+      "samples_per_frame": 15660,
+      "worst_frame": 0,
+      "outside_samples": 0,
+      "maximum_sample_exposure_m": 0.0,
+      "minimum_cover_margin_m": 0.004584396587445368
+    },
+    {
+      "pose": "run",
+      "frames": 25,
+      "samples_per_frame": 15660,
+      "worst_frame": 1,
+      "outside_samples": 0,
+      "maximum_sample_exposure_m": 0.0,
+      "minimum_cover_margin_m": 0.002684673950928685
+    },
+    {
+      "pose": "idle",
+      "frames": 32,
+      "samples_per_frame": 15660,
+      "worst_frame": 1,
+      "outside_samples": 0,
+      "maximum_sample_exposure_m": 0.0,
+      "minimum_cover_margin_m": 0.004173622826694787
+    },
+    {
+      "pose": "bow",
+      "frames": 32,
+      "samples_per_frame": 15660,
+      "worst_frame": 1,
+      "outside_samples": 0,
+      "maximum_sample_exposure_m": 0.0,
+      "minimum_cover_margin_m": 0.003031422459134653
+    },
+    {
+      "pose": "riding",
+      "frames": 20,
+      "samples_per_frame": 15660,
+      "worst_frame": 1,
+      "outside_samples": 0,
+      "maximum_sample_exposure_m": 0.0,
+      "minimum_cover_margin_m": 0.002137597119552595
+    },
+    {
+      "pose": "slash",
+      "frames": 32,
+      "samples_per_frame": 15660,
+      "worst_frame": 0,
+      "outside_samples": 0,
+      "maximum_sample_exposure_m": 0.0,
+      "minimum_cover_margin_m": 0.003513131821252534
+    },
+    {
+      "pose": "stand_unarmed1",
+      "frames": 32,
+      "samples_per_frame": 15660,
+      "worst_frame": 0,
+      "outside_samples": 0,
+      "maximum_sample_exposure_m": 0.0,
+      "minimum_cover_margin_m": 0.002532859160164082
+    },
+    {
+      "pose": "stand_unarmed2",
+      "frames": 32,
+      "samples_per_frame": 15660,
+      "worst_frame": 0,
+      "outside_samples": 0,
+      "maximum_sample_exposure_m": 0.0,
+      "minimum_cover_margin_m": 0.002208524705118165
+    },
+    {
+      "pose": "stand_unarmed3",
+      "frames": 32,
+      "samples_per_frame": 15660,
+      "worst_frame": 0,
+      "outside_samples": 0,
+      "maximum_sample_exposure_m": 0.0,
+      "minimum_cover_margin_m": 0.002573401242998881
+    },
+    {
+      "pose": "stand_onehand",
+      "frames": 32,
+      "samples_per_frame": 15660,
+      "worst_frame": 1,
+      "outside_samples": 0,
+      "maximum_sample_exposure_m": 0.0,
+      "minimum_cover_margin_m": 0.002327129448919517
+    },
+    {
+      "pose": "stand_twohand",
+      "frames": 32,
+      "samples_per_frame": 15660,
+      "worst_frame": 1,
+      "outside_samples": 0,
+      "maximum_sample_exposure_m": 0.0,
+      "minimum_cover_margin_m": 0.0023302029245127927
+    },
+    {
+      "pose": "ui_neutral_male",
+      "frames": 32,
+      "samples_per_frame": 15660,
+      "worst_frame": 1,
+      "outside_samples": 0,
+      "maximum_sample_exposure_m": 0.0,
+      "minimum_cover_margin_m": 0.0024140849223633076
+    },
+    {
+      "pose": "ui_neutral_female",
+      "frames": 32,
+      "samples_per_frame": 15660,
+      "worst_frame": 1,
+      "outside_samples": 0,
+      "maximum_sample_exposure_m": 0.0,
+      "minimum_cover_margin_m": 0.0024140849223633076
+    },
+    {
+      "pose": "captured_creation",
+      "frames": 11,
+      "samples_per_frame": 15660,
+      "worst_frame": 0,
+      "outside_samples": 0,
+      "maximum_sample_exposure_m": 0.0,
+      "minimum_cover_margin_m": 0.003821741842196247
+    }
+  ],
+  "scope": "Final byte-weighted whole protected shorts surface; triangle interiors grid 9; full run cycle, 32 samples of each other native action, 11 actual creation poses; published XML capsule union; not engine cloth proof",
+  "final_package_sha256": "02efef4f2148cc89ddb5037d51c771cd1d2d53509c086f315c270f28a190f056",
+  "collision_xml_sha256": "b092cb9019751b048869c48f6bf49e39c8dc308ebf9e9aa39fa68a823d8068ec"
 }

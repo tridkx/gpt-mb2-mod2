@@ -13,7 +13,7 @@ from georead import read_geo
 from baker.skeleton import parse_skeljson
 from baker.animation import parse_animjson,skin_matrices,lbs
 argument=sys.argv[sys.argv.index('--')+1] if '--' in sys.argv else '0'
-arm_only=argument=='arm';lod=0 if arm_only else int(argument)
+arm_only=argument=='arm';proxy_only=argument=='proxy';lod=0 if arm_only or proxy_only else int(argument)
 folder=ROOT/('build/final_export_lod'+str(lod));meshes=[m for f in (folder/'geo').glob('*.bin') for m in read_geo(f) if not m['name'].startswith('txgirl2_hidden')]
 materialinfo=json.loads((ROOT/'reports/material_names.json').read_text());bpy.ops.wm.read_factory_settings(use_empty=True)
 materials={}
@@ -42,6 +42,11 @@ def render(label,offset,close=False):
     cam.location=center+Vector(offset);cam.rotation_euler=(center-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=.6 if close else max(1.9,float(np.ptp(points[:,2]))*1.12)
     for light,loc in lights:light.location=center+loc;light.rotation_euler=(center-light.location).to_track_quat('-Z','Y').to_euler()
     s.render.filepath=str(ROOT/'reports'/('final_'+(('lod'+str(lod)+'_') if lod else '')+label+'.png'));bpy.ops.render.render(write_still=True)
+if proxy_only:
+    values=np.load(ROOT/'build/cloth_proxy_creation.npz')
+    for o,m in zip(objects,meshes):o.data.vertices.foreach_set('co',values[m['name']].astype('f4').ravel());o.data.update()
+    render('cloth_proxy_creation_front',(0,4,0));render('cloth_proxy_creation_side',(4,0,0))
+    print('STATIC_PROXY_PREVIEWS_READY');sys.exit(0)
 if arm_only:
     for path in sorted((ROOT/'build').glob('arm_*_?.npz')):
         values=np.load(path)

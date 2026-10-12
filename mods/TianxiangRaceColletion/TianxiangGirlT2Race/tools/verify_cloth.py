@@ -44,7 +44,8 @@ for plan in plans:
     assert current['edit_bones']==current['edit_positions'] and current['UnknownFloat1']==1
     rows.append({k:plan[k] for k in ['mesh','lod','render_vertices','simulation_vertices','active_positions','fixed_positions','stretch_constraints','bend_constraints','root_fixes','sha256']})
 rig=parse_skeljson(json.loads((R/'reports/final_skeleton.json').read_text()));inverse=np.linalg.inv(rig['restWorld'])
-caps=json.loads((R/'reports/cloth_collision.json').read_text())['capsules'];names=rig['names'];diagnostics=[]
+from collision_helpers import published_capsules
+caps=published_capsules();names=rig['names'];diagnostics=[]
 meshes=[json.loads(p.read_text()) for p in out.glob('*.mesh.json') ]
 poses=[('rest',None,[0])]
 render_groups=[g for path in (B/'final_export_lod0/geo').glob('*.bin') for g in read_geo(path) if g['name'].startswith('txgirl2_part_')]
@@ -52,11 +53,16 @@ for label in ['run','idle','bow','riding','slash','stand_unarmed1','stand_unarme
     animation=parse_animjson(json.loads((R/'reports'/(label+'.json')).read_text()))
     frames=list(range(animation['start'],animation['frames'])) if label=='run' else sorted(set(np.linspace(animation['start'],animation['frames']-1,16).astype(int)))
     poses.append((label,animation,frames))
+captured=json.loads((R/'reports/captured_creation_poses_v0.1.0.json').read_text())['records']
+for index,record in enumerate(captured):
+    world=np.array([np.array(b['posed_entity']).reshape(4,4).T for b in record['bones']])
+    poses.append(('captured_creation_'+str(index),{'captured_world':world},[0]))
 for label,anim,frames in poses:
     maximum=0;max_conflict=0;max_fixed_overlap=0;max_immutable_overlap=0;finite=True;worst={}
     for frame in frames:
         world=rig['restWorld'].copy()
-        if anim is not None:
+        if anim is not None and 'captured_world' in anim:world=anim['captured_world']
+        elif anim is not None:
             for i in range(28):
                 local=rig['restLocal'][i].copy();local[:3,:3]=q2R(anim['quat'][i,frame]);parent=rig['parent'][i]
                 if parent<0:local[:3,3]+=anim['rootPos'][frame]
@@ -94,7 +100,8 @@ for label,anim,frames in poses:
             if (conflict,float(penetration.max()))>(previous['shortfall_m'],previous.get('overlap_m',-1)):worst[mesh['name']]=dict(shortfall_m=conflict,frame=int(frame),overlap_m=float(penetration.max()),worst_capsule=str(supplier[np.argmax(penetration-alpha[keep])]))
     worst_frame=max(worst.values(),key=lambda item:(item['shortfall_m'],item['overlap_m']))['frame']
     world=rig['restWorld'].copy()
-    if anim is not None:
+    if anim is not None and 'captured_world' in anim:world=anim['captured_world']
+    elif anim is not None:
         for i in range(28):
             local=rig['restLocal'][i].copy();local[:3,:3]=q2R(anim['quat'][i,worst_frame]);parent=rig['parent'][i]
             if parent<0:local[:3,3]+=anim['rootPos'][worst_frame]

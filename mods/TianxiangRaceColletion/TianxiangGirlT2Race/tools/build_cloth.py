@@ -71,6 +71,8 @@ if len(missing):
         endpoint_weights={'pelvis':1.0}
         caps.append(dict(name='shorts_patch_'+str(group).zfill(2),endpoints_m=[a.tolist(),b.tolist()],radius_m=radius,
                          bones=['pelvis','pelvis'],endpoint_weights=[endpoint_weights,endpoint_weights],sample_count=len(patch),clearance_m=.001,maximum_sample_exposure_m=0.0))
+from fit_pose_protection import fit_pose_protection
+caps=fit_pose_protection(caps)
 root=ET.Element('bodies');body=ET.SubElement(root,'body',name='txgirl2_leg_collision',owner_skeleton=cfg['skeleton']);container=ET.SubElement(body,'capsules')
 for cap in caps:
     a,b=np.array(cap['endpoints_m']);axis=b-a;length=np.linalg.norm(axis);u=axis/length;v=np.cross(u,[0,1,0]);v/=np.linalg.norm(v);t=np.cross(v,u)

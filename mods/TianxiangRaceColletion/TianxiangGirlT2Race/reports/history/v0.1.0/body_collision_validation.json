@@ -1,0 +1,141 @@
+{
+  "status": "fail",
+  "version": "v0.1.0",
+  "capsules": 14,
+  "source_height_band_m": [
+    0.55,
+    0.855
+  ],
+  "samples": 3673488,
+  "outside_samples": 1069,
+  "maximum_sample_exposure_m": 0.0215329206379353,
+  "poses": [
+    {
+      "pose": "rest",
+      "frames": 1,
+      "samples_per_frame": 9744,
+      "worst_frame": 0,
+      "outside_samples": 1,
+      "maximum_sample_exposure_m": 0.0003741833614010516,
+      "minimum_cover_margin_m": -0.0003741833614010516
+    },
+    {
+      "pose": "run",
+      "frames": 25,
+      "samples_per_frame": 9744,
+      "worst_frame": 14,
+      "outside_samples": 41,
+      "maximum_sample_exposure_m": 0.005871018273274783,
+      "minimum_cover_margin_m": -0.005871018273274783
+    },
+    {
+      "pose": "idle",
+      "frames": 32,
+      "samples_per_frame": 9744,
+      "worst_frame": 654,
+      "outside_samples": 3,
+      "maximum_sample_exposure_m": 0.0014472505448217404,
+      "minimum_cover_margin_m": -0.0014472505448217404
+    },
+    {
+      "pose": "bow",
+      "frames": 32,
+      "samples_per_frame": 9744,
+      "worst_frame": 106,
+      "outside_samples": 93,
+      "maximum_sample_exposure_m": 0.007139664954169414,
+      "minimum_cover_margin_m": -0.007139664954169414
+    },
+    {
+      "pose": "riding",
+      "frames": 20,
+      "samples_per_frame": 9744,
+      "worst_frame": 11,
+      "outside_samples": 421,
+      "maximum_sample_exposure_m": 0.0215329206379353,
+      "minimum_cover_margin_m": -0.0215329206379353
+    },
+    {
+      "pose": "slash",
+      "frames": 32,
+      "samples_per_frame": 9744,
+      "worst_frame": 140,
+      "outside_samples": 29,
+      "maximum_sample_exposure_m": 0.0031394260053591305,
+      "minimum_cover_margin_m": -0.0031394260053591305
+    },
+    {
+      "pose": "stand_unarmed1",
+      "frames": 32,
+      "samples_per_frame": 9744,
+      "worst_frame": 732,
+      "outside_samples": 115,
+      "maximum_sample_exposure_m": 0.007086811609401195,
+      "minimum_cover_margin_m": -0.007086811609401195
+    },
+    {
+      "pose": "stand_unarmed2",
+      "frames": 32,
+      "samples_per_frame": 9744,
+      "worst_frame": 776,
+      "outside_samples": 73,
+      "maximum_sample_exposure_m": 0.005385424051879015,
+      "minimum_cover_margin_m": -0.005385424051879015
+    },
+    {
+      "pose": "stand_unarmed3",
+      "frames": 32,
+      "samples_per_frame": 9744,
+      "worst_frame": 43,
+      "outside_samples": 38,
+      "maximum_sample_exposure_m": 0.004369508025466762,
+      "minimum_cover_margin_m": -0.004369508025466762
+    },
+    {
+      "pose": "stand_onehand",
+      "frames": 32,
+      "samples_per_frame": 9744,
+      "worst_frame": 971,
+      "outside_samples": 95,
+      "maximum_sample_exposure_m": 0.006663194399601606,
+      "minimum_cover_margin_m": -0.006663194399601606
+    },
+    {
+      "pose": "stand_twohand",
+      "frames": 32,
+      "samples_per_frame": 9744,
+      "worst_frame": 1242,
+      "outside_samples": 53,
+      "maximum_sample_exposure_m": 0.0051380803904233635,
+      "minimum_cover_margin_m": -0.0051380803904233635
+    },
+    {
+      "pose": "ui_neutral_male",
+      "frames": 32,
+      "samples_per_frame": 9744,
+      "worst_frame": 1173,
+      "outside_samples": 39,
+      "maximum_sample_exposure_m": 0.00417635015140512,
+      "minimum_cover_margin_m": -0.00417635015140512
+    },
+    {
+      "pose": "ui_neutral_female",
+      "frames": 32,
+      "samples_per_frame": 9744,
+      "worst_frame": 1173,
+      "outside_samples": 39,
+      "maximum_sample_exposure_m": 0.00417635015140512,
+      "minimum_cover_margin_m": -0.00417635015140512
+    },
+    {
+      "pose": "captured_creation",
+      "frames": 11,
+      "samples_per_frame": 9744,
+      "worst_frame": 7,
+      "outside_samples": 29,
+      "maximum_sample_exposure_m": 0.0026832698609101924,
+      "minimum_cover_margin_m": -0.0026832698609101924
+    }
+  ],
+  "scope": "Final byte-weighted whole protected shorts surface; triangle interiors grid 7; full run cycle, 32 samples of each other native action, 11 actual creation poses; posed capsule union; not engine cloth proof"
+}
