@@ -119,7 +119,7 @@ for t in pack['textures']:
     texturechecks.append({'name':t['name'],'mips':t['mipCount'],'all_mips_decoded':True,'bytes_match':True})
 
 rig=custom;native=parse_skeljson(rigdata);motions=[]
-for label in ['idle','run','bow','riding','slash','stand_unarmed1','stand_unarmed2','stand_unarmed3','stand_onehand','stand_twohand']:
+for label in ['idle','run','bow','riding','slash','stand_unarmed1','stand_unarmed2','stand_unarmed3','stand_onehand','stand_twohand','ui_neutral_male','ui_neutral_female']:
     raw=json.loads((ROOT/'reports'/(label+'.json')).read_text());anim=parse_animjson(raw)
     assert raw['skeletonGuid']==native['guid'] and anim['have'].all() and anim['frames']>2
     frames=list(range(max(1,anim['start']),anim['frames'])) if label not in ['idle','stand_unarmed1','stand_unarmed2','stand_unarmed3','stand_onehand','stand_twohand'] else sorted(set(np.linspace(max(1,anim['start']),anim['frames']-1,16).astype(int).tolist()))

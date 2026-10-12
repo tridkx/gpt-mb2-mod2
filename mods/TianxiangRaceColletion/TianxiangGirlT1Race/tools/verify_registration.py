@@ -41,7 +41,13 @@ def validate_registration(root):
     for action in actions.getroot():
         assert action.get('skeleton') == cfg['skeleton']
         assert native_actions.find(f"action_set[@id='{action.get('base_set')}']") is not None
-        assert len(action) == 0  # Preserve native inventory/facegen action mapping.
+        suffix=action.get('id').removeprefix('as_txgirl1_')
+        if suffix in ['warrior','female_warrior']:
+            assert len(action)==2
+            assert [(a.get('type'),a.get('animation')) for a in action]==[
+                ('act_inventory_idle_start','anim_female_custom_start'),
+                ('act_inventory_idle','anim_female_custom')]
+        else:assert len(action)==0
     monsters = read(data / 'monsters.xml')
     mon = monsters.find(f"Monster[@id='{cfg['race']}']")
     old = read(native / 'monsters.xml').find("Monster[@id='human']")

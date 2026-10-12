@@ -7,7 +7,8 @@ bpy.ops.wm.open_mainfile(filepath=str(R/'source/TianxiangGirlT1Race_Rigged.blend
 o=bpy.data.objects['txgirl1_part_12'];p=np.array([v.co for v in o.data.vertices])
 # Source skirt attaches around z=.86-.878 m. The top 30 mm remains fixed.
 distance=np.maximum(.845-p[:,2],0)
-a=np.minimum(distance*.75,.32);a[a<.006]=0
+cfg=json.loads((R/'tools/model_config.json').read_text())
+a=np.minimum(distance*cfg.get('cloth_travel_slope',.75),.32);a[distance<.008]=0
 layer=o.data.color_attributes.get('ClothDistance') or o.data.color_attributes.new(name='ClothDistance',type='FLOAT_COLOR',domain='POINT')
 colors=np.ones((len(a),4),dtype='f4');colors[:,3]=a;layer.data.foreach_set('color',colors.ravel())
 assert (a==0).sum()>10 and (a>0).sum()>100

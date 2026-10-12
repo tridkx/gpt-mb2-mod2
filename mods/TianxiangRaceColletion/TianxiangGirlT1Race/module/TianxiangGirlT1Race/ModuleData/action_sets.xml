@@ -1,7 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <action_sets>
-  <action_set id="as_txgirl1_warrior" skeleton="txgirl1_skeleton" movement_system="bipedal" base_set="as_human_warrior" />
-  <action_set id="as_txgirl1_female_warrior" skeleton="txgirl1_skeleton" movement_system="bipedal" base_set="as_human_female_warrior" />
+  <action_set id="as_txgirl1_warrior" skeleton="txgirl1_skeleton" movement_system="bipedal" base_set="as_human_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
+  <action_set id="as_txgirl1_female_warrior" skeleton="txgirl1_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
   <action_set id="as_txgirl1_villager" skeleton="txgirl1_skeleton" movement_system="bipedal" base_set="as_human_villager" />
   <action_set id="as_txgirl1_female_villager" skeleton="txgirl1_skeleton" movement_system="bipedal" base_set="as_human_female_villager" />
   <action_set id="as_txgirl1_facegen" skeleton="txgirl1_skeleton" movement_system="bipedal" base_set="as_human_facegen" />

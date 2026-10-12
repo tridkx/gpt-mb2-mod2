@@ -45,7 +45,7 @@ caps=json.loads((R/'reports/cloth_collision.json').read_text())['capsules'];name
 meshes=[json.loads(p.read_text()) for p in out.glob('*.mesh.json') ]
 poses=[('rest',None,[0])]
 render_groups=[g for path in (B/'final_export_lod0/geo').glob('*.bin') for g in read_geo(path) if g['name'].startswith('txgirl1_part_')]
-for label in ['run','idle','bow','riding','slash','stand_unarmed1','stand_unarmed2','stand_unarmed3','stand_onehand','stand_twohand']:
+for label in ['run','idle','bow','riding','slash','stand_unarmed1','stand_unarmed2','stand_unarmed3','stand_onehand','stand_twohand','ui_neutral_male','ui_neutral_female']:
     animation=parse_animjson(json.loads((R/'reports'/(label+'.json')).read_text()))
     frames=list(range(animation['start'],animation['frames'])) if label=='run' else sorted(set(np.linspace(animation['start'],animation['frames']-1,16).astype(int)))
     poses.append((label,animation,frames))
@@ -62,8 +62,9 @@ for label,anim,frames in poses:
         animated_caps=[]
         for cap in caps:
             endpoints=[]
-            for point,bone in zip(cap['endpoints_m'],cap['bones']):
-                matrix=skin[names.index(bone)];endpoints.append(matrix[:3,:3]@point+matrix[:3,3])
+            for point,weights in zip(cap['endpoints_m'],cap.get('endpoint_weights',[{bone:1.0} for bone in cap['bones']])):
+                assert len(weights)<=2 and abs(sum(weights.values())-1)<1e-6
+                endpoints.append(sum(weight*(skin[names.index(bone),:3,:3]@point+skin[names.index(bone),:3,3]) for bone,weight in weights.items()))
             animated_caps.append((np.array(endpoints),cap['radius_m'],cap['name']))
         for mesh in meshes:
             p=lbs(np.array(mesh['positions']),np.array(mesh['bones']),np.array(mesh['weights']),skin);assert np.isfinite(p).all()

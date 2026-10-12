@@ -4,29 +4,29 @@
       "name": "l_upper_thigh",
       "endpoints_m": [
         [
-          -0.05452431166931763,
-          -0.020095028993606334,
-          0.72
+          -0.043000000000000045,
+          -0.01876656222791385,
+          0.77
         ],
         [
-          -0.09837765241979292,
-          0.0023381713900516403,
+          -0.05800000056068815,
+          -0.006872666910412744,
           0.55
         ]
       ],
-      "radius_m": 0.06992998616976898,
+      "radius_m": 0.08206834610593448,
       "bones": [
-        "l_thigh",
+        "pelvis",
         "l_thigh"
       ],
-      "sample_count": 582,
-      "clearance_m": 0.0005,
+      "sample_count": 799,
+      "clearance_m": 0.001,
       "maximum_sample_exposure_m": 0.0,
       "initial_endpoints_m": [
         [
           -0.068,
           -0.02,
-          0.72
+          0.77
         ],
         [
           -0.083,
@@ -34,7 +34,7 @@
           0.55
         ]
       ],
-      "initial_radius_m": 0.08349697139315382
+      "initial_radius_m": 0.09878389478938081
     },
     {
       "name": "l_lower_thigh",
@@ -112,29 +112,29 @@
       "name": "r_upper_thigh",
       "endpoints_m": [
         [
-          0.04948688712456864,
-          -0.013324876943205537,
-          0.72
+          0.04300000000000002,
+          -0.010655864518980776,
+          0.77
         ],
         [
-          0.10097749023040771,
-          -0.02014763018499539,
+          0.05800000057205749,
+          -0.010507942323506556,
           0.55
         ]
       ],
-      "radius_m": 0.06945176587262678,
+      "radius_m": 0.08246309736572673,
       "bones": [
-        "r_thigh",
+        "pelvis",
         "r_thigh"
       ],
-      "sample_count": 579,
-      "clearance_m": 0.0005,
+      "sample_count": 796,
+      "clearance_m": 0.001,
       "maximum_sample_exposure_m": 0.0,
       "initial_endpoints_m": [
         [
           0.068,
           -0.02,
-          0.72
+          0.77
         ],
         [
           0.083,
@@ -142,7 +142,7 @@
           0.55
         ]
       ],
-      "initial_radius_m": 0.08991793885475612
+      "initial_radius_m": 0.10682644509669945
     },
     {
       "name": "r_lower_thigh",
@@ -215,6 +215,378 @@
         ]
       ],
       "initial_radius_m": 0.05723576122475563
+    },
+    {
+      "name": "shorts_patch_00",
+      "endpoints_m": [
+        [
+          -0.01384247976541519,
+          0.051815763115882874,
+          0.7667431831359863
+        ],
+        [
+          -0.007842479765415192,
+          0.051815763115882874,
+          0.7667431831359863
+        ]
+      ],
+      "radius_m": 0.02647271653538301,
+      "bones": [
+        "pelvis",
+        "pelvis"
+      ],
+      "endpoint_weights": [
+        {
+          "pelvis": 1.0
+        },
+        {
+          "pelvis": 1.0
+        }
+      ],
+      "sample_count": 5,
+      "clearance_m": 0.001,
+      "maximum_sample_exposure_m": 0.0
+    },
+    {
+      "name": "shorts_patch_01",
+      "endpoints_m": [
+        [
+          -0.06914040583372116,
+          0.024608740583062172,
+          0.8160272240638733
+        ],
+        [
+          -0.06314040583372116,
+          0.024608740583062172,
+          0.8160272240638733
+        ]
+      ],
+      "radius_m": 0.0201632524013798,
+      "bones": [
+        "pelvis",
+        "pelvis"
+      ],
+      "endpoint_weights": [
+        {
+          "pelvis": 1.0
+        },
+        {
+          "pelvis": 1.0
+        }
+      ],
+      "sample_count": 2,
+      "clearance_m": 0.001,
+      "maximum_sample_exposure_m": 0.0
+    },
+    {
+      "name": "shorts_patch_02",
+      "endpoints_m": [
+        [
+          -0.0241731381714344,
+          0.053478680551052094,
+          0.7928809523582458
+        ],
+        [
+          -0.018173138171434403,
+          0.053478680551052094,
+          0.7928809523582458
+        ]
+      ],
+      "radius_m": 0.025474407906881456,
+      "bones": [
+        "pelvis",
+        "pelvis"
+      ],
+      "endpoint_weights": [
+        {
+          "pelvis": 1.0
+        },
+        {
+          "pelvis": 1.0
+        }
+      ],
+      "sample_count": 8,
+      "clearance_m": 0.001,
+      "maximum_sample_exposure_m": 0.0
+    },
+    {
+      "name": "shorts_patch_03",
+      "endpoints_m": [
+        [
+          -0.0495923473238945,
+          0.04487782344222069,
+          0.8023842573165894
+        ],
+        [
+          -0.0435923473238945,
+          0.04487782344222069,
+          0.8023842573165894
+        ]
+      ],
+      "radius_m": 0.02598209059291472,
+      "bones": [
+        "pelvis",
+        "pelvis"
+      ],
+      "endpoint_weights": [
+        {
+          "pelvis": 1.0
+        },
+        {
+          "pelvis": 1.0
+        }
+      ],
+      "sample_count": 5,
+      "clearance_m": 0.001,
+      "maximum_sample_exposure_m": 0.0
+    },
+    {
+      "name": "shorts_patch_04",
+      "endpoints_m": [
+        [
+          0.034793558090925214,
+          0.04941406100988388,
+          0.8035299777984619
+        ],
+        [
+          0.04079355809092522,
+          0.04941406100988388,
+          0.8035299777984619
+        ]
+      ],
+      "radius_m": 0.01628090470182202,
+      "bones": [
+        "pelvis",
+        "pelvis"
+      ],
+      "endpoint_weights": [
+        {
+          "pelvis": 1.0
+        },
+        {
+          "pelvis": 1.0
+        }
+      ],
+      "sample_count": 1,
+      "clearance_m": 0.001,
+      "maximum_sample_exposure_m": 0.0
+    },
+    {
+      "name": "shorts_patch_05",
+      "endpoints_m": [
+        [
+          0.011847083017230035,
+          -0.056048765778541565,
+          0.8174528479576111
+        ],
+        [
+          0.017847083017230033,
+          -0.056048765778541565,
+          0.8174528479576111
+        ]
+      ],
+      "radius_m": 0.0190929959424197,
+      "bones": [
+        "pelvis",
+        "pelvis"
+      ],
+      "endpoint_weights": [
+        {
+          "pelvis": 1.0
+        },
+        {
+          "pelvis": 1.0
+        }
+      ],
+      "sample_count": 2,
+      "clearance_m": 0.001,
+      "maximum_sample_exposure_m": 0.0
+    },
+    {
+      "name": "shorts_patch_06",
+      "endpoints_m": [
+        [
+          -0.009341008003801107,
+          -0.05444764718413353,
+          0.8211817145347595
+        ],
+        [
+          -0.0033410080038011073,
+          -0.05444764718413353,
+          0.8211817145347595
+        ]
+      ],
+      "radius_m": 0.017775056969651478,
+      "bones": [
+        "pelvis",
+        "pelvis"
+      ],
+      "endpoint_weights": [
+        {
+          "pelvis": 1.0
+        },
+        {
+          "pelvis": 1.0
+        }
+      ],
+      "sample_count": 2,
+      "clearance_m": 0.001,
+      "maximum_sample_exposure_m": 0.0
+    },
+    {
+      "name": "shorts_patch_07",
+      "endpoints_m": [
+        [
+          0.006357091970741749,
+          0.05556334927678108,
+          0.7928693890571594
+        ],
+        [
+          0.012357091970741748,
+          0.05556334927678108,
+          0.7928693890571594
+        ]
+      ],
+      "radius_m": 0.022082980305938926,
+      "bones": [
+        "pelvis",
+        "pelvis"
+      ],
+      "endpoint_weights": [
+        {
+          "pelvis": 1.0
+        },
+        {
+          "pelvis": 1.0
+        }
+      ],
+      "sample_count": 4,
+      "clearance_m": 0.001,
+      "maximum_sample_exposure_m": 0.0
+    },
+    {
+      "name": "shorts_patch_08",
+      "endpoints_m": [
+        [
+          0.022363991037011147,
+          -0.05511128157377243,
+          0.8222759366035461
+        ],
+        [
+          0.028363991037011146,
+          -0.05511128157377243,
+          0.8222759366035461
+        ]
+      ],
+      "radius_m": 0.016516599615014827,
+      "bones": [
+        "pelvis",
+        "pelvis"
+      ],
+      "endpoint_weights": [
+        {
+          "pelvis": 1.0
+        },
+        {
+          "pelvis": 1.0
+        }
+      ],
+      "sample_count": 1,
+      "clearance_m": 0.001,
+      "maximum_sample_exposure_m": 0.0
+    },
+    {
+      "name": "shorts_patch_09",
+      "endpoints_m": [
+        [
+          0.0012787492275238036,
+          -0.05902871862053871,
+          0.8065587282180786
+        ],
+        [
+          0.007278749227523804,
+          -0.05902871862053871,
+          0.8065587282180786
+        ]
+      ],
+      "radius_m": 0.017893874853317362,
+      "bones": [
+        "pelvis",
+        "pelvis"
+      ],
+      "endpoint_weights": [
+        {
+          "pelvis": 1.0
+        },
+        {
+          "pelvis": 1.0
+        }
+      ],
+      "sample_count": 2,
+      "clearance_m": 0.001,
+      "maximum_sample_exposure_m": 0.0
+    },
+    {
+      "name": "shorts_patch_10",
+      "endpoints_m": [
+        [
+          0.02270847049355507,
+          0.05341118946671486,
+          0.8003491759300232
+        ],
+        [
+          0.028708470493555068,
+          0.05341118946671486,
+          0.8003491759300232
+        ]
+      ],
+      "radius_m": 0.017483552138871532,
+      "bones": [
+        "pelvis",
+        "pelvis"
+      ],
+      "endpoint_weights": [
+        {
+          "pelvis": 1.0
+        },
+        {
+          "pelvis": 1.0
+        }
+      ],
+      "sample_count": 2,
+      "clearance_m": 0.001,
+      "maximum_sample_exposure_m": 0.0
+    },
+    {
+      "name": "shorts_patch_11",
+      "endpoints_m": [
+        [
+          -0.002999991687945844,
+          0.05462700501084328,
+          0.7796783447265625
+        ],
+        [
+          0.003000008312054156,
+          0.05462700501084328,
+          0.7796783447265625
+        ]
+      ],
+      "radius_m": 0.021052789524250493,
+      "bones": [
+        "pelvis",
+        "pelvis"
+      ],
+      "endpoint_weights": [
+        {
+          "pelvis": 1.0
+        },
+        {
+          "pelvis": 1.0
+        }
+      ],
+      "sample_count": 4,
+      "clearance_m": 0.001,
+      "maximum_sample_exposure_m": 0.0
     }
   ],
   "body": "txgirl1_leg_collision",

@@ -56,7 +56,7 @@ for motion in report['motions']:
     label=motion['label'];anim=parse_animjson(json.loads((ROOT/'reports'/(label+'.json')).read_text()));frame=motion['worst_frame'];skin=skin_matrices(rig,anim,frame)
     for o,m in zip(objects,meshes):p=lbs(m['pos'],m['bi'],m['bw'],skin);o.data.vertices.foreach_set('co',p.astype('f4').ravel());o.data.update()
     render(label+'_worst',(2.5,4,0));render(label+'_side',(4,0,0))
-    if label.startswith('stand_'):render(label+'_front',(0,4,0))
+    if label.startswith(('stand_','ui_neutral_')):render(label+'_front',(0,4,0))
     previews.append({'label':label,'frame':frame,'file':'reports/final_'+label+'_worst.png'})
 (ROOT/'reports/final_preview_manifest.json').write_text(json.dumps({'package_sha256':report['final_package_sha256'],'source':'Final TPAC re-export, decoded diffuse and byte weights','game_cloth_solver_used':False,'previews':previews},indent=2))
 print('FINAL_PREVIEWS_READY')

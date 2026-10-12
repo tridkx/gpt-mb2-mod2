@@ -1,0 +1,31 @@
+{
+  "status": "pass_improved_rest_coverage",
+  "version": "v0.1.4",
+  "rest_short_surface_screen": {
+    "before": {
+      "outside_capsule_samples": 737,
+      "samples": 1178,
+      "maximum_sample_exposure_m": 0.06277390768026084,
+      "outside_sample_bbox_m": [
+        -0.10981599241495132,
+        -0.08568382263183594,
+        0.7213925123214722,
+        0.11338698863983154,
+        0.06727219372987747,
+        0.8346425294876099
+      ]
+    },
+    "after": {
+      "outside_capsule_samples": 0,
+      "samples": 1178,
+      "maximum_sample_exposure_m": 0.0,
+      "outside_sample_bbox_m": null
+    }
+  },
+  "source_height_band_m": [
+    0.55,
+    0.835
+  ],
+  "scope": "Whole fitted shorts band versus capsule union. Remaining exposure is reported, not hidden by fitting only selected capsule bands; not a game cloth solver result",
+  "game_retest_pending": true
+}

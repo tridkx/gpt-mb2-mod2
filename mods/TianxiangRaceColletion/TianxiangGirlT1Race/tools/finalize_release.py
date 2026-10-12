@@ -33,6 +33,12 @@ cloth=json.loads((R/'reports/cloth_validation.json').read_text());assert cloth['
 report['cloth_validation']=cloth
 ui_scope=json.loads((R/'reports/ui_scope_validation.json').read_text());assert ui_scope['status']=='pass' and ui_scope['assembly_sha256']==sha(dll)
 report['ui_scope_validation']=ui_scope
+for filename in ['preview_idle_validation','shorts_collision_validation']:
+    file=R/'reports'/(filename+'.json')
+    if file.exists():
+        check=json.loads(file.read_text())
+        assert check['version']==report['version'] and check['status'].startswith('pass')
+        report[filename]=check
 arm=R/'reports/arm_binding_validation.json'
 if arm.exists():
     validation=json.loads(arm.read_text())

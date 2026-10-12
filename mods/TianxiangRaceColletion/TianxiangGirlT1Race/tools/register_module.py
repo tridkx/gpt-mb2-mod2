@@ -48,8 +48,12 @@ actions = ET.Element('action_sets')
 for suffix, base in [('warrior', 'as_human_warrior'), ('female_warrior', 'as_human_female_warrior'),
                      ('villager', 'as_human_villager'), ('female_villager', 'as_human_female_villager'),
                      ('facegen', 'as_human_facegen'), ('female_facegen', 'as_human_female_facegen')]:
-    ET.SubElement(actions, 'action_set', id='as_txgirl1_' + suffix,
+    action_set=ET.SubElement(actions, 'action_set', id='as_txgirl1_' + suffix,
                   skeleton=CFG['skeleton'], movement_system='bipedal', base_set=base)
+    if suffix in ['warrior','female_warrior']:
+        for kind in ['start','loop']:
+            ET.SubElement(action_set,'action',type='act_inventory_idle'+('_start' if kind=='start' else ''),
+                          animation='anim_female_custom'+('_start' if kind=='start' else ''))
 write(MODULE / 'ModuleData/action_sets.xml', actions)
 
 monsters = ET.Element('Monsters')
