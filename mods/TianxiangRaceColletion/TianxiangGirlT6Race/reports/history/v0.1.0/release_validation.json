@@ -1,0 +1,1317 @@
+{
+  "version": "v0.1.0",
+  "status": "pass",
+  "check_scope": "offline_structural_and_native_motion_checks",
+  "final_package_sha256": "646fa1ecbea33af1397f77243ec9b7ec5bf78fbd14a6bcb6bb836b195cf0f314",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; own source FBX hashes and exact source-coordinate comparison",
+  "registration": {
+    "status": "pass",
+    "race": "txgirl6",
+    "changed_troops": [],
+    "unaffected_troops": 548,
+    "troop_overrides_present": false,
+    "added_test_troops": [],
+    "skin_variants": 10,
+    "skeleton": "txgirl6_skeleton",
+    "native_monster_dimensions_preserved": true,
+    "native_ui_actions_inherited": true,
+    "cloth_simulation": false
+  },
+  "lods": [
+    {
+      "lod": 0,
+      "vertices": 17702,
+      "triangles": 23056,
+      "submeshes": 12
+    },
+    {
+      "lod": 1,
+      "vertices": 15118,
+      "triangles": 19006,
+      "submeshes": 12
+    },
+    {
+      "lod": 2,
+      "vertices": 13025,
+      "triangles": 15882,
+      "submeshes": 12
+    },
+    {
+      "lod": 3,
+      "vertices": 11348,
+      "triangles": 13501,
+      "submeshes": 12
+    }
+  ],
+  "seams": [
+    {
+      "lod": 0,
+      "shared_points": 112,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 1,
+      "shared_points": 112,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 2,
+      "shared_points": 112,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 3,
+      "shared_points": 112,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "asset": "anim_inventory_idle",
+      "frames_checked": 16,
+      "total_frames": 1268,
+      "worst_frame": 169,
+      "worst_mesh": "txgirl6_part_09",
+      "max_edge_extension": 2.3893013805848318,
+      "max_mesh_p99_extension": 1.6081548176129536,
+      "meshes": [
+        {
+          "name": "txgirl6_part_00",
+          "max_extension": 1.0000004067569166,
+          "p99_extension": 1.000000344280507
+        },
+        {
+          "name": "txgirl6_part_01",
+          "max_extension": 1.8092214888433253,
+          "p99_extension": 1.0000003651397935
+        },
+        {
+          "name": "txgirl6_part_02",
+          "max_extension": 1.098662318996916,
+          "p99_extension": 1.0707979066938873
+        },
+        {
+          "name": "txgirl6_part_03",
+          "max_extension": 1.4175266883566082,
+          "p99_extension": 1.1899025801196343
+        },
+        {
+          "name": "txgirl6_part_04",
+          "max_extension": 1.000000414421367,
+          "p99_extension": 1.0000003782122262
+        },
+        {
+          "name": "txgirl6_part_05",
+          "max_extension": 1.1564039436820057,
+          "p99_extension": 1.0776743757661849
+        },
+        {
+          "name": "txgirl6_part_06",
+          "max_extension": 1.4031502572111678,
+          "p99_extension": 1.1995717713103906
+        },
+        {
+          "name": "txgirl6_part_07",
+          "max_extension": 1.7511413768038997,
+          "p99_extension": 1.5059436806951927
+        },
+        {
+          "name": "txgirl6_part_08",
+          "max_extension": 2.0236657342681363,
+          "p99_extension": 1.3594140159508008
+        },
+        {
+          "name": "txgirl6_part_09",
+          "max_extension": 2.3893013805848318,
+          "p99_extension": 1.6081548176129536
+        },
+        {
+          "name": "txgirl6_part_10",
+          "max_extension": 1.0000004314306017,
+          "p99_extension": 1.00000034682488
+        },
+        {
+          "name": "txgirl6_part_11",
+          "max_extension": 1.0000003693982262,
+          "p99_extension": 1.00000032696198
+        }
+      ]
+    },
+    {
+      "label": "run",
+      "asset": "anim_run_forward_unarmed",
+      "frames_checked": 25,
+      "total_frames": 26,
+      "worst_frame": 18,
+      "worst_mesh": "txgirl6_part_07",
+      "max_edge_extension": 4.408216353034706,
+      "max_mesh_p99_extension": 3.5913365643471824,
+      "meshes": [
+        {
+          "name": "txgirl6_part_00",
+          "max_extension": 1.0000004067569228,
+          "p99_extension": 1.000000344280498
+        },
+        {
+          "name": "txgirl6_part_01",
+          "max_extension": 1.6579773783214427,
+          "p99_extension": 1.0000003651398022
+        },
+        {
+          "name": "txgirl6_part_02",
+          "max_extension": 1.1298230126688071,
+          "p99_extension": 1.1115231798453504
+        },
+        {
+          "name": "txgirl6_part_03",
+          "max_extension": 2.215290366299103,
+          "p99_extension": 1.4408304131801688
+        },
+        {
+          "name": "txgirl6_part_04",
+          "max_extension": 1.000000414421337,
+          "p99_extension": 1.000000378212225
+        },
+        {
+          "name": "txgirl6_part_05",
+          "max_extension": 1.4161041492742723,
+          "p99_extension": 1.2472423205833059
+        },
+        {
+          "name": "txgirl6_part_06",
+          "max_extension": 2.179415786774954,
+          "p99_extension": 1.4761439868445962
+        },
+        {
+          "name": "txgirl6_part_07",
+          "max_extension": 4.408216353034706,
+          "p99_extension": 3.5913365643471824
+        },
+        {
+          "name": "txgirl6_part_08",
+          "max_extension": 3.754376141450528,
+          "p99_extension": 2.221689295339278
+        },
+        {
+          "name": "txgirl6_part_09",
+          "max_extension": 2.1615506851311292,
+          "p99_extension": 1.4905657029947268
+        },
+        {
+          "name": "txgirl6_part_10",
+          "max_extension": 1.000000431430601,
+          "p99_extension": 1.0000003468248824
+        },
+        {
+          "name": "txgirl6_part_11",
+          "max_extension": 1.0000003693982296,
+          "p99_extension": 1.0000003269619802
+        }
+      ]
+    },
+    {
+      "label": "bow",
+      "asset": "anim_bow",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 24,
+      "worst_mesh": "txgirl6_part_07",
+      "max_edge_extension": 4.446789993071395,
+      "max_mesh_p99_extension": 3.2906648059027965,
+      "meshes": [
+        {
+          "name": "txgirl6_part_00",
+          "max_extension": 1.000000406756954,
+          "p99_extension": 1.000000344280507
+        },
+        {
+          "name": "txgirl6_part_01",
+          "max_extension": 2.4204916268196497,
+          "p99_extension": 1.0000003661635906
+        },
+        {
+          "name": "txgirl6_part_02",
+          "max_extension": 1.3043739586139746,
+          "p99_extension": 1.1984393521330283
+        },
+        {
+          "name": "txgirl6_part_03",
+          "max_extension": 2.539605896931117,
+          "p99_extension": 1.6143482509546416
+        },
+        {
+          "name": "txgirl6_part_04",
+          "max_extension": 1.0000004144213417,
+          "p99_extension": 1.0000003782122313
+        },
+        {
+          "name": "txgirl6_part_05",
+          "max_extension": 1.5798707982729747,
+          "p99_extension": 1.3218663994571387
+        },
+        {
+          "name": "txgirl6_part_06",
+          "max_extension": 2.050595572196703,
+          "p99_extension": 1.522434453184699
+        },
+        {
+          "name": "txgirl6_part_07",
+          "max_extension": 4.446789993071395,
+          "p99_extension": 3.2906648059027965
+        },
+        {
+          "name": "txgirl6_part_08",
+          "max_extension": 3.330958281710747,
+          "p99_extension": 2.0063743863536185
+        },
+        {
+          "name": "txgirl6_part_09",
+          "max_extension": 3.431758457696669,
+          "p99_extension": 2.1163670870286646
+        },
+        {
+          "name": "txgirl6_part_10",
+          "max_extension": 1.000000431430602,
+          "p99_extension": 1.0000003468248846
+        },
+        {
+          "name": "txgirl6_part_11",
+          "max_extension": 1.0000003693982378,
+          "p99_extension": 1.0000003269619815
+        }
+      ]
+    },
+    {
+      "label": "riding",
+      "asset": "anim_rider_gallop_bow",
+      "frames_checked": 20,
+      "total_frames": 21,
+      "worst_frame": 10,
+      "worst_mesh": "txgirl6_part_09",
+      "max_edge_extension": 4.223308038855275,
+      "max_mesh_p99_extension": 2.744554067394057,
+      "meshes": [
+        {
+          "name": "txgirl6_part_00",
+          "max_extension": 1.000000406756923,
+          "p99_extension": 1.0000003442804994
+        },
+        {
+          "name": "txgirl6_part_01",
+          "max_extension": 2.919685698817684,
+          "p99_extension": 1.000000365117616
+        },
+        {
+          "name": "txgirl6_part_02",
+          "max_extension": 1.2635532853405256,
+          "p99_extension": 1.1621485978962243
+        },
+        {
+          "name": "txgirl6_part_03",
+          "max_extension": 3.0793628953831993,
+          "p99_extension": 1.7904445078742943
+        },
+        {
+          "name": "txgirl6_part_04",
+          "max_extension": 1.0000004144213432,
+          "p99_extension": 1.0000003782122238
+        },
+        {
+          "name": "txgirl6_part_05",
+          "max_extension": 1.4986505423857768,
+          "p99_extension": 1.2508911379312617
+        },
+        {
+          "name": "txgirl6_part_06",
+          "max_extension": 2.2532706049197158,
+          "p99_extension": 1.8549783780783946
+        },
+        {
+          "name": "txgirl6_part_07",
+          "max_extension": 3.3552516046714826,
+          "p99_extension": 2.610483488258854
+        },
+        {
+          "name": "txgirl6_part_08",
+          "max_extension": 4.034842738478674,
+          "p99_extension": 2.744554067394057
+        },
+        {
+          "name": "txgirl6_part_09",
+          "max_extension": 4.223308038855275,
+          "p99_extension": 2.490742285744586
+        },
+        {
+          "name": "txgirl6_part_10",
+          "max_extension": 1.0000004314306,
+          "p99_extension": 1.0000003468248826
+        },
+        {
+          "name": "txgirl6_part_11",
+          "max_extension": 1.0000003693982344,
+          "p99_extension": 1.0000003269619833
+        }
+      ]
+    },
+    {
+      "label": "slash",
+      "asset": "anim_dagger_slashleft_1h_balance",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 48,
+      "worst_mesh": "txgirl6_part_09",
+      "max_edge_extension": 4.138184338886293,
+      "max_mesh_p99_extension": 2.7948087900402667,
+      "meshes": [
+        {
+          "name": "txgirl6_part_00",
+          "max_extension": 1.000000406756928,
+          "p99_extension": 1.0000003442804999
+        },
+        {
+          "name": "txgirl6_part_01",
+          "max_extension": 2.751024077045756,
+          "p99_extension": 1.0000003657105647
+        },
+        {
+          "name": "txgirl6_part_02",
+          "max_extension": 1.2432763321036033,
+          "p99_extension": 1.1402594761319593
+        },
+        {
+          "name": "txgirl6_part_03",
+          "max_extension": 2.150963479254729,
+          "p99_extension": 1.4061569332367188
+        },
+        {
+          "name": "txgirl6_part_04",
+          "max_extension": 1.0000004144213563,
+          "p99_extension": 1.0000003782122244
+        },
+        {
+          "name": "txgirl6_part_05",
+          "max_extension": 1.450599722540183,
+          "p99_extension": 1.210432304528406
+        },
+        {
+          "name": "txgirl6_part_06",
+          "max_extension": 1.9901838751404164,
+          "p99_extension": 1.4608558911182412
+        },
+        {
+          "name": "txgirl6_part_07",
+          "max_extension": 3.606084008692408,
+          "p99_extension": 2.7948087900402667
+        },
+        {
+          "name": "txgirl6_part_08",
+          "max_extension": 3.148760222935716,
+          "p99_extension": 1.997876736683775
+        },
+        {
+          "name": "txgirl6_part_09",
+          "max_extension": 4.138184338886293,
+          "p99_extension": 2.35592464530715
+        },
+        {
+          "name": "txgirl6_part_10",
+          "max_extension": 1.0000004314306004,
+          "p99_extension": 1.0000003468248846
+        },
+        {
+          "name": "txgirl6_part_11",
+          "max_extension": 1.0000003693982302,
+          "p99_extension": 1.0000003269619813
+        }
+      ]
+    },
+    {
+      "label": "stand_unarmed1",
+      "asset": "anim_unarmed_stand_idle_1",
+      "frames_checked": 16,
+      "total_frames": 1083,
+      "worst_frame": 865,
+      "worst_mesh": "txgirl6_part_07",
+      "max_edge_extension": 3.901930355053307,
+      "max_mesh_p99_extension": 3.27795604058323,
+      "meshes": [
+        {
+          "name": "txgirl6_part_00",
+          "max_extension": 1.0000004067569377,
+          "p99_extension": 1.0000003442805034
+        },
+        {
+          "name": "txgirl6_part_01",
+          "max_extension": 1.7735085551833398,
+          "p99_extension": 1.0000003657105656
+        },
+        {
+          "name": "txgirl6_part_02",
+          "max_extension": 1.1484703227055222,
+          "p99_extension": 1.0842916736635642
+        },
+        {
+          "name": "txgirl6_part_03",
+          "max_extension": 1.3909582523573836,
+          "p99_extension": 1.1420850199105406
+        },
+        {
+          "name": "txgirl6_part_04",
+          "max_extension": 1.0000004144213421,
+          "p99_extension": 1.0000003782122209
+        },
+        {
+          "name": "txgirl6_part_05",
+          "max_extension": 1.3271540625792098,
+          "p99_extension": 1.1569880091698692
+        },
+        {
+          "name": "txgirl6_part_06",
+          "max_extension": 1.280575966771608,
+          "p99_extension": 1.1480595915262506
+        },
+        {
+          "name": "txgirl6_part_07",
+          "max_extension": 3.901930355053307,
+          "p99_extension": 3.27795604058323
+        },
+        {
+          "name": "txgirl6_part_08",
+          "max_extension": 2.515493868240588,
+          "p99_extension": 1.4553442754294852
+        },
+        {
+          "name": "txgirl6_part_09",
+          "max_extension": 2.438382986494431,
+          "p99_extension": 1.7207456718714562
+        },
+        {
+          "name": "txgirl6_part_10",
+          "max_extension": 1.0000004314306075,
+          "p99_extension": 1.0000003468248824
+        },
+        {
+          "name": "txgirl6_part_11",
+          "max_extension": 1.0000003693982322,
+          "p99_extension": 1.0000003269619822
+        }
+      ]
+    },
+    {
+      "label": "stand_unarmed2",
+      "asset": "anim_unarmed_stand_idle_2",
+      "frames_checked": 16,
+      "total_frames": 1720,
+      "worst_frame": 573,
+      "worst_mesh": "txgirl6_part_07",
+      "max_edge_extension": 4.276517741373556,
+      "max_mesh_p99_extension": 3.547544839719961,
+      "meshes": [
+        {
+          "name": "txgirl6_part_00",
+          "max_extension": 1.0000004067569297,
+          "p99_extension": 1.000000344280504
+        },
+        {
+          "name": "txgirl6_part_01",
+          "max_extension": 1.6840194172891885,
+          "p99_extension": 1.0000003657105623
+        },
+        {
+          "name": "txgirl6_part_02",
+          "max_extension": 1.1629180037460092,
+          "p99_extension": 1.0831533861409026
+        },
+        {
+          "name": "txgirl6_part_03",
+          "max_extension": 1.393462993619764,
+          "p99_extension": 1.132581236486708
+        },
+        {
+          "name": "txgirl6_part_04",
+          "max_extension": 1.0000004144213475,
+          "p99_extension": 1.0000003782122218
+        },
+        {
+          "name": "txgirl6_part_05",
+          "max_extension": 1.3527802423140045,
+          "p99_extension": 1.2146358819971732
+        },
+        {
+          "name": "txgirl6_part_06",
+          "max_extension": 1.2866072812230505,
+          "p99_extension": 1.1383258207345037
+        },
+        {
+          "name": "txgirl6_part_07",
+          "max_extension": 4.276517741373556,
+          "p99_extension": 3.547544839719961
+        },
+        {
+          "name": "txgirl6_part_08",
+          "max_extension": 2.544451304880716,
+          "p99_extension": 1.4740559654021699
+        },
+        {
+          "name": "txgirl6_part_09",
+          "max_extension": 2.157894448347037,
+          "p99_extension": 1.7078909288113804
+        },
+        {
+          "name": "txgirl6_part_10",
+          "max_extension": 1.0000004314306028,
+          "p99_extension": 1.0000003468248875
+        },
+        {
+          "name": "txgirl6_part_11",
+          "max_extension": 1.0000003693982262,
+          "p99_extension": 1.0000003269619822
+        }
+      ]
+    },
+    {
+      "label": "stand_unarmed3",
+      "asset": "anim_unarmed_stand_idle_3",
+      "frames_checked": 16,
+      "total_frames": 1359,
+      "worst_frame": 724,
+      "worst_mesh": "txgirl6_part_07",
+      "max_edge_extension": 3.605283904484835,
+      "max_mesh_p99_extension": 2.913399549160247,
+      "meshes": [
+        {
+          "name": "txgirl6_part_00",
+          "max_extension": 1.0000004067569295,
+          "p99_extension": 1.0000003442804994
+        },
+        {
+          "name": "txgirl6_part_01",
+          "max_extension": 2.1480838092042824,
+          "p99_extension": 1.0000003661635741
+        },
+        {
+          "name": "txgirl6_part_02",
+          "max_extension": 1.1389269885992037,
+          "p99_extension": 1.0809343821207689
+        },
+        {
+          "name": "txgirl6_part_03",
+          "max_extension": 1.323189844457161,
+          "p99_extension": 1.1257926315629108
+        },
+        {
+          "name": "txgirl6_part_04",
+          "max_extension": 1.000000414421349,
+          "p99_extension": 1.0000003782122269
+        },
+        {
+          "name": "txgirl6_part_05",
+          "max_extension": 1.2944953593787367,
+          "p99_extension": 1.1131884206868448
+        },
+        {
+          "name": "txgirl6_part_06",
+          "max_extension": 1.3086227086049704,
+          "p99_extension": 1.1447222699891115
+        },
+        {
+          "name": "txgirl6_part_07",
+          "max_extension": 3.605283904484835,
+          "p99_extension": 2.913399549160247
+        },
+        {
+          "name": "txgirl6_part_08",
+          "max_extension": 1.994555197167416,
+          "p99_extension": 1.4817303446729377
+        },
+        {
+          "name": "txgirl6_part_09",
+          "max_extension": 2.8090785388318493,
+          "p99_extension": 1.791849187971821
+        },
+        {
+          "name": "txgirl6_part_10",
+          "max_extension": 1.0000004314306041,
+          "p99_extension": 1.0000003468248808
+        },
+        {
+          "name": "txgirl6_part_11",
+          "max_extension": 1.000000369398227,
+          "p99_extension": 1.0000003269619797
+        }
+      ]
+    },
+    {
+      "label": "stand_onehand",
+      "asset": "anim_1h_without_shield_stand_idle_1",
+      "frames_checked": 16,
+      "total_frames": 1882,
+      "worst_frame": 251,
+      "worst_mesh": "txgirl6_part_09",
+      "max_edge_extension": 3.056426757180449,
+      "max_mesh_p99_extension": 2.1257533251644714,
+      "meshes": [
+        {
+          "name": "txgirl6_part_00",
+          "max_extension": 1.0000004067569201,
+          "p99_extension": 1.0000003442805072
+        },
+        {
+          "name": "txgirl6_part_01",
+          "max_extension": 1.5243523203916731,
+          "p99_extension": 1.0000003663134587
+        },
+        {
+          "name": "txgirl6_part_02",
+          "max_extension": 1.168535612308519,
+          "p99_extension": 1.0891024495148316
+        },
+        {
+          "name": "txgirl6_part_03",
+          "max_extension": 1.2840990637437038,
+          "p99_extension": 1.112750817538329
+        },
+        {
+          "name": "txgirl6_part_04",
+          "max_extension": 1.0000004144213428,
+          "p99_extension": 1.0000003782122335
+        },
+        {
+          "name": "txgirl6_part_05",
+          "max_extension": 1.1844689598505855,
+          "p99_extension": 1.1254802661105154
+        },
+        {
+          "name": "txgirl6_part_06",
+          "max_extension": 1.176358441826583,
+          "p99_extension": 1.112229439162757
+        },
+        {
+          "name": "txgirl6_part_07",
+          "max_extension": 2.464864918724028,
+          "p99_extension": 2.1257533251644714
+        },
+        {
+          "name": "txgirl6_part_08",
+          "max_extension": 2.7283302280298725,
+          "p99_extension": 1.5311451350839929
+        },
+        {
+          "name": "txgirl6_part_09",
+          "max_extension": 3.056426757180449,
+          "p99_extension": 2.0739971635362155
+        },
+        {
+          "name": "txgirl6_part_10",
+          "max_extension": 1.000000431430601,
+          "p99_extension": 1.0000003468248821
+        },
+        {
+          "name": "txgirl6_part_11",
+          "max_extension": 1.0000003693982356,
+          "p99_extension": 1.0000003269619804
+        }
+      ]
+    },
+    {
+      "label": "stand_twohand",
+      "asset": "anim_2h_stand_idle_1",
+      "frames_checked": 16,
+      "total_frames": 1927,
+      "worst_frame": 386,
+      "worst_mesh": "txgirl6_part_07",
+      "max_edge_extension": 4.239960520277623,
+      "max_mesh_p99_extension": 3.4465697684731547,
+      "meshes": [
+        {
+          "name": "txgirl6_part_00",
+          "max_extension": 1.0000004067569368,
+          "p99_extension": 1.0000003442804997
+        },
+        {
+          "name": "txgirl6_part_01",
+          "max_extension": 1.1308672786579426,
+          "p99_extension": 1.0000003651176161
+        },
+        {
+          "name": "txgirl6_part_02",
+          "max_extension": 1.3618582501287932,
+          "p99_extension": 1.1812431364800235
+        },
+        {
+          "name": "txgirl6_part_03",
+          "max_extension": 1.2530582929628333,
+          "p99_extension": 1.0989594297943204
+        },
+        {
+          "name": "txgirl6_part_04",
+          "max_extension": 1.000000414421367,
+          "p99_extension": 1.0000003782122235
+        },
+        {
+          "name": "txgirl6_part_05",
+          "max_extension": 1.550315021828054,
+          "p99_extension": 1.297218704009039
+        },
+        {
+          "name": "txgirl6_part_06",
+          "max_extension": 1.1906886686258764,
+          "p99_extension": 1.0872563316720398
+        },
+        {
+          "name": "txgirl6_part_07",
+          "max_extension": 4.239960520277623,
+          "p99_extension": 3.4465697684731547
+        },
+        {
+          "name": "txgirl6_part_08",
+          "max_extension": 2.2000247598472478,
+          "p99_extension": 1.694499341310877
+        },
+        {
+          "name": "txgirl6_part_09",
+          "max_extension": 1.9743997361237746,
+          "p99_extension": 1.717638112851886
+        },
+        {
+          "name": "txgirl6_part_10",
+          "max_extension": 1.0000004314306001,
+          "p99_extension": 1.0000003468248826
+        },
+        {
+          "name": "txgirl6_part_11",
+          "max_extension": 1.0000003693982271,
+          "p99_extension": 1.00000032696198
+        }
+      ]
+    },
+    {
+      "label": "ui_neutral_male",
+      "asset": "anim_female_idle_long",
+      "frames_checked": 2272,
+      "total_frames": 2273,
+      "worst_frame": 405,
+      "worst_mesh": "txgirl6_part_09",
+      "max_edge_extension": 2.5277708200391955,
+      "max_mesh_p99_extension": 1.6198219480673584,
+      "meshes": [
+        {
+          "name": "txgirl6_part_00",
+          "max_extension": 1.0000004067569292,
+          "p99_extension": 1.0000003442805052
+        },
+        {
+          "name": "txgirl6_part_01",
+          "max_extension": 1.9133735680772386,
+          "p99_extension": 1.0000003659400116
+        },
+        {
+          "name": "txgirl6_part_02",
+          "max_extension": 1.056197191662302,
+          "p99_extension": 1.0460499134472292
+        },
+        {
+          "name": "txgirl6_part_03",
+          "max_extension": 1.6343902064004359,
+          "p99_extension": 1.257034848696332
+        },
+        {
+          "name": "txgirl6_part_04",
+          "max_extension": 1.0000004144213592,
+          "p99_extension": 1.0000003782122229
+        },
+        {
+          "name": "txgirl6_part_05",
+          "max_extension": 1.0877272424081013,
+          "p99_extension": 1.0582188357798314
+        },
+        {
+          "name": "txgirl6_part_06",
+          "max_extension": 1.6029045307875016,
+          "p99_extension": 1.258977315529281
+        },
+        {
+          "name": "txgirl6_part_07",
+          "max_extension": 1.3945300614988365,
+          "p99_extension": 1.2291742404533985
+        },
+        {
+          "name": "txgirl6_part_08",
+          "max_extension": 2.111800930953735,
+          "p99_extension": 1.4204899766864583
+        },
+        {
+          "name": "txgirl6_part_09",
+          "max_extension": 2.5277708200391955,
+          "p99_extension": 1.6198219480673584
+        },
+        {
+          "name": "txgirl6_part_10",
+          "max_extension": 1.0000004314306004,
+          "p99_extension": 1.0000003468248828
+        },
+        {
+          "name": "txgirl6_part_11",
+          "max_extension": 1.0000003693982336,
+          "p99_extension": 1.0000003269619813
+        }
+      ]
+    },
+    {
+      "label": "ui_neutral_female",
+      "asset": "anim_female_idle_long",
+      "frames_checked": 2272,
+      "total_frames": 2273,
+      "worst_frame": 405,
+      "worst_mesh": "txgirl6_part_09",
+      "max_edge_extension": 2.5277708200391955,
+      "max_mesh_p99_extension": 1.6198219480673584,
+      "meshes": [
+        {
+          "name": "txgirl6_part_00",
+          "max_extension": 1.0000004067569292,
+          "p99_extension": 1.0000003442805052
+        },
+        {
+          "name": "txgirl6_part_01",
+          "max_extension": 1.9133735680772386,
+          "p99_extension": 1.0000003659400116
+        },
+        {
+          "name": "txgirl6_part_02",
+          "max_extension": 1.056197191662302,
+          "p99_extension": 1.0460499134472292
+        },
+        {
+          "name": "txgirl6_part_03",
+          "max_extension": 1.6343902064004359,
+          "p99_extension": 1.257034848696332
+        },
+        {
+          "name": "txgirl6_part_04",
+          "max_extension": 1.0000004144213592,
+          "p99_extension": 1.0000003782122229
+        },
+        {
+          "name": "txgirl6_part_05",
+          "max_extension": 1.0877272424081013,
+          "p99_extension": 1.0582188357798314
+        },
+        {
+          "name": "txgirl6_part_06",
+          "max_extension": 1.6029045307875016,
+          "p99_extension": 1.258977315529281
+        },
+        {
+          "name": "txgirl6_part_07",
+          "max_extension": 1.3945300614988365,
+          "p99_extension": 1.2291742404533985
+        },
+        {
+          "name": "txgirl6_part_08",
+          "max_extension": 2.111800930953735,
+          "p99_extension": 1.4204899766864583
+        },
+        {
+          "name": "txgirl6_part_09",
+          "max_extension": 2.5277708200391955,
+          "p99_extension": 1.6198219480673584
+        },
+        {
+          "name": "txgirl6_part_10",
+          "max_extension": 1.0000004314306004,
+          "p99_extension": 1.0000003468248828
+        },
+        {
+          "name": "txgirl6_part_11",
+          "max_extension": 1.0000003693982336,
+          "p99_extension": 1.0000003269619813
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "txgirl6_tex_0",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txgirl6_tex_1",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txgirl6_tex_10",
+      "mips": 9,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txgirl6_tex_2",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txgirl6_tex_3",
+      "mips": 11,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txgirl6_tex_4",
+      "mips": 9,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txgirl6_tex_5",
+      "mips": 9,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txgirl6_tex_6",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txgirl6_tex_7",
+      "mips": 11,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txgirl6_tex_8",
+      "mips": 11,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "txgirl6_tex_9",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    }
+  ],
+  "gross_motion_tear_guard_max_extension": 6.0,
+  "metadata_audit": "pass",
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "limitations": [
+    "Fixed source appearance; all skirt LODs, hair and sleeves use skeletal skinning. Skeletal garment baseline.",
+    "Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.",
+    "No facial animation or face/body customization support.",
+    "Skeletal skirts have no dynamic leg collision; extreme leg motion can intersect panels. Game appearance requires user acceptance."
+  ],
+  "integrated_hands_all_lods": true,
+  "cloth_enabled": false,
+  "body_metamesh": "txgirl6_body",
+  "hidden_placeholder_triangles": 4,
+  "source_proportions_preserved": true,
+  "custom_skeleton_bones": 28,
+  "final_lod0_source_geometry": [
+    {
+      "mesh": "txgirl6_part_00",
+      "source_distance_max_m": 0.0
+    },
+    {
+      "mesh": "txgirl6_part_01",
+      "source_distance_max_m": 0.0
+    },
+    {
+      "mesh": "txgirl6_part_02",
+      "source_distance_max_m": 0.0
+    },
+    {
+      "mesh": "txgirl6_part_03",
+      "source_distance_max_m": 0.0
+    },
+    {
+      "mesh": "txgirl6_part_04",
+      "source_distance_max_m": 0.0
+    },
+    {
+      "mesh": "txgirl6_part_05",
+      "source_distance_max_m": 0.0
+    },
+    {
+      "mesh": "txgirl6_part_06",
+      "source_distance_max_m": 0.0
+    },
+    {
+      "mesh": "txgirl6_part_07",
+      "source_distance_max_m": 0.0
+    },
+    {
+      "mesh": "txgirl6_part_08",
+      "source_distance_max_m": 0.0
+    },
+    {
+      "mesh": "txgirl6_part_09",
+      "source_distance_max_m": 0.0
+    },
+    {
+      "mesh": "txgirl6_part_10",
+      "source_distance_max_m": 0.0
+    },
+    {
+      "mesh": "txgirl6_part_11",
+      "source_distance_max_m": 0.0
+    }
+  ],
+  "source_validation": {
+    "status": "pass",
+    "blend_reopened": true,
+    "fbx_reimported": true,
+    "packed_images": 21,
+    "meshes": 12,
+    "bones": 28,
+    "source_proportions_preserved": true,
+    "source_geometry_max_error_m": 0.0,
+    "parts": [
+      {
+        "part": "txgirl6_part_00",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txgirl6_part_01",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txgirl6_part_02",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txgirl6_part_03",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txgirl6_part_04",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txgirl6_part_05",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txgirl6_part_06",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txgirl6_part_07",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txgirl6_part_08",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txgirl6_part_09",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txgirl6_part_10",
+        "max_error_m": 0.0
+      },
+      {
+        "part": "txgirl6_part_11",
+        "max_error_m": 0.0
+      }
+    ]
+  },
+  "ui_scope_validation": {
+    "status": "pass",
+    "cases": {
+      "SandBox.View.Map.MapScreen._mainPartyVisual": false,
+      "SandBox.View.Map.PartyVisual._humanAgentVisuals": false,
+      "SandBox.View.Map.MapConversationTableau._agentVisuals": false,
+      "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableau._agentVisuals": true,
+      "TaleWorlds.MountAndBlade.View.Tableaus.BasicCharacterTableau._agentVisuals": true,
+      "TaleWorlds.MountAndBlade.GauntletUI.BodyGenerator.BodyGeneratorView._visualToShow": true,
+      "Unknown.CharacterTableau._agentVisuals": false,
+      "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableauFake._agentVisuals": false
+    },
+    "null_owner_allowed": false,
+    "direct_provider_cases": "actual runtime methods compiled with matching provider/tableau stubs; valid/null/unknown provider/unknown tableau",
+    "actual_field_collection_and_inspect_executed": true,
+    "boxed_action_invalid_cast_reproduced": true,
+    "reference_and_value_custom_equals_never_called": true,
+    "inventory_discovery_independent_of_screen_seen_budget": true,
+    "source_sha256": "72c8eb9f956300880c655f4415e602b022534c9684659a074b6f84a4c7aa1558",
+    "assembly_sha256": "b538dcc2f85c577537c603981e824f75ebb63b50bda434fbe14634b8e427cc52",
+    "game_verified": false
+  },
+  "binding_validation": {
+    "status": "pass",
+    "version": "v0.1.0",
+    "arm_axes": [
+      {
+        "bone": "l_upperarm_twist",
+        "axis_deviation_degrees": 0.05094072518091725
+      },
+      {
+        "bone": "l_upperarm_twist1",
+        "axis_deviation_degrees": 0.05094072518091725
+      },
+      {
+        "bone": "l_foretwist",
+        "axis_deviation_degrees": 0.03982020218642732
+      },
+      {
+        "bone": "l_foretwist1",
+        "axis_deviation_degrees": 0.03982020218642732
+      },
+      {
+        "bone": "r_upperarm_twist",
+        "axis_deviation_degrees": 0.0548820785081172
+      },
+      {
+        "bone": "r_upperarm_twist1",
+        "axis_deviation_degrees": 0.0548820785081172
+      },
+      {
+        "bone": "r_foretwist",
+        "axis_deviation_degrees": 0.04679413843163135
+      },
+      {
+        "bone": "r_foretwist1",
+        "axis_deviation_degrees": 0.04679413843163135
+      }
+    ],
+    "grip_points": [
+      {
+        "pose": "rest",
+        "frames": 1,
+        "maximum_attachment_to_sampled_hand_surface_m": {
+          "left": 0.005653861345777826,
+          "right": 0.005653889512542385
+        }
+      },
+      {
+        "pose": "run",
+        "frames": 24,
+        "maximum_attachment_to_sampled_hand_surface_m": {
+          "left": 0.006465667402117191,
+          "right": 0.005977481516166128
+        }
+      },
+      {
+        "pose": "stand_onehand",
+        "frames": 24,
+        "maximum_attachment_to_sampled_hand_surface_m": {
+          "left": 0.006005775687885595,
+          "right": 0.0058015972177921414
+        }
+      },
+      {
+        "pose": "stand_twohand",
+        "frames": 24,
+        "maximum_attachment_to_sampled_hand_surface_m": {
+          "left": 0.0028963471898917374,
+          "right": 0.005636814999378875
+        }
+      },
+      {
+        "pose": "ui_neutral_male",
+        "frames": 24,
+        "maximum_attachment_to_sampled_hand_surface_m": {
+          "left": 0.006454710739316616,
+          "right": 0.006302154003670729
+        }
+      }
+    ],
+    "source_joint_positions_preserved": true,
+    "item_bones_do_not_deform_hands": true,
+    "scope": "Final bind directions and sampled hand surfaces; no engine weapon geometry, finger closure or IK test"
+  },
+  "preview_idle_validation": {
+    "status": "pass",
+    "version": "v0.1.0",
+    "default_inventory_clip": "inventory_idle",
+    "preview_overrides": [
+      {
+        "sex": "male",
+        "action": "act_inventory_idle_start",
+        "clip": "anim_female_custom_start",
+        "skeletal_animation": "anim_female_idle_long",
+        "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
+        "clip_metadata": "AnimationClip 'anim_female_custom_start' guid=593006d8-02b3-4307-b1fc-9a2643a8f1d7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith='act_inventory_idle'\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
+      },
+      {
+        "sex": "male",
+        "action": "act_inventory_idle",
+        "clip": "anim_female_custom",
+        "skeletal_animation": "anim_female_idle_long",
+        "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
+        "clip_metadata": "AnimationClip 'anim_female_custom' guid=da51b19f-81fe-4ffe-956f-ab5d800e71f7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[cyclic,allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith=''\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
+      },
+      {
+        "sex": "female",
+        "action": "act_inventory_idle_start",
+        "clip": "anim_female_custom_start",
+        "skeletal_animation": "anim_female_idle_long",
+        "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
+        "clip_metadata": "AnimationClip 'anim_female_custom_start' guid=593006d8-02b3-4307-b1fc-9a2643a8f1d7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith='act_inventory_idle'\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
+      },
+      {
+        "sex": "female",
+        "action": "act_inventory_idle",
+        "clip": "anim_female_custom",
+        "skeletal_animation": "anim_female_idle_long",
+        "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
+        "clip_metadata": "AnimationClip 'anim_female_custom' guid=da51b19f-81fe-4ffe-956f-ab5d800e71f7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[cyclic,allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith=''\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
+      }
+    ],
+    "creation_page_action_mapping_unchanged": true,
+    "runtime_dll_unchanged": false,
+    "runtime_entry": "direct CharacterTableauTextureProvider before bounded screen reflection",
+    "runtime_effect_verified": false,
+    "selected_character_sex_preserved": true,
+    "fixed_character_preview_pose": "female_idle_long_for_both_preview_skeleton_types",
+    "game_retest_pending": true
+  },
+  "skeletal_skirt_validation": {
+    "status": "pass",
+    "version": "v0.1.0",
+    "final_package_sha256": "646fa1ecbea33af1397f77243ec9b7ec5bf78fbd14a6bcb6bb836b195cf0f314",
+    "cloth_enabled": false,
+    "cloth_runtime_segments": 0,
+    "cloth_flagged_meshes": 0,
+    "cloth_collision_references": 0,
+    "scope": "Final TPAC native flags, segments, collision references; geometry and weights checked by verify_release; no game run"
+  },
+  "date": "2026-10-12",
+  "module_file_sha256": {
+    "SubModule.xml": "003412732a7c5529576dbfab177a1f09998b7b65df9bac2ef59aec543b855137",
+    "AssetPackages/txgirl6.tpac": "646fa1ecbea33af1397f77243ec9b7ec5bf78fbd14a6bcb6bb836b195cf0f314",
+    "ModuleData/action_sets.xml": "3d5518d5aba210f163342a4263e6b57f688bdf82890f789f4f81f9657a379051",
+    "ModuleData/cloth_bodies.xml": "64f3f7cdc77fa396d1ad6a280143191c50292912a9e48c1f977bff0c04fb75a5",
+    "ModuleData/monsters.xml": "986bbc2d298a525da24346c2d68e4f2921ee1dc6b69b372e38e3a2ff1bc2babd",
+    "ModuleData/project.mbproj": "964d68121f49ed596aa7a9afe1c998e867659f17631c1aeb7f96a9ec4f0971c6",
+    "ModuleData/skins.xml": "e2623ac2cb4ee9e647e72c509ff8ce1e26bfa33725f2f435b21a1bee20bbf438",
+    "bin/Win64_Shipping_Client/TianxiangGirlT6Race.UIRuntime.dll": "b538dcc2f85c577537c603981e824f75ebb63b50bda434fbe14634b8e427cc52"
+  },
+  "source_texture_sha256": {
+    "body_D.png": "5dfd5c36d9f6d049d7cfcb1e623a5b0bab3b6efa03f195095ff54c06d3dd38d3",
+    "cuff_D.png": "774f0763d3eb8558d69929f8ff855f3260f3d496eb6c3838b8d38c2dd16d893d",
+    "eyelash_D.png": "fa257b39cd8f75dace6b3cb67ba578fc03b9350ed22c999669f459faff10c975",
+    "eye_D.png": "4c7793e56df34b87274d1212139dc29f42182135928f320ef9aacb7f59f5f0f8",
+    "face_D.png": "6f0d4313900d58a6ee2fd9a4d2d3116d4388f526300a83bd404d703387bedfb7",
+    "hair_D.png": "f08f9e136507939a9bff3510e3a37fb8bd3c7d7610d50e5155056e3413e6d6e7",
+    "head_D.png": "2037b1051c2cd9e762cc9e0e8d5da4bf8b152906adf550259959992f3690fc0e",
+    "pants_D.png": "4483d7e79548784cbc96ec96e9ac4fc9167a9a0ca80faf0fe7c9e1f6f93cd85b",
+    "tunic_D.png": "a185b6479ff2e25e96171791742bd3e655a2396a1637fb831d0b50068aa18785"
+  },
+  "added_test_troops": []
+}

@@ -1,10 +1,10 @@
 {
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "status": "pass",
   "check_scope": "offline_structural_and_native_motion_checks",
-  "final_package_sha256": "646fa1ecbea33af1397f77243ec9b7ec5bf78fbd14a6bcb6bb836b195cf0f314",
-  "baseline_package_sha256": null,
-  "baseline_reason": "First release; own source FBX hashes and exact source-coordinate comparison",
+  "final_package_sha256": "4aa970201e97f7906786d60d71757204db0866e4487d3b8fd8d53ff51d6f30b0",
+  "baseline_package_sha256": "646fa1ecbea33af1397f77243ec9b7ec5bf78fbd14a6bcb6bb836b195cf0f314",
+  "baseline_reason": "v0.1.0 preview clearance repair; local horizontal skirt offsets, original body and all binding retained",
   "registration": {
     "status": "pass",
     "race": "txgirl6",
@@ -27,45 +27,45 @@
     },
     {
       "lod": 1,
-      "vertices": 15118,
-      "triangles": 19006,
+      "vertices": 15515,
+      "triangles": 19764,
       "submeshes": 12
     },
     {
       "lod": 2,
-      "vertices": 13025,
-      "triangles": 15882,
+      "vertices": 13626,
+      "triangles": 17024,
       "submeshes": 12
     },
     {
       "lod": 3,
-      "vertices": 11348,
-      "triangles": 13501,
+      "vertices": 12049,
+      "triangles": 14831,
       "submeshes": 12
     }
   ],
   "seams": [
     {
       "lod": 0,
-      "shared_points": 112,
+      "shared_points": 110,
       "cross_equipment_points": 0,
       "max_position_error": 0
     },
     {
       "lod": 1,
-      "shared_points": 112,
+      "shared_points": 110,
       "cross_equipment_points": 0,
       "max_position_error": 0
     },
     {
       "lod": 2,
-      "shared_points": 112,
+      "shared_points": 110,
       "cross_equipment_points": 0,
       "max_position_error": 0
     },
     {
       "lod": 3,
-      "shared_points": 112,
+      "shared_points": 110,
       "cross_equipment_points": 0,
       "max_position_error": 0
     }
@@ -124,7 +124,7 @@
         {
           "name": "txgirl6_part_08",
           "max_extension": 2.0236657342681363,
-          "p99_extension": 1.3594140159508008
+          "p99_extension": 1.3599272290513909
         },
         {
           "name": "txgirl6_part_09",
@@ -196,7 +196,7 @@
         {
           "name": "txgirl6_part_08",
           "max_extension": 3.754376141450528,
-          "p99_extension": 2.221689295339278
+          "p99_extension": 2.222931183100966
         },
         {
           "name": "txgirl6_part_09",
@@ -268,7 +268,7 @@
         {
           "name": "txgirl6_part_08",
           "max_extension": 3.330958281710747,
-          "p99_extension": 2.0063743863536185
+          "p99_extension": 2.006416558396152
         },
         {
           "name": "txgirl6_part_09",
@@ -295,7 +295,7 @@
       "worst_frame": 10,
       "worst_mesh": "txgirl6_part_09",
       "max_edge_extension": 4.223308038855275,
-      "max_mesh_p99_extension": 2.744554067394057,
+      "max_mesh_p99_extension": 2.7460626362241705,
       "meshes": [
         {
           "name": "txgirl6_part_00",
@@ -340,7 +340,7 @@
         {
           "name": "txgirl6_part_08",
           "max_extension": 4.034842738478674,
-          "p99_extension": 2.744554067394057
+          "p99_extension": 2.7460626362241705
         },
         {
           "name": "txgirl6_part_09",
@@ -412,7 +412,7 @@
         {
           "name": "txgirl6_part_08",
           "max_extension": 3.148760222935716,
-          "p99_extension": 1.997876736683775
+          "p99_extension": 1.998442618049683
         },
         {
           "name": "txgirl6_part_09",
@@ -484,7 +484,7 @@
         {
           "name": "txgirl6_part_08",
           "max_extension": 2.515493868240588,
-          "p99_extension": 1.4553442754294852
+          "p99_extension": 1.4560995340948235
         },
         {
           "name": "txgirl6_part_09",
@@ -556,7 +556,7 @@
         {
           "name": "txgirl6_part_08",
           "max_extension": 2.544451304880716,
-          "p99_extension": 1.4740559654021699
+          "p99_extension": 1.474675358469253
         },
         {
           "name": "txgirl6_part_09",
@@ -628,7 +628,7 @@
         {
           "name": "txgirl6_part_08",
           "max_extension": 1.994555197167416,
-          "p99_extension": 1.4817303446729377
+          "p99_extension": 1.4823040858550998
         },
         {
           "name": "txgirl6_part_09",
@@ -700,7 +700,7 @@
         {
           "name": "txgirl6_part_08",
           "max_extension": 2.7283302280298725,
-          "p99_extension": 1.5311451350839929
+          "p99_extension": 1.5317734813334856
         },
         {
           "name": "txgirl6_part_09",
@@ -772,7 +772,7 @@
         {
           "name": "txgirl6_part_08",
           "max_extension": 2.2000247598472478,
-          "p99_extension": 1.694499341310877
+          "p99_extension": 1.6946084482718686
         },
         {
           "name": "txgirl6_part_09",
@@ -844,7 +844,7 @@
         {
           "name": "txgirl6_part_08",
           "max_extension": 2.111800930953735,
-          "p99_extension": 1.4204899766864583
+          "p99_extension": 1.4205728998827798
         },
         {
           "name": "txgirl6_part_09",
@@ -916,7 +916,7 @@
         {
           "name": "txgirl6_part_08",
           "max_extension": 2.111800930953735,
-          "p99_extension": 1.4204899766864583
+          "p99_extension": 1.4205728998827798
         },
         {
           "name": "txgirl6_part_09",
@@ -1055,7 +1055,7 @@
     },
     {
       "mesh": "txgirl6_part_08",
-      "source_distance_max_m": 0.0
+      "source_distance_max_m": 7.829125427579747e-09
     },
     {
       "mesh": "txgirl6_part_09",
@@ -1078,7 +1078,7 @@
     "meshes": 12,
     "bones": 28,
     "source_proportions_preserved": true,
-    "source_geometry_max_error_m": 0.0,
+    "source_geometry_max_error_m": 0.027060076125959093,
     "parts": [
       {
         "part": "txgirl6_part_00",
@@ -1114,7 +1114,7 @@
       },
       {
         "part": "txgirl6_part_08",
-        "max_error_m": 0.0
+        "max_error_m": 0.027060076125959093
       },
       {
         "part": "txgirl6_part_09",
@@ -1148,13 +1148,13 @@
     "boxed_action_invalid_cast_reproduced": true,
     "reference_and_value_custom_equals_never_called": true,
     "inventory_discovery_independent_of_screen_seen_budget": true,
-    "source_sha256": "72c8eb9f956300880c655f4415e602b022534c9684659a074b6f84a4c7aa1558",
-    "assembly_sha256": "b538dcc2f85c577537c603981e824f75ebb63b50bda434fbe14634b8e427cc52",
+    "source_sha256": "7d3f95c3822853a7243badfb1ce39c9843fe1275ddebf25c3d4694a67e14aca0",
+    "assembly_sha256": "5168758114c3adfab22502e37190b18c0eb8410449ddc72435837314f67e5171",
     "game_verified": false
   },
   "binding_validation": {
     "status": "pass",
-    "version": "v0.1.0",
+    "version": "v0.1.1",
     "arm_axes": [
       {
         "bone": "l_upperarm_twist",
@@ -1237,7 +1237,7 @@
   },
   "preview_idle_validation": {
     "status": "pass",
-    "version": "v0.1.0",
+    "version": "v0.1.1",
     "default_inventory_clip": "inventory_idle",
     "preview_overrides": [
       {
@@ -1283,24 +1283,1582 @@
   },
   "skeletal_skirt_validation": {
     "status": "pass",
-    "version": "v0.1.0",
-    "final_package_sha256": "646fa1ecbea33af1397f77243ec9b7ec5bf78fbd14a6bcb6bb836b195cf0f314",
+    "version": "v0.1.1",
+    "final_package_sha256": "4aa970201e97f7906786d60d71757204db0866e4487d3b8fd8d53ff51d6f30b0",
     "cloth_enabled": false,
     "cloth_runtime_segments": 0,
     "cloth_flagged_meshes": 0,
     "cloth_collision_references": 0,
     "scope": "Final TPAC native flags, segments, collision references; geometry and weights checked by verify_release; no game run"
   },
-  "date": "2026-10-12",
+  "preview_skirt_validation": {
+    "status": "pass",
+    "version": "v0.1.1",
+    "final_package_sha256": "4aa970201e97f7906786d60d71757204db0866e4487d3b8fd8d53ff51d6f30b0",
+    "threshold_m": 0.001,
+    "scope": "Final TPAC byte weights and actual leg/skirt triangles, all four LODs; 15 barycentric samples per skirt triangle, captured UI bone frames and 32 samples over preview idle cycle; open boundary edge contacts excluded; no cloth solver or game retest",
+    "game_verified": false,
+    "rows": [
+      {
+        "lod": 0,
+        "part": "txgirl6_part_08",
+        "maximum_penetration_m": 0,
+        "penetrating_samples": 0,
+        "poses": [
+          {
+            "pose": "captured_0",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "captured_1",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_74",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_147",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_220",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_294",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_367",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_440",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_513",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_587",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_660",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_733",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_806",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_880",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_953",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1026",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1099",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1173",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1246",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1319",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1392",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1466",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1539",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1612",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1685",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1759",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1832",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1905",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1978",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2052",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2125",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2198",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2272",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          }
+        ],
+        "samples_per_pose": 34095
+      },
+      {
+        "lod": 1,
+        "part": "txgirl6_part_08",
+        "maximum_penetration_m": 0,
+        "penetrating_samples": 0,
+        "poses": [
+          {
+            "pose": "captured_0",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "captured_1",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_74",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_147",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_220",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_294",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_367",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_440",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_513",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_587",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_660",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_733",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_806",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_880",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_953",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1026",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1099",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1173",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1246",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1319",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1392",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1466",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1539",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1612",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1685",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1759",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1832",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1905",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1978",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2052",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2125",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2198",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2272",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          }
+        ],
+        "samples_per_pose": 34095
+      },
+      {
+        "lod": 2,
+        "part": "txgirl6_part_08",
+        "maximum_penetration_m": 0,
+        "penetrating_samples": 0,
+        "poses": [
+          {
+            "pose": "captured_0",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "captured_1",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_74",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_147",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_220",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_294",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_367",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_440",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_513",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_587",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_660",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_733",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_806",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_880",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_953",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1026",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1099",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1173",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1246",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1319",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1392",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1466",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1539",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1612",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1685",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1759",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1832",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1905",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1978",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2052",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2125",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2198",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2272",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          }
+        ],
+        "samples_per_pose": 34095
+      },
+      {
+        "lod": 3,
+        "part": "txgirl6_part_08",
+        "maximum_penetration_m": 0,
+        "penetrating_samples": 0,
+        "poses": [
+          {
+            "pose": "captured_0",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "captured_1",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_74",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_147",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_220",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_294",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_367",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_440",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_513",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_587",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_660",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_733",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_806",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_880",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_953",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1026",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1099",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1173",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1246",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1319",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1392",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1466",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1539",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1612",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1685",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1759",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1832",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1905",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1978",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2052",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2125",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2198",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2272",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          }
+        ],
+        "samples_per_pose": 34095
+      }
+    ]
+  },
+  "preview_skirt_fit": {
+    "scope": "Local horizontal skirt clearance; original body, skeleton, source height and all weights unchanged; no cloth solver",
+    "parts": [
+      {
+        "part": "txgirl6_part_08",
+        "before": {
+          "maximum_penetration_m": 0.024897289229556918,
+          "penetrating_samples": 98965,
+          "poses": [
+            {
+              "pose": "captured_0",
+              "penetrating_samples": 2073,
+              "maximum_penetration_m": 0.014897231449140236,
+              "worst_source_sample": [
+                -2.637198568411492e-07,
+                -0.09086256287992,
+                0.7856692224740982
+              ]
+            },
+            {
+              "pose": "captured_1",
+              "penetrating_samples": 2032,
+              "maximum_penetration_m": 0.014857618167297915,
+              "worst_source_sample": [
+                -2.637198568411492e-07,
+                -0.09086256287992,
+                0.7856692224740982
+              ]
+            },
+            {
+              "pose": "ui_cycle_1",
+              "penetrating_samples": 2954,
+              "maximum_penetration_m": 0.02399823203450069,
+              "worst_source_sample": [
+                0.10378925874829292,
+                0.043447389267385006,
+                0.6473894715309143
+              ]
+            },
+            {
+              "pose": "ui_cycle_74",
+              "penetrating_samples": 2986,
+              "maximum_penetration_m": 0.02456539962440729,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_147",
+              "penetrating_samples": 3017,
+              "maximum_penetration_m": 0.024897289229556918,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_220",
+              "penetrating_samples": 3012,
+              "maximum_penetration_m": 0.02478351294848835,
+              "worst_source_sample": [
+                0.10378925874829292,
+                0.043447389267385006,
+                0.6473894715309143
+              ]
+            },
+            {
+              "pose": "ui_cycle_294",
+              "penetrating_samples": 2992,
+              "maximum_penetration_m": 0.024484306348313112,
+              "worst_source_sample": [
+                0.10378925874829292,
+                0.043447389267385006,
+                0.6473894715309143
+              ]
+            },
+            {
+              "pose": "ui_cycle_367",
+              "penetrating_samples": 2953,
+              "maximum_penetration_m": 0.024028263786021853,
+              "worst_source_sample": [
+                0.10378925874829292,
+                0.043447389267385006,
+                0.6473894715309143
+              ]
+            },
+            {
+              "pose": "ui_cycle_440",
+              "penetrating_samples": 2943,
+              "maximum_penetration_m": 0.023716550091194222,
+              "worst_source_sample": [
+                0.10378925874829292,
+                0.043447389267385006,
+                0.6473894715309143
+              ]
+            },
+            {
+              "pose": "ui_cycle_513",
+              "penetrating_samples": 2941,
+              "maximum_penetration_m": 0.023558346245408757,
+              "worst_source_sample": [
+                0.10378925874829292,
+                0.043447389267385006,
+                0.6473894715309143
+              ]
+            },
+            {
+              "pose": "ui_cycle_587",
+              "penetrating_samples": 2950,
+              "maximum_penetration_m": 0.02374018752016127,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_660",
+              "penetrating_samples": 2980,
+              "maximum_penetration_m": 0.024205340538173914,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_733",
+              "penetrating_samples": 2994,
+              "maximum_penetration_m": 0.024645579745993018,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_806",
+              "penetrating_samples": 2986,
+              "maximum_penetration_m": 0.02449752064421773,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_880",
+              "penetrating_samples": 2972,
+              "maximum_penetration_m": 0.024057050235569477,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_953",
+              "penetrating_samples": 2948,
+              "maximum_penetration_m": 0.02360342931933701,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_1026",
+              "penetrating_samples": 2931,
+              "maximum_penetration_m": 0.023409771034494042,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_1099",
+              "penetrating_samples": 2935,
+              "maximum_penetration_m": 0.023490998428314924,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_1173",
+              "penetrating_samples": 2957,
+              "maximum_penetration_m": 0.02373098535463214,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_1246",
+              "penetrating_samples": 2968,
+              "maximum_penetration_m": 0.024045067140832543,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_1319",
+              "penetrating_samples": 2984,
+              "maximum_penetration_m": 0.02444350067526102,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_1392",
+              "penetrating_samples": 2996,
+              "maximum_penetration_m": 0.0247442736508674,
+              "worst_source_sample": [
+                0.10378925874829292,
+                0.043447389267385006,
+                0.6473894715309143
+              ]
+            },
+            {
+              "pose": "ui_cycle_1466",
+              "penetrating_samples": 2961,
+              "maximum_penetration_m": 0.024185829770431155,
+              "worst_source_sample": [
+                0.10378925874829292,
+                0.043447389267385006,
+                0.6473894715309143
+              ]
+            },
+            {
+              "pose": "ui_cycle_1539",
+              "penetrating_samples": 2943,
+              "maximum_penetration_m": 0.023730674300168175,
+              "worst_source_sample": [
+                0.10378925874829292,
+                0.043447389267385006,
+                0.6473894715309143
+              ]
+            },
+            {
+              "pose": "ui_cycle_1612",
+              "penetrating_samples": 2927,
+              "maximum_penetration_m": 0.023174076341092587,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_1685",
+              "penetrating_samples": 2923,
+              "maximum_penetration_m": 0.023323063738644123,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_1759",
+              "penetrating_samples": 2951,
+              "maximum_penetration_m": 0.02377775264903903,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_1832",
+              "penetrating_samples": 2974,
+              "maximum_penetration_m": 0.0242744330316782,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_1905",
+              "penetrating_samples": 2981,
+              "maximum_penetration_m": 0.02461322327144444,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_1978",
+              "penetrating_samples": 2987,
+              "maximum_penetration_m": 0.024473338155075908,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_2052",
+              "penetrating_samples": 2965,
+              "maximum_penetration_m": 0.023959733312949538,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_2125",
+              "penetrating_samples": 2951,
+              "maximum_penetration_m": 0.023718231124803424,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_2198",
+              "penetrating_samples": 2946,
+              "maximum_penetration_m": 0.02375803072936833,
+              "worst_source_sample": [
+                0.10771650820970535,
+                0.041752638295292854,
+                0.6480429768562317
+              ]
+            },
+            {
+              "pose": "ui_cycle_2272",
+              "penetrating_samples": 2952,
+              "maximum_penetration_m": 0.023992258837097324,
+              "worst_source_sample": [
+                0.10378925874829292,
+                0.043447389267385006,
+                0.6473894715309143
+              ]
+            }
+          ],
+          "samples_per_pose": 34095
+        },
+        "after": {
+          "maximum_penetration_m": 0,
+          "penetrating_samples": 0,
+          "poses": [
+            {
+              "pose": "captured_0",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "captured_1",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_1",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_74",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_147",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_220",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_294",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_367",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_440",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_513",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_587",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_660",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_733",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_806",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_880",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_953",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_1026",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_1099",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_1173",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_1246",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_1319",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_1392",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_1466",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_1539",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_1612",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_1685",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_1759",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_1832",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_1905",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_1978",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_2052",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_2125",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_2198",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            },
+            {
+              "pose": "ui_cycle_2272",
+              "penetrating_samples": 0,
+              "maximum_penetration_m": 0,
+              "worst_source_sample": null
+            }
+          ],
+          "samples_per_pose": 34095
+        },
+        "maximum_offset_m": 0.029241318858031752,
+        "changed_vertices": 713
+      }
+    ],
+    "iterations": [
+      {
+        "iteration": 0,
+        "penetrating_samples": 98867,
+        "maximum_depth_m": 0.02492019417695701
+      },
+      {
+        "iteration": 1,
+        "penetrating_samples": 81577,
+        "maximum_depth_m": 0.023053321754559875
+      },
+      {
+        "iteration": 2,
+        "penetrating_samples": 62750,
+        "maximum_depth_m": 0.021205266704782844
+      },
+      {
+        "iteration": 3,
+        "penetrating_samples": 43661,
+        "maximum_depth_m": 0.01937317568808794
+      },
+      {
+        "iteration": 4,
+        "penetrating_samples": 26112,
+        "maximum_depth_m": 0.01754821366193937
+      },
+      {
+        "iteration": 5,
+        "penetrating_samples": 11487,
+        "maximum_depth_m": 0.015410802652695565
+      },
+      {
+        "iteration": 6,
+        "penetrating_samples": 4722,
+        "maximum_depth_m": 0.013227213126810966
+      },
+      {
+        "iteration": 7,
+        "penetrating_samples": 2170,
+        "maximum_depth_m": 0.011029862078430597
+      },
+      {
+        "iteration": 8,
+        "penetrating_samples": 1199,
+        "maximum_depth_m": 0.008889035252650501
+      },
+      {
+        "iteration": 9,
+        "penetrating_samples": 723,
+        "maximum_depth_m": 0.006840601381554734
+      },
+      {
+        "iteration": 10,
+        "penetrating_samples": 397,
+        "maximum_depth_m": 0.005029469965847966
+      },
+      {
+        "iteration": 11,
+        "penetrating_samples": 180,
+        "maximum_depth_m": 0.0037851201145713276
+      },
+      {
+        "iteration": 12,
+        "penetrating_samples": 98,
+        "maximum_depth_m": 0.002926057638887869
+      },
+      {
+        "iteration": 13,
+        "penetrating_samples": 58,
+        "maximum_depth_m": 0.0023082986594999966
+      },
+      {
+        "iteration": 14,
+        "penetrating_samples": 28,
+        "maximum_depth_m": 0.001965630624908954
+      },
+      {
+        "iteration": 15,
+        "penetrating_samples": 17,
+        "maximum_depth_m": 0.0017505621945019811
+      },
+      {
+        "iteration": 16,
+        "penetrating_samples": 12,
+        "maximum_depth_m": 0.001617495930986479
+      },
+      {
+        "iteration": 17,
+        "penetrating_samples": 11,
+        "maximum_depth_m": 0.0015285822591977194
+      },
+      {
+        "iteration": 18,
+        "penetrating_samples": 8,
+        "maximum_depth_m": 0.0014603737799916416
+      },
+      {
+        "iteration": 19,
+        "penetrating_samples": 5,
+        "maximum_depth_m": 0.0014234805130399764
+      },
+      {
+        "iteration": 20,
+        "penetrating_samples": 4,
+        "maximum_depth_m": 0.001405203845934011
+      },
+      {
+        "iteration": 21,
+        "penetrating_samples": 3,
+        "maximum_depth_m": 0.0013156090990378289
+      },
+      {
+        "iteration": 22,
+        "penetrating_samples": 3,
+        "maximum_depth_m": 0.0011846415492300366
+      },
+      {
+        "iteration": 23,
+        "penetrating_samples": 1,
+        "maximum_depth_m": 0.001063234975731575
+      },
+      {
+        "iteration": 24,
+        "penetrating_samples": 0,
+        "maximum_depth_m": 0.0009592215917564317
+      }
+    ]
+  },
+  "final_lod0_source_geometry_reference": "Editable repaired source; local skirt clearance differs from original input, body/height/binding retained",
+  "date": "2026-10-13",
   "module_file_sha256": {
-    "SubModule.xml": "003412732a7c5529576dbfab177a1f09998b7b65df9bac2ef59aec543b855137",
-    "AssetPackages/txgirl6.tpac": "646fa1ecbea33af1397f77243ec9b7ec5bf78fbd14a6bcb6bb836b195cf0f314",
+    "SubModule.xml": "baa953aee1b2dfe197f44a1971b8ce7fb3c51b16b1db6f47ffc24afeaca660fe",
+    "AssetPackages/txgirl6.tpac": "4aa970201e97f7906786d60d71757204db0866e4487d3b8fd8d53ff51d6f30b0",
     "ModuleData/action_sets.xml": "3d5518d5aba210f163342a4263e6b57f688bdf82890f789f4f81f9657a379051",
     "ModuleData/cloth_bodies.xml": "64f3f7cdc77fa396d1ad6a280143191c50292912a9e48c1f977bff0c04fb75a5",
     "ModuleData/monsters.xml": "986bbc2d298a525da24346c2d68e4f2921ee1dc6b69b372e38e3a2ff1bc2babd",
     "ModuleData/project.mbproj": "964d68121f49ed596aa7a9afe1c998e867659f17631c1aeb7f96a9ec4f0971c6",
     "ModuleData/skins.xml": "e2623ac2cb4ee9e647e72c509ff8ce1e26bfa33725f2f435b21a1bee20bbf438",
-    "bin/Win64_Shipping_Client/TianxiangGirlT6Race.UIRuntime.dll": "b538dcc2f85c577537c603981e824f75ebb63b50bda434fbe14634b8e427cc52"
+    "bin/Win64_Shipping_Client/TianxiangGirlT6Race.UIRuntime.dll": "5168758114c3adfab22502e37190b18c0eb8410449ddc72435837314f67e5171"
   },
   "source_texture_sha256": {
     "body_D.png": "5dfd5c36d9f6d049d7cfcb1e623a5b0bab3b6efa03f195095ff54c06d3dd38d3",
@@ -1313,5 +2871,17 @@
     "pants_D.png": "4483d7e79548784cbc96ec96e9ac4fc9167a9a0ca80faf0fe7c9e1f6f93cd85b",
     "tunic_D.png": "a185b6479ff2e25e96171791742bd3e655a2396a1637fb831d0b50068aa18785"
   },
-  "added_test_troops": []
+  "added_test_troops": [],
+  "skirt_unchanged_data_validation": {
+    "status": "pass",
+    "version": "v0.1.1",
+    "baseline_version": "v0.1.0",
+    "only_changed_part": "txgirl6_part_08",
+    "source_height_unchanged": true,
+    "all_weights_and_topology_unchanged": true,
+    "body_face_hair_hands_unchanged": true,
+    "skirt_vertex_z_unchanged": true,
+    "max_skirt_horizontal_offset_m": 0.029241318858031752,
+    "offset_parameter_sha256": "c580c0724900bbafb28d664c99ba2806dc39603e6cb8d72e562c532bee184bdd"
+  }
 }

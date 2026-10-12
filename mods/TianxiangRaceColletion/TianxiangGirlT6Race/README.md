@@ -1,10 +1,12 @@
 # Tianxiang Girl T6 Sui Meng Race
 
-第 6 套“碎梦繁花”完整人物种族资源 Mod，版本 v0.1.0，适用本机 Native v1.4.8。独立模块 `TianxiangGirlT6Race`，种族 `txgirl6`，绑定骨架 `txgirl6_skeleton`。
+第 6 套“碎梦繁花”完整人物种族资源 Mod，版本 v0.1.1，适用本机 Native v1.4.8。独立模块 `TianxiangGirlT6Race`，种族 `txgirl6`，绑定骨架 `txgirl6_skeleton`。
 
 ## 功能与使用
 
-保留源固定脸、头发、衣服、双手和已有眼周 UV 修正。模型仅统一换算为米；骨架关节按本套源网格测量，手臂绑定方向适配源 A 姿势，不拉伸身体或四肢。提供四级 LOD；薄上衣和裙片保留源几何精度，其余部件按距离减面。裙片、袖片和头发使用骨骼蒙皮。
+保留源固定脸、头发、衣服、双手和已有眼周 UV 修正。基础模型统一换算为米，下裙片另有局部间隙返修；骨架关节按本套源网格测量，手臂绑定方向适配源 A 姿势，不拉伸身体或四肢。提供四级 LOD；薄上衣和裙片保留可编辑源几何精度，其余部件按距离减面。裙片、袖片和头发使用骨骼蒙皮。
+
+v0.1.1 针对站立预览的腿裙交叉，依据本套腿部表面、保存的游戏骨骼姿态及待机周期采样，为下裙片补局部横向间隙。裙片高度、身体、脸、腿形、骨架和全部蒙皮权重保持原样；与裙片相邻的腿部部件保留各级几何精度，避免减面改变局部表面；不是整体扩张裙子。校正量及最终四级 LOD 的面内部交叉筛查见[裙片返修](reports/preview_skirt_fit.json)与[最终包预览交叉检查](reports/preview_skirt_validation.json)。
 
 人物预览运行组件只处理本种族的预览对象，使用自己的骨架与动作集；物品栏待机采用自然垂手候选，保留所选性别和人物数据。复用已验收的第二套入口处理机制，并单独编译和进行离线回归。
 
@@ -14,7 +16,7 @@
 
 启动器英文名称为 **Tianxiang Girl T6 Sui Meng Race**，排在 Native、SandBoxCore、Sandbox 后。各套可单独或同时启用。安装包和可编辑源包在 `dist/`。
 
-游戏验收由用户完成，当前版本尚未获得本套游戏反馈。配置人物后检查物品栏、队伍和百科预览，回归站立、跑步、挥刀、持弓、骑乘及 LOD 切换，重点查看肩袖、手腕、裙片和整体高度。诊断日志在系统文档目录 `Mount and Blade II Bannerlord/TianxiangGirlT6Race/ui_runtime_v0.1.0.jsonl`。含本种族人物的存档依赖本模块。
+游戏验收由用户完成，v0.1.0 已获得用户“整体没什么问题”的反馈，同时确认队伍／百科／物品栏预览存在腿裙交叉；v0.1.1 的返修效果待用户复测。配置人物后检查物品栏、队伍和百科预览，回归站立、跑步、挥刀、持弓、骑乘及 LOD 切换，重点查看肩袖、手腕、裙片和整体高度。诊断日志在系统文档目录 `Mount and Blade II Bannerlord/TianxiangGirlT6Race/ui_runtime_v0.1.1.jsonl`。含本种族人物的存档依赖本模块。
 
 ## 当前限制
 
@@ -30,9 +32,9 @@
 
 ```powershell
 & 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/TianxiangRaceColletion/TianxiangGirlT6Race/tools/rebuild.py
-./tools/install_release.ps1 -Mod TianxiangGirlT6Race -Version v0.1.0 -CheckOnly
+./tools/install_release.ps1 -Mod TianxiangGirlT6Race -Version v0.1.1 -CheckOnly
 ```
 
-首次安装去掉 `-CheckOnly`；升级时提供真实旧版 `-PreviousVersion`，保留旧版交付包。
+首次安装去掉 `-CheckOnly`；从已交付 v0.1.0 升级时使用 `-PreviousVersion v0.1.0`，保留旧版安装包和源包。
 
 证据见[最终资源检查](reports/release_validation.json)、[源文件检查](reports/source_validation.json)、[骨架与手部挂点](reports/binding_validation.json)、[种族注册](reports/registration_validation.json)、[人物预览入口](reports/ui_scope_validation.json)、[待机映射](reports/preview_idle_validation.json)、[纯蒙皮检查](reports/skeletal_skirt_validation.json)、[源测量](reports/landmark_measurements.json)和[正面预览](reports/final_rest_front.png)。版本记录见 [CHANGELOG](CHANGELOG.md)。

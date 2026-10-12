@@ -1,6 +1,6 @@
 {
   "id": "TianxiangGirlT4Race",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "race": "txgirl4",
   "skeleton": "txgirl4_skeleton",
   "skin_min_scale": 1.0,
@@ -190,5 +190,9 @@
   "cloth_root_band_m": 0.012,
   "cloth_travel_slope": 0.45,
   "cloth_max_travel_m": 0.18,
-  "upper_skin_source": "mesh_09_798285"
+  "upper_skin_source": "mesh_09_798285",
+  "minimum_part_ratios": {
+    "txgirl4_part_04": 1.0,
+    "txgirl4_part_05": 1.0
+  }
 }

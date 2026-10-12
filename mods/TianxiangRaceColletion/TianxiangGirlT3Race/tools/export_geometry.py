@@ -57,7 +57,7 @@ for rec in manifest:
         bpy.context.view_layer.objects.active=o
         guard=o.vertex_groups.new(name='boundary_guard')
         if boundary:guard.add(list(boundary),1,'REPLACE')
-        dec=o.modifiers.new('LOD','DECIMATE');dec.ratio=max(base*mult,cfg['minimum_ratios'].get(rec['material'],0));dec.vertex_group=guard.name;dec.vertex_group_factor=1000;dec.invert_vertex_group=True
+        dec=o.modifiers.new('LOD','DECIMATE');dec.ratio=max(base*mult,cfg['minimum_ratios'].get(rec['material'],0),cfg.get('minimum_part_ratios',{}).get(rec['object'],0));dec.vertex_group=guard.name;dec.vertex_group_factor=1000;dec.invert_vertex_group=True
         bpy.ops.object.modifier_apply(modifier=dec.name)
         fallback=not points.issubset({tuple(np.round(v.co,6)) for v in o.data.vertices})
         if fallback:o.data=original.data.copy()

@@ -27,7 +27,12 @@ bpy.ops.wm.read_factory_settings(use_empty=True);bpy.ops.import_scene.fbx(filepa
 errors=[]
 for rec in manifest:
     ob=bpy.data.objects[rec['source_object']];p=np.array([ob.matrix_world@v.co for v in ob.data.vertices])*.01
-    error=float(np.max(abs(p-arrays[rec['object']+'_p'])));assert error<1e-6
+    error=float(np.max(abs(p-arrays[rec['object']+'_p'])))
+    if rec['object']==cfg['skirt_object']:
+        assert np.max(abs(p[:,2]-arrays[rec['object']+'_p'][:,2]))<1e-6
+        fit=json.loads((R/'reports/preview_skirt_fit.json').read_text())['parts'][0]
+        assert error<=fit['maximum_offset_m']+1e-6
+    else:assert error<1e-6
     errors.append({'part':rec['object'],'max_error_m':error})
 report={'status':'pass','blend_reopened':True,'fbx_reimported':True,'packed_images':len(images),'meshes':len(manifest),'bones':28,'source_proportions_preserved':True,'source_geometry_max_error_m':max(x['max_error_m'] for x in errors),'parts':errors}
 (R/'reports/source_validation.json').write_text(json.dumps(report,indent=2));print(report)

@@ -268,7 +268,7 @@ namespace TianxiangGirlT7Race.UIRuntime {
                     "Mount and Blade II Bannerlord","TianxiangGirlT7Race");
                 Directory.CreateDirectory(dir);
                 var envelope=new { session, time=DateTime.Now.ToString("s"), record };
-                string path=Path.Combine(dir,RepairEnabled?"ui_runtime_v0.1.0.jsonl":"ui_probe_v1.jsonl");
+                string path=Path.Combine(dir,RepairEnabled?"ui_runtime_v0.1.1.jsonl":"ui_probe_v1.jsonl");
                 if (File.Exists(path) && new FileInfo(path).Length>12*1024*1024) return;
                 File.AppendAllText(path,serializer.Serialize(envelope)+Environment.NewLine);
             } catch { /* Diagnostics must never interrupt UI/gameplay. */ }

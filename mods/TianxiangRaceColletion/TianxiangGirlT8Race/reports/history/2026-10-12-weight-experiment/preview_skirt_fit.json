@@ -1,0 +1,584 @@
+{
+  "scope": "Own captured game bone frames plus 32 samples over native preview cycle; oriented nearest leg triangle and triangle interior samples; no cloth simulation or game retest",
+  "parts": [
+    {
+      "part": "txgirl8_part_07",
+      "strength": 0.75,
+      "changed_vertices": 1970,
+      "before": {
+        "maximum_penetration_m": 0.02466405020095408,
+        "penetrating_samples": 38504,
+        "poses": [
+          {
+            "pose": "captured_0",
+            "penetrating_samples": 748,
+            "maximum_penetration_m": 0.01553328929003328,
+            "worst_source_sample": [
+              -1.3851288412543756e-08,
+              -0.0917328173915545,
+              0.7909302711486816
+            ]
+          },
+          {
+            "pose": "captured_1",
+            "penetrating_samples": 726,
+            "maximum_penetration_m": 0.015607759996782988,
+            "worst_source_sample": [
+              -1.3851288412543756e-08,
+              -0.0917328173915545,
+              0.7909302711486816
+            ]
+          },
+          {
+            "pose": "captured_2",
+            "penetrating_samples": 705,
+            "maximum_penetration_m": 0.015499169880058616,
+            "worst_source_sample": [
+              -1.3851288412543756e-08,
+              -0.0917328173915545,
+              0.7909302711486816
+            ]
+          },
+          {
+            "pose": "ui_cycle_1",
+            "penetrating_samples": 1131,
+            "maximum_penetration_m": 0.022912620392162353,
+            "worst_source_sample": [
+              0.10425000886122385,
+              0.058664112041393913,
+              0.5427522857983906
+            ]
+          },
+          {
+            "pose": "ui_cycle_74",
+            "penetrating_samples": 1153,
+            "maximum_penetration_m": 0.02396073075942695,
+            "worst_source_sample": [
+              0.11824033657709757,
+              0.05663441990812619,
+              0.45395466685295105
+            ]
+          },
+          {
+            "pose": "ui_cycle_147",
+            "penetrating_samples": 1164,
+            "maximum_penetration_m": 0.02466405020095408,
+            "worst_source_sample": [
+              0.11824033657709757,
+              0.05663441990812619,
+              0.45395466685295105
+            ]
+          },
+          {
+            "pose": "ui_cycle_220",
+            "penetrating_samples": 1152,
+            "maximum_penetration_m": 0.024314697831869125,
+            "worst_source_sample": [
+              0.11824033657709757,
+              0.05663441990812619,
+              0.45395466685295105
+            ]
+          },
+          {
+            "pose": "ui_cycle_294",
+            "penetrating_samples": 1147,
+            "maximum_penetration_m": 0.02370395214529708,
+            "worst_source_sample": [
+              0.1147686739762624,
+              0.05750576282540957,
+              0.47574566801389057
+            ]
+          },
+          {
+            "pose": "ui_cycle_367",
+            "penetrating_samples": 1122,
+            "maximum_penetration_m": 0.02312781591899693,
+            "worst_source_sample": [
+              0.10425000886122385,
+              0.058664112041393913,
+              0.5427522857983906
+            ]
+          },
+          {
+            "pose": "ui_cycle_440",
+            "penetrating_samples": 1108,
+            "maximum_penetration_m": 0.022661207942292094,
+            "worst_source_sample": [
+              0.10425000886122385,
+              0.058664112041393913,
+              0.5427522857983906
+            ]
+          },
+          {
+            "pose": "ui_cycle_513",
+            "penetrating_samples": 1113,
+            "maximum_penetration_m": 0.022234981588553637,
+            "worst_source_sample": [
+              0.10425000886122385,
+              0.058664112041393913,
+              0.5427522857983906
+            ]
+          },
+          {
+            "pose": "ui_cycle_587",
+            "penetrating_samples": 1132,
+            "maximum_penetration_m": 0.022178815212100744,
+            "worst_source_sample": [
+              0.10425000886122385,
+              0.058664112041393913,
+              0.5427522857983906
+            ]
+          },
+          {
+            "pose": "ui_cycle_660",
+            "penetrating_samples": 1142,
+            "maximum_penetration_m": 0.023027222487144172,
+            "worst_source_sample": [
+              0.11824033657709757,
+              0.05663441990812619,
+              0.45395466685295105
+            ]
+          },
+          {
+            "pose": "ui_cycle_733",
+            "penetrating_samples": 1153,
+            "maximum_penetration_m": 0.023918866412714124,
+            "worst_source_sample": [
+              0.11824033657709757,
+              0.05663441990812619,
+              0.45395466685295105
+            ]
+          },
+          {
+            "pose": "ui_cycle_806",
+            "penetrating_samples": 1147,
+            "maximum_penetration_m": 0.02361636597197503,
+            "worst_source_sample": [
+              0.11824033657709757,
+              0.05663441990812619,
+              0.45395466685295105
+            ]
+          },
+          {
+            "pose": "ui_cycle_880",
+            "penetrating_samples": 1135,
+            "maximum_penetration_m": 0.02268496889155358,
+            "worst_source_sample": [
+              0.11824033657709757,
+              0.05663441990812619,
+              0.45395466685295105
+            ]
+          },
+          {
+            "pose": "ui_cycle_953",
+            "penetrating_samples": 1121,
+            "maximum_penetration_m": 0.021633238065987825,
+            "worst_source_sample": [
+              0.11824033657709757,
+              0.05663441990812619,
+              0.45395466685295105
+            ]
+          },
+          {
+            "pose": "ui_cycle_1026",
+            "penetrating_samples": 1118,
+            "maximum_penetration_m": 0.02129794645588845,
+            "worst_source_sample": [
+              0.10425000886122385,
+              0.058664112041393913,
+              0.5427522857983906
+            ]
+          },
+          {
+            "pose": "ui_cycle_1099",
+            "penetrating_samples": 1123,
+            "maximum_penetration_m": 0.02143295668065548,
+            "worst_source_sample": [
+              0.10425000886122385,
+              0.058664112041393913,
+              0.5427522857983906
+            ]
+          },
+          {
+            "pose": "ui_cycle_1173",
+            "penetrating_samples": 1126,
+            "maximum_penetration_m": 0.021960471523925662,
+            "worst_source_sample": [
+              0.11824033657709757,
+              0.05663441990812619,
+              0.45395466685295105
+            ]
+          },
+          {
+            "pose": "ui_cycle_1246",
+            "penetrating_samples": 1140,
+            "maximum_penetration_m": 0.02273112814873457,
+            "worst_source_sample": [
+              0.11824033657709757,
+              0.05663441990812619,
+              0.45395466685295105
+            ]
+          },
+          {
+            "pose": "ui_cycle_1319",
+            "penetrating_samples": 1148,
+            "maximum_penetration_m": 0.023713835515081882,
+            "worst_source_sample": [
+              0.11824033657709757,
+              0.05663441990812619,
+              0.45395466685295105
+            ]
+          },
+          {
+            "pose": "ui_cycle_1392",
+            "penetrating_samples": 1153,
+            "maximum_penetration_m": 0.0242431916994974,
+            "worst_source_sample": [
+              0.11824033657709757,
+              0.05663441990812619,
+              0.45395466685295105
+            ]
+          },
+          {
+            "pose": "ui_cycle_1466",
+            "penetrating_samples": 1124,
+            "maximum_penetration_m": 0.023299251741264015,
+            "worst_source_sample": [
+              0.10425000886122385,
+              0.058664112041393913,
+              0.5427522857983906
+            ]
+          },
+          {
+            "pose": "ui_cycle_1539",
+            "penetrating_samples": 1116,
+            "maximum_penetration_m": 0.022594018082600087,
+            "worst_source_sample": [
+              0.10425000886122385,
+              0.058664112041393913,
+              0.5427522857983906
+            ]
+          },
+          {
+            "pose": "ui_cycle_1612",
+            "penetrating_samples": 1110,
+            "maximum_penetration_m": 0.021541250171139836,
+            "worst_source_sample": [
+              0.10425000886122385,
+              0.058664112041393913,
+              0.5427522857983906
+            ]
+          },
+          {
+            "pose": "ui_cycle_1685",
+            "penetrating_samples": 1117,
+            "maximum_penetration_m": 0.021338595601264387,
+            "worst_source_sample": [
+              0.10425000886122385,
+              0.058664112041393913,
+              0.5427522857983906
+            ]
+          },
+          {
+            "pose": "ui_cycle_1759",
+            "penetrating_samples": 1134,
+            "maximum_penetration_m": 0.022003211546689272,
+            "worst_source_sample": [
+              0.11824033657709757,
+              0.05663441990812619,
+              0.45395466685295105
+            ]
+          },
+          {
+            "pose": "ui_cycle_1832",
+            "penetrating_samples": 1148,
+            "maximum_penetration_m": 0.023077733116224408,
+            "worst_source_sample": [
+              0.11824033657709757,
+              0.05663441990812619,
+              0.45395466685295105
+            ]
+          },
+          {
+            "pose": "ui_cycle_1905",
+            "penetrating_samples": 1156,
+            "maximum_penetration_m": 0.023755952017381787,
+            "worst_source_sample": [
+              0.11824033657709757,
+              0.05663441990812619,
+              0.45395466685295105
+            ]
+          },
+          {
+            "pose": "ui_cycle_1978",
+            "penetrating_samples": 1153,
+            "maximum_penetration_m": 0.02339248958742246,
+            "worst_source_sample": [
+              0.11824033657709757,
+              0.05663441990812619,
+              0.45395466685295105
+            ]
+          },
+          {
+            "pose": "ui_cycle_2052",
+            "penetrating_samples": 1139,
+            "maximum_penetration_m": 0.022287026280537248,
+            "worst_source_sample": [
+              0.11824033657709757,
+              0.05663441990812619,
+              0.45395466685295105
+            ]
+          },
+          {
+            "pose": "ui_cycle_2125",
+            "penetrating_samples": 1135,
+            "maximum_penetration_m": 0.021877942606806755,
+            "worst_source_sample": [
+              0.11824033657709757,
+              0.05663441990812619,
+              0.45395466685295105
+            ]
+          },
+          {
+            "pose": "ui_cycle_2198",
+            "penetrating_samples": 1134,
+            "maximum_penetration_m": 0.022419118613470346,
+            "worst_source_sample": [
+              0.10425000886122385,
+              0.058664112041393913,
+              0.5427522857983906
+            ]
+          },
+          {
+            "pose": "ui_cycle_2272",
+            "penetrating_samples": 1131,
+            "maximum_penetration_m": 0.02290390693815425,
+            "worst_source_sample": [
+              0.10425000886122385,
+              0.058664112041393913,
+              0.5427522857983906
+            ]
+          }
+        ],
+        "samples_per_pose": 18470
+      },
+      "after": {
+        "maximum_penetration_m": 0,
+        "penetrating_samples": 0,
+        "poses": [
+          {
+            "pose": "captured_0",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "captured_1",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "captured_2",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_74",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_147",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_220",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_294",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_367",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_440",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_513",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_587",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_660",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_733",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_806",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_880",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_953",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1026",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1099",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1173",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1246",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1319",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1392",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1466",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1539",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1612",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1685",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1759",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1832",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1905",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_1978",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2052",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2125",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2198",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          },
+          {
+            "pose": "ui_cycle_2272",
+            "penetrating_samples": 0,
+            "maximum_penetration_m": 0,
+            "worst_source_sample": null
+          }
+        ],
+        "samples_per_pose": 18470
+      }
+    }
+  ]
+}

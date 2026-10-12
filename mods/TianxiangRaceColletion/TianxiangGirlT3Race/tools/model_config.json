@@ -1,6 +1,6 @@
 {
   "id": "TianxiangGirlT3Race",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "race": "txgirl3",
   "skeleton": "txgirl3_skeleton",
   "skin_min_scale": 1.0,
@@ -189,5 +189,9 @@
   "hand_part": "txgirl3_part_06",
   "cloth_root_band_m": 0.012,
   "cloth_travel_slope": 0.45,
-  "cloth_max_travel_m": 0.18
+  "cloth_max_travel_m": 0.18,
+  "minimum_part_ratios": {
+    "txgirl3_part_04": 1.0,
+    "txgirl3_part_05": 1.0
+  }
 }
