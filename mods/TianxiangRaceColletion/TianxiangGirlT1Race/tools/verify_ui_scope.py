@@ -3,6 +3,9 @@ import json,re,subprocess,hashlib
 from pathlib import Path
 R=Path(__file__).resolve().parents[1];s=(R/'tools/UIRuntime/Runtime.cs').read_text()
 method=re.search(r'internal static bool IsPreviewOwner\(string owner\) \{.*?\n        \}',s,re.S).group()
+provider_method=re.search(r'internal static object FindCharacterTableau\(object provider\) \{.*?\n        \}',s,re.S).group()
+assert s.index('FindCharacterTableau(texture?.TextureProvider)')<s.index('Inspect(screen, 0, seen')
+assert 'Inspect(tableau,0,new HashSet<object>()' in s
 assert s.index('if (IsPreviewOwner(owner))')<s.index('private void CorrectPreview')
 assert s.index('if (!IsPreviewOwner(owner)) return;')<s.index('var data=visual.GetCopyAgentVisualsData();')
 cases={
@@ -18,8 +21,19 @@ cases={
 B=R/'build/ui_scope_test';B.mkdir(parents=True,exist_ok=True)
 (B/'Test.csproj').write_text('<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><TargetFramework>net10.0</TargetFramework><OutputType>Exe</OutputType></PropertyGroup></Project>')
 tests='\n'.join('if(IsPreviewOwner('+json.dumps(owner)+')!='+str(expected).lower()+')throw new Exception('+json.dumps(owner)+');' for owner,expected in cases.items())
-(B/'Program.cs').write_text('using System;class Check{'+method+'\nstatic void Main(){'+tests+'\nif(IsPreviewOwner(null))throw new Exception("null");Console.WriteLine("OWNER_SCOPE_PASS");}}')
+provider_tests='''
+var tableau=new TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableau();
+var provider=new TaleWorlds.MountAndBlade.GauntletUI.TextureProviders.CharacterTableauTextureProvider(tableau);
+if(!ReferenceEquals(FindCharacterTableau(provider),tableau))throw new Exception("direct provider missed");
+if(FindCharacterTableau(null)!=null || FindCharacterTableau(new object())!=null)throw new Exception("unknown provider allowed");
+if(FindCharacterTableau(new TaleWorlds.MountAndBlade.GauntletUI.TextureProviders.CharacterTableauTextureProvider(new object()))!=null)throw new Exception("unknown tableau allowed");
+'''
+stubs='''
+namespace TaleWorlds.MountAndBlade.View.Tableaus { public class CharacterTableau {} }
+namespace TaleWorlds.MountAndBlade.GauntletUI.TextureProviders { public class CharacterTableauTextureProvider { private object _characterTableau; public CharacterTableauTextureProvider(object value){_characterTableau=value;} } }
+'''
+(B/'Program.cs').write_text('using System;using System.Reflection;class Check{'+method+provider_method+'\nstatic void Main(){'+tests+provider_tests+'\nif(IsPreviewOwner(null))throw new Exception("null");Console.WriteLine("OWNER_SCOPE_AND_PROVIDER_PASS");}}'+stubs)
 subprocess.run(['dotnet','run','--project',str(B/'Test.csproj')],check=True)
 dll=R/'module/TianxiangGirlT1Race/bin/Win64_Shipping_Client/TianxiangGirlT1Race.UIRuntime.dll'
-report=dict(status='pass',cases=cases,null_owner_allowed=False,source_sha256=hashlib.sha256(s.encode()).hexdigest(),assembly_sha256=hashlib.sha256(dll.read_bytes()).hexdigest(),game_verified=False)
+report=dict(status='pass',cases=cases,null_owner_allowed=False,direct_provider_cases='actual runtime method compiled with matching provider/tableau stubs; valid/null/unknown provider/unknown tableau',inventory_discovery_independent_of_screen_seen_budget=True,source_sha256=hashlib.sha256(s.encode()).hexdigest(),assembly_sha256=hashlib.sha256(dll.read_bytes()).hexdigest(),game_verified=False)
 (R/'reports/ui_scope_validation.json').write_text(json.dumps(report,indent=2))

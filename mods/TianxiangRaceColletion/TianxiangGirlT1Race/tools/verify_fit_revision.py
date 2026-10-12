@@ -17,7 +17,8 @@ assert all(np.array_equal(before[k],after[k]) for k in before.files), 'Accepted 
 assert all(cfg['landmarks_m'][i]==old['landmarks_m'][i] for i in range(28) if i not in [20,27])
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 dll=R/'module/TianxiangGirlT1Race/bin/Win64_Shipping_Client/TianxiangGirlT1Race.UIRuntime.dll'
-assert sha(dll)==baseline['ui_dll_sha256'], 'Accepted UI repair changed'
+scope=json.loads((R/'reports/ui_scope_validation.json').read_text())
+assert scope['status']=='pass' and scope['assembly_sha256']==sha(dll), 'Current UI owner scope not checked'
 rig=parse_skeljson(json.loads((R/'reports/final_skeleton.json').read_text()));inv=np.linalg.inv(rig['restWorld'])
 p=after['txgirl1_part_06_p'];w=after['txgirl1_part_06_w'];tri=after['txgirl1_part_06_f']
 assert (w[:,[20,27]]==0).all(), 'Item bone unexpectedly deforms the hand'
@@ -61,7 +62,7 @@ oldcaps={c['name']:c for c in baseline['cloth_collision.json']['capsules']}
 comparison=[{'name':c['name'],'old_radius_m':oldcaps.get(c['name'],{}).get('radius_m'),'new_radius_m':c['radius_m'],'maximum_body_sample_exposure_m':c['maximum_sample_exposure_m']} for c in caps]
 assert all(c['maximum_body_sample_exposure_m']==0 for c in comparison)
 assert all(row['surface_distance_m'][side]['new']['maximum']<.025 for row in rows for side in ['l','r']), rows
-report={'status':'pass','version':cfg['version'],'source_geometry_and_weights_identical':True,'other_joint_positions_identical':True,'accepted_ui_dll_identical':True,'ui_dll_sha256':sha(dll),'grip_target_m':{s:cfg['landmarks_m'][i] for s,i in [('left',20),('right',27)]},'grip_point_distance_to_sampled_hand_surface':rows,'leg_capsule_comparison':comparison,'game_retest_pending':True,'scope':'Item bone origins and sampled skinning surface; does not simulate finger closure, weapon meshes or game cloth solver'}
+report={'status':'pass','version':cfg['version'],'source_geometry_and_weights_identical':True,'other_joint_positions_identical':True,'accepted_ui_dll_identical':sha(dll)==baseline['ui_dll_sha256'],'ui_scope_verified':True,'ui_dll_sha256':sha(dll),'grip_target_m':{s:cfg['landmarks_m'][i] for s,i in [('left',20),('right',27)]},'grip_point_distance_to_sampled_hand_surface':rows,'leg_capsule_comparison':comparison,'game_retest_pending':True,'scope':'Item bone origins and sampled skinning surface; does not simulate finger closure, weapon meshes or game cloth solver'}
 oldcloth=baseline['cloth_validation.json']['pose_diagnostics']
 newcloth=json.loads((R/'reports/cloth_validation.json').read_text())['pose_diagnostics']
 report['reference_overlap_comparison']=[{'pose':a['pose'],'old_maximum_m':a['max_reference_capsule_overlap_m'],'new_maximum_m':b['max_reference_capsule_overlap_m']} for a,b in zip(oldcloth,newcloth)]

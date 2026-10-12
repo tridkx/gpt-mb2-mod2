@@ -39,6 +39,10 @@ for filename in ['preview_idle_validation','shorts_collision_validation']:
         check=json.loads(file.read_text())
         assert check['version']==report['version'] and check['status'].startswith('pass')
         report[filename]=check
+inventory=R/'reports/inventory_entry_validation.json'
+if inventory.exists():
+    check=json.loads(inventory.read_text())
+    if check['version']==report['version']:report['inventory_entry_validation']=check
 arm=R/'reports/arm_binding_validation.json'
 if arm.exists():
     validation=json.loads(arm.read_text())

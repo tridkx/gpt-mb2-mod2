@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-12",
+  "version": "v0.1.5",
+  "failed_version": "v0.1.4",
+  "user_feedback": "inventory idle still puts both hands behind back",
+  "prior_inventory_scans": [
+    {
+      "session": "20261012_160112",
+      "time": "2026-10-12T16:02:55",
+      "record": {
+        "kind": "scan",
+        "screen": "SandBox.GauntletUI.GauntletInventoryScreen",
+        "widgets": 5001,
+        "visuals": 0
+      }
+    },
+    {
+      "session": "20261012_160112",
+      "time": "2026-10-12T16:03:01",
+      "record": {
+        "kind": "scan",
+        "screen": "SandBox.GauntletUI.GauntletInventoryScreen",
+        "widgets": 5001,
+        "visuals": 0
+      }
+    }
+  ],
+  "prior_log_sha256": "d41f9916b4096e7dab784fbe8c0cfad222dd945ae90fa98c46aff86785f85c20",
+  "code_risk": "Screen traversal exhausts the shared seen budget before the inventory texture provider is visited",
+  "actual_prior_inventory_pose_captured": false,
+  "fixes": [
+    "Read CharacterTableauTextureProvider directly before screen traversal with independent seen budget",
+    "Skip only when skeleton and expected action set both match",
+    "Log real action names; sample each screen independently"
+  ],
+  "new_log": "Mount and Blade II Bannerlord/TianxiangGirlT1Race/ui_runtime_v0.1.5.jsonl",
+  "status": "offline_entry_and_scope_checked_game_retest_pending"
+}

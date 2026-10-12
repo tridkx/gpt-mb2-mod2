@@ -1,6 +1,6 @@
 {
   "status": "pass",
-  "version": "v0.1.4",
+  "version": "v0.1.5",
   "default_inventory_clip": "inventory_idle",
   "preview_overrides": [
     {
@@ -37,7 +37,9 @@
     }
   ],
   "creation_page_action_mapping_unchanged": true,
-  "runtime_dll_unchanged": true,
+  "runtime_dll_unchanged": false,
+  "runtime_entry": "direct CharacterTableauTextureProvider before bounded screen reflection",
+  "runtime_effect_verified": false,
   "selected_character_sex_preserved": true,
   "fixed_character_preview_pose": "female_idle_long_for_both_preview_skeleton_types",
   "game_retest_pending": true

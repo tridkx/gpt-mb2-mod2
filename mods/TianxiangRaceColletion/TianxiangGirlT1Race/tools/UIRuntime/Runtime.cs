@@ -23,13 +23,14 @@ namespace TianxiangGirlT1Race.UIRuntime {
         private float logElapsed;
         private static readonly bool RepairEnabled = typeof(SubModule).Assembly.GetName().Name == "TianxiangGirlT1Race.UIRuntime";
         private int samples;
+        private readonly Dictionary<string,int> screenSamples = new Dictionary<string,int>();
         private readonly string session = DateTime.Now.ToString("yyyyMMdd_HHmmss");
         private readonly Dictionary<Type, FieldInfo[]> fields = new Dictionary<Type, FieldInfo[]>();
         private readonly JavaScriptSerializer serializer = new JavaScriptSerializer();
 
         protected override void OnSubModuleLoad() {
             base.OnSubModuleLoad();
-            Write(new { kind="loaded", probe="ui-v2", changes_preview_skeleton=RepairEnabled });
+            Write(new { kind="loaded", probe="ui-v3-direct-tableau", changes_preview_skeleton=RepairEnabled });
         }
 
         protected override void OnApplicationTick(float dt) {
@@ -38,7 +39,7 @@ namespace TianxiangGirlT1Race.UIRuntime {
             logElapsed += dt;
             if (elapsed < (RepairEnabled ? .25f : 3f) || (!RepairEnabled && samples >= 120)) return;
             elapsed = 0;
-            bool logNow=logElapsed>=3f && samples<120;
+            bool logNow=logElapsed>=3f && (RepairEnabled || samples<120);
             if (logNow) logElapsed=0;
             try {
                 var screen = ScreenManager.TopScreen;
@@ -46,7 +47,6 @@ namespace TianxiangGirlT1Race.UIRuntime {
                 var visuals = new HashSet<AgentVisuals>();
                 var owners = new Dictionary<AgentVisuals,string>();
                 var seen = new HashSet<object>();
-                Inspect(screen, 0, seen, visuals, owners, screen.GetType().FullName);
                 int widgets=0;
                 foreach (var layer in screen.Layers) {
                     var gauntlet=layer as GauntletLayer;
@@ -56,16 +56,28 @@ namespace TianxiangGirlT1Race.UIRuntime {
                     while (queue.Count > 0 && widgets++ < 5000) {
                         var widget=queue.Dequeue();
                         if (widget == null) continue;
-                        Inspect(widget, 0, seen, visuals, owners, widget.GetType().FullName);
+                        // Inventory has thousands of item widgets. Read its explicit
+                        // preview provider before traversing any screen object graph.
+                        var texture=widget as TextureWidget;
+                        var tableau=FindCharacterTableau(texture?.TextureProvider);
+                        if (tableau!=null) Inspect(tableau,0,new HashSet<object>(),visuals,owners,tableau.GetType().FullName);
                         foreach (var child in widget.Children) queue.Enqueue(child);
                     }
                 }
+                Inspect(screen, 0, seen, visuals, owners, screen.GetType().FullName);
                 if (logNow) Write(new { kind="scan", screen=screen.GetType().FullName, widgets, visuals=visuals.Count });
                 foreach (var visual in visuals) {
                     if (RepairEnabled) CorrectPreview(visual,owners[visual],screen.GetType().FullName);
                     if (logNow) Capture(visual,screen.GetType().FullName);
                 }
             } catch (Exception e) { Write(new { kind="error", error=e.ToString() }); }
+        }
+
+        internal static object FindCharacterTableau(object provider) {
+            if (provider==null || provider.GetType().FullName!="TaleWorlds.MountAndBlade.GauntletUI.TextureProviders.CharacterTableauTextureProvider") return null;
+            var field=provider.GetType().GetField("_characterTableau",BindingFlags.Instance|BindingFlags.NonPublic);
+            var tableau=field?.GetValue(provider);
+            return tableau?.GetType().FullName=="TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableau"?tableau:null;
         }
 
         private FieldInfo[] Fields(Type type) {
@@ -129,12 +141,13 @@ namespace TianxiangGirlT1Race.UIRuntime {
                 if (data.RaceData<0 || data.RaceData>=races.Length || races[data.RaceData]!="txgirl1") return;
                 var entity=visual.GetEntity();
                 var oldSkeleton=entity.Skeleton;
-                if (oldSkeleton==null || oldSkeleton.GetName()=="txgirl1_skeleton") return;
+                if (oldSkeleton==null) return;
                 string previousSkeleton=oldSkeleton.GetName();
                 string previousSet=data.ActionSetData.GetName();
                 bool facegen=owner.Contains("BodyGenerator") || previousSet.EndsWith("_facegen");
                 string setName="as_txgirl1"+(data.SkeletonTypeData==SkeletonType.Female?"_female":"")+
                                (facegen?"_facegen":"_warrior");
+                if (oldSkeleton.GetName()=="txgirl1_skeleton" && previousSet==setName) return;
                 var ownSet=MBActionSet.GetActionSet(setName);
                 if (!ownSet.IsValid || ownSet.GetSkeletonName()!="txgirl1_skeleton") {
                     Write(new { kind="repair_unavailable", screen, set=setName });
@@ -179,6 +192,9 @@ namespace TianxiangGirlT1Race.UIRuntime {
 
         private void Capture(AgentVisuals visual, string screen) {
             try {
+                int count;
+                screenSamples.TryGetValue(screen,out count);
+                if (count>=60) return;
                 var data=visual.GetCopyAgentVisualsData();
                 var races=TaleWorlds.Core.FaceGen.GetRaceNames().ToArray();
                 var entity=visual.GetEntity();
@@ -201,12 +217,13 @@ namespace TianxiangGirlT1Race.UIRuntime {
                     monster=data.MonsterData?.StringId, action_set=data.ActionSetData.GetName(),
                     action_set_skeleton=data.ActionSetData.GetSkeletonName(),
                     gloves=equipment==null?null:equipment[EquipmentIndex.Gloves].Item?.StringId,
-                    action0=MBSkeletonExtensions.GetActionAtChannel(skeleton,0).ToString(),
-                    action1=MBSkeletonExtensions.GetActionAtChannel(skeleton,1).ToString(),
+                    action0=MBSkeletonExtensions.GetActionAtChannel(skeleton,0).GetName(),
+                    action1=MBSkeletonExtensions.GetActionAtChannel(skeleton,1).GetName(),
                     animation0=skeleton.GetAnimationAtChannel(0), animation1=skeleton.GetAnimationAtChannel(1),
                     progress0=skeleton.GetAnimationParameterAtChannel(0), progress1=skeleton.GetAnimationParameterAtChannel(1),
                     scale=visual.GetScale(), global_frame=Matrix(entity.GetGlobalFrame()), bones, meshes });
                 samples++;
+                screenSamples[screen]=count+1;
             } catch (Exception e) { Write(new { kind="capture_error", error=e.ToString() }); }
         }
 
@@ -227,7 +244,7 @@ namespace TianxiangGirlT1Race.UIRuntime {
                     "Mount and Blade II Bannerlord","TianxiangGirlT1Race");
                 Directory.CreateDirectory(dir);
                 var envelope=new { session, time=DateTime.Now.ToString("s"), record };
-                string path=Path.Combine(dir,RepairEnabled?"ui_runtime_v0.1.1.jsonl":"ui_probe_v1.jsonl");
+                string path=Path.Combine(dir,RepairEnabled?"ui_runtime_v0.1.5.jsonl":"ui_probe_v1.jsonl");
                 if (File.Exists(path) && new FileInfo(path).Length>12*1024*1024) return;
                 File.AppendAllText(path,serializer.Serialize(envelope)+Environment.NewLine);
             } catch { /* Diagnostics must never interrupt UI/gameplay. */ }
