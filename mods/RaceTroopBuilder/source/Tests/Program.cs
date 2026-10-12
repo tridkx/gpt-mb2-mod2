@@ -32,7 +32,7 @@ Write(Path.Combine(corePath, "ModuleData", "items", "items.xml"), "<Items>" + st
 Write(Path.Combine(corePath, "ModuleData", "sets.xml"), "<EquipmentRosters><EquipmentRoster id='civilian_set'><EquipmentSet equipmentType='Civilian'><Equipment slot='Body' id='Item.armor'/><Equipment slot='Item0' id='Item.sword1'/></EquipmentSet></EquipmentRoster></EquipmentRosters>");
 string Troop(string id, string next = "") => """
 <NPCCharacter id="__ID__" name="{=name___ID__}__ID__" occupation="Soldier" culture="Culture.empire" level="6" is_basic_troop="__BASIC__">
-  <face><face_key_template value="BodyProperty.human"/></face><skills><!--preserved skill comment--></skills>
+  <face><face_key_template value="BodyProperty.human"/></face><skills><!--preserved skill comment--><skill id="Athletics" value="20"/><skill id="Bow" value="5"/></skills>
   <upgrade_targets>__UPGRADE__</upgrade_targets>
   <Equipments><EquipmentRoster><equipment slot="Item0" id="Item.sword1"/><equipment slot="Item1" id="Item.twohand1"/><equipment slot="Cape" id="Item.cape"/><equipment slot="Cape" id="Item.cape2"/></EquipmentRoster>
   <EquipmentRoster><equipment slot="Item0" id="Item.sword2"/><equipment slot="Item1" id="Item.twohand2"/><equipment slot="Body" id="Item.armor"/></EquipmentRoster>
@@ -42,6 +42,14 @@ string Troop(string id, string next = "") => """
     .Replace("__UPGRADE__", next.Length > 0 ? "<upgrade_target id='NPCCharacter." + next + "'/>" : "");
 Write(Path.Combine(corePath, "ModuleData", "troops.xml"), "<NPCCharacters>" + Troop("recruit", "veteran") + Troop("veteran", "elite") + Troop("elite") +
     "<NPCCharacter id='hero' occupation='Lord' is_hero='true' name='{=hero}Hero'><skills></skills></NPCCharacter></NPCCharacters>");
+var troopFile = Path.Combine(corePath, "ModuleData", "troops.xml");
+var troopDocument = XDocument.Load(troopFile);
+troopDocument.Root!.Add(XElement.Parse(Troop("mercenary", "mercenary_elite").Replace("occupation=\"Soldier\"", "occupation=\"Mercenary\"")),
+    XElement.Parse(Troop("mercenary_elite").Replace("occupation=\"Soldier\"", "occupation=\"Mercenary\"")),
+    new XElement("NPCCharacter", new XAttribute("id", "obsolete_mercenary"), new XAttribute("occupation", "Mercenary"), new XAttribute("is_obsolete", "true")),
+    new XElement("NPCCharacter", new XAttribute("id", "hidden_mercenary"), new XAttribute("occupation", "Mercenary"), new XAttribute("is_hidden_encyclopedia", "true")),
+    new XElement("NPCCharacter", new XAttribute("id", "hero_mercenary"), new XAttribute("occupation", "Mercenary"), new XAttribute("is_hero", "true")));
+troopDocument.Save(troopFile);
 var racePath = Path.Combine(mods, "Series", "RaceOne", "module", "RaceOne");
 Module(racePath, "RaceOne", "<DependedModule Id='Sandbox'/>");
 Write(Path.Combine(racePath, "ModuleData", "project.mbproj"), "<base><file id='soln_skins' name='ModuleData/races.xml'/></base>");
@@ -55,7 +63,7 @@ BuilderProject Profile() => new() { ModuleId = "TestReplacement", ModuleName = "
 bool Error(CheckReport report, string code) => report.Issues.Any(x => x.Severity == "error" && x.Code == code);
 
 Test("nested discovery, registered filename and excluded caches", () =>
-{ Assert(catalog.Races.Count == 1 && catalog.Races[0].Id == "race_one", "种族扫描错误"); Assert(catalog.Troops.Count == 3 && catalog.Items.Count == 11, "目录数量错误"); Assert(catalog.Issues.Count == 0, "扫描了缓存或未注册文件"); });
+{ Assert(catalog.Races.Count == 1 && catalog.Races[0].Id == "race_one", "种族扫描错误"); Assert(catalog.Troops.Count == 5 && catalog.Items.Count == 11, "目录数量错误"); Assert(catalog.Issues.Count == 0, "扫描了缓存或未注册文件"); });
 Test("single module directory as custom source", () => Assert(Discovery.Scan(game, [racePath]).Races.Count == 1, "直接模块目录未识别"));
 Test("relative project paths resolve beside JSON", () =>
 { var p = Profile(); p.GameRoot = "game"; p.ModRoots = ["mods"]; var file = Path.Combine(fixture, "relative.json"); Json.Save(file, p); var read = Builder.ReadProject(file); Assert(read.GameRoot == game && read.ModRoots[0] == mods, "相对路径依赖当前目录"); });
@@ -74,6 +82,39 @@ Test("module dependency cycle rejected", () =>
 { var module = catalog.Modules["RaceOne"]; catalog.Modules["RaceOne"] = module with { Dependencies = ["RaceOne"] }; try { Assert(Error(Builder.Validate(catalog, Profile()), "dependency"), "依赖循环未拒绝"); } finally { catalog.Modules["RaceOne"] = module; } });
 Test("selected duplicate source rejected; unrelated duplicate only warns", () =>
 { catalog.Issues.Add(new("error", "duplicate_module", "duplicate", "RaceOne")); Assert(Error(Builder.Validate(catalog, Profile()), "duplicate_module"), "依赖歧义未拒绝"); catalog.Issues.Clear(); catalog.Issues.Add(new("error", "duplicate_module", "duplicate", "Other")); Assert(Builder.Validate(catalog, Profile()).Status == "pass", "无关合集重复阻止生成"); catalog.Issues.Clear(); });
+Test("mercenary tree included; heroes and obsolete excluded", () =>
+{
+    Assert(Builder.Select(catalog, new() { RootIds = ["mercenary"] }).SequenceEqual(new[] { "mercenary", "mercenary_elite" }), "雇佣兵升级树不完整");
+    Assert(!catalog.Troops.ContainsKey("hero_mercenary") && !catalog.Troops.ContainsKey("obsolete_mercenary") && !catalog.Troops.ContainsKey("hidden_mercenary"), "特殊角色被纳入");
+    var p = Profile(); p.Rules[0].RootIds = ["mercenary"]; p.Rules[0].Skills = new() { ["Athletics"] = 150 };
+    Assert(Builder.Validate(catalog, p).Status == "pass", "雇佣兵无法配置");
+    var b = Builder.Build(catalog, p, Path.Combine(output, "mercenary-build"));
+    Assert(b.Status == "pass" && b.Targets.Count == 2, "雇佣兵导出失败");
+    var replacement = Builder.Replacement(catalog, catalog.Troops["mercenary"], p.Rules[0]);
+    Assert((string?)replacement.Attribute("occupation") == "Mercenary" && (string?)replacement.Attribute("id") == "mercenary", "雇佣身份或 ID 被改");
+});
+Test("skill patch preserves omitted skills, zero and source", () =>
+{
+    var p = Profile(); var troop = catalog.Troops["recruit"]; var before = troop.Element.ToString();
+    Assert(XNode.DeepEquals(troop.Element.Element("skills"), Builder.Replacement(catalog, troop, p.Rules[0]).Element("skills")), "旧工程技能改变");
+    p.Rules[0].Skills = new() { ["Athletics"] = 150, ["Riding"] = 0 };
+    var skills = Builder.Replacement(catalog, troop, p.Rules[0]).Element("skills")!;
+    Assert((int?)skills.Elements("skill").Single(x => (string?)x.Attribute("id") == "Athletics").Attribute("value") == 150, "跑动未覆盖");
+    Assert((int?)skills.Elements("skill").Single(x => (string?)x.Attribute("id") == "Riding").Attribute("value") == 0, "零值丢失");
+    Assert((int?)skills.Elements("skill").Single(x => (string?)x.Attribute("id") == "Bow").Attribute("value") == 5 && skills.Nodes().OfType<XComment>().Any(), "其他技能或注释丢失");
+    Assert(troop.Element.ToString() == before, "原始目录被修改");
+    var roundtrip = System.Text.Json.JsonSerializer.Deserialize<BuilderProject>(Json.Write(p), Json.Options)!;
+    Assert(roundtrip.Rules[0].Skills!["Riding"] == 0, "工程回读丢失零值");
+    var builtSkills = Builder.Build(catalog, p, Path.Combine(output, "skills-build"));
+    Assert(builtSkills.Status == "pass" && builtSkills.TransformChecks > 0, "技能转换检查失败");
+});
+Test("invalid skills rejected", () =>
+{
+    var p = Profile(); p.Rules[0].Skills = new() { ["athletics"] = 100, ["Bow"] = -1 };
+    var report = Builder.Validate(catalog, p); Assert(Error(report, "skill_id") && Error(report, "skill_value"), "无效技能通过");
+    try { System.Text.Json.JsonSerializer.Deserialize<TroopRule>("{\"skills\":{\"Bow\":1.5}}", Json.Options); throw new Exception("小数通过"); }
+    catch (System.Text.Json.JsonException) { }
+});
 Test("native duplicate slots use last assignment", () => Assert(Builder.Loadouts(catalog, catalog.Troops["recruit"].Element)[0].Loadout.Slots["Cape"] == "cape2", "重复槽解析不同于游戏"));
 Test("strip armor expands civilian templates and keeps weapons", () =>
 { var replacement = Builder.Replacement(catalog, catalog.Troops["recruit"], Profile().Rules[0]); var rosters = Builder.Loadouts(catalog, replacement); Assert(rosters.All(x => !x.Loadout.Slots.Keys.Any(Builder.ArmorSlots.Contains)), "防具未全清除"); Assert(rosters.Any(x => x.Type == "Civilian" && x.Loadout.Slots.GetValueOrDefault("Item0") == "sword1"), "平民武器丢失"); });
@@ -140,7 +181,7 @@ CheckReport? built = null;
 var buildRoot = Path.Combine(fixture, "output"); var reportFile = Path.Combine(buildRoot, "TestReplacement.validation.json");
 Test("XSLT transformation, localization and untouched heroes", () =>
 {
-    built = Builder.Build(catalog, Profile(), buildRoot); Assert(built.Status == "pass" && built.TransformChecks == 4, Json.Write(built));
+    built = Builder.Build(catalog, Profile(), buildRoot); Assert(built.Status == "pass" && built.TransformChecks == 9, Json.Write(built));
     var xslt = new XslCompiledTransform(); xslt.Load(Path.Combine(built.ModulePath!, "ModuleData", "rtb_troops.xslt"));
     using var writer = new StringWriter(); xslt.Transform(Path.Combine(corePath, "ModuleData", "troops.xml"), null, writer);
     var result = XDocument.Parse(writer.ToString()); var recruit = result.Root!.Elements().Single(x => (string?)x.Attribute("id") == "recruit");
@@ -186,6 +227,12 @@ if (args.Length > 1 && args[1] == "--local-game")
     {
         var real = Discovery.Scan(); var profile = new BuilderProject { ModuleId = "OfflineAllTroops", ModuleName = "Offline All Troops", Rules =
             [new() { TroopIds = real.Troops.Keys.ToList(), RaceModule = "YueQingShuRace", RaceId = "yqs_default", FaceMode = "fixed", StripArmor = true, IsFemale = true, Age = 25 }] };
+        var mercenaries = real.Troops.Values.Where(x => (string?)x.Element.Attribute("occupation") == "Mercenary").ToList();
+        Assert(mercenaries.Count == 14, "本机雇佣兵数量异常");
+        var official = Localization.ReadChinese(real.Modules.Values.Where(x => Discovery.OfficialIds.Contains(x.Id)));
+        foreach (var mercenary in mercenaries)
+            Assert(official.TryGetValue(mercenary.NameKey, out var chineseName) && mercenary.NameZh == chineseName && chineseName.Length > 0, "雇佣兵未使用官方中文：" + mercenary.Id);
+        Assert(Builder.Select(real, new() { RootIds = ["sword_sisters_sister_t3", "eastern_mercenary", "western_mercenary"] }).Count == 14, "本机雇佣兵分支不全");
         var report = Builder.Validate(real, profile); Assert(report.Status == "pass", Json.Write(report));
         var full = Builder.Build(real, profile, Path.Combine(output, "all-troops-" + Guid.NewGuid().ToString("N")));
         Assert(full.TransformChecks > 1000 && full.Targets.Count == real.Troops.Count, "本机全量转换检查不完整");

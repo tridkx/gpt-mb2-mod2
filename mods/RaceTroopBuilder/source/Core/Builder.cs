@@ -10,6 +10,7 @@ namespace RaceTroopBuilder.Core;
 public static partial class Builder
 {
     public static readonly string[] Slots = ["Item0", "Item1", "Item2", "Item3", "Head", "Cape", "Body", "Leg", "Gloves", "Horse", "HorseHarness"];
+    public static readonly string[] SkillIds = ["OneHanded", "TwoHanded", "Polearm", "Bow", "Crossbow", "Throwing", "Athletics", "Riding"];
     public static readonly string[] ArmorSlots = ["Head", "Cape", "Body", "Leg", "Gloves"];
     [GeneratedRegex("^[A-Za-z][A-Za-z0-9_-]{0,63}$")] private static partial Regex IdPattern();
     [GeneratedRegex("^v[0-9]+\\.[0-9]+\\.[0-9]+$")] private static partial Regex VersionPattern();
@@ -87,6 +88,12 @@ public static partial class Builder
             }
             if (rule.FaceMode is not ("preserve" or "fixed")) Error("face_mode", "faceMode 只能是 preserve 或 fixed。", subject);
             if (rule.Age is < 18 or > 100) Error("age", "普通士兵年龄须在 18～100 岁之间。", subject);
+            if (rule.Skills != null)
+                foreach (var (skill, value) in rule.Skills)
+                {
+                    if (!SkillIds.Contains(skill)) Error("skill_id", "不支持的技能 ID：" + skill, subject);
+                    if (value < 0) Error("skill_value", "技能值必须为非负整数。", subject);
+                }
             if (rule.Armor != null)
             {
                 var armor = rule.Armor;
@@ -220,6 +227,19 @@ public static partial class Builder
     {
         var element = new XElement(troop.Element);
         element.SetAttributeValue("race", rule.RaceId);
+        if (rule.Skills is { Count: > 0 })
+        {
+            var skills = element.Element("skills");
+            if (skills == null) { skills = new XElement("skills"); element.Add(skills); }
+            foreach (var (id, value) in rule.Skills)
+            {
+                var matches = skills.Elements("skill").Where(x => (string?)x.Attribute("id") == id).ToList();
+                var skill = matches.FirstOrDefault();
+                if (skill == null) { skill = new XElement("skill", new XAttribute("id", id)); skills.Add(skill); }
+                skill.SetAttributeValue("value", value);
+                foreach (var duplicate in matches.Skip(1)) duplicate.Remove();
+            }
+        }
         if (rule.IsFemale != null) element.SetAttributeValue("is_female", rule.IsFemale.Value ? "true" : "false");
         if (rule.Age != null) element.SetAttributeValue("age", rule.Age.Value);
         if (!string.IsNullOrWhiteSpace(rule.Name)) element.SetAttributeValue("name", rule.Name);

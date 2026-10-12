@@ -54,6 +54,8 @@ public sealed class TroopRule
     // Null retains native equipment; an explicit list replaces battle equipment only.
     public List<Loadout>? BattleLoadouts { get; set; }
     public List<Loadout>? CivilianLoadouts { get; set; }
+    // Missing keys retain the original skill; zero explicitly overrides it.
+    public Dictionary<string, int>? Skills { get; set; }
 }
 
 public sealed class ArmorSettings : RaceTroopBuilder.Armor.ArmorValues

@@ -163,9 +163,10 @@ public static class Discovery
                 {
                     var troopId = (string?)npc.Attribute("id");
                     if (troopId == null) continue;
-                    // Use the original campaign soldier definitions; heroes/templates are not editable troops.
-                    if ((string?)npc.Attribute("occupation") != "Soldier" || (string?)npc.Attribute("is_hero") == "true"
-                        || (string?)npc.Attribute("is_obsolete") == "true") continue;
+                    // Include campaign soldiers and tavern mercenaries; exclude heroes and obsolete definitions.
+                    if ((string?)npc.Attribute("occupation") is not ("Soldier" or "Mercenary") || (string?)npc.Attribute("is_hero") == "true"
+                        || (string?)npc.Attribute("is_obsolete") == "true"
+                        || ((string?)npc.Attribute("occupation") == "Mercenary" && (string?)npc.Attribute("is_hidden_encyclopedia") == "true")) continue;
                     catalog.Troops[troopId] = new(troopId, DisplayName((string?)npc.Attribute("name") ?? troopId),
                         Ref((string?)npc.Attribute("culture") ?? ""), (int?)npc.Attribute("level") ?? 0,
                         (bool?)npc.Attribute("is_female") ?? false, (bool?)npc.Attribute("is_basic_troop") ?? false,

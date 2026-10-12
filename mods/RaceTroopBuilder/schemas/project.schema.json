@@ -251,6 +251,55 @@
               }
             }
           ]
+        },
+        "skills": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "OneHanded": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 2147483647
+            },
+            "TwoHanded": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 2147483647
+            },
+            "Polearm": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 2147483647
+            },
+            "Bow": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 2147483647
+            },
+            "Crossbow": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 2147483647
+            },
+            "Throwing": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 2147483647
+            },
+            "Athletics": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 2147483647
+            },
+            "Riding": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 2147483647
+            }
+          }
         }
       }
     }

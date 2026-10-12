@@ -18,6 +18,9 @@ public partial class MainWindow : Window
     private List<Loadout> _editedLoadouts = [];
     private bool _loading;
     private bool _busy;
+    private readonly Dictionary<string, TextBox> _skillInputs = new(StringComparer.Ordinal);
+    private readonly Dictionary<string, TextBlock> _skillLabels = new(StringComparer.Ordinal);
+    private readonly Dictionary<string, CheckBox> _skillResets = new(StringComparer.Ordinal);
     private readonly Dictionary<string, ComboBox> _slotChoices = new(StringComparer.Ordinal);
 
     public MainWindow()
@@ -41,7 +44,35 @@ public partial class MainWindow : Window
             };
             panel.Children.Add(choice); SlotPanel.Children.Add(panel);
         }
+        foreach (var id in Builder.SkillIds)
+        {
+            var panel = new StackPanel { Margin = new Thickness(0, 0, 6, 6) };
+            var label = new TextBlock { Text = SkillLabel(id), FontSize = 12 };
+            var input = new TextBox();
+            var reset = new CheckBox { Content = "恢复原版", FontSize = 11 };
+            reset.Checked += (_, _) => { input.Text = ""; input.IsEnabled = false; };
+            reset.Unchecked += (_, _) => input.IsEnabled = true;
+            _skillInputs[id] = input; _skillLabels[id] = label; _skillResets[id] = reset;
+            panel.Children.Add(label); panel.Children.Add(input); panel.Children.Add(reset); SkillPanel.Children.Add(panel);
+        }
         UpdateProjectText();
+    }
+    private static string SkillLabel(string id) => id switch
+    {
+        "OneHanded" => "单手", "TwoHanded" => "双手", "Polearm" => "长杆", "Bow" => "弓",
+        "Crossbow" => "弩", "Throwing" => "投掷", "Athletics" => "跑动", "Riding" => "骑术", _ => id
+    };
+    private Dictionary<string, int>? CaptureSkills()
+    {
+        var values = new Dictionary<string, int>(StringComparer.Ordinal);
+        foreach (var (id, input) in _skillInputs)
+        {
+            var text = input.Text.Trim();
+            if (text.Length == 0) continue;
+            if (!int.TryParse(text, out var value) || value < 0) throw new InvalidDataException(SkillLabel(id) + "须为非负整数。");
+            values[id] = value;
+        }
+        return values.Count == 0 ? null : values;
     }
 
     private string NameLanguage => _project.DisplayLanguage;
@@ -118,7 +149,7 @@ public partial class MainWindow : Window
         RaceChoice.SelectedItem = _catalog.Races.FirstOrDefault(x => x.Id == previousRace);
         foreach (var item in _catalog.Items.Values) item.Language = NameLanguage;
         RenderTree();
-        OutputText.Text = $"扫描完成：{_catalog.Troops.Count} 个普通士兵，{_catalog.Items.Count} 个原版物品，{_catalog.Races.Count} 个自定义种族。\n\n依赖种族 Mod 在上，生成的兵种替换 Mod 在下。\n请选择兵种和种族，再应用配置。\n\n" +
+        OutputText.Text = $"扫描完成：{_catalog.Troops.Count} 个士兵 / 雇佣兵，{_catalog.Items.Count} 个原版物品，{_catalog.Races.Count} 个自定义种族。\n\n依赖种族 Mod 在上，生成的兵种替换 Mod 在下。\n请选择兵种和种族，再应用配置。\n\n" +
             string.Join("\n", _catalog.Issues.Select(x => x.Message));
         CaptureMetadata(); UpdateProjectText();
     }
@@ -183,6 +214,13 @@ public partial class MainWindow : Window
             GenderChoice.SelectedIndex = rule.IsFemale == null ? 0 : rule.IsFemale.Value ? 1 : 2;
             FaceChoice.SelectedIndex = rule.FaceMode == "fixed" ? 1 : 0;
             AgeText.Text = rule.Age?.ToString() ?? ""; StripArmor.IsChecked = rule.StripArmor;
+        }
+        foreach (var id in Builder.SkillIds)
+        {
+            var native = troop.Element.Element("skills")?.Elements("skill").LastOrDefault(x => (string?)x.Attribute("id") == id);
+            _skillLabels[id].Text = SkillLabel(id) + " · 原版 " + ((string?)native?.Attribute("value") ?? "未显式配置");
+            _skillResets[id].IsChecked = false;
+            _skillInputs[id].Text = rule?.Skills?.TryGetValue(id, out var value) == true ? value.ToString() : "";
         }
         ArmorMode.SelectedIndex = rule?.Armor?.Mode == "override" ? 1 : 0;
         ArmorHead.Text = (rule?.Armor?.Head ?? 0).ToString(); ArmorBody.Text = (rule?.Armor?.Body ?? 0).ToString();
@@ -263,7 +301,7 @@ public partial class MainWindow : Window
         { if (!int.TryParse(AgeText.Text.Trim(), out var number)) throw new InvalidDataException("年龄应为整数。"); age = number; }
         var rule = new TroopRule { TroopIds = targets, RaceModule = race.ModuleId, RaceId = race.Id,
             IsFemale = GenderChoice.SelectedIndex switch { 1 => true, 2 => false, _ => null }, Age = age,
-            FaceMode = FaceChoice.SelectedIndex == 1 ? "fixed" : "preserve", StripArmor = StripArmor.IsChecked == true, Armor = CaptureArmor(),
+            FaceMode = FaceChoice.SelectedIndex == 1 ? "fixed" : "preserve", StripArmor = StripArmor.IsChecked == true, Armor = CaptureArmor(), Skills = CaptureSkills(),
             BattleLoadouts = ReplaceEquipment.IsChecked == true ? _editedLoadouts.Select(Clone).ToList() : null };
         CaptureMetadata();
         // Keep the prior project until the candidate passes validation.
@@ -272,7 +310,7 @@ public partial class MainWindow : Window
         var preserved = targets.GroupBy(id =>
         {
             var original = previous.Rules.FirstOrDefault(x => Builder.Select(_catalog!, x).Contains(id));
-            return Json.Write(new { original?.Name, original?.CivilianLoadouts });
+            return Json.Write(new { original?.Name, original?.CivilianLoadouts, original?.Skills });
         }).ToList();
         RemoveTargets(targets);
         foreach (var group in preserved)
@@ -281,6 +319,11 @@ public partial class MainWindow : Window
             var original = previous.Rules.FirstOrDefault(x => Builder.Select(_catalog!, x).Contains(group.First()));
             newRule.TroopIds = group.ToList(); newRule.Name = original?.Name;
             newRule.CivilianLoadouts = original?.CivilianLoadouts?.Select(Clone).ToList();
+            var skills = original?.Skills == null ? new Dictionary<string, int>() : new Dictionary<string, int>(original.Skills);
+            foreach (var id in Builder.SkillIds)
+                if (_skillResets[id].IsChecked == true) skills.Remove(id);
+            foreach (var (id, value) in rule.Skills ?? []) skills[id] = value;
+            newRule.Skills = skills.Count == 0 ? null : skills;
             _project.Rules.Add(newRule);
         }
         var report = Builder.Validate(_catalog!, _project);
@@ -369,6 +412,32 @@ public partial class MainWindow : Window
         if (_project.Rules.Count == 0) throw new InvalidDataException(OutputText.Text);
         var report = Builder.Validate(_catalog, _project);
         if (report.Status != "pass" || report.Targets.Count < 10) throw new InvalidDataException(Json.Write(report));
+        _skillInputs["Athletics"].Text = "150"; _skillInputs["Riding"].Text = "0";
+        LanguageChoice.SelectedIndex = 1; LanguageChoice.SelectedIndex = 0;
+        if (_skillInputs["Athletics"].Text != "150") throw new InvalidDataException("语言切换丢失技能草稿。");
+        ApplyConfiguration();
+        foreach (var target in Builder.Select(_catalog, new() { RootIds = ["imperial_recruit"] }))
+            if (_project.Rules.Single(x => x.TroopIds.Contains(target)).Skills?["Athletics"] != 150)
+                throw new InvalidDataException("GUI 批量技能覆盖失败。");
+        SelectTroop(_catalog.Troops["imperial_recruit"]);
+        if (_skillInputs["Riding"].Text != "0") throw new InvalidDataException("GUI 零值回读失败。");
+        _skillResets["Athletics"].IsChecked = true; ScopeChoice.SelectedIndex = 0; ApplyConfiguration();
+        if (_project.Rules.Single(x => x.TroopIds.Contains("imperial_recruit")).Skills!.ContainsKey("Athletics"))
+            throw new InvalidDataException("GUI 恢复原版未删除覆盖。");
+        var veteranRule = _project.Rules.First(x => !x.TroopIds.Contains("imperial_recruit"));
+        veteranRule.Skills!["Bow"] = 77;
+        _skillInputs["Athletics"].Text = "160"; _skillInputs["Riding"].Text = "";
+        ScopeChoice.SelectedIndex = 1; ApplyConfiguration();
+        if (_project.Rules.First(x => x.TroopIds.Contains(veteranRule.TroopIds[0])).Skills!["Bow"] != 77)
+            throw new InvalidDataException("GUI 批量修改丢失其他节点技能。");
+        var mercenary = _catalog.Troops["western_mercenary"];
+        SelectTroop(mercenary);
+        if (SelectedName.Text != mercenary.NameZh || mercenary.NameZh.Length == 0)
+            throw new InvalidDataException("GUI 雇佣兵官方中文未显示。");
+        TroopSearch.Text = mercenary.NameZh;
+        if (TroopTree.Items.Count == 0) throw new InvalidDataException("雇佣兵中文搜索失败。");
+        TroopSearch.Text = "";
+        SelectTroop(_catalog.Troops["imperial_recruit"]);
         var sample = _catalog.Items.Values.First(x => x.Type == "OneHandedWeapon");
         _slotChoices["Item0"].SelectedItem = _slotChoices["Item0"].Items.Cast<ItemInfo>().First(x => x.Id == sample.Id);
         AddLoadoutClick(this, new()); ReplaceEquipment.IsChecked = true; ScopeChoice.SelectedIndex = 0; ApplyConfiguration();
@@ -402,10 +471,12 @@ public partial class MainWindow : Window
             if (culture.Items.Cast<TreeViewItem>().Any(x => (x.Tag as TroopInfo)?.Id == "imperial_recruit"))
             { culture.IsExpanded = true; var node = culture.Items.Cast<TreeViewItem>().First(x => (x.Tag as TroopInfo)?.Id == "imperial_recruit"); node.IsExpanded = true; node.IsSelected = true; node.BringIntoView(); }
         ShowReport(Builder.Validate(_catalog, _project)); UpdateProjectText();
+        SettingsScroll.ScrollToEnd();
+        await Dispatcher.InvokeAsync(() => { UpdateLayout(); }, System.Windows.Threading.DispatcherPriority.ApplicationIdle);
         await Dispatcher.InvokeAsync(() => { UpdateLayout(); }, System.Windows.Threading.DispatcherPriority.ApplicationIdle);
         var bitmap = new RenderTargetBitmap((int)ActualWidth, (int)ActualHeight, 96, 96, PixelFormats.Pbgra32);
         bitmap.Render(this); var encoder = new PngBitmapEncoder(); encoder.Frames.Add(BitmapFrame.Create(bitmap));
         using var stream = File.Create(pngPath); encoder.Save(stream);
-        Json.Save(Path.Combine(directory, "gui-smoke.json"), new { status = "pass", scan = true, treeSelection = true, subtreeApply = true, slotEdit = true, loadoutCopy = true, overlapUpdate = true, aiFieldsRetained = true, search = true, bilingualNames = true, armorOverride = true, screenshot = pngPath });
+        Json.Save(Path.Combine(directory, "gui-smoke.json"), new { status = "pass", scan = true, treeSelection = true, subtreeApply = true, slotEdit = true, loadoutCopy = true, overlapUpdate = true, aiFieldsRetained = true, search = true, bilingualNames = true, armorOverride = true, skillsOverride = true, skillReset = true, skillBatchPreservesOtherNodes = true, mercenaryChineseSearch = true, screenshot = pngPath });
     }
 }

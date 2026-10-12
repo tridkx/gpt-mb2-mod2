@@ -34,7 +34,7 @@
             <Button Content="撤销所选范围的替换" Click="RemoveRuleClick" Margin="0,0,0,8" />
             <TextBlock Text="每兵种一个种族；升级节点可使用不同种族。" Foreground="#59707D" FontSize="12" TextWrapping="Wrap" />
           </StackPanel>
-          <ScrollViewer VerticalScrollBarVisibility="Auto">
+          <ScrollViewer x:Name="SettingsScroll" VerticalScrollBarVisibility="Auto">
           <StackPanel>
             <TextBlock Text="02  种族与应用范围" Style="{StaticResource Section}" />
             <TextBlock x:Name="SelectedName" Text="先扫描目录，再选择兵种" FontWeight="SemiBold" TextWrapping="Wrap" />
@@ -54,7 +54,10 @@
               <StackPanel><TextBlock Text="腿"/><TextBox x:Name="ArmorLegs" Text="0" /></StackPanel>
             </UniformGrid>
             <TextBlock Text="0～500 整数；覆盖不与默认值叠加，原版特长继续生效。" TextWrapping="Wrap" FontSize="12" Foreground="#59707D" />
-            <TextBlock Text="应用范围" Style="{StaticResource Caption}" /><ComboBox x:Name="ScopeChoice" SelectedIndex="0"><ComboBoxItem Content="仅当前兵种" /><ComboBoxItem Content="当前兵种及全部升级分支" /><ComboBoxItem Content="当前文化所有普通士兵" /></ComboBox>
+            <TextBlock Text="技能（空白不新增覆盖）" Style="{StaticResource Caption}" />
+            <TextBlock Text="填写非负整数，0 为明确覆盖；原版值显示在各项旁。应用范围内只覆盖填写的技能。" TextWrapping="Wrap" FontSize="12" Foreground="#59707D" />
+            <UniformGrid x:Name="SkillPanel" Columns="2" Margin="0,5,0,8" />
+            <TextBlock Text="应用范围" Style="{StaticResource Caption}" /><ComboBox x:Name="ScopeChoice" SelectedIndex="0"><ComboBoxItem Content="仅当前兵种" /><ComboBoxItem Content="当前兵种及全部升级分支" /><ComboBoxItem Content="当前文化所有士兵 / 雇佣兵" /></ComboBox>
           </StackPanel>
           </ScrollViewer>
         </DockPanel>

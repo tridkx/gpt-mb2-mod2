@@ -70,9 +70,9 @@
 
 路径字符串若为相对路径，按 JSON 文件所在目录解析。空 `modRoots` 使用默认扫描根。CLI 覆盖参数不会更改原工程，`configure` 成功时会保存实际来源；构建的工程快照保存实际来源。
 
-规则的 `troopIds` 精确选择节点，`rootIds` 包含所选节点及其全部可达升级节点，`culture` 选择当前文化所有普通士兵。三者取并集；不同规则不可覆盖同一兵种。省略或 null 的 `isFemale/age` 保留原版；`faceMode=preserve` 保留脸参数，`fixed` 使用本机完整身体基线的零键、年龄和固定体重体型。新种族是否支持该脸策略需实机确认。
+规则的 `troopIds` 精确选择节点，`rootIds` 包含所选节点及其全部可达升级节点，`culture` 选择当前文化所有士兵 / 雇佣兵。三者取并集；不同规则不可覆盖同一兵种。省略或 null 的 `isFemale/age` 保留原版；`faceMode=preserve` 保留脸参数，`fixed` 使用本机完整身体基线的零键、年龄和固定体重体型。新种族是否支持该脸策略需实机确认。
 
-`name` 可选，用于替换显示名；批量规则将所有目标改成该名字，通常应省略。文化、等级、技能与升级边没有编辑字段，始终来自原版目标节点。
+`name` 可选，用于替换显示名；批量规则将所有目标改成该名字，通常应省略。文化、等级与升级边没有编辑字段，始终来自原版目标节点。技能可通过可选的 `skills` 字典覆盖。
 
 `battleLoadouts/civilianLoadouts` 省略或 null 表示保留该类型的原版装备；提供列表表示完整替换该类型。战斗列表不能为空，平民列表可以为空。空槽应删除字典键，而不是填写不存在的物品 ID。物品 ID 接受裸 ID 或 `Item.ID`。
 
@@ -85,10 +85,16 @@
 
 合法槽为 `Item0`、`Item1`、`Item2`、`Item3`、`Head`、`Cape`、`Body`、`Leg`、`Gloves`、`Horse`、`HorseHarness`。`stripArmor=true` 从两类全部装备套中删除 Head/Cape/Body/Leg/Gloves，包括引用原版 EquipmentSet 的平民装备；新列表也遵循该清除设置。
 
+## 技能配置
+
+规则可添加 `"skills": { "OneHanded": 180, "Athletics": 150, "Riding": 0 }`。支持 OneHanded、TwoHanded、Polearm、Bow、Crossbow、Throwing、Athletics、Riding；值为 0～2147483647 的整数（存储范围，不代表平衡建议）。未知 ID、负数、小数拒绝读取或检查。省略、null、空字典均保留原版技能；未填写的键保持原节点不变，0 为明确覆盖。旧工程无需迁移，schemaVersion 仍为 1。
+
+GUI 显示各项原版值，可应用到单节点或批量范围。空白不新增覆盖，并保留各目标已有的其他技能配置；“恢复原版”明确删除该范围对应的技能覆盖。切换语言不会丢失未应用的技能草稿。JSON 使用稳定的英文技能 ID；修改对比返回实际 beforeXml/afterXml。
+
 ## 输出与错误
 
 标准输出为 JSON。检查报告包括 `status`、`issues`、`targets`、`loadOrder`、`gameVersion`、`transformChecks` 和构建文件哈希。每条问题包含 `severity/code/message/subject`，AI 应按 `code` 分支，而不是匹配中文文本。
 
-常用错误码：`race_missing`、`skin_missing`、`race_collision`、`duplicate_module`、`troop_missing`、`rule_overlap`、`upgrade_cycle`、`upgrade_missing`、`item_missing`、`item_slot`、`slot`、`dependency`、`dependency_dll_missing`、`game_version`。随机弹药与无关合集重复为 warning，不阻止构建。
+常用错误码：`skill_id`、`skill_value`、`race_missing`、`skin_missing`、`race_collision`、`duplicate_module`、`troop_missing`、`rule_overlap`、`upgrade_cycle`、`upgrade_missing`、`item_missing`、`item_slot`、`slot`、`dependency`、`dependency_dll_missing`、`game_version`。随机弹药与无关合集重复为 warning，不阻止构建。
 
 构建模块只注册 `NPCCharacters`，内容为同名空 XML 加 XSLT 精确替换，启动器依赖按拓扑顺序声明。检查报告、工程快照位于模块之外；包中包含模块与报告，不复制任何种族资源。种族模块的哈希仅用于安装一致性验证。

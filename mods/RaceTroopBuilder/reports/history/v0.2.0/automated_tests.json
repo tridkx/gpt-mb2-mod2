@@ -1,0 +1,132 @@
+{
+  "status": "pass",
+  "count": 31,
+  "failures": 0,
+  "fixture": "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261011-132226-158\\fixture-87720af5db58441681dc671f23ccfce6",
+  "tests": [
+    {
+      "name": "nested discovery, registered filename and excluded caches",
+      "status": "pass"
+    },
+    {
+      "name": "single module directory as custom source",
+      "status": "pass"
+    },
+    {
+      "name": "relative project paths resolve beside JSON",
+      "status": "pass"
+    },
+    {
+      "name": "root selector follows full upgrade tree",
+      "status": "pass"
+    },
+    {
+      "name": "unknown troop rejected",
+      "status": "pass"
+    },
+    {
+      "name": "missing race rejected, no human fallback",
+      "status": "pass"
+    },
+    {
+      "name": "missing adult gender rejected",
+      "status": "pass"
+    },
+    {
+      "name": "overlapping rules rejected",
+      "status": "pass"
+    },
+    {
+      "name": "cyclic upgrades rejected",
+      "status": "pass"
+    },
+    {
+      "name": "module dependency cycle rejected",
+      "status": "pass"
+    },
+    {
+      "name": "selected duplicate source rejected; unrelated duplicate only warns",
+      "status": "pass"
+    },
+    {
+      "name": "native duplicate slots use last assignment",
+      "status": "pass"
+    },
+    {
+      "name": "strip armor expands civilian templates and keeps weapons",
+      "status": "pass"
+    },
+    {
+      "name": "explicit loadouts preserve weapon slot candidates",
+      "status": "pass"
+    },
+    {
+      "name": "unknown slots and incompatible items rejected",
+      "status": "pass"
+    },
+    {
+      "name": "unsafe random bow/ammunition combination warns",
+      "status": "pass"
+    },
+    {
+      "name": "protected module ID and traversal rejected",
+      "status": "pass"
+    },
+    {
+      "name": "strict JSON rejects mixed race field",
+      "status": "pass"
+    },
+    {
+      "name": "armor override rejects invalid mode and range",
+      "status": "pass"
+    },
+    {
+      "name": "racial default discovery and inheritance",
+      "status": "pass"
+    },
+    {
+      "name": "armor override expands selected tree and ships only own runtime",
+      "status": "pass"
+    },
+    {
+      "name": "official bilingual names, manifest paths and English fallback",
+      "status": "pass"
+    },
+    {
+      "name": "XSLT transformation, localization and untouched heroes",
+      "status": "pass"
+    },
+    {
+      "name": "package contains only generated module and report",
+      "status": "pass"
+    },
+    {
+      "name": "build never silently overwrites old output",
+      "status": "pass"
+    },
+    {
+      "name": "install missing dependency changes nothing",
+      "status": "pass"
+    },
+    {
+      "name": "install matching dependencies and back up previous module",
+      "status": "pass"
+    },
+    {
+      "name": "installed dependency mismatch rejected",
+      "status": "pass"
+    },
+    {
+      "name": "locked existing module rolls back without data loss",
+      "status": "pass"
+    },
+    {
+      "name": "modified output fails packaging and installation",
+      "status": "pass"
+    },
+    {
+      "name": "local v1.4.8 every soldier equipment resolves",
+      "status": "pass"
+    }
+  ]
+}
