@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Module>
+  <Name value="Tianxiang Girl T3 Qing Mei Race" />
+  <Id value="TianxiangGirlT3Race" />
+  <Version value="v0.1.0" />
+  <DefaultModule value="false" />
+  <ModuleCategory value="Singleplayer" />
+  <ModuleType value="Community" />
+  <SingleplayerModule value="true" />
+  <MultiplayerModule value="false" />
+  <DependedModules>
+    <DependedModule Id="Native" />
+    <DependedModule Id="SandBoxCore" />
+    <DependedModule Id="Sandbox" />
+  </DependedModules>
+  <SubModules>
+    <SubModule>
+      <Name value="Tianxiang Girl T3 Qing Mei UI Runtime" />
+      <DLLName value="TianxiangGirlT3Race.UIRuntime.dll" />
+      <SubModuleClassType value="TianxiangGirlT3Race.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+  </SubModules>
+  <Xmls>
+    <XmlNode>
+      <XmlName id="Monsters" path="monsters" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+  </Xmls>
+</Module>

@@ -1,0 +1,83 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "arm_axes": [
+    {
+      "bone": "l_upperarm_twist",
+      "axis_deviation_degrees": 0.05158912720817482
+    },
+    {
+      "bone": "l_upperarm_twist1",
+      "axis_deviation_degrees": 0.05158912720817482
+    },
+    {
+      "bone": "l_foretwist",
+      "axis_deviation_degrees": 0.03747259196599642
+    },
+    {
+      "bone": "l_foretwist1",
+      "axis_deviation_degrees": 0.03747259196599642
+    },
+    {
+      "bone": "r_upperarm_twist",
+      "axis_deviation_degrees": 0.05454118066919309
+    },
+    {
+      "bone": "r_upperarm_twist1",
+      "axis_deviation_degrees": 0.05454118066919309
+    },
+    {
+      "bone": "r_foretwist",
+      "axis_deviation_degrees": 0.048754126813769456
+    },
+    {
+      "bone": "r_foretwist1",
+      "axis_deviation_degrees": 0.048754126813769456
+    }
+  ],
+  "grip_points": [
+    {
+      "pose": "rest",
+      "frames": 1,
+      "maximum_attachment_to_sampled_hand_surface_m": {
+        "left": 0.005653868489429462,
+        "right": 0.005653871624079945
+      }
+    },
+    {
+      "pose": "run",
+      "frames": 24,
+      "maximum_attachment_to_sampled_hand_surface_m": {
+        "left": 0.006465681718715365,
+        "right": 0.005977484238753772
+      }
+    },
+    {
+      "pose": "stand_onehand",
+      "frames": 24,
+      "maximum_attachment_to_sampled_hand_surface_m": {
+        "left": 0.0060057448676385985,
+        "right": 0.005801635979973146
+      }
+    },
+    {
+      "pose": "stand_twohand",
+      "frames": 24,
+      "maximum_attachment_to_sampled_hand_surface_m": {
+        "left": 0.0028962904321294895,
+        "right": 0.005636873043831303
+      }
+    },
+    {
+      "pose": "ui_neutral_male",
+      "frames": 24,
+      "maximum_attachment_to_sampled_hand_surface_m": {
+        "left": 0.006454796024055702,
+        "right": 0.006302213673284365
+      }
+    }
+  ],
+  "source_joint_positions_preserved": true,
+  "item_bones_do_not_deform_hands": true,
+  "scope": "Final bind directions and sampled hand surfaces; no engine weapon geometry, finger closure or IK test"
+}
