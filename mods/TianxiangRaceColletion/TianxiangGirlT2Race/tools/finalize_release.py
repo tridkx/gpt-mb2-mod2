@@ -33,7 +33,7 @@ cloth=json.loads((R/'reports/cloth_validation.json').read_text());assert cloth['
 report['cloth_validation']=cloth
 ui_scope=json.loads((R/'reports/ui_scope_validation.json').read_text());assert ui_scope['status']=='pass' and ui_scope['assembly_sha256']==sha(dll)
 report['ui_scope_validation']=ui_scope
-for filename in ['preview_idle_validation','body_collision_validation','binding_validation','cloth_fit_revision_validation','static_cloth_proxy','waist_fit_validation']:
+for filename in ['preview_idle_validation','body_collision_validation','binding_validation','cloth_fit_revision_validation','static_cloth_proxy','waist_fit_validation','skeletal_skirt_validation']:
     file=R/'reports'/(filename+'.json')
     if file.exists():
         check=json.loads(file.read_text())
@@ -41,8 +41,12 @@ for filename in ['preview_idle_validation','body_collision_validation','binding_
         if 'final_package_sha256' in check:assert check['final_package_sha256']==sha(package)
         if 'collision_xml_sha256' in check:assert check['collision_xml_sha256']==sha(R/'module/TianxiangGirlT2Race/ModuleData/cloth_bodies.xml')
         report[filename]=check
-report['baseline_package_sha256']=json.loads((R/'tools/cloth_fit_baseline.json').read_text())['package_sha256']
-report['baseline_reason']='v0.1.0 cloth fit revision; geometry, UV and unaffected binding preserved'
+if report['cloth_enabled']:
+    report['baseline_package_sha256']=json.loads((R/'tools/cloth_fit_baseline.json').read_text())['package_sha256']
+    report['baseline_reason']='v0.1.0 cloth fit revision; geometry, UV and unaffected binding preserved'
+else:
+    report['baseline_package_sha256']=json.loads((R/'reports/history/v0.1.2/static_cloth_proxy.json').read_text())['final_package_sha256']
+    report['baseline_reason']='v0.1.2 to skeletal skirts; all LOD0 geometry, UV and bindings preserved'
 report['module_file_sha256']={p.relative_to(R/'module/TianxiangGirlT2Race').as_posix():sha(p) for p in (R/'module/TianxiangGirlT2Race').rglob('*') if p.is_file()}
 (R/'reports/release_validation.json').write_text(json.dumps(report,indent=2))
 files=[p.relative_to(R).as_posix() for directory in ['input','source','tools','reports'] for p in (R/directory).rglob('*') if p.is_file() and not any(x in p.parts for x in ['obj','bin','__pycache__']) and p.suffix not in ['.pyc','.log','.blend1']]

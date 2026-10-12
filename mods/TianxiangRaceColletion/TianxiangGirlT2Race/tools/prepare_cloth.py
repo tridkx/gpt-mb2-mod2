@@ -21,14 +21,15 @@ for ids in groups.values():
     # Long side panels use cloth. Upper covering flaps follow the protected
     # body skinning, retaining their fitted shape rather than being inflated
     # by nearby hip capsules. Decorative ornaments stay skeletal.
-    if height>.4:
+    if cfg["cloth_enabled"] and height>.4:
         distance=np.maximum(top-cfg['cloth_root_band_m']-q[:,2],0)
         travel=np.minimum(.10+distance*cfg['cloth_travel_slope'],cfg['cloth_max_travel_m'])
         travel[distance<.005]=0;a[ids]=travel
     components.append(dict(vertices=len(ids),top_m=top,height_m=height,fixed_vertices=int((a[ids]==0).sum()),active_vertices=int((a[ids]>0).sum())))
 layer=o.data.color_attributes.get('ClothDistance') or o.data.color_attributes.new(name='ClothDistance',type='FLOAT_COLOR',domain='POINT')
 colors=np.ones((len(a),4),dtype='f4');colors[:,3]=a;layer.data.foreach_set('color',colors.ravel())
-assert (a==0).sum()>10 and (a>0).sum()>100
+assert (a==0).sum()>10
+assert (a>0).sum()>100 if cfg["cloth_enabled"] else not (a>0).any()
 for im in bpy.data.images:
     if im.source=='FILE':
         im.filepath='//../tex/'+Path(im.filepath.replace('\\','/')).name

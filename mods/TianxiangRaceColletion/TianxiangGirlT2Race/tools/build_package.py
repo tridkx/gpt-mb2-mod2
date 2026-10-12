@@ -51,4 +51,8 @@ for part,name in [('body','txgirl2_body'),('hidden','txgirl2_hidden')]:
 subprocess.run(['dotnet','build',str(ROOT/'tools/PackagePatch/PackagePatch.csproj'),'--ignore-failed-sources','-o',str(BUILD/'package_patch')],check=True)
 subprocess.run(['dotnet',str(BUILD/'package_patch/PackagePatch.dll'),str(BUILD/'base.tpac'),str(BUILD/'uncooked.tpac'),str(BUILD/'geometry.json')],check=True)
 (ROOT/'reports/material_names.json').write_text(json.dumps({r['name']:r for r in spec['materials']},indent=2))
+if not json.loads((ROOT/'tools/model_config.json').read_text())['cloth_enabled']:
+    import shutil
+    shutil.copy2(BUILD/'uncooked.tpac',PACKAGE)
+    (ROOT/'module/TianxiangGirlT2Race/ModuleData/cloth_bodies.xml').write_text('<?xml version="1.0" encoding="utf-8"?>\n<bodies />\n')
 print('PACKAGE_READY',PACKAGE)

@@ -23,8 +23,8 @@ for sign,base in [(-1,1),(1,5)]:
 for sign,start in [(-1,14),(1,21)]:
     clavicle=np.array([.034,shoulder[1],shoulder[2]])
     for i,p in enumerate([clavicle,shoulder,(shoulder+elbow)/2,elbow,(elbow+wrist)/2,wrist,palm]):S[start+i]=p*np.array([sign,1,1])
-cfg=dict(id='TianxiangGirlT2Race',version='v0.1.2',race='txgirl2',skeleton='txgirl2_skeleton',skin_min_scale=1.0,
-         cloth_enabled=True,cloth_lods=[0,1],lod_multipliers=[1,.7,.45,.25],minimum_ratios={'tunic_D':1.0},
+cfg=dict(id='TianxiangGirlT2Race',version='v0.1.3',race='txgirl2',skeleton='txgirl2_skeleton',skin_min_scale=1.0,
+         cloth_enabled=False,cloth_lods=[],lod_multipliers=[1,.7,.45,.25],minimum_ratios={'tunic_D':1.0},
          landmarks_m=S.tolist(),align_arm_bind_axes=True,
          hand_weight_tips_m={'l_hand':(tip*[-1,1,1]).tolist(),'r_hand':tip.tolist()},
          source_height_range_m=[1.32,1.35],weight_softness_m=.025,

@@ -25,14 +25,15 @@ MB='D:/mb-tools/mbtool/bin/Release/net9.0/mbtool.exe';PACKAGE=ROOT/'module/Tianx
 def run(args):return subprocess.run(args,check=True,capture_output=True,text=True,encoding='utf8',errors='replace').stdout
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 hash_before=sha(PACKAGE)
+cfg=json.loads((ROOT/'tools/model_config.json').read_text())
 audit=json.loads(run([sys.executable,'-B','-X','utf8','C:/Users/DKX/.codex/skills/bannerlord-equipment-mod/scripts/audit_package.py',str(PACKAGE)]));assert audit['status']=='pass',audit
 (ROOT/'reports/package_audit.json').write_text(json.dumps(audit,indent=2))
 visible=json.loads(run(['dotnet',str(WORKSPACE/'tools/AssetTool/AssetTool.dll'),'visibility',str(PACKAGE)]))
 (ROOT/'reports/final_visibility.json').write_text(json.dumps(visible,indent=2))
 assert all('disable_vertex_color_alpha' in m['ShaderMaterialFlags'] for m in visible['materials'])
 assert all(set(m['Flags']).issubset({'uses_cloth_simulation','force_enable_cloth'}) for m in visible['meshes'])
-assert sum('uses_cloth_simulation' in m['Flags'] for m in visible['meshes'])==2
-assert all(('uses_cloth_simulation' in m['Flags'])==(m['Name'].startswith('txgirl2_part_12') and m['Lod'] in [0,1]) for m in visible['meshes'])
+assert sum('uses_cloth_simulation' in m['Flags'] for m in visible['meshes'])==(2 if cfg['cloth_enabled'] else 0)
+assert all(('uses_cloth_simulation' in m['Flags'])==(m['Name'].startswith('txgirl2_part_12') and m['Lod'] in cfg['cloth_lods'] and cfg['cloth_enabled']) for m in visible['meshes'])
 exports={};lods=[];geometry=json.loads((ROOT/'build/geometry.json').read_text())
 def mgeo(path):
     data=Path(path).read_bytes();magic,n,ni=np.frombuffer(data,'<i4',3);assert magic==0x4f45474d
@@ -149,7 +150,7 @@ assert descriptor.find('Id').get('value')=='TianxiangGirlT2Race' and descriptor.
 assert sha(PACKAGE)==hash_before
 assert all(sha(ROOT/p)==h for p,h in json.loads((ROOT/'reports/input_hashes.json').read_text()).items())
 report={'version':cfg['version'],'status':'pass','check_scope':'offline_structural_and_native_motion_checks','final_package_sha256':hash_before,'baseline_package_sha256':None,'baseline_reason':'First release; input hashes provide geometry baseline','registration':registration,'lods':lods,'seams':seams,'motions':motions,'textures':texturechecks,'gross_motion_tear_guard_max_extension':6.0,'metadata_audit':'pass','game_test_verified':False,'game_cloth_solver_used':False,'limitations':['Fixed source appearance with original textures; near long-skirt panels use cloth, remaining parts and distant LODs use skeletal skinning.','Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.','No facial animation or face/body customization support.']}
-report.update(integrated_hands_all_lods=True,cloth_enabled=True,body_metamesh='txgirl2_body',hidden_placeholder_triangles=4,source_proportions_preserved=True,custom_skeleton_bones=28)
-report['limitations'][0]='Original fixed appearance; skirt physics is authored for LOD0/1, LOD2/3 and hair/sleeves remain skeletal. Engine solver remains untested.'
-report['limitations'].append('Unsimulated native-animation previews show reference leg/skirt intersections; authored cloth payload and capsule/travel screening do not certify dynamic collision.')
+report.update(integrated_hands_all_lods=True,cloth_enabled=cfg['cloth_enabled'],body_metamesh='txgirl2_body',hidden_placeholder_triangles=4,source_proportions_preserved=True,custom_skeleton_bones=28)
+report['limitations'][0]='Fixed source appearance; all skirt LODs, hair and sleeves use skeletal skinning. Skirt cloth simulation disabled by user request.' if not cfg['cloth_enabled'] else 'Near skirt cloth enabled; engine solver remains untested.'
+report['limitations'].append('Skeletal skirts have no dynamic leg collision; extreme leg motion can intersect panels. Game appearance requires user acceptance.')
 (ROOT/'reports/release_validation.json').write_text(json.dumps(report,indent=2));print(json.dumps({'status':report['status'],'registration':registration,'lods':lods,'seams':seams,'motions':motions},indent=2))

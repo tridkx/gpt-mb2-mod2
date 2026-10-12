@@ -6,7 +6,7 @@ using var geometry=JsonDocument.Parse(File.ReadAllText(args[2]));
 var rows=geometry.RootElement.EnumerateArray().ToDictionary(x=>x.GetProperty("name").GetString());
 foreach(var mesh in p.Items.OfType<Metamesh>()) {
  if(!mesh.Name.StartsWith("txgirl2_")) throw new InvalidDataException("Unexpected namespace");
- mesh.UnknownString=mesh.Name=="txgirl2_body"?"txgirl2_leg_collision":"";
+ mesh.UnknownString=mesh.Name=="txgirl2_body" && rows.Values.Any(r=>r.TryGetProperty("cloth",out var c)&&c.GetBoolean())?"txgirl2_leg_collision":"";
  foreach(var g in mesh.Meshes) {
   var m=Regex.Match(g.Name,@"\.lod(\d+)");g.Lod=m.Success?int.Parse(m.Groups[1].Value):0;
   var name=Regex.Replace(g.Name,@"\.b\d+$","");
