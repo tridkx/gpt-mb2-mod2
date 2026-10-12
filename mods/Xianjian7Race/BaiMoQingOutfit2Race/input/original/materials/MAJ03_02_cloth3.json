@@ -1,0 +1,73 @@
+{
+  "Textures": {
+    "毛发高度贴图": "Pal7/Content/MaterialLib/ComTexture/Character/jagged_hair_2k.jagged_hair_2k",
+    "jagged_hair_2k": "Pal7/Content/MaterialLib/ComTexture/Character/jagged_hair_2k.jagged_hair_2k"
+  },
+  "Parameters": {
+    "BlendMode": 1,
+    "ShadingModel": 0,
+    "Colors": {
+      "毛倾斜方向(世界)": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": -1.0,
+        "A": 1.0,
+        "Hex": "000000"
+      },
+      "毛根着色": {
+        "R": 0.211589,
+        "G": 0.280606,
+        "B": 0.390625,
+        "A": 1.0,
+        "Hex": "7F90A8"
+      },
+      "毛尖着色": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "FFFFFF"
+      },
+      "边缘着色": {
+        "R": 1.0,
+        "G": 0.991132,
+        "B": 0.916666,
+        "A": 1.0,
+        "Hex": "FFFEF6"
+      }
+    },
+    "Scalars": {
+      "风强度": 0.0,
+      "风浪尺寸": 0.0,
+      "风速": 0.0,
+      "毛长度": 0.6,
+      "毛发密度": 4.16427,
+      "膨胀": 0.104296,
+      "毛边调整": 0.3,
+      "基色过渡": 0.75,
+      "边缘范围": 8.0,
+      "基色强度": 1.0,
+      "高光": 0.5,
+      "整体模糊": 0.05,
+      "RefractionDepthBias": 0.0
+    },
+    "Switches": {
+      "EnableDistanceFade": true,
+      "开启毛边": true,
+      "使用毛发颜色贴图": false
+    },
+    "Properties": {
+      "bHasStaticPermutationResource": true,
+      "BasePropertyOverrides": {
+        "BlendMode": "BLEND_Masked",
+        "OpacityMaskClipValue": 0.5
+      }
+    },
+    "HasTopDiffuse": false,
+    "HasTopNormals": false,
+    "HasTopSpecularMasks": false,
+    "HasTopEmissive": false,
+    "IsTranslucent": false,
+    "IsNull": false
+  }
+}

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Module>
+  <Name value="Bai Mo Qing Outfit 2 No Hat Race" />
+  <Id value="BaiMoQingOutfit2Race" />
+  <Version value="v0.1.0" />
+  <DefaultModule value="false" />
+  <ModuleCategory value="Singleplayer" />
+  <ModuleType value="Community" />
+  <SingleplayerModule value="true" />
+  <MultiplayerModule value="false" />
+  <DependedModules>
+    <DependedModule Id="Native" />
+    <DependedModule Id="SandBoxCore" />
+    <DependedModule Id="Sandbox" />
+  </DependedModules>
+  <SubModules>
+    <SubModule>
+      <Name value="Bai Mo Qing Outfit 2 No Hat Race UI Runtime" />
+      <DLLName value="BaiMoQingOutfit2Race.UIRuntime.dll" />
+      <SubModuleClassType value="BaiMoQingOutfit2Race.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+  </SubModules>
+  <Xmls>
+    <XmlNode>
+      <XmlName id="Monsters" path="monsters" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+  </Xmls>
+</Module>

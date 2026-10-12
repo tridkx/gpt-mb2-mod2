@@ -1,6 +1,13 @@
 # 仙剑奇侠传七角色种族
 
-各角色作为独立骑砍2种族资源模块维护，目前包含 [月清疏默认时装](YueQingShuRace/README.md)。这个目录是系列工程入口，不是游戏模块。
+各角色和固定时装作为独立骑砍2种族资源模块维护。这个目录是系列工程入口，不是游戏模块。
+
+| 模块 | 外观 | 种族 ID |
+| --- | --- | --- |
+| [YueQingShuRace](YueQingShuRace/README.md) | 月清疏默认时装 | `yqs_default` |
+| [YueQingShuOutfit2Race](YueQingShuOutfit2Race/README.md) | 月清疏第二套时装 | `yqs2_outfit2` |
+| [BaiMoQingRace](BaiMoQingRace/README.md) | 白茉晴默认时装 | `bmq_default` |
+| [BaiMoQingOutfit2Race](BaiMoQingOutfit2Race/README.md) | 白茉晴第二套时装，无帽 | `bmq2_outfit2` |
 
 ## 工程布局
 
@@ -17,7 +24,7 @@ mods/Xianjian7Race/<ModId>/
   mod.json                交付清单
 ```
 
-新增角色建立自己的 `<ModId>` 工程；使用当前角色的源比例、自定义关节和碰撞拟合，不复制月清疏的骨骼位置、胶囊尺寸、资源名或 GUID。共用资源助手和布料编译器在工作区根 `tools/`，角色脚本向上定位工作区。源包解压后保持 `source/` 与 `tex/` 相邻，将 `workspace_tools/` 恢复为工作区 `tools/`。
+新增角色或独立固定时装建立自己的 `<ModId>` 工程；使用当前模型的源比例、自定义关节和碰撞拟合，不复制其他模型的骨骼位置、胶囊尺寸、资源名或 GUID。共用资源助手和布料编译器在工作区根 `tools/`，角色脚本向上定位工作区。源包解压后保持 `source/` 与 `tex/` 相邻，将 `workspace_tools/` 恢复为工作区 `tools/`。
 
 ## 模块使用
 

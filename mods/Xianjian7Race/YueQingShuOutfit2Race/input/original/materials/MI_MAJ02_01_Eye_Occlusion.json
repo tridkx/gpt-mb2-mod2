@@ -1,0 +1,52 @@
+{
+  "Textures": {},
+  "Parameters": {
+    "BlendMode": 2,
+    "ShadingModel": 0,
+    "Colors": {
+      "Blur color": {
+        "R": 1.0,
+        "G": 0.890625,
+        "B": 0.890625,
+        "A": 0.0,
+        "Hex": "FFF3F3"
+      }
+    },
+    "Scalars": {
+      "DepthOffsetBias": 4.291763,
+      "RT_Opacity": 0.0,
+      "Blur Size": 0.1,
+      "Bottom vert offset": -0.29,
+      "Corner vert offset": -0.1,
+      "DepthOffset": 1.0,
+      "Duct scale": 1.726316,
+      "Duct shift": 0.853754,
+      "Duct vert offset": -0.1,
+      "Fade": -0.895238,
+      "Shadow bottom": 0.4,
+      "Shadow bottom exponent": 5.0,
+      "Shadow outer corner exponent": 15.0,
+      "Shadow top exponent": 2.6,
+      "SnapEyeSphere": -0.5,
+      "Top vert offset": 0.0,
+      "RefractionDepthBias": 0.0
+    },
+    "Switches": {
+      "EnableDistanceFade": true
+    },
+    "Properties": {
+      "bHasStaticPermutationResource": true,
+      "BasePropertyOverrides": {
+        "BlendMode": "BLEND_Translucent",
+        "ShadingModel": "MSM_Unlit",
+        "OpacityMaskClipValue": 0.3333
+      }
+    },
+    "HasTopDiffuse": false,
+    "HasTopNormals": false,
+    "HasTopSpecularMasks": false,
+    "HasTopEmissive": false,
+    "IsTranslucent": true,
+    "IsNull": true
+  }
+}

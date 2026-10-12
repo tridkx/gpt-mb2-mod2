@@ -1,0 +1,71 @@
+{
+  "Textures": {
+    "PM_Diffuse": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse",
+    "BaseColor Tex": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth3_BaseColor.MAJ03_01_cloth3_BaseColor",
+    "FabricMask": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse",
+    "DefaultDiffuse": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse",
+    "Nornal Tex": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth3_Normal.MAJ03_01_cloth3_Normal",
+    "PM_Normals": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth3_Normal.MAJ03_01_cloth3_Normal",
+    "MAJ03_01_cloth3_Normal": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth3_Normal.MAJ03_01_cloth3_Normal",
+    "PM_SpecularMasks": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth3_OcclusionRoughnessMetallic.MAJ03_01_cloth3_OcclusionRoughnessMetallic",
+    "ORM": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth3_OcclusionRoughnessMetallic.MAJ03_01_cloth3_OcclusionRoughnessMetallic",
+    "OpacityMask": "Engine/Content/ArtTools/RenderToTexture/Textures/127grey.127grey",
+    "127grey": "Engine/Content/ArtTools/RenderToTexture/Textures/127grey.127grey",
+    "B_Tilling_Tex_NormalTex": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse"
+  },
+  "Parameters": {
+    "BlendMode": 1,
+    "ShadingModel": 0,
+    "Colors": {
+      "LightColor_R": {
+        "R": 1.1,
+        "G": 1.1,
+        "B": 1.1,
+        "A": 1.0,
+        "Hex": "FFFFFF"
+      },
+      "LightColor_G": {
+        "R": 1.2,
+        "G": 1.2,
+        "B": 1.2,
+        "A": 1.0,
+        "Hex": "FFFFFF"
+      }
+    },
+    "Scalars": {
+      "Roughness (S)": 1.1,
+      "BaseColorWeight_R": 1.0,
+      "Flatness_R": -1.0,
+      "Tilling_R": 30.0,
+      "BaseColorWeight_G": 0.0,
+      "Flatness_G": 0.1,
+      "Tilling_G": 30.0,
+      "Flatness_B": 0.0,
+      "NormalWeight_B": 0.0,
+      "Tilling_B": 10.0,
+      "RoughnessMin_A": 0.3,
+      "RoughnessMax_A": 0.7,
+      "RoughnessWeight_A": 0.0,
+      "Flatness_A": -1.0,
+      "Tilling_A": 40.0,
+      "RefractionDepthBias": 0.0
+    },
+    "Switches": {
+      "EnableBaseColor": true,
+      "EnableDistanceFade": true
+    },
+    "Properties": {
+      "bHasStaticPermutationResource": true,
+      "BasePropertyOverrides": {
+        "BlendMode": "BLEND_Masked",
+        "OpacityMaskClipValue": 0.3333
+      }
+    },
+    "HasTopDiffuse": false,
+    "HasTopNormals": false,
+    "HasTopSpecularMasks": true,
+    "HasTopEmissive": false,
+    "IsTranslucent": false,
+    "IsNull": false
+  }
+}

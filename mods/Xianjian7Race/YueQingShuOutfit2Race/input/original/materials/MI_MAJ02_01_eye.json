@@ -1,0 +1,76 @@
+{
+  "Textures": {
+    "IrisColor": "Pal7/Content/MaterialLib/ComTexture/Character/Eye/UE4_Demo_Eye_Iris.UE4_Demo_Eye_Iris",
+    "UE4_Demo_Eye_Iris": "Pal7/Content/MaterialLib/ComTexture/Character/Eye/UE4_Demo_Eye_Iris.UE4_Demo_Eye_Iris",
+    "PM_Normals": "Pal7/Content/MaterialLib/ComTexture/Character/Eye/T_Eye_Wet_Normal.T_Eye_Wet_Normal",
+    "NormalMap": "Pal7/Content/MaterialLib/ComTexture/Character/Eye/T_Eye_Wet_Normal.T_Eye_Wet_Normal",
+    "ScleraColor": "Pal7/Content/MaterialLib/ComTexture/Character/Eye/S_EyeScleraBaseColor.S_EyeScleraBaseColor",
+    "PM_Diffuse": "Pal7/Content/MaterialLib/ComTexture/Character/Eye/S_EyeScleraBaseColor.S_EyeScleraBaseColor",
+    "S_EyeScleraBaseColor": "Pal7/Content/MaterialLib/ComTexture/Character/Eye/S_EyeScleraBaseColor.S_EyeScleraBaseColor",
+    "SecondaryEnv": "Pal7/Content/MaterialLib/ComTexture/Character/Eye/SecondaryEnv.SecondaryEnv"
+  },
+  "Parameters": {
+    "BlendMode": 1,
+    "ShadingModel": 9,
+    "Colors": {
+      "Sclera inner color": {
+        "R": 0.7,
+        "G": 0.525,
+        "B": 0.49,
+        "A": 0.0,
+        "Hex": "DAC0BA"
+      },
+      "Sclera outer color": {
+        "R": 0.802083,
+        "G": 0.540069,
+        "B": 0.48125,
+        "A": 0.0,
+        "Hex": "E8C2B9"
+      },
+      "SecondaryEnvBalance": {
+        "R": 0.1,
+        "G": 0.1,
+        "B": 0.1,
+        "A": 1.0,
+        "Hex": "595959"
+      }
+    },
+    "Scalars": {
+      "假高光横位置偏移": 0.06,
+      "假高光纵位置偏移": 0.05,
+      "移动上下": -0.09,
+      "环半径": -0.5,
+      "环横向缩放": 0.7,
+      "环纵向缩放": 1.4,
+      "环边缘柔化": 2.6,
+      "Iris UV Radius": 0.195,
+      "IrisBRightness": 1.4,
+      "PupilScale": 0.78,
+      "ScleraBrightness": 0.9,
+      "SecondaryEnvRotation": 0.0,
+      "Veins": 0.2,
+      "RefractionDepthBias": 0.0
+    },
+    "Switches": {
+      "EnableDistanceFade": true
+    },
+    "Properties": {
+      "bHasStaticPermutationResource": true,
+      "BasePropertyOverrides": {
+        "BlendMode": "BLEND_Masked",
+        "ShadingModel": "MSM_Eye",
+        "OpacityMaskClipValue": 0.3333
+      },
+      "SubsurfaceProfile": {
+        "ObjectName": "SubsurfaceProfile'EyeInner_Profile'",
+        "ObjectPath": "Pal7/Content/MaterialLib/SuburfaceProfile/EyeInner_Profile.0"
+      }
+    },
+    "HasTopDiffuse": false,
+    "HasTopNormals": true,
+    "HasTopSpecularMasks": false,
+    "HasTopEmissive": false,
+    "IsTranslucent": false,
+    "IsNull": false
+  }
+}

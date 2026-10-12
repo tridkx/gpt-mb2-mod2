@@ -1,0 +1,25 @@
+{
+  "package": "D:\\gpt-mb2-mod2\\mods\\Xianjian7Race\\BaiMoQingOutfit2Race\\module\\BaiMoQingOutfit2Race\\AssetPackages\\bmq2.tpac",
+  "status": "pass",
+  "scope": "Metadata round-trip, references and standard shader vertex-alpha risk only; textures, custom shader paths, geometry, weights, cloth dynamics and game behavior are not validated",
+  "cloth_vertex_alpha": false,
+  "errors": [],
+  "incomplete": [],
+  "observations": [],
+  "package_sha256": "676a2c24c775a57d84775d242effffb07c5e445b2a194d716b6358a7c8082e2f",
+  "tool_output": {
+    "metacheck": "D:\\gpt-mb2-mod2\\mods\\Xianjian7Race\\BaiMoQingOutfit2Race\\module\\BaiMoQingOutfit2Race\\AssetPackages\\bmq2.tpac: 35 assets | checksum ok=35 bad=0 | metadata identical=35 differ=0 noSerializer=0",
+    "mataudit": "D:\\gpt-mb2-mod2\\mods\\Xianjian7Race\\BaiMoQingOutfit2Race\\module\\BaiMoQingOutfit2Race\\AssetPackages\\bmq2.tpac: 12 materials, 35 assets\n  metamesh-level material missing=0 | submesh Material present=51 missing=0 | submesh SecondMaterial present=0 missing=0 | metameshes with no material at all=0"
+  },
+  "counts": {
+    "materials": 12,
+    "submeshes": 51,
+    "cloth_submeshes": 12,
+    "lods": [
+      0,
+      1,
+      2,
+      3
+    ]
+  }
+}

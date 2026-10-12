@@ -1,0 +1,839 @@
+{
+  "status": "pass",
+  "travel_shortfall_tolerance_m": 0.005,
+  "final_package_sha256": "9e58b5ddadefacb24c0194ad8595a344a392f28c8f7b497abf471e86f871d607",
+  "cooked_meshes": [
+    {
+      "mesh": "bmq_part_09",
+      "lod": 0,
+      "render_vertices": 16841,
+      "simulation_vertices": 16120,
+      "active_positions": 1313,
+      "fixed_positions": 14807,
+      "stretch_constraints": 3352,
+      "bend_constraints": 2469,
+      "root_fixes": [],
+      "sha256": "b8b9c0a34559412c30399352e516a719cc670a679c3a1e87956e68925239d58b"
+    },
+    {
+      "mesh": "bmq_part_01.lod2",
+      "lod": 2,
+      "render_vertices": 3115,
+      "simulation_vertices": 2502,
+      "active_positions": 642,
+      "fixed_positions": 1860,
+      "stretch_constraints": 2031,
+      "bend_constraints": 1849,
+      "root_fixes": [],
+      "sha256": "558f9fa85d74a5dad20ae5678e182e7bf8a130387eaa523149ded17f936bf20e"
+    },
+    {
+      "mesh": "bmq_part_01.lod3",
+      "lod": 3,
+      "render_vertices": 1529,
+      "simulation_vertices": 1152,
+      "active_positions": 264,
+      "fixed_positions": 888,
+      "stretch_constraints": 902,
+      "bend_constraints": 762,
+      "root_fixes": [],
+      "sha256": "b73e4bc01790b44c3aa282c68d41837588ddbba9e3cd6194657bdcb79edc8c99"
+    },
+    {
+      "mesh": "bmq_part_00.lod3",
+      "lod": 3,
+      "render_vertices": 891,
+      "simulation_vertices": 692,
+      "active_positions": 243,
+      "fixed_positions": 449,
+      "stretch_constraints": 745,
+      "bend_constraints": 700,
+      "root_fixes": [],
+      "sha256": "32387ed1416736c68bebbb5444bd519cf61dced87b9696a6e5b60de737515794"
+    },
+    {
+      "mesh": "bmq_part_09.lod2",
+      "lod": 2,
+      "render_vertices": 7683,
+      "simulation_vertices": 6999,
+      "active_positions": 541,
+      "fixed_positions": 6458,
+      "stretch_constraints": 1350,
+      "bend_constraints": 736,
+      "root_fixes": [],
+      "sha256": "e001f25c3625cabf5ff4039fcd235c95e5ac07c6f52e5822be47efc9e2310c37"
+    },
+    {
+      "mesh": "bmq_part_01",
+      "lod": 0,
+      "render_vertices": 8153,
+      "simulation_vertices": 6890,
+      "active_positions": 2016,
+      "fixed_positions": 4874,
+      "stretch_constraints": 6160,
+      "bend_constraints": 6153,
+      "root_fixes": [],
+      "sha256": "1acd6c132f303348ccdd78dfd21cd01b5046a913c06ff2e0c190c9d7fc1d4594"
+    },
+    {
+      "mesh": "bmq_part_12.lod2",
+      "lod": 2,
+      "render_vertices": 389,
+      "simulation_vertices": 289,
+      "active_positions": 72,
+      "fixed_positions": 217,
+      "stretch_constraints": 220,
+      "bend_constraints": 184,
+      "root_fixes": [],
+      "sha256": "bbf263b6e567137e803eeffb632ddcad08c57cf9915c1f2e6413965997975578"
+    },
+    {
+      "mesh": "bmq_part_12.lod3",
+      "lod": 3,
+      "render_vertices": 192,
+      "simulation_vertices": 144,
+      "active_positions": 33,
+      "fixed_positions": 111,
+      "stretch_constraints": 108,
+      "bend_constraints": 62,
+      "root_fixes": [],
+      "sha256": "6d3161d1e7671b9846544c51ae8abbd9e2d7b3e598e4c4fed1b30869b1f6c00d"
+    },
+    {
+      "mesh": "bmq_part_09.lod3",
+      "lod": 3,
+      "render_vertices": 4291,
+      "simulation_vertices": 3608,
+      "active_positions": 314,
+      "fixed_positions": 3294,
+      "stretch_constraints": 817,
+      "bend_constraints": 328,
+      "root_fixes": [],
+      "sha256": "a79d05d38b8b11059bb43540b2edd2247b31a887d8b988a636b34f498ca84d2f"
+    },
+    {
+      "mesh": "bmq_part_12.lod1",
+      "lod": 1,
+      "render_vertices": 632,
+      "simulation_vertices": 506,
+      "active_positions": 148,
+      "fixed_positions": 358,
+      "stretch_constraints": 456,
+      "bend_constraints": 437,
+      "root_fixes": [],
+      "sha256": "2caa28d77703b5034b35918c73be0c16eba5eaf5ec7e0fbfde5058a52bd8bc4a"
+    },
+    {
+      "mesh": "bmq_part_00",
+      "lod": 0,
+      "render_vertices": 5087,
+      "simulation_vertices": 4415,
+      "active_positions": 1508,
+      "fixed_positions": 2907,
+      "stretch_constraints": 4565,
+      "bend_constraints": 4540,
+      "root_fixes": [],
+      "sha256": "29b82c41d9422745dfd9bbbad78f2858ed1bd0fcf3b1e2bb45133f99f15ac539"
+    },
+    {
+      "mesh": "bmq_part_00.lod1",
+      "lod": 1,
+      "render_vertices": 3374,
+      "simulation_vertices": 2882,
+      "active_positions": 966,
+      "fixed_positions": 1916,
+      "stretch_constraints": 2932,
+      "bend_constraints": 2883,
+      "root_fixes": [],
+      "sha256": "8cf37d122dbf4ed0472cac6545da75a1e50fd2aafb864e39235e26f8e144507a"
+    },
+    {
+      "mesh": "bmq_part_00.lod2",
+      "lod": 2,
+      "render_vertices": 1913,
+      "simulation_vertices": 1568,
+      "active_positions": 539,
+      "fixed_positions": 1029,
+      "stretch_constraints": 1645,
+      "bend_constraints": 1544,
+      "root_fixes": [],
+      "sha256": "89ec38f2283e74efe7bf0fb3684a0059f3c8799dfe0af937035c8ac24194b4ac"
+    },
+    {
+      "mesh": "bmq_part_09.lod1",
+      "lod": 1,
+      "render_vertices": 12403,
+      "simulation_vertices": 11697,
+      "active_positions": 879,
+      "fixed_positions": 10818,
+      "stretch_constraints": 2174,
+      "bend_constraints": 1371,
+      "root_fixes": [],
+      "sha256": "98a0aecaa90e7601af589e62d1fecf29821fe9e00dad11248b059755bbbf7c48"
+    },
+    {
+      "mesh": "bmq_part_01.lod1",
+      "lod": 1,
+      "render_vertices": 5470,
+      "simulation_vertices": 4527,
+      "active_positions": 1181,
+      "fixed_positions": 3346,
+      "stretch_constraints": 3651,
+      "bend_constraints": 3522,
+      "root_fixes": [],
+      "sha256": "fe6c1d2e18222de46780fd7a23f8d9e5faa82e9e845f8a227ef7569860433314"
+    },
+    {
+      "mesh": "bmq_part_12",
+      "lod": 0,
+      "render_vertices": 928,
+      "simulation_vertices": 760,
+      "active_positions": 252,
+      "fixed_positions": 508,
+      "stretch_constraints": 768,
+      "bend_constraints": 780,
+      "root_fixes": [],
+      "sha256": "ffb86c712a9cdbde313b5aac1892e49de52db7f682cb1f8fc8d18668ee9fd89a"
+    }
+  ],
+  "pose_diagnostics": [
+    {
+      "pose": "rest",
+      "frames": 1,
+      "preview_frame": 0,
+      "max_reference_capsule_overlap_m": 0.08598621902206544,
+      "max_travel_shortfall_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "bmq_part_09": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.021991490821474072,
+          "worst_capsule": ""
+        },
+        "bmq_part_01.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.08398409794091671,
+          "worst_capsule": ""
+        },
+        "bmq_part_01.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.08503726834597394,
+          "worst_capsule": ""
+        },
+        "bmq_part_00.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0674758980019907,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_09.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.021991490821474072,
+          "worst_capsule": ""
+        },
+        "bmq_part_01": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.08598621902206544,
+          "worst_capsule": "pelvis_-0.28"
+        },
+        "bmq_part_12.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "bmq_part_12.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "bmq_part_09.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.026421868761570405,
+          "worst_capsule": ""
+        },
+        "bmq_part_12.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "bmq_part_00": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.06959608348108214,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_00.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.06959608348108214,
+          "worst_capsule": ""
+        },
+        "bmq_part_00.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.06750728173985271,
+          "worst_capsule": ""
+        },
+        "bmq_part_09.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.021991490821474072,
+          "worst_capsule": ""
+        },
+        "bmq_part_01.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.08578447736071007,
+          "worst_capsule": "pelvis_0.28"
+        },
+        "bmq_part_12": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "run",
+      "frames": 25,
+      "preview_frame": 1,
+      "max_reference_capsule_overlap_m": 0.1353747603565459,
+      "max_travel_shortfall_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "bmq_part_09": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.10218148018362556,
+          "worst_capsule": ""
+        },
+        "bmq_part_01.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.12447447332263088,
+          "worst_capsule": "pelvis_0.28"
+        },
+        "bmq_part_01.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.12167224317574138,
+          "worst_capsule": "r_thigh"
+        },
+        "bmq_part_00.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.08744182614907414,
+          "worst_capsule": "r_thigh"
+        },
+        "bmq_part_09.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.10218148018362556,
+          "worst_capsule": ""
+        },
+        "bmq_part_01": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.1241126840940914,
+          "worst_capsule": "r_thigh"
+        },
+        "bmq_part_12.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.003681943993577047,
+          "worst_capsule": ""
+        },
+        "bmq_part_12.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.02926464379695945,
+          "worst_capsule": ""
+        },
+        "bmq_part_09.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.10872565465019524,
+          "worst_capsule": ""
+        },
+        "bmq_part_12.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.030169951862542715,
+          "worst_capsule": ""
+        },
+        "bmq_part_00": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.08722459331422645,
+          "worst_capsule": "r_thigh"
+        },
+        "bmq_part_00.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.08604030621284639,
+          "worst_capsule": ""
+        },
+        "bmq_part_00.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0761318119730769,
+          "worst_capsule": ""
+        },
+        "bmq_part_09.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.10218148018362556,
+          "worst_capsule": ""
+        },
+        "bmq_part_01.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.1241126840940914,
+          "worst_capsule": "r_thigh"
+        },
+        "bmq_part_12": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.030169951862542715,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "idle",
+      "frames": 16,
+      "preview_frame": 1,
+      "max_reference_capsule_overlap_m": 0.1354284937607469,
+      "max_travel_shortfall_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "bmq_part_09": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.10030206813009657,
+          "worst_capsule": ""
+        },
+        "bmq_part_01.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.12988183736497494,
+          "worst_capsule": "pelvis_-0.28"
+        },
+        "bmq_part_01.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.1314577303492329,
+          "worst_capsule": ""
+        },
+        "bmq_part_00.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.07040500209111804,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_09.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0999041219015915,
+          "worst_capsule": ""
+        },
+        "bmq_part_01": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.1354284937607469,
+          "worst_capsule": "pelvis_-0.28"
+        },
+        "bmq_part_12.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.027674395883857526,
+          "worst_capsule": ""
+        },
+        "bmq_part_12.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.029866023620913697,
+          "worst_capsule": ""
+        },
+        "bmq_part_09.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.09993996872009642,
+          "worst_capsule": ""
+        },
+        "bmq_part_12.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.02986375429728372,
+          "worst_capsule": ""
+        },
+        "bmq_part_00": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.07255465224669695,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_00.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.07255465224669695,
+          "worst_capsule": ""
+        },
+        "bmq_part_00.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.07040500209111804,
+          "worst_capsule": ""
+        },
+        "bmq_part_09.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.10031330215782017,
+          "worst_capsule": ""
+        },
+        "bmq_part_01.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.12952136353937735,
+          "worst_capsule": ""
+        },
+        "bmq_part_12": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.030642162603691556,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "bow",
+      "frames": 16,
+      "preview_frame": 1,
+      "max_reference_capsule_overlap_m": 0.13446322343376707,
+      "max_travel_shortfall_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "bmq_part_09": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.08063301855704647,
+          "worst_capsule": ""
+        },
+        "bmq_part_01.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.12634182179586698,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_01.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.12674519452680788,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_00.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.10995015186174038,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_09.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.08063301855704647,
+          "worst_capsule": ""
+        },
+        "bmq_part_01": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.12723141904335883,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_12.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.022793072890443605,
+          "worst_capsule": ""
+        },
+        "bmq_part_12.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.022793072890443605,
+          "worst_capsule": ""
+        },
+        "bmq_part_09.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.08552943185508352,
+          "worst_capsule": ""
+        },
+        "bmq_part_12.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.015390025282717754,
+          "worst_capsule": ""
+        },
+        "bmq_part_00": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.12074117324019039,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_00.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.1231759123072607,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_00.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.12301912561673398,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_09.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.08063301855704647,
+          "worst_capsule": ""
+        },
+        "bmq_part_01.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.12723141904335883,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_12": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.02103565195565418,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "riding",
+      "frames": 16,
+      "preview_frame": 1,
+      "max_reference_capsule_overlap_m": 0.13439822718977926,
+      "max_travel_shortfall_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "bmq_part_09": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.06538995400178262,
+          "worst_capsule": ""
+        },
+        "bmq_part_01.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.1274903674360807,
+          "worst_capsule": "r_thigh"
+        },
+        "bmq_part_01.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.11666291631342363,
+          "worst_capsule": ""
+        },
+        "bmq_part_00.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.11097643544886886,
+          "worst_capsule": "r_thigh"
+        },
+        "bmq_part_09.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.06234887426580585,
+          "worst_capsule": ""
+        },
+        "bmq_part_01": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.11951990674929985,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_12.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.004491583338105835,
+          "worst_capsule": ""
+        },
+        "bmq_part_12.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.015240429078996816,
+          "worst_capsule": ""
+        },
+        "bmq_part_09.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.06426561397737428,
+          "worst_capsule": ""
+        },
+        "bmq_part_12.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.007651397920443771,
+          "worst_capsule": ""
+        },
+        "bmq_part_00": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.11306760627211887,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_00.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.11421519596117898,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_00.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.11015101633142174,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_09.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.06499444424593744,
+          "worst_capsule": ""
+        },
+        "bmq_part_01.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.11947655176623964,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_12": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.009267134370984809,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "slash",
+      "frames": 16,
+      "preview_frame": 0,
+      "max_reference_capsule_overlap_m": 0.13475989858524967,
+      "max_travel_shortfall_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "bmq_part_09": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.021988925548667368,
+          "worst_capsule": ""
+        },
+        "bmq_part_01.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.08398586618182667,
+          "worst_capsule": ""
+        },
+        "bmq_part_01.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0850323805664254,
+          "worst_capsule": ""
+        },
+        "bmq_part_00.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.06747594361886064,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_09.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.021988925548667368,
+          "worst_capsule": ""
+        },
+        "bmq_part_01": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.08598802745290682,
+          "worst_capsule": "pelvis_-0.28"
+        },
+        "bmq_part_12.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "bmq_part_12.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "bmq_part_09.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.026419124359350385,
+          "worst_capsule": ""
+        },
+        "bmq_part_12.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "bmq_part_00": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.06959613890839073,
+          "worst_capsule": "l_thigh"
+        },
+        "bmq_part_00.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.06959613890839073,
+          "worst_capsule": ""
+        },
+        "bmq_part_00.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.06750713626240742,
+          "worst_capsule": ""
+        },
+        "bmq_part_09.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.021988925548667368,
+          "worst_capsule": ""
+        },
+        "bmq_part_01.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0857791008873759,
+          "worst_capsule": "pelvis_0.28"
+        },
+        "bmq_part_12": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        }
+      }
+    }
+  ],
+  "cloth_engine_verified": false,
+  "scope": "Final payload structure and sampled native-animation capsule/travel screening; overlaps are skinning-reference measurements before the engine cloth solver"
+}

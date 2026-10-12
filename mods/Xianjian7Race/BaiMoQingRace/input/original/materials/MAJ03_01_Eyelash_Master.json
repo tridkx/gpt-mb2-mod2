@@ -1,0 +1,42 @@
+{
+  "Textures": {
+    "PM_Diffuse": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_Eyelash_Master.MAJ03_01_Eyelash_Master",
+    "Eyelash_BaseColor": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_Eyelash_Master.MAJ03_01_Eyelash_Master"
+  },
+  "Parameters": {
+    "BlendMode": 1,
+    "ShadingModel": 7,
+    "Colors": {
+      "BaseColor": {
+        "R": 0.07,
+        "G": 0.048375,
+        "B": 0.0133,
+        "A": 1.0,
+        "Hex": "4B3E1E"
+      }
+    },
+    "Scalars": {
+      "Fade Distance": 0.025977,
+      "OpacityScale": 0.333247,
+      "RefractionDepthBias": 0.0
+    },
+    "Switches": {
+      "EnableDistanceFade": true
+    },
+    "Properties": {
+      "bHasStaticPermutationResource": true,
+      "BasePropertyOverrides": {
+        "TwoSided": true,
+        "BlendMode": "BLEND_Masked",
+        "ShadingModel": "MSM_Hair",
+        "OpacityMaskClipValue": 0.3333
+      }
+    },
+    "HasTopDiffuse": false,
+    "HasTopNormals": false,
+    "HasTopSpecularMasks": false,
+    "HasTopEmissive": false,
+    "IsTranslucent": false,
+    "IsNull": false
+  }
+}

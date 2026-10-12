@@ -1,0 +1,281 @@
+{
+  "yqs2_maj02_01_eyelash_eyebrow": {
+    "name": "yqs2_maj02_01_eyelash_eyebrow",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "yqs2_tex_2",
+      "1": "yqs2_tex_0",
+      "2": "yqs2_tex_0",
+      "4": "yqs2_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ],
+    "alphaTest": 0.25
+  },
+  "yqs2_mi_maj02_01_body": {
+    "name": "yqs2_mi_maj02_01_body",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "yqs2_tex_3",
+      "1": "yqs2_tex_4",
+      "2": "yqs2_tex_4",
+      "4": "yqs2_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "yqs2_mi_maj02_02_cloth1": {
+    "name": "yqs2_mi_maj02_02_cloth1",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "yqs2_tex_5",
+      "1": "yqs2_tex_6",
+      "2": "yqs2_tex_6",
+      "4": "yqs2_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "yqs2_mi_maj02_02_cloth2": {
+    "name": "yqs2_mi_maj02_02_cloth2",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "yqs2_tex_7",
+      "1": "yqs2_tex_8",
+      "2": "yqs2_tex_8",
+      "4": "yqs2_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "yqs2_mi_maj02_01_eye": {
+    "name": "yqs2_mi_maj02_01_eye",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "yqs2_tex_9",
+      "1": "yqs2_tex_10",
+      "2": "yqs2_tex_10",
+      "4": "yqs2_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "yqs2_mi_maj02_01_mouth_skeleton": {
+    "name": "yqs2_mi_maj02_01_mouth_skeleton",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "yqs2_tex_11",
+      "1": "yqs2_tex_12",
+      "2": "yqs2_tex_12",
+      "4": "yqs2_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "yqs2_mi_maj02_01_head": {
+    "name": "yqs2_mi_maj02_01_head",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "yqs2_tex_13",
+      "1": "yqs2_tex_14",
+      "2": "yqs2_tex_14",
+      "4": "yqs2_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "yqs2_mi_maj02_01_eyelash": {
+    "name": "yqs2_mi_maj02_01_eyelash",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "yqs2_tex_15",
+      "1": "yqs2_tex_0",
+      "2": "yqs2_tex_0",
+      "4": "yqs2_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "yqs2_mi_maj02_01_hair": {
+    "name": "yqs2_mi_maj02_01_hair",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "yqs2_tex_16",
+      "1": "yqs2_tex_0",
+      "2": "yqs2_tex_0",
+      "4": "yqs2_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ],
+    "alphaTest": 0.25
+  },
+  "yqs2_mi_maj02_02_tassel": {
+    "name": "yqs2_mi_maj02_02_tassel",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "yqs2_tex_17",
+      "1": "yqs2_tex_18",
+      "2": "yqs2_tex_18",
+      "4": "yqs2_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "yqs2_mi_maj02_02_cloth3": {
+    "name": "yqs2_mi_maj02_02_cloth3",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "yqs2_tex_19",
+      "1": "yqs2_tex_20",
+      "2": "yqs2_tex_20",
+      "4": "yqs2_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  }
+}

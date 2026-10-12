@@ -1,0 +1,63 @@
+{
+  "Textures": {
+    "Alpha": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_Hair_alpha.MAJ03_01_Hair_alpha",
+    "MAJ03_01_Hair_alpha": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_Hair_alpha.MAJ03_01_Hair_alpha",
+    "Depth": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_Hair_Depth.MAJ03_01_Hair_Depth",
+    "MAJ03_01_Hair_Depth": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_Hair_Depth.MAJ03_01_Hair_Depth",
+    "ID": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_Hair_ID.MAJ03_01_Hair_ID",
+    "MAJ03_01_Hair_ID": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_Hair_ID.MAJ03_01_Hair_ID",
+    "Root": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_Hair_Root.MAJ03_01_Hair_Root",
+    "MAJ03_01_Hair_Root": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_Hair_Root.MAJ03_01_Hair_Root",
+    "PM_Diffuse": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_Hair_D.MAJ03_01_Hair_D",
+    "Diffuse": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_Hair_D.MAJ03_01_Hair_D"
+  },
+  "Parameters": {
+    "BlendMode": 1,
+    "ShadingModel": 7,
+    "Colors": {
+      "TipColor": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "FFFFFF"
+      },
+      "RootColor": {
+        "R": 0.8,
+        "G": 0.8,
+        "B": 0.8,
+        "A": 1.0,
+        "Hex": "E8E8E8"
+      }
+    },
+    "Scalars": {
+      "Brightness": 2.0,
+      "Specular": 0.4,
+      "EdgeMaskMin": 0.8,
+      "OcclusionAmtRoot": 0.3,
+      "OcclusionAmtRootTip": 0.3,
+      "PixelDepthOffset": 0.2,
+      "颜色饱和度": 0.2,
+      "RefractionDepthBias": 0.0
+    },
+    "Switches": {
+      "UseDiffuseBaseColor": true,
+      "EnableDistanceFade": true
+    },
+    "Properties": {
+      "bHasStaticPermutationResource": true,
+      "BasePropertyOverrides": {
+        "TwoSided": true,
+        "BlendMode": "BLEND_Masked",
+        "ShadingModel": "MSM_Hair",
+        "OpacityMaskClipValue": 0.3333
+      }
+    },
+    "HasTopDiffuse": true,
+    "HasTopNormals": false,
+    "HasTopSpecularMasks": false,
+    "HasTopEmissive": false,
+    "IsTranslucent": false,
+    "IsNull": false
+  }
+}

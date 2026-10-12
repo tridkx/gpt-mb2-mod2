@@ -1,0 +1,41 @@
+{
+  "Textures": {
+    "PM_Diffuse": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_eyelash.T_MAJ02_01_eyelash",
+    "Eyelash_BaseColor": "Pal7/Content/SkeletonAssets/Character/Character_YueYunYao/Texture/T_MAJ02_01_eyelash.T_MAJ02_01_eyelash"
+  },
+  "Parameters": {
+    "BlendMode": 2,
+    "ShadingModel": 7,
+    "Colors": {
+      "BaseColor": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "000000"
+      }
+    },
+    "Scalars": {
+      "RefractionDepthBias": 0.0
+    },
+    "Switches": {
+      "EnableDistanceFade": true
+    },
+    "Properties": {
+      "bHasStaticPermutationResource": true,
+      "BasePropertyOverrides": {
+        "bOverride_BlendMode": true,
+        "TwoSided": true,
+        "BlendMode": "BLEND_Translucent",
+        "ShadingModel": "MSM_Hair",
+        "OpacityMaskClipValue": 0.3333
+      }
+    },
+    "HasTopDiffuse": false,
+    "HasTopNormals": false,
+    "HasTopSpecularMasks": false,
+    "HasTopEmissive": false,
+    "IsTranslucent": true,
+    "IsNull": false
+  }
+}

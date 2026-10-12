@@ -1,5 +1,11 @@
 # 工作区更新日志
 
+## 2026-10-12 仙剑7新增三套种族时装
+
+- 新增 `YueQingShuOutfit2Race`、`BaiMoQingRace`、`BaiMoQingOutfit2Race` 独立种族资源工程；白茉晴第二套仅制作无帽版。
+- 各套使用自身源比例、骨架关节、材质、四级 LOD、布料与人物预览适配，现有月清疏默认时装保持独立。
+- 当前功能、检查和交付入口集中在[仙剑7系列说明](../mods/Xianjian7Race/README.md)，各模组维护独立更新日志。
+
 ## 2026-10-12 天香少女第三至第八套种族
 
 - 第二套 v0.1.3 已获用户验收通过；本次新增 `TianxiangGirlT3Race` 至 `TianxiangGirlT8Race` 六个独立 v0.1.0 种族资源模块，第八套使用 PVP 配色。

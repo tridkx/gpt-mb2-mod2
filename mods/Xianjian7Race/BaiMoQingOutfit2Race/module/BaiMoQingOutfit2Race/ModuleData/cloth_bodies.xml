@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='utf8'?>
+<bodies>
+  <body name="bmq2_collision" owner_skeleton="bmq2_skeleton">
+    <capsules>
+      <capsule name="bmq2_l_thigh" length="0.378975" origin="0, 0, 0" frame="0.021807, -0.023464, -0.999487, 0.000000, 0.000512, 0.999725, -0.023458, 0.000000, 0.999762, -0.000000, 0.021813, 0.000000, -0.075142, 0.005214, 0.881283, 1.000000">
+        <points>
+          <point radius="0.129619">
+            <bones>
+              <bone name="l_thigh" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.129619">
+            <bones>
+              <bone name="l_calf" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="bmq2_l_calf" length="0.317712" origin="0, 0, 0" frame="0.021760, -0.039733, -0.998973, 0.000000, 0.000865, 0.999210, -0.039723, 0.000000, 0.999763, -0.000000, 0.021778, 0.000000, -0.065432, -0.005727, 0.436202, 1.000000">
+        <points>
+          <point radius="0.065361">
+            <bones>
+              <bone name="l_calf" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.065361">
+            <bones>
+              <bone name="l_foot" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="bmq2_l_upperarm" length="0.193621" origin="0, 0, 0" frame="-0.681745, -0.071948, -0.728043, 0.000000, -0.049178, 0.997408, -0.052517, 0.000000, 0.729935, 0.000000, -0.683517, 0.000000, -0.114901, -0.024737, 1.264398, 1.000000">
+        <points>
+          <point radius="0.024203">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.024203">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="bmq2_l_forearm" length="0.155270" origin="0, 0, 0" frame="-0.656696, 0.225777, -0.719566, 0.000000, 0.152197, 0.974179, 0.166768, 0.000000, 0.738638, 0.000000, -0.674102, 0.000000, -0.269184, -0.036655, 1.099367, 1.000000">
+        <points>
+          <point radius="0.033310">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.033310">
+            <bones>
+              <bone name="l_hand" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="bmq2_r_thigh" length="0.378975" origin="0, 0, 0" frame="-0.021807, -0.023464, -0.999487, 0.000000, -0.000512, 0.999725, -0.023458, 0.000000, 0.999762, 0.000000, -0.021813, 0.000000, 0.075142, 0.005214, 0.881283, 1.000000">
+        <points>
+          <point radius="0.129346">
+            <bones>
+              <bone name="r_thigh" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.129346">
+            <bones>
+              <bone name="r_calf" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="bmq2_r_calf" length="0.317712" origin="0, 0, 0" frame="-0.021760, -0.039732, -0.998973, 0.000000, -0.000865, 0.999210, -0.039723, 0.000000, 0.999763, 0.000000, -0.021777, 0.000000, 0.065433, -0.005727, 0.436201, 1.000000">
+        <points>
+          <point radius="0.065361">
+            <bones>
+              <bone name="r_calf" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.065361">
+            <bones>
+              <bone name="r_foot" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="bmq2_r_upperarm" length="0.193622" origin="0, 0, 0" frame="0.681746, -0.071946, -0.728042, 0.000000, 0.049176, 0.997409, -0.052516, 0.000000, 0.729934, -0.000000, 0.683518, 0.000000, 0.114901, -0.024737, 1.264397, 1.000000">
+        <points>
+          <point radius="0.024203">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.024203">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="bmq2_r_forearm" length="0.155270" origin="0, 0, 0" frame="0.656694, 0.225779, -0.719567, 0.000000, -0.152198, 0.974179, 0.166769, 0.000000, 0.738640, -0.000000, 0.674100, 0.000000, 0.269184, -0.036655, 1.099367, 1.000000">
+        <points>
+          <point radius="0.033216">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.033216">
+            <bones>
+              <bone name="r_hand" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="bmq2_waist" length="0.065754" origin="0, 0, 0" frame="-0.000000, 0.081986, 0.996633, 0.000000, 0.000000, 0.996633, -0.081986, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, -0.000000, 0.031253, 1.001428, 1.000000">
+        <points>
+          <point radius="0.063781">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.063781">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="bmq2_pelvis_-0.28" length="0.094152" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.042520, 0.006061, 0.886986, 1.000000">
+        <points>
+          <point radius="0.065299">
+            <bones>
+              <bone name="pelvis" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.065299">
+            <bones>
+              <bone name="pelvis" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="bmq2_pelvis_0" length="0.094152" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.006061, 0.886986, 1.000000">
+        <points>
+          <point radius="0.065299">
+            <bones>
+              <bone name="pelvis" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.065299">
+            <bones>
+              <bone name="pelvis" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="bmq2_pelvis_0.28" length="0.094152" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.042520, 0.006061, 0.886986, 1.000000">
+        <points>
+          <point radius="0.065299">
+            <bones>
+              <bone name="pelvis" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.065299">
+            <bones>
+              <bone name="pelvis" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="bmq2_back" length="0.053730" origin="0, 0, 0" frame="-0.000000, 0.044089, 0.999028, 0.000000, 0.000000, 0.999028, -0.044089, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, -0.000000, 0.036644, 1.066960, 1.000000">
+        <points>
+          <point radius="0.057706">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.057706">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="bmq2_neck" length="0.056947" origin="0, 0, 0" frame="-0.000000, 0.201056, 0.979580, 0.000000, 0.000000, 0.979580, -0.201056, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, -0.000000, -0.015509, 1.333992, 1.000000">
+        <points>
+          <point radius="0.025218">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.025218">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="bmq2_head" length="0.102449" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000000, -0.004059, 1.389776, 1.000000">
+        <points>
+          <point radius="0.058317">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.058317">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

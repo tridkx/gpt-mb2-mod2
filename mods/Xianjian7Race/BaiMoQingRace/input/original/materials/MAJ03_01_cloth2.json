@@ -1,0 +1,62 @@
+{
+  "Textures": {
+    "PM_Diffuse": "Pal7/Content/MaterialLib/ComTexture/Cloth/FabricDetail.FabricDetail",
+    "BaseColor Tex": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth2_BaseColor.MAJ03_01_cloth2_BaseColor",
+    "FabricMask": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth2_MASK.MAJ03_01_cloth2_MASK",
+    "MAJ03_01_cloth2_MASK": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth2_MASK.MAJ03_01_cloth2_MASK",
+    "Nornal Tex": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth2_Normal.MAJ03_01_cloth2_Normal",
+    "PM_Normals": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth2_Normal.MAJ03_01_cloth2_Normal",
+    "MAJ03_01_cloth2_Normal": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth2_Normal.MAJ03_01_cloth2_Normal",
+    "PM_SpecularMasks": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth2_OcclusionRoughnessMetallic.MAJ03_01_cloth2_OcclusionRoughnessMetallic",
+    "ORM": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth2_OcclusionRoughnessMetallic.MAJ03_01_cloth2_OcclusionRoughnessMetallic",
+    "OpacityMask": "Engine/Content/ArtTools/RenderToTexture/Textures/127grey.127grey",
+    "127grey": "Engine/Content/ArtTools/RenderToTexture/Textures/127grey.127grey",
+    "G_Tilling_Tex_NormalTex": "Pal7/Content/MaterialLib/ComTexture/Cloth/FabricDetail.FabricDetail"
+  },
+  "Parameters": {
+    "BlendMode": 1,
+    "ShadingModel": 0,
+    "Colors": {
+      "Base Color (V3)": {
+        "R": 0.9,
+        "G": 0.9,
+        "B": 0.9,
+        "A": 0.0,
+        "Hex": "F4F4F4"
+      },
+      "LightColor_G": {
+        "R": 1.2,
+        "G": 1.2,
+        "B": 1.2,
+        "A": 1.0,
+        "Hex": "FFFFFF"
+      }
+    },
+    "Scalars": {
+      "Roughness (S)": 1.2,
+      "BaseColorWeight_G": 0.0,
+      "Tilling_G": 16.0,
+      "RefractionDepthBias": 0.0
+    },
+    "Switches": {
+      "EnableEmbroidery": true,
+      "EnableBaseColor": true,
+      "EnableScatterTex": false,
+      "EnableMaskG": true,
+      "EnableDistanceFade": true
+    },
+    "Properties": {
+      "bHasStaticPermutationResource": true,
+      "BasePropertyOverrides": {
+        "BlendMode": "BLEND_Masked",
+        "OpacityMaskClipValue": 0.3333
+      }
+    },
+    "HasTopDiffuse": false,
+    "HasTopNormals": false,
+    "HasTopSpecularMasks": true,
+    "HasTopEmissive": false,
+    "IsTranslucent": false,
+    "IsNull": false
+  }
+}

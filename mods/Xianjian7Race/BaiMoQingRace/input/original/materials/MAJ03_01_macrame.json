@@ -1,0 +1,83 @@
+{
+  "Textures": {
+    "PM_Diffuse": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse",
+    "BaseColor Tex": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_macrame.MAJ03_01_macrame",
+    "FabricMask": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse",
+    "DefaultDiffuse": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse",
+    "Nornal Tex": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_macrame_Normal.MAJ03_01_macrame_Normal",
+    "PM_Normals": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_macrame_Normal.MAJ03_01_macrame_Normal",
+    "MAJ03_01_macrame_Normal": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_macrame_Normal.MAJ03_01_macrame_Normal",
+    "PM_SpecularMasks": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_macrame_OcclusionRoughnessMetallic.MAJ03_01_macrame_OcclusionRoughnessMetallic",
+    "ORM": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_macrame_OcclusionRoughnessMetallic.MAJ03_01_macrame_OcclusionRoughnessMetallic",
+    "OpacityMask": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_MACRAME_ALPHA.MAJ03_01_MACRAME_ALPHA",
+    "MAJ03_01_MACRAME_ALPHA": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_MACRAME_ALPHA.MAJ03_01_MACRAME_ALPHA",
+    "R_Tilling_Tex_NormalTex": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse",
+    "G_Tilling_Tex_NormalTex": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse",
+    "B_Tilling_Tex_NormalTex": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse",
+    "A_Tilling_Tex_NormalTex": "Engine/Content/EngineMaterials/DefaultDiffuse.DefaultDiffuse"
+  },
+  "Parameters": {
+    "BlendMode": 1,
+    "ShadingModel": 0,
+    "Colors": {
+      "LightColor_R": {
+        "R": 1.1,
+        "G": 1.1,
+        "B": 1.1,
+        "A": 1.0,
+        "Hex": "FFFFFF"
+      },
+      "LightColor_G": {
+        "R": 1.2,
+        "G": 1.2,
+        "B": 1.2,
+        "A": 1.0,
+        "Hex": "FFFFFF"
+      }
+    },
+    "Scalars": {
+      "Edge Specular Scale (S)": 0.01,
+      "Metallic (S)": 0.0,
+      "Roughness (S)": 0.8,
+      "BaseColorWeight_R": 1.0,
+      "RoughnessWeight_R": -1.0,
+      "Flatness_R": 0.0,
+      "NormalWeight_R": 0.0,
+      "Tilling_R": 40.0,
+      "BaseColorWeight_G": 0.0,
+      "Flatness_G": 0.0,
+      "NormalWeight_G": 0.0,
+      "Tilling_G": 40.0,
+      "Flatness_B": -4.189548,
+      "NormalWeight_B": 0.0,
+      "Tilling_B": 10.0,
+      "RoughnessMin_A": 0.3,
+      "RoughnessMax_A": 0.7,
+      "RoughnessWeight_A": 0.0,
+      "Flatness_A": 10.615266,
+      "NormalWeight_A": 0.0,
+      "Tilling_A": 40.0,
+      "RefractionDepthBias": 0.0
+    },
+    "Switches": {
+      "EnableBaseColor": true,
+      "EnableScatterTex": false,
+      "OnlyFabirc": true,
+      "EnableDistanceFade": true,
+      "EnableOpacity": true
+    },
+    "Properties": {
+      "bHasStaticPermutationResource": true,
+      "BasePropertyOverrides": {
+        "BlendMode": "BLEND_Masked",
+        "OpacityMaskClipValue": 0.3333
+      }
+    },
+    "HasTopDiffuse": false,
+    "HasTopNormals": false,
+    "HasTopSpecularMasks": true,
+    "HasTopEmissive": false,
+    "IsTranslucent": false,
+    "IsNull": false
+  }
+}

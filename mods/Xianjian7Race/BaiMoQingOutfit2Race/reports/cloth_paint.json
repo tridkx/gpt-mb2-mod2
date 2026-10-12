@@ -1,0 +1,510 @@
+{
+  "scope": "Explicit model-specific material, component extent and upper attachment rules",
+  "rows": [
+    {
+      "object": "bmq2_part_00",
+      "material": "MAJ03_02_cloth1",
+      "components": [
+        {
+          "component": 17,
+          "kind": "skirt",
+          "bounds_m": [
+            [
+              -0.14077597856521606,
+              -0.08905148506164551,
+              0.6323890686035156
+            ],
+            [
+              0.14077073335647583,
+              0.09903451800346375,
+              1.065697431564331
+            ]
+          ],
+          "root_height_m": 1.040697455406189,
+          "fixed_vertices": 145,
+          "active_vertices": 659
+        },
+        {
+          "component": 38,
+          "kind": "ribbon",
+          "bounds_m": [
+            [
+              -0.07039067149162292,
+              -0.2029103934764862,
+              1.2743167877197266
+            ],
+            [
+              -0.054843951016664505,
+              -0.05385655537247658,
+              1.5171258449554443
+            ]
+          ],
+          "root_height_m": 1.4921258687973022,
+          "fixed_vertices": 22,
+          "active_vertices": 63
+        },
+        {
+          "component": 87,
+          "kind": "ribbon",
+          "bounds_m": [
+            [
+              0.05484393984079361,
+              -0.20291072130203247,
+              1.2743172645568848
+            ],
+            [
+              0.07039059698581696,
+              -0.05385661497712135,
+              1.5171253681182861
+            ]
+          ],
+          "root_height_m": 1.492125391960144,
+          "fixed_vertices": 22,
+          "active_vertices": 63
+        }
+      ],
+      "active_vertices": 785,
+      "max_travel_m": 0.2654004395008087
+    },
+    {
+      "object": "bmq2_part_02",
+      "material": "MAJ03_02_cloth3",
+      "components": [],
+      "active_vertices": 0,
+      "max_travel_m": 0.0
+    },
+    {
+      "object": "bmq2_part_03",
+      "material": "MAJ03_02_Flower",
+      "components": [],
+      "active_vertices": 0,
+      "max_travel_m": 0.0
+    },
+    {
+      "object": "bmq2_part_04",
+      "material": "MAJ03_02_macrame_2",
+      "components": [],
+      "active_vertices": 0,
+      "max_travel_m": 0.0
+    },
+    {
+      "object": "bmq2_part_05",
+      "material": "MAJ03_01_head",
+      "components": [],
+      "active_vertices": 0,
+      "max_travel_m": 0.0
+    },
+    {
+      "object": "bmq2_part_08",
+      "material": "MAJ03_02_cloth2",
+      "components": [
+        {
+          "component": 1,
+          "kind": "skirt",
+          "bounds_m": [
+            [
+              -0.25483113527297974,
+              -0.17865227162837982,
+              0.5075854063034058
+            ],
+            [
+              0.2538182735443115,
+              0.12551812827587128,
+              1.0191757678985596
+            ]
+          ],
+          "root_height_m": 0.9941757917404175,
+          "fixed_vertices": 82,
+          "active_vertices": 814
+        },
+        {
+          "component": 2,
+          "kind": "skirt",
+          "bounds_m": [
+            [
+              -0.07479798048734665,
+              0.08125154674053192,
+              0.5703751444816589
+            ],
+            [
+              0.076736219227314,
+              0.13448873162269592,
+              1.0037572383880615
+            ]
+          ],
+          "root_height_m": 0.9787572622299194,
+          "fixed_vertices": 22,
+          "active_vertices": 172
+        },
+        {
+          "component": 3,
+          "kind": "skirt",
+          "bounds_m": [
+            [
+              -0.05773679539561272,
+              0.0955125018954277,
+              0.6191362738609314
+            ],
+            [
+              0.06028725579380989,
+              0.12901227176189423,
+              1.0422145128250122
+            ]
+          ],
+          "root_height_m": 1.0172145366668701,
+          "fixed_vertices": 255,
+          "active_vertices": 158
+        }
+      ],
+      "active_vertices": 1144,
+      "max_travel_m": 0.3162837326526642
+    },
+    {
+      "object": "bmq2_part_09",
+      "material": "MAJ03_01_eye",
+      "components": [],
+      "active_vertices": 0,
+      "max_travel_m": 0.0
+    },
+    {
+      "object": "bmq2_part_10",
+      "material": "MAJ03_01_hair",
+      "components": [
+        {
+          "component": 6,
+          "kind": "hair_tail",
+          "bounds_m": [
+            [
+              -0.0808442085981369,
+              -0.21623167395591736,
+              1.2335377931594849
+            ],
+            [
+              -0.04972337558865547,
+              -0.040973927825689316,
+              1.5331617593765259
+            ]
+          ],
+          "root_height_m": 1.433161735534668,
+          "fixed_vertices": 115,
+          "active_vertices": 209
+        },
+        {
+          "component": 7,
+          "kind": "hair_tail",
+          "bounds_m": [
+            [
+              -0.07785136997699738,
+              -0.22294989228248596,
+              1.2284845113754272
+            ],
+            [
+              -0.05439820885658264,
+              -0.041334666311740875,
+              1.5337601900100708
+            ]
+          ],
+          "root_height_m": 1.433760166168213,
+          "fixed_vertices": 64,
+          "active_vertices": 96
+        },
+        {
+          "component": 8,
+          "kind": "hair_tail",
+          "bounds_m": [
+            [
+              -0.07744745165109634,
+              -0.22062788903713226,
+              1.2298054695129395
+            ],
+            [
+              -0.05306923761963844,
+              -0.04045042768120766,
+              1.5337775945663452
+            ]
+          ],
+          "root_height_m": 1.4337775707244873,
+          "fixed_vertices": 95,
+          "active_vertices": 129
+        },
+        {
+          "component": 12,
+          "kind": "hair_tail",
+          "bounds_m": [
+            [
+              -0.07432932406663895,
+              -0.22474049031734467,
+              1.2248637676239014
+            ],
+            [
+              -0.05285509303212166,
+              -0.040779959410429,
+              1.5326207876205444
+            ]
+          ],
+          "root_height_m": 1.4326207637786865,
+          "fixed_vertices": 27,
+          "active_vertices": 39
+        },
+        {
+          "component": 13,
+          "kind": "hair_tail",
+          "bounds_m": [
+            [
+              -0.07427231222391129,
+              -0.22474877536296844,
+              1.224819302558899
+            ],
+            [
+              -0.05213577672839165,
+              -0.04318632930517197,
+              1.5327036380767822
+            ]
+          ],
+          "root_height_m": 1.4327036142349243,
+          "fixed_vertices": 27,
+          "active_vertices": 39
+        },
+        {
+          "component": 42,
+          "kind": "hair_tail",
+          "bounds_m": [
+            [
+              -0.06641897559165955,
+              -0.22550255060195923,
+              1.22174870967865
+            ],
+            [
+              -0.0444042906165123,
+              -0.04417337477207184,
+              1.5323150157928467
+            ]
+          ],
+          "root_height_m": 1.4323149919509888,
+          "fixed_vertices": 53,
+          "active_vertices": 78
+        },
+        {
+          "component": 57,
+          "kind": "hair_tail",
+          "bounds_m": [
+            [
+              -0.06302502006292343,
+              0.04048742353916168,
+              1.347142219543457
+            ],
+            [
+              -0.02823166735470295,
+              0.064130999147892,
+              1.5319569110870361
+            ]
+          ],
+          "root_height_m": 1.4319568872451782,
+          "fixed_vertices": 30,
+          "active_vertices": 24
+        },
+        {
+          "component": 81,
+          "kind": "hair_tail",
+          "bounds_m": [
+            [
+              -0.06049808859825134,
+              0.03960343077778816,
+              1.3454043865203857
+            ],
+            [
+              -0.033828943967819214,
+              0.060908783227205276,
+              1.532077431678772
+            ]
+          ],
+          "root_height_m": 1.432077407836914,
+          "fixed_vertices": 27,
+          "active_vertices": 24
+        },
+        {
+          "component": 332,
+          "kind": "hair_tail",
+          "bounds_m": [
+            [
+              0.028231769800186157,
+              0.04048752784729004,
+              1.3471437692642212
+            ],
+            [
+              0.06302502751350403,
+              0.064130999147892,
+              1.5319569110870361
+            ]
+          ],
+          "root_height_m": 1.4319568872451782,
+          "fixed_vertices": 30,
+          "active_vertices": 24
+        },
+        {
+          "component": 342,
+          "kind": "hair_tail",
+          "bounds_m": [
+            [
+              0.033828988671302795,
+              0.039603546261787415,
+              1.34540593624115
+            ],
+            [
+              0.06049806624650955,
+              0.060908786952495575,
+              1.532077431678772
+            ]
+          ],
+          "root_height_m": 1.432077407836914,
+          "fixed_vertices": 27,
+          "active_vertices": 24
+        },
+        {
+          "component": 374,
+          "kind": "hair_tail",
+          "bounds_m": [
+            [
+              0.04440423846244812,
+              -0.22550281882286072,
+              1.2217493057250977
+            ],
+            [
+              0.06641892343759537,
+              -0.04417336359620094,
+              1.5323150157928467
+            ]
+          ],
+          "root_height_m": 1.4323149919509888,
+          "fixed_vertices": 53,
+          "active_vertices": 78
+        },
+        {
+          "component": 386,
+          "kind": "hair_tail",
+          "bounds_m": [
+            [
+              0.04972338676452637,
+              -0.21623192727565765,
+              1.2335383892059326
+            ],
+            [
+              0.08084415644407272,
+              -0.04097392037510872,
+              1.5331617593765259
+            ]
+          ],
+          "root_height_m": 1.433161735534668,
+          "fixed_vertices": 115,
+          "active_vertices": 209
+        },
+        {
+          "component": 392,
+          "kind": "hair_tail",
+          "bounds_m": [
+            [
+              0.05213576927781105,
+              -0.22474904358386993,
+              1.2248198986053467
+            ],
+            [
+              0.0742722600698471,
+              -0.04318632185459137,
+              1.5327036380767822
+            ]
+          ],
+          "root_height_m": 1.4327036142349243,
+          "fixed_vertices": 27,
+          "active_vertices": 39
+        },
+        {
+          "component": 393,
+          "kind": "hair_tail",
+          "bounds_m": [
+            [
+              0.052855025976896286,
+              -0.22474075853824615,
+              1.2248643636703491
+            ],
+            [
+              0.07432927191257477,
+              -0.04077994450926781,
+              1.5326207876205444
+            ]
+          ],
+          "root_height_m": 1.4326207637786865,
+          "fixed_vertices": 27,
+          "active_vertices": 39
+        },
+        {
+          "component": 395,
+          "kind": "hair_tail",
+          "bounds_m": [
+            [
+              0.053069159388542175,
+              -0.22062815725803375,
+              1.2298060655593872
+            ],
+            [
+              0.07744739949703217,
+              -0.04045041278004646,
+              1.5337775945663452
+            ]
+          ],
+          "root_height_m": 1.4337775707244873,
+          "fixed_vertices": 96,
+          "active_vertices": 129
+        },
+        {
+          "component": 402,
+          "kind": "hair_tail",
+          "bounds_m": [
+            [
+              0.05439813435077667,
+              -0.22295016050338745,
+              1.228485107421875
+            ],
+            [
+              0.0778513178229332,
+              -0.04133465513586998,
+              1.5337601900100708
+            ]
+          ],
+          "root_height_m": 1.433760166168213,
+          "fixed_vertices": 64,
+          "active_vertices": 96
+        }
+      ],
+      "active_vertices": 1276,
+      "max_travel_m": 0.13686807453632355
+    },
+    {
+      "object": "bmq2_part_11",
+      "material": "MAJ03_01_Eyelash_Master",
+      "components": [],
+      "active_vertices": 0,
+      "max_travel_m": 0.0
+    },
+    {
+      "object": "bmq2_part_12",
+      "material": "eyelash_new_Inst03",
+      "components": [],
+      "active_vertices": 0,
+      "max_travel_m": 0.0
+    },
+    {
+      "object": "bmq2_part_13",
+      "material": "MAJ03_01_mouth_Skeleton",
+      "components": [],
+      "active_vertices": 0,
+      "max_travel_m": 0.0
+    },
+    {
+      "object": "bmq2_part_14",
+      "material": "MAJ03_01_body",
+      "components": [],
+      "active_vertices": 0,
+      "max_travel_m": 0.0
+    }
+  ]
+}

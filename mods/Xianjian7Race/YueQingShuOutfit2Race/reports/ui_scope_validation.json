@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "cases": {
+    "SandBox.View.Map.MapScreen._mainPartyVisual": false,
+    "SandBox.View.Map.PartyVisual._humanAgentVisuals": false,
+    "SandBox.View.Map.MapConversationTableau._agentVisuals": false,
+    "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableau._agentVisuals": true,
+    "TaleWorlds.MountAndBlade.View.Tableaus.BasicCharacterTableau._agentVisuals": true,
+    "TaleWorlds.MountAndBlade.GauntletUI.BodyGenerator.BodyGeneratorView._visualToShow": true,
+    "Unknown.CharacterTableau._agentVisuals": false,
+    "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableauFake._agentVisuals": false
+  },
+  "null_owner_allowed": false,
+  "direct_provider_cases": "actual runtime methods compiled with matching provider/tableau stubs; valid/null/unknown provider/unknown tableau",
+  "actual_field_collection_and_inspect_executed": true,
+  "boxed_action_invalid_cast_reproduced": true,
+  "reference_and_value_custom_equals_never_called": true,
+  "inventory_discovery_independent_of_screen_seen_budget": true,
+  "source_sha256": "6db185907a3e7c95c1ae8a3566c980b7c95ab026f8390eb8b0d85763a06b58f0",
+  "assembly_sha256": "61e295181f5e7f86ce96d7b461ddf0405810c45feb80c55f0df87f7feb67e4de",
+  "game_verified": false
+}

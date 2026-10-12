@@ -1,0 +1,92 @@
+{
+  "id": "BaiMoQingOutfit2Race",
+  "race": "bmq2_outfit2",
+  "prefix": "bmq2",
+  "skeleton": "bmq2_skeleton",
+  "version": "v0.1.0",
+  "title": "Bai Mo Qing Outfit 2 No Hat Race",
+  "source_blend": "input/original/03_第二套装_无帽_MAJ03_02.blend",
+  "source_origin": "D:\\dsh-xianjian7\\output\\白茉晴_BaiMoQing\\03_第二套装_无帽_MAJ03_02",
+  "cloth_enabled": true,
+  "cloth_lods": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "skin_min_scale": 1.0,
+  "lod_multipliers": [
+    1,
+    0.65,
+    0.35,
+    0.15
+  ],
+  "minimum_ratios": {},
+  "anatomical_rebind_materials": [],
+  "cloth_rules": [
+    {
+      "material": "MAJ03_02_cloth1",
+      "kind": "skirt",
+      "min_height_m": 0.3,
+      "top_range_m": [
+        1.0,
+        1.1
+      ],
+      "bottom_range_m": [
+        0.55,
+        0.75
+      ],
+      "root_band_m": 0.025,
+      "travel_slope": 0.65,
+      "max_travel_m": 0.38
+    },
+    {
+      "material": "MAJ03_02_cloth1",
+      "kind": "ribbon",
+      "min_height_m": 0.2,
+      "top_range_m": [
+        1.45,
+        1.56
+      ],
+      "bottom_range_m": [
+        1.15,
+        1.3
+      ],
+      "root_band_m": 0.025,
+      "travel_slope": 0.65,
+      "max_travel_m": 0.38
+    },
+    {
+      "material": "MAJ03_02_cloth2",
+      "kind": "skirt",
+      "min_height_m": 0.3,
+      "top_range_m": [
+        0.95,
+        1.1
+      ],
+      "bottom_range_m": [
+        0.45,
+        0.7
+      ],
+      "root_band_m": 0.025,
+      "travel_slope": 0.65,
+      "max_travel_m": 0.38
+    },
+    {
+      "material": "MAJ03_01_hair",
+      "kind": "hair_tail",
+      "min_height_m": 0.18,
+      "top_range_m": [
+        1.45,
+        1.6
+      ],
+      "bottom_range_m": [
+        1.1,
+        1.4
+      ],
+      "root_band_m": 0.1,
+      "travel_slope": 0.65,
+      "max_travel_m": 0.38
+    }
+  ]
+}

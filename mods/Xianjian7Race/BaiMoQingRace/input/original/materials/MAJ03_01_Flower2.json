@@ -1,0 +1,54 @@
+{
+  "Textures": {
+    "AO R Sp Sc": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth3_OcclusionRoughnessMetallic.MAJ03_01_cloth3_OcclusionRoughnessMetallic",
+    "MAJ03_01_cloth3_OcclusionRoughnessMetallic": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth3_OcclusionRoughnessMetallic.MAJ03_01_cloth3_OcclusionRoughnessMetallic",
+    "PM_Normals": "Pal7/Content/MaterialLib/ComTexture/Character/Skin/skin_n.skin_n",
+    "Normal": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth3_Normal.MAJ03_01_cloth3_Normal",
+    "PM_Diffuse": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth3_BaseColor.MAJ03_01_cloth3_BaseColor",
+    "BaseColor": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth3_BaseColor.MAJ03_01_cloth3_BaseColor",
+    "细节法线": "Pal7/Content/MaterialLib/ComTexture/Character/Skin/skin_n.skin_n",
+    "skin_n": "Pal7/Content/MaterialLib/ComTexture/Character/Skin/skin_n.skin_n"
+  },
+  "Parameters": {
+    "BlendMode": 1,
+    "ShadingModel": 0,
+    "Colors": {
+      "BaseColor着色": {
+        "R": 0.9,
+        "G": 0.9,
+        "B": 0.9,
+        "A": 0.0,
+        "Hex": "F4F4F4"
+      }
+    },
+    "Scalars": {
+      "Specular Max": 0.5,
+      "Specular Min": 0.5,
+      "细节密度": 18.0,
+      "细节法线平滑": 0.304762,
+      "RefractionDepthBias": 0.0
+    },
+    "Switches": {
+      "EnableDistanceFade": true
+    },
+    "Properties": {
+      "bHasStaticPermutationResource": true,
+      "bOverrideSubsurfaceProfile": true,
+      "BasePropertyOverrides": {
+        "bOverride_ShadingModel": true,
+        "BlendMode": "BLEND_Masked",
+        "OpacityMaskClipValue": 0.3333
+      },
+      "SubsurfaceProfile": {
+        "ObjectName": "SubsurfaceProfile'SSP_female'",
+        "ObjectPath": "Pal7/Content/MaterialLib/Material/Character/SSP_female.0"
+      }
+    },
+    "HasTopDiffuse": true,
+    "HasTopNormals": true,
+    "HasTopSpecularMasks": false,
+    "HasTopEmissive": false,
+    "IsTranslucent": false,
+    "IsNull": false
+  }
+}

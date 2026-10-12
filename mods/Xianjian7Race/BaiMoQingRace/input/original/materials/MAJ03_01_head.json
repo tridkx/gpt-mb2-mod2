@@ -1,0 +1,60 @@
+{
+  "Textures": {
+    "PM_Normals": "Pal7/Content/MaterialLib/ComTexture/Character/Skin/skin_n.skin_n",
+    "Tears Normal And Mask": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_Tears.MAJ03_01_Tears",
+    "AO R Sp Sc": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_face_OcclusionRoughnessMetallic.MAJ03_01_face_OcclusionRoughnessMetallic",
+    "MAJ03_01_face_OcclusionRoughnessMetallic": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_face_OcclusionRoughnessMetallic.MAJ03_01_face_OcclusionRoughnessMetallic",
+    "BentNormal": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_bent_normals.MAJ03_01_bent_normals",
+    "Normal": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_face_Normal.MAJ03_01_face_Normal",
+    "PM_Diffuse": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_face_BaseColor.MAJ03_01_face_BaseColor",
+    "BaseColor": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_face_BaseColor.MAJ03_01_face_BaseColor",
+    "细节法线": "Pal7/Content/MaterialLib/ComTexture/Character/Skin/skin_n.skin_n",
+    "skin_n": "Pal7/Content/MaterialLib/ComTexture/Character/Skin/skin_n.skin_n"
+  },
+  "Parameters": {
+    "BlendMode": 1,
+    "ShadingModel": 5,
+    "Colors": {
+      "BaseColor着色": {
+        "R": 1.05,
+        "G": 1.05,
+        "B": 1.05,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      }
+    },
+    "Scalars": {
+      "弯曲法线启用": 1.0,
+      "降低BaseColor贴图饱和度": 0.15,
+      "使用AO贴图": 1.0,
+      "粗糙度强度Min": 0.08,
+      "Specular Max": 1.5,
+      "细节密度": 15.0,
+      "细节法线平滑": 0.5,
+      "RefractionDepthBias": 0.0
+    },
+    "Switches": {
+      "EnableDistanceFade": true,
+      "Enable Tears FX": true
+    },
+    "Properties": {
+      "bHasStaticPermutationResource": true,
+      "bOverrideSubsurfaceProfile": true,
+      "BasePropertyOverrides": {
+        "BlendMode": "BLEND_Masked",
+        "ShadingModel": "MSM_SubsurfaceProfile",
+        "OpacityMaskClipValue": 0.3333
+      },
+      "SubsurfaceProfile": {
+        "ObjectName": "SubsurfaceProfile'SSP_female'",
+        "ObjectPath": "Pal7/Content/MaterialLib/Material/Character/SSP_female.0"
+      }
+    },
+    "HasTopDiffuse": true,
+    "HasTopNormals": true,
+    "HasTopSpecularMasks": false,
+    "HasTopEmissive": false,
+    "IsTranslucent": false,
+    "IsNull": false
+  }
+}

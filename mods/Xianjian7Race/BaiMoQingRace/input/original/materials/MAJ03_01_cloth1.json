@@ -1,0 +1,77 @@
+{
+  "Textures": {
+    "PM_Diffuse": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth1_BaseColor.MAJ03_01_cloth1_BaseColor",
+    "BaseColor": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth1_BaseColor.MAJ03_01_cloth1_BaseColor",
+    "PM_Normals": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth1_Normal.MAJ03_01_cloth1_Normal",
+    "Normal": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth1_Normal.MAJ03_01_cloth1_Normal",
+    "PM_SpecularMasks": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth1_OcclusionRoughnessMetallic.MAJ03_01_cloth1_OcclusionRoughnessMetallic",
+    "ORM": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth1_OcclusionRoughnessMetallic.MAJ03_01_cloth1_OcclusionRoughnessMetallic",
+    "Mask": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth1_MASK.MAJ03_01_cloth1_MASK",
+    "MAJ03_01_cloth1_MASK": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_01_cloth1_MASK.MAJ03_01_cloth1_MASK"
+  },
+  "Parameters": {
+    "BlendMode": 2,
+    "ShadingModel": 0,
+    "Colors": {
+      "染色": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "FFFFFF"
+      },
+      "自发光染色": {
+        "R": 0.635566,
+        "G": 0.641419,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "D1D2FF"
+      }
+    },
+    "Scalars": {
+      "基色亮度": 0.8,
+      "高光权重": 0.0,
+      "布料高光": 1.0,
+      "菲尼尔高光权重": 1.0,
+      "不透明度最小值": 0.0,
+      "不透明度最大值": 1.0,
+      "不透明度菲尼尔强度": 1.0,
+      "法线强度": 1.0,
+      "AO强度": 0.3,
+      "金属度强度": 0.15,
+      "TransitionWidth": 3.0,
+      "菲尼尔对比度": 0.01,
+      "菲尼尔范围": 2.5,
+      "RT_Normal": 2.0,
+      "RT_IOR": 1.0,
+      "RT_Opacity": 0.8,
+      "RoughnessIntensity": 0.8,
+      "Tilling": 1.0,
+      "ueseFarViewDistanceFade": 1.0,
+      "ViewFarDistanceFadeMax": 6455.259,
+      "ViewFarDistanceFadeMin": 0.0,
+      "baseColor亮度": 1.0,
+      "Fade": 1.0,
+      "RefractionDepthBias": 0.0
+    },
+    "Switches": {
+      "EnableEmbroidery": true,
+      "EnableDistanceFade": true
+    },
+    "Properties": {
+      "bHasStaticPermutationResource": true,
+      "BasePropertyOverrides": {
+        "bOverride_OpacityMaskClipValue": true,
+        "bOverride_ShadingModel": true,
+        "BlendMode": "BLEND_Translucent",
+        "OpacityMaskClipValue": 0.3333
+      }
+    },
+    "HasTopDiffuse": true,
+    "HasTopNormals": true,
+    "HasTopSpecularMasks": true,
+    "HasTopEmissive": false,
+    "IsTranslucent": true,
+    "IsNull": false
+  }
+}

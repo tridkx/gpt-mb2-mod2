@@ -1,0 +1,46 @@
+{
+  "Textures": {
+    "AO R Sp Sc": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_02_cloth1_OcclusionRoughnessMetallic.MAJ03_02_cloth1_OcclusionRoughnessMetallic",
+    "MAJ03_02_cloth1_OcclusionRoughnessMetallic": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_02_cloth1_OcclusionRoughnessMetallic.MAJ03_02_cloth1_OcclusionRoughnessMetallic",
+    "PM_Diffuse": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_02_cloth1_BaseColor.MAJ03_02_cloth1_BaseColor",
+    "BaseColor": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_02_cloth1_BaseColor.MAJ03_02_cloth1_BaseColor",
+    "PM_Normals": "Pal7/Content/MaterialLib/ComTexture/Character/Skin/skin_n.skin_n",
+    "Normal": "Pal7/Content/SkeletonAssets/Character/Character_BaiMoQing/Texture/MAJ03_02_cloth1_Normal.MAJ03_02_cloth1_Normal",
+    "细节法线": "Pal7/Content/MaterialLib/ComTexture/Character/Skin/skin_n.skin_n",
+    "skin_n": "Pal7/Content/MaterialLib/ComTexture/Character/Skin/skin_n.skin_n"
+  },
+  "Parameters": {
+    "BlendMode": 1,
+    "ShadingModel": 5,
+    "Colors": {},
+    "Scalars": {
+      "Specular Max": 0.5,
+      "Specular Min": 0.5,
+      "细节密度": 25.0,
+      "细节法线平滑": 0.0,
+      "RefractionDepthBias": 0.0
+    },
+    "Switches": {
+      "EnableDistanceFade": true
+    },
+    "Properties": {
+      "bHasStaticPermutationResource": true,
+      "bOverrideSubsurfaceProfile": true,
+      "BasePropertyOverrides": {
+        "BlendMode": "BLEND_Masked",
+        "ShadingModel": "MSM_SubsurfaceProfile",
+        "OpacityMaskClipValue": 0.3333
+      },
+      "SubsurfaceProfile": {
+        "ObjectName": "SubsurfaceProfile'SSP_female'",
+        "ObjectPath": "Pal7/Content/MaterialLib/Material/Character/SSP_female.0"
+      }
+    },
+    "HasTopDiffuse": true,
+    "HasTopNormals": true,
+    "HasTopSpecularMasks": false,
+    "HasTopEmissive": false,
+    "IsTranslucent": false,
+    "IsNull": false
+  }
+}
