@@ -1,0 +1,366 @@
+{
+  "materials": [
+    {
+      "Name": "modern_girl_hair",
+      "Guid": "dc2014c1-c314-b597-8323-2f0754df861f",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "modern_girl_head",
+      "Guid": "63b46373-edea-e3a5-dea2-b93ad5665698",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "modern_girl_upper",
+      "Guid": "f457b387-8d80-6da3-f197-49a6234624b4",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "modern_girl_left_arm",
+      "Guid": "15c15c13-5b05-d477-6e3c-fd72095de01d",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "modern_girl_right_arm",
+      "Guid": "a18097cc-9288-e69e-c046-7252a3fec097",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "modern_girl_lower",
+      "Guid": "7826057d-41a4-2c93-3b82-85448f316394",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "Name": "modern_girl_part_00",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "dc2014c1-c314-b597-8323-2f0754df861f",
+      "Vertices": 10828,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "488AD4EC21C1E7E1FFDC037415A87A7838232DA9AAE99A6D8BB215B6AF194757",
+      "VertexStreamSHA256": "2755CBFA9956AA6D2F3C3475295E59793F32EF394DA7B3237D4FE523E66038E0",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_00.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "dc2014c1-c314-b597-8323-2f0754df861f",
+      "Vertices": 7900,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "BFD741EFE5E6CD324D39A92BC592C09C706A8AADA9FD24A35A62A7F3B2D45F37",
+      "VertexStreamSHA256": "C8FA17163629BA2DB880F4C6B770E9D8DD176D40F0A8BDD821D0BAAA080C16DF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_00.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "dc2014c1-c314-b597-8323-2f0754df861f",
+      "Vertices": 5479,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "0E3CA627621741F4D96567CBCF2EA90D444C10495843153C5AEBD9E7FFF09ED3",
+      "VertexStreamSHA256": "79D03700A4165B9AD5A655931D8F4BD8595362AD26F2361AB0A0BEFF0F58CF40",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_00.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "dc2014c1-c314-b597-8323-2f0754df861f",
+      "Vertices": 3364,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B1FD60D261AB67C5E917EA6423372F222A527F7CAAF0610FF98A852349C159AE",
+      "VertexStreamSHA256": "8C175D04F9A2CBD432D7A6883EC6D3B8C80DF2FBFD4ED4E16AA7A74D2A33C426",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_01",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "63b46373-edea-e3a5-dea2-b93ad5665698",
+      "Vertices": 1794,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "EFB6B6EF42B1E779803B6F9F2AA195CB5063464E106D0B2C6C2EB9D75F633836",
+      "VertexStreamSHA256": "94851970F42A81DD6AC43067615EBA510B0305ED12016421A2ACE268410A7B7B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_01.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "63b46373-edea-e3a5-dea2-b93ad5665698",
+      "Vertices": 1553,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "964E9B8640C1E42F6CE659CB62AFEE1B069FF7D821657D759508ED3F2B18AF49",
+      "VertexStreamSHA256": "AF77BABD853A01A7769CDC4BA394C991592B7392DBA6B853C4DB686075EF48EF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_01.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "63b46373-edea-e3a5-dea2-b93ad5665698",
+      "Vertices": 1553,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "964E9B8640C1E42F6CE659CB62AFEE1B069FF7D821657D759508ED3F2B18AF49",
+      "VertexStreamSHA256": "AF77BABD853A01A7769CDC4BA394C991592B7392DBA6B853C4DB686075EF48EF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_01.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "63b46373-edea-e3a5-dea2-b93ad5665698",
+      "Vertices": 1553,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "964E9B8640C1E42F6CE659CB62AFEE1B069FF7D821657D759508ED3F2B18AF49",
+      "VertexStreamSHA256": "AF77BABD853A01A7769CDC4BA394C991592B7392DBA6B853C4DB686075EF48EF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_02",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "f457b387-8d80-6da3-f197-49a6234624b4",
+      "Vertices": 5000,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "435F6E92BF8E5479AECD8A9BA3563E033338B03CD6D88F75ADB8F4BC0B7A5ABD",
+      "VertexStreamSHA256": "A42665D670063D284FF994E8CE6743EDE9BD8B090CC91797A7FCBDE821E45EA8",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_02.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "f457b387-8d80-6da3-f197-49a6234624b4",
+      "Vertices": 3671,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5D7FD958C30709D28ED8A8CF78987550C829D22427441BA640409D9FD146E083",
+      "VertexStreamSHA256": "ECCFEAA1F6934FF14B398B38C730CED3193143CA50205B2E7A520A23F59658D9",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_02.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "f457b387-8d80-6da3-f197-49a6234624b4",
+      "Vertices": 2565,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "3BF973F5257D1D0651874E4569A322FF315CFFB2D75C76A7B0DE42F025ACB535",
+      "VertexStreamSHA256": "E2498561B68C03906C5412399239BB502FEA51D02A14DDF5DFBDAE4CFD84C239",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_02.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "f457b387-8d80-6da3-f197-49a6234624b4",
+      "Vertices": 1679,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "493192250F39128CDAD31711B2F82DC19F3261FA5E8EECEA043B2780295D8670",
+      "VertexStreamSHA256": "57C65E2E671620EB68DD4EB3DAD0D18C7D8D9CC6D0194988CE7A821D7AD017EF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_03",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "15c15c13-5b05-d477-6e3c-fd72095de01d",
+      "Vertices": 1910,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "F49B40C839BA9E6BC72FC56B292B4A82BFD35A4CDCD9029FB94598150DFA3DE9",
+      "VertexStreamSHA256": "53466C77C2B98886019F230B445519228BF3BEA9A25254BF9872D122EDCCEC01",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_03.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "15c15c13-5b05-d477-6e3c-fd72095de01d",
+      "Vertices": 1478,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "D6928D2D60A49C0486F43F8C2FE2BAB4C981D352A3620B7D4CBDBD8E2163E573",
+      "VertexStreamSHA256": "10E682391D04E6764166304722F4FE65BD80361F4FEB14F2BCEC57A65BAC9BEF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_03.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "15c15c13-5b05-d477-6e3c-fd72095de01d",
+      "Vertices": 1119,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "7B6249A4A5D819563B4F93CA04BA699B162B7C56FE5B99F632B58982A01D8601",
+      "VertexStreamSHA256": "FF950E20C226A63E7C0CB2EB56A8123B6DFE18B3EBCEA605FF9845FB349C4C9A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_03.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "15c15c13-5b05-d477-6e3c-fd72095de01d",
+      "Vertices": 897,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "0B93C6AEBFF985C7241B89BCE44F56164840EC6D2F28C910F3E53D4F8175255B",
+      "VertexStreamSHA256": "DC247907B7C283CBA95547412E98F78A088A8A5D0913682C893E23E667268ECD",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_04",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "a18097cc-9288-e69e-c046-7252a3fec097",
+      "Vertices": 2017,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "33BCB74C6A2FAD81ADB5B0BBB84C7D01CB59736ACDAC114C60987708EC379E73",
+      "VertexStreamSHA256": "A36E829D88AA35AB6D474D90A7F2BC1A86F6B0459F26A66542699B177BD2C28E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_04.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "a18097cc-9288-e69e-c046-7252a3fec097",
+      "Vertices": 1586,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "7ADCD33C19328C6A69658257334C91F995307ECC87291BA50F5A6717DC996A4B",
+      "VertexStreamSHA256": "52E52184C5035CA8F1E6F0A203D7814DAF9AA2D2E4E1BDCA02E52497A04A98EB",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_04.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "a18097cc-9288-e69e-c046-7252a3fec097",
+      "Vertices": 1227,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B3D9FB9250F764E37202A4F785FAED2CB8FF670BFF0EC6DF183125FAD254231A",
+      "VertexStreamSHA256": "9D2289087E871AECB2ED1DB4CB3C17335429F5D30C7EBEF87140328A0B875EF1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_04.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "a18097cc-9288-e69e-c046-7252a3fec097",
+      "Vertices": 1021,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "64BC1C47ADCA1573E573EB351E566F54469EE4E3200EC97A69DCD1E3C24BDE53",
+      "VertexStreamSHA256": "FCF32600046764C1E7690CC3C4DC7F2A735A727C32ABD3D06C1E5E8D7926A153",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_05",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "7826057d-41a4-2c93-3b82-85448f316394",
+      "Vertices": 11150,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "1E9550E13BBDC68136165CF7B0683CA00E50EB8D354C88EF44818BCDC61451E3",
+      "VertexStreamSHA256": "C1731ACC496A04AEEB19FD91B8ADB4BFE5C1B1E0CDF9BC0581657CC9D3CF7AC1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_05.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "7826057d-41a4-2c93-3b82-85448f316394",
+      "Vertices": 8635,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "1F675909D4C01DB01ACCF53C57C6DB12173EE8439E610B9968F66CF9CA0F3878",
+      "VertexStreamSHA256": "32E539E9F78AEEFA295E318A44E339248488196EE110028342521308C368D988",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_05.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "7826057d-41a4-2c93-3b82-85448f316394",
+      "Vertices": 6540,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "C487F7594B0F5031A620C0A4E1DF193B18C24009C3E25C4CF73553C5DB23FE7A",
+      "VertexStreamSHA256": "C21FB65433BF09E545BE94BEF252B030AEA8DDB93B6916E891B022799B284A5E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_part_05.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "7826057d-41a4-2c93-3b82-85448f316394",
+      "Vertices": 4982,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "350F550DD7CA4C9BF68EF21BF157646E10567B03884D13FEEF0C24D61C36B3EB",
+      "VertexStreamSHA256": "52FCC2EE67B2510263BBCE487FBF22DFB2C0A3F2588DA853558A7A291523E50C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "modern_girl_hidden",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "f457b387-8d80-6da3-f197-49a6234624b4",
+      "Vertices": 4,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5AC6A5945F16500911219129984BA8B387A06F24FE383CE4E81A73294065461B",
+      "VertexStreamSHA256": "EF54EFAF0087FF9735322207748957219F28ADC52CAD0EAEE8A20344CDE57CEB",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "version": "v0.1.0",
+  "status": "pass",
+  "check_scope": "offline_structural_and_native_motion_checks",
+  "final_package_sha256": "a5cbc99de63c44dc51f6b4f2092b47c1007432a84241d244cf588383bdffca79",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; input hashes provide geometry baseline",
+  "registration": {
+    "status": "pass",
+    "race": "modern_girl",
+    "changed_troops": [],
+    "unaffected_troops": 548,
+    "troop_overrides_present": false,
+    "added_test_troops": [
+      "modern_girl_test"
+    ],
+    "skin_variants": 10,
+    "skeleton": "modern_girl_skeleton",
+    "native_monster_dimensions_preserved": true,
+    "native_ui_actions_inherited": true,
+    "cloth_simulation": false
+  },
+  "lods": [
+    {
+      "lod": 0,
+      "vertices": 32699,
+      "triangles": 46775,
+      "submeshes": 6
+    },
+    {
+      "lod": 1,
+      "vertices": 24823,
+      "triangles": 32974,
+      "submeshes": 6
+    },
+    {
+      "lod": 2,
+      "vertices": 18483,
+      "triangles": 21879,
+      "submeshes": 6
+    },
+    {
+      "lod": 3,
+      "vertices": 13496,
+      "triangles": 13532,
+      "submeshes": 6
+    }
+  ],
+  "seams": [
+    {
+      "lod": 0,
+      "shared_points": 40,
+      "cross_equipment_points": 0,
+      "max_position_error": 4.782466113733621e-08
+    },
+    {
+      "lod": 1,
+      "shared_points": 40,
+      "cross_equipment_points": 0,
+      "max_position_error": 4.782466113733621e-08
+    },
+    {
+      "lod": 2,
+      "shared_points": 40,
+      "cross_equipment_points": 0,
+      "max_position_error": 4.782466113733621e-08
+    },
+    {
+      "lod": 3,
+      "shared_points": 40,
+      "cross_equipment_points": 0,
+      "max_position_error": 4.782466113733621e-08
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "asset": "anim_inventory_idle",
+      "frames_checked": 16,
+      "total_frames": 1268,
+      "worst_frame": 760,
+      "worst_mesh": "modern_girl_part_02",
+      "max_edge_extension": 2.916639652782696,
+      "max_mesh_p99_extension": 2.0905523130360826,
+      "meshes": [
+        {
+          "name": "modern_girl_part_00",
+          "max_extension": 1.000000428358855,
+          "p99_extension": 1.0000003575637209
+        },
+        {
+          "name": "modern_girl_part_01",
+          "max_extension": 2.528444490111311,
+          "p99_extension": 1.4078817268340869
+        },
+        {
+          "name": "modern_girl_part_02",
+          "max_extension": 2.916639652782696,
+          "p99_extension": 2.0905523130360826
+        },
+        {
+          "name": "modern_girl_part_03",
+          "max_extension": 1.4388226874768775,
+          "p99_extension": 1.1763310348122058
+        },
+        {
+          "name": "modern_girl_part_04",
+          "max_extension": 1.3593950086990791,
+          "p99_extension": 1.1557819392457485
+        },
+        {
+          "name": "modern_girl_part_05",
+          "max_extension": 1.7951724870787744,
+          "p99_extension": 1.3443015500861104
+        }
+      ]
+    },
+    {
+      "label": "run",
+      "asset": "anim_run_forward_unarmed",
+      "frames_checked": 25,
+      "total_frames": 26,
+      "worst_frame": 22,
+      "worst_mesh": "modern_girl_part_05",
+      "max_edge_extension": 3.3818451013656214,
+      "max_mesh_p99_extension": 2.09178169468221,
+      "meshes": [
+        {
+          "name": "modern_girl_part_00",
+          "max_extension": 1.0000004283588555,
+          "p99_extension": 1.0000003575637189
+        },
+        {
+          "name": "modern_girl_part_01",
+          "max_extension": 1.4315248200306316,
+          "p99_extension": 1.079425930245347
+        },
+        {
+          "name": "modern_girl_part_02",
+          "max_extension": 2.6173274214260642,
+          "p99_extension": 1.749225175648772
+        },
+        {
+          "name": "modern_girl_part_03",
+          "max_extension": 1.984004675522021,
+          "p99_extension": 1.6576182223122895
+        },
+        {
+          "name": "modern_girl_part_04",
+          "max_extension": 1.9075153477742899,
+          "p99_extension": 1.5554417411915966
+        },
+        {
+          "name": "modern_girl_part_05",
+          "max_extension": 3.3818451013656214,
+          "p99_extension": 2.09178169468221
+        }
+      ]
+    },
+    {
+      "label": "bow",
+      "asset": "anim_bow",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 88,
+      "worst_mesh": "modern_girl_part_02",
+      "max_edge_extension": 5.864436061366504,
+      "max_mesh_p99_extension": 3.679071435660212,
+      "meshes": [
+        {
+          "name": "modern_girl_part_00",
+          "max_extension": 1.0000004283588564,
+          "p99_extension": 1.0000003575637229
+        },
+        {
+          "name": "modern_girl_part_01",
+          "max_extension": 3.0934178493369116,
+          "p99_extension": 1.554943820333852
+        },
+        {
+          "name": "modern_girl_part_02",
+          "max_extension": 5.864436061366504,
+          "p99_extension": 3.679071435660212
+        },
+        {
+          "name": "modern_girl_part_03",
+          "max_extension": 1.9336042807261058,
+          "p99_extension": 1.6217019764636085
+        },
+        {
+          "name": "modern_girl_part_04",
+          "max_extension": 2.2703836900704153,
+          "p99_extension": 1.8108727852291782
+        },
+        {
+          "name": "modern_girl_part_05",
+          "max_extension": 3.4201330257125235,
+          "p99_extension": 2.0360622317723025
+        }
+      ]
+    },
+    {
+      "label": "riding",
+      "asset": "anim_rider_gallop_bow",
+      "frames_checked": 20,
+      "total_frames": 21,
+      "worst_frame": 6,
+      "worst_mesh": "modern_girl_part_05",
+      "max_edge_extension": 3.781838257285702,
+      "max_mesh_p99_extension": 2.4928924527889897,
+      "meshes": [
+        {
+          "name": "modern_girl_part_00",
+          "max_extension": 1.0000004283588557,
+          "p99_extension": 1.0000003575637193
+        },
+        {
+          "name": "modern_girl_part_01",
+          "max_extension": 1.8691443955618954,
+          "p99_extension": 1.2096082274100655
+        },
+        {
+          "name": "modern_girl_part_02",
+          "max_extension": 3.3309020754696532,
+          "p99_extension": 2.4285380953857394
+        },
+        {
+          "name": "modern_girl_part_03",
+          "max_extension": 1.947884805427883,
+          "p99_extension": 1.554261320526907
+        },
+        {
+          "name": "modern_girl_part_04",
+          "max_extension": 1.8921433273864747,
+          "p99_extension": 1.5328871785100195
+        },
+        {
+          "name": "modern_girl_part_05",
+          "max_extension": 3.781838257285702,
+          "p99_extension": 2.4928924527889897
+        }
+      ]
+    },
+    {
+      "label": "slash",
+      "asset": "anim_dagger_slashleft_1h_balance",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 59,
+      "worst_mesh": "modern_girl_part_02",
+      "max_edge_extension": 5.119140228338158,
+      "max_mesh_p99_extension": 2.96898891601298,
+      "meshes": [
+        {
+          "name": "modern_girl_part_00",
+          "max_extension": 1.000000428358856,
+          "p99_extension": 1.0000003575637193
+        },
+        {
+          "name": "modern_girl_part_01",
+          "max_extension": 2.0995337703251846,
+          "p99_extension": 1.3273565101934022
+        },
+        {
+          "name": "modern_girl_part_02",
+          "max_extension": 5.119140228338158,
+          "p99_extension": 2.96898891601298
+        },
+        {
+          "name": "modern_girl_part_03",
+          "max_extension": 1.3947164548497129,
+          "p99_extension": 1.2409222367444614
+        },
+        {
+          "name": "modern_girl_part_04",
+          "max_extension": 1.8178351728805695,
+          "p99_extension": 1.5023802805928872
+        },
+        {
+          "name": "modern_girl_part_05",
+          "max_extension": 2.804101658539723,
+          "p99_extension": 1.8581427021158576
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "modern_girl_tex_0",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "modern_girl_tex_1",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "modern_girl_tex_2",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "modern_girl_tex_3",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "modern_girl_tex_4",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "modern_girl_tex_5",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "modern_girl_tex_6",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "modern_girl_tex_7",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    }
+  ],
+  "gross_motion_tear_guard_max_extension": 6.0,
+  "metadata_audit": "pass",
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "limitations": [
+    "Fixed appearance; hair and clothes use skeletal skinning, without physics. Only BaseColor was supplied; flat normal and conservative material controls are used.",
+    "Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.",
+    "No facial animation or face/body customization support."
+  ],
+  "integrated_hands_all_lods": true,
+  "cloth_enabled": false,
+  "body_metamesh": "modern_girl_body",
+  "hidden_placeholder_triangles": 4,
+  "source_proportions_preserved": true,
+  "custom_skeleton_bones": 28,
+  "source_validation": "reports/source_validation.json",
+  "proportion_uv_validation": "reports/preservation_validation.json",
+  "ui_scope_validation": "reports/ui_scope_validation.json",
+  "date": "2026-10-12",
+  "game_version": "v1.4.8",
+  "source_input_sha256": "6e201e3b21419c0b73a483e1175f4c5eac3c85cc81242e61fb42b39a6bb16708"
+}
