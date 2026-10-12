@@ -1,0 +1,21 @@
+{
+  "default": {
+    "unanchored": "error"
+  },
+  "meshes": {
+    "txgirl2_part_12.lod1": {
+      "unanchored": "pin_upper",
+      "axis": 2,
+      "band_m": 0.012,
+      "min_vertices": 2,
+      "reason": "T2 source panels attach at separate upper edges; restore only their own top attachment if LOD reduction removes fixed vertices"
+    },
+    "txgirl2_part_12": {
+      "unanchored": "pin_upper",
+      "axis": 2,
+      "band_m": 0.012,
+      "min_vertices": 2,
+      "reason": "T2 source panels attach at separate upper edges; restore only their own top attachment if LOD reduction removes fixed vertices"
+    }
+  }
+}

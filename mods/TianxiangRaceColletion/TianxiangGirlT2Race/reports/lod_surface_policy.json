@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-12",
+  "scope": "T2 own thin upper clothing and skirt surfaces",
+  "observed": "Reduced tunic surfaces showed visible skin gaps in rest LOD1/3 previews",
+  "minimum_ratio_by_material": {
+    "tunic_D": 1.0
+  },
+  "other_parts_lod_ratios": [
+    1,
+    0.7,
+    0.45,
+    0.25
+  ],
+  "verification": "Final-package front/back/side/head renders at each LOD; no engine cloth simulation",
+  "historical_images": [
+    "history/pre_release_reduced_lod1_front.png",
+    "history/pre_release_reduced_lod3_front.png"
+  ]
+}

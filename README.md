@@ -7,7 +7,7 @@
 | 工程 | 内容 |
 | --- | --- |
 | [Tianxiang Collection](mods/TianxiangCollection/README.md) | 天香八套装备 |
-| [Tianxiang Race Collection](mods/TianxiangRaceColletion/README.md) | 天香完整角色种族系列，包含 T5 成女校服 PVE 和少女第一套纫秋为佩 |
+| [Tianxiang Race Collection](mods/TianxiangRaceColletion/README.md) | 天香完整角色种族系列，包含 T5 成女校服 PVE 和少女第一套纫秋为佩、第二套沐风为裳 |
 | [Shengxiu Collection](mods/ShengxiuCollection/README.md) | 明玉、白凤、素问 |
 | [Zhenwu Collection](mods/ZhenwuCollection/README.md) | 真武少女八套装备 |
 | [Beauty Banners](mods/BeautyBanners/README.md) | 九款彩色旗徽 |

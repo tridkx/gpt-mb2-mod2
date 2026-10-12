@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-12",
+  "native_version": "1.4.8",
+  "local_shader": "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Shaders\\Sources\\gpucloth_solver.rs",
+  "shader_sha256": "9656a877397c7960cccce21a536017a58193546b1af4bb1674e8c5c5c26d524e",
+  "scope": "Model-specific cooked payload cutoff; no shared cooker modification",
+  "evidence": {
+    "constraint_inverse_mass_lines": [
+      425,
+      426
+    ],
+    "capsule_range_line": 825,
+    "fixed_copy_range_line": 1156,
+    "virtual_particle_write_lines": [
+      915,
+      928
+    ]
+  },
+  "policy": "simulation_start = normal_start; all zero max-distance attachment roots stay immutable; hidden root/body geometric overlap reported separately; virtual collision triangles containing fixed vertices excluded because that path writes without inverse-mass checks",
+  "source_islands_preserved": true,
+  "game_verified": false
+}

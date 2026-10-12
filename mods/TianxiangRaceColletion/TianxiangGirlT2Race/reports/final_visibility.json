@@ -1,0 +1,792 @@
+{
+  "materials": [
+    {
+      "Name": "txgirl2_eye_d",
+      "Guid": "353a8e84-ccef-6924-3464-28b225f0133b",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "txgirl2_face_d",
+      "Guid": "a364d022-0589-c3d8-9ef1-824acb7929c0",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "txgirl2_pants_d",
+      "Guid": "6eab9b22-99c1-d857-7dca-8ad618861c22",
+      "BlendMode": "factor",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
+    },
+    {
+      "Name": "txgirl2_cuff_d",
+      "Guid": "a440b1f0-c802-7e94-b577-97fd49d99eba",
+      "BlendMode": "factor",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
+    },
+    {
+      "Name": "txgirl2_eyelash_d",
+      "Guid": "8a90683b-a445-8879-798b-25be7a01ab18",
+      "BlendMode": "factor",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
+    },
+    {
+      "Name": "txgirl2_body_d",
+      "Guid": "1a5a60d4-8539-5abd-062c-b84a025a8ea3",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "txgirl2_tunic_d",
+      "Guid": "b09bd02c-92f6-4bdc-37b7-2a77a3d604b4",
+      "BlendMode": "factor",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
+    },
+    {
+      "Name": "txgirl2_hair_d",
+      "Guid": "e9287fcb-847f-b680-aa35-8318eb2e861f",
+      "BlendMode": "factor",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
+    },
+    {
+      "Name": "txgirl2_head_d",
+      "Guid": "aa9181fd-fa65-4222-830e-e2825a46b730",
+      "BlendMode": "factor",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "Name": "txgirl2_part_00",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "353a8e84-ccef-6924-3464-28b225f0133b",
+      "Vertices": 194,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "12B0282F3D6BE525428F561A0EE040E0AB621768B1AC08FDB45CC84E2D1891FA",
+      "VertexStreamSHA256": "25F68AC2661C40759DB2E3CCD259541C230EE551EA4FC8AB37555C4E909AFD89",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_00.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "353a8e84-ccef-6924-3464-28b225f0133b",
+      "Vertices": 141,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B4FB93DEED88C91FDF6F1D79E1B9753166308C9FB91131C68DBA4315E5E88387",
+      "VertexStreamSHA256": "A4C2DE50C236B405C2BF1323469F07424A63906C6474B610E707BA6525547537",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_00.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "353a8e84-ccef-6924-3464-28b225f0133b",
+      "Vertices": 97,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A58FF1884B746A032B6EC99F459B509B968499263F1B8A35C40BEF524AEC7BE5",
+      "VertexStreamSHA256": "BCBB9FA7A57B26EC06177F7FB21DD3600F204A603E077969FA68E11737D59868",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_00.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "353a8e84-ccef-6924-3464-28b225f0133b",
+      "Vertices": 62,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "02EAC1AE8A6A00237269D7713F65ED7AF685B76695978616E5CA1992B75A2101",
+      "VertexStreamSHA256": "FFA56650BD224F8C2473D442FF60570932B7F8ECD6AB110D257368B32C49C653",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_01",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "a364d022-0589-c3d8-9ef1-824acb7929c0",
+      "Vertices": 1971,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "F27F07A7AE9EAAC5F4DA2276C83B13DCEFE4B45E5B9EDA37708ECF35712655BD",
+      "VertexStreamSHA256": "EAB417FE7DDA0B31E0BC2B54D9D0FE69B24DB46C33D7A82FB03A8E0903E08D1F",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_01.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "a364d022-0589-c3d8-9ef1-824acb7929c0",
+      "Vertices": 1454,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B648E3C5C5D31504C452584787117BBA5AD2FA6D862552A826F712D6401FB369",
+      "VertexStreamSHA256": "720ED7883851108707DE00E848F792EE25EF8AE1173C4200E906576041AF7890",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_01.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "a364d022-0589-c3d8-9ef1-824acb7929c0",
+      "Vertices": 1023,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "AA42D1223310C839AAFE27A1EF5709396349D0F6ABBE4A4B3C5D991EE293DBB0",
+      "VertexStreamSHA256": "02019D193B417C660A979D11C3BB40047B37DB93674D32786CAA7FDD9AD2322B",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_01.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "a364d022-0589-c3d8-9ef1-824acb7929c0",
+      "Vertices": 663,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "66D4871EC6AFEF22782038B7EFD301976826F4C9A3A3BD6BAF6C551916B46F8D",
+      "VertexStreamSHA256": "74470D6711A146C75B835EF21B9BAF0E5F4DA229217AFB675D19852022FE6F9B",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_02",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "6eab9b22-99c1-d857-7dca-8ad618861c22",
+      "Vertices": 967,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "6F967FEA90EE628D5685F8C1AD8E0513A50686DB5ACBA4238D54F18F08E3CC88",
+      "VertexStreamSHA256": "3756A4C3B8343F9B5D9FF5EFB9E35A6D0C5093EBAD9B8D77F238A3098C6B488B",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_02.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "6eab9b22-99c1-d857-7dca-8ad618861c22",
+      "Vertices": 795,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "D7E175FBC69CFCE771CD7DB0D68BC324C47F01656998CBED4ECF1EDC918F7222",
+      "VertexStreamSHA256": "22C4F7C4BE3FCA7B5A5435D7D0539011DD2FE68D0C9434DF883A05CAAF4FCCAE",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_02.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "6eab9b22-99c1-d857-7dca-8ad618861c22",
+      "Vertices": 763,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "50FF01127CE079CB084D230751AC4BAB0CE37F637077A07B60535F6B07206057",
+      "VertexStreamSHA256": "7D4E732A39C04D01FB488624D53E39D6487EFF7BF949B30258FFC9BB8078F2E7",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_02.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "6eab9b22-99c1-d857-7dca-8ad618861c22",
+      "Vertices": 763,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "50FF01127CE079CB084D230751AC4BAB0CE37F637077A07B60535F6B07206057",
+      "VertexStreamSHA256": "7D4E732A39C04D01FB488624D53E39D6487EFF7BF949B30258FFC9BB8078F2E7",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_03",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "a440b1f0-c802-7e94-b577-97fd49d99eba",
+      "Vertices": 702,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B0B30CA92E8491207843DC42D59E3A4CA9A433767FAA2ACB752CA417FA765F76",
+      "VertexStreamSHA256": "55ABBC2D772CE7E96044B0E2996EF59C15DE1D85BEF9A8DA1591959D87F30841",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_03.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "a440b1f0-c802-7e94-b577-97fd49d99eba",
+      "Vertices": 540,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "EFD91CFADA0B6449E092A6D821230D1F0337ED57D88DBABFEF0AE196F09F212E",
+      "VertexStreamSHA256": "846170C92972FF6273D5945469D52771468D9FADC44968CB661D048DCEF2A53A",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_03.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "a440b1f0-c802-7e94-b577-97fd49d99eba",
+      "Vertices": 403,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "4EAD8CEC3B5310AAA946A2A51F8C37C155A659450302BBAAFCA8057D16EE7D8C",
+      "VertexStreamSHA256": "38A5C2A3646A240EA51FF6A26B392FAACC0080F0A0E8315EE853A4EF6D72A3DA",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_03.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "a440b1f0-c802-7e94-b577-97fd49d99eba",
+      "Vertices": 320,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "F232749538ACEE34B68BF8EC06180CF9447128CEC8C05889182F7126F9B5D484",
+      "VertexStreamSHA256": "03A77EA8396A11FFFA39F21E4FDA489B287CC3C3CA74FB05EFD141DC4DC07070",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_04",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "8a90683b-a445-8879-798b-25be7a01ab18",
+      "Vertices": 278,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "80C31AB81202FE88945272A90B8632AB545602C8D4F76988F558EFBC9A33DEED",
+      "VertexStreamSHA256": "57A2ECE527FF4E66C741B85A2A3F4D5717C8601565649EB8EED2B0F2D47DB921",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_04.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "8a90683b-a445-8879-798b-25be7a01ab18",
+      "Vertices": 215,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5D5925A16F5FCA9C67FF47A67FDD2B49A8A566277B95D4B6332A273C6C7B7449",
+      "VertexStreamSHA256": "684A0B747260990CC8DB8C47D48314BCB2253D0DE700787896D74FD1AFC5DAF5",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_04.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "8a90683b-a445-8879-798b-25be7a01ab18",
+      "Vertices": 153,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "C50B6AB6FB89D1D9A360CF03E8DDA0CD5454D3D8ED43A5225F99827E285B7060",
+      "VertexStreamSHA256": "D65958124BBC02B9BF84AC8AD49BA196DA1697E5B35E0CE37B07F28996638272",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_04.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "8a90683b-a445-8879-798b-25be7a01ab18",
+      "Vertices": 100,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "C323C96B39B5155A4788A606C6FC05571BEFD551E693AF4EC6B7F369CC42A834",
+      "VertexStreamSHA256": "8F4085F42583A2D7FCC87E27F6BB548C8EE479485AA31B25B294D167626DB1CE",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_05",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "1a5a60d4-8539-5abd-062c-b84a025a8ea3",
+      "Vertices": 1108,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "3AC5A09D78C19D49B34149A42979CFEF6A655210D3136D4E9B620B09C1912CED",
+      "VertexStreamSHA256": "060417AFD553168556B75DEE04BC9E447194A4BD87189B81801CBAA682883B03",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_05.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "1a5a60d4-8539-5abd-062c-b84a025a8ea3",
+      "Vertices": 830,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "606FF20DC5019BDC00CB9227C7F8CADA3DC6161989D817A5B94CFFEB4ACB87D3",
+      "VertexStreamSHA256": "F798012F354CDF3FE57D07B489C14656EAE36FAC53337D172C9585CAA6B2D573",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_05.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "1a5a60d4-8539-5abd-062c-b84a025a8ea3",
+      "Vertices": 594,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "781CEDC0349D34177DF0EF1FD8794318B213817927363B90A281106CFD5E4897",
+      "VertexStreamSHA256": "AEE38708C26782A30CCDBAB916118B7488CF6B5862F2ED8FAA4A4F46BC7D3D3B",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_05.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "1a5a60d4-8539-5abd-062c-b84a025a8ea3",
+      "Vertices": 408,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "D5A52F16FBCE86BB7C949743D38A30AAE01343C533E5A9ABA465D3F6B7FA99E8",
+      "VertexStreamSHA256": "CFF77BE3416343CAAA0DBBF4409A903C2C3E5E66B28DAB7E4334D3E04239C92F",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_06",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "1a5a60d4-8539-5abd-062c-b84a025a8ea3",
+      "Vertices": 1010,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "046D3AECEFA0DBAF8DA4632D06DF15891B2539EC1B22ED216B17B35BD4E3384F",
+      "VertexStreamSHA256": "F0EC86D1CA0F1C6E45BAEA3385E1EC6EDE9F236BCCA9E810F3BBFAD482B74A5B",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_06.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "1a5a60d4-8539-5abd-062c-b84a025a8ea3",
+      "Vertices": 709,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "09F4A2E02D4941C71529B801C8EBBBAF45F1AC3925BD8451619FE7998A031787",
+      "VertexStreamSHA256": "B60CF4B331383961A7CCCA61D6E5F1A4AB6194D5E8475752A8DEA724A5CAE4E7",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_06.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "1a5a60d4-8539-5abd-062c-b84a025a8ea3",
+      "Vertices": 488,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "1CFF7A11EF39B66A5D3F0F929C44474518C37A788E0364FF8A82E110434DE8D2",
+      "VertexStreamSHA256": "FE9422A4B533FAB1B8D03F68B7C3EDAFF7F8ABE5459C11C9B63731EED5B0BDDC",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_06.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "1a5a60d4-8539-5abd-062c-b84a025a8ea3",
+      "Vertices": 300,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "710BAA8A6CA5B64E17E58B95140486DE08B5DCD1369EF96114C39A72A18647EE",
+      "VertexStreamSHA256": "858A4ED17BE1665A3566EED03B8AB4BDDAAD100377FE8F1EFC336008C82D89A1",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_07",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "b09bd02c-92f6-4bdc-37b7-2a77a3d604b4",
+      "Vertices": 2127,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "36505459C2D7AB9BCE2E85E6DD7DE8368544DC447ADAE6DDD17FF181C25EF7B3",
+      "VertexStreamSHA256": "99E5BCAD9BD3A07E3B7AF36A30C6FD4579AB5EDB9839AA44ECB2DF1AD30E7525",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_07.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "b09bd02c-92f6-4bdc-37b7-2a77a3d604b4",
+      "Vertices": 2127,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "36505459C2D7AB9BCE2E85E6DD7DE8368544DC447ADAE6DDD17FF181C25EF7B3",
+      "VertexStreamSHA256": "99E5BCAD9BD3A07E3B7AF36A30C6FD4579AB5EDB9839AA44ECB2DF1AD30E7525",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_07.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "b09bd02c-92f6-4bdc-37b7-2a77a3d604b4",
+      "Vertices": 2127,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "36505459C2D7AB9BCE2E85E6DD7DE8368544DC447ADAE6DDD17FF181C25EF7B3",
+      "VertexStreamSHA256": "99E5BCAD9BD3A07E3B7AF36A30C6FD4579AB5EDB9839AA44ECB2DF1AD30E7525",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_07.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "b09bd02c-92f6-4bdc-37b7-2a77a3d604b4",
+      "Vertices": 2127,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "36505459C2D7AB9BCE2E85E6DD7DE8368544DC447ADAE6DDD17FF181C25EF7B3",
+      "VertexStreamSHA256": "99E5BCAD9BD3A07E3B7AF36A30C6FD4579AB5EDB9839AA44ECB2DF1AD30E7525",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_08",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "e9287fcb-847f-b680-aa35-8318eb2e861f",
+      "Vertices": 1502,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "1EF0D59AAC4369EC6D6BB7CDCB4794E166CD9226F8F4ACC66A2FC3C35BACA127",
+      "VertexStreamSHA256": "041FAD3C8A3719048CF429789163D397B49E24EACD39F76AEFBC46F5A7BCD849",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_08.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "e9287fcb-847f-b680-aa35-8318eb2e861f",
+      "Vertices": 1089,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "8CF77B5E2646905AE612FFE0F18B388A00F860A86FCC9CF4305611CBEC6223A7",
+      "VertexStreamSHA256": "987A33C7B21A9D1B6539733AEEF839A2285E8C44A4B14B9024E6FDD2B6689995",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_08.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "e9287fcb-847f-b680-aa35-8318eb2e861f",
+      "Vertices": 745,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B2CB210E62B571BF7206C5DC528FA9095B45DE58B7456E35A7E0C057826A5206",
+      "VertexStreamSHA256": "FEC38EB63F500E1850242A4F4286302CABD932204C02F618643B98A784421E3B",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_08.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "e9287fcb-847f-b680-aa35-8318eb2e861f",
+      "Vertices": 468,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "8D3D32F7FC9B1EE6C777444A14D0CE43B1E7460DEDA59849460A69177C528E2E",
+      "VertexStreamSHA256": "0B50847C6E4E613B5AEDCD9F20121F5F0D804B04247521D795697EFD347F63BE",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_09",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "e9287fcb-847f-b680-aa35-8318eb2e861f",
+      "Vertices": 1517,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "BC0D2503E7BFEF178C3335BF8F9E5409CDF745BD8336321BB7A7D0404CB39BEE",
+      "VertexStreamSHA256": "E7001626FF45E33D2FF9B736C6AF789B87E8BFDC1974013E0AFABC00E46A9AA1",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_09.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "e9287fcb-847f-b680-aa35-8318eb2e861f",
+      "Vertices": 1160,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5344556C7C6D49D8D244C8063BDD111DDBEB07F9345AE9C6F535B71C2F34304C",
+      "VertexStreamSHA256": "B31B2CBBB473C158CFA65FB69B6311E0FB777FB68A22F9756804C0E96B685F7F",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_09.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "e9287fcb-847f-b680-aa35-8318eb2e861f",
+      "Vertices": 820,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "8904BF42F92D62EFF0DB5E50C5D9E89D93092313930638E2B8331B5B8261A989",
+      "VertexStreamSHA256": "C7A646F589E29B46C0A120BEF0A6F775A3E69A8C0B5C8E9A59056E429C5A2698",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_09.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "e9287fcb-847f-b680-aa35-8318eb2e861f",
+      "Vertices": 540,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "EFD91CFADA0B6449E092A6D821230D1F0337ED57D88DBABFEF0AE196F09F212E",
+      "VertexStreamSHA256": "CC4A82A795488088B7DB425FA72D4C74BB9DABF39F99384DDC00ED9D5E9C10A9",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_10",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "aa9181fd-fa65-4222-830e-e2825a46b730",
+      "Vertices": 188,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "FC8F2B0FF85F90E36AC44FCB77013C13BDB666F5C5BEF3460F316FEDAF1B1BCF",
+      "VertexStreamSHA256": "9BCEE108FCD44EA8A824331315328326B991C24FBF9FF1EF3F92471076848C8D",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_10.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "aa9181fd-fa65-4222-830e-e2825a46b730",
+      "Vertices": 148,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "F0CB46A1AA2A615CB0F026FB5C73FCF9F6F6AC29333A194B2D24D8FDF27A6A41",
+      "VertexStreamSHA256": "E7597B3540FF49281E6C1B1D004EA88E1C8211AFD2E790AA6A48A1440FB18D8A",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_10.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "aa9181fd-fa65-4222-830e-e2825a46b730",
+      "Vertices": 110,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "CCFDB707841CC9878B5AEAC45B19E12D90D0250FB83A28BBFFC99CC5979A36B6",
+      "VertexStreamSHA256": "2C9F335355FF2C77D9539D6959B177EDB2DE8BCF0745E5B1EAE0F91506B05337",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_10.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "aa9181fd-fa65-4222-830e-e2825a46b730",
+      "Vertices": 73,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "08E9ADA57327FFB9E4BCAED1BE7D8AD94B085B2A99318313105C1531AC8D1539",
+      "VertexStreamSHA256": "ADE981BE3A980FDB6E38899872CA9B6F3CBD74E7BEE5A39587BD4AD9F36ECDEB",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_11",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "aa9181fd-fa65-4222-830e-e2825a46b730",
+      "Vertices": 310,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "2915450322392A5D74EFD01E7CB9B7885C81FA35CEB7EF37D81EC974925806F2",
+      "VertexStreamSHA256": "D7AB6C1213A801346A9B293D145C86F0C219731E7B8E76A581529826401FC6CD",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_11.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "aa9181fd-fa65-4222-830e-e2825a46b730",
+      "Vertices": 251,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B996EF4E36D7081244394988877172C3802B336F37E399144913600CBD24ADB3",
+      "VertexStreamSHA256": "DA9920AA60AD11C9135101BBE86C26D027786320716602784D23B27A1C27110C",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_11.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "aa9181fd-fa65-4222-830e-e2825a46b730",
+      "Vertices": 194,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "12B0282F3D6BE525428F561A0EE040E0AB621768B1AC08FDB45CC84E2D1891FA",
+      "VertexStreamSHA256": "DC8529BBFDC48D1FACCACB8E4B8AEADD45A1FBD269DF86DBD2C1C75FFC2562CD",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_11.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "aa9181fd-fa65-4222-830e-e2825a46b730",
+      "Vertices": 140,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "9DA686CB0787CCAA098AE16E3AD53D1933BB24C05878011D4555A0671BD6898E",
+      "VertexStreamSHA256": "041FB845A50AD4E2F0D50CA8DE7A8820331A2BDBA214DC9A02587993DEB0F885",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_12",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "b09bd02c-92f6-4bdc-37b7-2a77a3d604b4",
+      "Vertices": 1737,
+      "AlphaMin": 0,
+      "AlphaMax": 178,
+      "ColorsSHA256": "9610E3B9D52DF80C249CD644CBA08CDF44D25F6607244A3AFE77A2557312A96F",
+      "VertexStreamSHA256": "0F80598B38D00CBD70E40057F4D8944C50C73FE50431DB3D9234978CDF7B15C0",
+      "ClothMetadataSHA256": "E12C7CEA6B85F05290A671589FECF3B696845BD494DE16A12B779B4D12A69844"
+    },
+    {
+      "Name": "txgirl2_part_12.lod1",
+      "Lod": 1,
+      "Flags": [
+        "uses_cloth_simulation",
+        "force_enable_cloth"
+      ],
+      "Material": "b09bd02c-92f6-4bdc-37b7-2a77a3d604b4",
+      "Vertices": 1737,
+      "AlphaMin": 0,
+      "AlphaMax": 178,
+      "ColorsSHA256": "9610E3B9D52DF80C249CD644CBA08CDF44D25F6607244A3AFE77A2557312A96F",
+      "VertexStreamSHA256": "0F80598B38D00CBD70E40057F4D8944C50C73FE50431DB3D9234978CDF7B15C0",
+      "ClothMetadataSHA256": "E12C7CEA6B85F05290A671589FECF3B696845BD494DE16A12B779B4D12A69844"
+    },
+    {
+      "Name": "txgirl2_part_12.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "b09bd02c-92f6-4bdc-37b7-2a77a3d604b4",
+      "Vertices": 1737,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "C7B3FEB3E2046141FC913ED0EC5EAE88FAA0AF965428E88E0DD69639646C246D",
+      "VertexStreamSHA256": "97A491D1D3545B5BDD80ADD7E6D00FB21B2D9EA8DCC6D37C22D1967158507C70",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_12.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "b09bd02c-92f6-4bdc-37b7-2a77a3d604b4",
+      "Vertices": 1737,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "C7B3FEB3E2046141FC913ED0EC5EAE88FAA0AF965428E88E0DD69639646C246D",
+      "VertexStreamSHA256": "97A491D1D3545B5BDD80ADD7E6D00FB21B2D9EA8DCC6D37C22D1967158507C70",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_13",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "1a5a60d4-8539-5abd-062c-b84a025a8ea3",
+      "Vertices": 517,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "EAF4360A76A1AE4277286DF111404B3F8DEBFB852C144D26D19A4CEFDE189626",
+      "VertexStreamSHA256": "D18F645629A012997983596311E2E744C8B7B0C2C33D5671C41A6EE2823B2D6A",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_13.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "1a5a60d4-8539-5abd-062c-b84a025a8ea3",
+      "Vertices": 388,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "C6EB4D8B178A7E6CF087B39014541D05C6AA45112D83410F5D0F428EDDF70F87",
+      "VertexStreamSHA256": "8191CAAA821FB289E0B7CBEE21AC777D1E21B468636B5B3C7D7DDC9A892F9D05",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_13.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "1a5a60d4-8539-5abd-062c-b84a025a8ea3",
+      "Vertices": 283,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "776E8171B151FA2E0338359305784F42C0116DA97DC55D5B7B31FAA95B44C31D",
+      "VertexStreamSHA256": "066B2872FE7745C3F29E495DAEFDD34C848872932C6949137EFF7CB7BBF0C5F2",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_part_13.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "1a5a60d4-8539-5abd-062c-b84a025a8ea3",
+      "Vertices": 199,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "11D3E87D52818ABA95507062F58C6C6260C5003CD8B284B66DF9FEB260ABEAE5",
+      "VertexStreamSHA256": "18092914F4E0A05977E3F97D0A9789B27D07E2C40C1AD270E8FA6CADAF19EA67",
+      "ClothMetadataSHA256": "782E2017BE4E9BA21FF93250B6D8106A16BFB96CE218C94C4072DE3663ADF13F"
+    },
+    {
+      "Name": "txgirl2_hidden",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "1a5a60d4-8539-5abd-062c-b84a025a8ea3",
+      "Vertices": 4,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5AC6A5945F16500911219129984BA8B387A06F24FE383CE4E81A73294065461B",
+      "VertexStreamSHA256": "EF54EFAF0087FF9735322207748957219F28ADC52CAD0EAEE8A20344CDE57CEB",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    }
+  ]
+}

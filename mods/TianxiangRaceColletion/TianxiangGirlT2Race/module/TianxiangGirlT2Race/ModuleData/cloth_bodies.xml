@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<bodies>
+  <body name="txgirl2_leg_collision" owner_skeleton="txgirl2_skeleton">
+    <capsules>
+      <capsule name="txgirl2_l_upper_thigh" length="0.173836" origin="0, 0, 0" frame="-0.163856, -0.062543, -0.984500, 0.000000, -0.010268, 0.998042, -0.061694, 0.000000, 0.986431, 0.000000, -0.164178, 0.000000, -0.050000, -0.017215, 0.768000, 1.000000">
+        <points>
+          <point radius="0.088205">
+            <bones>
+              <bone name="pelvis" weight="1.00000000" />
+            </bones>
+          </point>
+          <point radius="0.088205">
+            <bones>
+              <bone name="l_thigh" weight="1.00000000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="txgirl2_l_lower_thigh" length="0.206064" origin="0, 0, 0" frame="-0.213750, 0.038974, -0.976111, 0.000000, 0.008337, 0.999240, 0.038072, 0.000000, 0.976853, 0.000000, -0.213912, 0.000000, -0.071504, -0.012191, 0.641859, 1.000000">
+        <points>
+          <point radius="0.062871">
+            <bones>
+              <bone name="l_thigh" weight="1.00000000" />
+            </bones>
+          </point>
+          <point radius="0.062871">
+            <bones>
+              <bone name="l_calf" weight="1.00000000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="txgirl2_l_calf" length="0.368044" origin="0, 0, 0" frame="-0.012187, -0.073344, -0.997232, 0.000000, -0.000896, 0.997307, -0.073339, 0.000000, 0.999925, 0.000000, -0.012220, 0.000000, -0.106184, -0.021355, 0.440718, 1.000000">
+        <points>
+          <point radius="0.052520">
+            <bones>
+              <bone name="l_calf" weight="1.00000000" />
+            </bones>
+          </point>
+          <point radius="0.052520">
+            <bones>
+              <bone name="l_calf" weight="1.00000000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="txgirl2_r_upper_thigh" length="0.172780" origin="0, 0, 0" frame="0.122636, -0.062027, -0.990511, 0.000000, 0.007621, 0.998074, -0.061557, 0.000000, 0.992422, -0.000000, 0.122873, 0.000000, 0.050000, -0.012862, 0.768000, 1.000000">
+        <points>
+          <point radius="0.088719">
+            <bones>
+              <bone name="pelvis" weight="1.00000000" />
+            </bones>
+          </point>
+          <point radius="0.088719">
+            <bones>
+              <bone name="r_thigh" weight="1.00000000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="txgirl2_r_lower_thigh" length="0.206051" origin="0, 0, 0" frame="0.213313, 0.039802, -0.976173, 0.000000, -0.008497, 0.999208, 0.038884, 0.000000, 0.976947, -0.000000, 0.213483, 0.000000, 0.071460, -0.012169, 0.641859, 1.000000">
+        <points>
+          <point radius="0.062869">
+            <bones>
+              <bone name="r_thigh" weight="1.00000000" />
+            </bones>
+          </point>
+          <point radius="0.062869">
+            <bones>
+              <bone name="r_calf" weight="1.00000000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="txgirl2_r_calf" length="0.371445" origin="0, 0, 0" frame="0.097634, -0.118858, -0.988099, 0.000000, 0.011687, 0.992911, -0.118282, 0.000000, 0.995154, -0.000000, 0.098331, 0.000000, 0.099670, -0.020347, 0.440718, 1.000000">
+        <points>
+          <point radius="0.047957">
+            <bones>
+              <bone name="r_calf" weight="1.00000000" />
+            </bones>
+          </point>
+          <point radius="0.047957">
+            <bones>
+              <bone name="r_calf" weight="1.00000000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="txgirl2_shorts_patch_00" length="0.006000" origin="0, 0, 0" frame="1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, -0.011810, 0.055095, 0.788788, 1.000000">
+        <points>
+          <point radius="0.025176">
+            <bones>
+              <bone name="pelvis" weight="1.00000000" />
+            </bones>
+          </point>
+          <point radius="0.025176">
+            <bones>
+              <bone name="pelvis" weight="1.00000000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="txgirl2_shorts_patch_01" length="0.006000" origin="0, 0, 0" frame="1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.038668, -0.046470, 0.836978, 1.000000">
+        <points>
+          <point radius="0.032649">
+            <bones>
+              <bone name="pelvis" weight="1.00000000" />
+            </bones>
+          </point>
+          <point radius="0.032649">
+            <bones>
+              <bone name="pelvis" weight="1.00000000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="txgirl2_shorts_patch_02" length="0.006000" origin="0, 0, 0" frame="1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, -0.046422, -0.045402, 0.838779, 1.000000">
+        <points>
+          <point radius="0.027199">
+            <bones>
+              <bone name="pelvis" weight="1.00000000" />
+            </bones>
+          </point>
+          <point radius="0.027199">
+            <bones>
+              <bone name="pelvis" weight="1.00000000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="txgirl2_shorts_patch_03" length="0.006000" origin="0, 0, 0" frame="1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.006220, -0.056226, 0.824672, 1.000000">
+        <points>
+          <point radius="0.032598">
+            <bones>
+              <bone name="pelvis" weight="1.00000000" />
+            </bones>
+          </point>
+          <point radius="0.032598">
+            <bones>
+              <bone name="pelvis" weight="1.00000000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="txgirl2_shorts_patch_04" length="0.006000" origin="0, 0, 0" frame="1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, -0.005582, 0.053142, 0.770337, 1.000000">
+        <points>
+          <point radius="0.024499">
+            <bones>
+              <bone name="pelvis" weight="1.00000000" />
+            </bones>
+          </point>
+          <point radius="0.024499">
+            <bones>
+              <bone name="pelvis" weight="1.00000000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="txgirl2_shorts_patch_05" length="0.006000" origin="0, 0, 0" frame="1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, -0.017015, -0.052437, 0.834503, 1.000000">
+        <points>
+          <point radius="0.025333">
+            <bones>
+              <bone name="pelvis" weight="1.00000000" />
+            </bones>
+          </point>
+          <point radius="0.025333">
+            <bones>
+              <bone name="pelvis" weight="1.00000000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="txgirl2_shorts_patch_06" length="0.006000" origin="0, 0, 0" frame="1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, -0.029174, 0.052861, 0.797750, 1.000000">
+        <points>
+          <point radius="0.024735">
+            <bones>
+              <bone name="pelvis" weight="1.00000000" />
+            </bones>
+          </point>
+          <point radius="0.024735">
+            <bones>
+              <bone name="pelvis" weight="1.00000000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="txgirl2_shorts_patch_07" length="0.006000" origin="0, 0, 0" frame="1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.009356, 0.055129, 0.793661, 1.000000">
+        <points>
+          <point radius="0.025806">
+            <bones>
+              <bone name="pelvis" weight="1.00000000" />
+            </bones>
+          </point>
+          <point radius="0.025806">
+            <bones>
+              <bone name="pelvis" weight="1.00000000" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>
