@@ -20,6 +20,21 @@ allp=np.concatenate(list(positions.values()));assert 1.30<np.ptp(allp[:,2])<1.36
 # Source A-pose landmarks in metres; separate config is model specific.
 cfg=json.loads((R/'tools/model_config.json').read_text());S=np.array(cfg['landmarks_m'],float)
 world=rig['restWorld'].copy();world[:,:3,3]=S
+alignment=[]
+if cfg.get('align_arm_bind_axes'):
+    # Native arm translations follow each parent's local X axis. Moving joints
+    # without aligning that axis introduced lateral offsets under idle rotations.
+    # Transport the native frame by the shortest rotation, retaining its roll.
+    for i,start,end in [(15,15,17),(16,15,17),(17,17,19),(18,17,19),
+                        (22,22,24),(23,22,24),(24,24,26),(25,24,26)]:
+        a=world[i,:3,0].copy();v=S[end]-S[start];v/=np.linalg.norm(v)
+        cross=np.cross(a,v);c=float(a@v)
+        assert c>-.99
+        K=np.array([[0,-cross[2],cross[1]],[cross[2],0,-cross[0]],[-cross[1],cross[0],0]])
+        Q=np.eye(3)+K+K@K/(1+c)
+        world[i,:3,:3]=Q@world[i,:3,:3]
+        alignment.append({'bone':rig['names'][i],'rotation_degrees':float(np.degrees(np.arccos(np.clip(c,-1,1))))})
+(R/'reports/arm_bind_alignment.json').write_text(json.dumps({'enabled':bool(cfg.get('align_arm_bind_axes')),'bones':alignment,'joint_positions_unchanged':True},indent=2))
 local=np.array([world[i] if p<0 else np.linalg.inv(world[p])@world[i] for i,p in enumerate(rig['parent'])])
 bones=[]
 for i,b in enumerate(raw['bones']):

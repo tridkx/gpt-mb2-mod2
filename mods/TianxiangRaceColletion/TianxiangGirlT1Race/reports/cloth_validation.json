@@ -1,7 +1,7 @@
 {
   "status": "pass",
   "travel_shortfall_tolerance_m": 0.005,
-  "final_package_sha256": "c4c9613f742056516552cb942c37b7da15ceddad50a172a60eb84139a323613d",
+  "final_package_sha256": "acf0210fe91173a15ebd1f1083a333c7dc7d31fe4cd9cb1e9d07c6cd9674b686",
   "cooked_meshes": [
     {
       "mesh": "txgirl1_part_12.lod1",
@@ -163,6 +163,121 @@
           "shortfall_m": 0.0,
           "frame": 0,
           "overlap_m": 0.020590116120433315,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "stand_unarmed1",
+      "frames": 16,
+      "preview_frame": 0,
+      "max_reference_capsule_overlap_m": 0.035043953846009,
+      "max_travel_shortfall_m": 0,
+      "max_fixed_root_capsule_overlap_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "txgirl1_part_12.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.022111082952586646,
+          "worst_capsule": ""
+        },
+        "txgirl1_part_12": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.02245507495789531,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "stand_unarmed2",
+      "frames": 16,
+      "preview_frame": 0,
+      "max_reference_capsule_overlap_m": 0.037185432231168755,
+      "max_travel_shortfall_m": 0,
+      "max_fixed_root_capsule_overlap_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "txgirl1_part_12.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.022111279738323553,
+          "worst_capsule": ""
+        },
+        "txgirl1_part_12": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.022455242622890087,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "stand_unarmed3",
+      "frames": 16,
+      "preview_frame": 0,
+      "max_reference_capsule_overlap_m": 0.030899232927535047,
+      "max_travel_shortfall_m": 0,
+      "max_fixed_root_capsule_overlap_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "txgirl1_part_12.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.022111218193487464,
+          "worst_capsule": ""
+        },
+        "txgirl1_part_12": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.022455188493927768,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "stand_onehand",
+      "frames": 16,
+      "preview_frame": 1,
+      "max_reference_capsule_overlap_m": 0.03195141080824351,
+      "max_travel_shortfall_m": 0,
+      "max_fixed_root_capsule_overlap_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "txgirl1_part_12.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.022469797430526885,
+          "worst_capsule": ""
+        },
+        "txgirl1_part_12": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.023808217793901222,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "stand_twohand",
+      "frames": 16,
+      "preview_frame": 1,
+      "max_reference_capsule_overlap_m": 0.02950366812340597,
+      "max_travel_shortfall_m": 0,
+      "max_fixed_root_capsule_overlap_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "txgirl1_part_12.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.023790087758190546,
+          "worst_capsule": ""
+        },
+        "txgirl1_part_12": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.025268984743501324,
           "worst_capsule": ""
         }
       }

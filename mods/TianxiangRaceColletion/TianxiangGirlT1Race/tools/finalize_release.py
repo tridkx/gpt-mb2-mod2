@@ -33,6 +33,11 @@ cloth=json.loads((R/'reports/cloth_validation.json').read_text());assert cloth['
 report['cloth_validation']=cloth
 ui_scope=json.loads((R/'reports/ui_scope_validation.json').read_text());assert ui_scope['status']=='pass' and ui_scope['assembly_sha256']==sha(dll)
 report['ui_scope_validation']=ui_scope
+arm=R/'reports/arm_binding_validation.json'
+if arm.exists():
+    validation=json.loads(arm.read_text())
+    assert validation['status']=='pass' and validation['package_sha256']==sha(package)
+    report['arm_binding_validation']=validation
 revision=R/'reports/fit_revision_validation.json'
 if revision.exists():
     fit=json.loads(revision.read_text())

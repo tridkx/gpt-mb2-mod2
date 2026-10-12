@@ -45,7 +45,7 @@ caps=json.loads((R/'reports/cloth_collision.json').read_text())['capsules'];name
 meshes=[json.loads(p.read_text()) for p in out.glob('*.mesh.json') ]
 poses=[('rest',None,[0])]
 render_groups=[g for path in (B/'final_export_lod0/geo').glob('*.bin') for g in read_geo(path) if g['name'].startswith('txgirl1_part_')]
-for label in ['run','idle','bow','riding','slash']:
+for label in ['run','idle','bow','riding','slash','stand_unarmed1','stand_unarmed2','stand_unarmed3','stand_onehand','stand_twohand']:
     animation=parse_animjson(json.loads((R/'reports'/(label+'.json')).read_text()))
     frames=list(range(animation['start'],animation['frames'])) if label=='run' else sorted(set(np.linspace(animation['start'],animation['frames']-1,16).astype(int)))
     poses.append((label,animation,frames))

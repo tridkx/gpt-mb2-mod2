@@ -1,0 +1,93 @@
+{
+  "status": "pass",
+  "version": "v0.1.3",
+  "source_joint_positions_unchanged": true,
+  "non_arm_bind_frames_unchanged": true,
+  "arm_local_offsets": [
+    {
+      "child": "l_upperarm_twist1",
+      "old_local_side_offset_m": 0.0330187193094074,
+      "new_local_side_offset_m": 0.003563506790146365
+    },
+    {
+      "child": "l_foretwist",
+      "old_local_side_offset_m": 0.027341469388912736,
+      "new_local_side_offset_m": 0.003563487693762274
+    },
+    {
+      "child": "l_foretwist1",
+      "old_local_side_offset_m": 0.0112476934318243,
+      "new_local_side_offset_m": 0.001428033366045431
+    },
+    {
+      "child": "l_hand",
+      "old_local_side_offset_m": 0.008668049957142106,
+      "new_local_side_offset_m": 0.0014280287132484972
+    },
+    {
+      "child": "r_upperarm_twist1",
+      "old_local_side_offset_m": 0.033018717474668884,
+      "new_local_side_offset_m": 0.00356350809035919
+    },
+    {
+      "child": "r_foretwist",
+      "old_local_side_offset_m": 0.0273414682168065,
+      "new_local_side_offset_m": 0.0035634855286204134
+    },
+    {
+      "child": "r_foretwist1",
+      "old_local_side_offset_m": 0.011247698396407936,
+      "new_local_side_offset_m": 0.001428034835257267
+    },
+    {
+      "child": "r_hand",
+      "old_local_side_offset_m": 0.008668055961486591,
+      "new_local_side_offset_m": 0.0014280275197954843
+    }
+  ],
+  "captured_pose_reconstructions": [
+    {
+      "capture_time": "2026-10-12T11:15:07",
+      "screen": "SandBox.View.CharacterCreation.CharacterCreationScreen",
+      "animation": "anim_male_custom",
+      "progress": 0.3062578,
+      "diagnostics": {
+        "before": {
+          "arm_vertices_in_torso_convex_envelope": 0,
+          "maximum_envelope_depth_m": 0.0,
+          "minimum_signed_envelope_distance_m": 0.029554585213202617,
+          "tested_arm_vertices": 1028
+        },
+        "after": {
+          "arm_vertices_in_torso_convex_envelope": 0,
+          "maximum_envelope_depth_m": 0.0,
+          "minimum_signed_envelope_distance_m": 0.0916905310459477,
+          "tested_arm_vertices": 1028
+        }
+      }
+    },
+    {
+      "capture_time": "2026-10-12T11:15:10",
+      "screen": "SandBox.View.CharacterCreation.CharacterCreationScreen",
+      "animation": "anim_male_custom",
+      "progress": 0.356818438,
+      "diagnostics": {
+        "before": {
+          "arm_vertices_in_torso_convex_envelope": 0,
+          "maximum_envelope_depth_m": 0.0,
+          "minimum_signed_envelope_distance_m": 0.03338765121442486,
+          "tested_arm_vertices": 1028
+        },
+        "after": {
+          "arm_vertices_in_torso_convex_envelope": 0,
+          "maximum_envelope_depth_m": 0.0,
+          "minimum_signed_envelope_distance_m": 0.09448683067454583,
+          "tested_arm_vertices": 1028
+        }
+      }
+    }
+  ],
+  "package_sha256": "acf0210fe91173a15ebd1f1083a333c7dc7d31fe4cd9cb1e9d07c6cd9674b686",
+  "scope": "Actual older game poses reconstructed with new bind translations; torso convex envelope is a conservative diagnostic, not triangle intersection or a new game test",
+  "game_retest_pending": true
+}

@@ -1,10 +1,10 @@
 # Tianxiang Girl T1 Ren Qiu Race
 
-第一套“纫秋为佩”完整人物种族 Mod，版本 v0.1.2，适用本机 Native v1.4.8。模块 ID 为 `TianxiangGirlT1Race`，种族 ID 为 `txgirl1`，独立骨架为 `txgirl1_skeleton`。
+第一套“纫秋为佩”完整人物种族 Mod，版本 v0.1.3，适用本机 Native v1.4.8。模块 ID 为 `TianxiangGirlT1Race`，种族 ID 为 `txgirl1`，独立骨架为 `txgirl1_skeleton`。
 
 ## 当前功能
 
-保留原始固定脸、头发、衣服和双手，源模型仅统一换算为米，没有拉伸头身或四肢。含头发的源网格总高约 1.332 米，skin 最小缩放参数为 1.0；实际游戏身高仍需实测校准。四级 LOD 面数为 15516、10850、7030、4096，使用当前 Native 的 28 骨语义和原生动作。
+保留原始固定脸、头发、衣服和双手，源模型仅统一换算为米，没有拉伸头身或四肢。含头发的源网格总高约 1.332 米，skin 最小缩放参数为 1.0；实际游戏身高仍需实测校准。四级 LOD 面数为 15516、10850、7030、4096，使用当前 Native 的 28 骨语义和原生动作。上臂和前臂的绑定方向按源模型骨段对齐，肩、肘、腕支点和源网格坐标保持原样。
 
 双手包含在完整身体中，其他自动生成身体槽使用内部隐藏占位。保留输入文件已有的眼周 UV 修正；源纹理打包到 Blend。UI 运行组件仅处理明确属于 CharacterTableau、BasicCharacterTableau 或 BodyGeneratorView 的本种族预览骨架，跳过地图人物；重建时保留位置、缩放、装备和动作进度。用户已反馈 v0.1.1 不再崩溃；此反馈仅确认本次地图崩溃没有再出现，其他预览与动作仍按下文验收。
 
@@ -22,7 +22,7 @@ campaign.add_troops txgirl1_test | 5
 
 加入队伍后检查队伍预览与战场显示。使用本种族创建的角色可另外检查物品栏预览。种族资源和测试兵种的具体 ID 见上文。
 
-本版重点复测站立裙摆是否仍被顶起，跑动与抬腿是否仍能推开布料，以及左右手的单手、双手武器握持间距。武器挂点已从指尖移到掌心附近，手腕和原始手部网格保持原样。然后检查脸和睫毛、整体身高、头颈连接、肩袖、左右手腕、待机及跑步。近处观察裙摆是否真正摆动、抬腿是否推开布料、静止时是否异常顶起；再检查持弓、挥刀、骑乘和远近 LOD 切换。诊断日志位于系统文档目录 `Mount and Blade II Bannerlord/TianxiangGirlT1Race/ui_runtime_v0.1.1.jsonl`。测试存档依赖本模块；关闭模块后不要继续使用依赖它的存档。
+本版重点复测创建角色页面及持单手武器站立时，上臂和前臂是否仍贴入身体；并回归空手、双手武器、持弓和挥刀姿态。裙摆站立轮廓、跑动与抬腿碰撞，以及左右手握持间距继续按实际反馈验收。武器挂点已从指尖移到掌心附近，手腕和原始手部网格保持原样。然后检查脸和睫毛、整体身高、头颈连接、肩袖、左右手腕、待机及跑步。近处观察裙摆是否真正摆动、抬腿是否推开布料、静止时是否异常顶起；再检查持弓、挥刀、骑乘和远近 LOD 切换。诊断日志位于系统文档目录 `Mount and Blade II Bannerlord/TianxiangGirlT1Race/ui_runtime_v0.1.1.jsonl`。测试存档依赖本模块；关闭模块后不要继续使用依赖它的存档。
 
 ## 当前限制
 
@@ -40,9 +40,9 @@ campaign.add_troops txgirl1_test | 5
 
 ```powershell
 & 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/TianxiangRaceColletion/TianxiangGirlT1Race/tools/rebuild.py
-./tools/install_release.ps1 -Mod TianxiangGirlT1Race -Version v0.1.2 -CheckOnly
+./tools/install_release.ps1 -Mod TianxiangGirlT1Race -Version v0.1.3 -CheckOnly
 ```
 
 首次安装去掉 `-CheckOnly`；已有交付包的升级安装需指定实际旧版本 `-PreviousVersion`。不要用首版命令覆盖已交付同版本包。流程不启动游戏。
 
-离线证据见[最终资源检查](reports/release_validation.json)、[布料检查](reports/cloth_validation.json)、[腿部碰撞体](reports/cloth_collision.json)、[本次挂点与碰撞拟合检查](reports/fit_revision_validation.json)、[源文件检查](reports/source_validation.json)、[注册检查](reports/registration_validation.json)、[最终包正面预览](reports/final_rest_front.png)及[待机预览](reports/final_idle_worst.png)。动作预览只展示蒙皮参考姿态，没有运行游戏布料求解器。版本记录见 [CHANGELOG](CHANGELOG.md)。
+离线证据见[最终资源检查](reports/release_validation.json)、[布料检查](reports/cloth_validation.json)、[腿部碰撞体](reports/cloth_collision.json)、[挂点与碰撞拟合检查](reports/fit_revision_validation.json)、[手臂绑定检查](reports/arm_binding_validation.json)、[创建页面姿态修正前](reports/final_arm_before_0_front.png)和[修正后](reports/final_arm_after_0_front.png)、[源文件检查](reports/source_validation.json)、[注册检查](reports/registration_validation.json)、[最终包正面预览](reports/final_rest_front.png)及[待机预览](reports/final_idle_worst.png)。动作预览只展示蒙皮参考姿态，没有运行游戏布料求解器。创建页面前后图使用此前日志里的实际骨骼姿态重建；修正后图为离线推算，不代表新版本已经通过游戏验收。版本记录见 [CHANGELOG](CHANGELOG.md)。
