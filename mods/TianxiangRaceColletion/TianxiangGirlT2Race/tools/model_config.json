@@ -1,6 +1,6 @@
 {
   "id": "TianxiangGirlT2Race",
-  "version": "v0.1.1",
+  "version": "v0.1.2",
   "race": "txgirl2",
   "skeleton": "txgirl2_skeleton",
   "skin_min_scale": 1.0,
@@ -193,12 +193,14 @@
   "cloth_travel_slope": 0.45,
   "cloth_max_travel_m": 0.18,
   "cloth_root_band_m": 0.012,
-  "collision_clearance_m": 0.0047,
+  "collision_clearance_m": 0.0012,
   "shorts_height_band_m": [
     0.55,
     0.855
   ],
   "gross_motion_extension_limit": 6.0,
   "cloth_travel_shortfall_limit_m": 0.005,
-  "fixed_root_overlap_limit_m": 0.005
+  "fixed_root_overlap_limit_m": 0.005,
+  "shorts_local_capsules": 64,
+  "shorts_capsule_clearance_m": 0.0018
 }

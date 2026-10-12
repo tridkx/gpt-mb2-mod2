@@ -33,7 +33,7 @@ cloth=json.loads((R/'reports/cloth_validation.json').read_text());assert cloth['
 report['cloth_validation']=cloth
 ui_scope=json.loads((R/'reports/ui_scope_validation.json').read_text());assert ui_scope['status']=='pass' and ui_scope['assembly_sha256']==sha(dll)
 report['ui_scope_validation']=ui_scope
-for filename in ['preview_idle_validation','body_collision_validation','binding_validation','cloth_fit_revision_validation','static_cloth_proxy']:
+for filename in ['preview_idle_validation','body_collision_validation','binding_validation','cloth_fit_revision_validation','static_cloth_proxy','waist_fit_validation']:
     file=R/'reports'/(filename+'.json')
     if file.exists():
         check=json.loads(file.read_text())

@@ -3,12 +3,20 @@ import json,sys,subprocess,xml.etree.ElementTree as ET
 from pathlib import Path
 import numpy as np
 from scipy.optimize import minimize
-from scipy.cluster.vq import kmeans2
 from workspace_paths import workspace_root
 R=Path(__file__).resolve().parents[1];W=workspace_root(R);B=R/'build';C=W/'tools/cloth_compiler'
 cfg=json.loads((R/'tools/model_config.json').read_text());j=np.array(cfg['landmarks_m'])
 names=[b['name'] for b in json.loads((R/'reports/human_skeleton.json').read_text())['bones']]
 source=np.load(B/'fitted_model.npz')
+def run(args):subprocess.run([str(x) for x in args],check=True)
+for project,folder in [('NativeClothProbe','cloth_probe'),('ClothPatch','cloth_patch')]:
+    run(['dotnet','build',C/(project+'.csproj'),'--ignore-failed-sources','-p:BaseIntermediateOutputPath='+str(B/'cloth_obj'/project)+'/','-o',B/folder])
+inputs=B/'cloth_inputs';inputs.mkdir(exist_ok=True)
+result=subprocess.run(['dotnet',str(B/'cloth_probe/NativeClothProbe.dll'),str(B/'uncooked.tpac'),'txgirl2_body','--dump-segments',str(inputs)],check=True,capture_output=True,text=True)
+(R/'reports/cloth_uncooked.json').write_text(result.stdout)
+meshes=[json.loads(p.read_text()) for p in inputs.glob('*.mesh.json')]
+assert len(meshes)==2 and {m['lod'] for m in meshes}=={0,1}
+
 def triangle_samples(p,f):
     tri=p[f];points=[p,tri.mean(1)]
     for i in range(5):
@@ -16,10 +24,7 @@ def triangle_samples(p,f):
             bary=np.array([i,j,4-i-j])/4;points.append((tri*bary[None,:,None]).sum(1))
     return np.concatenate(points)
 # Include triangle interiors, so radius fitting is not based only on vertices.
-samples=[]
-for name in cfg['collision_parts']:
-    p=source[name+'_p'];samples.append(triangle_samples(p,source[name+'_f']))
-surface=np.concatenate(samples);caps=[]
+surface=triangle_samples(source['txgirl2_part_05_p'],source['txgirl2_part_05_f']);caps=[]
 def add(name,a,b,points,ba,bb):
     # Fit centre as well as radius. A fixed off-centre axis inflated the whole
     # thigh to accommodate crotch samples, pushing the standing skirt outward.
@@ -44,33 +49,15 @@ for prefix,sign,hip,knee,ankle in [('l',-1,1,2,3),('r',1,5,6,7)]:
     side=surface[(surface[:,0]*sign>0)&(surface[:,2]>j[ankle,2])&(surface[:,2]<cfg['shorts_height_band_m'][1])]
     # Stop below the fitted waist: treating the entire pelvis as a round thigh
     # capsule would force the closely fitted skirt root outward.
-    top=j[hip].copy();top[2]-=.045
+    top=j[hip].copy();top[2]=.680
     mid=(j[hip]+j[knee])/2;mid[2]-=.03
     bottom=j[ankle].copy()
-    # The shorts/hip end follows the pelvis, so raising a thigh cannot push the
-    # enlarged upper cap into the fixed waist seam.
-    for label,start,end,ba,bb in [('upper_thigh',top,mid,'pelvis',prefix+'_thigh'),('lower_thigh',mid+[0,0,.045],j[knee],prefix+'_thigh',prefix+'_calf'),('calf',j[knee],bottom,prefix+'_calf',prefix+'_calf')]:
+    # Fit legs independently below the hip; local shorts caps provide the
+    # waist transition without expanding a full thigh cylinder.
+    for label,start,end,ba,bb in [('upper_thigh',top,mid,prefix+'_thigh',prefix+'_thigh'),('lower_thigh',mid+[0,0,.045],j[knee],prefix+'_thigh',prefix+'_calf'),('calf',j[knee],bottom,prefix+'_calf',prefix+'_calf')]:
         mask=(side[:,2]>=end[2])&(side[:,2]<=start[2]);points=side[mask];assert len(points)>10
         add(prefix+'_'+label,start,end,points,ba,bb)
-# Cover residual upper-shorts patches locally rather than inflating whole legs.
-p=source[cfg['shorts_part']+'_p'];tri=p[source[cfg['shorts_part']+'_f']]
-shorts=triangle_samples(p,source[cfg['shorts_part']+'_f'])
-shorts=shorts[(shorts[:,2]>cfg['shorts_height_band_m'][0])&(shorts[:,2]<cfg['shorts_height_band_m'][1])]
-outside=np.full(len(shorts),1e9)
-for cap in caps:
-    a,b=np.array(cap['endpoints_m']);v=b-a;t=np.clip((shorts-a)@v/(v@v),0,1)
-    outside=np.minimum(outside,np.linalg.norm(shorts-a-t[:,None]*v,axis=1)-cap['radius_m'])
-missing=np.unique(shorts[outside>0],axis=0)
-if len(missing):
-    _,groups=kmeans2(missing,min(max(8,int(np.ceil(len(missing)/24))),24,len(missing)),minit='++',seed=202)
-    for group in sorted(set(groups)):
-        patch=missing[groups==group];center=patch.mean(0)
-        center[:2]*=.85;center[2]-=.012
-        a=center+[-.003,0,0];b=center+[.003,0,0];v=b-a;t=np.clip((patch-a)@v/(v@v),0,1)
-        radius=float(np.linalg.norm(patch-a-t[:,None]*v,axis=1).max()+cfg['collision_clearance_m'])
-        endpoint_weights={'pelvis':1.0}
-        caps.append(dict(name='shorts_patch_'+str(group).zfill(2),endpoints_m=[a.tolist(),b.tolist()],radius_m=radius,
-                         bones=['pelvis','pelvis'],endpoint_weights=[endpoint_weights,endpoint_weights],sample_count=len(patch),clearance_m=.001,maximum_sample_exposure_m=0.0))
+# Fit the complete shorts transition with compact pose-aware local caps.
 from fit_pose_protection import fit_pose_protection
 caps=fit_pose_protection(caps)
 root=ET.Element('bodies');body=ET.SubElement(root,'body',name='txgirl2_leg_collision',owner_skeleton=cfg['skeleton']);container=ET.SubElement(body,'capsules')
@@ -84,14 +71,6 @@ for cap in caps:
         for bone,weight in weights.items():ET.SubElement(bones,'bone',name=bone,weight=f'{weight:.8f}')
 ET.indent(root,space='  ');ET.ElementTree(root).write(R/'module/TianxiangGirlT2Race/ModuleData/cloth_bodies.xml',encoding='utf-8',xml_declaration=True)
 (R/'reports/cloth_collision.json').write_text(json.dumps(dict(capsules=caps,body='txgirl2_leg_collision',engine_verified=False),indent=2))
-def run(args):subprocess.run([str(x) for x in args],check=True)
-for project,folder in [('NativeClothProbe','cloth_probe'),('ClothPatch','cloth_patch')]:
-    run(['dotnet','build',C/(project+'.csproj'),'--ignore-failed-sources','-p:BaseIntermediateOutputPath='+str(B/'cloth_obj'/project)+'/','-o',B/folder])
-inputs=B/'cloth_inputs';inputs.mkdir(exist_ok=True)
-result=subprocess.run(['dotnet',str(B/'cloth_probe/NativeClothProbe.dll'),str(B/'uncooked.tpac'),'txgirl2_body','--dump-segments',str(inputs)],check=True,capture_output=True,text=True)
-(R/'reports/cloth_uncooked.json').write_text(result.stdout)
-meshes=[json.loads(p.read_text()) for p in inputs.glob('*.mesh.json')]
-assert len(meshes)==2 and {m['lod'] for m in meshes}=={0,1}
 policy={'default':{'unanchored':'error'},'meshes':{}}
 for mesh in meshes:
     policy['meshes'][mesh['name']]={'unanchored':'pin_upper','axis':2,'band_m':cfg['cloth_root_band_m'],'min_vertices':2,'reason':'T2 source panels attach at separate upper edges; restore only their own top attachment if LOD reduction removes fixed vertices'}
