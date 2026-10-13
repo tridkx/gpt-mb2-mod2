@@ -90,6 +90,6 @@ for mat,rec in parts.items():
 assert sum(r['triangles'] for r in manifest)==len(faces)
 np.savez_compressed(R/'build/fitted_model.npz',**data);(R/'build/manifest.json').write_text(json.dumps(manifest,indent=2))
 cfg['landmarks_m']=S.tolist();(R/'tools/model_config.json').write_text(json.dumps(cfg,indent=2))
-hashes={p.relative_to(R).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in (R/'input').rglob('*') if p.is_file()};(R/'reports/input_hashes.json').write_text(json.dumps(hashes,indent=2))
+hashes={p.relative_to(R).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in (R/'input').rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.suffix!='.pyc'};(R/'reports/input_hashes.json').write_text(json.dumps(hashes,indent=2))
 (R/'reports/weight_transfer.json').write_text(json.dumps(dict(source_proportions_preserved=True,anatomy_warp=False,height_m=float(np.ptp(points[:,2])),uniform_scale=scale,rotation=C.tolist(),source_bones=80,target_bones=28,source_triangles=len(faces),mapping={x['name'].decode():names[mapped[i]] for i,x in enumerate(b)},landmarks_m=S.tolist(),arm_binding_direction_aligned=True,fixed_hands=True),indent=2))
 print('MODEL_READY',manifest)
