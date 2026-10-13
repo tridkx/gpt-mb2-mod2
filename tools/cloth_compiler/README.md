@@ -13,6 +13,8 @@
 
 共用实现不含明玉资源名、四网格数量或发束/裙饰默认固定方案。模型策略放各模组 `tools/cloth_policy.json`，布料 LOD、材料、倍率、源网格与 GUID 也由各模组负责。明玉目录保留兼容入口及 C# 链接工程，避免重复维护实现。
 
+动态近似检查使用[离线布料诊断器](../cloth_simulator/README.md)，可读取最终包约束并输出动作轨迹、指标和回放；其通过结果不表示游戏求解已验证。
+
 ## 运行
 
 依赖 Python（NumPy、SciPy）、.NET 10、TpacTool.Lib（当前由 `D:/mb-tools/mbtool/bin/Release/net9.0/mbtool.dll` 提供）。在工作区根运行，构建缓存放目标模组的 build 中：

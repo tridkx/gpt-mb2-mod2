@@ -49,6 +49,7 @@ docs/                      工作区专题说明、更新日志与历史检查�
 
 - [资源助手](tools/asset_helpers/README.md)：几何、贴图、骨架和动画函数。
 - [离线布料编译器](tools/cloth_compiler/README.md)：直接模拟的数据生成、回读和插入；模型策略留在对应模组 tools/。
+- [离线布料诊断器](tools/cloth_simulator/README.md)：最终包的近似 CPU 布料模拟、原生动作驱动、逐帧风险指标与离线回放；尚未校准到游戏求解结果。
 - AssetTool 位于 tools/AssetTool/；patch 含天香专用布料参数，新模组使用前需要适配。
 
 装备技能唯一维护位置为 `C:/Users/DKX/.codex/skills/bannerlord-equipment-mod/`，工作区不保存技能副本。

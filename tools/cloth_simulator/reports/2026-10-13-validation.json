@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-13",
+  "scope": "tool implementation validation; not game validation",
+  "game_solver_used": false,
+  "game_verified": false,
+  "behavior_tests": 8,
+  "behavior_tests_passed": true,
+  "replay_javascript_syntax": "pass; Node --check only",
+  "replay_browser_interaction": "not verified; browser file URL security policy rejected opening local file",
+  "png_visual_review": "demo and final-resource worst stretch/penetration PNGs inspected",
+  "authored_capsule_count": 56,
+  "authored_bind_endpoint_error_m": 9.109904351156661e-07,
+  "source_tpac_unchanged": true,
+  "source_tpac_sha256": "b943664012defcaf1c19a54118d6c4411ca59a142fe2de5aac1a83e386a4028b",
+  "wrong_multiplier_rejected": true,
+  "simulation_fps_note": "60 Hz diagnostic assumption; native playback duration not calibrated",
+  "scenes": [
+    {
+      "output": "D:\\gpt-mb2-mod2\\build\\cloth_simulator\\demo_checked_20261013\\result",
+      "report_sha256": "bfd9e14a4ffad140013d949f93cda6fbf26630dc98da5bbedf928209c89a3832",
+      "mesh": "procedural_cloth",
+      "frames": 90,
+      "status": "within_thresholds",
+      "maxima": {
+        "vertex_penetration_m": 0.0,
+        "interior_penetration_m": 0.0,
+        "fixed_penetration_m": 0.0,
+        "max_stretch_strain": 0.041141956515397204,
+        "max_stretch_error_m": 0.0025713722822123253,
+        "p99_stretch_strain": 0.03076527762609674,
+        "travel_exceeded_m": 0.0,
+        "fixed_drift_m": 0.0,
+        "max_displacement_m": 0.2032636354613641
+      },
+      "inputs": [
+        {
+          "path": "D:\\gpt-mb2-mod2\\build\\cloth_simulator\\demo_checked_20261013\\cloth.bin",
+          "sha256": "edddc0175e94cc68c7de4f8fbc50987b527a2c758fd261fd54300b7738d3a92f"
+        },
+        {
+          "path": "D:\\gpt-mb2-mod2\\build\\cloth_simulator\\demo_checked_20261013\\cloth.mesh.json",
+          "sha256": "2e678bfea11b28831cbffc230a847af421078a872f73b3dc8ee313fd037255e8"
+        },
+        {
+          "path": "D:\\gpt-mb2-mod2\\build\\cloth_simulator\\demo_checked_20261013\\motion.npz",
+          "sha256": "e75c64490c7f1da7acb2d9bf7c71e50f18b44e04ecda889413e65028e9889d89"
+        }
+      ],
+      "package_snapshot": null,
+      "settings": {
+        "fps": 60.0,
+        "substeps": 2,
+        "iterations": 3,
+        "damping": 0.98,
+        "stretch": 0.9,
+        "shear": 0.8,
+        "bend": 0.25,
+        "anchor": 0.8,
+        "gravity": 9.81,
+        "thickness": 0.001,
+        "penetration_tolerance": 0.002,
+        "strain_tolerance": 0.25,
+        "dummy_collision": true
+      },
+      "distance_multiplier": 1.0,
+      "warmup_frames": 30
+    },
+    {
+      "output": "D:\\gpt-mb2-mod2\\build\\cloth_simulator\\yqs_run_checked_20261013",
+      "report_sha256": "ac07b5d3b2faeaf143902a3ec34c7c86f3e9b9769f31de06b6332ce518a41ccc",
+      "mesh": "yqs_part_10.b3",
+      "frames": 25,
+      "status": "needs_review",
+      "maxima": {
+        "vertex_penetration_m": 0.0,
+        "interior_penetration_m": 0.0,
+        "fixed_penetration_m": 0.015963405144551055,
+        "max_stretch_strain": 41.88559631201041,
+        "max_stretch_error_m": 0.009233003280573998,
+        "p99_stretch_strain": 22.422439590275623,
+        "travel_exceeded_m": 9.367506770274758e-17,
+        "fixed_drift_m": 0.0,
+        "max_displacement_m": 0.1823867477588205
+      },
+      "inputs": [
+        {
+          "path": "D:\\gpt-mb2-mod2\\build\\cloth_simulator\\yqs_final_checked_20261013\\yqs_body_1386cdce-ee2a-62b7-d17c-00cc0e15cd4d.bin",
+          "sha256": "d3f05d3724ab0b0bc6a49b92a29795755ea23651a4a21289cfcc3d96dc3775e2"
+        },
+        {
+          "path": "D:\\gpt-mb2-mod2\\build\\cloth_simulator\\yqs_final_checked_20261013\\yqs_body_1386cdce-ee2a-62b7-d17c-00cc0e15cd4d.mesh.json",
+          "sha256": "e908b492308fed7ff5a0af329f044a7c71b9bba1592b9b4c56e4b466a1b69d93"
+        },
+        {
+          "path": "D:\\gpt-mb2-mod2\\mods\\Xianjian7Race\\YueQingShuRace\\reports\\final_skeleton.json",
+          "sha256": "d77b26e4028eda0e93677df5b16ad125234b6761c020037b7ccd902167c517e0"
+        },
+        {
+          "path": "D:\\gpt-mb2-mod2\\mods\\Xianjian7Race\\YueQingShuRace\\reports\\run.json",
+          "sha256": "0b16de48f7d565a39a0ed301be6e051282f8d59472dfee615d03c8de14035055"
+        },
+        {
+          "path": "D:\\gpt-mb2-mod2\\mods\\Xianjian7Race\\YueQingShuRace\\module\\YueQingShuRace\\ModuleData\\cloth_bodies.xml",
+          "sha256": "35ff35151440b8f16410a8a912f64185a1b0e69946d45a8e20af0f9652949abe"
+        },
+        {
+          "path": "D:\\gpt-mb2-mod2\\build\\cloth_simulator\\yqs_final_checked_20261013\\package.json",
+          "sha256": "5dc98f96930e7829527d2eda6eaf196dfdbd18a3d9f66b414200fb6188dabb1e"
+        }
+      ],
+      "package_snapshot": {
+        "tpac": "D:\\gpt-mb2-mod2\\mods\\Xianjian7Race\\YueQingShuRace\\module\\YueQingShuRace\\AssetPackages\\yqs.tpac",
+        "sha256": "b943664012defcaf1c19a54118d6c4411ca59a142fe2de5aac1a83e386a4028b",
+        "material": {
+          "Name": "yqs_silk",
+          "BendingStiffness": 0.25,
+          "ShearingStiffness": 0.9,
+          "StretchingStiffness": 1,
+          "AnchorStiffness": 1,
+          "Damping": 0.7,
+          "Gravity": 9.81,
+          "LinearInertia": 0.12,
+          "MaxLinearVelocity": 4,
+          "LinearVelocityMultiplier": 0.5,
+          "AirDragMultiplier": 0.08,
+          "Wind": 0.025
+        }
+      },
+      "settings": {
+        "fps": 60.0,
+        "substeps": 2,
+        "iterations": 3,
+        "damping": 0.98,
+        "stretch": 0.9,
+        "shear": 0.8,
+        "bend": 0.25,
+        "anchor": 0.8,
+        "gravity": 9.81,
+        "thickness": 0.001,
+        "penetration_tolerance": 0.002,
+        "strain_tolerance": 0.25,
+        "dummy_collision": true
+      },
+      "distance_multiplier": 1.0,
+      "warmup_frames": 10
+    }
+  ],
+  "code_sha256": {
+    "demo.py": "0d2ffdf04e591b94bba601d9c536ec9dbed0eb64de148f6bd0c978f6602d1036",
+    "run.py": "4b6520dc5365fc4fba57299bb274f2100f042a7e661f408f56f55bb767d2e1f7",
+    "solver.py": "d19ddb6769de55179fa482caaf7d1415f623759a1575613a2d3b59dc125828ad",
+    "test_solver.py": "a22d3fc3c831174affedb4350c9c9583e02ca725b6d463c669894e4729b516a4",
+    "viewer.html": "07530bf424c6b6da2a73b4a60985411aac61f903988a9208aa2a3012d4818614"
+  }
+}

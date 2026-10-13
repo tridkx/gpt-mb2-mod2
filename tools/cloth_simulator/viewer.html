@@ -1,0 +1,27 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>离线布料回放</title>
+<style>body{margin:0;background:#101923;color:#dfebf4;font:15px system-ui}header{padding:16px 24px;background:#192737}h1{font-size:20px;margin:0 0 8px}main{padding:16px 24px}canvas{background:#142130;width:100%;height:65vh;border:1px solid #41556b;border-radius:8px}button,input,select{margin:8px}button,select{padding:6px;background:#273f54;color:white;border:1px solid #678}#seek{width:45%}p{line-height:1.6}#info{white-space:pre-wrap}small{color:#aec1d1}</style>
+<header><h1>离线布料回放 · 近似 CPU 求解</h1><small>__TITLE__ · 蓝色：模拟网格；橙色：顶点碰撞残留；灰色：蒙皮参考；绿色：碰撞胶囊</small></header>
+<main><button id="play">播放</button><input id="seek" type="range" min="0" value="0"><span id="time"></span>
+<select id="view"><option value="0">正面</option><option value="1.57079632679">侧面</option><option value="3.14159265359">背面</option></select>
+<label><input id="reference" type="checkbox" checked>蒙皮参考</label><label><input id="collision" type="checkbox" checked>碰撞体</label>
+<canvas id="canvas"></canvas><p id="info"></p><small>仅诊断当前输入、参数和采样范围；不表示游戏验收通过。拖动画面旋转。</small></main>
+<script>
+const data=__DATA__, canvas=document.querySelector('#canvas'),ctx=canvas.getContext('2d');
+const seek=document.querySelector('#seek'), view=document.querySelector('#view');seek.max=data.positions.length-1;
+let frame=0,playing=false,last=0,angle=0,drag=null;
+const all=data.positions.flat(),lo=[0,1,2].map(k=>Math.min(...all.slice(0,30000).map(p=>p[k]))),hi=[0,1,2].map(k=>Math.max(...all.slice(0,30000).map(p=>p[k])));
+// Streaming bounds avoid argument-list limits on large meshes.
+for(const p of all)for(let k=0;k<3;k++){lo[k]=Math.min(lo[k],p[k]);hi[k]=Math.max(hi[k],p[k]);}
+const center=lo.map((v,k)=>(v+hi[k])/2),span=Math.max(...hi.map((v,k)=>v-lo[k]),.1);
+function project(p){const x=p[0]-center[0],y=p[1]-center[1],z=p[2]-center[2],s=Math.min(canvas.width,canvas.height)*.82/span;return[canvas.width/2+(x*Math.cos(angle)+y*Math.sin(angle))*s,canvas.height/2-z*s];}
+function lines(points,color,alpha){ctx.strokeStyle=color;ctx.globalAlpha=alpha;ctx.lineWidth=.6;ctx.beginPath();for(const [a,b] of data.edges){const p=project(points[a]),q=project(points[b]);ctx.moveTo(...p);ctx.lineTo(...q);}ctx.stroke();ctx.globalAlpha=1;}
+function draw(){canvas.width=canvas.clientWidth*devicePixelRatio;canvas.height=canvas.clientHeight*devicePixelRatio;ctx.clearRect(0,0,canvas.width,canvas.height);frame=Number(seek.value);const points=data.positions[frame];
+if(document.querySelector('#reference').checked)lines(data.anchors[frame],'#aeb9c4',.18);
+if(document.querySelector('#collision').checked){ctx.strokeStyle='#70bd95';ctx.lineWidth=1;for(const cap of data.capsules[frame]){const a=project(cap[0]),b=project(cap[1]),s=Math.min(canvas.width,canvas.height)*.82/span;ctx.beginPath();ctx.moveTo(...a);ctx.lineTo(...b);ctx.stroke();for(const p of cap){const q=project(p);ctx.beginPath();ctx.arc(q[0],q[1],p[3]*s,0,Math.PI*2);ctx.stroke();}}}
+lines(points,'#73bce9',.8);for(let i=0;i<points.length;i++)if(data.heat[frame][i]>.0005){const p=project(points[i]);ctx.fillStyle='#ff9059';ctx.fillRect(p[0]-2,p[1]-2,4,4);}
+const r=data.rows[frame];document.querySelector('#time').textContent=`${r.time_s.toFixed(2)} 秒 / 帧 ${r.source_frame??r.frame}`;
+document.querySelector('#info').textContent=`顶点穿透 ${(r.vertex_penetration_m*1000).toFixed(2)} mm · 面内部采样穿透 ${(r.interior_penetration_m*1000).toFixed(2)} mm\n最大拉伸/压缩偏差 ${(r.max_stretch_strain*100).toFixed(1)}% · 活动距离超限 ${(r.travel_exceeded_m*1000).toFixed(3)} mm · 固定点漂移 ${(r.fixed_drift_m*1000).toFixed(3)} mm`;}
+document.querySelector('#play').onclick=()=>{playing=!playing;document.querySelector('#play').textContent=playing?'暂停':'播放';last=0;};seek.oninput=draw;view.onchange=()=>{angle=Number(view.value);draw();};
+canvas.onpointerdown=e=>{drag=e.clientX;canvas.setPointerCapture(e.pointerId);};canvas.onpointermove=e=>{if(drag!==null){angle+=(e.clientX-drag)*.01;drag=e.clientX;draw();}};canvas.onpointerup=()=>drag=null;
+window.onresize=draw;function tick(t){if(playing&&t-last>=1000/data.fps){seek.value=(Number(seek.value)+1)%data.positions.length;last=t;draw();}requestAnimationFrame(tick);}draw();requestAnimationFrame(tick);
+</script></html>
