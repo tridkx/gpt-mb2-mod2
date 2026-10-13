@@ -1,40 +1,34 @@
 # Bai Mo Qing Race
 
-白茉晴默认时装的独立种族资源模块，版本 v0.1.1，按本机 Native v1.4.8 制作。属于[仙剑7系列工程](../README.md)。模块 ID 为 `BaiMoQingRace`，种族 ID 为 `bmq_default`。
+仙剑7固定完整角色的独立种族资源模块，版本 **v0.1.2**。属于[仙剑7系列](../README.md)。模块 ID：`BaiMoQingRace`；种族 ID：`bmq_default`。按本机 Native v1.4.8 制作。
 
-## 功能与验证范围
+## 当前功能与验证
 
-原始脸、头发、时装、身体和双手组成固定完整身体，使用独立 28 骨 `bmq_skeleton`，沿用原生动作。LOD0 保留源比例，仅整体转向；含头饰总高约 1.573 米。四级 LOD 的三角面数为 103882, 67652, 36607, 15907。裙摆、发束和饰带按本套模型的材料、连通片与实测范围画布料，四级合计 16 个布料网格；固定衣片和手指由骨架带动。
+保留原模型脸、身体比例、头发、时装、双手、28 骨自定义骨架、四级 LOD 和材质。**全部动态布料已关闭**，裙子、头发和饰带仅随骨骼运动；运行包无布料求解标记、预处理数据或碰撞体引用，源 Blend/FBX 的布料活动距离为 0。
 
-最终 TPAC 已回读并验证几何、量化权重、骨架、材质、全部贴图 mip、布料约束和锚点。源 Blend 已重开、FBX 已重导入，源网格比例检查与原生动作扫描见[发布检查](reports/release_validation.json)、[源文件检查](reports/source_validation.json)、[布料检查](reports/cloth_validation.json)及[预览图索引](reports/final_preview_manifest.json)。图片来自最终 TPAC 和离线蒙皮，不使用游戏布料求解器。
+最终包回读、原生动作扫描、源文件重开与 FBX 重导入通过。GPU 网格、权重、UV、材质、贴图和骨架与保留的外观基线完全一致，检查见[静态版专项报告](reports/static_cloth_validation.json)、[发布检查](reports/release_validation.json)和[源文件检查](reports/source_validation.json)。[预览图索引](reports/final_preview_manifest.json)为骨骼蒙皮结果。游戏效果尚待用户确认。
 
-自有 UI Runtime 为本种族的队伍、百科及物品栏人物预览选择自有骨架，并在必要时重建人物预览，保留人物数据、缩放及动画进度。物品栏使用经原生 clip GUID 核对的女性垂手待机候选。检查见[UI 范围回归](reports/ui_scope_validation.json)、[待机映射检查](reports/preview_idle_validation.json)。角色整体外观已获用户初步确认；当前裙摆调整尚待游戏复测。
+保留限定本种族的队伍、百科、物品栏人物预览组件。本模块不提供兵种树、原版人物替换或招募入口；使用方自行配置成人女性人物的 `race="bmq_default"`、生成方式与装备。
 
-当前裙摆碰撞按同侧腿部与腰臀表面拟合，保留固定根部。压力与重力代理检查见[裙摆专项检查](reports/skirt_collision_validation.json)，无关资源保持情况见[基线对比](reports/skirt_preservation_validation.json)。代理结果不能替代游戏布料效果。
+## 安装与使用
 
-## 安装与集成
+将 `dist/BaiMoQingRace_Mod.zip` 的顶层模块目录解压到游戏 `Modules/`。启动器勾选 **Bai Mo Qing Race**，排在 Native、SandBoxCore、Sandbox 后。固定服装身体不适合叠穿原版防具；含此种族的存档需要保留模块。
 
-将 `dist/BaiMoQingRace_Mod.zip` 顶层模块目录解压到游戏 `Modules/`，启动器勾选 **Bai Mo Qing Race**，排在 Native、SandBoxCore、Sandbox 后。可与其他仙剑7角色种族模块一起启用。
+## 工程与重建
 
-本模块提供种族资源，不包含兵种树、NPCCharacters、原版人物替换或招募入口，单独启用不会自动生成角色。使用方模块依赖 `BaiMoQingRace`，给成人女性人物配置 `race="bmq_default"`，自行设置生成方式、数值、武器、坐骑和升级路线。固定服装身体不适合叠穿原版防具；防具槽应避免遮盖或叠加身体。含本种族角色的存档需要保留此模块。
+`input/original/` 保留输入；`source/` 为可编辑 Blend/FBX，`tex/` 与其相邻；`tools/` 保存专用脚本；`module/BaiMoQingRace/` 为运行模块；`reports/` 保存当前证据，`reports/history/` 保存旧版记录；`build/` 为缓存，`dist/` 为当前与保留交付包。
 
-## 源文件与重建
-
-原始输入保存在 `input/original/`，来源为 `D:\dsh-xianjian7\output\白茉晴_BaiMoQing\01_默认套装_MAJ03_01`，文件哈希见[输入记录](reports/input_hashes.json)。`source/` 为打包贴图的 Blend 与 FBX，`tex/` 与其相邻；`tools/` 保存本模型实现和参数，`module/` 为运行模块，`reports/` 为检查与预览，`build/`、`dist/` 为缓存与交付包。
-
-依赖 Blender 5.2、Anaconda Python（NumPy、SciPy、Pillow、lxml）、.NET 10、.NET Framework 4.7.2 引用程序集、mbtool、当前游戏 DLL/XML 和工作区 `tools/asset_helpers/`、`tools/cloth_compiler/`。从工作区根运行：
+依赖 Blender 5.2、Anaconda Python（NumPy、SciPy、Pillow）、.NET、mbtool、当前游戏资源及工作区 `tools/asset_helpers/`。重建稳定版使用：
 
 ```powershell
-& 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/Xianjian7Race/BaiMoQingRace/tools/rebuild.py
-./tools/install_release.ps1 -Mod BaiMoQingRace -Version v0.1.1 -CheckOnly
+& 'C:/ProgramData/anaconda3/python.exe' -X utf8 mods/Xianjian7Race/BaiMoQingRace/tools/rebuild.py
+./tools/install_release.ps1 -Mod BaiMoQingRace -Version v0.1.2 -CheckOnly
 ```
 
-重建会生成离线检查与预览图；复核图像并更新 `reports/visual_review.json` 后，运行本模组的 `tools/finalize_release.py` 更新交付清单。源包保持 `source/`、`tex/` 相邻，将 `workspace_tools/` 恢复至工作区根 `tools/`。返修基线检查需要在 `dist/` 保留 `BaiMoQingRace_v0.1.0_Mod.zip`；该旧包用于恢复对比缓存，不包含在源包内。只在本地 Git 提交，发布标签为 `BaiMoQingRace/v0.1.1`。变更见[更新日志](CHANGELOG.md)。
+重建从 `dist/BaiMoQingRace_v0.1.0_Mod.zip` 恢复外观基线，必须保留此旧包；源包不重复包含历史交付 ZIP。源包的 `workspace_tools/` 恢复到工作区根 `tools/`。发布前运行 `tools/finalize_release.py`。变更见[更新日志](CHANGELOG.md)。
 
-## 当前限制与注意事项
+## 当前限制
 
-固定脸和手指，不提供捏脸、表情、动态手势或换装。省略 UE 眼周遮挡和泪线层，骑砍材质对源着色作近似转换。
+关闭动态布料后，没有独立裙摆、发尾和饰带摆动。骨骼运动仍可能造成跑动、战斗、骑乘时的衣片、内衬、腿部或头发交叉；本版不声称消除了所有蒙皮穿模。
 
-布料 `ClothDistance` 顶点色 Alpha 保存米制活动距离，0 为固定，网格倍率为 1；材质关闭顶点 Alpha 透明度。减面后缺失的上缘固定点会显式记录在布料编译清单。碰撞按本模型同侧腿部、腰臀及实际裙根间隙拟合，保护区采样含三角面内部。其余覆盖躯干使用胶囊代理；动作扫描与 CPU 重力检查均不等同于游戏求解。
-
-游戏复测由用户完成，先检查静止沉降和裙摆是否仍被顶起，再检查站立、跑动、持弓、挥砍、骑乘，以及队伍／百科／物品栏预览和穿脱装备后的恢复。离线通过不代表游戏布料、握持、IK、全部穿模或多人性能已通过。
+固定脸和手指，不提供捏脸、表情、动态手势或换装；源 UE 着色近似转换。游戏测试由用户完成。官方布料编辑器研究与当前稳定版分开，不自动重新启用布料。

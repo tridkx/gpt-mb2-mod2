@@ -3,17 +3,12 @@
   "race": "bmq2_outfit2",
   "prefix": "bmq2",
   "skeleton": "bmq2_skeleton",
-  "version": "v0.1.1",
+  "version": "v0.1.2",
   "title": "Bai Mo Qing Outfit 2 No Hat Race",
   "source_blend": "input/original/03_第二套装_无帽_MAJ03_02.blend",
   "source_origin": "D:\\dsh-xianjian7\\output\\白茉晴_BaiMoQing\\03_第二套装_无帽_MAJ03_02",
-  "cloth_enabled": true,
-  "cloth_lods": [
-    0,
-    1,
-    2,
-    3
-  ],
+  "cloth_enabled": false,
+  "cloth_lods": [],
   "skin_min_scale": 1.0,
   "lod_multipliers": [
     1,
@@ -100,5 +95,6 @@
     "p99_residual_m": 0.005,
     "minimum_mean_pressure_reduction": 0.2,
     "sampled_pose_fixed_root_overlap_m": 0.007
-  }
+  },
+  "delivery_mode": "skeletal_skinning_only"
 }

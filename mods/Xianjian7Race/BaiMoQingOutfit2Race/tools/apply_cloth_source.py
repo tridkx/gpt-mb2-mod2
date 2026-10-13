@@ -16,5 +16,5 @@ for name in alphas.files:
     colors=np.ones((len(a),4),dtype='f4');colors[:,3]=a;layer.data.foreach_set('color',colors.ravel())
 bpy.ops.wm.save_as_mainfile(filepath=str(R/'source/BaiMoQingOutfit2Race_Rigged.blend'))
 bpy.ops.export_scene.fbx(filepath=str(R/'source/BaiMoQingOutfit2Race_Rigged.fbx'),object_types={'MESH','ARMATURE'},add_leaf_bones=False,bake_anim=False,use_mesh_modifiers=False,path_mode='COPY',embed_textures=True)
-report=json.loads((R/'reports/weight_transfer.json').read_text());report['cloth']=True;(R/'reports/weight_transfer.json').write_text(json.dumps(report,indent=2))
+report=json.loads((R/'reports/weight_transfer.json').read_text());report['cloth']=json.loads((R/'tools/model_config.json').read_text())['cloth_enabled'];(R/'reports/weight_transfer.json').write_text(json.dumps(report,indent=2))
 print('CLOTH_SOURCE_READY')

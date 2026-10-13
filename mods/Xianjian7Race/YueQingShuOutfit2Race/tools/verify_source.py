@@ -40,6 +40,6 @@ for rec in manifest:
  assert reference.shape==exported.shape,(rec['material'],reference.shape,exported.shape)
  error=float(np.max(np.abs(reference-exported)));assert error<2e-6,(rec['material'],error)
  errors.append(dict(material=rec['material'],max_geometry_error_m=error))
-report={'status':'pass','blend_reopened':True,'fbx_reimported':True,'source_matches_final_fit':True,'bones':28,'meshes':len(meshes),'packed_images':image_count,'facial_animation':False,'game_cloth_paint_verified':True,'cloth_engine_verified':False,'source_proportions_preserved':True,'source_height_m':float(np.ptp(source[:,2])),'source_geometry_checks':errors,'source_geometry_max_error_m':max(e['max_geometry_error_m'] for e in errors)}
+report={'status':'pass','blend_reopened':True,'fbx_reimported':True,'source_matches_final_fit':True,'bones':28,'meshes':len(meshes),'packed_images':image_count,'facial_animation':False,'game_cloth_paint_verified':cfg['cloth_enabled'],'all_cloth_alpha_zero':not cfg['cloth_enabled'],'cloth_engine_verified':False,'source_proportions_preserved':True,'source_height_m':float(np.ptp(source[:,2])),'source_geometry_checks':errors,'source_geometry_max_error_m':max(e['max_geometry_error_m'] for e in errors)}
 (ROOT/'reports/source_validation.json').write_text(json.dumps(report,indent=2))
 print('SOURCE_VALIDATED',report['source_geometry_max_error_m'])

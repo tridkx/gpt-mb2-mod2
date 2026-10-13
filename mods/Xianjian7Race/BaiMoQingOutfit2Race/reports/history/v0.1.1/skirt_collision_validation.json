@@ -1,0 +1,48 @@
+{
+  "proxy_limits": {
+    "fixed_root_overlap_m": 0.006,
+    "maximum_residual_m": 0.015,
+    "p99_residual_m": 0.005,
+    "minimum_mean_pressure_reduction": 0.2
+  },
+  "status": "pass",
+  "version": "v0.1.1",
+  "final_package_sha256": "676a2c24c775a57d84775d242effffb07c5e445b2a194d716b6358a7c8082e2f",
+  "baseline_version": "v0.1.0",
+  "rows": [
+    {
+      "mesh": "bmq2_part_00",
+      "baseline_initial_mean_overlap_m": 0.0414015246609897,
+      "initial_mean_overlap_m": 0.009920628798969218,
+      "baseline_initial_max_overlap_m": 0.12300713583198541,
+      "initial_max_overlap_m": 0.07665632077056728,
+      "fixed_root_max_overlap_m": 0.002859581736494539,
+      "fixed_root_drift_m": 0.0,
+      "max_settled_residual_m": 0.0017479446591963377,
+      "p99_settled_residual_m": 0.0005568576947228124,
+      "baseline_mean_vertical_change_m": -0.012434563975001695,
+      "mean_vertical_change_m": -0.04762376331223621,
+      "baseline_raised_fraction": 0.12179487179487179,
+      "raised_fraction": 0.0,
+      "travel_clamped": true
+    },
+    {
+      "mesh": "bmq2_part_08",
+      "baseline_initial_mean_overlap_m": 0.023071119673404607,
+      "initial_mean_overlap_m": 0.005415963487731324,
+      "baseline_initial_max_overlap_m": 0.11814414446702766,
+      "initial_max_overlap_m": 0.07714012883478828,
+      "fixed_root_max_overlap_m": 0.0,
+      "fixed_root_drift_m": 0.0,
+      "max_settled_residual_m": 0.0028084092179491843,
+      "p99_settled_residual_m": 0.00018884676304841783,
+      "baseline_mean_vertical_change_m": -0.06956061489886987,
+      "mean_vertical_change_m": -0.09467900581885323,
+      "baseline_raised_fraction": 0.04838709677419355,
+      "raised_fraction": 0.0,
+      "travel_clamped": true
+    }
+  ],
+  "scope": "Final compiled constraints, actual female UI idle frame, 120 gravity steps at 60Hz/10 Jacobi iterations, fixed roots never projected; a CPU diagnostic, not Bannerlord cloth simulation",
+  "game_solver_used": false
+}

@@ -2,6 +2,8 @@
 from pathlib import Path
 import subprocess,sys,json,shutil,argparse
 R=Path(__file__).resolve().parents[1];cfg=json.loads((R/'tools/model_config.json').read_text(encoding='utf8'));PY='C:/ProgramData/anaconda3/python.exe';BL='D:/Blender Foundation/Blender 5.2/blender.exe'
+if not cfg['cloth_enabled']:
+ subprocess.run([PY,'-B','-X','utf8',str(R/'tools/rebuild_static.py')],check=True);raise SystemExit(0)
 parser=argparse.ArgumentParser();parser.add_argument('--start',type=int,default=0);parser.add_argument('--stop',type=int,default=99);parser.add_argument('--reuse-textures',action='store_true');args=parser.parse_args()
 def py(name,*extra):return [PY,'-B','-X','utf8',str(R/'tools'/name),*extra]
 def blend(name,*extra):return [BL,'--background','--factory-startup','--python-exit-code','1','--python',str(R/'tools'/name),*extra]

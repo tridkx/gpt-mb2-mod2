@@ -31,7 +31,8 @@ visible=json.loads(run(['dotnet',str(WORKSPACE/'tools/AssetTool/AssetTool.dll'),
 (ROOT/'reports/final_visibility.json').write_text(json.dumps(visible,indent=2))
 assert all('disable_vertex_color_alpha' in m['ShaderMaterialFlags'] for m in visible['materials'])
 assert all(set(m['Flags']).issubset({'uses_cloth_simulation','force_enable_cloth'}) for m in visible['meshes'])
-assert any('uses_cloth_simulation' in m['Flags'] and m['AlphaMin']==0 and m['AlphaMax']>0 for m in visible['meshes'])
+cloth_enabled=json.loads((ROOT/'tools/model_config.json').read_text())['cloth_enabled']
+assert any('uses_cloth_simulation' in m['Flags'] for m in visible['meshes']) if cloth_enabled else all(not m['Flags'] for m in visible['meshes'])
 exports={};lods=[];geometry=json.loads((ROOT/'build/geometry.json').read_text())
 def mgeo(path):
     data=Path(path).read_bytes();magic,n,ni=np.frombuffer(data,'<i4',3);assert magic==0x4f45474d
@@ -148,5 +149,5 @@ assert descriptor.find('Id').get('value')=='BaiMoQingOutfit2Race' and descriptor
 assert sha(PACKAGE)==hash_before
 assert all(sha(ROOT/p)==h for p,h in json.loads((ROOT/'reports/input_hashes.json').read_text()).items())
 report={'version':cfg['version'],'status':'pass','check_scope':'offline_structural_and_native_motion_checks','final_package_sha256':hash_before,'baseline_package_sha256':None,'baseline_reason':'Initial release; source hashes recorded in input_hashes.json','registration':registration,'lods':lods,'seams':seams,'motions':motions,'textures':texturechecks,'gross_motion_tear_guard_max_extension':6.0,'metadata_audit':'pass','game_test_verified':False,'game_cloth_solver_used':False,'limitations':['UE eye occlusion and tear overlays omitted; original default face/hair/clothes retained with conservative native materials.','Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.','No facial animation or face/body customization support.']}
-report.update(integrated_hands_all_lods=True,cloth_enabled=True,body_metamesh='bmq2_body',hidden_placeholder_triangles=4,source_proportions_preserved=True,custom_skeleton_bones=28)
+report.update(integrated_hands_all_lods=True,cloth_enabled=cfg['cloth_enabled'],body_metamesh='bmq2_body',hidden_placeholder_triangles=4,source_proportions_preserved=True,custom_skeleton_bones=28)
 (ROOT/'reports/release_validation.json').write_text(json.dumps(report,indent=2));print(json.dumps({'status':report['status'],'registration':registration,'lods':lods,'seams':seams,'motions':motions},indent=2))

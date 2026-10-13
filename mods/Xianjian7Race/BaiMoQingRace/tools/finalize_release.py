@@ -2,6 +2,9 @@
 from pathlib import Path
 import json,hashlib
 R=Path(__file__).resolve().parents[1];cfg=json.loads((R/'tools/model_config.json').read_text(encoding='utf8'));ident=cfg['id'];prefix=cfg['prefix']
+if not cfg['cloth_enabled']:
+ import runpy
+ runpy.run_path(str(R/'tools/finalize_static_release.py'));raise SystemExit(0)
 report=json.loads((R/'reports/release_validation.json').read_text());pkg=R/'module'/ident/'AssetPackages'/(prefix+'.tpac');sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 assert report['status']=='pass' and report['final_package_sha256']==sha(pkg)
 for name in ['source_validation','cloth_validation','registration_validation','ui_scope_validation','preview_idle_validation','visual_review','skirt_collision_validation','skirt_preservation_validation','skirt_surface_coverage']:

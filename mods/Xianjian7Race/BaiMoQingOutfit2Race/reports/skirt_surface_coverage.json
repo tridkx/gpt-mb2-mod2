@@ -1,63 +1,6 @@
 {
-  "status": "pass",
-  "version": "v0.1.1",
-  "rows": [
-    {
-      "fixed_root_max_overlap_m": 0.0,
-      "pose": "idle",
-      "sampled_frames": 12,
-      "surface_samples": 204840,
-      "uncovered_samples": 0,
-      "maximum_outside_m": 0,
-      "worst_frame": 231
-    },
-    {
-      "fixed_root_max_overlap_m": 0.0,
-      "pose": "ui_neutral_female",
-      "sampled_frames": 12,
-      "surface_samples": 204840,
-      "uncovered_samples": 0,
-      "maximum_outside_m": 0,
-      "worst_frame": 207
-    },
-    {
-      "fixed_root_max_overlap_m": 0.0,
-      "pose": "run",
-      "sampled_frames": 12,
-      "surface_samples": 204840,
-      "uncovered_samples": 0,
-      "maximum_outside_m": 0,
-      "worst_frame": 14
-    },
-    {
-      "fixed_root_max_overlap_m": 0.0,
-      "pose": "bow",
-      "sampled_frames": 12,
-      "surface_samples": 204840,
-      "uncovered_samples": 0,
-      "maximum_outside_m": 0,
-      "worst_frame": 1
-    },
-    {
-      "fixed_root_max_overlap_m": 0.0,
-      "pose": "riding",
-      "sampled_frames": 12,
-      "surface_samples": 204840,
-      "uncovered_samples": 0,
-      "maximum_outside_m": 0,
-      "worst_frame": 11
-    },
-    {
-      "fixed_root_max_overlap_m": 0.0,
-      "pose": "slash",
-      "sampled_frames": 12,
-      "surface_samples": 204840,
-      "uncovered_samples": 0,
-      "maximum_outside_m": 0,
-      "worst_frame": 14
-    }
-  ],
-  "sampling": "12 non-bind frames per Native motion, actual skinned triangle vertices/edges/interiors with barycentric subdivisions 4; full decoded vertex cycles scanned by collision fitter",
-  "game_verified": false,
-  "maximum_sampled_root_overlap_tolerance_m": 0.007
+  "status": "not_applicable",
+  "version": "v0.1.2",
+  "reason": "Dynamic cloth disabled; see static_cloth_validation.json. Previous dynamic evidence retained in history/v0.1.1.",
+  "final_package_sha256": "50087dc90171b31bfc6dd7493276f5fb67b5e8e32a29e4a9dbfeaf8417e87326"
 }

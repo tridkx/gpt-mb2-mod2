@@ -1,48 +1,6 @@
 {
-  "proxy_limits": {
-    "fixed_root_overlap_m": 0.006,
-    "maximum_residual_m": 0.015,
-    "p99_residual_m": 0.005,
-    "minimum_mean_pressure_reduction": 0.2
-  },
-  "status": "pass",
-  "version": "v0.1.1",
-  "final_package_sha256": "9e58b5ddadefacb24c0194ad8595a344a392f28c8f7b497abf471e86f871d607",
-  "baseline_version": "v0.1.0",
-  "rows": [
-    {
-      "mesh": "bmq_part_01",
-      "baseline_initial_mean_overlap_m": 0.030114665075023764,
-      "initial_mean_overlap_m": 0.012039289481134524,
-      "baseline_initial_max_overlap_m": 0.13284098408704748,
-      "initial_max_overlap_m": 0.0909844510794946,
-      "fixed_root_max_overlap_m": 0.0054293740279686906,
-      "fixed_root_drift_m": 0.0,
-      "max_settled_residual_m": 0.005784079213589324,
-      "p99_settled_residual_m": 0.001639050091237579,
-      "baseline_mean_vertical_change_m": -0.054623005067711276,
-      "mean_vertical_change_m": -0.07686880704491375,
-      "baseline_raised_fraction": 0.07390873015873016,
-      "raised_fraction": 0.005456349206349206,
-      "travel_clamped": true
-    },
-    {
-      "mesh": "bmq_part_00",
-      "baseline_initial_mean_overlap_m": 0.006601742731155843,
-      "initial_mean_overlap_m": 0.0014849435479970298,
-      "baseline_initial_max_overlap_m": 0.08444430728099328,
-      "initial_max_overlap_m": 0.05761393087086583,
-      "fixed_root_max_overlap_m": 0.0,
-      "fixed_root_drift_m": 0.0,
-      "max_settled_residual_m": 0.006541142665505831,
-      "p99_settled_residual_m": 0.0005466764206595102,
-      "baseline_mean_vertical_change_m": -0.21581767295298002,
-      "mean_vertical_change_m": -0.22715712304266414,
-      "baseline_raised_fraction": 0.017241379310344827,
-      "raised_fraction": 0.0,
-      "travel_clamped": true
-    }
-  ],
-  "scope": "Final compiled constraints, actual female UI idle frame, 120 gravity steps at 60Hz/10 Jacobi iterations, fixed roots never projected; a CPU diagnostic, not Bannerlord cloth simulation",
-  "game_solver_used": false
+  "status": "not_applicable",
+  "version": "v0.1.2",
+  "reason": "Dynamic cloth disabled; see static_cloth_validation.json. Previous dynamic evidence retained in history/v0.1.1.",
+  "final_package_sha256": "3c2d890265c2e93ac7b986a942709bbf583996e70ecf03d3f1387263c88612c1"
 }

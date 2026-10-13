@@ -1,13 +1,6 @@
 {
-  "non_target_cloth_payloads_byte_identical": 12,
-  "status": "pass",
-  "version": "v0.1.1",
-  "baseline_version": "v0.1.0",
-  "baseline_package_sha256": "676a2c24c775a57d84775d242effffb07c5e445b2a194d716b6358a7c8082e2f",
-  "final_package_sha256": "676a2c24c775a57d84775d242effffb07c5e445b2a194d716b6358a7c8082e2f",
-  "geometry_normals_uv_tangents_weights_indices_preserved": true,
-  "materials_textures_skeleton_preserved": true,
-  "ui_runtime_unchanged": true,
-  "alpha_changes": [],
-  "game_verified": false
+  "status": "not_applicable",
+  "version": "v0.1.2",
+  "reason": "Dynamic cloth disabled; see static_cloth_validation.json. Previous dynamic evidence retained in history/v0.1.1.",
+  "final_package_sha256": "50087dc90171b31bfc6dd7493276f5fb67b5e8e32a29e4a9dbfeaf8417e87326"
 }

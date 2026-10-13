@@ -7,7 +7,7 @@ var rows=geometry.RootElement.EnumerateArray().ToDictionary(x=>x.GetProperty("na
 foreach (var mesh in package.Items.OfType<Metamesh>()) {
     if (!mesh.Name.StartsWith("yqs2_", StringComparison.Ordinal))
         throw new InvalidDataException("Unexpected asset namespace");
-    mesh.UnknownString = mesh.Name == "yqs2_body" ? "yqs2_collision" : "";
+    mesh.UnknownString = rows.Values.Any(r=>r.TryGetProperty("cloth",out var e)&&e.GetBoolean()) && mesh.Name == "yqs2_body" ? "yqs2_collision" : "";
     foreach (var group in mesh.Meshes) {
         var match = Regex.Match(group.Name, @"\.lod(\d+)");
         group.Lod = match.Success ? int.Parse(match.Groups[1].Value) : 0;

@@ -1,0 +1,1867 @@
+{
+  "version": "v0.1.1",
+  "status": "pass",
+  "check_scope": "offline_structural_and_native_motion_checks",
+  "final_package_sha256": "9e58b5ddadefacb24c0194ad8595a344a392f28c8f7b497abf471e86f871d607",
+  "baseline_package_sha256": "9e58b5ddadefacb24c0194ad8595a344a392f28c8f7b497abf471e86f871d607",
+  "baseline_reason": "Initial release; source hashes recorded in input_hashes.json",
+  "registration": {
+    "status": "pass",
+    "race": "bmq_default",
+    "changed_troops": [],
+    "unaffected_troops": 548,
+    "troop_overrides_present": false,
+    "skin_variants": 10,
+    "skeleton": "bmq_skeleton",
+    "native_monster_dimensions_preserved": true,
+    "native_ui_actions_inherited": false,
+    "inventory_pose": "female_custom start/loop; selected for own fixed female body",
+    "cloth_simulation": true
+  },
+  "lods": [
+    {
+      "lod": 0,
+      "vertices": 71198,
+      "triangles": 103882,
+      "submeshes": 14
+    },
+    {
+      "lod": 1,
+      "vertices": 49208,
+      "triangles": 67652,
+      "submeshes": 14
+    },
+    {
+      "lod": 2,
+      "vertices": 29814,
+      "triangles": 36607,
+      "submeshes": 14
+    },
+    {
+      "lod": 3,
+      "vertices": 16084,
+      "triangles": 15907,
+      "submeshes": 14
+    }
+  ],
+  "seams": [
+    {
+      "lod": 0,
+      "shared_points": 50,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 1,
+      "shared_points": 50,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 2,
+      "shared_points": 50,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 3,
+      "shared_points": 50,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "asset": "anim_inventory_idle",
+      "frames_checked": 16,
+      "total_frames": 1268,
+      "worst_frame": 507,
+      "worst_mesh": "bmq_part_10",
+      "max_edge_extension": 1.976453787983972,
+      "max_mesh_p99_extension": 1.3281480151318141,
+      "meshes": [
+        {
+          "name": "bmq_part_00",
+          "max_extension": 1.5077739587759074,
+          "p99_extension": 1.156714907985473
+        },
+        {
+          "name": "bmq_part_01",
+          "max_extension": 1.6399239245350632,
+          "p99_extension": 1.1610656199740557
+        },
+        {
+          "name": "bmq_part_02",
+          "max_extension": 1.11008447372746,
+          "p99_extension": 1.0090841118088414
+        },
+        {
+          "name": "bmq_part_03",
+          "max_extension": 1.4316272501649687,
+          "p99_extension": 1.1464065931433256
+        },
+        {
+          "name": "bmq_part_04",
+          "max_extension": 1.0000004066343495,
+          "p99_extension": 1.0000003587345563
+        },
+        {
+          "name": "bmq_part_05",
+          "max_extension": 1.0000003872556011,
+          "p99_extension": 1.0000003199254632
+        },
+        {
+          "name": "bmq_part_08",
+          "max_extension": 1.0000004265615572,
+          "p99_extension": 1.0000003709359657
+        },
+        {
+          "name": "bmq_part_09",
+          "max_extension": 1.0000004383699497,
+          "p99_extension": 1.0000003436869183
+        },
+        {
+          "name": "bmq_part_10",
+          "max_extension": 1.976453787983972,
+          "p99_extension": 1.3281480151318141
+        },
+        {
+          "name": "bmq_part_11",
+          "max_extension": 1.0000004165229353,
+          "p99_extension": 1.0000003761375789
+        },
+        {
+          "name": "bmq_part_12",
+          "max_extension": 1.0000004227392314,
+          "p99_extension": 1.0000003771074242
+        },
+        {
+          "name": "bmq_part_13",
+          "max_extension": 1.0000009804475778,
+          "p99_extension": 1.000000839639331
+        },
+        {
+          "name": "bmq_part_14",
+          "max_extension": 1.000000443615314,
+          "p99_extension": 1.000000384088414
+        },
+        {
+          "name": "bmq_part_15",
+          "max_extension": 1.0000003874795569,
+          "p99_extension": 1.0000003496628513
+        }
+      ]
+    },
+    {
+      "label": "run",
+      "asset": "anim_run_forward_unarmed",
+      "frames_checked": 25,
+      "total_frames": 26,
+      "worst_frame": 21,
+      "worst_mesh": "bmq_part_01",
+      "max_edge_extension": 2.314322401034166,
+      "max_mesh_p99_extension": 1.5070567808607593,
+      "meshes": [
+        {
+          "name": "bmq_part_00",
+          "max_extension": 2.0625364628471208,
+          "p99_extension": 1.3643023184253655
+        },
+        {
+          "name": "bmq_part_01",
+          "max_extension": 2.314322401034166,
+          "p99_extension": 1.5070567808607593
+        },
+        {
+          "name": "bmq_part_02",
+          "max_extension": 1.2203018705400384,
+          "p99_extension": 1.0061363896726465
+        },
+        {
+          "name": "bmq_part_03",
+          "max_extension": 2.2082474226542526,
+          "p99_extension": 1.3065037309651475
+        },
+        {
+          "name": "bmq_part_04",
+          "max_extension": 1.0000004066343222,
+          "p99_extension": 1.0000003587345492
+        },
+        {
+          "name": "bmq_part_05",
+          "max_extension": 1.0000003872556251,
+          "p99_extension": 1.0000003199254581
+        },
+        {
+          "name": "bmq_part_08",
+          "max_extension": 1.0000004265615747,
+          "p99_extension": 1.00000037093596
+        },
+        {
+          "name": "bmq_part_09",
+          "max_extension": 1.0000004383699566,
+          "p99_extension": 1.0000003436869125
+        },
+        {
+          "name": "bmq_part_10",
+          "max_extension": 1.5805737410509022,
+          "p99_extension": 1.1458713199022594
+        },
+        {
+          "name": "bmq_part_11",
+          "max_extension": 1.0000004165229388,
+          "p99_extension": 1.0000003761375813
+        },
+        {
+          "name": "bmq_part_12",
+          "max_extension": 1.0000004227392316,
+          "p99_extension": 1.0000003771074328
+        },
+        {
+          "name": "bmq_part_13",
+          "max_extension": 1.00000098044759,
+          "p99_extension": 1.000000839639356
+        },
+        {
+          "name": "bmq_part_14",
+          "max_extension": 1.000000443615312,
+          "p99_extension": 1.0000003840884104
+        },
+        {
+          "name": "bmq_part_15",
+          "max_extension": 1.0000003874795558,
+          "p99_extension": 1.000000349662854
+        }
+      ]
+    },
+    {
+      "label": "bow",
+      "asset": "anim_bow",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 12,
+      "worst_mesh": "bmq_part_00",
+      "max_edge_extension": 3.9240945337972084,
+      "max_mesh_p99_extension": 2.082477379239324,
+      "meshes": [
+        {
+          "name": "bmq_part_00",
+          "max_extension": 3.9240945337972084,
+          "p99_extension": 2.082477379239324
+        },
+        {
+          "name": "bmq_part_01",
+          "max_extension": 2.618657745822663,
+          "p99_extension": 1.5977206490833447
+        },
+        {
+          "name": "bmq_part_02",
+          "max_extension": 1.835631587399535,
+          "p99_extension": 1.053861442000907
+        },
+        {
+          "name": "bmq_part_03",
+          "max_extension": 2.293021874032108,
+          "p99_extension": 1.4002529371152028
+        },
+        {
+          "name": "bmq_part_04",
+          "max_extension": 1.0000004066343324,
+          "p99_extension": 1.00000035873455
+        },
+        {
+          "name": "bmq_part_05",
+          "max_extension": 1.000000387255642,
+          "p99_extension": 1.0000003199254648
+        },
+        {
+          "name": "bmq_part_08",
+          "max_extension": 1.0000004265615787,
+          "p99_extension": 1.0000003709359655
+        },
+        {
+          "name": "bmq_part_09",
+          "max_extension": 1.0000004383699568,
+          "p99_extension": 1.0000003436869156
+        },
+        {
+          "name": "bmq_part_10",
+          "max_extension": 2.6592650150151256,
+          "p99_extension": 1.4305799563197683
+        },
+        {
+          "name": "bmq_part_11",
+          "max_extension": 1.000000416522942,
+          "p99_extension": 1.0000003761375944
+        },
+        {
+          "name": "bmq_part_12",
+          "max_extension": 1.0000004227392327,
+          "p99_extension": 1.0000003771074395
+        },
+        {
+          "name": "bmq_part_13",
+          "max_extension": 1.000000980447601,
+          "p99_extension": 1.0000008396393774
+        },
+        {
+          "name": "bmq_part_14",
+          "max_extension": 1.000000443615315,
+          "p99_extension": 1.0000003840884117
+        },
+        {
+          "name": "bmq_part_15",
+          "max_extension": 1.0000003874795778,
+          "p99_extension": 1.0000003496628598
+        }
+      ]
+    },
+    {
+      "label": "riding",
+      "asset": "anim_rider_gallop_bow",
+      "frames_checked": 20,
+      "total_frames": 21,
+      "worst_frame": 7,
+      "worst_mesh": "bmq_part_00",
+      "max_edge_extension": 2.7654371572511027,
+      "max_mesh_p99_extension": 1.8953701024390703,
+      "meshes": [
+        {
+          "name": "bmq_part_00",
+          "max_extension": 2.7654371572511027,
+          "p99_extension": 1.8953701024390703
+        },
+        {
+          "name": "bmq_part_01",
+          "max_extension": 2.2188420527218646,
+          "p99_extension": 1.4565533573082439
+        },
+        {
+          "name": "bmq_part_02",
+          "max_extension": 1.4437091628970034,
+          "p99_extension": 1.0059527966646178
+        },
+        {
+          "name": "bmq_part_03",
+          "max_extension": 2.3531301734641326,
+          "p99_extension": 1.4924384611072425
+        },
+        {
+          "name": "bmq_part_04",
+          "max_extension": 1.0000004066343384,
+          "p99_extension": 1.0000003587345465
+        },
+        {
+          "name": "bmq_part_05",
+          "max_extension": 1.0000003872556396,
+          "p99_extension": 1.0000003199254583
+        },
+        {
+          "name": "bmq_part_08",
+          "max_extension": 1.000000426561577,
+          "p99_extension": 1.0000003709359613
+        },
+        {
+          "name": "bmq_part_09",
+          "max_extension": 1.0000004383699614,
+          "p99_extension": 1.0000003436869151
+        },
+        {
+          "name": "bmq_part_10",
+          "max_extension": 2.466460180232716,
+          "p99_extension": 1.203826489631128
+        },
+        {
+          "name": "bmq_part_11",
+          "max_extension": 1.0000004165229404,
+          "p99_extension": 1.000000376137592
+        },
+        {
+          "name": "bmq_part_12",
+          "max_extension": 1.0000004227392305,
+          "p99_extension": 1.0000003771074326
+        },
+        {
+          "name": "bmq_part_13",
+          "max_extension": 1.0000009804475904,
+          "p99_extension": 1.0000008396393505
+        },
+        {
+          "name": "bmq_part_14",
+          "max_extension": 1.0000004436153123,
+          "p99_extension": 1.000000384088413
+        },
+        {
+          "name": "bmq_part_15",
+          "max_extension": 1.0000003874795687,
+          "p99_extension": 1.0000003496628538
+        }
+      ]
+    },
+    {
+      "label": "slash",
+      "asset": "anim_dagger_slashleft_1h_balance",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 73,
+      "worst_mesh": "bmq_part_00",
+      "max_edge_extension": 3.0157525993774943,
+      "max_mesh_p99_extension": 1.8061380565875305,
+      "meshes": [
+        {
+          "name": "bmq_part_00",
+          "max_extension": 3.0157525993774943,
+          "p99_extension": 1.8061380565875305
+        },
+        {
+          "name": "bmq_part_01",
+          "max_extension": 2.5952983406746357,
+          "p99_extension": 1.5044413275645538
+        },
+        {
+          "name": "bmq_part_02",
+          "max_extension": 2.561537932949878,
+          "p99_extension": 1.114355065301146
+        },
+        {
+          "name": "bmq_part_03",
+          "max_extension": 2.277082869806932,
+          "p99_extension": 1.381949254119502
+        },
+        {
+          "name": "bmq_part_04",
+          "max_extension": 1.0000004066343289,
+          "p99_extension": 1.0000003587345543
+        },
+        {
+          "name": "bmq_part_05",
+          "max_extension": 1.000000387255619,
+          "p99_extension": 1.0000003199254746
+        },
+        {
+          "name": "bmq_part_08",
+          "max_extension": 1.0000004265615738,
+          "p99_extension": 1.0000003709359624
+        },
+        {
+          "name": "bmq_part_09",
+          "max_extension": 1.0000004383699646,
+          "p99_extension": 1.0000003436869156
+        },
+        {
+          "name": "bmq_part_10",
+          "max_extension": 2.464540484030771,
+          "p99_extension": 1.3509594264390157
+        },
+        {
+          "name": "bmq_part_11",
+          "max_extension": 1.0000004165229344,
+          "p99_extension": 1.0000003761375857
+        },
+        {
+          "name": "bmq_part_12",
+          "max_extension": 1.000000422739233,
+          "p99_extension": 1.0000003771074426
+        },
+        {
+          "name": "bmq_part_13",
+          "max_extension": 1.0000009804475691,
+          "p99_extension": 1.0000008396393547
+        },
+        {
+          "name": "bmq_part_14",
+          "max_extension": 1.0000004436153151,
+          "p99_extension": 1.0000003840884117
+        },
+        {
+          "name": "bmq_part_15",
+          "max_extension": 1.000000387479575,
+          "p99_extension": 1.0000003496628598
+        }
+      ]
+    },
+    {
+      "label": "ui_neutral_female",
+      "asset": "anim_female_idle_long",
+      "frames_checked": 16,
+      "total_frames": 2273,
+      "worst_frame": 1969,
+      "worst_mesh": "bmq_part_01",
+      "max_edge_extension": 1.9136085192724495,
+      "max_mesh_p99_extension": 1.2284035007277547,
+      "meshes": [
+        {
+          "name": "bmq_part_00",
+          "max_extension": 1.7708782552118907,
+          "p99_extension": 1.2284035007277547
+        },
+        {
+          "name": "bmq_part_01",
+          "max_extension": 1.9136085192724495,
+          "p99_extension": 1.1036803065939733
+        },
+        {
+          "name": "bmq_part_02",
+          "max_extension": 1.1947901002973118,
+          "p99_extension": 1.00958953873661
+        },
+        {
+          "name": "bmq_part_03",
+          "max_extension": 1.8793146200090163,
+          "p99_extension": 1.1608798715820856
+        },
+        {
+          "name": "bmq_part_04",
+          "max_extension": 1.0000004066343078,
+          "p99_extension": 1.0000003587345518
+        },
+        {
+          "name": "bmq_part_05",
+          "max_extension": 1.000000387255601,
+          "p99_extension": 1.000000319925462
+        },
+        {
+          "name": "bmq_part_08",
+          "max_extension": 1.0000004265615585,
+          "p99_extension": 1.0000003709359462
+        },
+        {
+          "name": "bmq_part_09",
+          "max_extension": 1.000000438369957,
+          "p99_extension": 1.0000003436869143
+        },
+        {
+          "name": "bmq_part_10",
+          "max_extension": 1.5950617666981375,
+          "p99_extension": 1.0811475531910373
+        },
+        {
+          "name": "bmq_part_11",
+          "max_extension": 1.0000004165229275,
+          "p99_extension": 1.0000003761375773
+        },
+        {
+          "name": "bmq_part_12",
+          "max_extension": 1.0000004227392294,
+          "p99_extension": 1.0000003771074277
+        },
+        {
+          "name": "bmq_part_13",
+          "max_extension": 1.0000009804475825,
+          "p99_extension": 1.0000008396393683
+        },
+        {
+          "name": "bmq_part_14",
+          "max_extension": 1.0000004436153125,
+          "p99_extension": 1.0000003840884109
+        },
+        {
+          "name": "bmq_part_15",
+          "max_extension": 1.0000003874795695,
+          "p99_extension": 1.000000349662853
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "bmq_tex_0",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_1",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_10",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_11",
+      "mips": 6,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_12",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_13",
+      "mips": 9,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_14",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_15",
+      "mips": 11,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_16",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_17",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_18",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_19",
+      "mips": 9,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_2",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_20",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_21",
+      "mips": 9,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_3",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_4",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_5",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_6",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_7",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_8",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq_tex_9",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    }
+  ],
+  "gross_motion_tear_guard_max_extension": 6.0,
+  "metadata_audit": "pass",
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "limitations": [
+    "Fixed original face and fingers; no face/body customization or interchangeable clothing.",
+    "Offline skinning and collision proxies do not certify all intersections, game cloth solving, IK, weapon grip or mounted collisions.",
+    "UE eye occlusion/tear overlays omitted; native materials approximate source shading."
+  ],
+  "integrated_hands_all_lods": true,
+  "cloth_enabled": true,
+  "body_metamesh": "bmq_body",
+  "hidden_placeholder_triangles": 4,
+  "source_proportions_preserved": true,
+  "custom_skeleton_bones": 28,
+  "source_validation": {
+    "status": "pass",
+    "blend_reopened": true,
+    "fbx_reimported": true,
+    "source_matches_final_fit": true,
+    "bones": 28,
+    "meshes": 14,
+    "packed_images": 20,
+    "facial_animation": false,
+    "game_cloth_paint_verified": true,
+    "cloth_engine_verified": false,
+    "source_proportions_preserved": true,
+    "source_height_m": 1.5731546803945093,
+    "source_geometry_checks": [
+      {
+        "material": "MAJ03_01_cloth1",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_01_cloth2",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_01_cloth3",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_01_body",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_01_mouth_Skeleton",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_01_eye",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "eyelash_new_Inst03",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_01_hair",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_01_head",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_01_Eyelash_Master",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_01_Flower",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_01_Flower2",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_01_macrame1",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_01_macrame",
+        "max_geometry_error_m": 0.0
+      }
+    ],
+    "source_geometry_max_error_m": 0.0
+  },
+  "cloth_validation": {
+    "status": "pass",
+    "travel_shortfall_tolerance_m": 0.005,
+    "final_package_sha256": "9e58b5ddadefacb24c0194ad8595a344a392f28c8f7b497abf471e86f871d607",
+    "cooked_meshes": [
+      {
+        "mesh": "bmq_part_09",
+        "lod": 0,
+        "render_vertices": 16841,
+        "simulation_vertices": 16120,
+        "active_positions": 1313,
+        "fixed_positions": 14807,
+        "stretch_constraints": 3352,
+        "bend_constraints": 2469,
+        "root_fixes": [],
+        "sha256": "b8b9c0a34559412c30399352e516a719cc670a679c3a1e87956e68925239d58b"
+      },
+      {
+        "mesh": "bmq_part_01.lod2",
+        "lod": 2,
+        "render_vertices": 3115,
+        "simulation_vertices": 2502,
+        "active_positions": 642,
+        "fixed_positions": 1860,
+        "stretch_constraints": 2031,
+        "bend_constraints": 1849,
+        "root_fixes": [],
+        "sha256": "558f9fa85d74a5dad20ae5678e182e7bf8a130387eaa523149ded17f936bf20e"
+      },
+      {
+        "mesh": "bmq_part_01.lod3",
+        "lod": 3,
+        "render_vertices": 1529,
+        "simulation_vertices": 1152,
+        "active_positions": 264,
+        "fixed_positions": 888,
+        "stretch_constraints": 902,
+        "bend_constraints": 762,
+        "root_fixes": [],
+        "sha256": "b73e4bc01790b44c3aa282c68d41837588ddbba9e3cd6194657bdcb79edc8c99"
+      },
+      {
+        "mesh": "bmq_part_00.lod3",
+        "lod": 3,
+        "render_vertices": 891,
+        "simulation_vertices": 692,
+        "active_positions": 243,
+        "fixed_positions": 449,
+        "stretch_constraints": 745,
+        "bend_constraints": 700,
+        "root_fixes": [],
+        "sha256": "32387ed1416736c68bebbb5444bd519cf61dced87b9696a6e5b60de737515794"
+      },
+      {
+        "mesh": "bmq_part_09.lod2",
+        "lod": 2,
+        "render_vertices": 7683,
+        "simulation_vertices": 6999,
+        "active_positions": 541,
+        "fixed_positions": 6458,
+        "stretch_constraints": 1350,
+        "bend_constraints": 736,
+        "root_fixes": [],
+        "sha256": "e001f25c3625cabf5ff4039fcd235c95e5ac07c6f52e5822be47efc9e2310c37"
+      },
+      {
+        "mesh": "bmq_part_01",
+        "lod": 0,
+        "render_vertices": 8153,
+        "simulation_vertices": 6890,
+        "active_positions": 2016,
+        "fixed_positions": 4874,
+        "stretch_constraints": 6160,
+        "bend_constraints": 6153,
+        "root_fixes": [],
+        "sha256": "1acd6c132f303348ccdd78dfd21cd01b5046a913c06ff2e0c190c9d7fc1d4594"
+      },
+      {
+        "mesh": "bmq_part_12.lod2",
+        "lod": 2,
+        "render_vertices": 389,
+        "simulation_vertices": 289,
+        "active_positions": 72,
+        "fixed_positions": 217,
+        "stretch_constraints": 220,
+        "bend_constraints": 184,
+        "root_fixes": [],
+        "sha256": "bbf263b6e567137e803eeffb632ddcad08c57cf9915c1f2e6413965997975578"
+      },
+      {
+        "mesh": "bmq_part_12.lod3",
+        "lod": 3,
+        "render_vertices": 192,
+        "simulation_vertices": 144,
+        "active_positions": 33,
+        "fixed_positions": 111,
+        "stretch_constraints": 108,
+        "bend_constraints": 62,
+        "root_fixes": [],
+        "sha256": "6d3161d1e7671b9846544c51ae8abbd9e2d7b3e598e4c4fed1b30869b1f6c00d"
+      },
+      {
+        "mesh": "bmq_part_09.lod3",
+        "lod": 3,
+        "render_vertices": 4291,
+        "simulation_vertices": 3608,
+        "active_positions": 314,
+        "fixed_positions": 3294,
+        "stretch_constraints": 817,
+        "bend_constraints": 328,
+        "root_fixes": [],
+        "sha256": "a79d05d38b8b11059bb43540b2edd2247b31a887d8b988a636b34f498ca84d2f"
+      },
+      {
+        "mesh": "bmq_part_12.lod1",
+        "lod": 1,
+        "render_vertices": 632,
+        "simulation_vertices": 506,
+        "active_positions": 148,
+        "fixed_positions": 358,
+        "stretch_constraints": 456,
+        "bend_constraints": 437,
+        "root_fixes": [],
+        "sha256": "2caa28d77703b5034b35918c73be0c16eba5eaf5ec7e0fbfde5058a52bd8bc4a"
+      },
+      {
+        "mesh": "bmq_part_00",
+        "lod": 0,
+        "render_vertices": 5087,
+        "simulation_vertices": 4415,
+        "active_positions": 1508,
+        "fixed_positions": 2907,
+        "stretch_constraints": 4565,
+        "bend_constraints": 4540,
+        "root_fixes": [],
+        "sha256": "29b82c41d9422745dfd9bbbad78f2858ed1bd0fcf3b1e2bb45133f99f15ac539"
+      },
+      {
+        "mesh": "bmq_part_00.lod1",
+        "lod": 1,
+        "render_vertices": 3374,
+        "simulation_vertices": 2882,
+        "active_positions": 966,
+        "fixed_positions": 1916,
+        "stretch_constraints": 2932,
+        "bend_constraints": 2883,
+        "root_fixes": [],
+        "sha256": "8cf37d122dbf4ed0472cac6545da75a1e50fd2aafb864e39235e26f8e144507a"
+      },
+      {
+        "mesh": "bmq_part_00.lod2",
+        "lod": 2,
+        "render_vertices": 1913,
+        "simulation_vertices": 1568,
+        "active_positions": 539,
+        "fixed_positions": 1029,
+        "stretch_constraints": 1645,
+        "bend_constraints": 1544,
+        "root_fixes": [],
+        "sha256": "89ec38f2283e74efe7bf0fb3684a0059f3c8799dfe0af937035c8ac24194b4ac"
+      },
+      {
+        "mesh": "bmq_part_09.lod1",
+        "lod": 1,
+        "render_vertices": 12403,
+        "simulation_vertices": 11697,
+        "active_positions": 879,
+        "fixed_positions": 10818,
+        "stretch_constraints": 2174,
+        "bend_constraints": 1371,
+        "root_fixes": [],
+        "sha256": "98a0aecaa90e7601af589e62d1fecf29821fe9e00dad11248b059755bbbf7c48"
+      },
+      {
+        "mesh": "bmq_part_01.lod1",
+        "lod": 1,
+        "render_vertices": 5470,
+        "simulation_vertices": 4527,
+        "active_positions": 1181,
+        "fixed_positions": 3346,
+        "stretch_constraints": 3651,
+        "bend_constraints": 3522,
+        "root_fixes": [],
+        "sha256": "fe6c1d2e18222de46780fd7a23f8d9e5faa82e9e845f8a227ef7569860433314"
+      },
+      {
+        "mesh": "bmq_part_12",
+        "lod": 0,
+        "render_vertices": 928,
+        "simulation_vertices": 760,
+        "active_positions": 252,
+        "fixed_positions": 508,
+        "stretch_constraints": 768,
+        "bend_constraints": 780,
+        "root_fixes": [],
+        "sha256": "ffb86c712a9cdbde313b5aac1892e49de52db7f682cb1f8fc8d18668ee9fd89a"
+      }
+    ],
+    "pose_diagnostics": [
+      {
+        "pose": "rest",
+        "frames": 1,
+        "preview_frame": 0,
+        "max_reference_capsule_overlap_m": 0.053073990939666145,
+        "max_travel_shortfall_m": 0,
+        "finite": true,
+        "worst_by_mesh": {
+          "bmq_part_09": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.051071869864425155,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.05090926677248523,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.03456366892845823,
+            "worst_capsule": ""
+          },
+          "bmq_part_09.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0,
+            "worst_capsule": ""
+          },
+          "bmq_part_01": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.053073990939666145,
+            "worst_capsule": ""
+          },
+          "bmq_part_12.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0,
+            "worst_capsule": ""
+          },
+          "bmq_part_12.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0,
+            "worst_capsule": ""
+          },
+          "bmq_part_09.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0,
+            "worst_capsule": ""
+          },
+          "bmq_part_12.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0,
+            "worst_capsule": ""
+          },
+          "bmq_part_00": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0366838487994246,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0366838487994246,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.03456366892845823,
+            "worst_capsule": ""
+          },
+          "bmq_part_09.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.05287224928089645,
+            "worst_capsule": ""
+          },
+          "bmq_part_12": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0,
+            "worst_capsule": ""
+          }
+        }
+      },
+      {
+        "pose": "run",
+        "frames": 25,
+        "preview_frame": 1,
+        "max_reference_capsule_overlap_m": 0.10083485401088056,
+        "max_travel_shortfall_m": 0,
+        "finite": true,
+        "worst_by_mesh": {
+          "bmq_part_09": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.06607276796425632,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09038752362098795,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09944013859671337,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.04380417365644633,
+            "worst_capsule": ""
+          },
+          "bmq_part_09.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.06607276796425632,
+            "worst_capsule": ""
+          },
+          "bmq_part_01": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09978642110823252,
+            "worst_capsule": ""
+          },
+          "bmq_part_12.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.003681943993577047,
+            "worst_capsule": ""
+          },
+          "bmq_part_12.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.02926464379695945,
+            "worst_capsule": ""
+          },
+          "bmq_part_09.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.07311049844549253,
+            "worst_capsule": ""
+          },
+          "bmq_part_12.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.030169951862542715,
+            "worst_capsule": ""
+          },
+          "bmq_part_00": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.049509403396182004,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.04769641562631497,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.041144925965433704,
+            "worst_capsule": ""
+          },
+          "bmq_part_09.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.06607276796425632,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.0849446864476989,
+            "worst_capsule": ""
+          },
+          "bmq_part_12": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.030169951862542715,
+            "worst_capsule": ""
+          }
+        }
+      },
+      {
+        "pose": "idle",
+        "frames": 16,
+        "preview_frame": 1,
+        "max_reference_capsule_overlap_m": 0.09745702527642235,
+        "max_travel_shortfall_m": 0,
+        "finite": true,
+        "worst_by_mesh": {
+          "bmq_part_09": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.0680087964632773,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09034347054607274,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.08957286166006836,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.03679757048358656,
+            "worst_capsule": ""
+          },
+          "bmq_part_09.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.06744739096678787,
+            "worst_capsule": ""
+          },
+          "bmq_part_01": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09347113704525856,
+            "worst_capsule": ""
+          },
+          "bmq_part_12.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.027674395883857526,
+            "worst_capsule": ""
+          },
+          "bmq_part_12.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.029866023620913697,
+            "worst_capsule": ""
+          },
+          "bmq_part_09.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.06802533300068425,
+            "worst_capsule": ""
+          },
+          "bmq_part_12.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.02986375429728372,
+            "worst_capsule": ""
+          },
+          "bmq_part_00": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.03898932445587504,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.03898932445587504,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.03679757048358656,
+            "worst_capsule": ""
+          },
+          "bmq_part_09.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.06796938954098275,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09107864836580613,
+            "worst_capsule": ""
+          },
+          "bmq_part_12": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.030642162603691556,
+            "worst_capsule": ""
+          }
+        }
+      },
+      {
+        "pose": "bow",
+        "frames": 16,
+        "preview_frame": 1,
+        "max_reference_capsule_overlap_m": 0.10160316829529231,
+        "max_travel_shortfall_m": 0,
+        "finite": true,
+        "worst_by_mesh": {
+          "bmq_part_09": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.0441988904489276,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.0944519644704588,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.08450634405137508,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.08376625512826683,
+            "worst_capsule": ""
+          },
+          "bmq_part_09.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.0441988904489276,
+            "worst_capsule": ""
+          },
+          "bmq_part_01": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09555564548005019,
+            "worst_capsule": ""
+          },
+          "bmq_part_12.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.022793072890443605,
+            "worst_capsule": ""
+          },
+          "bmq_part_12.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.022793072890443605,
+            "worst_capsule": ""
+          },
+          "bmq_part_09.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.05090182061784693,
+            "worst_capsule": ""
+          },
+          "bmq_part_12.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.015390025282717754,
+            "worst_capsule": ""
+          },
+          "bmq_part_00": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.08460232216686851,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.0811152992111844,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.0814578396604919,
+            "worst_capsule": ""
+          },
+          "bmq_part_09.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.0441988904489276,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09555564548005019,
+            "worst_capsule": ""
+          },
+          "bmq_part_12": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.02103565195565418,
+            "worst_capsule": ""
+          }
+        }
+      },
+      {
+        "pose": "riding",
+        "frames": 16,
+        "preview_frame": 1,
+        "max_reference_capsule_overlap_m": 0.10053579556344805,
+        "max_travel_shortfall_m": 0,
+        "finite": true,
+        "worst_by_mesh": {
+          "bmq_part_09": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.03818671025196227,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.0887865368376098,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.08237498135791567,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.059694221155087816,
+            "worst_capsule": ""
+          },
+          "bmq_part_09.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.0369487814373434,
+            "worst_capsule": ""
+          },
+          "bmq_part_01": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09147544577647693,
+            "worst_capsule": ""
+          },
+          "bmq_part_12.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.003132219906568749,
+            "worst_capsule": ""
+          },
+          "bmq_part_12.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.015240429078996816,
+            "worst_capsule": ""
+          },
+          "bmq_part_09.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.03685285572394435,
+            "worst_capsule": ""
+          },
+          "bmq_part_12.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.007651397920443771,
+            "worst_capsule": ""
+          },
+          "bmq_part_00": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.0788712558415102,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.07924836450201383,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.07822256992080591,
+            "worst_capsule": ""
+          },
+          "bmq_part_09.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.03818671025196227,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09140420277585172,
+            "worst_capsule": ""
+          },
+          "bmq_part_12": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.009267134370984809,
+            "worst_capsule": ""
+          }
+        }
+      },
+      {
+        "pose": "slash",
+        "frames": 16,
+        "preview_frame": 0,
+        "max_reference_capsule_overlap_m": 0.10245599296990579,
+        "max_travel_shortfall_m": 0,
+        "finite": true,
+        "worst_by_mesh": {
+          "bmq_part_09": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.05107380079190832,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.05090457802805043,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.03456370312460472,
+            "worst_capsule": ""
+          },
+          "bmq_part_09.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0,
+            "worst_capsule": ""
+          },
+          "bmq_part_01": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.053075955901622486,
+            "worst_capsule": ""
+          },
+          "bmq_part_12.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0,
+            "worst_capsule": ""
+          },
+          "bmq_part_12.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0,
+            "worst_capsule": ""
+          },
+          "bmq_part_09.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0,
+            "worst_capsule": ""
+          },
+          "bmq_part_12.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0,
+            "worst_capsule": ""
+          },
+          "bmq_part_00": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.03668388872309272,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.03668388872309272,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.03456370312460472,
+            "worst_capsule": ""
+          },
+          "bmq_part_09.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.05286753020703167,
+            "worst_capsule": ""
+          },
+          "bmq_part_12": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0,
+            "worst_capsule": ""
+          }
+        }
+      }
+    ],
+    "cloth_engine_verified": false,
+    "scope": "Final payload structure and sampled native-animation capsule/travel screening; overlaps are skinning-reference measurements before the engine cloth solver"
+  },
+  "registration_validation": {
+    "status": "pass",
+    "race": "bmq_default",
+    "changed_troops": [],
+    "unaffected_troops": 548,
+    "troop_overrides_present": false,
+    "skin_variants": 10,
+    "skeleton": "bmq_skeleton",
+    "native_monster_dimensions_preserved": true,
+    "native_ui_actions_inherited": false,
+    "inventory_pose": "female_custom start/loop; selected for own fixed female body",
+    "cloth_simulation": true
+  },
+  "ui_scope_validation": {
+    "status": "pass",
+    "cases": {
+      "SandBox.View.Map.MapScreen._mainPartyVisual": false,
+      "SandBox.View.Map.PartyVisual._humanAgentVisuals": false,
+      "SandBox.View.Map.MapConversationTableau._agentVisuals": false,
+      "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableau._agentVisuals": true,
+      "TaleWorlds.MountAndBlade.View.Tableaus.BasicCharacterTableau._agentVisuals": true,
+      "TaleWorlds.MountAndBlade.GauntletUI.BodyGenerator.BodyGeneratorView._visualToShow": true,
+      "Unknown.CharacterTableau._agentVisuals": false,
+      "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableauFake._agentVisuals": false
+    },
+    "null_owner_allowed": false,
+    "direct_provider_cases": "actual runtime methods compiled with matching provider/tableau stubs; valid/null/unknown provider/unknown tableau",
+    "actual_field_collection_and_inspect_executed": true,
+    "boxed_action_invalid_cast_reproduced": true,
+    "reference_and_value_custom_equals_never_called": true,
+    "inventory_discovery_independent_of_screen_seen_budget": true,
+    "source_sha256": "5ee8a55a28e5213b5ab3fac67f9b98e3436b3f234a9b8d9e42c875daf34fba5a",
+    "assembly_sha256": "a6d43b7da5fc43c7a9fab149d72661f087d5cd4c95ec2d6ff81c3d458bdb5980",
+    "game_verified": false
+  },
+  "preview_idle_validation": {
+    "status": "pass",
+    "version": "v0.1.1",
+    "default_inventory_clip": "inventory_idle",
+    "preview_overrides": [
+      {
+        "sex": "male",
+        "action": "act_inventory_idle_start",
+        "clip": "anim_female_custom_start",
+        "skeletal_animation": "anim_female_idle_long",
+        "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
+        "clip_metadata": "AnimationClip 'anim_female_custom_start' guid=593006d8-02b3-4307-b1fc-9a2643a8f1d7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith='act_inventory_idle'\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
+      },
+      {
+        "sex": "male",
+        "action": "act_inventory_idle",
+        "clip": "anim_female_custom",
+        "skeletal_animation": "anim_female_idle_long",
+        "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
+        "clip_metadata": "AnimationClip 'anim_female_custom' guid=da51b19f-81fe-4ffe-956f-ab5d800e71f7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[cyclic,allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith=''\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
+      },
+      {
+        "sex": "female",
+        "action": "act_inventory_idle_start",
+        "clip": "anim_female_custom_start",
+        "skeletal_animation": "anim_female_idle_long",
+        "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
+        "clip_metadata": "AnimationClip 'anim_female_custom_start' guid=593006d8-02b3-4307-b1fc-9a2643a8f1d7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith='act_inventory_idle'\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
+      },
+      {
+        "sex": "female",
+        "action": "act_inventory_idle",
+        "clip": "anim_female_custom",
+        "skeletal_animation": "anim_female_idle_long",
+        "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
+        "clip_metadata": "AnimationClip 'anim_female_custom' guid=da51b19f-81fe-4ffe-956f-ab5d800e71f7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[cyclic,allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith=''\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
+      }
+    ],
+    "creation_page_action_mapping_unchanged": true,
+    "runtime_dll_unchanged": true,
+    "runtime_entry": "direct CharacterTableauTextureProvider before bounded screen reflection",
+    "runtime_effect_verified": false,
+    "selected_character_sex_preserved": true,
+    "fixed_character_preview_pose": "female_idle_long_for_both_preview_skeleton_types",
+    "game_retest_pending": true
+  },
+  "visual_review": {
+    "status": "pass",
+    "final_package_sha256": "9e58b5ddadefacb24c0194ad8595a344a392f28c8f7b497abf471e86f871d607",
+    "scope": "Visual inspection of source comparison, final LOD0 face/body, LOD1-3 silhouettes, neutral UI idle and selected native run/bow/riding/slash reference frames",
+    "reviewed_by": "assistant",
+    "source_proportions_preserved": true,
+    "face_hair_clothes_visible": true,
+    "hands_present": true,
+    "no_gross_shoulders_or_cuffs_tears_in_reviewed_frames": true,
+    "game_cloth_solver_used": false,
+    "dynamic_skinning_reference_intersections_visible": true,
+    "all_body_cloth_intersections_verified": false,
+    "game_verified": false,
+    "notes": [
+      "Dynamic frames show skeletal references before cloth solving; leg/skirt intersections are not game acceptance.",
+      "LOD3 close-up simplifies collar/folds and ornaments; assessed as distant silhouette.",
+      "Final preview uses decoded diffuse and byte skin, not exact game lighting."
+    ],
+    "version": "v0.1.1",
+    "collision_proxy_review": {
+      "comparison": "reports/collision_proxy_comparison.png",
+      "camera_consistent": true,
+      "skirts_settle_downward": true,
+      "protected_body_not_visibly_exposed_in_reviewed_pose": true,
+      "scope": "Static female UI idle, constrained CPU gravity; engine simulation remains unverified"
+    },
+    "unchanged_geometry_views_reused_from": "v0.1.0, verified all GPU geometry/UV/material/weights equal"
+  },
+  "inherited_evidence": {
+    "from_version": "v0.1.0",
+    "reason": "Final TPAC, editable model, textures, skeleton and UI DLL identical; new external cloth collision XML checked separately."
+  },
+  "cloth_collision_xml_sha256": "68398d6ab30091e1a5d2e5c2bc7ae50a0be82ce9e80bf1e600ba4e572d16a3dc",
+  "current_game_acceptance": "pending skirt retest",
+  "skirt_collision_validation": {
+    "proxy_limits": {
+      "fixed_root_overlap_m": 0.006,
+      "maximum_residual_m": 0.015,
+      "p99_residual_m": 0.005,
+      "minimum_mean_pressure_reduction": 0.2
+    },
+    "status": "pass",
+    "version": "v0.1.1",
+    "final_package_sha256": "9e58b5ddadefacb24c0194ad8595a344a392f28c8f7b497abf471e86f871d607",
+    "baseline_version": "v0.1.0",
+    "rows": [
+      {
+        "mesh": "bmq_part_01",
+        "baseline_initial_mean_overlap_m": 0.030114665075023764,
+        "initial_mean_overlap_m": 0.012039289481134524,
+        "baseline_initial_max_overlap_m": 0.13284098408704748,
+        "initial_max_overlap_m": 0.0909844510794946,
+        "fixed_root_max_overlap_m": 0.0054293740279686906,
+        "fixed_root_drift_m": 0.0,
+        "max_settled_residual_m": 0.005784079213589324,
+        "p99_settled_residual_m": 0.001639050091237579,
+        "baseline_mean_vertical_change_m": -0.054623005067711276,
+        "mean_vertical_change_m": -0.07686880704491375,
+        "baseline_raised_fraction": 0.07390873015873016,
+        "raised_fraction": 0.005456349206349206,
+        "travel_clamped": true
+      },
+      {
+        "mesh": "bmq_part_00",
+        "baseline_initial_mean_overlap_m": 0.006601742731155843,
+        "initial_mean_overlap_m": 0.0014849435479970298,
+        "baseline_initial_max_overlap_m": 0.08444430728099328,
+        "initial_max_overlap_m": 0.05761393087086583,
+        "fixed_root_max_overlap_m": 0.0,
+        "fixed_root_drift_m": 0.0,
+        "max_settled_residual_m": 0.006541142665505831,
+        "p99_settled_residual_m": 0.0005466764206595102,
+        "baseline_mean_vertical_change_m": -0.21581767295298002,
+        "mean_vertical_change_m": -0.22715712304266414,
+        "baseline_raised_fraction": 0.017241379310344827,
+        "raised_fraction": 0.0,
+        "travel_clamped": true
+      }
+    ],
+    "scope": "Final compiled constraints, actual female UI idle frame, 120 gravity steps at 60Hz/10 Jacobi iterations, fixed roots never projected; a CPU diagnostic, not Bannerlord cloth simulation",
+    "game_solver_used": false
+  },
+  "skirt_preservation_validation": {
+    "non_target_cloth_payloads_byte_identical": 16,
+    "status": "pass",
+    "version": "v0.1.1",
+    "baseline_version": "v0.1.0",
+    "baseline_package_sha256": "9e58b5ddadefacb24c0194ad8595a344a392f28c8f7b497abf471e86f871d607",
+    "final_package_sha256": "9e58b5ddadefacb24c0194ad8595a344a392f28c8f7b497abf471e86f871d607",
+    "geometry_normals_uv_tangents_weights_indices_preserved": true,
+    "materials_textures_skeleton_preserved": true,
+    "ui_runtime_unchanged": true,
+    "alpha_changes": [],
+    "game_verified": false
+  },
+  "skirt_surface_coverage": {
+    "status": "pass",
+    "version": "v0.1.1",
+    "rows": [
+      {
+        "fixed_root_max_overlap_m": 0.005280999345457699,
+        "pose": "idle",
+        "sampled_frames": 12,
+        "surface_samples": 230040,
+        "uncovered_samples": 0,
+        "maximum_outside_m": 0,
+        "worst_frame": 806
+      },
+      {
+        "fixed_root_max_overlap_m": 0.005461248039624486,
+        "pose": "ui_neutral_female",
+        "sampled_frames": 12,
+        "surface_samples": 230040,
+        "uncovered_samples": 0,
+        "maximum_outside_m": 0,
+        "worst_frame": 1859
+      },
+      {
+        "fixed_root_max_overlap_m": 0.004865508395947307,
+        "pose": "run",
+        "sampled_frames": 12,
+        "surface_samples": 230040,
+        "uncovered_samples": 0,
+        "maximum_outside_m": 0,
+        "worst_frame": 18
+      },
+      {
+        "fixed_root_max_overlap_m": 0.005201051390527102,
+        "pose": "bow",
+        "sampled_frames": 12,
+        "surface_samples": 230040,
+        "uncovered_samples": 0,
+        "maximum_outside_m": 0,
+        "worst_frame": 55
+      },
+      {
+        "fixed_root_max_overlap_m": 0.006041633943256151,
+        "pose": "riding",
+        "sampled_frames": 12,
+        "surface_samples": 230040,
+        "uncovered_samples": 0,
+        "maximum_outside_m": 0,
+        "worst_frame": 16
+      },
+      {
+        "fixed_root_max_overlap_m": 0.006145058318409884,
+        "pose": "slash",
+        "sampled_frames": 12,
+        "surface_samples": 230040,
+        "uncovered_samples": 0,
+        "maximum_outside_m": 0,
+        "worst_frame": 1
+      }
+    ],
+    "sampling": "12 non-bind frames per Native motion, actual skinned triangle vertices/edges/interiors with barycentric subdivisions 4; full decoded vertex cycles scanned by collision fitter",
+    "game_verified": false,
+    "maximum_sampled_root_overlap_tolerance_m": 0.007
+  }
+}

@@ -1,38 +1,6 @@
 {
-  "non_target_cloth_payloads_byte_identical": 8,
-  "status": "pass",
-  "version": "v0.1.1",
-  "baseline_version": "v0.1.0",
-  "baseline_package_sha256": "667ebedc7e43ea05fdeb0ba14a2b108923b0bc0bdf6700cc8d456523f234e867",
-  "final_package_sha256": "ccde46e5b3dd4b79f4e49ad46a2001dd5bf25d0a95f916a3f1db15138e928dd7",
-  "geometry_normals_uv_tangents_weights_indices_preserved": true,
-  "materials_textures_skeleton_preserved": true,
-  "ui_runtime_unchanged": true,
-  "alpha_changes": [
-    {
-      "mesh": "yqs2_part_03.b2",
-      "lod": 0,
-      "changed_alpha_vertices": 226,
-      "fixed_roots_unchanged": true
-    },
-    {
-      "mesh": "yqs2_part_03.lod1",
-      "lod": 1,
-      "changed_alpha_vertices": 178,
-      "fixed_roots_unchanged": true
-    },
-    {
-      "mesh": "yqs2_part_03.lod2",
-      "lod": 2,
-      "changed_alpha_vertices": 133,
-      "fixed_roots_unchanged": true
-    },
-    {
-      "mesh": "yqs2_part_03.lod3",
-      "lod": 3,
-      "changed_alpha_vertices": 71,
-      "fixed_roots_unchanged": true
-    }
-  ],
-  "game_verified": false
+  "status": "not_applicable",
+  "version": "v0.1.2",
+  "reason": "Dynamic cloth disabled; see static_cloth_validation.json. Previous dynamic evidence retained in history/v0.1.1.",
+  "final_package_sha256": "0f0ebd6c9d777c9154c78004a26b28267e2782ec450a7468c83407972cabf95d"
 }

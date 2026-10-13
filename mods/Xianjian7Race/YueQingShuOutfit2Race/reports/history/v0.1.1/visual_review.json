@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "final_package_sha256": "ccde46e5b3dd4b79f4e49ad46a2001dd5bf25d0a95f916a3f1db15138e928dd7",
+  "scope": "Visual inspection of source comparison, final LOD0 face/body, LOD1-3 silhouettes, neutral UI idle and selected native run/bow/riding/slash reference frames",
+  "reviewed_by": "assistant",
+  "source_proportions_preserved": true,
+  "face_hair_clothes_visible": true,
+  "hands_present": true,
+  "no_gross_shoulders_or_cuffs_tears_in_reviewed_frames": true,
+  "game_cloth_solver_used": false,
+  "dynamic_skinning_reference_intersections_visible": true,
+  "all_body_cloth_intersections_verified": false,
+  "game_verified": false,
+  "notes": [
+    "Dynamic frames show skeletal references before cloth solving; leg/skirt intersections are not game acceptance.",
+    "LOD3 close-up simplifies collar/folds and ornaments; assessed as distant silhouette.",
+    "Final preview uses decoded diffuse and byte skin, not exact game lighting."
+  ],
+  "version": "v0.1.1",
+  "collision_proxy_review": {
+    "comparison": "reports/collision_proxy_comparison.png",
+    "camera_consistent": true,
+    "skirts_settle_downward": true,
+    "protected_body_not_visibly_exposed_in_reviewed_pose": true,
+    "scope": "Static female UI idle, constrained CPU gravity; engine simulation remains unverified"
+  },
+  "unchanged_geometry_views_reused_from": "v0.1.0, verified all GPU geometry/UV/material/weights equal"
+}

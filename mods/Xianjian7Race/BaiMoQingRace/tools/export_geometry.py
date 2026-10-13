@@ -71,7 +71,7 @@ for rec in manifest:
         with path.open('wb') as out:
             out.write(np.array([0x4f45474d,len(p),f.size],'<i4').tobytes())
             for a in [p,n,tangent,u,np.zeros((len(p),2))]:out.write(np.asarray(a,'<f4').tobytes())
-            color=np.full((len(p),4),255,'u1');active=any(v[5]>0 for v in records) and lod in cfg['cloth_lods']
+            color=np.full((len(p),4),255,'u1');active=cfg['cloth_enabled'] and any(v[5]>0 for v in records) and lod in cfg['cloth_lods']
             if active:color[:,3]=np.rint(np.clip([v[5] for v in records],0,1)*255).astype('u1')
             for a in [color,[v[3] for v in records],[v[4] for v in records]]:out.write(np.asarray(a,'u1').tobytes())
             out.write(f.astype('<u4').tobytes())
