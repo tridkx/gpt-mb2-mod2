@@ -102,6 +102,7 @@ public sealed record RaceInfo(string ModuleId, string Id, string ModulePath, Lis
 }
 public sealed record ItemInfo(string Id, string Name, string Type, string ModuleId, string WeaponClass = "")
 {
+    public RaceTroopBuilder.Armor.ArmorValues EquipmentArmor { get; init; } = new();
     public string NameEn => Name;
     public string NameZh { get; init; } = "";
     public string NameKey { get; init; } = "";

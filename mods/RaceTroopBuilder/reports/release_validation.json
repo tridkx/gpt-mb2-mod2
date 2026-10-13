@@ -85,6 +85,22 @@
                       "status":  "pass"
                   },
                   {
+                      "name":  "original armor averages battle sets, excludes civilian and rounds halves up",
+                      "status":  "pass"
+                  },
+                  {
+                      "name":  "original armor sums all human armor slots and expands battle templates",
+                      "status":  "pass"
+                  },
+                  {
+                      "name":  "original armor includes empty battle sets in average",
+                      "status":  "pass"
+                  },
+                  {
+                      "name":  "original armor rejects missing equipment data instead of filling false zero",
+                      "status":  "pass"
+                  },
+                  {
                       "name":  "armor override rejects invalid mode and range",
                       "status":  "pass"
                   },
@@ -138,28 +154,28 @@
                   }
               ],
     "version":  "v0.3.0",
-    "test_count":  34,
+    "test_count":  38,
     "armor_runtime_tests":  9,
     "runtime_testing":  "pending user acceptance",
-    "check_directory":  "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261012-224504-527",
+    "check_directory":  "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261013-092759-340",
     "binary_hashes":  {
-                          "app/gui/RaceTroopBuilder.exe":  "a0c5b09eae525e9363726e6d76e5cbd6b3f7591796024e583c54c6a57f941b44",
-                          "app/cli/RaceTroopBuilder.Cli.dll":  "ad73105135c4b5213932677942ab46c4478c868e58fbb712d38b3b750b4c9ae3",
-                          "app/cli/RaceTroopBuilder.Core.dll":  "fa0d0018f528e07db2689ea12bba82d20085458e3e4ba56094e529311d8af937",
-                          "app/gui/RaceTroopBuilder.dll":  "0d4ea1fb3caaedaa82a5b78a1e800eeaac516970c10ded5bda90e6370e62de63",
-                          "app/gui/RaceTroopBuilder.Core.dll":  "fa0d0018f528e07db2689ea12bba82d20085458e3e4ba56094e529311d8af937",
-                          "app/cli/RaceTroopBuilder.Cli.exe":  "d0ebf247111003e0da547ceaac4e12b2d6c2c72e8000e404666af92e37c3ec55"
+                          "app/gui/RaceTroopBuilder.exe":  "58c29011f53df10c75a91b1209bcd83eb3bc7a0a17b551f7f3b2a91f67c64353",
+                          "app/cli/RaceTroopBuilder.Cli.dll":  "1facb7cd1f553ad217274fe208e05e02cb05bc511ef1fa9af054b528e318cedf",
+                          "app/cli/RaceTroopBuilder.Core.dll":  "9c1890b10ec23e6a91747122a985c31c41c78a82f0d36797846bc1c0edad3706",
+                          "app/gui/RaceTroopBuilder.dll":  "6c24c896402fc81611afe4c1a8336901fc3630dec7fe6cfd0de19908ad2b4079",
+                          "app/gui/RaceTroopBuilder.Core.dll":  "9c1890b10ec23e6a91747122a985c31c41c78a82f0d36797846bc1c0edad3706",
+                          "app/cli/RaceTroopBuilder.Cli.exe":  "1115be07be1fecd69d346a0938909c7d4d44819367f108f7c8973dd849efbc31"
                       },
     "status":  "pass",
     "catalog":  {
                     "game_version":  "v1.4.8",
                     "item_count":  1272,
-                    "race_count":  16,
+                    "race_count":  25,
                     "troop_count":  258
                 },
     "actual_game_module_installed":  false,
     "framework":  ".NET 10",
-    "date":  "2026-10-12",
+    "date":  "2026-10-13",
     "gui":  {
                 "status":  "pass",
                 "scan":  true,
@@ -172,11 +188,14 @@
                 "search":  true,
                 "bilingualNames":  true,
                 "armorOverride":  true,
+                "originalArmorAutofill":  true,
+                "originalArmorEditAndRoundtrip":  true,
+                "originalArmorSelectionRefresh":  true,
                 "skillsOverride":  true,
                 "skillReset":  true,
                 "skillBatchPreservesOtherNodes":  true,
                 "mercenaryChineseSearch":  true,
-                "screenshot":  "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261012-224504-527\\gui-preview.png"
+                "screenshot":  "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261013-092759-340\\gui-preview.png"
             },
     "game_started":  false
 }

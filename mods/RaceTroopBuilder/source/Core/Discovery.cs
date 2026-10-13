@@ -148,10 +148,21 @@ public static class Discovery
                     if (item.Name.LocalName is not ("Item" or "CraftedItem")) continue;
                     var itemId = (string?)item.Attribute("id");
                     if (itemId == null) continue;
+                    var armor = item.Element("ItemComponent")?.Element("Armor");
                     catalog.Items[itemId] = new(itemId, DisplayName((string?)item.Attribute("name") ?? itemId),
                         (string?)item.Attribute("Type") ?? CraftedType((string?)item.Attribute("crafting_template") ?? ""), id,
                         (string?)item.Element("ItemComponent")?.Element("Weapon")?.Attribute("weapon_class") ?? "")
-                        { NameKey = Localization.Key((string?)item.Attribute("name") ?? ""), NameZh = Localization.Chinese((string?)item.Attribute("name") ?? "", chinese) };
+                        {
+                            NameKey = Localization.Key((string?)item.Attribute("name") ?? ""),
+                            NameZh = Localization.Chinese((string?)item.Attribute("name") ?? "", chinese),
+                            EquipmentArmor = new()
+                            {
+                                Head = Math.Max(0, (int?)armor?.Attribute("head_armor") ?? 0),
+                                Body = Math.Max(0, (int?)armor?.Attribute("body_armor") ?? 0),
+                                Arms = Math.Max(0, (int?)armor?.Attribute("arm_armor") ?? 0),
+                                Legs = Math.Max(0, (int?)armor?.Attribute("leg_armor") ?? 0)
+                            }
+                        };
                 }
             foreach (var file in RegisteredFiles(module, "EquipmentRosters"))
                 foreach (var roster in Xml(file).Root?.Elements("EquipmentRoster") ?? [])

@@ -208,6 +208,31 @@ public static partial class Builder
         return result;
     }
 
+    public static ArmorSettings OriginalArmor(Catalog catalog, TroopInfo troop)
+    {
+        var loadouts = Loadouts(catalog, troop.Element).Where(x => x.Type == "Battle").ToList();
+        if (loadouts.Count == 0) throw new InvalidDataException("兵种没有可读取的原版战斗装备套。" );
+        var totals = new List<RaceTroopBuilder.Armor.ArmorValues>();
+        foreach (var (_, loadout) in loadouts)
+        {
+            var total = new RaceTroopBuilder.Armor.ArmorValues();
+            foreach (var slot in ArmorSlots)
+            {
+                if (!loadout.Slots.TryGetValue(slot, out var id) || string.IsNullOrWhiteSpace(id)) continue;
+                if (!catalog.Items.TryGetValue(id, out var item))
+                    throw new InvalidDataException("找不到原版防具物品：" + id);
+                total.Head += item.EquipmentArmor.Head; total.Body += item.EquipmentArmor.Body;
+                total.Arms += item.EquipmentArmor.Arms; total.Legs += item.EquipmentArmor.Legs;
+            }
+            totals.Add(total);
+        }
+        // Equal-weight native battle sets; round only after averaging the complete sums.
+        int Average(Func<RaceTroopBuilder.Armor.ArmorValues, int> value) =>
+            checked((int)Math.Round(totals.Average(value), MidpointRounding.AwayFromZero));
+        return new() { Mode = "override", Head = Average(x => x.Head), Body = Average(x => x.Body),
+            Arms = Average(x => x.Arms), Legs = Average(x => x.Legs) };
+    }
+
     private static string EquipmentType(XElement node) =>
         string.Equals((string?)node.Attribute("equipmentType"), "Civilian", StringComparison.OrdinalIgnoreCase) || (bool?)node.Attribute("civilian") == true ? "Civilian" : "Battle";
     private static Loadout ParseLoadout(XElement entry)

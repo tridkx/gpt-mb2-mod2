@@ -96,10 +96,26 @@ public partial class MainWindow : Window
         RaceArmorText.Text = a == null ? "未声明协议默认值；沿用时不干预现有机制。" : $"种族默认：头 {a.Head} / 身 {a.Body} / 臂 {a.Arms} / 腿 {a.Legs}";
     }
     private void ArmorModeChanged(object sender, SelectionChangedEventArgs e)
-    { if (ArmorInputs != null) ArmorInputs.IsEnabled = ArmorMode.SelectedIndex == 1; }
+    {
+        if (ArmorInputs == null) return;
+        ArmorInputs.IsEnabled = ArmorMode.SelectedIndex is 1 or 2;
+        if (_loading || ArmorMode.SelectedIndex != 2) return;
+        try
+        {
+            RequireCatalog();
+            if (_selected == null) throw new InvalidOperationException("请先选择一个兵种。");
+            FillArmor(Builder.OriginalArmor(_catalog!, _selected));
+        }
+        catch (Exception error) { ArmorMode.SelectedIndex = 0; ShowError(error); }
+    }
+    private void FillArmor(ArmorSettings? armor)
+    {
+        ArmorHead.Text = (armor?.Head ?? 0).ToString(); ArmorBody.Text = (armor?.Body ?? 0).ToString();
+        ArmorArms.Text = (armor?.Arms ?? 0).ToString(); ArmorLegs.Text = (armor?.Legs ?? 0).ToString();
+    }
     private ArmorSettings? CaptureArmor()
     {
-        if (ArmorMode.SelectedIndex != 1) return null;
+        if (ArmorMode.SelectedIndex is not (1 or 2)) return null;
         int Value(TextBox text)
         {
             if (!int.TryParse(text.Text, out var value) || value < 0 || value > 500) throw new InvalidDataException("护甲必须为 0～500 的整数。");
@@ -222,9 +238,12 @@ public partial class MainWindow : Window
             _skillResets[id].IsChecked = false;
             _skillInputs[id].Text = rule?.Skills?.TryGetValue(id, out var value) == true ? value.ToString() : "";
         }
-        ArmorMode.SelectedIndex = rule?.Armor?.Mode == "override" ? 1 : 0;
-        ArmorHead.Text = (rule?.Armor?.Head ?? 0).ToString(); ArmorBody.Text = (rule?.Armor?.Body ?? 0).ToString();
-        ArmorArms.Text = (rule?.Armor?.Arms ?? 0).ToString(); ArmorLegs.Text = (rule?.Armor?.Legs ?? 0).ToString();
+        var useOriginalArmor = rule?.Armor?.Mode != "override" && ArmorMode.SelectedIndex == 2;
+        var armor = useOriginalArmor ? Builder.OriginalArmor(_catalog!, troop) : rule?.Armor;
+        _loading = true;
+        ArmorMode.SelectedIndex = rule?.Armor?.Mode == "override" ? 1 : useOriginalArmor ? 2 : 0;
+        FillArmor(armor);
+        _loading = false;
         ReplaceEquipment.IsChecked = rule?.BattleLoadouts != null;
         var originals = Builder.Loadouts(_catalog!, troop.Element).Where(x => x.Type == "Battle").Select(x => x.Loadout).ToList();
         _editedLoadouts = (rule?.BattleLoadouts ?? originals).Select(Clone).ToList();
@@ -458,6 +477,28 @@ public partial class MainWindow : Window
         ArmorMode.SelectedIndex = 1; ArmorHead.Text = "15"; ArmorBody.Text = "30"; ArmorArms.Text = "20"; ArmorLegs.Text = "25";
         ScopeChoice.SelectedIndex = 0; ApplyConfiguration();
         if (_project.Rules.Single(x => x.TroopIds.Contains("imperial_recruit")).Armor?.Body != 30) throw new InvalidDataException("护甲覆盖未保存。");
+        var nativeArmor = Builder.OriginalArmor(_catalog, _catalog.Troops["imperial_recruit"]);
+        ArmorMode.SelectedIndex = 2;
+        if (!ArmorInputs.IsEnabled || Json.Write(CaptureArmor()) != Json.Write(nativeArmor))
+            throw new InvalidDataException("原兵种护甲未自动填入或不可编辑。");
+        ArmorBody.Text = "0";
+        LanguageChoice.SelectedIndex = 1; LanguageChoice.SelectedIndex = 0;
+        if (ArmorMode.SelectedIndex != 2 || ArmorBody.Text != "0") throw new InvalidDataException("语言切换丢失原兵种护甲草稿。");
+        ApplyConfiguration();
+        var savedArmor = _project.Rules.Single(x => x.TroopIds.Contains("imperial_recruit")).Armor;
+        if (savedArmor?.Mode != "override" || savedArmor.Body != 0 || savedArmor.Head != nativeArmor.Head
+            || savedArmor.Arms != nativeArmor.Arms || savedArmor.Legs != nativeArmor.Legs || ArmorBody.Text != "0")
+            throw new InvalidDataException("原兵种护甲手动修改未保存或回读被原值覆盖。");
+        var roundtrip = System.Text.Json.JsonSerializer.Deserialize<BuilderProject>(Json.Write(_project), Json.Options)!;
+        if (roundtrip.Rules.Single(x => x.TroopIds.Contains("imperial_recruit")).Armor?.Body != 0)
+            throw new InvalidDataException("原兵种护甲工程回读失败。");
+        ArmorMode.SelectedIndex = 2;
+        if (ArmorBody.Text != nativeArmor.Body.ToString()) throw new InvalidDataException("重新选择未恢复原兵种基准。");
+        SelectTroop(mercenary);
+        if (Json.Write(CaptureArmor()) != Json.Write(Builder.OriginalArmor(_catalog, mercenary)))
+            throw new InvalidDataException("切换兵种未刷新原版护甲。");
+        SelectTroop(_catalog.Troops["imperial_recruit"]);
+        if (ArmorBody.Text != "0") throw new InvalidDataException("切换兵种丢失已保存的护甲修改。");
         ArmorMode.SelectedIndex = 0;
         // Restore a useful demo: native weapons per troop, one race for the complete regular empire branch.
         ReplaceEquipment.IsChecked = false; ScopeChoice.SelectedIndex = 1; ApplyConfiguration();
@@ -477,6 +518,6 @@ public partial class MainWindow : Window
         var bitmap = new RenderTargetBitmap((int)ActualWidth, (int)ActualHeight, 96, 96, PixelFormats.Pbgra32);
         bitmap.Render(this); var encoder = new PngBitmapEncoder(); encoder.Frames.Add(BitmapFrame.Create(bitmap));
         using var stream = File.Create(pngPath); encoder.Save(stream);
-        Json.Save(Path.Combine(directory, "gui-smoke.json"), new { status = "pass", scan = true, treeSelection = true, subtreeApply = true, slotEdit = true, loadoutCopy = true, overlapUpdate = true, aiFieldsRetained = true, search = true, bilingualNames = true, armorOverride = true, skillsOverride = true, skillReset = true, skillBatchPreservesOtherNodes = true, mercenaryChineseSearch = true, screenshot = pngPath });
+        Json.Save(Path.Combine(directory, "gui-smoke.json"), new { status = "pass", scan = true, treeSelection = true, subtreeApply = true, slotEdit = true, loadoutCopy = true, overlapUpdate = true, aiFieldsRetained = true, search = true, bilingualNames = true, armorOverride = true, originalArmorAutofill = true, originalArmorEditAndRoundtrip = true, originalArmorSelectionRefresh = true, skillsOverride = true, skillReset = true, skillBatchPreservesOtherNodes = true, mercenaryChineseSearch = true, screenshot = pngPath });
     }
 }

@@ -28,7 +28,9 @@ Write(Path.Combine(corePath, "ModuleData", "items", "items.xml"), "<Items>" + st
 {
     ("sword1", "OneHandedWeapon"), ("sword2", "OneHandedWeapon"), ("twohand1", "TwoHandedWeapon"), ("twohand2", "TwoHandedWeapon"),
     ("bow", "Bow"), ("arrows", "Arrows"), ("cape", "Cape"), ("cape2", "Cape"), ("armor", "BodyArmor"), ("horse", "Horse"), ("harness", "HorseHarness")
-}.Select(x => $"<Item id='{x.Item1}' name='{{=item}}{x.Item1}' Type='{x.Item2}'/>")) + "</Items>");
+}.Select(x => $"<Item id='{x.Item1}' name='{{=item}}{x.Item1}' Type='{x.Item2}'>" +
+    (x.Item1 == "cape2" ? "<ItemComponent><Armor head_armor='2' body_armor='3' arm_armor='4' leg_armor='5'/></ItemComponent>" :
+     x.Item1 == "armor" ? "<ItemComponent><Armor body_armor='20' arm_armor='10' leg_armor='8'/></ItemComponent>" : "") + "</Item>")) + "</Items>");
 Write(Path.Combine(corePath, "ModuleData", "sets.xml"), "<EquipmentRosters><EquipmentRoster id='civilian_set'><EquipmentSet equipmentType='Civilian'><Equipment slot='Body' id='Item.armor'/><Equipment slot='Item0' id='Item.sword1'/></EquipmentSet></EquipmentRoster></EquipmentRosters>");
 string Troop(string id, string next = "") => """
 <NPCCharacter id="__ID__" name="{=name___ID__}__ID__" occupation="Soldier" culture="Culture.empire" level="6" is_basic_troop="__BASIC__">
@@ -133,6 +135,54 @@ Test("protected module ID and traversal rejected", () =>
 Test("strict JSON rejects mixed race field", () =>
 { var file = Path.Combine(fixture, "bad.json"); Write(file, "{\"raceIds\":[\"a\",\"b\"]}"); try { Json.Read<TroopRule>(file); throw new Exception("未知字段未拒绝"); } catch (System.Text.Json.JsonException) { } });
 
+Test("original armor averages battle sets, excludes civilian and rounds halves up", () =>
+{
+    var armor = Builder.OriginalArmor(catalog, catalog.Troops["recruit"]);
+    Assert(armor.Mode == "override" && armor.Head == 1 && armor.Body == 12 && armor.Arms == 7 && armor.Legs == 7,
+        "多套战斗护甲平均、重复槽或四舍五入错误；平民套不应参与");
+    Assert(catalog.Items["sword1"].EquipmentArmor.Body == 0 && catalog.Items["armor"].EquipmentArmor.Head == 0,
+        "无护甲物品或省略部位应读取零值");
+});
+Test("original armor sums all human armor slots and expands battle templates", () =>
+{
+    var native = catalog.Troops["recruit"];
+    var troop = native with { Element = XElement.Parse("""
+        <NPCCharacter><Equipments>
+          <EquipmentSet id="armor_test"/>
+          <equipment slot="Head" id="Item.cape2"/>
+          <equipment slot="Gloves" id="Item.cape2"/>
+          <equipment slot="Leg" id="Item.cape2"/>
+          <equipment slot="HorseHarness" id="Item.armor"/>
+          <equipment slot="Item0" id="Item.armor"/>
+        </Equipments></NPCCharacter>
+        """) };
+    catalog.EquipmentSets["armor_test"] = XElement.Parse("""
+        <EquipmentRoster><EquipmentSet><equipment slot="Body" id="Item.armor"/><equipment slot="Cape" id="Item.cape2"/></EquipmentSet>
+        <EquipmentSet><equipment slot="Body" id="Item.armor"/></EquipmentSet></EquipmentRoster>
+        """);
+    try
+    {
+        var armor = Builder.OriginalArmor(catalog, troop);
+        Assert(armor.Head == 7 && armor.Body == 31 && armor.Arms == 24 && armor.Legs == 26,
+            "模板、公共槽、跨部位贡献或人类槽位范围错误");
+    }
+    finally { catalog.EquipmentSets.Remove("armor_test"); }
+});
+Test("original armor includes empty battle sets in average", () =>
+{
+    var troop = catalog.Troops["recruit"] with { Element = XElement.Parse("""
+        <NPCCharacter><Equipments><EquipmentRoster/><EquipmentRoster><equipment slot="Body" id="Item.armor"/></EquipmentRoster></Equipments></NPCCharacter>
+        """) };
+    var armor = Builder.OriginalArmor(catalog, troop);
+    Assert(armor.Head == 0 && armor.Body == 10 && armor.Arms == 5 && armor.Legs == 4, "空装备套未作为零值参与平均");
+});
+Test("original armor rejects missing equipment data instead of filling false zero", () =>
+{
+    var native = catalog.Troops["recruit"];
+    Throws(() => Builder.OriginalArmor(catalog, native with { Element = XElement.Parse("<NPCCharacter><Equipments><EquipmentRoster civilian='true'/></Equipments></NPCCharacter>") }), "没有战斗装备仍填入零");
+    Throws(() => Builder.OriginalArmor(catalog, native with { Element = XElement.Parse("<NPCCharacter><Equipments><EquipmentRoster><equipment slot='Head' id='Item.absent'/></EquipmentRoster></Equipments></NPCCharacter>") }), "缺失防具仍填入零");
+    Throws(() => Builder.OriginalArmor(catalog, native with { Element = XElement.Parse("<NPCCharacter/>") }), "缺失装备仍填入零");
+});
 Test("armor override rejects invalid mode and range", () =>
 {
     var p = Profile(); p.Rules[0].Armor = new() { Mode = "unknown", Head = -1, Body = 501 };
@@ -228,6 +278,12 @@ if (args.Length > 1 && args[1] == "--local-game")
         var real = Discovery.Scan(); var profile = new BuilderProject { ModuleId = "OfflineAllTroops", ModuleName = "Offline All Troops", Rules =
             [new() { TroopIds = real.Troops.Keys.ToList(), RaceModule = "YueQingShuRace", RaceId = "yqs_default", FaceMode = "fixed", StripArmor = true, IsFemale = true, Age = 25 }] };
         var mercenaries = real.Troops.Values.Where(x => (string?)x.Element.Attribute("occupation") == "Mercenary").ToList();
+        foreach (var troop in real.Troops.Values)
+        {
+            var armor = Builder.OriginalArmor(real, troop);
+            Assert(new[] { armor.Head, armor.Body, armor.Arms, armor.Legs }.All(x => x >= 0 && x <= 500),
+                "本机原兵种护甲不可填入：" + troop.Id);
+        }
         Assert(mercenaries.Count == 14, "本机雇佣兵数量异常");
         var official = Localization.ReadChinese(real.Modules.Values.Where(x => Discovery.OfficialIds.Contains(x.Id)));
         foreach (var mercenary in mercenaries)

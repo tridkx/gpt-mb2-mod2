@@ -46,7 +46,10 @@
             <CheckBox x:Name="StripArmor" Content="清除防具，保留武器 / 盾牌 / 坐骑" ToolTip="同时处理战斗与平民装备，适合自带衣服的完整身体" Checked="ArmorChanged" Unchecked="ArmorChanged" />
             <TextBlock Text="固有护甲（不依赖防具物品）" Style="{StaticResource Caption}" />
             <TextBlock x:Name="RaceArmorText" Text="选择种族后显示默认值" TextWrapping="Wrap" FontSize="12" Foreground="#59707D" />
-            <ComboBox x:Name="ArmorMode" SelectedIndex="0" SelectionChanged="ArmorModeChanged"><ComboBoxItem Content="沿用种族固有护甲" /><ComboBoxItem Content="覆盖种族固有护甲" /></ComboBox>
+            <ComboBox x:Name="ArmorMode" SelectedIndex="0" SelectionChanged="ArmorModeChanged"><ComboBoxItem Content="沿用种族固有护甲" /><ComboBoxItem Content="覆盖种族固有护甲" /><ComboBoxItem Content="基于原兵种护甲" ToolTip="自动填入原版战斗装备护甲；多套取各部位平均值并四舍五入，可继续手动修改。" /></ComboBox>
+            <TextBlock Text="基于原兵种：多套战斗装备取平均值，可手动修改。保留防具时仍会叠加装备护甲。" TextWrapping="Wrap" FontSize="12" Foreground="#59707D">
+              <TextBlock.Style><Style TargetType="TextBlock"><Setter Property="Visibility" Value="Collapsed" /><Style.Triggers><DataTrigger Binding="{Binding SelectedIndex, ElementName=ArmorMode}" Value="2"><Setter Property="Visibility" Value="Visible" /></DataTrigger></Style.Triggers></Style></TextBlock.Style>
+            </TextBlock>
             <UniformGrid x:Name="ArmorInputs" Columns="4" IsEnabled="False" Margin="0,5,0,8">
               <StackPanel><TextBlock Text="头"/><TextBox x:Name="ArmorHead" Text="0" /></StackPanel>
               <StackPanel><TextBlock Text="身"/><TextBox x:Name="ArmorBody" Text="0" /></StackPanel>

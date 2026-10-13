@@ -1,8 +1,8 @@
 {
   "status": "pass",
-  "count": 34,
+  "count": 38,
   "failures": 0,
-  "fixture": "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261012-224504-527\\fixture-2a825eb31785401ab9fd228372d366d9",
+  "fixture": "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261013-092759-340\\fixture-21c3bba0ba4d4ce6af9671058aaa9f01",
   "tests": [
     {
       "name": "nested discovery, registered filename and excluded caches",
@@ -86,6 +86,22 @@
     },
     {
       "name": "strict JSON rejects mixed race field",
+      "status": "pass"
+    },
+    {
+      "name": "original armor averages battle sets, excludes civilian and rounds halves up",
+      "status": "pass"
+    },
+    {
+      "name": "original armor sums all human armor slots and expands battle templates",
+      "status": "pass"
+    },
+    {
+      "name": "original armor includes empty battle sets in average",
+      "status": "pass"
+    },
+    {
+      "name": "original armor rejects missing equipment data instead of filling false zero",
       "status": "pass"
     },
     {
