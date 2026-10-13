@@ -82,6 +82,8 @@ python tools/package_delivery.py --mod TianxiangCollection --version v1.0.0
 
 Mod ZIP 顶层是模组 ID，源包保持 source/ 与 tex/ 相邻。mod.json.shared_source_files 可列入工作区 tools/ 文件，源包将其保存到 workspace_tools/。保留旧包，只复制任务涉及的模块；安装器不自动提交 Git 或打标签。
 
+含布料的模组可通过 `mod.json.cloth_diagnostics` 接入[自动离线诊断](tools/cloth_simulator/README.md#接入模组制作与交付流程)：打包及安装前检查最终 TPAC，复用相同输入的报告，并将报告、最差帧和诊断源码加入源包。尚未配置的模组沿用原流程；已启用时 `--check-only` 也可能生成诊断缓存和报告，但不打包或安装。近似模拟结果独立于游戏验收状态。
+
 共用入口支持顶层独立模组、天香单套 ID、ResidentEvil、Xianjian7Race 和 TianxiangRaceColletion 内独立 ID。圣绣、真武内部套装从合集根打包和安装。
 
 ## 文档与检查边界

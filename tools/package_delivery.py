@@ -43,11 +43,29 @@ def package(name, version, check_only=False):
         if not path.is_relative_to((WORKSPACE / 'tools').resolve()) or not path.is_file():
             raise ValueError(f'Shared source must be a file inside workspace tools: {relative}')
         shared_sources.append((path, 'workspace_tools/' + path.relative_to(WORKSPACE / 'tools').as_posix()))
+    # Opt-in checks run before either archive writing or installer preflight.
+    # The unchanged final TPAC plus all diagnostic inputs form the cache key.
+    diagnostic_sources = []
+    if 'cloth_diagnostics' in config:
+        from cloth_simulator.pipeline import ensure_diagnostics, delivery_files
+        diagnostic = ensure_diagnostics(root, config)
+        diagnostic_sources, diagnostic_shared = delivery_files(root, diagnostic)
+        shared_sources.extend(diagnostic_shared)
     deliveries = [
         ('Mod', [(project_file(root, p.relative_to(root)), name + '/' + p.relative_to(module).as_posix())
                  for p in module.rglob('*') if p.is_file() and p.name != '.gitkeep']),
-        ('Source', [(p, p.relative_to(root).as_posix()) for p in sources] + shared_sources),
+        ('Source', [(p, p.relative_to(root).as_posix()) for p in sources] + shared_sources + diagnostic_sources),
     ]
+    # Configured source lists may already contain the automatically added files.
+    deduplicated = []
+    for kind, files in deliveries:
+        unique = {}
+        for file, entry in files:
+            if entry in unique and unique[entry].resolve() != file.resolve():
+                raise ValueError(f'Conflicting archive entry: {entry}')
+            unique[entry] = file
+        deduplicated.append((kind, [(file, entry) for entry, file in unique.items()]))
+    deliveries = deduplicated
     if check_only:
         print(f'{name} {version}: package inputs valid; no archives written.')
         return

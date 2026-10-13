@@ -16,7 +16,10 @@ TOOLS = HERE.parent
 sys.path[:0] = [str(TOOLS), str(TOOLS/'asset_helpers/previewer')]
 from cloth_compiler.cloth_payload import read, decode_positions
 from cloth_compiler.validation import check_structure
-from solver import Settings, Simulator
+try:
+    from .solver import Settings, Simulator
+except ImportError:
+    from solver import Settings, Simulator
 
 
 def digest(path):
@@ -238,7 +241,7 @@ def extract(args):
     result = subprocess.run(['dotnet', str(args.probe.resolve()), str(args.tpac.resolve()),
                               args.metamesh, '--dump-segments', str(output)], capture_output=True, text=True, check=True)
     metadata = json.loads(result.stdout)
-    if not metadata or not list(output.glob('*.mesh.json')):
+    if not metadata or (not list(output.glob('*.mesh.json')) and not getattr(args, 'allow_empty', False)):
         raise ValueError('no cloth meshes found for exact metamesh name')
     (output/'package.json').write_text(json.dumps(dict(tpac=str(args.tpac.resolve()),
                 sha256=digest(args.tpac), metadata=metadata,

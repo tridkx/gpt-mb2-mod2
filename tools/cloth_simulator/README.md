@@ -9,6 +9,8 @@
 - `viewer.html`：本地 Canvas 回放，无 CDN、网络依赖或服务器需求；支持正侧背面、拖动旋转、蒙皮参考和碰撞体显示。
 - `demo.py`：无需游戏文件的程序布片示例。
 - `test_solver.py`：重力、移动固定点、确定性、刚度、轴线上碰撞、不可满足碰撞和三角形内部接触检查。
+- `pipeline.py`：由模组配置启用的批量动作诊断、输入指纹缓存、打包前检查和源包报告收集。
+- `test_pipeline.py`：临时模组的真实 CPU 模拟、缓存失效、失败拦截、严格模式和打包内容检查；TPAC 提取使用程序数据替身。
 
 Python 需要 NumPy、SciPy（示例和现有编译器）、Matplotlib。本机使用 `C:/ProgramData/anaconda3/python.exe`。提取 TPAC 使用现有[布料编译工具](../cloth_compiler/README.md)的 `NativeClothProbe.dll`、.NET 10 和 `mbtool.dll`；模拟本身无需 Blender、编辑器或游戏进程。源代码放共用工具，模型参数留在对应模组 `tools/`，正式模组检查输出留在该模组 `build/` 或 `reports/`。
 
@@ -43,6 +45,55 @@ Python 需要 NumPy、SciPy（示例和现有编译器）、Matplotlib。本机�
 
 其他动画系统可以提供 `--motion <文件.npz>`：`anchors` 为 `[帧数,模拟顶点数,3]`，可选 `capsules` 为 `[帧数,胶囊数,2,4]`，每端点是 `x,y,z,radius`。坐标统一为米、Z 向上，同一局部空间；顶点顺序必须对应布料 blob 中的模拟顶点顺序，不能直接使用渲染网格顺序。NPZ 模式不同时使用骨架/动画/XML 参数。未提供碰撞体时状态为 `incomplete`。
 
+## 接入模组制作与交付流程
+
+接入点是最终 TPAC、角色骨架、动作和碰撞体生成之后，打包与安装之前。共用 `tools/package_delivery.py` 自动执行启用的诊断；现有 `tools/install_release.ps1` 已调用该打包器，因此安装前会走同一检查。尚未配置或明确禁用的模组沿用现有流程；自动诊断须逐模组配置后启用。
+
+首次制作或返修某个布料模组时，在它自己的 `mod.json` 添加 `cloth_diagnostics`，用该模型实际资源名、路径、LOD、动作采样率设置检查范围。下面是字段示例，`OwnMod`、资源名和 `60` 采样率都需要替换，不是可直接套用的模型参数：
+
+```json
+"cloth_diagnostics": {
+  "enabled": true,
+  "mode": "report",
+  "probe": "build/cloth_probe/NativeClothProbe.dll",
+  "targets": [
+    {
+      "metamesh": "own_body",
+      "skeleton": "reports/final_skeleton.json",
+      "capsules": "module/OwnMod/ModuleData/cloth_bodies.xml",
+      "body": "own_collision",
+      "lods": [0],
+      "motions": [
+        {"name": "run", "path": "reports/run.json", "fps": 60},
+        {"name": "riding", "path": "reports/riding.json", "fps": 60}
+      ],
+      "settings": {"warmup": 30, "substeps": 2, "iterations": 3}
+    }
+  ]
+}
+```
+
+`metamesh` 使用英文字母、数字、下划线、点和连字符。`meshes` 可选，提供精确子网格名称列表；省略时检查指定 LOD 的全部已标记布料网格。缺失所选网格/LOD 会记录 `incomplete`。每个动作可用 `start`/`end` 限定源帧，但报告只覆盖配置范围。距离倍率从最终包读取，不需要手填。骨架、动作、XML、Probe 和 TPAC 路径必须位于当前模组内。动作速率应按对应 AnimationClip 的时长推导；尚未校准的假定速率需在模组说明中标明。
+
+正常打包/安装命令不变。若希望在打包前先检查，构建脚本可以在最终资源验证后调用：
+
+```powershell
+& 'C:/ProgramData/anaconda3/python.exe' -X utf8 tools/cloth_simulator/pipeline.py --mod OwnMod
+```
+
+单独诊断命令的退出码仍为 `0`（阈值内）、`1`（需要检查）、`2`（不完整或错误）。构建脚本使用报告模式时需读取汇总状态，不应将所有非零退出码统一忽略；打包器已实现此判读。`--force` 保留旧结果并生成新一轮诊断。`--project <模组目录>` 支持直接指定工程目录；源包展开后需先重建模块与 Probe，再运行 `workspace_tools/cloth_simulator/pipeline.py --project <源包目录>`。
+
+汇总写入模组 `reports/cloth_diagnostics.json`，分网格/动作结果写入 `build/cloth_simulator/` 的独立运行目录。最终 TPAC、Probe 及其同目录依赖、模组配置、骨架、动作、碰撞体、运行工具代码、Python/NumPy 版本组成指纹；相同输入复用结果，输入变化或缓存文件缺失/损坏会重新模拟。旧运行目录保留。模拟中输入变化会标记错误并阻止交付。
+
+两种模式：
+
+- `report`（默认）：`needs_review` 和 `incomplete` 保留明确提示，允许继续交付，避免把未校准的近似模拟当作游戏验收；读取、提取或求解错误仍阻止交付。
+- `strict`：必须 `within_thresholds` 才能打包/安装。它只要求当前离线代理阈值通过，不提高游戏验证等级。
+
+当前代理映射布料标记为 `incomplete`，不会把代理网格模拟冒充最终渲染网格验证。纯蒙皮或未配置模组不会自动猜测并启用布料。
+
+源 ZIP 自动收集汇总、每个案例的详细报告和两张最差帧 PNG、配置和所需骨架/动作/碰撞体，以及共用诊断源码。完整回放和 NPZ 轨迹留在本地缓存，避免每次源包带入大量帧数据。运行模块 ZIP 不加入诊断文件。`--check-only` 对已启用模组也可能生成/更新诊断缓存和报告，但不写 ZIP、不安装资源；第二次打包/安装检查会复用相同输入的结果。
+
 ## 输出与判读
 
 | 输出 | 用途 |
@@ -75,3 +126,5 @@ Python 需要 NumPy、SciPy（示例和现有编译器）、Matplotlib。本机�
 ## 当前验证范围
 
 实现验证及带日期的原包试跑记录见[2026-10-13 检查报告](reports/2026-10-13-validation.json)。这些是工具检查，不更改任何模组的游戏验收状态。此工具不生成或安装新的模组包。
+
+共用流程接入的隔离测试见[2026-10-13 流程检查报告](reports/2026-10-13-pipeline-validation.json)。流程接入不修改模组版本或游戏验收报告。

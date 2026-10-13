@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-13",
+  "scope": "shared workflow integration, isolated procedural mod fixtures",
+  "status": "pass",
+  "game_solver_used": false,
+  "game_verified": false,
+  "existing_mod_configuration_changed": false,
+  "game_or_installed_module_modified": false,
+  "pipeline_tests": {
+    "command": "C:/ProgramData/anaconda3/python.exe -X utf8 tools/cloth_simulator/test_pipeline.py",
+    "passed": 9,
+    "failed": 0,
+    "extraction": "procedural final-data fixture substitutes TPAC extraction",
+    "simulation": "real CPU simulator subprocess; no game process",
+    "checks": [
+      "Unconfigured mod and check-only do not run diagnostics or create caches/archives",
+      "Same input reuses report; changed animation or corrupted artifact recomputes and retains earlier runs",
+      "Packaging and check-only invoke diagnostics; Source ZIP includes reports, PNGs, inputs and runtime sources without duplicate entries; Mod ZIP bytes unchanged",
+      "Report mode allows needs_review; strict mode rejects it before writing archives",
+      "Mapped cloth is incomplete, not a passed direct-render simulation",
+      "Missing configured mesh selection is incomplete",
+      "Extraction failure writes error summary and blocks archive creation",
+      "Paths outside the target mod are rejected",
+      "Input changed during simulation is marked error and cannot be accepted"
+    ]
+  },
+  "solver_regression": {
+    "command": "C:/ProgramData/anaconda3/python.exe -X utf8 tools/cloth_simulator/test_solver.py",
+    "passed": 8,
+    "failed": 0
+  },
+  "existing_project_compatibility": {
+    "mod": "YueQingShuRace",
+    "version": "v0.3.3",
+    "command": "tools/package_delivery.py --mod YueQingShuRace --version v0.3.3 --check-only",
+    "result": "package inputs valid; no archives written; diagnostics not enabled"
+  },
+  "integration_points": [
+    "tools/package_delivery.py before check-only return or ZIP creation",
+    "tools/install_release.ps1 through existing calls to package_delivery.py",
+    "explicit tools/cloth_simulator/pipeline.py call after final TPAC validation"
+  ],
+  "limits": [
+    "No existing mod opted in during this task",
+    "Real native TPAC extraction is covered by the earlier standalone tool report, not substituted fixture integration tests",
+    "Mapped simulation remains unsupported",
+    "Approximate diagnostic thresholds do not establish game validation"
+  ]
+}
