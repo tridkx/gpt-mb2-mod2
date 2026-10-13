@@ -1,0 +1,499 @@
+{
+  "version": "v0.1.0",
+  "status": "pass",
+  "check_scope": "offline_structural_and_native_motion_checks",
+  "final_package_sha256": "e7397a85b96ceecf9cc77157a3e691f321e88fa3501ec4395a157bff8d7ac18a",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; input hashes provide geometry baseline",
+  "registration": {
+    "status": "pass",
+    "race": "boru_race",
+    "changed_troops": [],
+    "unaffected_troops": 548,
+    "troop_overrides_present": false,
+    "added_test_troops": [
+      "boru_race_test"
+    ],
+    "skin_variants": 10,
+    "skeleton": "boru_race_skeleton",
+    "native_monster_dimensions_preserved": true,
+    "native_ui_actions_inherited": true,
+    "cloth_simulation": false
+  },
+  "lods": [
+    {
+      "lod": 0,
+      "vertices": 24581,
+      "triangles": 32743,
+      "submeshes": 9
+    },
+    {
+      "lod": 1,
+      "vertices": 20045,
+      "triangles": 26851,
+      "submeshes": 9
+    },
+    {
+      "lod": 2,
+      "vertices": 17499,
+      "triangles": 23883,
+      "submeshes": 9
+    },
+    {
+      "lod": 3,
+      "vertices": 15462,
+      "triangles": 21508,
+      "submeshes": 9
+    }
+  ],
+  "seams": [
+    {
+      "lod": 0,
+      "shared_points": 0,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 1,
+      "shared_points": 0,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 2,
+      "shared_points": 0,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 3,
+      "shared_points": 0,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "asset": "anim_inventory_idle",
+      "frames_checked": 16,
+      "total_frames": 1268,
+      "worst_frame": 507,
+      "worst_mesh": "boru_race_cloth_mesh",
+      "max_edge_extension": 2.024500064563732,
+      "max_mesh_p99_extension": 1.2711705711063022,
+      "meshes": [
+        {
+          "name": "boru_race_skin_mesh",
+          "max_extension": 1.7407459160680403,
+          "p99_extension": 1.2711705711063022
+        },
+        {
+          "name": "boru_race_lashes_mesh",
+          "max_extension": 1.0000004092185666,
+          "p99_extension": 1.0000003879074573
+        },
+        {
+          "name": "boru_race_mouth_mesh",
+          "max_extension": 1.000000430655456,
+          "p99_extension": 1.0000003551427565
+        },
+        {
+          "name": "boru_race_sclera_mesh",
+          "max_extension": 1.0000003617222744,
+          "p99_extension": 1.000000302240928
+        },
+        {
+          "name": "boru_race_eyes_mesh",
+          "max_extension": 1.00000037580561,
+          "p99_extension": 1.000000311174995
+        },
+        {
+          "name": "boru_race_accessory_mesh",
+          "max_extension": 1.0226346880216697,
+          "p99_extension": 1.0226346880216697
+        },
+        {
+          "name": "boru_race_glass_mesh",
+          "max_extension": 1.000000345851402,
+          "p99_extension": 1.0000003399432953
+        },
+        {
+          "name": "boru_race_cloth_mesh",
+          "max_extension": 2.024500064563732,
+          "p99_extension": 1.1999057474886574
+        },
+        {
+          "name": "boru_race_hair_mesh",
+          "max_extension": 1.0000004612294418,
+          "p99_extension": 1.000000348907919
+        }
+      ]
+    },
+    {
+      "label": "run",
+      "asset": "anim_run_forward_unarmed",
+      "frames_checked": 25,
+      "total_frames": 26,
+      "worst_frame": 12,
+      "worst_mesh": "boru_race_cloth_mesh",
+      "max_edge_extension": 4.205094754451303,
+      "max_mesh_p99_extension": 1.4250726569917156,
+      "meshes": [
+        {
+          "name": "boru_race_skin_mesh",
+          "max_extension": 2.413762723883642,
+          "p99_extension": 1.3177670647944129
+        },
+        {
+          "name": "boru_race_lashes_mesh",
+          "max_extension": 1.0000004092185653,
+          "p99_extension": 1.0000003879074542
+        },
+        {
+          "name": "boru_race_mouth_mesh",
+          "max_extension": 1.0000004306554222,
+          "p99_extension": 1.000000355142734
+        },
+        {
+          "name": "boru_race_sclera_mesh",
+          "max_extension": 1.0000003617222715,
+          "p99_extension": 1.0000003022409354
+        },
+        {
+          "name": "boru_race_eyes_mesh",
+          "max_extension": 1.0000003758055533,
+          "p99_extension": 1.000000311175008
+        },
+        {
+          "name": "boru_race_accessory_mesh",
+          "max_extension": 1.011621209704793,
+          "p99_extension": 1.011621209704793
+        },
+        {
+          "name": "boru_race_glass_mesh",
+          "max_extension": 1.0000003458513989,
+          "p99_extension": 1.0000003399432982
+        },
+        {
+          "name": "boru_race_cloth_mesh",
+          "max_extension": 4.205094754451303,
+          "p99_extension": 1.4250726569917156
+        },
+        {
+          "name": "boru_race_hair_mesh",
+          "max_extension": 1.0000004612294409,
+          "p99_extension": 1.000000348907917
+        }
+      ]
+    },
+    {
+      "label": "bow",
+      "asset": "anim_bow",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 89,
+      "worst_mesh": "boru_race_cloth_mesh",
+      "max_edge_extension": 5.453180944321893,
+      "max_mesh_p99_extension": 1.4970883176819736,
+      "meshes": [
+        {
+          "name": "boru_race_skin_mesh",
+          "max_extension": 3.0712388848514327,
+          "p99_extension": 1.4970883176819736
+        },
+        {
+          "name": "boru_race_lashes_mesh",
+          "max_extension": 1.0000004092185784,
+          "p99_extension": 1.0000003879074624
+        },
+        {
+          "name": "boru_race_mouth_mesh",
+          "max_extension": 1.0000004306554457,
+          "p99_extension": 1.0000003551427565
+        },
+        {
+          "name": "boru_race_sclera_mesh",
+          "max_extension": 1.00000036172228,
+          "p99_extension": 1.0000003022409352
+        },
+        {
+          "name": "boru_race_eyes_mesh",
+          "max_extension": 1.0000003758055604,
+          "p99_extension": 1.000000311175014
+        },
+        {
+          "name": "boru_race_accessory_mesh",
+          "max_extension": 1.0662861685937792,
+          "p99_extension": 1.0662861685937792
+        },
+        {
+          "name": "boru_race_glass_mesh",
+          "max_extension": 1.0000003458514013,
+          "p99_extension": 1.0000003399432993
+        },
+        {
+          "name": "boru_race_cloth_mesh",
+          "max_extension": 5.453180944321893,
+          "p99_extension": 1.4937187184899638
+        },
+        {
+          "name": "boru_race_hair_mesh",
+          "max_extension": 1.0000004612294466,
+          "p99_extension": 1.0000003489079188
+        }
+      ]
+    },
+    {
+      "label": "riding",
+      "asset": "anim_rider_gallop_bow",
+      "frames_checked": 20,
+      "total_frames": 21,
+      "worst_frame": 8,
+      "worst_mesh": "boru_race_cloth_mesh",
+      "max_edge_extension": 3.7907152970184166,
+      "max_mesh_p99_extension": 1.707182835309613,
+      "meshes": [
+        {
+          "name": "boru_race_skin_mesh",
+          "max_extension": 3.2525894813430587,
+          "p99_extension": 1.5219769618647911
+        },
+        {
+          "name": "boru_race_lashes_mesh",
+          "max_extension": 1.0000004092185713,
+          "p99_extension": 1.000000387907457
+        },
+        {
+          "name": "boru_race_mouth_mesh",
+          "max_extension": 1.000000430655429,
+          "p99_extension": 1.0000003551427339
+        },
+        {
+          "name": "boru_race_sclera_mesh",
+          "max_extension": 1.0000003617222784,
+          "p99_extension": 1.0000003022409343
+        },
+        {
+          "name": "boru_race_eyes_mesh",
+          "max_extension": 1.0000003758055538,
+          "p99_extension": 1.0000003111749955
+        },
+        {
+          "name": "boru_race_accessory_mesh",
+          "max_extension": 1.0324603211117944,
+          "p99_extension": 1.0324603211117944
+        },
+        {
+          "name": "boru_race_glass_mesh",
+          "max_extension": 1.0000003458513993,
+          "p99_extension": 1.000000339943304
+        },
+        {
+          "name": "boru_race_cloth_mesh",
+          "max_extension": 3.7907152970184166,
+          "p99_extension": 1.707182835309613
+        },
+        {
+          "name": "boru_race_hair_mesh",
+          "max_extension": 1.0000004612294415,
+          "p99_extension": 1.0000003489079177
+        }
+      ]
+    },
+    {
+      "label": "slash",
+      "asset": "anim_dagger_slashleft_1h_balance",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 54,
+      "worst_mesh": "boru_race_cloth_mesh",
+      "max_edge_extension": 5.062433529786584,
+      "max_mesh_p99_extension": 1.5257037987206132,
+      "meshes": [
+        {
+          "name": "boru_race_skin_mesh",
+          "max_extension": 2.42853247130464,
+          "p99_extension": 1.4222122061664508
+        },
+        {
+          "name": "boru_race_lashes_mesh",
+          "max_extension": 1.0000004092185715,
+          "p99_extension": 1.0000003879074546
+        },
+        {
+          "name": "boru_race_mouth_mesh",
+          "max_extension": 1.0000004306554406,
+          "p99_extension": 1.0000003551427374
+        },
+        {
+          "name": "boru_race_sclera_mesh",
+          "max_extension": 1.0000003617222717,
+          "p99_extension": 1.0000003022409345
+        },
+        {
+          "name": "boru_race_eyes_mesh",
+          "max_extension": 1.0000003758055653,
+          "p99_extension": 1.0000003111750078
+        },
+        {
+          "name": "boru_race_accessory_mesh",
+          "max_extension": 1.029545806355792,
+          "p99_extension": 1.029545806355792
+        },
+        {
+          "name": "boru_race_glass_mesh",
+          "max_extension": 1.0000003458514,
+          "p99_extension": 1.0000003399432988
+        },
+        {
+          "name": "boru_race_cloth_mesh",
+          "max_extension": 5.062433529786584,
+          "p99_extension": 1.5257037987206132
+        },
+        {
+          "name": "boru_race_hair_mesh",
+          "max_extension": 1.0000004612294462,
+          "p99_extension": 1.000000348907919
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "boru_race_tex_0",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "boru_race_tex_1",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "boru_race_tex_10",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "boru_race_tex_11",
+      "mips": 11,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "boru_race_tex_12",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "boru_race_tex_13",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "boru_race_tex_14",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "boru_race_tex_15",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "boru_race_tex_16",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "boru_race_tex_17",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "boru_race_tex_18",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "boru_race_tex_2",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "boru_race_tex_3",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "boru_race_tex_4",
+      "mips": 11,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "boru_race_tex_5",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "boru_race_tex_6",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "boru_race_tex_7",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "boru_race_tex_8",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "boru_race_tex_9",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    }
+  ],
+  "gross_motion_tear_guard_max_extension": 6.0,
+  "metadata_audit": "pass",
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "limitations": [
+    "Fixed appearance; hair and clothes use skeletal skinning without physics. Source diffuse/normal and body ORM retained; unavailable cloth controls and untextured accessory parameters use documented conservative fallbacks.",
+    "Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.",
+    "No facial animation or face/body customization support."
+  ],
+  "integrated_hands_all_lods": true,
+  "cloth_enabled": false,
+  "body_metamesh": "boru_race_body",
+  "hidden_placeholder_triangles": 4,
+  "source_proportions_preserved": true,
+  "custom_skeleton_bones": 28,
+  "source_validation": "reports/source_validation.json",
+  "proportion_uv_validation": "reports/preservation_validation.json",
+  "ui_scope_validation": "reports/ui_scope_validation.json",
+  "date": "2026-10-13",
+  "game_version": "v1.4.8",
+  "source_input_sha256": "95e1ccd4c35d7b3588e3cd8431ac5421bd363d7f0d258e78526da510cf969868"
+}

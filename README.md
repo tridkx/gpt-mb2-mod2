@@ -12,6 +12,7 @@
 | [Zhenwu Collection](mods/ZhenwuCollection/README.md) | 真武少女八套装备 |
 | [Beauty Banners](mods/BeautyBanners/README.md) | 九款彩色旗徽 |
 | [BoRu Modern](mods/BoRuModern/README.md) | 孟柏汝现代衣装 |
+| [BoRu Race](mods/BoRuRace/README.md) | 孟柏汝去脚版完整人物固定外观种族与独立女性测试兵种 |
 | [Hanfu Blue Red](mods/HanfuBlueRed/README.md) | 蓝红汉服少女 |
 | [Resident Evil](mods/ResidentEvil/README.md) | 系列工程入口，包含艾达王默认服装装备与固定外观种族 |
 | [仙剑奇侠传七](mods/Xianjian7Race/README.md) | 独立角色种族资源：月清疏两套、白茉晴两套；白茉晴第二套为无帽版 |

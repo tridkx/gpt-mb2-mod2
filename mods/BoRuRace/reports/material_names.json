@@ -1,0 +1,210 @@
+{
+  "boru_race_skin": {
+    "name": "boru_race_skin",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "boru_race_tex_2",
+      "1": "boru_race_tex_3",
+      "2": "boru_race_tex_3",
+      "4": "boru_race_tex_4"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "boru_race_cloth": {
+    "name": "boru_race_cloth",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "boru_race_tex_5",
+      "1": "boru_race_tex_6",
+      "2": "boru_race_tex_6",
+      "4": "boru_race_tex_7"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "boru_race_hair": {
+    "name": "boru_race_hair",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "boru_race_tex_8",
+      "1": "boru_race_tex_9",
+      "2": "boru_race_tex_9",
+      "4": "boru_race_tex_10"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "alphaTest": 0.25
+  },
+  "boru_race_eyes": {
+    "name": "boru_race_eyes",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "boru_race_tex_11",
+      "1": "boru_race_tex_0",
+      "2": "boru_race_tex_0",
+      "4": "boru_race_tex_12"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "boru_race_sclera": {
+    "name": "boru_race_sclera",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "boru_race_tex_13",
+      "1": "boru_race_tex_0",
+      "2": "boru_race_tex_0",
+      "4": "boru_race_tex_12"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "boru_race_lashes": {
+    "name": "boru_race_lashes",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "boru_race_tex_14",
+      "1": "boru_race_tex_0",
+      "2": "boru_race_tex_0",
+      "4": "boru_race_tex_4"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "alphaTest": 0.25
+  },
+  "boru_race_mouth": {
+    "name": "boru_race_mouth",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "boru_race_tex_2",
+      "1": "boru_race_tex_3",
+      "2": "boru_race_tex_3",
+      "4": "boru_race_tex_4"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "boru_race_glass": {
+    "name": "boru_race_glass",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "boru_race_tex_15",
+      "1": "boru_race_tex_0",
+      "2": "boru_race_tex_0",
+      "4": "boru_race_tex_16"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "blendMode": "factor",
+    "alphaTest": 0,
+    "flags": [
+      "two_sided",
+      "alpha_blend_sort"
+    ]
+  },
+  "boru_race_accessory": {
+    "name": "boru_race_accessory",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "boru_race_tex_17",
+      "1": "boru_race_tex_0",
+      "2": "boru_race_tex_0",
+      "4": "boru_race_tex_18"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}

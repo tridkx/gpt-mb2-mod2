@@ -1,0 +1,80 @@
+{
+  "status": "pass",
+  "uniform_scale": 0.01,
+  "rotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "anatomy_warp": false,
+  "source_triangles": 32743,
+  "parts": [
+    {
+      "part": "boru_race_skin_mesh",
+      "source_error_m": 5.7220459037665705e-08,
+      "final_lod0_error_m": 6.398066525262366e-08,
+      "position_uv_error": 0.0
+    },
+    {
+      "part": "boru_race_lashes_mesh",
+      "source_error_m": 5.7220459037665705e-08,
+      "final_lod0_error_m": 5.7263322626684775e-08,
+      "position_uv_error": 0.0
+    },
+    {
+      "part": "boru_race_mouth_mesh",
+      "source_error_m": 5.7220459037665705e-08,
+      "final_lod0_error_m": 5.725425800520308e-08,
+      "position_uv_error": 0.0
+    },
+    {
+      "part": "boru_race_sclera_mesh",
+      "source_error_m": 5.7220459037665705e-08,
+      "final_lod0_error_m": 5.726778170010989e-08,
+      "position_uv_error": 0.0
+    },
+    {
+      "part": "boru_race_eyes_mesh",
+      "source_error_m": 5.7220459037665705e-08,
+      "final_lod0_error_m": 5.7248585827586946e-08,
+      "position_uv_error": 5.3085386753082275e-08
+    },
+    {
+      "part": "boru_race_accessory_mesh",
+      "source_error_m": 5.245208734017126e-08,
+      "final_lod0_error_m": 5.866214519567878e-08,
+      "position_uv_error": 0.0
+    },
+    {
+      "part": "boru_race_glass_mesh",
+      "source_error_m": 5.7220459037665705e-08,
+      "final_lod0_error_m": 5.724296157522868e-08,
+      "position_uv_error": 0.0
+    },
+    {
+      "part": "boru_race_cloth_mesh",
+      "source_error_m": 5.7220459037665705e-08,
+      "final_lod0_error_m": 6.404379712208683e-08,
+      "position_uv_error": 0.0
+    },
+    {
+      "part": "boru_race_hair_mesh",
+      "source_error_m": 5.7220459037665705e-08,
+      "final_lod0_error_m": 5.768501066641059e-08,
+      "position_uv_error": 0.0
+    }
+  ],
+  "uv_exception": "Eye UV projected to supplied iris disc; all other UV retained"
+}

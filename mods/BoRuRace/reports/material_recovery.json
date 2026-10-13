@@ -1,0 +1,11 @@
+{
+  "body": "Original T_RoRu_Body_D/N/ORM; no global body opacity because its mask contains nontransparent coverage data.",
+  "cloth": "Original T_RoRu_2012Cloth_D and T_RoRu_Cloth_N; no matching 2012 ORM supplied, conservative dielectric fallback.",
+  "hair": "Original shared T_Hair_D/N with BoRu original opacity packed into diffuse alpha; no generated recoloring.",
+  "eyes": "Original iris disc placed in a sclera atlas; planar corneal UV prevents the pupil covering the entire eye. Flat normal and conservative gloss. Separate sclera and original-opacity lash cards.",
+  "mouth": "Body atlas wraps original U tile offset; original dedicated mouth shader not supplied.",
+  "glass": "Original 36-face lens mesh; neutral tint and 20 percent alpha matching original preview specification; shader appearance requires game check.",
+  "accessory": "Neutral gray for 10 untextured accessory faces; textured watch/frame pieces retain cloth atlas.",
+  "normal_convention": "Runtime DirectX maps retained; Blender preview flips green for its tangent convention.",
+  "orm_conversion": "Unreal [AO,roughness,metallic] to Bannerlord [metallic,1-roughness,AO]."
+}
