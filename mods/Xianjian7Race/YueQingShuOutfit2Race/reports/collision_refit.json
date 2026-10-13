@@ -1,0 +1,85 @@
+{
+  "adaptive_guard": {
+    "split_cells": 93,
+    "minimum_root_clearance_m": -0.004733694039411369
+  },
+  "thighs": [
+    {
+      "name": "l_thigh",
+      "sample_points": 7698,
+      "maximum_skin_distance_m": 0.0936085427628779,
+      "baseline_radius_m": 0.12896008126287253,
+      "radius_m": 0.0956085427628779,
+      "same_side_and_anatomical_filter": true
+    },
+    {
+      "name": "r_thigh",
+      "sample_points": 7713,
+      "maximum_skin_distance_m": 0.09360830406984068,
+      "baseline_radius_m": 0.12896014294829455,
+      "radius_m": 0.09560830406984068,
+      "same_side_and_anatomical_filter": true
+    }
+  ],
+  "shorts_guard_capsules": 125,
+  "shorts_surface_samples": 45183,
+  "sampling": "Triangle vertices, edges and interiors at barycentric subdivisions=4",
+  "source_geometry_weights_alpha_changed": false,
+  "waist_roots": {
+    "root_vertices": 78,
+    "waist_radius_before_m": 0.07112396702177463,
+    "waist_radius_m": 0.05297656780635393,
+    "minimum_root_axis_distance_m": 0.05397656780635393,
+    "full_decoded_cycles": true,
+    "covered_waist_is_proxy": true
+  },
+  "pose_envelope": {
+    "protected_vertices": 2432,
+    "full_cycles": [
+      {
+        "pose": "idle",
+        "frames_checked": 1267,
+        "sampling": "Every decoded non-bind frame, protected source vertices"
+      },
+      {
+        "pose": "ui_neutral_female",
+        "frames_checked": 2272,
+        "sampling": "Every decoded non-bind frame, protected source vertices"
+      },
+      {
+        "pose": "run",
+        "frames_checked": 25,
+        "sampling": "Every decoded non-bind frame, protected source vertices"
+      },
+      {
+        "pose": "bow",
+        "frames_checked": 150,
+        "sampling": "Every decoded non-bind frame, protected source vertices"
+      },
+      {
+        "pose": "riding",
+        "frames_checked": 20,
+        "sampling": "Every decoded non-bind frame, protected source vertices"
+      },
+      {
+        "pose": "slash",
+        "frames_checked": 150,
+        "sampling": "Every decoded non-bind frame, protected source vertices"
+      }
+    ],
+    "maximum_initial_body_outside_m": 0.002446234446014231,
+    "changes": [
+      {
+        "name": "l_thigh",
+        "added_radius_m": 0.006789616747522334,
+        "radius_m": 0.10239815951040024
+      },
+      {
+        "name": "r_thigh",
+        "added_radius_m": 0.005532000686229013,
+        "radius_m": 0.1011403047560697
+      }
+    ],
+    "scope": "Own hip/thigh skin and configured shorts vertex envelope; detailed surface coverage is checked separately"
+  }
+}

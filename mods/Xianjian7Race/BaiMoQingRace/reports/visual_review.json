@@ -15,5 +15,14 @@
     "Dynamic frames show skeletal references before cloth solving; leg/skirt intersections are not game acceptance.",
     "LOD3 close-up simplifies collar/folds and ornaments; assessed as distant silhouette.",
     "Final preview uses decoded diffuse and byte skin, not exact game lighting."
-  ]
+  ],
+  "version": "v0.1.1",
+  "collision_proxy_review": {
+    "comparison": "reports/collision_proxy_comparison.png",
+    "camera_consistent": true,
+    "skirts_settle_downward": true,
+    "protected_body_not_visibly_exposed_in_reviewed_pose": true,
+    "scope": "Static female UI idle, constrained CPU gravity; engine simulation remains unverified"
+  },
+  "unchanged_geometry_views_reused_from": "v0.1.0, verified all GPU geometry/UV/material/weights equal"
 }

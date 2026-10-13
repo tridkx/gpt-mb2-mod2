@@ -2,6 +2,7 @@ import sys
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from workspace_paths import workspace_root
+from refit_skirt_collision import pose_capsule
 """Check actual reduced vertices and change only their cloth alpha bytes."""
 import json,sys
 from pathlib import Path
@@ -13,6 +14,8 @@ from baker.skeleton import parse_skeljson
 from baker.animation import parse_animjson,skin_matrices,lbs
 rig=parse_skeljson({'bones':[dict(i=i,**bone) for i,bone in enumerate(json.loads((R/'build/skeleton_spec.json').read_text()))]})
 caps=json.loads((R/'reports/cloth_collision.json').read_text())['capsules'];rows=[]
+legacy_caps=json.loads((R/'reports/history/v0.1.0/cloth_collision.json').read_text())['capsules']
+cfg=json.loads((R/'tools/model_config.json').read_text(encoding='utf8'));allowed={r['object'] for r in json.loads((R/'build/manifest.json').read_text()) if r['material'] in cfg.get('calibrate_materials',[])}
 for row in json.loads((R/'build/geometry.json').read_text()):
     if not row.get('cloth'):continue
     blob=bytearray(Path(row['geometry']).read_bytes());_,nv,ni=np.frombuffer(blob,'<i4',3)
@@ -28,14 +31,12 @@ for label in ['idle','run','bow','riding','slash']:
     frames=range(max(1,anim['start']),anim['frames']) if label!='idle' else sorted(set(np.linspace(max(1,anim['start']),anim['frames']-1,32).astype(int))|set(np.linspace(max(1,anim['start']),anim['frames']-1,16).astype(int)))
     for frame in frames:
         skin=skin_matrices(rig,anim,frame);posed=[]
-        for cap in caps:
-            ab=[]
-            for point,bone in zip(cap['endpoints_m'],cap['bones']):
-                m=skin[rig['names'].index(bone)];ab.append(m[:3,:3]@point+m[:3,3])
+        for cap in caps+legacy_caps:
+            ab=pose_capsule(cap,skin,rig['names'])
             posed.append((ab,cap['radius_m']))
         for row in rows:
             ids=row['ids'];p=lbs(row['p'][ids],row['bi'][ids],row['bw'][ids],skin)
-            for (start,end),radius in posed:
+            for (start,end),radius in (posed[:len(caps)] if row['row']['name'].split('.lod')[0] in allowed else posed[len(caps):]):
                 axis=end-start;t=np.clip((p-start)@axis/(axis@axis),0,1)
                 row['required']=np.maximum(row['required'],radius-np.linalg.norm(p-start-t[:,None]*axis,axis=1))
 source=np.load(R/'build/fitted_model.npz');paint=np.load(R/'build/cloth_alphas.npz');alphas={n:paint[n].copy() for n in paint.files};report=[]

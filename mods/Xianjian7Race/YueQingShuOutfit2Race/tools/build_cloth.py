@@ -25,13 +25,25 @@ for offset in [-.28,0,.28]:
 cap('back',at('spine1'),at('spine2'),hipwidth*.38,'spine1','spine2')
 cap('neck',neck,head,bodyheight*.016,'neck','head')
 a=head.copy();b=head.copy();b[2]+=bodyheight*.065;cap('head',a,b,bodyheight*.037,'head','head')
+if cfg.get('collision_refit'):
+ from refit_skirt_collision import fit,fit_pose_envelope,fit_waist_roots
+ fitting=fit(caps,source,manifest,transfer,cfg,R)
+ fitting['waist_roots']=fit_waist_roots(caps,source,manifest,transfer,cfg,R)
+ fitting['pose_envelope']=fit_pose_envelope(caps,source,manifest,transfer,cfg,R)
+ (R/'reports/collision_refit.json').write_text(json.dumps(fitting,indent=2))
 root=ET.Element('bodies');body=ET.SubElement(root,'body',name=prefix+'_collision',owner_skeleton=cfg['skeleton']);container=ET.SubElement(body,'capsules')
 for row in caps:
- a,b=np.array(row['endpoints_m']);u=b-a;length=np.linalg.norm(u);u/=length;v=np.cross(u,[0,1,0]);v/=np.linalg.norm(v);t=np.cross(v,u);frame=np.eye(4);frame[:3,:3]=[u,t,v];frame[3,:3]=a
+ a,b=np.array(row['endpoints_m']);u=b-a;length=np.linalg.norm(u);u/=length;v=np.cross(u,[1,0,0] if abs(u[1])>.9 else [0,1,0]);v/=np.linalg.norm(v);t=np.cross(v,u);frame=np.eye(4);frame[:3,:3]=[u,t,v];frame[3,:3]=a
  node=ET.SubElement(container,'capsule',name=prefix+'_'+row['name'],length=f'{length:.6f}',origin='0, 0, 0',frame=', '.join(f'{x:.6f}' for x in frame.ravel()));points=ET.SubElement(node,'points')
- for bone in row['bones']:point=ET.SubElement(points,'point',radius=f"{row['radius_m']:.6f}");ET.SubElement(ET.SubElement(point,'bones'),'bone',name=bone,weight='1.0')
+ for i,bone in enumerate(row['bones']):
+  point=ET.SubElement(points,'point',radius=f"{row['radius_m']:.6f}");bones=ET.SubElement(point,'bones')
+  influences=row.get('endpoint_weights',[[dict(bone=b,weight=1.)] for b in row['bones']])[i]
+  assert 1<=len(influences)<=2 and abs(sum(v['weight'] for v in influences)-1)<1e-6
+  for influence in influences:ET.SubElement(bones,'bone',name=influence['bone'],weight=f"{influence['weight']:.9f}")
 ET.indent(root,space='  ');ET.ElementTree(root).write(R/'module'/cfg['id']/'ModuleData/cloth_bodies.xml',encoding='utf8',xml_declaration=True)
-(R/'reports/cloth_collision.json').write_text(json.dumps(dict(capsules=caps,engine_verified=False,scope='Source joints and visible-skin fitting; covered torso collision uses dimension-scaled proxies'),indent=2))
+(R/'reports/cloth_collision.json').write_text(json.dumps(dict(capsules=caps,engine_verified=False,scope='Same-side anatomical thigh surfaces; model-specific shorts guard where configured; remaining covered torso uses retained dimension-scaled proxies'),indent=2))
+if cfg.get('collision_refit',{}).get('shorts_guard'):
+ run([sys.executable,R/'tools/verify_skirt_surface.py','--fit'])
 if '--collision-only' in sys.argv:sys.exit(0)
 for project,folder in [('NativeClothProbe','cloth_probe'),('ClothPatch','cloth_patch')]:run(['dotnet','build',C/(project+'.csproj'),'--ignore-failed-sources','-p:BaseIntermediateOutputPath='+str(B/'cloth_obj'/project)+'/','-o',B/folder])
 (B/'cloth_inputs').mkdir(exist_ok=True)

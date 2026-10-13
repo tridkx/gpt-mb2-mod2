@@ -1,0 +1,32 @@
+{
+  "proxy_limits": {
+    "fixed_root_overlap_m": 0.006,
+    "maximum_residual_m": 0.015,
+    "p99_residual_m": 0.005,
+    "minimum_mean_pressure_reduction": 0.2
+  },
+  "status": "pass",
+  "version": "v0.1.1",
+  "final_package_sha256": "ccde46e5b3dd4b79f4e49ad46a2001dd5bf25d0a95f916a3f1db15138e928dd7",
+  "baseline_version": "v0.1.0",
+  "rows": [
+    {
+      "mesh": "yqs2_part_03.b2",
+      "baseline_initial_mean_overlap_m": 0.02734201863856917,
+      "initial_mean_overlap_m": 0.018564861520334305,
+      "baseline_initial_max_overlap_m": 0.12026540178221662,
+      "initial_max_overlap_m": 0.09676023170576739,
+      "fixed_root_max_overlap_m": 0.0037446351018410786,
+      "fixed_root_drift_m": 0.0,
+      "max_settled_residual_m": 0.01204841925968235,
+      "p99_settled_residual_m": 0.004594028437241649,
+      "baseline_mean_vertical_change_m": -0.0892639798288224,
+      "mean_vertical_change_m": -0.08657829616018739,
+      "baseline_raised_fraction": 0.03533026113671275,
+      "raised_fraction": 0.03225806451612903,
+      "travel_clamped": true
+    }
+  ],
+  "scope": "Final compiled constraints, actual female UI idle frame, 120 gravity steps at 60Hz/10 Jacobi iterations, fixed roots never projected; a CPU diagnostic, not Bannerlord cloth simulation",
+  "game_solver_used": false
+}

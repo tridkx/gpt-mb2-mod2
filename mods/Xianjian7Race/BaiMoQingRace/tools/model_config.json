@@ -3,7 +3,7 @@
   "race": "bmq_default",
   "prefix": "bmq",
   "skeleton": "bmq_skeleton",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "title": "Bai Mo Qing Race",
   "source_blend": "input/original/01_默认套装_MAJ03_01.blend",
   "source_origin": "D:\\dsh-xianjian7\\output\\白茉晴_BaiMoQing\\01_默认套装_MAJ03_01",
@@ -88,5 +88,17 @@
       "travel_slope": 0.65,
       "max_travel_m": 0.38
     }
-  ]
+  ],
+  "baseline_version": "v0.1.0",
+  "baseline_package_sha256": "9e58b5ddadefacb24c0194ad8595a344a392f28c8f7b497abf471e86f871d607",
+  "collision_refit": {
+    "skin_clearance_m": 0.002
+  },
+  "skirt_proxy_limits": {
+    "fixed_root_overlap_m": 0.006,
+    "maximum_residual_m": 0.015,
+    "p99_residual_m": 0.005,
+    "minimum_mean_pressure_reduction": 0.2,
+    "sampled_pose_fixed_root_overlap_m": 0.007
+  }
 }

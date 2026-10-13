@@ -1,10 +1,10 @@
 {
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "status": "pass",
   "check_scope": "offline_structural_and_native_motion_checks",
-  "final_package_sha256": "667ebedc7e43ea05fdeb0ba14a2b108923b0bc0bdf6700cc8d456523f234e867",
-  "baseline_package_sha256": null,
-  "baseline_reason": "Initial release; source hashes recorded in input_hashes.json",
+  "final_package_sha256": "ccde46e5b3dd4b79f4e49ad46a2001dd5bf25d0a95f916a3f1db15138e928dd7",
+  "baseline_package_sha256": "667ebedc7e43ea05fdeb0ba14a2b108923b0bc0bdf6700cc8d456523f234e867",
+  "baseline_reason": "User-tested v0.1.0; skirt collision repair",
   "registration": {
     "status": "pass",
     "race": "yqs2_outfit2",
@@ -677,6 +677,8 @@
   "hidden_placeholder_triangles": 4,
   "source_proportions_preserved": true,
   "custom_skeleton_bones": 28,
+  "cloth_collision_xml_sha256": "faa98ae792f8123e847d98b53d42875613dbfc9936a06db7b2f9ac45fc05469d",
+  "current_game_acceptance": "pending skirt retest",
   "source_validation": {
     "status": "pass",
     "blend_reopened": true,
@@ -741,7 +743,7 @@
   "cloth_validation": {
     "status": "pass",
     "travel_shortfall_tolerance_m": 0.005,
-    "final_package_sha256": "667ebedc7e43ea05fdeb0ba14a2b108923b0bc0bdf6700cc8d456523f234e867",
+    "final_package_sha256": "ccde46e5b3dd4b79f4e49ad46a2001dd5bf25d0a95f916a3f1db15138e928dd7",
     "cooked_meshes": [
       {
         "mesh": "yqs2_part_11.lod2",
@@ -765,7 +767,7 @@
         "stretch_constraints": 1074,
         "bend_constraints": 945,
         "root_fixes": [],
-        "sha256": "d308f1c9612756f5f59a0e887ac2b7210fafec9504b21d275cd3807d27716804"
+        "sha256": "e57b71e312f57f132d16d7f6ca3e724b685e8afe2fbcc43a330109d48e5a0c82"
       },
       {
         "mesh": "yqs2_part_03.lod2",
@@ -777,7 +779,7 @@
         "stretch_constraints": 2448,
         "bend_constraints": 2355,
         "root_fixes": [],
-        "sha256": "45a674d4c1c0ae0f9681e7e480ff81e41c05fa0edb9c497e70cdcae828cf0bbb"
+        "sha256": "1815a974915a919e08207025541c0e1e4735dcf7b00ef67469b2db08423dc679"
       },
       {
         "mesh": "yqs2_part_03.lod1",
@@ -789,7 +791,7 @@
         "stretch_constraints": 3885,
         "bend_constraints": 3854,
         "root_fixes": [],
-        "sha256": "f4f47add2ed7167417775cd743456b6169c935f2f00347f08a08e276a202fc56"
+        "sha256": "a4f56abc989605df5f52b8ce092d77ff191ecc49c779fc33942d337d834167b4"
       },
       {
         "mesh": "yqs2_part_11",
@@ -873,7 +875,7 @@
         "stretch_constraints": 5123,
         "bend_constraints": 5140,
         "root_fixes": [],
-        "sha256": "851ee59b9419eb19cd9ff5b6bf54a285866b619bedfcbf7d242c815e16b8cdb1"
+        "sha256": "caf20e36c6499c3b3d92b56fd03e9bc3ead63c9cb2e79cf2aafa230d57e86b52"
       },
       {
         "mesh": "yqs2_part_10.lod2",
@@ -893,44 +895,44 @@
         "pose": "rest",
         "frames": 1,
         "preview_frame": 0,
-        "max_reference_capsule_overlap_m": 0.06938499524157453,
+        "max_reference_capsule_overlap_m": 0.06611817612637218,
         "max_travel_shortfall_m": 0,
         "finite": true,
         "worst_by_mesh": {
           "yqs2_part_11.lod2": {
             "shortfall_m": 0.0,
             "frame": 0,
-            "overlap_m": 0.01932783714360367,
+            "overlap_m": 0.0050192461305021835,
             "worst_capsule": ""
           },
           "yqs2_part_03.lod3": {
             "shortfall_m": 0.0,
             "frame": 0,
-            "overlap_m": 0.06875141222039222,
-            "worst_capsule": "pelvis_0"
+            "overlap_m": 0.05565345269797628,
+            "worst_capsule": "shorts_8_5bab"
           },
           "yqs2_part_03.lod2": {
             "shortfall_m": 0.0,
             "frame": 0,
-            "overlap_m": 0.06938499524157453,
-            "worst_capsule": "pelvis_0"
+            "overlap_m": 0.05798277651851367,
+            "worst_capsule": "shorts_4_5bbbb"
           },
           "yqs2_part_03.lod1": {
             "shortfall_m": 0.0,
             "frame": 0,
-            "overlap_m": 0.06938499524157453,
-            "worst_capsule": "pelvis_0"
+            "overlap_m": 0.06611817612637218,
+            "worst_capsule": "shorts_9_5b"
           },
           "yqs2_part_11": {
             "shortfall_m": 0.0,
             "frame": 0,
-            "overlap_m": 0.01932783714360367,
+            "overlap_m": 0.0050192461305021835,
             "worst_capsule": ""
           },
           "yqs2_part_11.lod1": {
             "shortfall_m": 0.0,
             "frame": 0,
-            "overlap_m": 0.01932783714360367,
+            "overlap_m": 0.0050192461305021835,
             "worst_capsule": ""
           },
           "yqs2_part_10": {
@@ -948,7 +950,7 @@
           "yqs2_part_11.lod3": {
             "shortfall_m": 0.0,
             "frame": 0,
-            "overlap_m": 0.01932783714360367,
+            "overlap_m": 0.0050192461305021835,
             "worst_capsule": ""
           },
           "yqs2_part_10.lod3": {
@@ -960,8 +962,8 @@
           "yqs2_part_03.b2": {
             "shortfall_m": 0.0,
             "frame": 0,
-            "overlap_m": 0.06938499524157453,
-            "worst_capsule": "pelvis_0"
+            "overlap_m": 0.06611817612637218,
+            "worst_capsule": "shorts_9_5b"
           },
           "yqs2_part_10.lod2": {
             "shortfall_m": 0.0,
@@ -975,44 +977,44 @@
         "pose": "run",
         "frames": 25,
         "preview_frame": 1,
-        "max_reference_capsule_overlap_m": 0.12768037213829656,
+        "max_reference_capsule_overlap_m": 0.10151960054211737,
         "max_travel_shortfall_m": 0,
         "finite": true,
         "worst_by_mesh": {
           "yqs2_part_11.lod2": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.06319786836934987,
+            "overlap_m": 0.039378069174809974,
             "worst_capsule": ""
           },
           "yqs2_part_03.lod3": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.11237956638406832,
-            "worst_capsule": ""
+            "overlap_m": 0.08347153586638789,
+            "worst_capsule": "shorts_9_5b"
           },
           "yqs2_part_03.lod2": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.11130515205632538,
-            "worst_capsule": "pelvis_0.28"
+            "overlap_m": 0.08409534236778989,
+            "worst_capsule": "shorts_9_5b"
           },
           "yqs2_part_03.lod1": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.11130515205632538,
-            "worst_capsule": "pelvis_0.28"
+            "overlap_m": 0.08975305823087511,
+            "worst_capsule": "shorts_9_5b"
           },
           "yqs2_part_11": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.06319786836934987,
+            "overlap_m": 0.039378069174809974,
             "worst_capsule": ""
           },
           "yqs2_part_11.lod1": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.06319786836934987,
+            "overlap_m": 0.039378069174809974,
             "worst_capsule": ""
           },
           "yqs2_part_10": {
@@ -1030,7 +1032,7 @@
           "yqs2_part_11.lod3": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.06319786836934987,
+            "overlap_m": 0.039378069174809974,
             "worst_capsule": ""
           },
           "yqs2_part_10.lod3": {
@@ -1042,8 +1044,8 @@
           "yqs2_part_03.b2": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.1231343407947557,
-            "worst_capsule": "pelvis_0.28"
+            "overlap_m": 0.09359790088578461,
+            "worst_capsule": "shorts_9_5b"
           },
           "yqs2_part_10.lod2": {
             "shortfall_m": 0.0,
@@ -1057,44 +1059,44 @@
         "pose": "idle",
         "frames": 16,
         "preview_frame": 1,
-        "max_reference_capsule_overlap_m": 0.10335377177103963,
+        "max_reference_capsule_overlap_m": 0.0730501994455946,
         "max_travel_shortfall_m": 0,
         "finite": true,
         "worst_by_mesh": {
           "yqs2_part_11.lod2": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.00861356564594945,
+            "overlap_m": 0.005888152846574363,
             "worst_capsule": ""
           },
           "yqs2_part_03.lod3": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.09262519252932756,
-            "worst_capsule": "pelvis_-0.28"
+            "overlap_m": 0.06045926622678617,
+            "worst_capsule": "shorts_8_5bab"
           },
           "yqs2_part_03.lod2": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.09310039995994902,
-            "worst_capsule": "pelvis_-0.28"
+            "overlap_m": 0.06097800140930135,
+            "worst_capsule": "shorts_6_5baba"
           },
           "yqs2_part_03.lod1": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.0930545200368687,
-            "worst_capsule": "pelvis_0"
+            "overlap_m": 0.06862761373811478,
+            "worst_capsule": "shorts_9_5b"
           },
           "yqs2_part_11": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.00861356564594945,
+            "overlap_m": 0.005888152846574363,
             "worst_capsule": ""
           },
           "yqs2_part_11.lod1": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.00861356564594945,
+            "overlap_m": 0.005888152846574363,
             "worst_capsule": ""
           },
           "yqs2_part_10": {
@@ -1112,7 +1114,7 @@
           "yqs2_part_11.lod3": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.00861356564594945,
+            "overlap_m": 0.005888152846574363,
             "worst_capsule": ""
           },
           "yqs2_part_10.lod3": {
@@ -1124,8 +1126,8 @@
           "yqs2_part_03.b2": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.09303320108315186,
-            "worst_capsule": "pelvis_0"
+            "overlap_m": 0.06862761373811478,
+            "worst_capsule": "shorts_9_5b"
           },
           "yqs2_part_10.lod2": {
             "shortfall_m": 0.0,
@@ -1139,44 +1141,44 @@
         "pose": "bow",
         "frames": 16,
         "preview_frame": 1,
-        "max_reference_capsule_overlap_m": 0.12427157990149591,
+        "max_reference_capsule_overlap_m": 0.09662202095329538,
         "max_travel_shortfall_m": 0,
         "finite": true,
         "worst_by_mesh": {
           "yqs2_part_11.lod2": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.003442551526536275,
+            "overlap_m": 0.0,
             "worst_capsule": ""
           },
           "yqs2_part_03.lod3": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.11658800893819803,
-            "worst_capsule": "pelvis_0"
+            "overlap_m": 0.0922565282345759,
+            "worst_capsule": "shorts_2_5bbbb"
           },
           "yqs2_part_03.lod2": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.11548258071593984,
-            "worst_capsule": "pelvis_0"
+            "overlap_m": 0.09206534013693032,
+            "worst_capsule": "shorts_6_5babbb"
           },
           "yqs2_part_03.lod1": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.11680508485520592,
-            "worst_capsule": "pelvis_0"
+            "overlap_m": 0.09211918386802184,
+            "worst_capsule": "shorts_9_5b"
           },
           "yqs2_part_11": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.003442551526536275,
+            "overlap_m": 0.0,
             "worst_capsule": ""
           },
           "yqs2_part_11.lod1": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.003442551526536275,
+            "overlap_m": 0.0,
             "worst_capsule": ""
           },
           "yqs2_part_10": {
@@ -1194,7 +1196,7 @@
           "yqs2_part_11.lod3": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.003442551526536275,
+            "overlap_m": 0.0,
             "worst_capsule": ""
           },
           "yqs2_part_10.lod3": {
@@ -1206,8 +1208,8 @@
           "yqs2_part_03.b2": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.11680508485520592,
-            "worst_capsule": "pelvis_0"
+            "overlap_m": 0.09219261183248431,
+            "worst_capsule": "shorts_9_5b"
           },
           "yqs2_part_10.lod2": {
             "shortfall_m": 0.0,
@@ -1221,80 +1223,80 @@
         "pose": "riding",
         "frames": 16,
         "preview_frame": 1,
-        "max_reference_capsule_overlap_m": 0.1279054232944451,
+        "max_reference_capsule_overlap_m": 0.10256022918303437,
         "max_travel_shortfall_m": 0,
         "finite": true,
         "worst_by_mesh": {
           "yqs2_part_11.lod2": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.0586622378516001,
+            "overlap_m": 0.05301885563869275,
             "worst_capsule": ""
           },
           "yqs2_part_03.lod3": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.11771688499334115,
-            "worst_capsule": ""
+            "overlap_m": 0.09877677209775064,
+            "worst_capsule": "shorts_1_4"
           },
           "yqs2_part_03.lod2": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.12200318226892996,
-            "worst_capsule": "l_thigh"
+            "overlap_m": 0.09747453165995831,
+            "worst_capsule": "shorts_2_4bbaa"
           },
           "yqs2_part_03.lod1": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.12200318226892996,
-            "worst_capsule": "l_thigh"
+            "overlap_m": 0.09957787455343219,
+            "worst_capsule": "shorts_2_4bbaa"
           },
           "yqs2_part_11": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.0586622378516001,
+            "overlap_m": 0.05301885563869275,
             "worst_capsule": ""
           },
           "yqs2_part_11.lod1": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.0586622378516001,
+            "overlap_m": 0.05301885563869275,
             "worst_capsule": ""
           },
           "yqs2_part_10": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.018284420051768203,
+            "overlap_m": 0.016511012099265518,
             "worst_capsule": ""
           },
           "yqs2_part_10.lod1": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.018284420051768203,
+            "overlap_m": 0.016511012099265518,
             "worst_capsule": ""
           },
           "yqs2_part_11.lod3": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.0586622378516001,
+            "overlap_m": 0.05301885563869275,
             "worst_capsule": ""
           },
           "yqs2_part_10.lod3": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.017677993030145805,
+            "overlap_m": 0.016561533969404345,
             "worst_capsule": ""
           },
           "yqs2_part_03.b2": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.11946522506232894,
-            "worst_capsule": ""
+            "overlap_m": 0.09957787455343219,
+            "worst_capsule": "shorts_2_4bbaa"
           },
           "yqs2_part_10.lod2": {
             "shortfall_m": 0.0,
             "frame": 1,
-            "overlap_m": 0.018284420051768203,
+            "overlap_m": 0.016270827110322232,
             "worst_capsule": ""
           }
         }
@@ -1303,44 +1305,44 @@
         "pose": "slash",
         "frames": 16,
         "preview_frame": 0,
-        "max_reference_capsule_overlap_m": 0.12682757571287326,
+        "max_reference_capsule_overlap_m": 0.10122109373985835,
         "max_travel_shortfall_m": 0,
         "finite": true,
         "worst_by_mesh": {
           "yqs2_part_11.lod2": {
             "shortfall_m": 0.0,
             "frame": 0,
-            "overlap_m": 0.019335467601778247,
+            "overlap_m": 0.005019423975897601,
             "worst_capsule": ""
           },
           "yqs2_part_03.lod3": {
             "shortfall_m": 0.0,
             "frame": 0,
-            "overlap_m": 0.06874655448348216,
-            "worst_capsule": "pelvis_0"
+            "overlap_m": 0.05565863238850506,
+            "worst_capsule": "shorts_8_5bab"
           },
           "yqs2_part_03.lod2": {
             "shortfall_m": 0.0,
             "frame": 0,
-            "overlap_m": 0.06938278515197618,
-            "worst_capsule": "pelvis_0"
+            "overlap_m": 0.05798933248582784,
+            "worst_capsule": "shorts_4_5bbbb"
           },
           "yqs2_part_03.lod1": {
             "shortfall_m": 0.0,
             "frame": 0,
-            "overlap_m": 0.06938278515197618,
-            "worst_capsule": "pelvis_0"
+            "overlap_m": 0.06612616057913251,
+            "worst_capsule": "shorts_9_5b"
           },
           "yqs2_part_11": {
             "shortfall_m": 0.0,
             "frame": 0,
-            "overlap_m": 0.019335467601778247,
+            "overlap_m": 0.005019423975897601,
             "worst_capsule": ""
           },
           "yqs2_part_11.lod1": {
             "shortfall_m": 0.0,
             "frame": 0,
-            "overlap_m": 0.019335467601778247,
+            "overlap_m": 0.005019423975897601,
             "worst_capsule": ""
           },
           "yqs2_part_10": {
@@ -1358,7 +1360,7 @@
           "yqs2_part_11.lod3": {
             "shortfall_m": 0.0,
             "frame": 0,
-            "overlap_m": 0.019335467601778247,
+            "overlap_m": 0.005019423975897601,
             "worst_capsule": ""
           },
           "yqs2_part_10.lod3": {
@@ -1370,8 +1372,8 @@
           "yqs2_part_03.b2": {
             "shortfall_m": 0.0,
             "frame": 0,
-            "overlap_m": 0.06938278515197618,
-            "worst_capsule": "pelvis_0"
+            "overlap_m": 0.06612616057913251,
+            "worst_capsule": "shorts_9_5b"
           },
           "yqs2_part_10.lod2": {
             "shortfall_m": 0.0,
@@ -1422,7 +1424,7 @@
   },
   "preview_idle_validation": {
     "status": "pass",
-    "version": "v0.1.0",
+    "version": "v0.1.1",
     "default_inventory_clip": "inventory_idle",
     "preview_overrides": [
       {
@@ -1459,7 +1461,7 @@
       }
     ],
     "creation_page_action_mapping_unchanged": true,
-    "runtime_dll_unchanged": false,
+    "runtime_dll_unchanged": true,
     "runtime_entry": "direct CharacterTableauTextureProvider before bounded screen reflection",
     "runtime_effect_verified": false,
     "selected_character_sex_preserved": true,
@@ -1468,7 +1470,7 @@
   },
   "visual_review": {
     "status": "pass",
-    "final_package_sha256": "667ebedc7e43ea05fdeb0ba14a2b108923b0bc0bdf6700cc8d456523f234e867",
+    "final_package_sha256": "ccde46e5b3dd4b79f4e49ad46a2001dd5bf25d0a95f916a3f1db15138e928dd7",
     "scope": "Visual inspection of source comparison, final LOD0 face/body, LOD1-3 silhouettes, neutral UI idle and selected native run/bow/riding/slash reference frames",
     "reviewed_by": "assistant",
     "source_proportions_preserved": true,
@@ -1483,6 +1485,148 @@
       "Dynamic frames show skeletal references before cloth solving; leg/skirt intersections are not game acceptance.",
       "LOD3 close-up simplifies collar/folds and ornaments; assessed as distant silhouette.",
       "Final preview uses decoded diffuse and byte skin, not exact game lighting."
-    ]
+    ],
+    "version": "v0.1.1",
+    "collision_proxy_review": {
+      "comparison": "reports/collision_proxy_comparison.png",
+      "camera_consistent": true,
+      "skirts_settle_downward": true,
+      "protected_body_not_visibly_exposed_in_reviewed_pose": true,
+      "scope": "Static female UI idle, constrained CPU gravity; engine simulation remains unverified"
+    },
+    "unchanged_geometry_views_reused_from": "v0.1.0, verified all GPU geometry/UV/material/weights equal"
+  },
+  "skirt_collision_validation": {
+    "proxy_limits": {
+      "fixed_root_overlap_m": 0.006,
+      "maximum_residual_m": 0.015,
+      "p99_residual_m": 0.005,
+      "minimum_mean_pressure_reduction": 0.2
+    },
+    "status": "pass",
+    "version": "v0.1.1",
+    "final_package_sha256": "ccde46e5b3dd4b79f4e49ad46a2001dd5bf25d0a95f916a3f1db15138e928dd7",
+    "baseline_version": "v0.1.0",
+    "rows": [
+      {
+        "mesh": "yqs2_part_03.b2",
+        "baseline_initial_mean_overlap_m": 0.02734201863856917,
+        "initial_mean_overlap_m": 0.018564861520334305,
+        "baseline_initial_max_overlap_m": 0.12026540178221662,
+        "initial_max_overlap_m": 0.09676023170576739,
+        "fixed_root_max_overlap_m": 0.0037446351018410786,
+        "fixed_root_drift_m": 0.0,
+        "max_settled_residual_m": 0.01204841925968235,
+        "p99_settled_residual_m": 0.004594028437241649,
+        "baseline_mean_vertical_change_m": -0.0892639798288224,
+        "mean_vertical_change_m": -0.08657829616018739,
+        "baseline_raised_fraction": 0.03533026113671275,
+        "raised_fraction": 0.03225806451612903,
+        "travel_clamped": true
+      }
+    ],
+    "scope": "Final compiled constraints, actual female UI idle frame, 120 gravity steps at 60Hz/10 Jacobi iterations, fixed roots never projected; a CPU diagnostic, not Bannerlord cloth simulation",
+    "game_solver_used": false
+  },
+  "skirt_preservation_validation": {
+    "non_target_cloth_payloads_byte_identical": 8,
+    "status": "pass",
+    "version": "v0.1.1",
+    "baseline_version": "v0.1.0",
+    "baseline_package_sha256": "667ebedc7e43ea05fdeb0ba14a2b108923b0bc0bdf6700cc8d456523f234e867",
+    "final_package_sha256": "ccde46e5b3dd4b79f4e49ad46a2001dd5bf25d0a95f916a3f1db15138e928dd7",
+    "geometry_normals_uv_tangents_weights_indices_preserved": true,
+    "materials_textures_skeleton_preserved": true,
+    "ui_runtime_unchanged": true,
+    "alpha_changes": [
+      {
+        "mesh": "yqs2_part_03.b2",
+        "lod": 0,
+        "changed_alpha_vertices": 226,
+        "fixed_roots_unchanged": true
+      },
+      {
+        "mesh": "yqs2_part_03.lod1",
+        "lod": 1,
+        "changed_alpha_vertices": 178,
+        "fixed_roots_unchanged": true
+      },
+      {
+        "mesh": "yqs2_part_03.lod2",
+        "lod": 2,
+        "changed_alpha_vertices": 133,
+        "fixed_roots_unchanged": true
+      },
+      {
+        "mesh": "yqs2_part_03.lod3",
+        "lod": 3,
+        "changed_alpha_vertices": 71,
+        "fixed_roots_unchanged": true
+      }
+    ],
+    "game_verified": false
+  },
+  "skirt_surface_coverage": {
+    "status": "pass",
+    "version": "v0.1.1",
+    "rows": [
+      {
+        "fixed_root_max_overlap_m": 0.0009154292444712754,
+        "pose": "idle",
+        "sampled_frames": 12,
+        "surface_samples": 723420,
+        "uncovered_samples": 0,
+        "maximum_outside_m": 0,
+        "worst_frame": 346
+      },
+      {
+        "fixed_root_max_overlap_m": 0.0038824065066473436,
+        "pose": "ui_neutral_female",
+        "sampled_frames": 12,
+        "surface_samples": 723420,
+        "uncovered_samples": 0,
+        "maximum_outside_m": 0,
+        "worst_frame": 1859
+      },
+      {
+        "fixed_root_max_overlap_m": 0.004667503471614764,
+        "pose": "run",
+        "sampled_frames": 12,
+        "surface_samples": 723420,
+        "uncovered_samples": 0,
+        "maximum_outside_m": 0,
+        "worst_frame": 20
+      },
+      {
+        "fixed_root_max_overlap_m": 0.0039018021704297985,
+        "pose": "bow",
+        "sampled_frames": 12,
+        "surface_samples": 723420,
+        "uncovered_samples": 0,
+        "maximum_outside_m": 0,
+        "worst_frame": 14
+      },
+      {
+        "fixed_root_max_overlap_m": 0.004692798581667071,
+        "pose": "riding",
+        "sampled_frames": 12,
+        "surface_samples": 723420,
+        "uncovered_samples": 0,
+        "maximum_outside_m": 0,
+        "worst_frame": 9
+      },
+      {
+        "fixed_root_max_overlap_m": 0.004641911061539229,
+        "pose": "slash",
+        "sampled_frames": 12,
+        "surface_samples": 723420,
+        "uncovered_samples": 0,
+        "maximum_outside_m": 0,
+        "worst_frame": 41
+      }
+    ],
+    "sampling": "12 non-bind frames per Native motion, actual skinned triangle vertices/edges/interiors with barycentric subdivisions 4; full decoded vertex cycles scanned by collision fitter",
+    "game_verified": false,
+    "maximum_sampled_root_overlap_tolerance_m": 0.007
   }
 }

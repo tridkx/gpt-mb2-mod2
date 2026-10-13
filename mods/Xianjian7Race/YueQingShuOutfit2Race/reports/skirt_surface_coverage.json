@@ -1,0 +1,63 @@
+{
+  "status": "pass",
+  "version": "v0.1.1",
+  "rows": [
+    {
+      "fixed_root_max_overlap_m": 0.0009154292444712754,
+      "pose": "idle",
+      "sampled_frames": 12,
+      "surface_samples": 723420,
+      "uncovered_samples": 0,
+      "maximum_outside_m": 0,
+      "worst_frame": 346
+    },
+    {
+      "fixed_root_max_overlap_m": 0.0038824065066473436,
+      "pose": "ui_neutral_female",
+      "sampled_frames": 12,
+      "surface_samples": 723420,
+      "uncovered_samples": 0,
+      "maximum_outside_m": 0,
+      "worst_frame": 1859
+    },
+    {
+      "fixed_root_max_overlap_m": 0.004667503471614764,
+      "pose": "run",
+      "sampled_frames": 12,
+      "surface_samples": 723420,
+      "uncovered_samples": 0,
+      "maximum_outside_m": 0,
+      "worst_frame": 20
+    },
+    {
+      "fixed_root_max_overlap_m": 0.0039018021704297985,
+      "pose": "bow",
+      "sampled_frames": 12,
+      "surface_samples": 723420,
+      "uncovered_samples": 0,
+      "maximum_outside_m": 0,
+      "worst_frame": 14
+    },
+    {
+      "fixed_root_max_overlap_m": 0.004692798581667071,
+      "pose": "riding",
+      "sampled_frames": 12,
+      "surface_samples": 723420,
+      "uncovered_samples": 0,
+      "maximum_outside_m": 0,
+      "worst_frame": 9
+    },
+    {
+      "fixed_root_max_overlap_m": 0.004641911061539229,
+      "pose": "slash",
+      "sampled_frames": 12,
+      "surface_samples": 723420,
+      "uncovered_samples": 0,
+      "maximum_outside_m": 0,
+      "worst_frame": 41
+    }
+  ],
+  "sampling": "12 non-bind frames per Native motion, actual skinned triangle vertices/edges/interiors with barycentric subdivisions 4; full decoded vertex cycles scanned by collision fitter",
+  "game_verified": false,
+  "maximum_sampled_root_overlap_tolerance_m": 0.007
+}

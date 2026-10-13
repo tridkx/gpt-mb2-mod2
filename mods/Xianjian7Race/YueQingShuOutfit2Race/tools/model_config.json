@@ -3,7 +3,7 @@
   "race": "yqs2_outfit2",
   "prefix": "yqs2",
   "skeleton": "yqs2_skeleton",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "title": "Yue Qing Shu Outfit 2 Race",
   "source_blend": "input/original/02_第二套装_MAJ02_02.blend",
   "source_origin": "D:\\dsh-xianjian7\\output\\月清疏_YueQingShu\\02_第二套装_MAJ02_02",
@@ -111,5 +111,31 @@
   ],
   "arm_rebind_materials": [
     "MI_MAJ02_02_cloth1"
-  ]
+  ],
+  "baseline_version": "v0.1.0",
+  "baseline_package_sha256": "667ebedc7e43ea05fdeb0ba14a2b108923b0bc0bdf6700cc8d456523f234e867",
+  "collision_refit": {
+    "skin_clearance_m": 0.002,
+    "shorts_guard": {
+      "material": "MI_MAJ02_02_cloth3",
+      "columns": 5,
+      "height_bands": 6,
+      "clearance_m": 0.0001,
+      "include_pelvis_skin": true,
+      "top_columns": 11,
+      "depth_end_trim_m": 0.002,
+      "respect_skirt_roots": true,
+      "maximum_fixed_root_overlap_m": 0.005
+    }
+  },
+  "calibrate_materials": [
+    "MI_MAJ02_02_cloth2"
+  ],
+  "skirt_proxy_limits": {
+    "fixed_root_overlap_m": 0.006,
+    "maximum_residual_m": 0.015,
+    "p99_residual_m": 0.005,
+    "minimum_mean_pressure_reduction": 0.2,
+    "sampled_pose_fixed_root_overlap_m": 0.007
+  }
 }

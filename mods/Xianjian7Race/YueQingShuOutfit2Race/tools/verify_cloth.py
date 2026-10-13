@@ -2,6 +2,7 @@ import sys
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from workspace_paths import workspace_root
+from refit_skirt_collision import pose_capsule
 """Read final native cloth bytes; check roots, mappings, constraints and collision fit."""
 import json,sys,subprocess,hashlib,shutil
 from pathlib import Path
@@ -64,9 +65,7 @@ for label,anim,frames in poses:
         skin=world@inverse
         animated_caps=[]
         for cap in caps:
-            endpoints=[]
-            for point,bone in zip(cap['endpoints_m'],cap['bones']):
-                matrix=skin[names.index(bone)];endpoints.append(matrix[:3,:3]@point+matrix[:3,3])
+            endpoints=pose_capsule(cap,skin,names)
             animated_caps.append((np.array(endpoints),cap['radius_m'],cap['name']))
         for mesh in meshes:
             p=lbs(np.array(mesh['positions']),np.array(mesh['bones']),np.array(mesh['weights']),skin);assert np.isfinite(p).all()

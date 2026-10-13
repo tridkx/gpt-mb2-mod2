@@ -21,5 +21,5 @@ for sex,prefix,label in [('male','','ui_neutral_male'),('female','female_','ui_n
     assert len(own['as_bmq2_'+prefix+'facegen'])==0
 report={'status':'pass','version':json.loads((R/'tools/model_config.json').read_text())['version'],
         'default_inventory_clip':'inventory_idle','preview_overrides':rows,'creation_page_action_mapping_unchanged':True,
-        'runtime_dll_unchanged':False,'runtime_entry':'direct CharacterTableauTextureProvider before bounded screen reflection','runtime_effect_verified':False,'selected_character_sex_preserved':True,'fixed_character_preview_pose':'female_idle_long_for_both_preview_skeleton_types','game_retest_pending':True}
+        'runtime_dll_unchanged':True,'runtime_entry':'direct CharacterTableauTextureProvider before bounded screen reflection','runtime_effect_verified':False,'selected_character_sex_preserved':True,'fixed_character_preview_pose':'female_idle_long_for_both_preview_skeleton_types','game_retest_pending':True}
 (R/'reports/preview_idle_validation.json').write_text(json.dumps(report,indent=2));print('PREVIEW_IDLE_CLIPS_VERIFIED')
