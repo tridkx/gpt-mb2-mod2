@@ -499,7 +499,7 @@
   ],
   "gross_motion_tear_guard_max_extension": 6.0,
   "metadata_audit": "pass",
-  "game_test_verified": false,
+  "game_test_verified": true,
   "game_cloth_solver_used": false,
   "limitations": [
     "Fixed appearance; hair and clothes use skeletal skinning without physics. Source diffuse/normal and body ORM retained; unavailable cloth controls and untextured accessory parameters use documented conservative fallbacks.",
@@ -523,5 +523,12 @@
     "CharacterTableau",
     "BasicCharacterTableau",
     "BodyGeneratorView"
-  ]
+  ],
+  "game_test_scope": [
+    "Reported opaque glasses: accepted",
+    "Reported raised shoulders: accepted",
+    "Reported elongated arms: accepted"
+  ],
+  "game_test_evidence": "user confirmation",
+  "user_acceptance": "reports/user_acceptance.json"
 }
