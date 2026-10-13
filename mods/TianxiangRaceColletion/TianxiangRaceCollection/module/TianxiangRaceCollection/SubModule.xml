@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Module>
+  <Name value="Tianxiang Race Collection" />
+  <Id value="TianxiangRaceCollection" />
+  <Version value="v0.1.0" />
+  <DefaultModule value="false" />
+  <ModuleCategory value="Singleplayer" />
+  <ModuleType value="Community" />
+  <SingleplayerModule value="true" />
+  <MultiplayerModule value="false" />
+  <DependedModules>
+    <DependedModule Id="Native" />
+    <DependedModule Id="SandBoxCore" />
+    <DependedModule Id="Sandbox" />
+  </DependedModules>
+  <SubModules>
+    <SubModule>
+      <Name value="Tianxiang T5 PVE UI Runtime" />
+      <DLLName value="TianxiangT5PVERace.UIRuntime.dll" />
+      <SubModuleClassType value="TianxiangT5PVERace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="Tianxiang Girl T1 Ren Qiu UI Runtime" />
+      <DLLName value="TianxiangGirlT1Race.UIRuntime.dll" />
+      <SubModuleClassType value="TianxiangGirlT1Race.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="Tianxiang Girl T2 Mu Feng UI Runtime" />
+      <DLLName value="TianxiangGirlT2Race.UIRuntime.dll" />
+      <SubModuleClassType value="TianxiangGirlT2Race.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="Tianxiang Girl T3 Qing Mei UI Runtime" />
+      <DLLName value="TianxiangGirlT3Race.UIRuntime.dll" />
+      <SubModuleClassType value="TianxiangGirlT3Race.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="Tianxiang Girl T4 Mu Yu UI Runtime" />
+      <DLLName value="TianxiangGirlT4Race.UIRuntime.dll" />
+      <SubModuleClassType value="TianxiangGirlT4Race.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="Tianxiang Girl T5 Fang Zi UI Runtime" />
+      <DLLName value="TianxiangGirlT5Race.UIRuntime.dll" />
+      <SubModuleClassType value="TianxiangGirlT5Race.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="Tianxiang Girl T6 Sui Meng UI Runtime" />
+      <DLLName value="TianxiangGirlT6Race.UIRuntime.dll" />
+      <SubModuleClassType value="TianxiangGirlT6Race.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="Tianxiang Girl T7 Xue Zhi UI Runtime" />
+      <DLLName value="TianxiangGirlT7Race.UIRuntime.dll" />
+      <SubModuleClassType value="TianxiangGirlT7Race.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="Tianxiang Girl T8 Zhen Zi PVP UI Runtime" />
+      <DLLName value="TianxiangGirlT8Race.UIRuntime.dll" />
+      <SubModuleClassType value="TianxiangGirlT8Race.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+  </SubModules>
+  <Xmls>
+    <XmlNode>
+      <XmlName id="Monsters" path="monsters" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
+      <XmlName id="NPCCharacters" path="test_troop" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+  </Xmls>
+</Module>

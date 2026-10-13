@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='utf-8'?>
+<action_sets>
+  <action_set id="as_txt5pve_warrior" skeleton="txt5pve_skeleton" movement_system="bipedal" base_set="as_human_warrior" />
+  <action_set id="as_txt5pve_female_warrior" skeleton="txt5pve_skeleton" movement_system="bipedal" base_set="as_human_female_warrior" />
+  <action_set id="as_txt5pve_villager" skeleton="txt5pve_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_txt5pve_female_villager" skeleton="txt5pve_skeleton" movement_system="bipedal" base_set="as_human_female_villager" />
+  <action_set id="as_txt5pve_facegen" skeleton="txt5pve_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_txt5pve_female_facegen" skeleton="txt5pve_skeleton" movement_system="bipedal" base_set="as_human_female_facegen" />
+  <action_set id="as_txgirl1_warrior" skeleton="txgirl1_skeleton" movement_system="bipedal" base_set="as_human_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
+  <action_set id="as_txgirl1_female_warrior" skeleton="txgirl1_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
+  <action_set id="as_txgirl1_villager" skeleton="txgirl1_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_txgirl1_female_villager" skeleton="txgirl1_skeleton" movement_system="bipedal" base_set="as_human_female_villager" />
+  <action_set id="as_txgirl1_facegen" skeleton="txgirl1_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_txgirl1_female_facegen" skeleton="txgirl1_skeleton" movement_system="bipedal" base_set="as_human_female_facegen" />
+  <action_set id="as_txgirl2_warrior" skeleton="txgirl2_skeleton" movement_system="bipedal" base_set="as_human_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
+  <action_set id="as_txgirl2_female_warrior" skeleton="txgirl2_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
+  <action_set id="as_txgirl2_villager" skeleton="txgirl2_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_txgirl2_female_villager" skeleton="txgirl2_skeleton" movement_system="bipedal" base_set="as_human_female_villager" />
+  <action_set id="as_txgirl2_facegen" skeleton="txgirl2_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_txgirl2_female_facegen" skeleton="txgirl2_skeleton" movement_system="bipedal" base_set="as_human_female_facegen" />
+  <action_set id="as_txgirl3_warrior" skeleton="txgirl3_skeleton" movement_system="bipedal" base_set="as_human_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
+  <action_set id="as_txgirl3_female_warrior" skeleton="txgirl3_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
+  <action_set id="as_txgirl3_villager" skeleton="txgirl3_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_txgirl3_female_villager" skeleton="txgirl3_skeleton" movement_system="bipedal" base_set="as_human_female_villager" />
+  <action_set id="as_txgirl3_facegen" skeleton="txgirl3_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_txgirl3_female_facegen" skeleton="txgirl3_skeleton" movement_system="bipedal" base_set="as_human_female_facegen" />
+  <action_set id="as_txgirl4_warrior" skeleton="txgirl4_skeleton" movement_system="bipedal" base_set="as_human_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
+  <action_set id="as_txgirl4_female_warrior" skeleton="txgirl4_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
+  <action_set id="as_txgirl4_villager" skeleton="txgirl4_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_txgirl4_female_villager" skeleton="txgirl4_skeleton" movement_system="bipedal" base_set="as_human_female_villager" />
+  <action_set id="as_txgirl4_facegen" skeleton="txgirl4_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_txgirl4_female_facegen" skeleton="txgirl4_skeleton" movement_system="bipedal" base_set="as_human_female_facegen" />
+  <action_set id="as_txgirl5_warrior" skeleton="txgirl5_skeleton" movement_system="bipedal" base_set="as_human_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
+  <action_set id="as_txgirl5_female_warrior" skeleton="txgirl5_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
+  <action_set id="as_txgirl5_villager" skeleton="txgirl5_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_txgirl5_female_villager" skeleton="txgirl5_skeleton" movement_system="bipedal" base_set="as_human_female_villager" />
+  <action_set id="as_txgirl5_facegen" skeleton="txgirl5_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_txgirl5_female_facegen" skeleton="txgirl5_skeleton" movement_system="bipedal" base_set="as_human_female_facegen" />
+  <action_set id="as_txgirl6_warrior" skeleton="txgirl6_skeleton" movement_system="bipedal" base_set="as_human_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
+  <action_set id="as_txgirl6_female_warrior" skeleton="txgirl6_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
+  <action_set id="as_txgirl6_villager" skeleton="txgirl6_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_txgirl6_female_villager" skeleton="txgirl6_skeleton" movement_system="bipedal" base_set="as_human_female_villager" />
+  <action_set id="as_txgirl6_facegen" skeleton="txgirl6_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_txgirl6_female_facegen" skeleton="txgirl6_skeleton" movement_system="bipedal" base_set="as_human_female_facegen" />
+  <action_set id="as_txgirl7_warrior" skeleton="txgirl7_skeleton" movement_system="bipedal" base_set="as_human_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
+  <action_set id="as_txgirl7_female_warrior" skeleton="txgirl7_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
+  <action_set id="as_txgirl7_villager" skeleton="txgirl7_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_txgirl7_female_villager" skeleton="txgirl7_skeleton" movement_system="bipedal" base_set="as_human_female_villager" />
+  <action_set id="as_txgirl7_facegen" skeleton="txgirl7_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_txgirl7_female_facegen" skeleton="txgirl7_skeleton" movement_system="bipedal" base_set="as_human_female_facegen" />
+  <action_set id="as_txgirl8_warrior" skeleton="txgirl8_skeleton" movement_system="bipedal" base_set="as_human_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
+  <action_set id="as_txgirl8_female_warrior" skeleton="txgirl8_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
+  <action_set id="as_txgirl8_villager" skeleton="txgirl8_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_txgirl8_female_villager" skeleton="txgirl8_skeleton" movement_system="bipedal" base_set="as_human_female_villager" />
+  <action_set id="as_txgirl8_facegen" skeleton="txgirl8_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_txgirl8_female_facegen" skeleton="txgirl8_skeleton" movement_system="bipedal" base_set="as_human_female_facegen" />
+</action_sets>

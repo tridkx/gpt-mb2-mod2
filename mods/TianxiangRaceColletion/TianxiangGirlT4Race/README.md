@@ -16,7 +16,7 @@ v0.1.1 针对站立预览的腿裙交叉，依据本套腿部表面、保存的�
 
 启动器英文名称为 **Tianxiang Girl T4 Mu Yu Race**，排在 Native、SandBoxCore、Sandbox 后。各套可单独或同时启用。安装包和可编辑源包在 `dist/`。
 
-游戏验收由用户完成，v0.1.0 已获得用户“整体没什么问题”的反馈，同时确认队伍／百科／物品栏预览存在腿裙交叉；v0.1.1 的返修效果待用户复测。配置人物后检查物品栏、队伍和百科预览，回归站立、跑步、挥刀、持弓、骑乘及 LOD 切换，重点查看肩袖、手腕、裙片和整体高度。诊断日志在系统文档目录 `Mount and Blade II Bannerlord/TianxiangGirlT4Race/ui_runtime_v0.1.1.jsonl`。含本种族人物的存档依赖本模块。
+游戏验收由用户完成，v0.1.0 已获得用户“整体没什么问题”的反馈，同时确认队伍／百科／物品栏预览存在腿裙交叉；用户于 2026-10-13 确认 v0.1.1 验收通过，见[验收记录](reports/user_acceptance_20261013.json)。配置人物后检查物品栏、队伍和百科预览，回归站立、跑步、挥刀、持弓、骑乘及 LOD 切换，重点查看肩袖、手腕、裙片和整体高度。诊断日志在系统文档目录 `Mount and Blade II Bannerlord/TianxiangGirlT4Race/ui_runtime_v0.1.1.jsonl`。含本种族人物的存档依赖本模块。
 
 ## 当前限制
 
