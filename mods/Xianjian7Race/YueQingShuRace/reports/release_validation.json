@@ -1,7 +1,7 @@
 {
-  "version": "v0.3.2",
+  "version": "v0.3.3",
   "status": "pass",
-  "check_scope": "final_resource_source_geometry_preservation_and_cloth_checks",
+  "check_scope": "Offline resources and Native skinning; creation UI traversal compiled; cloth unchanged and not accepted",
   "final_package_sha256": "b943664012defcaf1c19a54118d6c4411ca59a142fe2de5aac1a83e386a4028b",
   "baseline_package_sha256": "e72aa5730a220565d29a81c558b66e08cf8d4e5a28636e923350349910e9283b",
   "baseline_reason": "User-accepted v0.1.1 source geometry; model-specific arm bind axes revised in v0.3.1",
@@ -613,27 +613,14 @@
   "hidden_placeholder_triangles": 4,
   "source_proportions_preserved": true,
   "custom_skeleton_bones": 28,
-  "source_geometry_max_error_m": 0.0,
-  "source_height_m": 1.6760067177528981,
-  "accepted_appearance_baseline": "v0.1.1",
-  "accepted_appearance_preserved": true,
-  "cloth_lods": [
-    0,
-    1,
-    2,
-    3
+  "cloth_resources_byte_identical_to_v0_3_2": true,
+  "cloth_game_acceptance": "rejected_quality",
+  "current_cloth_issues": [
+    "Multiple layers intersect",
+    "Gravity settling is unnatural"
   ],
-  "cooked_cloth_meshes": 18,
-  "cloth_engine_verified": false,
-  "user_game_acceptance": {
-    "version": "v0.2.2",
-    "date": "2026-10-11",
-    "accepted": true,
-    "runtime_assets_unchanged": false,
-    "assistant_ran_game": false,
-    "appearance_package_unchanged": false
-  },
-  "ui_scope_validation": {
+  "creation_preview_game_verified": false,
+  "creation_preview_scope": {
     "status": "pass",
     "cases": {
       "SandBox.View.Map.MapScreen._mainPartyVisual": false,
@@ -648,217 +635,12 @@
     "null_owner_allowed": false,
     "direct_provider_cases": "actual runtime methods compiled with matching provider/tableau stubs; valid/null/unknown provider/unknown tableau",
     "actual_field_collection_and_inspect_executed": true,
+    "creation_screen_body_generator_traversal_executed": true,
     "boxed_action_invalid_cast_reproduced": true,
     "reference_and_value_custom_equals_never_called": true,
     "inventory_discovery_independent_of_screen_seen_budget": true,
-    "source_sha256": "cd72dc8fbeaec89dcb9f9099c18d2bd9ca73a41dab6b985faaacbac67b20057d",
-    "assembly_sha256": "61ed28630f0c367092700dc64eb949cfe9dfa40e8c365f2da93f95c3fdbb6a99",
+    "source_sha256": "9057d583c98a86835f8fa60f3758fd7f26024a44c281c92de3d58220e938e07f",
+    "assembly_sha256": "9c680bf322922fd284faf08150819315e6e6c69191e8b4777d5913487e06fef5",
     "game_verified": false
-  },
-  "preview_idle_validation": {
-    "status": "pass",
-    "version": "v0.3.1",
-    "default_inventory_clip": "inventory_idle",
-    "preview_overrides": [
-      {
-        "sex": "male",
-        "action": "act_inventory_idle_start",
-        "clip": "anim_female_custom_start",
-        "skeletal_animation": "anim_female_idle_long",
-        "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
-        "clip_metadata": "AnimationClip 'anim_female_custom_start' guid=593006d8-02b3-4307-b1fc-9a2643a8f1d7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith='act_inventory_idle'\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
-      },
-      {
-        "sex": "male",
-        "action": "act_inventory_idle",
-        "clip": "anim_female_custom",
-        "skeletal_animation": "anim_female_idle_long",
-        "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
-        "clip_metadata": "AnimationClip 'anim_female_custom' guid=da51b19f-81fe-4ffe-956f-ab5d800e71f7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[cyclic,allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith=''\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
-      },
-      {
-        "sex": "female",
-        "action": "act_inventory_idle_start",
-        "clip": "anim_female_custom_start",
-        "skeletal_animation": "anim_female_idle_long",
-        "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
-        "clip_metadata": "AnimationClip 'anim_female_custom_start' guid=593006d8-02b3-4307-b1fc-9a2643a8f1d7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith='act_inventory_idle'\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
-      },
-      {
-        "sex": "female",
-        "action": "act_inventory_idle",
-        "clip": "anim_female_custom",
-        "skeletal_animation": "anim_female_idle_long",
-        "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
-        "clip_metadata": "AnimationClip 'anim_female_custom' guid=da51b19f-81fe-4ffe-956f-ab5d800e71f7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[cyclic,allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith=''\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
-      }
-    ],
-    "creation_page_action_mapping_unchanged": true,
-    "runtime_dll_unchanged": false,
-    "runtime_scope": "inventory screen only",
-    "runtime_entry": "direct CharacterTableauTextureProvider before bounded screen reflection",
-    "runtime_effect_verified": false,
-    "selected_character_sex_preserved": true,
-    "fixed_character_preview_pose": "female_idle_long_for_both_preview_skeleton_types",
-    "game_retest_pending": true
-  },
-  "inventory_pose_validation": {
-    "status": "pass",
-    "version": "v0.3.1",
-    "rows": [
-      {
-        "label": "idle",
-        "asset": "anim_inventory_idle",
-        "frames_checked": 1267,
-        "wrist_forward_of_pelvis_range_m": [
-          -0.07024509799452636,
-          0.021064665685741713
-        ],
-        "worst_frame": 542,
-        "wrist_world_y_bounds_m": [
-          -0.20109687329425546,
-          0.1928141698491468
-        ],
-        "shoulder_elbow_wrist_bounds_m": [
-          [
-            -0.3107649835734443,
-            -0.20109687329425546,
-            0.9272848209466206
-          ],
-          [
-            0.3334478441243347,
-            0.1928141698491468,
-            1.371365895819085
-          ]
-        ]
-      },
-      {
-        "label": "ui_neutral_female",
-        "asset": "anim_female_idle_long",
-        "frames_checked": 2272,
-        "wrist_forward_of_pelvis_range_m": [
-          -0.06015805053278162,
-          0.07441676680357484
-        ],
-        "worst_frame": 1725,
-        "wrist_world_y_bounds_m": [
-          -0.07252728231999302,
-          0.0709621529824867
-        ],
-        "shoulder_elbow_wrist_bounds_m": [
-          [
-            -0.21243638881391014,
-            -0.10439402578377888,
-            0.9098337593372774
-          ],
-          [
-            0.2420516206836767,
-            0.0709621529824867,
-            1.3578868479927526
-          ]
-        ]
-      }
-    ],
-    "scope": "Every decoded non-bind frame; posed skeletal shoulder/elbow/wrist positions, not engine cloth or proof of all intersections",
-    "game_verified": false
-  },
-  "arm_binding_validation": {
-    "recompiled_cloth_payloads_structurally_verified": 18,
-    "status": "pass",
-    "version": "v0.3.2",
-    "final_package_sha256": "b943664012defcaf1c19a54118d6c4411ca59a142fe2de5aac1a83e386a4028b",
-    "bones": [
-      {
-        "bone": "l_upperarm_twist",
-        "final_axis_error_degrees": 0.0
-      },
-      {
-        "bone": "l_upperarm_twist1",
-        "final_axis_error_degrees": 0.0
-      },
-      {
-        "bone": "l_foretwist",
-        "final_axis_error_degrees": 0.0
-      },
-      {
-        "bone": "l_foretwist1",
-        "final_axis_error_degrees": 0.0
-      },
-      {
-        "bone": "r_upperarm_twist",
-        "final_axis_error_degrees": 0.0
-      },
-      {
-        "bone": "r_upperarm_twist1",
-        "final_axis_error_degrees": 0.0
-      },
-      {
-        "bone": "r_foretwist",
-        "final_axis_error_degrees": 0.0
-      },
-      {
-        "bone": "r_foretwist1",
-        "final_axis_error_degrees": 0.0
-      }
-    ],
-    "joint_positions_and_limb_lengths_preserved": true,
-    "non_arm_bind_world_frames_preserved": true,
-    "all_lod_geometry_uv_normal_tangent_weight_streams_identical": true,
-    "only_active_cloth_alpha_changes_allowed": true,
-    "materials_all_texture_mips_preserved": true,
-    "game_retest_pending": true
-  },
-  "inventory_preview_game_verified": false,
-  "appearance_geometry_and_materials_preserved": true,
-  "arm_bind_axes_corrected": true,
-  "cloth_collision_xml_sha256": "35ff35151440b8f16410a8a912f64185a1b0e69946d45a8e20af0f9652949abe",
-  "current_cloth_game_acceptance": "pending",
-  "skirt_comparison": {
-    "proxy_limits": {
-      "fixed_root_overlap_m": 0.006,
-      "maximum_residual_m": 0.015,
-      "p99_residual_m": 0.005,
-      "minimum_mean_pressure_reduction": 0.2
-    },
-    "status": "pass",
-    "version": "v0.3.2",
-    "final_package_sha256": "b943664012defcaf1c19a54118d6c4411ca59a142fe2de5aac1a83e386a4028b",
-    "baseline_version": "v0.3.1",
-    "rows": [
-      {
-        "mesh": "yqs_part_10.b3",
-        "baseline_initial_mean_overlap_m": 0.0,
-        "initial_mean_overlap_m": 0.0,
-        "baseline_initial_max_overlap_m": 0.0,
-        "initial_max_overlap_m": 0.0,
-        "fixed_root_max_overlap_m": 0.0,
-        "fixed_root_drift_m": 0.0,
-        "max_settled_residual_m": 0.0,
-        "p99_settled_residual_m": 0.0,
-        "baseline_mean_vertical_change_m": -0.018145358205569572,
-        "mean_vertical_change_m": -0.018356128363513562,
-        "baseline_raised_fraction": 0.0,
-        "raised_fraction": 0.0,
-        "travel_clamped": true
-      },
-      {
-        "mesh": "yqs_part_10",
-        "baseline_initial_mean_overlap_m": 0.004326140150946246,
-        "initial_mean_overlap_m": 0.001959729926259613,
-        "baseline_initial_max_overlap_m": 0.07411199295807475,
-        "initial_max_overlap_m": 0.0326098498886597,
-        "fixed_root_max_overlap_m": 0.0,
-        "fixed_root_drift_m": 0.0,
-        "max_settled_residual_m": 9.71445146547012e-17,
-        "p99_settled_residual_m": 3.469446951953614e-17,
-        "baseline_mean_vertical_change_m": -0.0002537946337756529,
-        "mean_vertical_change_m": -0.005877321325448656,
-        "baseline_raised_fraction": 0.26573653471771574,
-        "raised_fraction": 0.05645684620376379,
-        "travel_clamped": true
-      }
-    ],
-    "scope": "Final compiled constraints, actual female UI idle frame, 120 gravity steps at 60Hz/10 grouped constraint iterations plus geodesic anchor limits, fixed roots never projected; a CPU diagnostic, not Bannerlord cloth simulation",
-    "game_solver_used": false
   }
 }

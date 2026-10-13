@@ -1,0 +1,52 @@
+{
+  "status": "pass",
+  "version": "v0.1.3",
+  "baseline_version": "v0.1.2",
+  "final_package_sha256": "7ed7f537e3145aaf7cee10e1d7bf66d962f8d9a840ab19fef372339002b25291",
+  "geometry_normals_uv_tangents_weights_indices_preserved": true,
+  "materials_textures_skeleton_preserved": true,
+  "ui_runtime_unchanged": true,
+  "only_skirt_alpha_changed": [
+    {
+      "mesh": "bmq_part_00",
+      "lod": 0,
+      "changed_alpha_vertices": 1653
+    },
+    {
+      "mesh": "bmq_part_01",
+      "lod": 0,
+      "changed_alpha_vertices": 2255
+    },
+    {
+      "mesh": "bmq_part_00.lod1",
+      "lod": 1,
+      "changed_alpha_vertices": 1094
+    },
+    {
+      "mesh": "bmq_part_01.lod1",
+      "lod": 1,
+      "changed_alpha_vertices": 1319
+    },
+    {
+      "mesh": "bmq_part_00.lod2",
+      "lod": 2,
+      "changed_alpha_vertices": 641
+    },
+    {
+      "mesh": "bmq_part_01.lod2",
+      "lod": 2,
+      "changed_alpha_vertices": 707
+    },
+    {
+      "mesh": "bmq_part_00.lod3",
+      "lod": 3,
+      "changed_alpha_vertices": 294
+    },
+    {
+      "mesh": "bmq_part_01.lod3",
+      "lod": 3,
+      "changed_alpha_vertices": 282
+    }
+  ],
+  "game_verified": false
+}

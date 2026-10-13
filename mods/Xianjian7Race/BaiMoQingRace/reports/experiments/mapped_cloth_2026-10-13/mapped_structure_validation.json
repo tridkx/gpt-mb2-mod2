@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "candidate_sha256": "d9984025709bf4a52232c63b85712298bb1fc7aa8a5b355c8f824c6fd04c0404",
+  "baseline_sha256": "7ed7f537e3145aaf7cee10e1d7bf66d962f8d9a840ab19fef372339002b25291",
+  "proxy_simulation_vertices": 3698,
+  "render_mapping_segments": 8,
+  "lods": [
+    {
+      "lod": 0,
+      "original_meshes": 15,
+      "geometry_normals_uv_tangents_bones_weights_indices_identical": true,
+      "alpha_changes": []
+    },
+    {
+      "lod": 1,
+      "original_meshes": 14,
+      "geometry_normals_uv_tangents_bones_weights_indices_identical": true,
+      "alpha_changes": []
+    },
+    {
+      "lod": 2,
+      "original_meshes": 14,
+      "geometry_normals_uv_tangents_bones_weights_indices_identical": true,
+      "alpha_changes": []
+    },
+    {
+      "lod": 3,
+      "original_meshes": 14,
+      "geometry_normals_uv_tangents_bones_weights_indices_identical": true,
+      "alpha_changes": []
+    }
+  ],
+  "materials_textures_skeleton_identical": true,
+  "rest_reconstruction_max_error_m": 0.000791861494432657,
+  "game_verified": false,
+  "scope": "Candidate TPAC reopened; native mapping and cloth roundtrips, ownership, shared reference and full GPU stream preservation"
+}

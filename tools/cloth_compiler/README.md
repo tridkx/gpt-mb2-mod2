@@ -49,11 +49,17 @@ JSON 网格输入包含 `name/guid/metamesh/lod`、`positions/normals`（每顶�
 
 七个原生样本、具体网格与最终 TPAC 检查见明玉的 `reports/cloth_format_research.json`、`cooked_cloth_validation.json`。新模型使用自己的数量、骨骼、GUID 与回读断言。模型流程仍需检查最终 blob 与生成结果相同，约束长度符合原网格、压缩误差、映射、量化蒙皮和跨连通片锚点，再检查未请求改动的几何/材质/Alpha 与原包相同。
 
-这是三角网络编译器，没有复刻原生网格重构或经纬分类。剪切组为空，三角边抗拉维持形状；不生成 `af41613e...` 映射数据，也不实现代理模拟。别复制其他网格的约束。每个启用 LOD 必须有自身 Alpha、固定点和匹配数据；LOD0 的数据不能直接挂到减面网格。
+这是三角网络编译器，没有复刻原生网格重构或经纬分类。剪切组为空，三角边抗拉维持形状；直接模拟入口不生成 `af41613e...` 映射数据；代理映射工具仍为未验收试验。别复制其他网格的约束。每个启用 LOD 必须有自身 Alpha、固定点和匹配数据；LOD0 的数据不能直接挂到减面网格。
 
 [官方 LOD 文档](https://moddocs.bannerlord.com/asset-management/asset-types/meshes/)给出的最高画质默认切换点为 15、22.5、30、50、70、130、210 米，角色/环境质量可缩短距离。它们是网格切换的默认值，不是布料引擎的实测截止距离；布料标记、包内数据与该级实际求解需要分别确认。
 
 源包可用模组 `mod.json.shared_source_files` 明确列入这些共用文件，`tools/package_delivery.py` 将其放到 `workspace_tools/cloth_compiler/`。明玉兼容入口会自动识别工作区和这种源包布局。source/tex 仍保持相邻，不把技能副本放入工程或源包。
+
+## 代理映射试验
+
+`mapping_payload.py` 提供 `af41613e...` 映射段读写，已对 18 个原生样本完成往返验证。`prepare_mapped.py`、`prepare_linked.py`、`build_mapped.py`、`MappedClothPatch.cs`、`verify_mapped.py`、`probe_mapped_settling.py` 和 `save_proxy_source.py` 用于独立候选包、结构检查和离线探针。它们不接入当前默认重建，也未安装失败候选。
+
+月清疏和白茉晴的试验仍出现层间穿模及下落不自然，没有达到可交付效果。层间约束不等于引擎自碰撞，CPU 探针通过也不代表游戏画面通过；格式往返成功不能作为代理方案有效的证明。试验记录保留在对应模组 `reports/experiments/`。
 
 ## 注意事项
 

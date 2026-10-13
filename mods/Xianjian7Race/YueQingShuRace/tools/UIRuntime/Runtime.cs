@@ -49,7 +49,7 @@ namespace YueQingShuRace.UIRuntime {
             if (logNow) logElapsed=0;
             try {
                 var screen = ScreenManager.TopScreen;
-                if (screen == null || !IsInventoryScreen(screen.GetType().FullName)) return;
+                if (screen == null || !IsSupportedPreviewScreen(screen.GetType().FullName)) return;
                 if (screen.GetType().FullName=="SandBox.View.Map.MapScreen") return;
                 var visuals = new HashSet<AgentVisuals>();
                 var owners = new Dictionary<AgentVisuals,string>();
@@ -151,8 +151,8 @@ namespace YueQingShuRace.UIRuntime {
             }
         }
 
-        internal static bool IsInventoryScreen(string screen) {
-            return screen=="SandBox.GauntletUI.GauntletInventoryScreen";
+        internal static bool IsSupportedPreviewScreen(string screen) {
+            return screen=="SandBox.GauntletUI.GauntletInventoryScreen" || screen=="SandBox.View.CharacterCreation.CharacterCreationScreen";
         }
 
         internal static bool IsPreviewOwner(string owner) {
@@ -172,8 +172,9 @@ namespace YueQingShuRace.UIRuntime {
                 if (oldSkeleton==null) return;
                 string previousSkeleton=oldSkeleton.GetName();
                 string previousSet=data.ActionSetData.GetName();
-                bool facegen=false; // Inventory-only correction; creation-page previews are untouched.
-                string setName="as_yqs"+(data.SkeletonTypeData==SkeletonType.Female?"_female":"")+
+                bool facegen=screen=="SandBox.View.CharacterCreation.CharacterCreationScreen" && owner.StartsWith("TaleWorlds.MountAndBlade.GauntletUI.BodyGenerator.BodyGeneratorView.",StringComparison.Ordinal);
+                if (screen=="SandBox.View.CharacterCreation.CharacterCreationScreen" && !facegen) return;
+                string setName="as_yqs"+((data.SkeletonTypeData==SkeletonType.Female || previousSet.Contains("female"))?"_female":"")+
                                (facegen?"_facegen":"_warrior");
                 if (oldSkeleton.GetName()=="yqs_skeleton" && previousSet==setName) return;
                 var ownSet=MBActionSet.GetActionSet(setName);
@@ -272,7 +273,7 @@ namespace YueQingShuRace.UIRuntime {
                     "Mount and Blade II Bannerlord","YueQingShuRace");
                 Directory.CreateDirectory(dir);
                 var envelope=new { session, time=DateTime.Now.ToString("s"), record };
-                string path=Path.Combine(dir,RepairEnabled?"inventory_runtime_v0.3.1.jsonl":"ui_probe_v1.jsonl");
+                string path=Path.Combine(dir,RepairEnabled?"preview_runtime_v0.3.3.jsonl":"ui_probe_v1.jsonl");
                 if (File.Exists(path) && new FileInfo(path).Length>12*1024*1024) return;
                 File.AppendAllText(path,serializer.Serialize(envelope)+Environment.NewLine);
             } catch { /* Diagnostics must never interrupt UI/gameplay. */ }

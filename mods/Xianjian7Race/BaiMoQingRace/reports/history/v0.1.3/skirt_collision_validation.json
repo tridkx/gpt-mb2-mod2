@@ -1,0 +1,49 @@
+{
+  "proxy_limits": {
+    "fixed_root_overlap_m": 0.006,
+    "maximum_residual_m": 0.015,
+    "p99_residual_m": 0.005,
+    "minimum_mean_pressure_reduction": 0.2,
+    "sampled_pose_fixed_root_overlap_m": 0.007
+  },
+  "status": "pass",
+  "version": "v0.1.3",
+  "final_package_sha256": "7ed7f537e3145aaf7cee10e1d7bf66d962f8d9a840ab19fef372339002b25291",
+  "baseline_version": "v0.1.0",
+  "rows": [
+    {
+      "mesh": "bmq_part_01",
+      "baseline_initial_mean_overlap_m": 0.030114665075023764,
+      "initial_mean_overlap_m": 0.012039289481134524,
+      "baseline_initial_max_overlap_m": 0.13284098408704748,
+      "initial_max_overlap_m": 0.0909844510794946,
+      "fixed_root_max_overlap_m": 0.0054293740279686906,
+      "fixed_root_drift_m": 0.0,
+      "max_settled_residual_m": 0.008498334105014133,
+      "p99_settled_residual_m": 7.307927382912483e-05,
+      "baseline_mean_vertical_change_m": 0.025182343793735636,
+      "mean_vertical_change_m": 0.005367169187185021,
+      "baseline_raised_fraction": 0.7098214285714286,
+      "raised_fraction": 0.341765873015873,
+      "travel_clamped": true
+    },
+    {
+      "mesh": "bmq_part_00",
+      "baseline_initial_mean_overlap_m": 0.006601742731155843,
+      "initial_mean_overlap_m": 0.0014849435479970298,
+      "baseline_initial_max_overlap_m": 0.08444430728099328,
+      "initial_max_overlap_m": 0.05761393087086583,
+      "fixed_root_max_overlap_m": 0.0,
+      "fixed_root_drift_m": 0.0,
+      "max_settled_residual_m": 0.00010751836256563119,
+      "p99_settled_residual_m": 1.3877787807814457e-17,
+      "baseline_mean_vertical_change_m": -0.005732877312656156,
+      "mean_vertical_change_m": -0.02143862787289259,
+      "baseline_raised_fraction": 0.28448275862068967,
+      "raised_fraction": 0.033819628647214856,
+      "travel_clamped": true
+    }
+  ],
+  "scope": "Final compiled constraints, actual female UI idle frame, 120 gravity steps at 60Hz/10 grouped constraint iterations plus geodesic anchor limits, fixed roots never projected; a CPU diagnostic, not Bannerlord cloth simulation",
+  "game_solver_used": false
+}

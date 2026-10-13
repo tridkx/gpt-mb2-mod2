@@ -1,0 +1,111 @@
+{
+  "status": "candidate",
+  "proxy": {
+    "mesh": "bmq_cloth_proxy",
+    "guid": "0703b1d7-da25-b7be-4d40-013fb43f84a2",
+    "metamesh": "bmq_cloth_proxy",
+    "lod": 0,
+    "bytes": 436764,
+    "render_vertices": 4166,
+    "simulation_vertices": 3698,
+    "fixed_positions": 174,
+    "boundary_fixed_positions": 174,
+    "active_positions": 3524,
+    "stretch_constraints": 16236,
+    "bend_constraints": 10546,
+    "shear_constraints": 0,
+    "parallel_sets": 18,
+    "dummy_sets": 11,
+    "max_geodesic_anchor_length": 0.9361392643749812,
+    "sha256": "f46f6ad320b0e62ce7eb8858e2186f5a331fcab75f0ed4d0296ca74420ed2eae",
+    "root_fixes": [],
+    "solver_pinned_render_vertices": [],
+    "linked_layer_constraints": 5511,
+    "path": "D:\\gpt-mb2-mod2\\mods\\Xianjian7Race\\BaiMoQingRace\\build\\mapped_proxy_cooked\\0703b1d7-da25-b7be-4d40-013fb43f84a2.bin"
+  },
+  "render_maps": [
+    {
+      "mesh": "bmq_part_01.lod2",
+      "lod": 2,
+      "mapped_vertices": 730,
+      "shared_skirt_vertices": 730,
+      "rest_reconstruction_max_error_m": 0.0005003411493142209,
+      "negative_offsets": 0,
+      "maximum_absolute_offset_m": 0.02496088109910488,
+      "maximum_barycentric_extrapolation": 0.10921646654605865
+    },
+    {
+      "mesh": "bmq_part_01.lod3",
+      "lod": 3,
+      "mapped_vertices": 296,
+      "shared_skirt_vertices": 296,
+      "rest_reconstruction_max_error_m": 0.0005003411493142209,
+      "negative_offsets": 0,
+      "maximum_absolute_offset_m": 0.024705011397600174,
+      "maximum_barycentric_extrapolation": 0.10460100322961807
+    },
+    {
+      "mesh": "bmq_part_00.lod3",
+      "lod": 3,
+      "mapped_vertices": 295,
+      "shared_skirt_vertices": 295,
+      "rest_reconstruction_max_error_m": 0.00017245361951083294,
+      "negative_offsets": 0,
+      "maximum_absolute_offset_m": 0.0029642321169376373,
+      "maximum_barycentric_extrapolation": 0.025943949818611145
+    },
+    {
+      "mesh": "bmq_part_01",
+      "lod": 0,
+      "mapped_vertices": 2309,
+      "shared_skirt_vertices": 2309,
+      "rest_reconstruction_max_error_m": 0.000791861494432657,
+      "negative_offsets": 1,
+      "maximum_absolute_offset_m": 0.0249730683863163,
+      "maximum_barycentric_extrapolation": 0.11090053617954254
+    },
+    {
+      "mesh": "bmq_part_00",
+      "lod": 0,
+      "mapped_vertices": 1663,
+      "shared_skirt_vertices": 1663,
+      "rest_reconstruction_max_error_m": 0.0001578805484505149,
+      "negative_offsets": 0,
+      "maximum_absolute_offset_m": 0.0,
+      "maximum_barycentric_extrapolation": 0.0
+    },
+    {
+      "mesh": "bmq_part_00.lod1",
+      "lod": 1,
+      "mapped_vertices": 1103,
+      "shared_skirt_vertices": 1103,
+      "rest_reconstruction_max_error_m": 0.00017913893959103512,
+      "negative_offsets": 0,
+      "maximum_absolute_offset_m": 0.000454271852504462,
+      "maximum_barycentric_extrapolation": 0.02762685716152191
+    },
+    {
+      "mesh": "bmq_part_00.lod2",
+      "lod": 2,
+      "mapped_vertices": 647,
+      "shared_skirt_vertices": 647,
+      "rest_reconstruction_max_error_m": 0.00017954984872026772,
+      "negative_offsets": 1,
+      "maximum_absolute_offset_m": 0.005354963708668947,
+      "maximum_barycentric_extrapolation": 0.03006437048316002
+    },
+    {
+      "mesh": "bmq_part_01.lod1",
+      "lod": 1,
+      "mapped_vertices": 1363,
+      "shared_skirt_vertices": 1363,
+      "rest_reconstruction_max_error_m": 0.0007725190954318313,
+      "negative_offsets": 3,
+      "maximum_absolute_offset_m": 0.02787148952484131,
+      "maximum_barycentric_extrapolation": 0.11090053617954254
+    }
+  ],
+  "final_candidate_sha256": "d9984025709bf4a52232c63b85712298bb1fc7aa8a5b355c8f824c6fd04c0404",
+  "game_verified": false,
+  "scope": "One shared simulated cage preserves layer offsets; source non-skirt card islands retained; candidate not installed"
+}

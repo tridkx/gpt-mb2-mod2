@@ -1,0 +1,58 @@
+{
+  "status": "pass",
+  "method": "Short depth-axis capsules fitted to full pelvis surface lattice; two-bone weights and local Native pose margins",
+  "baseline_mean_overlap_m": 0.004198912874692519,
+  "baseline_max_overlap_m": 0.08467833799787255,
+  "final_mean_overlap_m": 0.0008125641787574314,
+  "final_max_overlap_m": 0.03114895372696005,
+  "motion": {
+    "sampled_frames_per_pose": 12,
+    "maximum_added_margin_m": 0.02369351794971397,
+    "changed_capsules": 26
+  },
+  "selected": {
+    "columns": 6,
+    "bands": 7,
+    "capsules": 42,
+    "body_minimum_clearance_m": 0.0019999980866512897,
+    "skirt_mean_overlap_m": 0.0005884541252040971,
+    "skirt_max_overlap_m": 0.025797792452795634
+  },
+  "candidates": [
+    {
+      "columns": 3,
+      "bands": 4,
+      "capsules": 12,
+      "body_minimum_clearance_m": 0.001999997773019256,
+      "skirt_mean_overlap_m": 0.0024131360412700206,
+      "skirt_max_overlap_m": 0.05456854298628277
+    },
+    {
+      "columns": 4,
+      "bands": 5,
+      "capsules": 20,
+      "body_minimum_clearance_m": 0.001999998138864603,
+      "skirt_mean_overlap_m": 0.001152129333917592,
+      "skirt_max_overlap_m": 0.03918743027385473
+    },
+    {
+      "columns": 5,
+      "bands": 6,
+      "capsules": 30,
+      "body_minimum_clearance_m": 0.0019999979752393857,
+      "skirt_mean_overlap_m": 0.0009690102102683936,
+      "skirt_max_overlap_m": 0.0268834284192998
+    },
+    {
+      "columns": 6,
+      "bands": 7,
+      "capsules": 42,
+      "body_minimum_clearance_m": 0.0019999980866512897,
+      "skirt_mean_overlap_m": 0.0005884541252040971,
+      "skirt_max_overlap_m": 0.025797792452795634
+    }
+  ],
+  "body_samples": 31086,
+  "skirt_vertices": 8811,
+  "game_verified": false
+}

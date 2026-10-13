@@ -73,5 +73,17 @@
   "calibrate_materials": [
     "MAJ03_01_cloth1",
     "MAJ03_01_cloth2"
-  ]
+  ],
+  "mapped_cloth": {
+    "columns": 24,
+    "rings": 18,
+    "travel_slope": 1.2,
+    "max_travel_m": 0.85,
+    "other_cloth_lod": 2,
+    "material": "MAJ03_01_cloth1",
+    "attachment_extension_m": 0.035,
+    "method": "linked_surfaces",
+    "status": "experimental_not_released"
+  },
+  "cloth_mode": "direct"
 }

@@ -1,0 +1,211 @@
+{
+  "status": "candidate",
+  "proxy": {
+    "mesh": "yqs_cloth_proxy",
+    "guid": "4debd0c6-0256-f9c4-4f85-8aec9cdd5973",
+    "metamesh": "yqs_cloth_proxy",
+    "lod": 0,
+    "bytes": 1139908,
+    "render_vertices": 12537,
+    "simulation_vertices": 12111,
+    "fixed_positions": 883,
+    "boundary_fixed_positions": 883,
+    "active_positions": 11228,
+    "stretch_constraints": 30330,
+    "bend_constraints": 19200,
+    "shear_constraints": 0,
+    "parallel_sets": 18,
+    "dummy_sets": 11,
+    "max_geodesic_anchor_length": 0.6313364557802369,
+    "sha256": "661ab78228de78d63122f718c60b88310f9aa9af1a88d27ae7455eb545f7c1f3",
+    "root_fixes": [],
+    "solver_pinned_render_vertices": [],
+    "linked_layer_constraints": 3471,
+    "path": "D:\\gpt-mb2-mod2\\mods\\Xianjian7Race\\YueQingShuRace\\build\\mapped_proxy_cooked\\4debd0c6-0256-f9c4-4f85-8aec9cdd5973.bin"
+  },
+  "render_maps": [
+    {
+      "mesh": "yqs_part_00.lod2",
+      "lod": 2,
+      "mapped_vertices": 2130,
+      "shared_skirt_vertices": 0,
+      "rest_reconstruction_max_error_m": 0.00017687437780578832,
+      "negative_offsets": 51,
+      "maximum_absolute_offset_m": 0.007938805967569351,
+      "maximum_barycentric_extrapolation": 0.03491295129060745
+    },
+    {
+      "mesh": "yqs_part_10.b3",
+      "lod": 0,
+      "mapped_vertices": 266,
+      "shared_skirt_vertices": 0,
+      "rest_reconstruction_max_error_m": 0.0001523300316377536,
+      "negative_offsets": 0,
+      "maximum_absolute_offset_m": 0.0,
+      "maximum_barycentric_extrapolation": 0.0
+    },
+    {
+      "mesh": "yqs_part_11.lod2",
+      "lod": 2,
+      "mapped_vertices": 1551,
+      "shared_skirt_vertices": 0,
+      "rest_reconstruction_max_error_m": 0.00015686480749434002,
+      "negative_offsets": 0,
+      "maximum_absolute_offset_m": 0.0,
+      "maximum_barycentric_extrapolation": 0.0
+    },
+    {
+      "mesh": "yqs_part_03.lod2",
+      "lod": 2,
+      "mapped_vertices": 325,
+      "shared_skirt_vertices": 0,
+      "rest_reconstruction_max_error_m": 0.0001472018688601013,
+      "negative_offsets": 1,
+      "maximum_absolute_offset_m": 0.005262434016913176,
+      "maximum_barycentric_extrapolation": 0.0
+    },
+    {
+      "mesh": "yqs_part_11",
+      "lod": 0,
+      "mapped_vertices": 1551,
+      "shared_skirt_vertices": 0,
+      "rest_reconstruction_max_error_m": 0.00015686480749434002,
+      "negative_offsets": 0,
+      "maximum_absolute_offset_m": 0.0,
+      "maximum_barycentric_extrapolation": 0.0
+    },
+    {
+      "mesh": "yqs_part_00.lod1",
+      "lod": 1,
+      "mapped_vertices": 3870,
+      "shared_skirt_vertices": 0,
+      "rest_reconstruction_max_error_m": 0.00017632045966587775,
+      "negative_offsets": 11,
+      "maximum_absolute_offset_m": 0.007886018604040146,
+      "maximum_barycentric_extrapolation": 0.015191090293228626
+    },
+    {
+      "mesh": "yqs_part_10.lod2",
+      "lod": 2,
+      "mapped_vertices": 1646,
+      "shared_skirt_vertices": 1539,
+      "rest_reconstruction_max_error_m": 0.0006391509947614395,
+      "negative_offsets": 8,
+      "maximum_absolute_offset_m": 0.024965519085526466,
+      "maximum_barycentric_extrapolation": 0.3014313876628876
+    },
+    {
+      "mesh": "yqs_part_10.lod1",
+      "lod": 1,
+      "mapped_vertices": 2433,
+      "shared_skirt_vertices": 2433,
+      "rest_reconstruction_max_error_m": 0.00017616265226494518,
+      "negative_offsets": 3,
+      "maximum_absolute_offset_m": 0.02484249323606491,
+      "maximum_barycentric_extrapolation": 0.10484728217124939
+    },
+    {
+      "mesh": "yqs_part_00.lod3",
+      "lod": 3,
+      "mapped_vertices": 1086,
+      "shared_skirt_vertices": 0,
+      "rest_reconstruction_max_error_m": 0.00017687437780578832,
+      "negative_offsets": 56,
+      "maximum_absolute_offset_m": 0.019628968089818954,
+      "maximum_barycentric_extrapolation": 0.057791393250226974
+    },
+    {
+      "mesh": "yqs_part_03.lod1",
+      "lod": 1,
+      "mapped_vertices": 606,
+      "shared_skirt_vertices": 0,
+      "rest_reconstruction_max_error_m": 0.00017954851622196884,
+      "negative_offsets": 1,
+      "maximum_absolute_offset_m": 0.005330795422196388,
+      "maximum_barycentric_extrapolation": 0.05133518576622009
+    },
+    {
+      "mesh": "yqs_part_11.lod3",
+      "lod": 3,
+      "mapped_vertices": 1551,
+      "shared_skirt_vertices": 0,
+      "rest_reconstruction_max_error_m": 0.00015686480749434002,
+      "negative_offsets": 0,
+      "maximum_absolute_offset_m": 0.0,
+      "maximum_barycentric_extrapolation": 0.0
+    },
+    {
+      "mesh": "yqs_part_10.lod1.b2",
+      "lod": 1,
+      "mapped_vertices": 169,
+      "shared_skirt_vertices": 0,
+      "rest_reconstruction_max_error_m": 0.00016748252336708743,
+      "negative_offsets": 0,
+      "maximum_absolute_offset_m": 0.008434535004198551,
+      "maximum_barycentric_extrapolation": 0.09001175314188004
+    },
+    {
+      "mesh": "yqs_part_11.lod1",
+      "lod": 1,
+      "mapped_vertices": 1551,
+      "shared_skirt_vertices": 0,
+      "rest_reconstruction_max_error_m": 0.00015686480749434002,
+      "negative_offsets": 0,
+      "maximum_absolute_offset_m": 0.0,
+      "maximum_barycentric_extrapolation": 0.0
+    },
+    {
+      "mesh": "yqs_part_00",
+      "lod": 0,
+      "mapped_vertices": 5617,
+      "shared_skirt_vertices": 0,
+      "rest_reconstruction_max_error_m": 0.0001619598008488273,
+      "negative_offsets": 0,
+      "maximum_absolute_offset_m": 0.0,
+      "maximum_barycentric_extrapolation": 0.0
+    },
+    {
+      "mesh": "yqs_part_03",
+      "lod": 0,
+      "mapped_vertices": 839,
+      "shared_skirt_vertices": 0,
+      "rest_reconstruction_max_error_m": 0.00014928707748810362,
+      "negative_offsets": 0,
+      "maximum_absolute_offset_m": 0.0,
+      "maximum_barycentric_extrapolation": 0.0
+    },
+    {
+      "mesh": "yqs_part_10.lod3",
+      "lod": 3,
+      "mapped_vertices": 590,
+      "shared_skirt_vertices": 543,
+      "rest_reconstruction_max_error_m": 0.0001642415740336424,
+      "negative_offsets": 2,
+      "maximum_absolute_offset_m": 0.024609792977571487,
+      "maximum_barycentric_extrapolation": 0.5211290717124939
+    },
+    {
+      "mesh": "yqs_part_10",
+      "lod": 0,
+      "mapped_vertices": 3364,
+      "shared_skirt_vertices": 3364,
+      "rest_reconstruction_max_error_m": 0.00016098447193006195,
+      "negative_offsets": 2,
+      "maximum_absolute_offset_m": 0.024883033707737923,
+      "maximum_barycentric_extrapolation": 0.013588828966021538
+    },
+    {
+      "mesh": "yqs_part_03.lod3",
+      "lod": 3,
+      "mapped_vertices": 143,
+      "shared_skirt_vertices": 0,
+      "rest_reconstruction_max_error_m": 7.150698735315135e-08,
+      "negative_offsets": 2,
+      "maximum_absolute_offset_m": 0.006543181370943785,
+      "maximum_barycentric_extrapolation": 1.2410327196121216
+    }
+  ],
+  "final_candidate_sha256": "a9d7086114a2744bbeb153d83f736db2ad08c9cd7c83aff3ed3cd15da9a3fa8c",
+  "game_verified": false,
+  "scope": "One shared simulated cage preserves layer offsets; source non-skirt card islands retained; candidate not installed"
+}

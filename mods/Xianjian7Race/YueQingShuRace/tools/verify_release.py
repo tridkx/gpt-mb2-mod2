@@ -49,7 +49,7 @@ def dense(m):
 
 for lod in range(4):
     folder=ROOT/'build'/f'final_export_lod{lod}';run([MB,'exportmod',str(PACKAGE),str(folder),str(lod)]+(['--all-mips'] if lod==0 else []))
-    meshes=[m for p in (folder/'geo').glob('*.bin') for m in read_geo(p) if not m['name'].startswith('yqs_hidden')];exports[lod]=meshes
+    meshes=[m for p in (folder/'geo').glob('*.bin') for m in read_geo(p) if not m['name'].startswith(('yqs_hidden','yqs_cloth_proxy'))];exports[lod]=meshes
     assert meshes and all(m['lod']==lod for m in meshes)
     for m in meshes:
         assert np.isfinite(m['pos']).all() and np.isfinite(m['uv']).all()
@@ -95,7 +95,7 @@ for lod,meshes in exports.items():
     seams.append({'lod':lod,'shared_points':tested,'cross_equipment_points':cross,'max_position_error':drift})
 
 folder=ROOT/'build/final_export_lod0';pack=json.loads((folder/'pack.json').read_text());texturechecks=[]
-assert {m['name'] for m in pack['meshes']} == {'yqs_body','yqs_hidden'}
+assert {m['name'] for m in pack['meshes']} == ({'yqs_body','yqs_hidden','yqs_cloth_proxy'} if cfg.get('cloth_mode')=='mapped_linked_surfaces' else {'yqs_body','yqs_hidden'})
 body=next(m for m in pack['meshes'] if m['name']=='yqs_body')
 assert len(body['submeshes'])>=10
 assert body['lodAvailable']==[0,1,2,3]

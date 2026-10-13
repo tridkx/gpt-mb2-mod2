@@ -1,0 +1,360 @@
+{
+  "bmq_maj03_01_cloth1": {
+    "name": "bmq_maj03_01_cloth1",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "bmq_tex_2",
+      "1": "bmq_tex_3",
+      "2": "bmq_tex_3",
+      "4": "bmq_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "bmq_maj03_01_cloth2": {
+    "name": "bmq_maj03_01_cloth2",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "bmq_tex_4",
+      "1": "bmq_tex_5",
+      "2": "bmq_tex_5",
+      "4": "bmq_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "bmq_maj03_01_cloth3": {
+    "name": "bmq_maj03_01_cloth3",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "bmq_tex_6",
+      "1": "bmq_tex_7",
+      "2": "bmq_tex_7",
+      "4": "bmq_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "bmq_maj03_01_body": {
+    "name": "bmq_maj03_01_body",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "bmq_tex_8",
+      "1": "bmq_tex_9",
+      "2": "bmq_tex_9",
+      "4": "bmq_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "bmq_maj03_01_mouth_skeleton": {
+    "name": "bmq_maj03_01_mouth_skeleton",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "bmq_tex_10",
+      "1": "bmq_tex_11",
+      "2": "bmq_tex_11",
+      "4": "bmq_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "bmq_maj03_01_eye": {
+    "name": "bmq_maj03_01_eye",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "bmq_tex_12",
+      "1": "bmq_tex_13",
+      "2": "bmq_tex_13",
+      "4": "bmq_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "bmq_eyelash_new_inst03": {
+    "name": "bmq_eyelash_new_inst03",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "bmq_tex_14",
+      "1": "bmq_tex_0",
+      "2": "bmq_tex_0",
+      "4": "bmq_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "bmq_maj03_01_hair": {
+    "name": "bmq_maj03_01_hair",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "bmq_tex_15",
+      "1": "bmq_tex_0",
+      "2": "bmq_tex_0",
+      "4": "bmq_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ],
+    "alphaTest": 0.25
+  },
+  "bmq_maj03_01_head": {
+    "name": "bmq_maj03_01_head",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "bmq_tex_16",
+      "1": "bmq_tex_17",
+      "2": "bmq_tex_17",
+      "4": "bmq_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "bmq_maj03_01_eyelash_master": {
+    "name": "bmq_maj03_01_eyelash_master",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "bmq_tex_18",
+      "1": "bmq_tex_0",
+      "2": "bmq_tex_0",
+      "4": "bmq_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ],
+    "alphaTest": 0.25
+  },
+  "bmq_maj03_01_flower": {
+    "name": "bmq_maj03_01_flower",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "bmq_tex_4",
+      "1": "bmq_tex_5",
+      "2": "bmq_tex_5",
+      "4": "bmq_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "bmq_maj03_01_flower2": {
+    "name": "bmq_maj03_01_flower2",
+    "template": "opaque",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha"
+    ],
+    "textures": {
+      "0": "bmq_tex_6",
+      "1": "bmq_tex_7",
+      "2": "bmq_tex_7",
+      "4": "bmq_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ]
+  },
+  "bmq_maj03_01_macrame1": {
+    "name": "bmq_maj03_01_macrame1",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "bmq_tex_19",
+      "1": "bmq_tex_20",
+      "2": "bmq_tex_20",
+      "4": "bmq_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ],
+    "alphaTest": 0.25
+  },
+  "bmq_maj03_01_macrame": {
+    "name": "bmq_maj03_01_macrame",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "bmq_tex_21",
+      "1": "bmq_tex_20",
+      "2": "bmq_tex_20",
+      "4": "bmq_tex_1"
+    },
+    "dropTextureSlots": [
+      3,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "flags": [
+      "two_sided"
+    ],
+    "alphaTest": 0.25
+  }
+}

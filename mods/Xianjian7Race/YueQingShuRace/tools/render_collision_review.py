@@ -13,7 +13,7 @@ from georead import read_geo
 from baker.skeleton import parse_skeljson
 from baker.animation import parse_animjson,skin_matrices,lbs
 lod=int(sys.argv[sys.argv.index('--')+1]) if '--' in sys.argv else 0
-folder=ROOT/('build/final_export_lod'+str(lod));meshes=[m for f in (folder/'geo').glob('*.bin') for m in read_geo(f) if not m['name'].startswith('yqs_hidden')]
+folder=ROOT/('build/final_export_lod'+str(lod));meshes=[m for f in (folder/'geo').glob('*.bin') for m in read_geo(f) if not m['name'].startswith(('yqs_hidden','yqs_cloth_proxy'))]
 materialinfo=json.loads((ROOT/'reports/material_names.json').read_text());bpy.ops.wm.read_factory_settings(use_empty=True)
 materials={}
 for name,rec in materialinfo.items():
@@ -41,7 +41,7 @@ def render(label,offset,close=False):
     cam.location=center+Vector(offset);cam.rotation_euler=(center-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=.6 if close else max(1.9,float(np.ptp(points[:,2]))*1.12)
     for light,loc in lights:light.location=center+loc;light.rotation_euler=(center-light.location).to_track_quat('-Z','Y').to_euler()
     s.render.filepath=str(ROOT/'reports'/('collision_proxy_'+(('lod'+str(lod)+'_') if lod else '')+label+'.png'));bpy.ops.render.render(write_still=True)
-rig=parse_skeljson(json.loads((ROOT/'reports/final_skeleton.json').read_text()));anim=parse_animjson(json.loads((ROOT/'reports/idle.json').read_text()));skin=skin_matrices(rig,anim,max(1,anim['start']))
+rig=parse_skeljson(json.loads((ROOT/'reports/final_skeleton.json').read_text()));anim=parse_animjson(json.loads((ROOT/'reports/ui_neutral_female.json').read_text()));skin=skin_matrices(rig,anim,max(1,anim['start']))
 base=[lbs(m['pos'],m['bi'],m['bw'],skin) for m in meshes]
 for phase in ['before','after']:
  for o,m,p in zip(objects,meshes,base):
