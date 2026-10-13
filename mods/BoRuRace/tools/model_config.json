@@ -1,6 +1,6 @@
 {
   "id": "BoRuRace",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "race": "boru_race",
   "skeleton": "boru_race_skeleton",
   "skin_min_scale": 1.0,
@@ -41,7 +41,8 @@
   "facial_animation": false,
   "ui_scope": [
     "CharacterTableau",
-    "BasicCharacterTableau"
+    "BasicCharacterTableau",
+    "BodyGeneratorView"
   ],
   "landmarks_m": [
     [

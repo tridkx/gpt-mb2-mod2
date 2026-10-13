@@ -1,6 +1,10 @@
 using TpacTool.Lib;
 using System.Text.RegularExpressions;
 var package = new AssetPackage(args[0], true, false);
+var lens=package.Items.OfType<Material>().Single(m=>m.Name=="boru_race_glass");
+if (!lens.Flags.Contains("dont_draw_to_gbuffer") || !lens.Flags.Contains("no_modify_depth_buffer"))
+    throw new InvalidDataException("Lens must use forward transparency without writing opaque depth");
+lens.ExtraMaterialSettings.RenderOrder=1;
 foreach (var mesh in package.Items.OfType<Metamesh>()) {
     if (!mesh.Name.StartsWith("boru_race_", StringComparison.Ordinal))
         throw new InvalidDataException("Unexpected asset namespace");

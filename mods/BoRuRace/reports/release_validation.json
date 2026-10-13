@@ -1,10 +1,10 @@
 {
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "status": "pass",
   "check_scope": "offline_structural_and_native_motion_checks",
-  "final_package_sha256": "e7397a85b96ceecf9cc77157a3e691f321e88fa3501ec4395a157bff8d7ac18a",
-  "baseline_package_sha256": null,
-  "baseline_reason": "First release; input hashes provide geometry baseline",
+  "final_package_sha256": "24d395130e94020002f63dc2dfbf5747478b3126ce3e94df3e9316e2072870b0",
+  "baseline_package_sha256": "e7397a85b96ceecf9cc77157a3e691f321e88fa3501ec4395a157bff8d7ac18a",
+  "baseline_reason": "BoRuRace v0.1.0 before UI/lens repair",
   "registration": {
     "status": "pass",
     "race": "boru_race",
@@ -357,6 +357,28 @@
           "p99_extension": 1.000000348907919
         }
       ]
+    },
+    {
+      "label": "creation_male",
+      "asset": "anim_guard_idle_long",
+      "frames_checked": 64,
+      "joint_frames_checked": 2272,
+      "total_frames": 2273,
+      "worst_frame": 613,
+      "worst_mesh": "boru_race_cloth_mesh",
+      "max_edge_extension": 2.035783587987001,
+      "max_arm_joint_length_ratio": 1.0000004465799897
+    },
+    {
+      "label": "creation_female",
+      "asset": "anim_female_idle_long",
+      "frames_checked": 64,
+      "joint_frames_checked": 2272,
+      "total_frames": 2273,
+      "worst_frame": 830,
+      "worst_mesh": "boru_race_cloth_mesh",
+      "max_edge_extension": 2.32181729689436,
+      "max_arm_joint_length_ratio": 1.0000004465799888
     }
   ],
   "textures": [
@@ -490,10 +512,16 @@
   "hidden_placeholder_triangles": 4,
   "source_proportions_preserved": true,
   "custom_skeleton_bones": 28,
+  "feedback_fix_validation": "reports/feedback_fix_validation.json",
   "source_validation": "reports/source_validation.json",
   "proportion_uv_validation": "reports/preservation_validation.json",
   "ui_scope_validation": "reports/ui_scope_validation.json",
   "date": "2026-10-13",
   "game_version": "v1.4.8",
-  "source_input_sha256": "95e1ccd4c35d7b3588e3cd8431ac5421bd363d7f0d258e78526da510cf969868"
+  "source_input_sha256": "95e1ccd4c35d7b3588e3cd8431ac5421bd363d7f0d258e78526da510cf969868",
+  "ui_scope": [
+    "CharacterTableau",
+    "BasicCharacterTableau",
+    "BodyGeneratorView"
+  ]
 }

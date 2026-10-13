@@ -34,7 +34,7 @@ for mat,info in json.loads((ROOT/'tex/materials.json').read_text()).items():
     s=texture(info['specular'],np.array(Image.open(ROOT/'tex'/info['specular']).convert('RGBA')),'DXT1') if info['specular'] else fs
     row={'name':'boru_race_'+mat.lower(),'template':'alpha' if cut else 'opaque','shaderMaterialFlags':['use_specular','disable_vertex_color_alpha']+(['alpha_test'] if cut else []),'textures':{'0':d,'1':n,'2':n,'4':s},'dropTextureSlots':[3,5,6,7,8,9]}
     if cut:row['alphaTest']=.25
-    if info.get('blend'):row.update(blendMode='factor',alphaTest=0,flags=['two_sided','alpha_blend_sort'])
+    if info.get('blend'):row.update(blendMode='factor',alphaTest=0,flags=['two_sided','alpha_blend_sort','dont_draw_to_gbuffer','no_modify_depth_buffer','dont_cast_shadow'])
     spec['materials'].append(row)
 geometry=json.loads((BUILD/'geometry.json').read_text())
 for part,name in [('body','boru_race_body'),('hidden','boru_race_hidden')]:

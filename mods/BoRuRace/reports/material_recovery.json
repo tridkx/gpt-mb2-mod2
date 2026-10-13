@@ -4,7 +4,7 @@
   "hair": "Original shared T_Hair_D/N with BoRu original opacity packed into diffuse alpha; no generated recoloring.",
   "eyes": "Original iris disc placed in a sclera atlas; planar corneal UV prevents the pupil covering the entire eye. Flat normal and conservative gloss. Separate sclera and original-opacity lash cards.",
   "mouth": "Body atlas wraps original U tile offset; original dedicated mouth shader not supplied.",
-  "glass": "Original 36-face lens mesh; neutral tint and 20 percent alpha matching original preview specification; shader appearance requires game check.",
+  "glass": "Original 36-face lens geometry and 20 percent alpha. Sorted forward transparency, no opaque depth write or shadow, render order 1; actual game transparency must be retested.",
   "accessory": "Neutral gray for 10 untextured accessory faces; textured watch/frame pieces retain cloth atlas.",
   "normal_convention": "Runtime DirectX maps retained; Blender preview flips green for its tangent convention.",
   "orm_conversion": "Unreal [AO,roughness,metallic] to Bannerlord [metallic,1-roughness,AO]."

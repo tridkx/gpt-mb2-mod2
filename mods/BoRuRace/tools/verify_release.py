@@ -118,10 +118,11 @@ for t in pack['textures']:
     texturechecks.append({'name':t['name'],'mips':t['mipCount'],'all_mips_decoded':True,'bytes_match':True})
 
 rig=custom;native=parse_skeljson(rigdata);motions=[]
-for label in ['idle','run','bow','riding','slash']:
+for label in ['idle','run','bow','riding','slash','creation_male','creation_female']:
     raw=json.loads((ROOT/'reports'/(label+'.json')).read_text());anim=parse_animjson(raw)
     assert raw['skeletonGuid']==native['guid'] and anim['have'].all() and anim['frames']>2
-    frames=list(range(max(1,anim['start']),anim['frames'])) if label!='idle' else sorted(set(np.linspace(max(1,anim['start']),anim['frames']-1,16).astype(int).tolist()))
+    samples=64 if label.startswith('creation_') else 16
+    frames=sorted(set(np.linspace(max(1,anim['start']),anim['frames']-1,samples).astype(int).tolist())) if label=='idle' or label.startswith('creation_') else list(range(max(1,anim['start']),anim['frames']))
     worst=0;worstframe=frames[0];worstmesh='';percentile=0;meshstats=[]
     for m in exports[0]:
         tri=m['idx'].reshape(-1,3);edges=np.unique(np.sort(np.concatenate([tri[:,[0,1]],tri[:,[1,2]],tri[:,[2,0]]]),axis=1),axis=0)

@@ -182,7 +182,10 @@
     "alphaTest": 0,
     "flags": [
       "two_sided",
-      "alpha_blend_sort"
+      "alpha_blend_sort",
+      "dont_draw_to_gbuffer",
+      "no_modify_depth_buffer",
+      "dont_cast_shadow"
     ]
   },
   "boru_race_accessory": {

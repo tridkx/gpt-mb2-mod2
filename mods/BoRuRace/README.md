@@ -1,6 +1,6 @@
 # BoRu Race
 
-孟柏汝去脚版的独立骑砍2固定外观种族，版本 v0.1.0。模块 ID `BoRuRace`，内部种族 ID `boru_race`，模组管理器显示 `BoRu Race`。资源按本机 Native v1.4.8 制作。
+孟柏汝去脚版的独立骑砍2固定外观种族，版本 v0.1.1。模块 ID `BoRuRace`，内部种族 ID `boru_race`，模组管理器显示 `BoRu Race`。资源按本机 Native v1.4.8 制作。
 
 ## 使用
 
@@ -14,7 +14,7 @@ campaign.give_troops boru_race_test 10
 
 [Race Troop Builder](../RaceTroopBuilder/README.md) 可扫描此模块，选择 `boru_race`、女性、固定脸参数；完整身体自带白衬衫、牛仔裤、帆布鞋、头发及眼镜，配置兵种时清除头部、身体、腿部、手套和披风防具，按需配置武器与坐骑。本包未声明种族固有护甲。
 
-游戏测试由用户完成：检查队伍、百科、物品栏人物预览及穿脱装备后的重建，随后检查战场站立、跑步、挥击、射箭和骑乘。使用本种族或测试兵种的存档依赖本模块，建议保留独立测试存档。
+游戏测试由用户完成：检查角色创建界面的初次显示，切换性别、身高或衣着后的重建；检查镜片能否看到眼睛、肩部及手臂比例。再检查队伍、百科、物品栏人物预览及穿脱装备后的重建，以及战场站立、跑步、挥击、射箭和骑乘。使用本种族或测试兵种的存档依赖本模块，建议保留独立测试存档。
 
 ## 模型与材质
 
@@ -26,7 +26,7 @@ campaign.give_troops boru_race_test 10
 
 ## 当前限制
 
-固定外观，不提供捏脸形变、面部表情、捏脸界面适配或手指握持形变。短发、衬衫和牛仔裤采用蒙皮，没有游戏布料物理。普通防具可能叠加或遮盖身体，混搭和身体滑杆不在本版验收范围。
+固定外观，不提供捏脸形变、面部表情或手指握持形变。角色创建界面适配只保证使用本种族的动作集和绑定骨架，不制作脸型定制；身体滑杆触发重建时仍保留引擎原有缩放。短发、衬衫和牛仔裤采用蒙皮，没有游戏布料物理。普通防具可能叠加或遮盖身体，混搭不在本版验收范围。
 
 离线检查可验证资源结构、权重、源比例和原生动作中的明显拉裂，不能证明游戏加载、IK、武器握持、马匹碰撞、镜片着色或全部穿模正确。种族最终身高还受运行时缩放影响，需要在游戏中确认。
 
@@ -42,6 +42,6 @@ campaign.give_troops boru_race_test 10
 
 重建只生成并检查工程；打包和安装使用根 `tools/package_delivery.py`、`tools/install_release.ps1`。源 ZIP 保持 `source/` 与 `tex/` 相邻，共用助手存于 `workspace_tools/`，独立恢复时将其放回工作区根 `tools/` 并调整外部工具路径。
 
-预览运行组件仅处理本种族的 CharacterTableau 和 BasicCharacterTableau，保存位置、缩放及两条动作通道进度；不处理战场或地图人物。运行日志位于文档目录 `Mount and Blade II Bannerlord/BoRuRace`。
+预览运行组件仅处理本种族的 CharacterTableau、BasicCharacterTableau 和 BodyGeneratorView，保存位置、缩放及两条动作通道进度；角色创建入口直接读取当前阶段的 BodyGeneratorView 以及当前/待切换人物。镜片使用排序后的透明通道，不写入不透明深度或投射阴影。运行日志位于文档目录 `Mount and Blade II Bannerlord/BoRuRace/ui_runtime_v0.1.1.jsonl`。
 
-[最终资源检查](reports/release_validation.json)、[源比例检查](reports/preservation_validation.json)、[预览组件回归](reports/ui_scope_validation.json)、[更新日志](CHANGELOG.md)。
+[最终资源检查](reports/release_validation.json)、[源比例检查](reports/preservation_validation.json)、[预览组件回归](reports/ui_scope_validation.json)、[本次返修与旧版对比](reports/feedback_fix_validation.json)、[更新日志](CHANGELOG.md)。

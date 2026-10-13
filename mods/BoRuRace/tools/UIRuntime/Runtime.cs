@@ -54,6 +54,10 @@ namespace BoRuRace.UIRuntime {
                 var visuals = new HashSet<AgentVisuals>();
                 var owners = new Dictionary<AgentVisuals,string>();
                 var seen = new HashSet<object>(ReferenceComparer.Instance);
+                // Character creation's scene is not a tableau texture provider.
+                // Read its exact stage -> BodyGeneratorView path before graph scanning.
+                var bodyGenerator=FindBodyGenerator(screen);
+                if (bodyGenerator!=null) CollectTableauVisuals(bodyGenerator,visuals,owners);
                 int widgets=0;
                 foreach (var layer in screen.Layers) {
                     var gauntlet=layer as GauntletLayer;
@@ -100,6 +104,17 @@ namespace BoRuRace.UIRuntime {
             return tableau?.GetType().FullName=="TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableau"?tableau:null;
         }
 
+        internal static object FindBodyGenerator(object screen) {
+            const string bodyType="TaleWorlds.MountAndBlade.GauntletUI.BodyGenerator.BodyGeneratorView";
+            if (screen==null || screen.GetType().FullName!="SandBox.View.CharacterCreation.CharacterCreationScreen") return null;
+            var stageField=screen.GetType().GetField("_currentStageView",BindingFlags.Instance|BindingFlags.NonPublic);
+            var stage=stageField?.GetValue(screen);
+            if (stage==null || stage.GetType().FullName!="SandBox.GauntletUI.CharacterCreation.CharacterCreationFaceGeneratorView") return null;
+            var viewField=stage.GetType().GetField("_faceGeneratorView",BindingFlags.Instance|BindingFlags.NonPublic);
+            var view=viewField?.GetValue(stage);
+            return view?.GetType().FullName==bodyType?view:null;
+        }
+
         private FieldInfo[] Fields(Type type) {
             FieldInfo[] result;
             if (fields.TryGetValue(type, out result)) return result;
@@ -118,6 +133,10 @@ namespace BoRuRace.UIRuntime {
             // Filter values first and use identity for graph cycle detection.
             if (type.IsValueType || obj is string || obj is Delegate) return;
             if (!seen.Add(obj)) return;
+            if (type.FullName=="TaleWorlds.MountAndBlade.GauntletUI.BodyGenerator.BodyGeneratorView") {
+                CollectTableauVisuals(obj,visuals,owners);
+                return;
+            }
             var visual=obj as AgentVisuals;
             if (visual != null) {
                 // MapScreen also owns live campaign AgentVisuals. Never refresh
@@ -153,7 +172,8 @@ namespace BoRuRace.UIRuntime {
 
         internal static bool IsPreviewOwner(string owner) {
             return owner != null && (owner.StartsWith("TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableau.",StringComparison.Ordinal) ||
-                owner.StartsWith("TaleWorlds.MountAndBlade.View.Tableaus.BasicCharacterTableau.",StringComparison.Ordinal));
+                owner.StartsWith("TaleWorlds.MountAndBlade.View.Tableaus.BasicCharacterTableau.",StringComparison.Ordinal) ||
+                owner.StartsWith("TaleWorlds.MountAndBlade.GauntletUI.BodyGenerator.BodyGeneratorView.",StringComparison.Ordinal));
         }
 
         private void CorrectPreview(AgentVisuals visual, string owner, string screen) {
@@ -267,7 +287,7 @@ namespace BoRuRace.UIRuntime {
                     "Mount and Blade II Bannerlord","BoRuRace");
                 Directory.CreateDirectory(dir);
                 var envelope=new { session, time=DateTime.Now.ToString("s"), record };
-                string path=Path.Combine(dir,RepairEnabled?"ui_runtime_v0.1.0.jsonl":"ui_probe_v1.jsonl");
+                string path=Path.Combine(dir,RepairEnabled?"ui_runtime_v0.1.1.jsonl":"ui_probe_v1.jsonl");
                 if (File.Exists(path) && new FileInfo(path).Length>12*1024*1024) return;
                 File.AppendAllText(path,serializer.Serialize(envelope)+Environment.NewLine);
             } catch { /* Diagnostics must never interrupt UI/gameplay. */ }

@@ -1,0 +1,74 @@
+{
+  "status": "pass",
+  "version": "v0.1.1",
+  "date": "2026-10-13",
+  "baseline_version": "v0.1.0",
+  "baseline_package_sha256": "e7397a85b96ceecf9cc77157a3e691f321e88fa3501ec4395a157bff8d7ac18a",
+  "final_package_sha256": "24d395130e94020002f63dc2dfbf5747478b3126ce3e94df3e9316e2072870b0",
+  "all_lod_geometry_weight_bytes_unchanged": [
+    {
+      "lod": 0,
+      "geometry_bytes_unchanged": true,
+      "groups": 2
+    },
+    {
+      "lod": 1,
+      "geometry_bytes_unchanged": true,
+      "groups": 1
+    },
+    {
+      "lod": 2,
+      "geometry_bytes_unchanged": true,
+      "groups": 1
+    },
+    {
+      "lod": 3,
+      "geometry_bytes_unchanged": true,
+      "groups": 1
+    }
+  ],
+  "all_texture_mip_bytes_unchanged": true,
+  "source_blend_fbx_bytes_unchanged": true,
+  "bind_skeleton_unchanged": true,
+  "arms": [
+    {
+      "side": "l",
+      "source_bind_arm_length_m": 0.4578309563050088,
+      "native_bind_arm_length_m": 0.5565238245650976
+    },
+    {
+      "side": "r",
+      "source_bind_arm_length_m": 0.4577967097393457,
+      "native_bind_arm_length_m": 0.5565237699865015
+    }
+  ],
+  "creation_motion_checks": [
+    {
+      "label": "creation_male",
+      "asset": "anim_guard_idle_long",
+      "frames_checked": 64,
+      "joint_frames_checked": 2272,
+      "total_frames": 2273,
+      "worst_frame": 613,
+      "worst_mesh": "boru_race_cloth_mesh",
+      "max_edge_extension": 2.035783587987001,
+      "max_arm_joint_length_ratio": 1.0000004465799897
+    },
+    {
+      "label": "creation_female",
+      "asset": "anim_female_idle_long",
+      "frames_checked": 64,
+      "joint_frames_checked": 2272,
+      "total_frames": 2273,
+      "worst_frame": 830,
+      "worst_mesh": "boru_race_cloth_mesh",
+      "max_edge_extension": 2.32181729689436,
+      "max_arm_joint_length_ratio": 1.0000004465799888
+    }
+  ],
+  "lens_material_details": "Material 'boru_race_glass' guid=afbe5f34-0a75-0177-c7bf-8622fc44d895 version=0\n  billboard=00000000-0000-0000-0000-000000000000 u1=0 u2=0\n  flags=[two_sided,alpha_blend_sort,dont_draw_to_gbuffer,no_modify_depth_buffer,dont_cast_shadow]\n  vertexLayoutFlags=[bumpmap,skinning]\n  blendMode=factor\n  shader=cea0b671-384f-4211-a1a6-48a29a083c8f\n  alphaTest=0\n  shaderMatFlags=[use_specular,disable_vertex_color_alpha]\n  textures=4\n    [  0] 2053135c-3512-ce5d-75f8-cac0ed7af5bd\n    [  1] 7e54af7f-651d-f178-bc17-e4f8baa79e35\n    [  2] 7e54af7f-651d-f178-bc17-e4f8baa79e35\n    [  4] 18714243-7ab5-d1a4-a477-d7c83020ed3c\n  extra: areaScale=1 areaAmt=0.65 detailNrm=1 nrmPower=1\n         mva=<0, 0, 0, 0> mva2=<0, 0, 0, 0> fcm=<1, 1, 1, 1> f2cm=<1, 1, 1, 1>\n         renderOrder=1 mipBias=0 spec=1 gloss=1 parallax=0/0.5 ao=1 exp=1\n",
+  "ui_scope_report": "reports/ui_scope_validation.json",
+  "game_retest_verified": false,
+  "inference": "Screenshot shows character creation; old owner gate excludes that view and Native rebuild omits ActionSet. Correcting the UI skeleton is the repair candidate, pending game verification.",
+  "material_evidence": "Lens had factor blending and alpha 51 but lacked forward-pass/depth flags. Added dont_draw_to_gbuffer, no_modify_depth_buffer, sorted pass and render order 1; game transparency remains to be verified."
+}
