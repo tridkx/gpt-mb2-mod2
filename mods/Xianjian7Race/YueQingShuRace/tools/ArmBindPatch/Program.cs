@@ -1,0 +1,4 @@
+using TpacTool.Lib;using System.Text.Json;using System.Numerics;
+var pkg=new AssetPackage(args[0],true,false);if(Path.GetFullPath(args[0])==Path.GetFullPath(args[1]))throw new Exception("Preserve baseline");var sk=pkg.Items.OfType<Skeleton>().Single(s=>s.Name=="yqs_skeleton");var def=sk.Definition.Data;using var spec=JsonDocument.Parse(File.ReadAllText(args[2]));var rows=spec.RootElement.EnumerateArray().ToArray();if(rows.Length!=def.Bones.Count)throw new Exception("Bone count");
+for(int i=0;i<rows.Length;i++){if(rows[i].GetProperty("name").GetString()!=def.Bones[i].Name)throw new Exception("Bone identity");var a=rows[i].GetProperty("rest").EnumerateArray().Select(x=>x.GetSingle()).ToArray();def.Bones[i].RestFrame=new Matrix4x4(a[0],a[1],a[2],a[3],a[4],a[5],a[6],a[7],a[8],a[9],a[10],a[11],a[12],a[13],a[14],a[15]);}
+sk.Definition.MarkLongLive();pkg.Save(args[1]);Console.WriteLine("Arm bind skeleton patched; all mesh/cloth/texture segments preserved");

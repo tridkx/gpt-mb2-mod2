@@ -30,7 +30,10 @@ for lod in range(4):
     rows.append(dict(lod=lod,mesh_count=len(before),max_position_error_m=maxerror,indices_uv_weights_identical=True))
 subprocess.run([MB,'skeljson',str(baseline),'yqs_skeleton',str(B/'accepted_skeleton.json')],check=True,capture_output=True)
 before=parse_skeljson(json.loads((B/'accepted_skeleton.json').read_text()));after=parse_skeljson(json.loads((R/'reports/final_skeleton.json').read_text()))
-assert before['names']==after['names'] and np.array_equal(before['parent'],after['parent']) and np.array_equal(before['restWorld'],after['restWorld'])
+assert before['names']==after['names'] and np.array_equal(before['parent'],after['parent'])
+assert np.max(abs(before['restWorld'][:,:3,3]-after['restWorld'][:,:3,3]))<2e-6
+allowed=[before['names'].index(pre+'_'+name) for pre in ['l','r'] for name in ['upperarm_twist','upperarm_twist1','foretwist','foretwist1']]
+keep=[i for i in range(28) if i not in allowed];assert np.max(abs(before['restWorld'][keep]-after['restWorld'][keep]))<2e-6
 before=json.loads((B/'accepted_export_lod0/pack.json').read_text());after=json.loads((B/'final_export_lod0/pack.json').read_text())
 assert [t['name'] for t in before['textures']]==[t['name'] for t in after['textures']]
 changed=[]
@@ -48,5 +51,5 @@ for a,b in zip(lighting_pack['textures'],after['textures']):
     assert a['name']==b['name']
     assert (B/'accepted_lighting_export'/a['file']).read_bytes()==(B/'final_export_lod0'/b['file']).read_bytes()
 assert json.loads((R/'reports/material_names.json').read_text())==json.loads((R/'reports/history/v0.2.1/material_names.json').read_text())
-report=dict(status='pass',version=json.loads((R/'tools/model_config.json').read_text())['version'],baseline_version='v0.1.1',baseline_package_sha256=sha(baseline),final_package_sha256=sha(R/'module/YueQingShuRace/AssetPackages/yqs.tpac'),lods=rows,source_skeleton_identical=True,all_source_texture_mips_identical=True,changed_generated_textures=changed,user_feedback='User accepted v0.1.1 shape; v0.2.0 reports missing pelvis collision, excessive shadow darkness and small apparent size',game_cloth_verified=False)
+report=dict(status='pass',version=json.loads((R/'tools/model_config.json').read_text())['version'],baseline_version='v0.1.1',baseline_package_sha256=sha(baseline),final_package_sha256=sha(R/'module/YueQingShuRace/AssetPackages/yqs.tpac'),lods=rows,source_joint_positions_identical=True,non_arm_world_bind_frames_preserved=True,arm_bind_axes_corrected=True,all_source_texture_mips_identical=True,changed_generated_textures=changed,user_feedback='User accepted v0.1.1 shape; v0.2.0 reports missing pelvis collision, excessive shadow darkness and small apparent size',game_cloth_verified=False)
 (R/'reports/preservation_validation.json').write_text(json.dumps(report,indent=2));print('ACCEPTED_APPEARANCE_PRESERVED',rows)

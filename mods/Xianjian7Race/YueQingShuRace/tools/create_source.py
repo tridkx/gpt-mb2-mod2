@@ -1,3 +1,6 @@
+import sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parent))
 from workspace_paths import workspace_root
 """Preserve source geometry and fit custom race joint pivots to source anatomy."""
 import bpy,json,sys,hashlib
@@ -29,6 +32,10 @@ for pre in ['l','r']:
  # Finger pivots come from the original hand, without changing its shape.
  source[ni[pre+'_finger0']]=anatomy['Bip001-'+pre.upper()+'-Finger0']
 world=rig['restWorld'].copy();world[:,:3,3]=source
+if cfg.get('align_arm_bind_axes'):
+ from arm_binding import align
+ world,alignment=align(world,rig['names'])
+ (ROOT/'reports/arm_bind_alignment.json').write_text(json.dumps(dict(bones=alignment,joint_positions_unchanged=True),indent=2))
 local=np.array([world[i] if parent<0 else np.linalg.inv(world[parent])@world[i] for i,parent in enumerate(rig['parent'])])
 bones=[]
 for i,bone in enumerate(json.loads((ROOT/'reports/human_skeleton.json').read_text())['bones']):

@@ -1,7 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <action_sets>
-  <action_set id="as_yqs_warrior" skeleton="yqs_skeleton" movement_system="bipedal" base_set="as_human_warrior" />
-  <action_set id="as_yqs_female_warrior" skeleton="yqs_skeleton" movement_system="bipedal" base_set="as_human_female_warrior" />
+  <action_set id="as_yqs_warrior" skeleton="yqs_skeleton" movement_system="bipedal" base_set="as_human_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
+  <action_set id="as_yqs_female_warrior" skeleton="yqs_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+  </action_set>
   <action_set id="as_yqs_villager" skeleton="yqs_skeleton" movement_system="bipedal" base_set="as_human_villager" />
   <action_set id="as_yqs_female_villager" skeleton="yqs_skeleton" movement_system="bipedal" base_set="as_human_female_villager" />
   <action_set id="as_yqs_facegen" skeleton="yqs_skeleton" movement_system="bipedal" base_set="as_human_facegen" />

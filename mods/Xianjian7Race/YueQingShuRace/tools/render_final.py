@@ -1,3 +1,6 @@
+import sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parent))
 from workspace_paths import workspace_root
 """Render actual final-package geometry, decoded diffuse and byte-quantized skin."""
 import bpy,sys,json

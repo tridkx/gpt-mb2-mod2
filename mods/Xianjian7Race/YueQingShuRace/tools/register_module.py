@@ -48,8 +48,17 @@ actions = ET.Element('action_sets')
 for suffix, base in [('warrior', 'as_human_warrior'), ('female_warrior', 'as_human_female_warrior'),
                      ('villager', 'as_human_villager'), ('female_villager', 'as_human_female_villager'),
                      ('facegen', 'as_human_facegen'), ('female_facegen', 'as_human_female_facegen')]:
-    ET.SubElement(actions, 'action_set', id='as_yqs_' + suffix,
+    entry = ET.SubElement(actions, 'action_set', id='as_yqs_' + suffix,
                   skeleton=CFG['skeleton'], movement_system='bipedal', base_set=base)
+    if suffix in ['warrior','female_warrior']:
+        # Fixed female body: use the Native female start/loop for either preview SkeletonType.
+        native_sets={n.get('id'):n for n in ET.parse(NATIVE/'action_sets.xml').getroot()}
+        def resolve(name):
+            n=native_sets[name];out=resolve(n.get('base_set')) if n.get('base_set') else {}
+            out.update({a.get('type'):a.get('animation') for a in n});return out
+        clips=resolve('as_human_female_facegen')
+        for action in ['act_inventory_idle_start','act_inventory_idle']:
+            ET.SubElement(entry,'action',type=action,animation=clips[action])
 write(MODULE / 'ModuleData/action_sets.xml', actions)
 
 monsters = ET.Element('Monsters')
@@ -80,7 +89,9 @@ for tag, value in [('Name', 'Yue Qingshu Race'), ('Id', CFG['id']),
 deps = ET.SubElement(sub, 'DependedModules')
 for dep in ['Native', 'SandBoxCore', 'Sandbox']:
     ET.SubElement(deps, 'DependedModule', Id=dep)
-ET.SubElement(sub, 'SubModules')
+runtime=ET.SubElement(ET.SubElement(sub,'SubModules'),'SubModule')
+for tag,value in [('Name','Yue Qingshu Race Inventory Preview'),('DLLName','YueQingShuRace.UIRuntime.dll'),('SubModuleClassType','YueQingShuRace.UIRuntime.SubModule')]:ET.SubElement(runtime,tag,value=value)
+tags=ET.SubElement(runtime,'Tags');ET.SubElement(tags,'Tag',key='DedicatedServerType',value='none');ET.SubElement(tags,'Tag',key='IsNoRenderModeElement',value='false')
 xmls = ET.SubElement(sub, 'Xmls')
 for ident, path in [('Monsters', 'monsters')]:
     node = ET.SubElement(xmls, 'XmlNode')

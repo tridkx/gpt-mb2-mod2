@@ -1,7 +1,7 @@
 {
   "id": "YueQingShuRace",
   "race": "yqs_default",
-  "version": "v0.3.0",
+  "version": "v0.3.1",
   "skeleton": "yqs_skeleton",
   "skin_min_scale": 1.0,
   "lod_multipliers": [
@@ -12,7 +12,7 @@
   ],
   "minimum_ratios": {},
   "cloth_enabled": true,
-  "source_blend": "input/default/01_\u9ed8\u8ba4\u5957\u88c5_MAJ02_01.blend",
+  "source_blend": "input/default/01_默认套装_MAJ02_01.blend",
   "anatomical_rebind_materials": [
     "MI_MAJ02_01_cloth1",
     "MI_MAJ02_01_body"
@@ -22,5 +22,6 @@
     1,
     2,
     3
-  ]
+  ],
+  "align_arm_bind_axes": true
 }

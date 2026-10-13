@@ -40,7 +40,7 @@ def validate_registration(root):
     for action in actions.getroot():
         assert action.get('skeleton') == cfg['skeleton']
         assert native_actions.find(f"action_set[@id='{action.get('base_set')}']") is not None
-        assert len(action) == 0  # Preserve native inventory/facegen action mapping.
+        assert len(action) == (2 if action.get('id') in ['as_yqs_warrior','as_yqs_female_warrior'] else 0)
     monsters = read(data / 'monsters.xml')
     mon = monsters.find(f"Monster[@id='{cfg['race']}']")
     old = read(native / 'monsters.xml').find("Monster[@id='human']")
@@ -59,7 +59,7 @@ def validate_registration(root):
               'unaffected_troops':native_troop_count, 'troop_overrides_present':False,
               'skin_variants':len(skins), 'skeleton':cfg['skeleton'],
               'native_monster_dimensions_preserved':True,
-              'native_ui_actions_inherited':True, 'cloth_simulation':cfg['cloth_enabled']}
+              'native_ui_actions_inherited':False,'only_warrior_inventory_actions_overridden':True, 'cloth_simulation':cfg['cloth_enabled']}
     (root / 'reports/registration_validation.json').write_text(json.dumps(report, indent=2))
     return report
 

@@ -1,14 +1,16 @@
 # Yue Qingshu Race
 
-月清疏默认时装的独立种族资源模块，版本 v0.3.0，适用本机 Native v1.4.8。属于[仙剑7系列工程](../README.md)。模块 ID 为 `YueQingShuRace`，种族 ID 为 `yqs_default`。
+月清疏默认时装的独立种族资源模块，版本 v0.3.1，适用本机 Native v1.4.8。属于[仙剑7系列工程](../README.md)。模块 ID 为 `YueQingShuRace`，种族 ID 为 `yqs_default`。
 
 ## 功能与验收
 
 脸、头发、默认服装、身体和双手组成完整身体，使用独立 28 骨 `yqs_skeleton`，沿用原生动作。源网格只做整体转向，保留脸、胸部、四肢及身高比例，含头饰总高约 1.676 米。提供四级 LOD，裙摆、悬垂袖片、长发、发带和流苏共 18 个布料网格，使用 17 个按源模型拟合的碰撞胶囊。[统计](reports/lod_stats.json)、[资源检查](reports/release_validation.json)、[源文件检查](reports/source_validation.json)。
 
-用户已验收 v0.2.2 的效果，见[游戏验收记录](reports/game_acceptance.json)。本版保留该版本最终 TPAC 的全部字节，仅调整模块注册与工程组织。离线图片和重力探针没有运行游戏求解器；用户验收不代表全部动作、骑乘和大规模多人性能均已逐项测试。
+用户已验收 v0.2.2 的效果，见[游戏验收记录](reports/game_acceptance.json)。本版保留已验收的模型几何、权重、材质与布料预处理数据，按源骨段对齐上臂、前臂绑定轴以改善内收，并提供仅对 `yqs_default` 物品栏预览生效的待机适配：自有男女 warrior 集选择女性垂手 start/loop，确保预览使用自有骨架与动作集。捏脸、地图、战场及其他种族不在适配范围内。物品栏新姿势与穿脱装备后的恢复尚待游戏复测。离线图片和重力探针没有运行游戏求解器；用户验收不代表全部动作、骑乘和大规模多人性能均已逐项测试。
 
 不做表情、动态手势、捏脸或换装，手指保持源姿态；省略 UE 专用眼周遮挡和泪线层。固定外观含默认衣服，不能直接叠穿原版防具。
+
+手臂绑定与几何保留见[手臂专项检查](reports/arm_binding_validation.json)。物品栏修复的离线证据见[入口与作用范围回归](reports/ui_scope_validation.json)、[动画片段 GUID 检查](reports/preview_idle_validation.json)和[完整待机循环检查](reports/inventory_pose_validation.json)。
 
 ## 安装与集成
 
@@ -28,7 +30,7 @@
 
 ```powershell
 & 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/Xianjian7Race/YueQingShuRace/tools/rebuild.py
-./tools/install_release.ps1 -Mod YueQingShuRace -Version v0.3.0 -CheckOnly
+./tools/install_release.ps1 -Mod YueQingShuRace -Version v0.3.1 -CheckOnly
 ```
 
 源包保持 `source/` 与 `tex/` 相邻，Blend 使用相对贴图路径；`workspace_tools/` 恢复到工作区根 `tools/`。检查脚本使用旧交付包作为基线，重建前保留 dist/ 内历史版本。安装与打包使用工作区共用入口，旧包保留，使用本地 Git。变更见[更新日志](CHANGELOG.md)。
