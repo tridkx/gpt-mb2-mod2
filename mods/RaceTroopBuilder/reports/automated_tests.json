@@ -1,8 +1,8 @@
 {
   "status": "pass",
-  "count": 38,
+  "count": 39,
   "failures": 0,
-  "fixture": "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261013-092759-340\\fixture-21c3bba0ba4d4ce6af9671058aaa9f01",
+  "fixture": "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261013-102258-894\\fixture-dfb6725fb16d4e5fa9535ec78183a8ae",
   "tests": [
     {
       "name": "nested discovery, registered filename and excluded caches",
@@ -26,6 +26,10 @@
     },
     {
       "name": "missing race rejected, no human fallback",
+      "status": "pass"
+    },
+    {
+      "name": "unselected duplicate race provider allowed; actual dependency collisions rejected",
       "status": "pass"
     },
     {

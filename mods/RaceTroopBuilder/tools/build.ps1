@@ -3,7 +3,7 @@ $ErrorActionPreference = 'Stop'
 $projectRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 $stamp = Get-Date -Format 'yyyyMMdd-HHmmss-fff'
 $checkRoot = Join-Path $projectRoot "build/checks-$stamp"
-$bundle = Join-Path $projectRoot 'dist/RaceTroopBuilder-v0.3.0-win-x64'
+$bundle = Join-Path $projectRoot 'dist/RaceTroopBuilder-v0.3.1-win-x64'
 function Invoke-Dotnet([string[]]$Arguments) {
     & dotnet @Arguments
     if ($LASTEXITCODE -ne 0) { throw "dotnet failed: $($Arguments -join ' ')" }
@@ -85,16 +85,16 @@ $binaryHashes = @{}
 foreach ($relative in @('app/gui/RaceTroopBuilder.exe','app/gui/RaceTroopBuilder.dll','app/gui/RaceTroopBuilder.Core.dll','app/cli/RaceTroopBuilder.Cli.exe','app/cli/RaceTroopBuilder.Cli.dll','app/cli/RaceTroopBuilder.Core.dll')) {
     $binaryHashes[$relative] = (Get-FileHash -LiteralPath (Join-Path $bundle $relative) -Algorithm SHA256).Hash.ToLowerInvariant()
 }
-$validation = @{ status='pass'; date=(Get-Date -Format 'yyyy-MM-dd'); version='v0.3.0'; framework='.NET 10';
+$validation = @{ status='pass'; date=(Get-Date -Format 'yyyy-MM-dd'); version='v0.3.1'; framework='.NET 10';
     armor_runtime_tests=$(if ($LocalGameChecks) { 9 } else { $null }); test_count=$testSummary.count; tests=$testSummary.tests; gui=$guiSummary; catalog=$catalogSummary; binary_hashes=$binaryHashes;
     game_started=$false; actual_game_module_installed=$false; runtime_testing='pending user acceptance'; check_directory=$checkRoot }
 $validation | ConvertTo-Json -Depth 12 | Set-Content -LiteralPath (Join-Path $reportRoot 'release_validation.json') -Encoding UTF8
 Copy-Item -LiteralPath (Join-Path $checkRoot 'tests.json') -Destination (Join-Path $reportRoot 'automated_tests.json')
 New-Item -ItemType Directory -Path (Join-Path $bundle 'reports') -Force | Out-Null
 Get-ChildItem -LiteralPath $reportRoot -File | Where-Object { $_.Name -ne 'delivery_manifest.json' } | Copy-Item -Destination (Join-Path $bundle 'reports')
-$zip = Join-Path $projectRoot "dist/RaceTroopBuilder-v0.3.0-win-x64-$stamp.zip"
+$zip = Join-Path $projectRoot "dist/RaceTroopBuilder-v0.3.1-win-x64-$stamp.zip"
 Compress-Archive -LiteralPath $bundle -DestinationPath $zip -CompressionLevel Optimal
-@{ version='v0.3.0'; archive=$zip; sha256=(Get-FileHash -LiteralPath $zip -Algorithm SHA256).Hash.ToLowerInvariant() } |
+@{ version='v0.3.1'; archive=$zip; sha256=(Get-FileHash -LiteralPath $zip -Algorithm SHA256).Hash.ToLowerInvariant() } |
     ConvertTo-Json | Set-Content -LiteralPath (Join-Path $reportRoot 'delivery_manifest.json') -Encoding UTF8
 Write-Output "Bundle: $bundle"
 Write-Output "Archive: $zip"

@@ -28,7 +28,7 @@ try
     {
         case "help":
             Allowed();
-            Result(new { tool = "RaceTroopBuilder", version = "0.2.0", commands = new[]
+            Result(new { tool = "RaceTroopBuilder", version = "0.3.1", commands = new[]
             {
                 "scan [--game PATH] [--mods PATH ...]",
                 "catalog --kind troops|items|races [--filter TEXT] [--lang zh-CN|en] [--game PATH] [--mods PATH ...]",

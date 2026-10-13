@@ -18,6 +18,7 @@ public partial class MainWindow : Window
     private List<Loadout> _editedLoadouts = [];
     private bool _loading;
     private bool _busy;
+    private bool _configurationNotApplied;
     private readonly Dictionary<string, TextBox> _skillInputs = new(StringComparer.Ordinal);
     private readonly Dictionary<string, TextBlock> _skillLabels = new(StringComparer.Ordinal);
     private readonly Dictionary<string, CheckBox> _skillResets = new(StringComparer.Ordinal);
@@ -310,8 +311,15 @@ public partial class MainWindow : Window
         }
         _project.Rules.RemoveAll(x => x.TroopIds.Count == 0);
     }
+    private void RequireAppliedConfiguration()
+    {
+        if (_configurationNotApplied)
+            throw new InvalidOperationException("上次应用配置未成功，当前工程仍是旧配置。请修正错误并重新点击“应用配置到所选范围”；已阻止保存、导出和安装旧配置。");
+    }
     private void ApplyConfiguration()
     {
+        _configurationNotApplied = true;
+        _lastReport = null;
         RequireCatalog();
         var targets = ScopeIds();
         if (RaceChoice.SelectedItem is not RaceInfo race) throw new InvalidOperationException("请选择依赖种族。");
@@ -346,13 +354,20 @@ public partial class MainWindow : Window
             _project.Rules.Add(newRule);
         }
         var report = Builder.Validate(_catalog!, _project);
-        if (report.Status != "pass") { _project = previous; ShowReport(report); return; }
+        if (report.Status != "pass")
+        {
+            _project = previous;
+            throw new InvalidDataException("应用配置失败：候选 " + report.Targets.Count + " 个兵种未保存；当前工程仍有 " +
+                _project.Rules.SelectMany(x => Builder.Select(_catalog!, x)).Distinct().Count() + " 个已配置兵种。\n" +
+                string.Join("\n", report.Issues.Where(x => x.Severity == "error").Select(x => x.Subject + ": " + x.Message)));
+        }
+        _configurationNotApplied = false;
         _lastReport = null; UpdateProjectText(); ShowReport(report);
         var selectedId = _selected!.Id; RenderTree(); SelectTroop(_catalog!.Troops[selectedId]);
     }
     private async void ApplyClick(object sender, RoutedEventArgs e) => await Run(ApplyConfiguration);
     private async void RemoveRuleClick(object sender, RoutedEventArgs e) => await Run(() =>
-    { var ids = ScopeIds(); RemoveTargets(ids); _lastReport = null; UpdateProjectText(); RenderTree(); OutputText.Text = $"已撤销 {ids.Count} 个兵种的替换配置。"; });
+    { var ids = ScopeIds(); RemoveTargets(ids); _configurationNotApplied = false; _lastReport = null; UpdateProjectText(); RenderTree(); OutputText.Text = $"已撤销 {ids.Count} 个兵种的替换配置。"; });
     private void ShowReport(CheckReport report)
     {
         OutputText.Text = $"{(report.Status == "pass" ? "检查通过" : "检查未通过")} · {report.Targets.Count} 个目标兵种 · {report.TransformChecks} 个节点转换核对\n\n加载顺序（从上到下）：\n" + string.Join(" → ", report.LoadOrder) +
@@ -360,10 +375,10 @@ public partial class MainWindow : Window
         if (report.ModulePath != null) OutputText.Text += "\n\n导出目录：" + report.ModulePath;
     }
     private async void ValidateClick(object sender, RoutedEventArgs e) => await Run(() =>
-    { RequireCatalog(); CaptureMetadata(); UpdateProjectText(); ShowReport(Builder.Validate(_catalog!, _project)); });
+    { RequireAppliedConfiguration(); RequireCatalog(); CaptureMetadata(); UpdateProjectText(); ShowReport(Builder.Validate(_catalog!, _project)); });
     private async void PreviewClick(object sender, RoutedEventArgs e) => await Run(() =>
     {
-        RequireCatalog(); CaptureMetadata(); UpdateProjectText(); var report = Builder.Validate(_catalog!, _project); ShowReport(report);
+        RequireAppliedConfiguration(); RequireCatalog(); CaptureMetadata(); UpdateProjectText(); var report = Builder.Validate(_catalog!, _project); ShowReport(report);
         DiffText.Text = report.Status == "pass" ? Json.Write(Builder.Preview(_catalog!, _project)) : "先修复检查错误，再查看修改对比。";
     });
     private void RequireCatalog()
@@ -374,13 +389,13 @@ public partial class MainWindow : Window
             throw new InvalidOperationException("目录已改变，请重新扫描后继续。");
     }
     private async void NewProjectClick(object sender, RoutedEventArgs e) => await Run(() =>
-    { _project = new(); _projectFile = null; _lastReport = null; SyncMetadata(); UpdateProjectText(); if (_catalog != null) RenderTree(); });
+    { _project = new(); _projectFile = null; _lastReport = null; _configurationNotApplied = false; SyncMetadata(); UpdateProjectText(); if (_catalog != null) RenderTree(); });
     public async Task OpenProject(string path)
     {
         await Run(async () =>
         {
             var project = Builder.ReadProject(path);
-            _project = project; _projectFile = Path.GetFullPath(path); _lastReport = null;
+            _project = project; _projectFile = Path.GetFullPath(path); _lastReport = null; _configurationNotApplied = false;
             GamePath.Text = project.GameRoot ?? GamePath.Text; ModPaths.Text = string.Join(Environment.NewLine, project.ModRoots.Count > 0 ? project.ModRoots : [Discovery.DefaultModRoot()]);
             SyncMetadata(); await ScanCatalog(); UpdateProjectText(); ShowReport(Builder.Validate(_catalog!, _project));
         });
@@ -389,13 +404,14 @@ public partial class MainWindow : Window
     { var dialog = new OpenFileDialog { Filter = "拼装工程 JSON|*.json", Title = "打开兵种拼装工程" }; if (dialog.ShowDialog(this) == true) await OpenProject(dialog.FileName); }
     private async void SaveClick(object sender, RoutedEventArgs e) => await Run(() =>
     {
+        RequireAppliedConfiguration();
         var dialog = new SaveFileDialog { Filter = "拼装工程 JSON|*.json", FileName = _projectFile ?? "my-race-troops.json" };
         if (dialog.ShowDialog(this) != true) return;
         CaptureMetadata(); Json.Save(dialog.FileName, _project); _projectFile = dialog.FileName; UpdateProjectText();
     });
     private async void BuildClick(object sender, RoutedEventArgs e) => await Run(async () =>
     {
-        RequireCatalog(); CaptureMetadata(); UpdateProjectText();
+        RequireAppliedConfiguration(); RequireCatalog(); CaptureMetadata(); UpdateProjectText();
         var validation = Builder.Validate(_catalog!, _project); if (validation.Status != "pass") { ShowReport(validation); return; }
         var dialog = new OpenFolderDialog { Title = "选择导出根目录（将创建带时间戳的独立构建目录）" };
         if (dialog.ShowDialog(this) != true) return;
@@ -411,6 +427,7 @@ public partial class MainWindow : Window
     });
     private async void InstallClick(object sender, RoutedEventArgs e) => await Run(async () =>
     {
+        RequireAppliedConfiguration();
         if (_lastReport == null) throw new InvalidOperationException("请先导出当前工程。修改配置后应重新导出。");
         RequireCatalog(); StatusText.Text = "正在检查依赖并安装当前模块…";
         var installGame = GamePath.Text.Trim();
@@ -500,6 +517,48 @@ public partial class MainWindow : Window
         SelectTroop(_catalog.Troops["imperial_recruit"]);
         if (ArmorBody.Text != "0") throw new InvalidDataException("切换兵种丢失已保存的护甲修改。");
         ArmorMode.SelectedIndex = 0;
+        // Regression: the standalone Tianxiang provider also appears in the collection.
+        var savedProject = _project;
+        _project = new BuilderProject { ModuleId = "CataphractRegression", ModuleName = "Cataphract Regression", Rules =
+        [
+            new() { TroopIds = ["imperial_legionary"], RaceModule = "YueQingShuOutfit2Race", RaceId = "yqs2_outfit2", IsFemale = true, StripArmor = true },
+            new() { TroopIds = ["imperial_elite_menavliaton"], RaceModule = "YueQingShuRace", RaceId = "yqs_default", IsFemale = true, StripArmor = true },
+            new() { TroopIds = ["imperial_palatine_guard"], RaceModule = "BaiMoQingOutfit2Race", RaceId = "bmq2_outfit2", IsFemale = true, StripArmor = true },
+            new() { TroopIds = ["imperial_sergeant_crossbowman"], RaceModule = "BaiMoQingRace", RaceId = "bmq_default", IsFemale = true, StripArmor = true }
+        ] };
+        SelectTroop(_catalog.Troops["imperial_elite_cataphract"]);
+        RaceChoice.SelectedItem = _catalog.Races.Single(x => x.ModuleId == "TianxiangT5PVERace" && x.Id == "txt5pve");
+        GenderChoice.SelectedIndex = 1; FaceChoice.SelectedIndex = 1; AgeText.Text = "";
+        StripArmor.IsChecked = true; ArmorMode.SelectedIndex = 0; ScopeChoice.SelectedIndex = 0;
+        foreach (var loadout in _editedLoadouts)
+        {
+            loadout.Slots["Item0"] = "empire_lance_3_t5";
+            loadout.Slots["Item1"] = "empire_mace_5_t5";
+            loadout.Slots.Remove("Item2"); loadout.Slots.Remove("Item3");
+        }
+        RefreshLoadouts(0); ReplaceEquipment.IsChecked = true; ApplyConfiguration();
+        RequireAppliedConfiguration();
+        var catReport = Builder.Build(_catalog, _project, Path.Combine(Path.GetDirectoryName(Path.GetFullPath(pngPath))!, "cataphract-regression"));
+        if (catReport.Status != "pass" || catReport.Targets.Count != 5 || !catReport.Targets.Contains("imperial_elite_cataphract"))
+            throw new InvalidDataException("Tianxiang T5 装备修改后未导出第五个兵种：" + Json.Write(catReport));
+        var exported = System.Xml.Linq.XDocument.Load(Path.Combine(catReport.ModulePath!, "ModuleData", "rtb_troops.xslt"))
+            .Descendants("NPCCharacter").Single(x => (string?)x.Attribute("id") == "imperial_elite_cataphract");
+        foreach (var roster in exported.Descendants("EquipmentRoster").Where(x => (string?)x.Attribute("equipmentType") == "Battle"))
+        {
+            var slots = roster.Elements("equipment").ToDictionary(x => (string)x.Attribute("slot")!, x => (string)x.Attribute("id")!);
+            if (slots["Item0"] != "Item.empire_lance_3_t5" || slots["Item1"] != "Item.empire_mace_5_t5" || slots.ContainsKey("Item2") || slots.ContainsKey("Item3"))
+                throw new InvalidDataException("具装骑兵装备改动未进入最终 XSLT。");
+        }
+        // A rejected candidate cannot subsequently save or export the previous project as if it succeeded.
+        AgeText.Text = "17";
+        try { ApplyConfiguration(); throw new Exception("无效年龄应用未失败。"); }
+        catch (InvalidDataException) { }
+        try { RequireAppliedConfiguration(); throw new Exception("失败应用后仍允许导出旧工程。"); }
+        catch (InvalidOperationException) { }
+        if (_project.Rules.SelectMany(x => Builder.Select(_catalog, x)).Distinct().Count() != 5)
+            throw new InvalidDataException("失败应用破坏了之前五个兵种。");
+        AgeText.Text = ""; ApplyConfiguration(); RequireAppliedConfiguration();
+        _project = savedProject; SelectTroop(_catalog.Troops["imperial_recruit"]);
         // Restore a useful demo: native weapons per troop, one race for the complete regular empire branch.
         ReplaceEquipment.IsChecked = false; ScopeChoice.SelectedIndex = 1; ApplyConfiguration();
         var directory = Path.GetDirectoryName(Path.GetFullPath(pngPath))!; Directory.CreateDirectory(directory);
@@ -518,6 +577,6 @@ public partial class MainWindow : Window
         var bitmap = new RenderTargetBitmap((int)ActualWidth, (int)ActualHeight, 96, 96, PixelFormats.Pbgra32);
         bitmap.Render(this); var encoder = new PngBitmapEncoder(); encoder.Frames.Add(BitmapFrame.Create(bitmap));
         using var stream = File.Create(pngPath); encoder.Save(stream);
-        Json.Save(Path.Combine(directory, "gui-smoke.json"), new { status = "pass", scan = true, treeSelection = true, subtreeApply = true, slotEdit = true, loadoutCopy = true, overlapUpdate = true, aiFieldsRetained = true, search = true, bilingualNames = true, armorOverride = true, originalArmorAutofill = true, originalArmorEditAndRoundtrip = true, originalArmorSelectionRefresh = true, skillsOverride = true, skillReset = true, skillBatchPreservesOtherNodes = true, mercenaryChineseSearch = true, screenshot = pngPath });
+        Json.Save(Path.Combine(directory, "gui-smoke.json"), new { status = "pass", scan = true, treeSelection = true, subtreeApply = true, cataphractTianxiangExport = true, rejectedApplyBlocksExport = true, slotEdit = true, loadoutCopy = true, overlapUpdate = true, aiFieldsRetained = true, search = true, bilingualNames = true, armorOverride = true, originalArmorAutofill = true, originalArmorEditAndRoundtrip = true, originalArmorSelectionRefresh = true, skillsOverride = true, skillReset = true, skillBatchPreservesOtherNodes = true, mercenaryChineseSearch = true, screenshot = pngPath });
     }
 }

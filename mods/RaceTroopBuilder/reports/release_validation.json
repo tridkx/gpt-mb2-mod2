@@ -25,6 +25,10 @@
                       "status":  "pass"
                   },
                   {
+                      "name":  "unselected duplicate race provider allowed; actual dependency collisions rejected",
+                      "status":  "pass"
+                  },
+                  {
                       "name":  "missing adult gender rejected",
                       "status":  "pass"
                   },
@@ -153,18 +157,18 @@
                       "status":  "pass"
                   }
               ],
-    "version":  "v0.3.0",
-    "test_count":  38,
+    "version":  "v0.3.1",
+    "test_count":  39,
     "armor_runtime_tests":  9,
     "runtime_testing":  "pending user acceptance",
-    "check_directory":  "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261013-092759-340",
+    "check_directory":  "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261013-102258-894",
     "binary_hashes":  {
-                          "app/gui/RaceTroopBuilder.exe":  "58c29011f53df10c75a91b1209bcd83eb3bc7a0a17b551f7f3b2a91f67c64353",
-                          "app/cli/RaceTroopBuilder.Cli.dll":  "1facb7cd1f553ad217274fe208e05e02cb05bc511ef1fa9af054b528e318cedf",
-                          "app/cli/RaceTroopBuilder.Core.dll":  "9c1890b10ec23e6a91747122a985c31c41c78a82f0d36797846bc1c0edad3706",
-                          "app/gui/RaceTroopBuilder.dll":  "6c24c896402fc81611afe4c1a8336901fc3630dec7fe6cfd0de19908ad2b4079",
-                          "app/gui/RaceTroopBuilder.Core.dll":  "9c1890b10ec23e6a91747122a985c31c41c78a82f0d36797846bc1c0edad3706",
-                          "app/cli/RaceTroopBuilder.Cli.exe":  "1115be07be1fecd69d346a0938909c7d4d44819367f108f7c8973dd849efbc31"
+                          "app/gui/RaceTroopBuilder.exe":  "40d83441902c91d531ced737fcbdb15fd2cc425db56c01d37c1aa5e825ff04af",
+                          "app/cli/RaceTroopBuilder.Cli.dll":  "239d4dc7c2ca58dd6bf1913f816f62ee3fa8dd4abc6bcaae422acedf6f35455a",
+                          "app/cli/RaceTroopBuilder.Core.dll":  "e378ad4638f119903a3ad876864841a90ec30ac2f36d62ef88fc3a5c79e1f0af",
+                          "app/gui/RaceTroopBuilder.dll":  "c5298dffa13aad3cbc2aa1caf2611f3b15fdf43a06c3b2a289b6ecbed7b72e99",
+                          "app/gui/RaceTroopBuilder.Core.dll":  "e378ad4638f119903a3ad876864841a90ec30ac2f36d62ef88fc3a5c79e1f0af",
+                          "app/cli/RaceTroopBuilder.Cli.exe":  "0107123ec3e6fcd1d2c35f38cbbce025b7ec36c88b9e805ca7ef7455e3b166ca"
                       },
     "status":  "pass",
     "catalog":  {
@@ -181,6 +185,8 @@
                 "scan":  true,
                 "treeSelection":  true,
                 "subtreeApply":  true,
+                "cataphractTianxiangExport":  true,
+                "rejectedApplyBlocksExport":  true,
                 "slotEdit":  true,
                 "loadoutCopy":  true,
                 "overlapUpdate":  true,
@@ -195,7 +201,7 @@
                 "skillReset":  true,
                 "skillBatchPreservesOtherNodes":  true,
                 "mercenaryChineseSearch":  true,
-                "screenshot":  "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261013-092759-340\\gui-preview.png"
+                "screenshot":  "D:\\gpt-mb2-mod2\\mods\\RaceTroopBuilder\\build\\checks-20261013-102258-894\\gui-preview.png"
             },
     "game_started":  false
 }

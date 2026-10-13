@@ -72,6 +72,20 @@ Test("relative project paths resolve beside JSON", () =>
 Test("root selector follows full upgrade tree", () => Assert(Builder.Select(catalog, Profile().Rules[0]).SequenceEqual(new[] { "elite", "recruit", "veteran" }), "分支选择错误"));
 Test("unknown troop rejected", () => { var p = Profile(); p.Rules[0].TroopIds.Add("absent"); Assert(Error(Builder.Validate(catalog, p), "troop_missing"), "未知兵种未拒绝"); });
 Test("missing race rejected, no human fallback", () => { var p = Profile(); p.Rules[0].RaceId = "absent"; Assert(Error(Builder.Validate(catalog, p), "race_missing"), "无效种族未拒绝"); });
+Test("unselected duplicate race provider allowed; actual dependency collisions rejected", () =>
+{
+    var original = catalog.Modules["RaceOne"];
+    var alternative = catalog.Races[0] with { ModuleId = "RaceAlternative" };
+    catalog.Races.Add(alternative);
+    catalog.Modules["RaceAlternative"] = original with { Id = "RaceAlternative" };
+    try
+    {
+        Assert(Builder.Validate(catalog, Profile()).Status == "pass", "未选择的同种族来源阻止了构建");
+        catalog.Modules["RaceOne"] = original with { Dependencies = ["Sandbox", "RaceAlternative"] };
+        Assert(Error(Builder.Validate(catalog, Profile()), "race_collision"), "实际依赖种族冲突未拒绝");
+    }
+    finally { catalog.Modules["RaceOne"] = original; catalog.Modules.Remove("RaceAlternative"); catalog.Races.Remove(alternative); }
+});
 Test("missing adult gender rejected", () =>
 {
     var race = catalog.Races[0]; catalog.Races[0] = race with { Skins = [new(0, "adult", "", "race_skeleton")] };
