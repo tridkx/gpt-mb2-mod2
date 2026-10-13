@@ -24,10 +24,17 @@ def settle(rest,d,caps):
  for step in range(120):
   before=x.copy();velocity[active,2]-=9.81/60;x[active]+=velocity[active]/60
   for iteration in range(10):
-   delta=x[j]-x[i];distance=np.linalg.norm(delta,axis=1);correction=delta*((distance-length)/np.maximum(distance,1e-10)/denom)[:,None]
-   update=np.stack([np.bincount(i,weights=correction[:,axis],minlength=len(rest))-np.bincount(j,weights=correction[:,axis],minlength=len(rest)) for axis in range(3)],axis=1);x[active]+=.8*update[active]/degree[active,None]
+   # Use cooked disjoint batches, avoiding the artificial softness of degree-averaged Jacobi updates.
+   for group in d['constraint_sets']:
+    for kind,(start,count) in enumerate(group.reshape(4,2)):
+     if not count:continue
+     gi,gj=edges[start:start+count].T;delta=x[gj]-x[gi];distance=np.linalg.norm(delta,axis=1)
+     correction=delta*((distance-length[start:start+count])/np.maximum(distance,1e-10)/np.maximum(active[gi].astype(float)+active[gj],1))[:,None]
+     x[gi]+=correction*active[gi,None]*(.8 if kind==0 else .2);x[gj]-=correction*active[gj,None]*(.8 if kind==0 else .2)
+   anchors=d['anchors']>>16;maximum=(d['anchors']&65535)*d['anchor_scale'];delta=x-x[anchors];distance=np.linalg.norm(delta,axis=1)
+   hit=active&(distance>maximum);x[hit]=x[anchors[hit]]+delta[hit]*maximum[hit,None]/distance[hit,None]
    moving=x[ids].copy()
-   for c in caps:
+   for c in caps*4:
     a,b=np.array(c['endpoints_m']);v=b-a;t=np.clip((moving-a)@v/max(v@v,1e-12),0,1);delta=moving-a-t[:,None]*v;distance=np.linalg.norm(delta,axis=1);hit=distance<c['radius_m'];moving[hit]+=delta[hit]/np.maximum(distance[hit,None],1e-10)*(c['radius_m']-distance[hit])[:,None]
    delta=moving-rest[ids];distance=np.linalg.norm(delta,axis=1);x[ids]=rest[ids]+delta*np.minimum(1,travel[ids]/np.maximum(distance,1e-10))[:,None];x[~active]=rest[~active]
   velocity=(x-before)*60*.92
@@ -47,9 +54,9 @@ for path in sorted((B/'cloth_final').glob('*.mesh.json')):
   if keep[b] and d['max_distances'][a]==0:roots[a]=True
  before_overlap=np.maximum(-clearance(oldrest[oldkeep],old_pose),0);after_overlap=np.maximum(-clearance(rest[keep],new_pose),0);root_overlap=np.maximum(-clearance(rest[roots],new_pose),0) if roots.any() else np.array([0.])
  ox=settle(oldrest,od,old_pose);nx=settle(rest,d,new_pose);final=nx[mapping];np.savez_compressed(B/(name+'_settled_comparison.npz'),before=ox[od['render_to_sim']],after=final,indices=mesh['indices'])
- residual=np.maximum(-clearance(nx[keep],new_pose),0);delta=nx[keep]-rest[keep];old_delta=ox[oldkeep]-oldrest[oldkeep]
+ residual=np.maximum(-clearance(nx[keep],new_pose),0);peak=np.flatnonzero(keep)[int(residual.argmax())];print('PEAK',name,int(peak),'rest',rest[peak],'settled',nx[peak],'travel',d['max_distances'][peak],'displacement',np.linalg.norm(nx[peak]-rest[peak]),'anchor_length',((d['anchors'][peak]&65535)*d['anchor_scale']),flush=True);delta=nx[keep]-rest[keep];old_delta=ox[oldkeep]-oldrest[oldkeep]
  rows.append(dict(mesh=name,baseline_initial_mean_overlap_m=float(before_overlap.mean()),initial_mean_overlap_m=float(after_overlap.mean()),baseline_initial_max_overlap_m=float(before_overlap.max()),initial_max_overlap_m=float(after_overlap.max()),fixed_root_max_overlap_m=float(root_overlap.max()),fixed_root_drift_m=0.,max_settled_residual_m=float(residual.max()),p99_settled_residual_m=float(np.quantile(residual,.99)),baseline_mean_vertical_change_m=float(old_delta[:,2].mean()),mean_vertical_change_m=float(delta[:,2].mean()),baseline_raised_fraction=float((old_delta[:,2]>.01).mean()),raised_fraction=float((delta[:,2]>.01).mean()),travel_clamped=True))
- assert after_overlap.mean()<before_overlap.mean(),('Collision pressure did not decrease',name)
+ print('PROXY_MEASURED',rows[-1],flush=True)
 limits=cfg['skirt_proxy_limits']
 for row in rows:
  assert row['fixed_root_max_overlap_m']<=limits['fixed_root_overlap_m']
@@ -57,5 +64,5 @@ for row in rows:
  assert row['p99_settled_residual_m']<=limits['p99_residual_m']
  assert row['initial_mean_overlap_m']<=row['baseline_initial_mean_overlap_m']*(1-limits['minimum_mean_pressure_reduction'])
  assert row['raised_fraction']<=row['baseline_raised_fraction']
-report=dict(proxy_limits=limits,status='pass',version=cfg['version'],final_package_sha256=hashlib.sha256((R/'module'/cfg['id']/'AssetPackages'/(prefix+'.tpac')).read_bytes()).hexdigest(),baseline_version='v0.1.0',rows=rows,scope='Final compiled constraints, actual female UI idle frame, 120 gravity steps at 60Hz/10 Jacobi iterations, fixed roots never projected; a CPU diagnostic, not Bannerlord cloth simulation',game_solver_used=False)
+report=dict(proxy_limits=limits,status='pass',version=cfg['version'],final_package_sha256=hashlib.sha256((R/'module'/cfg['id']/'AssetPackages'/(prefix+'.tpac')).read_bytes()).hexdigest(),baseline_version='v0.1.0',rows=rows,scope='Final compiled constraints, actual female UI idle frame, 120 gravity steps at 60Hz/10 grouped constraint iterations plus geodesic anchor limits, fixed roots never projected; a CPU diagnostic, not Bannerlord cloth simulation',game_solver_used=False)
 (R/'reports/skirt_collision_validation.json').write_text(json.dumps(report,indent=2));print('SKIRT_COLLISION_COMPARISON',rows)

@@ -21,7 +21,7 @@ for label in ['run','idle','bow','riding','slash']:
     frames=range(anim['start'],anim['frames']) if label=='run' else sorted(set(np.linspace(anim['start'],anim['frames']-1,24).astype(int)))
     for frame in frames:
         skin=skin_matrices(rig,anim,frame);posed=[]
-        for cap in caps+legacy_caps:
+        for cap in caps:
             ab=pose_capsule(cap,skin,rig['names'])
             posed.append((ab,cap['radius_m']))
         for name,a in result.items():
@@ -30,7 +30,7 @@ for label in ['run','idle','bow','riding','slash']:
             w=source[name+'_w'][ids];bi=np.argsort(-w,axis=1)[:,:4];weights=np.take_along_axis(w,bi,axis=1)
             q=np.floor(weights*255).astype(int);q[:,0]+=255-q.sum(1)
             p=lbs(source[name+'_p'][ids],bi,q,skin);required=np.zeros(len(ids))
-            for (start,end),radius in (posed[:len(caps)] if name in allowed else posed[len(caps):]):
+            for (start,end),radius in posed:
                 axis=end-start;t=np.clip((p-start)@axis/(axis@axis),0,1)
                 required=np.maximum(required,radius-np.linalg.norm(p-start-t[:,None]*axis,axis=1))
             needs[name][ids]=np.maximum(needs[name][ids],required)

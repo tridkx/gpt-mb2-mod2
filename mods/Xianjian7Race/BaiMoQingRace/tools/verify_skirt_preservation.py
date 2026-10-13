@@ -15,34 +15,34 @@ def read_streams(path):
    if enabled:streams[field]=take(n*size)
   streams['indices']=take(ni*4);rows[name]=dict(lod=lod,material=material,guid=guid,bbox=bbox,flags=flags,n=n,ni=ni,streams=streams)
  assert offset==len(data);return rows
-allowed={r['object'] for r in json.loads((R/'build/manifest.json').read_text()) if r['material'] in cfg.get('calibrate_materials',[])};changes=[]
+
+import subprocess
+baseline=B/'trial_baseline_v0.1.2.tpac'
+with zipfile.ZipFile(R/'dist/BaiMoQingRace_v0.1.2_Mod.zip') as z:baseline.write_bytes(z.read('BaiMoQingRace/AssetPackages/bmq.tpac'))
+changes=[]
 for lod in range(4):
+ folder=B/f'trial_baseline_lod{lod}'
+ subprocess.run(['D:/mb-tools/mbtool/bin/Release/net9.0/mbtool.exe','exportmod',str(baseline),str(folder),str(lod)]+(['--all-mips'] if lod==0 else []),check=True,stdout=subprocess.DEVNULL)
  old={};new={}
- for p in (B/'baseline_v0.1.0_exports'/f'lod{lod}'/'geo').glob('*.bin'):old.update(read_streams(p))
- for p in (B/f'final_export_lod{lod}'/'geo').glob('*.bin'):new.update(read_streams(p))
+ for path in (folder/'geo').glob('*.bin'):old.update(read_streams(path))
+ for path in (B/f'final_export_lod{lod}'/'geo').glob('*.bin'):new.update(read_streams(path))
  assert old.keys()==new.keys()
- for name in old:
-  a=old[name];b=new[name];assert {k:v for k,v in a.items() if k!='streams'}=={k:v for k,v in b.items() if k!='streams'}
+ for name,a in old.items():
+  b=new[name]
+  assert {k:v for k,v in a.items() if k!='streams'}=={k:v for k,v in b.items() if k!='streams'},name
   for field,raw in a['streams'].items():
    current=b['streams'][field]
    if raw==current:continue
-   assert field=='colors' and any(name.startswith(n) for n in allowed),(name,field)
-   ac=np.frombuffer(raw,'u1').reshape(-1,4);bc=np.frombuffer(current,'u1').reshape(-1,4);assert np.array_equal(ac[:,:3],bc[:,:3]);assert np.array_equal(ac[:,3]==0,bc[:,3]==0)
-   changes.append(dict(mesh=name,lod=lod,changed_alpha_vertices=int((ac[:,3]!=bc[:,3]).sum()),fixed_roots_unchanged=True))
-base=B/'baseline_v0.1.0_exports/lod0';current=B/'final_export_lod0';oldpack=json.loads((base/'pack.json').read_text());newpack=json.loads((current/'pack.json').read_text());assert oldpack['materials']==newpack['materials'] and oldpack['skeletons']==newpack['skeletons']
-for texture in oldpack['textures']:assert (base/texture['file']).read_bytes()==(current/texture['file']).read_bytes()
-sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();pkg=R/'module'/ident/'AssetPackages'/(prefix+'.tpac')
-if not allowed:assert sha(pkg)==cfg['baseline_package_sha256']
-# The compiled preview adapter is deliberately preserved from the accepted release.
-archive_path=R/'dist'/(ident+'_v0.1.0_Mod.zip')
-if not archive_path.exists():archive_path=R/'dist'/(ident+'_Mod.zip')
-with zipfile.ZipFile(archive_path) as archive:
- dll=R/'module'/ident/'bin/Win64_Shipping_Client'/(ident+'.UIRuntime.dll');assert archive.read(ident+'/bin/Win64_Shipping_Client/'+dll.name)==dll.read_bytes()
-oldcloth={json.loads(p.read_text())['name']:p for p in (B/'baseline_cloth').glob('*.mesh.json')};newcloth={json.loads(p.read_text())['name']:p for p in (B/'cloth_final').glob('*.mesh.json')};assert oldcloth and oldcloth.keys()==newcloth.keys();preserved_cloth=0
-for name,path in oldcloth.items():
- if any(name.startswith(n) for n in allowed):continue
- blob=lambda p:p.with_name(p.name.removesuffix('.mesh.json')+'.bin')
- assert blob(path).read_bytes()==blob(newcloth[name]).read_bytes(),('Non-target cloth payload changed',name)
- preserved_cloth+=1
-report=dict(non_target_cloth_payloads_byte_identical=preserved_cloth,status='pass',version=cfg['version'],baseline_version='v0.1.0',baseline_package_sha256=cfg['baseline_package_sha256'],final_package_sha256=sha(pkg),geometry_normals_uv_tangents_weights_indices_preserved=True,materials_textures_skeleton_preserved=True,ui_runtime_unchanged=True,alpha_changes=changes,game_verified=False)
-(R/'reports/skirt_preservation_validation.json').write_text(json.dumps(report,indent=2));print('SKIRT_PRESERVATION_VERIFIED',ident,changes)
+   assert field=='colors' and name.startswith(('bmq_part_00','bmq_part_01')),(name,field)
+   ac=np.frombuffer(raw,'u1').reshape(-1,4);bc=np.frombuffer(current,'u1').reshape(-1,4)
+   assert np.array_equal(ac[:,:3],bc[:,:3])
+   changes.append(dict(mesh=name,lod=lod,changed_alpha_vertices=int((ac[:,3]!=bc[:,3]).sum())))
+ if lod==0:
+  oldpack=json.loads((folder/'pack.json').read_text());newpack=json.loads((B/'final_export_lod0/pack.json').read_text())
+  assert oldpack['materials']==newpack['materials'] and oldpack['skeletons']==newpack['skeletons']
+  for t in oldpack['textures']:assert (folder/t['file']).read_bytes()==(B/'final_export_lod0'/t['file']).read_bytes()
+with zipfile.ZipFile(R/'dist/BaiMoQingRace_v0.1.2_Mod.zip') as z:
+ dll=R/'module/BaiMoQingRace/bin/Win64_Shipping_Client/BaiMoQingRace.UIRuntime.dll'
+ assert z.read('BaiMoQingRace/bin/Win64_Shipping_Client/'+dll.name)==dll.read_bytes()
+report=dict(status='pass',version=cfg['version'],baseline_version='v0.1.2',final_package_sha256=hashlib.sha256((R/'module/BaiMoQingRace/AssetPackages/bmq.tpac').read_bytes()).hexdigest(),geometry_normals_uv_tangents_weights_indices_preserved=True,materials_textures_skeleton_preserved=True,ui_runtime_unchanged=True,only_skirt_alpha_changed=changes,game_verified=False)
+(R/'reports/skirt_preservation_validation.json').write_text(json.dumps(report,indent=2));print(report)

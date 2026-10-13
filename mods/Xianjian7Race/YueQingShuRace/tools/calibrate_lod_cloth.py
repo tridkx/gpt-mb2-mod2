@@ -1,3 +1,4 @@
+from pelvis_support import pose_capsule
 from workspace_paths import workspace_root
 """Check actual reduced vertices and change only their cloth alpha bytes."""
 import json,sys
@@ -26,9 +27,7 @@ for label in ['idle','run','bow','riding','slash']:
     for frame in frames:
         skin=skin_matrices(rig,anim,frame);posed=[]
         for cap in caps:
-            ab=[]
-            for point,bone in zip(cap['endpoints_m'],cap['bones']):
-                m=skin[rig['names'].index(bone)];ab.append(m[:3,:3]@point+m[:3,3])
+            ab=pose_capsule(cap,skin,rig['names'])
             posed.append((ab,cap['radius_m']))
         for row in rows:
             ids=row['ids'];p=lbs(row['p'][ids],row['bi'][ids],row['bw'][ids],skin)

@@ -3,7 +3,7 @@ import json,hashlib
 from pathlib import Path
 R=Path(__file__).resolve().parents[1]
 package=R/'module/YueQingShuRace/AssetPackages/yqs.tpac';sha=hashlib.sha256(package.read_bytes()).hexdigest()
-reports={n:json.loads((R/'reports'/(n+'.json')).read_text()) for n in ['release_validation','preservation_validation','cloth_validation','source_validation','feedback_fix_validation','settled_skirt_probe']}
+reports={n:json.loads((R/'reports'/(n+'.json')).read_text()) for n in ['release_validation','preservation_validation','cloth_validation','source_validation','feedback_fix_validation','settled_skirt_probe','skirt_collision_validation','panel_motion_validation']}
 for name,report in reports.items():
     assert report['status']=='pass',(name,report)
     if 'final_package_sha256' in report:assert report['final_package_sha256']==sha,(name,'stale package')
@@ -23,4 +23,12 @@ report['appearance_geometry_and_materials_preserved']=True
 report['arm_bind_axes_corrected']=True
 report['user_game_acceptance']['runtime_assets_unchanged']=False
 report['user_game_acceptance']['appearance_package_unchanged']=acceptance['package_sha256']==sha
+(R/'reports/release_validation.json').write_text(json.dumps(report,indent=2))
+
+# Include the collision definition as well as the final TPAC in release evidence.
+report=json.loads((R/'reports/release_validation.json').read_text())
+ident=json.loads((R/'tools/model_config.json').read_text())['id']
+report['cloth_collision_xml_sha256']=hashlib.sha256((R/'module'/ident/'ModuleData/cloth_bodies.xml').read_bytes()).hexdigest()
+report['skirt_comparison']=json.loads((R/'reports/skirt_collision_validation.json').read_text())
+report['current_cloth_game_acceptance']='pending'
 (R/'reports/release_validation.json').write_text(json.dumps(report,indent=2))

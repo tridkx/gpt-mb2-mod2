@@ -1,16 +1,15 @@
 {
   "status": "pass",
-  "module": "BaiMoQingRace",
-  "version": "v0.1.2",
+  "version": "v0.1.3",
   "installed_path": "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\BaiMoQingRace",
   "files": [
     {
-      "path": "AssetPackages/bmq.tpac",
-      "sha256": "3c2d890265c2e93ac7b986a942709bbf583996e70ecf03d3f1387263c88612c1"
+      "path": "SubModule.xml",
+      "sha256": "ef7dccacea5e1d8cda7305536a79d9770dfcab432b157de8e2a862e5979abb4f"
     },
     {
-      "path": "bin/Win64_Shipping_Client/BaiMoQingRace.UIRuntime.dll",
-      "sha256": "a6d43b7da5fc43c7a9fab149d72661f087d5cd4c95ec2d6ff81c3d458bdb5980"
+      "path": "AssetPackages/bmq.tpac",
+      "sha256": "7ed7f537e3145aaf7cee10e1d7bf66d962f8d9a840ab19fef372339002b25291"
     },
     {
       "path": "ModuleData/action_sets.xml",
@@ -18,7 +17,7 @@
     },
     {
       "path": "ModuleData/cloth_bodies.xml",
-      "sha256": "64f3f7cdc77fa396d1ad6a280143191c50292912a9e48c1f977bff0c04fb75a5"
+      "sha256": "68398d6ab30091e1a5d2e5c2bc7ae50a0be82ce9e80bf1e600ba4e572d16a3dc"
     },
     {
       "path": "ModuleData/monsters.xml",
@@ -33,13 +32,11 @@
       "sha256": "9f15b24d12ecd5e09f5032e11912b6dbb53f93a18b423ede8bed010f9805c601"
     },
     {
-      "path": "SubModule.xml",
-      "sha256": "06d28c30ab183b5609873d469b18662df42092f2beb29d04516a91de2de3fb69"
+      "path": "bin/Win64_Shipping_Client/BaiMoQingRace.UIRuntime.dll",
+      "sha256": "a6d43b7da5fc43c7a9fab149d72661f087d5cd4c95ec2d6ff81c3d458bdb5980"
     }
   ],
-  "mod_archive_sha256": "2bff8b55fbd3f2313380bb5ca48a7745d6b625a186c942d23d3953f8d3c78f25",
-  "source_archive_sha256": "f75718447205035a16eef31870396034f533203dc040b06184afcec38fbfba32",
-  "source_manifest_files": 210,
+  "source_files_verified": 287,
   "game_launched": false,
   "game_verified": false
 }

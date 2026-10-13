@@ -1,7 +1,7 @@
 {
   "status": "pass",
-  "final_package_sha256": "3c2d890265c2e93ac7b986a942709bbf583996e70ecf03d3f1387263c88612c1",
-  "scope": "Exact preserved GPU geometry and skeletal previews, now without cloth; original reference images reused, game test pending",
+  "final_package_sha256": "7ed7f537e3145aaf7cee10e1d7bf66d962f8d9a840ab19fef372339002b25291",
+  "scope": "Preserved GPU appearance versus v0.1.2; front/side CPU grouped-constraint gravity previews examined; Native solver not run",
   "reviewed_by": "assistant",
   "source_proportions_preserved": true,
   "face_hair_clothes_visible": true,
@@ -12,10 +12,10 @@
   "all_body_cloth_intersections_verified": false,
   "game_verified": false,
   "notes": [
-    "Dynamic frames show skeletal references before cloth solving; leg/skirt intersections are not game acceptance.",
-    "LOD3 close-up simplifies collar/folds and ornaments; assessed as distant silhouette.",
-    "Final preview uses decoded diffuse and byte skin, not exact game lighting."
+    "Source skirt openings and original exposed leg design retained.",
+    "CPU proxy uses cooked disjoint constraints, geodesic anchors and repeated collision projections; it is not the game solver.",
+    "Some inner-panel motion and local crossings remain in the proxy; all game intersections are unverified."
   ],
-  "version": "v0.1.2",
-  "dynamic_cloth_enabled": false
+  "version": "v0.1.3",
+  "dynamic_cloth_enabled": true
 }

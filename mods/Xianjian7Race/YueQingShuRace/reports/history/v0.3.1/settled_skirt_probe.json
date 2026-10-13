@@ -1,0 +1,24 @@
+{
+  "status": "pass",
+  "scope": "120 steps at 60 Hz, 12 Jacobi iterations; final compiled edges, gravity, capsule projection and travel clamp; not Bannerlord physics",
+  "final_package_sha256": "a6a5f94f25da79272c9dd4843dca662af3291576ae52bb725ce1ff8f0a40e930",
+  "meshes": [
+    {
+      "mesh": "yqs_part_10.b3",
+      "hip_particles": 40,
+      "max_capsule_residual_m": 1.3877787807814457e-17,
+      "p99_capsule_residual_m": 1.3877787807814457e-17,
+      "fixed_root_drift_m": 0,
+      "max_travel_exceeded_m": 0
+    },
+    {
+      "mesh": "yqs_part_10",
+      "hip_particles": 1919,
+      "max_capsule_residual_m": 2.7755575615628914e-17,
+      "p99_capsule_residual_m": 1.3877787807814457e-17,
+      "fixed_root_drift_m": 0,
+      "max_travel_exceeded_m": 0
+    }
+  ],
+  "game_solver_used": false
+}

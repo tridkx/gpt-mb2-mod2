@@ -1,10 +1,10 @@
 {
-  "version": "v0.1.2",
+  "version": "v0.1.3",
   "status": "pass",
-  "check_scope": "offline_structural_and_native_motion_checks",
-  "final_package_sha256": "3c2d890265c2e93ac7b986a942709bbf583996e70ecf03d3f1387263c88612c1",
-  "baseline_package_sha256": null,
-  "baseline_reason": "Initial release; source hashes recorded in input_hashes.json",
+  "check_scope": "Final TPAC and source validation, Native skinning, collision coverage and CPU grouped constraint comparison; not game solving",
+  "final_package_sha256": "7ed7f537e3145aaf7cee10e1d7bf66d962f8d9a840ab19fef372339002b25291",
+  "baseline_package_sha256": "9e58b5ddadefacb24c0194ad8595a344a392f28c8f7b497abf471e86f871d607",
+  "baseline_reason": "GPU appearance comparison uses v0.1.2 static release; cloth proxy comparison uses earlier v0.1.0 dynamic release",
   "registration": {
     "status": "pass",
     "race": "bmq_default",
@@ -16,7 +16,7 @@
     "native_monster_dimensions_preserved": true,
     "native_ui_actions_inherited": false,
     "inventory_pose": "female_custom start/loop; selected for own fixed female body",
-    "cloth_simulation": false
+    "cloth_simulation": true
   },
   "lods": [
     {
@@ -703,27 +703,16 @@
   "game_test_verified": false,
   "game_cloth_solver_used": false,
   "limitations": [
-    "No dynamic cloth: skirts, hair and ribbons use skeletal skinning only.",
-    "Skeletal references may intersect during running, combat and riding; no guarantee of all-pose clearance.",
-    "Fixed face/fingers; no customization or original armor layering."
+    "Fixed original face and fingers; no face/body customization or interchangeable clothing.",
+    "Offline skinning and collision proxies do not certify all intersections, game cloth solving, IK, weapon grip or mounted collisions.",
+    "UE eye occlusion/tear overlays omitted; native materials approximate source shading."
   ],
   "integrated_hands_all_lods": true,
-  "cloth_enabled": false,
+  "cloth_enabled": true,
   "body_metamesh": "bmq_body",
   "hidden_placeholder_triangles": 4,
   "source_proportions_preserved": true,
   "custom_skeleton_bones": 28,
-  "static_cloth_validation": {
-    "status": "pass",
-    "version": "v0.1.2",
-    "final_package_sha256": "3c2d890265c2e93ac7b986a942709bbf583996e70ecf03d3f1387263c88612c1",
-    "all_lods_cloth_flags_removed": true,
-    "cooked_cloth_payloads_removed": true,
-    "cloth_collision_references_removed": true,
-    "gpu_streams_exactly_equal_to_v0_1_0": true,
-    "materials_textures_skeleton_preserved": true,
-    "game_test_verified": false
-  },
   "source_validation": {
     "status": "pass",
     "blend_reopened": true,
@@ -733,8 +722,8 @@
     "meshes": 14,
     "packed_images": 20,
     "facial_animation": false,
-    "game_cloth_paint_verified": false,
-    "all_cloth_alpha_zero": true,
+    "game_cloth_paint_verified": true,
+    "all_cloth_alpha_zero": false,
     "cloth_engine_verified": false,
     "source_proportions_preserved": true,
     "source_height_m": 1.5731546803945093,
@@ -798,6 +787,461 @@
     ],
     "source_geometry_max_error_m": 0.0
   },
+  "cloth_validation": {
+    "status": "pass",
+    "travel_shortfall_tolerance_m": 0.005,
+    "final_package_sha256": "7ed7f537e3145aaf7cee10e1d7bf66d962f8d9a840ab19fef372339002b25291",
+    "cooked_meshes": [
+      {
+        "mesh": "bmq_part_01.lod2",
+        "lod": 2,
+        "render_vertices": 3115,
+        "simulation_vertices": 2502,
+        "active_positions": 642,
+        "fixed_positions": 1860,
+        "stretch_constraints": 2031,
+        "bend_constraints": 1849,
+        "root_fixes": [],
+        "sha256": "7650adce265d9a53efc3f2bccb77ba64a064b9c3258768d3897c319d9439565f"
+      },
+      {
+        "mesh": "bmq_part_01.lod3",
+        "lod": 3,
+        "render_vertices": 1529,
+        "simulation_vertices": 1152,
+        "active_positions": 265,
+        "fixed_positions": 887,
+        "stretch_constraints": 906,
+        "bend_constraints": 763,
+        "root_fixes": [],
+        "sha256": "91fd98cd643f0f379d2234d9662c078748484bd90dd212e42775a389dad75f8a"
+      },
+      {
+        "mesh": "bmq_part_00.lod3",
+        "lod": 3,
+        "render_vertices": 891,
+        "simulation_vertices": 692,
+        "active_positions": 243,
+        "fixed_positions": 449,
+        "stretch_constraints": 745,
+        "bend_constraints": 700,
+        "root_fixes": [],
+        "sha256": "ac4334cfdd9cd91bb4f72cad2839d91ed9671f4f9fba6fbb1dbbea531ef0e699"
+      },
+      {
+        "mesh": "bmq_part_01",
+        "lod": 0,
+        "render_vertices": 8153,
+        "simulation_vertices": 6890,
+        "active_positions": 2016,
+        "fixed_positions": 4874,
+        "stretch_constraints": 6160,
+        "bend_constraints": 6153,
+        "root_fixes": [],
+        "sha256": "cf90c20b82affdf762102362cace4eb1b27b79a629b8fc498a5e764241a48aa8"
+      },
+      {
+        "mesh": "bmq_part_00",
+        "lod": 0,
+        "render_vertices": 5087,
+        "simulation_vertices": 4415,
+        "active_positions": 1508,
+        "fixed_positions": 2907,
+        "stretch_constraints": 4565,
+        "bend_constraints": 4540,
+        "root_fixes": [],
+        "sha256": "159fcd20af05ea89a3e57c1d6b469016d01e835157dd16473c223181a3a771fd"
+      },
+      {
+        "mesh": "bmq_part_00.lod1",
+        "lod": 1,
+        "render_vertices": 3374,
+        "simulation_vertices": 2882,
+        "active_positions": 966,
+        "fixed_positions": 1916,
+        "stretch_constraints": 2932,
+        "bend_constraints": 2883,
+        "root_fixes": [],
+        "sha256": "caffd82e42cfbd79ca82c8b6506f6740214d76d22686b092eea544ef23bc54fd"
+      },
+      {
+        "mesh": "bmq_part_00.lod2",
+        "lod": 2,
+        "render_vertices": 1913,
+        "simulation_vertices": 1568,
+        "active_positions": 539,
+        "fixed_positions": 1029,
+        "stretch_constraints": 1645,
+        "bend_constraints": 1544,
+        "root_fixes": [],
+        "sha256": "993fceb9d9c1c30259203ef1f75a3aff495ae720f9aa005d238e069c5d9ea27f"
+      },
+      {
+        "mesh": "bmq_part_01.lod1",
+        "lod": 1,
+        "render_vertices": 5470,
+        "simulation_vertices": 4527,
+        "active_positions": 1181,
+        "fixed_positions": 3346,
+        "stretch_constraints": 3651,
+        "bend_constraints": 3522,
+        "root_fixes": [],
+        "sha256": "283cff07aca43f0f55458f530c606571e02e56fd637d14ae991d31c02a6f7d84"
+      }
+    ],
+    "pose_diagnostics": [
+      {
+        "pose": "rest",
+        "frames": 1,
+        "preview_frame": 0,
+        "max_reference_capsule_overlap_m": 0.053073990939666145,
+        "max_travel_shortfall_m": 0,
+        "finite": true,
+        "worst_by_mesh": {
+          "bmq_part_01.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.051071869864425155,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.05090926677248523,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.03456366892845823,
+            "worst_capsule": ""
+          },
+          "bmq_part_01": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.053073990939666145,
+            "worst_capsule": ""
+          },
+          "bmq_part_00": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0366838487994246,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.0366838487994246,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.03456366892845823,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.05287224928089645,
+            "worst_capsule": ""
+          }
+        }
+      },
+      {
+        "pose": "run",
+        "frames": 25,
+        "preview_frame": 1,
+        "max_reference_capsule_overlap_m": 0.10083485401088056,
+        "max_travel_shortfall_m": 0,
+        "finite": true,
+        "worst_by_mesh": {
+          "bmq_part_01.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09038752362098795,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09944013859671337,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.04380417365644633,
+            "worst_capsule": ""
+          },
+          "bmq_part_01": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09978642110823252,
+            "worst_capsule": ""
+          },
+          "bmq_part_00": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.049509403396182004,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.04769641562631497,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.041144925965433704,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.0849446864476989,
+            "worst_capsule": ""
+          }
+        }
+      },
+      {
+        "pose": "idle",
+        "frames": 16,
+        "preview_frame": 1,
+        "max_reference_capsule_overlap_m": 0.09745702527642235,
+        "max_travel_shortfall_m": 0,
+        "finite": true,
+        "worst_by_mesh": {
+          "bmq_part_01.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09034347054607274,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.08957286166006836,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.03679757048358656,
+            "worst_capsule": ""
+          },
+          "bmq_part_01": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09347113704525856,
+            "worst_capsule": ""
+          },
+          "bmq_part_00": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.03898932445587504,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.03898932445587504,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.03679757048358656,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09107864836580613,
+            "worst_capsule": ""
+          }
+        }
+      },
+      {
+        "pose": "bow",
+        "frames": 16,
+        "preview_frame": 1,
+        "max_reference_capsule_overlap_m": 0.10160316829529231,
+        "max_travel_shortfall_m": 0,
+        "finite": true,
+        "worst_by_mesh": {
+          "bmq_part_01.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.0944519644704588,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.08450634405137508,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.08376625512826683,
+            "worst_capsule": ""
+          },
+          "bmq_part_01": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09555564548005019,
+            "worst_capsule": ""
+          },
+          "bmq_part_00": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.08460232216686851,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.0811152992111844,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.0814578396604919,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09555564548005019,
+            "worst_capsule": ""
+          }
+        }
+      },
+      {
+        "pose": "riding",
+        "frames": 16,
+        "preview_frame": 1,
+        "max_reference_capsule_overlap_m": 0.10053579556344805,
+        "max_travel_shortfall_m": 0,
+        "finite": true,
+        "worst_by_mesh": {
+          "bmq_part_01.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.0887865368376098,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.08237498135791567,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.059694221155087816,
+            "worst_capsule": ""
+          },
+          "bmq_part_01": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09147544577647693,
+            "worst_capsule": ""
+          },
+          "bmq_part_00": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.0788712558415102,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.07924836450201383,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.07822256992080591,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 1,
+            "overlap_m": 0.09140420277585172,
+            "worst_capsule": ""
+          }
+        }
+      },
+      {
+        "pose": "slash",
+        "frames": 16,
+        "preview_frame": 0,
+        "max_reference_capsule_overlap_m": 0.10245599296990579,
+        "max_travel_shortfall_m": 0,
+        "finite": true,
+        "worst_by_mesh": {
+          "bmq_part_01.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.05107380079190832,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.05090457802805043,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod3": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.03456370312460472,
+            "worst_capsule": ""
+          },
+          "bmq_part_01": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.053075955901622486,
+            "worst_capsule": ""
+          },
+          "bmq_part_00": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.03668388872309272,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.03668388872309272,
+            "worst_capsule": ""
+          },
+          "bmq_part_00.lod2": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.03456370312460472,
+            "worst_capsule": ""
+          },
+          "bmq_part_01.lod1": {
+            "shortfall_m": 0.0,
+            "frame": 0,
+            "overlap_m": 0.05286753020703167,
+            "worst_capsule": ""
+          }
+        }
+      }
+    ],
+    "cloth_engine_verified": false,
+    "scope": "Final payload structure and sampled native-animation capsule/travel screening; overlaps are skinning-reference measurements before the engine cloth solver"
+  },
   "registration_validation": {
     "status": "pass",
     "race": "bmq_default",
@@ -809,11 +1253,33 @@
     "native_monster_dimensions_preserved": true,
     "native_ui_actions_inherited": false,
     "inventory_pose": "female_custom start/loop; selected for own fixed female body",
-    "cloth_simulation": false
+    "cloth_simulation": true
+  },
+  "ui_scope_validation": {
+    "status": "pass",
+    "cases": {
+      "SandBox.View.Map.MapScreen._mainPartyVisual": false,
+      "SandBox.View.Map.PartyVisual._humanAgentVisuals": false,
+      "SandBox.View.Map.MapConversationTableau._agentVisuals": false,
+      "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableau._agentVisuals": true,
+      "TaleWorlds.MountAndBlade.View.Tableaus.BasicCharacterTableau._agentVisuals": true,
+      "TaleWorlds.MountAndBlade.GauntletUI.BodyGenerator.BodyGeneratorView._visualToShow": true,
+      "Unknown.CharacterTableau._agentVisuals": false,
+      "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableauFake._agentVisuals": false
+    },
+    "null_owner_allowed": false,
+    "direct_provider_cases": "actual runtime methods compiled with matching provider/tableau stubs; valid/null/unknown provider/unknown tableau",
+    "actual_field_collection_and_inspect_executed": true,
+    "boxed_action_invalid_cast_reproduced": true,
+    "reference_and_value_custom_equals_never_called": true,
+    "inventory_discovery_independent_of_screen_seen_budget": true,
+    "source_sha256": "5ee8a55a28e5213b5ab3fac67f9b98e3436b3f234a9b8d9e42c875daf34fba5a",
+    "assembly_sha256": "a6d43b7da5fc43c7a9fab149d72661f087d5cd4c95ec2d6ff81c3d458bdb5980",
+    "game_verified": false
   },
   "preview_idle_validation": {
     "status": "pass",
-    "version": "v0.1.2",
+    "version": "v0.1.3",
     "default_inventory_clip": "inventory_idle",
     "preview_overrides": [
       {
@@ -857,27 +1323,239 @@
     "fixed_character_preview_pose": "female_idle_long_for_both_preview_skeleton_types",
     "game_retest_pending": true
   },
-  "ui_scope_validation": {
+  "visual_review": {
     "status": "pass",
-    "cases": {
-      "SandBox.View.Map.MapScreen._mainPartyVisual": false,
-      "SandBox.View.Map.PartyVisual._humanAgentVisuals": false,
-      "SandBox.View.Map.MapConversationTableau._agentVisuals": false,
-      "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableau._agentVisuals": true,
-      "TaleWorlds.MountAndBlade.View.Tableaus.BasicCharacterTableau._agentVisuals": true,
-      "TaleWorlds.MountAndBlade.GauntletUI.BodyGenerator.BodyGeneratorView._visualToShow": true,
-      "Unknown.CharacterTableau._agentVisuals": false,
-      "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableauFake._agentVisuals": false
+    "final_package_sha256": "7ed7f537e3145aaf7cee10e1d7bf66d962f8d9a840ab19fef372339002b25291",
+    "scope": "Preserved GPU appearance versus v0.1.2; front/side CPU grouped-constraint gravity previews examined; Native solver not run",
+    "reviewed_by": "assistant",
+    "source_proportions_preserved": true,
+    "face_hair_clothes_visible": true,
+    "hands_present": true,
+    "no_gross_shoulders_or_cuffs_tears_in_reviewed_frames": true,
+    "game_cloth_solver_used": false,
+    "dynamic_skinning_reference_intersections_visible": true,
+    "all_body_cloth_intersections_verified": false,
+    "game_verified": false,
+    "notes": [
+      "Source skirt openings and original exposed leg design retained.",
+      "CPU proxy uses cooked disjoint constraints, geodesic anchors and repeated collision projections; it is not the game solver.",
+      "Some inner-panel motion and local crossings remain in the proxy; all game intersections are unverified."
+    ],
+    "version": "v0.1.3",
+    "dynamic_cloth_enabled": true
+  },
+  "skirt_collision_validation": {
+    "proxy_limits": {
+      "fixed_root_overlap_m": 0.006,
+      "maximum_residual_m": 0.015,
+      "p99_residual_m": 0.005,
+      "minimum_mean_pressure_reduction": 0.2,
+      "sampled_pose_fixed_root_overlap_m": 0.007
     },
-    "null_owner_allowed": false,
-    "direct_provider_cases": "actual runtime methods compiled with matching provider/tableau stubs; valid/null/unknown provider/unknown tableau",
-    "actual_field_collection_and_inspect_executed": true,
-    "boxed_action_invalid_cast_reproduced": true,
-    "reference_and_value_custom_equals_never_called": true,
-    "inventory_discovery_independent_of_screen_seen_budget": true,
-    "source_sha256": "5ee8a55a28e5213b5ab3fac67f9b98e3436b3f234a9b8d9e42c875daf34fba5a",
-    "assembly_sha256": "a6d43b7da5fc43c7a9fab149d72661f087d5cd4c95ec2d6ff81c3d458bdb5980",
+    "status": "pass",
+    "version": "v0.1.3",
+    "final_package_sha256": "7ed7f537e3145aaf7cee10e1d7bf66d962f8d9a840ab19fef372339002b25291",
+    "baseline_version": "v0.1.0",
+    "rows": [
+      {
+        "mesh": "bmq_part_01",
+        "baseline_initial_mean_overlap_m": 0.030114665075023764,
+        "initial_mean_overlap_m": 0.012039289481134524,
+        "baseline_initial_max_overlap_m": 0.13284098408704748,
+        "initial_max_overlap_m": 0.0909844510794946,
+        "fixed_root_max_overlap_m": 0.0054293740279686906,
+        "fixed_root_drift_m": 0.0,
+        "max_settled_residual_m": 0.008498334105014133,
+        "p99_settled_residual_m": 7.307927382912483e-05,
+        "baseline_mean_vertical_change_m": 0.025182343793735636,
+        "mean_vertical_change_m": 0.005367169187185021,
+        "baseline_raised_fraction": 0.7098214285714286,
+        "raised_fraction": 0.341765873015873,
+        "travel_clamped": true
+      },
+      {
+        "mesh": "bmq_part_00",
+        "baseline_initial_mean_overlap_m": 0.006601742731155843,
+        "initial_mean_overlap_m": 0.0014849435479970298,
+        "baseline_initial_max_overlap_m": 0.08444430728099328,
+        "initial_max_overlap_m": 0.05761393087086583,
+        "fixed_root_max_overlap_m": 0.0,
+        "fixed_root_drift_m": 0.0,
+        "max_settled_residual_m": 0.00010751836256563119,
+        "p99_settled_residual_m": 1.3877787807814457e-17,
+        "baseline_mean_vertical_change_m": -0.005732877312656156,
+        "mean_vertical_change_m": -0.02143862787289259,
+        "baseline_raised_fraction": 0.28448275862068967,
+        "raised_fraction": 0.033819628647214856,
+        "travel_clamped": true
+      }
+    ],
+    "scope": "Final compiled constraints, actual female UI idle frame, 120 gravity steps at 60Hz/10 grouped constraint iterations plus geodesic anchor limits, fixed roots never projected; a CPU diagnostic, not Bannerlord cloth simulation",
+    "game_solver_used": false
+  },
+  "skirt_preservation_validation": {
+    "status": "pass",
+    "version": "v0.1.3",
+    "baseline_version": "v0.1.2",
+    "final_package_sha256": "7ed7f537e3145aaf7cee10e1d7bf66d962f8d9a840ab19fef372339002b25291",
+    "geometry_normals_uv_tangents_weights_indices_preserved": true,
+    "materials_textures_skeleton_preserved": true,
+    "ui_runtime_unchanged": true,
+    "only_skirt_alpha_changed": [
+      {
+        "mesh": "bmq_part_00",
+        "lod": 0,
+        "changed_alpha_vertices": 1653
+      },
+      {
+        "mesh": "bmq_part_01",
+        "lod": 0,
+        "changed_alpha_vertices": 2255
+      },
+      {
+        "mesh": "bmq_part_00.lod1",
+        "lod": 1,
+        "changed_alpha_vertices": 1094
+      },
+      {
+        "mesh": "bmq_part_01.lod1",
+        "lod": 1,
+        "changed_alpha_vertices": 1319
+      },
+      {
+        "mesh": "bmq_part_00.lod2",
+        "lod": 2,
+        "changed_alpha_vertices": 641
+      },
+      {
+        "mesh": "bmq_part_01.lod2",
+        "lod": 2,
+        "changed_alpha_vertices": 707
+      },
+      {
+        "mesh": "bmq_part_00.lod3",
+        "lod": 3,
+        "changed_alpha_vertices": 294
+      },
+      {
+        "mesh": "bmq_part_01.lod3",
+        "lod": 3,
+        "changed_alpha_vertices": 282
+      }
+    ],
     "game_verified": false
   },
-  "delivery_mode": "skeletal_skinning_only"
+  "skirt_surface_coverage": {
+    "status": "pass",
+    "version": "v0.1.3",
+    "rows": [
+      {
+        "fixed_root_max_overlap_m": 0.005280999345457699,
+        "pose": "idle",
+        "sampled_frames": 12,
+        "surface_samples": 230040,
+        "uncovered_samples": 0,
+        "maximum_outside_m": 0,
+        "worst_frame": 806
+      },
+      {
+        "fixed_root_max_overlap_m": 0.005461248039624486,
+        "pose": "ui_neutral_female",
+        "sampled_frames": 12,
+        "surface_samples": 230040,
+        "uncovered_samples": 0,
+        "maximum_outside_m": 0,
+        "worst_frame": 1859
+      },
+      {
+        "fixed_root_max_overlap_m": 0.004865508395947307,
+        "pose": "run",
+        "sampled_frames": 12,
+        "surface_samples": 230040,
+        "uncovered_samples": 0,
+        "maximum_outside_m": 0,
+        "worst_frame": 18
+      },
+      {
+        "fixed_root_max_overlap_m": 0.005201051390527102,
+        "pose": "bow",
+        "sampled_frames": 12,
+        "surface_samples": 230040,
+        "uncovered_samples": 0,
+        "maximum_outside_m": 0,
+        "worst_frame": 55
+      },
+      {
+        "fixed_root_max_overlap_m": 0.006041633943256151,
+        "pose": "riding",
+        "sampled_frames": 12,
+        "surface_samples": 230040,
+        "uncovered_samples": 0,
+        "maximum_outside_m": 0,
+        "worst_frame": 16
+      },
+      {
+        "fixed_root_max_overlap_m": 0.006145058318409884,
+        "pose": "slash",
+        "sampled_frames": 12,
+        "surface_samples": 230040,
+        "uncovered_samples": 0,
+        "maximum_outside_m": 0,
+        "worst_frame": 1
+      }
+    ],
+    "sampling": "12 non-bind frames per Native motion, actual skinned triangle vertices/edges/interiors with barycentric subdivisions 4; full decoded vertex cycles scanned by collision fitter",
+    "game_verified": false
+  },
+  "cloth_collision_xml_sha256": "68398d6ab30091e1a5d2e5c2bc7ae50a0be82ce9e80bf1e600ba4e572d16a3dc",
+  "current_cloth_game_acceptance": "pending",
+  "skirt_comparison": {
+    "proxy_limits": {
+      "fixed_root_overlap_m": 0.006,
+      "maximum_residual_m": 0.015,
+      "p99_residual_m": 0.005,
+      "minimum_mean_pressure_reduction": 0.2,
+      "sampled_pose_fixed_root_overlap_m": 0.007
+    },
+    "status": "pass",
+    "version": "v0.1.3",
+    "final_package_sha256": "7ed7f537e3145aaf7cee10e1d7bf66d962f8d9a840ab19fef372339002b25291",
+    "baseline_version": "v0.1.0",
+    "rows": [
+      {
+        "mesh": "bmq_part_01",
+        "baseline_initial_mean_overlap_m": 0.030114665075023764,
+        "initial_mean_overlap_m": 0.012039289481134524,
+        "baseline_initial_max_overlap_m": 0.13284098408704748,
+        "initial_max_overlap_m": 0.0909844510794946,
+        "fixed_root_max_overlap_m": 0.0054293740279686906,
+        "fixed_root_drift_m": 0.0,
+        "max_settled_residual_m": 0.008498334105014133,
+        "p99_settled_residual_m": 7.307927382912483e-05,
+        "baseline_mean_vertical_change_m": 0.025182343793735636,
+        "mean_vertical_change_m": 0.005367169187185021,
+        "baseline_raised_fraction": 0.7098214285714286,
+        "raised_fraction": 0.341765873015873,
+        "travel_clamped": true
+      },
+      {
+        "mesh": "bmq_part_00",
+        "baseline_initial_mean_overlap_m": 0.006601742731155843,
+        "initial_mean_overlap_m": 0.0014849435479970298,
+        "baseline_initial_max_overlap_m": 0.08444430728099328,
+        "initial_max_overlap_m": 0.05761393087086583,
+        "fixed_root_max_overlap_m": 0.0,
+        "fixed_root_drift_m": 0.0,
+        "max_settled_residual_m": 0.00010751836256563119,
+        "p99_settled_residual_m": 1.3877787807814457e-17,
+        "baseline_mean_vertical_change_m": -0.005732877312656156,
+        "mean_vertical_change_m": -0.02143862787289259,
+        "baseline_raised_fraction": 0.28448275862068967,
+        "raised_fraction": 0.033819628647214856,
+        "travel_clamped": true
+      }
+    ],
+    "scope": "Final compiled constraints, actual female UI idle frame, 120 gravity steps at 60Hz/10 grouped constraint iterations plus geodesic anchor limits, fixed roots never projected; a CPU diagnostic, not Bannerlord cloth simulation",
+    "game_solver_used": false
+  }
 }

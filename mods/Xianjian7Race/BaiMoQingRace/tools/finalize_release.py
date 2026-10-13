@@ -23,13 +23,13 @@ text=f'''# {cfg['title']}
 
 ## 功能与验证范围
 
-原始脸、头发、时装、身体和双手组成固定完整身体，使用独立 28 骨 `{cfg['skeleton']}`，沿用原生动作。LOD0 保留源比例，仅整体转向；含头饰总高约 {height:.3f} 米。四级 LOD 的三角面数为 {', '.join(str(x['triangles']) for x in lods)}。裙摆、发束和饰带按本套模型的材料、连通片与实测范围画布料，四级合计 {count} 个布料网格；固定衣片和手指由骨架带动。
+原始脸、头发、时装、身体和双手组成固定完整身体，使用独立 28 骨 `{cfg['skeleton']}`，沿用原生动作。LOD0 保留源比例，仅整体转向；含头饰总高约 {height:.3f} 米。四级 LOD 的三角面数为 {', '.join(str(x['triangles']) for x in lods)}。仅长裙的内外裙片按本套模型的材料、连通片与实测范围画布料，头发、饰带和其他衣片保持骨骼蒙皮，四级合计 {count} 个布料网格；固定衣片和手指由骨架带动。
 
 最终 TPAC 已回读并验证几何、量化权重、骨架、材质、全部贴图 mip、布料约束和锚点。源 Blend 已重开、FBX 已重导入，源网格比例检查与原生动作扫描见[发布检查](reports/release_validation.json)、[源文件检查](reports/source_validation.json)、[布料检查](reports/cloth_validation.json)及[预览图索引](reports/final_preview_manifest.json)。图片来自最终 TPAC 和离线蒙皮，不使用游戏布料求解器。
 
 自有 UI Runtime 为本种族的队伍、百科及物品栏人物预览选择自有骨架，并在必要时重建人物预览，保留人物数据、缩放及动画进度。物品栏使用经原生 clip GUID 核对的女性垂手待机候选。检查见[UI 范围回归](reports/ui_scope_validation.json)、[待机映射检查](reports/preview_idle_validation.json)。角色整体外观已获用户初步确认；当前裙摆调整尚待游戏复测。
 
-当前裙摆碰撞按同侧腿部与腰臀表面拟合，保留固定根部。压力与重力代理检查见[裙摆专项检查](reports/skirt_collision_validation.json)，无关资源保持情况见[基线对比](reports/skirt_preservation_validation.json)。代理结果不能替代游戏布料效果。
+当前裙摆碰撞按同侧腿部与腰臀表面拟合，保留固定根部。压力与分组约束重力代理检查见[裙摆专项检查](reports/skirt_collision_validation.json)，无关资源保持情况见[基线对比](reports/skirt_preservation_validation.json)。代理结果不能替代游戏布料效果。
 
 ## 安装与集成
 
@@ -48,13 +48,13 @@ text=f'''# {cfg['title']}
 ./tools/install_release.ps1 -Mod {ident} -Version {cfg['version']} -CheckOnly
 ```
 
-重建会生成离线检查与预览图；复核图像并更新 `reports/visual_review.json` 后，运行本模组的 `tools/finalize_release.py` 更新交付清单。源包保持 `source/`、`tex/` 相邻，将 `workspace_tools/` 恢复至工作区根 `tools/`。返修基线检查需要在 `dist/` 保留 `{ident}_v0.1.0_Mod.zip`；该旧包用于恢复对比缓存，不包含在源包内。只在本地 Git 提交，发布标签为 `{ident}/{cfg['version']}`。变更见[更新日志](CHANGELOG.md)。
+重建会生成离线检查与预览图；复核图像并更新 `reports/visual_review.json` 后，运行本模组的 `tools/finalize_release.py` 更新交付清单。源包保持 `source/`、`tex/` 相邻，将 `workspace_tools/` 恢复至工作区根 `tools/`。颜色保留与外观对比还需要 `dist/BaiMoQingRace_v0.1.2_Mod.zip`。早期动态版返修对比需要在 `dist/` 保留 `{ident}_v0.1.0_Mod.zip`；该旧包用于恢复对比缓存，不包含在源包内。只在本地 Git 提交，发布标签为 `{ident}/{cfg['version']}`。变更见[更新日志](CHANGELOG.md)。
 
 ## 当前限制与注意事项
 
 固定脸和手指，不提供捏脸、表情、动态手势或换装。省略 UE 眼周遮挡和泪线层，骑砍材质对源着色作近似转换。
 
-布料 `ClothDistance` 顶点色 Alpha 保存米制活动距离，0 为固定，网格倍率为 1；材质关闭顶点 Alpha 透明度。减面后缺失的上缘固定点会显式记录在布料编译清单。碰撞按本模型同侧腿部、腰臀及实际裙根间隙拟合，保护区采样含三角面内部。其余覆盖躯干使用胶囊代理；动作扫描与 CPU 重力检查均不等同于游戏求解。
+长裙使用直接模拟，固定连接区向下逐渐增加活动范围。布料 `ClothDistance` 顶点色 Alpha 保存米制活动距离，0 为固定，网格倍率为 1；材质关闭顶点 Alpha 透明度。减面后缺失的上缘固定点会显式记录在布料编译清单。碰撞按本模型同侧腿部、腰臀及实际裙根间隙拟合，保护区采样含三角面内部。其余覆盖躯干使用胶囊代理；动作扫描与 CPU 重力检查均不等同于游戏求解。
 
 游戏复测由用户完成，先检查静止沉降和裙摆是否仍被顶起，再检查站立、跑动、持弓、挥砍、骑乘，以及队伍／百科／物品栏预览和穿脱装备后的恢复。离线通过不代表游戏布料、握持、IK、全部穿模或多人性能已通过。
 '''
@@ -62,7 +62,7 @@ if ident=='BaiMoQingOutfit2Race':text+='\n无帽版保留毛边层的原始几�
 (R/'README.md').write_text(text,encoding='utf8')
 change=R/'CHANGELOG.md'
 old=change.read_text(encoding='utf8') if change.exists() else '# 更新日志\n'
-detail='月清疏裙片按新碰撞重新校准活动距离。' if ident=='YueQingShuOutfit2Race' else '最终 TPAC、源模型及布料活动距离保持基线字节。'
+detail='月清疏裙片按新碰撞重新校准活动距离。' if ident=='YueQingShuOutfit2Race' else '保留 v0.1.2 外观、权重、材质、骨架和预览组件，只为长裙新增动态布料及活动距离。'
 section=f"## {cfg['version']} — 2026-10-13\n\n- 按同侧腿部与实际腰臀表面重拟合碰撞，减少裙摆上顶压力。\n- 保留已接受的源比例、外观与 UI Runtime；{detail}\n- 完成离线基线对比、身体覆盖扫描与受约束重力代理检查；游戏动态待复测。\n\n"
 if f"## {cfg['version']} " not in old:change.write_text(old.replace('# 更新日志\n','# 更新日志\n\n'+section,1),encoding='utf8')
 
@@ -75,3 +75,11 @@ for p in R.rglob('*'):
 shared=json.loads((R/'mod.json').read_text(encoding='utf8'))['shared_source_files']
 (R/'mod.json').write_text(json.dumps(dict(id=ident,source_files=sorted(set(files+['mod.json'])),shared_source_files=shared,package=f'module/{ident}/AssetPackages/{prefix}.tpac',validation_report='reports/release_validation.json'),ensure_ascii=False,indent=2),encoding='utf8')
 print('RELEASE_MANIFEST_READY',ident,sha(pkg))
+
+# Include the collision definition as well as the final TPAC in release evidence.
+report=json.loads((R/'reports/release_validation.json').read_text())
+ident=json.loads((R/'tools/model_config.json').read_text())['id']
+report['cloth_collision_xml_sha256']=hashlib.sha256((R/'module'/ident/'ModuleData/cloth_bodies.xml').read_bytes()).hexdigest()
+report['skirt_comparison']=json.loads((R/'reports/skirt_collision_validation.json').read_text())
+report['current_cloth_game_acceptance']='pending'
+(R/'reports/release_validation.json').write_text(json.dumps(report,indent=2))

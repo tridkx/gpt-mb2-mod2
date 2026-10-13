@@ -1,3 +1,6 @@
+import sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parent))
 from workspace_paths import workspace_root
 """Export protected material/cut boundaries, native byte weights and four LODs."""
 import bpy,json,sys

@@ -1,3 +1,4 @@
+from pelvis_support import pose_capsule
 from workspace_paths import workspace_root
 """Increase only active travel where source-sized animated capsules require it."""
 import json,sys
@@ -16,9 +17,7 @@ for label in ['run','idle','bow','riding','slash']:
     for frame in frames:
         skin=skin_matrices(rig,anim,frame);posed=[]
         for cap in caps:
-            ab=[]
-            for point,bone in zip(cap['endpoints_m'],cap['bones']):
-                m=skin[rig['names'].index(bone)];ab.append(m[:3,:3]@point+m[:3,3])
+            ab=pose_capsule(cap,skin,rig['names'])
             posed.append((ab,cap['radius_m']))
         for name,a in result.items():
             ids=np.flatnonzero(old[name]>0)

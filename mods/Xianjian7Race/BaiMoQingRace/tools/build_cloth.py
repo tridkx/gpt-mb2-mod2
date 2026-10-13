@@ -1,5 +1,5 @@
 """Fit source-sized collision proxies and compile each final LOD's own cloth."""
-import sys,json,subprocess,xml.etree.ElementTree as ET
+import sys,json,subprocess,shutil,xml.etree.ElementTree as ET
 from pathlib import Path
 import numpy as np
 sys.path.insert(0,str(Path(__file__).resolve().parent))
@@ -44,6 +44,9 @@ ET.indent(root,space='  ');ET.ElementTree(root).write(R/'module'/cfg['id']/'Modu
 (R/'reports/cloth_collision.json').write_text(json.dumps(dict(capsules=caps,engine_verified=False,scope='Same-side anatomical thigh surfaces; model-specific shorts guard where configured; remaining covered torso uses retained dimension-scaled proxies'),indent=2))
 if '--collision-only' in sys.argv:sys.exit(0)
 for project,folder in [('NativeClothProbe','cloth_probe'),('ClothPatch','cloth_patch')]:run(['dotnet','build',C/(project+'.csproj'),'--ignore-failed-sources','-p:BaseIntermediateOutputPath='+str(B/'cloth_obj'/project)+'/','-o',B/folder])
+for folder in [B/'cloth_inputs', B/'cooked_cloth']:
+ resolved=folder.resolve();assert resolved.parent==B.resolve()
+ if resolved.exists():shutil.rmtree(resolved)
 (B/'cloth_inputs').mkdir(exist_ok=True)
 probe=subprocess.run(['dotnet',str(B/'cloth_probe/NativeClothProbe.dll'),str(B/'uncooked.tpac'),prefix+'_body','--dump-segments',str(B/'cloth_inputs')],check=True,capture_output=True,text=True)
 (R/'reports/cloth_uncooked.json').write_text(probe.stdout)

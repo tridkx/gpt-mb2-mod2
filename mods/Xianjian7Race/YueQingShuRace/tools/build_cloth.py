@@ -8,23 +8,15 @@ R=Path(__file__).resolve().parents[1];WS=workspace_root(R);B=R/'build';C=WS/'too
 def run(args):subprocess.run([str(x) for x in args],check=True)
 transfer=json.loads((R/'reports/weight_transfer.json').read_text());names=transfer['native_bones'];p=np.array(transfer['source_landmarks']);at=lambda name:p[names.index(name)]
 caps=[]
-def cap(name,a,b,r,ba,bb):caps.append((name,np.array(a),np.array(b),r,ba,bb))
+def cap(name,a,b,r,ba,bb,influences=None):caps.append((name,np.array(a),np.array(b),r,ba,bb,influences))
 # These radii are specific to this source: no native adult collision body.
-cap('waist',[0,.080,1.00],[0,.082,1.15],.067,'spine','spine1')
-# Fit the complete surface, including side and lower edges, not percentiles.
-# Collision skin must surround the body; the former positive 10 mm tolerance
-# left visible body outside the support. Keep a 6 mm fabric clearance.
-source=np.load(B/'fitted_model.npz');body_p=source['yqs_part_08_p']
-hip=surface_samples(body_p,source['yqs_part_08_f'],4)
-assert len(hip)>100
-xs=np.array([-.055,0,.055]);assigned=np.argmin(np.abs(hip[:,0,None]-xs),axis=1)
-for index,x in enumerate(xs):
-    section=hip[assigned==index];cy=float((section[:,1].min()+section[:,1].max())/2)
-    a=np.array([x,cy,.84]);b=np.array([x,cy,1.08]);axis=b-a
-    t=np.clip((section-a)@axis/(axis@axis),0,1)
-    radius=float(np.linalg.norm(section-a-t[:,None]*axis,axis=1).max()+.006)
-    assert .08<radius<.13
-    cap('pelvis_'+str(x),a,b,radius,'pelvis','pelvis')
+cap('waist',[0,.080,1.00],[0,.082,1.15],.022,'spine','spine1')
+# Replace tall pelvis end caps with short source-fitted depth capsules.
+source=np.load(B/'fitted_model.npz')
+from fit_pelvis_panels import fit
+previous=json.loads((R/'reports/history/v0.3.1/cloth_collision.json').read_text())['capsules']
+for row in fit(source,previous,R):
+    cap(row['name'],*row['endpoints_m'],row['radius_m'],*row['bones'],row.get('endpoint_weights'))
 for x in [-.045,0,.045]:cap('back_'+str(x),[x,.060,1.17],[x,.058,1.36],.045,'spine1','spine2')
 cap('neck',[0,.039,1.39],[0,.047,1.46],.030,'spine2','neck')
 cap('head',[0,.065,1.48],[0,.065,1.59],.060,'head','head')
@@ -36,14 +28,15 @@ for pre in ['l','r']:
     cap(pre+'_upperarm',at(pre+'_upperarm_twist'),at(pre+'_foretwist'),.027,pre+'_upperarm_twist',pre+'_foretwist')
     cap(pre+'_forearm',at(pre+'_foretwist'),at(pre+'_hand'),.022,pre+'_foretwist',pre+'_hand')
 root=ET.Element('bodies');body=ET.SubElement(root,'body',name='yqs_collision',owner_skeleton='yqs_skeleton');container=ET.SubElement(body,'capsules');rows=[]
-for name,a,b,radius,ba,bb in caps:
-    u=b-a;length=np.linalg.norm(u);u/=length;v=np.cross(u,[0,1,0]);v/=np.linalg.norm(v);t=np.cross(v,u)
+for name,a,b,radius,ba,bb,influences in caps:
+    u=b-a;length=np.linalg.norm(u);u/=length;v=np.cross(u,[1,0,0] if abs(u[1])>.9 else [0,1,0]);v/=np.linalg.norm(v);t=np.cross(v,u)
     frame=np.eye(4);frame[:3,:3]=[u,t,v];frame[3,:3]=a
     capsule=ET.SubElement(container,'capsule',name='yqs_'+name,length=f'{length:.6f}',origin='0, 0, 0',frame=', '.join(f'{x:.6f}' for x in frame.ravel()))
     points=ET.SubElement(capsule,'points')
-    for bone in [ba,bb]:
-        point=ET.SubElement(points,'point',radius=f'{radius:.6f}');bones=ET.SubElement(point,'bones');ET.SubElement(bones,'bone',name=bone,weight='1.0')
-    rows.append(dict(name=name,endpoints_m=[a.tolist(),b.tolist()],radius_m=radius,bones=[ba,bb]))
+    for index,bone in enumerate([ba,bb]):
+        point=ET.SubElement(points,'point',radius=f'{radius:.6f}');bones=ET.SubElement(point,'bones')
+        for influence in (influences[index] if influences else [dict(bone=bone,weight=1.)]):ET.SubElement(bones,'bone',name=influence['bone'],weight=f"{influence['weight']:.9f}")
+    rows.append(dict(name=name,endpoints_m=[a.tolist(),b.tolist()],radius_m=radius,bones=[ba,bb],**({'endpoint_weights':influences} if influences else {})))
 ET.indent(root,space='  ');ET.ElementTree(root).write(R/'module/YueQingShuRace/ModuleData/cloth_bodies.xml',encoding='utf-8',xml_declaration=True)
 (R/'reports/cloth_collision.json').write_text(json.dumps(dict(capsules=rows,engine_verified=False),indent=2))
 print('COLLISIONS_READY',len(caps),'source-sized capsules')

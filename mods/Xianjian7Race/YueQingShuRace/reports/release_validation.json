@@ -1,10 +1,10 @@
 {
-  "version": "v0.3.1",
+  "version": "v0.3.2",
   "status": "pass",
   "check_scope": "final_resource_source_geometry_preservation_and_cloth_checks",
-  "final_package_sha256": "a6a5f94f25da79272c9dd4843dca662af3291576ae52bb725ce1ff8f0a40e930",
+  "final_package_sha256": "b943664012defcaf1c19a54118d6c4411ca59a142fe2de5aac1a83e386a4028b",
   "baseline_package_sha256": "e72aa5730a220565d29a81c558b66e08cf8d4e5a28636e923350349910e9283b",
-  "baseline_reason": "User-accepted source geometry; model-specific arm bind axes revised in v0.3.1",
+  "baseline_reason": "User-accepted v0.1.1 source geometry; model-specific arm bind axes revised in v0.3.1",
   "registration": {
     "status": "pass",
     "race": "yqs_default",
@@ -763,9 +763,10 @@
     "game_verified": false
   },
   "arm_binding_validation": {
+    "recompiled_cloth_payloads_structurally_verified": 18,
     "status": "pass",
-    "version": "v0.3.1",
-    "final_package_sha256": "a6a5f94f25da79272c9dd4843dca662af3291576ae52bb725ce1ff8f0a40e930",
+    "version": "v0.3.2",
+    "final_package_sha256": "b943664012defcaf1c19a54118d6c4411ca59a142fe2de5aac1a83e386a4028b",
     "bones": [
       {
         "bone": "l_upperarm_twist",
@@ -802,18 +803,62 @@
     ],
     "joint_positions_and_limb_lengths_preserved": true,
     "non_arm_bind_world_frames_preserved": true,
-    "all_lod_gpu_streams_byte_identical": true,
+    "all_lod_geometry_uv_normal_tangent_weight_streams_identical": true,
+    "only_active_cloth_alpha_changes_allowed": true,
     "materials_all_texture_mips_preserved": true,
-    "game_retest_pending": true,
-    "cloth_payloads_byte_identical_to_v0_3_0": 18,
-    "cloth_editor_segments_byte_identical_to_v0_3_0": 18,
-    "visual_review": {
-      "hands_at_sides_in_reviewed_frame": true,
-      "bow_slash_shoulders_cuffs_reviewed": true,
-      "game_verified": false
-    }
+    "game_retest_pending": true
   },
   "inventory_preview_game_verified": false,
   "appearance_geometry_and_materials_preserved": true,
-  "arm_bind_axes_corrected": true
+  "arm_bind_axes_corrected": true,
+  "cloth_collision_xml_sha256": "35ff35151440b8f16410a8a912f64185a1b0e69946d45a8e20af0f9652949abe",
+  "current_cloth_game_acceptance": "pending",
+  "skirt_comparison": {
+    "proxy_limits": {
+      "fixed_root_overlap_m": 0.006,
+      "maximum_residual_m": 0.015,
+      "p99_residual_m": 0.005,
+      "minimum_mean_pressure_reduction": 0.2
+    },
+    "status": "pass",
+    "version": "v0.3.2",
+    "final_package_sha256": "b943664012defcaf1c19a54118d6c4411ca59a142fe2de5aac1a83e386a4028b",
+    "baseline_version": "v0.3.1",
+    "rows": [
+      {
+        "mesh": "yqs_part_10.b3",
+        "baseline_initial_mean_overlap_m": 0.0,
+        "initial_mean_overlap_m": 0.0,
+        "baseline_initial_max_overlap_m": 0.0,
+        "initial_max_overlap_m": 0.0,
+        "fixed_root_max_overlap_m": 0.0,
+        "fixed_root_drift_m": 0.0,
+        "max_settled_residual_m": 0.0,
+        "p99_settled_residual_m": 0.0,
+        "baseline_mean_vertical_change_m": -0.018145358205569572,
+        "mean_vertical_change_m": -0.018356128363513562,
+        "baseline_raised_fraction": 0.0,
+        "raised_fraction": 0.0,
+        "travel_clamped": true
+      },
+      {
+        "mesh": "yqs_part_10",
+        "baseline_initial_mean_overlap_m": 0.004326140150946246,
+        "initial_mean_overlap_m": 0.001959729926259613,
+        "baseline_initial_max_overlap_m": 0.07411199295807475,
+        "initial_max_overlap_m": 0.0326098498886597,
+        "fixed_root_max_overlap_m": 0.0,
+        "fixed_root_drift_m": 0.0,
+        "max_settled_residual_m": 9.71445146547012e-17,
+        "p99_settled_residual_m": 3.469446951953614e-17,
+        "baseline_mean_vertical_change_m": -0.0002537946337756529,
+        "mean_vertical_change_m": -0.005877321325448656,
+        "baseline_raised_fraction": 0.26573653471771574,
+        "raised_fraction": 0.05645684620376379,
+        "travel_clamped": true
+      }
+    ],
+    "scope": "Final compiled constraints, actual female UI idle frame, 120 gravity steps at 60Hz/10 grouped constraint iterations plus geodesic anchor limits, fixed roots never projected; a CPU diagnostic, not Bannerlord cloth simulation",
+    "game_solver_used": false
+  }
 }

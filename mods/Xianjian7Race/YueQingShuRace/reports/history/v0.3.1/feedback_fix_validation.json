@@ -1,0 +1,89 @@
+{
+  "status": "pass",
+  "version": "v0.3.1",
+  "final_package_sha256": "a6a5f94f25da79272c9dd4843dca662af3291576ae52bb725ce1ff8f0a40e930",
+  "pelvis_support": {
+    "samples": 56784,
+    "old_surface_outside_support_fraction": 0.16479994364609749,
+    "new_surface_outside_support_fraction": 0.0,
+    "minimum_body_clearance_m": 0.005831964723703509,
+    "capsules": [
+      {
+        "name": "pelvis_-0.055",
+        "endpoints_m": [
+          [
+            -0.055,
+            0.061603009700775146,
+            0.84
+          ],
+          [
+            -0.055,
+            0.061603009700775146,
+            1.08
+          ]
+        ],
+        "radius_m": 0.11011887349719827,
+        "bones": [
+          "pelvis",
+          "pelvis"
+        ]
+      },
+      {
+        "name": "pelvis_0.0",
+        "endpoints_m": [
+          [
+            0.0,
+            0.06304693222045898,
+            0.84
+          ],
+          [
+            0.0,
+            0.06304693222045898,
+            1.08
+          ]
+        ],
+        "radius_m": 0.10703857542795803,
+        "bones": [
+          "pelvis",
+          "pelvis"
+        ]
+      },
+      {
+        "name": "pelvis_0.055",
+        "endpoints_m": [
+          [
+            0.055,
+            0.061602912843227386,
+            0.84
+          ],
+          [
+            0.055,
+            0.061602912843227386,
+            1.08
+          ]
+        ],
+        "radius_m": 0.11011853804633183,
+        "bones": [
+          "pelvis",
+          "pelvis"
+        ]
+      }
+    ],
+    "scope": "Rest-pose final LOD0 body triangle lattice, not game solver"
+  },
+  "material": {
+    "ao_blue_min": 255,
+    "metallic_red_max": 0,
+    "gloss_green_mean": 65.0,
+    "self_illumination": false,
+    "user_confirmed_dark_scene_fix_version": "v0.2.1"
+  },
+  "dimensions": {
+    "source_height_m": 1.6760067177528981,
+    "source_geometry_error_m": 0,
+    "skin_min_scale": 1,
+    "source_dimensions_preserved": true,
+    "wudu_settings_used": false,
+    "game_agent_scale_verified": false
+  }
+}

@@ -1,6 +1,62 @@
 {
-  "status": "not_applicable",
-  "version": "v0.1.2",
-  "reason": "Dynamic cloth disabled; see static_cloth_validation.json. Previous dynamic evidence retained in history/v0.1.1.",
-  "final_package_sha256": "3c2d890265c2e93ac7b986a942709bbf583996e70ecf03d3f1387263c88612c1"
+  "status": "pass",
+  "version": "v0.1.3",
+  "rows": [
+    {
+      "fixed_root_max_overlap_m": 0.005280999345457699,
+      "pose": "idle",
+      "sampled_frames": 12,
+      "surface_samples": 230040,
+      "uncovered_samples": 0,
+      "maximum_outside_m": 0,
+      "worst_frame": 806
+    },
+    {
+      "fixed_root_max_overlap_m": 0.005461248039624486,
+      "pose": "ui_neutral_female",
+      "sampled_frames": 12,
+      "surface_samples": 230040,
+      "uncovered_samples": 0,
+      "maximum_outside_m": 0,
+      "worst_frame": 1859
+    },
+    {
+      "fixed_root_max_overlap_m": 0.004865508395947307,
+      "pose": "run",
+      "sampled_frames": 12,
+      "surface_samples": 230040,
+      "uncovered_samples": 0,
+      "maximum_outside_m": 0,
+      "worst_frame": 18
+    },
+    {
+      "fixed_root_max_overlap_m": 0.005201051390527102,
+      "pose": "bow",
+      "sampled_frames": 12,
+      "surface_samples": 230040,
+      "uncovered_samples": 0,
+      "maximum_outside_m": 0,
+      "worst_frame": 55
+    },
+    {
+      "fixed_root_max_overlap_m": 0.006041633943256151,
+      "pose": "riding",
+      "sampled_frames": 12,
+      "surface_samples": 230040,
+      "uncovered_samples": 0,
+      "maximum_outside_m": 0,
+      "worst_frame": 16
+    },
+    {
+      "fixed_root_max_overlap_m": 0.006145058318409884,
+      "pose": "slash",
+      "sampled_frames": 12,
+      "surface_samples": 230040,
+      "uncovered_samples": 0,
+      "maximum_outside_m": 0,
+      "worst_frame": 1
+    }
+  ],
+  "sampling": "12 non-bind frames per Native motion, actual skinned triangle vertices/edges/interiors with barycentric subdivisions 4; full decoded vertex cycles scanned by collision fitter",
+  "game_verified": false
 }

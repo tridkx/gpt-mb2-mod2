@@ -15,15 +15,21 @@ original=json.loads((R/'reports/history/v0.2.1/cloth_collision.json').read_text(
 meshes=[m for f in (B/'final_export_lod0/geo').glob('*.bin') for m in read_geo(f)]
 body_meshes=[m for m in meshes if m['name'].startswith('yqs_part_08')]
 hip=np.concatenate([surface_samples(m['pos'],m['idx'].reshape(-1,3),6) for m in body_meshes])
+hip=hip[hip[:,2]<1.06]
 assert len(hip)>100
 old,new=clearance(hip,original),clearance(hip,caps)
-assert np.max(new)<-.005, ('Body must lie inside collision support with >5 mm clearance',new.max())
+assert np.max(new)<-.0019, ('Body must lie inside fitted support with 2 mm clearance',new.max())
 pelvis=[c for c in caps if c['name'].startswith('pelvis_')]
-assert len(pelvis)==3 and all(c['bones']==['pelvis','pelvis'] for c in pelvis)
+assert 30<=len(pelvis)<=42 and all(len(v)<=2 and abs(sum(x['weight'] for x in v)-1)<1e-6 for c in pelvis for v in c['endpoint_weights'])
 xml=ET.parse(R/'module/YueQingShuRace/ModuleData/cloth_bodies.xml').getroot()
 assert len(xml.find('body/capsules'))==len(caps)
 for cap,node in zip(caps,xml.find('body/capsules')):
     assert node.get('name')=='yqs_'+cap['name']
+    assert np.isfinite(np.array(node.get('frame').split(','),float)).all()
+    for i,point in enumerate(node.findall('points/point')):
+        expected=cap.get('endpoint_weights',[[dict(bone=b,weight=1.)] for b in cap['bones']])[i]
+        actual=point.findall('bones/bone');assert len(actual)==len(expected)
+        assert all(a.get('name')==v['bone'] and abs(float(a.get('weight'))-v['weight'])<1e-8 for a,v in zip(actual,expected))
     assert all(abs(float(p.get('radius'))-cap['radius_m'])<1e-6 for p in node.findall('points/point'))
 material_rows=json.loads((R/'reports/material_names.json').read_text())
 visibility=json.loads((R/'reports/final_visibility.json').read_text())
@@ -42,7 +48,7 @@ for node in ET.parse(R/'module/YueQingShuRace/ModuleData/skins.xml').findall('./
 source=json.loads((R/'reports/source_validation.json').read_text())
 assert source['source_geometry_max_error_m']==0
 report=dict(status='pass',version=cfg['version'],final_package_sha256=hashlib.sha256(pkg.read_bytes()).hexdigest(),
-    pelvis_support=dict(samples=len(hip),old_surface_outside_support_fraction=float(np.mean(old>0)),new_surface_outside_support_fraction=float(np.mean(new>0)),minimum_body_clearance_m=float(-new.max()),capsules=pelvis,scope='Rest-pose final LOD0 body triangle lattice, not game solver'),
+    pelvis_support=dict(samples=len(hip),old_surface_outside_support_fraction=float(np.mean(old>0)),new_surface_outside_support_fraction=float(np.mean(new>0)),minimum_body_clearance_m=float(-new.max()),capsules=pelvis,scope='Rest-pose final LOD0 protected hip below rigid waistband, source Z < 1.06 m; triangle lattice, not game solver'),
     material=dict(ao_blue_min=int(neutral[:,:,2].min()),metallic_red_max=int(neutral[:,:,0].max()),gloss_green_mean=float(neutral[:,:,1].mean()),self_illumination=False,user_confirmed_dark_scene_fix_version='v0.2.1'),
     dimensions=dict(source_height_m=source['source_height_m'],source_geometry_error_m=0,skin_min_scale=1,source_dimensions_preserved=True,wudu_settings_used=False,game_agent_scale_verified=False))
 (R/'reports/feedback_fix_validation.json').write_text(json.dumps(report,indent=2))

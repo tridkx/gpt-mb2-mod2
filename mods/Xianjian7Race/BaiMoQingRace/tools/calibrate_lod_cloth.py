@@ -14,7 +14,7 @@ from baker.skeleton import parse_skeljson
 from baker.animation import parse_animjson,skin_matrices,lbs
 rig=parse_skeljson({'bones':[dict(i=i,**bone) for i,bone in enumerate(json.loads((R/'build/skeleton_spec.json').read_text()))]})
 caps=json.loads((R/'reports/cloth_collision.json').read_text())['capsules'];rows=[]
-legacy_caps=json.loads((R/'reports/history/v0.1.0/cloth_collision.json').read_text())['capsules']
+legacy_caps=caps
 cfg=json.loads((R/'tools/model_config.json').read_text(encoding='utf8'));allowed={r['object'] for r in json.loads((R/'build/manifest.json').read_text()) if r['material'] in cfg.get('calibrate_materials',[])}
 for row in json.loads((R/'build/geometry.json').read_text()):
     if not row.get('cloth'):continue

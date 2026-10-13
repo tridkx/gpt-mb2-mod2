@@ -3,12 +3,17 @@
   "race": "bmq_default",
   "prefix": "bmq",
   "skeleton": "bmq_skeleton",
-  "version": "v0.1.2",
+  "version": "v0.1.3",
   "title": "Bai Mo Qing Race",
-  "source_blend": "input/original/01_默认套装_MAJ03_01.blend",
-  "source_origin": "D:\\dsh-xianjian7\\output\\白茉晴_BaiMoQing\\01_默认套装_MAJ03_01",
-  "cloth_enabled": false,
-  "cloth_lods": [],
+  "source_blend": "input/original/01_\u9ed8\u8ba4\u5957\u88c5_MAJ03_01.blend",
+  "source_origin": "D:\\dsh-xianjian7\\output\\\u767d\u8309\u6674_BaiMoQing\\01_\u9ed8\u8ba4\u5957\u88c5_MAJ03_01",
+  "cloth_enabled": true,
+  "cloth_lods": [
+    0,
+    1,
+    2,
+    3
+  ],
   "skin_min_scale": 1.0,
   "lod_multipliers": [
     1,
@@ -32,8 +37,8 @@
         0.25
       ],
       "root_band_m": 0.025,
-      "travel_slope": 0.65,
-      "max_travel_m": 0.38
+      "travel_slope": 0.8,
+      "max_travel_m": 0.55
     },
     {
       "material": "MAJ03_01_cloth2",
@@ -48,40 +53,8 @@
         0.8
       ],
       "root_band_m": 0.025,
-      "travel_slope": 0.65,
-      "max_travel_m": 0.38
-    },
-    {
-      "material": "MAJ03_01_Flower",
-      "kind": "ribbon",
-      "min_height_m": 0.25,
-      "top_range_m": [
-        1.45,
-        1.55
-      ],
-      "bottom_range_m": [
-        1.0,
-        1.2
-      ],
-      "root_band_m": 0.025,
-      "travel_slope": 0.65,
-      "max_travel_m": 0.38
-    },
-    {
-      "material": "MAJ03_01_hair",
-      "kind": "long_hair",
-      "min_height_m": 0.3,
-      "top_range_m": [
-        1.4,
-        1.59
-      ],
-      "bottom_range_m": [
-        0.7,
-        1.25
-      ],
-      "root_band_m": 0.1,
-      "travel_slope": 0.65,
-      "max_travel_m": 0.38
+      "travel_slope": 0.8,
+      "max_travel_m": 0.55
     }
   ],
   "baseline_version": "v0.1.0",
@@ -96,5 +69,9 @@
     "minimum_mean_pressure_reduction": 0.2,
     "sampled_pose_fixed_root_overlap_m": 0.007
   },
-  "delivery_mode": "skeletal_skinning_only"
+  "delivery_mode": "hybrid_skirt_cloth",
+  "calibrate_materials": [
+    "MAJ03_01_cloth1",
+    "MAJ03_01_cloth2"
+  ]
 }

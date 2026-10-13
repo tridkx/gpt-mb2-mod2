@@ -92,3 +92,6 @@ geometry.append(dict(name='bmq_hidden',part='hidden',geometry=str(path),material
 (ROOT/'build/geometry.json').write_text(json.dumps(geometry,indent=2))
 for lod in range(4):stats.append({'lod':lod,'triangles':sum(g['triangles'] for g in geometry if g['lod']==lod and g['part']!='hidden'),'vertices':sum(g['vertices'] for g in geometry if g['lod']==lod and g['part']!='hidden'),'boundary_fallbacks':[g['name'] for g in geometry if g['lod']==lod and g['boundary_fallback']]})
 (ROOT/'reports/lod_stats.json').write_text(json.dumps(stats,indent=2));print('GEOMETRY_READY',stats)
+
+import runpy
+runpy.run_path(str(ROOT/'tools/preserve_static_colors.py'))

@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "version": "v0.3.1",
+  "baseline_version": "v0.1.1",
+  "baseline_package_sha256": "e72aa5730a220565d29a81c558b66e08cf8d4e5a28636e923350349910e9283b",
+  "final_package_sha256": "a6a5f94f25da79272c9dd4843dca662af3291576ae52bb725ce1ff8f0a40e930",
+  "lods": [
+    {
+      "lod": 0,
+      "mesh_count": 15,
+      "max_position_error_m": 0,
+      "indices_uv_weights_identical": true
+    },
+    {
+      "lod": 1,
+      "mesh_count": 12,
+      "max_position_error_m": 0,
+      "indices_uv_weights_identical": true
+    },
+    {
+      "lod": 2,
+      "mesh_count": 10,
+      "max_position_error_m": 0,
+      "indices_uv_weights_identical": true
+    },
+    {
+      "lod": 3,
+      "mesh_count": 10,
+      "max_position_error_m": 0,
+      "indices_uv_weights_identical": true
+    }
+  ],
+  "source_joint_positions_identical": true,
+  "non_arm_world_bind_frames_preserved": true,
+  "arm_bind_axes_corrected": true,
+  "all_source_texture_mips_identical": true,
+  "changed_generated_textures": [
+    "yqs_tex_1"
+  ],
+  "user_feedback": "User accepted v0.1.1 shape; v0.2.0 reports missing pelvis collision, excessive shadow darkness and small apparent size",
+  "game_cloth_verified": false
+}

@@ -1,0 +1,956 @@
+{
+  "status": "pass",
+  "travel_shortfall_tolerance_m": 0.005,
+  "final_package_sha256": "a6a5f94f25da79272c9dd4843dca662af3291576ae52bb725ce1ff8f0a40e930",
+  "cooked_meshes": [
+    {
+      "mesh": "yqs_part_00.lod2",
+      "lod": 2,
+      "render_vertices": 18017,
+      "simulation_vertices": 18017,
+      "active_positions": 2130,
+      "fixed_positions": 15887,
+      "stretch_constraints": 4260,
+      "bend_constraints": 2011,
+      "root_fixes": [],
+      "sha256": "80a48a4056d01bc00356e91fdde49dde201b6ce49cf0e2a1256a01af8b2cad32"
+    },
+    {
+      "mesh": "yqs_part_10.b3",
+      "lod": 0,
+      "render_vertices": 5299,
+      "simulation_vertices": 4700,
+      "active_positions": 238,
+      "fixed_positions": 4462,
+      "stretch_constraints": 730,
+      "bend_constraints": 732,
+      "root_fixes": [],
+      "sha256": "d3f05d3724ab0b0bc6a49b92a29795755ea23651a4a21289cfcc3d96dc3775e2"
+    },
+    {
+      "mesh": "yqs_part_11.lod2",
+      "lod": 2,
+      "render_vertices": 2244,
+      "simulation_vertices": 2244,
+      "active_positions": 1551,
+      "fixed_positions": 693,
+      "stretch_constraints": 3106,
+      "bend_constraints": 1551,
+      "root_fixes": [],
+      "sha256": "b098942b24f74728253f9ad084aea570c54a9dd1cc7a105a2f5465d93ac28194"
+    },
+    {
+      "mesh": "yqs_part_03.lod2",
+      "lod": 2,
+      "render_vertices": 3065,
+      "simulation_vertices": 2664,
+      "active_positions": 278,
+      "fixed_positions": 2386,
+      "stretch_constraints": 922,
+      "bend_constraints": 921,
+      "root_fixes": [],
+      "sha256": "a30a48420164e8f195d0ed676e5869b0db1d9b83f91df470d3d7e638d25e8d79"
+    },
+    {
+      "mesh": "yqs_part_11",
+      "lod": 0,
+      "render_vertices": 2244,
+      "simulation_vertices": 2244,
+      "active_positions": 1551,
+      "fixed_positions": 693,
+      "stretch_constraints": 3106,
+      "bend_constraints": 1551,
+      "root_fixes": [],
+      "sha256": "b098942b24f74728253f9ad084aea570c54a9dd1cc7a105a2f5465d93ac28194"
+    },
+    {
+      "mesh": "yqs_part_00.lod1",
+      "lod": 1,
+      "render_vertices": 20935,
+      "simulation_vertices": 20935,
+      "active_positions": 3870,
+      "fixed_positions": 17065,
+      "stretch_constraints": 7741,
+      "bend_constraints": 3827,
+      "root_fixes": [],
+      "sha256": "1feb7989da26b00b827cea2c7a87962c5b370542b55d4abfe44f3d4bde5cf6b8"
+    },
+    {
+      "mesh": "yqs_part_10.lod2",
+      "lod": 2,
+      "render_vertices": 12216,
+      "simulation_vertices": 9631,
+      "active_positions": 1557,
+      "fixed_positions": 8074,
+      "stretch_constraints": 4856,
+      "bend_constraints": 4675,
+      "root_fixes": [],
+      "sha256": "baaa434db725cfdd70fe78012e9709b85615e08d234931bd1fd69165d50786ee"
+    },
+    {
+      "mesh": "yqs_part_10.lod1",
+      "lod": 1,
+      "render_vertices": 13290,
+      "simulation_vertices": 11165,
+      "active_positions": 2335,
+      "fixed_positions": 8830,
+      "stretch_constraints": 7189,
+      "bend_constraints": 7133,
+      "root_fixes": [],
+      "sha256": "a29777cb4565adfd63fb24482cd07f2f4b731e4871323952488bd8ed2f573f9f"
+    },
+    {
+      "mesh": "yqs_part_00.lod3",
+      "lod": 3,
+      "render_vertices": 8967,
+      "simulation_vertices": 8742,
+      "active_positions": 1086,
+      "fixed_positions": 7656,
+      "stretch_constraints": 2167,
+      "bend_constraints": 934,
+      "root_fixes": [
+        {
+          "component_positions": 4,
+          "reason": "Restore surviving upper attachment edge of reduced source hair, skirt/ribbon or tassel component",
+          "pinned_render_vertices": [
+            1554,
+            1556
+          ],
+          "bounds": [
+            [
+              -0.10406606,
+              -0.042386018,
+              1.2696848
+            ],
+            [
+              -0.0608139,
+              0.030128485,
+              1.510556
+            ]
+          ]
+        }
+      ],
+      "sha256": "044d3a87c3898d922994ada16340dd581b2fae3c43e43ad430d780b181579e12"
+    },
+    {
+      "mesh": "yqs_part_03.lod1",
+      "lod": 1,
+      "render_vertices": 5304,
+      "simulation_vertices": 4754,
+      "active_positions": 525,
+      "fixed_positions": 4229,
+      "stretch_constraints": 1683,
+      "bend_constraints": 1692,
+      "root_fixes": [],
+      "sha256": "48e14ff3865df1777887498485c5859901c591bd282d69f5edce9b53305fae63"
+    },
+    {
+      "mesh": "yqs_part_11.lod3",
+      "lod": 3,
+      "render_vertices": 2244,
+      "simulation_vertices": 2244,
+      "active_positions": 1551,
+      "fixed_positions": 693,
+      "stretch_constraints": 3106,
+      "bend_constraints": 1551,
+      "root_fixes": [],
+      "sha256": "b098942b24f74728253f9ad084aea570c54a9dd1cc7a105a2f5465d93ac28194"
+    },
+    {
+      "mesh": "yqs_part_10.lod1.b2",
+      "lod": 1,
+      "render_vertices": 7354,
+      "simulation_vertices": 6316,
+      "active_positions": 148,
+      "fixed_positions": 6168,
+      "stretch_constraints": 454,
+      "bend_constraints": 452,
+      "root_fixes": [],
+      "sha256": "290e47a41715e27367c425e1309104872c79e354ebe45de8efa84496306683bd"
+    },
+    {
+      "mesh": "yqs_part_11.lod1",
+      "lod": 1,
+      "render_vertices": 2244,
+      "simulation_vertices": 2244,
+      "active_positions": 1551,
+      "fixed_positions": 693,
+      "stretch_constraints": 3106,
+      "bend_constraints": 1551,
+      "root_fixes": [],
+      "sha256": "b098942b24f74728253f9ad084aea570c54a9dd1cc7a105a2f5465d93ac28194"
+    },
+    {
+      "mesh": "yqs_part_00",
+      "lod": 0,
+      "render_vertices": 20798,
+      "simulation_vertices": 20798,
+      "active_positions": 5617,
+      "fixed_positions": 15181,
+      "stretch_constraints": 11234,
+      "bend_constraints": 5617,
+      "root_fixes": [],
+      "sha256": "65831e7199db561de6dfa778f09e75ec8556ee4792411a30fb8e4e248ab899ef"
+    },
+    {
+      "mesh": "yqs_part_03",
+      "lod": 0,
+      "render_vertices": 7987,
+      "simulation_vertices": 7194,
+      "active_positions": 740,
+      "fixed_positions": 6454,
+      "stretch_constraints": 2348,
+      "bend_constraints": 2405,
+      "root_fixes": [],
+      "sha256": "32362b8a04b322f7ed337ac936cc5759f065a8d6b0c43225bdee9cdaa54d8a37"
+    },
+    {
+      "mesh": "yqs_part_10.lod3",
+      "lod": 3,
+      "render_vertices": 6441,
+      "simulation_vertices": 4740,
+      "active_positions": 539,
+      "fixed_positions": 4201,
+      "stretch_constraints": 1784,
+      "bend_constraints": 1565,
+      "root_fixes": [],
+      "sha256": "579ccf2ffa719dd86f6841bd66333c79cde66ee41f6626af84189e875b7911f1"
+    },
+    {
+      "mesh": "yqs_part_10",
+      "lod": 0,
+      "render_vertices": 13020,
+      "simulation_vertices": 11173,
+      "active_positions": 3082,
+      "fixed_positions": 8091,
+      "stretch_constraints": 9441,
+      "bend_constraints": 9466,
+      "root_fixes": [],
+      "sha256": "f00f9422f91f225cb8cffeb4dfa04046d61c61c788c60c7677e3bc8199be52e7"
+    },
+    {
+      "mesh": "yqs_part_03.lod3",
+      "lod": 3,
+      "render_vertices": 1531,
+      "simulation_vertices": 1270,
+      "active_positions": 112,
+      "fixed_positions": 1158,
+      "stretch_constraints": 383,
+      "bend_constraints": 397,
+      "root_fixes": [],
+      "sha256": "9512862b2c2af3ed329d39db99576083fbc019cf0e918c22772616d9a32acaa5"
+    }
+  ],
+  "pose_diagnostics": [
+    {
+      "pose": "rest",
+      "frames": 1,
+      "preview_frame": 0,
+      "max_reference_capsule_overlap_m": 0.08252101965107,
+      "max_travel_shortfall_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "yqs_part_00.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.011829664064261336,
+          "worst_capsule": "head"
+        },
+        "yqs_part_10.b3": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_11.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_03.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_11": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_00.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.011829664064261336,
+          "worst_capsule": ""
+        },
+        "yqs_part_10.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0813360413227833,
+          "worst_capsule": "pelvis_0.0"
+        },
+        "yqs_part_10.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.08252101965107,
+          "worst_capsule": "pelvis_0.0"
+        },
+        "yqs_part_00.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.009362307798573763,
+          "worst_capsule": ""
+        },
+        "yqs_part_03.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_11.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_10.lod1.b2": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_11.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_00": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.011829664064261336,
+          "worst_capsule": ""
+        },
+        "yqs_part_03": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_10.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.08234595158987028,
+          "worst_capsule": ""
+        },
+        "yqs_part_10": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.07217371955901919,
+          "worst_capsule": "pelvis_0.0"
+        },
+        "yqs_part_03.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "run",
+      "frames": 25,
+      "preview_frame": 1,
+      "max_reference_capsule_overlap_m": 0.10925226753947381,
+      "max_travel_shortfall_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "yqs_part_00.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0962551654605318,
+          "worst_capsule": "head"
+        },
+        "yqs_part_10.b3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_11.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_03.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_11": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_00.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0962551654605318,
+          "worst_capsule": ""
+        },
+        "yqs_part_10.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.08850959731894505,
+          "worst_capsule": "pelvis_0.055"
+        },
+        "yqs_part_10.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.08936424945727318,
+          "worst_capsule": "pelvis_0.055"
+        },
+        "yqs_part_00.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.09435270707344483,
+          "worst_capsule": ""
+        },
+        "yqs_part_03.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_11.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_10.lod1.b2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_11.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_00": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0962551654605318,
+          "worst_capsule": ""
+        },
+        "yqs_part_03": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_10.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.08373440510520619,
+          "worst_capsule": "pelvis_-0.055"
+        },
+        "yqs_part_10": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.07830392320915,
+          "worst_capsule": "pelvis_0.055"
+        },
+        "yqs_part_03.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "idle",
+      "frames": 16,
+      "preview_frame": 1,
+      "max_reference_capsule_overlap_m": 0.09914456201370109,
+      "max_travel_shortfall_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "yqs_part_00.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.06796601756335191,
+          "worst_capsule": "head"
+        },
+        "yqs_part_10.b3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_11.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_03.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_11": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_00.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.06796601756335191,
+          "worst_capsule": ""
+        },
+        "yqs_part_10.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.08333160588310773,
+          "worst_capsule": "pelvis_0.055"
+        },
+        "yqs_part_10.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.08458843146680169,
+          "worst_capsule": "pelvis_0.055"
+        },
+        "yqs_part_00.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0656447849349528,
+          "worst_capsule": ""
+        },
+        "yqs_part_03.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_11.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_10.lod1.b2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_11.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_00": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.06796601756335191,
+          "worst_capsule": ""
+        },
+        "yqs_part_03": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_10.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.08441202101572878,
+          "worst_capsule": "pelvis_-0.055"
+        },
+        "yqs_part_10": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.07411199295807476,
+          "worst_capsule": "pelvis_0.055"
+        },
+        "yqs_part_03.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "bow",
+      "frames": 16,
+      "preview_frame": 1,
+      "max_reference_capsule_overlap_m": 0.10716776077837584,
+      "max_travel_shortfall_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "yqs_part_00.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.039527434714939955,
+          "worst_capsule": "head"
+        },
+        "yqs_part_10.b3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.005602241179122381,
+          "worst_capsule": ""
+        },
+        "yqs_part_11.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_03.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_11": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_00.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.039527434714939955,
+          "worst_capsule": ""
+        },
+        "yqs_part_10.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.07854667812065283,
+          "worst_capsule": "pelvis_0.0"
+        },
+        "yqs_part_10.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.07512117575226979,
+          "worst_capsule": "pelvis_0.0"
+        },
+        "yqs_part_00.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.039198958685716975,
+          "worst_capsule": ""
+        },
+        "yqs_part_03.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_11.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_10.lod1.b2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.008243226692801746,
+          "worst_capsule": ""
+        },
+        "yqs_part_11.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_00": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.039527434714939955,
+          "worst_capsule": ""
+        },
+        "yqs_part_03": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_10.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.07773507744420927,
+          "worst_capsule": "pelvis_-0.055"
+        },
+        "yqs_part_10": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.07361686155651459,
+          "worst_capsule": "pelvis_0.0"
+        },
+        "yqs_part_03.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "riding",
+      "frames": 16,
+      "preview_frame": 1,
+      "max_reference_capsule_overlap_m": 0.10986729725325381,
+      "max_travel_shortfall_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "yqs_part_00.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.10905815179678462,
+          "worst_capsule": "head"
+        },
+        "yqs_part_10.b3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.023572684190260276,
+          "worst_capsule": ""
+        },
+        "yqs_part_11.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.00734944080075127,
+          "worst_capsule": ""
+        },
+        "yqs_part_03.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.00258108925514354,
+          "worst_capsule": ""
+        },
+        "yqs_part_11": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.00734944080075127,
+          "worst_capsule": ""
+        },
+        "yqs_part_00.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.10905815179678462,
+          "worst_capsule": ""
+        },
+        "yqs_part_10.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.09136271029786021,
+          "worst_capsule": "pelvis_0.055"
+        },
+        "yqs_part_10.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.08914783496847614,
+          "worst_capsule": "pelvis_-0.055"
+        },
+        "yqs_part_00.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.10847919740302459,
+          "worst_capsule": ""
+        },
+        "yqs_part_03.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0030406780362300795,
+          "worst_capsule": ""
+        },
+        "yqs_part_11.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.00734944080075127,
+          "worst_capsule": ""
+        },
+        "yqs_part_10.lod1.b2": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.023542993177118582,
+          "worst_capsule": ""
+        },
+        "yqs_part_11.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.00734944080075127,
+          "worst_capsule": ""
+        },
+        "yqs_part_00": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.10905815179678462,
+          "worst_capsule": ""
+        },
+        "yqs_part_03": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0030406780362300795,
+          "worst_capsule": ""
+        },
+        "yqs_part_10.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.08814313253883085,
+          "worst_capsule": "pelvis_0.0"
+        },
+        "yqs_part_10": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.0832327591626228,
+          "worst_capsule": "pelvis_-0.055"
+        },
+        "yqs_part_03.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 1,
+          "overlap_m": 0.003457361569687886,
+          "worst_capsule": ""
+        }
+      }
+    },
+    {
+      "pose": "slash",
+      "frames": 16,
+      "preview_frame": 0,
+      "max_reference_capsule_overlap_m": 0.10994057077595336,
+      "max_travel_shortfall_m": 0,
+      "finite": true,
+      "worst_by_mesh": {
+        "yqs_part_00.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.01183107074494437,
+          "worst_capsule": "head"
+        },
+        "yqs_part_10.b3": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_11.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_03.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_11": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_00.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.01183107074494437,
+          "worst_capsule": ""
+        },
+        "yqs_part_10.lod2": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.08133610649314076,
+          "worst_capsule": "pelvis_0.0"
+        },
+        "yqs_part_10.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.08252108834026584,
+          "worst_capsule": "pelvis_0.0"
+        },
+        "yqs_part_00.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0093637146972263,
+          "worst_capsule": ""
+        },
+        "yqs_part_03.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_11.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_10.lod1.b2": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_11.lod1": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_00": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.01183107074494437,
+          "worst_capsule": ""
+        },
+        "yqs_part_03": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        },
+        "yqs_part_10.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.08234603064036422,
+          "worst_capsule": ""
+        },
+        "yqs_part_10": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.07217378074936974,
+          "worst_capsule": "pelvis_0.0"
+        },
+        "yqs_part_03.lod3": {
+          "shortfall_m": 0.0,
+          "frame": 0,
+          "overlap_m": 0.0,
+          "worst_capsule": ""
+        }
+      }
+    }
+  ],
+  "cloth_engine_verified": false,
+  "scope": "Final payload structure and sampled native-animation capsule/travel screening; overlaps are skinning-reference measurements before the engine cloth solver"
+}
