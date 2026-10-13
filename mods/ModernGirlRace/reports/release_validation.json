@@ -1,10 +1,10 @@
 {
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "status": "pass",
   "check_scope": "offline_structural_and_native_motion_checks",
   "final_package_sha256": "a5cbc99de63c44dc51f6b4f2092b47c1007432a84241d244cf588383bdffca79",
-  "baseline_package_sha256": null,
-  "baseline_reason": "First release; input hashes provide geometry baseline",
+  "baseline_package_sha256": "a5cbc99de63c44dc51f6b4f2092b47c1007432a84241d244cf588383bdffca79",
+  "baseline_reason": "UI-only v0.1.1 repair; TPAC unchanged from v0.1.0; current offline release checks rerun.",
   "registration": {
     "status": "pass",
     "race": "modern_girl",
@@ -352,7 +352,8 @@
   "source_validation": "reports/source_validation.json",
   "proportion_uv_validation": "reports/preservation_validation.json",
   "ui_scope_validation": "reports/ui_scope_validation.json",
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "game_version": "v1.4.8",
-  "source_input_sha256": "6e201e3b21419c0b73a483e1175f4c5eac3c85cc81242e61fb42b39a6bb16708"
+  "source_input_sha256": "6e201e3b21419c0b73a483e1175f4c5eac3c85cc81242e61fb42b39a6bb16708",
+  "ui_creation_fix_validation": "reports/ui_creation_fix_validation.json"
 }

@@ -1,6 +1,6 @@
 {
   "id": "ModernGirlRace",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "race": "modern_girl",
   "skeleton": "modern_girl_skeleton",
   "skin_min_scale": 1.0,
@@ -36,7 +36,8 @@
   "facial_animation": false,
   "ui_scope": [
     "CharacterTableau",
-    "BasicCharacterTableau"
+    "BasicCharacterTableau",
+    "BodyGeneratorView"
   ],
   "landmarks_m": [
     [

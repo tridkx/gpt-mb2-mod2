@@ -1,0 +1,38 @@
+{
+  "status": "pass",
+  "date": "2026-10-13",
+  "version": "v0.1.1",
+  "baseline_version": "v0.1.0",
+  "changed_module_files": [
+    "module/ModernGirlRace/SubModule.xml",
+    "module/ModernGirlRace/bin/Win64_Shipping_Client/ModernGirlRace.UIRuntime.dll"
+  ],
+  "unchanged_assets": [
+    "module/ModernGirlRace/AssetPackages/modern_girl.tpac",
+    "module/ModernGirlRace/ModuleData/action_sets.xml",
+    "module/ModernGirlRace/ModuleData/monsters.xml",
+    "module/ModernGirlRace/ModuleData/project.mbproj",
+    "module/ModernGirlRace/ModuleData/skins.xml",
+    "module/ModernGirlRace/ModuleData/test_troop.xml",
+    "source/ModernGirlRace_Rigged.blend",
+    "source/ModernGirlRace_Rigged.blend1",
+    "source/ModernGirlRace_Rigged.fbx",
+    "tex/hair.png",
+    "tex/head.png",
+    "tex/left_arm.png",
+    "tex/lower.png",
+    "tex/materials.json",
+    "tex/right_arm.png",
+    "tex/upper.png",
+    "input/model.fbx"
+  ],
+  "final_runtime_sha256": "2abdf79abe022d3b94cacc285021e641f4ac06088e2dbcfd3107728eb8517006",
+  "local_game_contract_verified": true,
+  "initial_facegen_action_set_present": true,
+  "native_rebuild_action_set_missing": true,
+  "current_and_next_visuals_covered": true,
+  "matching_skeleton_wrong_action_set_covered": true,
+  "native_action_mappings_unchanged": true,
+  "game_verified": false,
+  "diagnosis": "Native body-generator rebuild omits ActionSet; old runtime excluded this owner and never repaired the fallback warrior preview."
+}
