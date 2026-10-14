@@ -1,0 +1,161 @@
+{
+  "proxy": {
+    "mesh": "emilie_cloth_proxy",
+    "guid": "436e3851-d066-a8d4-6e36-00a9d75e7c57",
+    "metamesh": "emilie_cloth_proxy",
+    "lod": 0,
+    "bytes": 41028,
+    "render_vertices": 455,
+    "simulation_vertices": 455,
+    "fixed_positions": 142,
+    "boundary_fixed_positions": 30,
+    "active_positions": 313,
+    "stretch_constraints": 829,
+    "bend_constraints": 712,
+    "shear_constraints": 0,
+    "parallel_sets": 15,
+    "dummy_sets": 10,
+    "max_geodesic_anchor_length": 0.715183913339845,
+    "sha256": "53f7e018c2144b863535a0c8b5329039427e10a8a28681f4806f0598967e0bbe",
+    "root_fixes": [],
+    "solver_pinned_render_vertices": [],
+    "path": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\EmilieRace\\build\\proxy_cooked\\436e3851-d066-a8d4-6e36-00a9d75e7c57.bin"
+  },
+  "render_maps": [
+    {
+      "mesh": "emilie_part_14_back_ribbons.lod3",
+      "lod": 3,
+      "kind": "back_ribbons",
+      "active_vertices": 75,
+      "rest_reconstruction_max_error_m": 4.6518988376206855e-08,
+      "max_offset_m": 0.008267679251730442
+    },
+    {
+      "mesh": "emilie_part_10_back_ribbons.lod1",
+      "lod": 1,
+      "kind": "back_ribbons",
+      "active_vertices": 178,
+      "rest_reconstruction_max_error_m": 9.425102097489046e-08,
+      "max_offset_m": 0.014162484556436539
+    },
+    {
+      "mesh": "emilie_part_14_back_ribbons.lod2",
+      "lod": 2,
+      "kind": "back_ribbons",
+      "active_vertices": 75,
+      "rest_reconstruction_max_error_m": 4.6518988376206855e-08,
+      "max_offset_m": 0.008267679251730442
+    },
+    {
+      "mesh": "emilie_part_17_hat_trail",
+      "lod": 0,
+      "kind": "hat_trail",
+      "active_vertices": 37,
+      "rest_reconstruction_max_error_m": 8.329995831793945e-08,
+      "max_offset_m": 0.07440157979726791
+    },
+    {
+      "mesh": "emilie_part_16_hat_trail",
+      "lod": 0,
+      "kind": "hat_trail",
+      "active_vertices": 233,
+      "rest_reconstruction_max_error_m": 6.819591007611019e-08,
+      "max_offset_m": 0.07685746997594833
+    },
+    {
+      "mesh": "emilie_part_14_back_ribbons.lod1",
+      "lod": 1,
+      "kind": "back_ribbons",
+      "active_vertices": 75,
+      "rest_reconstruction_max_error_m": 4.6518988376206855e-08,
+      "max_offset_m": 0.008267679251730442
+    },
+    {
+      "mesh": "emilie_part_17_hat_trail.lod3",
+      "lod": 3,
+      "kind": "hat_trail",
+      "active_vertices": 37,
+      "rest_reconstruction_max_error_m": 8.329995831793945e-08,
+      "max_offset_m": 0.07440157979726791
+    },
+    {
+      "mesh": "emilie_part_10_back_ribbons.lod3",
+      "lod": 3,
+      "kind": "back_ribbons",
+      "active_vertices": 178,
+      "rest_reconstruction_max_error_m": 9.425102097489046e-08,
+      "max_offset_m": 0.014162484556436539
+    },
+    {
+      "mesh": "emilie_part_17_hat_trail.lod1",
+      "lod": 1,
+      "kind": "hat_trail",
+      "active_vertices": 37,
+      "rest_reconstruction_max_error_m": 8.329995831793945e-08,
+      "max_offset_m": 0.07440157979726791
+    },
+    {
+      "mesh": "emilie_part_10_back_ribbons.lod2",
+      "lod": 2,
+      "kind": "back_ribbons",
+      "active_vertices": 178,
+      "rest_reconstruction_max_error_m": 9.425102097489046e-08,
+      "max_offset_m": 0.014162484556436539
+    },
+    {
+      "mesh": "emilie_part_14_back_ribbons",
+      "lod": 0,
+      "kind": "back_ribbons",
+      "active_vertices": 75,
+      "rest_reconstruction_max_error_m": 4.6518988376206855e-08,
+      "max_offset_m": 0.008267679251730442
+    },
+    {
+      "mesh": "emilie_part_10_back_ribbons",
+      "lod": 0,
+      "kind": "back_ribbons",
+      "active_vertices": 178,
+      "rest_reconstruction_max_error_m": 9.425102097489046e-08,
+      "max_offset_m": 0.014162484556436539
+    },
+    {
+      "mesh": "emilie_part_16_hat_trail.lod1",
+      "lod": 1,
+      "kind": "hat_trail",
+      "active_vertices": 233,
+      "rest_reconstruction_max_error_m": 6.819591007611019e-08,
+      "max_offset_m": 0.07685746997594833
+    },
+    {
+      "mesh": "emilie_part_16_hat_trail.lod2",
+      "lod": 2,
+      "kind": "hat_trail",
+      "active_vertices": 233,
+      "rest_reconstruction_max_error_m": 6.819591007611019e-08,
+      "max_offset_m": 0.07685746997594833
+    },
+    {
+      "mesh": "emilie_part_17_hat_trail.lod2",
+      "lod": 2,
+      "kind": "hat_trail",
+      "active_vertices": 37,
+      "rest_reconstruction_max_error_m": 8.329995831793945e-08,
+      "max_offset_m": 0.07440157979726791
+    },
+    {
+      "mesh": "emilie_part_16_hat_trail.lod3",
+      "lod": 3,
+      "kind": "hat_trail",
+      "active_vertices": 233,
+      "rest_reconstruction_max_error_m": 6.819591007611019e-08,
+      "max_offset_m": 0.07685746997594833
+    }
+  ],
+  "skirt_cloth_enabled": false,
+  "branches": {
+    "hat_trail": 595,
+    "back_\u5de6": 76,
+    "back_\u53f3": 56
+  },
+  "game_verified": false
+}

@@ -1,0 +1,216 @@
+{
+  "vertices": 27511,
+  "triangles": 34917,
+  "bones": 445,
+  "rigids": 347,
+  "joints": 494,
+  "morphs": 60,
+  "cloth_scope": [
+    {
+      "material": "体",
+      "kind": "back_ribbons",
+      "triangles": 48,
+      "vertices": 31,
+      "min_source": [
+        -1.2660433053970337,
+        10.25771427154541,
+        2.1690704822540283
+      ],
+      "max_source": [
+        -1.0721383094787598,
+        10.8095703125,
+        2.4096593856811523
+      ],
+      "source_weight_sum": 31.0
+    },
+    {
+      "material": "体",
+      "kind": "back_ribbons",
+      "triangles": 12,
+      "vertices": 20,
+      "min_source": [
+        -1.1676106452941895,
+        10.82521915435791,
+        2.0262107849121094
+      ],
+      "max_source": [
+        -0.9139968752861023,
+        11.219758987426758,
+        2.1642322540283203
+      ],
+      "source_weight_sum": 20.0
+    },
+    {
+      "material": "体",
+      "kind": "back_ribbons",
+      "triangles": 200,
+      "vertices": 252,
+      "min_source": [
+        0.8890519142150879,
+        9.054648399353027,
+        2.334299087524414
+      ],
+      "max_source": [
+        1.741698145866394,
+        10.296004295349121,
+        2.8304569721221924
+      ],
+      "source_weight_sum": 252.0
+    },
+    {
+      "material": "体",
+      "kind": "back_ribbons",
+      "triangles": 8,
+      "vertices": 24,
+      "min_source": [
+        1.292320728302002,
+        8.674552917480469,
+        2.7359490394592285
+      ],
+      "max_source": [
+        1.4960895776748657,
+        9.031449317932129,
+        2.8997671604156494
+      ],
+      "source_weight_sum": 24.0
+    },
+    {
+      "material": "体",
+      "kind": "back_ribbons",
+      "triangles": 48,
+      "vertices": 31,
+      "min_source": [
+        1.410881757736206,
+        8.08940601348877,
+        2.888998031616211
+      ],
+      "max_source": [
+        1.602568507194519,
+        8.639723777770996,
+        3.1412265300750732
+      ],
+      "source_weight_sum": 31.0
+    },
+    {
+      "material": "饰3",
+      "kind": "back_ribbons",
+      "triangles": 39,
+      "vertices": 45,
+      "min_source": [
+        -1.1341501474380493,
+        11.04083251953125,
+        0.33093273639678955
+      ],
+      "max_source": [
+        -0.0011803293600678444,
+        16.30124282836914,
+        2.0827789306640625
+      ],
+      "source_weight_sum": 33.49107277393341
+    },
+    {
+      "material": "饰3",
+      "kind": "back_ribbons",
+      "triangles": 45,
+      "vertices": 55,
+      "min_source": [
+        -0.001196250319480896,
+        9.960138320922852,
+        0.3326230049133301
+      ],
+      "max_source": [
+        1.3026618957519531,
+        16.300899505615234,
+        2.437002658843994
+      ],
+      "source_weight_sum": 43.9657227396965
+    },
+    {
+      "material": "饰3_Alpha",
+      "kind": "hat_trail",
+      "triangles": 4,
+      "vertices": 6,
+      "min_source": [
+        -3.2823688983917236,
+        14.212750434875488,
+        2.455691337585449
+      ],
+      "max_source": [
+        -2.8992040157318115,
+        14.990001678466797,
+        3.2781693935394287
+      ],
+      "source_weight_sum": 6.0
+    },
+    {
+      "material": "饰3_Alpha",
+      "kind": "hat_trail",
+      "triangles": 595,
+      "vertices": 367,
+      "min_source": [
+        -3.3721394538879395,
+        12.009132385253906,
+        0.16906283795833588
+      ],
+      "max_source": [
+        -0.44202905893325806,
+        19.790096282958984,
+        3.12848162651062
+      ],
+      "source_weight_sum": 219.23913569748402
+    },
+    {
+      "material": "饰3_Alpha2",
+      "kind": "hat_trail",
+      "triangles": 25,
+      "vertices": 25,
+      "min_source": [
+        -2.649247169494629,
+        16.974205017089844,
+        0.9775740504264832
+      ],
+      "max_source": [
+        -0.9915068745613098,
+        17.580230712890625,
+        1.9139080047607422
+      ],
+      "source_weight_sum": 25.0
+    },
+    {
+      "material": "饰3_Alpha2",
+      "kind": "hat_trail",
+      "triangles": 4,
+      "vertices": 6,
+      "min_source": [
+        -3.5294599533081055,
+        13.580132484436035,
+        2.5431406497955322
+      ],
+      "max_source": [
+        -2.685173511505127,
+        14.32896900177002,
+        2.9860241413116455
+      ],
+      "source_weight_sum": 6.0
+    },
+    {
+      "material": "饰3_Alpha2",
+      "kind": "hat_trail",
+      "triangles": 4,
+      "vertices": 6,
+      "min_source": [
+        -3.3661530017852783,
+        13.186649322509766,
+        2.84995436668396
+      ],
+      "max_source": [
+        -2.4834296703338623,
+        13.83879280090332,
+        3.480675458908081
+      ],
+      "source_weight_sum": 6.0
+    }
+  ],
+  "skirt_cloth_enabled": false,
+  "source_reader": "C:/Users/DKX/AppData/Roaming/Blender Foundation/Blender/5.2/extensions/user_default/mmd_tools/core/pmx/__init__.py"
+}

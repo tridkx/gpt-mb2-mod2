@@ -1,0 +1,130 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "aea647086ad4359e0ce81eea5f6ccb99d2c34685241a37e7b208f62a20588e3d",
+  "source_input_sha256": "f79979db3fae5b57b828a1bda0ba1e939f294cc045d02b6da092d2803c058d2b",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 34917,
+      "vertices": 23995,
+      "submeshes": 21
+    },
+    {
+      "lod": 1,
+      "triangles": 25725,
+      "vertices": 19398,
+      "submeshes": 21
+    },
+    {
+      "lod": 2,
+      "triangles": 19331,
+      "vertices": 16191,
+      "submeshes": 21
+    },
+    {
+      "lod": 3,
+      "triangles": 18647,
+      "vertices": 15849,
+      "submeshes": 21
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 507,
+      "worst_mesh": "emilie_part_10",
+      "frames_checked": 16,
+      "max_edge_extension": 1.948398061345202,
+      "max_mesh_p99_extension": 1.6692726143720331
+    },
+    {
+      "label": "run",
+      "worst_frame": 11,
+      "worst_mesh": "emilie_part_12",
+      "frames_checked": 25,
+      "max_edge_extension": 4.6133178745243235,
+      "max_mesh_p99_extension": 3.3575146524034123
+    },
+    {
+      "label": "bow",
+      "worst_frame": 89,
+      "worst_mesh": "emilie_part_10",
+      "frames_checked": 150,
+      "max_edge_extension": 4.634379460000722,
+      "max_mesh_p99_extension": 2.840080544959809
+    },
+    {
+      "label": "riding",
+      "worst_frame": 6,
+      "worst_mesh": "emilie_part_12",
+      "frames_checked": 20,
+      "max_edge_extension": 5.22770557163765,
+      "max_mesh_p99_extension": 3.9230197893877183
+    },
+    {
+      "label": "slash",
+      "worst_frame": 102,
+      "worst_mesh": "emilie_part_12",
+      "frames_checked": 150,
+      "max_edge_extension": 3.565831937495171,
+      "max_mesh_p99_extension": 2.6400832037232713
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 1891,
+      "worst_mesh": "emilie_part_12",
+      "frames_checked": 2272,
+      "max_edge_extension": 2.27949933734456,
+      "max_mesh_p99_extension": 1.9392020173760902
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 540,
+      "worst_mesh": "emilie_part_12",
+      "frames_checked": 16,
+      "max_edge_extension": 4.808057675499095,
+      "max_mesh_p99_extension": 3.4679346615180844
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 564,
+      "worst_mesh": "emilie_part_12",
+      "frames_checked": 16,
+      "max_edge_extension": 3.6649850389041174,
+      "max_mesh_p99_extension": 2.6914752866248493
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 124,
+      "worst_mesh": "emilie_part_12",
+      "frames_checked": 16,
+      "max_edge_extension": 3.573716161021462,
+      "max_mesh_p99_extension": 2.6009984903025196
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": true,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 16,
+  "proxy_simulation_vertices": 455,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "Animation diagnostic sampling assumes 60 fps; not calibrated to all game clip speeds."
+  ],
+  "offline_dynamic_status": "needs_review",
+  "cloth_diagnostic_status": "incomplete",
+  "cpu_mapping_preview": "reports/cpu_mapping_preview.json",
+  "editable_proxy_validation": "reports/proxy_source_validation.json"
+}

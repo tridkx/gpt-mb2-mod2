@@ -1,0 +1,25 @@
+{
+  "package": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\EmilieRace\\module\\EmilieRace\\AssetPackages\\emilie.tpac",
+  "status": "pass",
+  "scope": "Metadata round-trip, references and standard shader vertex-alpha risk only; textures, custom shader paths, geometry, weights, cloth dynamics and game behavior are not validated",
+  "cloth_vertex_alpha": true,
+  "errors": [],
+  "incomplete": [],
+  "observations": [],
+  "package_sha256": "aea647086ad4359e0ce81eea5f6ccb99d2c34685241a37e7b208f62a20588e3d",
+  "tool_output": {
+    "metacheck": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\EmilieRace\\module\\EmilieRace\\AssetPackages\\emilie.tpac: 28 assets | checksum ok=28 bad=0 | metadata identical=28 differ=0 noSerializer=0",
+    "mataudit": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\EmilieRace\\module\\EmilieRace\\AssetPackages\\emilie.tpac: 18 materials, 28 assets\n  metamesh-level material missing=0 | submesh Material present=86 missing=0 | submesh SecondMaterial present=0 missing=0 | metameshes with no material at all=0"
+  },
+  "counts": {
+    "materials": 18,
+    "submeshes": 86,
+    "cloth_submeshes": 17,
+    "lods": [
+      0,
+      1,
+      2,
+      3
+    ]
+  }
+}

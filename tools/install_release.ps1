@@ -24,6 +24,9 @@ if (-not (Test-Path -LiteralPath (Join-Path $projectRoot 'mod.json') -PathType L
 if (-not (Test-Path -LiteralPath (Join-Path $projectRoot 'mod.json') -PathType Leaf)) {
     $projectRoot = [IO.Path]::GetFullPath((Join-Path $workspaceRoot "mods\TiandaoRaceCollection\$Mod"))
 }
+if (-not (Test-Path -LiteralPath (Join-Path $projectRoot 'mod.json') -PathType Leaf)) {
+    $projectRoot = [IO.Path]::GetFullPath((Join-Path $workspaceRoot "mods\GenshinRaceCollection\$Mod"))
+}
 if (-not $projectRoot.StartsWith($workspaceRoot + '\', [StringComparison]::OrdinalIgnoreCase)) { throw 'Project outside workspace' }
 $config = Get-Content -LiteralPath (Join-Path $projectRoot 'mod.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 if ($config.id -cne $Mod) { throw 'Configuration ID differs from requested module' }

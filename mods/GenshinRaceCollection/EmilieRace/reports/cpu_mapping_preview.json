@@ -1,0 +1,28 @@
+{
+  "status": "review_required",
+  "scope": "Visual reconstruction from final mapping bytes and approximate CPU proxy trajectory",
+  "game_verified": false,
+  "previews": [
+    {
+      "motion": "facegen",
+      "simulation_frame": 1,
+      "source_frame": 2,
+      "game_solver_used": false,
+      "normal_reconstruction": "Deformed proxy triangle normals; approximate"
+    },
+    {
+      "motion": "run",
+      "simulation_frame": 24,
+      "source_frame": 25,
+      "game_solver_used": false,
+      "normal_reconstruction": "Deformed proxy triangle normals; approximate"
+    },
+    {
+      "motion": "riding",
+      "simulation_frame": 7,
+      "source_frame": 8,
+      "game_solver_used": false,
+      "normal_reconstruction": "Deformed proxy triangle normals; approximate"
+    }
+  ]
+}

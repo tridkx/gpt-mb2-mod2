@@ -1,0 +1,36 @@
+{
+  "status": "offline_review_complete",
+  "game_verified": false,
+  "package_sha256": "aea647086ad4359e0ce81eea5f6ccb99d2c34685241a37e7b208f62a20588e3d",
+  "source_rest_views": [
+    "front",
+    "back",
+    "side",
+    "head"
+  ],
+  "lods_reviewed": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "native_motion_views_reviewed": [
+    "facegen",
+    "run",
+    "bow",
+    "riding"
+  ],
+  "approximate_cpu_mapping_views_reviewed": [
+    "facegen",
+    "run",
+    "riding"
+  ],
+  "accepted_for_first_game_test": true,
+  "remaining_risks": [
+    "Skirt ordinary skinning folds significantly in riding poses.",
+    "CPU proxy reports collision/stretch residuals in run; full mapped cloth is unsupported by the diagnostic.",
+    "No real game solver, IK, weapon grip or horse collision validation."
+  ],
+  "version": "v0.1.0",
+  "date": "2026-10-14"
+}

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf8'?>
+<bodies>
+  <body name="emilie_collision" owner_skeleton="emilie_skeleton">
+    <capsules>
+      <capsule name="emilie_torso_low" length="0.033423" origin="0, 0, 0" frame="0.000000, -0.125865, 0.992047, 0.000000, 0.000000, 0.992047, 0.125865, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000000, 0.061904, 1.070116, 1.000000">
+        <points>
+          <point radius="0.060000">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.060000">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="emilie_torso_high" length="0.033423" origin="0, 0, 0" frame="0.000000, -0.125865, 0.992047, 0.000000, 0.000000, 0.992047, 0.125865, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000000, 0.057697, 1.103273, 1.000000">
+        <points>
+          <point radius="0.070000">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.070000">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="emilie_neck" length="0.076389" origin="0, 0, 0" frame="-0.000000, 0.142528, 0.989791, 0.000000, 0.000000, 0.989791, -0.142528, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, 0.000000, 0.000398, 1.305629, 1.000000">
+        <points>
+          <point radius="0.035000">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.035000">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="emilie_l_upperarm" length="0.212176" origin="0, 0, 0" frame="-0.762292, -0.020941, -0.646894, 0.000000, -0.015967, 0.999781, -0.013549, 0.000000, 0.647036, 0.000000, -0.762459, 0.000000, -0.102920, -0.005078, 1.257544, 1.000000">
+        <points>
+          <point radius="0.025000">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.025000">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="emilie_r_upperarm" length="0.212176" origin="0, 0, 0" frame="0.762292, -0.020970, -0.646894, 0.000000, 0.015989, 0.999780, -0.013568, 0.000000, 0.647036, -0.000000, 0.762459, 0.000000, 0.102920, -0.005078, 1.257544, 1.000000">
+        <points>
+          <point radius="0.025000">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.025000">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="emilie_head" length="0.085000" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.011285, 1.411238, 1.000000">
+        <points>
+          <point radius="0.076000">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.076000">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

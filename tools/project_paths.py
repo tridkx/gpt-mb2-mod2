@@ -7,7 +7,8 @@ def resolve_project(workspace,name):
     candidates=[workspace/'mods'/name,workspace/'mods/TianxiangCollection/sets'/name,
                 workspace/'mods/ResidentEvil'/name,workspace/'mods/Xianjian7Race'/name,
                 workspace/'mods/TianxiangRaceColletion'/name,
-                workspace/'mods/TiandaoRaceCollection'/name]
+                workspace/'mods/TiandaoRaceCollection'/name,
+                workspace/'mods/GenshinRaceCollection'/name]
     matches=[p for p in candidates if (p/'mod.json').is_file()]
     if len(matches)!=1:raise ValueError(f'Expected one configured project for {name}, found {len(matches)}')
     return matches[0]

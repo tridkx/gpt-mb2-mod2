@@ -1,6 +1,6 @@
 # 骑砍 2 多模组工作区
 
-此工作区独立维护骑砍 2 模组的原始输入、可编辑源文件、工具、运行模块和交付包。合集中的套装工程保存在各合集的 sets/ 下；生化危机工程位于 ResidentEvil/<ModId>/，仙剑7角色工程位于 Xianjian7Race/<ModId>/。
+此工作区独立维护骑砍 2 模组的原始输入、可编辑源文件、工具、运行模块和交付包。合集中的套装工程保存在各合集的 sets/ 下；生化危机工程位于 ResidentEvil/<ModId>/，仙剑7角色工程位于 Xianjian7Race/<ModId>/，原神角色工程位于 GenshinRaceCollection/<ModId>/。角色系列容器本身不是游戏模块。
 
 ## 模组导航
 
@@ -17,6 +17,7 @@
 | [Resident Evil](mods/ResidentEvil/README.md) | 系列工程入口，包含艾达王默认服装装备与固定外观种族 |
 | [仙剑奇侠传七](mods/Xianjian7Race/README.md) | 独立角色种族资源：月清疏两套、白茉晴两套；白茉晴第二套为无帽版 |
 | [天刀种族系列](mods/TiandaoRaceCollection/README.md) | 独立角色种族工程，包含碧水青鸾女性完整角色及布料 |
+| [原神种族系列](mods/GenshinRaceCollection/README.md) | 独立角色种族工程，包含艾梅莉埃；裙摆蒙皮，帽后长饰与背后飘带布料 |
 | [Modern Girl Race](mods/ModernGirlRace/README.md) | 现代少女 v6 完整人物固定外观种族与独立测试兵种 |
 | [Race Troop Builder](mods/RaceTroopBuilder/README.md) | 自定义种族兵种树拼装器，Windows GUI、AI JSON/CLI、中英名称与固有护甲配置 |
 
@@ -86,7 +87,7 @@ Mod ZIP 顶层是模组 ID，源包保持 source/ 与 tex/ 相邻。mod.json.sha
 
 含布料的模组可通过 `mod.json.cloth_diagnostics` 接入[自动离线诊断](tools/cloth_simulator/README.md#接入模组制作与交付流程)：打包及安装前检查最终 TPAC，复用相同输入的报告，并将报告、最差帧和诊断源码加入源包。尚未配置的模组沿用原流程；已启用时 `--check-only` 也可能生成诊断缓存和报告，但不打包或安装。近似模拟结果独立于游戏验收状态。
 
-共用入口支持顶层独立模组、天香单套 ID、ResidentEvil、Xianjian7Race、TiandaoRaceCollection 和 TianxiangRaceColletion 内独立 ID。圣绣、真武内部套装从合集根打包和安装。
+共用入口支持顶层独立模组、天香单套 ID、ResidentEvil、Xianjian7Race、TiandaoRaceCollection、GenshinRaceCollection 和 TianxiangRaceColletion 内独立 ID。圣绣、真武内部套装从合集根打包和安装。
 
 ## 文档与检查边界
 
