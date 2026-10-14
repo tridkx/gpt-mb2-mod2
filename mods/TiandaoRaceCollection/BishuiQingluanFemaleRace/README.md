@@ -1,6 +1,6 @@
 # Bishui Qingluan Female Race
 
-碧水青鸾女性完整角色种族，模块 ID `BishuiQingluanFemaleRace`。当前交付和安装版本为 `v0.1.1` 试验版，用于游戏内观察效果；旧版 `v0.1.0` 保留回退包。源模型来自 `D:/dsh-tiandao/碧水青鸾-女`，保留原脸、身体比例、衣裙、头发和贴图。
+碧水青鸾女性完整角色种族，模块 ID `BishuiQingluanFemaleRace`。当前版本为 `v0.1.2`，只返修袖子蒙皮；裙子保持用户接受的 v0.1.1 数据。源模型来自 `D:/dsh-tiandao/碧水青鸾-女`，保留原脸、身体比例、衣裙、头发和贴图。
 
 提供内部种族 `bql_qingluan`、28 骨自定义绑定骨架 `bql_skeleton`、完整身体 `bql_body`、四级 LOD，以及独立女性测试兵种 `bql_test`（“碧水青鸾”）。原版招募线与升级树不变，可通过控制台或兵种工具使用测试兵种。
 
@@ -10,11 +10,11 @@
 
 按本机 Native `v1.4.8` 构建。固定外观包含衣服与双手，使用此种族时保留空防具槽，武器、盾和坐骑可另外配置。[RaceTroopBuilder](../../RaceTroopBuilder/README.md) 可用于后续兵种编排；本模块未替换原版兵种。
 
-`dist/` 中当前 ZIP 与游戏安装版均为 `v0.1.1`。版本化的 `BishuiQingluanFemaleRace_v0.1.0_Mod.zip` 和 `BishuiQingluanFemaleRace_v0.1.0_Source.zip` 保留旧版。当前试验版尚未通过游戏视觉验收。
+当前安装版本见 [installation_validation.json](reports/installation_validation.json)，版本化的模组包和源包保留旧版。袖子修正的游戏效果仍待复测。
 
 ## 布料与动作
 
-袖子采用普通蒙皮，所有 LOD 均停用袖片布料及袖片代理映射。裙子使用“上裙稳定、下摆模拟、固定区平滑过渡”的方案：源坐标高度 0.72 米以上不参与布料，0.72–0.48 米之间用 smoothstep 平滑释放活动范围，0.48 米以下为下摆模拟区，裙脚活动上限 0.18 米。活动距离按原生 byte Alpha 量化，固定上裙通过平滑骨权重有限跟随左右大腿，不由小腿和脚牵引。
+袖子采用普通蒙皮，所有 LOD 均停用袖片布料及袖片代理映射。主要袖层使用共同的高度参考权重，悬垂区随同侧前臂，上端平滑连接上臂；身体接缝权重保留，减少逐层独立分配权重造成的相对变形。裙子使用“上裙稳定、下摆模拟、固定区平滑过渡”的方案：源坐标高度 0.72 米以上不参与布料，0.72–0.48 米之间用 smoothstep 平滑释放活动范围，0.48 米以下为下摆模拟区，裙脚活动上限 0.18 米。活动距离按原生 byte Alpha 量化，固定上裙通过平滑骨权重有限跟随左右大腿，不由小腿和脚牵引。
 
 重叠裙层仍共用一个环向／高度驱动面及原始层间偏移，可见网格不因代理简化而改变。长发、飘带和长头饰的原有布料保留。
 
@@ -30,8 +30,8 @@ LOD0、LOD1 带原生布料映射和匹配预处理数据，LOD2、LOD3 使用�
 
 ```powershell
 & 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/TiandaoRaceCollection/BishuiQingluanFemaleRace/tools/rebuild.py
-& 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 tools/package_delivery.py --mod BishuiQingluanFemaleRace --version v0.1.1 --check-only
-./tools/install_release.ps1 -Mod BishuiQingluanFemaleRace -Version v0.1.1 -CheckOnly
+& 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 tools/package_delivery.py --mod BishuiQingluanFemaleRace --version v0.1.2 --check-only
+./tools/install_release.ps1 -Mod BishuiQingluanFemaleRace -Version v0.1.2 -CheckOnly
 ```
 
 后两条仅检查，安装去掉 `-CheckOnly`；已有交付包时提供旧版版本号，保留历史包。

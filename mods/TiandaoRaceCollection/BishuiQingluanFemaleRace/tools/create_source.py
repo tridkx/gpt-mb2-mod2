@@ -76,6 +76,9 @@ for oi,o in enumerate(objects):
 # Equal weights at shared positions prevent source material seams opening.
 pts=np.concatenate(list(positions.values()));ww=np.concatenate(list(weights.values()));unique,owner=np.unique(np.round(pts,5),axis=0,return_inverse=True);avg=np.zeros((len(unique),28));np.add.at(avg,owner,ww);avg/=np.bincount(owner)[:,None];ww=avg[owner]
 keep=np.argsort(-ww,axis=1)[:,:4];mask=np.zeros_like(ww);np.put_along_axis(mask,keep,1,1);ww*=mask;ww/=ww.sum(1,keepdims=True)
+if cfg.get('coherent_sleeve_skinning'):
+ from sleeve_skinning import apply
+ key=manifest[13]['source_object'];start=sum(len(positions[rec['source_object']]) for rec in manifest[:13]);count=len(positions[key]);others=np.concatenate([v for k,v in positions.items() if k!=key]);ww[start:start+count],_=apply(positions[key],ww[start:start+count],others)
 names=[n+'_'+str(i) for i,n in enumerate(rig['names'])];offset=0;arrays={}
 for o,rec in zip(objects,manifest):
  old=rec['source_object'];p=positions[old];w=ww[offset:offset+len(p)];offset+=len(p)

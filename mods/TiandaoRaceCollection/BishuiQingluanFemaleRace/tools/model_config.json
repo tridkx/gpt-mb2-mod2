@@ -2,7 +2,7 @@
   "id": "BishuiQingluanFemaleRace",
   "prefix": "bql",
   "race": "bql_qingluan",
-  "version": "v0.1.1",
+  "version": "v0.1.2",
   "skeleton": "bql_skeleton",
   "skin_min_scale": 1.0,
   "cloth_enabled": true,
@@ -187,5 +187,6 @@
   },
   "cloth_mode": "mapped_panels",
   "sleeve_cloth_enabled": false,
-  "visual_acceptance_status": "needs_revision"
+  "visual_acceptance_status": "pending_sleeve_game_retest",
+  "coherent_sleeve_skinning": true
 }
