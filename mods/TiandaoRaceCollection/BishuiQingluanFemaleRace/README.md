@@ -1,6 +1,6 @@
 # Bishui Qingluan Female Race
 
-碧水青鸾女性完整角色种族，模块 ID `BishuiQingluanFemaleRace`。当前工作区是 `v0.1.1` 离线试验候选，已交付和安装的版本仍为 `v0.1.0`。源模型来自 `D:/dsh-tiandao/碧水青鸾-女`，保留原脸、身体比例、衣裙、头发和贴图。
+碧水青鸾女性完整角色种族，模块 ID `BishuiQingluanFemaleRace`。当前交付和安装版本为 `v0.1.1` 试验版，用于游戏内观察效果；旧版 `v0.1.0` 保留回退包。源模型来自 `D:/dsh-tiandao/碧水青鸾-女`，保留原脸、身体比例、衣裙、头发和贴图。
 
 提供内部种族 `bql_qingluan`、28 骨自定义绑定骨架 `bql_skeleton`、完整身体 `bql_body`、四级 LOD，以及独立女性测试兵种 `bql_test`（“碧水青鸾”）。原版招募线与升级树不变，可通过控制台或兵种工具使用测试兵种。
 
@@ -10,7 +10,7 @@
 
 按本机 Native `v1.4.8` 构建。固定外观包含衣服与双手，使用此种族时保留空防具槽，武器、盾和坐骑可另外配置。[RaceTroopBuilder](../../RaceTroopBuilder/README.md) 可用于后续兵种编排；本模块未替换原版兵种。
 
-`dist/` 中现有 ZIP 与游戏安装版仍是 `v0.1.0`。工作区 `v0.1.1` 候选只做离线效果观察，尚未安装或通过视觉验收。
+`dist/` 中当前 ZIP 与游戏安装版均为 `v0.1.1`。版本化的 `BishuiQingluanFemaleRace_v0.1.0_Mod.zip` 和 `BishuiQingluanFemaleRace_v0.1.0_Source.zip` 保留旧版。当前试验版尚未通过游戏视觉验收。
 
 ## 布料与动作
 
