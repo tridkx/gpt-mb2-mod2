@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "mod": "YunJinRace",
-  "fingerprint": "7530dbdd2cd492a894e7750e74ec308205c2e0c33a582087094c82267799765b",
+  "fingerprint": "c5b3f8fe7f3ff83ff6f9f0aeb5afc2817b66809793102d5bcc0d44dcf2dad43c",
   "generated_at_utc": "2026-10-14T15:29:17.270398+00:00",
   "inputs": {
     "mod/build/cloth_probe/mbtool.dll": "7391c3428210ba19ea7f9e1123fc1584a986d4bf618dffdda209e8fe25e92335",
     "mod/build/cloth_probe/NativeClothProbe.deps.json": "2f6631e12ab2d95519b7e139bb763ec892ce56b0fbc4e919abcf546a501850d7",
     "mod/build/cloth_probe/NativeClothProbe.dll": "056855e1bbbcacff385e266c45df1bf954f4db8dad7b6002d54c6c1dc43e3199",
     "mod/build/cloth_probe/NativeClothProbe.runtimeconfig.json": "256dda2706e1151bb95987b6b5be610bf68d64e058285b19e7e958222fc90414",
-    "mod/module/YunJinRace/AssetPackages/yunjin.tpac": "18b5edefc22f9cf8490f4e88455cefb48daf6f59f90fd9ad22da82ad36fbc23e",
+    "mod/module/YunJinRace/AssetPackages/yunjin.tpac": "1d9f7585d46dc2862347c349d9a8572e3b2bbd7b2c203d811c179f9a0fbc49cb",
     "mod/module/YunJinRace/ModuleData/cloth_bodies.xml": "4890f7e73c1e3402d4c9a4263b55a9a1f4ed2f405bf2a4bb7ac71090da44999b",
     "mod/reports/facegen.json": "35bbf06eea34fb3a0689bd589b6d6bde1310701e418967900c6aefc03cddf383",
     "mod/reports/final_skeleton.json": "69543cdbc41ac78ee94a2aa19030bd5d95f5fa5ab097dcb0437b8db4337ee54e",
@@ -27,7 +27,7 @@
     "workspace_tools/asset_helpers/previewer/baker/__init__.py": "7d7e86ba699dcb4cba65aea6a098f50af97462ce01131ec88e3d7431dff6eb3d",
     "workspace_tools/asset_helpers/previewer/baker/skeleton.py": "3efa27ce001e74f25687d7ae56b27e06dbb8b6bd94f80cddabb237f380eaad8e",
     "workspace_tools/asset_helpers/previewer/baker/animation.py": "2bd196a1c96752d2b1f1478c6dad5e2672e4e4f53438766b710f9ba6b2024272",
-    "mod/mod.json": "4973346184b63e5c9bdd2697cb403a39bd73b0bc576bf28f7b90d184eea5419f"
+    "mod/mod.json": "1f50d8b3e3a2b92be5695c2cff9d1e6848120ec3a2fe6337a4cfdde7b34cfb81"
   },
   "config": {
     "enabled": true,
@@ -103,7 +103,7 @@
       }
     ]
   },
-  "package_sha256": "18b5edefc22f9cf8490f4e88455cefb48daf6f59f90fd9ad22da82ad36fbc23e",
+  "package_sha256": "1d9f7585d46dc2862347c349d9a8572e3b2bbd7b2c203d811c179f9a0fbc49cb",
   "package_relative_path": "module/YunJinRace/AssetPackages/yunjin.tpac",
   "game_solver_used": false,
   "game_verified": false,
@@ -200,5 +200,12 @@
     }
   ],
   "run_directory": "build/cloth_simulator/7530dbdd2cd4-zdyrew5n",
-  "status": "incomplete"
+  "status": "incomplete",
+  "simulation_rerun": false,
+  "material_only_equivalence": {
+    "proof": "reports/hair_proxy_visibility_fix.json",
+    "proof_sha256": "532015e6c22a2ef6ea8b3b5a86e2c59bca66e7704e26f9f077a9c33d109268e0",
+    "baseline_package_sha256": "18b5edefc22f9cf8490f4e88455cefb48daf6f59f90fd9ad22da82ad36fbc23e",
+    "basis": "All LOD and proxy streams, cloth settings, payloads and mappings unchanged; collision, skeleton, motion and solver input hashes identical. Original trajectory provenance retained."
+  }
 }

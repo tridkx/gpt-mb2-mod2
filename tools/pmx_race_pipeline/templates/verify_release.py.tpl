@@ -36,11 +36,15 @@ for lod in range(4):
  lods.append({'lod':lod,'triangles':sum(m['nidx']//3 for m in meshes),'vertices':sum(m['nverts'] for m in meshes),'submeshes':len(meshes)})
 run([MB,'skeljson',P,'emilie_skeleton',R/'reports/final_skeleton.json']);rig=parse_skeljson(json.loads((R/'reports/final_skeleton.json').read_text()));expected=parse_skeljson({'bones':[dict(i=i,**b) for i,b in enumerate(json.loads((B/'skeleton_spec.json').read_text()))]});assert rig['names']==expected['names'] and np.max(abs(rig['restWorld']-expected['restWorld']))<2e-6
 pack=json.loads((B/'final_export_lod0/pack.json').read_text());assert {m['name'] for m in pack['meshes']}=={'emilie_body','emilie_hidden'}|({'emilie_cloth_proxy'} if C['cloth_enabled'] else set())
+if C['cloth_enabled']:
+ proxy_mesh=next(m for m in pack['meshes'] if m['name']=='emilie_cloth_proxy');assert all(m['material']=='emilie_proxy_invisible' for m in proxy_mesh['submeshes'])
+ proxy_material=json.loads((R/'reports/material_names.json').read_text())['emilie_proxy_invisible'];assert proxy_material['template']=='alpha' and 'alpha_test' in proxy_material['shaderMaterialFlags'] and proxy_material['alphaTest']>0
 sys.path.insert(0,'D:/mb-tools/py');from bcencode import decode_bc1,decode_bc3,decode_bc5
 for t in pack['textures']:
  blob=(B/'final_export_lod0'/t['file']).read_bytes();assert blob==(B/'tex'/(t['name']+'.bc')).read_bytes();w,h=t['width'],t['height']
  for j,(off,size) in enumerate(zip(t['mipOffset'],t['mipSize'])):
   arr={'DXT1':decode_bc1,'DXT5':decode_bc3,'BC5':decode_bc5}[t['format']](blob[off:off+size],w,h)
+  if t['name']=='emilie_proxy_zero':assert arr[:,:,3].max()==0
   if j==0 and t['format']!='BC5':Image.fromarray(arr).save(B/'final_export_lod0/tex'/(t['name']+'.png'))
   w=max(w//2,1);h=max(h//2,1)
 motions=[]

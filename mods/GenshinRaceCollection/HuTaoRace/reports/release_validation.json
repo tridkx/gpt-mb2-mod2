@@ -1,11 +1,11 @@
 {
   "status": "pass",
-  "version": "v0.1.0",
-  "date": "2026-10-14",
-  "final_package_sha256": "09ff9dea8dbf06c0f861b7cd2cb555011a0254cf79341e5a51f69ec540485cc3",
+  "version": "v0.1.1",
+  "date": "2026-10-15",
+  "final_package_sha256": "0cc25468275bfa839c40201785df2bf599c3ca962682f2aa6da9e5a845b051ef",
   "source_input_sha256": "e98189f1f36d1052a424d4ceb61eab28ef59e49fd8717db4ba2ad96081ce8a17",
-  "baseline_package_sha256": null,
-  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "baseline_package_sha256": "09ff9dea8dbf06c0f861b7cd2cb555011a0254cf79341e5a51f69ec540485cc3",
+  "baseline_reason": "Material-only driver visibility repair; all geometry, original textures, skeleton and cloth bytes preserved",
   "game_version": "v1.4.8",
   "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
   "lods": [
@@ -123,5 +123,6 @@
     "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
     "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
     "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
-  ]
+  ],
+  "repair_validation": "reports/hair_proxy_visibility_fix.json"
 }

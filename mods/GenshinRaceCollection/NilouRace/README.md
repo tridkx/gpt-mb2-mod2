@@ -24,6 +24,8 @@ campaign.give_troops nilou_test 10
 
 ## 检查与当前限制
 
+当前版本为长发布料代理使用独立全透明裁切材质，所有 mip 的 Alpha 均为零；可见头发材质与布料活动距离独立。修复的网格、骨架、原贴图及布料字节对比见 [代理材质修复](reports/hair_proxy_visibility_fix.json)，近景预览见 [含代理检查](reports/hair_proxy_visibility_preview.json)。实机头发效果待用户复测。
+
 [最终资源报告](reports/release_validation.json)覆盖 TPAC 回读、骨架、材质、UV、量化权重、所有交付 LOD 与原生动作。跑步、持弓、挥击和骑乘扫描完整提取片段；界面／捏脸基础站姿仅作抽样姿态检查，不提供外观定制功能。[源文件检查](reports/source_validation.json)确认重新打开 Blend/FBX 后仍保留源比例和 UV。
 
 映射布料的 CPU 渲染诊断仍为 `incomplete`；另检查直接模拟代理的动作轨迹。代理报告中的碰撞、拉伸提示属于近似诊断，不当作游戏通过或失败。初次接入使用报告模式。 诊断采样暂按 60 fps，尚未对齐所有游戏动作播放速度。离线报告与 [游戏验收](reports/game_acceptance.json)独立记录。

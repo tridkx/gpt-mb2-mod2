@@ -883,5 +883,34 @@
     ],
     "blendMode": "factor",
     "alphaTest": 0
+  },
+  "hutao_lantern_proxy_invisible": {
+    "name": "hutao_lantern_proxy_invisible",
+    "template": "alpha",
+    "shaderMaterialFlags": [
+      "use_specular",
+      "disable_vertex_color_alpha",
+      "alpha_test"
+    ],
+    "textures": {
+      "0": "hutao_lantern_proxy_zero"
+    },
+    "dropTextureSlots": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "alphaTest": 0.25,
+    "flags": [
+      "two_sided",
+      "dont_cast_shadow"
+    ],
+    "blendMode": "no_alpha_blend"
   }
 }

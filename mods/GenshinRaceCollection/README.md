@@ -56,6 +56,8 @@
 
 ## 检查与当前限制
 
+长发布料代理使用独立全透明裁切材质，与可见头发分开。当前 v0.1.1 的[材质修复检查](reports/hair_proxy_visibility_fix.json)核对全部 LOD、原贴图、骨架、布料和映射字节不变，修复前后预览见各角色报告中的 `hair_proxy_before_*`／`hair_proxy_after_*`。v0.1.0 已收到整体良好的反馈；v0.1.1 的头发实机效果待复测。
+
 [合集检查](reports/collection_validation.json)与 [安装一致性](reports/collection_installation.json)分别记录。各新角色已检查最终 TPAC 所有交付 LOD、纹理、UV、权重、原生动作，以及重开的 Blend/FBX；[正面预览](reports/final_front_1.png)、[第二页](reports/final_front_2.png)、[背面预览](reports/final_back_1.png)、[第二页](reports/final_back_2.png)来自最终资源。
 
 映射布料的 CPU 渲染诊断不支持当前代理映射，保留 `incomplete`；直接代理另作近似轨迹检查。[合集诊断索引](reports/collection_cloth_diagnostics.json)链接到各角色的独立报告。近似碰撞、拉伸提示不当作游戏验收。艾梅莉埃保留其原验收记录；新增角色和合集的队伍、百科、物品栏、战场动作、布料与 LOD 尚待用户游戏测试，助手不启动游戏。

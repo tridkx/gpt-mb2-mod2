@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "mod": "WeisinaRace",
-  "fingerprint": "9029d057e653206530687c5ef9eda5e9eaaf837f71e87d83325d964f97039cb9",
+  "fingerprint": "5086685f82ad318bcb272bac0316b94266a09cd3e0df037cc3f84112b729480c",
   "generated_at_utc": "2026-10-14T15:37:05.708185+00:00",
   "inputs": {
     "mod/build/cloth_probe/mbtool.dll": "7391c3428210ba19ea7f9e1123fc1584a986d4bf618dffdda209e8fe25e92335",
     "mod/build/cloth_probe/NativeClothProbe.deps.json": "2f6631e12ab2d95519b7e139bb763ec892ce56b0fbc4e919abcf546a501850d7",
     "mod/build/cloth_probe/NativeClothProbe.dll": "c3249abc90ffc08a9549f498a44d829e4e18dbfd39d81bbc76035da2efe93d78",
     "mod/build/cloth_probe/NativeClothProbe.runtimeconfig.json": "256dda2706e1151bb95987b6b5be610bf68d64e058285b19e7e958222fc90414",
-    "mod/module/WeisinaRace/AssetPackages/weisina.tpac": "28d0900338767de8d23064a135405c1d5295d4ecca5c22d68398b5d807ab0144",
+    "mod/module/WeisinaRace/AssetPackages/weisina.tpac": "2465072b310a443f1d75c38502f2f1e3e03b1170e66c46e852ee1657680d6fb3",
     "mod/module/WeisinaRace/ModuleData/cloth_bodies.xml": "60bcb84cc2f1fb7ddc546d0a1d15b9d95523c791ec73dbe0d6c32ffd37aee639",
     "mod/reports/facegen.json": "35bbf06eea34fb3a0689bd589b6d6bde1310701e418967900c6aefc03cddf383",
     "mod/reports/final_skeleton.json": "f70525e37a5e61e9a994fb812041a576ccce5af6026b6d194bb6df65c6a3d8c8",
@@ -27,7 +27,7 @@
     "workspace_tools/asset_helpers/previewer/baker/__init__.py": "7d7e86ba699dcb4cba65aea6a098f50af97462ce01131ec88e3d7431dff6eb3d",
     "workspace_tools/asset_helpers/previewer/baker/skeleton.py": "3efa27ce001e74f25687d7ae56b27e06dbb8b6bd94f80cddabb237f380eaad8e",
     "workspace_tools/asset_helpers/previewer/baker/animation.py": "2bd196a1c96752d2b1f1478c6dad5e2672e4e4f53438766b710f9ba6b2024272",
-    "mod/mod.json": "84ed842ab6f26f2ceeac228141e911c2e967004235cc2725e1499bd762607e30"
+    "mod/mod.json": "dc2439df8b83643fc6681726b148a3af0c59310a4000820edca0e08b582d214a"
   },
   "config": {
     "enabled": true,
@@ -103,7 +103,7 @@
       }
     ]
   },
-  "package_sha256": "28d0900338767de8d23064a135405c1d5295d4ecca5c22d68398b5d807ab0144",
+  "package_sha256": "2465072b310a443f1d75c38502f2f1e3e03b1170e66c46e852ee1657680d6fb3",
   "package_relative_path": "module/WeisinaRace/AssetPackages/weisina.tpac",
   "game_solver_used": false,
   "game_verified": false,
@@ -200,5 +200,12 @@
     }
   ],
   "run_directory": "build/cloth_simulator/9029d057e653-6n7b_3l9",
-  "status": "incomplete"
+  "status": "incomplete",
+  "simulation_rerun": false,
+  "material_only_equivalence": {
+    "proof": "reports/hair_proxy_visibility_fix.json",
+    "proof_sha256": "7b6145bae06cab5c554bbbba04415314ba4e6434010b3653d0b7f676dd98901e",
+    "baseline_package_sha256": "28d0900338767de8d23064a135405c1d5295d4ecca5c22d68398b5d807ab0144",
+    "basis": "All LOD and proxy streams, cloth settings, payloads and mappings unchanged; collision, skeleton, motion and solver input hashes identical. Original trajectory provenance retained."
+  }
 }

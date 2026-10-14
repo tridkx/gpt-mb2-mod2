@@ -38,8 +38,10 @@ def build_cloth(root):
         color=np.full((len(p),4),255,'u1');color[:,3]=a
         for v in [color,bi,bw]:out.write(np.asarray(v,'u1').tobytes())
         out.write(f.astype('<u4').tobytes())
-    proxy=dict(name=prefix+'_cloth_proxy',part='proxy',geometry=str(geo),material=prefix+'_'+manifest[0]['material'],flags=[],materialFlags=['no_team_color','no_tattoo'],lod=0,vertices=len(p),triangles=len(f),cloth=True)
-    geometry=json.loads((b/'geometry.json').read_text());geometry=[g for g in geometry if g['part']!='proxy'];geometry.append(proxy);(b/'mapped_geometry.json').write_text(json.dumps(geometry,indent=2));spec=json.loads((b/'spec.json').read_text());spec['output']=str(b/'mapped_base.tpac');spec['meshes'].append(dict(name=prefix+'_cloth_proxy',bodyPart='',template='mesh',groups=[{k:proxy[k] for k in ['name','geometry','material','flags','materialFlags']}]))
+    from proxy_material import add_material
+    spec=json.loads((b/'spec.json').read_text());invisible=add_material(root,spec);(b/'spec.json').write_text(json.dumps(spec,indent=2))
+    proxy=dict(name=prefix+'_cloth_proxy',part='proxy',geometry=str(geo),material=invisible,flags=[],materialFlags=['no_team_color','no_tattoo'],lod=0,vertices=len(p),triangles=len(f),cloth=True)
+    geometry=json.loads((b/'geometry.json').read_text());geometry=[g for g in geometry if g['part']!='proxy'];geometry.append(proxy);(b/'mapped_geometry.json').write_text(json.dumps(geometry,indent=2));spec['output']=str(b/'mapped_base.tpac');spec['meshes'].append(dict(name=prefix+'_cloth_proxy',bodyPart='',template='mesh',groups=[{k:proxy[k] for k in ['name','geometry','material','flags','materialFlags']}]))
     (b/'mapped_spec.json').write_text(json.dumps(spec,indent=2));run(['D:/mb-tools/mbtool/bin/Release/net9.0/mbtool.exe','build',b/'mapped_spec.json']);run(['dotnet',b/'package_patch/PackagePatch.dll',b/'mapped_base.tpac',b/'mapped_uncooked.tpac',b/'mapped_geometry.json',prefix,prefix+'_collision'])
     for name,folder in [('NativeClothProbe','cloth_probe'),('ClothPatch','cloth_patch'),('MappedClothPatch','mapped_patch')]:run(['dotnet','build',common/(name+'.csproj'),'--ignore-failed-sources','-p:BaseIntermediateOutputPath='+str(b/(folder+'_obj'))+'/', '-o',b/folder])
     dump=b/'proxy_input';dump.mkdir(exist_ok=True);run(['dotnet',b/'cloth_probe/NativeClothProbe.dll',b/'mapped_uncooked.tpac',prefix+'_cloth_proxy','--dump-segments',dump]);paths=list(dump.glob('*.mesh.json'));assert len(paths)==1;mesh=json.loads(paths[0].read_text());assert np.max(abs(np.array(mesh['positions'])-p))<2e-6

@@ -24,6 +24,8 @@ campaign.give_troops furina_test 10
 
 ## 检查与当前限制
 
+
+
 [最终资源报告](reports/release_validation.json)覆盖 TPAC 回读、骨架、材质、UV、量化权重、所有交付 LOD 与原生动作。跑步、持弓、挥击和骑乘扫描完整提取片段；界面／捏脸基础站姿仅作抽样姿态检查，不提供外观定制功能。[源文件检查](reports/source_validation.json)确认重新打开 Blend/FBX 后仍保留源比例和 UV。
 
 本角色未配置布料模拟。 诊断采样暂按 60 fps，尚未对齐所有游戏动作播放速度。离线报告与 [游戏验收](reports/game_acceptance.json)独立记录。

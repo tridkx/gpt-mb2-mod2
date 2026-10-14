@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "mod": "NingguangOrchidRace",
-  "fingerprint": "c340a58f514d7e67e8aa1b12b2111d37dd54fbf68363616ad353e741b20cb7e1",
+  "fingerprint": "5df618ac177bacb5368f32a4638ae5c691fa1ae20a6962ca53f37c42b9efce5b",
   "generated_at_utc": "2026-10-14T15:28:27.245943+00:00",
   "inputs": {
     "mod/build/cloth_probe/mbtool.dll": "7391c3428210ba19ea7f9e1123fc1584a986d4bf618dffdda209e8fe25e92335",
     "mod/build/cloth_probe/NativeClothProbe.deps.json": "2f6631e12ab2d95519b7e139bb763ec892ce56b0fbc4e919abcf546a501850d7",
     "mod/build/cloth_probe/NativeClothProbe.dll": "35b3bfdf6cf4925b4f45f01537d740248722da8dcf9e66bea581ee8a23023f44",
     "mod/build/cloth_probe/NativeClothProbe.runtimeconfig.json": "256dda2706e1151bb95987b6b5be610bf68d64e058285b19e7e958222fc90414",
-    "mod/module/NingguangOrchidRace/AssetPackages/ningguang_orchid.tpac": "fa501126482777c25c7a3c37e294e086a441d8e24991e190e5fc6d8d992eadb0",
+    "mod/module/NingguangOrchidRace/AssetPackages/ningguang_orchid.tpac": "cfc0ea613ce94dd1269888167665511a6bf00dda120921f574e6798c62dd7b07",
     "mod/module/NingguangOrchidRace/ModuleData/cloth_bodies.xml": "9981911c9f516a98e3de696002dd704b9a28c81865119fa883df86416db499e7",
     "mod/reports/facegen.json": "35bbf06eea34fb3a0689bd589b6d6bde1310701e418967900c6aefc03cddf383",
     "mod/reports/final_skeleton.json": "01f430610f631e2ffcdf65f6d61b36a0b3dc743b7293ef0935e6e0cd930516b7",
@@ -27,7 +27,7 @@
     "workspace_tools/asset_helpers/previewer/baker/__init__.py": "7d7e86ba699dcb4cba65aea6a098f50af97462ce01131ec88e3d7431dff6eb3d",
     "workspace_tools/asset_helpers/previewer/baker/skeleton.py": "3efa27ce001e74f25687d7ae56b27e06dbb8b6bd94f80cddabb237f380eaad8e",
     "workspace_tools/asset_helpers/previewer/baker/animation.py": "2bd196a1c96752d2b1f1478c6dad5e2672e4e4f53438766b710f9ba6b2024272",
-    "mod/mod.json": "3b74d765e9062dd8314417d3a8ee097d7d9062ac0abd4fce3ecacb36cb443633"
+    "mod/mod.json": "455fc167cb27e779d864a8525f1f1517f622ffd51bb2ac8c5b1d95abc820b260"
   },
   "config": {
     "enabled": true,
@@ -103,7 +103,7 @@
       }
     ]
   },
-  "package_sha256": "fa501126482777c25c7a3c37e294e086a441d8e24991e190e5fc6d8d992eadb0",
+  "package_sha256": "cfc0ea613ce94dd1269888167665511a6bf00dda120921f574e6798c62dd7b07",
   "package_relative_path": "module/NingguangOrchidRace/AssetPackages/ningguang_orchid.tpac",
   "game_solver_used": false,
   "game_verified": false,
@@ -200,5 +200,12 @@
     }
   ],
   "run_directory": "build/cloth_simulator/c340a58f514d-e26dlk0p",
-  "status": "incomplete"
+  "status": "incomplete",
+  "simulation_rerun": false,
+  "material_only_equivalence": {
+    "proof": "reports/hair_proxy_visibility_fix.json",
+    "proof_sha256": "460b3145cfc89d07f9c4dae6761cdee6a483c5377645e5a3f70990301d7108af",
+    "baseline_package_sha256": "fa501126482777c25c7a3c37e294e086a441d8e24991e190e5fc6d8d992eadb0",
+    "basis": "All LOD and proxy streams, cloth settings, payloads and mappings unchanged; collision, skeleton, motion and solver input hashes identical. Original trajectory provenance retained."
+  }
 }

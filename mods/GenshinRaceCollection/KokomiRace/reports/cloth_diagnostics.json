@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "mod": "KokomiRace",
-  "fingerprint": "63b86819e9ca237a71e65b2878a99b516638f0b04a2132df8c5312f2abf17b33",
+  "fingerprint": "5c8622da4a62a370146d5de05c573fcc30c16d8a2a90bc00a0ed2b8311f0333b",
   "generated_at_utc": "2026-10-14T15:30:07.455482+00:00",
   "inputs": {
     "mod/build/cloth_probe/mbtool.dll": "7391c3428210ba19ea7f9e1123fc1584a986d4bf618dffdda209e8fe25e92335",
     "mod/build/cloth_probe/NativeClothProbe.deps.json": "2f6631e12ab2d95519b7e139bb763ec892ce56b0fbc4e919abcf546a501850d7",
     "mod/build/cloth_probe/NativeClothProbe.dll": "ef91baacf2416610c1da4cf90ea9a3b2f707847008d00c4d999fef629c0c071d",
     "mod/build/cloth_probe/NativeClothProbe.runtimeconfig.json": "256dda2706e1151bb95987b6b5be610bf68d64e058285b19e7e958222fc90414",
-    "mod/module/KokomiRace/AssetPackages/kokomi.tpac": "ae7dc7a773dd1ee5217a7459e9a89be279307d72269d6ee83e69cd38d216283f",
+    "mod/module/KokomiRace/AssetPackages/kokomi.tpac": "e806711832a320a6a60622bc0991a2f16bafd852948ae8fbda8fa5f3ea5dd1eb",
     "mod/module/KokomiRace/ModuleData/cloth_bodies.xml": "0e328f3e456576f3aa06a30ee1b9bd0fdd0447d736523b772aaf16273ee2ad4c",
     "mod/reports/facegen.json": "35bbf06eea34fb3a0689bd589b6d6bde1310701e418967900c6aefc03cddf383",
     "mod/reports/final_skeleton.json": "6096af1135826b01aef0e7a6130c3913eff7b3432cdd75d5b68ea08b1790481a",
@@ -27,7 +27,7 @@
     "workspace_tools/asset_helpers/previewer/baker/__init__.py": "7d7e86ba699dcb4cba65aea6a098f50af97462ce01131ec88e3d7431dff6eb3d",
     "workspace_tools/asset_helpers/previewer/baker/skeleton.py": "3efa27ce001e74f25687d7ae56b27e06dbb8b6bd94f80cddabb237f380eaad8e",
     "workspace_tools/asset_helpers/previewer/baker/animation.py": "2bd196a1c96752d2b1f1478c6dad5e2672e4e4f53438766b710f9ba6b2024272",
-    "mod/mod.json": "34c85ed5b0a2318d71c7ff327773b3102b0023da952fd37e0d5d97cb60b23fb2"
+    "mod/mod.json": "4dc62f8dc8b94f7f429296c4f9521c4571c5d68e757b9ceea1960e57f7d171be"
   },
   "config": {
     "enabled": true,
@@ -103,7 +103,7 @@
       }
     ]
   },
-  "package_sha256": "ae7dc7a773dd1ee5217a7459e9a89be279307d72269d6ee83e69cd38d216283f",
+  "package_sha256": "e806711832a320a6a60622bc0991a2f16bafd852948ae8fbda8fa5f3ea5dd1eb",
   "package_relative_path": "module/KokomiRace/AssetPackages/kokomi.tpac",
   "game_solver_used": false,
   "game_verified": false,
@@ -200,5 +200,12 @@
     }
   ],
   "run_directory": "build/cloth_simulator/63b86819e9ca-e6i9nrgf",
-  "status": "incomplete"
+  "status": "incomplete",
+  "simulation_rerun": false,
+  "material_only_equivalence": {
+    "proof": "reports/hair_proxy_visibility_fix.json",
+    "proof_sha256": "3e32e4978b0b2c860d23cc71af26323d4112a3f256b3e7c7b0812143218d4e0d",
+    "baseline_package_sha256": "ae7dc7a773dd1ee5217a7459e9a89be279307d72269d6ee83e69cd38d216283f",
+    "basis": "All LOD and proxy streams, cloth settings, payloads and mappings unchanged; collision, skeleton, motion and solver input hashes identical. Original trajectory provenance retained."
+  }
 }

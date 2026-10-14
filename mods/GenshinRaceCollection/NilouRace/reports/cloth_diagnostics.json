@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "mod": "NilouRace",
-  "fingerprint": "3f339cefca0bce1fa929caba84e09641f4a913e4ec137269a8f5dcafc5ac7aa6",
+  "fingerprint": "231f875ae43f398a8527e9fae076a0e1935021e73f5eda74d15de0b47250c66f",
   "generated_at_utc": "2026-10-14T15:32:08.455205+00:00",
   "inputs": {
     "mod/build/cloth_probe/mbtool.dll": "7391c3428210ba19ea7f9e1123fc1584a986d4bf618dffdda209e8fe25e92335",
     "mod/build/cloth_probe/NativeClothProbe.deps.json": "2f6631e12ab2d95519b7e139bb763ec892ce56b0fbc4e919abcf546a501850d7",
     "mod/build/cloth_probe/NativeClothProbe.dll": "44352ac828cf76e0c111bb09aaa57a7fefafd8c166b49759cf78402113648c1d",
     "mod/build/cloth_probe/NativeClothProbe.runtimeconfig.json": "256dda2706e1151bb95987b6b5be610bf68d64e058285b19e7e958222fc90414",
-    "mod/module/NilouRace/AssetPackages/nilou.tpac": "01cc064b1b6baa0948a643c0ea28516880ed2f0654ef54150f03b3e718bfbbed",
+    "mod/module/NilouRace/AssetPackages/nilou.tpac": "2372651ad82c2ae4f7e6c0ea0571a281971f0cd3b76c11cbc9b000d4670378a5",
     "mod/module/NilouRace/ModuleData/cloth_bodies.xml": "c55db1034126220342758db2232fe55df0c2f46c12716de45dad05f5a66c0148",
     "mod/reports/facegen.json": "35bbf06eea34fb3a0689bd589b6d6bde1310701e418967900c6aefc03cddf383",
     "mod/reports/final_skeleton.json": "12be68d1143fa1fbe8e08477376bac5c27c709cb0213e7535c6be273b67df385",
@@ -27,7 +27,7 @@
     "workspace_tools/asset_helpers/previewer/baker/__init__.py": "7d7e86ba699dcb4cba65aea6a098f50af97462ce01131ec88e3d7431dff6eb3d",
     "workspace_tools/asset_helpers/previewer/baker/skeleton.py": "3efa27ce001e74f25687d7ae56b27e06dbb8b6bd94f80cddabb237f380eaad8e",
     "workspace_tools/asset_helpers/previewer/baker/animation.py": "2bd196a1c96752d2b1f1478c6dad5e2672e4e4f53438766b710f9ba6b2024272",
-    "mod/mod.json": "984a01c7cff936e14228a186532863a992babd6f2fe1fb8fc836db2181b70e8f"
+    "mod/mod.json": "5e113e7f04b1679cd29513df9ffadebee335da2613280bc3ac15508cd6d338ed"
   },
   "config": {
     "enabled": true,
@@ -103,7 +103,7 @@
       }
     ]
   },
-  "package_sha256": "01cc064b1b6baa0948a643c0ea28516880ed2f0654ef54150f03b3e718bfbbed",
+  "package_sha256": "2372651ad82c2ae4f7e6c0ea0571a281971f0cd3b76c11cbc9b000d4670378a5",
   "package_relative_path": "module/NilouRace/AssetPackages/nilou.tpac",
   "game_solver_used": false,
   "game_verified": false,
@@ -200,5 +200,12 @@
     }
   ],
   "run_directory": "build/cloth_simulator/3f339cefca0b-r14jzvjk",
-  "status": "incomplete"
+  "status": "incomplete",
+  "simulation_rerun": false,
+  "material_only_equivalence": {
+    "proof": "reports/hair_proxy_visibility_fix.json",
+    "proof_sha256": "540a2df9b26afb45c385e7b325584f70fda64fb77c54a6d98b7c39223887c67b",
+    "baseline_package_sha256": "01cc064b1b6baa0948a643c0ea28516880ed2f0654ef54150f03b3e718bfbbed",
+    "basis": "All LOD and proxy streams, cloth settings, payloads and mappings unchanged; collision, skeleton, motion and solver input hashes identical. Original trajectory provenance retained."
+  }
 }

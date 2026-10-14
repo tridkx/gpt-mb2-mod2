@@ -13,13 +13,18 @@ from georead import read_geo
 from baker.skeleton import parse_skeljson
 from baker.animation import parse_animjson,skin_matrices,lbs
 lod=int(sys.argv[sys.argv.index('--')+1]) if '--' in sys.argv else 0
-folder=ROOT/('build/final_export_lod'+str(lod));meshes=[m for f in (folder/'geo').glob('*.bin') for m in read_geo(f) if m['name'].startswith('emilie_part_')]
+folder=ROOT/('build/final_export_lod'+str(lod));meshes=[m for f in (folder/'geo').glob('*.bin') for m in read_geo(f) if m['name'].startswith('emilie_part_') or m['name']=='emilie_cloth_proxy']
 materialinfo=json.loads((ROOT/'reports/material_names.json').read_text());bpy.ops.wm.read_factory_settings(use_empty=True)
-materials={}
+materials={};fully_discarded=set()
 for name,rec in materialinfo.items():
     mat=bpy.data.materials.new(name);mat.use_nodes=True;bs=mat.node_tree.nodes.get('Principled BSDF');bs.inputs['Roughness'].default_value=.65
     image=bpy.data.images.load(str(ROOT/'build/final_export_lod0/tex'/(rec['textures']['0']+'.png')),check_existing=True);tex=mat.node_tree.nodes.new('ShaderNodeTexImage');tex.image=image;mat.node_tree.links.new(tex.outputs['Color'],bs.inputs['Base Color'])
     if rec['template']=='alpha':mat.node_tree.links.new(tex.outputs['Alpha'],bs.inputs['Alpha']);mat.surface_render_method='DITHERED'
+    # Match complete GPU alpha-test discard. Co-planar transparent geometry in
+    # Cycles can still perturb ray offsets; discard only after decoded-alpha proof.
+    if rec['template']=='alpha' and 'alpha_test' in rec.get('shaderMaterialFlags',[]):
+        pixels=np.empty(image.size[0]*image.size[1]*4,dtype='f4');image.pixels.foreach_get(pixels)
+        if pixels.reshape(-1,4)[:,3].max()<rec.get('alphaTest',.25):fully_discarded.add(name)
     # Weak emission preserves the original diffuse colors under neutral studio light.
     mat.node_tree.links.new(tex.outputs['Color'],bs.inputs['Emission Color']);bs.inputs['Emission Strength'].default_value=.15
     materials[name]=mat
@@ -29,6 +34,7 @@ for m in meshes:
     for loop in me.loops:uv.data[loop.index].uv=u[loop.vertex_index]
     for face in me.polygons:face.use_smooth=True
     o=bpy.data.objects.new(m['name'],me);bpy.context.collection.objects.link(o);me.materials.append(materials[m['material']]);objects.append(o)
+    if m['material'] in fully_discarded:o.hide_render=True;o['reason']='All decoded texels below material alpha-test threshold'
 s=bpy.context.scene;s.render.engine='CYCLES';s.cycles.samples=6;s.render.resolution_x=720;s.render.resolution_y=920;s.render.resolution_percentage=100;s.view_settings.view_transform='Standard'
 s.view_settings.exposure=-.65
 s.world=bpy.data.worlds.new('Studio');s.world.use_nodes=True;s.world.node_tree.nodes['Background'].inputs[0].default_value=(.12,.12,.12,1)

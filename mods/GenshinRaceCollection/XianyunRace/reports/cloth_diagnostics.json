@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "mod": "XianyunRace",
-  "fingerprint": "326b5f9efe09f725a74a8e4d0414a47c5310f04c3e144d39bf80926549de853e",
+  "fingerprint": "5215ef5121031e5d6ce7ebb894eb7c13d1efd32ee995cb374a54c96ede65ec25",
   "generated_at_utc": "2026-10-14T15:31:20.140238+00:00",
   "inputs": {
     "mod/build/cloth_probe/mbtool.dll": "7391c3428210ba19ea7f9e1123fc1584a986d4bf618dffdda209e8fe25e92335",
     "mod/build/cloth_probe/NativeClothProbe.deps.json": "2f6631e12ab2d95519b7e139bb763ec892ce56b0fbc4e919abcf546a501850d7",
     "mod/build/cloth_probe/NativeClothProbe.dll": "dc15445264fdb4d0706e5fc51ef3ee707d3224dfbc9d57f4ba5911c2dc778e36",
     "mod/build/cloth_probe/NativeClothProbe.runtimeconfig.json": "256dda2706e1151bb95987b6b5be610bf68d64e058285b19e7e958222fc90414",
-    "mod/module/XianyunRace/AssetPackages/xianyun.tpac": "209e3a8b5c5659ee8f61484178639c85ee930e8a65c259b98b9ebf4f41f46819",
+    "mod/module/XianyunRace/AssetPackages/xianyun.tpac": "c09aea014bda2125ff5eb1624483ac89d253b4aac88ebcca12ea141d4e28f583",
     "mod/module/XianyunRace/ModuleData/cloth_bodies.xml": "7f0e8e07feb63aa85e3a21a8e002dfab8ecd8d7162ad3ae22fe8913ec4deaa24",
     "mod/reports/facegen.json": "35bbf06eea34fb3a0689bd589b6d6bde1310701e418967900c6aefc03cddf383",
     "mod/reports/final_skeleton.json": "0b4bfa4af9a530fece7fe2d351b34a2ac98a894425b1e3b730e3374dc81996d3",
@@ -27,7 +27,7 @@
     "workspace_tools/asset_helpers/previewer/baker/__init__.py": "7d7e86ba699dcb4cba65aea6a098f50af97462ce01131ec88e3d7431dff6eb3d",
     "workspace_tools/asset_helpers/previewer/baker/skeleton.py": "3efa27ce001e74f25687d7ae56b27e06dbb8b6bd94f80cddabb237f380eaad8e",
     "workspace_tools/asset_helpers/previewer/baker/animation.py": "2bd196a1c96752d2b1f1478c6dad5e2672e4e4f53438766b710f9ba6b2024272",
-    "mod/mod.json": "06e1289d7939163786661385148ac80ac453405b47e057afa4cfdc9d2bcd8cd7"
+    "mod/mod.json": "f46e6cd6a5c3530777dca421be7e70fc574f86a7a99b27689f60012eb34642cb"
   },
   "config": {
     "enabled": true,
@@ -103,7 +103,7 @@
       }
     ]
   },
-  "package_sha256": "209e3a8b5c5659ee8f61484178639c85ee930e8a65c259b98b9ebf4f41f46819",
+  "package_sha256": "c09aea014bda2125ff5eb1624483ac89d253b4aac88ebcca12ea141d4e28f583",
   "package_relative_path": "module/XianyunRace/AssetPackages/xianyun.tpac",
   "game_solver_used": false,
   "game_verified": false,
@@ -200,5 +200,12 @@
     }
   ],
   "run_directory": "build/cloth_simulator/326b5f9efe09-a546ggkf",
-  "status": "incomplete"
+  "status": "incomplete",
+  "simulation_rerun": false,
+  "material_only_equivalence": {
+    "proof": "reports/hair_proxy_visibility_fix.json",
+    "proof_sha256": "42c0cdedd233ef036cfbba5add143e1cf1a104bfeb0ed9b8a98e9fd4e9ec5542",
+    "baseline_package_sha256": "209e3a8b5c5659ee8f61484178639c85ee930e8a65c259b98b9ebf4f41f46819",
+    "basis": "All LOD and proxy streams, cloth settings, payloads and mappings unchanged; collision, skeleton, motion and solver input hashes identical. Original trajectory provenance retained."
+  }
 }
