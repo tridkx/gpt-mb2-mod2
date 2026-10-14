@@ -5,6 +5,7 @@ from pathlib import Path
 from mathutils import Matrix
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 from workspace_paths import workspace_root
+from skirt_policy import travel as hem_travel,reference_weights
 R=Path(__file__).resolve().parents[1];W=workspace_root(R)
 sys.path.insert(0,str(W/'tools/asset_helpers/previewer'))
 from baker.skeleton import parse_skeljson
@@ -51,14 +52,14 @@ for oi,o in enumerate(objects):
   ids=np.flatnonzero(labels==c);q=p[ids];lo=q.min(0);hi=q.max(0);kind='skin'
   if tex=='cloth' and oi==9:
    if lo[2]<.45 and hi[2]-lo[2]>.20:
-    kind='skirt';sk=q[:,2]<1.045;skirtflag[ids]=sk;lower=np.zeros((len(q),28));follow=.6*(1-smooth(.80,1.0,q[:,2]));side=smooth(-.07,.07,q[:,0]);lower[:,0]=1-follow;lower[:,1]=follow*(1-side);lower[:,5]=follow*side;w[ids[sk]]=lower[sk];a[ids]=np.where(sk,np.minimum(np.maximum(1.0-q[:,2],0)*.55,.38),0)
+    kind='skirt';sk=q[:,2]<1.045;skirtflag[ids]=sk;lower=reference_weights(q,cfg['mapped_cloth']['hem_policy']);w[ids[sk]]=lower[sk];a[ids]=np.where(sk,hem_travel(q[:,2],cfg['mapped_cloth']['hem_policy']),0)
    elif hi[2]-lo[2]>.15 and hi[2]<1.2:
     kind='ribbon';w[ids]=0;w[ids,0]=1;travel=np.maximum(hi[2]-.035-q[:,2],0)*.12;a[ids]=np.minimum(travel,.06)
   if tex=='cloth' and oi==13:
    sign=-1 if q[:,0].mean()<0 else 1;idsbones=[14,15,17,19] if sign<0 else [21,22,24,26];w[ids]=near(q,idsbones);kind='sleeve'
    # Distance from the anatomical arm defines hanging cloth, not height alone.
    armA=S[15 if sign<0 else 22];armB=S[19 if sign<0 else 26];axis=armB-armA;t=np.clip((q-armA)@axis/(axis@axis),0,1);distance=np.linalg.norm(q-armA-t[:,None]*axis,axis=1)
-   a[ids]=np.minimum(np.maximum(distance-.075,0)*.9,.65)
+   a[ids]=np.minimum(np.maximum(distance-.075,0)*.9,.65) if cfg.get('sleeve_cloth_enabled',False) else 0
    # The attachment direction includes the cuff and shoulder seam.
    a[ids[q[:,2]>1.30]]=0
   if tex=='hair' and hi[2]-lo[2]>.2:

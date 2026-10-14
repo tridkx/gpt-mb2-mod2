@@ -1,10 +1,16 @@
 """Author this source's capsules and cook topology-specific direct baselines."""
-import json,sys,subprocess,xml.etree.ElementTree as ET
+import json,sys,subprocess,xml.etree.ElementTree as ET,shutil,uuid
 import numpy as np
 from pathlib import Path
 from workspace_paths import workspace_root
 R=Path(__file__).resolve().parents[1];B=R/'build';W=workspace_root(R);C=W/'tools/cloth_compiler';cfg=json.loads((R/'tools/model_config.json').read_text());p=np.array(cfg['landmarks_m']);names=json.loads((R/'reports/human_skeleton.json').read_text())['bones'];names=[b['name'] for b in names]
 def run(args):subprocess.run([str(x) for x in args],check=True)
+# Removing cloth regions must not leave stale probe JSON in the next build.
+archive=B/'cloth_input_history'/uuid.uuid4().hex
+for name in ['cloth_inputs','cooked_cloth','cloth_final']:
+ folder=(B/name).resolve();assert folder.parent==B.resolve()
+ if folder.exists():
+  archive.mkdir(parents=True,exist_ok=True);shutil.move(str(folder),str(archive/name))
 caps=[]
 def cap(name,a,b,r,ba,bb):caps.append(dict(name=name,endpoints_m=[list(a),list(b)],radius_m=r,bones=[ba,bb]))
 cap('pelvis',[0,-.028,.98],[0,-.027,1.05],.085,'pelvis','pelvis')

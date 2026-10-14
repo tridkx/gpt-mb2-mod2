@@ -6,6 +6,7 @@ from scipy.spatial import cKDTree
 from scipy.ndimage import gaussian_filter1d
 from workspace_paths import workspace_root
 from cloth_regions import skirt_mask
+from skirt_policy import travel as hem_travel,reference_weights
 def prepare(root):
  b=root/'build';cfg=json.loads((root/'tools/model_config.json').read_text());policy=cfg['mapped_cloth'];w=workspace_root(root);sys.path.insert(0,str(w/'tools/asset_helpers/pipeline'));from build_assets import vertex_tangents
  source=np.load(b/'fitted_model.npz');p=source['bql_part_09_p'];sk=source['bql_part_09_sk'];skirt=p[sk];center=np.array(policy['center_xy']);cols,rings=policy['columns'],policy['rings'];theta=np.arange(cols)*2*np.pi/cols;heights=np.linspace(policy['top'],policy['bottom'],rings);rad=skirt[:,:2]-center;angle=np.arctan2(rad[:,1],rad[:,0]);radius=np.linalg.norm(rad,axis=1);radii=[]
@@ -19,10 +20,10 @@ def prepare(root):
  for row in range(rings-1):
   for col in range(cols):
    i=row*cols+col;j=row*cols+(col+1)%cols;k=i+cols;l=j+cols;faces.extend([[i,k,j],[j,k,l]])
- faces=np.array(faces);alpha=np.minimum(np.maximum(policy['top']-policy['root_band_m']-positions[:,2],0)*policy['travel_slope'],policy['max_travel_m']);alpha[alpha<.004]=0
+ faces=np.array(faces);alpha=hem_travel(positions[:,2],policy['hem_policy']);alpha[alpha<.004]=0
  def smooth(a,b,x):
   t=np.clip((x-a)/(b-a),0,1);return t*t*(3-2*t)
- follow=.6*(1-smooth(.80,1.0,positions[:,2]));side=smooth(-.07,.07,positions[:,0]);dense=np.zeros((len(positions),28));dense[:,0]=1-follow;dense[:,1]=follow*(1-side);dense[:,5]=follow*side;bi=np.argsort(-dense,axis=1)[:,:4];values=np.take_along_axis(dense,bi,axis=1);bw=np.floor(values*255).astype(int);bw[:,0]+=255-bw.sum(1)
+ dense=reference_weights(positions,policy['hem_policy']);bi=np.argsort(-dense,axis=1)[:,:4];values=np.take_along_axis(dense,bi,axis=1);bw=np.floor(values*255).astype(int);bw[:,0]+=255-bw.sum(1)
  pp=[positions];nn=[normals];aa=[np.rint(alpha*255)];bb=[bi];ww=[bw];ff=[faces];branches=dict(skirt=np.arange(len(faces)).tolist());vo=len(positions);fo=len(faces)
  pins={m['guid']:m['solver_pinned_render_vertices'] for m in json.loads((b/'cooked_cloth/manifest.json').read_text())};lookup={name[:-3]:(cKDTree(source[name[:-3]+'_p']),source[name]) for name in source.files if name.endswith('_sk')}
  for path in sorted((b/'cloth_final').glob('*.mesh.json')):

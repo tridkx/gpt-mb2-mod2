@@ -1,7 +1,7 @@
 {
   "status": "pass",
-  "version": "v0.1.0",
-  "final_package_sha256": "83fc236ee92de5150f2df00c9dd6d07ea1b92634170fb6187c80b503ca20de49",
+  "version": "v0.1.1",
+  "final_package_sha256": "831687e540df639eaed61f8782129a886a18b3dae7ec2f282cd1042b02de9b1e",
   "check_scope": "Final TPAC structure, decoded textures, source geometry, weights, native motion and race registrations",
   "lods": [
     {
@@ -75,17 +75,17 @@
     {
       "label": "ui_neutral_female",
       "frames_checked": 121,
-      "worst_frame": 121,
-      "max_edge_extension": 3.25963121039571,
-      "max_p99_extension": 1.623921156355022,
+      "worst_frame": 4,
+      "max_edge_extension": 3.32239688296001,
+      "max_p99_extension": 1.782072687321092,
       "cloth_solver_used": false
     },
     {
       "label": "run",
       "frames_checked": 25,
-      "worst_frame": 11,
-      "max_edge_extension": 6.048185911940226,
-      "max_p99_extension": 3.0491055188826612,
+      "worst_frame": 22,
+      "max_edge_extension": 7.544364578774673,
+      "max_p99_extension": 3.6575581143567506,
       "cloth_solver_used": false
     },
     {
@@ -93,15 +93,15 @@
       "frames_checked": 150,
       "worst_frame": 89,
       "max_edge_extension": 10.021799471463657,
-      "max_p99_extension": 2.641353621502033,
+      "max_p99_extension": 2.904187520421883,
       "cloth_solver_used": false
     },
     {
       "label": "riding",
       "frames_checked": 20,
       "worst_frame": 7,
-      "max_edge_extension": 7.04718650524706,
-      "max_p99_extension": 3.75600197341562,
+      "max_edge_extension": 8.619101415464408,
+      "max_p99_extension": 4.428790934920655,
       "cloth_solver_used": false
     },
     {
@@ -260,8 +260,10 @@
     "Mapped cloth requires user game validation; native motion scan is skinning only.",
     "No facial morphs/expressions; no native recruitment or troop tree replacement."
   ],
-  "visual_acceptance_status": "pending_game_test",
+  "visual_acceptance_status": "needs_revision",
   "offline_dynamic_risks": [
-    "Leg penetration / sleeve folding remain visible in offline reviews; the first release is for user game retesting."
-  ]
+    "Visible leg/skirt penetration and running/riding hem stretching remain in this offline trial."
+  ],
+  "sleeve_simulation_enabled": false,
+  "candidate_installed": false
 }

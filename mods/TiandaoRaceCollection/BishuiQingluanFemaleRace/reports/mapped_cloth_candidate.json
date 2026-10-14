@@ -5,34 +5,24 @@
     "guid": "f46ee2ed-25af-9c7c-1e4d-fba1507e479c",
     "metamesh": "bql_cloth_proxy",
     "lod": 0,
-    "bytes": 264420,
-    "render_vertices": 2973,
-    "simulation_vertices": 2570,
-    "fixed_positions": 278,
-    "boundary_fixed_positions": 246,
-    "active_positions": 2292,
-    "stretch_constraints": 6234,
-    "bend_constraints": 5204,
+    "bytes": 152124,
+    "render_vertices": 1950,
+    "simulation_vertices": 1661,
+    "fixed_positions": 414,
+    "boundary_fixed_positions": 126,
+    "active_positions": 1247,
+    "stretch_constraints": 3251,
+    "bend_constraints": 2569,
     "shear_constraints": 0,
-    "parallel_sets": 18,
+    "parallel_sets": 17,
     "dummy_sets": 11,
-    "max_geodesic_anchor_length": 0.9047546869241971,
-    "sha256": "1414fc27a999f42c334c0db8beeee49de1f2eda54461e52ed680241c491f4ae5",
+    "max_geodesic_anchor_length": 0.5757017153072066,
+    "sha256": "3ca3a359d44c67da699137de2f717bc0427f35ce9de2b15613cc0db3a828cb82",
     "root_fixes": [],
     "solver_pinned_render_vertices": [],
     "path": "D:\\gpt-mb2-mod2\\mods\\TiandaoRaceCollection\\BishuiQingluanFemaleRace\\build\\mapped_proxy_cooked\\f46ee2ed-25af-9c7c-1e4d-fba1507e479c.bin"
   },
   "render_maps": [
-    {
-      "mesh": "bql_part_13.lod1",
-      "lod": 1,
-      "mapped_vertices": 901,
-      "shared_skirt_vertices": 0,
-      "rest_reconstruction_max_error_m": 0.0001560521154308849,
-      "negative_offsets": 0,
-      "maximum_absolute_offset_m": 0.0,
-      "maximum_barycentric_extrapolation": 0.0
-    },
     {
       "mesh": "bql_part_11.lod1",
       "lod": 1,
@@ -46,8 +36,8 @@
     {
       "mesh": "bql_part_09",
       "lod": 0,
-      "mapped_vertices": 1318,
-      "shared_skirt_vertices": 1135,
+      "mapped_vertices": 909,
+      "shared_skirt_vertices": 726,
       "rest_reconstruction_max_error_m": 0.00014990390017765825,
       "negative_offsets": 9,
       "maximum_absolute_offset_m": 0.07333780080080032,
@@ -84,27 +74,17 @@
       "maximum_barycentric_extrapolation": 0.04727734997868538
     },
     {
-      "mesh": "bql_part_13",
-      "lod": 0,
-      "mapped_vertices": 1273,
-      "shared_skirt_vertices": 0,
-      "rest_reconstruction_max_error_m": 0.0001560521154308849,
-      "negative_offsets": 10,
-      "maximum_absolute_offset_m": 0.046443261206150055,
-      "maximum_barycentric_extrapolation": 0.1345665454864502
-    },
-    {
       "mesh": "bql_part_09.lod1",
       "lod": 1,
-      "mapped_vertices": 902,
-      "shared_skirt_vertices": 775,
+      "mapped_vertices": 628,
+      "shared_skirt_vertices": 501,
       "rest_reconstruction_max_error_m": 0.00014990390017765825,
       "negative_offsets": 0,
       "maximum_absolute_offset_m": 0.07333780080080032,
       "maximum_barycentric_extrapolation": 0.000914907781407237
     }
   ],
-  "final_candidate_sha256": "83fc236ee92de5150f2df00c9dd6d07ea1b92634170fb6187c80b503ca20de49",
+  "final_candidate_sha256": "831687e540df639eaed61f8782129a886a18b3dae7ec2f282cd1042b02de9b1e",
   "game_verified": false,
   "scope": "One shared simulated cage preserves layer offsets; source non-skirt card islands retained; candidate not installed"
 }

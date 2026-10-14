@@ -58,6 +58,7 @@ for label in ['ui_neutral_female','run','bow','riding','slash']:
  motions.append(dict(label=label,frames_checked=len(frames),worst_frame=worst_frame,max_edge_extension=worst,max_p99_extension=maxp99,cloth_solver_used=False))
 assert all(sha(R/p)==h for p,h in json.loads((R/'reports/input_hashes.json').read_text()).items());assert sha(P)==original_hash
 report=dict(status='pass',version=cfg['version'],final_package_sha256=original_hash,check_scope='Final TPAC structure, decoded textures, source geometry, weights, native motion and race registrations',lods=lods,textures=textures,motions=motions,source_proportions_preserved=True,source_geometry_max_error_m=max(source_errors),integrated_hands_all_lods=True,registration=dict(status='pass',race=cfg['race'],test_troop='bql_test',native_troop_overrides=False,skin_variants=len(skins),action_sets=actions),game_test_verified=False,game_cloth_solver_used=False,limitations=['Mapped cloth requires user game validation; native motion scan is skinning only.','No facial morphs/expressions; no native recruitment or troop tree replacement.'])
-report['visual_acceptance_status']='pending_game_test'
-report['offline_dynamic_risks']=['Leg penetration / sleeve folding remain visible in offline reviews; the first release is for user game retesting.']
+report['visual_acceptance_status']=cfg.get('visual_acceptance_status','pending_game_test')
+report['offline_dynamic_risks']=['Body/skirt penetration still needs game retesting; sleeves use ordinary skinning without cloth simulation.']
+report['sleeve_simulation_enabled']=cfg.get('sleeve_cloth_enabled',False)
 (R/'reports/release_validation.json').write_text(json.dumps(report,indent=2));print(json.dumps(dict(status='pass',lods=lods,motions=motions),indent=2))

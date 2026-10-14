@@ -1,8 +1,21 @@
 {
-  "version": "v0.1.0",
-  "status": "pending_user_test",
+  "version": "v0.1.1",
+  "status": "offline_trial_not_installed",
   "game_verified": false,
   "assistant_started_game": false,
-  "required_checks": ["startup and character loading", "party / encyclopedia / inventory previews", "idle", "run", "weapon grip and raised-arm cloth", "riding", "LOD0 / LOD1 cloth activation and distance transition", "battle performance"],
-  "scope": "Independent fixed female race and test troop; no native replacements or face customization"
+  "required_checks": [
+    "startup and character loading",
+    "party / encyclopedia / inventory previews",
+    "idle",
+    "run",
+    "weapon grip and raised-arm cloth",
+    "riding",
+    "LOD0 / LOD1 cloth activation and distance transition",
+    "battle performance"
+  ],
+  "scope": "Independent fixed female race and test troop; no native replacements or face customization",
+  "feedback_basis": "User reported sleeve layer penetration and requested a simulation-mesh change.",
+  "revision_scope": "Sleeve simulation disabled in candidate; stable upper skirt and smooth hem release under offline effect review.",
+  "installed_version": "v0.1.0",
+  "candidate_version": "v0.1.1"
 }

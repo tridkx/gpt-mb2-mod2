@@ -2,7 +2,7 @@
   "id": "BishuiQingluanFemaleRace",
   "prefix": "bql",
   "race": "bql_qingluan",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "skeleton": "bql_skeleton",
   "skin_min_scale": 1.0,
   "cloth_enabled": true,
@@ -175,7 +175,17 @@
     "max_travel_m": 0.38,
     "root_band_m": 0.05,
     "other_cloth_lod": 1,
-    "material": "cloth"
+    "material": "cloth",
+    "hem_policy": {
+      "fixed_above_z_m": 0.72,
+      "transition_end_z_m": 0.48,
+      "travel_slope": 0.45,
+      "max_travel_m": 0.18,
+      "thigh_follow": 0.75,
+      "method": "stable upper skirt, smoothstep transition, hem-only simulation"
+    }
   },
-  "cloth_mode": "mapped_panels"
+  "cloth_mode": "mapped_panels",
+  "sleeve_cloth_enabled": false,
+  "visual_acceptance_status": "needs_revision"
 }
