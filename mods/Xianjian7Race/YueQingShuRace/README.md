@@ -1,12 +1,14 @@
 # Yue Qingshu Race
 
-月清疏默认时装的独立种族资源模块，版本 v0.3.3，适用本机 Native v1.4.8。属于[仙剑7系列工程](../README.md)。模块 ID 为 `YueQingShuRace`，种族 ID 为 `yqs_default`。
+月清疏默认时装的独立种族资源模块，版本 v0.3.4，适用本机 Native v1.4.8。属于[仙剑7系列工程](../README.md)。模块 ID 为 `YueQingShuRace`，种族 ID 为 `yqs_default`。
 
 ## 功能与验收
 
-脸、头发、默认服装、身体和双手组成完整身体，使用独立 28 骨 `yqs_skeleton`，沿用原生动作。源网格只做整体转向，保留脸、胸部、四肢及身高比例，含头饰总高约 1.676 米。提供四级 LOD，裙摆、悬垂袖片、长发、发带和流苏共 18 个布料网格，使用 56 个按源模型拟合并带局部随动的碰撞胶囊。[统计](reports/lod_stats.json)、[资源检查](reports/release_validation.json)、[源文件检查](reports/source_validation.json)。
+脸、头发、默认服装、身体和双手组成完整身体，使用独立 28 骨 `yqs_skeleton`，沿用原生动作。源网格只做整体转向，保留脸、胸部、四肢及身高比例，含头饰总高约 1.676 米。提供四级 LOD，裙摆、悬垂袖片、长发、发带和流苏共 18 个布料渲染网格使用原生映射模拟；裙摆由 640 顶点的共同代理驱动，外层承担主要飘动、重叠内层同步跟随，其他附件保留自身分区。碰撞使用 56 个按源模型拟合并带局部随动的胶囊。[统计](reports/lod_stats.json)、[资源检查](reports/release_validation.json)、[源文件检查](reports/source_validation.json)。
 
-用户已验收 v0.2.2 的效果，见[游戏验收记录](reports/game_acceptance.json)。当前沿用 v0.3.2 的模型、绑骨和布料资源。v0.3.3 仅更新 `yqs_default` 创建页与物品栏的人物预览适配，选择自有骨架及对应男女动作集，保留当前动作、动画进度和缩放。创建页使用 facegen 集，物品栏使用已配置女性垂手待机的 warrior 集。地图、战场和其他种族不在适配范围内，不增加捏脸功能。创建页倒 C 形手臂的实机结果尚待复测。离线检查没有运行游戏求解器；当前布料未通过用户验收。
+用户已确认当前布料方案“效果很不错，提交更新”，见[游戏验收记录](reports/game_acceptance.json)。v0.3.4 保留已实测的 TPAC 字节，接受减少内层独立飘动和轻微穿模的观感取舍；反馈不代表所有动作、远近距离或大规模战场性能逐项通过。助手未启动游戏。
+
+人物预览沿用自有骨架与对应男女动作集适配：创建页使用 facegen 集，物品栏使用配置了女性垂手待机的 warrior 集，并保留动作进度与缩放。地图、战场和其他种族不在该 UI 适配范围内，不增加捏脸功能。创建页手臂修正未获得单独复测反馈。
 
 不做表情、动态手势、捏脸或换装，手指保持源姿态；省略 UE 专用眼周遮挡和泪线层。固定外观含默认衣服，不能直接叠穿原版防具。
 
@@ -30,7 +32,7 @@
 
 ```powershell
 & 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/Xianjian7Race/YueQingShuRace/tools/rebuild.py
-./tools/install_release.ps1 -Mod YueQingShuRace -Version v0.3.3 -CheckOnly
+./tools/install_release.ps1 -Mod YueQingShuRace -Version v0.3.4 -CheckOnly
 ```
 
 源包保持 `source/` 与 `tex/` 相邻，Blend 使用相对贴图路径；`workspace_tools/` 恢复到工作区根 `tools/`。检查脚本使用旧交付包作为基线，重建前保留 dist/ 内历史版本。安装与打包使用工作区共用入口，旧包保留，使用本地 Git。变更见[更新日志](CHANGELOG.md)。
@@ -39,8 +41,8 @@
 
 `ClothDistance` 顶点色 Alpha 保存活动距离（米），网格倍率为 1，0 表示固定。材质关闭顶点 Alpha 透明度，避免固定部分消失。部件与固定点见[布料绘制](reports/cloth_paint.json)，碰撞和活动范围见[布料检查](reports/cloth_validation.json)、[臀胯覆盖检查](reports/feedback_fix_validation.json)、[分区动作覆盖](reports/panel_motion_validation.json)及[前后重力代理对比](reports/skirt_collision_validation.json)。
 
-布料采用原生直接模拟；碰撞使用随骨骼运动的胶囊近似，裙摆保护区为原模型臀胯低于刚性腰带的区域（源 Z < 1.06 米），按三角面内外采样拟合短胶囊，基础间距 2 毫米并增加实测动作局部余量。上腹由固定腰带和蒙皮保持外观，碰撞体避开内嵌的固定裙根；保护区拟合检查需要身体处于碰撞体内部，不能用允许身体外露的正容差当作通过。离线采样和探针用于筛查，游戏反馈为实际观感依据。
+布料采用原生映射模拟，正式重建通过模型专用连续对应入口生成；碰撞使用随骨骼运动的胶囊近似，裙摆保护区为原模型臀胯低于刚性腰带的区域（源 Z < 1.06 米），按三角面内外采样拟合短胶囊，基础间距 2 毫米并增加实测动作局部余量。上腹由固定腰带和蒙皮保持外观，碰撞体避开内嵌的固定裙根；保护区拟合检查需要身体处于碰撞体内部，不能用允许身体外露的正容差当作通过。离线采样和探针用于筛查，游戏反馈为实际观感依据。
 
-当前碰撞胶囊数量高于旧版，大规模战场性能尚未实测；用户已反馈当前布料多层穿模且下落不自然；本版保持 v0.3.2 的布料资源，只更新创建页预览组件。布料仍未通过游戏验收。
+布料以视觉观感和用户取舍验收。跑动中大腿轻微、短暂穿模可以接受；大量明显穿出、严重层间交叉或持续露出大块身体仍需处理。不会为了清零离线指标而继续撑大、冻结裙摆或增加各层独立运动。
 
-正式交付包仍为 v0.3.3 的直接模拟方案。当前游戏安装使用“外层驱动、内层跟随”的 640 顶点裙摆代理测试资源，用户接受减少裙层独立飘动及轻微穿模，当前候选游戏效果待确认。测试资源未纳入正式重建；参数、检查范围、源文件和回退命令见[当前试验说明](reports/experiments/outer_driven_layers_2026-10-14/README.md)。之前未通过的候选保存在[历史试验报告](reports/experiments/simplified_skirt_2026-10-14/README.md)。
+当前共用直接布料诊断不支持映射布料，报告保持 `incomplete`；专用 CPU 检查仍有身体胶囊穿透、拉伸及骑乘层间交叉残余，不能将这些指标解释为全部通过或游戏验收失败。当前结构、层序检查、源文件和方案细节见[多层裙摆方案](docs/cloth-simulation.md)。性能、未单独确认的动作和 LOD 距离仍需按实际使用观察。早期失败候选保存在[历史试验报告](reports/experiments/simplified_skirt_2026-10-14/README.md)，不作为当前状态。

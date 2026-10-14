@@ -2,6 +2,10 @@
 import json,hashlib
 from pathlib import Path
 R=Path(__file__).resolve().parents[1]
+if json.loads((R/'tools/model_config.json').read_text()).get('cloth_mode')=='mapped_outer_driver':
+    import subprocess,sys
+    subprocess.run([sys.executable,'-B','-X','utf8',str(R/'tools/finalize_mapped_release.py')],check=True)
+    sys.exit(0)
 package=R/'module/YueQingShuRace/AssetPackages/yqs.tpac';sha=hashlib.sha256(package.read_bytes()).hexdigest()
 reports={n:json.loads((R/'reports'/(n+'.json')).read_text()) for n in ['release_validation','preservation_validation','cloth_validation','source_validation','feedback_fix_validation','settled_skirt_probe','skirt_collision_validation','panel_motion_validation']}
 for name,report in reports.items():

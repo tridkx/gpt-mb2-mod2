@@ -13,7 +13,7 @@ from georead import read_geo
 from baker.skeleton import parse_skeljson
 from baker.animation import parse_animjson,skin_matrices,lbs
 lod=int(sys.argv[sys.argv.index('--')+1]) if '--' in sys.argv else 0
-folder=ROOT/('build/final_export_lod'+str(lod));meshes=[m for f in (folder/'geo').glob('*.bin') for m in read_geo(f) if not m['name'].startswith('yqs_hidden')]
+folder=ROOT/('build/final_export_lod'+str(lod));meshes=[m for f in (folder/'geo').glob('*.bin') for m in read_geo(f) if not m['name'].startswith(('yqs_hidden','yqs_cloth_proxy'))]
 materialinfo=json.loads((ROOT/'reports/material_names.json').read_text());bpy.ops.wm.read_factory_settings(use_empty=True)
 materials={}
 for name,rec in materialinfo.items():

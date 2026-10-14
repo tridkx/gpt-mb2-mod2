@@ -1,0 +1,60 @@
+{
+  "status": "pass",
+  "version": "v0.3.1",
+  "rows": [
+    {
+      "label": "idle",
+      "asset": "anim_inventory_idle",
+      "frames_checked": 1267,
+      "wrist_forward_of_pelvis_range_m": [
+        -0.07024509799452636,
+        0.021064665685741713
+      ],
+      "worst_frame": 542,
+      "wrist_world_y_bounds_m": [
+        -0.20109687329425546,
+        0.1928141698491468
+      ],
+      "shoulder_elbow_wrist_bounds_m": [
+        [
+          -0.3107649835734443,
+          -0.20109687329425546,
+          0.9272848209466206
+        ],
+        [
+          0.3334478441243347,
+          0.1928141698491468,
+          1.371365895819085
+        ]
+      ]
+    },
+    {
+      "label": "ui_neutral_female",
+      "asset": "anim_female_idle_long",
+      "frames_checked": 2272,
+      "wrist_forward_of_pelvis_range_m": [
+        -0.06015805053278162,
+        0.07441676680357484
+      ],
+      "worst_frame": 1725,
+      "wrist_world_y_bounds_m": [
+        -0.07252728231999302,
+        0.0709621529824867
+      ],
+      "shoulder_elbow_wrist_bounds_m": [
+        [
+          -0.21243638881391014,
+          -0.10439402578377888,
+          0.9098337593372774
+        ],
+        [
+          0.2420516206836767,
+          0.0709621529824867,
+          1.3578868479927526
+        ]
+      ]
+    }
+  ],
+  "scope": "Every decoded non-bind frame; posed skeletal shoulder/elbow/wrist positions, not engine cloth or proof of all intersections",
+  "game_verified": false
+}

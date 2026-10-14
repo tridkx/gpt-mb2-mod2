@@ -4,6 +4,10 @@ $project = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 $module = 'D:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\YueQingShuRace'
 $target = Join-Path $module 'AssetPackages\yqs.tpac'
 $reportPath = Join-Path $project 'reports\experiments\outer_driven_layers_2026-10-14\test_installation.json'
+[xml]$descriptor = Get-Content -LiteralPath (Join-Path $module 'SubModule.xml') -Encoding UTF8
+if ($descriptor.Module.Version.value -ne 'v0.3.3') {
+    throw 'This is the historical v0.3.3 test installer. For a formal release, use its versioned Mod ZIP.'
+}
 if (Get-Process | Where-Object { $_.ProcessName -match 'Bannerlord|TaleWorlds' }) {
     throw 'Exit the game and launcher before changing loaded assets; no process will be terminated.'
 }

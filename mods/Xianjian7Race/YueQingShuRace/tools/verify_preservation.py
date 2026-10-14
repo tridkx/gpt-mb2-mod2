@@ -18,7 +18,7 @@ rows=[]
 for lod in range(4):
     folder=B/f'accepted_export_lod{lod}'
     subprocess.run([MB,'exportmod',str(baseline),str(folder),str(lod)]+(['--all-mips'] if lod==0 else []),check=True,capture_output=True)
-    def meshes(folder):return {m['name']:m for f in (folder/'geo').glob('*.bin') for m in read_geo(f)}
+    def meshes(folder):return {m['name']:m for f in (folder/'geo').glob('*.bin') for m in read_geo(f) if not m['name'].startswith('yqs_cloth_proxy')}
     before=meshes(folder);after=meshes(B/f'final_export_lod{lod}');assert before.keys()==after.keys()
     maxerror=0
     for name,a in before.items():

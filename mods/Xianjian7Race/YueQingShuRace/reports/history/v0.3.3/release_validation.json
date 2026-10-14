@@ -1,0 +1,646 @@
+{
+  "version": "v0.3.3",
+  "status": "pass",
+  "check_scope": "Offline resources and Native skinning; creation UI traversal compiled; cloth unchanged and not accepted",
+  "final_package_sha256": "b943664012defcaf1c19a54118d6c4411ca59a142fe2de5aac1a83e386a4028b",
+  "baseline_package_sha256": "e72aa5730a220565d29a81c558b66e08cf8d4e5a28636e923350349910e9283b",
+  "baseline_reason": "User-accepted v0.1.1 source geometry; model-specific arm bind axes revised in v0.3.1",
+  "registration": {
+    "status": "pass",
+    "race": "yqs_default",
+    "changed_troops": [],
+    "unaffected_troops": 548,
+    "troop_overrides_present": false,
+    "skin_variants": 10,
+    "skeleton": "yqs_skeleton",
+    "native_monster_dimensions_preserved": true,
+    "native_ui_actions_inherited": false,
+    "only_warrior_inventory_actions_overridden": true,
+    "cloth_simulation": true
+  },
+  "lods": [
+    {
+      "lod": 0,
+      "vertices": 112204,
+      "triangles": 147508,
+      "submeshes": 14
+    },
+    {
+      "lod": 1,
+      "vertices": 75337,
+      "triangles": 96580,
+      "submeshes": 12
+    },
+    {
+      "lod": 2,
+      "vertices": 44472,
+      "triangles": 52932,
+      "submeshes": 10
+    },
+    {
+      "lod": 3,
+      "vertices": 23945,
+      "triangles": 23835,
+      "submeshes": 10
+    }
+  ],
+  "seams": [
+    {
+      "lod": 0,
+      "shared_points": 37,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 1,
+      "shared_points": 37,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 2,
+      "shared_points": 37,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 3,
+      "shared_points": 37,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "asset": "anim_inventory_idle",
+      "frames_checked": 16,
+      "total_frames": 1268,
+      "worst_frame": 507,
+      "worst_mesh": "yqs_part_07",
+      "max_edge_extension": 2.504921521248968,
+      "max_mesh_p99_extension": 1.525778889900422,
+      "meshes": [
+        {
+          "name": "yqs_part_00",
+          "max_extension": 1.0000004588703673,
+          "p99_extension": 1.0000003476616317
+        },
+        {
+          "name": "yqs_part_00.b2",
+          "max_extension": 1.0000004350881406,
+          "p99_extension": 1.000000335497917
+        },
+        {
+          "name": "yqs_part_00.b3",
+          "max_extension": 1.0000004302314935,
+          "p99_extension": 1.0000003434113345
+        },
+        {
+          "name": "yqs_part_01",
+          "max_extension": 1.0000004201397161,
+          "p99_extension": 1.0000003984497061
+        },
+        {
+          "name": "yqs_part_02",
+          "max_extension": 1.0000003768522747,
+          "p99_extension": 1.0000003284145655
+        },
+        {
+          "name": "yqs_part_03",
+          "max_extension": 2.4410218274695263,
+          "p99_extension": 1.1959958982959304
+        },
+        {
+          "name": "yqs_part_05",
+          "max_extension": 1.0000004374237694,
+          "p99_extension": 1.0000003712130792
+        },
+        {
+          "name": "yqs_part_07",
+          "max_extension": 2.504921521248968,
+          "p99_extension": 1.525778889900422
+        },
+        {
+          "name": "yqs_part_08",
+          "max_extension": 1.6242798637943257,
+          "p99_extension": 1.1977865703031287
+        },
+        {
+          "name": "yqs_part_10",
+          "max_extension": 1.268803664261667,
+          "p99_extension": 1.021466277164072
+        },
+        {
+          "name": "yqs_part_10.b2",
+          "max_extension": 1.2964676361810605,
+          "p99_extension": 1.0453367389275607
+        },
+        {
+          "name": "yqs_part_10.b3",
+          "max_extension": 1.0544787528655881,
+          "p99_extension": 1.0000008440917232
+        },
+        {
+          "name": "yqs_part_11",
+          "max_extension": 1.0000004481438836,
+          "p99_extension": 1.0000003636378247
+        },
+        {
+          "name": "yqs_part_12",
+          "max_extension": 1.0000004088289334,
+          "p99_extension": 1.0000003400458064
+        }
+      ]
+    },
+    {
+      "label": "run",
+      "asset": "anim_run_forward_unarmed",
+      "frames_checked": 25,
+      "total_frames": 26,
+      "worst_frame": 10,
+      "worst_mesh": "yqs_part_03",
+      "max_edge_extension": 3.985376856080651,
+      "max_mesh_p99_extension": 1.6920377078665632,
+      "meshes": [
+        {
+          "name": "yqs_part_00",
+          "max_extension": 1.0000004588703688,
+          "p99_extension": 1.0000003476616277
+        },
+        {
+          "name": "yqs_part_00.b2",
+          "max_extension": 1.0000004350881426,
+          "p99_extension": 1.0000003354979103
+        },
+        {
+          "name": "yqs_part_00.b3",
+          "max_extension": 1.0000004302314942,
+          "p99_extension": 1.0000003434113438
+        },
+        {
+          "name": "yqs_part_01",
+          "max_extension": 1.000000420139691,
+          "p99_extension": 1.0000003984496855
+        },
+        {
+          "name": "yqs_part_02",
+          "max_extension": 1.0000003768522816,
+          "p99_extension": 1.0000003284145766
+        },
+        {
+          "name": "yqs_part_03",
+          "max_extension": 3.985376856080651,
+          "p99_extension": 1.3299775079980376
+        },
+        {
+          "name": "yqs_part_05",
+          "max_extension": 1.0000004374237759,
+          "p99_extension": 1.0000003712130754
+        },
+        {
+          "name": "yqs_part_07",
+          "max_extension": 1.7432980908002418,
+          "p99_extension": 1.1526233936076224
+        },
+        {
+          "name": "yqs_part_08",
+          "max_extension": 3.168542654375272,
+          "p99_extension": 1.6920377078665632
+        },
+        {
+          "name": "yqs_part_10",
+          "max_extension": 1.965154147115634,
+          "p99_extension": 1.0830541486411889
+        },
+        {
+          "name": "yqs_part_10.b2",
+          "max_extension": 2.2242426618513997,
+          "p99_extension": 1.1748860100941674
+        },
+        {
+          "name": "yqs_part_10.b3",
+          "max_extension": 1.4588299256798751,
+          "p99_extension": 1.000275251556237
+        },
+        {
+          "name": "yqs_part_11",
+          "max_extension": 1.000000448143893,
+          "p99_extension": 1.000000363637825
+        },
+        {
+          "name": "yqs_part_12",
+          "max_extension": 1.0000004088289538,
+          "p99_extension": 1.0000003400458057
+        }
+      ]
+    },
+    {
+      "label": "bow",
+      "asset": "anim_bow",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 74,
+      "worst_mesh": "yqs_part_07",
+      "max_edge_extension": 3.1941962720159425,
+      "max_mesh_p99_extension": 1.766143146026743,
+      "meshes": [
+        {
+          "name": "yqs_part_00",
+          "max_extension": 1.0000004588703737,
+          "p99_extension": 1.0000003476616288
+        },
+        {
+          "name": "yqs_part_00.b2",
+          "max_extension": 1.0000004350881526,
+          "p99_extension": 1.000000335497911
+        },
+        {
+          "name": "yqs_part_00.b3",
+          "max_extension": 1.0000004302314986,
+          "p99_extension": 1.0000003434113613
+        },
+        {
+          "name": "yqs_part_01",
+          "max_extension": 1.000000420139711,
+          "p99_extension": 1.000000398449711
+        },
+        {
+          "name": "yqs_part_02",
+          "max_extension": 1.0000003768522978,
+          "p99_extension": 1.0000003284145957
+        },
+        {
+          "name": "yqs_part_03",
+          "max_extension": 2.9666343482520103,
+          "p99_extension": 1.766143146026743
+        },
+        {
+          "name": "yqs_part_05",
+          "max_extension": 1.0000004374237816,
+          "p99_extension": 1.0000003712130874
+        },
+        {
+          "name": "yqs_part_07",
+          "max_extension": 3.1941962720159425,
+          "p99_extension": 1.7481608939305087
+        },
+        {
+          "name": "yqs_part_08",
+          "max_extension": 3.055554254322337,
+          "p99_extension": 1.60983318835963
+        },
+        {
+          "name": "yqs_part_10",
+          "max_extension": 1.868406377390646,
+          "p99_extension": 1.0627273847406682
+        },
+        {
+          "name": "yqs_part_10.b2",
+          "max_extension": 1.7577644573418925,
+          "p99_extension": 1.1025720611552146
+        },
+        {
+          "name": "yqs_part_10.b3",
+          "max_extension": 1.1706467601872363,
+          "p99_extension": 1.0000007908410848
+        },
+        {
+          "name": "yqs_part_11",
+          "max_extension": 1.0000004481438856,
+          "p99_extension": 1.0000003636378307
+        },
+        {
+          "name": "yqs_part_12",
+          "max_extension": 1.00000040882894,
+          "p99_extension": 1.0000003400458106
+        }
+      ]
+    },
+    {
+      "label": "riding",
+      "asset": "anim_rider_gallop_bow",
+      "frames_checked": 20,
+      "total_frames": 21,
+      "worst_frame": 11,
+      "worst_mesh": "yqs_part_08",
+      "max_edge_extension": 3.5062249226290856,
+      "max_mesh_p99_extension": 1.867180185774719,
+      "meshes": [
+        {
+          "name": "yqs_part_00",
+          "max_extension": 1.0000004588703706,
+          "p99_extension": 1.0000003476616286
+        },
+        {
+          "name": "yqs_part_00.b2",
+          "max_extension": 1.0000004350881488,
+          "p99_extension": 1.0000003354979086
+        },
+        {
+          "name": "yqs_part_00.b3",
+          "max_extension": 1.0000004302314964,
+          "p99_extension": 1.0000003434113391
+        },
+        {
+          "name": "yqs_part_01",
+          "max_extension": 1.0000004201396901,
+          "p99_extension": 1.0000003984496835
+        },
+        {
+          "name": "yqs_part_02",
+          "max_extension": 1.000000376852298,
+          "p99_extension": 1.0000003284145684
+        },
+        {
+          "name": "yqs_part_03",
+          "max_extension": 2.6064526029251236,
+          "p99_extension": 1.4145353626706596
+        },
+        {
+          "name": "yqs_part_05",
+          "max_extension": 1.0000004374237759,
+          "p99_extension": 1.0000003712130787
+        },
+        {
+          "name": "yqs_part_07",
+          "max_extension": 2.6870000940350156,
+          "p99_extension": 1.2404547607083583
+        },
+        {
+          "name": "yqs_part_08",
+          "max_extension": 3.5062249226290856,
+          "p99_extension": 1.867180185774719
+        },
+        {
+          "name": "yqs_part_10",
+          "max_extension": 2.1855142875803257,
+          "p99_extension": 1.14515352927143
+        },
+        {
+          "name": "yqs_part_10.b2",
+          "max_extension": 2.1023699299166747,
+          "p99_extension": 1.1269513798202915
+        },
+        {
+          "name": "yqs_part_10.b3",
+          "max_extension": 1.1788650136151175,
+          "p99_extension": 1.0000007159269928
+        },
+        {
+          "name": "yqs_part_11",
+          "max_extension": 1.0000004481438842,
+          "p99_extension": 1.0000003636378267
+        },
+        {
+          "name": "yqs_part_12",
+          "max_extension": 1.0000004088289383,
+          "p99_extension": 1.0000003400458088
+        }
+      ]
+    },
+    {
+      "label": "slash",
+      "asset": "anim_dagger_slashleft_1h_balance",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 122,
+      "worst_mesh": "yqs_part_08",
+      "max_edge_extension": 3.2637516014204406,
+      "max_mesh_p99_extension": 1.6755403792336172,
+      "meshes": [
+        {
+          "name": "yqs_part_00",
+          "max_extension": 1.0000004588703697,
+          "p99_extension": 1.0000003476616277
+        },
+        {
+          "name": "yqs_part_00.b2",
+          "max_extension": 1.000000435088148,
+          "p99_extension": 1.0000003354979032
+        },
+        {
+          "name": "yqs_part_00.b3",
+          "max_extension": 1.0000004302314918,
+          "p99_extension": 1.000000343411346
+        },
+        {
+          "name": "yqs_part_01",
+          "max_extension": 1.0000004201397024,
+          "p99_extension": 1.0000003984497026
+        },
+        {
+          "name": "yqs_part_02",
+          "max_extension": 1.0000003768522845,
+          "p99_extension": 1.000000328414587
+        },
+        {
+          "name": "yqs_part_03",
+          "max_extension": 2.727221202597331,
+          "p99_extension": 1.626650108377466
+        },
+        {
+          "name": "yqs_part_05",
+          "max_extension": 1.0000004374237745,
+          "p99_extension": 1.0000003712130816
+        },
+        {
+          "name": "yqs_part_07",
+          "max_extension": 2.938536854316481,
+          "p99_extension": 1.514899866792679
+        },
+        {
+          "name": "yqs_part_08",
+          "max_extension": 3.2637516014204406,
+          "p99_extension": 1.6755403792336172
+        },
+        {
+          "name": "yqs_part_10",
+          "max_extension": 3.0437177525092616,
+          "p99_extension": 1.1287349765866774
+        },
+        {
+          "name": "yqs_part_10.b2",
+          "max_extension": 3.134651356204065,
+          "p99_extension": 1.1335023865405731
+        },
+        {
+          "name": "yqs_part_10.b3",
+          "max_extension": 1.3144601352217713,
+          "p99_extension": 1.0000008440917436
+        },
+        {
+          "name": "yqs_part_11",
+          "max_extension": 1.0000004481438873,
+          "p99_extension": 1.0000003636378274
+        },
+        {
+          "name": "yqs_part_12",
+          "max_extension": 1.0000004088289474,
+          "p99_extension": 1.0000003400458135
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "yqs_tex_0",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_1",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_10",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_11",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_12",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_13",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_14",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_15",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_16",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_17",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_18",
+      "mips": 6,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_2",
+      "mips": 11,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_3",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_4",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_5",
+      "mips": 9,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_6",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_7",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_8",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "yqs_tex_9",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    }
+  ],
+  "gross_motion_tear_guard_max_extension": 6.0,
+  "metadata_audit": "pass",
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "limitations": [
+    "UE eye occlusion and tear overlays omitted; original default face/hair/clothes retained with conservative native materials.",
+    "Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.",
+    "No facial animation or face/body customization support."
+  ],
+  "integrated_hands_all_lods": true,
+  "cloth_enabled": true,
+  "body_metamesh": "yqs_body",
+  "hidden_placeholder_triangles": 4,
+  "source_proportions_preserved": true,
+  "custom_skeleton_bones": 28,
+  "cloth_resources_byte_identical_to_v0_3_2": true,
+  "cloth_game_acceptance": "rejected_quality",
+  "current_cloth_issues": [
+    "Multiple layers intersect",
+    "Gravity settling is unnatural"
+  ],
+  "creation_preview_game_verified": false,
+  "creation_preview_scope": {
+    "status": "pass",
+    "cases": {
+      "SandBox.View.Map.MapScreen._mainPartyVisual": false,
+      "SandBox.View.Map.PartyVisual._humanAgentVisuals": false,
+      "SandBox.View.Map.MapConversationTableau._agentVisuals": false,
+      "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableau._agentVisuals": true,
+      "TaleWorlds.MountAndBlade.View.Tableaus.BasicCharacterTableau._agentVisuals": true,
+      "TaleWorlds.MountAndBlade.GauntletUI.BodyGenerator.BodyGeneratorView._visualToShow": true,
+      "Unknown.CharacterTableau._agentVisuals": false,
+      "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableauFake._agentVisuals": false
+    },
+    "null_owner_allowed": false,
+    "direct_provider_cases": "actual runtime methods compiled with matching provider/tableau stubs; valid/null/unknown provider/unknown tableau",
+    "actual_field_collection_and_inspect_executed": true,
+    "creation_screen_body_generator_traversal_executed": true,
+    "boxed_action_invalid_cast_reproduced": true,
+    "reference_and_value_custom_equals_never_called": true,
+    "inventory_discovery_independent_of_screen_seen_budget": true,
+    "source_sha256": "9057d583c98a86835f8fa60f3758fd7f26024a44c281c92de3d58220e938e07f",
+    "assembly_sha256": "9c680bf322922fd284faf08150819315e6e6c69191e8b4777d5913487e06fef5",
+    "game_verified": false
+  }
+}

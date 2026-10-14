@@ -6,7 +6,7 @@
     "CHANGELOG.md",
     "README.md",
     "input/.gitkeep",
-    "input/default/01_默认套装_MAJ02_01.blend",
+    "input/default/01_\u9ed8\u8ba4\u5957\u88c5_MAJ02_01.blend",
     "input/default/README.txt",
     "input/default/YueQingShu_MAJ02_01.glb",
     "input/default/materials/MAJ02_01_Eyelash_eyebrow.json",
@@ -426,7 +426,52 @@
     "tools/verify_skirt_comparison.py",
     "tools/verify_source.py",
     "tools/verify_ui_scope.py",
-    "tools/workspace_paths.py"
+    "tools/workspace_paths.py",
+    "tools/build_outer_driver.py",
+    "tools/check_layer_crossings.py",
+    "tools/coherent_layer_mapping.py",
+    "tools/install_outer_driver_test.ps1",
+    "tools/outer_driver_config.json",
+    "tools/outer_driver_mod.json",
+    "tools/prepare_outer_driver.py",
+    "tools/render_outer_driver.py",
+    "tools/run_outer_driver_diagnostics.py",
+    "tools/save_outer_driver_source.py",
+    "tools/verify_outer_driver_source.py",
+    "tools/verify_outer_layers.py",
+    "tools/finalize_mapped_release.py",
+    "tools/save_release_proxy_source.py",
+    "reports/experiments/outer_driven_layers_2026-10-14/candidate.json",
+    "reports/experiments/outer_driven_layers_2026-10-14/cloth_diagnostics.json",
+    "reports/experiments/outer_driven_layers_2026-10-14/conclusion.json",
+    "reports/experiments/outer_driven_layers_2026-10-14/delivery_validation.json",
+    "reports/experiments/outer_driven_layers_2026-10-14/driver_preparation.json",
+    "reports/experiments/outer_driven_layers_2026-10-14/final_motion_riding_front.png",
+    "reports/experiments/outer_driven_layers_2026-10-14/final_motion_riding_side.png",
+    "reports/experiments/outer_driven_layers_2026-10-14/final_motion_run_front.png",
+    "reports/experiments/outer_driven_layers_2026-10-14/final_motion_run_side.png",
+    "reports/experiments/outer_driven_layers_2026-10-14/final_motion_ui_neutral_female_front.png",
+    "reports/experiments/outer_driven_layers_2026-10-14/final_motion_ui_neutral_female_side.png",
+    "reports/experiments/outer_driven_layers_2026-10-14/final_reference_back.png",
+    "reports/experiments/outer_driven_layers_2026-10-14/final_reference_front.png",
+    "reports/experiments/outer_driven_layers_2026-10-14/final_reference_side.png",
+    "reports/experiments/outer_driven_layers_2026-10-14/layer_crossing_comparison.json",
+    "reports/experiments/outer_driven_layers_2026-10-14/layer_order_validation.json",
+    "reports/experiments/outer_driven_layers_2026-10-14/motion_validation.json",
+    "reports/experiments/outer_driven_layers_2026-10-14/README.md",
+    "reports/experiments/outer_driven_layers_2026-10-14/resource_structure_validation.json",
+    "reports/experiments/outer_driven_layers_2026-10-14/source_validation.json",
+    "reports/experiments/outer_driven_layers_2026-10-14/test_installation.json",
+    "reports/experiments/outer_driven_layers_2026-10-14/motions/riding/report.json",
+    "reports/experiments/outer_driven_layers_2026-10-14/motions/riding/worst_frame.png",
+    "reports/experiments/outer_driven_layers_2026-10-14/motions/riding/worst_stretch.png",
+    "reports/experiments/outer_driven_layers_2026-10-14/motions/run/report.json",
+    "reports/experiments/outer_driven_layers_2026-10-14/motions/run/worst_frame.png",
+    "reports/experiments/outer_driven_layers_2026-10-14/motions/run/worst_stretch.png",
+    "reports/experiments/outer_driven_layers_2026-10-14/motions/ui_neutral_female/report.json",
+    "reports/experiments/outer_driven_layers_2026-10-14/motions/ui_neutral_female/worst_frame.png",
+    "reports/experiments/outer_driven_layers_2026-10-14/motions/ui_neutral_female/worst_stretch.png",
+    "docs/cloth-simulation.md"
   ],
   "shared_source_files": [
     "tools/asset_helpers/config/spec.py",
@@ -457,5 +502,47 @@
     "tools/cloth_compiler/verify_mapped.py"
   ],
   "package": "module/YueQingShuRace/AssetPackages/yqs.tpac",
-  "validation_report": "reports/release_validation.json"
+  "validation_report": "reports/release_validation.json",
+  "cloth_diagnostics": {
+    "enabled": true,
+    "mode": "report",
+    "probe": "build/cloth_probe/NativeClothProbe.dll",
+    "targets": [
+      {
+        "metamesh": "yqs_body",
+        "skeleton": "reports/final_skeleton.json",
+        "capsules": "module/YueQingShuRace/ModuleData/cloth_bodies.xml",
+        "body": "yqs_collision",
+        "lods": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "motions": [
+          {
+            "name": "ui_neutral_female",
+            "path": "reports/ui_neutral_female.json",
+            "fps": 60,
+            "end": 61
+          },
+          {
+            "name": "run",
+            "path": "reports/run.json",
+            "fps": 60
+          },
+          {
+            "name": "riding",
+            "path": "reports/riding.json",
+            "fps": 60
+          }
+        ],
+        "settings": {
+          "warmup": 30,
+          "substeps": 2,
+          "iterations": 4
+        }
+      }
+    ]
+  }
 }

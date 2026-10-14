@@ -1,8 +1,8 @@
 {
-  "version": "v0.3.3",
+  "version": "v0.3.4",
   "status": "pass",
-  "check_scope": "Offline resources and Native skinning; creation UI traversal compiled; cloth unchanged and not accepted",
-  "final_package_sha256": "b943664012defcaf1c19a54118d6c4411ca59a142fe2de5aac1a83e386a4028b",
+  "check_scope": "Final resource/source/visible preservation and native mapping checks; approximate dynamics kept separate",
+  "final_package_sha256": "b35a392e834ba90105403d8e759c066f527cba230d1d14b86a1437bcc6cab7db",
   "baseline_package_sha256": "e72aa5730a220565d29a81c558b66e08cf8d4e5a28636e923350349910e9283b",
   "baseline_reason": "User-accepted v0.1.1 source geometry; model-specific arm bind axes revised in v0.3.1",
   "registration": {
@@ -613,34 +613,27 @@
   "hidden_placeholder_triangles": 4,
   "source_proportions_preserved": true,
   "custom_skeleton_bones": 28,
-  "cloth_resources_byte_identical_to_v0_3_2": true,
-  "cloth_game_acceptance": "rejected_quality",
-  "current_cloth_issues": [
-    "Multiple layers intersect",
-    "Gravity settling is unnatural"
+  "cloth_mode": "mapped_outer_driver",
+  "cloth_lods": [
+    0,
+    1,
+    2,
+    3
   ],
-  "creation_preview_game_verified": false,
-  "creation_preview_scope": {
-    "status": "pass",
-    "cases": {
-      "SandBox.View.Map.MapScreen._mainPartyVisual": false,
-      "SandBox.View.Map.PartyVisual._humanAgentVisuals": false,
-      "SandBox.View.Map.MapConversationTableau._agentVisuals": false,
-      "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableau._agentVisuals": true,
-      "TaleWorlds.MountAndBlade.View.Tableaus.BasicCharacterTableau._agentVisuals": true,
-      "TaleWorlds.MountAndBlade.GauntletUI.BodyGenerator.BodyGeneratorView._visualToShow": true,
-      "Unknown.CharacterTableau._agentVisuals": false,
-      "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableauFake._agentVisuals": false
-    },
-    "null_owner_allowed": false,
-    "direct_provider_cases": "actual runtime methods compiled with matching provider/tableau stubs; valid/null/unknown provider/unknown tableau",
-    "actual_field_collection_and_inspect_executed": true,
-    "creation_screen_body_generator_traversal_executed": true,
-    "boxed_action_invalid_cast_reproduced": true,
-    "reference_and_value_custom_equals_never_called": true,
-    "inventory_discovery_independent_of_screen_seen_budget": true,
-    "source_sha256": "9057d583c98a86835f8fa60f3758fd7f26024a44c281c92de3d58220e938e07f",
-    "assembly_sha256": "9c680bf322922fd284faf08150819315e6e6c69191e8b4777d5913487e06fef5",
-    "game_verified": false
-  }
+  "user_game_acceptance": {
+    "version": "v0.3.4",
+    "tested_as": "v0.3.3 coherent outer-driver test",
+    "date": "2026-10-14",
+    "accepted": true,
+    "source": "User game feedback",
+    "statement": "效果很不错，提交更新。",
+    "package_sha256": "b35a392e834ba90105403d8e759c066f527cba230d1d14b86a1437bcc6cab7db",
+    "scope": "Overall cloth appearance and outer-driven overlapping skirt layers; user accepts reduced independent inner-layer motion and slight thigh penetration during running. No claim of exhaustive action, distance, or battle performance coverage.",
+    "assistant_ran_game": false,
+    "runtime_assets_unchanged": true
+  },
+  "current_cloth_game_acceptance": "accepted",
+  "source_geometry_max_error_m": 0.0,
+  "cloth_collision_xml_sha256": "35ff35151440b8f16410a8a912f64185a1b0e69946d45a8e20af0f9652949abe",
+  "approximate_cloth_diagnostics": "incomplete_mapped_body_unsupported; do not interpret as a game failure"
 }

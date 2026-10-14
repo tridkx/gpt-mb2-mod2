@@ -1,0 +1,47 @@
+{
+  "status": "pass",
+  "version": "v0.3.1",
+  "default_inventory_clip": "inventory_idle",
+  "preview_overrides": [
+    {
+      "sex": "male",
+      "action": "act_inventory_idle_start",
+      "clip": "anim_female_custom_start",
+      "skeletal_animation": "anim_female_idle_long",
+      "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
+      "clip_metadata": "AnimationClip 'anim_female_custom_start' guid=593006d8-02b3-4307-b1fc-9a2643a8f1d7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith='act_inventory_idle'\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
+    },
+    {
+      "sex": "male",
+      "action": "act_inventory_idle",
+      "clip": "anim_female_custom",
+      "skeletal_animation": "anim_female_idle_long",
+      "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
+      "clip_metadata": "AnimationClip 'anim_female_custom' guid=da51b19f-81fe-4ffe-956f-ab5d800e71f7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[cyclic,allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith=''\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
+    },
+    {
+      "sex": "female",
+      "action": "act_inventory_idle_start",
+      "clip": "anim_female_custom_start",
+      "skeletal_animation": "anim_female_idle_long",
+      "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
+      "clip_metadata": "AnimationClip 'anim_female_custom_start' guid=593006d8-02b3-4307-b1fc-9a2643a8f1d7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith='act_inventory_idle'\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
+    },
+    {
+      "sex": "female",
+      "action": "act_inventory_idle",
+      "clip": "anim_female_custom",
+      "skeletal_animation": "anim_female_idle_long",
+      "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
+      "clip_metadata": "AnimationClip 'anim_female_custom' guid=da51b19f-81fe-4ffe-956f-ab5d800e71f7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[cyclic,allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith=''\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
+    }
+  ],
+  "creation_page_action_mapping_unchanged": true,
+  "runtime_dll_unchanged": false,
+  "runtime_scope": "inventory screen only",
+  "runtime_entry": "direct CharacterTableauTextureProvider before bounded screen reflection",
+  "runtime_effect_verified": false,
+  "selected_character_sex_preserved": true,
+  "fixed_character_preview_pose": "female_idle_long_for_both_preview_skeleton_types",
+  "game_retest_pending": true
+}
