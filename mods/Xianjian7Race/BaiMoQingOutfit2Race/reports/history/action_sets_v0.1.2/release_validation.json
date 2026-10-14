@@ -1,0 +1,863 @@
+{
+  "version": "v0.1.2",
+  "status": "pass",
+  "check_scope": "offline_structural_and_native_motion_checks",
+  "final_package_sha256": "50087dc90171b31bfc6dd7493276f5fb67b5e8e32a29e4a9dbfeaf8417e87326",
+  "baseline_package_sha256": null,
+  "baseline_reason": "Initial release; source hashes recorded in input_hashes.json",
+  "registration": {
+    "status": "pass",
+    "race": "bmq2_outfit2",
+    "changed_troops": [],
+    "unaffected_troops": 548,
+    "troop_overrides_present": false,
+    "skin_variants": 10,
+    "skeleton": "bmq2_skeleton",
+    "native_monster_dimensions_preserved": true,
+    "native_ui_actions_inherited": false,
+    "inventory_pose": "female_custom start/loop; selected for own fixed female body",
+    "cloth_simulation": false
+  },
+  "lods": [
+    {
+      "lod": 0,
+      "vertices": 67412,
+      "triangles": 102712,
+      "submeshes": 14
+    },
+    {
+      "lod": 1,
+      "vertices": 46690,
+      "triangles": 67112,
+      "submeshes": 12
+    },
+    {
+      "lod": 2,
+      "vertices": 28751,
+      "triangles": 36610,
+      "submeshes": 12
+    },
+    {
+      "lod": 3,
+      "vertices": 15754,
+      "triangles": 16275,
+      "submeshes": 12
+    }
+  ],
+  "seams": [
+    {
+      "lod": 0,
+      "shared_points": 66,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 1,
+      "shared_points": 66,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 2,
+      "shared_points": 66,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    },
+    {
+      "lod": 3,
+      "shared_points": 66,
+      "cross_equipment_points": 0,
+      "max_position_error": 0
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "asset": "anim_inventory_idle",
+      "frames_checked": 16,
+      "total_frames": 1268,
+      "worst_frame": 929,
+      "worst_mesh": "bmq2_part_00",
+      "max_edge_extension": 2.404008802239759,
+      "max_mesh_p99_extension": 1.3364928208732203,
+      "meshes": [
+        {
+          "name": "bmq2_part_00",
+          "max_extension": 2.404008802239759,
+          "p99_extension": 1.0872315028727009
+        },
+        {
+          "name": "bmq2_part_00.b2",
+          "max_extension": 1.1851767360909806,
+          "p99_extension": 1.156675556421242
+        },
+        {
+          "name": "bmq2_part_02",
+          "max_extension": 1.3867652436825402,
+          "p99_extension": 1.1982748315813552
+        },
+        {
+          "name": "bmq2_part_03",
+          "max_extension": 1.0000004642114173,
+          "p99_extension": 1.0000003908816075
+        },
+        {
+          "name": "bmq2_part_04",
+          "max_extension": 1.0000004141118781,
+          "p99_extension": 1.0000003280118273
+        },
+        {
+          "name": "bmq2_part_05",
+          "max_extension": 1.9765212942208616,
+          "p99_extension": 1.3364928208732203
+        },
+        {
+          "name": "bmq2_part_08",
+          "max_extension": 1.1830372817765598,
+          "p99_extension": 1.099643707201377
+        },
+        {
+          "name": "bmq2_part_09",
+          "max_extension": 1.0000003835285494,
+          "p99_extension": 1.000000322875502
+        },
+        {
+          "name": "bmq2_part_10",
+          "max_extension": 1.3459871729760289,
+          "p99_extension": 1.0630267684488253
+        },
+        {
+          "name": "bmq2_part_10.b2",
+          "max_extension": 1.309661619825137,
+          "p99_extension": 1.0123075711779803
+        },
+        {
+          "name": "bmq2_part_11",
+          "max_extension": 1.0000004242351723,
+          "p99_extension": 1.0000003847347518
+        },
+        {
+          "name": "bmq2_part_12",
+          "max_extension": 1.0000004527296806,
+          "p99_extension": 1.0000003767264272
+        },
+        {
+          "name": "bmq2_part_13",
+          "max_extension": 1.0000004093366597,
+          "p99_extension": 1.0000003537358342
+        },
+        {
+          "name": "bmq2_part_14",
+          "max_extension": 1.6788953873172159,
+          "p99_extension": 1.16103167378769
+        }
+      ]
+    },
+    {
+      "label": "run",
+      "asset": "anim_run_forward_unarmed",
+      "frames_checked": 25,
+      "total_frames": 26,
+      "worst_frame": 21,
+      "worst_mesh": "bmq2_part_00",
+      "max_edge_extension": 3.3640676358037633,
+      "max_mesh_p99_extension": 1.4379640066960686,
+      "meshes": [
+        {
+          "name": "bmq2_part_00",
+          "max_extension": 3.3640676358037633,
+          "p99_extension": 1.2922986493312811
+        },
+        {
+          "name": "bmq2_part_00.b2",
+          "max_extension": 1.465324401517061,
+          "p99_extension": 1.4379640066960686
+        },
+        {
+          "name": "bmq2_part_02",
+          "max_extension": 2.631045040793326,
+          "p99_extension": 1.3451624622996985
+        },
+        {
+          "name": "bmq2_part_03",
+          "max_extension": 1.0000004642114255,
+          "p99_extension": 1.0000003908816315
+        },
+        {
+          "name": "bmq2_part_04",
+          "max_extension": 1.0000004141118888,
+          "p99_extension": 1.000000328011836
+        },
+        {
+          "name": "bmq2_part_05",
+          "max_extension": 1.5805951475208915,
+          "p99_extension": 1.1391934008160496
+        },
+        {
+          "name": "bmq2_part_08",
+          "max_extension": 1.4593486169047791,
+          "p99_extension": 1.2567850101492708
+        },
+        {
+          "name": "bmq2_part_09",
+          "max_extension": 1.0000003835285782,
+          "p99_extension": 1.0000003228754712
+        },
+        {
+          "name": "bmq2_part_10",
+          "max_extension": 1.0647892617363175,
+          "p99_extension": 1.0049615182135563
+        },
+        {
+          "name": "bmq2_part_10.b2",
+          "max_extension": 1.0666341335943095,
+          "p99_extension": 1.0000003797418182
+        },
+        {
+          "name": "bmq2_part_11",
+          "max_extension": 1.0000004242351774,
+          "p99_extension": 1.0000003847347494
+        },
+        {
+          "name": "bmq2_part_12",
+          "max_extension": 1.0000004527296769,
+          "p99_extension": 1.0000003767264292
+        },
+        {
+          "name": "bmq2_part_13",
+          "max_extension": 1.000000409336638,
+          "p99_extension": 1.0000003537358078
+        },
+        {
+          "name": "bmq2_part_14",
+          "max_extension": 2.3870633231922422,
+          "p99_extension": 1.3448290399819474
+        }
+      ]
+    },
+    {
+      "label": "bow",
+      "asset": "anim_bow",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 80,
+      "worst_mesh": "bmq2_part_00",
+      "max_edge_extension": 4.993551726168123,
+      "max_mesh_p99_extension": 2.623359824906966,
+      "meshes": [
+        {
+          "name": "bmq2_part_00",
+          "max_extension": 4.993551726168123,
+          "p99_extension": 1.404701158748294
+        },
+        {
+          "name": "bmq2_part_00.b2",
+          "max_extension": 3.114211570149921,
+          "p99_extension": 2.623359824906966
+        },
+        {
+          "name": "bmq2_part_02",
+          "max_extension": 2.5988412490004738,
+          "p99_extension": 1.9913701257925658
+        },
+        {
+          "name": "bmq2_part_03",
+          "max_extension": 1.0000004642114257,
+          "p99_extension": 1.00000039088162
+        },
+        {
+          "name": "bmq2_part_04",
+          "max_extension": 1.000000414111882,
+          "p99_extension": 1.0000003280118381
+        },
+        {
+          "name": "bmq2_part_05",
+          "max_extension": 2.6593576068480687,
+          "p99_extension": 1.4305830636529717
+        },
+        {
+          "name": "bmq2_part_08",
+          "max_extension": 3.1509806186472566,
+          "p99_extension": 1.9039594458189049
+        },
+        {
+          "name": "bmq2_part_09",
+          "max_extension": 1.0000003835285725,
+          "p99_extension": 1.000000322875491
+        },
+        {
+          "name": "bmq2_part_10",
+          "max_extension": 1.3999548645983428,
+          "p99_extension": 1.0874227626807906
+        },
+        {
+          "name": "bmq2_part_10.b2",
+          "max_extension": 1.4257951630116088,
+          "p99_extension": 1.0161558579357242
+        },
+        {
+          "name": "bmq2_part_11",
+          "max_extension": 1.0000004242351792,
+          "p99_extension": 1.000000384734756
+        },
+        {
+          "name": "bmq2_part_12",
+          "max_extension": 1.0000004527296862,
+          "p99_extension": 1.0000003767264392
+        },
+        {
+          "name": "bmq2_part_13",
+          "max_extension": 1.0000004093366623,
+          "p99_extension": 1.0000003537358169
+        },
+        {
+          "name": "bmq2_part_14",
+          "max_extension": 3.8252765781550457,
+          "p99_extension": 1.3782329180670636
+        }
+      ]
+    },
+    {
+      "label": "riding",
+      "asset": "anim_rider_gallop_bow",
+      "frames_checked": 20,
+      "total_frames": 21,
+      "worst_frame": 7,
+      "worst_mesh": "bmq2_part_00",
+      "max_edge_extension": 4.668893917446661,
+      "max_mesh_p99_extension": 2.008437810320391,
+      "meshes": [
+        {
+          "name": "bmq2_part_00",
+          "max_extension": 4.668893917446661,
+          "p99_extension": 1.473100259708395
+        },
+        {
+          "name": "bmq2_part_00.b2",
+          "max_extension": 2.092624661971658,
+          "p99_extension": 2.008437810320391
+        },
+        {
+          "name": "bmq2_part_02",
+          "max_extension": 2.1106660199625558,
+          "p99_extension": 1.5870206678214223
+        },
+        {
+          "name": "bmq2_part_03",
+          "max_extension": 1.0000004642114273,
+          "p99_extension": 1.0000003908816242
+        },
+        {
+          "name": "bmq2_part_04",
+          "max_extension": 1.000000414111893,
+          "p99_extension": 1.0000003280118357
+        },
+        {
+          "name": "bmq2_part_05",
+          "max_extension": 2.4665144486792006,
+          "p99_extension": 1.2176964392541738
+        },
+        {
+          "name": "bmq2_part_08",
+          "max_extension": 2.3145126916470353,
+          "p99_extension": 1.6321348641799067
+        },
+        {
+          "name": "bmq2_part_09",
+          "max_extension": 1.0000003835285556,
+          "p99_extension": 1.0000003228754746
+        },
+        {
+          "name": "bmq2_part_10",
+          "max_extension": 1.1766723246942925,
+          "p99_extension": 1.0103345466605764
+        },
+        {
+          "name": "bmq2_part_10.b2",
+          "max_extension": 1.1921975867347965,
+          "p99_extension": 1.0003178921493083
+        },
+        {
+          "name": "bmq2_part_11",
+          "max_extension": 1.000000424235173,
+          "p99_extension": 1.0000003847347494
+        },
+        {
+          "name": "bmq2_part_12",
+          "max_extension": 1.0000004527296726,
+          "p99_extension": 1.0000003767264503
+        },
+        {
+          "name": "bmq2_part_13",
+          "max_extension": 1.000000409336637,
+          "p99_extension": 1.000000353735805
+        },
+        {
+          "name": "bmq2_part_14",
+          "max_extension": 2.5001760917766407,
+          "p99_extension": 1.6208564301883026
+        }
+      ]
+    },
+    {
+      "label": "slash",
+      "asset": "anim_dagger_slashleft_1h_balance",
+      "frames_checked": 150,
+      "total_frames": 151,
+      "worst_frame": 48,
+      "worst_mesh": "bmq2_part_00",
+      "max_edge_extension": 4.0086793943980314,
+      "max_mesh_p99_extension": 2.7729007319290697,
+      "meshes": [
+        {
+          "name": "bmq2_part_00",
+          "max_extension": 4.0086793943980314,
+          "p99_extension": 1.3676488090010208
+        },
+        {
+          "name": "bmq2_part_00.b2",
+          "max_extension": 3.2703283768634104,
+          "p99_extension": 2.7729007319290697
+        },
+        {
+          "name": "bmq2_part_02",
+          "max_extension": 2.6602341739053985,
+          "p99_extension": 2.0011329506370115
+        },
+        {
+          "name": "bmq2_part_03",
+          "max_extension": 1.0000004642114255,
+          "p99_extension": 1.0000003908816295
+        },
+        {
+          "name": "bmq2_part_04",
+          "max_extension": 1.0000004141118775,
+          "p99_extension": 1.0000003280118572
+        },
+        {
+          "name": "bmq2_part_05",
+          "max_extension": 2.464602586847523,
+          "p99_extension": 1.3690417484839494
+        },
+        {
+          "name": "bmq2_part_08",
+          "max_extension": 2.6898547657865985,
+          "p99_extension": 1.718467852840841
+        },
+        {
+          "name": "bmq2_part_09",
+          "max_extension": 1.0000003835285693,
+          "p99_extension": 1.0000003228754795
+        },
+        {
+          "name": "bmq2_part_10",
+          "max_extension": 1.2741137375179792,
+          "p99_extension": 1.0573773109616
+        },
+        {
+          "name": "bmq2_part_10.b2",
+          "max_extension": 1.2539458719213046,
+          "p99_extension": 1.0103742634332884
+        },
+        {
+          "name": "bmq2_part_11",
+          "max_extension": 1.0000004242351819,
+          "p99_extension": 1.0000003847347545
+        },
+        {
+          "name": "bmq2_part_12",
+          "max_extension": 1.0000004527296806,
+          "p99_extension": 1.0000003767264423
+        },
+        {
+          "name": "bmq2_part_13",
+          "max_extension": 1.000000409336647,
+          "p99_extension": 1.0000003537358242
+        },
+        {
+          "name": "bmq2_part_14",
+          "max_extension": 3.417577661953857,
+          "p99_extension": 1.4057703842924465
+        }
+      ]
+    },
+    {
+      "label": "ui_neutral_female",
+      "asset": "anim_female_idle_long",
+      "frames_checked": 16,
+      "total_frames": 2273,
+      "worst_frame": 152,
+      "worst_mesh": "bmq2_part_00",
+      "max_edge_extension": 2.5477092944617103,
+      "max_mesh_p99_extension": 1.3116529861484267,
+      "meshes": [
+        {
+          "name": "bmq2_part_00",
+          "max_extension": 2.5477092944617103,
+          "p99_extension": 1.1357887002321339
+        },
+        {
+          "name": "bmq2_part_00.b2",
+          "max_extension": 1.1920272290191183,
+          "p99_extension": 1.18380774939388
+        },
+        {
+          "name": "bmq2_part_02",
+          "max_extension": 1.5648055054702432,
+          "p99_extension": 1.3116529861484267
+        },
+        {
+          "name": "bmq2_part_03",
+          "max_extension": 1.000000464211417,
+          "p99_extension": 1.0000003908816089
+        },
+        {
+          "name": "bmq2_part_04",
+          "max_extension": 1.0000004141118648,
+          "p99_extension": 1.0000003280118284
+        },
+        {
+          "name": "bmq2_part_05",
+          "max_extension": 1.5950835838889372,
+          "p99_extension": 1.0840726890491712
+        },
+        {
+          "name": "bmq2_part_08",
+          "max_extension": 1.193502087854496,
+          "p99_extension": 1.122242953403951
+        },
+        {
+          "name": "bmq2_part_09",
+          "max_extension": 1.0000003835285445,
+          "p99_extension": 1.0000003228754821
+        },
+        {
+          "name": "bmq2_part_10",
+          "max_extension": 1.0833743536723912,
+          "p99_extension": 1.014702370268956
+        },
+        {
+          "name": "bmq2_part_10.b2",
+          "max_extension": 1.0725361128254391,
+          "p99_extension": 1.0000003919010947
+        },
+        {
+          "name": "bmq2_part_11",
+          "max_extension": 1.000000424235167,
+          "p99_extension": 1.0000003847347554
+        },
+        {
+          "name": "bmq2_part_12",
+          "max_extension": 1.0000004527296678,
+          "p99_extension": 1.0000003767264207
+        },
+        {
+          "name": "bmq2_part_13",
+          "max_extension": 1.0000004093366412,
+          "p99_extension": 1.0000003537358115
+        },
+        {
+          "name": "bmq2_part_14",
+          "max_extension": 1.9557269925912093,
+          "p99_extension": 1.2078601743975554
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "bmq2_tex_0",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_1",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_10",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_11",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_12",
+      "mips": 9,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_13",
+      "mips": 11,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_14",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_15",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_16",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_17",
+      "mips": 6,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_18",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_19",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_2",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_3",
+      "mips": 13,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_4",
+      "mips": 7,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_5",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_6",
+      "mips": 10,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_7",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_8",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    },
+    {
+      "name": "bmq2_tex_9",
+      "mips": 12,
+      "all_mips_decoded": true,
+      "bytes_match": true
+    }
+  ],
+  "gross_motion_tear_guard_max_extension": 6.0,
+  "metadata_audit": "pass",
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "limitations": [
+    "No dynamic cloth: skirts, hair and ribbons use skeletal skinning only.",
+    "Skeletal references may intersect during running, combat and riding; no guarantee of all-pose clearance.",
+    "Fixed face/fingers; no customization or original armor layering."
+  ],
+  "integrated_hands_all_lods": true,
+  "cloth_enabled": false,
+  "body_metamesh": "bmq2_body",
+  "hidden_placeholder_triangles": 4,
+  "source_proportions_preserved": true,
+  "custom_skeleton_bones": 28,
+  "static_cloth_validation": {
+    "status": "pass",
+    "version": "v0.1.2",
+    "final_package_sha256": "50087dc90171b31bfc6dd7493276f5fb67b5e8e32a29e4a9dbfeaf8417e87326",
+    "all_lods_cloth_flags_removed": true,
+    "cooked_cloth_payloads_removed": true,
+    "cloth_collision_references_removed": true,
+    "gpu_streams_exactly_equal_to_v0_1_0": true,
+    "materials_textures_skeleton_preserved": true,
+    "game_test_verified": false
+  },
+  "source_validation": {
+    "status": "pass",
+    "blend_reopened": true,
+    "fbx_reimported": true,
+    "source_matches_final_fit": true,
+    "bones": 28,
+    "meshes": 12,
+    "packed_images": 18,
+    "facial_animation": false,
+    "game_cloth_paint_verified": false,
+    "all_cloth_alpha_zero": true,
+    "cloth_engine_verified": false,
+    "source_proportions_preserved": true,
+    "source_height_m": 1.576145529958012,
+    "source_geometry_checks": [
+      {
+        "material": "MAJ03_02_cloth1",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_02_cloth3",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_02_Flower",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_02_macrame_2",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_01_head",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_02_cloth2",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_01_eye",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_01_hair",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_01_Eyelash_Master",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "eyelash_new_Inst03",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_01_mouth_Skeleton",
+        "max_geometry_error_m": 0.0
+      },
+      {
+        "material": "MAJ03_01_body",
+        "max_geometry_error_m": 0.0
+      }
+    ],
+    "source_geometry_max_error_m": 0.0
+  },
+  "registration_validation": {
+    "status": "pass",
+    "race": "bmq2_outfit2",
+    "changed_troops": [],
+    "unaffected_troops": 548,
+    "troop_overrides_present": false,
+    "skin_variants": 10,
+    "skeleton": "bmq2_skeleton",
+    "native_monster_dimensions_preserved": true,
+    "native_ui_actions_inherited": false,
+    "inventory_pose": "female_custom start/loop; selected for own fixed female body",
+    "cloth_simulation": false
+  },
+  "preview_idle_validation": {
+    "status": "pass",
+    "version": "v0.1.2",
+    "default_inventory_clip": "inventory_idle",
+    "preview_overrides": [
+      {
+        "sex": "male",
+        "action": "act_inventory_idle_start",
+        "clip": "anim_female_custom_start",
+        "skeletal_animation": "anim_female_idle_long",
+        "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
+        "clip_metadata": "AnimationClip 'anim_female_custom_start' guid=593006d8-02b3-4307-b1fc-9a2643a8f1d7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith='act_inventory_idle'\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
+      },
+      {
+        "sex": "male",
+        "action": "act_inventory_idle",
+        "clip": "anim_female_custom",
+        "skeletal_animation": "anim_female_idle_long",
+        "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
+        "clip_metadata": "AnimationClip 'anim_female_custom' guid=da51b19f-81fe-4ffe-956f-ab5d800e71f7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[cyclic,allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith=''\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
+      },
+      {
+        "sex": "female",
+        "action": "act_inventory_idle_start",
+        "clip": "anim_female_custom_start",
+        "skeletal_animation": "anim_female_idle_long",
+        "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
+        "clip_metadata": "AnimationClip 'anim_female_custom_start' guid=593006d8-02b3-4307-b1fc-9a2643a8f1d7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith='act_inventory_idle'\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
+      },
+      {
+        "sex": "female",
+        "action": "act_inventory_idle",
+        "clip": "anim_female_custom",
+        "skeletal_animation": "anim_female_idle_long",
+        "skeletal_animation_guid": "39cd423c-26fe-46e9-8e8f-9b5d683b78ac",
+        "clip_metadata": "AnimationClip 'anim_female_custom' guid=da51b19f-81fe-4ffe-956f-ab5d800e71f7 version=0\n  duration=60 animation=39cd423c-26fe-46e9-8e8f-9b5d683b78ac\n  flags=[cyclic,allow_head_movement]\n  blendIn=0 blendOut=0 priority=64\n  sound= voice= facial=male_custom\n  blendsWith='' continuesWith=''\n  leftHandPose=2 rightHandPose=2 combat=\n  stepPoints=[-1,-1,-1,-1] doNotInterpolate=False\n"
+      }
+    ],
+    "creation_page_action_mapping_unchanged": true,
+    "runtime_dll_unchanged": true,
+    "runtime_entry": "direct CharacterTableauTextureProvider before bounded screen reflection",
+    "runtime_effect_verified": false,
+    "selected_character_sex_preserved": true,
+    "fixed_character_preview_pose": "female_idle_long_for_both_preview_skeleton_types",
+    "game_retest_pending": true
+  },
+  "ui_scope_validation": {
+    "status": "pass",
+    "cases": {
+      "SandBox.View.Map.MapScreen._mainPartyVisual": false,
+      "SandBox.View.Map.PartyVisual._humanAgentVisuals": false,
+      "SandBox.View.Map.MapConversationTableau._agentVisuals": false,
+      "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableau._agentVisuals": true,
+      "TaleWorlds.MountAndBlade.View.Tableaus.BasicCharacterTableau._agentVisuals": true,
+      "TaleWorlds.MountAndBlade.GauntletUI.BodyGenerator.BodyGeneratorView._visualToShow": true,
+      "Unknown.CharacterTableau._agentVisuals": false,
+      "TaleWorlds.MountAndBlade.View.Tableaus.CharacterTableauFake._agentVisuals": false
+    },
+    "null_owner_allowed": false,
+    "direct_provider_cases": "actual runtime methods compiled with matching provider/tableau stubs; valid/null/unknown provider/unknown tableau",
+    "actual_field_collection_and_inspect_executed": true,
+    "boxed_action_invalid_cast_reproduced": true,
+    "reference_and_value_custom_equals_never_called": true,
+    "inventory_discovery_independent_of_screen_seen_budget": true,
+    "source_sha256": "03f69ef75a78eb68e0c015bb74118c8955b68eb8ead95a61c696c7dc68880d5b",
+    "assembly_sha256": "d587f058e9849ca98efd19ebffb11417e0e03c8f68c7db72ceb60a868c32c832",
+    "game_verified": false
+  },
+  "delivery_mode": "skeletal_skinning_only"
+}

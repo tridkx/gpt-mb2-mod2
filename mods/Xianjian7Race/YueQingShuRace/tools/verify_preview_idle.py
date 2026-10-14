@@ -20,6 +20,10 @@ for sex,prefix,label in [('male','','ui_neutral_male'),('female','female_','ui_n
         rows.append({'sex':sex,'action':action,'clip':clip,'skeletal_animation':raw['name'],'skeletal_animation_guid':guid,'clip_metadata':output})
     assert len(own['as_yqs_'+prefix+'facegen'])==0
 import zipfile
+def semantic(node):
+    # XML indentation/tails can change when scene registrations are appended.
+    return (node.tag, tuple(sorted(node.attrib.items())), (node.text or '').strip(),
+            tuple(semantic(child) for child in node))
 baseline_archive=R/'dist/YueQingShuRace_v0.3.0_Mod.zip'
 if not baseline_archive.exists():baseline_archive=R/'dist/YueQingShuRace_Mod.zip'
 with zipfile.ZipFile(baseline_archive) as archive:
@@ -27,7 +31,7 @@ with zipfile.ZipFile(baseline_archive) as archive:
  for previous in old:
   current=own[previous.get('id')]
   assert previous.attrib==current.attrib
-  if previous.get('id') not in ['as_yqs_warrior','as_yqs_female_warrior']:assert E.tostring(previous)==E.tostring(current)
+  if previous.get('id') not in ['as_yqs_warrior','as_yqs_female_warrior']:assert semantic(previous)==semantic(current)
 report={'status':'pass','version':json.loads((R/'tools/model_config.json').read_text())['version'],
         'default_inventory_clip':'inventory_idle','preview_overrides':rows,'creation_page_action_mapping_unchanged':True,
         'runtime_dll_unchanged':False,'runtime_scope':'inventory screen only','runtime_entry':'direct CharacterTableauTextureProvider before bounded screen reflection','runtime_effect_verified':False,'selected_character_sex_preserved':True,'fixed_character_preview_pose':'female_idle_long_for_both_preview_skeleton_types','game_retest_pending':True}

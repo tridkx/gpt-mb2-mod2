@@ -51,6 +51,7 @@ docs/                      工作区专题说明、更新日志与历史检查�
 - [离线布料编译器](tools/cloth_compiler/README.md)：直接模拟的数据生成、回读和插入；模型策略留在对应模组 tools/。
 - [离线布料诊断器](tools/cloth_simulator/README.md)：最终包的近似 CPU 布料模拟、原生动作驱动、逐帧风险指标与离线回放；尚未校准到游戏求解结果。
 - AssetTool 位于 tools/AssetTool/；patch 含天香专用布料参数，新模组使用前需要适配。
+- [种族动作集工具](tools/race_action_sets.py)：从当前 Native 目录补齐种族场景集，保留旧名与待机覆盖；默认只检查，写入需显式 `--write`。用途和命名规则见[仙剑7动作集修复说明](mods/Xianjian7Race/README.md#动作集注册与检查)。
 
 装备技能唯一维护位置为 `C:/Users/DKX/.codex/skills/bannerlord-equipment-mod/`，工作区不保存技能副本。
 
@@ -89,5 +90,7 @@ Mod ZIP 顶层是模组 ID，源包保持 source/ 与 tex/ 相邻。mod.json.sha
 ## 文档与检查边界
 
 游戏测试由用户完成；离线回读、动作预览和布料数据检查不等同于游戏动态验证。各模组说明列出当前验收状态。
+
+专题调研记录：[自定义种族主角的地图频闪、读档与装备隐形](docs/reports/2026-10-14-custom-race-player-research.md)（2026-10-14，适用 Native v1.4.8；证据与待验证项见报告）。
 
 协作规范见 [AGENTS.md](AGENTS.md)。使用本地 Git，不上传远程；发布标签为 <ModId>/v<版本>。历史信息见 [更新日志](docs/CHANGELOG.md) 和 [历史路径对照](docs/historical-paths.md)。

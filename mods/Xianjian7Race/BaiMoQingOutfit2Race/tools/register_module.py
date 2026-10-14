@@ -53,6 +53,14 @@ for suffix, base in [('warrior', 'as_human_warrior'), ('female_warrior', 'as_hum
     if suffix in ['warrior','female_warrior']:
         for kind in ['start','loop']:
             ET.SubElement(action_set,'action',type='act_inventory_idle'+('_start' if kind=='start' else ''),animation='anim_female_custom'+('_start' if kind=='start' else ''))
+
+# Cover dynamically generated names and preserve the six legacy preview sets.
+import sys
+from workspace_paths import workspace_root
+sys.path.insert(0, str(workspace_root(ROOT) / 'tools'))
+from race_action_sets import complete
+actions = complete(ET.parse(NATIVE / 'action_sets.xml').getroot(), actions,
+                   RACE, CFG['skeleton'], legacy_prefix='bmq2')
 write(MODULE / 'ModuleData/action_sets.xml', actions)
 
 monsters = ET.Element('Monsters')

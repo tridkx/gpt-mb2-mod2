@@ -31,6 +31,8 @@ text=f'''# {cfg['title']}
 
 当前裙摆碰撞按同侧腿部与腰臀表面拟合，保留固定根部。压力与重力代理检查见[裙摆专项检查](reports/skirt_collision_validation.json)，无关资源保持情况见[基线对比](reports/skirt_preservation_validation.json)。代理结果不能替代游戏布料效果。
 
+动作集覆盖及动态命名检查见[系列说明](../README.md#动作集注册与检查)，本角色报告为 `reports/action_sets_validation.json`；注册覆盖不代替各场景游戏验收。
+
 ## 安装与集成
 
 将 `dist/{ident}_Mod.zip` 顶层模块目录解压到游戏 `Modules/`，启动器勾选 **{cfg['title']}**，排在 Native、SandBoxCore、Sandbox 后。可与其他仙剑7角色种族模块一起启用。

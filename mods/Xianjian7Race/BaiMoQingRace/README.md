@@ -1,6 +1,6 @@
 # Bai Mo Qing Race
 
-白茉晴默认时装的独立种族资源模块，版本 v0.1.3，按本机 Native v1.4.8 制作。属于[仙剑7系列工程](../README.md)。模块 ID 为 `BaiMoQingRace`，种族 ID 为 `bmq_default`。
+白茉晴默认时装的独立种族资源模块，版本 v0.1.4，按本机 Native v1.4.8 制作。属于[仙剑7系列工程](../README.md)。模块 ID 为 `BaiMoQingRace`，种族 ID 为 `bmq_default`。
 
 ## 功能与验证范围
 
@@ -11,6 +11,8 @@
 自有 UI Runtime 为本种族的队伍、百科及物品栏人物预览选择自有骨架，并在必要时重建人物预览，保留人物数据、缩放及动画进度。物品栏使用经原生 clip GUID 核对的女性垂手待机候选。检查见[UI 范围回归](reports/ui_scope_validation.json)、[待机映射检查](reports/preview_idle_validation.json)。角色整体外观已获用户初步确认；用户已反馈 v0.1.3 多层裙片穿模、下落不自然，当前布料未通过游戏验收。
 
 当前裙摆碰撞按同侧腿部与腰臀表面拟合，保留固定根部。压力与分组约束重力代理检查见[裙摆专项检查](reports/skirt_collision_validation.json)，无关资源保持情况见[基线对比](reports/skirt_preservation_validation.json)。代理结果不能替代游戏布料效果。
+
+场景动作集按当前 Native 目录覆盖地图、举旗、野外对话、领主、酒馆及条件 NPC；完整名称与 Monster ID 匹配，保留六个旧短名和人物预览待机，共 95 项。名称、继承及资源保留证据见[动作集检查](reports/action_sets_validation.json)和[修复保留检查](reports/action_set_fix_validation.json)，生成与检查方法见[系列说明](../README.md#动作集注册与检查)。新增场景姿态与地图明暗频闪仍待游戏验证。
 
 ## 安装与集成
 
@@ -26,10 +28,10 @@
 
 ```powershell
 & 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/Xianjian7Race/BaiMoQingRace/tools/rebuild.py
-./tools/install_release.ps1 -Mod BaiMoQingRace -Version v0.1.3 -CheckOnly
+./tools/install_release.ps1 -Mod BaiMoQingRace -Version v0.1.4 -CheckOnly
 ```
 
-重建会生成离线检查与预览图；复核图像并更新 `reports/visual_review.json` 后，运行本模组的 `tools/finalize_release.py` 更新交付清单。源包保持 `source/`、`tex/` 相邻，将 `workspace_tools/` 恢复至工作区根 `tools/`。颜色保留与外观对比还需要 `dist/BaiMoQingRace_v0.1.2_Mod.zip`。早期动态版返修对比需要在 `dist/` 保留 `BaiMoQingRace_v0.1.0_Mod.zip`；该旧包用于恢复对比缓存，不包含在源包内。只在本地 Git 提交，发布标签为 `BaiMoQingRace/v0.1.3`。变更见[更新日志](CHANGELOG.md)。
+重建会生成离线检查与预览图；复核图像并更新 `reports/visual_review.json` 后，运行本模组的 `tools/finalize_release.py` 更新交付清单。源包保持 `source/`、`tex/` 相邻，将 `workspace_tools/` 恢复至工作区根 `tools/`。颜色保留与外观对比还需要 `dist/BaiMoQingRace_v0.1.2_Mod.zip`。早期动态版返修对比需要在 `dist/` 保留 `BaiMoQingRace_v0.1.0_Mod.zip`；该旧包用于恢复对比缓存，不包含在源包内。只在本地 Git 提交，发布标签为 `BaiMoQingRace/v0.1.4`。变更见[更新日志](CHANGELOG.md)。
 
 ## 当前限制与注意事项
 

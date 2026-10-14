@@ -211,7 +211,12 @@
     "tools/verify_source.py",
     "tools/verify_static_cloth.py",
     "tools/verify_ui_scope.py",
-    "tools/workspace_paths.py"
+    "tools/workspace_paths.py",
+    "reports/action_sets_validation.json",
+    "reports/action_set_fix_baseline.json",
+    "reports/action_set_fix_validation.json",
+    "reports/history/action_sets_v0.1.2/release_validation.json",
+    "reports/history/action_sets_v0.1.2/registration_validation.json"
   ],
   "shared_source_files": [
     "tools/asset_helpers/config/spec.py",
@@ -230,7 +235,9 @@
     "tools/cloth_compiler/NativeClothProbe.csproj",
     "tools/cloth_compiler/ClothPatch.cs",
     "tools/cloth_compiler/ClothPatch.csproj",
-    "tools/cloth_compiler/README.md"
+    "tools/cloth_compiler/README.md",
+    "tools/race_action_sets.py",
+    "tools/tests/test_race_action_sets.py"
   ],
   "package": "module/YueQingShuOutfit2Race/AssetPackages/yqs2.tpac",
   "validation_report": "reports/release_validation.json"

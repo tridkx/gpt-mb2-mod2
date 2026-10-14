@@ -6,7 +6,7 @@
     "CHANGELOG.md",
     "README.md",
     "input/.gitkeep",
-    "input/default/01_\u9ed8\u8ba4\u5957\u88c5_MAJ02_01.blend",
+    "input/default/01_默认套装_MAJ02_01.blend",
     "input/default/README.txt",
     "input/default/YueQingShu_MAJ02_01.glb",
     "input/default/materials/MAJ02_01_Eyelash_eyebrow.json",
@@ -471,7 +471,12 @@
     "reports/experiments/outer_driven_layers_2026-10-14/motions/ui_neutral_female/report.json",
     "reports/experiments/outer_driven_layers_2026-10-14/motions/ui_neutral_female/worst_frame.png",
     "reports/experiments/outer_driven_layers_2026-10-14/motions/ui_neutral_female/worst_stretch.png",
-    "docs/cloth-simulation.md"
+    "docs/cloth-simulation.md",
+    "reports/action_sets_validation.json",
+    "reports/action_set_fix_baseline.json",
+    "reports/action_set_fix_validation.json",
+    "reports/history/action_sets_v0.3.4/release_validation.json",
+    "reports/history/action_sets_v0.3.4/registration_validation.json"
   ],
   "shared_source_files": [
     "tools/asset_helpers/config/spec.py",
@@ -499,7 +504,9 @@
     "tools/cloth_compiler/probe_mapped_settling.py",
     "tools/cloth_compiler/save_proxy_source.py",
     "tools/cloth_compiler/validation.py",
-    "tools/cloth_compiler/verify_mapped.py"
+    "tools/cloth_compiler/verify_mapped.py",
+    "tools/race_action_sets.py",
+    "tools/tests/test_race_action_sets.py"
   ],
   "package": "module/YueQingShuRace/AssetPackages/yqs.tpac",
   "validation_report": "reports/release_validation.json",

@@ -59,6 +59,14 @@ for suffix, base in [('warrior', 'as_human_warrior'), ('female_warrior', 'as_hum
         clips=resolve('as_human_female_facegen')
         for action in ['act_inventory_idle_start','act_inventory_idle']:
             ET.SubElement(entry,'action',type=action,animation=clips[action])
+
+# Cover dynamically generated names and preserve the six legacy preview sets.
+import sys
+from workspace_paths import workspace_root
+sys.path.insert(0, str(workspace_root(ROOT) / 'tools'))
+from race_action_sets import complete
+actions = complete(ET.parse(NATIVE / 'action_sets.xml').getroot(), actions,
+                   RACE, CFG['skeleton'], legacy_prefix='yqs')
 write(MODULE / 'ModuleData/action_sets.xml', actions)
 
 monsters = ET.Element('Monsters')

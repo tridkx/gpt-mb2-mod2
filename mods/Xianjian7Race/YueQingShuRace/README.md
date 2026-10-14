@@ -1,6 +1,6 @@
 # Yue Qingshu Race
 
-月清疏默认时装的独立种族资源模块，版本 v0.3.4，适用本机 Native v1.4.8。属于[仙剑7系列工程](../README.md)。模块 ID 为 `YueQingShuRace`，种族 ID 为 `yqs_default`。
+月清疏默认时装的独立种族资源模块，版本 v0.3.5，适用本机 Native v1.4.8。属于[仙剑7系列工程](../README.md)。模块 ID 为 `YueQingShuRace`，种族 ID 为 `yqs_default`。
 
 ## 功能与验收
 
@@ -13,6 +13,8 @@
 不做表情、动态手势、捏脸或换装，手指保持源姿态；省略 UE 专用眼周遮挡和泪线层。固定外观含默认衣服，不能直接叠穿原版防具。
 
 手臂绑定与几何保留见[手臂专项检查](reports/arm_binding_validation.json)。物品栏修复的离线证据见[入口与作用范围回归](reports/ui_scope_validation.json)、[动画片段 GUID 检查](reports/preview_idle_validation.json)和[完整待机循环检查](reports/inventory_pose_validation.json)。
+
+场景动作集按当前 Native 目录覆盖地图、举旗、野外对话、领主、酒馆及条件 NPC；完整名称与 Monster ID 匹配，保留六个旧短名和人物预览待机，共 95 项。名称、继承及资源保留证据见[动作集检查](reports/action_sets_validation.json)和[修复保留检查](reports/action_set_fix_validation.json)，生成与检查方法见[系列说明](../README.md#动作集注册与检查)。新增场景姿态与地图明暗频闪仍待游戏验证。
 
 ## 安装与集成
 
@@ -32,7 +34,7 @@
 
 ```powershell
 & 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/Xianjian7Race/YueQingShuRace/tools/rebuild.py
-./tools/install_release.ps1 -Mod YueQingShuRace -Version v0.3.4 -CheckOnly
+./tools/install_release.ps1 -Mod YueQingShuRace -Version v0.3.5 -CheckOnly
 ```
 
 源包保持 `source/` 与 `tex/` 相邻，Blend 使用相对贴图路径；`workspace_tools/` 恢复到工作区根 `tools/`。检查脚本使用旧交付包作为基线，重建前保留 dist/ 内历史版本。安装与打包使用工作区共用入口，旧包保留，使用本地 Git。变更见[更新日志](CHANGELOG.md)。

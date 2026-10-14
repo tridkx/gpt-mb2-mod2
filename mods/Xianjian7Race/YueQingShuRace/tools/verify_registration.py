@@ -35,12 +35,18 @@ def validate_registration(root):
             assert dict(skin.find(tag).attrib) == dict(old.find(tag).attrib)
             assert len(skin.find(tag)) == 1
             assert canonical(skin.find(tag)[0]) == canonical(old.find(tag)[0])
+    import sys
+    from workspace_paths import workspace_root
+    sys.path.insert(0, str(workspace_root(root) / 'tools'))
+    from race_action_sets import validate_files
+    action_report = validate_files(native / 'action_sets.xml', data / 'action_sets.xml',
+                                   cfg['race'], cfg['skeleton'], legacy_prefix='yqs')
     actions = read(data / 'action_sets.xml')
-    native_actions = read(native / 'action_sets.xml')
-    for action in actions.getroot():
-        assert action.get('skeleton') == cfg['skeleton']
-        assert native_actions.find(f"action_set[@id='{action.get('base_set')}']") is not None
-        assert len(action) == (2 if action.get('id') in ['as_yqs_warrior','as_yqs_female_warrior'] else 0)
+    for suffix in ['warrior', 'female_warrior']:
+        action = actions.find("action_set[@id='as_" + 'yqs' + "_" + suffix + "']")
+        assert {a.get('type'): a.get('animation') for a in action} == {
+            'act_inventory_idle_start': 'anim_female_custom_start',
+            'act_inventory_idle': 'anim_female_custom'}
     monsters = read(data / 'monsters.xml')
     mon = monsters.find(f"Monster[@id='{cfg['race']}']")
     old = read(native / 'monsters.xml').find("Monster[@id='human']")
@@ -59,7 +65,7 @@ def validate_registration(root):
               'unaffected_troops':native_troop_count, 'troop_overrides_present':False,
               'skin_variants':len(skins), 'skeleton':cfg['skeleton'],
               'native_monster_dimensions_preserved':True,
-              'native_ui_actions_inherited':False,'only_warrior_inventory_actions_overridden':True, 'cloth_simulation':cfg['cloth_enabled']}
+              'native_ui_actions_inherited':False,'only_warrior_inventory_actions_overridden':True, 'cloth_simulation':cfg['cloth_enabled'], 'action_sets':action_report}
     (root / 'reports/registration_validation.json').write_text(json.dumps(report, indent=2))
     return report
 

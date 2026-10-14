@@ -369,7 +369,12 @@
     "tools/verify_source.py",
     "tools/verify_static_cloth.py",
     "tools/verify_ui_scope.py",
-    "tools/workspace_paths.py"
+    "tools/workspace_paths.py",
+    "reports/action_sets_validation.json",
+    "reports/action_set_fix_baseline.json",
+    "reports/action_set_fix_validation.json",
+    "reports/history/action_sets_v0.1.3/release_validation.json",
+    "reports/history/action_sets_v0.1.3/registration_validation.json"
   ],
   "shared_source_files": [
     "tools/asset_helpers/config/spec.py",
@@ -397,7 +402,9 @@
     "tools/cloth_compiler/probe_mapped_settling.py",
     "tools/cloth_compiler/save_proxy_source.py",
     "tools/cloth_compiler/validation.py",
-    "tools/cloth_compiler/verify_mapped.py"
+    "tools/cloth_compiler/verify_mapped.py",
+    "tools/race_action_sets.py",
+    "tools/tests/test_race_action_sets.py"
   ],
   "package": "module/BaiMoQingRace/AssetPackages/bmq.tpac",
   "validation_report": "reports/release_validation.json"

@@ -23,6 +23,8 @@ text=f"""# {cfg['title']}
 
 保留限定本种族的队伍、百科、物品栏人物预览组件。本模块不提供兵种树、原版人物替换或招募入口；使用方自行配置成人女性人物的 `race="{cfg['race']}"`、生成方式与装备。
 
+动作集覆盖及动态命名检查见[系列说明](../README.md#动作集注册与检查)，本角色报告为 `reports/action_sets_validation.json`；注册覆盖不代替各场景游戏验收。
+
 ## 安装与使用
 
 将 `dist/{ident}_Mod.zip` 的顶层模块目录解压到游戏 `Modules/`。启动器勾选 **{cfg['title']}**，排在 Native、SandBoxCore、Sandbox 后。固定服装身体不适合叠穿原版防具；含此种族的存档需要保留模块。
