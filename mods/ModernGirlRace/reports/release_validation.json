@@ -1,10 +1,10 @@
 {
-  "version": "v0.1.1",
+  "version": "v0.1.2",
   "status": "pass",
   "check_scope": "offline_structural_and_native_motion_checks",
-  "final_package_sha256": "a5cbc99de63c44dc51f6b4f2092b47c1007432a84241d244cf588383bdffca79",
+  "final_package_sha256": "fdb55e758a8e680ecd3b103eb242b0d1239280f027c011812d6e5f021e46f748",
   "baseline_package_sha256": "a5cbc99de63c44dc51f6b4f2092b47c1007432a84241d244cf588383bdffca79",
-  "baseline_reason": "UI-only v0.1.1 repair; TPAC unchanged from v0.1.0; current offline release checks rerun.",
+  "baseline_reason": "Arm bind direction repair from v0.1.1; source shape and all LOD geometry preserved; shoulder attachment weights corrected",
   "registration": {
     "status": "pass",
     "race": "modern_girl",
@@ -78,10 +78,10 @@
       "asset": "anim_inventory_idle",
       "frames_checked": 16,
       "total_frames": 1268,
-      "worst_frame": 760,
-      "worst_mesh": "modern_girl_part_02",
-      "max_edge_extension": 2.916639652782696,
-      "max_mesh_p99_extension": 2.0905523130360826,
+      "worst_frame": 507,
+      "worst_mesh": "modern_girl_part_01",
+      "max_edge_extension": 2.528444490111311,
+      "max_mesh_p99_extension": 1.63745223735978,
       "meshes": [
         {
           "name": "modern_girl_part_00",
@@ -95,18 +95,18 @@
         },
         {
           "name": "modern_girl_part_02",
-          "max_extension": 2.916639652782696,
-          "p99_extension": 2.0905523130360826
+          "max_extension": 2.0354580593251406,
+          "p99_extension": 1.63745223735978
         },
         {
           "name": "modern_girl_part_03",
-          "max_extension": 1.4388226874768775,
-          "p99_extension": 1.1763310348122058
+          "max_extension": 1.3108680368267218,
+          "p99_extension": 1.219593048601285
         },
         {
           "name": "modern_girl_part_04",
-          "max_extension": 1.3593950086990791,
-          "p99_extension": 1.1557819392457485
+          "max_extension": 1.452365353336069,
+          "p99_extension": 1.3119153565646744
         },
         {
           "name": "modern_girl_part_05",
@@ -137,18 +137,18 @@
         },
         {
           "name": "modern_girl_part_02",
-          "max_extension": 2.6173274214260642,
-          "p99_extension": 1.749225175648772
+          "max_extension": 2.858900635405755,
+          "p99_extension": 2.0446313910955762
         },
         {
           "name": "modern_girl_part_03",
-          "max_extension": 1.984004675522021,
-          "p99_extension": 1.6576182223122895
+          "max_extension": 1.963203839878427,
+          "p99_extension": 1.6613524285893877
         },
         {
           "name": "modern_girl_part_04",
-          "max_extension": 1.9075153477742899,
-          "p99_extension": 1.5554417411915966
+          "max_extension": 1.9357948831714693,
+          "p99_extension": 1.5991309542232108
         },
         {
           "name": "modern_girl_part_05",
@@ -164,8 +164,8 @@
       "total_frames": 151,
       "worst_frame": 88,
       "worst_mesh": "modern_girl_part_02",
-      "max_edge_extension": 5.864436061366504,
-      "max_mesh_p99_extension": 3.679071435660212,
+      "max_edge_extension": 5.2092034089373085,
+      "max_mesh_p99_extension": 3.7006675559037503,
       "meshes": [
         {
           "name": "modern_girl_part_00",
@@ -179,18 +179,18 @@
         },
         {
           "name": "modern_girl_part_02",
-          "max_extension": 5.864436061366504,
-          "p99_extension": 3.679071435660212
+          "max_extension": 5.2092034089373085,
+          "p99_extension": 3.7006675559037503
         },
         {
           "name": "modern_girl_part_03",
-          "max_extension": 1.9336042807261058,
-          "p99_extension": 1.6217019764636085
+          "max_extension": 1.6592704008859656,
+          "p99_extension": 1.4004516217616527
         },
         {
           "name": "modern_girl_part_04",
-          "max_extension": 2.2703836900704153,
-          "p99_extension": 1.8108727852291782
+          "max_extension": 2.040001414646152,
+          "p99_extension": 1.637828358096656
         },
         {
           "name": "modern_girl_part_05",
@@ -221,18 +221,18 @@
         },
         {
           "name": "modern_girl_part_02",
-          "max_extension": 3.3309020754696532,
-          "p99_extension": 2.4285380953857394
+          "max_extension": 2.8684302688009953,
+          "p99_extension": 2.2172994333849187
         },
         {
           "name": "modern_girl_part_03",
-          "max_extension": 1.947884805427883,
-          "p99_extension": 1.554261320526907
+          "max_extension": 1.6715578543006169,
+          "p99_extension": 1.4325696212344992
         },
         {
           "name": "modern_girl_part_04",
-          "max_extension": 1.8921433273864747,
-          "p99_extension": 1.5328871785100195
+          "max_extension": 1.5904524962095647,
+          "p99_extension": 1.306307322228073
         },
         {
           "name": "modern_girl_part_05",
@@ -246,10 +246,10 @@
       "asset": "anim_dagger_slashleft_1h_balance",
       "frames_checked": 150,
       "total_frames": 151,
-      "worst_frame": 59,
+      "worst_frame": 72,
       "worst_mesh": "modern_girl_part_02",
-      "max_edge_extension": 5.119140228338158,
-      "max_mesh_p99_extension": 2.96898891601298,
+      "max_edge_extension": 4.041188292442611,
+      "max_mesh_p99_extension": 3.058096687080421,
       "meshes": [
         {
           "name": "modern_girl_part_00",
@@ -263,23 +263,191 @@
         },
         {
           "name": "modern_girl_part_02",
-          "max_extension": 5.119140228338158,
-          "p99_extension": 2.96898891601298
+          "max_extension": 4.041188292442611,
+          "p99_extension": 3.058096687080421
         },
         {
           "name": "modern_girl_part_03",
-          "max_extension": 1.3947164548497129,
-          "p99_extension": 1.2409222367444614
+          "max_extension": 1.4669032770774364,
+          "p99_extension": 1.2921032846566254
         },
         {
           "name": "modern_girl_part_04",
-          "max_extension": 1.8178351728805695,
-          "p99_extension": 1.5023802805928872
+          "max_extension": 1.7410275216926192,
+          "p99_extension": 1.411284918815878
         },
         {
           "name": "modern_girl_part_05",
           "max_extension": 2.804101658539723,
           "p99_extension": 1.8581427021158576
+        }
+      ]
+    },
+    {
+      "label": "facegen",
+      "asset": "anim_female_idle_long",
+      "frames_checked": 2272,
+      "total_frames": 2273,
+      "worst_frame": 1395,
+      "worst_mesh": "modern_girl_part_05",
+      "max_edge_extension": 2.0126563419462915,
+      "max_mesh_p99_extension": 1.599087453088042,
+      "meshes": [
+        {
+          "name": "modern_girl_part_00",
+          "max_extension": 1.000000428358856,
+          "p99_extension": 1.0000003575637209
+        },
+        {
+          "name": "modern_girl_part_01",
+          "max_extension": 1.472604949290012,
+          "p99_extension": 1.141591816493693
+        },
+        {
+          "name": "modern_girl_part_02",
+          "max_extension": 1.8201306882939583,
+          "p99_extension": 1.599087453088042
+        },
+        {
+          "name": "modern_girl_part_03",
+          "max_extension": 1.2628595327195953,
+          "p99_extension": 1.1636655378495933
+        },
+        {
+          "name": "modern_girl_part_04",
+          "max_extension": 1.4374513300690979,
+          "p99_extension": 1.1975770428380565
+        },
+        {
+          "name": "modern_girl_part_05",
+          "max_extension": 2.0126563419462915,
+          "p99_extension": 1.479302041297039
+        }
+      ]
+    },
+    {
+      "label": "stand_unarmed",
+      "asset": "anim_stand_unarmed",
+      "frames_checked": 810,
+      "total_frames": 811,
+      "worst_frame": 447,
+      "worst_mesh": "modern_girl_part_02",
+      "max_edge_extension": 5.6897588692569725,
+      "max_mesh_p99_extension": 3.9976169978741196,
+      "meshes": [
+        {
+          "name": "modern_girl_part_00",
+          "max_extension": 1.0000004283588817,
+          "p99_extension": 1.0000003575637475
+        },
+        {
+          "name": "modern_girl_part_01",
+          "max_extension": 3.8882771082970584,
+          "p99_extension": 2.380267654902338
+        },
+        {
+          "name": "modern_girl_part_02",
+          "max_extension": 5.6897588692569725,
+          "p99_extension": 3.9976169978741196
+        },
+        {
+          "name": "modern_girl_part_03",
+          "max_extension": 2.2942354791831776,
+          "p99_extension": 1.8252982412862693
+        },
+        {
+          "name": "modern_girl_part_04",
+          "max_extension": 1.881136583318067,
+          "p99_extension": 1.6015563291819521
+        },
+        {
+          "name": "modern_girl_part_05",
+          "max_extension": 5.37464991325728,
+          "p99_extension": 3.155113342421424
+        }
+      ]
+    },
+    {
+      "label": "stand_1h",
+      "asset": "anim_onehanded_guard_idles",
+      "frames_checked": 940,
+      "total_frames": 941,
+      "worst_frame": 402,
+      "worst_mesh": "modern_girl_part_02",
+      "max_edge_extension": 3.126008171503552,
+      "max_mesh_p99_extension": 2.2661839628220477,
+      "meshes": [
+        {
+          "name": "modern_girl_part_00",
+          "max_extension": 1.0000004283588635,
+          "p99_extension": 1.0000003575637253
+        },
+        {
+          "name": "modern_girl_part_01",
+          "max_extension": 1.8225360466328824,
+          "p99_extension": 1.2069644358347207
+        },
+        {
+          "name": "modern_girl_part_02",
+          "max_extension": 3.126008171503552,
+          "p99_extension": 2.2661839628220477
+        },
+        {
+          "name": "modern_girl_part_03",
+          "max_extension": 1.6292270942138425,
+          "p99_extension": 1.391460386136524
+        },
+        {
+          "name": "modern_girl_part_04",
+          "max_extension": 1.71789993658112,
+          "p99_extension": 1.3986481826047743
+        },
+        {
+          "name": "modern_girl_part_05",
+          "max_extension": 2.913126782165396,
+          "p99_extension": 1.687280819884586
+        }
+      ]
+    },
+    {
+      "label": "stand_2h",
+      "asset": "stand_right_twohanded",
+      "frames_checked": 155,
+      "total_frames": 156,
+      "worst_frame": 128,
+      "worst_mesh": "modern_girl_part_05",
+      "max_edge_extension": 2.9121987761132266,
+      "max_mesh_p99_extension": 1.6457818400502395,
+      "meshes": [
+        {
+          "name": "modern_girl_part_00",
+          "max_extension": 1.0000004283588555,
+          "p99_extension": 1.0000003575637195
+        },
+        {
+          "name": "modern_girl_part_01",
+          "max_extension": 1.9984813777062405,
+          "p99_extension": 1.2527188495403174
+        },
+        {
+          "name": "modern_girl_part_02",
+          "max_extension": 1.8598376905342577,
+          "p99_extension": 1.642956768026247
+        },
+        {
+          "name": "modern_girl_part_03",
+          "max_extension": 1.4671173243270956,
+          "p99_extension": 1.2973209921762758
+        },
+        {
+          "name": "modern_girl_part_04",
+          "max_extension": 1.5010141705295281,
+          "p99_extension": 1.2522611113132092
+        },
+        {
+          "name": "modern_girl_part_05",
+          "max_extension": 2.9121987761132266,
+          "p99_extension": 1.6457818400502395
         }
       ]
     }
@@ -349,11 +517,11 @@
   "hidden_placeholder_triangles": 4,
   "source_proportions_preserved": true,
   "custom_skeleton_bones": 28,
+  "arm_binding_validation": "reports/arm_binding_validation.json",
   "source_validation": "reports/source_validation.json",
   "proportion_uv_validation": "reports/preservation_validation.json",
   "ui_scope_validation": "reports/ui_scope_validation.json",
-  "date": "2026-10-13",
+  "date": "2026-10-14",
   "game_version": "v1.4.8",
-  "source_input_sha256": "6e201e3b21419c0b73a483e1175f4c5eac3c85cc81242e61fb42b39a6bb16708",
-  "ui_creation_fix_validation": "reports/ui_creation_fix_validation.json"
+  "source_input_sha256": "6e201e3b21419c0b73a483e1175f4c5eac3c85cc81242e61fb42b39a6bb16708"
 }

@@ -118,7 +118,7 @@ for t in pack['textures']:
     texturechecks.append({'name':t['name'],'mips':t['mipCount'],'all_mips_decoded':True,'bytes_match':True})
 
 rig=custom;native=parse_skeljson(rigdata);motions=[]
-for label in ['idle','run','bow','riding','slash']:
+for label in ['idle','run','bow','riding','slash','facegen','stand_unarmed','stand_1h','stand_2h']:
     raw=json.loads((ROOT/'reports'/(label+'.json')).read_text());anim=parse_animjson(raw)
     assert raw['skeletonGuid']==native['guid'] and anim['have'].all() and anim['frames']>2
     frames=list(range(max(1,anim['start']),anim['frames'])) if label!='idle' else sorted(set(np.linspace(max(1,anim['start']),anim['frames']-1,16).astype(int).tolist()))
@@ -147,7 +147,7 @@ descriptor=ET.parse(ROOT/'module/ModernGirlRace/SubModule.xml')
 assert descriptor.find('Id').get('value')=='ModernGirlRace' and descriptor.find('Version').get('value')==cfg['version']
 assert sha(PACKAGE)==hash_before
 assert all(sha(ROOT/p)==h for p,h in json.loads((ROOT/'reports/input_hashes.json').read_text()).items())
-report={'version':cfg['version'],'status':'pass','check_scope':'offline_structural_and_native_motion_checks','final_package_sha256':hash_before,'baseline_package_sha256':None,'baseline_reason':'First release; input hashes provide geometry baseline','registration':registration,'lods':lods,'seams':seams,'motions':motions,'textures':texturechecks,'gross_motion_tear_guard_max_extension':6.0,'metadata_audit':'pass','game_test_verified':False,'game_cloth_solver_used':False,'limitations':['Fixed source appearance with original textures; skirt and hair use skeletal skinning without physics.','Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.','No facial animation or face/body customization support.']}
+report={'version':cfg['version'],'status':'pass','check_scope':'offline_structural_and_native_motion_checks','final_package_sha256':hash_before,'baseline_package_sha256':json.loads((ROOT/'reports/arm_repair_baseline.json').read_text())['package_sha256'],'baseline_reason':'Arm bind direction repair from v0.1.1; source shape and all LOD geometry preserved; shoulder attachment weights corrected','registration':registration,'lods':lods,'seams':seams,'motions':motions,'textures':texturechecks,'gross_motion_tear_guard_max_extension':6.0,'metadata_audit':'pass','game_test_verified':False,'game_cloth_solver_used':False,'limitations':['Fixed source appearance with original textures; skirt and hair use skeletal skinning without physics.','Native motion scans do not prove weapon grip, horse collision, IK, all intersections or body slider compatibility.','No facial animation or face/body customization support.']}
 report.update(integrated_hands_all_lods=True,cloth_enabled=False,body_metamesh='modern_girl_body',hidden_placeholder_triangles=4,source_proportions_preserved=True,custom_skeleton_bones=28)
 report['limitations'][0]='Fixed appearance; hair and clothes use skeletal skinning, without physics. Only BaseColor was supplied; flat normal and conservative material controls are used.'
 (ROOT/'reports/release_validation.json').write_text(json.dumps(report,indent=2));print(json.dumps({'status':report['status'],'registration':registration,'lods':lods,'seams':seams,'motions':motions},indent=2))

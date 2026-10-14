@@ -3,7 +3,7 @@ from pathlib import Path
 import json,hashlib
 from datetime import date
 R=Path(__file__).resolve().parents[1];W=R.parents[1]
-for f in ['release_validation','source_validation','preservation_validation','ui_scope_validation']:
+for f in ['release_validation','source_validation','preservation_validation','ui_scope_validation','arm_binding_validation']:
     assert json.loads((R/'reports'/(f+'.json')).read_text())['status']=='pass',f
 # Authoring bootstrap is intentionally not a rebuild dependency; adapted scripts
 # are the authoritative implementation and must remain independently editable.
@@ -14,7 +14,7 @@ shared=[p.relative_to(W).as_posix() for p in (W/'tools/asset_helpers').rglob('*.
 cfg=dict(id='ModernGirlRace',source_files=sorted(set(source_files)),shared_source_files=sorted(shared),package='module/ModernGirlRace/AssetPackages/modern_girl.tpac',validation_report='reports/release_validation.json')
 (R/'mod.json').write_text(json.dumps(cfg,indent=2),encoding='utf8')
 report=json.loads((R/'reports/release_validation.json').read_text())
-report.update(source_validation='reports/source_validation.json',proportion_uv_validation='reports/preservation_validation.json',ui_scope_validation='reports/ui_scope_validation.json',date=date.today().isoformat(),game_version='v1.4.8',source_input_sha256=hashlib.sha256((R/'input/model.fbx').read_bytes()).hexdigest())
+report.update(arm_binding_validation='reports/arm_binding_validation.json',source_validation='reports/source_validation.json',proportion_uv_validation='reports/preservation_validation.json',ui_scope_validation='reports/ui_scope_validation.json',date=date.today().isoformat(),game_version='v1.4.8',source_input_sha256=hashlib.sha256((R/'input/model.fbx').read_bytes()).hexdigest())
 fix_report=R/'reports/ui_creation_fix_validation.json'
 if fix_report.exists():
     fix=json.loads(fix_report.read_text())

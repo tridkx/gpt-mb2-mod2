@@ -1,0 +1,219 @@
+{
+  "version": "v0.1.1",
+  "package_sha256": "a5cbc99de63c44dc51f6b4f2092b47c1007432a84241d244cf588383bdffca79",
+  "source_sha256": {
+    "input/model.fbx": "6e201e3b21419c0b73a483e1175f4c5eac3c85cc81242e61fb42b39a6bb16708",
+    "tex/hair.png": "35020ca1bfbf5caf37757dece498d816f18f7890e38dcb48c444f1dd4f2c5d09",
+    "tex/head.png": "ae972149e69d10d67eabc4fb495dee606cd101f9df42a4405ab8f145b8786635",
+    "tex/upper.png": "e39a8e7927dd3e409fb516d171056dd28b5842ca718c78a347cfb85eb87959a3",
+    "tex/left_arm.png": "7e337e47954622d5a6ae0dc466d544f5c2e70d3ee563ba080ae8e5ee66a3f260",
+    "tex/right_arm.png": "146ff1b4317a34ee9dd887fe6961454e9bf31ecfaddc855065795c13af8cbfc2",
+    "tex/lower.png": "e6bde5001aa01fe853103b7b42168ec3d44a48a81237346410ddd283ef852bdc",
+    "module/ModernGirlRace/bin/Win64_Shipping_Client/ModernGirlRace.UIRuntime.dll": "2abdf79abe022d3b94cacc285021e641f4ac06088e2dbcfd3107728eb8517006"
+  },
+  "source_array_sha256": {
+    "modern_girl_part_00_p": "cc9f61640cddca08012d722993c9781a20bf837bc27a4f0df958d713afd60f29",
+    "modern_girl_part_00_w": "35133cee05dfe99d082cb885143823edaabcc82f792c29c3e90e8122076a9c6d",
+    "modern_girl_part_00_f": "ce1c9770fac992a5d79b76fc75eb802024a533c4d8294d2de408281b769f297c",
+    "modern_girl_part_01_p": "3ab5525ffa708df0db21180cfbdb71843062e062989d34ef4cba49c050c79efb",
+    "modern_girl_part_01_w": "bd846b9f19d082a341a2afce9efe401cae359867b74bf8c0785359dd0857e092",
+    "modern_girl_part_01_f": "40f46cf73b6d8592542f53525c6427dccb76f8a8d59fc401a7852be883d7b98b",
+    "modern_girl_part_02_p": "40860042ef83e5bbb760895502ca620b706b30b2436409d66d7b49edef3a6636",
+    "modern_girl_part_02_w": "5d5cef15bc2e9206afec125594c157f05abc4df0c29525c56317683344b05181",
+    "modern_girl_part_02_f": "fa0e54755c9fc67697dedd3a6663f0b3748a19600cbf19244344758b5704915d",
+    "modern_girl_part_03_p": "b5baeef33885b2a0b3554226194e5cac4b67a4ffe1357ce45448a0a733c92188",
+    "modern_girl_part_03_w": "c7f2a63576f05439af4e70f4b81c66d396adc7c2d1b84bed09f27a2e687c969e",
+    "modern_girl_part_03_f": "6e658a243ce9c24debdf36519550850d86462b4d4881fb4185cb6baf172a857f",
+    "modern_girl_part_04_p": "29388d0abb8218c4dca65e8f8ed555efeadaea8e999881b1150c8492dd27b92a",
+    "modern_girl_part_04_w": "7db750611cc9d3bf32553b0a5a9cbd6335a79d15f8803079d6e4fc82dc8e5336",
+    "modern_girl_part_04_f": "dc9363c31cad01d44318418435b81046876bf7e386a1b756fb6c5b39d1d5efa1",
+    "modern_girl_part_05_p": "4799b6b3af7967e93c0eec06de8f117e1d4842aa70fdfd08d96221a95986b725",
+    "modern_girl_part_05_w": "ac0cb636203c9d6a7993fc7fba7deb524ce6bc8d0e1dff631a514aa67e4180d3",
+    "modern_girl_part_05_f": "f2040ec914288860469c26c98e74888bc9bdbb217841ad7f04897e36d3b3b348"
+  },
+  "final_mesh_array_sha256": {
+    "0": {
+      "modern_girl_part_00": {
+        "pos": "86f6245ba56a58d515a7a4e9a15d6a1113e25c43631c400f010b8816371b70b4",
+        "uv": "f86d6c761805728132c51b995ff7a25146ce12c1f38c3b735f1c67502cb7f221",
+        "idx": "a75dbe1edb335f0cd48ad1bd2715056efed117b9c384024c1b440f87a9f50b50",
+        "bi": "7af1eb39b641339a22e45705a1acbacdffdec15a2b1d218344a0b5314b9483e6",
+        "bw": "b87fe0d72982cf79e6314c86195a5b4d11e11b7e502f82f490f3d84f328b884b"
+      },
+      "modern_girl_part_01": {
+        "pos": "3fd46ee341012a5cdfb4ee0d8c07c82c6f5f75e6e0c4bec885af2f6e2abfbc51",
+        "uv": "93de1e59db3a10985970fedeacf70e2c292cc74a0ff20bd08ed1aa28150e8cb3",
+        "idx": "e4112128b21cf17c01a208235d890c0caf3b65db1db7c491df88103f8b500856",
+        "bi": "f7b3089365a9c84d977874e71824baa38802f60e7d62426f81a40d25bb3fc1b6",
+        "bw": "de09f9284cf6c1daeff4556a0fe733ab180bacbe9b34a99fc75b07f81492983b"
+      },
+      "modern_girl_part_02": {
+        "pos": "908bc1ec0c7725f5be241e4091b6975bc6f6ffa165586701c2a74fa63ccf7fb3",
+        "uv": "1bba9f88577bf72f7c58abe9c036a40762739cf4387127f5c51f80e6ce7a5392",
+        "idx": "3aec3bd5fd544077aef69b99d3a99e70389df6fc34ac85193e8c3b3aa0a2048f",
+        "bi": "089242d8ec64edbe6296dea6e337e557de8004759b7adc5ab29f75472744c64b",
+        "bw": "623b0ca3326f514f63087a004a2cee67ac48c08fc48c97ce66921e7ed81b17e8"
+      },
+      "modern_girl_part_03": {
+        "pos": "6a7b254dd45a77526c91ef9c7803310d777ef95b1777e25c3083a97e6dbbc3ba",
+        "uv": "6f1b33a5e146ceab5e94ddef6995f2c3d322297fb8da6896c951ab3f5a72d62b",
+        "idx": "3f1f212a03592b2dc52e4764a2acfc3b81b8c5c25c9564f994d8c5b223ca829c",
+        "bi": "66a569cedffce6e2fd1f5338d966e3e9d3625b8c4231afaa7d8f8ec97ef62d97",
+        "bw": "0f5e2e3b3efe3efd571d53936596dcffaa64e85e798215a925ba57121c6e1174"
+      },
+      "modern_girl_part_04": {
+        "pos": "189ae57a686e9ec285dcbd651af3308bc3dca93992b8f10059e6cc8c8ef2ad3e",
+        "uv": "148ad9d01e7390b7ec5eb57ec23ce94ad0c0774ad38048f20c94336691d954a8",
+        "idx": "ff4e2621998f93163caad7bf27497e0c35a486d2cc488973c4a0e31d6debf851",
+        "bi": "0f3195f129b85840890b259a34c0331fb23553fb6abf65f6536f79e8895e7663",
+        "bw": "bbf7fbd8db3f42d69499242eaabc46850b95bab22754b726573914d332c9ac8c"
+      },
+      "modern_girl_part_05": {
+        "pos": "7d48b5fa74125eec197e404fadbccf82ff2f83f131f299fcb678ed8c85c55b40",
+        "uv": "f9ac9d35fd630aa033ea2c8cfb9406469c34d1e6665e59ad1ba6dcbf5377777e",
+        "idx": "7ef2fbf45ae8c92e3b8acfa7d515263a8338574324974625e92193c18f47d30f",
+        "bi": "2708e8df295c3f2219ad844f301864aa57fa82ebd09fe4f9a982f373573d63ed",
+        "bw": "1b9a9c22c1769d0de6fcc768958c3678e38a7adf234e0c606b0028dabc6fc235"
+      },
+      "modern_girl_hidden": {
+        "pos": "a8d2e5a99698b48be8fc29a79db5976321840542c25a9c16070219e6800ea4a9",
+        "uv": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+        "idx": "3273ebe207a8ed9b56ef512da5674ad94ccb0e51e3e9a11c2aee314c19183fd3",
+        "bi": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb",
+        "bw": "d349d24f97678f2f35d766033c4349492e752cb2e9475b78dad72e2bd4f6c6fa"
+      }
+    },
+    "1": {
+      "modern_girl_part_00.lod1": {
+        "pos": "6379319bee0ad5f6726a2a8e8ecd9845ce25b36bf8f8e412b9a17728ee799b2a",
+        "uv": "36a3b066b65fc7266b24fc601f6c2116710c2adfdcac5321cb4057acdcdcb3a5",
+        "idx": "276b60623319e6f5b3736534fe236c41c3123d98416da3480b1dbdd18f11a304",
+        "bi": "94db68704248c3132c56563cae8b8df825eeac1d9f0675cefb63809f429eed79",
+        "bw": "c68a51495aee1fa8ee6253acb91245ffc9c383d1c783a93004e52265a4253b69"
+      },
+      "modern_girl_part_01.lod1": {
+        "pos": "c8ef7c0ebe63322ed1b2cc8e973ad1095824329dd131f5ed7dc0d6b3302bb617",
+        "uv": "00e341af3d4c5b8d802954ed42c626fbb98143ca345a45cc6c2c8bdc27435ca5",
+        "idx": "117d93457c5905c835cfc66738b2b1fcd118244cd0e48a1438da174030f2d600",
+        "bi": "ba12c917952cd6da264e15b4f5c42f3d6debbc3b7bd8c46977152f6044ac6f2e",
+        "bw": "665c05d04f8c48b87db51ebcda99febfd6f2b4a090e5175994234e626fbb52f2"
+      },
+      "modern_girl_part_02.lod1": {
+        "pos": "00fff1d81fb953b1b52bc7a570cfccb2a09fb224e517b624a705f8cca09d7e1b",
+        "uv": "3223a6ede99b7b8a45779c1c66a4bfce091f6b4c73191b705c403eb10cc28cc5",
+        "idx": "1201732314500eafe65e138f06eaaf807f3f85faa01a3e0c40a51eed053705d0",
+        "bi": "5538fa467f91d9bd94bdec8fa08e813f5c46dd9c2b0e62d06152b4a8e79b88ff",
+        "bw": "810863d82dccc98f98010191fc9e06586b76001ab241f0b477b0bdb843607bac"
+      },
+      "modern_girl_part_03.lod1": {
+        "pos": "4b64a5a29176691b9fab4f4a7aca3002fe5f875055fe72dca8f14857d323425e",
+        "uv": "7d234fd5b30cf52bc732ab279ec120dab74fc131be21e59bf5bcdd6d0063eb08",
+        "idx": "7572288656ffe3a318b5a7518f30fd5d43fff1a08e0242ce3fb13784b38ffa12",
+        "bi": "a54a2d220d3789bad9b6cfb9202f178ff7e5864c2fdf8be2a638750b042a5d79",
+        "bw": "57aa0fcb97116c011d727043b587d83b91c86d714d8f4f9127ff39fe1b04dfdb"
+      },
+      "modern_girl_part_04.lod1": {
+        "pos": "b49459044ee023eb9605e032fdfe6d4ad47e616035b66bf743381dbd027f97d5",
+        "uv": "18ef8dcb6d915c7e7648918c2742656f61b2e3214cea2e9298e0f87a64687d09",
+        "idx": "a3851982aebfceecf86d9f74fac39fb2e9378493e166f440e0647a9633052f2e",
+        "bi": "d08fa9c2ab1fe9cd6773c5d3170712bdb9963313ddbf3113616a0f5febf9f624",
+        "bw": "1432bd3007828289dcac856ff2f7aace3ab8004bd48d19c67e470feeb23090f6"
+      },
+      "modern_girl_part_05.lod1": {
+        "pos": "fca77bf18ae3fd4d94503fc72870ecf4bf9510164b5c4eae6538dfe3109c53e6",
+        "uv": "215b3f2f0b14d611ed5f3ac8fcbee76d4bdf09342e54ece23effbd8b3c79c775",
+        "idx": "de73c05f3d8067476f6da6a57201fa1cd11d82f2cb1c45696529398410812136",
+        "bi": "c1de71c23fae2309d3ab27bedc4b760402c3616f928a5323facd77e8615a0b22",
+        "bw": "66bf77a8d09898c498bc5f908259bacfe4977135e9e95419758cd7bfecb5b99a"
+      }
+    },
+    "2": {
+      "modern_girl_part_00.lod2": {
+        "pos": "da289d4b4e9ee727b4cb51a9c675971d69caef55aae808c510b7e8ef02b792d3",
+        "uv": "0567b739f4d7fd7efec4ac2c2921eec951ac6e4d2d51be02ba74ab37fe40ffe2",
+        "idx": "6f300c4d023f2653f47ffd7943bb7b3e276122a890fe7db9e9fe02389b9b5a22",
+        "bi": "88ed754a79d7cc7632dc37c572e3746599e3369bce262148f445f21b7c17b0dd",
+        "bw": "54bbe2dad6262f4150201c9b2addc07f5e59e547a9e7782fa373ca5f21ed1393"
+      },
+      "modern_girl_part_01.lod2": {
+        "pos": "c8ef7c0ebe63322ed1b2cc8e973ad1095824329dd131f5ed7dc0d6b3302bb617",
+        "uv": "00e341af3d4c5b8d802954ed42c626fbb98143ca345a45cc6c2c8bdc27435ca5",
+        "idx": "117d93457c5905c835cfc66738b2b1fcd118244cd0e48a1438da174030f2d600",
+        "bi": "ba12c917952cd6da264e15b4f5c42f3d6debbc3b7bd8c46977152f6044ac6f2e",
+        "bw": "665c05d04f8c48b87db51ebcda99febfd6f2b4a090e5175994234e626fbb52f2"
+      },
+      "modern_girl_part_02.lod2": {
+        "pos": "be81951a5237ba7702b2044a6708ebd8867bdb095d9bfa47ef8cb22e88b4e831",
+        "uv": "7564dc0df4364da28ea2274635066568a1912b4873375bda72d2f26ec09013f2",
+        "idx": "0243e6cbd1bd23e00bf0c0e812cb22ae7fdadceb7930d4c8ad5f42c3b75bd7b7",
+        "bi": "e7972f49e082f042b1fe86e18b3bae2eca934faf9880690db3e0523f0f824a62",
+        "bw": "b5308d2b6c8198ea757cc47d88f8ae3390635a540fa2eb8a6a031ef79fa3969c"
+      },
+      "modern_girl_part_03.lod2": {
+        "pos": "9eb3185fa360fd836ab72fbad74a5a93519df32e3b0a705a61899139fb2dd824",
+        "uv": "6afa064a4fa8cac44ee8340393f7e5ea12c87ef440b4bc44f120e2372ea1746a",
+        "idx": "992578cbd1ccd814f88f04f027a46e23bff455105aa123a4ab03fa9313568c23",
+        "bi": "34457ced5a21a2789bacb805114e866d8ba542aa38035c3d839645df96ce89bf",
+        "bw": "45d460be858a819c4a4305411b3199821b46dfe4fd98440055b264634ad9a5a5"
+      },
+      "modern_girl_part_04.lod2": {
+        "pos": "4bf7851bac42d7f8657e96a324c2e56f54bb80e8db5eafe1b25b406c894dd300",
+        "uv": "c500e5d38ae8b859338cf79bc91a7471dca75851881126267a2adcb8066cf1f4",
+        "idx": "a5826b067ca80395990ae0d9842b698f74096815bf927d8aee82fdb421cfe5d5",
+        "bi": "9ab2ac5cfe89822bd23a0cbbbf7fe3ad92030401c81f1bd16437e770b4d94491",
+        "bw": "dac2b183bacc75208392c20d980585cc12538cdb6c25c303cabe4a3c4da6b395"
+      },
+      "modern_girl_part_05.lod2": {
+        "pos": "f77bda932328cd1cd0d7ac9263895ad68a337500cf24df4a3bc9a6f0f46ecaf2",
+        "uv": "bc394f92b4c344c527a1fe1caca1404fa160638b1de52603e619f44351210256",
+        "idx": "260fa458f28134088182b1daef071d3e94c9b84145e24bd02b1c28430789a40e",
+        "bi": "0592041a82f48f0b8f1eab6ed02c8014222bbeb0febaa4ca078ebb41791daa2d",
+        "bw": "acd5c2662ec88fbffa2cc8db8366b89bfa01874484142df3450ead4643ce93a3"
+      }
+    },
+    "3": {
+      "modern_girl_part_00.lod3": {
+        "pos": "7c767a54d0a7f0144f19332c2e704df561e03e8068112f599586513cbb4bb31e",
+        "uv": "eb15e1a5d250025f7e3842a28bb39d446477f2f2e93fabc165fedefddd6105e4",
+        "idx": "7c793dad476324b93942fbbde3ed4216745a9ee605f65e216285a9d210ec7531",
+        "bi": "d2fa54dde2861fc1108f6748c608348be7cf07861c2075b74a550439e3ddde5e",
+        "bw": "0dc5150179af593e62ab9f47160c10500fccd6dc6471771c239c364f8e2d35d9"
+      },
+      "modern_girl_part_01.lod3": {
+        "pos": "c8ef7c0ebe63322ed1b2cc8e973ad1095824329dd131f5ed7dc0d6b3302bb617",
+        "uv": "00e341af3d4c5b8d802954ed42c626fbb98143ca345a45cc6c2c8bdc27435ca5",
+        "idx": "117d93457c5905c835cfc66738b2b1fcd118244cd0e48a1438da174030f2d600",
+        "bi": "ba12c917952cd6da264e15b4f5c42f3d6debbc3b7bd8c46977152f6044ac6f2e",
+        "bw": "665c05d04f8c48b87db51ebcda99febfd6f2b4a090e5175994234e626fbb52f2"
+      },
+      "modern_girl_part_02.lod3": {
+        "pos": "309f136fa0dcd16cd0c62cbcd3313cc87018281a830accc03aa21d49fde2ac02",
+        "uv": "cf0ee7793634209a4e046c9557c23a1d950a91887c4b5e6c7894d1abe1eb1d85",
+        "idx": "42245e8a4f25378a54df41173d7e88e774a23a37a3349214375b78d36b14b081",
+        "bi": "344b0d68a8b11e98542330f1a038926c8073f70a05a45df24195e79edcc644d7",
+        "bw": "d7e364120692722d5ed80a94571d6a87dfccb8067bbbf74efa837ac27cf8c0e6"
+      },
+      "modern_girl_part_03.lod3": {
+        "pos": "823fc5997dcd3782e4efcf756fa998a04facfed10bf579b32527a68a0cda0c13",
+        "uv": "4b77764e44d3ba9a4d33d5354db6311d13e2d8dc7cebbf759c393cb360ddaba8",
+        "idx": "e8027ac676f33e4263036532763db493b2e51c0784500f1c8a22ae51a3723d46",
+        "bi": "a956941d2b96270d015f226cf605b9f0b0fdb9fbe2aa11bd0382c759348864e0",
+        "bw": "d4d3e8a421556a1a628ee761129638e30f49d9e84fd7e2b01ffce4faf7d3c7ef"
+      },
+      "modern_girl_part_04.lod3": {
+        "pos": "5b8fafd56bca9ed92b4bb0571e98229a32123f4eb788d2dd7e04411f1fcd84f5",
+        "uv": "0b52d11eea698c346b62272c00bfd4a664d1e16e7a7b99949ba5c9b13266e802",
+        "idx": "43960c7a33e00eaa12dd6d1a064a793b5d52f754ccb6c01a0559bc9885f3c32e",
+        "bi": "acc6c11e8120b5db601769f008a3188223052869132ff5234d27494308a1e6a7",
+        "bw": "7cd769df5d212d8bc359aa4d10a3bb64fe5c674b679658a58499871ec2e4388a"
+      },
+      "modern_girl_part_05.lod3": {
+        "pos": "234ffaf455d0bf48e8ec3e64c64c35d5cae56d4a45e69730833351f10928282f",
+        "uv": "7cb61cf389d04d73f4196daabbfb3f70c4fa974cd9061515c8142d3b62a4dd01",
+        "idx": "22da75c2bb1254c35981d2b21f1329ec5f01e895cbd0b8fb2d5c53ab26084028",
+        "bi": "5347cedbd4e39321b940ab39874bf5c24eec5328e6c474f90ed917e73cbcb489",
+        "bw": "42187ef044f483f8ebff780ec99fbdec67cee41380bc13b322c8e3175a24c70d"
+      }
+    }
+  }
+}

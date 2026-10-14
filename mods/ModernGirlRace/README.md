@@ -4,7 +4,7 @@
 
 ## 使用
 
-将 [Mod 包](dist/ModernGirlRace_Mod.zip) 解压到游戏 `Modules`，启用 Modern Girl Race，放在 Native、SandBoxCore、Sandbox 之后。首次交付按工作区约定安装到 `D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules/ModernGirlRace`。
+将 [Mod 包](dist/ModernGirlRace_Mod.zip) 解压到游戏 `Modules`，启用 Modern Girl Race，放在 Native、SandBoxCore、Sandbox 之后。工作区安装目标为 `D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules/ModernGirlRace`。
 
 本包新增测试兵种 `modern_girl_test`（现代少女），不替换原版兵种，不改变原版招募或升级树。可在启用作弊模式和开发者控制台的测试存档中使用：
 
@@ -19,7 +19,7 @@ campaign.give_troops modern_girl_test 10
 ## 外观与范围
 
 - 保留原六部位的固定脸、发髻、衣服、身体比例、UV 和颜色贴图；源归一化模型统一旋转和缩放，含发髻静态总高约 1.649 米。
-- 当前模型专用 28 骨绑定骨架，沿用原生动作语义与层级。双手包含在身体 MetaMesh 中，保持源手型，未制作手指握持形变。
+- 当前模型专用 28 骨绑定骨架，沿用原生动作语义与层级；上臂、前臂及中间扭转骨的绑定方向按本模型骨段对齐。双手包含在身体 MetaMesh 中，保持源手型，未制作手指握持形变。
 - 四级 LOD，保护跨部位共享切口与相同权重。LOD0 排除源头部两片零面积三角形，其他部位不作形体拉伸。
 - 人物预览运行 DLL 处理本种族的 CharacterTableau、BasicCharacterTableau 和创建角色页面 BodyGeneratorView 的初次显示与人物重建；保留位置、缩放及两条动画通道进度。日志保存在文档目录 `Mount and Blade II Bannerlord/ModernGirlRace`。
 
@@ -41,4 +41,4 @@ campaign.give_troops modern_girl_test 10
 
 重建只生成并检查本模块；打包与安装使用工作区入口。源 ZIP 保持 `source/` 与 `tex/` 相邻，附带共用助手；脱离工作区后应将 `workspace_tools/` 恢复为工作区根的 `tools/`，并调整本机外部依赖路径。
 
-[离线检查报告](reports/release_validation.json)、[源比例与 UV 检查](reports/preservation_validation.json)、[预览组件范围检查](reports/ui_scope_validation.json)、[创建页面修复检查](reports/ui_creation_fix_validation.json)、[更新日志](CHANGELOG.md)。
+[离线检查报告](reports/release_validation.json)、[源比例与 UV 检查](reports/preservation_validation.json)、[手臂绑定与保留数据检查](reports/arm_binding_validation.json)、[预览组件范围检查](reports/ui_scope_validation.json)、[v0.1.1 创建页面适配历史检查](reports/ui_creation_fix_validation.json)、[更新日志](CHANGELOG.md)。

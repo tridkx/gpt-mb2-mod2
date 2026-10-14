@@ -1,0 +1,130 @@
+{
+  "status": "pass",
+  "version": "v0.1.2",
+  "date": "2026-10-14",
+  "package_sha256": "fdb55e758a8e680ecd3b103eb242b0d1239280f027c011812d6e5f021e46f748",
+  "baseline_package_sha256": "a5cbc99de63c44dc51f6b4f2092b47c1007432a84241d244cf588383bdffca79",
+  "axes": [
+    {
+      "bone": "l_upperarm_twist",
+      "before_degrees": 37.04669121484548,
+      "after_degrees": 8.537736462515939e-07
+    },
+    {
+      "bone": "l_upperarm_twist1",
+      "before_degrees": 37.04669121484548,
+      "after_degrees": 0.0
+    },
+    {
+      "bone": "l_foretwist",
+      "before_degrees": 44.8617563317792,
+      "after_degrees": 8.537736462515939e-07
+    },
+    {
+      "bone": "l_foretwist1",
+      "before_degrees": 44.8617563317792,
+      "after_degrees": 8.537736462515939e-07
+    },
+    {
+      "bone": "r_upperarm_twist",
+      "before_degrees": 37.046699169589886,
+      "after_degrees": 0.0
+    },
+    {
+      "bone": "r_upperarm_twist1",
+      "before_degrees": 37.046699169589886,
+      "after_degrees": 0.0
+    },
+    {
+      "bone": "r_foretwist",
+      "before_degrees": 44.86176121420818,
+      "after_degrees": 0.0
+    },
+    {
+      "bone": "r_foretwist1",
+      "before_degrees": 44.86176121420818,
+      "after_degrees": 0.0
+    }
+  ],
+  "joints_and_non_arm_bind_frames_preserved": true,
+  "source_geometry_preserved": true,
+  "weight_change_scope": "Shirt shoulder transfer band and shared sleeve attachment points",
+  "final_geometry_uv_indices_preserved_all_lods": true,
+  "input_textures_runtime_preserved": true,
+  "motions": [
+    {
+      "label": "idle",
+      "asset": "anim_inventory_idle",
+      "frames": 1267,
+      "before_min_wrist_span_m": 0.0030910496830437086,
+      "after_min_wrist_span_m": 0.5391043043974537
+    },
+    {
+      "label": "run",
+      "asset": "anim_run_forward_unarmed",
+      "frames": 25,
+      "before_min_wrist_span_m": 0.05010778080372011,
+      "after_min_wrist_span_m": 0.39970692942253166
+    },
+    {
+      "label": "bow",
+      "asset": "anim_bow",
+      "frames": 150,
+      "before_min_wrist_span_m": 0.20112166213711163,
+      "after_min_wrist_span_m": 0.12906610522109513
+    },
+    {
+      "label": "riding",
+      "asset": "anim_rider_gallop_bow",
+      "frames": 20,
+      "before_min_wrist_span_m": 0.35528554397933,
+      "after_min_wrist_span_m": 0.18372394127042507
+    },
+    {
+      "label": "slash",
+      "asset": "anim_dagger_slashleft_1h_balance",
+      "frames": 150,
+      "before_min_wrist_span_m": 0.21865224275830755,
+      "after_min_wrist_span_m": 0.44031510281625885
+    },
+    {
+      "label": "facegen",
+      "asset": "anim_female_idle_long",
+      "frames": 2272,
+      "before_min_wrist_span_m": 0.0319870872358248,
+      "after_min_wrist_span_m": 0.4667761461284817
+    },
+    {
+      "label": "stand_unarmed",
+      "asset": "anim_stand_unarmed",
+      "frames": 810,
+      "before_min_wrist_span_m": 0.01764600898890062,
+      "after_min_wrist_span_m": 0.2746193199292412
+    },
+    {
+      "label": "stand_1h",
+      "asset": "anim_onehanded_guard_idles",
+      "frames": 940,
+      "before_min_wrist_span_m": 0.0801735520576932,
+      "after_min_wrist_span_m": 0.4255725166015791
+    },
+    {
+      "label": "stand_2h",
+      "asset": "stand_right_twohanded",
+      "frames": 155,
+      "before_min_wrist_span_m": 0.23164910208355835,
+      "after_min_wrist_span_m": 0.1856114359076992
+    }
+  ],
+  "game_retest_pending": true,
+  "scope": "Final TPAC bind axes and native animation diagnostics; wrist span does not certify absence of intersections, IK or weapon grip.",
+  "changed_source_weight_vertices": {
+    "modern_girl_part_00_w": 0,
+    "modern_girl_part_01_w": 0,
+    "modern_girl_part_02_w": 3038,
+    "modern_girl_part_03_w": 0,
+    "modern_girl_part_04_w": 0,
+    "modern_girl_part_05_w": 0
+  },
+  "non_shirt_final_weights_preserved_all_lods": true
+}

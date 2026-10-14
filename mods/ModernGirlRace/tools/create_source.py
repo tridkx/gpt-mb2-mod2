@@ -8,6 +8,20 @@ sys.path.insert(0,str(W/'tools/asset_helpers/previewer'))
 from baker.skeleton import parse_skeljson
 cfg=json.loads((R/'tools/model_config.json').read_text());raw=json.loads((R/'reports/human_skeleton.json').read_text());rig=parse_skeljson(raw)
 S=np.array(cfg['landmarks_m']);world=rig['restWorld'].copy();world[:,:3,3]=S
+alignment=[]
+if cfg.get('align_arm_bind_axes'):
+    # Transport each native arm frame to this model's shoulder/elbow/wrist axis.
+    # The shortest rotation preserves roll and leaves mesh, joints and weights intact.
+    for i,start,end in [(15,15,17),(16,15,17),(17,17,19),(18,17,19),
+                        (22,22,24),(23,22,24),(24,24,26),(25,24,26)]:
+        a=world[i,:3,0].copy();a/=np.linalg.norm(a)
+        v=S[end]-S[start];v/=np.linalg.norm(v)
+        cross=np.cross(a,v);c=float(a@v);assert c>-.99
+        K=np.array([[0,-cross[2],cross[1]],[cross[2],0,-cross[0]],[-cross[1],cross[0],0]])
+        Q=np.eye(3)+K+K@K/(1+c)
+        world[i,:3,:3]=Q@world[i,:3,:3]
+        alignment.append(dict(bone=rig['names'][i],rotation_degrees=float(np.degrees(np.arccos(np.clip(c,-1,1))))))
+(R/'reports/arm_bind_alignment.json').write_text(json.dumps(dict(enabled=bool(cfg.get('align_arm_bind_axes')),bones=alignment,joint_positions_unchanged=True),indent=2))
 local=np.array([world[i] if p<0 else np.linalg.inv(world[p])@world[i] for i,p in enumerate(rig['parent'])])
 bones=[dict(name=b['name'],parent=b['parent'],rest=local[i].T.reshape(-1).tolist()) for i,b in enumerate(raw['bones'])]
 (R/'build/skeleton_spec.json').write_text(json.dumps(bones,indent=2))
@@ -49,7 +63,7 @@ for oi,o in enumerate(objects):
     elif oi in [2,3,4]:
         for sign,ids,hand in [(-1,[14,15,17,19],19),(1,[21,22,24,26],26)]:
             ix=np.where(q[:,0]*sign>=0)[0]
-            a=np.ones(len(ix)) if oi in [3,4] else smooth(.075,.115,abs(q[ix,0]))*smooth(.685,.73,z[ix])
+            a=np.ones(len(ix)) if oi in [3,4] else smooth(.06,.14,abs(q[ix,0]))*smooth(.685,.73,z[ix])
             arm=np.zeros((len(ix),28));elbow=1-smooth(.59,.67,z[ix]);h=1-smooth(.502,.54,z[ix])
             arm[:,ids[1]]=1-elbow;arm[:,ids[2]]=elbow*(1-h);arm[:,hand]=elbow*h
             w[ix]=w[ix]*(1-a[:,None])+arm*a[:,None]
@@ -67,8 +81,11 @@ for o in objects[3:5]:
 arm_p=np.array(arm_p);arm_w=np.array(arm_w);tree=KDTree(len(arm_p))
 for i,p in enumerate(arm_p):tree.insert(p,i)
 tree.balance();upper=objects[2];p=positions[upper.name];w=weights[upper.name]
+# Keep the waist attachment on its original shared lower-body weights.
+waist_points={tuple(q) for q in np.round(positions[objects[5].name],5)}
 for i,co in enumerate(p):
-    _,nearest,dist=tree.find(co);a=1-smooth(.008,.065,dist)
+    if tuple(np.round(co,5)) in waist_points:continue
+    _,nearest,dist=tree.find(co);a=1-smooth(.008,.10,dist)
     w[i]=w[i]*(1-a)+arm_w[nearest]*a
 weights[upper.name]=w
 # Matching source cut coordinates share one weight vector across all pieces.
