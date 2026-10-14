@@ -1,8 +1,16 @@
 {
   "version": "v0.1.0",
-  "status": "pending_user_test",
+  "status": "user_accepted",
   "game_launched_by_assistant": false,
-  "required_scenes": [
+  "cloth_scope": [
+    "hat_trail",
+    "back_ribbons"
+  ],
+  "skirt_cloth_enabled": false,
+  "accepted_date": "2026-10-14",
+  "user_feedback": "可以，验收通过。",
+  "scope": "Overall user acceptance; individual scenes, actions and LOD distances were not separately reported.",
+  "scene_checklist_not_individually_confirmed": [
     "party",
     "encyclopedia",
     "inventory",
@@ -13,9 +21,5 @@
     "riding",
     "cloth_lod_distances"
   ],
-  "cloth_scope": [
-    "hat_trail",
-    "back_ribbons"
-  ],
-  "skirt_cloth_enabled": false
+  "package_sha256": "aea647086ad4359e0ce81eea5f6ccb99d2c34685241a37e7b208f62a20588e3d"
 }
