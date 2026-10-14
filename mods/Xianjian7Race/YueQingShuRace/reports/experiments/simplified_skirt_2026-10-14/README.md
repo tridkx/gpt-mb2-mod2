@@ -1,12 +1,12 @@
 # 简化裙摆代理试验 — 2026-10-14
 
-适用范围：YueQingShuRace v0.3.3 / Native v1.4.8，以现有直接模拟资源为基线。试验没有修改运行模块、正式源文件或已安装模块，没有启动游戏，也没有发布新版本。
+适用范围：YueQingShuRace v0.3.3 / Native v1.4.8，以现有直接模拟资源为基线。正式工作区模块和正式源文件保持原样。按用户明确要求，第三轮候选已仅替换游戏中本模块的 `AssetPackages/yqs.tpac`，供用户实机查看；没有启动游戏或发布新版本。
 
 ## 结果与边界
 
 已生成原生映射模拟候选，四级 LOD 共 18 个渲染网格映射到一个独立模拟资源。原始可见网格的位置、UV、法线、切线、骨权重、索引、材质、贴图和骨架保持；仅原编译器额外固定的两个 LOD3 顶点取消映射。非裙摆部件作为独立连接片保留在代理中，未与裙摆建立跨部件约束；这不等于其游戏动态已经证明与直接模拟相同。
 
-**候选未通过外观与映射检查，未安装。** 包格式与静态重建通过不能作为可交付结论。正式重建仍使用直接模拟，正式参数、版本和游戏验收状态保持原样。
+**候选未通过外观与映射检查，已按用户要求安装作游戏试验。** 包格式与静态重建通过不能作为可交付结论。正式重建仍使用直接模拟，正式参数、版本和游戏验收状态保持原样。实际安装资源与正式交付包不同，安装哈希、旧资源备份和范围见[测试安装记录](test_installation.json)。
 
 | 候选 | 裙摆代理 | 检查结果 |
 | --- | --- | --- |
@@ -40,9 +40,21 @@
 
 第三条命令对本候选应返回失败。脚本输出位于本模组的 `build/`，不会写游戏模块。实验参数仅在 `tools/skirt_proxy_config.json` 维护；构建包装器临时提供共用映射器所需配置，并在结束或报错后恢复正式 `model_config.json`。不能与其他正在修改该配置的构建并行执行。
 
-实验源文件为 `source/YueQingShuRace_SkirtProxy_Experimental.blend` 与同名 FBX，包含不可见的 `yqs_cloth_proxy`，保持 `source/`、`tex/` 相邻。正式 `YueQingShuRace_Rigged.*` 未被替换。候选 TPAC 缓存在 `build/mapped_candidate.tpac`，保留副本在独立实验归档；不纳入正式 Mod ZIP，也不改变正式安装入口。
+实验源文件为 `source/YueQingShuRace_SkirtProxy_Experimental.blend` 与同名 FBX，包含不可见的 `yqs_cloth_proxy`，保持 `source/`、`tex/` 相邻。正式 `YueQingShuRace_Rigged.*` 未被替换。候选 TPAC 缓存在 `build/mapped_candidate.tpac`，保留副本在独立实验归档；不纳入正式 Mod ZIP，也不改变正式安装入口。重新安装正式包会覆盖此次测试资源。
 
 独立归档为 `dist/YueQingShuRace_SkirtProxy_Experiment_2026-10-14.zip`，保存候选资源、实验 Blend/FBX、相邻贴图、参数、脚本及检查记录。它是未验收的工程试验快照，不能直接作为游戏模块安装；复现仍依赖本工作区的正常重建缓存和共用工具。
+
+## 测试安装与回退
+
+当前游戏安装的是第三轮主裙面简化候选，裙摆分区 964 顶点。启动器仍显示 `Yue Qingshu Race`、v0.3.3；没有给未验收试验创建正式发布版本。其他安装文件哈希保持，旧 TPAC 已单独备份，正式交付 ZIP 保留。用户游戏反馈尚未记录。
+
+退出游戏及启动器后，在工作区根运行下面的命令回退安装前的资源：
+
+```powershell
+& mods/Xianjian7Race/YueQingShuRace/tools/install_skirt_proxy_test.ps1 -Restore
+```
+
+回退脚本先验证当前候选和备份哈希，不结束游戏进程，不修改其他模块。
 
 ## 下一步判断
 
