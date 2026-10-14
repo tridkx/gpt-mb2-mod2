@@ -1,0 +1,112 @@
+{
+  "candidate_sha256": "b35a392e834ba90105403d8e759c066f527cba230d1d14b86a1437bcc6cab7db",
+  "status": "needs_visual_review",
+  "motions": [
+    {
+      "motion": "ui_neutral_female",
+      "frames": 60,
+      "worst_source_frame": 2,
+      "maxima": {
+        "vertex_penetration_m": 0.012346486290052357,
+        "interior_penetration_m": 0.013850562591090498,
+        "fixed_penetration_m": 0.007226970686066241,
+        "max_stretch_strain": 0.6029935669018911,
+        "max_stretch_error_m": 0.010384782337543346,
+        "p99_stretch_strain": 0.2506309208962456,
+        "travel_exceeded_m": 9.71445146547012e-17,
+        "fixed_drift_m": 0.0,
+        "max_displacement_m": 0.05490196123719219
+      },
+      "scope": "Skirt driver only; final mapping reconstructed at worst contact frame",
+      "source_frame_range": [
+        1,
+        60
+      ],
+      "warmup_frames": 30,
+      "diagnostic_parameters": {
+        "substeps": 2,
+        "iterations": 4,
+        "bend": 0.3,
+        "anchor": 0.8,
+        "damping": 0.92
+      },
+      "fps": 60,
+      "fps_calibrated_to_game": false,
+      "game_solver_used": false,
+      "game_verified": false,
+      "self_collision_supported": false,
+      "interior_collision_projection": false
+    },
+    {
+      "motion": "run",
+      "frames": 25,
+      "worst_source_frame": 13,
+      "maxima": {
+        "vertex_penetration_m": 0.03459554688947586,
+        "interior_penetration_m": 0.05657066383319431,
+        "fixed_penetration_m": 0.007556839039380571,
+        "max_stretch_strain": 3.1284912686615325,
+        "max_stretch_error_m": 0.0751962667114475,
+        "p99_stretch_strain": 0.606292107643759,
+        "travel_exceeded_m": 1.0408340855860843e-16,
+        "fixed_drift_m": 0.0,
+        "max_displacement_m": 0.0549019612371922
+      },
+      "scope": "Skirt driver only; final mapping reconstructed at worst contact frame",
+      "source_frame_range": [
+        1,
+        25
+      ],
+      "warmup_frames": 30,
+      "diagnostic_parameters": {
+        "substeps": 2,
+        "iterations": 4,
+        "bend": 0.3,
+        "anchor": 0.8,
+        "damping": 0.92
+      },
+      "fps": 60,
+      "fps_calibrated_to_game": false,
+      "game_solver_used": false,
+      "game_verified": false,
+      "self_collision_supported": false,
+      "interior_collision_projection": false
+    },
+    {
+      "motion": "riding",
+      "frames": 20,
+      "worst_source_frame": 10,
+      "maxima": {
+        "vertex_penetration_m": 0.04794985816803624,
+        "interior_penetration_m": 0.05349037939870193,
+        "fixed_penetration_m": 0.00859400990273465,
+        "max_stretch_strain": 4.140325028500007,
+        "max_stretch_error_m": 0.09491796418521581,
+        "p99_stretch_strain": 0.9102204572147761,
+        "travel_exceeded_m": 1.1102230246251565e-16,
+        "fixed_drift_m": 0.0,
+        "max_displacement_m": 0.054901961237192244
+      },
+      "scope": "Skirt driver only; final mapping reconstructed at worst contact frame",
+      "source_frame_range": [
+        1,
+        20
+      ],
+      "warmup_frames": 30,
+      "diagnostic_parameters": {
+        "substeps": 2,
+        "iterations": 4,
+        "bend": 0.3,
+        "anchor": 0.8,
+        "damping": 0.92
+      },
+      "fps": 60,
+      "fps_calibrated_to_game": false,
+      "game_solver_used": false,
+      "game_verified": false,
+      "self_collision_supported": false,
+      "interior_collision_projection": false
+    }
+  ],
+  "game_verified": false
+}

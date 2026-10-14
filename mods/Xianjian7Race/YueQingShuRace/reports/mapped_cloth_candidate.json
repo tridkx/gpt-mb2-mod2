@@ -5,19 +5,19 @@
     "guid": "4debd0c6-0256-f9c4-4f85-8aec9cdd5973",
     "metamesh": "yqs_cloth_proxy",
     "lod": 0,
-    "bytes": 862780,
-    "render_vertices": 9925,
-    "simulation_vertices": 9788,
-    "fixed_positions": 810,
-    "boundary_fixed_positions": 764,
-    "active_positions": 8978,
-    "stretch_constraints": 19999,
-    "bend_constraints": 12421,
+    "bytes": 824504,
+    "render_vertices": 9601,
+    "simulation_vertices": 9464,
+    "fixed_positions": 774,
+    "boundary_fixed_positions": 710,
+    "active_positions": 8690,
+    "stretch_constraints": 19050,
+    "bend_constraints": 11527,
     "shear_constraints": 0,
-    "parallel_sets": 18,
-    "dummy_sets": 11,
+    "parallel_sets": 16,
+    "dummy_sets": 10,
     "max_geodesic_anchor_length": 0.6313364557802369,
-    "sha256": "587ba7be0d1c11f66f9e71bb34fce174e5eb42853c73329b6feab8fc6260834c",
+    "sha256": "5f8af599c01b91029dae83421648215a1887701f72470afb4c2a66c55e8ca304",
     "root_fixes": [],
     "solver_pinned_render_vertices": [],
     "path": "D:\\gpt-mb2-mod2\\mods\\Xianjian7Race\\YueQingShuRace\\build\\mapped_proxy_cooked\\4debd0c6-0256-f9c4-4f85-8aec9cdd5973.bin"
@@ -89,19 +89,19 @@
       "mapped_vertices": 1646,
       "shared_skirt_vertices": 1539,
       "rest_reconstruction_max_error_m": 0.00017427719897609734,
-      "negative_offsets": 26,
-      "maximum_absolute_offset_m": 0.08076828718185425,
-      "maximum_barycentric_extrapolation": 0.16982831060886383
+      "negative_offsets": 281,
+      "maximum_absolute_offset_m": 0.09182813763618469,
+      "maximum_barycentric_extrapolation": 0.03980492427945137
     },
     {
       "mesh": "yqs_part_10.lod1",
       "lod": 1,
       "mapped_vertices": 2433,
       "shared_skirt_vertices": 2433,
-      "rest_reconstruction_max_error_m": 0.00017549793077558447,
-      "negative_offsets": 78,
-      "maximum_absolute_offset_m": 0.08076828718185425,
-      "maximum_barycentric_extrapolation": 0.3053446114063263
+      "rest_reconstruction_max_error_m": 4.399200263853084e-08,
+      "negative_offsets": 423,
+      "maximum_absolute_offset_m": 0.09201216697692871,
+      "maximum_barycentric_extrapolation": 0.0
     },
     {
       "mesh": "yqs_part_00.lod3",
@@ -178,20 +178,20 @@
       "lod": 3,
       "mapped_vertices": 590,
       "shared_skirt_vertices": 543,
-      "rest_reconstruction_max_error_m": 0.00017411280685855098,
-      "negative_offsets": 8,
-      "maximum_absolute_offset_m": 0.08004673570394516,
-      "maximum_barycentric_extrapolation": 0.36122408509254456
+      "rest_reconstruction_max_error_m": 0.00013106034704918085,
+      "negative_offsets": 92,
+      "maximum_absolute_offset_m": 0.09229707717895508,
+      "maximum_barycentric_extrapolation": 0.0
     },
     {
       "mesh": "yqs_part_10",
       "lod": 0,
       "mapped_vertices": 3364,
       "shared_skirt_vertices": 3364,
-      "rest_reconstruction_max_error_m": 0.00017988830132509986,
-      "negative_offsets": 90,
-      "maximum_absolute_offset_m": 0.08077189326286316,
-      "maximum_barycentric_extrapolation": 0.2693383991718292
+      "rest_reconstruction_max_error_m": 4.3684070941013064e-08,
+      "negative_offsets": 501,
+      "maximum_absolute_offset_m": 0.09202419221401215,
+      "maximum_barycentric_extrapolation": 0.0
     },
     {
       "mesh": "yqs_part_03.lod3",
@@ -204,7 +204,7 @@
       "maximum_barycentric_extrapolation": 1.2410327196121216
     }
   ],
-  "final_candidate_sha256": "5b134ad0ee42f9fe5fca5e1f8cba82191600583a12e72e881104e0d35408b41a",
+  "final_candidate_sha256": "b35a392e834ba90105403d8e759c066f527cba230d1d14b86a1437bcc6cab7db",
   "game_verified": false,
   "scope": "One shared simulated cage preserves layer offsets; source non-skirt card islands retained; candidate not installed"
 }

@@ -1,8 +1,8 @@
 {
   "status": "pass",
-  "candidate_sha256": "5b134ad0ee42f9fe5fca5e1f8cba82191600583a12e72e881104e0d35408b41a",
+  "candidate_sha256": "b35a392e834ba90105403d8e759c066f527cba230d1d14b86a1437bcc6cab7db",
   "baseline_sha256": "b943664012defcaf1c19a54118d6c4411ca59a142fe2de5aac1a83e386a4028b",
-  "proxy_simulation_vertices": 9788,
+  "proxy_simulation_vertices": 9464,
   "render_mapping_segments": 18,
   "lods": [
     {
@@ -36,7 +36,7 @@
     }
   ],
   "materials_textures_skeleton_identical": true,
-  "rest_reconstruction_max_error_m": 0.00017988830132509986,
+  "rest_reconstruction_max_error_m": 0.00017954851622196884,
   "game_verified": false,
   "scope": "Candidate TPAC reopened; native mapping and cloth roundtrips, ownership, shared reference and full GPU stream preservation"
 }

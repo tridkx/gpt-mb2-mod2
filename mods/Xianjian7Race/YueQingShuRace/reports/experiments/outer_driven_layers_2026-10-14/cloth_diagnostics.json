@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "mod": "YueQingShuRace",
+  "fingerprint": "7526180a95132b8c3f0cb41d0f91ea918108dca2d6f804cde72c182a69a2b283",
+  "generated_at_utc": "2026-10-14T01:11:58.833446+00:00",
+  "inputs": {
+    "mod/build/cloth_probe/mbtool.dll": "7391c3428210ba19ea7f9e1123fc1584a986d4bf618dffdda209e8fe25e92335",
+    "mod/build/cloth_probe/NativeClothProbe.deps.json": "2f6631e12ab2d95519b7e139bb763ec892ce56b0fbc4e919abcf546a501850d7",
+    "mod/build/cloth_probe/NativeClothProbe.dll": "7b8a49fde051490f5a9b15b5108d4469410988ca1e3be958eaff2997a0dbc8ac",
+    "mod/build/cloth_probe/NativeClothProbe.runtimeconfig.json": "256dda2706e1151bb95987b6b5be610bf68d64e058285b19e7e958222fc90414",
+    "mod/module/YueQingShuRace/AssetPackages/yqs.tpac": "b35a392e834ba90105403d8e759c066f527cba230d1d14b86a1437bcc6cab7db",
+    "mod/module/YueQingShuRace/ModuleData/cloth_bodies.xml": "35ff35151440b8f16410a8a912f64185a1b0e69946d45a8e20af0f9652949abe",
+    "mod/reports/final_skeleton.json": "d77b26e4028eda0e93677df5b16ad125234b6761c020037b7ccd902167c517e0",
+    "mod/reports/riding.json": "5227f0661e680ece0a0d1969daf6d5134a9efb869f1eb0d2eb739ad5a35289df",
+    "mod/reports/run.json": "0b16de48f7d565a39a0ed301be6e051282f8d59472dfee615d03c8de14035055",
+    "mod/reports/ui_neutral_female.json": "35bbf06eea34fb3a0689bd589b6d6bde1310701e418967900c6aefc03cddf383",
+    "workspace_tools/cloth_simulator/pipeline.py": "00105bb354c03429a7ae8285dbc2effcaf27023e7d1a6874910530d35eb55111",
+    "workspace_tools/cloth_simulator/run.py": "08b3c7226c8b8d00febe03698365aec710e85db9de03db593ad4a0d6aa0807dd",
+    "workspace_tools/cloth_simulator/solver.py": "d19ddb6769de55179fa482caaf7d1415f623759a1575613a2d3b59dc125828ad",
+    "workspace_tools/cloth_simulator/viewer.html": "07530bf424c6b6da2a73b4a60985411aac61f903988a9208aa2a3012d4818614",
+    "workspace_tools/cloth_simulator/README.md": "ab8da97a69e38332b7f8fd23bec3835164e737f550004dbf38e8aeee9569f8a3",
+    "workspace_tools/project_paths.py": "2f9130e3fb690b2a1a8f939da8eac6051b3ccfae21efb71f914092c4aeb3f9f0",
+    "workspace_tools/cloth_compiler/cloth_payload.py": "aea51035f664b23175d7f300323beceb82fe7b755628408cb61eacc268c205e1",
+    "workspace_tools/cloth_compiler/validation.py": "af39ed056e8f7e1a3b47a23353ab0b67e5122a52a1b661031d437710a26948b7",
+    "workspace_tools/cloth_compiler/NativeClothProbe.cs": "103db1c0bb37fd50719e75718aae17b7f321bc28e3bcc1514d63ba3209a2b464",
+    "workspace_tools/cloth_compiler/NativeClothProbe.csproj": "097771b306c9606c565ccf35830f0bac41c9c864eaab3979b5f8d84670253245",
+    "workspace_tools/asset_helpers/previewer/baker/__init__.py": "7d7e86ba699dcb4cba65aea6a098f50af97462ce01131ec88e3d7431dff6eb3d",
+    "workspace_tools/asset_helpers/previewer/baker/skeleton.py": "3efa27ce001e74f25687d7ae56b27e06dbb8b6bd94f80cddabb237f380eaad8e",
+    "workspace_tools/asset_helpers/previewer/baker/animation.py": "2bd196a1c96752d2b1f1478c6dad5e2672e4e4f53438766b710f9ba6b2024272",
+    "mod/mod.json": "dccfa8aeb61062f678ff9af77d45cff852ec35d6e737055e72f51f5a1a5a9896"
+  },
+  "config": {
+    "enabled": true,
+    "mode": "report",
+    "probe": "build/cloth_probe/NativeClothProbe.dll",
+    "targets": [
+      {
+        "metamesh": "yqs_body",
+        "skeleton": "reports/final_skeleton.json",
+        "capsules": "module/YueQingShuRace/ModuleData/cloth_bodies.xml",
+        "body": "yqs_collision",
+        "lods": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "motions": [
+          {
+            "name": "ui_neutral_female",
+            "path": "reports/ui_neutral_female.json",
+            "fps": 60,
+            "end": 61
+          },
+          {
+            "name": "run",
+            "path": "reports/run.json",
+            "fps": 60
+          },
+          {
+            "name": "riding",
+            "path": "reports/riding.json",
+            "fps": 60
+          }
+        ],
+        "settings": {
+          "warmup": 30,
+          "substeps": 2,
+          "iterations": 4
+        }
+      }
+    ]
+  },
+  "package_sha256": "b35a392e834ba90105403d8e759c066f527cba230d1d14b86a1437bcc6cab7db",
+  "package_relative_path": "module/YueQingShuRace/AssetPackages/yqs.tpac",
+  "game_solver_used": false,
+  "game_verified": false,
+  "coverage": "configured targets, meshes, LODs and motions only",
+  "results": [
+    {
+      "metamesh": "yqs_body",
+      "status": "incomplete",
+      "reason": "mapped cloth is not supported by this direct-cloth diagnostic"
+    }
+  ],
+  "run_directory": "build/cloth_simulator/7526180a9513-7s6ntfr0",
+  "status": "incomplete"
+}
