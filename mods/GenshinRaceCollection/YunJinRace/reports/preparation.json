@@ -1,0 +1,27 @@
+{
+  "vertices": 23207,
+  "source_triangles": 26575,
+  "selected_triangles": 23677,
+  "bones": 557,
+  "morphs": 63,
+  "excluded": [
+    {
+      "material_index": 13,
+      "name": "髪spa+",
+      "triangles": 1320,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    },
+    {
+      "material_index": 14,
+      "name": "辫spa+",
+      "triangles": 1578,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    }
+  ],
+  "ignored_models": [
+    "花枪.pmx"
+  ],
+  "source_model": "input/original/云堇.pmx",
+  "selected_source_height_m": 1.583417171239853,
+  "skirt_cloth_enabled": false
+}

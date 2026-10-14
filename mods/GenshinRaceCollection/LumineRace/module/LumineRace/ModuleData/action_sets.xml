@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<action_sets>
+  <action_set id="as_lumine_warrior" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_warrior" />
+  <action_set id="as_lumine_female_warrior" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_lumine_villager" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_lumine_female_villager" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_lumine_facegen" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_lumine_female_facegen" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_facegen">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_lumine_hideout_bandit" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_hideout_bandit" />
+  <action_set id="as_lumine_female_hideout_bandit" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_hideout_bandit" />
+  <action_set id="as_lumine_villager_in_tavern" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_in_tavern" />
+  <action_set id="as_lumine_female_villager_in_tavern" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_tavern" />
+  <action_set id="as_lumine_warrior_in_tavern" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_tavern" />
+  <action_set id="as_lumine_female_warrior_in_tavern" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_tavern" />
+  <action_set id="as_lumine_villager_in_aserai_tavern" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_in_aserai_tavern" />
+  <action_set id="as_lumine_female_villager_in_aserai_tavern" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_aserai_tavern" />
+  <action_set id="as_lumine_warrior_in_aserai_tavern" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_aserai_tavern" />
+  <action_set id="as_lumine_female_warrior_in_aserai_tavern" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_aserai_tavern" />
+  <action_set id="as_lumine_child" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_child" />
+  <action_set id="as_lumine_female_child" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_child" />
+  <action_set id="as_lumine_map" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_map" />
+  <action_set id="as_lumine_female_map" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_map" />
+  <action_set id="as_lumine_map_with_banner" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_map_with_banner" />
+  <action_set id="as_lumine_female_map_with_banner" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_map_with_banner" />
+  <action_set id="as_lumine_villain" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villain" />
+  <action_set id="as_lumine_female_villain" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villain" />
+  <action_set id="as_lumine_lord" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_lord" />
+  <action_set id="as_lumine_female_lord" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_lord" />
+  <action_set id="as_lumine_seller" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_seller" />
+  <action_set id="as_lumine_female_seller" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_seller" />
+  <action_set id="as_lumine_weaponsmith" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_weaponsmith" />
+  <action_set id="as_lumine_female_weaponsmith" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_weaponsmith" />
+  <action_set id="as_lumine_villager_artisan" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_artisan" />
+  <action_set id="as_lumine_female_villager_artisan" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_artisan" />
+  <action_set id="as_lumine_villager_merchant" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_merchant" />
+  <action_set id="as_lumine_female_villager_merchant" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_merchant" />
+  <action_set id="as_lumine_villager_preacher" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_preacher" />
+  <action_set id="as_lumine_female_villager_preacher" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_preacher" />
+  <action_set id="as_lumine_villager_gangleader" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_gangleader" />
+  <action_set id="as_lumine_female_villager_gangleader" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_gangleader" />
+  <action_set id="as_lumine_villager_ruralnotable" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_ruralnotable" />
+  <action_set id="as_lumine_female_villager_ruralnotable" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_ruralnotable" />
+  <action_set id="as_lumine_gangleader_bodyguard" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_gangleader_bodyguard" />
+  <action_set id="as_lumine_female_gangleader_bodyguard" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_gangleader_bodyguard" />
+  <action_set id="as_lumine_merchant_notary" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_merchant_notary" />
+  <action_set id="as_lumine_female_merchant_notary" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_merchant_notary" />
+  <action_set id="as_lumine_female_barmaid" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_barmaid" />
+  <action_set id="as_lumine_barmaid" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_barmaid" />
+  <action_set id="as_lumine_tavern_keeper" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_tavern_keeper" />
+  <action_set id="as_lumine_female_tavern_keeper" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_tavern_keeper" />
+  <action_set id="as_lumine_musician" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_musician" />
+  <action_set id="as_lumine_female_musician" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_musician" />
+  <action_set id="as_lumine_female_dancer" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_dancer" />
+  <action_set id="as_lumine_dancer" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_dancer" />
+  <action_set id="as_lumine_beggar" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_beggar" />
+  <action_set id="as_lumine_female_beggar" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_beggar" />
+  <action_set id="as_lumine_guard" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_guard" />
+  <action_set id="as_lumine_female_guard" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_guard" />
+  <action_set id="as_lumine_unarmed_guard" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_unarmed_guard" />
+  <action_set id="as_lumine_female_unarmed_guard" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_unarmed_guard" />
+  <action_set id="as_lumine_villager_with_backpack" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_with_backpack" />
+  <action_set id="as_lumine_female_villager_with_backpack" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_backpack" />
+  <action_set id="as_lumine_villager_with_staff" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_with_staff" />
+  <action_set id="as_lumine_female_villager_with_staff" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_staff" />
+  <action_set id="as_lumine_villager_carry_on_shoulder" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_on_shoulder" />
+  <action_set id="as_lumine_worker_carry_wood_on_shoulder" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_worker_carry_wood_on_shoulder" />
+  <action_set id="as_lumine_villager_carry_bucket_on_lefthand" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_bucket_on_lefthand" />
+  <action_set id="as_lumine_villager_carry_fish_buckets" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_fish_buckets" />
+  <action_set id="as_lumine_female_villager_carry_on_shoulder" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_on_shoulder" />
+  <action_set id="as_lumine_villager_carry_axe" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_axe" />
+  <action_set id="as_lumine_female_villager_carry_axe" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_axe" />
+  <action_set id="as_lumine_villager_carry_right_side" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_side" />
+  <action_set id="as_lumine_female_villager_carry_right_side" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_side" />
+  <action_set id="as_lumine_villager_carry_front_v2" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front_v2" />
+  <action_set id="as_lumine_female_villager_carry_front_v2" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front_v2" />
+  <action_set id="as_lumine_villager_carry_front" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front" />
+  <action_set id="as_lumine_female_villager_carry_front" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front" />
+  <action_set id="as_lumine_villager_carry_right_hand" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_hand" />
+  <action_set id="as_lumine_female_villager_carry_right_hand" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_hand" />
+  <action_set id="as_lumine_villager_carry_right_arm" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_arm" />
+  <action_set id="as_lumine_female_villager_carry_right_arm" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_arm" />
+  <action_set id="as_lumine_villager_carry_over_head" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head" />
+  <action_set id="as_lumine_female_villager_carry_over_head" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head" />
+  <action_set id="as_lumine_villager_carry_over_head_v2" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head_v2" />
+  <action_set id="as_lumine_female_villager_carry_over_head_v2" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head_v2" />
+  <action_set id="as_lumine_villager_2" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_2" />
+  <action_set id="as_lumine_female_villager_2" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_2" />
+  <action_set id="as_lumine_villager_3" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_villager_3" />
+  <action_set id="as_lumine_female_villager_3" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_female_villager_3" />
+  <action_set id="as_lumine_poses" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_lumine_female_poses" skeleton="lumine_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+</action_sets>

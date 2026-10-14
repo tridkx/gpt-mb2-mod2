@@ -1,0 +1,60 @@
+{
+  "proxy": {
+    "mesh": "xianyun_cloth_proxy",
+    "guid": "c4142700-27a4-688e-6fb2-3cb2da01e5c7",
+    "metamesh": "xianyun_cloth_proxy",
+    "lod": 0,
+    "bytes": 193752,
+    "render_vertices": 2915,
+    "simulation_vertices": 2915,
+    "fixed_positions": 2180,
+    "boundary_fixed_positions": 19,
+    "active_positions": 735,
+    "stretch_constraints": 2221,
+    "bend_constraints": 2159,
+    "shear_constraints": 0,
+    "parallel_sets": 23,
+    "dummy_sets": 13,
+    "max_geodesic_anchor_length": 0.8746540086388485,
+    "sha256": "75fb97be323c6573c892bd050b6e91b8646865da461192971df015aba55ae502",
+    "root_fixes": [],
+    "solver_pinned_render_vertices": [],
+    "path": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\XianyunRace\\build\\proxy_cooked\\c4142700-27a4-688e-6fb2-3cb2da01e5c7.bin"
+  },
+  "render_maps": [
+    {
+      "mesh": "xianyun_part_11",
+      "lod": 0,
+      "mapped_vertices": 995,
+      "rest_reconstruction_max_error_m": 5.624254677594116e-08,
+      "max_normal_offset_m": 0.0010069061536341906,
+      "max_barycentric_extrapolation": 0.03245249018073082
+    },
+    {
+      "mesh": "xianyun_part_11.lod1",
+      "lod": 1,
+      "mapped_vertices": 995,
+      "rest_reconstruction_max_error_m": 5.624254677594116e-08,
+      "max_normal_offset_m": 0.0010069061536341906,
+      "max_barycentric_extrapolation": 0.03245249018073082
+    },
+    {
+      "mesh": "xianyun_part_11.lod2",
+      "lod": 2,
+      "mapped_vertices": 995,
+      "rest_reconstruction_max_error_m": 5.624254677594116e-08,
+      "max_normal_offset_m": 0.0010069061536341906,
+      "max_barycentric_extrapolation": 0.03245249018073082
+    },
+    {
+      "mesh": "xianyun_part_11.lod3",
+      "lod": 3,
+      "mapped_vertices": 995,
+      "rest_reconstruction_max_error_m": 5.624254677594116e-08,
+      "max_normal_offset_m": 0.0010069061536341906,
+      "max_barycentric_extrapolation": 0.03245249018073082
+    }
+  ],
+  "scope": "Selected long hair and attached hair ties only; all skirts/clothes remain skinned",
+  "game_verified": false
+}

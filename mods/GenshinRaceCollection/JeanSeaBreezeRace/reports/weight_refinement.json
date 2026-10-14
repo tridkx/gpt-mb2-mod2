@@ -1,0 +1,33 @@
+{
+  "model": "JeanSeaBreezeRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 3181,
+      "vertical_band_m": [
+        1.0273810359835625,
+        1.2748861476778985
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "arm_only",
+      "vertices": 457,
+      "inner_x_m": 0.046043060302734376,
+      "outer_x_m": 0.1841722412109375
+    },
+    {
+      "region": "r_shoulder",
+      "style": "arm_only",
+      "vertices": 455,
+      "inner_x_m": 0.04604254531860352,
+      "outer_x_m": 0.1841701812744141
+    },
+    {
+      "region": "crotch",
+      "vertices": 1418,
+      "derived_hip_half_width_m": 0.08571328163146974
+    }
+  ],
+  "geometry_unchanged": true
+}

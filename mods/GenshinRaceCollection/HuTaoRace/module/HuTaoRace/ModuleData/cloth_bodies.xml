@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf8'?>
+<bodies>
+  <body name="hutao_collision" owner_skeleton="hutao_skeleton">
+    <capsules>
+      <capsule name="hutao_torso_low" length="0.052295" origin="0, 0, 0" frame="-0.000001, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, -0.000000, 0.047187, 0.945967, 1.000000">
+        <points>
+          <point radius="0.068221">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.068221">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="hutao_torso_high" length="0.065006" origin="0, 0, 0" frame="-0.000002, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000000, 0.058003, 0.998261, 1.000000">
+        <points>
+          <point radius="0.060087">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.060087">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="hutao_head" length="0.059257" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000001, 0.011063, 1.318243, 1.000000">
+        <points>
+          <point radius="0.072754">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.072754">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="hutao_neck" length="0.064773" origin="0, 0, 0" frame="-0.000003, 0.164770, 0.986332, 0.000000, 0.000000, 0.986332, -0.164770, 0.000000, -1.000000, 0.000000, -0.000003, 0.000000, -0.000001, 0.000390, 1.239355, 1.000000">
+        <points>
+          <point radius="0.027646">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.027646">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="hutao_l_upperarm" length="0.207988" origin="0, 0, 0" frame="-0.778962, -0.020977, -0.626720, 0.000000, -0.016344, 0.999780, -0.013149, 0.000000, 0.626858, 0.000000, -0.779134, 0.000000, -0.100890, -0.004978, 1.181990, 1.000000">
+        <points>
+          <point radius="0.021839">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.021839">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="hutao_r_upperarm" length="0.207988" origin="0, 0, 0" frame="0.778966, -0.020977, -0.626716, 0.000000, 0.016344, 0.999780, -0.013150, 0.000000, 0.626854, -0.000000, 0.779137, 0.000000, 0.100888, -0.004978, 1.181991, 1.000000">
+        <points>
+          <point radius="0.021839">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.021839">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

@@ -1,0 +1,83 @@
+{
+  "id": "JeanSeaBreezeRace",
+  "version": "v0.1.0",
+  "race": "jean_seabreeze",
+  "prefix": "jean_seabreeze",
+  "module_name": "Jean Sea Breeze Race",
+  "display_name": "琴·时装",
+  "source_model": "input/original/琴.pmx",
+  "source_archive": "input/archive/琴时装_by_原神_a9eea44136bac89441d3ee0755b94892.zip",
+  "ignored_models": [],
+  "unit_scale": 0.08,
+  "source_rotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "skin_min_scale": 1.0,
+  "cloth_enabled": false,
+  "cloth_lods": [],
+  "cloth_parts": {},
+  "lod_multipliers": [
+    1,
+    0.65,
+    0.4,
+    0.2
+  ],
+  "minimum_ratios": {
+    "m00": 0.7,
+    "m01": 0.7,
+    "m02": 0.7,
+    "m03": 0.7,
+    "m08": 0.7
+  },
+  "facial_animation": false,
+  "pmx_reader": "C:/Users/DKX/AppData/Roaming/Blender Foundation/Blender/5.2/extensions/user_default/mmd_tools/core/pmx/__init__.py",
+  "skeleton": "jean_seabreeze_skeleton",
+  "glass_materials": [],
+  "head_materials": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    11,
+    20,
+    21,
+    22
+  ],
+  "cloth_materials": [],
+  "hair_decision": "高扎马尾较短、末端在肩部附近，保留普通头部蒙皮",
+  "weight_refinement": {
+    "shoulders": true,
+    "crotch": true,
+    "waist": true
+  },
+  "rigid_material_bindings": {
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "18": 0
+  },
+  "shoulder_materials": [
+    12,
+    17,
+    18
+  ],
+  "shoulder_style": "arm_only"
+}

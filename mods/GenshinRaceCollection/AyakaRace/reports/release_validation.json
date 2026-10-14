@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "fda7ddb0d96fea431cd95ab0ff5f5cd2c50804c5324890b341013bcea008c7f3",
+  "source_input_sha256": "28b407fd32a5f70ae7553db60af780cf2df454d6d947bf33af8016cb3ce7cdce",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 23288,
+      "vertices": 15329,
+      "submeshes": 24
+    },
+    {
+      "lod": 1,
+      "triangles": 16072,
+      "vertices": 11717,
+      "submeshes": 24
+    },
+    {
+      "lod": 2,
+      "triangles": 11740,
+      "vertices": 9541,
+      "submeshes": 24
+    },
+    {
+      "lod": 3,
+      "triangles": 10546,
+      "vertices": 8935,
+      "submeshes": 24
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 507,
+      "worst_mesh": "ayaka_part_14",
+      "frames_checked": 16,
+      "max_edge_extension": 3.939656490789895,
+      "max_mesh_p99_extension": 1.476585028549555
+    },
+    {
+      "label": "run",
+      "worst_frame": 8,
+      "worst_mesh": "ayaka_part_07",
+      "frames_checked": 25,
+      "max_edge_extension": 5.324550004521443,
+      "max_mesh_p99_extension": 3.052082774620604
+    },
+    {
+      "label": "bow",
+      "worst_frame": 77,
+      "worst_mesh": "ayaka_part_14",
+      "frames_checked": 150,
+      "max_edge_extension": 5.097709807486081,
+      "max_mesh_p99_extension": 2.5903816405742046
+    },
+    {
+      "label": "riding",
+      "worst_frame": 14,
+      "worst_mesh": "ayaka_part_15",
+      "frames_checked": 20,
+      "max_edge_extension": 4.265580404864585,
+      "max_mesh_p99_extension": 3.032421090976818
+    },
+    {
+      "label": "slash",
+      "worst_frame": 137,
+      "worst_mesh": "ayaka_part_07",
+      "frames_checked": 150,
+      "max_edge_extension": 4.407311018461535,
+      "max_mesh_p99_extension": 2.6735871848713577
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 145,
+      "worst_mesh": "ayaka_part_10",
+      "frames_checked": 64,
+      "max_edge_extension": 2.536568788050224,
+      "max_mesh_p99_extension": 1.8491186269134912
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 540,
+      "worst_mesh": "ayaka_part_07",
+      "frames_checked": 16,
+      "max_edge_extension": 4.969546583406356,
+      "max_mesh_p99_extension": 3.2586826001471794
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 564,
+      "worst_mesh": "ayaka_part_15",
+      "frames_checked": 16,
+      "max_edge_extension": 3.467306704909018,
+      "max_mesh_p99_extension": 2.374500203032628
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 124,
+      "worst_mesh": "ayaka_part_15",
+      "frames_checked": 16,
+      "max_edge_extension": 3.4963801106081833,
+      "max_mesh_p99_extension": 2.399506530696714
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": true,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 4,
+  "proxy_simulation_vertices": 1085,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u540e\u90e8\u957f\u9a6c\u5c3e\u542f\u7528\u6709\u9650\u6446\u52a8\uff1b\u5218\u6d77\u4e0e\u5934\u9970\u56fa\u5b9a",
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

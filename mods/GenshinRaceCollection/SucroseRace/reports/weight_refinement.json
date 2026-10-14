@@ -1,0 +1,33 @@
+{
+  "model": "SucroseRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 2734,
+      "vertical_band_m": [
+        0.9041100528091193,
+        1.1181371524184944
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "arm_only",
+      "vertices": 552,
+      "inner_x_m": 0.04168742370605469,
+      "outer_x_m": 0.16674969482421875
+    },
+    {
+      "region": "r_shoulder",
+      "style": "arm_only",
+      "vertices": 552,
+      "inner_x_m": 0.04168709564208985,
+      "outer_x_m": 0.1667483825683594
+    },
+    {
+      "region": "crotch",
+      "vertices": 322,
+      "derived_hip_half_width_m": 0.07705146789550782
+    }
+  ],
+  "geometry_unchanged": true
+}

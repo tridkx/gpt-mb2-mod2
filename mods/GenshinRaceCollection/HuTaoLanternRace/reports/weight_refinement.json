@@ -1,0 +1,33 @@
+{
+  "model": "HuTaoLanternRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 2043,
+      "vertical_band_m": [
+        0.9172074031829835,
+        1.1205543422698976
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "arm_only",
+      "vertices": 1077,
+      "inner_x_m": 0.04021238327026368,
+      "outer_x_m": 0.1608495330810547
+    },
+    {
+      "region": "r_shoulder",
+      "style": "arm_only",
+      "vertices": 1171,
+      "inner_x_m": 0.04021238327026368,
+      "outer_x_m": 0.1608495330810547
+    },
+    {
+      "region": "crotch",
+      "vertices": 254,
+      "derived_hip_half_width_m": 0.07609199523925782
+    }
+  ],
+  "geometry_unchanged": true
+}

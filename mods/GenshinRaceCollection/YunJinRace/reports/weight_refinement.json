@@ -1,0 +1,33 @@
+{
+  "model": "YunJinRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 2218,
+      "vertical_band_m": [
+        0.8818056905269622,
+        1.0884024465084077
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "field",
+      "vertices": 1070,
+      "inner_x_m": 0.04126021957397461,
+      "outer_x_m": 0.16504087829589845
+    },
+    {
+      "region": "r_shoulder",
+      "style": "field",
+      "vertices": 933,
+      "inner_x_m": 0.041259677886962894,
+      "outer_x_m": 0.16503871154785157
+    },
+    {
+      "region": "crotch",
+      "vertices": 212,
+      "derived_hip_half_width_m": 0.07414809226989746
+    }
+  ],
+  "geometry_unchanged": true
+}

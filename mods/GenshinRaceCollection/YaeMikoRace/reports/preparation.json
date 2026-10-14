@@ -1,0 +1,25 @@
+{
+  "vertices": 25219,
+  "source_triangles": 29140,
+  "selected_triangles": 25764,
+  "bones": 456,
+  "morphs": 66,
+  "excluded": [
+    {
+      "material_index": 11,
+      "name": "髪+",
+      "triangles": 2578,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    },
+    {
+      "material_index": 12,
+      "name": "前髪+",
+      "triangles": 798,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    }
+  ],
+  "ignored_models": [],
+  "source_model": "input/original/八重神子.pmx",
+  "selected_source_height_m": 1.805705166310072,
+  "skirt_cloth_enabled": false
+}

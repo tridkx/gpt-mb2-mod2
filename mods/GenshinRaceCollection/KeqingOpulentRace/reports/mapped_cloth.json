@@ -1,0 +1,92 @@
+{
+  "proxy": {
+    "mesh": "keqing_opulent_cloth_proxy",
+    "guid": "24086456-c7f8-37f0-16d2-8dc28631c45e",
+    "metamesh": "keqing_opulent_cloth_proxy",
+    "lod": 0,
+    "bytes": 167060,
+    "render_vertices": 1462,
+    "simulation_vertices": 1462,
+    "fixed_positions": 124,
+    "boundary_fixed_positions": 20,
+    "active_positions": 1338,
+    "stretch_constraints": 4028,
+    "bend_constraints": 3932,
+    "shear_constraints": 0,
+    "parallel_sets": 22,
+    "dummy_sets": 11,
+    "max_geodesic_anchor_length": 0.7160825741400594,
+    "sha256": "c7024e1ce3ae6971a80951c501a5f639559081f039ca804a244ac6a4bd97def4",
+    "root_fixes": [],
+    "solver_pinned_render_vertices": [],
+    "path": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\KeqingOpulentRace\\build\\proxy_cooked\\24086456-c7f8-37f0-16d2-8dc28631c45e.bin"
+  },
+  "render_maps": [
+    {
+      "mesh": "keqing_opulent_part_22.lod3",
+      "lod": 3,
+      "mapped_vertices": 222,
+      "rest_reconstruction_max_error_m": 5.9568479602216316e-08,
+      "max_normal_offset_m": 0.028157023712992668,
+      "max_barycentric_extrapolation": 0.0
+    },
+    {
+      "mesh": "keqing_opulent_part_22.lod1",
+      "lod": 1,
+      "mapped_vertices": 222,
+      "rest_reconstruction_max_error_m": 5.9568479602216316e-08,
+      "max_normal_offset_m": 0.028157023712992668,
+      "max_barycentric_extrapolation": 0.0
+    },
+    {
+      "mesh": "keqing_opulent_part_12.lod3",
+      "lod": 3,
+      "mapped_vertices": 1718,
+      "rest_reconstruction_max_error_m": 5.009179338625589e-08,
+      "max_normal_offset_m": 0.003444477915763855,
+      "max_barycentric_extrapolation": 0.01140669733285904
+    },
+    {
+      "mesh": "keqing_opulent_part_22.lod2",
+      "lod": 2,
+      "mapped_vertices": 222,
+      "rest_reconstruction_max_error_m": 5.9568479602216316e-08,
+      "max_normal_offset_m": 0.028157023712992668,
+      "max_barycentric_extrapolation": 0.0
+    },
+    {
+      "mesh": "keqing_opulent_part_12.lod2",
+      "lod": 2,
+      "mapped_vertices": 1718,
+      "rest_reconstruction_max_error_m": 5.009179338625589e-08,
+      "max_normal_offset_m": 0.003444477915763855,
+      "max_barycentric_extrapolation": 0.01140669733285904
+    },
+    {
+      "mesh": "keqing_opulent_part_12",
+      "lod": 0,
+      "mapped_vertices": 1718,
+      "rest_reconstruction_max_error_m": 5.009179338625589e-08,
+      "max_normal_offset_m": 0.003444477915763855,
+      "max_barycentric_extrapolation": 0.01140669733285904
+    },
+    {
+      "mesh": "keqing_opulent_part_22",
+      "lod": 0,
+      "mapped_vertices": 222,
+      "rest_reconstruction_max_error_m": 5.9568479602216316e-08,
+      "max_normal_offset_m": 0.028157023712992668,
+      "max_barycentric_extrapolation": 0.0
+    },
+    {
+      "mesh": "keqing_opulent_part_12.lod1",
+      "lod": 1,
+      "mapped_vertices": 1718,
+      "rest_reconstruction_max_error_m": 5.009179338625589e-08,
+      "max_normal_offset_m": 0.003444477915763855,
+      "max_barycentric_extrapolation": 0.01140669733285904
+    }
+  ],
+  "scope": "Selected long hair and attached hair ties only; all skirts/clothes remain skinned",
+  "game_verified": false
+}

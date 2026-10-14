@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<action_sets>
+  <action_set id="as_weisina_warrior" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_warrior" />
+  <action_set id="as_weisina_female_warrior" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_weisina_villager" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_weisina_female_villager" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_weisina_facegen" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_weisina_female_facegen" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_facegen">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_weisina_hideout_bandit" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_hideout_bandit" />
+  <action_set id="as_weisina_female_hideout_bandit" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_hideout_bandit" />
+  <action_set id="as_weisina_villager_in_tavern" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_in_tavern" />
+  <action_set id="as_weisina_female_villager_in_tavern" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_tavern" />
+  <action_set id="as_weisina_warrior_in_tavern" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_tavern" />
+  <action_set id="as_weisina_female_warrior_in_tavern" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_tavern" />
+  <action_set id="as_weisina_villager_in_aserai_tavern" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_in_aserai_tavern" />
+  <action_set id="as_weisina_female_villager_in_aserai_tavern" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_aserai_tavern" />
+  <action_set id="as_weisina_warrior_in_aserai_tavern" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_aserai_tavern" />
+  <action_set id="as_weisina_female_warrior_in_aserai_tavern" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_aserai_tavern" />
+  <action_set id="as_weisina_child" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_child" />
+  <action_set id="as_weisina_female_child" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_child" />
+  <action_set id="as_weisina_map" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_map" />
+  <action_set id="as_weisina_female_map" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_map" />
+  <action_set id="as_weisina_map_with_banner" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_map_with_banner" />
+  <action_set id="as_weisina_female_map_with_banner" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_map_with_banner" />
+  <action_set id="as_weisina_villain" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villain" />
+  <action_set id="as_weisina_female_villain" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villain" />
+  <action_set id="as_weisina_lord" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_lord" />
+  <action_set id="as_weisina_female_lord" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_lord" />
+  <action_set id="as_weisina_seller" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_seller" />
+  <action_set id="as_weisina_female_seller" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_seller" />
+  <action_set id="as_weisina_weaponsmith" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_weaponsmith" />
+  <action_set id="as_weisina_female_weaponsmith" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_weaponsmith" />
+  <action_set id="as_weisina_villager_artisan" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_artisan" />
+  <action_set id="as_weisina_female_villager_artisan" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_artisan" />
+  <action_set id="as_weisina_villager_merchant" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_merchant" />
+  <action_set id="as_weisina_female_villager_merchant" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_merchant" />
+  <action_set id="as_weisina_villager_preacher" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_preacher" />
+  <action_set id="as_weisina_female_villager_preacher" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_preacher" />
+  <action_set id="as_weisina_villager_gangleader" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_gangleader" />
+  <action_set id="as_weisina_female_villager_gangleader" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_gangleader" />
+  <action_set id="as_weisina_villager_ruralnotable" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_ruralnotable" />
+  <action_set id="as_weisina_female_villager_ruralnotable" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_ruralnotable" />
+  <action_set id="as_weisina_gangleader_bodyguard" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_gangleader_bodyguard" />
+  <action_set id="as_weisina_female_gangleader_bodyguard" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_gangleader_bodyguard" />
+  <action_set id="as_weisina_merchant_notary" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_merchant_notary" />
+  <action_set id="as_weisina_female_merchant_notary" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_merchant_notary" />
+  <action_set id="as_weisina_female_barmaid" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_barmaid" />
+  <action_set id="as_weisina_barmaid" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_barmaid" />
+  <action_set id="as_weisina_tavern_keeper" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_tavern_keeper" />
+  <action_set id="as_weisina_female_tavern_keeper" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_tavern_keeper" />
+  <action_set id="as_weisina_musician" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_musician" />
+  <action_set id="as_weisina_female_musician" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_musician" />
+  <action_set id="as_weisina_female_dancer" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_dancer" />
+  <action_set id="as_weisina_dancer" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_dancer" />
+  <action_set id="as_weisina_beggar" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_beggar" />
+  <action_set id="as_weisina_female_beggar" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_beggar" />
+  <action_set id="as_weisina_guard" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_guard" />
+  <action_set id="as_weisina_female_guard" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_guard" />
+  <action_set id="as_weisina_unarmed_guard" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_unarmed_guard" />
+  <action_set id="as_weisina_female_unarmed_guard" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_unarmed_guard" />
+  <action_set id="as_weisina_villager_with_backpack" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_with_backpack" />
+  <action_set id="as_weisina_female_villager_with_backpack" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_backpack" />
+  <action_set id="as_weisina_villager_with_staff" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_with_staff" />
+  <action_set id="as_weisina_female_villager_with_staff" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_staff" />
+  <action_set id="as_weisina_villager_carry_on_shoulder" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_on_shoulder" />
+  <action_set id="as_weisina_worker_carry_wood_on_shoulder" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_worker_carry_wood_on_shoulder" />
+  <action_set id="as_weisina_villager_carry_bucket_on_lefthand" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_bucket_on_lefthand" />
+  <action_set id="as_weisina_villager_carry_fish_buckets" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_fish_buckets" />
+  <action_set id="as_weisina_female_villager_carry_on_shoulder" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_on_shoulder" />
+  <action_set id="as_weisina_villager_carry_axe" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_axe" />
+  <action_set id="as_weisina_female_villager_carry_axe" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_axe" />
+  <action_set id="as_weisina_villager_carry_right_side" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_side" />
+  <action_set id="as_weisina_female_villager_carry_right_side" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_side" />
+  <action_set id="as_weisina_villager_carry_front_v2" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front_v2" />
+  <action_set id="as_weisina_female_villager_carry_front_v2" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front_v2" />
+  <action_set id="as_weisina_villager_carry_front" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front" />
+  <action_set id="as_weisina_female_villager_carry_front" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front" />
+  <action_set id="as_weisina_villager_carry_right_hand" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_hand" />
+  <action_set id="as_weisina_female_villager_carry_right_hand" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_hand" />
+  <action_set id="as_weisina_villager_carry_right_arm" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_arm" />
+  <action_set id="as_weisina_female_villager_carry_right_arm" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_arm" />
+  <action_set id="as_weisina_villager_carry_over_head" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head" />
+  <action_set id="as_weisina_female_villager_carry_over_head" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head" />
+  <action_set id="as_weisina_villager_carry_over_head_v2" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head_v2" />
+  <action_set id="as_weisina_female_villager_carry_over_head_v2" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head_v2" />
+  <action_set id="as_weisina_villager_2" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_2" />
+  <action_set id="as_weisina_female_villager_2" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_2" />
+  <action_set id="as_weisina_villager_3" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_villager_3" />
+  <action_set id="as_weisina_female_villager_3" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_3" />
+  <action_set id="as_weisina_poses" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_weisina_female_poses" skeleton="weisina_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+</action_sets>

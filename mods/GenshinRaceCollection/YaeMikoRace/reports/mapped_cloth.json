@@ -1,0 +1,86 @@
+{
+  "proxy": {
+    "mesh": "yaemiko_cloth_proxy",
+    "guid": "6650b117-bd62-16a8-222d-308d9b267a6c",
+    "metamesh": "yaemiko_cloth_proxy",
+    "lod": 0,
+    "bytes": 105920,
+    "render_vertices": 1325,
+    "simulation_vertices": 1325,
+    "fixed_positions": 752,
+    "boundary_fixed_positions": 28,
+    "active_positions": 573,
+    "stretch_constraints": 1750,
+    "bend_constraints": 1661,
+    "shear_constraints": 0,
+    "parallel_sets": 24,
+    "dummy_sets": 13,
+    "max_geodesic_anchor_length": 0.4821804695004801,
+    "sha256": "3021f33dd24e7a7a98cb36dc0584ab8b3f3a1e86d27cc5b17fe17d0ba307588c",
+    "root_fixes": [
+      {
+        "component_positions": 224,
+        "reason": "Highest surviving attachment edge of each independently rooted hair card/lock; small detached tips omitted from proxy and mapped to the continuous parent surface",
+        "pinned_render_vertices": [
+          639,
+          671,
+          720
+        ],
+        "bounds": [
+          [
+            -0.122814,
+            -0.388823,
+            0.844836
+          ],
+          [
+            0.111052,
+            -0.284412,
+            1.093982
+          ]
+        ]
+      }
+    ],
+    "solver_pinned_render_vertices": [
+      639,
+      671,
+      720
+    ],
+    "path": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\YaeMikoRace\\build\\proxy_cooked\\6650b117-bd62-16a8-222d-308d9b267a6c.bin"
+  },
+  "render_maps": [
+    {
+      "mesh": "yaemiko_part_09.lod3",
+      "lod": 3,
+      "mapped_vertices": 789,
+      "rest_reconstruction_max_error_m": 5.4790637398032684e-08,
+      "max_normal_offset_m": 0.001354711246676743,
+      "max_barycentric_extrapolation": 0.01913738064467907
+    },
+    {
+      "mesh": "yaemiko_part_09.lod2",
+      "lod": 2,
+      "mapped_vertices": 789,
+      "rest_reconstruction_max_error_m": 5.4790637398032684e-08,
+      "max_normal_offset_m": 0.001354711246676743,
+      "max_barycentric_extrapolation": 0.01913738064467907
+    },
+    {
+      "mesh": "yaemiko_part_09",
+      "lod": 0,
+      "mapped_vertices": 789,
+      "rest_reconstruction_max_error_m": 5.4790637398032684e-08,
+      "max_normal_offset_m": 0.001354711246676743,
+      "max_barycentric_extrapolation": 0.01913738064467907
+    },
+    {
+      "mesh": "yaemiko_part_09.lod1",
+      "lod": 1,
+      "mapped_vertices": 789,
+      "rest_reconstruction_max_error_m": 5.4790637398032684e-08,
+      "max_normal_offset_m": 0.001354711246676743,
+      "max_barycentric_extrapolation": 0.01913738064467907
+    }
+  ],
+  "scope": "Selected long hair and attached hair ties only; all skirts/clothes remain skinned",
+  "game_verified": false
+}

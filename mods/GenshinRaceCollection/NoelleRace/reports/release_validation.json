@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "2dbd9253738cef7232a2ee7aa00a6706293b59c07fbdb4bdcdfe69530239d8c4",
+  "source_input_sha256": "150f54b75a835060af8d99280e1895d635f78c8ead164cb8120bd26cb2703031",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 20075,
+      "vertices": 14175,
+      "submeshes": 11
+    },
+    {
+      "lod": 1,
+      "triangles": 13190,
+      "vertices": 10598,
+      "submeshes": 11
+    },
+    {
+      "lod": 2,
+      "triangles": 9758,
+      "vertices": 8767,
+      "submeshes": 11
+    },
+    {
+      "lod": 3,
+      "triangles": 8838,
+      "vertices": 8197,
+      "submeshes": 11
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 507,
+      "worst_mesh": "noelle_part_01",
+      "frames_checked": 16,
+      "max_edge_extension": 2.6229367149870617,
+      "max_mesh_p99_extension": 1.5217217538888406
+    },
+    {
+      "label": "run",
+      "worst_frame": 8,
+      "worst_mesh": "noelle_part_06",
+      "frames_checked": 25,
+      "max_edge_extension": 3.346407569179375,
+      "max_mesh_p99_extension": 1.5871262018360406
+    },
+    {
+      "label": "bow",
+      "worst_frame": 88,
+      "worst_mesh": "noelle_part_08",
+      "frames_checked": 150,
+      "max_edge_extension": 4.4352436203883565,
+      "max_mesh_p99_extension": 1.9403129626496731
+    },
+    {
+      "label": "riding",
+      "worst_frame": 6,
+      "worst_mesh": "noelle_part_01",
+      "frames_checked": 20,
+      "max_edge_extension": 5.107908689740455,
+      "max_mesh_p99_extension": 2.013050864819884
+    },
+    {
+      "label": "slash",
+      "worst_frame": 62,
+      "worst_mesh": "noelle_part_01",
+      "frames_checked": 150,
+      "max_edge_extension": 4.255028198187428,
+      "max_mesh_p99_extension": 1.8734322513749542
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 145,
+      "worst_mesh": "noelle_part_06",
+      "frames_checked": 64,
+      "max_edge_extension": 2.5786085349168895,
+      "max_mesh_p99_extension": 1.6692366434179295
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 540,
+      "worst_mesh": "noelle_part_06",
+      "frames_checked": 16,
+      "max_edge_extension": 4.011714895898702,
+      "max_mesh_p99_extension": 2.0565865199864337
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 314,
+      "worst_mesh": "noelle_part_01",
+      "frames_checked": 16,
+      "max_edge_extension": 3.9723558830008368,
+      "max_mesh_p99_extension": 1.5831608806051807
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 62,
+      "worst_mesh": "noelle_part_08",
+      "frames_checked": 16,
+      "max_edge_extension": 2.729130412874523,
+      "max_mesh_p99_extension": 1.6038033604831017
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": false,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 0,
+  "proxy_simulation_vertices": 0,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u77ed\u53d1\uff0c\u4fdd\u7559\u666e\u901a\u5934\u90e8\u8499\u76ae",
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

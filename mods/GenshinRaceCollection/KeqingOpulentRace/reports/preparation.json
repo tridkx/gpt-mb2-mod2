@@ -1,0 +1,25 @@
+{
+  "vertices": 25115,
+  "source_triangles": 33479,
+  "selected_triangles": 26757,
+  "bones": 332,
+  "morphs": 65,
+  "excluded": [
+    {
+      "material_index": 11,
+      "name": "髪s+",
+      "triangles": 4738,
+      "reason": "Default hidden expression/material or explicit prop exclusion"
+    },
+    {
+      "material_index": 26,
+      "name": "肌+",
+      "triangles": 1984,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    }
+  ],
+  "ignored_models": [],
+  "source_model": "input/original/刻晴.pmx",
+  "selected_source_height_m": 1.5642631459236145,
+  "skirt_cloth_enabled": false
+}

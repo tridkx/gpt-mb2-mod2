@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "fa501126482777c25c7a3c37e294e086a441d8e24991e190e5fc6d8d992eadb0",
+  "source_input_sha256": "7e1e3b2922c8804c344253c42314b3604d840497f7d4b569aa6461be9a9c42c8",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 29779,
+      "vertices": 20789,
+      "submeshes": 32
+    },
+    {
+      "lod": 1,
+      "triangles": 24405,
+      "vertices": 18101,
+      "submeshes": 32
+    },
+    {
+      "lod": 2,
+      "triangles": 24065,
+      "vertices": 17932,
+      "submeshes": 32
+    },
+    {
+      "lod": 3,
+      "triangles": 24035,
+      "vertices": 17917,
+      "submeshes": 32
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 507,
+      "worst_mesh": "ningguang_orchid_part_20",
+      "frames_checked": 16,
+      "max_edge_extension": 2.1015449389129675,
+      "max_mesh_p99_extension": 1.4181649963531253
+    },
+    {
+      "label": "run",
+      "worst_frame": 14,
+      "worst_mesh": "ningguang_orchid_part_24",
+      "frames_checked": 25,
+      "max_edge_extension": 3.376929207147716,
+      "max_mesh_p99_extension": 3.2209152227664526
+    },
+    {
+      "label": "bow",
+      "worst_frame": 25,
+      "worst_mesh": "ningguang_orchid_part_27",
+      "frames_checked": 150,
+      "max_edge_extension": 3.3146331887532163,
+      "max_mesh_p99_extension": 2.864100490231492
+    },
+    {
+      "label": "riding",
+      "worst_frame": 8,
+      "worst_mesh": "ningguang_orchid_part_24",
+      "frames_checked": 20,
+      "max_edge_extension": 4.387866245876811,
+      "max_mesh_p99_extension": 4.313669300755669
+    },
+    {
+      "label": "slash",
+      "worst_frame": 62,
+      "worst_mesh": "ningguang_orchid_part_24",
+      "frames_checked": 150,
+      "max_edge_extension": 5.135902681898586,
+      "max_mesh_p99_extension": 4.897978857435058
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 145,
+      "worst_mesh": "ningguang_orchid_part_25",
+      "frames_checked": 64,
+      "max_edge_extension": 2.572623005710064,
+      "max_mesh_p99_extension": 2.0962560663745653
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 270,
+      "worst_mesh": "ningguang_orchid_part_24",
+      "frames_checked": 16,
+      "max_edge_extension": 4.737180183585765,
+      "max_mesh_p99_extension": 4.5706443460719886
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 314,
+      "worst_mesh": "ningguang_orchid_part_24",
+      "frames_checked": 16,
+      "max_edge_extension": 4.997395233450117,
+      "max_mesh_p99_extension": 4.70737444540204
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 62,
+      "worst_mesh": "ningguang_orchid_part_27",
+      "frames_checked": 16,
+      "max_edge_extension": 2.579338938431961,
+      "max_mesh_p99_extension": 1.8204814074929985
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": true,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 4,
+  "proxy_simulation_vertices": 2140,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u4e24\u675f\u957f\u53d1\u5ef6\u4f38\u81f3\u817f\u90e8\uff0c\u542f\u7528\u6709\u9650\u6446\u52a8\uff1b\u524d\u90e8\u53d1\u578b\u56fa\u5b9a",
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

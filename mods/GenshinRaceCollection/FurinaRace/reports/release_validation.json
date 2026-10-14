@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "372cdd00f6f6c0e2c4164bbc24b65f3c8b88475b6a8c71274abf5cd3d478246d",
+  "source_input_sha256": "35a81923031aa3d578c4f896ada6d26a023d13c7be1d645f9b9f125eb436cd27",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 30635,
+      "vertices": 21838,
+      "submeshes": 27
+    },
+    {
+      "lod": 1,
+      "triangles": 20186,
+      "vertices": 16329,
+      "submeshes": 27
+    },
+    {
+      "lod": 2,
+      "triangles": 14557,
+      "vertices": 13364,
+      "submeshes": 27
+    },
+    {
+      "lod": 3,
+      "triangles": 12957,
+      "vertices": 12428,
+      "submeshes": 27
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 338,
+      "worst_mesh": "furina_part_16",
+      "frames_checked": 16,
+      "max_edge_extension": 1.8435813454639012,
+      "max_mesh_p99_extension": 1.4556107624469772
+    },
+    {
+      "label": "run",
+      "worst_frame": 8,
+      "worst_mesh": "furina_part_19",
+      "frames_checked": 25,
+      "max_edge_extension": 3.656774974692308,
+      "max_mesh_p99_extension": 2.3267571892884247
+    },
+    {
+      "label": "bow",
+      "worst_frame": 88,
+      "worst_mesh": "furina_part_11",
+      "frames_checked": 150,
+      "max_edge_extension": 3.678267161829239,
+      "max_mesh_p99_extension": 2.863163960461947
+    },
+    {
+      "label": "riding",
+      "worst_frame": 8,
+      "worst_mesh": "furina_part_13",
+      "frames_checked": 20,
+      "max_edge_extension": 4.968746246885454,
+      "max_mesh_p99_extension": 2.898996625608392
+    },
+    {
+      "label": "slash",
+      "worst_frame": 123,
+      "worst_mesh": "furina_part_19",
+      "frames_checked": 150,
+      "max_edge_extension": 3.661447262847585,
+      "max_mesh_p99_extension": 2.6140315464676083
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 145,
+      "worst_mesh": "furina_part_19",
+      "frames_checked": 64,
+      "max_edge_extension": 2.6596753801674318,
+      "max_mesh_p99_extension": 1.935496176942824
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 216,
+      "worst_mesh": "furina_part_19",
+      "frames_checked": 16,
+      "max_edge_extension": 4.1856813370934995,
+      "max_mesh_p99_extension": 3.1493339562497056
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 188,
+      "worst_mesh": "furina_part_16",
+      "frames_checked": 16,
+      "max_edge_extension": 2.571123443512968,
+      "max_mesh_p99_extension": 2.1395599691944867
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 1,
+      "worst_mesh": "furina_part_16",
+      "frames_checked": 16,
+      "max_edge_extension": 2.5382748457148865,
+      "max_mesh_p99_extension": 2.1228013720710126
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": false,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 0,
+  "proxy_simulation_vertices": 0,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u968f\u673a\u9009\u4e2d\u7684\u8352\u914d\u8272\u4e3a\u77ed\u53d1\uff0c\u4fdd\u7559\u666e\u901a\u5934\u90e8\u8499\u76ae",
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "SucroseRace",
+  "version": "v0.1.0",
+  "race": "sucrose",
+  "prefix": "sucrose",
+  "module_name": "Sucrose Race",
+  "display_name": "砂糖",
+  "source_model": "input/original/砂糖.pmx",
+  "source_archive": "input/archive/【模之屋】砂糖_by_原神_b7478ddcd12885599962e204eb493614.zip",
+  "ignored_models": [],
+  "unit_scale": 0.08,
+  "source_rotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "skin_min_scale": 1.0,
+  "cloth_enabled": false,
+  "cloth_lods": [],
+  "cloth_parts": {},
+  "lod_multipliers": [
+    1,
+    0.65,
+    0.4,
+    0.2
+  ],
+  "minimum_ratios": {
+    "m00": 0.7,
+    "m01": 0.7,
+    "m02": 0.7,
+    "m04": 0.7,
+    "m06": 0.7
+  },
+  "facial_animation": false,
+  "pmx_reader": "C:/Users/DKX/AppData/Roaming/Blender Foundation/Blender/5.2/extensions/user_default/mmd_tools/core/pmx/__init__.py",
+  "skeleton": "sucrose_skeleton",
+  "glass_materials": [],
+  "head_materials": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    12,
+    20
+  ],
+  "cloth_materials": [],
+  "hair_decision": "短发，保留普通头部蒙皮",
+  "weight_refinement": {
+    "shoulders": true,
+    "crotch": true,
+    "waist": true
+  },
+  "shoulder_materials": [
+    14,
+    19
+  ],
+  "shoulder_style": "arm_only"
+}

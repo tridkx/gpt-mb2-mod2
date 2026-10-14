@@ -1,0 +1,25 @@
+{
+  "package": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\FurinaRace\\module\\FurinaRace\\AssetPackages\\furina.tpac",
+  "status": "pass",
+  "scope": "Metadata round-trip, references and standard shader vertex-alpha risk only; textures, custom shader paths, geometry, weights, cloth dynamics and game behavior are not validated",
+  "cloth_vertex_alpha": true,
+  "errors": [],
+  "incomplete": [],
+  "observations": [],
+  "package_sha256": "372cdd00f6f6c0e2c4164bbc24b65f3c8b88475b6a8c71274abf5cd3d478246d",
+  "tool_output": {
+    "metacheck": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\FurinaRace\\module\\FurinaRace\\AssetPackages\\furina.tpac: 36 assets | checksum ok=36 bad=0 | metadata identical=36 differ=0 noSerializer=0",
+    "mataudit": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\FurinaRace\\module\\FurinaRace\\AssetPackages\\furina.tpac: 27 materials, 36 assets\n  metamesh-level material missing=0 | submesh Material present=109 missing=0 | submesh SecondMaterial present=0 missing=0 | metameshes with no material at all=0"
+  },
+  "counts": {
+    "materials": 27,
+    "submeshes": 109,
+    "cloth_submeshes": 0,
+    "lods": [
+      0,
+      1,
+      2,
+      3
+    ]
+  }
+}

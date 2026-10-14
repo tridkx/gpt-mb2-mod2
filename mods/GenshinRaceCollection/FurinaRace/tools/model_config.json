@@ -1,0 +1,78 @@
+{
+  "id": "FurinaRace",
+  "version": "v0.1.0",
+  "race": "furina",
+  "prefix": "furina",
+  "module_name": "Furina Race",
+  "display_name": "芙宁娜",
+  "source_model": "input/original/【芙宁娜_荒】.pmx",
+  "source_archive": "input/archive/【芙宁娜】_by_原神_dd7a8a03e7a7dfa6593053d639fa3025.zip",
+  "ignored_models": [
+    "【芙宁娜】.pmx"
+  ],
+  "unit_scale": 0.08,
+  "source_rotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "skin_min_scale": 1.0,
+  "cloth_enabled": false,
+  "cloth_lods": [],
+  "cloth_parts": {},
+  "lod_multipliers": [
+    1,
+    0.65,
+    0.4,
+    0.2
+  ],
+  "minimum_ratios": {
+    "m00": 0.7,
+    "m01": 0.7,
+    "m03": 0.7,
+    "m06": 0.7,
+    "m07": 0.7
+  },
+  "facial_animation": false,
+  "pmx_reader": "C:/Users/DKX/AppData/Roaming/Blender Foundation/Blender/5.2/extensions/user_default/mmd_tools/core/pmx/__init__.py",
+  "skeleton": "furina_skeleton",
+  "glass_materials": [],
+  "head_materials": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    30
+  ],
+  "cloth_materials": [],
+  "hair_decision": "随机选中的荒配色为短发，保留普通头部蒙皮",
+  "weight_refinement": {
+    "shoulders": true,
+    "crotch": true,
+    "waist": true
+  },
+  "shoulder_materials": [
+    11,
+    13,
+    19
+  ],
+  "shoulder_style": "arm_only"
+}

@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "0a3a9d4560173812d6b158f241748ef6bdd173f12dbe1a4caecfd541ef326b8d",
+  "source_input_sha256": "77d7fdb8f36abdfd01cc6a1fb7c38645ef40885a556987e9181844f3552f3423",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 25731,
+      "vertices": 19148,
+      "submeshes": 23
+    },
+    {
+      "lod": 1,
+      "triangles": 18071,
+      "vertices": 15286,
+      "submeshes": 23
+    },
+    {
+      "lod": 2,
+      "triangles": 16015,
+      "vertices": 14238,
+      "submeshes": 23
+    },
+    {
+      "lod": 3,
+      "triangles": 15817,
+      "vertices": 14113,
+      "submeshes": 23
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 929,
+      "worst_mesh": "yaemiko_part_17",
+      "frames_checked": 16,
+      "max_edge_extension": 2.0018946086515284,
+      "max_mesh_p99_extension": 1.4191416635276917
+    },
+    {
+      "label": "run",
+      "worst_frame": 19,
+      "worst_mesh": "yaemiko_part_17",
+      "frames_checked": 25,
+      "max_edge_extension": 3.7256267276986743,
+      "max_mesh_p99_extension": 1.4116269565580202
+    },
+    {
+      "label": "bow",
+      "worst_frame": 78,
+      "worst_mesh": "yaemiko_part_16",
+      "frames_checked": 150,
+      "max_edge_extension": 3.703685784793276,
+      "max_mesh_p99_extension": 1.6011963982642616
+    },
+    {
+      "label": "riding",
+      "worst_frame": 11,
+      "worst_mesh": "yaemiko_part_16",
+      "frames_checked": 20,
+      "max_edge_extension": 3.97161231364287,
+      "max_mesh_p99_extension": 1.9420763362175273
+    },
+    {
+      "label": "slash",
+      "worst_frame": 60,
+      "worst_mesh": "yaemiko_part_16",
+      "frames_checked": 150,
+      "max_edge_extension": 3.7210710949177366,
+      "max_mesh_p99_extension": 1.563906075200295
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 217,
+      "worst_mesh": "yaemiko_part_16",
+      "frames_checked": 64,
+      "max_edge_extension": 2.9795065207326736,
+      "max_mesh_p99_extension": 1.320258303363086
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 540,
+      "worst_mesh": "yaemiko_part_16",
+      "frames_checked": 16,
+      "max_edge_extension": 4.114234213193423,
+      "max_mesh_p99_extension": 2.332930289693186
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 627,
+      "worst_mesh": "yaemiko_part_16",
+      "frames_checked": 16,
+      "max_edge_extension": 2.5830222587468605,
+      "max_mesh_p99_extension": 1.4745593573385443
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 1,
+      "worst_mesh": "yaemiko_part_16",
+      "frames_checked": 16,
+      "max_edge_extension": 2.6825569930984368,
+      "max_mesh_p99_extension": 1.2996948040716985
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": true,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 4,
+  "proxy_simulation_vertices": 1325,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u540e\u90e8\u5bbd\u957f\u53d1\u8d85\u8fc7\u8170\u90e8\uff0c\u542f\u7528\u6709\u9650\u6446\u52a8\uff1b\u524d\u53d1\u4e0e\u9970\u7269\u56fa\u5b9a",
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

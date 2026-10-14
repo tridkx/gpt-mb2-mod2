@@ -46,6 +46,25 @@ def package(name, version, check_only=False):
     # Opt-in checks run before either archive writing or installer preflight.
     # The unchanged final TPAC plus all diagnostic inputs form the cache key.
     diagnostic_sources = []
+    # Collections retain independent character TPACs and diagnostic configurations.
+    # Check the scoped components on both package and installer preflight entries.
+    if config.get('collection_components'):
+        from cloth_simulator.pipeline import ensure_diagnostics
+        for component_id in config['collection_components']:
+            validate_name(component_id)
+            component = (root / component_id).resolve()
+            if component.parent != root.resolve():
+                raise ValueError('Collection component outside collection')
+            component_config = json.loads(project_file(component, 'mod.json').read_text(encoding='utf8'))
+            if component_config['id'] != component_id:
+                raise ValueError('Collection component ID mismatch')
+            original = project_file(component, component_config['package'])
+            relative = original.relative_to(component / 'module' / component_id)
+            assembled = project_file(root, (module / relative).relative_to(root))
+            if original.read_bytes() != assembled.read_bytes():
+                raise ValueError('Collection TPAC differs from component: ' + component_id)
+            if 'cloth_diagnostics' in component_config:
+                ensure_diagnostics(component, component_config)
     if 'cloth_diagnostics' in config:
         from cloth_simulator.pipeline import ensure_diagnostics, delivery_files
         diagnostic = ensure_diagnostics(root, config)

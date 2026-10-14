@@ -1,0 +1,33 @@
+{
+  "model": "KokomiRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 1739,
+      "vertical_band_m": [
+        0.9157074150070548,
+        1.129475496672094
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "arm_only",
+      "vertices": 698,
+      "inner_x_m": 0.04201113891601563,
+      "outer_x_m": 0.1680445556640625
+    },
+    {
+      "region": "r_shoulder",
+      "style": "arm_only",
+      "vertices": 702,
+      "inner_x_m": 0.04201059722900391,
+      "outer_x_m": 0.16804238891601564
+    },
+    {
+      "region": "crotch",
+      "vertices": 319,
+      "derived_hip_half_width_m": 0.07636242866516113
+    }
+  ],
+  "geometry_unchanged": true
+}

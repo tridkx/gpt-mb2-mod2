@@ -1,0 +1,60 @@
+{
+  "proxy": {
+    "mesh": "kokomi_cloth_proxy",
+    "guid": "503619ff-cbf3-f8bf-1bc2-043252b024c1",
+    "metamesh": "kokomi_cloth_proxy",
+    "lod": 0,
+    "bytes": 62636,
+    "render_vertices": 537,
+    "simulation_vertices": 537,
+    "fixed_positions": 35,
+    "boundary_fixed_positions": 10,
+    "active_positions": 502,
+    "stretch_constraints": 1513,
+    "bend_constraints": 1463,
+    "shear_constraints": 0,
+    "parallel_sets": 22,
+    "dummy_sets": 12,
+    "max_geodesic_anchor_length": 1.0989274604755668,
+    "sha256": "ea8047bce5d8e2ed4a3d8ab26dfde38b81ce35a15539178552f47f3b4913682c",
+    "root_fixes": [],
+    "solver_pinned_render_vertices": [],
+    "path": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\KokomiRace\\build\\proxy_cooked\\503619ff-cbf3-f8bf-1bc2-043252b024c1.bin"
+  },
+  "render_maps": [
+    {
+      "mesh": "kokomi_part_15.lod2",
+      "lod": 2,
+      "mapped_vertices": 691,
+      "rest_reconstruction_max_error_m": 4.4135373416785904e-08,
+      "max_normal_offset_m": 0.0006805084412917495,
+      "max_barycentric_extrapolation": 0.008458486758172512
+    },
+    {
+      "mesh": "kokomi_part_15.lod1",
+      "lod": 1,
+      "mapped_vertices": 691,
+      "rest_reconstruction_max_error_m": 4.4135373416785904e-08,
+      "max_normal_offset_m": 0.0006805084412917495,
+      "max_barycentric_extrapolation": 0.008458486758172512
+    },
+    {
+      "mesh": "kokomi_part_15",
+      "lod": 0,
+      "mapped_vertices": 691,
+      "rest_reconstruction_max_error_m": 4.4135373416785904e-08,
+      "max_normal_offset_m": 0.0006805084412917495,
+      "max_barycentric_extrapolation": 0.008458486758172512
+    },
+    {
+      "mesh": "kokomi_part_15.lod3",
+      "lod": 3,
+      "mapped_vertices": 691,
+      "rest_reconstruction_max_error_m": 4.4135373416785904e-08,
+      "max_normal_offset_m": 0.0006805084412917495,
+      "max_barycentric_extrapolation": 0.008458486758172512
+    }
+  ],
+  "scope": "Selected long hair and attached hair ties only; all skirts/clothes remain skinned",
+  "game_verified": false
+}

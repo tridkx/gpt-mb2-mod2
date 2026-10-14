@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf8'?>
+<bodies>
+  <body name="xianyun_collision" owner_skeleton="xianyun_skeleton">
+    <capsules>
+      <capsule name="xianyun_torso_low" length="0.059596" origin="0, 0, 0" frame="-0.000002, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000000, 0.063500, 1.113043, 1.000000">
+        <points>
+          <point radius="0.070376">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.070376">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="xianyun_torso_high" length="0.101876" origin="0, 0, 0" frame="-0.000001, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, -0.000000, 0.046470, 1.172639, 1.000000">
+        <points>
+          <point radius="0.085000">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.085000">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="xianyun_head" length="0.055722" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000001, 0.025447, 1.540884, 1.000000">
+        <points>
+          <point radius="0.073400">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.073400">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="xianyun_neck" length="0.073664" origin="0, 0, 0" frame="-0.000002, 0.096445, 0.995338, 0.000000, 0.000000, 0.995338, -0.096445, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000001, 0.018342, 1.452564, 1.000000">
+        <points>
+          <point radius="0.027892">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.027892">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="xianyun_l_upperarm" length="0.227282" origin="0, 0, 0" frame="-0.741370, -0.045021, -0.669584, 0.000000, -0.033411, 0.998986, -0.030176, 0.000000, 0.670264, 0.000000, -0.742123, 0.000000, -0.115558, 0.000474, 1.388887, 1.000000">
+        <points>
+          <point radius="0.023865">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.023865">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="xianyun_r_upperarm" length="0.227282" origin="0, 0, 0" frame="0.741361, -0.045092, -0.669590, 0.000000, 0.033464, 0.998983, -0.030224, 0.000000, 0.670272, -0.000000, 0.742116, 0.000000, 0.115557, 0.000475, 1.388887, 1.000000">
+        <points>
+          <point radius="0.023865">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.023865">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

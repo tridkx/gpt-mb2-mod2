@@ -1,0 +1,107 @@
+{
+  "id": "HuTaoLanternRace",
+  "version": "v0.1.0",
+  "race": "hutao_lantern",
+  "prefix": "hutao_lantern",
+  "module_name": "Hu Tao Lantern Race",
+  "display_name": "胡桃·海灯节",
+  "source_model": "input/original/胡桃-海灯节.pmx",
+  "source_archive": "input/archive/胡桃-海灯节_by_原神_3e7dfc32a966c97870f6cfa288059697.zip",
+  "ignored_models": [],
+  "unit_scale": 0.08,
+  "source_rotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "skin_min_scale": 1.0,
+  "cloth_enabled": true,
+  "cloth_lods": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "cloth_parts": {
+    "15": {
+      "fixed_above_source_y": 17.48303985595703,
+      "source_z_min": 0.2,
+      "max_distance_m": 0.065,
+      "travel_slope": 0.3
+    }
+  },
+  "lod_multipliers": [
+    1,
+    0.65,
+    0.4,
+    0.2
+  ],
+  "minimum_ratios": {
+    "m00": 0.7,
+    "m02": 0.7,
+    "m03": 0.7,
+    "m09": 0.7
+  },
+  "facial_animation": false,
+  "pmx_reader": "C:/Users/DKX/AppData/Roaming/Blender Foundation/Blender/5.2/extensions/user_default/mmd_tools/core/pmx/__init__.py",
+  "skeleton": "hutao_lantern_skeleton",
+  "glass_materials": [
+    32
+  ],
+  "head_materials": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    15,
+    16,
+    18,
+    32
+  ],
+  "cloth_materials": [
+    15
+  ],
+  "cloth_proxy_materials": [
+    15
+  ],
+  "hair_decision": "背部两束长发启用有限摆动，前发、帽与围巾固定",
+  "cloth_proxy_policy": {
+    "pin_band_m": 0.015,
+    "minimum_component_height_m": 0.055,
+    "max_proxy_vertices": 4500
+  },
+  "hair_reference_body_blend_max": 0.7,
+  "weight_refinement": {
+    "shoulders": true,
+    "crotch": true,
+    "waist": true
+  },
+  "rigid_material_bindings": {
+    "29": 11,
+    "30": 11
+  },
+  "shoulder_materials": [
+    21,
+    24,
+    25
+  ],
+  "shoulder_style": "arm_only"
+}

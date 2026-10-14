@@ -1,0 +1,33 @@
+{
+  "model": "YaeMikoRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 2148,
+      "vertical_band_m": [
+        1.0313274197280409,
+        1.2540150265395644
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "arm_only",
+      "vertices": 561,
+      "inner_x_m": 0.048059600830078125,
+      "outer_x_m": 0.1922384033203125
+    },
+    {
+      "region": "r_shoulder",
+      "style": "arm_only",
+      "vertices": 568,
+      "inner_x_m": 0.04805904388427735,
+      "outer_x_m": 0.1922361755371094
+    },
+    {
+      "region": "crotch",
+      "vertices": 216,
+      "derived_hip_half_width_m": 0.0879465389251709
+    }
+  ],
+  "geometry_unchanged": true
+}

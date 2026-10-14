@@ -1,0 +1,68 @@
+{
+  "id": "LisaRace",
+  "version": "v0.1.0",
+  "race": "lisa",
+  "prefix": "lisa",
+  "module_name": "Lisa Race",
+  "display_name": "丽莎",
+  "source_model": "input/original/丽莎/丽莎.pmx",
+  "source_archive": "input/archive/丽莎_by_原神_17d19b5d32960eb9b71bf04f798b9d4e.zip",
+  "ignored_models": [],
+  "unit_scale": 0.09,
+  "source_rotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "skin_min_scale": 1.0,
+  "cloth_enabled": false,
+  "cloth_lods": [],
+  "cloth_parts": {},
+  "lod_multipliers": [
+    1,
+    0.65,
+    0.4,
+    0.2
+  ],
+  "minimum_ratios": {
+    "m00": 0.7,
+    "m01": 0.7,
+    "m03": 0.7
+  },
+  "facial_animation": false,
+  "pmx_reader": "C:/Users/DKX/AppData/Roaming/Blender Foundation/Blender/5.2/extensions/user_default/mmd_tools/core/pmx/__init__.py",
+  "skeleton": "lisa_skeleton",
+  "unit_scale_reason": "Older source family uses smaller model units; uniform 0.09 conversion aligns anatomical head heights with the supplied models. No proportional reshaping.",
+  "glass_materials": [],
+  "head_materials": [
+    0,
+    1,
+    3,
+    4,
+    6
+  ],
+  "cloth_materials": [],
+  "hair_decision": "侧束较短、造型较紧，保留普通头部蒙皮",
+  "weight_refinement": {
+    "shoulders": true,
+    "crotch": true,
+    "waist": true
+  },
+  "shoulder_materials": [
+    2,
+    9
+  ],
+  "shoulder_style": "arm_only"
+}

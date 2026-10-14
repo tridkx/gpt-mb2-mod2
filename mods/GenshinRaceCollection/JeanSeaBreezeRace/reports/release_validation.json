@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "85cf167f621218be9f32b7d1c873a65c2a85708d5b09ccbba7f6ca4b48e3fb4d",
+  "source_input_sha256": "1da229e9ab95adb769463e99fb05791cf4903d4b1c19528bf1b5d4332d354257",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 21954,
+      "vertices": 14915,
+      "submeshes": 22
+    },
+    {
+      "lod": 1,
+      "triangles": 14439,
+      "vertices": 11083,
+      "submeshes": 22
+    },
+    {
+      "lod": 2,
+      "triangles": 10302,
+      "vertices": 8963,
+      "submeshes": 22
+    },
+    {
+      "lod": 3,
+      "triangles": 9521,
+      "vertices": 8525,
+      "submeshes": 22
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 338,
+      "worst_mesh": "jean_seabreeze_part_17",
+      "frames_checked": 16,
+      "max_edge_extension": 2.102249636029858,
+      "max_mesh_p99_extension": 1.2240922224055153
+    },
+    {
+      "label": "run",
+      "worst_frame": 21,
+      "worst_mesh": "jean_seabreeze_part_12",
+      "frames_checked": 25,
+      "max_edge_extension": 4.251544170244125,
+      "max_mesh_p99_extension": 1.5568484180383524
+    },
+    {
+      "label": "bow",
+      "worst_frame": 77,
+      "worst_mesh": "jean_seabreeze_part_12",
+      "frames_checked": 150,
+      "max_edge_extension": 4.849316150063305,
+      "max_mesh_p99_extension": 1.7805371459112322
+    },
+    {
+      "label": "riding",
+      "worst_frame": 11,
+      "worst_mesh": "jean_seabreeze_part_17",
+      "frames_checked": 20,
+      "max_edge_extension": 4.9833326547816945,
+      "max_mesh_p99_extension": 1.9715580964299078
+    },
+    {
+      "label": "slash",
+      "worst_frame": 116,
+      "worst_mesh": "jean_seabreeze_part_17",
+      "frames_checked": 150,
+      "max_edge_extension": 4.593473876915674,
+      "max_mesh_p99_extension": 1.5701399669192881
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 145,
+      "worst_mesh": "jean_seabreeze_part_12",
+      "frames_checked": 64,
+      "max_edge_extension": 3.3334788508068756,
+      "max_mesh_p99_extension": 1.330944689291093
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 540,
+      "worst_mesh": "jean_seabreeze_part_17",
+      "frames_checked": 16,
+      "max_edge_extension": 5.152358364170485,
+      "max_mesh_p99_extension": 1.9635006059314941
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 188,
+      "worst_mesh": "jean_seabreeze_part_17",
+      "frames_checked": 16,
+      "max_edge_extension": 3.2929218272699776,
+      "max_mesh_p99_extension": 1.5599923206667006
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 1,
+      "worst_mesh": "jean_seabreeze_part_17",
+      "frames_checked": 16,
+      "max_edge_extension": 3.419953938796636,
+      "max_mesh_p99_extension": 1.6485869604469947
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": false,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 0,
+  "proxy_simulation_vertices": 0,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u9ad8\u624e\u9a6c\u5c3e\u8f83\u77ed\u3001\u672b\u7aef\u5728\u80a9\u90e8\u9644\u8fd1\uff0c\u4fdd\u7559\u666e\u901a\u5934\u90e8\u8499\u76ae",
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

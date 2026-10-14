@@ -1,0 +1,25 @@
+{
+  "package": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\NingguangOrchidRace\\module\\NingguangOrchidRace\\AssetPackages\\ningguang_orchid.tpac",
+  "status": "pass",
+  "scope": "Metadata round-trip, references and standard shader vertex-alpha risk only; textures, custom shader paths, geometry, weights, cloth dynamics and game behavior are not validated",
+  "cloth_vertex_alpha": true,
+  "errors": [],
+  "incomplete": [],
+  "observations": [],
+  "package_sha256": "fa501126482777c25c7a3c37e294e086a441d8e24991e190e5fc6d8d992eadb0",
+  "tool_output": {
+    "metacheck": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\NingguangOrchidRace\\module\\NingguangOrchidRace\\AssetPackages\\ningguang_orchid.tpac: 43 assets | checksum ok=43 bad=0 | metadata identical=43 differ=0 noSerializer=0",
+    "mataudit": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\NingguangOrchidRace\\module\\NingguangOrchidRace\\AssetPackages\\ningguang_orchid.tpac: 32 materials, 43 assets\n  metamesh-level material missing=0 | submesh Material present=130 missing=0 | submesh SecondMaterial present=0 missing=0 | metameshes with no material at all=0"
+  },
+  "counts": {
+    "materials": 32,
+    "submeshes": 130,
+    "cloth_submeshes": 5,
+    "lods": [
+      0,
+      1,
+      2,
+      3
+    ]
+  }
+}

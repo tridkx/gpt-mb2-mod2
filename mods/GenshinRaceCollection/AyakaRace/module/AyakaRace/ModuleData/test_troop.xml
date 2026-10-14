@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<NPCCharacters>
+  <NPCCharacter id="ayaka_test" default_group="Infantry" level="6" name="神里绫华" occupation="Soldier" is_basic_troop="true" culture="Culture.empire" race="ayaka" is_female="true">
+    <face>
+      <face_key_template value="BodyProperty.fighter_empire" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="20" />
+      <skill id="Riding" value="0" />
+      <skill id="OneHanded" value="20" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="5" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="10" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.peasant_pitchfork_2_t1" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.peasant_polearm_1_t1" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.peasant_sickle_1_t1" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.empire_sword_1_t2" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+</NPCCharacters>

@@ -1,0 +1,33 @@
+{
+  "model": "GanyuRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 2249,
+      "vertical_band_m": [
+        0.9169199240091257,
+        1.1345583212259227
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "arm_only",
+      "vertices": 669,
+      "inner_x_m": 0.04148606109619141,
+      "outer_x_m": 0.16594424438476563
+    },
+    {
+      "region": "r_shoulder",
+      "style": "arm_only",
+      "vertices": 673,
+      "inner_x_m": 0.0414857406616211,
+      "outer_x_m": 0.1659429626464844
+    },
+    {
+      "region": "crotch",
+      "vertices": 229,
+      "derived_hip_half_width_m": 0.07667930126190185
+    }
+  ],
+  "geometry_unchanged": true
+}

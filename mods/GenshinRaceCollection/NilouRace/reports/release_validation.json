@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "01cc064b1b6baa0948a643c0ea28516880ed2f0654ef54150f03b3e718bfbbed",
+  "source_input_sha256": "764f60bd149911183ce668f6aa1c48425be62c03516a384b770dc66d13d7e474",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 31000,
+      "vertices": 20252,
+      "submeshes": 30
+    },
+    {
+      "lod": 1,
+      "triangles": 23338,
+      "vertices": 16306,
+      "submeshes": 30
+    },
+    {
+      "lod": 2,
+      "triangles": 19469,
+      "vertices": 14299,
+      "submeshes": 30
+    },
+    {
+      "lod": 3,
+      "triangles": 18076,
+      "vertices": 13531,
+      "submeshes": 30
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 169,
+      "worst_mesh": "nilou_part_17",
+      "frames_checked": 16,
+      "max_edge_extension": 3.317342125697258,
+      "max_mesh_p99_extension": 1.5403149417692454
+    },
+    {
+      "label": "run",
+      "worst_frame": 8,
+      "worst_mesh": "nilou_part_24",
+      "frames_checked": 25,
+      "max_edge_extension": 3.9744445797203034,
+      "max_mesh_p99_extension": 2.888873538854308
+    },
+    {
+      "label": "bow",
+      "worst_frame": 82,
+      "worst_mesh": "nilou_part_24",
+      "frames_checked": 150,
+      "max_edge_extension": 4.877550611149008,
+      "max_mesh_p99_extension": 2.241758410406499
+    },
+    {
+      "label": "riding",
+      "worst_frame": 9,
+      "worst_mesh": "nilou_part_21",
+      "frames_checked": 20,
+      "max_edge_extension": 4.027234776109156,
+      "max_mesh_p99_extension": 3.0823443318644435
+    },
+    {
+      "label": "slash",
+      "worst_frame": 111,
+      "worst_mesh": "nilou_part_17",
+      "frames_checked": 150,
+      "max_edge_extension": 5.005320583769619,
+      "max_mesh_p99_extension": 2.2607192303038546
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 145,
+      "worst_mesh": "nilou_part_24",
+      "frames_checked": 64,
+      "max_edge_extension": 2.9643419448732082,
+      "max_mesh_p99_extension": 1.7096493906662167
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 540,
+      "worst_mesh": "nilou_part_24",
+      "frames_checked": 16,
+      "max_edge_extension": 4.375372590408716,
+      "max_mesh_p99_extension": 3.030593135935751
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 564,
+      "worst_mesh": "nilou_part_17",
+      "frames_checked": 16,
+      "max_edge_extension": 4.699056458144302,
+      "max_mesh_p99_extension": 2.0702585554063493
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 83,
+      "worst_mesh": "nilou_part_24",
+      "frames_checked": 16,
+      "max_edge_extension": 3.279219589674883,
+      "max_mesh_p99_extension": 2.079867317333221
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": true,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 8,
+  "proxy_simulation_vertices": 809,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u540e\u90e8\u4e24\u675f\u957f\u53d1\u542f\u7528\u6709\u9650\u6446\u52a8\uff0c\u53d1\u7ef3\u968f\u76f8\u540c\u9a71\u52a8\u8ddf\u968f",
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

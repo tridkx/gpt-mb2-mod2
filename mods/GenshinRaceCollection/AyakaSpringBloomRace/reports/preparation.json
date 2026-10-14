@@ -1,0 +1,25 @@
+{
+  "vertices": 25152,
+  "source_triangles": 33164,
+  "selected_triangles": 27845,
+  "bones": 393,
+  "morphs": 63,
+  "excluded": [
+    {
+      "material_index": 12,
+      "name": "髮+",
+      "triangles": 4689,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    },
+    {
+      "material_index": 20,
+      "name": "裙+",
+      "triangles": 630,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    }
+  ],
+  "ignored_models": [],
+  "source_model": "input/original/神里绫华.pmx",
+  "selected_source_height_m": 1.6088612377643585,
+  "skirt_cloth_enabled": false
+}

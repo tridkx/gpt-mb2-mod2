@@ -1,0 +1,33 @@
+{
+  "model": "AmberRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 3321,
+      "vertical_band_m": [
+        0.877273788973689,
+        1.0993284802883865
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "field",
+      "vertices": 1805,
+      "inner_x_m": 0.03977770471572876,
+      "outer_x_m": 0.15911081886291503
+    },
+    {
+      "region": "r_shoulder",
+      "style": "field",
+      "vertices": 1804,
+      "inner_x_m": 0.03977770471572876,
+      "outer_x_m": 0.15911081886291503
+    },
+    {
+      "region": "crotch",
+      "vertices": 1114,
+      "derived_hip_half_width_m": 0.07434409081935882
+    }
+  ],
+  "geometry_unchanged": true
+}

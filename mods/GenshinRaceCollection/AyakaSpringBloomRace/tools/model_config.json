@@ -1,0 +1,80 @@
+{
+  "id": "AyakaSpringBloomRace",
+  "version": "v0.1.0",
+  "race": "ayaka_springbloom",
+  "prefix": "ayaka_springbloom",
+  "module_name": "Ayaka Spring Bloom Race",
+  "display_name": "神里绫华·花时来信",
+  "source_model": "input/original/神里绫华.pmx",
+  "source_archive": "input/archive/「花时来信」神里绫华_by_原神_7af832e1e1c37790ee43f8b3c54aa845.zip",
+  "ignored_models": [],
+  "unit_scale": 0.08,
+  "source_rotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "skin_min_scale": 1.0,
+  "cloth_enabled": false,
+  "cloth_lods": [],
+  "cloth_parts": {},
+  "lod_multipliers": [
+    1,
+    0.65,
+    0.4,
+    0.2
+  ],
+  "minimum_ratios": {
+    "m00": 0.7,
+    "m01": 0.7,
+    "m02": 0.7,
+    "m04": 0.7,
+    "m06": 0.7
+  },
+  "facial_animation": false,
+  "pmx_reader": "C:/Users/DKX/AppData/Roaming/Blender Foundation/Blender/5.2/extensions/user_default/mmd_tools/core/pmx/__init__.py",
+  "skeleton": "ayaka_springbloom_skeleton",
+  "glass_materials": [],
+  "head_materials": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    25
+  ],
+  "cloth_materials": [],
+  "hair_decision": "当前服装为短发，保留普通头部蒙皮",
+  "weight_refinement": {
+    "shoulders": true,
+    "crotch": true,
+    "waist": true
+  },
+  "shoulder_materials": [
+    15,
+    16,
+    17,
+    18
+  ],
+  "shoulder_style": "arm_only"
+}

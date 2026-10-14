@@ -1,0 +1,33 @@
+{
+  "model": "NingguangOrchidRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 1911,
+      "vertical_band_m": [
+        1.0384476292133331,
+        1.2528413975238801
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "field_narrow",
+      "vertices": 1742,
+      "inner_x_m": 0.04777070617675782,
+      "outer_x_m": 0.19108282470703128
+    },
+    {
+      "region": "r_shoulder",
+      "style": "field_narrow",
+      "vertices": 1718,
+      "inner_x_m": 0.04777018356323243,
+      "outer_x_m": 0.1910807342529297
+    },
+    {
+      "region": "crotch",
+      "vertices": 472,
+      "derived_hip_half_width_m": 0.0879510498046875
+    }
+  ],
+  "geometry_unchanged": true
+}

@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Module>
+  <Name value="Genshin Race Collection" />
+  <Id value="GenshinRaceCollection" />
+  <Version value="v0.1.0" />
+  <DefaultModule value="false" />
+  <ModuleCategory value="Singleplayer" />
+  <ModuleType value="Community" />
+  <SingleplayerModule value="true" />
+  <MultiplayerModule value="false" />
+  <DependedModules>
+    <DependedModule Id="Native" />
+    <DependedModule Id="SandBoxCore" />
+    <DependedModule Id="Sandbox" />
+  </DependedModules>
+  <SubModules>
+    <SubModule>
+      <Name value="Emilie UI Runtime" />
+      <DLLName value="EmilieRace.UIRuntime.dll" />
+      <SubModuleClassType value="EmilieRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="甘雨 UI Runtime" />
+      <DLLName value="GanyuRace.UIRuntime.dll" />
+      <SubModuleClassType value="GanyuRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="丽莎·叶隐芳名 UI Runtime" />
+      <DLLName value="LisaLeafShadeRace.UIRuntime.dll" />
+      <SubModuleClassType value="LisaLeafShadeRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="神里绫华·花时来信 UI Runtime" />
+      <DLLName value="AyakaSpringBloomRace.UIRuntime.dll" />
+      <SubModuleClassType value="AyakaSpringBloomRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="荧 UI Runtime" />
+      <DLLName value="LumineRace.UIRuntime.dll" />
+      <SubModuleClassType value="LumineRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="凝光·纱中幽兰 UI Runtime" />
+      <DLLName value="NingguangOrchidRace.UIRuntime.dll" />
+      <SubModuleClassType value="NingguangOrchidRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="云堇 UI Runtime" />
+      <DLLName value="YunJinRace.UIRuntime.dll" />
+      <SubModuleClassType value="YunJinRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="砂糖 UI Runtime" />
+      <DLLName value="SucroseRace.UIRuntime.dll" />
+      <SubModuleClassType value="SucroseRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="珊瑚宫心海 UI Runtime" />
+      <DLLName value="KokomiRace.UIRuntime.dll" />
+      <SubModuleClassType value="KokomiRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="芙宁娜 UI Runtime" />
+      <DLLName value="FurinaRace.UIRuntime.dll" />
+      <SubModuleClassType value="FurinaRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="闲云 UI Runtime" />
+      <DLLName value="XianyunRace.UIRuntime.dll" />
+      <SubModuleClassType value="XianyunRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="丽莎 UI Runtime" />
+      <DLLName value="LisaRace.UIRuntime.dll" />
+      <SubModuleClassType value="LisaRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="妮露 UI Runtime" />
+      <DLLName value="NilouRace.UIRuntime.dll" />
+      <SubModuleClassType value="NilouRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="安柏 UI Runtime" />
+      <DLLName value="AmberRace.UIRuntime.dll" />
+      <SubModuleClassType value="AmberRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="刻晴·霓裾翩跹 UI Runtime" />
+      <DLLName value="KeqingOpulentRace.UIRuntime.dll" />
+      <SubModuleClassType value="KeqingOpulentRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="八重神子 UI Runtime" />
+      <DLLName value="YaeMikoRace.UIRuntime.dll" />
+      <SubModuleClassType value="YaeMikoRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="琴·时装 UI Runtime" />
+      <DLLName value="JeanSeaBreezeRace.UIRuntime.dll" />
+      <SubModuleClassType value="JeanSeaBreezeRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="神里绫华 UI Runtime" />
+      <DLLName value="AyakaRace.UIRuntime.dll" />
+      <SubModuleClassType value="AyakaRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="胡桃·海灯节 UI Runtime" />
+      <DLLName value="HuTaoLanternRace.UIRuntime.dll" />
+      <SubModuleClassType value="HuTaoLanternRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="胡桃 UI Runtime" />
+      <DLLName value="HuTaoRace.UIRuntime.dll" />
+      <SubModuleClassType value="HuTaoRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="薇斯纳 UI Runtime" />
+      <DLLName value="WeisinaRace.UIRuntime.dll" />
+      <SubModuleClassType value="WeisinaRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="诺艾尔 UI Runtime" />
+      <DLLName value="NoelleRace.UIRuntime.dll" />
+      <SubModuleClassType value="NoelleRace.UIRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+  </SubModules>
+  <Xmls>
+    <XmlNode>
+      <XmlName id="Monsters" path="monsters" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+    <XmlNode>
+      <XmlName id="NPCCharacters" path="test_troop" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+        <GameType value="CustomGame" />
+      </IncludedGameTypes>
+    </XmlNode>
+  </Xmls>
+</Module>

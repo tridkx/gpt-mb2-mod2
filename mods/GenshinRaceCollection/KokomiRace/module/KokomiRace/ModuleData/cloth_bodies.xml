@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf8'?>
+<bodies>
+  <body name="kokomi_collision" owner_skeleton="kokomi_skeleton">
+    <capsules>
+      <capsule name="kokomi_torso_low" length="0.053537" origin="0, 0, 0" frame="-0.000001, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, -0.000000, 0.039619, 0.985938, 1.000000">
+        <points>
+          <point radius="0.067205">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.067205">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="kokomi_torso_high" length="0.066551" origin="0, 0, 0" frame="-0.000002, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000000, 0.061731, 1.039475, 1.000000">
+        <points>
+          <point radius="0.075218">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.075218">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="kokomi_head" length="0.035000" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000001, 0.011326, 1.387304, 1.000000">
+        <points>
+          <point radius="0.056486">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.056486">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="kokomi_neck" length="0.076661" origin="0, 0, 0" frame="-0.000003, 0.142528, 0.989791, 0.000000, 0.000000, 0.989791, -0.142528, 0.000000, -1.000000, 0.000000, -0.000003, 0.000000, -0.000001, 0.000400, 1.275826, 1.000000">
+        <points>
+          <point radius="0.021465">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.021465">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="kokomi_l_upperarm" length="0.212930" origin="0, 0, 0" frame="-0.784401, -0.020976, -0.619899, 0.000000, -0.016458, 0.999780, -0.013006, 0.000000, 0.620036, 0.000000, -0.784573, 0.000000, -0.105028, -0.005096, 1.235189, 1.000000">
+        <points>
+          <point radius="0.022358">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022358">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="kokomi_r_upperarm" length="0.212930" origin="0, 0, 0" frame="0.784404, -0.020977, -0.619895, 0.000000, 0.016458, 0.999780, -0.013006, 0.000000, 0.620032, -0.000000, 0.784577, 0.000000, 0.105026, -0.005096, 1.235189, 1.000000">
+        <points>
+          <point radius="0.022358">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022358">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

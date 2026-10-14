@@ -1,0 +1,60 @@
+{
+  "proxy": {
+    "mesh": "hutao_cloth_proxy",
+    "guid": "0236fdd5-ba1f-ff59-f499-6095fb55bc53",
+    "metamesh": "hutao_cloth_proxy",
+    "lod": 0,
+    "bytes": 146772,
+    "render_vertices": 1710,
+    "simulation_vertices": 1710,
+    "fixed_positions": 842,
+    "boundary_fixed_positions": 64,
+    "active_positions": 868,
+    "stretch_constraints": 2653,
+    "bend_constraints": 2636,
+    "shear_constraints": 0,
+    "parallel_sets": 22,
+    "dummy_sets": 11,
+    "max_geodesic_anchor_length": 0.936378669794566,
+    "sha256": "b4b515bac429a0e982fa58728aabaf85d7f29cd0c0ca9d0e52977ecb24295820",
+    "root_fixes": [],
+    "solver_pinned_render_vertices": [],
+    "path": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\HuTaoRace\\build\\proxy_cooked\\0236fdd5-ba1f-ff59-f499-6095fb55bc53.bin"
+  },
+  "render_maps": [
+    {
+      "mesh": "hutao_part_10.lod3",
+      "lod": 3,
+      "mapped_vertices": 1168,
+      "rest_reconstruction_max_error_m": 7.200026344248456e-08,
+      "max_normal_offset_m": 0.0007412131526507437,
+      "max_barycentric_extrapolation": 0.03163730353116989
+    },
+    {
+      "mesh": "hutao_part_10.lod2",
+      "lod": 2,
+      "mapped_vertices": 1168,
+      "rest_reconstruction_max_error_m": 7.200026344248456e-08,
+      "max_normal_offset_m": 0.0007412131526507437,
+      "max_barycentric_extrapolation": 0.03163730353116989
+    },
+    {
+      "mesh": "hutao_part_10.lod1",
+      "lod": 1,
+      "mapped_vertices": 1168,
+      "rest_reconstruction_max_error_m": 7.200026344248456e-08,
+      "max_normal_offset_m": 0.0007412131526507437,
+      "max_barycentric_extrapolation": 0.03163730353116989
+    },
+    {
+      "mesh": "hutao_part_10",
+      "lod": 0,
+      "mapped_vertices": 1168,
+      "rest_reconstruction_max_error_m": 7.200026344248456e-08,
+      "max_normal_offset_m": 0.0007412131526507437,
+      "max_barycentric_extrapolation": 0.03163730353116989
+    }
+  ],
+  "scope": "Selected long hair and attached hair ties only; all skirts/clothes remain skinned",
+  "game_verified": false
+}

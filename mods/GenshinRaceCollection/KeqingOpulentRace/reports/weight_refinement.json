@@ -1,0 +1,33 @@
+{
+  "model": "KeqingOpulentRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 1707,
+      "vertical_band_m": [
+        0.9189773488044739,
+        1.127414314746857
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "field_narrow",
+      "vertices": 1629,
+      "inner_x_m": 0.04134980392456055,
+      "outer_x_m": 0.1653992156982422
+    },
+    {
+      "region": "r_shoulder",
+      "style": "field_narrow",
+      "vertices": 1546,
+      "inner_x_m": 0.041349269866943365,
+      "outer_x_m": 0.16539707946777346
+    },
+    {
+      "region": "crotch",
+      "vertices": 669,
+      "derived_hip_half_width_m": 0.07516034126281738
+    }
+  ],
+  "geometry_unchanged": true
+}

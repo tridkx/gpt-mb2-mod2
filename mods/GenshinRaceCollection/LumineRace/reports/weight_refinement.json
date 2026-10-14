@@ -1,0 +1,33 @@
+{
+  "model": "LumineRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 1410,
+      "vertical_band_m": [
+        0.9025914406776427,
+        1.1004832100868225
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "arm_only",
+      "vertices": 296,
+      "inner_x_m": 0.04159960174560547,
+      "outer_x_m": 0.1663984069824219
+    },
+    {
+      "region": "r_shoulder",
+      "style": "arm_only",
+      "vertices": 315,
+      "inner_x_m": 0.04159916305541993,
+      "outer_x_m": 0.1663966522216797
+    },
+    {
+      "region": "crotch",
+      "vertices": 507,
+      "derived_hip_half_width_m": 0.07485153675079347
+    }
+  ],
+  "geometry_unchanged": true
+}

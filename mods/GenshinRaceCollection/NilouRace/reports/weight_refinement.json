@@ -1,0 +1,33 @@
+{
+  "model": "NilouRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 3598,
+      "vertical_band_m": [
+        0.891477925553918,
+        1.0995305225998164
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "arm_only",
+      "vertices": 424,
+      "inner_x_m": 0.04107934951782227,
+      "outer_x_m": 0.1643173980712891
+    },
+    {
+      "region": "r_shoulder",
+      "style": "arm_only",
+      "vertices": 424,
+      "inner_x_m": 0.041078830718994146,
+      "outer_x_m": 0.16431532287597658
+    },
+    {
+      "region": "crotch",
+      "vertices": 571,
+      "derived_hip_half_width_m": 0.07466874599456787
+    }
+  ],
+  "geometry_unchanged": true
+}

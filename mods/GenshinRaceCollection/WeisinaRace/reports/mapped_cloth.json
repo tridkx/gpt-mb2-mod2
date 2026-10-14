@@ -1,0 +1,60 @@
+{
+  "proxy": {
+    "mesh": "weisina_cloth_proxy",
+    "guid": "5251bd7c-2e11-d903-e459-0c5b227d5391",
+    "metamesh": "weisina_cloth_proxy",
+    "lod": 0,
+    "bytes": 323096,
+    "render_vertices": 2952,
+    "simulation_vertices": 2952,
+    "fixed_positions": 439,
+    "boundary_fixed_positions": 112,
+    "active_positions": 2513,
+    "stretch_constraints": 7624,
+    "bend_constraints": 7221,
+    "shear_constraints": 0,
+    "parallel_sets": 36,
+    "dummy_sets": 18,
+    "max_geodesic_anchor_length": 1.0497427407222328,
+    "sha256": "3db7056f00f4786fdd69ccefff03efc374ef96b5df87a99d7fb94adf10dad54e",
+    "root_fixes": [],
+    "solver_pinned_render_vertices": [],
+    "path": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\WeisinaRace\\build\\proxy_cooked\\5251bd7c-2e11-d903-e459-0c5b227d5391.bin"
+  },
+  "render_maps": [
+    {
+      "mesh": "weisina_part_15.lod3",
+      "lod": 3,
+      "mapped_vertices": 3641,
+      "rest_reconstruction_max_error_m": 2.9561100950321152e-05,
+      "max_normal_offset_m": 0.011636394076049328,
+      "max_barycentric_extrapolation": 0.05270387977361679
+    },
+    {
+      "mesh": "weisina_part_15.lod1",
+      "lod": 1,
+      "mapped_vertices": 3641,
+      "rest_reconstruction_max_error_m": 2.9561100950321152e-05,
+      "max_normal_offset_m": 0.011636394076049328,
+      "max_barycentric_extrapolation": 0.05270387977361679
+    },
+    {
+      "mesh": "weisina_part_15.lod2",
+      "lod": 2,
+      "mapped_vertices": 3641,
+      "rest_reconstruction_max_error_m": 2.9561100950321152e-05,
+      "max_normal_offset_m": 0.011636394076049328,
+      "max_barycentric_extrapolation": 0.05270387977361679
+    },
+    {
+      "mesh": "weisina_part_15",
+      "lod": 0,
+      "mapped_vertices": 3641,
+      "rest_reconstruction_max_error_m": 2.9561100950321152e-05,
+      "max_normal_offset_m": 0.011636394076049328,
+      "max_barycentric_extrapolation": 0.05270387977361679
+    }
+  ],
+  "scope": "Selected long hair and attached hair ties only; all skirts/clothes remain skinned",
+  "game_verified": false
+}

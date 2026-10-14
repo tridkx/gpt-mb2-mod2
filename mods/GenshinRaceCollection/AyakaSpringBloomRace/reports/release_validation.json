@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "8933422c273d690367c2c3f26c092baa6727c2382a868201db58fd0bc3858252",
+  "source_input_sha256": "f58259ddcd48ff2c4f64013e0b6394727600034150ad8a3bd5bd8c7f873d351f",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 27747,
+      "vertices": 18898,
+      "submeshes": 24
+    },
+    {
+      "lod": 1,
+      "triangles": 18301,
+      "vertices": 14119,
+      "submeshes": 24
+    },
+    {
+      "lod": 2,
+      "triangles": 12880,
+      "vertices": 11328,
+      "submeshes": 24
+    },
+    {
+      "lod": 3,
+      "triangles": 11253,
+      "vertices": 10425,
+      "submeshes": 24
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 254,
+      "worst_mesh": "ayaka_springbloom_part_19",
+      "frames_checked": 16,
+      "max_edge_extension": 2.014922244004316,
+      "max_mesh_p99_extension": 1.7096379179458097
+    },
+    {
+      "label": "run",
+      "worst_frame": 22,
+      "worst_mesh": "ayaka_springbloom_part_19",
+      "frames_checked": 25,
+      "max_edge_extension": 4.359353605040479,
+      "max_mesh_p99_extension": 3.270781425968174
+    },
+    {
+      "label": "bow",
+      "worst_frame": 108,
+      "worst_mesh": "ayaka_springbloom_part_19",
+      "frames_checked": 150,
+      "max_edge_extension": 4.377969886191037,
+      "max_mesh_p99_extension": 3.340289934144885
+    },
+    {
+      "label": "riding",
+      "worst_frame": 14,
+      "worst_mesh": "ayaka_springbloom_part_19",
+      "frames_checked": 20,
+      "max_edge_extension": 4.875363489971793,
+      "max_mesh_p99_extension": 3.643810148398557
+    },
+    {
+      "label": "slash",
+      "worst_frame": 55,
+      "worst_mesh": "ayaka_springbloom_part_19",
+      "frames_checked": 150,
+      "max_edge_extension": 3.471095499286886,
+      "max_mesh_p99_extension": 2.7357440322325535
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 1406,
+      "worst_mesh": "ayaka_springbloom_part_19",
+      "frames_checked": 64,
+      "max_edge_extension": 2.777000962627232,
+      "max_mesh_p99_extension": 2.2220519292221015
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 540,
+      "worst_mesh": "ayaka_springbloom_part_19",
+      "frames_checked": 16,
+      "max_edge_extension": 4.6083240231730045,
+      "max_mesh_p99_extension": 3.494545657888296
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 564,
+      "worst_mesh": "ayaka_springbloom_part_19",
+      "frames_checked": 16,
+      "max_edge_extension": 3.9843954881744494,
+      "max_mesh_p99_extension": 3.0504202241529725
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 124,
+      "worst_mesh": "ayaka_springbloom_part_19",
+      "frames_checked": 16,
+      "max_edge_extension": 4.033644843081123,
+      "max_mesh_p99_extension": 3.07940498276126
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": false,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 0,
+  "proxy_simulation_vertices": 0,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u5f53\u524d\u670d\u88c5\u4e3a\u77ed\u53d1\uff0c\u4fdd\u7559\u666e\u901a\u5934\u90e8\u8499\u76ae",
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

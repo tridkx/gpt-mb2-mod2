@@ -1,0 +1,25 @@
+{
+  "package": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\GanyuRace\\module\\GanyuRace\\AssetPackages\\ganyu.tpac",
+  "status": "pass",
+  "scope": "Metadata round-trip, references and standard shader vertex-alpha risk only; textures, custom shader paths, geometry, weights, cloth dynamics and game behavior are not validated",
+  "cloth_vertex_alpha": true,
+  "errors": [],
+  "incomplete": [],
+  "observations": [],
+  "package_sha256": "efa6c7160d32067cabbd6615916d22576a8a950d8700c17f3d0274d92a0a92ad",
+  "tool_output": {
+    "metacheck": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\GanyuRace\\module\\GanyuRace\\AssetPackages\\ganyu.tpac: 30 assets | checksum ok=30 bad=0 | metadata identical=30 differ=0 noSerializer=0",
+    "mataudit": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\GanyuRace\\module\\GanyuRace\\AssetPackages\\ganyu.tpac: 19 materials, 30 assets\n  metamesh-level material missing=0 | submesh Material present=78 missing=0 | submesh SecondMaterial present=0 missing=0 | metameshes with no material at all=0"
+  },
+  "counts": {
+    "materials": 19,
+    "submeshes": 78,
+    "cloth_submeshes": 5,
+    "lods": [
+      0,
+      1,
+      2,
+      3
+    ]
+  }
+}

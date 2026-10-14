@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "38ee65f223d6973668583e7e9133aa27abb1d2a1c565e436440a23731deb1fe4",
+  "source_input_sha256": "c83f2ea5aebf62ed6c58e5310526a152c76de74ea5e77850c79ea9d95d9e5af0",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 26524,
+      "vertices": 17890,
+      "submeshes": 28
+    },
+    {
+      "lod": 1,
+      "triangles": 20496,
+      "vertices": 14809,
+      "submeshes": 28
+    },
+    {
+      "lod": 2,
+      "triangles": 17202,
+      "vertices": 13121,
+      "submeshes": 28
+    },
+    {
+      "lod": 3,
+      "triangles": 16221,
+      "vertices": 12584,
+      "submeshes": 28
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 676,
+      "worst_mesh": "keqing_opulent_part_21",
+      "frames_checked": 16,
+      "max_edge_extension": 2.2345801186474654,
+      "max_mesh_p99_extension": 1.8366225876629982
+    },
+    {
+      "label": "run",
+      "worst_frame": 8,
+      "worst_mesh": "keqing_opulent_part_21",
+      "frames_checked": 25,
+      "max_edge_extension": 4.731618408270184,
+      "max_mesh_p99_extension": 3.075367253300363
+    },
+    {
+      "label": "bow",
+      "worst_frame": 82,
+      "worst_mesh": "keqing_opulent_part_29",
+      "frames_checked": 150,
+      "max_edge_extension": 4.810856348790204,
+      "max_mesh_p99_extension": 3.772184723945655
+    },
+    {
+      "label": "riding",
+      "worst_frame": 11,
+      "worst_mesh": "keqing_opulent_part_21",
+      "frames_checked": 20,
+      "max_edge_extension": 3.9860285193158047,
+      "max_mesh_p99_extension": 2.993005821709113
+    },
+    {
+      "label": "slash",
+      "worst_frame": 134,
+      "worst_mesh": "keqing_opulent_part_21",
+      "frames_checked": 150,
+      "max_edge_extension": 4.016959219380006,
+      "max_mesh_p99_extension": 2.92020433440165
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 145,
+      "worst_mesh": "keqing_opulent_part_21",
+      "frames_checked": 64,
+      "max_edge_extension": 3.0893940481330753,
+      "max_mesh_p99_extension": 1.7416205469770305
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 540,
+      "worst_mesh": "keqing_opulent_part_21",
+      "frames_checked": 16,
+      "max_edge_extension": 4.718001624710557,
+      "max_mesh_p99_extension": 3.5698791243486627
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 564,
+      "worst_mesh": "keqing_opulent_part_21",
+      "frames_checked": 16,
+      "max_edge_extension": 3.4884244197474374,
+      "max_mesh_p99_extension": 2.4869145130574037
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 83,
+      "worst_mesh": "keqing_opulent_part_29",
+      "frames_checked": 16,
+      "max_edge_extension": 3.164457544401549,
+      "max_mesh_p99_extension": 2.4512025884159607
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": true,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 8,
+  "proxy_simulation_vertices": 1462,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u53cc\u9a6c\u5c3e\u542f\u7528\u6709\u9650\u6446\u52a8\uff0c\u53d1\u5e26\u8ddf\u968f\u540c\u4e00\u9a71\u52a8\uff1b\u524d\u90e8\u5934\u53d1\u56fa\u5b9a",
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

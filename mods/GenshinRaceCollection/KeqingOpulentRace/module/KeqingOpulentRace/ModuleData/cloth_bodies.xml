@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf8'?>
+<bodies>
+  <body name="keqing_opulent_collision" owner_skeleton="keqing_opulent_skeleton">
+    <capsules>
+      <capsule name="keqing_opulent_torso_low" length="0.052694" origin="0, 0, 0" frame="-0.000001, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, -0.000000, 0.052707, 0.984720, 1.000000">
+        <points>
+          <point radius="0.067641">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.067641">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="keqing_opulent_torso_high" length="0.065504" origin="0, 0, 0" frame="-0.000002, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000000, 0.067868, 1.037414, 1.000000">
+        <points>
+          <point radius="0.050124">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.050124">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="keqing_opulent_head" length="0.059363" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000001, 0.011148, 1.359728, 1.000000">
+        <points>
+          <point radius="0.073310">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.073310">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="keqing_opulent_neck" length="0.075454" origin="0, 0, 0" frame="-0.000003, 0.142528, 0.989791, 0.000000, 0.000000, 0.989791, -0.142528, 0.000000, -1.000000, 0.000000, -0.000003, 0.000000, -0.000001, 0.000393, 1.270044, 1.000000">
+        <points>
+          <point radius="0.027858">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.027858">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="keqing_opulent_l_upperarm" length="0.209578" origin="0, 0, 0" frame="-0.775676, -0.020900, -0.630785, 0.000000, -0.016215, 0.999782, -0.013186, 0.000000, 0.630923, 0.000000, -0.775845, 0.000000, -0.103375, -0.005015, 1.230047, 1.000000">
+        <points>
+          <point radius="0.022006">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022006">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="keqing_opulent_r_upperarm" length="0.209578" origin="0, 0, 0" frame="0.775672, -0.020977, -0.630787, 0.000000, 0.016275, 0.999780, -0.013235, 0.000000, 0.630926, -0.000000, 0.775843, 0.000000, 0.103373, -0.005016, 1.230047, 1.000000">
+        <points>
+          <point radius="0.022006">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022006">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

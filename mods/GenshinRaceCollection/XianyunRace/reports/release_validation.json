@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "209e3a8b5c5659ee8f61484178639c85ee930e8a65c259b98b9ebf4f41f46819",
+  "source_input_sha256": "bf7c0a9f63aacf22bdfc9f1a769349863777fe7c7858297a5c75e448dc3dffd4",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 37502,
+      "vertices": 24645,
+      "submeshes": 29
+    },
+    {
+      "lod": 1,
+      "triangles": 30076,
+      "vertices": 20911,
+      "submeshes": 29
+    },
+    {
+      "lod": 2,
+      "triangles": 28828,
+      "vertices": 20290,
+      "submeshes": 29
+    },
+    {
+      "lod": 3,
+      "triangles": 28416,
+      "vertices": 20082,
+      "submeshes": 29
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 929,
+      "worst_mesh": "xianyun_part_14",
+      "frames_checked": 16,
+      "max_edge_extension": 2.1970300815846784,
+      "max_mesh_p99_extension": 1.5239914504782448
+    },
+    {
+      "label": "run",
+      "worst_frame": 18,
+      "worst_mesh": "xianyun_part_14",
+      "frames_checked": 25,
+      "max_edge_extension": 3.967644333040516,
+      "max_mesh_p99_extension": 1.7678687447885295
+    },
+    {
+      "label": "bow",
+      "worst_frame": 14,
+      "worst_mesh": "xianyun_part_26",
+      "frames_checked": 150,
+      "max_edge_extension": 5.034869963269175,
+      "max_mesh_p99_extension": 2.776453860016969
+    },
+    {
+      "label": "riding",
+      "worst_frame": 11,
+      "worst_mesh": "xianyun_part_21",
+      "frames_checked": 20,
+      "max_edge_extension": 3.5605028157967924,
+      "max_mesh_p99_extension": 2.120544364211387
+    },
+    {
+      "label": "slash",
+      "worst_frame": 73,
+      "worst_mesh": "xianyun_part_26",
+      "frames_checked": 150,
+      "max_edge_extension": 4.214458033557954,
+      "max_mesh_p99_extension": 2.814456353315925
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 145,
+      "worst_mesh": "xianyun_part_21",
+      "frames_checked": 64,
+      "max_edge_extension": 2.3821525767061673,
+      "max_mesh_p99_extension": 1.4212209341428712
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 270,
+      "worst_mesh": "xianyun_part_26",
+      "frames_checked": 16,
+      "max_edge_extension": 4.486925953249632,
+      "max_mesh_p99_extension": 2.893358641521636
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 501,
+      "worst_mesh": "xianyun_part_14",
+      "frames_checked": 16,
+      "max_edge_extension": 3.7959036670337127,
+      "max_mesh_p99_extension": 1.7910162698163825
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 62,
+      "worst_mesh": "xianyun_part_14",
+      "frames_checked": 16,
+      "max_edge_extension": 2.842775907391177,
+      "max_mesh_p99_extension": 1.6264614766666432
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": true,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 4,
+  "proxy_simulation_vertices": 2915,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u540e\u90e8\u9ad8\u9a6c\u5c3e\u8f83\u957f\uff0c\u542f\u7528\u6709\u9650\u6446\u52a8\uff1b\u989d\u524d\u77ed\u53d1\u4e0e\u53d1\u9970\u56fa\u5b9a",
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

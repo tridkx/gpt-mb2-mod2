@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<action_sets>
+  <action_set id="as_keqing_opulent_warrior" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_warrior" />
+  <action_set id="as_keqing_opulent_female_warrior" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_keqing_opulent_villager" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_keqing_opulent_female_villager" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_keqing_opulent_facegen" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_keqing_opulent_female_facegen" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_facegen">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_keqing_opulent_hideout_bandit" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_hideout_bandit" />
+  <action_set id="as_keqing_opulent_female_hideout_bandit" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_hideout_bandit" />
+  <action_set id="as_keqing_opulent_villager_in_tavern" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_in_tavern" />
+  <action_set id="as_keqing_opulent_female_villager_in_tavern" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_tavern" />
+  <action_set id="as_keqing_opulent_warrior_in_tavern" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_tavern" />
+  <action_set id="as_keqing_opulent_female_warrior_in_tavern" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_tavern" />
+  <action_set id="as_keqing_opulent_villager_in_aserai_tavern" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_in_aserai_tavern" />
+  <action_set id="as_keqing_opulent_female_villager_in_aserai_tavern" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_aserai_tavern" />
+  <action_set id="as_keqing_opulent_warrior_in_aserai_tavern" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_aserai_tavern" />
+  <action_set id="as_keqing_opulent_female_warrior_in_aserai_tavern" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_aserai_tavern" />
+  <action_set id="as_keqing_opulent_child" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_child" />
+  <action_set id="as_keqing_opulent_female_child" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_child" />
+  <action_set id="as_keqing_opulent_map" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_map" />
+  <action_set id="as_keqing_opulent_female_map" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_map" />
+  <action_set id="as_keqing_opulent_map_with_banner" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_map_with_banner" />
+  <action_set id="as_keqing_opulent_female_map_with_banner" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_map_with_banner" />
+  <action_set id="as_keqing_opulent_villain" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villain" />
+  <action_set id="as_keqing_opulent_female_villain" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villain" />
+  <action_set id="as_keqing_opulent_lord" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_lord" />
+  <action_set id="as_keqing_opulent_female_lord" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_lord" />
+  <action_set id="as_keqing_opulent_seller" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_seller" />
+  <action_set id="as_keqing_opulent_female_seller" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_seller" />
+  <action_set id="as_keqing_opulent_weaponsmith" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_weaponsmith" />
+  <action_set id="as_keqing_opulent_female_weaponsmith" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_weaponsmith" />
+  <action_set id="as_keqing_opulent_villager_artisan" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_artisan" />
+  <action_set id="as_keqing_opulent_female_villager_artisan" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_artisan" />
+  <action_set id="as_keqing_opulent_villager_merchant" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_merchant" />
+  <action_set id="as_keqing_opulent_female_villager_merchant" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_merchant" />
+  <action_set id="as_keqing_opulent_villager_preacher" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_preacher" />
+  <action_set id="as_keqing_opulent_female_villager_preacher" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_preacher" />
+  <action_set id="as_keqing_opulent_villager_gangleader" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_gangleader" />
+  <action_set id="as_keqing_opulent_female_villager_gangleader" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_gangleader" />
+  <action_set id="as_keqing_opulent_villager_ruralnotable" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_ruralnotable" />
+  <action_set id="as_keqing_opulent_female_villager_ruralnotable" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_ruralnotable" />
+  <action_set id="as_keqing_opulent_gangleader_bodyguard" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_gangleader_bodyguard" />
+  <action_set id="as_keqing_opulent_female_gangleader_bodyguard" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_gangleader_bodyguard" />
+  <action_set id="as_keqing_opulent_merchant_notary" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_merchant_notary" />
+  <action_set id="as_keqing_opulent_female_merchant_notary" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_merchant_notary" />
+  <action_set id="as_keqing_opulent_female_barmaid" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_barmaid" />
+  <action_set id="as_keqing_opulent_barmaid" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_barmaid" />
+  <action_set id="as_keqing_opulent_tavern_keeper" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_tavern_keeper" />
+  <action_set id="as_keqing_opulent_female_tavern_keeper" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_tavern_keeper" />
+  <action_set id="as_keqing_opulent_musician" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_musician" />
+  <action_set id="as_keqing_opulent_female_musician" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_musician" />
+  <action_set id="as_keqing_opulent_female_dancer" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_dancer" />
+  <action_set id="as_keqing_opulent_dancer" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_dancer" />
+  <action_set id="as_keqing_opulent_beggar" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_beggar" />
+  <action_set id="as_keqing_opulent_female_beggar" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_beggar" />
+  <action_set id="as_keqing_opulent_guard" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_guard" />
+  <action_set id="as_keqing_opulent_female_guard" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_guard" />
+  <action_set id="as_keqing_opulent_unarmed_guard" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_unarmed_guard" />
+  <action_set id="as_keqing_opulent_female_unarmed_guard" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_unarmed_guard" />
+  <action_set id="as_keqing_opulent_villager_with_backpack" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_with_backpack" />
+  <action_set id="as_keqing_opulent_female_villager_with_backpack" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_backpack" />
+  <action_set id="as_keqing_opulent_villager_with_staff" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_with_staff" />
+  <action_set id="as_keqing_opulent_female_villager_with_staff" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_staff" />
+  <action_set id="as_keqing_opulent_villager_carry_on_shoulder" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_on_shoulder" />
+  <action_set id="as_keqing_opulent_worker_carry_wood_on_shoulder" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_worker_carry_wood_on_shoulder" />
+  <action_set id="as_keqing_opulent_villager_carry_bucket_on_lefthand" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_bucket_on_lefthand" />
+  <action_set id="as_keqing_opulent_villager_carry_fish_buckets" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_fish_buckets" />
+  <action_set id="as_keqing_opulent_female_villager_carry_on_shoulder" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_on_shoulder" />
+  <action_set id="as_keqing_opulent_villager_carry_axe" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_axe" />
+  <action_set id="as_keqing_opulent_female_villager_carry_axe" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_axe" />
+  <action_set id="as_keqing_opulent_villager_carry_right_side" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_side" />
+  <action_set id="as_keqing_opulent_female_villager_carry_right_side" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_side" />
+  <action_set id="as_keqing_opulent_villager_carry_front_v2" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front_v2" />
+  <action_set id="as_keqing_opulent_female_villager_carry_front_v2" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front_v2" />
+  <action_set id="as_keqing_opulent_villager_carry_front" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front" />
+  <action_set id="as_keqing_opulent_female_villager_carry_front" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front" />
+  <action_set id="as_keqing_opulent_villager_carry_right_hand" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_hand" />
+  <action_set id="as_keqing_opulent_female_villager_carry_right_hand" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_hand" />
+  <action_set id="as_keqing_opulent_villager_carry_right_arm" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_arm" />
+  <action_set id="as_keqing_opulent_female_villager_carry_right_arm" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_arm" />
+  <action_set id="as_keqing_opulent_villager_carry_over_head" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head" />
+  <action_set id="as_keqing_opulent_female_villager_carry_over_head" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head" />
+  <action_set id="as_keqing_opulent_villager_carry_over_head_v2" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head_v2" />
+  <action_set id="as_keqing_opulent_female_villager_carry_over_head_v2" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head_v2" />
+  <action_set id="as_keqing_opulent_villager_2" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_2" />
+  <action_set id="as_keqing_opulent_female_villager_2" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_2" />
+  <action_set id="as_keqing_opulent_villager_3" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_villager_3" />
+  <action_set id="as_keqing_opulent_female_villager_3" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_female_villager_3" />
+  <action_set id="as_keqing_opulent_poses" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_keqing_opulent_female_poses" skeleton="keqing_opulent_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+</action_sets>

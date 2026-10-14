@@ -1,0 +1,257 @@
+{
+  "date": "2026-10-14",
+  "decisions": [
+    {
+      "id": "GanyuRace",
+      "name": "甘雨",
+      "unit_scale": 0.08,
+      "hair_cloth": true,
+      "hair_decision": "后部单束长发超过肩背，启用有限摆动；刘海固定",
+      "hair_materials": [
+        10
+      ],
+      "ignored_models": [],
+      "source_model": "input/original/甘雨.pmx"
+    },
+    {
+      "id": "LisaLeafShadeRace",
+      "name": "丽莎·叶隐芳名",
+      "unit_scale": 0.08,
+      "hair_cloth": false,
+      "hair_decision": "发型较短且贴近肩颈，普通头部蒙皮更稳定",
+      "hair_materials": [],
+      "ignored_models": [],
+      "source_model": "input/original/丽莎.pmx"
+    },
+    {
+      "id": "AyakaSpringBloomRace",
+      "name": "神里绫华·花时来信",
+      "unit_scale": 0.08,
+      "hair_cloth": false,
+      "hair_decision": "当前服装为短发，保留普通头部蒙皮",
+      "hair_materials": [],
+      "ignored_models": [],
+      "source_model": "input/original/神里绫华.pmx"
+    },
+    {
+      "id": "LumineRace",
+      "name": "荧",
+      "unit_scale": 0.08,
+      "hair_cloth": false,
+      "hair_decision": "短发，保留普通头部蒙皮",
+      "hair_materials": [],
+      "ignored_models": [],
+      "source_model": "input/original/荧.pmx"
+    },
+    {
+      "id": "NingguangOrchidRace",
+      "name": "凝光·纱中幽兰",
+      "unit_scale": 0.08,
+      "hair_cloth": true,
+      "hair_decision": "两束长发延伸至腿部，启用有限摆动；前部发型固定",
+      "hair_materials": [
+        11
+      ],
+      "ignored_models": [],
+      "source_model": "input/original/凝光.pmx"
+    },
+    {
+      "id": "YunJinRace",
+      "name": "云堇",
+      "unit_scale": 0.08,
+      "hair_cloth": true,
+      "hair_decision": "后部两条长辫独立下垂，启用有限摆动；帽与短发固定",
+      "hair_materials": [
+        12
+      ],
+      "ignored_models": [
+        "花枪.pmx"
+      ],
+      "source_model": "input/original/云堇.pmx"
+    },
+    {
+      "id": "SucroseRace",
+      "name": "砂糖",
+      "unit_scale": 0.08,
+      "hair_cloth": false,
+      "hair_decision": "短发，保留普通头部蒙皮",
+      "hair_materials": [],
+      "ignored_models": [],
+      "source_model": "input/original/砂糖.pmx"
+    },
+    {
+      "id": "KokomiRace",
+      "name": "珊瑚宫心海",
+      "unit_scale": 0.08,
+      "hair_cloth": true,
+      "hair_decision": "后部双长发下垂且与身体有间隙，启用有限摆动",
+      "hair_materials": [
+        15
+      ],
+      "ignored_models": [],
+      "source_model": "input/original/珊瑚宫心海.pmx"
+    },
+    {
+      "id": "FurinaRace",
+      "name": "芙宁娜",
+      "unit_scale": 0.08,
+      "hair_cloth": false,
+      "hair_decision": "随机选中的荒配色为短发，保留普通头部蒙皮",
+      "hair_materials": [],
+      "ignored_models": [
+        "【芙宁娜】.pmx"
+      ],
+      "source_model": "input/original/【芙宁娜_荒】.pmx"
+    },
+    {
+      "id": "XianyunRace",
+      "name": "闲云",
+      "unit_scale": 0.08,
+      "hair_cloth": true,
+      "hair_decision": "后部高马尾较长，启用有限摆动；额前短发与发饰固定",
+      "hair_materials": [
+        11
+      ],
+      "ignored_models": [
+        "壶.pmx",
+        "机巧鹤.pmx",
+        "爆米花.pmx",
+        "留云鹤.pmx"
+      ],
+      "source_model": "input/original/闲云.pmx"
+    },
+    {
+      "id": "LisaRace",
+      "name": "丽莎",
+      "unit_scale": 0.09,
+      "hair_cloth": false,
+      "hair_decision": "侧束较短、造型较紧，保留普通头部蒙皮",
+      "hair_materials": [],
+      "ignored_models": [],
+      "source_model": "input/original/丽莎/丽莎.pmx"
+    },
+    {
+      "id": "NilouRace",
+      "name": "妮露",
+      "unit_scale": 0.08,
+      "hair_cloth": true,
+      "hair_decision": "后部两束长发启用有限摆动，发绳随相同驱动跟随",
+      "hair_materials": [
+        12,
+        13
+      ],
+      "ignored_models": [],
+      "source_model": "input/original/妮露.pmx"
+    },
+    {
+      "id": "AmberRace",
+      "name": "安柏",
+      "unit_scale": 0.09,
+      "hair_cloth": true,
+      "hair_decision": "后部长发超过肩背，启用有限摆动；额前头发固定",
+      "hair_materials": [
+        5
+      ],
+      "ignored_models": [],
+      "source_model": "input/original/安柏/安柏.pmx"
+    },
+    {
+      "id": "KeqingOpulentRace",
+      "name": "刻晴·霓裾翩跹",
+      "unit_scale": 0.08,
+      "hair_cloth": true,
+      "hair_decision": "双马尾启用有限摆动，发带跟随同一驱动；前部头发固定",
+      "hair_materials": [
+        12,
+        22
+      ],
+      "ignored_models": [],
+      "source_model": "input/original/刻晴.pmx"
+    },
+    {
+      "id": "YaeMikoRace",
+      "name": "八重神子",
+      "unit_scale": 0.08,
+      "hair_cloth": true,
+      "hair_decision": "后部宽长发超过腰部，启用有限摆动；前发与饰物固定",
+      "hair_materials": [
+        9
+      ],
+      "ignored_models": [],
+      "source_model": "input/original/八重神子.pmx"
+    },
+    {
+      "id": "JeanSeaBreezeRace",
+      "name": "琴·时装",
+      "unit_scale": 0.08,
+      "hair_cloth": false,
+      "hair_decision": "高扎马尾较短、末端在肩部附近，保留普通头部蒙皮",
+      "hair_materials": [],
+      "ignored_models": [],
+      "source_model": "input/original/琴.pmx"
+    },
+    {
+      "id": "AyakaRace",
+      "name": "神里绫华",
+      "unit_scale": 0.08,
+      "hair_cloth": true,
+      "hair_decision": "后部长马尾启用有限摆动；刘海与头饰固定",
+      "hair_materials": [
+        0
+      ],
+      "ignored_models": [],
+      "source_model": "input/original/神里绫华.pmx"
+    },
+    {
+      "id": "HuTaoLanternRace",
+      "name": "胡桃·海灯节",
+      "unit_scale": 0.08,
+      "hair_cloth": true,
+      "hair_decision": "背部两束长发启用有限摆动，前发、帽与围巾固定",
+      "hair_materials": [
+        15
+      ],
+      "ignored_models": [],
+      "source_model": "input/original/胡桃-海灯节.pmx"
+    },
+    {
+      "id": "HuTaoRace",
+      "name": "胡桃",
+      "unit_scale": 0.08,
+      "hair_cloth": true,
+      "hair_decision": "后部双长发启用有限摆动，帽与前发固定",
+      "hair_materials": [
+        10
+      ],
+      "ignored_models": [],
+      "source_model": "input/original/胡桃.pmx"
+    },
+    {
+      "id": "WeisinaRace",
+      "name": "薇斯纳",
+      "unit_scale": 0.08,
+      "hair_cloth": true,
+      "hair_decision": "后部卷曲长发启用较小摆动范围，前发与翅膀固定",
+      "hair_materials": [
+        15
+      ],
+      "ignored_models": [
+        "武器.pmx",
+        "法杖.pmx",
+        "魔法剑1.pmx",
+        "魔法剑2.pmx"
+      ],
+      "source_model": "input/original/薇斯纳.pmx"
+    },
+    {
+      "id": "NoelleRace",
+      "name": "诺艾尔",
+      "unit_scale": 0.09,
+      "hair_cloth": false,
+      "hair_decision": "短发，保留普通头部蒙皮",
+      "hair_materials": [],
+      "ignored_models": [],
+      "source_model": "input/original/诺艾尔.pmx"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "proxy": {
+    "mesh": "ningguang_orchid_cloth_proxy",
+    "guid": "c23c5825-8e40-8392-2c6a-f66de109eae1",
+    "metamesh": "ningguang_orchid_cloth_proxy",
+    "lod": 0,
+    "bytes": 155484,
+    "render_vertices": 2140,
+    "simulation_vertices": 2140,
+    "fixed_positions": 1418,
+    "boundary_fixed_positions": 33,
+    "active_positions": 722,
+    "stretch_constraints": 2194,
+    "bend_constraints": 2068,
+    "shear_constraints": 0,
+    "parallel_sets": 24,
+    "dummy_sets": 13,
+    "max_geodesic_anchor_length": 0.9659867285926552,
+    "sha256": "9406f6f40762ed075e3e4e216b5c4661697bc9e0b350a4ad7867f12e941a9611",
+    "root_fixes": [],
+    "solver_pinned_render_vertices": [],
+    "path": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\NingguangOrchidRace\\build\\proxy_cooked\\c23c5825-8e40-8392-2c6a-f66de109eae1.bin"
+  },
+  "render_maps": [
+    {
+      "mesh": "ningguang_orchid_part_11.lod1",
+      "lod": 1,
+      "mapped_vertices": 894,
+      "rest_reconstruction_max_error_m": 2.2379305298007202e-05,
+      "max_normal_offset_m": 0.000764189288020134,
+      "max_barycentric_extrapolation": 0.047505080699920654
+    },
+    {
+      "mesh": "ningguang_orchid_part_11",
+      "lod": 0,
+      "mapped_vertices": 894,
+      "rest_reconstruction_max_error_m": 2.2379305298007202e-05,
+      "max_normal_offset_m": 0.000764189288020134,
+      "max_barycentric_extrapolation": 0.047505080699920654
+    },
+    {
+      "mesh": "ningguang_orchid_part_11.lod3",
+      "lod": 3,
+      "mapped_vertices": 894,
+      "rest_reconstruction_max_error_m": 2.2379305298007202e-05,
+      "max_normal_offset_m": 0.000764189288020134,
+      "max_barycentric_extrapolation": 0.047505080699920654
+    },
+    {
+      "mesh": "ningguang_orchid_part_11.lod2",
+      "lod": 2,
+      "mapped_vertices": 894,
+      "rest_reconstruction_max_error_m": 2.2379305298007202e-05,
+      "max_normal_offset_m": 0.000764189288020134,
+      "max_barycentric_extrapolation": 0.047505080699920654
+    }
+  ],
+  "scope": "Selected long hair and attached hair ties only; all skirts/clothes remain skinned",
+  "game_verified": false
+}

@@ -1,0 +1,60 @@
+{
+  "proxy": {
+    "mesh": "amber_cloth_proxy",
+    "guid": "da7a84d1-57d8-3017-9a4a-337fd412abd0",
+    "metamesh": "amber_cloth_proxy",
+    "lod": 0,
+    "bytes": 74588,
+    "render_vertices": 867,
+    "simulation_vertices": 867,
+    "fixed_positions": 412,
+    "boundary_fixed_positions": 25,
+    "active_positions": 455,
+    "stretch_constraints": 1388,
+    "bend_constraints": 1210,
+    "shear_constraints": 0,
+    "parallel_sets": 24,
+    "dummy_sets": 13,
+    "max_geodesic_anchor_length": 0.44647982916694195,
+    "sha256": "2fde357d0715be73126ed7a6860123d86d13d5e4a0ae9e4c499d948069a00382",
+    "root_fixes": [],
+    "solver_pinned_render_vertices": [],
+    "path": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\AmberRace\\build\\proxy_cooked\\da7a84d1-57d8-3017-9a4a-337fd412abd0.bin"
+  },
+  "render_maps": [
+    {
+      "mesh": "amber_part_05",
+      "lod": 0,
+      "mapped_vertices": 702,
+      "rest_reconstruction_max_error_m": 5.977514433016984e-08,
+      "max_normal_offset_m": 0.0004850027908105403,
+      "max_barycentric_extrapolation": 0.02031528577208519
+    },
+    {
+      "mesh": "amber_part_05.lod3",
+      "lod": 3,
+      "mapped_vertices": 702,
+      "rest_reconstruction_max_error_m": 5.977514433016984e-08,
+      "max_normal_offset_m": 0.0004850027908105403,
+      "max_barycentric_extrapolation": 0.02031528577208519
+    },
+    {
+      "mesh": "amber_part_05.lod1",
+      "lod": 1,
+      "mapped_vertices": 702,
+      "rest_reconstruction_max_error_m": 5.977514433016984e-08,
+      "max_normal_offset_m": 0.0004850027908105403,
+      "max_barycentric_extrapolation": 0.02031528577208519
+    },
+    {
+      "mesh": "amber_part_05.lod2",
+      "lod": 2,
+      "mapped_vertices": 702,
+      "rest_reconstruction_max_error_m": 5.977514433016984e-08,
+      "max_normal_offset_m": 0.0004850027908105403,
+      "max_barycentric_extrapolation": 0.02031528577208519
+    }
+  ],
+  "scope": "Selected long hair and attached hair ties only; all skirts/clothes remain skinned",
+  "game_verified": false
+}

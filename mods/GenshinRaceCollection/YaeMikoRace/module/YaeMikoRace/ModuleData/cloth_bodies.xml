@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf8'?>
+<bodies>
+  <body name="yaemiko_collision" owner_skeleton="yaemiko_skeleton">
+    <capsules>
+      <capsule name="yaemiko_torso_low" length="0.060384" origin="0, 0, 0" frame="-0.000001, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, -0.000000, -0.045877, 1.103631, 1.000000">
+        <points>
+          <point radius="0.056762">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.056762">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yaemiko_torso_high" length="0.103222" origin="0, 0, 0" frame="-0.000002, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000000, -0.028944, 1.164015, 1.000000">
+        <points>
+          <point radius="0.044685">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.044685">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yaemiko_head" length="0.059349" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000001, 0.025783, 1.536927, 1.000000">
+        <points>
+          <point radius="0.074370">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.074370">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yaemiko_neck" length="0.074637" origin="0, 0, 0" frame="-0.000003, 0.096446, 0.995338, 0.000000, 0.000000, 0.995338, -0.096446, 0.000000, -1.000000, 0.000000, -0.000003, 0.000000, -0.000001, 0.018584, 1.447639, 1.000000">
+        <points>
+          <point radius="0.028261">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.028261">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yaemiko_l_upperarm" length="0.230285" origin="0, 0, 0" frame="-0.775397, -0.045012, -0.629868, 0.000000, -0.034938, 0.998986, -0.028381, 0.000000, 0.630507, 0.000000, -0.776183, 0.000000, -0.120149, 0.000481, 1.394897, 1.000000">
+        <points>
+          <point radius="0.024180">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.024180">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yaemiko_r_upperarm" length="0.230285" origin="0, 0, 0" frame="0.775399, -0.045016, -0.629865, 0.000000, 0.034941, 0.998986, -0.028383, 0.000000, 0.630504, -0.000000, 0.776186, 0.000000, 0.120148, 0.000481, 1.394898, 1.000000">
+        <points>
+          <point radius="0.024180">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.024180">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

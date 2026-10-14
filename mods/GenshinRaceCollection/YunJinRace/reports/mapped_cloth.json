@@ -1,0 +1,126 @@
+{
+  "proxy": {
+    "mesh": "yunjin_cloth_proxy",
+    "guid": "e8799873-bf18-ff2a-3b9f-d973dba801bf",
+    "metamesh": "yunjin_cloth_proxy",
+    "lod": 0,
+    "bytes": 90596,
+    "render_vertices": 802,
+    "simulation_vertices": 802,
+    "fixed_positions": 104,
+    "boundary_fixed_positions": 34,
+    "active_positions": 698,
+    "stretch_constraints": 2116,
+    "bend_constraints": 2034,
+    "shear_constraints": 0,
+    "parallel_sets": 45,
+    "dummy_sets": 36,
+    "max_geodesic_anchor_length": 0.4307935890920855,
+    "sha256": "dca253a5d3885e53ac858cbc3c72387845153ade41c542c79758105d085797f7",
+    "root_fixes": [
+      {
+        "component_positions": 92,
+        "reason": "Highest surviving attachment edge of each independently rooted hair card/lock; small detached tips omitted from proxy and mapped to the continuous parent surface",
+        "pinned_render_vertices": [
+          32,
+          41,
+          50,
+          75,
+          79,
+          104,
+          126
+        ],
+        "bounds": [
+          [
+            -0.121353,
+            -0.3054,
+            0.841467
+          ],
+          [
+            -0.069316,
+            -0.249185,
+            0.957308
+          ]
+        ]
+      },
+      {
+        "component_positions": 92,
+        "reason": "Highest surviving attachment edge of each independently rooted hair card/lock; small detached tips omitted from proxy and mapped to the continuous parent surface",
+        "pinned_render_vertices": [
+          675,
+          697,
+          722,
+          726,
+          751,
+          760,
+          769
+        ],
+        "bounds": [
+          [
+            0.069316,
+            -0.3054,
+            0.841467
+          ],
+          [
+            0.121353,
+            -0.249185,
+            0.957308
+          ]
+        ]
+      }
+    ],
+    "solver_pinned_render_vertices": [
+      32,
+      41,
+      50,
+      75,
+      79,
+      104,
+      126,
+      675,
+      697,
+      722,
+      726,
+      751,
+      760,
+      769
+    ],
+    "path": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\YunJinRace\\build\\proxy_cooked\\e8799873-bf18-ff2a-3b9f-d973dba801bf.bin"
+  },
+  "render_maps": [
+    {
+      "mesh": "yunjin_part_12",
+      "lod": 0,
+      "mapped_vertices": 844,
+      "rest_reconstruction_max_error_m": 4.51333876179161e-08,
+      "max_normal_offset_m": 0.01343861036002636,
+      "max_barycentric_extrapolation": 0.015715155750513077
+    },
+    {
+      "mesh": "yunjin_part_12.lod2",
+      "lod": 2,
+      "mapped_vertices": 844,
+      "rest_reconstruction_max_error_m": 4.51333876179161e-08,
+      "max_normal_offset_m": 0.01343861036002636,
+      "max_barycentric_extrapolation": 0.015715155750513077
+    },
+    {
+      "mesh": "yunjin_part_12.lod3",
+      "lod": 3,
+      "mapped_vertices": 844,
+      "rest_reconstruction_max_error_m": 4.51333876179161e-08,
+      "max_normal_offset_m": 0.01343861036002636,
+      "max_barycentric_extrapolation": 0.015715155750513077
+    },
+    {
+      "mesh": "yunjin_part_12.lod1",
+      "lod": 1,
+      "mapped_vertices": 844,
+      "rest_reconstruction_max_error_m": 4.51333876179161e-08,
+      "max_normal_offset_m": 0.01343861036002636,
+      "max_barycentric_extrapolation": 0.015715155750513077
+    }
+  ],
+  "scope": "Selected long hair and attached hair ties only; all skirts/clothes remain skinned",
+  "game_verified": false
+}

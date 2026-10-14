@@ -1,0 +1,204 @@
+{
+  "schema": 1,
+  "mod": "NilouRace",
+  "fingerprint": "3f339cefca0bce1fa929caba84e09641f4a913e4ec137269a8f5dcafc5ac7aa6",
+  "generated_at_utc": "2026-10-14T15:32:08.455205+00:00",
+  "inputs": {
+    "mod/build/cloth_probe/mbtool.dll": "7391c3428210ba19ea7f9e1123fc1584a986d4bf618dffdda209e8fe25e92335",
+    "mod/build/cloth_probe/NativeClothProbe.deps.json": "2f6631e12ab2d95519b7e139bb763ec892ce56b0fbc4e919abcf546a501850d7",
+    "mod/build/cloth_probe/NativeClothProbe.dll": "44352ac828cf76e0c111bb09aaa57a7fefafd8c166b49759cf78402113648c1d",
+    "mod/build/cloth_probe/NativeClothProbe.runtimeconfig.json": "256dda2706e1151bb95987b6b5be610bf68d64e058285b19e7e958222fc90414",
+    "mod/module/NilouRace/AssetPackages/nilou.tpac": "01cc064b1b6baa0948a643c0ea28516880ed2f0654ef54150f03b3e718bfbbed",
+    "mod/module/NilouRace/ModuleData/cloth_bodies.xml": "c55db1034126220342758db2232fe55df0c2f46c12716de45dad05f5a66c0148",
+    "mod/reports/facegen.json": "35bbf06eea34fb3a0689bd589b6d6bde1310701e418967900c6aefc03cddf383",
+    "mod/reports/final_skeleton.json": "12be68d1143fa1fbe8e08477376bac5c27c709cb0213e7535c6be273b67df385",
+    "mod/reports/riding.json": "db5c762b6b2f4c0c1d643393fd44b5daaa6e04c5d6abb69b9732a91378588515",
+    "mod/reports/run.json": "b47eb9d01b3fd1746a021ff7fb64c7036b0b2e0f30baf451e39a2174f7c82bbf",
+    "workspace_tools/cloth_simulator/pipeline.py": "00105bb354c03429a7ae8285dbc2effcaf27023e7d1a6874910530d35eb55111",
+    "workspace_tools/cloth_simulator/run.py": "08b3c7226c8b8d00febe03698365aec710e85db9de03db593ad4a0d6aa0807dd",
+    "workspace_tools/cloth_simulator/solver.py": "d19ddb6769de55179fa482caaf7d1415f623759a1575613a2d3b59dc125828ad",
+    "workspace_tools/cloth_simulator/viewer.html": "07530bf424c6b6da2a73b4a60985411aac61f903988a9208aa2a3012d4818614",
+    "workspace_tools/cloth_simulator/README.md": "ab8da97a69e38332b7f8fd23bec3835164e737f550004dbf38e8aeee9569f8a3",
+    "workspace_tools/project_paths.py": "5f4a0b856d9af49ed92cb4d9b3112635f840b4d2a1a32734ffde59cdf5bf5bad",
+    "workspace_tools/cloth_compiler/cloth_payload.py": "aea51035f664b23175d7f300323beceb82fe7b755628408cb61eacc268c205e1",
+    "workspace_tools/cloth_compiler/validation.py": "af39ed056e8f7e1a3b47a23353ab0b67e5122a52a1b661031d437710a26948b7",
+    "workspace_tools/cloth_compiler/NativeClothProbe.cs": "103db1c0bb37fd50719e75718aae17b7f321bc28e3bcc1514d63ba3209a2b464",
+    "workspace_tools/cloth_compiler/NativeClothProbe.csproj": "097771b306c9606c565ccf35830f0bac41c9c864eaab3979b5f8d84670253245",
+    "workspace_tools/asset_helpers/previewer/baker/__init__.py": "7d7e86ba699dcb4cba65aea6a098f50af97462ce01131ec88e3d7431dff6eb3d",
+    "workspace_tools/asset_helpers/previewer/baker/skeleton.py": "3efa27ce001e74f25687d7ae56b27e06dbb8b6bd94f80cddabb237f380eaad8e",
+    "workspace_tools/asset_helpers/previewer/baker/animation.py": "2bd196a1c96752d2b1f1478c6dad5e2672e4e4f53438766b710f9ba6b2024272",
+    "mod/mod.json": "984a01c7cff936e14228a186532863a992babd6f2fe1fb8fc836db2181b70e8f"
+  },
+  "config": {
+    "enabled": true,
+    "mode": "report",
+    "probe": "build/cloth_probe/NativeClothProbe.dll",
+    "targets": [
+      {
+        "skeleton": "reports/final_skeleton.json",
+        "capsules": "module/NilouRace/ModuleData/cloth_bodies.xml",
+        "body": "nilou_collision",
+        "motions": [
+          {
+            "name": "facegen",
+            "path": "reports/facegen.json",
+            "fps": 60,
+            "end": 61
+          },
+          {
+            "name": "run",
+            "path": "reports/run.json",
+            "fps": 60
+          },
+          {
+            "name": "riding",
+            "path": "reports/riding.json",
+            "fps": 60
+          }
+        ],
+        "settings": {
+          "warmup": 30,
+          "substeps": 2,
+          "iterations": 4
+        },
+        "metamesh": "nilou_body",
+        "lods": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "skeleton": "reports/final_skeleton.json",
+        "capsules": "module/NilouRace/ModuleData/cloth_bodies.xml",
+        "body": "nilou_collision",
+        "motions": [
+          {
+            "name": "facegen",
+            "path": "reports/facegen.json",
+            "fps": 60,
+            "end": 61
+          },
+          {
+            "name": "run",
+            "path": "reports/run.json",
+            "fps": 60
+          },
+          {
+            "name": "riding",
+            "path": "reports/riding.json",
+            "fps": 60
+          }
+        ],
+        "settings": {
+          "warmup": 30,
+          "substeps": 2,
+          "iterations": 4
+        },
+        "metamesh": "nilou_cloth_proxy",
+        "lods": [
+          0
+        ]
+      }
+    ]
+  },
+  "package_sha256": "01cc064b1b6baa0948a643c0ea28516880ed2f0654ef54150f03b3e718bfbbed",
+  "package_relative_path": "module/NilouRace/AssetPackages/nilou.tpac",
+  "game_solver_used": false,
+  "game_verified": false,
+  "coverage": "configured targets, meshes, LODs and motions only",
+  "results": [
+    {
+      "metamesh": "nilou_body",
+      "status": "incomplete",
+      "reason": "mapped cloth is not supported by this direct-cloth diagnostic"
+    },
+    {
+      "metamesh": "nilou_cloth_proxy",
+      "mesh": "nilou_cloth_proxy",
+      "lod": 0,
+      "motion": "facegen",
+      "status": "needs_review",
+      "frames": 60,
+      "maxima": {
+        "vertex_penetration_m": 0.008129847984041913,
+        "interior_penetration_m": 0.03174624800673509,
+        "fixed_penetration_m": 0.046873180524062225,
+        "max_stretch_strain": 0.3085960131591067,
+        "max_stretch_error_m": 0.008086895664266243,
+        "p99_stretch_strain": 0.1983862387524456,
+        "travel_exceeded_m": 6.245004513516506e-17,
+        "fixed_drift_m": 0.0,
+        "max_displacement_m": 0.05882352963089949
+      },
+      "artifacts": {
+        "build/cloth_simulator/3f339cefca0b-r14jzvjk/target_01/case_0001/frames.npz": "a905c77a80be4f4a132c86d66953dea874954d939832d6d5f27e756d7ce07c02",
+        "build/cloth_simulator/3f339cefca0b-r14jzvjk/target_01/case_0001/replay.html": "23ae62c6f7427d55ea81aa25ea23ab3152a7b4cb92a73f6fee10b23a8213aa98",
+        "build/cloth_simulator/3f339cefca0b-r14jzvjk/target_01/case_0001/report.json": "ce6b35f493210605c2ca22cb37a43f1966434b6d6e74ddbbb0c8daecaa1498b0",
+        "build/cloth_simulator/3f339cefca0b-r14jzvjk/target_01/case_0001/worst_frame.png": "1ac55628957373207cf75cb96f3cfc1555b8074eb300005f2c7dfce028d499c9",
+        "build/cloth_simulator/3f339cefca0b-r14jzvjk/target_01/case_0001/worst_stretch.png": "b80d23d4bf495bd95c7fa535cd7c70b9c59b2c1a8de47d0c2bd0e96f5219d89c"
+      },
+      "report": "build/cloth_simulator/3f339cefca0b-r14jzvjk/target_01/case_0001/report.json",
+      "archive_directory": "reports/cloth_diagnostics/3f339cefca0b-r14jzvjk/case_0001"
+    },
+    {
+      "metamesh": "nilou_cloth_proxy",
+      "mesh": "nilou_cloth_proxy",
+      "lod": 0,
+      "motion": "run",
+      "status": "needs_review",
+      "frames": 25,
+      "maxima": {
+        "vertex_penetration_m": 0.008137247282472976,
+        "interior_penetration_m": 0.03175383210998609,
+        "fixed_penetration_m": 0.046873180524062225,
+        "max_stretch_strain": 2.7266336329235834,
+        "max_stretch_error_m": 0.05696577449937988,
+        "p99_stretch_strain": 0.41515841665805614,
+        "travel_exceeded_m": 1.1102230246251565e-16,
+        "fixed_drift_m": 0.0,
+        "max_displacement_m": 0.058823529630899526
+      },
+      "artifacts": {
+        "build/cloth_simulator/3f339cefca0b-r14jzvjk/target_01/case_0002/frames.npz": "bad88f0f3228fdc445ae6495f7f8ebace26c9a50b0974b4f63892d2724779d76",
+        "build/cloth_simulator/3f339cefca0b-r14jzvjk/target_01/case_0002/replay.html": "ea13b6c3d879e54a0778a3d0c040c3bf3f98b3fba93ec640490624310b310415",
+        "build/cloth_simulator/3f339cefca0b-r14jzvjk/target_01/case_0002/report.json": "005cbbbf3808affe488bcd6ba07f04b4d7df73389a35c9760381ce774eaa6b31",
+        "build/cloth_simulator/3f339cefca0b-r14jzvjk/target_01/case_0002/worst_frame.png": "8bada81cec6d9f8e1852d6c1d9727bf6ff5c772341760691d30230900474267d",
+        "build/cloth_simulator/3f339cefca0b-r14jzvjk/target_01/case_0002/worst_stretch.png": "3db594f5f43560a5697f60684625d74528f7e4b9314ae9142c8d4bda6bbb5117"
+      },
+      "report": "build/cloth_simulator/3f339cefca0b-r14jzvjk/target_01/case_0002/report.json",
+      "archive_directory": "reports/cloth_diagnostics/3f339cefca0b-r14jzvjk/case_0002"
+    },
+    {
+      "metamesh": "nilou_cloth_proxy",
+      "mesh": "nilou_cloth_proxy",
+      "lod": 0,
+      "motion": "riding",
+      "status": "needs_review",
+      "frames": 20,
+      "maxima": {
+        "vertex_penetration_m": 0.00814865183358228,
+        "interior_penetration_m": 0.03174896911485072,
+        "fixed_penetration_m": 0.04687318052406227,
+        "max_stretch_strain": 0.5798269059109108,
+        "max_stretch_error_m": 0.008767159139176361,
+        "p99_stretch_strain": 0.25928648761178796,
+        "travel_exceeded_m": 1.1102230246251565e-16,
+        "fixed_drift_m": 0.0,
+        "max_displacement_m": 0.05882352963089954
+      },
+      "artifacts": {
+        "build/cloth_simulator/3f339cefca0b-r14jzvjk/target_01/case_0003/frames.npz": "1f5f34add76d8f5b494549c6c68c9fee38577991ff39433c8f46ee583c8f3078",
+        "build/cloth_simulator/3f339cefca0b-r14jzvjk/target_01/case_0003/replay.html": "9bf36984ac3d0ee37dd86c3afc366cddc0aecebd2f97a15be1d95e06a2a468d2",
+        "build/cloth_simulator/3f339cefca0b-r14jzvjk/target_01/case_0003/report.json": "94c23c797b1d26043da3351e39c2cd7b1f20a529b3a8e88257f94a622f275e1f",
+        "build/cloth_simulator/3f339cefca0b-r14jzvjk/target_01/case_0003/worst_frame.png": "6dec35c08983f112ca3515a1ee3e1fba2594331a7148edab95fd869dab7ebb68",
+        "build/cloth_simulator/3f339cefca0b-r14jzvjk/target_01/case_0003/worst_stretch.png": "4aaca30cb6c98cbd2f3314c6eb611679d595e35ca26e96644e71a011c12a1e18"
+      },
+      "report": "build/cloth_simulator/3f339cefca0b-r14jzvjk/target_01/case_0003/report.json",
+      "archive_directory": "reports/cloth_diagnostics/3f339cefca0b-r14jzvjk/case_0003"
+    }
+  ],
+  "run_directory": "build/cloth_simulator/3f339cefca0b-r14jzvjk",
+  "status": "incomplete"
+}

@@ -1,0 +1,33 @@
+{
+  "model": "LisaRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 1727,
+      "vertical_band_m": [
+        1.0186066246032714,
+        1.2604307413101197
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "arm_only",
+      "vertices": 371,
+      "inner_x_m": 0.038975548267364504,
+      "outer_x_m": 0.15590219306945802
+    },
+    {
+      "region": "r_shoulder",
+      "style": "arm_only",
+      "vertices": 371,
+      "inner_x_m": 0.038975548267364504,
+      "outer_x_m": 0.15590219306945802
+    },
+    {
+      "region": "crotch",
+      "vertices": 893,
+      "derived_hip_half_width_m": 0.08558525025844574
+    }
+  ],
+  "geometry_unchanged": true
+}

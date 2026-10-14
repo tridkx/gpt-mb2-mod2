@@ -1,0 +1,25 @@
+{
+  "package": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\YaeMikoRace\\module\\YaeMikoRace\\AssetPackages\\yaemiko.tpac",
+  "status": "pass",
+  "scope": "Metadata round-trip, references and standard shader vertex-alpha risk only; textures, custom shader paths, geometry, weights, cloth dynamics and game behavior are not validated",
+  "cloth_vertex_alpha": true,
+  "errors": [],
+  "incomplete": [],
+  "observations": [],
+  "package_sha256": "0a3a9d4560173812d6b158f241748ef6bdd173f12dbe1a4caecfd541ef326b8d",
+  "tool_output": {
+    "metacheck": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\YaeMikoRace\\module\\YaeMikoRace\\AssetPackages\\yaemiko.tpac: 33 assets | checksum ok=33 bad=0 | metadata identical=33 differ=0 noSerializer=0",
+    "mataudit": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\YaeMikoRace\\module\\YaeMikoRace\\AssetPackages\\yaemiko.tpac: 23 materials, 33 assets\n  metamesh-level material missing=0 | submesh Material present=94 missing=0 | submesh SecondMaterial present=0 missing=0 | metameshes with no material at all=0"
+  },
+  "counts": {
+    "materials": 23,
+    "submeshes": 94,
+    "cloth_submeshes": 5,
+    "lods": [
+      0,
+      1,
+      2,
+      3
+    ]
+  }
+}

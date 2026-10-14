@@ -1,0 +1,33 @@
+{
+  "model": "FurinaRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 4599,
+      "vertical_band_m": [
+        0.9095601916313172,
+        1.1210675311088563
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "arm_only",
+      "vertices": 878,
+      "inner_x_m": 0.04101611709594727,
+      "outer_x_m": 0.16406446838378907
+    },
+    {
+      "region": "r_shoulder",
+      "style": "arm_only",
+      "vertices": 589,
+      "inner_x_m": 0.04101578521728516,
+      "outer_x_m": 0.16406314086914064
+    },
+    {
+      "region": "crotch",
+      "vertices": 775,
+      "derived_hip_half_width_m": 0.07581065654754639
+    }
+  ],
+  "geometry_unchanged": true
+}

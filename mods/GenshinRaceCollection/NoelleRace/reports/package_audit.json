@@ -1,0 +1,25 @@
+{
+  "package": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\NoelleRace\\module\\NoelleRace\\AssetPackages\\noelle.tpac",
+  "status": "pass",
+  "scope": "Metadata round-trip, references and standard shader vertex-alpha risk only; textures, custom shader paths, geometry, weights, cloth dynamics and game behavior are not validated",
+  "cloth_vertex_alpha": true,
+  "errors": [],
+  "incomplete": [],
+  "observations": [],
+  "package_sha256": "2dbd9253738cef7232a2ee7aa00a6706293b59c07fbdb4bdcdfe69530239d8c4",
+  "tool_output": {
+    "metacheck": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\NoelleRace\\module\\NoelleRace\\AssetPackages\\noelle.tpac: 20 assets | checksum ok=20 bad=0 | metadata identical=20 differ=0 noSerializer=0",
+    "mataudit": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\NoelleRace\\module\\NoelleRace\\AssetPackages\\noelle.tpac: 11 materials, 20 assets\n  metamesh-level material missing=0 | submesh Material present=45 missing=0 | submesh SecondMaterial present=0 missing=0 | metameshes with no material at all=0"
+  },
+  "counts": {
+    "materials": 11,
+    "submeshes": 45,
+    "cloth_submeshes": 0,
+    "lods": [
+      0,
+      1,
+      2,
+      3
+    ]
+  }
+}

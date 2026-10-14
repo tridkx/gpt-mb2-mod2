@@ -1,0 +1,104 @@
+{
+  "id": "AyakaRace",
+  "version": "v0.1.0",
+  "race": "ayaka",
+  "prefix": "ayaka",
+  "module_name": "Ayaka Race",
+  "display_name": "神里绫华",
+  "source_model": "input/original/神里绫华.pmx",
+  "source_archive": "input/archive/神里绫华-模之屋_by_原神_57919b356c6bdd2aefc1f1e8575521f8.zip",
+  "ignored_models": [],
+  "unit_scale": 0.08,
+  "source_rotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "skin_min_scale": 1.0,
+  "cloth_enabled": true,
+  "cloth_lods": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "cloth_parts": {
+    "0": {
+      "fixed_above_source_y": 18.22557830810547,
+      "source_z_min": 0.3,
+      "max_distance_m": 0.065,
+      "travel_slope": 0.3
+    }
+  },
+  "lod_multipliers": [
+    1,
+    0.65,
+    0.4,
+    0.2
+  ],
+  "minimum_ratios": {
+    "m16": 0.7,
+    "m17": 0.7,
+    "m18": 0.7,
+    "m20": 0.7,
+    "m21": 0.7
+  },
+  "facial_animation": false,
+  "pmx_reader": "C:/Users/DKX/AppData/Roaming/Blender Foundation/Blender/5.2/extensions/user_default/mmd_tools/core/pmx/__init__.py",
+  "skeleton": "ayaka_skeleton",
+  "glass_materials": [],
+  "head_materials": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    16,
+    17,
+    18,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "cloth_materials": [
+    0
+  ],
+  "cloth_proxy_materials": [
+    0
+  ],
+  "hair_decision": "后部长马尾启用有限摆动；刘海与头饰固定",
+  "cloth_proxy_policy": {
+    "pin_band_m": 0.015,
+    "minimum_component_height_m": 0.055,
+    "max_proxy_vertices": 4500
+  },
+  "hair_reference_body_blend_max": 0.7,
+  "weight_refinement": {
+    "shoulders": true,
+    "crotch": true,
+    "waist": true
+  },
+  "shoulder_materials": [
+    5,
+    14
+  ],
+  "rigid_material_bindings": {
+    "12": 0
+  },
+  "shoulder_style": "field"
+}

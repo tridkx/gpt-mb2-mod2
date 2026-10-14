@@ -1,0 +1,25 @@
+{
+  "vertices": 22187,
+  "source_triangles": 28800,
+  "selected_triangles": 25636,
+  "bones": 392,
+  "morphs": 62,
+  "excluded": [
+    {
+      "material_index": 33,
+      "name": "髮+",
+      "triangles": 2440,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    },
+    {
+      "material_index": 34,
+      "name": "前髪+",
+      "triangles": 724,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    }
+  ],
+  "ignored_models": [],
+  "source_model": "input/original/珊瑚宫心海.pmx",
+  "selected_source_height_m": 1.626142977140844,
+  "skirt_cloth_enabled": false
+}

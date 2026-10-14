@@ -1,0 +1,117 @@
+{
+  "id": "KeqingOpulentRace",
+  "version": "v0.1.0",
+  "race": "keqing_opulent",
+  "prefix": "keqing_opulent",
+  "module_name": "Keqing Opulent Race",
+  "display_name": "刻晴·霓裾翩跹",
+  "source_model": "input/original/刻晴.pmx",
+  "source_archive": "input/archive/模之屋-【刻晴-霓裾翩跹】_by_原神_0345ee40688f1677d9ecbefc99c059ae.zip",
+  "ignored_models": [],
+  "unit_scale": 0.08,
+  "source_rotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "skin_min_scale": 1.0,
+  "cloth_enabled": true,
+  "cloth_lods": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "cloth_parts": {
+    "12": {
+      "fixed_above_source_y": 19.28795623779297,
+      "source_z_min": null,
+      "max_distance_m": 0.065,
+      "travel_slope": 0.3
+    },
+    "22": {
+      "fixed_above_source_y": 19.28795623779297,
+      "source_z_min": null,
+      "max_distance_m": 0.065,
+      "travel_slope": 0.3
+    }
+  },
+  "lod_multipliers": [
+    1,
+    0.65,
+    0.4,
+    0.2
+  ],
+  "minimum_ratios": {
+    "m00": 0.7,
+    "m01": 0.7,
+    "m02": 0.7,
+    "m03": 0.7,
+    "m04": 0.7,
+    "m05": 0.7
+  },
+  "facial_animation": false,
+  "pmx_reader": "C:/Users/DKX/AppData/Roaming/Blender Foundation/Blender/5.2/extensions/user_default/mmd_tools/core/pmx/__init__.py",
+  "skeleton": "keqing_opulent_skeleton",
+  "exclude_materials": [
+    11
+  ],
+  "glass_materials": [],
+  "head_materials": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    19,
+    22
+  ],
+  "cloth_materials": [
+    12,
+    22
+  ],
+  "cloth_proxy_materials": [
+    12
+  ],
+  "hair_decision": "双马尾启用有限摆动，发带跟随同一驱动；前部头发固定",
+  "cloth_proxy_policy": {
+    "pin_band_m": 0.015,
+    "minimum_component_height_m": 0.055,
+    "max_proxy_vertices": 4500
+  },
+  "hair_reference_body_blend_max": 0.7,
+  "weight_refinement": {
+    "shoulders": true,
+    "crotch": true,
+    "waist": true
+  },
+  "arm_material_bindings": [
+    14
+  ],
+  "shoulder_materials": [
+    21,
+    23,
+    26
+  ],
+  "shoulder_style": "field_narrow"
+}

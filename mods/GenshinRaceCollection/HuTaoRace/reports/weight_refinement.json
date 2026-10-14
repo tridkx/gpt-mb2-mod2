@@ -1,0 +1,33 @@
+{
+  "model": "HuTaoRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 2193,
+      "vertical_band_m": [
+        0.877119369506836,
+        1.0882612609863282
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "arm_only",
+      "vertices": 169,
+      "inner_x_m": 0.0403558578491211,
+      "outer_x_m": 0.1614234313964844
+    },
+    {
+      "region": "r_shoulder",
+      "style": "arm_only",
+      "vertices": 165,
+      "inner_x_m": 0.0403553695678711,
+      "outer_x_m": 0.1614214782714844
+    },
+    {
+      "region": "crotch",
+      "vertices": 203,
+      "derived_hip_half_width_m": 0.07459010601043702
+    }
+  ],
+  "geometry_unchanged": true
+}

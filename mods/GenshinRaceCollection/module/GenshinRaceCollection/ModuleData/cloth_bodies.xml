@@ -1,0 +1,1235 @@
+<?xml version='1.0' encoding='utf-8'?>
+<bodies>
+  <body name="emilie_collision" owner_skeleton="emilie_skeleton">
+    <capsules>
+      <capsule name="emilie_torso_low" length="0.033423" origin="0, 0, 0" frame="0.000000, -0.125865, 0.992047, 0.000000, 0.000000, 0.992047, 0.125865, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000000, 0.061904, 1.070116, 1.000000">
+        <points>
+          <point radius="0.060000">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.060000">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="emilie_torso_high" length="0.033423" origin="0, 0, 0" frame="0.000000, -0.125865, 0.992047, 0.000000, 0.000000, 0.992047, 0.125865, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000000, 0.057697, 1.103273, 1.000000">
+        <points>
+          <point radius="0.070000">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.070000">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="emilie_neck" length="0.076389" origin="0, 0, 0" frame="-0.000000, 0.142528, 0.989791, 0.000000, 0.000000, 0.989791, -0.142528, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, 0.000000, 0.000398, 1.305629, 1.000000">
+        <points>
+          <point radius="0.035000">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.035000">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="emilie_l_upperarm" length="0.212176" origin="0, 0, 0" frame="-0.762292, -0.020941, -0.646894, 0.000000, -0.015967, 0.999781, -0.013549, 0.000000, 0.647036, 0.000000, -0.762459, 0.000000, -0.102920, -0.005078, 1.257544, 1.000000">
+        <points>
+          <point radius="0.025000">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.025000">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="emilie_r_upperarm" length="0.212176" origin="0, 0, 0" frame="0.762292, -0.020970, -0.646894, 0.000000, 0.015989, 0.999780, -0.013568, 0.000000, 0.647036, -0.000000, 0.762459, 0.000000, 0.102920, -0.005078, 1.257544, 1.000000">
+        <points>
+          <point radius="0.025000">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.025000">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="emilie_head" length="0.085000" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.011285, 1.411238, 1.000000">
+        <points>
+          <point radius="0.076000">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.076000">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+  <body name="ganyu_collision" owner_skeleton="ganyu_skeleton">
+    <capsules>
+      <capsule name="ganyu_torso_low" length="0.053759" origin="0, 0, 0" frame="-0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, -0.000000, 0.039310, 0.990799, 1.000000">
+        <points>
+          <point radius="0.068782">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.068782">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ganyu_torso_high" length="0.066827" origin="0, 0, 0" frame="-0.000001, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, -0.000000, 0.065438, 1.044558, 1.000000">
+        <points>
+          <point radius="0.049345">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.049345">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ganyu_head" length="0.053650" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000001, 0.010407, 1.365016, 1.000000">
+        <points>
+          <point radius="0.068445">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.068445">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ganyu_neck" length="0.053531" origin="0, 0, 0" frame="-0.000002, 0.216997, 0.976172, 0.000000, 0.000000, 0.976172, -0.216997, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000000, -0.001208, 1.297761, 1.000000">
+        <points>
+          <point radius="0.026009">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.026009">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ganyu_l_upperarm" length="0.213813" origin="0, 0, 0" frame="-0.762297, -0.020898, -0.646890, 0.000000, -0.015934, 0.999782, -0.013522, 0.000000, 0.647031, 0.000000, -0.762463, 0.000000, -0.103715, -0.006727, 1.233434, 1.000000">
+        <points>
+          <point radius="0.022450">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022450">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ganyu_r_upperarm" length="0.213813" origin="0, 0, 0" frame="0.762292, -0.021023, -0.646891, 0.000000, 0.016030, 0.999779, -0.013603, 0.000000, 0.647034, -0.000000, 0.762461, 0.000000, 0.103714, -0.006726, 1.233434, 1.000000">
+        <points>
+          <point radius="0.022450">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022450">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+  <body name="ningguang_orchid_collision" owner_skeleton="ningguang_orchid_skeleton">
+    <capsules>
+      <capsule name="ningguang_orchid_torso_low" length="0.060387" origin="0, 0, 0" frame="-0.000001, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, -0.000000, 0.067929, 1.102455, 1.000000">
+        <points>
+          <point radius="0.064475">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.064475">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ningguang_orchid_torso_high" length="0.103227" origin="0, 0, 0" frame="-0.000002, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000000, 0.085538, 1.162841, 1.000000">
+        <points>
+          <point radius="0.061867">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.061867">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ningguang_orchid_head" length="0.062278" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000001, 0.025784, 1.535773, 1.000000">
+        <points>
+          <point radius="0.074374">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.074374">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ningguang_orchid_neck" length="0.074641" origin="0, 0, 0" frame="-0.000003, 0.096445, 0.995338, 0.000000, 0.000000, 0.995338, -0.096445, 0.000000, -1.000000, 0.000000, -0.000003, 0.000000, -0.000001, 0.018585, 1.446480, 1.000000">
+        <points>
+          <point radius="0.028262">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.028262">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ningguang_orchid_l_upperarm" length="0.230297" origin="0, 0, 0" frame="-0.796907, -0.045015, -0.602423, 0.000000, -0.035909, 0.998986, -0.027145, 0.000000, 0.603034, 0.000000, -0.797715, 0.000000, -0.119427, 0.000481, 1.390333, 1.000000">
+        <points>
+          <point radius="0.024181">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.024181">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ningguang_orchid_r_upperarm" length="0.230297" origin="0, 0, 0" frame="0.796904, -0.045055, -0.602423, 0.000000, 0.035941, 0.998985, -0.027170, 0.000000, 0.603035, -0.000000, 0.797715, 0.000000, 0.119425, 0.000481, 1.390334, 1.000000">
+        <points>
+          <point radius="0.024181">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.024181">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+  <body name="yunjin_collision" owner_skeleton="yunjin_skeleton">
+    <capsules>
+      <capsule name="yunjin_torso_low" length="0.051984" origin="0, 0, 0" frame="-0.000001, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, -0.000000, 0.063560, 0.946418, 1.000000">
+        <points>
+          <point radius="0.069528">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.069528">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yunjin_torso_high" length="0.064621" origin="0, 0, 0" frame="-0.000002, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000000, 0.061662, 0.998402, 1.000000">
+        <points>
+          <point radius="0.061535">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.061535">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yunjin_head" length="0.058062" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000001, 0.010997, 1.316577, 1.000000">
+        <points>
+          <point radius="0.072323">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.072323">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yunjin_neck" length="0.074438" origin="0, 0, 0" frame="-0.000003, 0.142529, 0.989791, 0.000000, 0.000000, 0.989791, -0.142529, 0.000000, -1.000000, 0.000000, -0.000003, 0.000000, -0.000001, 0.000388, 1.227899, 1.000000">
+        <points>
+          <point radius="0.027483">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.027483">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yunjin_l_upperarm" length="0.206755" origin="0, 0, 0" frame="-0.773463, -0.020976, -0.633494, 0.000000, -0.016228, 0.999780, -0.013291, 0.000000, 0.633634, 0.000000, -0.773633, 0.000000, -0.103151, -0.004948, 1.197470, 1.000000">
+        <points>
+          <point radius="0.021709">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.021709">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yunjin_r_upperarm" length="0.206756" origin="0, 0, 0" frame="0.773466, -0.020977, -0.633491, 0.000000, 0.016228, 0.999780, -0.013292, 0.000000, 0.633630, -0.000000, 0.773636, 0.000000, 0.103149, -0.004948, 1.197470, 1.000000">
+        <points>
+          <point radius="0.021709">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.021709">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+  <body name="kokomi_collision" owner_skeleton="kokomi_skeleton">
+    <capsules>
+      <capsule name="kokomi_torso_low" length="0.053537" origin="0, 0, 0" frame="-0.000001, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, -0.000000, 0.039619, 0.985938, 1.000000">
+        <points>
+          <point radius="0.067205">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.067205">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="kokomi_torso_high" length="0.066551" origin="0, 0, 0" frame="-0.000002, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000000, 0.061731, 1.039475, 1.000000">
+        <points>
+          <point radius="0.075218">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.075218">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="kokomi_head" length="0.035000" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000001, 0.011326, 1.387304, 1.000000">
+        <points>
+          <point radius="0.056486">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.056486">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="kokomi_neck" length="0.076661" origin="0, 0, 0" frame="-0.000003, 0.142528, 0.989791, 0.000000, 0.000000, 0.989791, -0.142528, 0.000000, -1.000000, 0.000000, -0.000003, 0.000000, -0.000001, 0.000400, 1.275826, 1.000000">
+        <points>
+          <point radius="0.021465">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.021465">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="kokomi_l_upperarm" length="0.212930" origin="0, 0, 0" frame="-0.784401, -0.020976, -0.619899, 0.000000, -0.016458, 0.999780, -0.013006, 0.000000, 0.620036, 0.000000, -0.784573, 0.000000, -0.105028, -0.005096, 1.235189, 1.000000">
+        <points>
+          <point radius="0.022358">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022358">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="kokomi_r_upperarm" length="0.212930" origin="0, 0, 0" frame="0.784404, -0.020977, -0.619895, 0.000000, 0.016458, 0.999780, -0.013006, 0.000000, 0.620032, -0.000000, 0.784577, 0.000000, 0.105026, -0.005096, 1.235189, 1.000000">
+        <points>
+          <point radius="0.022358">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022358">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+  <body name="xianyun_collision" owner_skeleton="xianyun_skeleton">
+    <capsules>
+      <capsule name="xianyun_torso_low" length="0.059596" origin="0, 0, 0" frame="-0.000002, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000000, 0.063500, 1.113043, 1.000000">
+        <points>
+          <point radius="0.070376">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.070376">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="xianyun_torso_high" length="0.101876" origin="0, 0, 0" frame="-0.000001, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, -0.000000, 0.046470, 1.172639, 1.000000">
+        <points>
+          <point radius="0.085000">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.085000">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="xianyun_head" length="0.055722" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000001, 0.025447, 1.540884, 1.000000">
+        <points>
+          <point radius="0.073400">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.073400">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="xianyun_neck" length="0.073664" origin="0, 0, 0" frame="-0.000002, 0.096445, 0.995338, 0.000000, 0.000000, 0.995338, -0.096445, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000001, 0.018342, 1.452564, 1.000000">
+        <points>
+          <point radius="0.027892">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.027892">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="xianyun_l_upperarm" length="0.227282" origin="0, 0, 0" frame="-0.741370, -0.045021, -0.669584, 0.000000, -0.033411, 0.998986, -0.030176, 0.000000, 0.670264, 0.000000, -0.742123, 0.000000, -0.115558, 0.000474, 1.388887, 1.000000">
+        <points>
+          <point radius="0.023865">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.023865">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="xianyun_r_upperarm" length="0.227282" origin="0, 0, 0" frame="0.741361, -0.045092, -0.669590, 0.000000, 0.033464, 0.998983, -0.030224, 0.000000, 0.670272, -0.000000, 0.742116, 0.000000, 0.115557, 0.000475, 1.388887, 1.000000">
+        <points>
+          <point radius="0.023865">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.023865">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+  <body name="nilou_collision" owner_skeleton="nilou_skeleton">
+    <capsules>
+      <capsule name="nilou_torso_low" length="0.052349" origin="0, 0, 0" frame="-0.000004, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000004, 0.000000, 0.000000, 0.034479, 0.957181, 1.000000">
+        <points>
+          <point radius="0.083242">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.083242">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="nilou_torso_high" length="0.065075" origin="0, 0, 0" frame="-0.000002, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000000, 0.059618, 1.009531, 1.000000">
+        <points>
+          <point radius="0.054890">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.054890">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="nilou_head" length="0.053693" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000001, 0.011074, 1.329833, 1.000000">
+        <points>
+          <point radius="0.072512">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.072512">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="nilou_neck" length="0.074960" origin="0, 0, 0" frame="-0.000003, 0.142528, 0.989791, 0.000000, 0.000000, 0.989791, -0.142528, 0.000000, -1.000000, 0.000000, -0.000003, 0.000000, -0.000001, 0.000391, 1.240639, 1.000000">
+        <points>
+          <point radius="0.027555">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.027555">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="nilou_l_upperarm" length="0.208207" origin="0, 0, 0" frame="-0.773469, -0.020920, -0.633489, 0.000000, -0.016184, 0.999781, -0.013255, 0.000000, 0.633627, 0.000000, -0.773638, 0.000000, -0.102698, -0.004983, 1.200903, 1.000000">
+        <points>
+          <point radius="0.021862">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.021862">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="nilou_r_upperarm" length="0.208207" origin="0, 0, 0" frame="0.773466, -0.020947, -0.633491, 0.000000, 0.016205, 0.999781, -0.013272, 0.000000, 0.633630, -0.000000, 0.773636, 0.000000, 0.102697, -0.004983, 1.200903, 1.000000">
+        <points>
+          <point radius="0.021862">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.021862">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+  <body name="amber_collision" owner_skeleton="amber_skeleton">
+    <capsules>
+      <capsule name="amber_torso_low" length="0.067413" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.048043, 0.941916, 1.000000">
+        <points>
+          <point radius="0.059753">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.059753">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="amber_torso_high" length="0.067413" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.056247, 1.009328, 1.000000">
+        <points>
+          <point radius="0.054796">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.054796">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="amber_head" length="0.054050" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.010493, 1.336542, 1.000000">
+        <points>
+          <point radius="0.073477">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.073477">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="amber_neck" length="0.075189" origin="0, 0, 0" frame="0.000000, 0.135576, 0.990767, 0.000000, 0.000000, 0.990767, -0.135576, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000299, 1.247047, 1.000000">
+        <points>
+          <point radius="0.027921">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.027921">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="amber_l_upperarm" length="0.209702" origin="0, 0, 0" frame="-0.761437, -0.020571, -0.647913, 0.000000, -0.015667, 0.999788, -0.013331, 0.000000, 0.648050, 0.000000, -0.761598, 0.000000, -0.099444, -0.004551, 1.191203, 1.000000">
+        <points>
+          <point radius="0.022019">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022019">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="amber_r_upperarm" length="0.209702" origin="0, 0, 0" frame="0.761437, -0.020571, -0.647913, 0.000000, 0.015667, 0.999788, -0.013331, 0.000000, 0.648050, -0.000000, 0.761598, 0.000000, 0.099444, -0.004551, 1.191203, 1.000000">
+        <points>
+          <point radius="0.022019">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022019">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+  <body name="keqing_opulent_collision" owner_skeleton="keqing_opulent_skeleton">
+    <capsules>
+      <capsule name="keqing_opulent_torso_low" length="0.052694" origin="0, 0, 0" frame="-0.000001, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, -0.000000, 0.052707, 0.984720, 1.000000">
+        <points>
+          <point radius="0.067641">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.067641">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="keqing_opulent_torso_high" length="0.065504" origin="0, 0, 0" frame="-0.000002, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000000, 0.067868, 1.037414, 1.000000">
+        <points>
+          <point radius="0.050124">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.050124">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="keqing_opulent_head" length="0.059363" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000001, 0.011148, 1.359728, 1.000000">
+        <points>
+          <point radius="0.073310">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.073310">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="keqing_opulent_neck" length="0.075454" origin="0, 0, 0" frame="-0.000003, 0.142528, 0.989791, 0.000000, 0.000000, 0.989791, -0.142528, 0.000000, -1.000000, 0.000000, -0.000003, 0.000000, -0.000001, 0.000393, 1.270044, 1.000000">
+        <points>
+          <point radius="0.027858">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.027858">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="keqing_opulent_l_upperarm" length="0.209578" origin="0, 0, 0" frame="-0.775676, -0.020900, -0.630785, 0.000000, -0.016215, 0.999782, -0.013186, 0.000000, 0.630923, 0.000000, -0.775845, 0.000000, -0.103375, -0.005015, 1.230047, 1.000000">
+        <points>
+          <point radius="0.022006">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022006">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="keqing_opulent_r_upperarm" length="0.209578" origin="0, 0, 0" frame="0.775672, -0.020977, -0.630787, 0.000000, 0.016275, 0.999780, -0.013235, 0.000000, 0.630926, -0.000000, 0.775843, 0.000000, 0.103373, -0.005016, 1.230047, 1.000000">
+        <points>
+          <point radius="0.022006">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022006">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+  <body name="yaemiko_collision" owner_skeleton="yaemiko_skeleton">
+    <capsules>
+      <capsule name="yaemiko_torso_low" length="0.060384" origin="0, 0, 0" frame="-0.000001, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, -0.000000, -0.045877, 1.103631, 1.000000">
+        <points>
+          <point radius="0.056762">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.056762">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yaemiko_torso_high" length="0.103222" origin="0, 0, 0" frame="-0.000002, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000000, -0.028944, 1.164015, 1.000000">
+        <points>
+          <point radius="0.044685">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.044685">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yaemiko_head" length="0.059349" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000001, 0.025783, 1.536927, 1.000000">
+        <points>
+          <point radius="0.074370">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.074370">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yaemiko_neck" length="0.074637" origin="0, 0, 0" frame="-0.000003, 0.096446, 0.995338, 0.000000, 0.000000, 0.995338, -0.096446, 0.000000, -1.000000, 0.000000, -0.000003, 0.000000, -0.000001, 0.018584, 1.447639, 1.000000">
+        <points>
+          <point radius="0.028261">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.028261">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yaemiko_l_upperarm" length="0.230285" origin="0, 0, 0" frame="-0.775397, -0.045012, -0.629868, 0.000000, -0.034938, 0.998986, -0.028381, 0.000000, 0.630507, 0.000000, -0.776183, 0.000000, -0.120149, 0.000481, 1.394897, 1.000000">
+        <points>
+          <point radius="0.024180">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.024180">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yaemiko_r_upperarm" length="0.230285" origin="0, 0, 0" frame="0.775399, -0.045016, -0.629865, 0.000000, 0.034941, 0.998986, -0.028383, 0.000000, 0.630504, -0.000000, 0.776186, 0.000000, 0.120148, 0.000481, 1.394898, 1.000000">
+        <points>
+          <point radius="0.024180">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.024180">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+  <body name="ayaka_collision" owner_skeleton="ayaka_skeleton">
+    <capsules>
+      <capsule name="ayaka_torso_low" length="0.053029" origin="0, 0, 0" frame="-0.000001, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, -0.000000, 0.038194, 0.975189, 1.000000">
+        <points>
+          <point radius="0.085000">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.085000">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ayaka_torso_high" length="0.065919" origin="0, 0, 0" frame="-0.000002, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000000, 0.032752, 1.028218, 1.000000">
+        <points>
+          <point radius="0.083743">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.083743">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ayaka_head" length="0.060531" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000001, 0.011218, 1.352482, 1.000000">
+        <points>
+          <point radius="0.073775">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.073775">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ayaka_neck" length="0.073968" origin="0, 0, 0" frame="-0.000003, 0.146314, 0.989238, 0.000000, 0.000000, 0.989238, -0.146314, 0.000000, -1.000000, 0.000000, -0.000003, 0.000000, -0.000001, 0.000396, 1.264310, 1.000000">
+        <points>
+          <point radius="0.028035">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.028035">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ayaka_l_upperarm" length="0.210908" origin="0, 0, 0" frame="-0.805557, -0.020976, -0.592146, 0.000000, -0.016901, 0.999780, -0.012424, 0.000000, 0.592277, 0.000000, -0.805735, 0.000000, -0.104031, -0.005047, 1.222073, 1.000000">
+        <points>
+          <point radius="0.022145">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022145">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ayaka_r_upperarm" length="0.210908" origin="0, 0, 0" frame="0.805560, -0.020977, -0.592143, 0.000000, 0.016902, 0.999780, -0.012424, 0.000000, 0.592273, -0.000000, 0.805737, 0.000000, 0.104029, -0.005047, 1.222073, 1.000000">
+        <points>
+          <point radius="0.022145">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022145">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+  <body name="hutao_lantern_collision" owner_skeleton="hutao_lantern_skeleton">
+    <capsules>
+      <capsule name="hutao_lantern_torso_low" length="0.053347" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.029114, 0.977207, 1.000000">
+        <points>
+          <point radius="0.078028">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.078028">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="hutao_lantern_torso_high" length="0.066315" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.043185, 1.030554, 1.000000">
+        <points>
+          <point radius="0.085000">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.085000">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="hutao_lantern_head" length="0.063599" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.011286, 1.356677, 1.000000">
+        <points>
+          <point radius="0.074219">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.074219">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="hutao_lantern_neck" length="0.076390" origin="0, 0, 0" frame="0.000000, 0.142532, 0.989790, 0.000000, 0.000000, 0.989790, -0.142532, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000398, 1.266067, 1.000000">
+        <points>
+          <point radius="0.028203">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.028203">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="hutao_lantern_l_upperarm" length="0.212176" origin="0, 0, 0" frame="-0.773467, -0.020898, -0.633492, 0.000000, -0.016167, 0.999782, -0.013241, 0.000000, 0.633631, 0.000000, -0.773636, 0.000000, -0.100531, -0.005078, 1.210572, 1.000000">
+        <points>
+          <point radius="0.022279">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022279">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="hutao_lantern_r_upperarm" length="0.212176" origin="0, 0, 0" frame="0.773464, -0.020973, -0.633493, 0.000000, 0.016226, 0.999780, -0.013289, 0.000000, 0.633633, -0.000000, 0.773634, 0.000000, 0.100531, -0.005078, 1.210572, 1.000000">
+        <points>
+          <point radius="0.022278">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022278">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+  <body name="hutao_collision" owner_skeleton="hutao_skeleton">
+    <capsules>
+      <capsule name="hutao_torso_low" length="0.052295" origin="0, 0, 0" frame="-0.000001, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, -0.000000, 0.047187, 0.945967, 1.000000">
+        <points>
+          <point radius="0.068221">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.068221">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="hutao_torso_high" length="0.065006" origin="0, 0, 0" frame="-0.000002, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000000, 0.058003, 0.998261, 1.000000">
+        <points>
+          <point radius="0.060087">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.060087">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="hutao_head" length="0.059257" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000001, 0.011063, 1.318243, 1.000000">
+        <points>
+          <point radius="0.072754">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.072754">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="hutao_neck" length="0.064773" origin="0, 0, 0" frame="-0.000003, 0.164770, 0.986332, 0.000000, 0.000000, 0.986332, -0.164770, 0.000000, -1.000000, 0.000000, -0.000003, 0.000000, -0.000001, 0.000390, 1.239355, 1.000000">
+        <points>
+          <point radius="0.027646">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.027646">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="hutao_l_upperarm" length="0.207988" origin="0, 0, 0" frame="-0.778962, -0.020977, -0.626720, 0.000000, -0.016344, 0.999780, -0.013149, 0.000000, 0.626858, 0.000000, -0.779134, 0.000000, -0.100890, -0.004978, 1.181990, 1.000000">
+        <points>
+          <point radius="0.021839">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.021839">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="hutao_r_upperarm" length="0.207988" origin="0, 0, 0" frame="0.778966, -0.020977, -0.626716, 0.000000, 0.016344, 0.999780, -0.013150, 0.000000, 0.626854, -0.000000, 0.779137, 0.000000, 0.100888, -0.004978, 1.181991, 1.000000">
+        <points>
+          <point radius="0.021839">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.021839">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+  <body name="weisina_collision" owner_skeleton="weisina_skeleton">
+    <capsules>
+      <capsule name="weisina_torso_low" length="0.059832" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.046315, 0.982218, 1.000000">
+        <points>
+          <point radius="0.069932">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.069932">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="weisina_torso_high" length="0.059832" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.050577, 1.042050, 1.000000">
+        <points>
+          <point radius="0.061761">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.061761">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="weisina_head" length="0.047241" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.011285, 1.361688, 1.000000">
+        <points>
+          <point radius="0.063635">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.063635">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="weisina_neck" length="0.076389" origin="0, 0, 0" frame="0.000000, 0.142520, 0.989792, 0.000000, 0.000000, 0.989792, -0.142520, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000398, 1.271078, 1.000000">
+        <points>
+          <point radius="0.024181">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.024181">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="weisina_l_upperarm" length="0.207348" origin="0, 0, 0" frame="-0.815773, -0.020936, -0.577993, 0.000000, -0.017083, 0.999781, -0.012103, 0.000000, 0.578120, 0.000000, -0.815952, 0.000000, -0.090296, -0.006220, 1.230374, 1.000000">
+        <points>
+          <point radius="0.021771">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.021771">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="weisina_r_upperarm" length="0.207348" origin="0, 0, 0" frame="0.815773, -0.020950, -0.577993, 0.000000, 0.017094, 0.999781, -0.012112, 0.000000, 0.578120, -0.000000, 0.815952, 0.000000, 0.090296, -0.006220, 1.230374, 1.000000">
+        <points>
+          <point radius="0.021771">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.021771">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

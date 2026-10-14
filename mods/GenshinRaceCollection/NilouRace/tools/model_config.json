@@ -1,0 +1,112 @@
+{
+  "id": "NilouRace",
+  "version": "v0.1.0",
+  "race": "nilou",
+  "prefix": "nilou",
+  "module_name": "Nilou Race",
+  "display_name": "妮露",
+  "source_model": "input/original/妮露.pmx",
+  "source_archive": "input/archive/妮露_by_原神_e1cb5e49f74b603c9c3c269050ce15a4.zip",
+  "ignored_models": [],
+  "unit_scale": 0.08,
+  "source_rotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "skin_min_scale": 1.0,
+  "cloth_enabled": true,
+  "cloth_lods": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "cloth_parts": {
+    "12": {
+      "fixed_above_source_y": 16.75519371032715,
+      "source_z_min": null,
+      "max_distance_m": 0.06,
+      "travel_slope": 0.3
+    },
+    "13": {
+      "fixed_above_source_y": 16.75519371032715,
+      "source_z_min": null,
+      "max_distance_m": 0.06,
+      "travel_slope": 0.3
+    }
+  },
+  "lod_multipliers": [
+    1,
+    0.65,
+    0.4,
+    0.2
+  ],
+  "minimum_ratios": {
+    "m00": 0.7,
+    "m01": 0.7,
+    "m03": 0.7,
+    "m04": 0.7,
+    "m06": 0.7
+  },
+  "facial_animation": false,
+  "pmx_reader": "C:/Users/DKX/AppData/Roaming/Blender Foundation/Blender/5.2/extensions/user_default/mmd_tools/core/pmx/__init__.py",
+  "skeleton": "nilou_skeleton",
+  "glass_materials": [],
+  "head_materials": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    30,
+    31
+  ],
+  "cloth_materials": [
+    12,
+    13
+  ],
+  "cloth_proxy_materials": [
+    12
+  ],
+  "hair_decision": "后部两束长发启用有限摆动，发绳随相同驱动跟随",
+  "cloth_proxy_policy": {
+    "pin_band_m": 0.015,
+    "minimum_component_height_m": 0.055,
+    "max_proxy_vertices": 4500
+  },
+  "hair_reference_body_blend_max": 0.7,
+  "weight_refinement": {
+    "shoulders": true,
+    "crotch": true,
+    "waist": true
+  },
+  "shoulder_materials": [
+    17,
+    20,
+    27,
+    28,
+    29
+  ],
+  "shoulder_style": "arm_only"
+}

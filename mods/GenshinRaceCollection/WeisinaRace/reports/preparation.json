@@ -1,0 +1,78 @@
+{
+  "vertices": 63278,
+  "source_triangles": 77167,
+  "selected_triangles": 57267,
+  "bones": 550,
+  "morphs": 67,
+  "excluded": [
+    {
+      "material_index": 1,
+      "name": "颜2",
+      "triangles": 1032,
+      "reason": "Default hidden expression/material or explicit prop exclusion"
+    },
+    {
+      "material_index": 2,
+      "name": "颜3",
+      "triangles": 896,
+      "reason": "Default hidden expression/material or explicit prop exclusion"
+    },
+    {
+      "material_index": 3,
+      "name": "颜4",
+      "triangles": 896,
+      "reason": "Default hidden expression/material or explicit prop exclusion"
+    },
+    {
+      "material_index": 23,
+      "name": "袜s",
+      "triangles": 1678,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    },
+    {
+      "material_index": 24,
+      "name": "袜s2",
+      "triangles": 1678,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    },
+    {
+      "material_index": 33,
+      "name": "髮+",
+      "triangles": 10535,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    },
+    {
+      "material_index": 34,
+      "name": "照れ",
+      "triangles": 1942,
+      "reason": "Default hidden expression/material or explicit prop exclusion"
+    },
+    {
+      "material_index": 35,
+      "name": "翼+",
+      "triangles": 430,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    },
+    {
+      "material_index": 36,
+      "name": "结晶+",
+      "triangles": 364,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    },
+    {
+      "material_index": 37,
+      "name": "裙+",
+      "triangles": 449,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    }
+  ],
+  "ignored_models": [
+    "武器.pmx",
+    "法杖.pmx",
+    "魔法剑1.pmx",
+    "魔法剑2.pmx"
+  ],
+  "source_model": "input/original/薇斯纳.pmx",
+  "selected_source_height_m": 1.640733951330185,
+  "skirt_cloth_enabled": false
+}

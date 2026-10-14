@@ -1,0 +1,33 @@
+{
+  "model": "AyakaSpringBloomRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 3720,
+      "vertical_band_m": [
+        0.9111982738971711,
+        1.1207611858844757
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "arm_only",
+      "vertices": 1088,
+      "inner_x_m": 0.04172278213500977,
+      "outer_x_m": 0.16689112854003907
+    },
+    {
+      "region": "r_shoulder",
+      "style": "arm_only",
+      "vertices": 823,
+      "inner_x_m": 0.04172245025634766,
+      "outer_x_m": 0.16688980102539064
+    },
+    {
+      "region": "crotch",
+      "vertices": 292,
+      "derived_hip_half_width_m": 0.07583849906921387
+    }
+  ],
+  "geometry_unchanged": true
+}

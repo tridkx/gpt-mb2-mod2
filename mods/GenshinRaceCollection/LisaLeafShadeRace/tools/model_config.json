@@ -1,0 +1,77 @@
+{
+  "id": "LisaLeafShadeRace",
+  "version": "v0.1.0",
+  "race": "lisa_leafshade",
+  "prefix": "lisa_leafshade",
+  "module_name": "Lisa Leaf Shade Race",
+  "display_name": "丽莎·叶隐芳名",
+  "source_model": "input/original/丽莎.pmx",
+  "source_archive": "input/archive/「叶隐芳名」丽莎_by_原神_ad564aa072e830dee28da01d7176e6c9.zip",
+  "ignored_models": [],
+  "unit_scale": 0.08,
+  "source_rotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "skin_min_scale": 1.0,
+  "cloth_enabled": false,
+  "cloth_lods": [],
+  "cloth_parts": {},
+  "lod_multipliers": [
+    1,
+    0.65,
+    0.4,
+    0.2
+  ],
+  "minimum_ratios": {
+    "m00": 0.7,
+    "m01": 0.7,
+    "m03": 0.7,
+    "m04": 0.7,
+    "m06": 0.7
+  },
+  "facial_animation": false,
+  "pmx_reader": "C:/Users/DKX/AppData/Roaming/Blender Foundation/Blender/5.2/extensions/user_default/mmd_tools/core/pmx/__init__.py",
+  "skeleton": "lisa_leafshade_skeleton",
+  "glass_materials": [],
+  "head_materials": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12
+  ],
+  "cloth_materials": [],
+  "hair_decision": "发型较短且贴近肩颈，普通头部蒙皮更稳定",
+  "weight_refinement": {
+    "shoulders": true,
+    "crotch": true,
+    "waist": true
+  },
+  "shoulder_materials": [
+    15,
+    17,
+    18,
+    19
+  ],
+  "shoulder_style": "arm_only"
+}

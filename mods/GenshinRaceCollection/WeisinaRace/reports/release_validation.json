@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "28d0900338767de8d23064a135405c1d5295d4ecca5c22d68398b5d807ab0144",
+  "source_input_sha256": "19750dbd0c20413b98efbba515fd79ca7b8a8dc51305b111b84a0fad1ab4a948",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 57267,
+      "vertices": 37287,
+      "submeshes": 28
+    },
+    {
+      "lod": 1,
+      "triangles": 41959,
+      "vertices": 29284,
+      "submeshes": 28
+    },
+    {
+      "lod": 2,
+      "triangles": 32041,
+      "vertices": 24102,
+      "submeshes": 28
+    },
+    {
+      "lod": 3,
+      "triangles": 29246,
+      "vertices": 22527,
+      "submeshes": 28
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 507,
+      "worst_mesh": "weisina_part_18",
+      "frames_checked": 16,
+      "max_edge_extension": 2.3546633606763914,
+      "max_mesh_p99_extension": 1.7787210100248338
+    },
+    {
+      "label": "run",
+      "worst_frame": 8,
+      "worst_mesh": "weisina_part_17",
+      "frames_checked": 25,
+      "max_edge_extension": 3.529270744152388,
+      "max_mesh_p99_extension": 2.3088011124259418
+    },
+    {
+      "label": "bow",
+      "worst_frame": 82,
+      "worst_mesh": "weisina_part_18",
+      "frames_checked": 150,
+      "max_edge_extension": 4.996612077820344,
+      "max_mesh_p99_extension": 3.5644708701765375
+    },
+    {
+      "label": "riding",
+      "worst_frame": 7,
+      "worst_mesh": "weisina_part_18",
+      "frames_checked": 20,
+      "max_edge_extension": 3.939372587592711,
+      "max_mesh_p99_extension": 3.500967543355618
+    },
+    {
+      "label": "slash",
+      "worst_frame": 48,
+      "worst_mesh": "weisina_part_18",
+      "frames_checked": 150,
+      "max_edge_extension": 4.91074827637857,
+      "max_mesh_p99_extension": 2.1424250170662833
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 1947,
+      "worst_mesh": "weisina_part_18",
+      "frames_checked": 64,
+      "max_edge_extension": 2.5961247295656356,
+      "max_mesh_p99_extension": 1.9174625968502752
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 54,
+      "worst_mesh": "weisina_part_18",
+      "frames_checked": 16,
+      "max_edge_extension": 4.91574192589218,
+      "max_mesh_p99_extension": 2.947471940207857
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 376,
+      "worst_mesh": "weisina_part_18",
+      "frames_checked": 16,
+      "max_edge_extension": 3.964743788212613,
+      "max_mesh_p99_extension": 1.7793304192269188
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 134,
+      "worst_mesh": "weisina_part_18",
+      "frames_checked": 16,
+      "max_edge_extension": 2.8686219138921563,
+      "max_mesh_p99_extension": 2.197516282149144
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": true,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 4,
+  "proxy_simulation_vertices": 2952,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u540e\u90e8\u5377\u66f2\u957f\u53d1\u542f\u7528\u8f83\u5c0f\u6446\u52a8\u8303\u56f4\uff0c\u524d\u53d1\u4e0e\u7fc5\u8180\u56fa\u5b9a",
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

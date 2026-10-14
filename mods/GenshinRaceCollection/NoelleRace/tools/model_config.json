@@ -1,0 +1,67 @@
+{
+  "id": "NoelleRace",
+  "version": "v0.1.0",
+  "race": "noelle",
+  "prefix": "noelle",
+  "module_name": "Noelle Race",
+  "display_name": "诺艾尔",
+  "source_model": "input/original/诺艾尔.pmx",
+  "source_archive": "input/archive/诺艾尔_by_原神_3cccac1569c27994fc57f52955b2ff67.zip",
+  "ignored_models": [],
+  "unit_scale": 0.09,
+  "source_rotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "skin_min_scale": 1.0,
+  "cloth_enabled": false,
+  "cloth_lods": [],
+  "cloth_parts": {},
+  "lod_multipliers": [
+    1,
+    0.65,
+    0.4,
+    0.2
+  ],
+  "minimum_ratios": {
+    "m00": 0.7,
+    "m02": 0.7,
+    "m03": 0.7
+  },
+  "facial_animation": false,
+  "pmx_reader": "C:/Users/DKX/AppData/Roaming/Blender Foundation/Blender/5.2/extensions/user_default/mmd_tools/core/pmx/__init__.py",
+  "skeleton": "noelle_skeleton",
+  "unit_scale_reason": "Older source family uses smaller model units; uniform 0.09 conversion aligns anatomical head heights with the supplied models. No proportional reshaping.",
+  "glass_materials": [],
+  "head_materials": [
+    0,
+    2,
+    3,
+    4
+  ],
+  "cloth_materials": [],
+  "hair_decision": "短发，保留普通头部蒙皮",
+  "weight_refinement": {
+    "shoulders": true,
+    "crotch": true,
+    "waist": true
+  },
+  "shoulder_materials": [
+    1,
+    8
+  ],
+  "shoulder_style": "arm_only"
+}

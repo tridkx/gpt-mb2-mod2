@@ -1,0 +1,33 @@
+{
+  "model": "LisaLeafShadeRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 3447,
+      "vertical_band_m": [
+        0.998607747554779,
+        1.212579152584076
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "arm_only",
+      "vertices": 831,
+      "inner_x_m": 0.045753646850585944,
+      "outer_x_m": 0.18301458740234378
+    },
+    {
+      "region": "r_shoulder",
+      "style": "arm_only",
+      "vertices": 1267,
+      "inner_x_m": 0.04575329208374024,
+      "outer_x_m": 0.18301316833496095
+    },
+    {
+      "region": "crotch",
+      "vertices": 557,
+      "derived_hip_half_width_m": 0.08372686862945557
+    }
+  ],
+  "geometry_unchanged": true
+}

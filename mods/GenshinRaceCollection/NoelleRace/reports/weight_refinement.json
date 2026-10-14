@@ -1,0 +1,33 @@
+{
+  "model": "NoelleRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 2334,
+      "vertical_band_m": [
+        0.9160763603076338,
+        1.1290148454532027
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "arm_only",
+      "vertices": 634,
+      "inner_x_m": 0.03977770042419434,
+      "outer_x_m": 0.15911080169677735
+    },
+    {
+      "region": "r_shoulder",
+      "style": "arm_only",
+      "vertices": 684,
+      "inner_x_m": 0.03977770042419434,
+      "outer_x_m": 0.15911080169677735
+    },
+    {
+      "region": "crotch",
+      "vertices": 188,
+      "derived_hip_half_width_m": 0.07607577860355377
+    }
+  ],
+  "geometry_unchanged": true
+}

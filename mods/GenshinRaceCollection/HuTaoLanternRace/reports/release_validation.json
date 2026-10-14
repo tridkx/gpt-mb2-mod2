@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "e3943f17335121b314d48dfccdf8b0e169bb50a1b259ab08f92201a0c24df21a",
+  "source_input_sha256": "f61f67f214194201f7e529cbb614d087438136b9aa907811b60408036114b358",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 32110,
+      "vertices": 22868,
+      "submeshes": 33
+    },
+    {
+      "lod": 1,
+      "triangles": 23836,
+      "vertices": 18726,
+      "submeshes": 33
+    },
+    {
+      "lod": 2,
+      "triangles": 19928,
+      "vertices": 16771,
+      "submeshes": 33
+    },
+    {
+      "lod": 3,
+      "triangles": 18592,
+      "vertices": 16103,
+      "submeshes": 33
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 507,
+      "worst_mesh": "hutao_lantern_part_22",
+      "frames_checked": 16,
+      "max_edge_extension": 1.8135349397371292,
+      "max_mesh_p99_extension": 1.4838818125382238
+    },
+    {
+      "label": "run",
+      "worst_frame": 21,
+      "worst_mesh": "hutao_lantern_part_25",
+      "frames_checked": 25,
+      "max_edge_extension": 3.548917239169137,
+      "max_mesh_p99_extension": 2.910855624957122
+    },
+    {
+      "label": "bow",
+      "worst_frame": 82,
+      "worst_mesh": "hutao_lantern_part_25",
+      "frames_checked": 150,
+      "max_edge_extension": 3.5195707064840374,
+      "max_mesh_p99_extension": 2.91584597088654
+    },
+    {
+      "label": "riding",
+      "worst_frame": 8,
+      "worst_mesh": "hutao_lantern_part_27",
+      "frames_checked": 20,
+      "max_edge_extension": 5.031190666794103,
+      "max_mesh_p99_extension": 4.653968700585473
+    },
+    {
+      "label": "slash",
+      "worst_frame": 61,
+      "worst_mesh": "hutao_lantern_part_27",
+      "frames_checked": 150,
+      "max_edge_extension": 4.378666615309134,
+      "max_mesh_p99_extension": 3.682049252553634
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 145,
+      "worst_mesh": "hutao_lantern_part_25",
+      "frames_checked": 64,
+      "max_edge_extension": 2.665283211357647,
+      "max_mesh_p99_extension": 1.6243070312628687
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 270,
+      "worst_mesh": "hutao_lantern_part_27",
+      "frames_checked": 16,
+      "max_edge_extension": 4.48439156940103,
+      "max_mesh_p99_extension": 3.9243664471465753
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 314,
+      "worst_mesh": "hutao_lantern_part_27",
+      "frames_checked": 16,
+      "max_edge_extension": 4.413781255119209,
+      "max_mesh_p99_extension": 3.7093885737517702
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 1,
+      "worst_mesh": "hutao_lantern_part_25",
+      "frames_checked": 16,
+      "max_edge_extension": 2.6238094346339045,
+      "max_mesh_p99_extension": 1.8288295498664853
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": true,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 4,
+  "proxy_simulation_vertices": 3611,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u80cc\u90e8\u4e24\u675f\u957f\u53d1\u542f\u7528\u6709\u9650\u6446\u52a8\uff0c\u524d\u53d1\u3001\u5e3d\u4e0e\u56f4\u5dfe\u56fa\u5b9a",
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

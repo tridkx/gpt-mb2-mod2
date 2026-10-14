@@ -1,0 +1,25 @@
+{
+  "vertices": 27022,
+  "source_triangles": 34230,
+  "selected_triangles": 31064,
+  "bones": 601,
+  "morphs": 63,
+  "excluded": [
+    {
+      "material_index": 30,
+      "name": "髮+",
+      "triangles": 1618,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    },
+    {
+      "material_index": 31,
+      "name": "后髮+",
+      "triangles": 1548,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    }
+  ],
+  "ignored_models": [],
+  "source_model": "input/original/妮露.pmx",
+  "selected_source_height_m": 1.6170633289963008,
+  "skirt_cloth_enabled": false
+}

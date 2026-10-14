@@ -1,0 +1,33 @@
+{
+  "model": "AyakaRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 3649,
+      "vertical_band_m": [
+        0.902569638490677,
+        1.1182179081439974
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "field",
+      "vertices": 574,
+      "inner_x_m": 0.0416122055053711,
+      "outer_x_m": 0.1664488220214844
+    },
+    {
+      "region": "r_shoulder",
+      "style": "field",
+      "vertices": 572,
+      "inner_x_m": 0.04161166763305665,
+      "outer_x_m": 0.1664466705322266
+    },
+    {
+      "region": "crotch",
+      "vertices": 617,
+      "derived_hip_half_width_m": 0.07563729286193847
+    }
+  ],
+  "geometry_unchanged": true
+}

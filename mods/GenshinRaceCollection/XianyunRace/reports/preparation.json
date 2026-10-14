@@ -1,0 +1,24 @@
+{
+  "vertices": 31652,
+  "source_triangles": 43253,
+  "selected_triangles": 37506,
+  "bones": 397,
+  "morphs": 60,
+  "excluded": [
+    {
+      "material_index": 12,
+      "name": "髮s",
+      "triangles": 5747,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    }
+  ],
+  "ignored_models": [
+    "壶.pmx",
+    "机巧鹤.pmx",
+    "爆米花.pmx",
+    "留云鹤.pmx"
+  ],
+  "source_model": "input/original/闲云.pmx",
+  "selected_source_height_m": 1.8701597684621811,
+  "skirt_cloth_enabled": false
+}

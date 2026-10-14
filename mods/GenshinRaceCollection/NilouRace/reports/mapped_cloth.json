@@ -1,0 +1,194 @@
+{
+  "proxy": {
+    "mesh": "nilou_cloth_proxy",
+    "guid": "d6f5c7c1-f056-efdb-b4f3-b46476e1e2f1",
+    "metamesh": "nilou_cloth_proxy",
+    "lod": 0,
+    "bytes": 82588,
+    "render_vertices": 809,
+    "simulation_vertices": 809,
+    "fixed_positions": 215,
+    "boundary_fixed_positions": 44,
+    "active_positions": 594,
+    "stretch_constraints": 1804,
+    "bend_constraints": 1726,
+    "shear_constraints": 0,
+    "parallel_sets": 24,
+    "dummy_sets": 12,
+    "max_geodesic_anchor_length": 0.6963394663041511,
+    "sha256": "5840c521222e2215d212316b974d855cc862b340fb909ad13b63aa0c44cba19e",
+    "root_fixes": [
+      {
+        "component_positions": 276,
+        "reason": "Highest surviving attachment edge of each independently rooted hair card/lock; small detached tips omitted from proxy and mapped to the continuous parent surface",
+        "pinned_render_vertices": [
+          288,
+          296,
+          302,
+          306,
+          308,
+          309,
+          316,
+          321,
+          322,
+          325,
+          340,
+          342,
+          344,
+          349,
+          351,
+          356
+        ],
+        "bounds": [
+          [
+            -0.236076,
+            -0.343916,
+            0.664511
+          ],
+          [
+            -0.041108,
+            -0.066828,
+            1.271729
+          ]
+        ]
+      },
+      {
+        "component_positions": 276,
+        "reason": "Highest surviving attachment edge of each independently rooted hair card/lock; small detached tips omitted from proxy and mapped to the continuous parent surface",
+        "pinned_render_vertices": [
+          452,
+          457,
+          459,
+          464,
+          466,
+          468,
+          483,
+          486,
+          487,
+          492,
+          499,
+          500,
+          502,
+          506,
+          512,
+          520
+        ],
+        "bounds": [
+          [
+            0.041108,
+            -0.343916,
+            0.664511
+          ],
+          [
+            0.236076,
+            -0.066828,
+            1.271729
+          ]
+        ]
+      }
+    ],
+    "solver_pinned_render_vertices": [
+      288,
+      296,
+      302,
+      306,
+      308,
+      309,
+      316,
+      321,
+      322,
+      325,
+      340,
+      342,
+      344,
+      349,
+      351,
+      356,
+      452,
+      457,
+      459,
+      464,
+      466,
+      468,
+      483,
+      486,
+      487,
+      492,
+      499,
+      500,
+      502,
+      506,
+      512,
+      520
+    ],
+    "path": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\NilouRace\\build\\proxy_cooked\\d6f5c7c1-f056-efdb-b4f3-b46476e1e2f1.bin"
+  },
+  "render_maps": [
+    {
+      "mesh": "nilou_part_13.lod3",
+      "lod": 3,
+      "mapped_vertices": 32,
+      "rest_reconstruction_max_error_m": 3.6265868676801195e-08,
+      "max_normal_offset_m": 0.00013293710071593523,
+      "max_barycentric_extrapolation": 0.00939375814050436
+    },
+    {
+      "mesh": "nilou_part_12",
+      "lod": 0,
+      "mapped_vertices": 770,
+      "rest_reconstruction_max_error_m": 3.878739926488387e-08,
+      "max_normal_offset_m": 0.000729281164240092,
+      "max_barycentric_extrapolation": 0.024995720013976097
+    },
+    {
+      "mesh": "nilou_part_13",
+      "lod": 0,
+      "mapped_vertices": 32,
+      "rest_reconstruction_max_error_m": 3.6265868676801195e-08,
+      "max_normal_offset_m": 0.00013293710071593523,
+      "max_barycentric_extrapolation": 0.00939375814050436
+    },
+    {
+      "mesh": "nilou_part_12.lod2",
+      "lod": 2,
+      "mapped_vertices": 770,
+      "rest_reconstruction_max_error_m": 3.878739926488387e-08,
+      "max_normal_offset_m": 0.000729281164240092,
+      "max_barycentric_extrapolation": 0.024995720013976097
+    },
+    {
+      "mesh": "nilou_part_13.lod2",
+      "lod": 2,
+      "mapped_vertices": 32,
+      "rest_reconstruction_max_error_m": 3.6265868676801195e-08,
+      "max_normal_offset_m": 0.00013293710071593523,
+      "max_barycentric_extrapolation": 0.00939375814050436
+    },
+    {
+      "mesh": "nilou_part_13.lod1",
+      "lod": 1,
+      "mapped_vertices": 32,
+      "rest_reconstruction_max_error_m": 3.6265868676801195e-08,
+      "max_normal_offset_m": 0.00013293710071593523,
+      "max_barycentric_extrapolation": 0.00939375814050436
+    },
+    {
+      "mesh": "nilou_part_12.lod3",
+      "lod": 3,
+      "mapped_vertices": 770,
+      "rest_reconstruction_max_error_m": 3.878739926488387e-08,
+      "max_normal_offset_m": 0.000729281164240092,
+      "max_barycentric_extrapolation": 0.024995720013976097
+    },
+    {
+      "mesh": "nilou_part_12.lod1",
+      "lod": 1,
+      "mapped_vertices": 770,
+      "rest_reconstruction_max_error_m": 3.878739926488387e-08,
+      "max_normal_offset_m": 0.000729281164240092,
+      "max_barycentric_extrapolation": 0.024995720013976097
+    }
+  ],
+  "scope": "Selected long hair and attached hair ties only; all skirts/clothes remain skinned",
+  "game_verified": false
+}

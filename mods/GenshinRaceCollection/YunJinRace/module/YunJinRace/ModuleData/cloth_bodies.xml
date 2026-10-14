@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf8'?>
+<bodies>
+  <body name="yunjin_collision" owner_skeleton="yunjin_skeleton">
+    <capsules>
+      <capsule name="yunjin_torso_low" length="0.051984" origin="0, 0, 0" frame="-0.000001, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, -0.000000, 0.063560, 0.946418, 1.000000">
+        <points>
+          <point radius="0.069528">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.069528">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yunjin_torso_high" length="0.064621" origin="0, 0, 0" frame="-0.000002, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000000, 0.061662, 0.998402, 1.000000">
+        <points>
+          <point radius="0.061535">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.061535">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yunjin_head" length="0.058062" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000001, 0.010997, 1.316577, 1.000000">
+        <points>
+          <point radius="0.072323">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.072323">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yunjin_neck" length="0.074438" origin="0, 0, 0" frame="-0.000003, 0.142529, 0.989791, 0.000000, 0.000000, 0.989791, -0.142529, 0.000000, -1.000000, 0.000000, -0.000003, 0.000000, -0.000001, 0.000388, 1.227899, 1.000000">
+        <points>
+          <point radius="0.027483">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.027483">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yunjin_l_upperarm" length="0.206755" origin="0, 0, 0" frame="-0.773463, -0.020976, -0.633494, 0.000000, -0.016228, 0.999780, -0.013291, 0.000000, 0.633634, 0.000000, -0.773633, 0.000000, -0.103151, -0.004948, 1.197470, 1.000000">
+        <points>
+          <point radius="0.021709">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.021709">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="yunjin_r_upperarm" length="0.206756" origin="0, 0, 0" frame="0.773466, -0.020977, -0.633491, 0.000000, 0.016228, 0.999780, -0.013292, 0.000000, 0.633630, -0.000000, 0.773636, 0.000000, 0.103149, -0.004948, 1.197470, 1.000000">
+        <points>
+          <point radius="0.021709">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.021709">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

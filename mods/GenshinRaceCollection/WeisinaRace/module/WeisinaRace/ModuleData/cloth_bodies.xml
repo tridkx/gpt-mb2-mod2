@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf8'?>
+<bodies>
+  <body name="weisina_collision" owner_skeleton="weisina_skeleton">
+    <capsules>
+      <capsule name="weisina_torso_low" length="0.059832" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.046315, 0.982218, 1.000000">
+        <points>
+          <point radius="0.069932">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.069932">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="weisina_torso_high" length="0.059832" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.050577, 1.042050, 1.000000">
+        <points>
+          <point radius="0.061761">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.061761">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="weisina_head" length="0.047241" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.011285, 1.361688, 1.000000">
+        <points>
+          <point radius="0.063635">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.063635">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="weisina_neck" length="0.076389" origin="0, 0, 0" frame="0.000000, 0.142520, 0.989792, 0.000000, 0.000000, 0.989792, -0.142520, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000398, 1.271078, 1.000000">
+        <points>
+          <point radius="0.024181">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.024181">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="weisina_l_upperarm" length="0.207348" origin="0, 0, 0" frame="-0.815773, -0.020936, -0.577993, 0.000000, -0.017083, 0.999781, -0.012103, 0.000000, 0.578120, 0.000000, -0.815952, 0.000000, -0.090296, -0.006220, 1.230374, 1.000000">
+        <points>
+          <point radius="0.021771">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.021771">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="weisina_r_upperarm" length="0.207348" origin="0, 0, 0" frame="0.815773, -0.020950, -0.577993, 0.000000, 0.017094, 0.999781, -0.012112, 0.000000, 0.578120, -0.000000, 0.815952, 0.000000, 0.090296, -0.006220, 1.230374, 1.000000">
+        <points>
+          <point radius="0.021771">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.021771">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

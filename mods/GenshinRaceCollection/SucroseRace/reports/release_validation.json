@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "897d3049e4e6fbeecb50d11636a42b22718bce42fb0032ac25d6162b8b76f7bc",
+  "source_input_sha256": "bd2553531295528ff9703afc4d3a7d597f7badcdaade6efd48a55ad27b486350",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 20478,
+      "vertices": 13979,
+      "submeshes": 21
+    },
+    {
+      "lod": 1,
+      "triangles": 13585,
+      "vertices": 10474,
+      "submeshes": 21
+    },
+    {
+      "lod": 2,
+      "triangles": 9823,
+      "vertices": 8533,
+      "submeshes": 21
+    },
+    {
+      "lod": 3,
+      "triangles": 9296,
+      "vertices": 8218,
+      "submeshes": 21
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 507,
+      "worst_mesh": "sucrose_part_19",
+      "frames_checked": 16,
+      "max_edge_extension": 2.6835753289947775,
+      "max_mesh_p99_extension": 1.6182905913877945
+    },
+    {
+      "label": "run",
+      "worst_frame": 8,
+      "worst_mesh": "sucrose_part_14",
+      "frames_checked": 25,
+      "max_edge_extension": 3.6905993605544443,
+      "max_mesh_p99_extension": 2.528364303018863
+    },
+    {
+      "label": "bow",
+      "worst_frame": 82,
+      "worst_mesh": "sucrose_part_14",
+      "frames_checked": 150,
+      "max_edge_extension": 4.131682896017011,
+      "max_mesh_p99_extension": 2.8560265699930856
+    },
+    {
+      "label": "riding",
+      "worst_frame": 11,
+      "worst_mesh": "sucrose_part_14",
+      "frames_checked": 20,
+      "max_edge_extension": 4.120617880476675,
+      "max_mesh_p99_extension": 3.244669708951704
+    },
+    {
+      "label": "slash",
+      "worst_frame": 71,
+      "worst_mesh": "sucrose_part_18",
+      "frames_checked": 150,
+      "max_edge_extension": 4.008847947209436,
+      "max_mesh_p99_extension": 2.9589023616573984
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 145,
+      "worst_mesh": "sucrose_part_14",
+      "frames_checked": 64,
+      "max_edge_extension": 2.703372603243486,
+      "max_mesh_p99_extension": 2.0573456016629588
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 540,
+      "worst_mesh": "sucrose_part_14",
+      "frames_checked": 16,
+      "max_edge_extension": 4.364466535758018,
+      "max_mesh_p99_extension": 3.5578318433437524
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 439,
+      "worst_mesh": "sucrose_part_14",
+      "frames_checked": 16,
+      "max_edge_extension": 2.884873223097537,
+      "max_mesh_p99_extension": 2.166022313473392
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 1,
+      "worst_mesh": "sucrose_part_14",
+      "frames_checked": 16,
+      "max_edge_extension": 2.788978556174648,
+      "max_mesh_p99_extension": 2.1289139061926803
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": false,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 0,
+  "proxy_simulation_vertices": 0,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u77ed\u53d1\uff0c\u4fdd\u7559\u666e\u901a\u5934\u90e8\u8499\u76ae",
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

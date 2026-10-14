@@ -1,0 +1,657 @@
+{
+  "materials": [
+    {
+      "Name": "noelle_m00",
+      "Guid": "2cae5bfe-48d8-42f7-68a7-e413de64cf25",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "noelle_m01",
+      "Guid": "f742f218-c3e0-6ecf-138d-48f6d148bd31",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "noelle_m02",
+      "Guid": "a0945185-d9de-667e-c2f4-d8f409ffee69",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "noelle_m03",
+      "Guid": "8527ff6b-1caf-3a84-8b40-194a00007020",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "noelle_m04",
+      "Guid": "8d8eb2e9-2ed0-3e46-73dc-35ecebda6413",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "noelle_m05",
+      "Guid": "d28ade9f-3720-6882-cc59-159ec03466c1",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "noelle_m06",
+      "Guid": "560ab884-6171-3d99-b9e8-12d2e7984fb0",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "noelle_m07",
+      "Guid": "21ab05db-9e76-b1ff-3025-c07718a77e3f",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "noelle_m08",
+      "Guid": "33677476-0ecf-3da2-454d-193825af8134",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "noelle_m09",
+      "Guid": "bbc3640a-4488-e64a-b858-264ba0222411",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "noelle_m10",
+      "Guid": "735cd36a-1b30-cde0-626d-dc2984c78c81",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "Name": "noelle_part_00",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "2cae5bfe-48d8-42f7-68a7-e413de64cf25",
+      "Vertices": 166,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "9F78B1FBED0FE62BB4318917345F70AC5072903F3ACED1DDD43934D1629678B2",
+      "VertexStreamSHA256": "86A14912050A4F301FDA29DE4584D2C77ED2B53E5ED9C40E4CE6A65192ABB0EA",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_00.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "2cae5bfe-48d8-42f7-68a7-e413de64cf25",
+      "Vertices": 136,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "AF71F904A725ECB2D9BAE2414F79A793539F38F39A6BBF14DA7BE38A8B49F683",
+      "VertexStreamSHA256": "FAD8AD7684D531CB6A93418C5134FC9C5FFAD9C61DFF48E0ECC71226157EF3C0",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_00.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "2cae5bfe-48d8-42f7-68a7-e413de64cf25",
+      "Vertices": 136,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "AF71F904A725ECB2D9BAE2414F79A793539F38F39A6BBF14DA7BE38A8B49F683",
+      "VertexStreamSHA256": "FAD8AD7684D531CB6A93418C5134FC9C5FFAD9C61DFF48E0ECC71226157EF3C0",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_00.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "2cae5bfe-48d8-42f7-68a7-e413de64cf25",
+      "Vertices": 136,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "AF71F904A725ECB2D9BAE2414F79A793539F38F39A6BBF14DA7BE38A8B49F683",
+      "VertexStreamSHA256": "FAD8AD7684D531CB6A93418C5134FC9C5FFAD9C61DFF48E0ECC71226157EF3C0",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_01",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "f742f218-c3e0-6ecf-138d-48f6d148bd31",
+      "Vertices": 603,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "05DA96B2FC2BF0CB5ED50719A77D4E7F9D2E24532BA30EFBA0ADC40A9387298F",
+      "VertexStreamSHA256": "9D3CE021FEFFCE4B0F9C77CF8AF24EF198108B8641C08360C49FD418E1B79770",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_01.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "f742f218-c3e0-6ecf-138d-48f6d148bd31",
+      "Vertices": 458,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "61A2EC40C05953977A349C23D0E30A2BA734EEFECEA5A64DE3DF292CC9D701A6",
+      "VertexStreamSHA256": "1EAF31984B40A79EAA554483A0EC6BD1828282CF7334A3A83478FCB203D052AE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_01.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "f742f218-c3e0-6ecf-138d-48f6d148bd31",
+      "Vertices": 395,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "2E05743F9693A7E8FA689042D18F01AD225983D3435A02E44A4F858C693F56C9",
+      "VertexStreamSHA256": "011B53CCC48461689F916AD83206F07A9338BC1C045C6210EB2F120A8D2F8448",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_01.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "f742f218-c3e0-6ecf-138d-48f6d148bd31",
+      "Vertices": 395,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "2E05743F9693A7E8FA689042D18F01AD225983D3435A02E44A4F858C693F56C9",
+      "VertexStreamSHA256": "011B53CCC48461689F916AD83206F07A9338BC1C045C6210EB2F120A8D2F8448",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_02",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "a0945185-d9de-667e-c2f4-d8f409ffee69",
+      "Vertices": 891,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "374E9F1598494F7D6829340A996B89BC57507FA07F955EC8E43985F2F89DE6AB",
+      "VertexStreamSHA256": "A2AA9DE6025FE30FD2A7926BBB8FAA18878075F180B9BBAB8A93780A8860C7D8",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_02.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "a0945185-d9de-667e-c2f4-d8f409ffee69",
+      "Vertices": 715,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E060CFF1345576329DF276A0BB1298E5F514B45E5178774FD93CFD0314723862",
+      "VertexStreamSHA256": "A703E837DE23FA4996CF77671D172E3744A92570BF67CC8EFB8F1A45AEEF5308",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_02.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "a0945185-d9de-667e-c2f4-d8f409ffee69",
+      "Vertices": 715,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E060CFF1345576329DF276A0BB1298E5F514B45E5178774FD93CFD0314723862",
+      "VertexStreamSHA256": "A703E837DE23FA4996CF77671D172E3744A92570BF67CC8EFB8F1A45AEEF5308",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_02.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "a0945185-d9de-667e-c2f4-d8f409ffee69",
+      "Vertices": 715,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E060CFF1345576329DF276A0BB1298E5F514B45E5178774FD93CFD0314723862",
+      "VertexStreamSHA256": "A703E837DE23FA4996CF77671D172E3744A92570BF67CC8EFB8F1A45AEEF5308",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_03",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "8527ff6b-1caf-3a84-8b40-194a00007020",
+      "Vertices": 914,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B6AC2453A657C194CECF779EDA821D800BCB3F9038D809BF6ED990369E6B198F",
+      "VertexStreamSHA256": "892EB2425FFA1883EF94C4D19BC0E59EBB8C831983A83778A19BAED8564C4289",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_03.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "8527ff6b-1caf-3a84-8b40-194a00007020",
+      "Vertices": 680,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "64FCB4D0EFCF4F2BBF68350362DD92B962DBC6144514BC46EE1F8C01AAB2AB7D",
+      "VertexStreamSHA256": "7271FBDF4FBDE754262E5DD523AC1AB290DC2A24AA55F619C4332F8F9CBC8A0B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_03.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "8527ff6b-1caf-3a84-8b40-194a00007020",
+      "Vertices": 680,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "64FCB4D0EFCF4F2BBF68350362DD92B962DBC6144514BC46EE1F8C01AAB2AB7D",
+      "VertexStreamSHA256": "7271FBDF4FBDE754262E5DD523AC1AB290DC2A24AA55F619C4332F8F9CBC8A0B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_03.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "8527ff6b-1caf-3a84-8b40-194a00007020",
+      "Vertices": 680,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "64FCB4D0EFCF4F2BBF68350362DD92B962DBC6144514BC46EE1F8C01AAB2AB7D",
+      "VertexStreamSHA256": "7271FBDF4FBDE754262E5DD523AC1AB290DC2A24AA55F619C4332F8F9CBC8A0B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_04",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "8d8eb2e9-2ed0-3e46-73dc-35ecebda6413",
+      "Vertices": 2216,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A0530A80B54D083576C67E5C216D05217B69BE7207C8E60F5E7D975C95FB7CD1",
+      "VertexStreamSHA256": "E9AF30DF352EF80620460AD847257F560EE99169118639B0AFB99FA00917A180",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_04.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "8d8eb2e9-2ed0-3e46-73dc-35ecebda6413",
+      "Vertices": 1544,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "2CD95B9EBB221AE57AA4F429222E176A8B25AE0F8864C8AD4B661EAB684353FC",
+      "VertexStreamSHA256": "15E6EDA3290A63B714497B3A7B4919CFA3A2E14B1AAC441AE9106894D2927F2A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_04.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "8d8eb2e9-2ed0-3e46-73dc-35ecebda6413",
+      "Vertices": 1045,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "56000E24587090CE531A5A207A56B4BD93E98D749F4FF9B0EC666D5C41A07361",
+      "VertexStreamSHA256": "0CC4158E9F7D24D5FD2F5C41B1A895AC9CB1060CEFA61D6DDB1421C592C09FE4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_04.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "8d8eb2e9-2ed0-3e46-73dc-35ecebda6413",
+      "Vertices": 628,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "AA520FA6501D9DBB013A50F6BF9ABC80708406D6146B2F116E59CAF269250545",
+      "VertexStreamSHA256": "7B52CD70F6AB9D0E531350EFD24466059560453D0F78B65248E351DC7677CD8E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_05",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "d28ade9f-3720-6882-cc59-159ec03466c1",
+      "Vertices": 812,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "46A5BE4B66D7D12BBC36E90BEB4FC92EA8E62A89913B4979785696EDA5BACF17",
+      "VertexStreamSHA256": "2A646FA66A2D0422A5D2D178DEC823EC27F22D0F69A533335148C1E32CC0E08A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_05.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "d28ade9f-3720-6882-cc59-159ec03466c1",
+      "Vertices": 631,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E251054C20527C6FF956C0C087B409D1728C48CB4B9C03A1111EC1EF39140B77",
+      "VertexStreamSHA256": "429126720E6646863605737DE59924C90341ACB8CA4F367238D84B7EE0175B25",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_05.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "d28ade9f-3720-6882-cc59-159ec03466c1",
+      "Vertices": 588,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E30DBC447E85397BBA885A6FA851D6E4AD805C09C6C4425C755D5763DD68925D",
+      "VertexStreamSHA256": "58C0C9C5DFA4E4E09F04C806CED51D023D11B398CBCCD5499C6242DBB6A3A8F5",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_05.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "d28ade9f-3720-6882-cc59-159ec03466c1",
+      "Vertices": 588,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E30DBC447E85397BBA885A6FA851D6E4AD805C09C6C4425C755D5763DD68925D",
+      "VertexStreamSHA256": "58C0C9C5DFA4E4E09F04C806CED51D023D11B398CBCCD5499C6242DBB6A3A8F5",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_06",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "560ab884-6171-3d99-b9e8-12d2e7984fb0",
+      "Vertices": 1973,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "D2515BE12755DDD74565151D75DFBE7EAA8105613A8DF39E975ADC3B65ED243B",
+      "VertexStreamSHA256": "902E46615C9CB9168CF255D1B5621B00580DE9214E2A7FFD9C82B7EB6E11C489",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_06.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "560ab884-6171-3d99-b9e8-12d2e7984fb0",
+      "Vertices": 1442,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "8717DDD0160A0E4F17E62EC3E6166505A5531C064202CB0DF8650B384DE2360E",
+      "VertexStreamSHA256": "D68F790D99DFDB7E23EDDDDDADCB62F27CFA94F6F5BE9B8027850A5F58A6319E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_06.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "560ab884-6171-3d99-b9e8-12d2e7984fb0",
+      "Vertices": 1062,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "1DCD3A635A927293ED8A9C2BE7094AB56EB7515A221110D0D272869CA54B0839",
+      "VertexStreamSHA256": "B0FDFEB708ED34F884CED3D6435E6FB8A6503E0C74C9F5CDF0F8B1C26B1F9F2E",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_06.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "560ab884-6171-3d99-b9e8-12d2e7984fb0",
+      "Vertices": 909,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "C3E4D6DAED5497AC405FF38B29B271291D242FB2EA8DFB3262209E320459AEDF",
+      "VertexStreamSHA256": "82E224BC5ED9310112E985D94FDE025CCECEB07A1734672577CFE7E2DC064D8A",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_07",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "21ab05db-9e76-b1ff-3025-c07718a77e3f",
+      "Vertices": 615,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "FC8EF00DF56E0E069CA4487ED933F96F7A7063BCB13CA14AF39FEF701D6D2CBF",
+      "VertexStreamSHA256": "44F52F9DD83258A5AB18B2A95BB9359817276ED6CA774A8F850D1AC3EA047DE7",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_07.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "21ab05db-9e76-b1ff-3025-c07718a77e3f",
+      "Vertices": 463,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B6914C2B99639B9A4BDB022E4CBB810C28AE822467E323A0DEBBDD93C0D12E00",
+      "VertexStreamSHA256": "B3945E9794EAC7B7D3E5C37540FDE0115C8D88C1113986A5442B23F8D4717B01",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_07.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "21ab05db-9e76-b1ff-3025-c07718a77e3f",
+      "Vertices": 373,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "1745B97FCE7D9BAC1AEAAE6B87E992326F994743A0F3186B810C40779450DD45",
+      "VertexStreamSHA256": "8FCD073203F8D37C9EA46D68C21357EF4256EE819BF63D3CC5BB64109D4B602B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_07.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "21ab05db-9e76-b1ff-3025-c07718a77e3f",
+      "Vertices": 373,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "1745B97FCE7D9BAC1AEAAE6B87E992326F994743A0F3186B810C40779450DD45",
+      "VertexStreamSHA256": "8FCD073203F8D37C9EA46D68C21357EF4256EE819BF63D3CC5BB64109D4B602B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_08",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "33677476-0ecf-3da2-454d-193825af8134",
+      "Vertices": 4767,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "CEC6EB788071CC3520C69D2D8C97FC89B7C827787653831970450DDDC79EFE06",
+      "VertexStreamSHA256": "610C4B978482111ABAAAEE23AB9D300ED93921E62AE35FE28D0E2A9904FAD31B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_08.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "33677476-0ecf-3da2-454d-193825af8134",
+      "Vertices": 3602,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "2476E99FB17DA74A92FD6C0719A5722F8B73454F3B64F70F6977A639E2CFE7E4",
+      "VertexStreamSHA256": "7E09AA08D4D88D8176D12848478891F98F707A14F74522A536A74D1F5102F7E0",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_08.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "33677476-0ecf-3da2-454d-193825af8134",
+      "Vertices": 3016,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "4668DD49E245CBC4654520899297E959EC287838CF459F8C81CAD34920B28565",
+      "VertexStreamSHA256": "2F436F726CEE5C83E83AA8C1D00AD382BA94E941FB6926467263FEAC439EA75B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_08.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "33677476-0ecf-3da2-454d-193825af8134",
+      "Vertices": 3016,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "4668DD49E245CBC4654520899297E959EC287838CF459F8C81CAD34920B28565",
+      "VertexStreamSHA256": "2F436F726CEE5C83E83AA8C1D00AD382BA94E941FB6926467263FEAC439EA75B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_09",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "bbc3640a-4488-e64a-b858-264ba0222411",
+      "Vertices": 1034,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "312A1C23963FC2431DBFA0980773ACDE149E36E12107651D13CF4FC4351F7E9A",
+      "VertexStreamSHA256": "421095152058AC6DF981FBA2B14971B4EEC870D1C1186DD4932F154DB8DDCD50",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_09.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "bbc3640a-4488-e64a-b858-264ba0222411",
+      "Vertices": 784,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E7524892EE1F68E8ACE0ED364E14D2CF08E492AB1F1DCEB30CB461B06F053ED4",
+      "VertexStreamSHA256": "877E32E9D896E2A2E23C0AEFE22ACE470ED37C87339AE2400C35A4987560D225",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_09.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "bbc3640a-4488-e64a-b858-264ba0222411",
+      "Vertices": 631,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E251054C20527C6FF956C0C087B409D1728C48CB4B9C03A1111EC1EF39140B77",
+      "VertexStreamSHA256": "FAA25F20727FC819167F4721BF2EE710477077AFD557988D4278D75C253281AE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_09.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "bbc3640a-4488-e64a-b858-264ba0222411",
+      "Vertices": 631,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E251054C20527C6FF956C0C087B409D1728C48CB4B9C03A1111EC1EF39140B77",
+      "VertexStreamSHA256": "FAA25F20727FC819167F4721BF2EE710477077AFD557988D4278D75C253281AE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_10",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "735cd36a-1b30-cde0-626d-dc2984c78c81",
+      "Vertices": 184,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "392734D15600CA766B03CD5BF706CC4192BDC5AB258051C2F385AD135DDB5A64",
+      "VertexStreamSHA256": "645F306A286FEFD0DFF908594891DC4CF03196AA2F9A8E221F891533A4307C84",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_10.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "735cd36a-1b30-cde0-626d-dc2984c78c81",
+      "Vertices": 143,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "DAF4FE5BF052B87154A90BEEF2A167E0D7C8CA410CD79929090AF39EC3C893F0",
+      "VertexStreamSHA256": "99EA28DD1DBE3A67B0C85756645A9D9D1020034E862CBC293AE3740EE4BCAD25",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_10.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "735cd36a-1b30-cde0-626d-dc2984c78c81",
+      "Vertices": 126,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "C00173CDE437C86C96C67F70C1A2514BBE571E4C9649E8F4B36277F9A555380F",
+      "VertexStreamSHA256": "438D9FE15A13990D65DCD28F420EDB88AAD099C20F18D2EFF47B055961CAE947",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_part_10.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "735cd36a-1b30-cde0-626d-dc2984c78c81",
+      "Vertices": 126,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "C00173CDE437C86C96C67F70C1A2514BBE571E4C9649E8F4B36277F9A555380F",
+      "VertexStreamSHA256": "438D9FE15A13990D65DCD28F420EDB88AAD099C20F18D2EFF47B055961CAE947",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "noelle_hidden",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "2cae5bfe-48d8-42f7-68a7-e413de64cf25",
+      "Vertices": 4,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5AC6A5945F16500911219129984BA8B387A06F24FE383CE4E81A73294065461B",
+      "VertexStreamSHA256": "EF54EFAF0087FF9735322207748957219F28ADC52CAD0EAEE8A20344CDE57CEB",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    }
+  ]
+}

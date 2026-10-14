@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "16181cf385ac62e7087d242242020406d2583f382296e9b587c2f834044d6198",
+  "source_input_sha256": "e64d51252a49bdf02e4ea38ce9c73bbc493185308822bf55996bb275034459c0",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 28716,
+      "vertices": 19298,
+      "submeshes": 21
+    },
+    {
+      "lod": 1,
+      "triangles": 19369,
+      "vertices": 14512,
+      "submeshes": 21
+    },
+    {
+      "lod": 2,
+      "triangles": 13857,
+      "vertices": 11669,
+      "submeshes": 21
+    },
+    {
+      "lod": 3,
+      "triangles": 12410,
+      "vertices": 10869,
+      "submeshes": 21
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 929,
+      "worst_mesh": "lisa_leafshade_part_15",
+      "frames_checked": 16,
+      "max_edge_extension": 2.6323102777274374,
+      "max_mesh_p99_extension": 1.3404172552923501
+    },
+    {
+      "label": "run",
+      "worst_frame": 12,
+      "worst_mesh": "lisa_leafshade_part_15",
+      "frames_checked": 25,
+      "max_edge_extension": 4.5231673362185605,
+      "max_mesh_p99_extension": 2.0069673372155634
+    },
+    {
+      "label": "bow",
+      "worst_frame": 1,
+      "worst_mesh": "lisa_leafshade_part_15",
+      "frames_checked": 150,
+      "max_edge_extension": 5.405953914543148,
+      "max_mesh_p99_extension": 2.1892875553834146
+    },
+    {
+      "label": "riding",
+      "worst_frame": 11,
+      "worst_mesh": "lisa_leafshade_part_15",
+      "frames_checked": 20,
+      "max_edge_extension": 5.365085991645255,
+      "max_mesh_p99_extension": 2.487043280524175
+    },
+    {
+      "label": "slash",
+      "worst_frame": 14,
+      "worst_mesh": "lisa_leafshade_part_15",
+      "frames_checked": 150,
+      "max_edge_extension": 5.6582610466381755,
+      "max_mesh_p99_extension": 2.0743522539529398
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 145,
+      "worst_mesh": "lisa_leafshade_part_15",
+      "frames_checked": 64,
+      "max_edge_extension": 3.458588101691527,
+      "max_mesh_p99_extension": 1.6547351228599168
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 540,
+      "worst_mesh": "lisa_leafshade_part_15",
+      "frames_checked": 16,
+      "max_edge_extension": 5.558397282622977,
+      "max_mesh_p99_extension": 2.762958181842981
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 501,
+      "worst_mesh": "lisa_leafshade_part_15",
+      "frames_checked": 16,
+      "max_edge_extension": 4.756416495059381,
+      "max_mesh_p99_extension": 1.9502704167033489
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 62,
+      "worst_mesh": "lisa_leafshade_part_15",
+      "frames_checked": 16,
+      "max_edge_extension": 3.985854777251234,
+      "max_mesh_p99_extension": 1.9226555874793594
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": false,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 0,
+  "proxy_simulation_vertices": 0,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u53d1\u578b\u8f83\u77ed\u4e14\u8d34\u8fd1\u80a9\u9888\uff0c\u666e\u901a\u5934\u90e8\u8499\u76ae\u66f4\u7a33\u5b9a",
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

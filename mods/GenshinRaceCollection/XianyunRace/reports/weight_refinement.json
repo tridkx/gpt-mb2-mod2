@@ -1,0 +1,33 @@
+{
+  "model": "XianyunRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 795,
+      "vertical_band_m": [
+        1.046392907500267,
+        1.2626390165090562
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "field_narrow",
+      "vertices": 1741,
+      "inner_x_m": 0.046223037719726565,
+      "outer_x_m": 0.18489215087890626
+    },
+    {
+      "region": "r_shoulder",
+      "style": "field_narrow",
+      "vertices": 2674,
+      "inner_x_m": 0.046222637176513676,
+      "outer_x_m": 0.1848905487060547
+    },
+    {
+      "region": "crotch",
+      "vertices": 288,
+      "derived_hip_half_width_m": 0.08679960250854493
+    }
+  ],
+  "geometry_unchanged": true
+}

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf8'?>
+<bodies>
+  <body name="ganyu_collision" owner_skeleton="ganyu_skeleton">
+    <capsules>
+      <capsule name="ganyu_torso_low" length="0.053759" origin="0, 0, 0" frame="-0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, -0.000000, 0.039310, 0.990799, 1.000000">
+        <points>
+          <point radius="0.068782">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.068782">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ganyu_torso_high" length="0.066827" origin="0, 0, 0" frame="-0.000001, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, -0.000000, 0.065438, 1.044558, 1.000000">
+        <points>
+          <point radius="0.049345">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.049345">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ganyu_head" length="0.053650" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000001, 0.010407, 1.365016, 1.000000">
+        <points>
+          <point radius="0.068445">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.068445">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ganyu_neck" length="0.053531" origin="0, 0, 0" frame="-0.000002, 0.216997, 0.976172, 0.000000, 0.000000, 0.976172, -0.216997, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000000, -0.001208, 1.297761, 1.000000">
+        <points>
+          <point radius="0.026009">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.026009">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ganyu_l_upperarm" length="0.213813" origin="0, 0, 0" frame="-0.762297, -0.020898, -0.646890, 0.000000, -0.015934, 0.999782, -0.013522, 0.000000, 0.647031, 0.000000, -0.762463, 0.000000, -0.103715, -0.006727, 1.233434, 1.000000">
+        <points>
+          <point radius="0.022450">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022450">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ganyu_r_upperarm" length="0.213813" origin="0, 0, 0" frame="0.762292, -0.021023, -0.646891, 0.000000, 0.016030, 0.999779, -0.013603, 0.000000, 0.647034, -0.000000, 0.762461, 0.000000, 0.103714, -0.006726, 1.233434, 1.000000">
+        <points>
+          <point radius="0.022450">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022450">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

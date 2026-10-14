@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "efa6c7160d32067cabbd6615916d22576a8a950d8700c17f3d0274d92a0a92ad",
+  "source_input_sha256": "ce2e4513ad77efb6e89f8fc50f53b5eaecfe3ac0d8f9076c1bd88baf9610754e",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 21029,
+      "vertices": 14197,
+      "submeshes": 19
+    },
+    {
+      "lod": 1,
+      "triangles": 15507,
+      "vertices": 11436,
+      "submeshes": 19
+    },
+    {
+      "lod": 2,
+      "triangles": 12345,
+      "vertices": 9855,
+      "submeshes": 19
+    },
+    {
+      "lod": 3,
+      "triangles": 12185,
+      "vertices": 9775,
+      "submeshes": 19
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 507,
+      "worst_mesh": "ganyu_part_12",
+      "frames_checked": 16,
+      "max_edge_extension": 2.5346216341127423,
+      "max_mesh_p99_extension": 1.6131645219582473
+    },
+    {
+      "label": "run",
+      "worst_frame": 8,
+      "worst_mesh": "ganyu_part_12",
+      "frames_checked": 25,
+      "max_edge_extension": 3.3695532811832516,
+      "max_mesh_p99_extension": 1.3235565017836506
+    },
+    {
+      "label": "bow",
+      "worst_frame": 82,
+      "worst_mesh": "ganyu_part_12",
+      "frames_checked": 150,
+      "max_edge_extension": 3.3892693640236535,
+      "max_mesh_p99_extension": 1.8830170216769935
+    },
+    {
+      "label": "riding",
+      "worst_frame": 11,
+      "worst_mesh": "ganyu_part_12",
+      "frames_checked": 20,
+      "max_edge_extension": 3.729766367943607,
+      "max_mesh_p99_extension": 1.66439237609913
+    },
+    {
+      "label": "slash",
+      "worst_frame": 121,
+      "worst_mesh": "ganyu_part_12",
+      "frames_checked": 150,
+      "max_edge_extension": 3.503935085715098,
+      "max_mesh_p99_extension": 1.7261474237827017
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 145,
+      "worst_mesh": "ganyu_part_12",
+      "frames_checked": 64,
+      "max_edge_extension": 2.579702064602983,
+      "max_mesh_p99_extension": 1.2462930018723926
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 540,
+      "worst_mesh": "ganyu_part_12",
+      "frames_checked": 16,
+      "max_edge_extension": 3.940293737371048,
+      "max_mesh_p99_extension": 1.8864984391529194
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 564,
+      "worst_mesh": "ganyu_part_12",
+      "frames_checked": 16,
+      "max_edge_extension": 2.4968694596336247,
+      "max_mesh_p99_extension": 1.3573434014467827
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 1,
+      "worst_mesh": "ganyu_part_12",
+      "frames_checked": 16,
+      "max_edge_extension": 2.5329350232134638,
+      "max_mesh_p99_extension": 1.413279138689638
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": true,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 4,
+  "proxy_simulation_vertices": 1856,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u540e\u90e8\u5355\u675f\u957f\u53d1\u8d85\u8fc7\u80a9\u80cc\uff0c\u542f\u7528\u6709\u9650\u6446\u52a8\uff1b\u5218\u6d77\u56fa\u5b9a",
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

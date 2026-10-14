@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf8'?>
+<bodies>
+  <body name="ayaka_collision" owner_skeleton="ayaka_skeleton">
+    <capsules>
+      <capsule name="ayaka_torso_low" length="0.053029" origin="0, 0, 0" frame="-0.000001, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, -0.000000, 0.038194, 0.975189, 1.000000">
+        <points>
+          <point radius="0.085000">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.085000">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ayaka_torso_high" length="0.065919" origin="0, 0, 0" frame="-0.000002, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000002, 0.000000, -0.000000, 0.032752, 1.028218, 1.000000">
+        <points>
+          <point radius="0.083743">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.083743">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ayaka_head" length="0.060531" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000001, 0.011218, 1.352482, 1.000000">
+        <points>
+          <point radius="0.073775">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.073775">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ayaka_neck" length="0.073968" origin="0, 0, 0" frame="-0.000003, 0.146314, 0.989238, 0.000000, 0.000000, 0.989238, -0.146314, 0.000000, -1.000000, 0.000000, -0.000003, 0.000000, -0.000001, 0.000396, 1.264310, 1.000000">
+        <points>
+          <point radius="0.028035">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.028035">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ayaka_l_upperarm" length="0.210908" origin="0, 0, 0" frame="-0.805557, -0.020976, -0.592146, 0.000000, -0.016901, 0.999780, -0.012424, 0.000000, 0.592277, 0.000000, -0.805735, 0.000000, -0.104031, -0.005047, 1.222073, 1.000000">
+        <points>
+          <point radius="0.022145">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022145">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ayaka_r_upperarm" length="0.210908" origin="0, 0, 0" frame="0.805560, -0.020977, -0.592143, 0.000000, 0.016902, 0.999780, -0.012424, 0.000000, 0.592273, -0.000000, 0.805737, 0.000000, 0.104029, -0.005047, 1.222073, 1.000000">
+        <points>
+          <point radius="0.022145">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022145">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

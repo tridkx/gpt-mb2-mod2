@@ -1,0 +1,116 @@
+{
+  "id": "XianyunRace",
+  "version": "v0.1.0",
+  "race": "xianyun",
+  "prefix": "xianyun",
+  "module_name": "Xianyun Race",
+  "display_name": "闲云",
+  "source_model": "input/original/闲云.pmx",
+  "source_archive": "input/archive/【闲云】_by_原神_0993344b399bf615e3f9e4a7a0001208.zip",
+  "ignored_models": [
+    "壶.pmx",
+    "机巧鹤.pmx",
+    "爆米花.pmx",
+    "留云鹤.pmx"
+  ],
+  "unit_scale": 0.08,
+  "source_rotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "skin_min_scale": 1.0,
+  "cloth_enabled": true,
+  "cloth_lods": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "cloth_parts": {
+    "11": {
+      "fixed_above_source_y": 19.6655330657959,
+      "source_z_min": 0.55,
+      "max_distance_m": 0.065,
+      "travel_slope": 0.3
+    }
+  },
+  "lod_multipliers": [
+    1,
+    0.65,
+    0.4,
+    0.2
+  ],
+  "minimum_ratios": {
+    "m00": 0.7,
+    "m01": 0.7,
+    "m05": 0.7,
+    "m07": 0.7,
+    "m09": 0.7
+  },
+  "facial_animation": false,
+  "pmx_reader": "C:/Users/DKX/AppData/Roaming/Blender Foundation/Blender/5.2/extensions/user_default/mmd_tools/core/pmx/__init__.py",
+  "skeleton": "xianyun_skeleton",
+  "overlay_materials": [
+    "髮s"
+  ],
+  "glass_materials": [],
+  "head_materials": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    11,
+    12,
+    13
+  ],
+  "cloth_materials": [
+    11
+  ],
+  "cloth_proxy_materials": [
+    11
+  ],
+  "hair_decision": "后部高马尾较长，启用有限摆动；额前短发与发饰固定",
+  "cloth_proxy_policy": {
+    "pin_band_m": 0.015,
+    "minimum_component_height_m": 0.055,
+    "max_proxy_vertices": 4500
+  },
+  "hair_reference_body_blend_max": 0.7,
+  "weight_refinement": {
+    "shoulders": true,
+    "crotch": true,
+    "waist": true
+  },
+  "rigid_material_bindings": {
+    "25": 11
+  },
+  "shoulder_materials": [
+    14,
+    19,
+    20,
+    23,
+    24
+  ],
+  "shoulder_style": "field_narrow",
+  "arm_material_bindings": [
+    16
+  ]
+}

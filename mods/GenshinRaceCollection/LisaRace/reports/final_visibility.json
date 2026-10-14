@@ -1,0 +1,831 @@
+{
+  "materials": [
+    {
+      "Name": "lisa_m00",
+      "Guid": "a00db86d-2765-1c7d-fa53-f55e6b07e954",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "lisa_m01",
+      "Guid": "fa12957c-5c93-7fc6-0452-c0a5145b3b89",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "lisa_m02",
+      "Guid": "fd062cb7-ebf2-b293-f0bd-7b7d533b4fde",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "lisa_m03",
+      "Guid": "f01d9200-dfe7-11e2-f28d-9c1366d7079e",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "lisa_m04",
+      "Guid": "3fa76b18-eb00-9062-0160-0ad6e0482cc8",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "lisa_m05",
+      "Guid": "82a5e202-4a3e-d8a1-49f4-0b644f804b18",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "lisa_m06",
+      "Guid": "e765ddb6-0f94-14de-2f8c-ef87d40c31a9",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "lisa_m07",
+      "Guid": "8410d461-8532-cd5f-cacf-f50bdffe4180",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "lisa_m08",
+      "Guid": "021ff114-44e2-f233-0391-52b25b1a033d",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "lisa_m09",
+      "Guid": "7a0261c3-c66f-31e6-7d97-1dc51ad23431",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "lisa_m10",
+      "Guid": "e3726e4a-2eec-1dc7-a01d-80a032ad72af",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "lisa_m11",
+      "Guid": "7e48b8cb-c6fb-4e11-0bee-854a266dd831",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "lisa_m12",
+      "Guid": "ec67205c-1fa7-9551-9ae5-da514545fed0",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "lisa_m13",
+      "Guid": "61f96d25-b689-8435-5c24-d7fea97cf632",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "Name": "lisa_part_00",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "a00db86d-2765-1c7d-fa53-f55e6b07e954",
+      "Vertices": 162,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B1DE08DD2C1549B3A72FD3C44A3835074FDE3B5EB438087C94CEE8E3CCF4C4F1",
+      "VertexStreamSHA256": "AEB68FA48AC9CEF83165AA43DB240731130EDCFD80FA4EB8737C93CBF55FD42D",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_00.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "a00db86d-2765-1c7d-fa53-f55e6b07e954",
+      "Vertices": 132,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "02E2663F4FB8F1EDD44D9A3AA7D4921579F5BC5A31E5430DDFABC1E20F79C596",
+      "VertexStreamSHA256": "84065C27E371A0BB4CC696F442272F532B5456F8D132E89F4B1CEFC6A467EB16",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_00.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "a00db86d-2765-1c7d-fa53-f55e6b07e954",
+      "Vertices": 132,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "02E2663F4FB8F1EDD44D9A3AA7D4921579F5BC5A31E5430DDFABC1E20F79C596",
+      "VertexStreamSHA256": "84065C27E371A0BB4CC696F442272F532B5456F8D132E89F4B1CEFC6A467EB16",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_00.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "a00db86d-2765-1c7d-fa53-f55e6b07e954",
+      "Vertices": 132,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "02E2663F4FB8F1EDD44D9A3AA7D4921579F5BC5A31E5430DDFABC1E20F79C596",
+      "VertexStreamSHA256": "84065C27E371A0BB4CC696F442272F532B5456F8D132E89F4B1CEFC6A467EB16",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_01",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "fa12957c-5c93-7fc6-0452-c0a5145b3b89",
+      "Vertices": 772,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "AB3791634A348C45DD1874AE338DE8BF8B100AC87BDEFD403C8336671BAD554C",
+      "VertexStreamSHA256": "40184DA3C442CDD4D94F7BCF3FDBE9976BF9A6AFD359B07C5B15B6B5DC2A61EC",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_01.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "fa12957c-5c93-7fc6-0452-c0a5145b3b89",
+      "Vertices": 586,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "CEA089FD003643818FA68C3E62EC17F0ECAEB94BF587905F8A1A53BB85A2CA21",
+      "VertexStreamSHA256": "2F9F54CF33511579419F90B795B6DD77FAA9AB14642BF513F926D7832EFF0E70",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_01.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "fa12957c-5c93-7fc6-0452-c0a5145b3b89",
+      "Vertices": 586,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "CEA089FD003643818FA68C3E62EC17F0ECAEB94BF587905F8A1A53BB85A2CA21",
+      "VertexStreamSHA256": "2F9F54CF33511579419F90B795B6DD77FAA9AB14642BF513F926D7832EFF0E70",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_01.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "fa12957c-5c93-7fc6-0452-c0a5145b3b89",
+      "Vertices": 586,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "CEA089FD003643818FA68C3E62EC17F0ECAEB94BF587905F8A1A53BB85A2CA21",
+      "VertexStreamSHA256": "2F9F54CF33511579419F90B795B6DD77FAA9AB14642BF513F926D7832EFF0E70",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_02",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "fd062cb7-ebf2-b293-f0bd-7b7d533b4fde",
+      "Vertices": 651,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "27F42A6B90B041F761819A77EF360F6E9818672C46DB91E8FAE2A63D3E23F583",
+      "VertexStreamSHA256": "1BEB4DD300D6FACB16324B8FCE48085D01D649A94CF058E7B877D44FDB56247C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_02.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "fd062cb7-ebf2-b293-f0bd-7b7d533b4fde",
+      "Vertices": 470,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E33D35B7F81C467A4EC0E7D53A3C0BC0D16131EC0B47D343438A8B741FDF3257",
+      "VertexStreamSHA256": "A0B92B70BCEFF53321A74E28FD0C65B4D6C9C6646860096880C4317A3731A680",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_02.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "fd062cb7-ebf2-b293-f0bd-7b7d533b4fde",
+      "Vertices": 340,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A7F11EA758734A4E651C2AA1DB15A3D900B54099A15A9BA2AF396FA5DBE2D4E3",
+      "VertexStreamSHA256": "067868C036A3CF9EB7DC9E06C1A6EE2C62C245CC39F884678594A97A628D3500",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_02.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "fd062cb7-ebf2-b293-f0bd-7b7d533b4fde",
+      "Vertices": 268,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "6E3AC2656EC87760908E8B6BADEA1E70C018597DCAA7435A1148F6C7B9F36D43",
+      "VertexStreamSHA256": "94BC328DD29BD0646B1E5C22BBDEA57E3E012E980092D2FAC06CD1AB9ABF09D7",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_03",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "f01d9200-dfe7-11e2-f28d-9c1366d7079e",
+      "Vertices": 1007,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A70E1C38FD0A3A8397AAE1E8242441064546748E8F493414FB158CBBF5C6BBB5",
+      "VertexStreamSHA256": "E4012B08BD1BD4205731E5DC2854A8456EFED43AC6DB9564F8553F268599F921",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_03.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "f01d9200-dfe7-11e2-f28d-9c1366d7079e",
+      "Vertices": 749,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "1B9C60AE84262E9D6405F5C21966A3840A0D50CCBF3DD88DEB2CAC196255495C",
+      "VertexStreamSHA256": "6A255249193C3EE421C6F47B6B17A43A4AB683D877877F4B1F7F880E3D1BD167",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_03.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "f01d9200-dfe7-11e2-f28d-9c1366d7079e",
+      "Vertices": 749,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "1B9C60AE84262E9D6405F5C21966A3840A0D50CCBF3DD88DEB2CAC196255495C",
+      "VertexStreamSHA256": "6A255249193C3EE421C6F47B6B17A43A4AB683D877877F4B1F7F880E3D1BD167",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_03.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "f01d9200-dfe7-11e2-f28d-9c1366d7079e",
+      "Vertices": 749,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "1B9C60AE84262E9D6405F5C21966A3840A0D50CCBF3DD88DEB2CAC196255495C",
+      "VertexStreamSHA256": "6A255249193C3EE421C6F47B6B17A43A4AB683D877877F4B1F7F880E3D1BD167",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_04",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "3fa76b18-eb00-9062-0160-0ad6e0482cc8",
+      "Vertices": 1867,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "4924474414C8E3C3A82CCCF39E6166485ED3AFC35A765291D39A1DE45F390049",
+      "VertexStreamSHA256": "C29BDEF3221ABF16342C7105FC428C59CB1A01882BFD6CA8698CF7E36AC3F2FE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_04.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "3fa76b18-eb00-9062-0160-0ad6e0482cc8",
+      "Vertices": 1258,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "3E5A4CE451DAE7795A5CE22CE9277B963F772E2005311A222DE5E105EE96A8C9",
+      "VertexStreamSHA256": "D14FFB8139AAE2AD0C61165841EF08B5F351C05B5A360BB0BAC604F1949ABBF9",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_04.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "3fa76b18-eb00-9062-0160-0ad6e0482cc8",
+      "Vertices": 835,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "7C35AF758D009E5E9D3C73ED1056D472988B60E07FFD09C29F06CC28FBE7034E",
+      "VertexStreamSHA256": "11D527C3B2EE854EE2A4AB90A3A8A1EF844B71EA8B3722263404A039E9E8D142",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_04.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "3fa76b18-eb00-9062-0160-0ad6e0482cc8",
+      "Vertices": 471,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "803FE0BABFCBFBED33C0F907ED09A57B3270D6535A19B1A08C462943D2B086E5",
+      "VertexStreamSHA256": "BCEB3BB2706695B6C48CB19E3778C4B1E22D64DAC7DE7E03995FC448800A5EBE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_05",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "82a5e202-4a3e-d8a1-49f4-0b644f804b18",
+      "Vertices": 474,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "0687E7BA84509B51E3AA9D4A93CA00A4D1B12CDE5ECC8BED594A32D517F0E1F9",
+      "VertexStreamSHA256": "B7157698588514818580E97D5BA9F51DDE9EE41052A8B389B23AD523FD3EF220",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_05.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "82a5e202-4a3e-d8a1-49f4-0b644f804b18",
+      "Vertices": 366,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "6002009FD0E745F0674F6EB322405CE311D8653D5B1040F3BA0DF1B0EA9904A3",
+      "VertexStreamSHA256": "930D17DCFE3E6AC51953BDB7A8A9BB0E6FC1EC9506E7E289FB437CF989364D93",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_05.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "82a5e202-4a3e-d8a1-49f4-0b644f804b18",
+      "Vertices": 330,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A0E7C8CB14B43E23FD1F3DEF422212A5A147C3B6B4977F77DF2AA4434566C63F",
+      "VertexStreamSHA256": "0E99A00ED6A2717ACFE1BCBDD270D0505F9B74B7664B00C6AFA0F32CE254D803",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_05.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "82a5e202-4a3e-d8a1-49f4-0b644f804b18",
+      "Vertices": 330,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A0E7C8CB14B43E23FD1F3DEF422212A5A147C3B6B4977F77DF2AA4434566C63F",
+      "VertexStreamSHA256": "0E99A00ED6A2717ACFE1BCBDD270D0505F9B74B7664B00C6AFA0F32CE254D803",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_06",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "e765ddb6-0f94-14de-2f8c-ef87d40c31a9",
+      "Vertices": 1506,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "81C321C98545D2F180E132A8928DB62B05016C10040B64F976F197C73132051A",
+      "VertexStreamSHA256": "EF6CA80A31E77C0DDCD07FADB0DCFC6157DE000FAF1FAC492F21BC53053A2801",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_06.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "e765ddb6-0f94-14de-2f8c-ef87d40c31a9",
+      "Vertices": 1163,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "AA37BB8D46A24ACAA85447624CCC68ADD6F8B245A326CB86078DEFAB533C1D38",
+      "VertexStreamSHA256": "9129CD3C3EE7254713BC767370429BDA32B735B947BF0AE8BFACA1664A170201",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_06.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "e765ddb6-0f94-14de-2f8c-ef87d40c31a9",
+      "Vertices": 1085,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "C6E87642E86E3504BC5FB90B52D778FBC1F305E1B0A9D1BB368B2B4C36093AAC",
+      "VertexStreamSHA256": "8224E15D21B2D870284FA3452089D0B53035FC425FCB8172BBE9D1F0C6941BBE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_06.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "e765ddb6-0f94-14de-2f8c-ef87d40c31a9",
+      "Vertices": 1085,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "C6E87642E86E3504BC5FB90B52D778FBC1F305E1B0A9D1BB368B2B4C36093AAC",
+      "VertexStreamSHA256": "8224E15D21B2D870284FA3452089D0B53035FC425FCB8172BBE9D1F0C6941BBE",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_07",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "8410d461-8532-cd5f-cacf-f50bdffe4180",
+      "Vertices": 694,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "3AD6017AE6E5F462A42597561F211CD5A33A5A11E9775D797C6C644389AF806B",
+      "VertexStreamSHA256": "F93112C4930326D35F2FD677A358D68F91D65E002776AD1C51DF7E111C6720AA",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_07.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "8410d461-8532-cd5f-cacf-f50bdffe4180",
+      "Vertices": 546,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "2D17DA76FE725540AFBED85788C7EFE279C9920F9881330052CEDCD22B333391",
+      "VertexStreamSHA256": "6468EE701A26728049FD60AD76DF9DE70CB24701F727216FDF3BB76353E94DD5",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_07.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "8410d461-8532-cd5f-cacf-f50bdffe4180",
+      "Vertices": 509,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "25B4188D3D0F1BE99AC51BB2C9CBEA9CC4A9809BD591852A3DB5798B5E38FE02",
+      "VertexStreamSHA256": "EEFA1E5EFBDA356BC95768025B2B0080595D1147FCF21A5490D7C0DC7E4FD76B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_07.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "8410d461-8532-cd5f-cacf-f50bdffe4180",
+      "Vertices": 509,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "25B4188D3D0F1BE99AC51BB2C9CBEA9CC4A9809BD591852A3DB5798B5E38FE02",
+      "VertexStreamSHA256": "EEFA1E5EFBDA356BC95768025B2B0080595D1147FCF21A5490D7C0DC7E4FD76B",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_08",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "021ff114-44e2-f233-0391-52b25b1a033d",
+      "Vertices": 662,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "6B5468800177A77AC8898D9DE9771054DAABE36E3A638046321E6CABE85E52EA",
+      "VertexStreamSHA256": "C4C7B265E194451A5687444258270A1C49607D7C28E63076670DCF038028DA91",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_08.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "021ff114-44e2-f233-0391-52b25b1a033d",
+      "Vertices": 486,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "D4B3F2D6E37E0E48AF67EFF672F596735668895B708B2D13BCB9BF287B7CB6D0",
+      "VertexStreamSHA256": "F96667FFC7511163076FB8452E6962445652E5B92659899CFE6B77F4E20A825F",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_08.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "021ff114-44e2-f233-0391-52b25b1a033d",
+      "Vertices": 361,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "2A37A22F9FCA347C9CDCC17B4310DE860680170006B38087743202F1C5A6833B",
+      "VertexStreamSHA256": "89EEA5CCB166DD12A3D7FE36B9638E24511C5A375515CC603595EC571A06C7E1",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_08.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "021ff114-44e2-f233-0391-52b25b1a033d",
+      "Vertices": 328,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "4C57C81EBE517F7513BD6E6448C2734F1353D090BC691E8B4B94F73167D4FB53",
+      "VertexStreamSHA256": "A30AC653E8F75E934ACE512FD6213D2AA3B7D5F65889631F8CC05013B16AAFC3",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_09",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "7a0261c3-c66f-31e6-7d97-1dc51ad23431",
+      "Vertices": 2320,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "15F56FCB59D892F7523346938B7D6130DDB6A71F8C78BB2C69F305A7F4A0728E",
+      "VertexStreamSHA256": "242C02A4A36830893A14B559855E7A470BA630B962D342B29C2BF5F62D806678",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_09.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "7a0261c3-c66f-31e6-7d97-1dc51ad23431",
+      "Vertices": 1653,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "6BA00444A7739DFE4F480AD998B70274DB9B730F5E2D21F1ED736D22FC17FA93",
+      "VertexStreamSHA256": "3E7C6771A0AFBD0F3A19DE130B2B3CF87CBAB5856DA4796771AF876488C5CC32",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_09.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "7a0261c3-c66f-31e6-7d97-1dc51ad23431",
+      "Vertices": 1178,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B6EA246D2E0F65296D5ED7CB339F824791CE4017597ECF28209FA1B99FA46A9E",
+      "VertexStreamSHA256": "CB46C760865C434B12EA4E6CD2D2D9BFB78F634B26F96F3BD0FC3045F7BDB837",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_09.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "7a0261c3-c66f-31e6-7d97-1dc51ad23431",
+      "Vertices": 911,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A09202003129CC2B7BC1FEEB77DB71EB75724DFE141BBBDE71DD1551D0E8D391",
+      "VertexStreamSHA256": "33804836500DB55F0840B75957CC456473C36003AE3621D39E4CA269398B5DD2",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_10",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "e3726e4a-2eec-1dc7-a01d-80a032ad72af",
+      "Vertices": 1076,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "F78EF88B3F6E922E2D18E66B4DE7BD8AB638B790B5C61327A3F5CDD726258A74",
+      "VertexStreamSHA256": "848953B3BB4E8487DA50D3A3702D83FD75ADFB50AA885C8AA978F8BC37A453A4",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_10.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "e3726e4a-2eec-1dc7-a01d-80a032ad72af",
+      "Vertices": 809,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E0FDDC5874A6671E48422C33156913E0666C441DBE1464ADFA3A75CBC256E573",
+      "VertexStreamSHA256": "CF77DFA3B755EDCD886FECB9EFC9941DC353C40C1E49DE5615F9287FA5A4DD42",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_10.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "e3726e4a-2eec-1dc7-a01d-80a032ad72af",
+      "Vertices": 656,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "F02EB90EEC53AABC891363E78F808C6D67F5CEC2CA77DCA33349295CE04D31AB",
+      "VertexStreamSHA256": "2A962067DC595BB0F10A7E3103EEC013E219473F4198DEF616919B616BE6938D",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_10.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "e3726e4a-2eec-1dc7-a01d-80a032ad72af",
+      "Vertices": 656,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "F02EB90EEC53AABC891363E78F808C6D67F5CEC2CA77DCA33349295CE04D31AB",
+      "VertexStreamSHA256": "2A962067DC595BB0F10A7E3103EEC013E219473F4198DEF616919B616BE6938D",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_11",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "7e48b8cb-c6fb-4e11-0bee-854a266dd831",
+      "Vertices": 666,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "D979A37ACFB654B78CBDEE78796D4073892F6321749A10287EECA36F52039938",
+      "VertexStreamSHA256": "CB3E29093B52BCF05193F9D1ABEBFF2C170DB7C8FD1FB518F6A2474B2E13E193",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_11.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "7e48b8cb-c6fb-4e11-0bee-854a266dd831",
+      "Vertices": 519,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "114FAED5DAC32258885C0832B7E96AFA2B31351F3B1BF2F0A6FDFF4202A23E83",
+      "VertexStreamSHA256": "0ABB9F3F31C25B4AF938D2BAAF08AA301DD9506FBD13D435C44AB89101ACD414",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_11.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "7e48b8cb-c6fb-4e11-0bee-854a266dd831",
+      "Vertices": 482,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "9BE64D8EE4025ED2673E54B7FF578CDCFBD086850FE9B9A25BFF874EA7BB9A9E",
+      "VertexStreamSHA256": "B843A8B55371FFC98DB32DB22D75A2E5D26F7625CFAE3068F57A352F57F20A55",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_11.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "7e48b8cb-c6fb-4e11-0bee-854a266dd831",
+      "Vertices": 482,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "9BE64D8EE4025ED2673E54B7FF578CDCFBD086850FE9B9A25BFF874EA7BB9A9E",
+      "VertexStreamSHA256": "B843A8B55371FFC98DB32DB22D75A2E5D26F7625CFAE3068F57A352F57F20A55",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_12",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "ec67205c-1fa7-9551-9ae5-da514545fed0",
+      "Vertices": 4704,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5FA31785779F098D67924E42E68649E485A88C294916F23F705794510653F8C8",
+      "VertexStreamSHA256": "83CCABC2FCCE44DDF4EB6D44738E42FBFEA92CDE848A1996240C16877DE9CD04",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_12.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "ec67205c-1fa7-9551-9ae5-da514545fed0",
+      "Vertices": 3168,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "DDA9EA19C9109529DB37FA3A3AD87C0BE766FB19FAC847567E6EB0A12B042EAD",
+      "VertexStreamSHA256": "9DFE82EC8E8B68DA13605F7EF29A37A4FF98E095F105D0A72E4B56FAA7AA7801",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_12.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "ec67205c-1fa7-9551-9ae5-da514545fed0",
+      "Vertices": 2071,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "FD706237B97ED560A0B3EE5B69385D7C109730894D93E04198B9FAA7BA160B41",
+      "VertexStreamSHA256": "5ED81C6A56262701E21B8BF7D29BE8F17483BE501E94D7214ADF50C731AD8584",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_12.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "ec67205c-1fa7-9551-9ae5-da514545fed0",
+      "Vertices": 1193,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "3457ABB57BABB48BFA3C2401A41CB5471069568D17CCB2FB186EDA09C2055C19",
+      "VertexStreamSHA256": "5E54E50400EE46B9296EC7E7E470FE689FAA5EE1B44BF9AA406C89D40007631C",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_13",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "61f96d25-b689-8435-5c24-d7fea97cf632",
+      "Vertices": 184,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "392734D15600CA766B03CD5BF706CC4192BDC5AB258051C2F385AD135DDB5A64",
+      "VertexStreamSHA256": "4A90B8ED2D58EA7D611423396F1B7744C96A117C5FBBE87542367C92A7098D47",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_13.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "61f96d25-b689-8435-5c24-d7fea97cf632",
+      "Vertices": 143,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "DAF4FE5BF052B87154A90BEEF2A167E0D7C8CA410CD79929090AF39EC3C893F0",
+      "VertexStreamSHA256": "454E9A6BD8D44911CF84CE6BE6DA7CFCCAE2EC517D6998C35D65DA94B45CBAD2",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_13.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "61f96d25-b689-8435-5c24-d7fea97cf632",
+      "Vertices": 126,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "C00173CDE437C86C96C67F70C1A2514BBE571E4C9649E8F4B36277F9A555380F",
+      "VertexStreamSHA256": "29B6E6C7D8E9CB6D77E82DBD08804312AE713725F6F082EB30EB565A5B8CFEBF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_part_13.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "61f96d25-b689-8435-5c24-d7fea97cf632",
+      "Vertices": 126,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "C00173CDE437C86C96C67F70C1A2514BBE571E4C9649E8F4B36277F9A555380F",
+      "VertexStreamSHA256": "29B6E6C7D8E9CB6D77E82DBD08804312AE713725F6F082EB30EB565A5B8CFEBF",
+      "ClothMetadataSHA256": "953D0ACA24ED507A70A4A44D6A30524043FBB2A8372D29646EA0CC0ED200F8ED"
+    },
+    {
+      "Name": "lisa_hidden",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "a00db86d-2765-1c7d-fa53-f55e6b07e954",
+      "Vertices": 4,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5AC6A5945F16500911219129984BA8B387A06F24FE383CE4E81A73294065461B",
+      "VertexStreamSHA256": "EF54EFAF0087FF9735322207748957219F28ADC52CAD0EAEE8A20344CDE57CEB",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    }
+  ]
+}

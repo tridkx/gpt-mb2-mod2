@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<action_sets>
+  <action_set id="as_furina_warrior" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_warrior" />
+  <action_set id="as_furina_female_warrior" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_furina_villager" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_furina_female_villager" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_furina_facegen" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_furina_female_facegen" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_facegen">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_furina_hideout_bandit" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_hideout_bandit" />
+  <action_set id="as_furina_female_hideout_bandit" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_hideout_bandit" />
+  <action_set id="as_furina_villager_in_tavern" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_in_tavern" />
+  <action_set id="as_furina_female_villager_in_tavern" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_tavern" />
+  <action_set id="as_furina_warrior_in_tavern" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_tavern" />
+  <action_set id="as_furina_female_warrior_in_tavern" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_tavern" />
+  <action_set id="as_furina_villager_in_aserai_tavern" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_in_aserai_tavern" />
+  <action_set id="as_furina_female_villager_in_aserai_tavern" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_aserai_tavern" />
+  <action_set id="as_furina_warrior_in_aserai_tavern" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_aserai_tavern" />
+  <action_set id="as_furina_female_warrior_in_aserai_tavern" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_aserai_tavern" />
+  <action_set id="as_furina_child" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_child" />
+  <action_set id="as_furina_female_child" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_child" />
+  <action_set id="as_furina_map" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_map" />
+  <action_set id="as_furina_female_map" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_map" />
+  <action_set id="as_furina_map_with_banner" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_map_with_banner" />
+  <action_set id="as_furina_female_map_with_banner" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_map_with_banner" />
+  <action_set id="as_furina_villain" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villain" />
+  <action_set id="as_furina_female_villain" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villain" />
+  <action_set id="as_furina_lord" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_lord" />
+  <action_set id="as_furina_female_lord" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_lord" />
+  <action_set id="as_furina_seller" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_seller" />
+  <action_set id="as_furina_female_seller" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_seller" />
+  <action_set id="as_furina_weaponsmith" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_weaponsmith" />
+  <action_set id="as_furina_female_weaponsmith" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_weaponsmith" />
+  <action_set id="as_furina_villager_artisan" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_artisan" />
+  <action_set id="as_furina_female_villager_artisan" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_artisan" />
+  <action_set id="as_furina_villager_merchant" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_merchant" />
+  <action_set id="as_furina_female_villager_merchant" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_merchant" />
+  <action_set id="as_furina_villager_preacher" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_preacher" />
+  <action_set id="as_furina_female_villager_preacher" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_preacher" />
+  <action_set id="as_furina_villager_gangleader" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_gangleader" />
+  <action_set id="as_furina_female_villager_gangleader" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_gangleader" />
+  <action_set id="as_furina_villager_ruralnotable" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_ruralnotable" />
+  <action_set id="as_furina_female_villager_ruralnotable" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_ruralnotable" />
+  <action_set id="as_furina_gangleader_bodyguard" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_gangleader_bodyguard" />
+  <action_set id="as_furina_female_gangleader_bodyguard" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_gangleader_bodyguard" />
+  <action_set id="as_furina_merchant_notary" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_merchant_notary" />
+  <action_set id="as_furina_female_merchant_notary" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_merchant_notary" />
+  <action_set id="as_furina_female_barmaid" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_barmaid" />
+  <action_set id="as_furina_barmaid" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_barmaid" />
+  <action_set id="as_furina_tavern_keeper" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_tavern_keeper" />
+  <action_set id="as_furina_female_tavern_keeper" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_tavern_keeper" />
+  <action_set id="as_furina_musician" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_musician" />
+  <action_set id="as_furina_female_musician" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_musician" />
+  <action_set id="as_furina_female_dancer" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_dancer" />
+  <action_set id="as_furina_dancer" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_dancer" />
+  <action_set id="as_furina_beggar" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_beggar" />
+  <action_set id="as_furina_female_beggar" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_beggar" />
+  <action_set id="as_furina_guard" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_guard" />
+  <action_set id="as_furina_female_guard" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_guard" />
+  <action_set id="as_furina_unarmed_guard" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_unarmed_guard" />
+  <action_set id="as_furina_female_unarmed_guard" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_unarmed_guard" />
+  <action_set id="as_furina_villager_with_backpack" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_with_backpack" />
+  <action_set id="as_furina_female_villager_with_backpack" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_backpack" />
+  <action_set id="as_furina_villager_with_staff" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_with_staff" />
+  <action_set id="as_furina_female_villager_with_staff" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_staff" />
+  <action_set id="as_furina_villager_carry_on_shoulder" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_on_shoulder" />
+  <action_set id="as_furina_worker_carry_wood_on_shoulder" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_worker_carry_wood_on_shoulder" />
+  <action_set id="as_furina_villager_carry_bucket_on_lefthand" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_bucket_on_lefthand" />
+  <action_set id="as_furina_villager_carry_fish_buckets" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_fish_buckets" />
+  <action_set id="as_furina_female_villager_carry_on_shoulder" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_on_shoulder" />
+  <action_set id="as_furina_villager_carry_axe" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_axe" />
+  <action_set id="as_furina_female_villager_carry_axe" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_axe" />
+  <action_set id="as_furina_villager_carry_right_side" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_side" />
+  <action_set id="as_furina_female_villager_carry_right_side" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_side" />
+  <action_set id="as_furina_villager_carry_front_v2" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front_v2" />
+  <action_set id="as_furina_female_villager_carry_front_v2" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front_v2" />
+  <action_set id="as_furina_villager_carry_front" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front" />
+  <action_set id="as_furina_female_villager_carry_front" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front" />
+  <action_set id="as_furina_villager_carry_right_hand" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_hand" />
+  <action_set id="as_furina_female_villager_carry_right_hand" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_hand" />
+  <action_set id="as_furina_villager_carry_right_arm" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_arm" />
+  <action_set id="as_furina_female_villager_carry_right_arm" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_arm" />
+  <action_set id="as_furina_villager_carry_over_head" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head" />
+  <action_set id="as_furina_female_villager_carry_over_head" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head" />
+  <action_set id="as_furina_villager_carry_over_head_v2" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head_v2" />
+  <action_set id="as_furina_female_villager_carry_over_head_v2" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head_v2" />
+  <action_set id="as_furina_villager_2" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_2" />
+  <action_set id="as_furina_female_villager_2" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_2" />
+  <action_set id="as_furina_villager_3" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_villager_3" />
+  <action_set id="as_furina_female_villager_3" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_female_villager_3" />
+  <action_set id="as_furina_poses" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_furina_female_poses" skeleton="furina_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+</action_sets>

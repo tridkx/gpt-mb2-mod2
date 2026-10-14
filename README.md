@@ -1,6 +1,6 @@
 # 骑砍 2 多模组工作区
 
-此工作区独立维护骑砍 2 模组的原始输入、可编辑源文件、工具、运行模块和交付包。合集中的套装工程保存在各合集的 sets/ 下；生化危机工程位于 ResidentEvil/<ModId>/，仙剑7角色工程位于 Xianjian7Race/<ModId>/，原神角色工程位于 GenshinRaceCollection/<ModId>/。角色系列容器本身不是游戏模块。
+此工作区独立维护骑砍 2 模组的原始输入、可编辑源文件、工具、运行模块和交付包。合集中的套装工程保存在各合集的 sets/ 下；生化危机工程位于 ResidentEvil/<ModId>/，仙剑7角色工程位于 Xianjian7Race/<ModId>/，原神角色工程位于 GenshinRaceCollection/<ModId>/。原神系列根目录提供单一合集游戏模块，其他仅作容器的角色系列按各自入口说明安装。
 
 ## 模组导航
 
@@ -17,7 +17,7 @@
 | [Resident Evil](mods/ResidentEvil/README.md) | 系列工程入口，包含艾达王默认服装装备与固定外观种族 |
 | [仙剑奇侠传七](mods/Xianjian7Race/README.md) | 独立角色种族资源：月清疏两套、白茉晴两套；白茉晴第二套为无帽版 |
 | [天刀种族系列](mods/TiandaoRaceCollection/README.md) | 独立角色种族工程，包含碧水青鸾女性完整角色及布料 |
-| [原神种族系列](mods/GenshinRaceCollection/README.md) | 独立角色种族工程，包含艾梅莉埃；裙摆蒙皮，帽后长饰与背后飘带布料 |
+| [原神种族合集](mods/GenshinRaceCollection/README.md) | 22 个完整角色种族统一为一个游戏模块，各角色保留独立源工程；13 个新角色长发布料，艾梅莉埃保留帽后长饰与背后飘带布料 |
 | [Modern Girl Race](mods/ModernGirlRace/README.md) | 现代少女 v6 完整人物固定外观种族与独立测试兵种 |
 | [Race Troop Builder](mods/RaceTroopBuilder/README.md) | 自定义种族兵种树拼装器，Windows GUI、AI JSON/CLI、中英名称与固有护甲配置 |
 

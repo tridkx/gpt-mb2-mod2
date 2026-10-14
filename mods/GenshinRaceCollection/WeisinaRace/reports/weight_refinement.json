@@ -1,0 +1,33 @@
+{
+  "model": "WeisinaRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 7275,
+      "vertical_band_m": [
+        0.9193808019161225,
+        1.1320495641231538
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "arm_only",
+      "vertices": 4072,
+      "inner_x_m": 0.03611840057373047,
+      "outer_x_m": 0.14447360229492187
+    },
+    {
+      "region": "r_shoulder",
+      "style": "arm_only",
+      "vertices": 1104,
+      "inner_x_m": 0.03611840057373047,
+      "outer_x_m": 0.14447360229492187
+    },
+    {
+      "region": "crotch",
+      "vertices": 6577,
+      "derived_hip_half_width_m": 0.07609199047088623
+    }
+  ],
+  "geometry_unchanged": true
+}

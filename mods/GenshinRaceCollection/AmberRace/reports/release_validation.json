@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "4e30e0a6700920c7d5d207cd377332eaf7dfd2112b5e4702e85504eeb0d6cea5",
+  "source_input_sha256": "a766b867836bc34ce04289e06d39d16dad82bf8089d9e6c77204ed75d748f8c2",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 47072,
+      "vertices": 29191,
+      "submeshes": 9
+    },
+    {
+      "lod": 1,
+      "triangles": 31322,
+      "vertices": 20930,
+      "submeshes": 9
+    },
+    {
+      "lod": 2,
+      "triangles": 20698,
+      "vertices": 15254,
+      "submeshes": 8
+    },
+    {
+      "lod": 3,
+      "triangles": 12276,
+      "vertices": 11043,
+      "submeshes": 8
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 338,
+      "worst_mesh": "amber_part_03",
+      "frames_checked": 16,
+      "max_edge_extension": 2.0422673646426426,
+      "max_mesh_p99_extension": 1.5812297695291677
+    },
+    {
+      "label": "run",
+      "worst_frame": 8,
+      "worst_mesh": "amber_part_03",
+      "frames_checked": 25,
+      "max_edge_extension": 4.5965963934152265,
+      "max_mesh_p99_extension": 2.0954668075420995
+    },
+    {
+      "label": "bow",
+      "worst_frame": 82,
+      "worst_mesh": "amber_part_03",
+      "frames_checked": 150,
+      "max_edge_extension": 4.347828016705825,
+      "max_mesh_p99_extension": 2.201817616261277
+    },
+    {
+      "label": "riding",
+      "worst_frame": 11,
+      "worst_mesh": "amber_part_03",
+      "frames_checked": 20,
+      "max_edge_extension": 4.919776290396876,
+      "max_mesh_p99_extension": 2.9821532553011467
+    },
+    {
+      "label": "slash",
+      "worst_frame": 122,
+      "worst_mesh": "amber_part_03",
+      "frames_checked": 150,
+      "max_edge_extension": 4.585475258886128,
+      "max_mesh_p99_extension": 2.2255838721641696
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 145,
+      "worst_mesh": "amber_part_03",
+      "frames_checked": 64,
+      "max_edge_extension": 3.2811409290189015,
+      "max_mesh_p99_extension": 1.8182901865475074
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 216,
+      "worst_mesh": "amber_part_03",
+      "frames_checked": 16,
+      "max_edge_extension": 5.278752639202662,
+      "max_mesh_p99_extension": 3.083834126796826
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 564,
+      "worst_mesh": "amber_part_03",
+      "frames_checked": 16,
+      "max_edge_extension": 3.08032702953314,
+      "max_mesh_p99_extension": 2.1592619199649774
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 1,
+      "worst_mesh": "amber_part_03",
+      "frames_checked": 16,
+      "max_edge_extension": 3.1646402053815996,
+      "max_mesh_p99_extension": 2.112808697722914
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": true,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 4,
+  "proxy_simulation_vertices": 867,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u540e\u90e8\u957f\u53d1\u8d85\u8fc7\u80a9\u80cc\uff0c\u542f\u7528\u6709\u9650\u6446\u52a8\uff1b\u989d\u524d\u5934\u53d1\u56fa\u5b9a",
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

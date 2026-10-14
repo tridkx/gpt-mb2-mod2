@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "ae7dc7a773dd1ee5217a7459e9a89be279307d72269d6ee83e69cd38d216283f",
+  "source_input_sha256": "ec064d4e69aee4d04f92507b4705feab4ace180ec36177474843bdc03bc70a2a",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 25583,
+      "vertices": 16861,
+      "submeshes": 33
+    },
+    {
+      "lod": 1,
+      "triangles": 18909,
+      "vertices": 13416,
+      "submeshes": 33
+    },
+    {
+      "lod": 2,
+      "triangles": 15369,
+      "vertices": 11570,
+      "submeshes": 33
+    },
+    {
+      "lod": 3,
+      "triangles": 14170,
+      "vertices": 10889,
+      "submeshes": 33
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 929,
+      "worst_mesh": "kokomi_part_24",
+      "frames_checked": 16,
+      "max_edge_extension": 2.0349768861457957,
+      "max_mesh_p99_extension": 1.5472364124863216
+    },
+    {
+      "label": "run",
+      "worst_frame": 8,
+      "worst_mesh": "kokomi_part_23",
+      "frames_checked": 25,
+      "max_edge_extension": 4.237152094659996,
+      "max_mesh_p99_extension": 2.89967329260005
+    },
+    {
+      "label": "bow",
+      "worst_frame": 88,
+      "worst_mesh": "kokomi_part_23",
+      "frames_checked": 150,
+      "max_edge_extension": 5.178273789294207,
+      "max_mesh_p99_extension": 2.818057720124039
+    },
+    {
+      "label": "riding",
+      "worst_frame": 8,
+      "worst_mesh": "kokomi_part_30",
+      "frames_checked": 20,
+      "max_edge_extension": 5.389848756848148,
+      "max_mesh_p99_extension": 4.828054248856165
+    },
+    {
+      "label": "slash",
+      "worst_frame": 124,
+      "worst_mesh": "kokomi_part_23",
+      "frames_checked": 150,
+      "max_edge_extension": 4.235732164213628,
+      "max_mesh_p99_extension": 3.5929263055279193
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 145,
+      "worst_mesh": "kokomi_part_23",
+      "frames_checked": 64,
+      "max_edge_extension": 3.0546083014303065,
+      "max_mesh_p99_extension": 2.2613195801333474
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 270,
+      "worst_mesh": "kokomi_part_30",
+      "frames_checked": 16,
+      "max_edge_extension": 5.7311586245200585,
+      "max_mesh_p99_extension": 4.771900065951568
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 314,
+      "worst_mesh": "kokomi_part_30",
+      "frames_checked": 16,
+      "max_edge_extension": 3.4207189689818636,
+      "max_mesh_p99_extension": 2.978585623187413
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 1,
+      "worst_mesh": "kokomi_part_23",
+      "frames_checked": 16,
+      "max_edge_extension": 2.92329247750308,
+      "max_mesh_p99_extension": 2.3620036278483187
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": true,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 4,
+  "proxy_simulation_vertices": 537,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u540e\u90e8\u53cc\u957f\u53d1\u4e0b\u5782\u4e14\u4e0e\u8eab\u4f53\u6709\u95f4\u9699\uff0c\u542f\u7528\u6709\u9650\u6446\u52a8",
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-14",
+  "final_package_sha256": "09ff9dea8dbf06c0f861b7cd2cb555011a0254cf79341e5a51f69ec540485cc3",
+  "source_input_sha256": "e98189f1f36d1052a424d4ceb61eab28ef59e49fd8717db4ba2ad96081ce8a17",
+  "baseline_package_sha256": null,
+  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 23882,
+      "vertices": 16186,
+      "submeshes": 21
+    },
+    {
+      "lod": 1,
+      "triangles": 16902,
+      "vertices": 12696,
+      "submeshes": 21
+    },
+    {
+      "lod": 2,
+      "triangles": 13054,
+      "vertices": 10772,
+      "submeshes": 21
+    },
+    {
+      "lod": 3,
+      "triangles": 11942,
+      "vertices": 10216,
+      "submeshes": 21
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 507,
+      "worst_mesh": "hutao_part_20",
+      "frames_checked": 16,
+      "max_edge_extension": 2.7809502969525446,
+      "max_mesh_p99_extension": 1.460784422365425
+    },
+    {
+      "label": "run",
+      "worst_frame": 21,
+      "worst_mesh": "hutao_part_17",
+      "frames_checked": 25,
+      "max_edge_extension": 2.882060402737594,
+      "max_mesh_p99_extension": 2.07002867138586
+    },
+    {
+      "label": "bow",
+      "worst_frame": 88,
+      "worst_mesh": "hutao_part_13",
+      "frames_checked": 150,
+      "max_edge_extension": 3.758966143840603,
+      "max_mesh_p99_extension": 2.3224860122740254
+    },
+    {
+      "label": "riding",
+      "worst_frame": 11,
+      "worst_mesh": "hutao_part_17",
+      "frames_checked": 20,
+      "max_edge_extension": 3.4920415258280486,
+      "max_mesh_p99_extension": 2.479220020815227
+    },
+    {
+      "label": "slash",
+      "worst_frame": 107,
+      "worst_mesh": "hutao_part_20",
+      "frames_checked": 150,
+      "max_edge_extension": 3.5368873021253173,
+      "max_mesh_p99_extension": 2.184377569876774
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 145,
+      "worst_mesh": "hutao_part_17",
+      "frames_checked": 64,
+      "max_edge_extension": 2.342628649945495,
+      "max_mesh_p99_extension": 1.7973191609014112
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 540,
+      "worst_mesh": "hutao_part_17",
+      "frames_checked": 16,
+      "max_edge_extension": 3.6043624509627348,
+      "max_mesh_p99_extension": 2.74067909198695
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 564,
+      "worst_mesh": "hutao_part_20",
+      "frames_checked": 16,
+      "max_edge_extension": 3.3576886232800867,
+      "max_mesh_p99_extension": 1.9429568811123668
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 155,
+      "worst_mesh": "hutao_part_20",
+      "frames_checked": 16,
+      "max_edge_extension": 2.720426207186323,
+      "max_mesh_p99_extension": 1.8548097933669692
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": true,
+  "skirt_cloth_enabled": false,
+  "cloth_render_groups": 4,
+  "proxy_simulation_vertices": 1710,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u540e\u90e8\u53cc\u957f\u53d1\u542f\u7528\u6709\u9650\u6446\u52a8\uff0c\u5e3d\u4e0e\u524d\u53d1\u56fa\u5b9a",
+  "limitations": [
+    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

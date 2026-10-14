@@ -1,0 +1,105 @@
+{
+  "id": "KokomiRace",
+  "version": "v0.1.0",
+  "race": "kokomi",
+  "prefix": "kokomi",
+  "module_name": "Kokomi Race",
+  "display_name": "珊瑚宫心海",
+  "source_model": "input/original/珊瑚宫心海.pmx",
+  "source_archive": "input/archive/【珊瑚宫心海】_by_原神_32c242c2043da5bac0d24f1b07a2f3f8.zip",
+  "ignored_models": [],
+  "unit_scale": 0.08,
+  "source_rotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "skin_min_scale": 1.0,
+  "cloth_enabled": true,
+  "cloth_lods": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "cloth_parts": {
+    "15": {
+      "fixed_above_source_y": 18.82189178466797,
+      "source_z_min": null,
+      "max_distance_m": 0.075,
+      "travel_slope": 0.3
+    }
+  },
+  "lod_multipliers": [
+    1,
+    0.65,
+    0.4,
+    0.2
+  ],
+  "minimum_ratios": {
+    "m02": 0.7,
+    "m03": 0.7,
+    "m04": 0.7,
+    "m07": 0.7
+  },
+  "facial_animation": false,
+  "pmx_reader": "C:/Users/DKX/AppData/Roaming/Blender Foundation/Blender/5.2/extensions/user_default/mmd_tools/core/pmx/__init__.py",
+  "skeleton": "kokomi_skeleton",
+  "glass_materials": [],
+  "head_materials": [
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    17,
+    33,
+    34
+  ],
+  "cloth_materials": [
+    15
+  ],
+  "cloth_proxy_materials": [
+    15
+  ],
+  "hair_decision": "后部双长发下垂且与身体有间隙，启用有限摆动",
+  "cloth_proxy_policy": {
+    "pin_band_m": 0.015,
+    "minimum_component_height_m": 0.055,
+    "max_proxy_vertices": 4500
+  },
+  "hair_reference_body_blend_max": 0.7,
+  "weight_refinement": {
+    "shoulders": true,
+    "crotch": true,
+    "waist": true
+  },
+  "shoulder_materials": [
+    19,
+    21,
+    22,
+    23,
+    28
+  ],
+  "shoulder_style": "arm_only"
+}
