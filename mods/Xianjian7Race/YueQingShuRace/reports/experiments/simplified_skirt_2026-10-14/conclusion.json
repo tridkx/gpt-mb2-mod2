@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-14",
+  "mod": "YueQingShuRace",
+  "baseline_version": "v0.3.3",
+  "status": "not_accepted",
+  "reason": "Three simplified skirt proxy variants tried; visible deformation/body penetration in ring variants and inward mapping offsets in reduced main-surface variant",
+  "candidate_sha256": "5b134ad0ee42f9fe5fca5e1f8cba82191600583a12e72e881104e0d35408b41a",
+  "baseline_package_sha256": "b943664012defcaf1c19a54118d6c4411ca59a142fe2de5aac1a83e386a4028b",
+  "installed_package_sha256": "b943664012defcaf1c19a54118d6c4411ca59a142fe2de5aac1a83e386a4028b",
+  "released_geometry_preserved": true,
+  "released_source_preserved": true,
+  "installed": false,
+  "game_tested": false,
+  "engine_self_collision_added": false,
+  "offline_motion_status": "needs_review",
+  "motion_scope": [
+    "ui_neutral_female source frames 1-60",
+    "run complete effective source frames",
+    "riding complete effective source frames"
+  ],
+  "motion_fps_assumed": 60,
+  "motion_max_interior_penetration_m": {
+    "ui_neutral_female": 0.015382829326382668,
+    "run": 0.05497094237341648,
+    "riding": 0.030851447260773348
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "pass",
+  "candidate_sha256": "7ec6fce25b7738d905b914fdd0f146e9d914dc549f61391017ec008224bd28af",
+  "fixed_root_overlap_m": 0.0,
+  "fixed_root_drift_m": 0.0,
+  "cage_max_residual_m": 1.7587218956005568e-05,
+  "cage_p99_residual_m": 4.3715031594615223e-17,
+  "layers": [
+    {
+      "mesh": "yqs_part_10",
+      "mapped_skirt_vertices": 3364,
+      "minimum_offset_m": 0.00603194534778595,
+      "mean_vertical_change_m": -0.004340247465868382,
+      "raised_fraction": 0.19084423305588585
+    }
+  ],
+  "scope": "120 CPU gravity steps; 10 grouped iterations, soft geodesic anchors and repeated capsule projection; skirt cage only; non-skirt islands held at skinning reference",
+  "layer_self_collision_supported": false,
+  "game_solver_used": false,
+  "game_verified": false
+}

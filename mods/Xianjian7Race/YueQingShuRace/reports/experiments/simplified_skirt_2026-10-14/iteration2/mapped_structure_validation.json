@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "candidate_sha256": "fddbf7b0b8a3e579b7488370b196ad0b1a87f40e518c3fcb809489371eddd9ea",
+  "baseline_sha256": "b943664012defcaf1c19a54118d6c4411ca59a142fe2de5aac1a83e386a4028b",
+  "proxy_simulation_vertices": 9592,
+  "render_mapping_segments": 18,
+  "lods": [
+    {
+      "lod": 0,
+      "original_meshes": 15,
+      "geometry_normals_uv_tangents_bones_weights_indices_identical": true,
+      "alpha_changes": []
+    },
+    {
+      "lod": 1,
+      "original_meshes": 12,
+      "geometry_normals_uv_tangents_bones_weights_indices_identical": true,
+      "alpha_changes": []
+    },
+    {
+      "lod": 2,
+      "original_meshes": 10,
+      "geometry_normals_uv_tangents_bones_weights_indices_identical": true,
+      "alpha_changes": []
+    },
+    {
+      "lod": 3,
+      "original_meshes": 10,
+      "geometry_normals_uv_tangents_bones_weights_indices_identical": true,
+      "alpha_changes": [
+        {
+          "mesh": "yqs_part_00.lod3",
+          "previous_solver_pins_unmapped": 2
+        }
+      ]
+    }
+  ],
+  "materials_textures_skeleton_identical": true,
+  "rest_reconstruction_max_error_m": 0.00017954851622196884,
+  "game_verified": false,
+  "scope": "Candidate TPAC reopened; native mapping and cloth roundtrips, ownership, shared reference and full GPU stream preservation"
+}
