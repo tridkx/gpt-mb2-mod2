@@ -1,6 +1,6 @@
 # Genshin Bandit Race
 
-骑砍2 v1.4.8 原神土匪混编独立 Mod。复用 **Genshin Race Collection v0.1.3** 的22个完整角色种族，新增22个 T3／Level 16 土匪兵种，使用原版对应 T5 的熟练度、武器、固有护甲及等效防具重量。模型资源保留在原神合集，不复制或修改合集。
+骑砍2 v1.4.8 原神土匪混编独立 Mod，支持沙盒与故事战役，包括故事教程结束／跳过教程后的自然土匪生成。复用 **Genshin Race Collection v0.1.3** 的22个完整角色种族，新增22个 T3／Level 16 土匪兵种，使用原版对应 T5 的熟练度、武器、固有护甲及等效防具重量。模型资源保留在原神合集，不复制或修改合集。
 
 ## 混编规则
 
@@ -30,7 +30,7 @@
 
 ## 安装与设置
 
-依赖现有 Harmony、ButterLib、UIExtenderEx、MCM v5 与 **Genshin Race Collection**。本机已按创意工坊 MCM v5.12.3 构建，使用已安装的前置，不再打包另一份 Harmony／MCM。Mod ZIP 解压到游戏 `Modules/`；启动器放在前置、原版模块、原神合集之后，启用 **Genshin Bandit Race**。
+依赖现有 Harmony、ButterLib、UIExtenderEx、MCM v5 与 **Genshin Race Collection**。故事战役同时启用原版 StoryMode，沙盒不强制依赖 StoryMode。本机已按创意工坊 MCM v5.12.3 构建，使用已安装的前置，不再打包另一份 Harmony／MCM。Mod ZIP 解压到游戏 `Modules/`；启动器放在前置、原版模块、原神合集之后，启用 **Genshin Bandit Race**。
 
 进入战役后，在 MCM 的“原神土匪混编 / Genshin Bandit Race”中设置，按存档保存。保存后影响后续新队伍与战斗属性更新；修改负重后已经在场的角色依赖下一次原版属性刷新。
 
@@ -54,6 +54,6 @@ python mods/GenshinBanditRace/tools/release.py --install
 
 依赖 .NET Framework 4.7.2 开发环境、.NET SDK、Python、游戏 DLL、已安装前置，以及工作区 RaceTroopBuilder 已构建的共享护甲 DLL。源码包包含该 DLL 与护甲源码快照；单独解压后在本目录运行 `python tools/release.py --install`，默认从已安装原神合集读取种族定义。安装先验证工作区原神合集源工程与已安装资源一致，只备份和更新本模块；不写入原神合集、Native、前置或存档。已安装 Bandit Population Tuning 时执行组合顺序检查，否则明确记录跳过，不影响独立构建。
 
-离线检查覆盖22套装备唯一性、T3身份、三名骑兵名单、六类完整覆盖、各类完整22兵种池、配额与总人数守恒、MCM参数、兵种护甲隔离、真实 DLL 护甲／负重／生成入口挂接及两模块执行顺序。详见 检查输出（见源码包 `reports/offline_tests.txt`）、配置报告（见源码包 `reports/troop_configuration.json`）、发布报告（见源码包 `reports/release_validation.json`）。游戏内菜单、实际生成、战场外观／负重、俘虏招募、清理与保存读档待用户实测；助手不启动游戏。
+离线检查覆盖沙盒 `Campaign`／故事 `CampaignStoryMode` 两种XML选择、22个完整兵种引用（含 `gbr_noelle`）、故事运行类型的绑定分支、22套装备唯一性、T3身份、三名骑兵名单、六类完整覆盖、各类完整22兵种池、配额与总人数守恒、MCM参数、兵种护甲隔离、真实 DLL 护甲／负重／生成入口挂接及两模块执行顺序。详见 检查输出（见源码包 `reports/offline_tests.txt`）、配置报告（见源码包 `reports/troop_configuration.json`）、发布报告（见源码包 `reports/release_validation.json`）。故事模式跳过教程／读档、游戏内菜单、实际生成、战场外观／负重、俘虏招募、清理与保存读档待用户实测；助手不启动游戏。
 
 [更新日志](CHANGELOG.md)

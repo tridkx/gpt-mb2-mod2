@@ -37,6 +37,9 @@ internal static class Program
     private static void Run(string game,string module)
     {
         var settings=new Settings();
+        CheckCampaignRegistrations(module);
+        var storyAssembly=Assembly.LoadFrom(Path.Combine(game,"Modules/StoryMode/bin/Win64_Shipping_Client/StoryMode.dll"));
+        Check(typeof(Campaign).IsAssignableFrom(storyAssembly.GetType("StoryMode.CampaignStoryMode",true)),"story game type reaches the runtime Campaign binding branch");
         Check(settings is PerSaveSettings,"MCM per-save settings");
         Check(settings.Enabled && !settings.FixedMode && settings.Percentage==30 && settings.FixedCount==5 && settings.ArmorWeightMultiplier==1,"defaults");
         foreach(var property in typeof(Settings).GetProperties())
@@ -175,6 +178,27 @@ internal static class Program
         }
         finally {Patches.Uninstall();}
         Check(!Harmony.GetAllPatchedMethods().Any(m=>Harmony.GetPatchInfo(m).Owners.Contains(Patches.Owner)),"owned hooks removed");
+    }
+    private static void CheckCampaignRegistrations(string module)
+    {
+        var descriptor=XDocument.Load(Path.Combine(module,"SubModule.xml"));
+        var story=descriptor.Descendants("DependedModule").Single(x=>(string)x.Attribute("Id")=="StoryMode");
+        Check((string)story.Attribute("Optional")=="true","story dependency optional: sandbox remains supported");
+        var registered=descriptor.Descendants("XmlNode").Where(x=>(string)x.Element("XmlName")?.Attribute("id")=="NPCCharacters").ToArray();
+        var expected=XDocument.Load(Path.Combine(module,"ModuleData/bandit_catalog.xml")).Root.Elements("Troop")
+            .Select(x=>(string)x.Attribute("id")).OrderBy(x=>x).ToArray();
+        foreach(string mode in new[]{"Campaign","CampaignStoryMode"})
+        {
+            var selected=registered.Where(x=>x.Elements("IncludedGameTypes").Elements("GameType").Any(t=>(string)t.Attribute("value")==mode)).ToArray();
+            Check(selected.Length==1,"one troop XML selected for "+mode);
+            string relative=(string)selected[0].Element("XmlName").Attribute("path");
+            var path=Path.Combine(module,"ModuleData",relative+".xml");
+            Check(File.Exists(path),"registered troop XML exists for "+mode);
+            var ids=XDocument.Load(path).Root.Elements("NPCCharacter").Select(x=>(string)x.Attribute("id")).OrderBy(x=>x).ToArray();
+            Check(ids.SequenceEqual(expected),"all 22 troop definitions selected for "+mode);
+            Check(ids.Contains("gbr_noelle"),"tutorial-first-spawn troop gbr_noelle selected for "+mode);
+            Console.WriteLine("MODE OK "+mode+": all 22 troops, including gbr_noelle");
+        }
     }
     private static void Check(bool value,string message) { checks++; if(!value) throw new Exception(message); }
     private static CharacterObject Dummy(string id)

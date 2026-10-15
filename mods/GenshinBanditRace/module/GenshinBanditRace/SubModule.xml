@@ -2,7 +2,7 @@
 <Module>
   <Name value="Genshin Bandit Race" />
   <Id value="GenshinBanditRace" />
-  <Version value="v1.0.0" />
+  <Version value="v1.0.1" />
   <DefaultModule value="false" />
   <ModuleCategory value="Singleplayer" />
   <Official value="false" />
@@ -17,6 +17,7 @@
     <DependedModule Id="Native" />
     <DependedModule Id="SandBoxCore" />
     <DependedModule Id="Sandbox" />
+    <DependedModule Id="StoryMode" Optional="true" />
     <DependedModule Id="GenshinRaceCollection" />
   </DependedModules>
   <SubModules>
@@ -44,6 +45,7 @@
       <XmlName id="NPCCharacters" path="troops" />
       <IncludedGameTypes>
         <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
       </IncludedGameTypes>
     </XmlNode>
   </Xmls>

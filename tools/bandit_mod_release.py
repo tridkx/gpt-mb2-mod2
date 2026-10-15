@@ -34,7 +34,9 @@ def descriptor(module,identity,version):
     dependencies=ET.SubElement(root,'DependedModules')
     for dep in ['Bannerlord.Harmony','Bannerlord.ButterLib','Bannerlord.UIExtenderEx','Bannerlord.MBOptionScreen','Native','SandBoxCore','Sandbox']:
         ET.SubElement(dependencies,'DependedModule',Id=dep)
-    if identity=='GenshinBanditRace': ET.SubElement(dependencies,'DependedModule',Id='GenshinRaceCollection')
+    if identity=='GenshinBanditRace':
+        ET.SubElement(dependencies,'DependedModule',Id='StoryMode',Optional='true')
+        ET.SubElement(dependencies,'DependedModule',Id='GenshinRaceCollection')
     subs=ET.SubElement(root,'SubModules')
     entries=[(NAMES[identity]+' Runtime',identity+'.dll',identity+'.SubModule')]
     if identity=='GenshinBanditRace': entries.append(('Shared Troop Armor Runtime','RaceTroopBuilder.ArmorRuntime.dll','RaceTroopBuilder.ArmorRuntime.SubModule'))
@@ -46,7 +48,8 @@ def descriptor(module,identity,version):
     xmls=ET.SubElement(root,'Xmls')
     if identity=='GenshinBanditRace':
         node=ET.SubElement(xmls,'XmlNode'); ET.SubElement(node,'XmlName',id='NPCCharacters',path='troops')
-        ET.SubElement(ET.SubElement(node,'IncludedGameTypes'),'GameType',value='Campaign')
+        modes=ET.SubElement(node,'IncludedGameTypes')
+        for game_type in ['Campaign','CampaignStoryMode']: ET.SubElement(modes,'GameType',value=game_type)
     xml_write(module/'SubModule.xml',root)
 
 def build(root,identity,args,dependencies):

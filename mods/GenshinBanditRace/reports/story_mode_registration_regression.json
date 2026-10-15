@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-15",
+  "baseline_version": "v1.0.0",
+  "baseline_installed_descriptor_sha256": "8bbe3bdafb27ce0c8aa8bc2f43aed718f3942931b58dfabe21207086507687a1",
+  "baseline_reproduction": "CheckCampaignRegistrations passed Campaign and failed CampaignStoryMode because no troop XML was selected",
+  "fixed_version": "v1.0.1",
+  "required_game_types": [
+    "Campaign",
+    "CampaignStoryMode"
+  ],
+  "troop_count": 22,
+  "first_spawn_reference": "gbr_noelle",
+  "game_acceptance": "pending_user_story_tutorial_skip_and_load_test; game_not_started"
+}

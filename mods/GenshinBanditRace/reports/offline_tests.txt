@@ -1,3 +1,5 @@
+MODE OK Campaign: all 22 troops, including gbr_noelle
+MODE OK CampaignStoryMode: all 22 troops, including gbr_noelle
 COVERED looters: looter,mounted_pillager,mounted_ransacker
 COVERED sea_raiders: sea_raiders_bandit,sea_raiders_boss,sea_raiders_chief,sea_raiders_raider
 COVERED mountain_bandits: mountain_bandits_bandit,mountain_bandits_boss,mountain_bandits_chief,mountain_bandits_raider
@@ -9,4 +11,4 @@ PATCH OK TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior
 PATCH OK TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior.SpawnBanditParty
 PATCH OK TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior.InitializeBanditParty
 PATCH OK SandBox.GameComponents.SandboxAgentStatCalculateModel.GetEffectiveArmorEncumbrance
-PASS 2557 checks
+PASS 2567 checks
