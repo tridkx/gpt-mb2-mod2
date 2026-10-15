@@ -1,0 +1,1326 @@
+[
+  {
+    "thread": 24132,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b659c4",
+        "sp": "0x68671fe898",
+        "kind": "Runtime",
+        "name": "[InlinedCallFrame]",
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffe857769d9",
+        "sp": "0x68671fe898",
+        "kind": "Runtime",
+        "name": "[InlinedCallFrame]",
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffe857769d9",
+        "sp": "0x68671fe860",
+        "kind": "ManagedMethod",
+        "name": "DomainBoundILStubClass.IL_STUB_PInvoke(System.String)",
+        "token": 100663296,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\Steamworks.NET.dll"
+      },
+      {
+        "ip": "0x7ffe8533262e",
+        "sp": "0x68671fe960",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.MountAndBlade.Launcher.Library.Program.Main(System.String[])",
+        "token": 100663370,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.Launcher.Library.dll"
+      },
+      {
+        "ip": "0x7ffe85330899",
+        "sp": "0x68671fea00",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.MountAndBlade.Launcher.Program.Main(System.String[])",
+        "token": 100663297,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.Launcher.exe"
+      },
+      {
+        "ip": "0x7ffee4af1b43",
+        "sp": "0x68671fec18",
+        "kind": "Runtime",
+        "name": "[GCFrame]",
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 11880,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x68685ffa78",
+        "kind": "Runtime",
+        "name": "[DebuggerU2MCatchHandlerFrame]",
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 14924,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x6869dff508",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 31976,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b623d4",
+        "sp": "0x6866bafd18",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 37420,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7ffe877b3a70",
+        "sp": "0x686c1fcf80",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxParser.get_CurrentToken()",
+        "token": 100689496,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe8ad3a567",
+        "sp": "0x686c1fcfc0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseTypeArgument()",
+        "token": 100688795,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe8ad398f2",
+        "sp": "0x686c1fd020",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseTypeArgumentList(Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken ByRef, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SeparatedSyntaxListBuilder\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.TypeSyntax\u003E, Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken ByRef)",
+        "token": 100688793,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe877b425e",
+        "sp": "0x686c1fd0a0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseSimpleName(NameOptions)",
+        "token": 100688790,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87f74c00",
+        "sp": "0x686c1fd1e0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.\u003CParsePrimaryExpression\u003Eg__parsePostFixExpression|333_1(Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.ExpressionSyntax)",
+        "token": 100689126,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87f7155e",
+        "sp": "0x686c1fd260",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.\u003CParseSubExpressionCore\u003Eg__parseUnaryOrPrimaryExpression|322_0(Precedence, \u003C\u003Ec__DisplayClass322_0 ByRef)",
+        "token": 100689121,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87f71089",
+        "sp": "0x686c1fd2c0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseSubExpressionCore(Precedence)",
+        "token": 100688931,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87f70f8d",
+        "sp": "0x686c1fd320",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseSubExpression(Precedence)",
+        "token": 100688930,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe8ad35634",
+        "sp": "0x686c1fd360",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseVariableInitializer()",
+        "token": 100688769,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe877c2d59",
+        "sp": "0x686c1fd390",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseVariableDeclarator(Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.TypeSyntax, VariableFlags, Boolean, Boolean, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken\u003E, Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LocalFunctionStatementSyntax ByRef, Boolean)",
+        "token": 100688766,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe877c18f0",
+        "sp": "0x686c1fd520",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseVariableDeclarators(Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.TypeSyntax, VariableFlags, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SeparatedSyntaxListBuilder\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.VariableDeclaratorSyntax\u003E, Boolean, Boolean, Boolean, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken\u003E, Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LocalFunctionStatementSyntax ByRef)",
+        "token": 100688760,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe8ad35494",
+        "sp": "0x686c1fd600",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseLocalDeclaration(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SeparatedSyntaxListBuilder\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.VariableDeclaratorSyntax\u003E, Boolean, Boolean, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken\u003E, Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken, VariableFlags, Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.TypeSyntax ByRef, Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LocalFunctionStatementSyntax ByRef)",
+        "token": 100688908,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe8ad34530",
+        "sp": "0x686c1fd6b0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseLocalDeclarationStatement(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E)",
+        "token": 100688901,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87f7bc4b",
+        "sp": "0x686c1fd780",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseStatementCoreRest(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E, Boolean, ResetPoint ByRef)",
+        "token": 100688834,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87f7a7c9",
+        "sp": "0x686c1fd820",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseStatementCore(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E, Boolean)",
+        "token": 100688832,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87f77899",
+        "sp": "0x686c1fd8a0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseStatements(Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.CSharpSyntaxNode ByRef, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxListBuilder\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.StatementSyntax\u003E, Boolean)",
+        "token": 100688855,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe8ad35e5b",
+        "sp": "0x686c1fd910",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseBlock(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E)",
+        "token": 100688853,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87f7a760",
+        "sp": "0x686c1fd970",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseStatementCore(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E, Boolean)",
+        "token": 100688832,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87f77899",
+        "sp": "0x686c1fd9f0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseStatements(Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.CSharpSyntaxNode ByRef, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxListBuilder\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.StatementSyntax\u003E, Boolean)",
+        "token": 100688855,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe8ad35e5b",
+        "sp": "0x686c1fda60",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseBlock(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E)",
+        "token": 100688853,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87f7a760",
+        "sp": "0x686c1fdac0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseStatementCore(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E, Boolean)",
+        "token": 100688832,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe8ad37c87",
+        "sp": "0x686c1fdb40",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseIfStatement(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E)",
+        "token": 100688885,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87f7a69d",
+        "sp": "0x686c1fdd60",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseStatementCore(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E, Boolean)",
+        "token": 100688832,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87f77899",
+        "sp": "0x686c1fdde0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseStatements(Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.CSharpSyntaxNode ByRef, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxListBuilder\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.StatementSyntax\u003E, Boolean)",
+        "token": 100688855,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe8ad35e5b",
+        "sp": "0x686c1fde50",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseBlock(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E)",
+        "token": 100688853,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87f7a760",
+        "sp": "0x686c1fdeb0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseStatementCore(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E, Boolean)",
+        "token": 100688832,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe8ad37c87",
+        "sp": "0x686c1fdf30",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseIfStatement(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E)",
+        "token": 100688885,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87f7a69d",
+        "sp": "0x686c1fe150",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseStatementCore(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E, Boolean)",
+        "token": 100688832,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87f77899",
+        "sp": "0x686c1fe1d0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseStatements(Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.CSharpSyntaxNode ByRef, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxListBuilder\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.StatementSyntax\u003E, Boolean)",
+        "token": 100688855,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87f77015",
+        "sp": "0x686c1fe240",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseMethodOrAccessorBodyBlock(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E, Boolean)",
+        "token": 100688852,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87f76953",
+        "sp": "0x686c1fe2b0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseBlockAndExpressionBodiesWithSemicolon(Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.BlockSyntax ByRef, Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.ArrowExpressionClauseSyntax ByRef, Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken ByRef, Boolean)",
+        "token": 100688709,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87f7909e",
+        "sp": "0x686c1fe300",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseMethodDeclaration(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxListBuilder, Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.TypeSyntax, Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.ExplicitInterfaceSpecifierSyntax, Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken, Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.TypeParameterListSyntax)",
+        "token": 100688716,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe877b8db8",
+        "sp": "0x686c1fe420",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseMemberDeclarationCore(Microsoft.CodeAnalysis.CSharp.SyntaxKind)",
+        "token": 100688699,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe877b611e",
+        "sp": "0x686c1fe510",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseMemberDeclaration(Microsoft.CodeAnalysis.CSharp.SyntaxKind)",
+        "token": 100688698,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe877bd015",
+        "sp": "0x686c1fe550",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseMainTypeDeclaration(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxListBuilder)",
+        "token": 100688675,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe877bc49d",
+        "sp": "0x686c1fe670",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseTypeDeclaration(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxListBuilder)",
+        "token": 100688674,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe877b8b99",
+        "sp": "0x686c1fe6c0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseMemberDeclarationCore(Microsoft.CodeAnalysis.CSharp.SyntaxKind)",
+        "token": 100688699,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe877b611e",
+        "sp": "0x686c1fe7b0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseMemberDeclaration(Microsoft.CodeAnalysis.CSharp.SyntaxKind)",
+        "token": 100688698,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe877b2b67",
+        "sp": "0x686c1fe7f0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseNamespaceBodyWorker(Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken ByRef, NamespaceBodyBuilder ByRef, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxListBuilder ByRef, Microsoft.CodeAnalysis.CSharp.SyntaxKind, Boolean ByRef)",
+        "token": 100688642,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe877b0d59",
+        "sp": "0x686c1fe910",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseNamespaceBody(Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken ByRef, NamespaceBodyBuilder ByRef, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxListBuilder ByRef, Microsoft.CodeAnalysis.CSharp.SyntaxKind)",
+        "token": 100688640,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe877b3819",
+        "sp": "0x686c1fe9b0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseNamespaceDeclarationCore(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxListBuilder)",
+        "token": 100688636,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe877b3516",
+        "sp": "0x686c1fead0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseNamespaceDeclaration(Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList\u00601\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax\u003E, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxListBuilder)",
+        "token": 100688635,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe877b23f6",
+        "sp": "0x686c1feb10",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseNamespaceBodyWorker(Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken ByRef, NamespaceBodyBuilder ByRef, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxListBuilder ByRef, Microsoft.CodeAnalysis.CSharp.SyntaxKind, Boolean ByRef)",
+        "token": 100688642,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe877b0d59",
+        "sp": "0x686c1fec30",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseNamespaceBody(Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken ByRef, NamespaceBodyBuilder ByRef, Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxListBuilder ByRef, Microsoft.CodeAnalysis.CSharp.SyntaxKind)",
+        "token": 100688640,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe877b0a6b",
+        "sp": "0x686c1fecd0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseCompilationUnitCore()",
+        "token": 100688632,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe877b0511",
+        "sp": "0x686c1fed80",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseWithStackGuard[[System.__Canon, mscorlib]](System.Func\u00602\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser,System.__Canon\u003E, System.Func\u00602\u003CMicrosoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser,System.__Canon\u003E)",
+        "token": 100688633,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe8779474b",
+        "sp": "0x686c1fede0",
+        "kind": "ManagedMethod",
+        "name": "Microsoft.CodeAnalysis.CSharp.CSharpSyntaxTree.ParseText(Microsoft.CodeAnalysis.Text.SourceText, Microsoft.CodeAnalysis.CSharp.CSharpParseOptions, System.String, System.Collections.Immutable.ImmutableDictionary\u00602\u003CSystem.String,Microsoft.CodeAnalysis.ReportDiagnostic\u003E, System.Nullable\u00601\u003CBoolean\u003E, System.Threading.CancellationToken)",
+        "token": 100679696,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe87790eab",
+        "sp": "0x686c1feec0",
+        "kind": "ManagedMethod",
+        "name": "Bannerlord.UIExtenderEx.CompiledPrefabs.Compilation.RoslynCompiler\u002B\u003C\u003Ec__DisplayClass8_0.\u003CCompileCore\u003Eb__0(Bannerlord.UIExtenderEx.CompiledPrefabs.Compilation.GeneratedSource)",
+        "token": 100663470,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe7a93cf54",
+        "sp": "0x686c1fef20",
+        "kind": "ManagedMethod",
+        "name": "System.Linq.Enumerable\u002BWhereSelectListIterator\u00602[[System.__Canon, mscorlib],[System.__Canon, mscorlib]].MoveNext()",
+        "token": 100670425,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Core\\v4.0_4.0.0.0__b77a5c561934e089\\System.Core.dll"
+      },
+      {
+        "ip": "0x7ffee3218dc5",
+        "sp": "0x686c1fef70",
+        "kind": "ManagedMethod",
+        "name": "System.Collections.Generic.List\u00601[[System.__Canon, mscorlib]]..ctor(System.Collections.Generic.IEnumerable\u00601\u003CSystem.__Canon\u003E)",
+        "token": 100678382,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_64\\mscorlib\\v4.0_4.0.0.0__b77a5c561934e089\\mscorlib.dll"
+      },
+      {
+        "ip": "0x7ffe7a935729",
+        "sp": "0x686c1fefe0",
+        "kind": "ManagedMethod",
+        "name": "System.Linq.Enumerable.ToList[[System.__Canon, mscorlib]](System.Collections.Generic.IEnumerable\u00601\u003CSystem.__Canon\u003E)",
+        "token": 100666226,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_MSIL\\System.Core\\v4.0_4.0.0.0__b77a5c561934e089\\System.Core.dll"
+      },
+      {
+        "ip": "0x7ffe8778bbab",
+        "sp": "0x686c1ff020",
+        "kind": "ManagedMethod",
+        "name": "Bannerlord.UIExtenderEx.CompiledPrefabs.Compilation.RoslynCompiler.CompileCore(System.String, System.Collections.Generic.IReadOnlyList\u00601\u003CBannerlord.UIExtenderEx.CompiledPrefabs.Compilation.GeneratedSource\u003E, System.Collections.Generic.IReadOnlyList\u00601\u003CSystem.String\u003E)",
+        "token": 100663442,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.Compiler.dll"
+      },
+      {
+        "ip": "0x7ffe8ad2e57d",
+        "sp": "0x686c1ff170",
+        "kind": "ManagedMethod",
+        "name": "Bannerlord.UIExtenderEx.CompiledPrefabs.CompiledPrefabManager.CompileAndReport(PrefabKey, System.String, System.String, System.Collections.Generic.IReadOnlyList\u00601\u003CBannerlord.UIExtenderEx.CompiledPrefabs.Compilation.GeneratedSource\u003E, System.Collections.Generic.IReadOnlyList\u00601\u003CSystem.String\u003E, System.Collections.Generic.IReadOnlyDictionary\u00602\u003CSystem.String,System.String\u003E)",
+        "token": 100663431,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.CompiledPrefabs.dll"
+      },
+      {
+        "ip": "0x7ffe8ad2cbb8",
+        "sp": "0x686c1ff280",
+        "kind": "ManagedMethod",
+        "name": "Bannerlord.UIExtenderEx.CompiledPrefabs.CompiledPrefabManager.CompileInBackground(PrefabKey, System.String, System.String, System.Collections.Generic.IReadOnlyList\u00601\u003CBannerlord.UIExtenderEx.CompiledPrefabs.Compilation.GeneratedSource\u003E, System.Collections.Generic.IReadOnlyList\u00601\u003CSystem.String\u003E, System.Collections.Generic.IReadOnlyDictionary\u00602\u003CSystem.String,System.String\u003E)",
+        "token": 100663430,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.CompiledPrefabs.dll"
+      },
+      {
+        "ip": "0x7ffe8ad2c9ee",
+        "sp": "0x686c1ff310",
+        "kind": "ManagedMethod",
+        "name": "Bannerlord.UIExtenderEx.CompiledPrefabs.CompiledPrefabManager\u002B\u003C\u003Ec__DisplayClass34_1.\u003CTryUseCompiledPrefabCore\u003Eb__2()",
+        "token": 100664835,
+        "module": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409\\bin\\Win64_Shipping_Client\\Bannerlord.UIExtenderEx.CompiledPrefabs.dll"
+      },
+      {
+        "ip": "0x7ffee323ad57",
+        "sp": "0x686c1ff370",
+        "kind": "ManagedMethod",
+        "name": "System.Threading.Tasks.Task.Execute()",
+        "token": 100679886,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_64\\mscorlib\\v4.0_4.0.0.0__b77a5c561934e089\\mscorlib.dll"
+      },
+      {
+        "ip": "0x7ffee3211c08",
+        "sp": "0x686c1ff3b0",
+        "kind": "ManagedMethod",
+        "name": "System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)",
+        "token": 100678672,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_64\\mscorlib\\v4.0_4.0.0.0__b77a5c561934e089\\mscorlib.dll"
+      },
+      {
+        "ip": "0x7ffee3211af5",
+        "sp": "0x686c1ff480",
+        "kind": "ManagedMethod",
+        "name": "System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)",
+        "token": 100678671,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_64\\mscorlib\\v4.0_4.0.0.0__b77a5c561934e089\\mscorlib.dll"
+      },
+      {
+        "ip": "0x7ffee323bdd1",
+        "sp": "0x686c1ff4b0",
+        "kind": "ManagedMethod",
+        "name": "System.Threading.Tasks.Task.ExecuteWithThreadLocal(System.Threading.Tasks.Task ByRef)",
+        "token": 100679899,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_64\\mscorlib\\v4.0_4.0.0.0__b77a5c561934e089\\mscorlib.dll"
+      },
+      {
+        "ip": "0x7ffee323aea1",
+        "sp": "0x686c1ff560",
+        "kind": "ManagedMethod",
+        "name": "System.Threading.Tasks.Task.ExecuteEntry(Boolean)",
+        "token": 100679898,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_64\\mscorlib\\v4.0_4.0.0.0__b77a5c561934e089\\mscorlib.dll"
+      },
+      {
+        "ip": "0x7ffee324cf86",
+        "sp": "0x686c1ff5a0",
+        "kind": "ManagedMethod",
+        "name": "System.Threading.ThreadPoolWorkQueue.Dispatch()",
+        "token": 100679112,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_64\\mscorlib\\v4.0_4.0.0.0__b77a5c561934e089\\mscorlib.dll"
+      },
+      {
+        "ip": "0x7ffee4af1b43",
+        "sp": "0x686c1ffa28",
+        "kind": "Runtime",
+        "name": "[DebuggerU2MCatchHandlerFrame]",
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 31516,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b628a4",
+        "sp": "0x686c9fee48",
+        "kind": "Runtime",
+        "name": "System.Threading.WaitHandle.WaitMultiple(System.Threading.WaitHandle[], Int32, Boolean, Boolean)",
+        "token": 100679313,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_64\\mscorlib\\v4.0_4.0.0.0__b77a5c561934e089\\mscorlib.dll"
+      },
+      {
+        "ip": "0x7ffee3238ea0",
+        "sp": "0x686c9fef80",
+        "kind": "ManagedMethod",
+        "name": "System.Threading.WaitHandle.WaitAny(System.Threading.WaitHandle[], Int32, Boolean)",
+        "token": 100679319,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_64\\mscorlib\\v4.0_4.0.0.0__b77a5c561934e089\\mscorlib.dll"
+      },
+      {
+        "ip": "0x7ffe7b31b346",
+        "sp": "0x686c9fefe0",
+        "kind": "ManagedMethod",
+        "name": "System.Net.TimerThread.ThreadProc()",
+        "token": 100668394,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_MSIL\\System\\v4.0_4.0.0.0__b77a5c561934e089\\System.dll"
+      },
+      {
+        "ip": "0x7ffee3211c08",
+        "sp": "0x686c9ff090",
+        "kind": "ManagedMethod",
+        "name": "System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)",
+        "token": 100678672,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_64\\mscorlib\\v4.0_4.0.0.0__b77a5c561934e089\\mscorlib.dll"
+      },
+      {
+        "ip": "0x7ffee3211af5",
+        "sp": "0x686c9ff160",
+        "kind": "ManagedMethod",
+        "name": "System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)",
+        "token": 100678671,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_64\\mscorlib\\v4.0_4.0.0.0__b77a5c561934e089\\mscorlib.dll"
+      },
+      {
+        "ip": "0x7ffee3211ac5",
+        "sp": "0x686c9ff190",
+        "kind": "ManagedMethod",
+        "name": "System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object)",
+        "token": 100678670,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_64\\mscorlib\\v4.0_4.0.0.0__b77a5c561934e089\\mscorlib.dll"
+      },
+      {
+        "ip": "0x7ffee3236455",
+        "sp": "0x686c9ff1e0",
+        "kind": "ManagedMethod",
+        "name": "System.Threading.ThreadHelper.ThreadStart()",
+        "token": 100678945,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_64\\mscorlib\\v4.0_4.0.0.0__b77a5c561934e089\\mscorlib.dll"
+      },
+      {
+        "ip": "0x7ffee4af1b43",
+        "sp": "0x686c9ff400",
+        "kind": "Runtime",
+        "name": "[GCFrame]",
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffee4af1b43",
+        "sp": "0x686c9ff768",
+        "kind": "Runtime",
+        "name": "[DebuggerU2MCatchHandlerFrame]",
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 12968,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x6874f9fa88",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 17756,
+    "exception": "System.NullReferenceException",
+    "message": "Object reference not set to an instance of an object.",
+    "exceptions": [
+      {
+        "type": "System.NullReferenceException",
+        "message": "Object reference not set to an instance of an object.",
+        "frames": [
+          {
+            "name": "BanditPopulationTuning.EnhancementPatches.Health(TaleWorlds.CampaignSystem.CharacterObject, TaleWorlds.CampaignSystem.ExplainedNumber ByRef)",
+            "token": 100663327,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\BanditPopulationTuning\\bin\\Win64_Shipping_Client\\BanditPopulationTuning.dll"
+          },
+          {
+            "name": null,
+            "token": null,
+            "module": null
+          },
+          {
+            "name": null,
+            "token": null,
+            "module": null
+          },
+          {
+            "name": "TaleWorlds.CampaignSystem.CharacterObject.MaxHitPoints()",
+            "token": 100666005,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll"
+          },
+          {
+            "name": "Helpers.PerkHelper.ClearPerksForSkill(TaleWorlds.CampaignSystem.Hero, TaleWorlds.Core.SkillObject)",
+            "token": 100663534,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll"
+          },
+          {
+            "name": "TaleWorlds.CampaignSystem.Hero.ClearPerks()",
+            "token": 100666755,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll"
+          },
+          {
+            "name": "TaleWorlds.CampaignSystem.CharacterDevelopment.HeroDeveloper.ResetCharacterStats()",
+            "token": 100677049,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll"
+          },
+          {
+            "name": "StoryMode.StoryModeObjects.StoryModeHeroes.RegisterAll()",
+            "token": 100663493,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\StoryMode\\bin\\Win64_Shipping_Client\\StoryMode.dll"
+          },
+          {
+            "name": "StoryMode.StoryModeManager.InitializeStoryModeObjects()",
+            "token": 100663427,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\StoryMode\\bin\\Win64_Shipping_Client\\StoryMode.dll"
+          },
+          {
+            "name": "StoryMode.CampaignStoryMode.DoLoadingForGameType(TaleWorlds.Core.GameTypeLoadingStates, TaleWorlds.Core.GameTypeLoadingStates ByRef)",
+            "token": 100663333,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\StoryMode\\bin\\Win64_Shipping_Client\\StoryMode.dll"
+          },
+          {
+            "name": "TaleWorlds.Core.GameType.DoLoadingForGameType()",
+            "token": 100664077,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.Core.dll"
+          },
+          {
+            "name": "SandBox.SandBoxGameManager.DoLoadingForGameManager(TaleWorlds.Core.GameManagerLoadingSteps, TaleWorlds.Core.GameManagerLoadingSteps ByRef)",
+            "token": 100663573,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\SandBox\\bin\\Win64_Shipping_Client\\SandBox.dll"
+          },
+          {
+            "name": "TaleWorlds.Core.GameManagerBase.DoLoadingForGameManager()",
+            "token": 100665281,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.Core.dll"
+          },
+          {
+            "name": "TaleWorlds.MountAndBlade.GameLoadingState.OnTick(Single)",
+            "token": 100671779,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.dll"
+          },
+          {
+            "name": "TaleWorlds.Core.GameStateManager.OnTick(Single)",
+            "token": 100665376,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.Core.dll"
+          },
+          {
+            "name": "TaleWorlds.MountAndBlade.Module.OnApplicationTick(Single)",
+            "token": 100674101,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.dll"
+          },
+          {
+            "name": "TaleWorlds.DotNet.Managed.ApplicationTick(Single)",
+            "token": 100663475,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.DotNet.dll"
+          }
+        ]
+      }
+    ],
+    "frames": [
+      {
+        "ip": "0x7fff0108408a",
+        "sp": "0x68689feca0",
+        "kind": "Runtime",
+        "name": "[FaultingExceptionFrame]",
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffe8aa166c2",
+        "sp": "0x68689ff1a0",
+        "kind": "ManagedMethod",
+        "name": "BanditPopulationTuning.EnhancementPatches.Health(TaleWorlds.CampaignSystem.CharacterObject, TaleWorlds.CampaignSystem.ExplainedNumber ByRef)",
+        "token": 100663327,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\BanditPopulationTuning\\bin\\Win64_Shipping_Client\\BanditPopulationTuning.dll"
+      },
+      {
+        "ip": "0x7ffe8ac98919",
+        "sp": "0x68689ff1e0",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffe871bc807",
+        "sp": "0x68689ff280",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffe8aa15dfd",
+        "sp": "0x68689ff2b0",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.CampaignSystem.CharacterObject.MaxHitPoints()",
+        "token": 100666005,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll"
+      },
+      {
+        "ip": "0x7ffe8ad460e8",
+        "sp": "0x68689ff310",
+        "kind": "ManagedMethod",
+        "name": "Helpers.PerkHelper.ClearPerksForSkill(TaleWorlds.CampaignSystem.Hero, TaleWorlds.Core.SkillObject)",
+        "token": 100663534,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll"
+      },
+      {
+        "ip": "0x7ffe8ad45fdb",
+        "sp": "0x68689ff370",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.CampaignSystem.Hero.ClearPerks()",
+        "token": 100666755,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll"
+      },
+      {
+        "ip": "0x7ffe8ad45efa",
+        "sp": "0x68689ff3d0",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.CampaignSystem.CharacterDevelopment.HeroDeveloper.ResetCharacterStats()",
+        "token": 100677049,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll"
+      },
+      {
+        "ip": "0x7ffe8ad4155c",
+        "sp": "0x68689ff400",
+        "kind": "ManagedMethod",
+        "name": "StoryMode.StoryModeObjects.StoryModeHeroes.RegisterAll()",
+        "token": 100663493,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\StoryMode\\bin\\Win64_Shipping_Client\\StoryMode.dll"
+      },
+      {
+        "ip": "0x7ffe8ad40ef3",
+        "sp": "0x68689ff470",
+        "kind": "ManagedMethod",
+        "name": "StoryMode.StoryModeManager.InitializeStoryModeObjects()",
+        "token": 100663427,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\StoryMode\\bin\\Win64_Shipping_Client\\StoryMode.dll"
+      },
+      {
+        "ip": "0x7ffe8a99970a",
+        "sp": "0x68689ff4b0",
+        "kind": "ManagedMethod",
+        "name": "StoryMode.CampaignStoryMode.DoLoadingForGameType(TaleWorlds.Core.GameTypeLoadingStates, TaleWorlds.Core.GameTypeLoadingStates ByRef)",
+        "token": 100663333,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\StoryMode\\bin\\Win64_Shipping_Client\\StoryMode.dll"
+      },
+      {
+        "ip": "0x7ffe8a999616",
+        "sp": "0x68689ff510",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.Core.GameType.DoLoadingForGameType()",
+        "token": 100664077,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.Core.dll"
+      },
+      {
+        "ip": "0x7ffe8a992ab0",
+        "sp": "0x68689ff550",
+        "kind": "ManagedMethod",
+        "name": "SandBox.SandBoxGameManager.DoLoadingForGameManager(TaleWorlds.Core.GameManagerLoadingSteps, TaleWorlds.Core.GameManagerLoadingSteps ByRef)",
+        "token": 100663573,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\SandBox\\bin\\Win64_Shipping_Client\\SandBox.dll"
+      },
+      {
+        "ip": "0x7ffe8a992737",
+        "sp": "0x68689ff610",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.Core.GameManagerBase.DoLoadingForGameManager()",
+        "token": 100665281,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.Core.dll"
+      },
+      {
+        "ip": "0x7ffe8a992609",
+        "sp": "0x68689ff650",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.MountAndBlade.GameLoadingState.OnTick(Single)",
+        "token": 100671779,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.dll"
+      },
+      {
+        "ip": "0x7ffe89bdbad2",
+        "sp": "0x68689ff680",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.Core.GameStateManager.OnTick(Single)",
+        "token": 100665376,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.Core.dll"
+      },
+      {
+        "ip": "0x7ffe89bdaf1a",
+        "sp": "0x68689ff6b0",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.MountAndBlade.Module.OnApplicationTick(Single)",
+        "token": 100674101,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.dll"
+      },
+      {
+        "ip": "0x7ffe89bd61c2",
+        "sp": "0x68689ff7a0",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.DotNet.Managed.ApplicationTick(Single)",
+        "token": 100663475,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.DotNet.dll"
+      },
+      {
+        "ip": "0x7ffe8577ad2d",
+        "sp": "0x68689ff7f0",
+        "kind": "ManagedMethod",
+        "name": "DomainBoundILStubClass.IL_STUB_ReversePInvoke(Single)",
+        "token": 100663296,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\Steamworks.NET.dll"
+      }
+    ]
+  },
+  {
+    "thread": 28372,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x687779fc98",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 32740,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x687479fbc8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 40384,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x687639f9e8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 14096,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x6877b9fc68",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 3268,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x6868dffbc8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 12160,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x6874b9f7a8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 24588,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x687439f7f8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 11348,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x687739fa18",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 28564,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x6877f9f878",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 30012,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x687539f7d8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 14984,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x6873f9fa58",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 1228,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x6876f9fba8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 31484,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x6876b9f848",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 12912,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x687839fc28",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 29948,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x6878f9f9b8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 25728,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x687879fc08",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 23892,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x6878b9f638",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 31292,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x6875f9fac8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 32564,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x687679fc98",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 35716,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x6875b9fae8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 32264,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x687579f978",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 33812,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61e74",
+        "sp": "0x680686e768",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 29128,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0x6806c6fc88",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  }
+]
