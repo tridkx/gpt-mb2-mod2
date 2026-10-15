@@ -17,8 +17,16 @@ namespace CavalryCombatTuning
 
         public static MethodInfo[] ResolveTargets()
         {
-            // No compile-time Sandbox dependency: it is loaded explicitly for campaign support.
-            Type sandbox = Assembly.Load("SandBox").GetType("SandBox.GameComponents.SandboxAgentStatCalculateModel", true);
+            // The game loads module assemblies in its own context. Short-name Assembly.Load
+            // does not reliably bind that context; never force a second Sandbox assembly load.
+            Type sandbox = null;
+            foreach (Assembly assembly in AppDomain.CurrentDomain.GetAssemblies())
+            {
+                sandbox = assembly.GetType("SandBox.GameComponents.SandboxAgentStatCalculateModel", false);
+                if (sandbox != null) break;
+            }
+            if (sandbox == null)
+                throw new InvalidOperationException("Sandbox agent model is not loaded yet. Initialize patches after module loading completes.");
             Type[] types = { sandbox, typeof(CustomBattleAgentStatCalculateModel) };
             var result = new List<MethodInfo>();
             foreach (Type type in types)

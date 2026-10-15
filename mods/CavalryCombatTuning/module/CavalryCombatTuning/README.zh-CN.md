@@ -73,9 +73,9 @@ python tools/release.py --workshop-root "D:/SteamLibrary/steamapps/workshop/cont
 
 ## 实现与当前验证范围
 
-Harmony 为 `SandboxAgentStatCalculateModel.UpdateAgentStats`、`CustomBattleAgentStatCalculateModel.UpdateAgentStats` 添加后置补丁。原模型每次重建属性后，再将坐骑的 `MountChargeDamage` 或骑乘弓弩的 `WeaponMaxMovementAccuracyPenalty` 乘以对应倍率。初始化经原版调用同一更新入口，不重复挂初始化补丁，避免叠乘。`DefaultSettlementMilitiaModel.CalculateMilitiaChange` 后置补丁仅为符合范围的正常村庄追加补充差额，保留原结果与说明。MCM 在初始菜单阶段连接，响应 `SAVE_TRIGGERED`／`LOADING_COMPLETE` 更新配置快照；卸载时解绑事件。
+补丁在初始菜单阶段、游戏模块加载完成后安装，从当前已加载的程序集查找 SandBox 模型，不按短名称重新加载模块 DLL；无初始菜单的宿主在任务初始化前补装。安装有去重保护。Harmony 为 `SandboxAgentStatCalculateModel.UpdateAgentStats`、`CustomBattleAgentStatCalculateModel.UpdateAgentStats` 添加后置补丁。原模型每次重建属性后，再将坐骑的 `MountChargeDamage` 或骑乘弓弩的 `WeaponMaxMovementAccuracyPenalty` 乘以对应倍率。初始化经原版调用同一更新入口，不重复挂初始化补丁，避免叠乘。`DefaultSettlementMilitiaModel.CalculateMilitiaChange` 后置补丁仅为符合范围的正常村庄追加补充差额，保留原结果与说明。MCM 在初始菜单阶段连接，响应 `SAVE_TRIGGERED`／`LOADING_COMPLETE` 更新配置快照；卸载时解绑事件。
 
-离线验证包括：实际 v1.4.8 三个方法挂接／卸载、208 项断言、六个 MCM 控件和免重启标记、旧配置初值、保存事件与数值联动、村庄正向补充／退休分离、状态与归属筛选、平衡人数、增长说明、事件解绑、配置异常、安装包回读及安装文件 SHA-256 一致性。测试不启动游戏，也不替代用户实机验收；菜单显示、保存后的实战／每日增长变化及跨次启动持久化待用户确认。[MCM 开发文档](https://mcm.bannerlord.aragas.org/articles/MCMv5/mcmv5.html)介绍设置发现和保存事件。
+离线验证包括：实际 v1.4.8 三个方法挂接／卸载、213 项断言、模块加载顺序与延迟安装、重复初始化去重、六个 MCM 控件和免重启标记、旧配置初值、保存事件与数值联动、村庄正向补充／退休分离、状态与归属筛选、平衡人数、增长说明、事件解绑、配置异常、安装包回读及安装文件 SHA-256 一致性。测试不启动游戏，也不替代用户实机验收；启动修复后的主菜单结果、保存后的实战／每日增长变化及跨次启动持久化待用户确认。[MCM 开发文档](https://mcm.bannerlord.aragas.org/articles/MCMv5/mcmv5.html)介绍设置发现和保存事件。
 
 ## 注意事项
 

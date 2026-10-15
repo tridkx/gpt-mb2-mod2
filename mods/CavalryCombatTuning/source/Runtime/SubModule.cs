@@ -26,6 +26,11 @@ namespace CavalryCombatTuning
                 _warning = "Cavalry Combat Tuning: 配置无效，已使用默认值；请查看 ModuleData/runtime.log。";
                 Log("Invalid settings; defaults active. " + error);
             }
+        }
+
+        private void InstallPatches()
+        {
+            if (_installed) return;
             try
             {
                 RuntimePatches.Install();
@@ -44,6 +49,8 @@ namespace CavalryCombatTuning
         protected override void OnBeforeInitialModuleScreenSetAsRoot()
         {
             base.OnBeforeInitialModuleScreenSetAsRoot();
+            // All enabled module assemblies have now been loaded by the game.
+            InstallPatches();
             if (!_mcmConnected)
             {
                 try
@@ -61,6 +68,13 @@ namespace CavalryCombatTuning
             if (_warning == null) return;
             InformationManager.DisplayMessage(new InformationMessage(_warning));
             _warning = null;
+        }
+
+        public override void OnBeforeMissionBehaviorInitialize(Mission mission)
+        {
+            base.OnBeforeMissionBehaviorInitialize(mission);
+            // Also cover hosts that initialize a mission without showing the initial menu.
+            if (!_installed) InstallPatches();
         }
 
         protected override void OnSubModuleUnloaded()

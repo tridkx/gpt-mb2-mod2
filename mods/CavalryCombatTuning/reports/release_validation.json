@@ -1,10 +1,10 @@
 {
   "id": "CavalryCombatTuning",
-  "version": "v1.2.0",
+  "version": "v1.2.1",
   "status": "pass",
-  "generated_utc": "20261015T052227208037Z",
+  "generated_utc": "20261015T135540626548Z",
   "game_version": "v1.4.8",
-  "checks": 208,
+  "checks": 213,
   "patch_targets": [
     "PATCH OK SandBox.GameComponents.SandboxAgentStatCalculateModel.UpdateAgentStats",
     "PATCH OK TaleWorlds.MountAndBlade.CustomBattleAgentStatCalculateModel.UpdateAgentStats",
@@ -45,11 +45,11 @@
     "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\Native\\SubModule.xml": "38e8f6fa52498346cda474ea648d59cab0180284209f603d2bb1161e2b2bfefe"
   },
   "module_files_sha256": {
-    "bin/Win64_Shipping_Client/CavalryCombatTuning.dll": "450d300228ef010fadc1dbf958e9905a1db6520b1e8bc1268cac8d2b5c2b65bc",
-    "CHANGELOG.md": "e5f8abc1f92660901bbfaeec896432336067b47d7279781dfe9099cc810f51b2",
+    "bin/Win64_Shipping_Client/CavalryCombatTuning.dll": "a33e6fc7da4c3a3fc32dd84dcd9a8941b9a879c4525e07e06c4a93b7112f464e",
+    "CHANGELOG.md": "2f0af9420959e1800f68dd33fc80088866b9a607a532ad943ee6a9d28c688c22",
     "ModuleData/settings.xml": "c88501d0d43b0963a8d4116e960b46b56e349a3c92760b6e82b1c05cd38fd128",
-    "README.zh-CN.md": "2ee7a86728ab82e6ea3a11ffc6822edb88e37c9437907118e4a63d0119220abb",
-    "SubModule.xml": "1c6284b8992427b1e763172ed7dbe14f5ab251596fc77ac58bf9837e2ece45df"
+    "README.zh-CN.md": "5e0aec5f5116a41223c7b5db438f7bbe24616e956d5babacb68845c2640e37c5",
+    "SubModule.xml": "3e4a4621225fd8190cdfa483df428255ef4bb710123f2b79629df11dbc2982f9"
   },
   "game_acceptance": "pending_user_test; game_not_started"
 }

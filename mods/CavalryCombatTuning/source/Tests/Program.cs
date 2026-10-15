@@ -174,8 +174,26 @@ internal static class Program
         mcm.ChargeDamageMultiplier = float.NaN;
         Reject(() => mcm.ToRuntimeSettings(), "MCM invalid value rejected");
 
-        // Actually install Harmony patches against both installed game methods; do not launch a mission.
-        RuntimePatches.Install();
+        // Reproduce real module order: OnSubModuleLoad runs before Sandbox is available.
+        Check(!AppDomain.CurrentDomain.GetAssemblies().Any(a => a.GetType("SandBox.GameComponents.SandboxAgentStatCalculateModel", false) != null),
+            "Sandbox not yet loaded before startup regression");
+        var subModule = new SubModule();
+        typeof(SubModule).GetMethod("OnSubModuleLoad", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(subModule, null);
+        Check(!AppDomain.CurrentDomain.GetAssemblies().Any(a => a.GetType("SandBox.GameComponents.SandboxAgentStatCalculateModel", false) != null),
+            "early submodule load does not force Sandbox binding");
+        Reject(() => RuntimePatches.ResolveTargets(), "patch discovery waits for game-loaded Sandbox");
+        // Locate the installed assembly through the known core assembly, as a game loader would.
+        string gameRoot = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(typeof(Agent).Assembly.Location), "..", ".."));
+        Assembly loadedSandbox = Assembly.LoadFrom(Path.Combine(gameRoot, "Modules", "Sandbox", "bin", "Win64_Shipping_Client", "SandBox.dll"));
+        Check(RuntimePatches.ResolveTargets()[0].DeclaringType.Assembly == loadedSandbox,
+            "patch discovery reuses loaded Sandbox assembly identity");
+
+        // Actually install Harmony patches against all three installed game methods; do not launch a mission.
+        MethodInfo install = typeof(SubModule).GetMethod("InstallPatches", BindingFlags.Instance | BindingFlags.NonPublic);
+        install.Invoke(subModule, null);
+        Check((bool)typeof(SubModule).GetField("_installed", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(subModule),
+            "deferred submodule installation succeeds after game loads Sandbox");
+        install.Invoke(subModule, null); // Repeated menu callbacks must not add duplicate patches.
         try
         {
             foreach (MethodInfo method in RuntimePatches.ResolveTargets())
