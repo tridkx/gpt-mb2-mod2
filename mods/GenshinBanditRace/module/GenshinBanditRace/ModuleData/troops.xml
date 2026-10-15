@@ -1,0 +1,553 @@
+<?xml version='1.0' encoding='utf-8'?>
+<NPCCharacters>
+  <NPCCharacter id="gbr_noelle" name="诺艾尔·盾步兵" level="16" occupation="Bandit" culture="Culture.looters" race="noelle" is_female="true" age="25" face_mesh_cache="false" default_group="Infantry">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="20" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="80" />
+      <skill id="Polearm" value="130" />
+      <skill id="Bow" value="60" />
+      <skill id="Crossbow" value="60" />
+      <skill id="Throwing" value="80" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.vlandia_mace_2_t4" />
+        <equipment slot="Item1" id="Item.heavy_heater_shield" />
+        <equipment slot="Item2" id="Item.western_spear_4_t4" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_jean_seabreeze" name="琴·时装·盾步兵" level="16" occupation="Bandit" culture="Culture.looters" race="jean_seabreeze" is_female="true" age="25" face_mesh_cache="false" default_group="Infantry">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="20" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="80" />
+      <skill id="Polearm" value="130" />
+      <skill id="Bow" value="60" />
+      <skill id="Crossbow" value="60" />
+      <skill id="Throwing" value="80" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sturgia_sword_4_t4" />
+        <equipment slot="Item1" id="Item.sturgia_infantry_shield_a" />
+        <equipment slot="Item2" id="Item.imperial_throwing_spear_1_t4" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_furina" name="芙宁娜·盾步兵" level="16" occupation="Bandit" culture="Culture.looters" race="furina" is_female="true" age="25" face_mesh_cache="false" default_group="Infantry">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="20" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="80" />
+      <skill id="Polearm" value="130" />
+      <skill id="Bow" value="60" />
+      <skill id="Crossbow" value="60" />
+      <skill id="Throwing" value="80" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.empire_sword_5_t4" />
+        <equipment slot="Item1" id="Item.southern_oval_shield" />
+        <equipment slot="Item2" id="Item.eastern_javelin_2_t3" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_lumine" name="荧·双手突击兵" level="16" occupation="Bandit" culture="Culture.looters" race="lumine" is_female="true" age="25" face_mesh_cache="false" default_group="Infantry">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="60" />
+      <skill id="OneHanded" value="70" />
+      <skill id="TwoHanded" value="130" />
+      <skill id="Polearm" value="70" />
+      <skill id="Bow" value="60" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="130" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sturgia_mace_2_t4" />
+        <equipment slot="Item1" id="Item.sturgia_sword_5_t4" />
+        <equipment slot="Item2" id="Item.northern_throwing_axe_1_t1" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_ayaka" name="神里绫华·双手突击兵" level="16" occupation="Bandit" culture="Culture.looters" race="ayaka" is_female="true" age="25" face_mesh_cache="false" default_group="Infantry">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="60" />
+      <skill id="OneHanded" value="70" />
+      <skill id="TwoHanded" value="130" />
+      <skill id="Polearm" value="70" />
+      <skill id="Bow" value="60" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="130" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.battania_2hsword_4_t4" />
+        <equipment slot="Item1" id="Item.woodland_throwing_axe_1_t1" />
+        <equipment slot="Item2" id="Item.woodland_throwing_axe_1_t1" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_ayaka_springbloom" name="神里绫华·花时来信·双手突击兵" level="16" occupation="Bandit" culture="Culture.looters" race="ayaka_springbloom" is_female="true" age="25" face_mesh_cache="false" default_group="Infantry">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="60" />
+      <skill id="OneHanded" value="70" />
+      <skill id="TwoHanded" value="130" />
+      <skill id="Polearm" value="70" />
+      <skill id="Bow" value="60" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="130" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.battania_2hsword_4_t4" />
+        <equipment slot="Item1" id="Item.vlandia_sword_4_t4" />
+        <equipment slot="Item2" id="Item.woodland_throwing_axe_1_t1" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_hutao" name="胡桃·长杆步兵" level="16" occupation="Bandit" culture="Culture.looters" race="hutao" is_female="true" age="25" face_mesh_cache="false" default_group="Infantry">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="50" />
+      <skill id="OneHanded" value="160" />
+      <skill id="TwoHanded" value="80" />
+      <skill id="Polearm" value="130" />
+      <skill id="Bow" value="60" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="80" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.vlandia_polearm_1_t5" />
+        <equipment slot="Item1" id="Item.vlandia_sword_2_t3" />
+        <equipment slot="Item2" id="Item.western_throwing_axe_1_t1" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_hutao_lantern" name="胡桃·海灯节·长杆步兵" level="16" occupation="Bandit" culture="Culture.looters" race="hutao_lantern" is_female="true" age="25" face_mesh_cache="false" default_group="Infantry">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="50" />
+      <skill id="OneHanded" value="160" />
+      <skill id="TwoHanded" value="80" />
+      <skill id="Polearm" value="130" />
+      <skill id="Bow" value="60" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="80" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.eastern_spear_4_t4" />
+        <equipment slot="Item1" id="Item.aserai_sword_4_t4" />
+        <equipment slot="Item2" id="Item.southern_oval_shield" />
+        <equipment slot="Item3" id="Item.eastern_javelin_2_t3" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_emilie" name="艾梅莉埃·长杆步兵" level="16" occupation="Bandit" culture="Culture.looters" race="emilie" is_female="true" age="25" face_mesh_cache="false" default_group="Infantry">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="50" />
+      <skill id="OneHanded" value="160" />
+      <skill id="TwoHanded" value="80" />
+      <skill id="Polearm" value="130" />
+      <skill id="Bow" value="60" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="80" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.vlandia_pike_1_t5" />
+        <equipment slot="Item1" id="Item.vlandia_sword_4_t4" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_ganyu" name="甘雨·弓箭手" level="16" occupation="Bandit" culture="Culture.looters" race="ganyu" is_female="true" age="25" face_mesh_cache="false" default_group="Ranged">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="40" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="30" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="140" />
+      <skill id="Crossbow" value="80" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.steppe_war_bow" />
+        <equipment slot="Item1" id="Item.bodkin_arrows_b" />
+        <equipment slot="Item2" id="Item.bodkin_arrows_b" />
+        <equipment slot="Item3" id="Item.empire_sword_3_t3" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_amber" name="安柏·弓箭手" level="16" occupation="Bandit" culture="Culture.looters" race="amber" is_female="true" age="25" face_mesh_cache="false" default_group="Ranged">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="40" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="30" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="140" />
+      <skill id="Crossbow" value="80" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.composite_steppe_bow" />
+        <equipment slot="Item1" id="Item.steppe_arrows" />
+        <equipment slot="Item2" id="Item.steppe_arrows" />
+        <equipment slot="Item3" id="Item.khuzait_sword_3_t3" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_sucrose" name="砂糖·弓箭手" level="16" occupation="Bandit" culture="Culture.looters" race="sucrose" is_female="true" age="25" face_mesh_cache="false" default_group="Ranged">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="40" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="30" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="140" />
+      <skill id="Crossbow" value="80" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.steppe_war_bow" />
+        <equipment slot="Item1" id="Item.piercing_arrows" />
+        <equipment slot="Item2" id="Item.piercing_arrows" />
+        <equipment slot="Item3" id="Item.aserai_sword_3_t3" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_kokomi" name="珊瑚宫心海·弓箭手" level="16" occupation="Bandit" culture="Culture.looters" race="kokomi" is_female="true" age="25" face_mesh_cache="false" default_group="Ranged">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="40" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="30" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="140" />
+      <skill id="Crossbow" value="80" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.composite_steppe_bow" />
+        <equipment slot="Item1" id="Item.bodkin_arrows_b" />
+        <equipment slot="Item2" id="Item.bodkin_arrows_b" />
+        <equipment slot="Item3" id="Item.aserai_sword_4_t4" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_lisa" name="丽莎·弩手" level="16" occupation="Bandit" culture="Culture.looters" race="lisa" is_female="true" age="25" face_mesh_cache="false" default_group="Ranged">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="80" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="130" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.crossbow_d" />
+        <equipment slot="Item1" id="Item.bolt_d" />
+        <equipment slot="Item2" id="Item.empire_mace_2_t4" />
+        <equipment slot="Item3" id="Item.reinforced_kite_shield" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_lisa_leafshade" name="丽莎·叶隐芳名·弩手" level="16" occupation="Bandit" culture="Culture.looters" race="lisa_leafshade" is_female="true" age="25" face_mesh_cache="false" default_group="Ranged">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="80" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="130" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.crossbow_f" />
+        <equipment slot="Item1" id="Item.bolt_c" />
+        <equipment slot="Item2" id="Item.empire_mace_3_t4" />
+        <equipment slot="Item3" id="Item.southern_oval_shield" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_yaemiko" name="八重神子·弩手" level="16" occupation="Bandit" culture="Culture.looters" race="yaemiko" is_female="true" age="25" face_mesh_cache="false" default_group="Ranged">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="80" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="130" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.crossbow_d" />
+        <equipment slot="Item1" id="Item.bolt_d" />
+        <equipment slot="Item2" id="Item.empire_sword_5_t4" />
+        <equipment slot="Item3" id="Item.sturgia_infantry_shield_a" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_nilou" name="妮露·骑射兵" level="16" occupation="Bandit" culture="Culture.looters" race="nilou" is_female="true" age="25" face_mesh_cache="false" default_group="HorseArcher">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="80" />
+      <skill id="Riding" value="130" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="130" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.composite_steppe_bow" />
+        <equipment slot="Item1" id="Item.steppe_arrows" />
+        <equipment slot="Item2" id="Item.steppe_arrows" />
+        <equipment slot="Item3" id="Item.khuzait_sword_4_t4" />
+        <equipment slot="Horse" id="Item.t2_khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_xianyun" name="闲云·骑射兵" level="16" occupation="Bandit" culture="Culture.looters" race="xianyun" is_female="true" age="25" face_mesh_cache="false" default_group="HorseArcher">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="80" />
+      <skill id="Riding" value="130" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="130" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.steppe_war_bow" />
+        <equipment slot="Item1" id="Item.bodkin_arrows_b" />
+        <equipment slot="Item2" id="Item.bodkin_arrows_b" />
+        <equipment slot="Item3" id="Item.empire_sword_3_t3" />
+        <equipment slot="Horse" id="Item.t2_khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_weisina" name="薇斯纳·骑射兵" level="16" occupation="Bandit" culture="Culture.looters" race="weisina" is_female="true" age="25" face_mesh_cache="false" default_group="HorseArcher">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="80" />
+      <skill id="Riding" value="130" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="130" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.composite_steppe_bow" />
+        <equipment slot="Item1" id="Item.piercing_arrows" />
+        <equipment slot="Item2" id="Item.piercing_arrows" />
+        <equipment slot="Item3" id="Item.aserai_sword_3_t3" />
+        <equipment slot="Horse" id="Item.t2_khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_yunjin" name="云堇·近战骑兵" level="16" occupation="Bandit" culture="Culture.looters" race="yunjin" is_female="true" age="25" face_mesh_cache="false" default_group="Cavalry">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="60" />
+      <skill id="Riding" value="130" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="80" />
+      <skill id="Polearm" value="130" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="60" />
+      <skill id="Throwing" value="80" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.vlandia_lance_2_t4" />
+        <equipment slot="Item1" id="Item.wide_heater_shield" />
+        <equipment slot="Item2" id="Item.vlandia_sword_4_t4" />
+        <equipment slot="Horse" id="Item.t2_vlandia_horse" />
+        <equipment slot="HorseHarness" id="Item.halfchain_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_keqing_opulent" name="刻晴·霓裾翩跹·近战骑兵" level="16" occupation="Bandit" culture="Culture.looters" race="keqing_opulent" is_female="true" age="25" face_mesh_cache="false" default_group="Cavalry">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="60" />
+      <skill id="Riding" value="150" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="130" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.khuzait_lance_2_t4" />
+        <equipment slot="Item1" id="Item.steppe_guardian_shield" />
+        <equipment slot="Item2" id="Item.khuzait_sword_4_t4" />
+        <equipment slot="Horse" id="Item.t3_khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gbr_ningguang_orchid" name="凝光·纱中幽兰·近战骑兵" level="16" occupation="Bandit" culture="Culture.looters" race="ningguang_orchid" is_female="true" age="25" face_mesh_cache="false" default_group="Cavalry">
+    <face>
+      <BodyProperties version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="25" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="80" />
+      <skill id="Riding" value="130" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="50" />
+      <skill id="Polearm" value="160" />
+      <skill id="Bow" value="60" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.empire_lance_2_t4" />
+        <equipment slot="Item1" id="Item.heavy_horsemans_kite_shield" />
+        <equipment slot="Item2" id="Item.empire_sword_5_t4" />
+        <equipment slot="Horse" id="Item.t3_empire_horse" />
+        <equipment slot="HorseHarness" id="Item.imperial_scale_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+</NPCCharacters>

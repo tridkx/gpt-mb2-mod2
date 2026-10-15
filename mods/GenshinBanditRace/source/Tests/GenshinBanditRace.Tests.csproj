@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../GameReferences.props" />
+  <PropertyGroup><OutputType>Exe</OutputType><AssemblyName>GenshinBanditRace.Tests</AssemblyName></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Runtime/GenshinBanditRace.csproj" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="RaceTroopBuilder.ArmorRuntime"><HintPath>../../module/GenshinBanditRace/bin/Win64_Shipping_Client/RaceTroopBuilder.ArmorRuntime.dll</HintPath></Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../GameReferences.props" />
+  <PropertyGroup><OutputType>Exe</OutputType><AssemblyName>BanditPopulationTuning.Tests</AssemblyName></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../Runtime/BanditPopulationTuning.csproj" /></ItemGroup>
+</Project>

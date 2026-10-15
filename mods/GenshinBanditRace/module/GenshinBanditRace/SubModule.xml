@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Module>
+  <Name value="Genshin Bandit Race" />
+  <Id value="GenshinBanditRace" />
+  <Version value="v1.0.0" />
+  <DefaultModule value="false" />
+  <ModuleCategory value="Singleplayer" />
+  <Official value="false" />
+  <ModuleType value="Community" />
+  <SingleplayerModule value="true" />
+  <MultiplayerModule value="false" />
+  <DependedModules>
+    <DependedModule Id="Bannerlord.Harmony" />
+    <DependedModule Id="Bannerlord.ButterLib" />
+    <DependedModule Id="Bannerlord.UIExtenderEx" />
+    <DependedModule Id="Bannerlord.MBOptionScreen" />
+    <DependedModule Id="Native" />
+    <DependedModule Id="SandBoxCore" />
+    <DependedModule Id="Sandbox" />
+    <DependedModule Id="GenshinRaceCollection" />
+  </DependedModules>
+  <SubModules>
+    <SubModule>
+      <Name value="Genshin Bandit Race Runtime" />
+      <DLLName value="GenshinBanditRace.dll" />
+      <SubModuleClassType value="GenshinBanditRace.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+    <SubModule>
+      <Name value="Shared Troop Armor Runtime" />
+      <DLLName value="RaceTroopBuilder.ArmorRuntime.dll" />
+      <SubModuleClassType value="RaceTroopBuilder.ArmorRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+  </SubModules>
+  <Xmls>
+    <XmlNode>
+      <XmlName id="NPCCharacters" path="troops" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+      </IncludedGameTypes>
+    </XmlNode>
+  </Xmls>
+</Module>

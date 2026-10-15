@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<BanditCatalog schemaVersion="1">
+  <Troop id="gbr_noelle" race="noelle" role="shield" weight="33.5" fallback="looter" />
+  <Troop id="gbr_jean_seabreeze" race="jean_seabreeze" role="shield" weight="33.5" fallback="looter" />
+  <Troop id="gbr_furina" race="furina" role="shield" weight="33.5" fallback="looter" />
+  <Troop id="gbr_lumine" race="lumine" role="shock" weight="22.7" fallback="looter" />
+  <Troop id="gbr_ayaka" race="ayaka" role="shock" weight="22.7" fallback="looter" />
+  <Troop id="gbr_ayaka_springbloom" race="ayaka_springbloom" role="shock" weight="22.7" fallback="looter" />
+  <Troop id="gbr_hutao" race="hutao" role="polearm" weight="30.0" fallback="looter" />
+  <Troop id="gbr_hutao_lantern" race="hutao_lantern" role="polearm" weight="30.0" fallback="looter" />
+  <Troop id="gbr_emilie" race="emilie" role="polearm" weight="30.0" fallback="looter" />
+  <Troop id="gbr_ganyu" race="ganyu" role="archer" weight="23.6" fallback="looter" />
+  <Troop id="gbr_amber" race="amber" role="archer" weight="23.6" fallback="looter" />
+  <Troop id="gbr_sucrose" race="sucrose" role="archer" weight="23.6" fallback="looter" />
+  <Troop id="gbr_kokomi" race="kokomi" role="archer" weight="23.6" fallback="looter" />
+  <Troop id="gbr_lisa" race="lisa" role="crossbow" weight="15.15" fallback="looter" />
+  <Troop id="gbr_lisa_leafshade" race="lisa_leafshade" role="crossbow" weight="15.15" fallback="looter" />
+  <Troop id="gbr_yaemiko" race="yaemiko" role="crossbow" weight="15.15" fallback="looter" />
+  <Troop id="gbr_nilou" race="nilou" role="horse_archer" weight="33.1" fallback="looter" />
+  <Troop id="gbr_xianyun" race="xianyun" role="horse_archer" weight="33.1" fallback="looter" />
+  <Troop id="gbr_weisina" race="weisina" role="horse_archer" weight="33.1" fallback="looter" />
+  <Troop id="gbr_yunjin" race="yunjin" role="cavalry" weight="22.9" fallback="looter" />
+  <Troop id="gbr_keqing_opulent" race="keqing_opulent" role="cavalry" weight="33.6" fallback="looter" />
+  <Troop id="gbr_ningguang_orchid" race="ningguang_orchid" role="cavalry" weight="30.1" fallback="looter" />
+  <Clan id="looters">
+    <Native id="looter" />
+    <Native id="mounted_pillager" />
+    <Native id="mounted_ransacker" />
+    <Role id="shield" weight="3" />
+    <Role id="shock" weight="3" />
+    <Role id="polearm" weight="3" />
+    <Role id="archer" weight="4" />
+    <Role id="crossbow" weight="3" />
+    <Role id="horse_archer" weight="3" />
+    <Role id="cavalry" weight="3" />
+  </Clan>
+  <Clan id="sea_raiders">
+    <Native id="sea_raiders_bandit" />
+    <Native id="sea_raiders_boss" />
+    <Native id="sea_raiders_chief" />
+    <Native id="sea_raiders_raider" />
+    <Role id="shield" weight="3" />
+    <Role id="shock" weight="3" />
+    <Role id="polearm" weight="3" />
+    <Role id="archer" weight="4" />
+    <Role id="crossbow" weight="3" />
+    <Role id="horse_archer" weight="3" />
+    <Role id="cavalry" weight="3" />
+  </Clan>
+  <Clan id="mountain_bandits">
+    <Native id="mountain_bandits_bandit" />
+    <Native id="mountain_bandits_boss" />
+    <Native id="mountain_bandits_chief" />
+    <Native id="mountain_bandits_raider" />
+    <Role id="shield" weight="3" />
+    <Role id="shock" weight="3" />
+    <Role id="polearm" weight="3" />
+    <Role id="archer" weight="4" />
+    <Role id="crossbow" weight="3" />
+    <Role id="horse_archer" weight="3" />
+    <Role id="cavalry" weight="3" />
+  </Clan>
+  <Clan id="forest_bandits">
+    <Native id="forest_bandits_bandit" />
+    <Native id="forest_bandits_boss" />
+    <Native id="forest_bandits_chief" />
+    <Native id="forest_bandits_raider" />
+    <Role id="shield" weight="3" />
+    <Role id="shock" weight="3" />
+    <Role id="polearm" weight="3" />
+    <Role id="archer" weight="4" />
+    <Role id="crossbow" weight="3" />
+    <Role id="horse_archer" weight="3" />
+    <Role id="cavalry" weight="3" />
+  </Clan>
+  <Clan id="steppe_bandits">
+    <Native id="steppe_bandits_bandit" />
+    <Native id="steppe_bandits_boss" />
+    <Native id="steppe_bandits_chief" />
+    <Native id="steppe_bandits_raider" />
+    <Role id="shield" weight="3" />
+    <Role id="shock" weight="3" />
+    <Role id="polearm" weight="3" />
+    <Role id="archer" weight="4" />
+    <Role id="crossbow" weight="3" />
+    <Role id="horse_archer" weight="3" />
+    <Role id="cavalry" weight="3" />
+  </Clan>
+  <Clan id="desert_bandits">
+    <Native id="desert_bandits_bandit" />
+    <Native id="desert_bandits_boss" />
+    <Native id="desert_bandits_chief" />
+    <Native id="desert_bandits_raider" />
+    <Role id="shield" weight="3" />
+    <Role id="shock" weight="3" />
+    <Role id="polearm" weight="3" />
+    <Role id="archer" weight="4" />
+    <Role id="crossbow" weight="3" />
+    <Role id="horse_archer" weight="3" />
+    <Role id="cavalry" weight="3" />
+  </Clan>
+</BanditCatalog>

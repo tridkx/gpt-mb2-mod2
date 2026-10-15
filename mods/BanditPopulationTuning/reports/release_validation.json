@@ -1,0 +1,48 @@
+{
+  "id": "BanditPopulationTuning",
+  "version": "v1.0.0",
+  "generated_utc": "20261015T055053411660Z",
+  "status": "pass",
+  "checks": 113,
+  "prerequisites": {
+    "Bannerlord.Harmony": {
+      "root": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859188632",
+      "version": "v2.4.2.248"
+    },
+    "Bannerlord.UIExtenderEx": {
+      "root": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859222409",
+      "version": "v3.0.3"
+    },
+    "Bannerlord.ButterLib": {
+      "root": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859232415",
+      "version": "v2.12.0"
+    },
+    "Bannerlord.MBOptionScreen": {
+      "root": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859238197",
+      "version": "v5.12.3"
+    }
+  },
+  "game_version": "v1.4.8",
+  "module_files_sha256": {
+    "CHANGELOG.md": "7cf9d4384cd103ef8f805bbac50ca0db6f66f8b0d3eea2fd9d5aa269e356e2ac",
+    "README.zh-CN.md": "6a47e0777c13fbc2e3e2261501cab7911ed65fec03be9f56c7960cf736104a8c",
+    "SubModule.xml": "07d0f7f73d603f2043e7a1beb8aa97441dcc2735cc48cab52aad6a88ad42a959",
+    "bin/Win64_Shipping_Client/BanditPopulationTuning.dll": "f2621f3b26509a69f7e78cdcd6f0b84e2cb2ddaa2ef4cfdfd4f6c2d4d75f5dca"
+  },
+  "patch_targets": [
+    "PATCH OK TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior.GetCurrentLimitForLooters",
+    "PATCH OK TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior.get__numberOfMaxBanditCountPerClanHideout",
+    "PATCH OK TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior.SpawnLooterParty",
+    "PATCH OK TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior.SpawnBanditParty",
+    "PATCH OK TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior.HourlyTickClan",
+    "PATCH OK TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior.SpawnLooters",
+    "PATCH OK TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior.SpawnBanditsAroundHideout",
+    "PATCH OK TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior.InitializeBanditParty"
+  ],
+  "game_inputs_sha256": {
+    "Modules\\Native\\SubModule.xml": "38e8f6fa52498346cda474ea648d59cab0180284209f603d2bb1161e2b2bfefe",
+    "bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll": "1f8e33e2ed73e6ec653d7629180afb70649ddc6e5bd1657a802a264efda1c3ae",
+    "Modules\\SandBox\\bin\\Win64_Shipping_Client\\SandBox.dll": "587c6e94c425745c1478f632f3b66226ff8298666cb27e8e6d9a62488df5956a"
+  },
+  "game_acceptance": "pending_user_test; game_not_started"
+}
