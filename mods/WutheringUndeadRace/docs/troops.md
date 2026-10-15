@@ -1,0 +1,54 @@
+# 感染兵与统领数据
+
+原版同阶防御为底，职业差分随T1—T5线性增加；统领使用本职业T5护甲的1.6倍。头／身／臂／腿为固有护甲，负重仅补防具。
+
+| 角色兵种 | 原版防御基准 | 固有护甲 | 等效负重 | 武器槽 |
+| --- | --- | --- | ---: | --- |
+| 鉴心·感染步兵1 | imperial_recruit | 2／4／1／7 | 1.425 | peasant_hammer_1_t1、small_heater_shield |
+| 鉴心·感染步兵2 | imperial_infantryman | 13／18／7／13 | 4.1 | vlandia_mace_1_t2、old_kite_shield |
+| 鉴心·感染步兵3 | imperial_trained_infantryman | 16／25／18／16 | 6.72 | morningstar_mace_t3、heavy_heater_shield |
+| 鉴心·感染步兵4 | imperial_veteran_infantryman | 59／53／45／30 | 39.7392 | empire_mace_3_t4、pavise_shield |
+| 鉴心·感染步兵5 | imperial_legionary | 63／73／63／62 | 36.85 | empire_mace_5_t5、pavise_shield |
+| 鉴心·感染统领 | imperial_legionary | 102／117／102／99 | 40.535 | empire_mace_5_t5、pavise_shield |
+| 长离·感染步兵1 | imperial_recruit | 2／4／1／7 | 1.425 | battania_2hsword_1_t2 |
+| 长离·感染步兵2 | imperial_infantryman | 11／15／6／11 | 3.45 | battania_2hsword_2_t3 |
+| 长离·感染步兵3 | imperial_trained_infantryman | 12／18／13／12 | 4.64 | battania_2hsword_4_t4、woodland_throwing_axe_1_t1 |
+| 长离·感染步兵4 | imperial_veteran_infantryman | 36／33／28／19 | 21.7179 | khuzait_polearm_1_t4、woodland_throwing_axe_1_t1、woodland_throwing_axe_1_t1 |
+| 长离·感染步兵5 | imperial_legionary | 33／38／33／32 | 15.075 | battania_2hsword_5_t5、woodland_throwing_axe_1_t1、woodland_throwing_axe_1_t1 |
+| 长离·感染统领 | imperial_legionary | 53／60／53／52 | 16.5825 | battania_2hsword_5_t5、woodland_throwing_axe_1_t1、woodland_throwing_axe_1_t1 |
+| 折枝·感染射手1 | imperial_recruit | 2／4／1／7 | 1.425 | hunting_bow、range_arrows、peasant_sickle_1_t1 |
+| 折枝·感染射手2 | imperial_archer | 6／12／2／12 | 3.1875 | lowland_longbow、barbed_arrows、peasant_sickle_1_t1 |
+| 折枝·感染射手3 | imperial_trained_archer | 13／10／11／8 | 3.0188 | woodland_longbow、piercing_arrows、piercing_arrows、empire_sword_3_t3 |
+| 折枝·感染射手4 | imperial_veteran_archer | 24／16／21／12 | 5.6875 | noble_long_bow、bodkin_arrows_b、bodkin_arrows_b、empire_sword_3_t3 |
+| 折枝·感染射手5 | imperial_palatine_guard | 29／29／28／20 | 17.7 | noble_long_bow、bodkin_arrows_b、bodkin_arrows_b、empire_sword_3_t3 |
+| 折枝·感染统领 | imperial_palatine_guard | 46／46／45／33 | 19.47 | noble_long_bow、bodkin_arrows_b、bodkin_arrows_b、empire_sword_3_t3 |
+| 吟霖·感染射手1 | imperial_recruit | 2／4／1／7 | 1.425 | crossbow_a、bolt_a、empire_mace_1_t2 |
+| 吟霖·感染射手2 | imperial_archer | 6／12／2／12 | 3.4 | crossbow_b、bolt_b、empire_mace_1_t2 |
+| 吟霖·感染射手3 | imperial_trained_archer | 15／12／13／9 | 3.45 | crossbow_c、bolt_c、bolt_c、empire_mace_3_t4 |
+| 吟霖·感染射手4 | imperial_veteran_archer | 29／19／26／15 | 7.0 | crossbow_f、bolt_d、bolt_d、empire_mace_3_t4 |
+| 吟霖·感染射手5 | imperial_palatine_guard | 37／37／36／26 | 23.6 | crossbow_f、bolt_d、bolt_d、empire_mace_3_t4 |
+| 吟霖·感染统领 | imperial_palatine_guard | 60／60／58／42 | 25.96 | crossbow_f、bolt_d、bolt_d、empire_mace_3_t4 |
+| 今汐·感染骑兵1 | imperial_recruit | 2／4／1／7 | 1.425 | eastern_spear_1_t2、small_heater_shield、empire_sword_1_t2 |
+| 今汐·感染骑兵2 | vlandian_squire | 15／14／3／10 | 5.1875 | vlandia_lance_1_t3、horsemans_heater_shield、empire_sword_1_t2 |
+| 今汐·感染骑兵3 | khuzait_horseman | 30／24／25／12 | 10.2125 | vlandia_lance_2_t4、heavy_horsemans_kite_shield、empire_sword_3_t3 |
+| 今汐·感染骑兵4 | khuzait_lancer | 59／59／27／17 | 30.9275 | vlandia_lance_3_t5、heavy_horsemans_kite_shield、empire_sword_5_t4 |
+| 今汐·感染骑兵5 | khuzait_heavy_lancer | 66／66／64／25 | 38.64 | empire_lance_3_t5、heavy_horsemans_kite_shield、empire_sword_5_t4 |
+| 今汐·感染统领 | khuzait_heavy_lancer | 106／106／103／40 | 42.504 | empire_lance_3_t5、heavy_horsemans_kite_shield、empire_sword_5_t4 |
+| 今汐·桃夭灼灼·感染骑兵1 | imperial_recruit | 2／4／1／7 | 1.425 | khuzait_sword_1_t2 |
+| 今汐·桃夭灼灼·感染骑兵2 | vlandian_squire | 13／13／3／9 | 4.625 | khuzait_sword_3_t3 |
+| 今汐·桃夭灼灼·感染骑兵3 | khuzait_horseman | 24／19／20／9 | 8.075 | khuzait_polearm_1_t4、khuzait_sword_3_t3 |
+| 今汐·桃夭灼灼·感染骑兵4 | khuzait_lancer | 43／43／20／12 | 21.545 | khuzait_polearm_1_t4、battania_2hsword_4_t4 |
+| 今汐·桃夭灼灼·感染骑兵5 | khuzait_heavy_lancer | 43／43／42／16 | 23.52 | khuzait_polearm_2_t5、battania_2hsword_5_t5 |
+| 今汐·桃夭灼灼·感染统领 | khuzait_heavy_lancer | 69／69／67／26 | 25.872 | khuzait_polearm_2_t5、battania_2hsword_5_t5 |
+| 白芷·感染骑射1 | imperial_recruit | 2／4／1／7 | 1.425 | hunting_bow、range_arrows、range_arrows、khuzait_sword_1_t2 |
+| 白芷·感染骑射2 | khuzait_tribal_warrior | 4／7／6／7 | 2.0417 | steppe_bow、steppe_arrows、steppe_arrows、khuzait_sword_1_t2 |
+| 白芷·感染骑射3 | khuzait_raider | 7／13／11／11 | 3.675 | composite_bow、steppe_arrows、steppe_arrows、khuzait_sword_4_t4 |
+| 白芷·感染骑射4 | khuzait_horse_archer | 24／30／14／6 | 13.5625 | noble_bow、piercing_arrows、piercing_arrows、khuzait_sword_4_t4 |
+| 白芷·感染骑射5 | khuzait_heavy_horse_archer | 23／31／33／22 | 16.55 | noble_bow、piercing_arrows、piercing_arrows、khuzait_sword_4_t4 |
+| 白芷·感染统领 | khuzait_heavy_horse_archer | 37／50／52／35 | 18.205 | noble_bow、piercing_arrows、piercing_arrows、khuzait_sword_4_t4 |
+| 守岸人·感染骑射1 | imperial_recruit | 2／4／1／7 | 1.425 | hunting_bow、range_arrows、range_arrows、empire_mace_1_t2 |
+| 守岸人·感染骑射2 | khuzait_tribal_warrior | 5／8／7／8 | 2.3917 | steppe_bow、steppe_arrows、steppe_arrows、empire_mace_1_t2 |
+| 守岸人·感染骑射3 | khuzait_raider | 9／17／14／14 | 5.145 | composite_steppe_bow、bodkin_arrows_a、bodkin_arrows_a、empire_mace_1_t2 |
+| 守岸人·感染骑射4 | khuzait_horse_archer | 37／46／22／9 | 23.3275 | steppe_war_bow、bodkin_arrows_b、bodkin_arrows_b、empire_mace_3_t4 |
+| 守岸人·感染骑射5 | khuzait_heavy_horse_archer | 43／58／60／41 | 36.41 | noble_bow、bodkin_arrows_b、bodkin_arrows_b、empire_mace_3_t4 |
+| 守岸人·感染统领 | khuzait_heavy_horse_archer | 69／92／96／65 | 40.051 | noble_bow、bodkin_arrows_b、bodkin_arrows_b、empire_mace_3_t4 |

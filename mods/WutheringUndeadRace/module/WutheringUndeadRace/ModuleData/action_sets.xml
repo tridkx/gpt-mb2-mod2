@@ -1,0 +1,787 @@
+<?xml version='1.0' encoding='utf-8'?>
+<action_sets>
+  <action_set id="as_wur_lord_jianxin_warrior" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_warrior" />
+  <action_set id="as_wur_lord_jianxin_female_warrior" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_jianxin_villager" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_wur_lord_jianxin_female_villager" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_jianxin_facegen" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_wur_lord_jianxin_female_facegen" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_facegen">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_jianxin_hideout_bandit" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_hideout_bandit" />
+  <action_set id="as_wur_lord_jianxin_female_hideout_bandit" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_hideout_bandit" />
+  <action_set id="as_wur_lord_jianxin_villager_in_tavern" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_in_tavern" />
+  <action_set id="as_wur_lord_jianxin_female_villager_in_tavern" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_tavern" />
+  <action_set id="as_wur_lord_jianxin_warrior_in_tavern" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_tavern" />
+  <action_set id="as_wur_lord_jianxin_female_warrior_in_tavern" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_tavern" />
+  <action_set id="as_wur_lord_jianxin_villager_in_aserai_tavern" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_in_aserai_tavern" />
+  <action_set id="as_wur_lord_jianxin_female_villager_in_aserai_tavern" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_aserai_tavern" />
+  <action_set id="as_wur_lord_jianxin_warrior_in_aserai_tavern" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_aserai_tavern" />
+  <action_set id="as_wur_lord_jianxin_female_warrior_in_aserai_tavern" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_aserai_tavern" />
+  <action_set id="as_wur_lord_jianxin_child" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_child" />
+  <action_set id="as_wur_lord_jianxin_female_child" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_child" />
+  <action_set id="as_wur_lord_jianxin_map" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_map" />
+  <action_set id="as_wur_lord_jianxin_female_map" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_map" />
+  <action_set id="as_wur_lord_jianxin_map_with_banner" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_map_with_banner" />
+  <action_set id="as_wur_lord_jianxin_female_map_with_banner" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_map_with_banner" />
+  <action_set id="as_wur_lord_jianxin_villain" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villain" />
+  <action_set id="as_wur_lord_jianxin_female_villain" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villain" />
+  <action_set id="as_wur_lord_jianxin_lord" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_lord" />
+  <action_set id="as_wur_lord_jianxin_female_lord" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_lord" />
+  <action_set id="as_wur_lord_jianxin_seller" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_seller" />
+  <action_set id="as_wur_lord_jianxin_female_seller" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_seller" />
+  <action_set id="as_wur_lord_jianxin_weaponsmith" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_weaponsmith" />
+  <action_set id="as_wur_lord_jianxin_female_weaponsmith" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_weaponsmith" />
+  <action_set id="as_wur_lord_jianxin_villager_artisan" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_artisan" />
+  <action_set id="as_wur_lord_jianxin_female_villager_artisan" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_artisan" />
+  <action_set id="as_wur_lord_jianxin_villager_merchant" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_merchant" />
+  <action_set id="as_wur_lord_jianxin_female_villager_merchant" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_merchant" />
+  <action_set id="as_wur_lord_jianxin_villager_preacher" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_preacher" />
+  <action_set id="as_wur_lord_jianxin_female_villager_preacher" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_preacher" />
+  <action_set id="as_wur_lord_jianxin_villager_gangleader" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_gangleader" />
+  <action_set id="as_wur_lord_jianxin_female_villager_gangleader" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_gangleader" />
+  <action_set id="as_wur_lord_jianxin_villager_ruralnotable" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_ruralnotable" />
+  <action_set id="as_wur_lord_jianxin_female_villager_ruralnotable" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_ruralnotable" />
+  <action_set id="as_wur_lord_jianxin_gangleader_bodyguard" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_gangleader_bodyguard" />
+  <action_set id="as_wur_lord_jianxin_female_gangleader_bodyguard" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_gangleader_bodyguard" />
+  <action_set id="as_wur_lord_jianxin_merchant_notary" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_merchant_notary" />
+  <action_set id="as_wur_lord_jianxin_female_merchant_notary" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_merchant_notary" />
+  <action_set id="as_wur_lord_jianxin_female_barmaid" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_barmaid" />
+  <action_set id="as_wur_lord_jianxin_barmaid" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_barmaid" />
+  <action_set id="as_wur_lord_jianxin_tavern_keeper" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_tavern_keeper" />
+  <action_set id="as_wur_lord_jianxin_female_tavern_keeper" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_tavern_keeper" />
+  <action_set id="as_wur_lord_jianxin_musician" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_musician" />
+  <action_set id="as_wur_lord_jianxin_female_musician" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_musician" />
+  <action_set id="as_wur_lord_jianxin_female_dancer" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_dancer" />
+  <action_set id="as_wur_lord_jianxin_dancer" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_dancer" />
+  <action_set id="as_wur_lord_jianxin_beggar" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_beggar" />
+  <action_set id="as_wur_lord_jianxin_female_beggar" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_beggar" />
+  <action_set id="as_wur_lord_jianxin_guard" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_guard" />
+  <action_set id="as_wur_lord_jianxin_female_guard" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_guard" />
+  <action_set id="as_wur_lord_jianxin_unarmed_guard" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_unarmed_guard" />
+  <action_set id="as_wur_lord_jianxin_female_unarmed_guard" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_unarmed_guard" />
+  <action_set id="as_wur_lord_jianxin_villager_with_backpack" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_with_backpack" />
+  <action_set id="as_wur_lord_jianxin_female_villager_with_backpack" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_backpack" />
+  <action_set id="as_wur_lord_jianxin_villager_with_staff" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_with_staff" />
+  <action_set id="as_wur_lord_jianxin_female_villager_with_staff" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_staff" />
+  <action_set id="as_wur_lord_jianxin_villager_carry_on_shoulder" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_on_shoulder" />
+  <action_set id="as_wur_lord_jianxin_worker_carry_wood_on_shoulder" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_worker_carry_wood_on_shoulder" />
+  <action_set id="as_wur_lord_jianxin_villager_carry_bucket_on_lefthand" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_bucket_on_lefthand" />
+  <action_set id="as_wur_lord_jianxin_villager_carry_fish_buckets" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_fish_buckets" />
+  <action_set id="as_wur_lord_jianxin_female_villager_carry_on_shoulder" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_on_shoulder" />
+  <action_set id="as_wur_lord_jianxin_villager_carry_axe" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_axe" />
+  <action_set id="as_wur_lord_jianxin_female_villager_carry_axe" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_axe" />
+  <action_set id="as_wur_lord_jianxin_villager_carry_right_side" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_side" />
+  <action_set id="as_wur_lord_jianxin_female_villager_carry_right_side" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_side" />
+  <action_set id="as_wur_lord_jianxin_villager_carry_front_v2" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front_v2" />
+  <action_set id="as_wur_lord_jianxin_female_villager_carry_front_v2" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front_v2" />
+  <action_set id="as_wur_lord_jianxin_villager_carry_front" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front" />
+  <action_set id="as_wur_lord_jianxin_female_villager_carry_front" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front" />
+  <action_set id="as_wur_lord_jianxin_villager_carry_right_hand" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_hand" />
+  <action_set id="as_wur_lord_jianxin_female_villager_carry_right_hand" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_hand" />
+  <action_set id="as_wur_lord_jianxin_villager_carry_right_arm" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_arm" />
+  <action_set id="as_wur_lord_jianxin_female_villager_carry_right_arm" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_arm" />
+  <action_set id="as_wur_lord_jianxin_villager_carry_over_head" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head" />
+  <action_set id="as_wur_lord_jianxin_female_villager_carry_over_head" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head" />
+  <action_set id="as_wur_lord_jianxin_villager_carry_over_head_v2" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head_v2" />
+  <action_set id="as_wur_lord_jianxin_female_villager_carry_over_head_v2" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head_v2" />
+  <action_set id="as_wur_lord_jianxin_villager_2" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_2" />
+  <action_set id="as_wur_lord_jianxin_female_villager_2" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_2" />
+  <action_set id="as_wur_lord_jianxin_villager_3" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_villager_3" />
+  <action_set id="as_wur_lord_jianxin_female_villager_3" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_3" />
+  <action_set id="as_wur_lord_jianxin_poses" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_wur_lord_jianxin_female_poses" skeleton="ww_jianxin_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_wur_lord_changli_warrior" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_warrior" />
+  <action_set id="as_wur_lord_changli_female_warrior" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_changli_villager" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_wur_lord_changli_female_villager" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_changli_facegen" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_wur_lord_changli_female_facegen" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_facegen">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_changli_hideout_bandit" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_hideout_bandit" />
+  <action_set id="as_wur_lord_changli_female_hideout_bandit" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_hideout_bandit" />
+  <action_set id="as_wur_lord_changli_villager_in_tavern" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_in_tavern" />
+  <action_set id="as_wur_lord_changli_female_villager_in_tavern" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_tavern" />
+  <action_set id="as_wur_lord_changli_warrior_in_tavern" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_tavern" />
+  <action_set id="as_wur_lord_changli_female_warrior_in_tavern" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_tavern" />
+  <action_set id="as_wur_lord_changli_villager_in_aserai_tavern" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_in_aserai_tavern" />
+  <action_set id="as_wur_lord_changli_female_villager_in_aserai_tavern" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_aserai_tavern" />
+  <action_set id="as_wur_lord_changli_warrior_in_aserai_tavern" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_aserai_tavern" />
+  <action_set id="as_wur_lord_changli_female_warrior_in_aserai_tavern" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_aserai_tavern" />
+  <action_set id="as_wur_lord_changli_child" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_child" />
+  <action_set id="as_wur_lord_changli_female_child" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_child" />
+  <action_set id="as_wur_lord_changli_map" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_map" />
+  <action_set id="as_wur_lord_changli_female_map" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_map" />
+  <action_set id="as_wur_lord_changli_map_with_banner" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_map_with_banner" />
+  <action_set id="as_wur_lord_changli_female_map_with_banner" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_map_with_banner" />
+  <action_set id="as_wur_lord_changli_villain" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villain" />
+  <action_set id="as_wur_lord_changli_female_villain" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villain" />
+  <action_set id="as_wur_lord_changli_lord" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_lord" />
+  <action_set id="as_wur_lord_changli_female_lord" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_lord" />
+  <action_set id="as_wur_lord_changli_seller" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_seller" />
+  <action_set id="as_wur_lord_changli_female_seller" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_seller" />
+  <action_set id="as_wur_lord_changli_weaponsmith" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_weaponsmith" />
+  <action_set id="as_wur_lord_changli_female_weaponsmith" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_weaponsmith" />
+  <action_set id="as_wur_lord_changli_villager_artisan" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_artisan" />
+  <action_set id="as_wur_lord_changli_female_villager_artisan" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_artisan" />
+  <action_set id="as_wur_lord_changli_villager_merchant" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_merchant" />
+  <action_set id="as_wur_lord_changli_female_villager_merchant" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_merchant" />
+  <action_set id="as_wur_lord_changli_villager_preacher" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_preacher" />
+  <action_set id="as_wur_lord_changli_female_villager_preacher" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_preacher" />
+  <action_set id="as_wur_lord_changli_villager_gangleader" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_gangleader" />
+  <action_set id="as_wur_lord_changli_female_villager_gangleader" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_gangleader" />
+  <action_set id="as_wur_lord_changli_villager_ruralnotable" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_ruralnotable" />
+  <action_set id="as_wur_lord_changli_female_villager_ruralnotable" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_ruralnotable" />
+  <action_set id="as_wur_lord_changli_gangleader_bodyguard" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_gangleader_bodyguard" />
+  <action_set id="as_wur_lord_changli_female_gangleader_bodyguard" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_gangleader_bodyguard" />
+  <action_set id="as_wur_lord_changli_merchant_notary" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_merchant_notary" />
+  <action_set id="as_wur_lord_changli_female_merchant_notary" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_merchant_notary" />
+  <action_set id="as_wur_lord_changli_female_barmaid" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_barmaid" />
+  <action_set id="as_wur_lord_changli_barmaid" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_barmaid" />
+  <action_set id="as_wur_lord_changli_tavern_keeper" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_tavern_keeper" />
+  <action_set id="as_wur_lord_changli_female_tavern_keeper" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_tavern_keeper" />
+  <action_set id="as_wur_lord_changli_musician" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_musician" />
+  <action_set id="as_wur_lord_changli_female_musician" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_musician" />
+  <action_set id="as_wur_lord_changli_female_dancer" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_dancer" />
+  <action_set id="as_wur_lord_changli_dancer" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_dancer" />
+  <action_set id="as_wur_lord_changli_beggar" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_beggar" />
+  <action_set id="as_wur_lord_changli_female_beggar" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_beggar" />
+  <action_set id="as_wur_lord_changli_guard" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_guard" />
+  <action_set id="as_wur_lord_changli_female_guard" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_guard" />
+  <action_set id="as_wur_lord_changli_unarmed_guard" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_unarmed_guard" />
+  <action_set id="as_wur_lord_changli_female_unarmed_guard" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_unarmed_guard" />
+  <action_set id="as_wur_lord_changli_villager_with_backpack" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_with_backpack" />
+  <action_set id="as_wur_lord_changli_female_villager_with_backpack" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_backpack" />
+  <action_set id="as_wur_lord_changli_villager_with_staff" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_with_staff" />
+  <action_set id="as_wur_lord_changli_female_villager_with_staff" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_staff" />
+  <action_set id="as_wur_lord_changli_villager_carry_on_shoulder" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_on_shoulder" />
+  <action_set id="as_wur_lord_changli_worker_carry_wood_on_shoulder" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_worker_carry_wood_on_shoulder" />
+  <action_set id="as_wur_lord_changli_villager_carry_bucket_on_lefthand" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_bucket_on_lefthand" />
+  <action_set id="as_wur_lord_changli_villager_carry_fish_buckets" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_fish_buckets" />
+  <action_set id="as_wur_lord_changli_female_villager_carry_on_shoulder" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_on_shoulder" />
+  <action_set id="as_wur_lord_changli_villager_carry_axe" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_axe" />
+  <action_set id="as_wur_lord_changli_female_villager_carry_axe" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_axe" />
+  <action_set id="as_wur_lord_changli_villager_carry_right_side" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_side" />
+  <action_set id="as_wur_lord_changli_female_villager_carry_right_side" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_side" />
+  <action_set id="as_wur_lord_changli_villager_carry_front_v2" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front_v2" />
+  <action_set id="as_wur_lord_changli_female_villager_carry_front_v2" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front_v2" />
+  <action_set id="as_wur_lord_changli_villager_carry_front" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front" />
+  <action_set id="as_wur_lord_changli_female_villager_carry_front" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front" />
+  <action_set id="as_wur_lord_changli_villager_carry_right_hand" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_hand" />
+  <action_set id="as_wur_lord_changli_female_villager_carry_right_hand" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_hand" />
+  <action_set id="as_wur_lord_changli_villager_carry_right_arm" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_arm" />
+  <action_set id="as_wur_lord_changli_female_villager_carry_right_arm" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_arm" />
+  <action_set id="as_wur_lord_changli_villager_carry_over_head" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head" />
+  <action_set id="as_wur_lord_changli_female_villager_carry_over_head" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head" />
+  <action_set id="as_wur_lord_changli_villager_carry_over_head_v2" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head_v2" />
+  <action_set id="as_wur_lord_changli_female_villager_carry_over_head_v2" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head_v2" />
+  <action_set id="as_wur_lord_changli_villager_2" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_2" />
+  <action_set id="as_wur_lord_changli_female_villager_2" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_2" />
+  <action_set id="as_wur_lord_changli_villager_3" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_villager_3" />
+  <action_set id="as_wur_lord_changli_female_villager_3" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_female_villager_3" />
+  <action_set id="as_wur_lord_changli_poses" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_wur_lord_changli_female_poses" skeleton="ww_changli_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_wur_lord_zhezhi_warrior" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_warrior" />
+  <action_set id="as_wur_lord_zhezhi_female_warrior" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_zhezhi_villager" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_wur_lord_zhezhi_female_villager" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_zhezhi_facegen" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_wur_lord_zhezhi_female_facegen" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_facegen">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_zhezhi_hideout_bandit" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_hideout_bandit" />
+  <action_set id="as_wur_lord_zhezhi_female_hideout_bandit" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_hideout_bandit" />
+  <action_set id="as_wur_lord_zhezhi_villager_in_tavern" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_in_tavern" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_in_tavern" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_tavern" />
+  <action_set id="as_wur_lord_zhezhi_warrior_in_tavern" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_tavern" />
+  <action_set id="as_wur_lord_zhezhi_female_warrior_in_tavern" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_tavern" />
+  <action_set id="as_wur_lord_zhezhi_villager_in_aserai_tavern" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_in_aserai_tavern" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_in_aserai_tavern" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_aserai_tavern" />
+  <action_set id="as_wur_lord_zhezhi_warrior_in_aserai_tavern" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_aserai_tavern" />
+  <action_set id="as_wur_lord_zhezhi_female_warrior_in_aserai_tavern" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_aserai_tavern" />
+  <action_set id="as_wur_lord_zhezhi_child" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_child" />
+  <action_set id="as_wur_lord_zhezhi_female_child" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_child" />
+  <action_set id="as_wur_lord_zhezhi_map" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_map" />
+  <action_set id="as_wur_lord_zhezhi_female_map" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_map" />
+  <action_set id="as_wur_lord_zhezhi_map_with_banner" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_map_with_banner" />
+  <action_set id="as_wur_lord_zhezhi_female_map_with_banner" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_map_with_banner" />
+  <action_set id="as_wur_lord_zhezhi_villain" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villain" />
+  <action_set id="as_wur_lord_zhezhi_female_villain" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villain" />
+  <action_set id="as_wur_lord_zhezhi_lord" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_lord" />
+  <action_set id="as_wur_lord_zhezhi_female_lord" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_lord" />
+  <action_set id="as_wur_lord_zhezhi_seller" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_seller" />
+  <action_set id="as_wur_lord_zhezhi_female_seller" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_seller" />
+  <action_set id="as_wur_lord_zhezhi_weaponsmith" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_weaponsmith" />
+  <action_set id="as_wur_lord_zhezhi_female_weaponsmith" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_weaponsmith" />
+  <action_set id="as_wur_lord_zhezhi_villager_artisan" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_artisan" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_artisan" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_artisan" />
+  <action_set id="as_wur_lord_zhezhi_villager_merchant" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_merchant" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_merchant" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_merchant" />
+  <action_set id="as_wur_lord_zhezhi_villager_preacher" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_preacher" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_preacher" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_preacher" />
+  <action_set id="as_wur_lord_zhezhi_villager_gangleader" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_gangleader" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_gangleader" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_gangleader" />
+  <action_set id="as_wur_lord_zhezhi_villager_ruralnotable" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_ruralnotable" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_ruralnotable" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_ruralnotable" />
+  <action_set id="as_wur_lord_zhezhi_gangleader_bodyguard" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_gangleader_bodyguard" />
+  <action_set id="as_wur_lord_zhezhi_female_gangleader_bodyguard" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_gangleader_bodyguard" />
+  <action_set id="as_wur_lord_zhezhi_merchant_notary" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_merchant_notary" />
+  <action_set id="as_wur_lord_zhezhi_female_merchant_notary" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_merchant_notary" />
+  <action_set id="as_wur_lord_zhezhi_female_barmaid" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_barmaid" />
+  <action_set id="as_wur_lord_zhezhi_barmaid" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_barmaid" />
+  <action_set id="as_wur_lord_zhezhi_tavern_keeper" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_tavern_keeper" />
+  <action_set id="as_wur_lord_zhezhi_female_tavern_keeper" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_tavern_keeper" />
+  <action_set id="as_wur_lord_zhezhi_musician" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_musician" />
+  <action_set id="as_wur_lord_zhezhi_female_musician" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_musician" />
+  <action_set id="as_wur_lord_zhezhi_female_dancer" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_dancer" />
+  <action_set id="as_wur_lord_zhezhi_dancer" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_dancer" />
+  <action_set id="as_wur_lord_zhezhi_beggar" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_beggar" />
+  <action_set id="as_wur_lord_zhezhi_female_beggar" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_beggar" />
+  <action_set id="as_wur_lord_zhezhi_guard" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_guard" />
+  <action_set id="as_wur_lord_zhezhi_female_guard" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_guard" />
+  <action_set id="as_wur_lord_zhezhi_unarmed_guard" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_unarmed_guard" />
+  <action_set id="as_wur_lord_zhezhi_female_unarmed_guard" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_unarmed_guard" />
+  <action_set id="as_wur_lord_zhezhi_villager_with_backpack" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_with_backpack" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_with_backpack" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_backpack" />
+  <action_set id="as_wur_lord_zhezhi_villager_with_staff" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_with_staff" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_with_staff" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_staff" />
+  <action_set id="as_wur_lord_zhezhi_villager_carry_on_shoulder" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_on_shoulder" />
+  <action_set id="as_wur_lord_zhezhi_worker_carry_wood_on_shoulder" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_worker_carry_wood_on_shoulder" />
+  <action_set id="as_wur_lord_zhezhi_villager_carry_bucket_on_lefthand" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_bucket_on_lefthand" />
+  <action_set id="as_wur_lord_zhezhi_villager_carry_fish_buckets" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_fish_buckets" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_carry_on_shoulder" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_on_shoulder" />
+  <action_set id="as_wur_lord_zhezhi_villager_carry_axe" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_axe" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_carry_axe" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_axe" />
+  <action_set id="as_wur_lord_zhezhi_villager_carry_right_side" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_side" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_carry_right_side" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_side" />
+  <action_set id="as_wur_lord_zhezhi_villager_carry_front_v2" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front_v2" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_carry_front_v2" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front_v2" />
+  <action_set id="as_wur_lord_zhezhi_villager_carry_front" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_carry_front" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front" />
+  <action_set id="as_wur_lord_zhezhi_villager_carry_right_hand" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_hand" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_carry_right_hand" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_hand" />
+  <action_set id="as_wur_lord_zhezhi_villager_carry_right_arm" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_arm" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_carry_right_arm" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_arm" />
+  <action_set id="as_wur_lord_zhezhi_villager_carry_over_head" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_carry_over_head" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head" />
+  <action_set id="as_wur_lord_zhezhi_villager_carry_over_head_v2" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head_v2" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_carry_over_head_v2" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head_v2" />
+  <action_set id="as_wur_lord_zhezhi_villager_2" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_2" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_2" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_2" />
+  <action_set id="as_wur_lord_zhezhi_villager_3" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_villager_3" />
+  <action_set id="as_wur_lord_zhezhi_female_villager_3" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_3" />
+  <action_set id="as_wur_lord_zhezhi_poses" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_wur_lord_zhezhi_female_poses" skeleton="ww_zhezhi_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_wur_lord_yinlin_warrior" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_warrior" />
+  <action_set id="as_wur_lord_yinlin_female_warrior" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_yinlin_villager" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_wur_lord_yinlin_female_villager" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_yinlin_facegen" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_wur_lord_yinlin_female_facegen" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_facegen">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_yinlin_hideout_bandit" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_hideout_bandit" />
+  <action_set id="as_wur_lord_yinlin_female_hideout_bandit" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_hideout_bandit" />
+  <action_set id="as_wur_lord_yinlin_villager_in_tavern" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_in_tavern" />
+  <action_set id="as_wur_lord_yinlin_female_villager_in_tavern" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_tavern" />
+  <action_set id="as_wur_lord_yinlin_warrior_in_tavern" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_tavern" />
+  <action_set id="as_wur_lord_yinlin_female_warrior_in_tavern" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_tavern" />
+  <action_set id="as_wur_lord_yinlin_villager_in_aserai_tavern" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_in_aserai_tavern" />
+  <action_set id="as_wur_lord_yinlin_female_villager_in_aserai_tavern" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_aserai_tavern" />
+  <action_set id="as_wur_lord_yinlin_warrior_in_aserai_tavern" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_aserai_tavern" />
+  <action_set id="as_wur_lord_yinlin_female_warrior_in_aserai_tavern" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_aserai_tavern" />
+  <action_set id="as_wur_lord_yinlin_child" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_child" />
+  <action_set id="as_wur_lord_yinlin_female_child" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_child" />
+  <action_set id="as_wur_lord_yinlin_map" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_map" />
+  <action_set id="as_wur_lord_yinlin_female_map" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_map" />
+  <action_set id="as_wur_lord_yinlin_map_with_banner" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_map_with_banner" />
+  <action_set id="as_wur_lord_yinlin_female_map_with_banner" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_map_with_banner" />
+  <action_set id="as_wur_lord_yinlin_villain" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villain" />
+  <action_set id="as_wur_lord_yinlin_female_villain" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villain" />
+  <action_set id="as_wur_lord_yinlin_lord" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_lord" />
+  <action_set id="as_wur_lord_yinlin_female_lord" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_lord" />
+  <action_set id="as_wur_lord_yinlin_seller" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_seller" />
+  <action_set id="as_wur_lord_yinlin_female_seller" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_seller" />
+  <action_set id="as_wur_lord_yinlin_weaponsmith" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_weaponsmith" />
+  <action_set id="as_wur_lord_yinlin_female_weaponsmith" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_weaponsmith" />
+  <action_set id="as_wur_lord_yinlin_villager_artisan" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_artisan" />
+  <action_set id="as_wur_lord_yinlin_female_villager_artisan" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_artisan" />
+  <action_set id="as_wur_lord_yinlin_villager_merchant" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_merchant" />
+  <action_set id="as_wur_lord_yinlin_female_villager_merchant" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_merchant" />
+  <action_set id="as_wur_lord_yinlin_villager_preacher" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_preacher" />
+  <action_set id="as_wur_lord_yinlin_female_villager_preacher" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_preacher" />
+  <action_set id="as_wur_lord_yinlin_villager_gangleader" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_gangleader" />
+  <action_set id="as_wur_lord_yinlin_female_villager_gangleader" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_gangleader" />
+  <action_set id="as_wur_lord_yinlin_villager_ruralnotable" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_ruralnotable" />
+  <action_set id="as_wur_lord_yinlin_female_villager_ruralnotable" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_ruralnotable" />
+  <action_set id="as_wur_lord_yinlin_gangleader_bodyguard" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_gangleader_bodyguard" />
+  <action_set id="as_wur_lord_yinlin_female_gangleader_bodyguard" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_gangleader_bodyguard" />
+  <action_set id="as_wur_lord_yinlin_merchant_notary" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_merchant_notary" />
+  <action_set id="as_wur_lord_yinlin_female_merchant_notary" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_merchant_notary" />
+  <action_set id="as_wur_lord_yinlin_female_barmaid" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_barmaid" />
+  <action_set id="as_wur_lord_yinlin_barmaid" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_barmaid" />
+  <action_set id="as_wur_lord_yinlin_tavern_keeper" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_tavern_keeper" />
+  <action_set id="as_wur_lord_yinlin_female_tavern_keeper" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_tavern_keeper" />
+  <action_set id="as_wur_lord_yinlin_musician" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_musician" />
+  <action_set id="as_wur_lord_yinlin_female_musician" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_musician" />
+  <action_set id="as_wur_lord_yinlin_female_dancer" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_dancer" />
+  <action_set id="as_wur_lord_yinlin_dancer" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_dancer" />
+  <action_set id="as_wur_lord_yinlin_beggar" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_beggar" />
+  <action_set id="as_wur_lord_yinlin_female_beggar" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_beggar" />
+  <action_set id="as_wur_lord_yinlin_guard" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_guard" />
+  <action_set id="as_wur_lord_yinlin_female_guard" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_guard" />
+  <action_set id="as_wur_lord_yinlin_unarmed_guard" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_unarmed_guard" />
+  <action_set id="as_wur_lord_yinlin_female_unarmed_guard" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_unarmed_guard" />
+  <action_set id="as_wur_lord_yinlin_villager_with_backpack" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_with_backpack" />
+  <action_set id="as_wur_lord_yinlin_female_villager_with_backpack" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_backpack" />
+  <action_set id="as_wur_lord_yinlin_villager_with_staff" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_with_staff" />
+  <action_set id="as_wur_lord_yinlin_female_villager_with_staff" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_staff" />
+  <action_set id="as_wur_lord_yinlin_villager_carry_on_shoulder" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_on_shoulder" />
+  <action_set id="as_wur_lord_yinlin_worker_carry_wood_on_shoulder" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_worker_carry_wood_on_shoulder" />
+  <action_set id="as_wur_lord_yinlin_villager_carry_bucket_on_lefthand" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_bucket_on_lefthand" />
+  <action_set id="as_wur_lord_yinlin_villager_carry_fish_buckets" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_fish_buckets" />
+  <action_set id="as_wur_lord_yinlin_female_villager_carry_on_shoulder" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_on_shoulder" />
+  <action_set id="as_wur_lord_yinlin_villager_carry_axe" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_axe" />
+  <action_set id="as_wur_lord_yinlin_female_villager_carry_axe" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_axe" />
+  <action_set id="as_wur_lord_yinlin_villager_carry_right_side" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_side" />
+  <action_set id="as_wur_lord_yinlin_female_villager_carry_right_side" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_side" />
+  <action_set id="as_wur_lord_yinlin_villager_carry_front_v2" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front_v2" />
+  <action_set id="as_wur_lord_yinlin_female_villager_carry_front_v2" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front_v2" />
+  <action_set id="as_wur_lord_yinlin_villager_carry_front" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front" />
+  <action_set id="as_wur_lord_yinlin_female_villager_carry_front" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front" />
+  <action_set id="as_wur_lord_yinlin_villager_carry_right_hand" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_hand" />
+  <action_set id="as_wur_lord_yinlin_female_villager_carry_right_hand" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_hand" />
+  <action_set id="as_wur_lord_yinlin_villager_carry_right_arm" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_arm" />
+  <action_set id="as_wur_lord_yinlin_female_villager_carry_right_arm" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_arm" />
+  <action_set id="as_wur_lord_yinlin_villager_carry_over_head" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head" />
+  <action_set id="as_wur_lord_yinlin_female_villager_carry_over_head" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head" />
+  <action_set id="as_wur_lord_yinlin_villager_carry_over_head_v2" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head_v2" />
+  <action_set id="as_wur_lord_yinlin_female_villager_carry_over_head_v2" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head_v2" />
+  <action_set id="as_wur_lord_yinlin_villager_2" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_2" />
+  <action_set id="as_wur_lord_yinlin_female_villager_2" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_2" />
+  <action_set id="as_wur_lord_yinlin_villager_3" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_villager_3" />
+  <action_set id="as_wur_lord_yinlin_female_villager_3" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_female_villager_3" />
+  <action_set id="as_wur_lord_yinlin_poses" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_wur_lord_yinlin_female_poses" skeleton="ww_yinlin_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_wur_lord_jinhsi_warrior" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_warrior" />
+  <action_set id="as_wur_lord_jinhsi_female_warrior" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_jinhsi_villager" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_wur_lord_jinhsi_female_villager" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_jinhsi_facegen" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_wur_lord_jinhsi_female_facegen" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_facegen">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_jinhsi_hideout_bandit" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_hideout_bandit" />
+  <action_set id="as_wur_lord_jinhsi_female_hideout_bandit" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_hideout_bandit" />
+  <action_set id="as_wur_lord_jinhsi_villager_in_tavern" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_in_tavern" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_in_tavern" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_tavern" />
+  <action_set id="as_wur_lord_jinhsi_warrior_in_tavern" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_tavern" />
+  <action_set id="as_wur_lord_jinhsi_female_warrior_in_tavern" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_tavern" />
+  <action_set id="as_wur_lord_jinhsi_villager_in_aserai_tavern" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_in_aserai_tavern" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_in_aserai_tavern" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_aserai_tavern" />
+  <action_set id="as_wur_lord_jinhsi_warrior_in_aserai_tavern" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_aserai_tavern" />
+  <action_set id="as_wur_lord_jinhsi_female_warrior_in_aserai_tavern" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_aserai_tavern" />
+  <action_set id="as_wur_lord_jinhsi_child" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_child" />
+  <action_set id="as_wur_lord_jinhsi_female_child" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_child" />
+  <action_set id="as_wur_lord_jinhsi_map" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_map" />
+  <action_set id="as_wur_lord_jinhsi_female_map" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_map" />
+  <action_set id="as_wur_lord_jinhsi_map_with_banner" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_map_with_banner" />
+  <action_set id="as_wur_lord_jinhsi_female_map_with_banner" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_map_with_banner" />
+  <action_set id="as_wur_lord_jinhsi_villain" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villain" />
+  <action_set id="as_wur_lord_jinhsi_female_villain" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villain" />
+  <action_set id="as_wur_lord_jinhsi_lord" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_lord" />
+  <action_set id="as_wur_lord_jinhsi_female_lord" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_lord" />
+  <action_set id="as_wur_lord_jinhsi_seller" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_seller" />
+  <action_set id="as_wur_lord_jinhsi_female_seller" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_seller" />
+  <action_set id="as_wur_lord_jinhsi_weaponsmith" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_weaponsmith" />
+  <action_set id="as_wur_lord_jinhsi_female_weaponsmith" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_weaponsmith" />
+  <action_set id="as_wur_lord_jinhsi_villager_artisan" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_artisan" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_artisan" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_artisan" />
+  <action_set id="as_wur_lord_jinhsi_villager_merchant" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_merchant" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_merchant" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_merchant" />
+  <action_set id="as_wur_lord_jinhsi_villager_preacher" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_preacher" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_preacher" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_preacher" />
+  <action_set id="as_wur_lord_jinhsi_villager_gangleader" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_gangleader" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_gangleader" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_gangleader" />
+  <action_set id="as_wur_lord_jinhsi_villager_ruralnotable" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_ruralnotable" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_ruralnotable" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_ruralnotable" />
+  <action_set id="as_wur_lord_jinhsi_gangleader_bodyguard" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_gangleader_bodyguard" />
+  <action_set id="as_wur_lord_jinhsi_female_gangleader_bodyguard" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_gangleader_bodyguard" />
+  <action_set id="as_wur_lord_jinhsi_merchant_notary" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_merchant_notary" />
+  <action_set id="as_wur_lord_jinhsi_female_merchant_notary" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_merchant_notary" />
+  <action_set id="as_wur_lord_jinhsi_female_barmaid" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_barmaid" />
+  <action_set id="as_wur_lord_jinhsi_barmaid" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_barmaid" />
+  <action_set id="as_wur_lord_jinhsi_tavern_keeper" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_tavern_keeper" />
+  <action_set id="as_wur_lord_jinhsi_female_tavern_keeper" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_tavern_keeper" />
+  <action_set id="as_wur_lord_jinhsi_musician" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_musician" />
+  <action_set id="as_wur_lord_jinhsi_female_musician" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_musician" />
+  <action_set id="as_wur_lord_jinhsi_female_dancer" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_dancer" />
+  <action_set id="as_wur_lord_jinhsi_dancer" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_dancer" />
+  <action_set id="as_wur_lord_jinhsi_beggar" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_beggar" />
+  <action_set id="as_wur_lord_jinhsi_female_beggar" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_beggar" />
+  <action_set id="as_wur_lord_jinhsi_guard" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_guard" />
+  <action_set id="as_wur_lord_jinhsi_female_guard" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_guard" />
+  <action_set id="as_wur_lord_jinhsi_unarmed_guard" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_unarmed_guard" />
+  <action_set id="as_wur_lord_jinhsi_female_unarmed_guard" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_unarmed_guard" />
+  <action_set id="as_wur_lord_jinhsi_villager_with_backpack" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_with_backpack" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_with_backpack" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_backpack" />
+  <action_set id="as_wur_lord_jinhsi_villager_with_staff" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_with_staff" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_with_staff" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_staff" />
+  <action_set id="as_wur_lord_jinhsi_villager_carry_on_shoulder" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_on_shoulder" />
+  <action_set id="as_wur_lord_jinhsi_worker_carry_wood_on_shoulder" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_worker_carry_wood_on_shoulder" />
+  <action_set id="as_wur_lord_jinhsi_villager_carry_bucket_on_lefthand" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_bucket_on_lefthand" />
+  <action_set id="as_wur_lord_jinhsi_villager_carry_fish_buckets" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_fish_buckets" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_carry_on_shoulder" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_on_shoulder" />
+  <action_set id="as_wur_lord_jinhsi_villager_carry_axe" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_axe" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_carry_axe" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_axe" />
+  <action_set id="as_wur_lord_jinhsi_villager_carry_right_side" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_side" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_carry_right_side" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_side" />
+  <action_set id="as_wur_lord_jinhsi_villager_carry_front_v2" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front_v2" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_carry_front_v2" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front_v2" />
+  <action_set id="as_wur_lord_jinhsi_villager_carry_front" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_carry_front" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front" />
+  <action_set id="as_wur_lord_jinhsi_villager_carry_right_hand" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_hand" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_carry_right_hand" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_hand" />
+  <action_set id="as_wur_lord_jinhsi_villager_carry_right_arm" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_arm" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_carry_right_arm" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_arm" />
+  <action_set id="as_wur_lord_jinhsi_villager_carry_over_head" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_carry_over_head" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head" />
+  <action_set id="as_wur_lord_jinhsi_villager_carry_over_head_v2" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head_v2" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_carry_over_head_v2" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head_v2" />
+  <action_set id="as_wur_lord_jinhsi_villager_2" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_2" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_2" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_2" />
+  <action_set id="as_wur_lord_jinhsi_villager_3" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_villager_3" />
+  <action_set id="as_wur_lord_jinhsi_female_villager_3" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_3" />
+  <action_set id="as_wur_lord_jinhsi_poses" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_wur_lord_jinhsi_female_poses" skeleton="ww_jinhsi_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_wur_lord_jinhsi_outfit_warrior" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_warrior" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_warrior" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_jinhsi_outfit_villager" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_jinhsi_outfit_facegen" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_facegen" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_facegen">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_jinhsi_outfit_hideout_bandit" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_hideout_bandit" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_hideout_bandit" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_hideout_bandit" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_in_tavern" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_in_tavern" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_in_tavern" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_tavern" />
+  <action_set id="as_wur_lord_jinhsi_outfit_warrior_in_tavern" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_tavern" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_warrior_in_tavern" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_tavern" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_in_aserai_tavern" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_in_aserai_tavern" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_in_aserai_tavern" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_aserai_tavern" />
+  <action_set id="as_wur_lord_jinhsi_outfit_warrior_in_aserai_tavern" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_aserai_tavern" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_warrior_in_aserai_tavern" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_aserai_tavern" />
+  <action_set id="as_wur_lord_jinhsi_outfit_child" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_child" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_child" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_child" />
+  <action_set id="as_wur_lord_jinhsi_outfit_map" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_map" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_map" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_map" />
+  <action_set id="as_wur_lord_jinhsi_outfit_map_with_banner" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_map_with_banner" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_map_with_banner" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_map_with_banner" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villain" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villain" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villain" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villain" />
+  <action_set id="as_wur_lord_jinhsi_outfit_lord" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_lord" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_lord" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_lord" />
+  <action_set id="as_wur_lord_jinhsi_outfit_seller" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_seller" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_seller" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_seller" />
+  <action_set id="as_wur_lord_jinhsi_outfit_weaponsmith" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_weaponsmith" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_weaponsmith" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_weaponsmith" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_artisan" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_artisan" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_artisan" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_artisan" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_merchant" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_merchant" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_merchant" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_merchant" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_preacher" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_preacher" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_preacher" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_preacher" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_gangleader" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_gangleader" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_gangleader" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_gangleader" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_ruralnotable" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_ruralnotable" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_ruralnotable" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_ruralnotable" />
+  <action_set id="as_wur_lord_jinhsi_outfit_gangleader_bodyguard" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_gangleader_bodyguard" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_gangleader_bodyguard" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_gangleader_bodyguard" />
+  <action_set id="as_wur_lord_jinhsi_outfit_merchant_notary" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_merchant_notary" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_merchant_notary" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_merchant_notary" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_barmaid" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_barmaid" />
+  <action_set id="as_wur_lord_jinhsi_outfit_barmaid" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_barmaid" />
+  <action_set id="as_wur_lord_jinhsi_outfit_tavern_keeper" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_tavern_keeper" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_tavern_keeper" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_tavern_keeper" />
+  <action_set id="as_wur_lord_jinhsi_outfit_musician" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_musician" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_musician" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_musician" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_dancer" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_dancer" />
+  <action_set id="as_wur_lord_jinhsi_outfit_dancer" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_dancer" />
+  <action_set id="as_wur_lord_jinhsi_outfit_beggar" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_beggar" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_beggar" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_beggar" />
+  <action_set id="as_wur_lord_jinhsi_outfit_guard" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_guard" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_guard" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_guard" />
+  <action_set id="as_wur_lord_jinhsi_outfit_unarmed_guard" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_unarmed_guard" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_unarmed_guard" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_unarmed_guard" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_with_backpack" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_with_backpack" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_with_backpack" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_backpack" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_with_staff" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_with_staff" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_with_staff" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_staff" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_carry_on_shoulder" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_on_shoulder" />
+  <action_set id="as_wur_lord_jinhsi_outfit_worker_carry_wood_on_shoulder" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_worker_carry_wood_on_shoulder" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_carry_bucket_on_lefthand" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_bucket_on_lefthand" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_carry_fish_buckets" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_fish_buckets" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_carry_on_shoulder" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_on_shoulder" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_carry_axe" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_axe" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_carry_axe" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_axe" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_carry_right_side" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_side" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_carry_right_side" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_side" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_carry_front_v2" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front_v2" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_carry_front_v2" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front_v2" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_carry_front" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_carry_front" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_carry_right_hand" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_hand" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_carry_right_hand" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_hand" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_carry_right_arm" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_arm" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_carry_right_arm" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_arm" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_carry_over_head" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_carry_over_head" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_carry_over_head_v2" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head_v2" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_carry_over_head_v2" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head_v2" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_2" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_2" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_2" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_2" />
+  <action_set id="as_wur_lord_jinhsi_outfit_villager_3" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_villager_3" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_villager_3" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_female_villager_3" />
+  <action_set id="as_wur_lord_jinhsi_outfit_poses" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_wur_lord_jinhsi_outfit_female_poses" skeleton="ww_jinhsi_outfit_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_wur_lord_baizhi_warrior" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_warrior" />
+  <action_set id="as_wur_lord_baizhi_female_warrior" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_baizhi_villager" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_wur_lord_baizhi_female_villager" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_baizhi_facegen" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_wur_lord_baizhi_female_facegen" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_facegen">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_baizhi_hideout_bandit" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_hideout_bandit" />
+  <action_set id="as_wur_lord_baizhi_female_hideout_bandit" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_hideout_bandit" />
+  <action_set id="as_wur_lord_baizhi_villager_in_tavern" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_in_tavern" />
+  <action_set id="as_wur_lord_baizhi_female_villager_in_tavern" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_tavern" />
+  <action_set id="as_wur_lord_baizhi_warrior_in_tavern" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_tavern" />
+  <action_set id="as_wur_lord_baizhi_female_warrior_in_tavern" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_tavern" />
+  <action_set id="as_wur_lord_baizhi_villager_in_aserai_tavern" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_in_aserai_tavern" />
+  <action_set id="as_wur_lord_baizhi_female_villager_in_aserai_tavern" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_aserai_tavern" />
+  <action_set id="as_wur_lord_baizhi_warrior_in_aserai_tavern" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_aserai_tavern" />
+  <action_set id="as_wur_lord_baizhi_female_warrior_in_aserai_tavern" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_aserai_tavern" />
+  <action_set id="as_wur_lord_baizhi_child" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_child" />
+  <action_set id="as_wur_lord_baizhi_female_child" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_child" />
+  <action_set id="as_wur_lord_baizhi_map" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_map" />
+  <action_set id="as_wur_lord_baizhi_female_map" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_map" />
+  <action_set id="as_wur_lord_baizhi_map_with_banner" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_map_with_banner" />
+  <action_set id="as_wur_lord_baizhi_female_map_with_banner" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_map_with_banner" />
+  <action_set id="as_wur_lord_baizhi_villain" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villain" />
+  <action_set id="as_wur_lord_baizhi_female_villain" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villain" />
+  <action_set id="as_wur_lord_baizhi_lord" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_lord" />
+  <action_set id="as_wur_lord_baizhi_female_lord" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_lord" />
+  <action_set id="as_wur_lord_baizhi_seller" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_seller" />
+  <action_set id="as_wur_lord_baizhi_female_seller" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_seller" />
+  <action_set id="as_wur_lord_baizhi_weaponsmith" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_weaponsmith" />
+  <action_set id="as_wur_lord_baizhi_female_weaponsmith" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_weaponsmith" />
+  <action_set id="as_wur_lord_baizhi_villager_artisan" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_artisan" />
+  <action_set id="as_wur_lord_baizhi_female_villager_artisan" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_artisan" />
+  <action_set id="as_wur_lord_baizhi_villager_merchant" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_merchant" />
+  <action_set id="as_wur_lord_baizhi_female_villager_merchant" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_merchant" />
+  <action_set id="as_wur_lord_baizhi_villager_preacher" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_preacher" />
+  <action_set id="as_wur_lord_baizhi_female_villager_preacher" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_preacher" />
+  <action_set id="as_wur_lord_baizhi_villager_gangleader" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_gangleader" />
+  <action_set id="as_wur_lord_baizhi_female_villager_gangleader" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_gangleader" />
+  <action_set id="as_wur_lord_baizhi_villager_ruralnotable" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_ruralnotable" />
+  <action_set id="as_wur_lord_baizhi_female_villager_ruralnotable" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_ruralnotable" />
+  <action_set id="as_wur_lord_baizhi_gangleader_bodyguard" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_gangleader_bodyguard" />
+  <action_set id="as_wur_lord_baizhi_female_gangleader_bodyguard" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_gangleader_bodyguard" />
+  <action_set id="as_wur_lord_baizhi_merchant_notary" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_merchant_notary" />
+  <action_set id="as_wur_lord_baizhi_female_merchant_notary" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_merchant_notary" />
+  <action_set id="as_wur_lord_baizhi_female_barmaid" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_barmaid" />
+  <action_set id="as_wur_lord_baizhi_barmaid" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_barmaid" />
+  <action_set id="as_wur_lord_baizhi_tavern_keeper" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_tavern_keeper" />
+  <action_set id="as_wur_lord_baizhi_female_tavern_keeper" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_tavern_keeper" />
+  <action_set id="as_wur_lord_baizhi_musician" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_musician" />
+  <action_set id="as_wur_lord_baizhi_female_musician" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_musician" />
+  <action_set id="as_wur_lord_baizhi_female_dancer" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_dancer" />
+  <action_set id="as_wur_lord_baizhi_dancer" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_dancer" />
+  <action_set id="as_wur_lord_baizhi_beggar" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_beggar" />
+  <action_set id="as_wur_lord_baizhi_female_beggar" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_beggar" />
+  <action_set id="as_wur_lord_baizhi_guard" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_guard" />
+  <action_set id="as_wur_lord_baizhi_female_guard" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_guard" />
+  <action_set id="as_wur_lord_baizhi_unarmed_guard" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_unarmed_guard" />
+  <action_set id="as_wur_lord_baizhi_female_unarmed_guard" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_unarmed_guard" />
+  <action_set id="as_wur_lord_baizhi_villager_with_backpack" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_with_backpack" />
+  <action_set id="as_wur_lord_baizhi_female_villager_with_backpack" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_backpack" />
+  <action_set id="as_wur_lord_baizhi_villager_with_staff" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_with_staff" />
+  <action_set id="as_wur_lord_baizhi_female_villager_with_staff" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_staff" />
+  <action_set id="as_wur_lord_baizhi_villager_carry_on_shoulder" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_on_shoulder" />
+  <action_set id="as_wur_lord_baizhi_worker_carry_wood_on_shoulder" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_worker_carry_wood_on_shoulder" />
+  <action_set id="as_wur_lord_baizhi_villager_carry_bucket_on_lefthand" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_bucket_on_lefthand" />
+  <action_set id="as_wur_lord_baizhi_villager_carry_fish_buckets" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_fish_buckets" />
+  <action_set id="as_wur_lord_baizhi_female_villager_carry_on_shoulder" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_on_shoulder" />
+  <action_set id="as_wur_lord_baizhi_villager_carry_axe" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_axe" />
+  <action_set id="as_wur_lord_baizhi_female_villager_carry_axe" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_axe" />
+  <action_set id="as_wur_lord_baizhi_villager_carry_right_side" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_side" />
+  <action_set id="as_wur_lord_baizhi_female_villager_carry_right_side" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_side" />
+  <action_set id="as_wur_lord_baizhi_villager_carry_front_v2" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front_v2" />
+  <action_set id="as_wur_lord_baizhi_female_villager_carry_front_v2" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front_v2" />
+  <action_set id="as_wur_lord_baizhi_villager_carry_front" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front" />
+  <action_set id="as_wur_lord_baizhi_female_villager_carry_front" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front" />
+  <action_set id="as_wur_lord_baizhi_villager_carry_right_hand" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_hand" />
+  <action_set id="as_wur_lord_baizhi_female_villager_carry_right_hand" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_hand" />
+  <action_set id="as_wur_lord_baizhi_villager_carry_right_arm" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_arm" />
+  <action_set id="as_wur_lord_baizhi_female_villager_carry_right_arm" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_arm" />
+  <action_set id="as_wur_lord_baizhi_villager_carry_over_head" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head" />
+  <action_set id="as_wur_lord_baizhi_female_villager_carry_over_head" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head" />
+  <action_set id="as_wur_lord_baizhi_villager_carry_over_head_v2" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head_v2" />
+  <action_set id="as_wur_lord_baizhi_female_villager_carry_over_head_v2" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head_v2" />
+  <action_set id="as_wur_lord_baizhi_villager_2" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_2" />
+  <action_set id="as_wur_lord_baizhi_female_villager_2" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_2" />
+  <action_set id="as_wur_lord_baizhi_villager_3" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_3" />
+  <action_set id="as_wur_lord_baizhi_female_villager_3" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_3" />
+  <action_set id="as_wur_lord_baizhi_poses" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_wur_lord_baizhi_female_poses" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_wur_lord_shorekeeper_warrior" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_warrior" />
+  <action_set id="as_wur_lord_shorekeeper_female_warrior" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_shorekeeper_villager" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_shorekeeper_facegen" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_wur_lord_shorekeeper_female_facegen" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_facegen">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_wur_lord_shorekeeper_hideout_bandit" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_hideout_bandit" />
+  <action_set id="as_wur_lord_shorekeeper_female_hideout_bandit" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_hideout_bandit" />
+  <action_set id="as_wur_lord_shorekeeper_villager_in_tavern" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_in_tavern" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_in_tavern" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_tavern" />
+  <action_set id="as_wur_lord_shorekeeper_warrior_in_tavern" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_tavern" />
+  <action_set id="as_wur_lord_shorekeeper_female_warrior_in_tavern" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_tavern" />
+  <action_set id="as_wur_lord_shorekeeper_villager_in_aserai_tavern" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_in_aserai_tavern" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_in_aserai_tavern" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_aserai_tavern" />
+  <action_set id="as_wur_lord_shorekeeper_warrior_in_aserai_tavern" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_aserai_tavern" />
+  <action_set id="as_wur_lord_shorekeeper_female_warrior_in_aserai_tavern" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_aserai_tavern" />
+  <action_set id="as_wur_lord_shorekeeper_child" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_child" />
+  <action_set id="as_wur_lord_shorekeeper_female_child" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_child" />
+  <action_set id="as_wur_lord_shorekeeper_map" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_map" />
+  <action_set id="as_wur_lord_shorekeeper_female_map" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_map" />
+  <action_set id="as_wur_lord_shorekeeper_map_with_banner" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_map_with_banner" />
+  <action_set id="as_wur_lord_shorekeeper_female_map_with_banner" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_map_with_banner" />
+  <action_set id="as_wur_lord_shorekeeper_villain" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villain" />
+  <action_set id="as_wur_lord_shorekeeper_female_villain" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villain" />
+  <action_set id="as_wur_lord_shorekeeper_lord" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_lord" />
+  <action_set id="as_wur_lord_shorekeeper_female_lord" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_lord" />
+  <action_set id="as_wur_lord_shorekeeper_seller" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_seller" />
+  <action_set id="as_wur_lord_shorekeeper_female_seller" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_seller" />
+  <action_set id="as_wur_lord_shorekeeper_weaponsmith" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_weaponsmith" />
+  <action_set id="as_wur_lord_shorekeeper_female_weaponsmith" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_weaponsmith" />
+  <action_set id="as_wur_lord_shorekeeper_villager_artisan" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_artisan" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_artisan" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_artisan" />
+  <action_set id="as_wur_lord_shorekeeper_villager_merchant" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_merchant" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_merchant" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_merchant" />
+  <action_set id="as_wur_lord_shorekeeper_villager_preacher" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_preacher" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_preacher" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_preacher" />
+  <action_set id="as_wur_lord_shorekeeper_villager_gangleader" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_gangleader" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_gangleader" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_gangleader" />
+  <action_set id="as_wur_lord_shorekeeper_villager_ruralnotable" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_ruralnotable" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_ruralnotable" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_ruralnotable" />
+  <action_set id="as_wur_lord_shorekeeper_gangleader_bodyguard" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_gangleader_bodyguard" />
+  <action_set id="as_wur_lord_shorekeeper_female_gangleader_bodyguard" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_gangleader_bodyguard" />
+  <action_set id="as_wur_lord_shorekeeper_merchant_notary" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_merchant_notary" />
+  <action_set id="as_wur_lord_shorekeeper_female_merchant_notary" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_merchant_notary" />
+  <action_set id="as_wur_lord_shorekeeper_female_barmaid" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_barmaid" />
+  <action_set id="as_wur_lord_shorekeeper_barmaid" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_barmaid" />
+  <action_set id="as_wur_lord_shorekeeper_tavern_keeper" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_tavern_keeper" />
+  <action_set id="as_wur_lord_shorekeeper_female_tavern_keeper" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_tavern_keeper" />
+  <action_set id="as_wur_lord_shorekeeper_musician" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_musician" />
+  <action_set id="as_wur_lord_shorekeeper_female_musician" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_musician" />
+  <action_set id="as_wur_lord_shorekeeper_female_dancer" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_dancer" />
+  <action_set id="as_wur_lord_shorekeeper_dancer" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_dancer" />
+  <action_set id="as_wur_lord_shorekeeper_beggar" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_beggar" />
+  <action_set id="as_wur_lord_shorekeeper_female_beggar" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_beggar" />
+  <action_set id="as_wur_lord_shorekeeper_guard" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_guard" />
+  <action_set id="as_wur_lord_shorekeeper_female_guard" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_guard" />
+  <action_set id="as_wur_lord_shorekeeper_unarmed_guard" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_unarmed_guard" />
+  <action_set id="as_wur_lord_shorekeeper_female_unarmed_guard" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_unarmed_guard" />
+  <action_set id="as_wur_lord_shorekeeper_villager_with_backpack" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_with_backpack" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_with_backpack" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_backpack" />
+  <action_set id="as_wur_lord_shorekeeper_villager_with_staff" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_with_staff" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_with_staff" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_staff" />
+  <action_set id="as_wur_lord_shorekeeper_villager_carry_on_shoulder" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_on_shoulder" />
+  <action_set id="as_wur_lord_shorekeeper_worker_carry_wood_on_shoulder" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_worker_carry_wood_on_shoulder" />
+  <action_set id="as_wur_lord_shorekeeper_villager_carry_bucket_on_lefthand" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_bucket_on_lefthand" />
+  <action_set id="as_wur_lord_shorekeeper_villager_carry_fish_buckets" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_fish_buckets" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_carry_on_shoulder" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_on_shoulder" />
+  <action_set id="as_wur_lord_shorekeeper_villager_carry_axe" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_axe" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_carry_axe" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_axe" />
+  <action_set id="as_wur_lord_shorekeeper_villager_carry_right_side" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_side" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_carry_right_side" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_side" />
+  <action_set id="as_wur_lord_shorekeeper_villager_carry_front_v2" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front_v2" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_carry_front_v2" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front_v2" />
+  <action_set id="as_wur_lord_shorekeeper_villager_carry_front" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_carry_front" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front" />
+  <action_set id="as_wur_lord_shorekeeper_villager_carry_right_hand" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_hand" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_carry_right_hand" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_hand" />
+  <action_set id="as_wur_lord_shorekeeper_villager_carry_right_arm" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_arm" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_carry_right_arm" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_arm" />
+  <action_set id="as_wur_lord_shorekeeper_villager_carry_over_head" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_carry_over_head" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head" />
+  <action_set id="as_wur_lord_shorekeeper_villager_carry_over_head_v2" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head_v2" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_carry_over_head_v2" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head_v2" />
+  <action_set id="as_wur_lord_shorekeeper_villager_2" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_2" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_2" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_2" />
+  <action_set id="as_wur_lord_shorekeeper_villager_3" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_villager_3" />
+  <action_set id="as_wur_lord_shorekeeper_female_villager_3" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_female_villager_3" />
+  <action_set id="as_wur_lord_shorekeeper_poses" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_wur_lord_shorekeeper_female_poses" skeleton="ww_shorekeeper_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+</action_sets>

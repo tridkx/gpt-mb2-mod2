@@ -1,0 +1,1587 @@
+[
+  {
+    "id": "wur_jianxin_t1",
+    "key": "jianxin",
+    "name": "鉴心·感染步兵1",
+    "race": "ww_jianxin",
+    "role": "Infantry",
+    "tier": 1,
+    "lord": false,
+    "donor": "imperial_recruit",
+    "armor": [
+      2,
+      4,
+      1,
+      7
+    ],
+    "weight": 1.425,
+    "skills": {
+      "Athletics": 20,
+      "Riding": 0,
+      "OneHanded": 20,
+      "TwoHanded": 10,
+      "Polearm": 20,
+      "Bow": 5,
+      "Crossbow": 5,
+      "Throwing": 10
+    },
+    "equipment": {
+      "Item0": "wur_jianxin_1_w0",
+      "Item1": "wur_jianxin_1_w1"
+    }
+  },
+  {
+    "id": "wur_jianxin_t2",
+    "key": "jianxin",
+    "name": "鉴心·感染步兵2",
+    "race": "ww_jianxin",
+    "role": "Infantry",
+    "tier": 2,
+    "lord": false,
+    "donor": "imperial_infantryman",
+    "armor": [
+      13,
+      18,
+      7,
+      13
+    ],
+    "weight": 4.1,
+    "skills": {
+      "Athletics": 40,
+      "Riding": 5,
+      "OneHanded": 65,
+      "TwoHanded": 20,
+      "Polearm": 40,
+      "Bow": 15,
+      "Crossbow": 15,
+      "Throwing": 20
+    },
+    "equipment": {
+      "Item0": "wur_jianxin_2_w0",
+      "Item1": "wur_jianxin_2_w1"
+    }
+  },
+  {
+    "id": "wur_jianxin_t3",
+    "key": "jianxin",
+    "name": "鉴心·感染步兵3",
+    "race": "ww_jianxin",
+    "role": "Infantry",
+    "tier": 3,
+    "lord": false,
+    "donor": "imperial_trained_infantryman",
+    "armor": [
+      16,
+      25,
+      18,
+      16
+    ],
+    "weight": 6.72,
+    "skills": {
+      "Athletics": 60,
+      "Riding": 10,
+      "OneHanded": 110,
+      "TwoHanded": 40,
+      "Polearm": 40,
+      "Bow": 30,
+      "Crossbow": 30,
+      "Throwing": 70
+    },
+    "equipment": {
+      "Item0": "wur_jianxin_3_w0",
+      "Item1": "wur_jianxin_3_w1"
+    }
+  },
+  {
+    "id": "wur_jianxin_t4",
+    "key": "jianxin",
+    "name": "鉴心·感染步兵4",
+    "race": "ww_jianxin",
+    "role": "Infantry",
+    "tier": 4,
+    "lord": false,
+    "donor": "imperial_veteran_infantryman",
+    "armor": [
+      59,
+      53,
+      45,
+      30
+    ],
+    "weight": 39.7392,
+    "skills": {
+      "Athletics": 80,
+      "Riding": 15,
+      "OneHanded": 155,
+      "TwoHanded": 60,
+      "Polearm": 100,
+      "Bow": 45,
+      "Crossbow": 45,
+      "Throwing": 60
+    },
+    "equipment": {
+      "Item0": "wur_jianxin_4_w0",
+      "Item1": "wur_jianxin_4_w1"
+    }
+  },
+  {
+    "id": "wur_jianxin_t5",
+    "key": "jianxin",
+    "name": "鉴心·感染步兵5",
+    "race": "ww_jianxin",
+    "role": "Infantry",
+    "tier": 5,
+    "lord": false,
+    "donor": "imperial_legionary",
+    "armor": [
+      63,
+      73,
+      63,
+      62
+    ],
+    "weight": 36.85,
+    "skills": {
+      "Athletics": 100,
+      "Riding": 20,
+      "OneHanded": 200,
+      "TwoHanded": 80,
+      "Polearm": 130,
+      "Bow": 60,
+      "Crossbow": 60,
+      "Throwing": 80
+    },
+    "equipment": {
+      "Item0": "wur_jianxin_5_w0",
+      "Item1": "wur_jianxin_5_w1"
+    }
+  },
+  {
+    "id": "wur_jianxin_lord_template",
+    "key": "jianxin",
+    "name": "鉴心·感染统领",
+    "race": "wur_lord_jianxin",
+    "role": "Infantry",
+    "tier": 5,
+    "lord": true,
+    "donor": "imperial_legionary",
+    "armor": [
+      102,
+      117,
+      102,
+      99
+    ],
+    "weight": 40.535,
+    "skills": {
+      "Athletics": 130,
+      "Riding": 20,
+      "OneHanded": 260,
+      "TwoHanded": 80,
+      "Polearm": 130,
+      "Bow": 60,
+      "Crossbow": 60,
+      "Throwing": 80
+    },
+    "equipment": {
+      "Item0": "wur_jianxin_lord_w0",
+      "Item1": "wur_jianxin_lord_w1"
+    }
+  },
+  {
+    "id": "wur_changli_t1",
+    "key": "changli",
+    "name": "长离·感染步兵1",
+    "race": "ww_changli",
+    "role": "Infantry",
+    "tier": 1,
+    "lord": false,
+    "donor": "imperial_recruit",
+    "armor": [
+      2,
+      4,
+      1,
+      7
+    ],
+    "weight": 1.425,
+    "skills": {
+      "Athletics": 20,
+      "Riding": 0,
+      "OneHanded": 20,
+      "TwoHanded": 20,
+      "Polearm": 20,
+      "Bow": 5,
+      "Crossbow": 5,
+      "Throwing": 14
+    },
+    "equipment": {
+      "Item0": "wur_changli_1_w0"
+    }
+  },
+  {
+    "id": "wur_changli_t2",
+    "key": "changli",
+    "name": "长离·感染步兵2",
+    "race": "ww_changli",
+    "role": "Infantry",
+    "tier": 2,
+    "lord": false,
+    "donor": "imperial_infantryman",
+    "armor": [
+      11,
+      15,
+      6,
+      11
+    ],
+    "weight": 3.45,
+    "skills": {
+      "Athletics": 70,
+      "Riding": 5,
+      "OneHanded": 40,
+      "TwoHanded": 75,
+      "Polearm": 75,
+      "Bow": 15,
+      "Crossbow": 15,
+      "Throwing": 52
+    },
+    "equipment": {
+      "Item0": "wur_changli_2_w0"
+    }
+  },
+  {
+    "id": "wur_changli_t3",
+    "key": "changli",
+    "name": "长离·感染步兵3",
+    "race": "ww_changli",
+    "role": "Infantry",
+    "tier": 3,
+    "lord": false,
+    "donor": "imperial_trained_infantryman",
+    "armor": [
+      12,
+      18,
+      13,
+      12
+    ],
+    "weight": 4.64,
+    "skills": {
+      "Athletics": 120,
+      "Riding": 10,
+      "OneHanded": 70,
+      "TwoHanded": 130,
+      "Polearm": 130,
+      "Bow": 30,
+      "Crossbow": 30,
+      "Throwing": 91
+    },
+    "equipment": {
+      "Item0": "wur_changli_3_w0",
+      "Item1": "wur_changli_3_w1"
+    }
+  },
+  {
+    "id": "wur_changli_t4",
+    "key": "changli",
+    "name": "长离·感染步兵4",
+    "race": "ww_changli",
+    "role": "Infantry",
+    "tier": 4,
+    "lord": false,
+    "donor": "imperial_veteran_infantryman",
+    "armor": [
+      36,
+      33,
+      28,
+      19
+    ],
+    "weight": 21.7179,
+    "skills": {
+      "Athletics": 170,
+      "Riding": 15,
+      "OneHanded": 100,
+      "TwoHanded": 185,
+      "Polearm": 185,
+      "Bow": 45,
+      "Crossbow": 45,
+      "Throwing": 130
+    },
+    "equipment": {
+      "Item0": "wur_changli_4_w0",
+      "Item1": "wur_changli_4_w1",
+      "Item2": "wur_changli_4_w2"
+    }
+  },
+  {
+    "id": "wur_changli_t5",
+    "key": "changli",
+    "name": "长离·感染步兵5",
+    "race": "ww_changli",
+    "role": "Infantry",
+    "tier": 5,
+    "lord": false,
+    "donor": "imperial_legionary",
+    "armor": [
+      33,
+      38,
+      33,
+      32
+    ],
+    "weight": 15.075,
+    "skills": {
+      "Athletics": 220,
+      "Riding": 20,
+      "OneHanded": 130,
+      "TwoHanded": 240,
+      "Polearm": 240,
+      "Bow": 60,
+      "Crossbow": 60,
+      "Throwing": 168
+    },
+    "equipment": {
+      "Item0": "wur_changli_5_w0",
+      "Item1": "wur_changli_5_w1",
+      "Item2": "wur_changli_5_w2"
+    }
+  },
+  {
+    "id": "wur_changli_lord_template",
+    "key": "changli",
+    "name": "长离·感染统领",
+    "race": "wur_lord_changli",
+    "role": "Infantry",
+    "tier": 5,
+    "lord": true,
+    "donor": "imperial_legionary",
+    "armor": [
+      53,
+      60,
+      53,
+      52
+    ],
+    "weight": 16.5825,
+    "skills": {
+      "Athletics": 250,
+      "Riding": 20,
+      "OneHanded": 130,
+      "TwoHanded": 300,
+      "Polearm": 300,
+      "Bow": 60,
+      "Crossbow": 60,
+      "Throwing": 210
+    },
+    "equipment": {
+      "Item0": "wur_changli_lord_w0",
+      "Item1": "wur_changli_lord_w1",
+      "Item2": "wur_changli_lord_w2"
+    }
+  },
+  {
+    "id": "wur_zhezhi_t1",
+    "key": "zhezhi",
+    "name": "折枝·感染射手1",
+    "race": "ww_zhezhi",
+    "role": "Ranged",
+    "tier": 1,
+    "lord": false,
+    "donor": "imperial_recruit",
+    "armor": [
+      2,
+      4,
+      1,
+      7
+    ],
+    "weight": 1.425,
+    "skills": {
+      "Athletics": 20,
+      "Riding": 0,
+      "OneHanded": 20,
+      "TwoHanded": 10,
+      "Polearm": 20,
+      "Bow": 20,
+      "Crossbow": 5,
+      "Throwing": 10
+    },
+    "equipment": {
+      "Item0": "wur_zhezhi_1_w0",
+      "Item1": "wur_zhezhi_1_w1",
+      "Item2": "wur_zhezhi_1_w2"
+    }
+  },
+  {
+    "id": "wur_zhezhi_t2",
+    "key": "zhezhi",
+    "name": "折枝·感染射手2",
+    "race": "ww_zhezhi",
+    "role": "Ranged",
+    "tier": 2,
+    "lord": false,
+    "donor": "imperial_archer",
+    "armor": [
+      6,
+      12,
+      2,
+      12
+    ],
+    "weight": 3.1875,
+    "skills": {
+      "Athletics": 52,
+      "Riding": 5,
+      "OneHanded": 40,
+      "TwoHanded": 15,
+      "Polearm": 20,
+      "Bow": 75,
+      "Crossbow": 20,
+      "Throwing": 15
+    },
+    "equipment": {
+      "Item0": "wur_zhezhi_2_w0",
+      "Item1": "wur_zhezhi_2_w1",
+      "Item2": "wur_zhezhi_2_w2"
+    }
+  },
+  {
+    "id": "wur_zhezhi_t3",
+    "key": "zhezhi",
+    "name": "折枝·感染射手3",
+    "race": "ww_zhezhi",
+    "role": "Ranged",
+    "tier": 3,
+    "lord": false,
+    "donor": "imperial_trained_archer",
+    "armor": [
+      13,
+      10,
+      11,
+      8
+    ],
+    "weight": 3.0188,
+    "skills": {
+      "Athletics": 85,
+      "Riding": 10,
+      "OneHanded": 70,
+      "TwoHanded": 40,
+      "Polearm": 30,
+      "Bow": 130,
+      "Crossbow": 30,
+      "Throwing": 40
+    },
+    "equipment": {
+      "Item0": "wur_zhezhi_3_w0",
+      "Item1": "wur_zhezhi_3_w1",
+      "Item2": "wur_zhezhi_3_w2",
+      "Item3": "wur_zhezhi_3_w3"
+    }
+  },
+  {
+    "id": "wur_zhezhi_t4",
+    "key": "zhezhi",
+    "name": "折枝·感染射手4",
+    "race": "ww_zhezhi",
+    "role": "Ranged",
+    "tier": 4,
+    "lord": false,
+    "donor": "imperial_veteran_archer",
+    "armor": [
+      24,
+      16,
+      21,
+      12
+    ],
+    "weight": 5.6875,
+    "skills": {
+      "Athletics": 118,
+      "Riding": 15,
+      "OneHanded": 100,
+      "TwoHanded": 60,
+      "Polearm": 60,
+      "Bow": 185,
+      "Crossbow": 45,
+      "Throwing": 45
+    },
+    "equipment": {
+      "Item0": "wur_zhezhi_4_w0",
+      "Item1": "wur_zhezhi_4_w1",
+      "Item2": "wur_zhezhi_4_w2",
+      "Item3": "wur_zhezhi_4_w3"
+    }
+  },
+  {
+    "id": "wur_zhezhi_t5",
+    "key": "zhezhi",
+    "name": "折枝·感染射手5",
+    "race": "ww_zhezhi",
+    "role": "Ranged",
+    "tier": 5,
+    "lord": false,
+    "donor": "imperial_palatine_guard",
+    "armor": [
+      29,
+      29,
+      28,
+      20
+    ],
+    "weight": 17.7,
+    "skills": {
+      "Athletics": 150,
+      "Riding": 40,
+      "OneHanded": 130,
+      "TwoHanded": 30,
+      "Polearm": 80,
+      "Bow": 240,
+      "Crossbow": 80,
+      "Throwing": 60
+    },
+    "equipment": {
+      "Item0": "wur_zhezhi_5_w0",
+      "Item1": "wur_zhezhi_5_w1",
+      "Item2": "wur_zhezhi_5_w2",
+      "Item3": "wur_zhezhi_5_w3"
+    }
+  },
+  {
+    "id": "wur_zhezhi_lord_template",
+    "key": "zhezhi",
+    "name": "折枝·感染统领",
+    "race": "wur_lord_zhezhi",
+    "role": "Ranged",
+    "tier": 5,
+    "lord": true,
+    "donor": "imperial_palatine_guard",
+    "armor": [
+      46,
+      46,
+      45,
+      33
+    ],
+    "weight": 19.47,
+    "skills": {
+      "Athletics": 180,
+      "Riding": 40,
+      "OneHanded": 130,
+      "TwoHanded": 30,
+      "Polearm": 80,
+      "Bow": 300,
+      "Crossbow": 80,
+      "Throwing": 60
+    },
+    "equipment": {
+      "Item0": "wur_zhezhi_lord_w0",
+      "Item1": "wur_zhezhi_lord_w1",
+      "Item2": "wur_zhezhi_lord_w2",
+      "Item3": "wur_zhezhi_lord_w3"
+    }
+  },
+  {
+    "id": "wur_yinlin_t1",
+    "key": "yinlin",
+    "name": "吟霖·感染射手1",
+    "race": "ww_yinlin",
+    "role": "Ranged",
+    "tier": 1,
+    "lord": false,
+    "donor": "imperial_recruit",
+    "armor": [
+      2,
+      4,
+      1,
+      7
+    ],
+    "weight": 1.425,
+    "skills": {
+      "Athletics": 20,
+      "Riding": 0,
+      "OneHanded": 20,
+      "TwoHanded": 10,
+      "Polearm": 20,
+      "Bow": 5,
+      "Crossbow": 20,
+      "Throwing": 10
+    },
+    "equipment": {
+      "Item0": "wur_yinlin_1_w0",
+      "Item1": "wur_yinlin_1_w1",
+      "Item2": "wur_yinlin_1_w2"
+    }
+  },
+  {
+    "id": "wur_yinlin_t2",
+    "key": "yinlin",
+    "name": "吟霖·感染射手2",
+    "race": "ww_yinlin",
+    "role": "Ranged",
+    "tier": 2,
+    "lord": false,
+    "donor": "imperial_archer",
+    "armor": [
+      6,
+      12,
+      2,
+      12
+    ],
+    "weight": 3.4,
+    "skills": {
+      "Athletics": 48,
+      "Riding": 5,
+      "OneHanded": 40,
+      "TwoHanded": 15,
+      "Polearm": 20,
+      "Bow": 40,
+      "Crossbow": 75,
+      "Throwing": 15
+    },
+    "equipment": {
+      "Item0": "wur_yinlin_2_w0",
+      "Item1": "wur_yinlin_2_w1",
+      "Item2": "wur_yinlin_2_w2"
+    }
+  },
+  {
+    "id": "wur_yinlin_t3",
+    "key": "yinlin",
+    "name": "吟霖·感染射手3",
+    "race": "ww_yinlin",
+    "role": "Ranged",
+    "tier": 3,
+    "lord": false,
+    "donor": "imperial_trained_archer",
+    "armor": [
+      15,
+      12,
+      13,
+      9
+    ],
+    "weight": 3.45,
+    "skills": {
+      "Athletics": 75,
+      "Riding": 10,
+      "OneHanded": 70,
+      "TwoHanded": 40,
+      "Polearm": 30,
+      "Bow": 70,
+      "Crossbow": 130,
+      "Throwing": 40
+    },
+    "equipment": {
+      "Item0": "wur_yinlin_3_w0",
+      "Item1": "wur_yinlin_3_w1",
+      "Item2": "wur_yinlin_3_w2",
+      "Item3": "wur_yinlin_3_w3"
+    }
+  },
+  {
+    "id": "wur_yinlin_t4",
+    "key": "yinlin",
+    "name": "吟霖·感染射手4",
+    "race": "ww_yinlin",
+    "role": "Ranged",
+    "tier": 4,
+    "lord": false,
+    "donor": "imperial_veteran_archer",
+    "armor": [
+      29,
+      19,
+      26,
+      15
+    ],
+    "weight": 7.0,
+    "skills": {
+      "Athletics": 102,
+      "Riding": 15,
+      "OneHanded": 100,
+      "TwoHanded": 60,
+      "Polearm": 60,
+      "Bow": 100,
+      "Crossbow": 185,
+      "Throwing": 45
+    },
+    "equipment": {
+      "Item0": "wur_yinlin_4_w0",
+      "Item1": "wur_yinlin_4_w1",
+      "Item2": "wur_yinlin_4_w2",
+      "Item3": "wur_yinlin_4_w3"
+    }
+  },
+  {
+    "id": "wur_yinlin_t5",
+    "key": "yinlin",
+    "name": "吟霖·感染射手5",
+    "race": "ww_yinlin",
+    "role": "Ranged",
+    "tier": 5,
+    "lord": false,
+    "donor": "imperial_palatine_guard",
+    "armor": [
+      37,
+      37,
+      36,
+      26
+    ],
+    "weight": 23.6,
+    "skills": {
+      "Athletics": 130,
+      "Riding": 40,
+      "OneHanded": 130,
+      "TwoHanded": 30,
+      "Polearm": 80,
+      "Bow": 140,
+      "Crossbow": 240,
+      "Throwing": 60
+    },
+    "equipment": {
+      "Item0": "wur_yinlin_5_w0",
+      "Item1": "wur_yinlin_5_w1",
+      "Item2": "wur_yinlin_5_w2",
+      "Item3": "wur_yinlin_5_w3"
+    }
+  },
+  {
+    "id": "wur_yinlin_lord_template",
+    "key": "yinlin",
+    "name": "吟霖·感染统领",
+    "race": "wur_lord_yinlin",
+    "role": "Ranged",
+    "tier": 5,
+    "lord": true,
+    "donor": "imperial_palatine_guard",
+    "armor": [
+      60,
+      60,
+      58,
+      42
+    ],
+    "weight": 25.96,
+    "skills": {
+      "Athletics": 160,
+      "Riding": 40,
+      "OneHanded": 130,
+      "TwoHanded": 30,
+      "Polearm": 80,
+      "Bow": 140,
+      "Crossbow": 300,
+      "Throwing": 60
+    },
+    "equipment": {
+      "Item0": "wur_yinlin_lord_w0",
+      "Item1": "wur_yinlin_lord_w1",
+      "Item2": "wur_yinlin_lord_w2",
+      "Item3": "wur_yinlin_lord_w3"
+    }
+  },
+  {
+    "id": "wur_jinhsi_t1",
+    "key": "jinhsi",
+    "name": "今汐·感染骑兵1",
+    "race": "ww_jinhsi",
+    "role": "Cavalry",
+    "tier": 1,
+    "lord": false,
+    "donor": "imperial_recruit",
+    "armor": [
+      2,
+      4,
+      1,
+      7
+    ],
+    "weight": 1.425,
+    "skills": {
+      "Athletics": 20,
+      "Riding": 20,
+      "OneHanded": 15,
+      "TwoHanded": 10,
+      "Polearm": 20,
+      "Bow": 5,
+      "Crossbow": 5,
+      "Throwing": 10
+    },
+    "equipment": {
+      "Item0": "wur_jinhsi_1_w0",
+      "Item1": "wur_jinhsi_1_w1",
+      "Item2": "wur_jinhsi_1_w2",
+      "Horse": "sumpter_horse",
+      "HorseHarness": "light_harness"
+    }
+  },
+  {
+    "id": "wur_jinhsi_t2",
+    "key": "jinhsi",
+    "name": "今汐·感染骑兵2",
+    "race": "ww_jinhsi",
+    "role": "Cavalry",
+    "tier": 2,
+    "lord": false,
+    "donor": "vlandian_squire",
+    "armor": [
+      15,
+      14,
+      3,
+      10
+    ],
+    "weight": 5.1875,
+    "skills": {
+      "Athletics": 30,
+      "Riding": 65,
+      "OneHanded": 56,
+      "TwoHanded": 10,
+      "Polearm": 75,
+      "Bow": 10,
+      "Crossbow": 10,
+      "Throwing": 10
+    },
+    "equipment": {
+      "Item0": "wur_jinhsi_2_w0",
+      "Item1": "wur_jinhsi_2_w1",
+      "Item2": "wur_jinhsi_2_w2",
+      "Horse": "vlandia_horse",
+      "HorseHarness": "light_harness"
+    }
+  },
+  {
+    "id": "wur_jinhsi_t3",
+    "key": "jinhsi",
+    "name": "今汐·感染骑兵3",
+    "race": "ww_jinhsi",
+    "role": "Cavalry",
+    "tier": 3,
+    "lord": false,
+    "donor": "khuzait_horseman",
+    "armor": [
+      30,
+      24,
+      25,
+      12
+    ],
+    "weight": 10.2125,
+    "skills": {
+      "Athletics": 30,
+      "Riding": 110,
+      "OneHanded": 98,
+      "TwoHanded": 40,
+      "Polearm": 130,
+      "Bow": 30,
+      "Crossbow": 10,
+      "Throwing": 40
+    },
+    "equipment": {
+      "Item0": "wur_jinhsi_3_w0",
+      "Item1": "wur_jinhsi_3_w1",
+      "Item2": "wur_jinhsi_3_w2",
+      "Horse": "khuzait_horse",
+      "HorseHarness": "steppe_fur_harness"
+    }
+  },
+  {
+    "id": "wur_jinhsi_t4",
+    "key": "jinhsi",
+    "name": "今汐·感染骑兵4",
+    "race": "ww_jinhsi",
+    "role": "Cavalry",
+    "tier": 4,
+    "lord": false,
+    "donor": "khuzait_lancer",
+    "armor": [
+      59,
+      59,
+      27,
+      17
+    ],
+    "weight": 30.9275,
+    "skills": {
+      "Athletics": 45,
+      "Riding": 155,
+      "OneHanded": 139,
+      "TwoHanded": 60,
+      "Polearm": 185,
+      "Bow": 45,
+      "Crossbow": 15,
+      "Throwing": 60
+    },
+    "equipment": {
+      "Item0": "wur_jinhsi_4_w0",
+      "Item1": "wur_jinhsi_4_w1",
+      "Item2": "wur_jinhsi_4_w2",
+      "Horse": "t3_khuzait_horse",
+      "HorseHarness": "steppe_half_barding"
+    }
+  },
+  {
+    "id": "wur_jinhsi_t5",
+    "key": "jinhsi",
+    "name": "今汐·感染骑兵5",
+    "race": "ww_jinhsi",
+    "role": "Cavalry",
+    "tier": 5,
+    "lord": false,
+    "donor": "khuzait_heavy_lancer",
+    "armor": [
+      66,
+      66,
+      64,
+      25
+    ],
+    "weight": 38.64,
+    "skills": {
+      "Athletics": 60,
+      "Riding": 200,
+      "OneHanded": 180,
+      "TwoHanded": 60,
+      "Polearm": 240,
+      "Bow": 20,
+      "Crossbow": 20,
+      "Throwing": 60
+    },
+    "equipment": {
+      "Item0": "wur_jinhsi_5_w0",
+      "Item1": "wur_jinhsi_5_w1",
+      "Item2": "wur_jinhsi_5_w2",
+      "Horse": "t3_khuzait_horse",
+      "HorseHarness": "steppe_half_barding"
+    }
+  },
+  {
+    "id": "wur_jinhsi_lord_template",
+    "key": "jinhsi",
+    "name": "今汐·感染统领",
+    "race": "wur_lord_jinhsi",
+    "role": "Cavalry",
+    "tier": 5,
+    "lord": true,
+    "donor": "khuzait_heavy_lancer",
+    "armor": [
+      106,
+      106,
+      103,
+      40
+    ],
+    "weight": 42.504,
+    "skills": {
+      "Athletics": 60,
+      "Riding": 230,
+      "OneHanded": 225,
+      "TwoHanded": 60,
+      "Polearm": 300,
+      "Bow": 20,
+      "Crossbow": 20,
+      "Throwing": 60
+    },
+    "equipment": {
+      "Item0": "wur_jinhsi_lord_w0",
+      "Item1": "wur_jinhsi_lord_w1",
+      "Item2": "wur_jinhsi_lord_w2",
+      "Horse": "t3_khuzait_horse",
+      "HorseHarness": "steppe_half_barding"
+    }
+  },
+  {
+    "id": "wur_jinhsi_outfit_t1",
+    "key": "jinhsi_outfit",
+    "name": "今汐·桃夭灼灼·感染骑兵1",
+    "race": "ww_jinhsi_outfit",
+    "role": "Cavalry",
+    "tier": 1,
+    "lord": false,
+    "donor": "imperial_recruit",
+    "armor": [
+      2,
+      4,
+      1,
+      7
+    ],
+    "weight": 1.425,
+    "skills": {
+      "Athletics": 20,
+      "Riding": 20,
+      "OneHanded": 15,
+      "TwoHanded": 20,
+      "Polearm": 20,
+      "Bow": 5,
+      "Crossbow": 5,
+      "Throwing": 10
+    },
+    "equipment": {
+      "Item0": "wur_jinhsi_outfit_1_w0",
+      "Horse": "sumpter_horse",
+      "HorseHarness": "light_harness"
+    }
+  },
+  {
+    "id": "wur_jinhsi_outfit_t2",
+    "key": "jinhsi_outfit",
+    "name": "今汐·桃夭灼灼·感染骑兵2",
+    "race": "ww_jinhsi_outfit",
+    "role": "Cavalry",
+    "tier": 2,
+    "lord": false,
+    "donor": "vlandian_squire",
+    "armor": [
+      13,
+      13,
+      3,
+      9
+    ],
+    "weight": 4.625,
+    "skills": {
+      "Athletics": 30,
+      "Riding": 70,
+      "OneHanded": 58,
+      "TwoHanded": 78,
+      "Polearm": 78,
+      "Bow": 10,
+      "Crossbow": 10,
+      "Throwing": 10
+    },
+    "equipment": {
+      "Item0": "wur_jinhsi_outfit_2_w0",
+      "Horse": "vlandia_horse",
+      "HorseHarness": "light_harness"
+    }
+  },
+  {
+    "id": "wur_jinhsi_outfit_t3",
+    "key": "jinhsi_outfit",
+    "name": "今汐·桃夭灼灼·感染骑兵3",
+    "race": "ww_jinhsi_outfit",
+    "role": "Cavalry",
+    "tier": 3,
+    "lord": false,
+    "donor": "khuzait_horseman",
+    "armor": [
+      24,
+      19,
+      20,
+      9
+    ],
+    "weight": 8.075,
+    "skills": {
+      "Athletics": 30,
+      "Riding": 120,
+      "OneHanded": 101,
+      "TwoHanded": 135,
+      "Polearm": 135,
+      "Bow": 30,
+      "Crossbow": 10,
+      "Throwing": 40
+    },
+    "equipment": {
+      "Item0": "wur_jinhsi_outfit_3_w0",
+      "Item1": "wur_jinhsi_outfit_3_w1",
+      "Horse": "khuzait_horse",
+      "HorseHarness": "steppe_fur_harness"
+    }
+  },
+  {
+    "id": "wur_jinhsi_outfit_t4",
+    "key": "jinhsi_outfit",
+    "name": "今汐·桃夭灼灼·感染骑兵4",
+    "race": "ww_jinhsi_outfit",
+    "role": "Cavalry",
+    "tier": 4,
+    "lord": false,
+    "donor": "khuzait_lancer",
+    "armor": [
+      43,
+      43,
+      20,
+      12
+    ],
+    "weight": 21.545,
+    "skills": {
+      "Athletics": 45,
+      "Riding": 170,
+      "OneHanded": 144,
+      "TwoHanded": 192,
+      "Polearm": 192,
+      "Bow": 45,
+      "Crossbow": 15,
+      "Throwing": 60
+    },
+    "equipment": {
+      "Item0": "wur_jinhsi_outfit_4_w0",
+      "Item1": "wur_jinhsi_outfit_4_w1",
+      "Horse": "t3_khuzait_horse",
+      "HorseHarness": "steppe_half_barding"
+    }
+  },
+  {
+    "id": "wur_jinhsi_outfit_t5",
+    "key": "jinhsi_outfit",
+    "name": "今汐·桃夭灼灼·感染骑兵5",
+    "race": "ww_jinhsi_outfit",
+    "role": "Cavalry",
+    "tier": 5,
+    "lord": false,
+    "donor": "khuzait_heavy_lancer",
+    "armor": [
+      43,
+      43,
+      42,
+      16
+    ],
+    "weight": 23.52,
+    "skills": {
+      "Athletics": 60,
+      "Riding": 220,
+      "OneHanded": 188,
+      "TwoHanded": 250,
+      "Polearm": 250,
+      "Bow": 20,
+      "Crossbow": 20,
+      "Throwing": 60
+    },
+    "equipment": {
+      "Item0": "wur_jinhsi_outfit_5_w0",
+      "Item1": "wur_jinhsi_outfit_5_w1",
+      "Horse": "t3_khuzait_horse",
+      "HorseHarness": "steppe_half_barding"
+    }
+  },
+  {
+    "id": "wur_jinhsi_outfit_lord_template",
+    "key": "jinhsi_outfit",
+    "name": "今汐·桃夭灼灼·感染统领",
+    "race": "wur_lord_jinhsi_outfit",
+    "role": "Cavalry",
+    "tier": 5,
+    "lord": true,
+    "donor": "khuzait_heavy_lancer",
+    "armor": [
+      69,
+      69,
+      67,
+      26
+    ],
+    "weight": 25.872,
+    "skills": {
+      "Athletics": 60,
+      "Riding": 250,
+      "OneHanded": 232,
+      "TwoHanded": 310,
+      "Polearm": 310,
+      "Bow": 20,
+      "Crossbow": 20,
+      "Throwing": 60
+    },
+    "equipment": {
+      "Item0": "wur_jinhsi_outfit_lord_w0",
+      "Item1": "wur_jinhsi_outfit_lord_w1",
+      "Horse": "t3_khuzait_horse",
+      "HorseHarness": "steppe_half_barding"
+    }
+  },
+  {
+    "id": "wur_baizhi_t1",
+    "key": "baizhi",
+    "name": "白芷·感染骑射1",
+    "race": "ww_baizhi",
+    "role": "HorseArcher",
+    "tier": 1,
+    "lord": false,
+    "donor": "imperial_recruit",
+    "armor": [
+      2,
+      4,
+      1,
+      7
+    ],
+    "weight": 1.425,
+    "skills": {
+      "Athletics": 20,
+      "Riding": 20,
+      "OneHanded": 20,
+      "TwoHanded": 10,
+      "Polearm": 20,
+      "Bow": 20,
+      "Crossbow": 5,
+      "Throwing": 10
+    },
+    "equipment": {
+      "Item0": "wur_baizhi_1_w0",
+      "Item1": "wur_baizhi_1_w1",
+      "Item2": "wur_baizhi_1_w2",
+      "Item3": "wur_baizhi_1_w3",
+      "Horse": "sumpter_horse",
+      "HorseHarness": "light_harness"
+    }
+  },
+  {
+    "id": "wur_baizhi_t2",
+    "key": "baizhi",
+    "name": "白芷·感染骑射2",
+    "race": "ww_baizhi",
+    "role": "HorseArcher",
+    "tier": 2,
+    "lord": false,
+    "donor": "khuzait_tribal_warrior",
+    "armor": [
+      4,
+      7,
+      6,
+      7
+    ],
+    "weight": 2.0417,
+    "skills": {
+      "Athletics": 20,
+      "Riding": 75,
+      "OneHanded": 48,
+      "TwoHanded": 15,
+      "Polearm": 20,
+      "Bow": 70,
+      "Crossbow": 5,
+      "Throwing": 15
+    },
+    "equipment": {
+      "Item0": "wur_baizhi_2_w0",
+      "Item1": "wur_baizhi_2_w1",
+      "Item2": "wur_baizhi_2_w2",
+      "Item3": "wur_baizhi_2_w3",
+      "Horse": "khuzait_horse",
+      "HorseHarness": "steppe_fur_harness"
+    }
+  },
+  {
+    "id": "wur_baizhi_t3",
+    "key": "baizhi",
+    "name": "白芷·感染骑射3",
+    "race": "ww_baizhi",
+    "role": "HorseArcher",
+    "tier": 3,
+    "lord": false,
+    "donor": "khuzait_raider",
+    "armor": [
+      7,
+      13,
+      11,
+      11
+    ],
+    "weight": 3.675,
+    "skills": {
+      "Athletics": 40,
+      "Riding": 130,
+      "OneHanded": 75,
+      "TwoHanded": 30,
+      "Polearm": 40,
+      "Bow": 120,
+      "Crossbow": 10,
+      "Throwing": 30
+    },
+    "equipment": {
+      "Item0": "wur_baizhi_3_w0",
+      "Item1": "wur_baizhi_3_w1",
+      "Item2": "wur_baizhi_3_w2",
+      "Item3": "wur_baizhi_3_w3",
+      "Horse": "khuzait_horse",
+      "HorseHarness": "steppe_harness"
+    }
+  },
+  {
+    "id": "wur_baizhi_t4",
+    "key": "baizhi",
+    "name": "白芷·感染骑射4",
+    "race": "ww_baizhi",
+    "role": "HorseArcher",
+    "tier": 4,
+    "lord": false,
+    "donor": "khuzait_horse_archer",
+    "armor": [
+      24,
+      30,
+      14,
+      6
+    ],
+    "weight": 13.5625,
+    "skills": {
+      "Athletics": 60,
+      "Riding": 185,
+      "OneHanded": 102,
+      "TwoHanded": 45,
+      "Polearm": 45,
+      "Bow": 170,
+      "Crossbow": 15,
+      "Throwing": 60
+    },
+    "equipment": {
+      "Item0": "wur_baizhi_4_w0",
+      "Item1": "wur_baizhi_4_w1",
+      "Item2": "wur_baizhi_4_w2",
+      "Item3": "wur_baizhi_4_w3",
+      "Horse": "t2_khuzait_horse",
+      "HorseHarness": "steppe_half_barding"
+    }
+  },
+  {
+    "id": "wur_baizhi_t5",
+    "key": "baizhi",
+    "name": "白芷·感染骑射5",
+    "race": "ww_baizhi",
+    "role": "HorseArcher",
+    "tier": 5,
+    "lord": false,
+    "donor": "khuzait_heavy_horse_archer",
+    "armor": [
+      23,
+      31,
+      33,
+      22
+    ],
+    "weight": 16.55,
+    "skills": {
+      "Athletics": 80,
+      "Riding": 240,
+      "OneHanded": 130,
+      "TwoHanded": 60,
+      "Polearm": 80,
+      "Bow": 220,
+      "Crossbow": 20,
+      "Throwing": 60
+    },
+    "equipment": {
+      "Item0": "wur_baizhi_5_w0",
+      "Item1": "wur_baizhi_5_w1",
+      "Item2": "wur_baizhi_5_w2",
+      "Item3": "wur_baizhi_5_w3",
+      "Horse": "t2_khuzait_horse",
+      "HorseHarness": "steppe_half_barding"
+    }
+  },
+  {
+    "id": "wur_baizhi_lord_template",
+    "key": "baizhi",
+    "name": "白芷·感染统领",
+    "race": "wur_lord_baizhi",
+    "role": "HorseArcher",
+    "tier": 5,
+    "lord": true,
+    "donor": "khuzait_heavy_horse_archer",
+    "armor": [
+      37,
+      50,
+      52,
+      35
+    ],
+    "weight": 18.205,
+    "skills": {
+      "Athletics": 80,
+      "Riding": 270,
+      "OneHanded": 130,
+      "TwoHanded": 60,
+      "Polearm": 80,
+      "Bow": 280,
+      "Crossbow": 20,
+      "Throwing": 60
+    },
+    "equipment": {
+      "Item0": "wur_baizhi_lord_w0",
+      "Item1": "wur_baizhi_lord_w1",
+      "Item2": "wur_baizhi_lord_w2",
+      "Item3": "wur_baizhi_lord_w3",
+      "Horse": "t2_khuzait_horse",
+      "HorseHarness": "steppe_half_barding"
+    }
+  },
+  {
+    "id": "wur_shorekeeper_t1",
+    "key": "shorekeeper",
+    "name": "守岸人·感染骑射1",
+    "race": "ww_shorekeeper",
+    "role": "HorseArcher",
+    "tier": 1,
+    "lord": false,
+    "donor": "imperial_recruit",
+    "armor": [
+      2,
+      4,
+      1,
+      7
+    ],
+    "weight": 1.425,
+    "skills": {
+      "Athletics": 20,
+      "Riding": 20,
+      "OneHanded": 20,
+      "TwoHanded": 10,
+      "Polearm": 20,
+      "Bow": 20,
+      "Crossbow": 5,
+      "Throwing": 10
+    },
+    "equipment": {
+      "Item0": "wur_shorekeeper_1_w0",
+      "Item1": "wur_shorekeeper_1_w1",
+      "Item2": "wur_shorekeeper_1_w2",
+      "Item3": "wur_shorekeeper_1_w3",
+      "Horse": "sumpter_horse",
+      "HorseHarness": "light_harness"
+    }
+  },
+  {
+    "id": "wur_shorekeeper_t2",
+    "key": "shorekeeper",
+    "name": "守岸人·感染骑射2",
+    "race": "ww_shorekeeper",
+    "role": "HorseArcher",
+    "tier": 2,
+    "lord": false,
+    "donor": "khuzait_tribal_warrior",
+    "armor": [
+      5,
+      8,
+      7,
+      8
+    ],
+    "weight": 2.3917,
+    "skills": {
+      "Athletics": 20,
+      "Riding": 55,
+      "OneHanded": 38,
+      "TwoHanded": 15,
+      "Polearm": 20,
+      "Bow": 75,
+      "Crossbow": 5,
+      "Throwing": 15
+    },
+    "equipment": {
+      "Item0": "wur_shorekeeper_2_w0",
+      "Item1": "wur_shorekeeper_2_w1",
+      "Item2": "wur_shorekeeper_2_w2",
+      "Item3": "wur_shorekeeper_2_w3",
+      "Horse": "khuzait_horse",
+      "HorseHarness": "steppe_fur_harness"
+    }
+  },
+  {
+    "id": "wur_shorekeeper_t3",
+    "key": "shorekeeper",
+    "name": "守岸人·感染骑射3",
+    "race": "ww_shorekeeper",
+    "role": "HorseArcher",
+    "tier": 3,
+    "lord": false,
+    "donor": "khuzait_raider",
+    "armor": [
+      9,
+      17,
+      14,
+      14
+    ],
+    "weight": 5.145,
+    "skills": {
+      "Athletics": 40,
+      "Riding": 90,
+      "OneHanded": 55,
+      "TwoHanded": 30,
+      "Polearm": 40,
+      "Bow": 130,
+      "Crossbow": 10,
+      "Throwing": 30
+    },
+    "equipment": {
+      "Item0": "wur_shorekeeper_3_w0",
+      "Item1": "wur_shorekeeper_3_w1",
+      "Item2": "wur_shorekeeper_3_w2",
+      "Item3": "wur_shorekeeper_3_w3",
+      "Horse": "khuzait_horse",
+      "HorseHarness": "steppe_harness"
+    }
+  },
+  {
+    "id": "wur_shorekeeper_t4",
+    "key": "shorekeeper",
+    "name": "守岸人·感染骑射4",
+    "race": "ww_shorekeeper",
+    "role": "HorseArcher",
+    "tier": 4,
+    "lord": false,
+    "donor": "khuzait_horse_archer",
+    "armor": [
+      37,
+      46,
+      22,
+      9
+    ],
+    "weight": 23.3275,
+    "skills": {
+      "Athletics": 60,
+      "Riding": 125,
+      "OneHanded": 72,
+      "TwoHanded": 45,
+      "Polearm": 45,
+      "Bow": 185,
+      "Crossbow": 15,
+      "Throwing": 60
+    },
+    "equipment": {
+      "Item0": "wur_shorekeeper_4_w0",
+      "Item1": "wur_shorekeeper_4_w1",
+      "Item2": "wur_shorekeeper_4_w2",
+      "Item3": "wur_shorekeeper_4_w3",
+      "Horse": "t2_khuzait_horse",
+      "HorseHarness": "steppe_half_barding"
+    }
+  },
+  {
+    "id": "wur_shorekeeper_t5",
+    "key": "shorekeeper",
+    "name": "守岸人·感染骑射5",
+    "race": "ww_shorekeeper",
+    "role": "HorseArcher",
+    "tier": 5,
+    "lord": false,
+    "donor": "khuzait_heavy_horse_archer",
+    "armor": [
+      43,
+      58,
+      60,
+      41
+    ],
+    "weight": 36.41,
+    "skills": {
+      "Athletics": 80,
+      "Riding": 160,
+      "OneHanded": 90,
+      "TwoHanded": 60,
+      "Polearm": 80,
+      "Bow": 240,
+      "Crossbow": 20,
+      "Throwing": 60
+    },
+    "equipment": {
+      "Item0": "wur_shorekeeper_5_w0",
+      "Item1": "wur_shorekeeper_5_w1",
+      "Item2": "wur_shorekeeper_5_w2",
+      "Item3": "wur_shorekeeper_5_w3",
+      "Horse": "t2_khuzait_horse",
+      "HorseHarness": "steppe_half_barding"
+    }
+  },
+  {
+    "id": "wur_shorekeeper_lord_template",
+    "key": "shorekeeper",
+    "name": "守岸人·感染统领",
+    "race": "wur_lord_shorekeeper",
+    "role": "HorseArcher",
+    "tier": 5,
+    "lord": true,
+    "donor": "khuzait_heavy_horse_archer",
+    "armor": [
+      69,
+      92,
+      96,
+      65
+    ],
+    "weight": 40.051,
+    "skills": {
+      "Athletics": 80,
+      "Riding": 190,
+      "OneHanded": 90,
+      "TwoHanded": 60,
+      "Polearm": 80,
+      "Bow": 300,
+      "Crossbow": 20,
+      "Throwing": 60
+    },
+    "equipment": {
+      "Item0": "wur_shorekeeper_lord_w0",
+      "Item1": "wur_shorekeeper_lord_w1",
+      "Item2": "wur_shorekeeper_lord_w2",
+      "Item3": "wur_shorekeeper_lord_w3",
+      "Horse": "t2_khuzait_horse",
+      "HorseHarness": "steppe_half_barding"
+    }
+  }
+]

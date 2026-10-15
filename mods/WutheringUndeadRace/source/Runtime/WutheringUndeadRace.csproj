@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../GameReferences.props" />
+  <PropertyGroup><AssemblyName>WutheringUndeadRace</AssemblyName><Version>0.1.0</Version></PropertyGroup>
+  <ItemGroup><Reference Include="System.Xml.Linq" /></ItemGroup>
+</Project>

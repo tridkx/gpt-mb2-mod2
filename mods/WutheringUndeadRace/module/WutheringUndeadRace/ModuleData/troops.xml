@@ -1,0 +1,1396 @@
+<?xml version='1.0' encoding='utf-8'?>
+<NPCCharacters>
+  <NPCCharacter id="wur_jianxin_t1" name="鉴心·感染步兵1" level="6" occupation="Soldier" culture="Culture.empire" race="ww_jianxin" is_female="true" age="30" default_group="Infantry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="20" />
+      <skill id="Riding" value="0" />
+      <skill id="OneHanded" value="20" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="5" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="10" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_jianxin_t2" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_jianxin_1_w0" />
+        <equipment slot="Item1" id="Item.wur_jianxin_1_w1" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_jianxin_1_w1" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_jianxin_t2" name="鉴心·感染步兵2" level="11" occupation="Soldier" culture="Culture.empire" race="ww_jianxin" is_female="true" age="30" default_group="Infantry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="40" />
+      <skill id="Riding" value="5" />
+      <skill id="OneHanded" value="65" />
+      <skill id="TwoHanded" value="20" />
+      <skill id="Polearm" value="40" />
+      <skill id="Bow" value="15" />
+      <skill id="Crossbow" value="15" />
+      <skill id="Throwing" value="20" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_jianxin_t3" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_jianxin_2_w0" />
+        <equipment slot="Item1" id="Item.wur_jianxin_2_w1" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_jianxin_2_w1" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_jianxin_t3" name="鉴心·感染步兵3" level="16" occupation="Soldier" culture="Culture.empire" race="ww_jianxin" is_female="true" age="30" default_group="Infantry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="60" />
+      <skill id="Riding" value="10" />
+      <skill id="OneHanded" value="110" />
+      <skill id="TwoHanded" value="40" />
+      <skill id="Polearm" value="40" />
+      <skill id="Bow" value="30" />
+      <skill id="Crossbow" value="30" />
+      <skill id="Throwing" value="70" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_jianxin_t4" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_jianxin_3_w0" />
+        <equipment slot="Item1" id="Item.wur_jianxin_3_w1" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_jianxin_3_w1" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_jianxin_t4" name="鉴心·感染步兵4" level="21" occupation="Soldier" culture="Culture.empire" race="ww_jianxin" is_female="true" age="30" default_group="Infantry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="80" />
+      <skill id="Riding" value="15" />
+      <skill id="OneHanded" value="155" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="100" />
+      <skill id="Bow" value="45" />
+      <skill id="Crossbow" value="45" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_jianxin_t5" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_jianxin_4_w0" />
+        <equipment slot="Item1" id="Item.wur_jianxin_4_w1" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_jianxin_4_w1" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_jianxin_t5" name="鉴心·感染步兵5" level="26" occupation="Soldier" culture="Culture.empire" race="ww_jianxin" is_female="true" age="30" default_group="Infantry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="100" />
+      <skill id="Riding" value="20" />
+      <skill id="OneHanded" value="200" />
+      <skill id="TwoHanded" value="80" />
+      <skill id="Polearm" value="130" />
+      <skill id="Bow" value="60" />
+      <skill id="Crossbow" value="60" />
+      <skill id="Throwing" value="80" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_jianxin_5_w0" />
+        <equipment slot="Item1" id="Item.wur_jianxin_5_w1" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_jianxin_5_w1" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_jianxin_lord_template" name="鉴心·感染统领" level="36" occupation="Lord" culture="Culture.empire" race="wur_lord_jianxin" is_female="true" age="30" default_group="Infantry" face_mesh_cache="false" is_hero="true" is_template="true">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="20" />
+      <skill id="OneHanded" value="260" />
+      <skill id="TwoHanded" value="80" />
+      <skill id="Polearm" value="130" />
+      <skill id="Bow" value="60" />
+      <skill id="Crossbow" value="60" />
+      <skill id="Throwing" value="80" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_jianxin_lord_w0" />
+        <equipment slot="Item1" id="Item.wur_jianxin_lord_w1" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_jianxin_lord_w1" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_changli_t1" name="长离·感染步兵1" level="6" occupation="Soldier" culture="Culture.empire" race="ww_changli" is_female="true" age="30" default_group="Infantry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="20" />
+      <skill id="Riding" value="0" />
+      <skill id="OneHanded" value="20" />
+      <skill id="TwoHanded" value="20" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="5" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="14" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_changli_t2" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_changli_1_w0" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_changli_1_w0" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_changli_t2" name="长离·感染步兵2" level="11" occupation="Soldier" culture="Culture.empire" race="ww_changli" is_female="true" age="30" default_group="Infantry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="70" />
+      <skill id="Riding" value="5" />
+      <skill id="OneHanded" value="40" />
+      <skill id="TwoHanded" value="75" />
+      <skill id="Polearm" value="75" />
+      <skill id="Bow" value="15" />
+      <skill id="Crossbow" value="15" />
+      <skill id="Throwing" value="52" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_changli_t3" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_changli_2_w0" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_changli_2_w0" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_changli_t3" name="长离·感染步兵3" level="16" occupation="Soldier" culture="Culture.empire" race="ww_changli" is_female="true" age="30" default_group="Infantry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="120" />
+      <skill id="Riding" value="10" />
+      <skill id="OneHanded" value="70" />
+      <skill id="TwoHanded" value="130" />
+      <skill id="Polearm" value="130" />
+      <skill id="Bow" value="30" />
+      <skill id="Crossbow" value="30" />
+      <skill id="Throwing" value="91" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_changli_t4" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_changli_3_w0" />
+        <equipment slot="Item1" id="Item.wur_changli_3_w1" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_changli_3_w1" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_changli_t4" name="长离·感染步兵4" level="21" occupation="Soldier" culture="Culture.empire" race="ww_changli" is_female="true" age="30" default_group="Infantry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="170" />
+      <skill id="Riding" value="15" />
+      <skill id="OneHanded" value="100" />
+      <skill id="TwoHanded" value="185" />
+      <skill id="Polearm" value="185" />
+      <skill id="Bow" value="45" />
+      <skill id="Crossbow" value="45" />
+      <skill id="Throwing" value="130" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_changli_t5" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_changli_4_w0" />
+        <equipment slot="Item1" id="Item.wur_changli_4_w1" />
+        <equipment slot="Item2" id="Item.wur_changli_4_w2" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_changli_4_w2" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_changli_t5" name="长离·感染步兵5" level="26" occupation="Soldier" culture="Culture.empire" race="ww_changli" is_female="true" age="30" default_group="Infantry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="220" />
+      <skill id="Riding" value="20" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="240" />
+      <skill id="Polearm" value="240" />
+      <skill id="Bow" value="60" />
+      <skill id="Crossbow" value="60" />
+      <skill id="Throwing" value="168" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_changli_5_w0" />
+        <equipment slot="Item1" id="Item.wur_changli_5_w1" />
+        <equipment slot="Item2" id="Item.wur_changli_5_w2" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_changli_5_w2" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_changli_lord_template" name="长离·感染统领" level="36" occupation="Lord" culture="Culture.empire" race="wur_lord_changli" is_female="true" age="30" default_group="Infantry" face_mesh_cache="false" is_hero="true" is_template="true">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="250" />
+      <skill id="Riding" value="20" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="300" />
+      <skill id="Polearm" value="300" />
+      <skill id="Bow" value="60" />
+      <skill id="Crossbow" value="60" />
+      <skill id="Throwing" value="210" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_changli_lord_w0" />
+        <equipment slot="Item1" id="Item.wur_changli_lord_w1" />
+        <equipment slot="Item2" id="Item.wur_changli_lord_w2" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_changli_lord_w2" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_zhezhi_t1" name="折枝·感染射手1" level="6" occupation="Soldier" culture="Culture.empire" race="ww_zhezhi" is_female="true" age="30" default_group="Ranged" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="20" />
+      <skill id="Riding" value="0" />
+      <skill id="OneHanded" value="20" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="10" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_zhezhi_t2" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_zhezhi_1_w0" />
+        <equipment slot="Item1" id="Item.wur_zhezhi_1_w1" />
+        <equipment slot="Item2" id="Item.wur_zhezhi_1_w2" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_zhezhi_1_w2" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_zhezhi_t2" name="折枝·感染射手2" level="11" occupation="Soldier" culture="Culture.empire" race="ww_zhezhi" is_female="true" age="30" default_group="Ranged" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="52" />
+      <skill id="Riding" value="5" />
+      <skill id="OneHanded" value="40" />
+      <skill id="TwoHanded" value="15" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="75" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="15" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_zhezhi_t3" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_zhezhi_2_w0" />
+        <equipment slot="Item1" id="Item.wur_zhezhi_2_w1" />
+        <equipment slot="Item2" id="Item.wur_zhezhi_2_w2" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_zhezhi_2_w2" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_zhezhi_t3" name="折枝·感染射手3" level="16" occupation="Soldier" culture="Culture.empire" race="ww_zhezhi" is_female="true" age="30" default_group="Ranged" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="85" />
+      <skill id="Riding" value="10" />
+      <skill id="OneHanded" value="70" />
+      <skill id="TwoHanded" value="40" />
+      <skill id="Polearm" value="30" />
+      <skill id="Bow" value="130" />
+      <skill id="Crossbow" value="30" />
+      <skill id="Throwing" value="40" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_zhezhi_t4" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_zhezhi_3_w0" />
+        <equipment slot="Item1" id="Item.wur_zhezhi_3_w1" />
+        <equipment slot="Item2" id="Item.wur_zhezhi_3_w2" />
+        <equipment slot="Item3" id="Item.wur_zhezhi_3_w3" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_zhezhi_3_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_zhezhi_t4" name="折枝·感染射手4" level="21" occupation="Soldier" culture="Culture.empire" race="ww_zhezhi" is_female="true" age="30" default_group="Ranged" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="118" />
+      <skill id="Riding" value="15" />
+      <skill id="OneHanded" value="100" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="60" />
+      <skill id="Bow" value="185" />
+      <skill id="Crossbow" value="45" />
+      <skill id="Throwing" value="45" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_zhezhi_t5" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_zhezhi_4_w0" />
+        <equipment slot="Item1" id="Item.wur_zhezhi_4_w1" />
+        <equipment slot="Item2" id="Item.wur_zhezhi_4_w2" />
+        <equipment slot="Item3" id="Item.wur_zhezhi_4_w3" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_zhezhi_4_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_zhezhi_t5" name="折枝·感染射手5" level="26" occupation="Soldier" culture="Culture.empire" race="ww_zhezhi" is_female="true" age="30" default_group="Ranged" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="150" />
+      <skill id="Riding" value="40" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="30" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="240" />
+      <skill id="Crossbow" value="80" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_zhezhi_5_w0" />
+        <equipment slot="Item1" id="Item.wur_zhezhi_5_w1" />
+        <equipment slot="Item2" id="Item.wur_zhezhi_5_w2" />
+        <equipment slot="Item3" id="Item.wur_zhezhi_5_w3" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_zhezhi_5_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_zhezhi_lord_template" name="折枝·感染统领" level="36" occupation="Lord" culture="Culture.empire" race="wur_lord_zhezhi" is_female="true" age="30" default_group="Ranged" face_mesh_cache="false" is_hero="true" is_template="true">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="180" />
+      <skill id="Riding" value="40" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="30" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="300" />
+      <skill id="Crossbow" value="80" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_zhezhi_lord_w0" />
+        <equipment slot="Item1" id="Item.wur_zhezhi_lord_w1" />
+        <equipment slot="Item2" id="Item.wur_zhezhi_lord_w2" />
+        <equipment slot="Item3" id="Item.wur_zhezhi_lord_w3" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_zhezhi_lord_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_yinlin_t1" name="吟霖·感染射手1" level="6" occupation="Soldier" culture="Culture.empire" race="ww_yinlin" is_female="true" age="30" default_group="Ranged" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="20" />
+      <skill id="Riding" value="0" />
+      <skill id="OneHanded" value="20" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="5" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="10" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_yinlin_t2" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_yinlin_1_w0" />
+        <equipment slot="Item1" id="Item.wur_yinlin_1_w1" />
+        <equipment slot="Item2" id="Item.wur_yinlin_1_w2" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_yinlin_1_w2" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_yinlin_t2" name="吟霖·感染射手2" level="11" occupation="Soldier" culture="Culture.empire" race="ww_yinlin" is_female="true" age="30" default_group="Ranged" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="48" />
+      <skill id="Riding" value="5" />
+      <skill id="OneHanded" value="40" />
+      <skill id="TwoHanded" value="15" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="40" />
+      <skill id="Crossbow" value="75" />
+      <skill id="Throwing" value="15" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_yinlin_t3" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_yinlin_2_w0" />
+        <equipment slot="Item1" id="Item.wur_yinlin_2_w1" />
+        <equipment slot="Item2" id="Item.wur_yinlin_2_w2" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_yinlin_2_w2" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_yinlin_t3" name="吟霖·感染射手3" level="16" occupation="Soldier" culture="Culture.empire" race="ww_yinlin" is_female="true" age="30" default_group="Ranged" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="75" />
+      <skill id="Riding" value="10" />
+      <skill id="OneHanded" value="70" />
+      <skill id="TwoHanded" value="40" />
+      <skill id="Polearm" value="30" />
+      <skill id="Bow" value="70" />
+      <skill id="Crossbow" value="130" />
+      <skill id="Throwing" value="40" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_yinlin_t4" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_yinlin_3_w0" />
+        <equipment slot="Item1" id="Item.wur_yinlin_3_w1" />
+        <equipment slot="Item2" id="Item.wur_yinlin_3_w2" />
+        <equipment slot="Item3" id="Item.wur_yinlin_3_w3" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_yinlin_3_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_yinlin_t4" name="吟霖·感染射手4" level="21" occupation="Soldier" culture="Culture.empire" race="ww_yinlin" is_female="true" age="30" default_group="Ranged" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="102" />
+      <skill id="Riding" value="15" />
+      <skill id="OneHanded" value="100" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="60" />
+      <skill id="Bow" value="100" />
+      <skill id="Crossbow" value="185" />
+      <skill id="Throwing" value="45" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_yinlin_t5" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_yinlin_4_w0" />
+        <equipment slot="Item1" id="Item.wur_yinlin_4_w1" />
+        <equipment slot="Item2" id="Item.wur_yinlin_4_w2" />
+        <equipment slot="Item3" id="Item.wur_yinlin_4_w3" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_yinlin_4_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_yinlin_t5" name="吟霖·感染射手5" level="26" occupation="Soldier" culture="Culture.empire" race="ww_yinlin" is_female="true" age="30" default_group="Ranged" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="40" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="30" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="140" />
+      <skill id="Crossbow" value="240" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_yinlin_5_w0" />
+        <equipment slot="Item1" id="Item.wur_yinlin_5_w1" />
+        <equipment slot="Item2" id="Item.wur_yinlin_5_w2" />
+        <equipment slot="Item3" id="Item.wur_yinlin_5_w3" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_yinlin_5_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_yinlin_lord_template" name="吟霖·感染统领" level="36" occupation="Lord" culture="Culture.empire" race="wur_lord_yinlin" is_female="true" age="30" default_group="Ranged" face_mesh_cache="false" is_hero="true" is_template="true">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="160" />
+      <skill id="Riding" value="40" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="30" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="140" />
+      <skill id="Crossbow" value="300" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_yinlin_lord_w0" />
+        <equipment slot="Item1" id="Item.wur_yinlin_lord_w1" />
+        <equipment slot="Item2" id="Item.wur_yinlin_lord_w2" />
+        <equipment slot="Item3" id="Item.wur_yinlin_lord_w3" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_yinlin_lord_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_jinhsi_t1" name="今汐·感染骑兵1" level="6" occupation="Soldier" culture="Culture.empire" race="ww_jinhsi" is_female="true" age="30" default_group="Cavalry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="20" />
+      <skill id="Riding" value="20" />
+      <skill id="OneHanded" value="15" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="5" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="10" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_jinhsi_t2" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_jinhsi_1_w0" />
+        <equipment slot="Item1" id="Item.wur_jinhsi_1_w1" />
+        <equipment slot="Item2" id="Item.wur_jinhsi_1_w2" />
+        <equipment slot="Horse" id="Item.sumpter_horse" />
+        <equipment slot="HorseHarness" id="Item.light_harness" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_jinhsi_1_w2" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_jinhsi_t2" name="今汐·感染骑兵2" level="11" occupation="Soldier" culture="Culture.empire" race="ww_jinhsi" is_female="true" age="30" default_group="Cavalry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="30" />
+      <skill id="Riding" value="65" />
+      <skill id="OneHanded" value="56" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="75" />
+      <skill id="Bow" value="10" />
+      <skill id="Crossbow" value="10" />
+      <skill id="Throwing" value="10" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_jinhsi_t3" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_jinhsi_2_w0" />
+        <equipment slot="Item1" id="Item.wur_jinhsi_2_w1" />
+        <equipment slot="Item2" id="Item.wur_jinhsi_2_w2" />
+        <equipment slot="Horse" id="Item.vlandia_horse" />
+        <equipment slot="HorseHarness" id="Item.light_harness" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_jinhsi_2_w2" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_jinhsi_t3" name="今汐·感染骑兵3" level="16" occupation="Soldier" culture="Culture.empire" race="ww_jinhsi" is_female="true" age="30" default_group="Cavalry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="30" />
+      <skill id="Riding" value="110" />
+      <skill id="OneHanded" value="98" />
+      <skill id="TwoHanded" value="40" />
+      <skill id="Polearm" value="130" />
+      <skill id="Bow" value="30" />
+      <skill id="Crossbow" value="10" />
+      <skill id="Throwing" value="40" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_jinhsi_t4" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_jinhsi_3_w0" />
+        <equipment slot="Item1" id="Item.wur_jinhsi_3_w1" />
+        <equipment slot="Item2" id="Item.wur_jinhsi_3_w2" />
+        <equipment slot="Horse" id="Item.khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_fur_harness" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_jinhsi_3_w2" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_jinhsi_t4" name="今汐·感染骑兵4" level="21" occupation="Soldier" culture="Culture.empire" race="ww_jinhsi" is_female="true" age="30" default_group="Cavalry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="45" />
+      <skill id="Riding" value="155" />
+      <skill id="OneHanded" value="139" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="185" />
+      <skill id="Bow" value="45" />
+      <skill id="Crossbow" value="15" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_jinhsi_t5" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_jinhsi_4_w0" />
+        <equipment slot="Item1" id="Item.wur_jinhsi_4_w1" />
+        <equipment slot="Item2" id="Item.wur_jinhsi_4_w2" />
+        <equipment slot="Horse" id="Item.t3_khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_jinhsi_4_w2" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_jinhsi_t5" name="今汐·感染骑兵5" level="26" occupation="Soldier" culture="Culture.empire" race="ww_jinhsi" is_female="true" age="30" default_group="Cavalry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="60" />
+      <skill id="Riding" value="200" />
+      <skill id="OneHanded" value="180" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="240" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_jinhsi_5_w0" />
+        <equipment slot="Item1" id="Item.wur_jinhsi_5_w1" />
+        <equipment slot="Item2" id="Item.wur_jinhsi_5_w2" />
+        <equipment slot="Horse" id="Item.t3_khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_jinhsi_5_w2" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_jinhsi_lord_template" name="今汐·感染统领" level="36" occupation="Lord" culture="Culture.empire" race="wur_lord_jinhsi" is_female="true" age="30" default_group="Cavalry" face_mesh_cache="false" is_hero="true" is_template="true">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="60" />
+      <skill id="Riding" value="230" />
+      <skill id="OneHanded" value="225" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="300" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_jinhsi_lord_w0" />
+        <equipment slot="Item1" id="Item.wur_jinhsi_lord_w1" />
+        <equipment slot="Item2" id="Item.wur_jinhsi_lord_w2" />
+        <equipment slot="Horse" id="Item.t3_khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_jinhsi_lord_w2" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_jinhsi_outfit_t1" name="今汐·桃夭灼灼·感染骑兵1" level="6" occupation="Soldier" culture="Culture.empire" race="ww_jinhsi_outfit" is_female="true" age="30" default_group="Cavalry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="20" />
+      <skill id="Riding" value="20" />
+      <skill id="OneHanded" value="15" />
+      <skill id="TwoHanded" value="20" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="5" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="10" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_jinhsi_outfit_t2" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_jinhsi_outfit_1_w0" />
+        <equipment slot="Horse" id="Item.sumpter_horse" />
+        <equipment slot="HorseHarness" id="Item.light_harness" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_jinhsi_outfit_1_w0" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_jinhsi_outfit_t2" name="今汐·桃夭灼灼·感染骑兵2" level="11" occupation="Soldier" culture="Culture.empire" race="ww_jinhsi_outfit" is_female="true" age="30" default_group="Cavalry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="30" />
+      <skill id="Riding" value="70" />
+      <skill id="OneHanded" value="58" />
+      <skill id="TwoHanded" value="78" />
+      <skill id="Polearm" value="78" />
+      <skill id="Bow" value="10" />
+      <skill id="Crossbow" value="10" />
+      <skill id="Throwing" value="10" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_jinhsi_outfit_t3" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_jinhsi_outfit_2_w0" />
+        <equipment slot="Horse" id="Item.vlandia_horse" />
+        <equipment slot="HorseHarness" id="Item.light_harness" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_jinhsi_outfit_2_w0" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_jinhsi_outfit_t3" name="今汐·桃夭灼灼·感染骑兵3" level="16" occupation="Soldier" culture="Culture.empire" race="ww_jinhsi_outfit" is_female="true" age="30" default_group="Cavalry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="30" />
+      <skill id="Riding" value="120" />
+      <skill id="OneHanded" value="101" />
+      <skill id="TwoHanded" value="135" />
+      <skill id="Polearm" value="135" />
+      <skill id="Bow" value="30" />
+      <skill id="Crossbow" value="10" />
+      <skill id="Throwing" value="40" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_jinhsi_outfit_t4" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_jinhsi_outfit_3_w0" />
+        <equipment slot="Item1" id="Item.wur_jinhsi_outfit_3_w1" />
+        <equipment slot="Horse" id="Item.khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_fur_harness" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_jinhsi_outfit_3_w1" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_jinhsi_outfit_t4" name="今汐·桃夭灼灼·感染骑兵4" level="21" occupation="Soldier" culture="Culture.empire" race="ww_jinhsi_outfit" is_female="true" age="30" default_group="Cavalry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="45" />
+      <skill id="Riding" value="170" />
+      <skill id="OneHanded" value="144" />
+      <skill id="TwoHanded" value="192" />
+      <skill id="Polearm" value="192" />
+      <skill id="Bow" value="45" />
+      <skill id="Crossbow" value="15" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_jinhsi_outfit_t5" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_jinhsi_outfit_4_w0" />
+        <equipment slot="Item1" id="Item.wur_jinhsi_outfit_4_w1" />
+        <equipment slot="Horse" id="Item.t3_khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_jinhsi_outfit_4_w1" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_jinhsi_outfit_t5" name="今汐·桃夭灼灼·感染骑兵5" level="26" occupation="Soldier" culture="Culture.empire" race="ww_jinhsi_outfit" is_female="true" age="30" default_group="Cavalry" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="60" />
+      <skill id="Riding" value="220" />
+      <skill id="OneHanded" value="188" />
+      <skill id="TwoHanded" value="250" />
+      <skill id="Polearm" value="250" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_jinhsi_outfit_5_w0" />
+        <equipment slot="Item1" id="Item.wur_jinhsi_outfit_5_w1" />
+        <equipment slot="Horse" id="Item.t3_khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_jinhsi_outfit_5_w1" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_jinhsi_outfit_lord_template" name="今汐·桃夭灼灼·感染统领" level="36" occupation="Lord" culture="Culture.empire" race="wur_lord_jinhsi_outfit" is_female="true" age="30" default_group="Cavalry" face_mesh_cache="false" is_hero="true" is_template="true">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="60" />
+      <skill id="Riding" value="250" />
+      <skill id="OneHanded" value="232" />
+      <skill id="TwoHanded" value="310" />
+      <skill id="Polearm" value="310" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_jinhsi_outfit_lord_w0" />
+        <equipment slot="Item1" id="Item.wur_jinhsi_outfit_lord_w1" />
+        <equipment slot="Horse" id="Item.t3_khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_jinhsi_outfit_lord_w1" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_baizhi_t1" name="白芷·感染骑射1" level="6" occupation="Soldier" culture="Culture.empire" race="ww_baizhi" is_female="true" age="30" default_group="HorseArcher" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="20" />
+      <skill id="Riding" value="20" />
+      <skill id="OneHanded" value="20" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="10" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_baizhi_t2" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_baizhi_1_w0" />
+        <equipment slot="Item1" id="Item.wur_baizhi_1_w1" />
+        <equipment slot="Item2" id="Item.wur_baizhi_1_w2" />
+        <equipment slot="Item3" id="Item.wur_baizhi_1_w3" />
+        <equipment slot="Horse" id="Item.sumpter_horse" />
+        <equipment slot="HorseHarness" id="Item.light_harness" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_baizhi_1_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_baizhi_t2" name="白芷·感染骑射2" level="11" occupation="Soldier" culture="Culture.empire" race="ww_baizhi" is_female="true" age="30" default_group="HorseArcher" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="20" />
+      <skill id="Riding" value="75" />
+      <skill id="OneHanded" value="48" />
+      <skill id="TwoHanded" value="15" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="70" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="15" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_baizhi_t3" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_baizhi_2_w0" />
+        <equipment slot="Item1" id="Item.wur_baizhi_2_w1" />
+        <equipment slot="Item2" id="Item.wur_baizhi_2_w2" />
+        <equipment slot="Item3" id="Item.wur_baizhi_2_w3" />
+        <equipment slot="Horse" id="Item.khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_fur_harness" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_baizhi_2_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_baizhi_t3" name="白芷·感染骑射3" level="16" occupation="Soldier" culture="Culture.empire" race="ww_baizhi" is_female="true" age="30" default_group="HorseArcher" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="40" />
+      <skill id="Riding" value="130" />
+      <skill id="OneHanded" value="75" />
+      <skill id="TwoHanded" value="30" />
+      <skill id="Polearm" value="40" />
+      <skill id="Bow" value="120" />
+      <skill id="Crossbow" value="10" />
+      <skill id="Throwing" value="30" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_baizhi_t4" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_baizhi_3_w0" />
+        <equipment slot="Item1" id="Item.wur_baizhi_3_w1" />
+        <equipment slot="Item2" id="Item.wur_baizhi_3_w2" />
+        <equipment slot="Item3" id="Item.wur_baizhi_3_w3" />
+        <equipment slot="Horse" id="Item.khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_harness" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_baizhi_3_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_baizhi_t4" name="白芷·感染骑射4" level="21" occupation="Soldier" culture="Culture.empire" race="ww_baizhi" is_female="true" age="30" default_group="HorseArcher" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="60" />
+      <skill id="Riding" value="185" />
+      <skill id="OneHanded" value="102" />
+      <skill id="TwoHanded" value="45" />
+      <skill id="Polearm" value="45" />
+      <skill id="Bow" value="170" />
+      <skill id="Crossbow" value="15" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_baizhi_t5" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_baizhi_4_w0" />
+        <equipment slot="Item1" id="Item.wur_baizhi_4_w1" />
+        <equipment slot="Item2" id="Item.wur_baizhi_4_w2" />
+        <equipment slot="Item3" id="Item.wur_baizhi_4_w3" />
+        <equipment slot="Horse" id="Item.t2_khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_baizhi_4_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_baizhi_t5" name="白芷·感染骑射5" level="26" occupation="Soldier" culture="Culture.empire" race="ww_baizhi" is_female="true" age="30" default_group="HorseArcher" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="80" />
+      <skill id="Riding" value="240" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="220" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_baizhi_5_w0" />
+        <equipment slot="Item1" id="Item.wur_baizhi_5_w1" />
+        <equipment slot="Item2" id="Item.wur_baizhi_5_w2" />
+        <equipment slot="Item3" id="Item.wur_baizhi_5_w3" />
+        <equipment slot="Horse" id="Item.t2_khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_baizhi_5_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_baizhi_lord_template" name="白芷·感染统领" level="36" occupation="Lord" culture="Culture.empire" race="wur_lord_baizhi" is_female="true" age="30" default_group="HorseArcher" face_mesh_cache="false" is_hero="true" is_template="true">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="80" />
+      <skill id="Riding" value="270" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="280" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_baizhi_lord_w0" />
+        <equipment slot="Item1" id="Item.wur_baizhi_lord_w1" />
+        <equipment slot="Item2" id="Item.wur_baizhi_lord_w2" />
+        <equipment slot="Item3" id="Item.wur_baizhi_lord_w3" />
+        <equipment slot="Horse" id="Item.t2_khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_baizhi_lord_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_shorekeeper_t1" name="守岸人·感染骑射1" level="6" occupation="Soldier" culture="Culture.empire" race="ww_shorekeeper" is_female="true" age="30" default_group="HorseArcher" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="20" />
+      <skill id="Riding" value="20" />
+      <skill id="OneHanded" value="20" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="10" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_shorekeeper_t2" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_shorekeeper_1_w0" />
+        <equipment slot="Item1" id="Item.wur_shorekeeper_1_w1" />
+        <equipment slot="Item2" id="Item.wur_shorekeeper_1_w2" />
+        <equipment slot="Item3" id="Item.wur_shorekeeper_1_w3" />
+        <equipment slot="Horse" id="Item.sumpter_horse" />
+        <equipment slot="HorseHarness" id="Item.light_harness" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_shorekeeper_1_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_shorekeeper_t2" name="守岸人·感染骑射2" level="11" occupation="Soldier" culture="Culture.empire" race="ww_shorekeeper" is_female="true" age="30" default_group="HorseArcher" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="20" />
+      <skill id="Riding" value="55" />
+      <skill id="OneHanded" value="38" />
+      <skill id="TwoHanded" value="15" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="75" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="15" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_shorekeeper_t3" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_shorekeeper_2_w0" />
+        <equipment slot="Item1" id="Item.wur_shorekeeper_2_w1" />
+        <equipment slot="Item2" id="Item.wur_shorekeeper_2_w2" />
+        <equipment slot="Item3" id="Item.wur_shorekeeper_2_w3" />
+        <equipment slot="Horse" id="Item.khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_fur_harness" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_shorekeeper_2_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_shorekeeper_t3" name="守岸人·感染骑射3" level="16" occupation="Soldier" culture="Culture.empire" race="ww_shorekeeper" is_female="true" age="30" default_group="HorseArcher" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="40" />
+      <skill id="Riding" value="90" />
+      <skill id="OneHanded" value="55" />
+      <skill id="TwoHanded" value="30" />
+      <skill id="Polearm" value="40" />
+      <skill id="Bow" value="130" />
+      <skill id="Crossbow" value="10" />
+      <skill id="Throwing" value="30" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_shorekeeper_t4" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_shorekeeper_3_w0" />
+        <equipment slot="Item1" id="Item.wur_shorekeeper_3_w1" />
+        <equipment slot="Item2" id="Item.wur_shorekeeper_3_w2" />
+        <equipment slot="Item3" id="Item.wur_shorekeeper_3_w3" />
+        <equipment slot="Horse" id="Item.khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_harness" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_shorekeeper_3_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_shorekeeper_t4" name="守岸人·感染骑射4" level="21" occupation="Soldier" culture="Culture.empire" race="ww_shorekeeper" is_female="true" age="30" default_group="HorseArcher" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="60" />
+      <skill id="Riding" value="125" />
+      <skill id="OneHanded" value="72" />
+      <skill id="TwoHanded" value="45" />
+      <skill id="Polearm" value="45" />
+      <skill id="Bow" value="185" />
+      <skill id="Crossbow" value="15" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.wur_shorekeeper_t5" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_shorekeeper_4_w0" />
+        <equipment slot="Item1" id="Item.wur_shorekeeper_4_w1" />
+        <equipment slot="Item2" id="Item.wur_shorekeeper_4_w2" />
+        <equipment slot="Item3" id="Item.wur_shorekeeper_4_w3" />
+        <equipment slot="Horse" id="Item.t2_khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_shorekeeper_4_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_shorekeeper_t5" name="守岸人·感染骑射5" level="26" occupation="Soldier" culture="Culture.empire" race="ww_shorekeeper" is_female="true" age="30" default_group="HorseArcher" face_mesh_cache="false">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="80" />
+      <skill id="Riding" value="160" />
+      <skill id="OneHanded" value="90" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="240" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_shorekeeper_5_w0" />
+        <equipment slot="Item1" id="Item.wur_shorekeeper_5_w1" />
+        <equipment slot="Item2" id="Item.wur_shorekeeper_5_w2" />
+        <equipment slot="Item3" id="Item.wur_shorekeeper_5_w3" />
+        <equipment slot="Horse" id="Item.t2_khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_shorekeeper_5_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="wur_shorekeeper_lord_template" name="守岸人·感染统领" level="36" occupation="Lord" culture="Culture.empire" race="wur_lord_shorekeeper" is_female="true" age="30" default_group="HorseArcher" face_mesh_cache="false" is_hero="true" is_template="true">
+    <face>
+      <BodyProperties version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+      <BodyPropertiesMax version="4" age="30" weight="0.5" build="0.5" key="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="80" />
+      <skill id="Riding" value="190" />
+      <skill id="OneHanded" value="90" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="300" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.wur_shorekeeper_lord_w0" />
+        <equipment slot="Item1" id="Item.wur_shorekeeper_lord_w1" />
+        <equipment slot="Item2" id="Item.wur_shorekeeper_lord_w2" />
+        <equipment slot="Item3" id="Item.wur_shorekeeper_lord_w3" />
+        <equipment slot="Horse" id="Item.t2_khuzait_horse" />
+        <equipment slot="HorseHarness" id="Item.steppe_half_barding" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.wur_shorekeeper_lord_w3" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+</NPCCharacters>
