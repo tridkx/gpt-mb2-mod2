@@ -1,13 +1,14 @@
 {
   "id": "CavalryCombatTuning",
-  "version": "v1.1.0",
+  "version": "v1.2.0",
   "status": "pass",
-  "generated_utc": "20261015T050954197423Z",
+  "generated_utc": "20261015T052227208037Z",
   "game_version": "v1.4.8",
-  "checks": 160,
+  "checks": 208,
   "patch_targets": [
     "PATCH OK SandBox.GameComponents.SandboxAgentStatCalculateModel.UpdateAgentStats",
-    "PATCH OK TaleWorlds.MountAndBlade.CustomBattleAgentStatCalculateModel.UpdateAgentStats"
+    "PATCH OK TaleWorlds.MountAndBlade.CustomBattleAgentStatCalculateModel.UpdateAgentStats",
+    "PATCH OK TaleWorlds.CampaignSystem.GameComponents.DefaultSettlementMilitiaModel.CalculateMilitiaChange"
   ],
   "prerequisites": {
     "Bannerlord.Harmony": {
@@ -31,20 +32,24 @@
   "defaults": {
     "ChargeDamageMultiplier": 2.5,
     "MountedMovementPenaltyMultiplier": 0.7,
-    "MountedAccuracyAIOnly": false
+    "MountedAccuracyAIOnly": false,
+    "VillageMilitiaRecruitmentMultiplier": 2,
+    "VillageMilitiaDailyBonus": 0,
+    "VillageMilitiaPlayerClanOnly": false
   },
   "game_inputs_sha256": {
     "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.dll": "19387f31557ff840d14f378f6bbdf1d58fcff406ab9ff2294dfbb3e49a50b87e",
     "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.Core.dll": "3e5cece8ca42faf3fdde27632519ed2a6f86d1ec6d1a742867729f00001689bf",
+    "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll": "1f8e33e2ed73e6ec653d7629180afb70649ddc6e5bd1657a802a264efda1c3ae",
     "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\Sandbox\\bin\\Win64_Shipping_Client\\SandBox.dll": "587c6e94c425745c1478f632f3b66226ff8298666cb27e8e6d9a62488df5956a",
     "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\Native\\SubModule.xml": "38e8f6fa52498346cda474ea648d59cab0180284209f603d2bb1161e2b2bfefe"
   },
   "module_files_sha256": {
-    "bin/Win64_Shipping_Client/CavalryCombatTuning.dll": "f40dea18300833adeba72fe08075e0d377406adb6a4d42a78fadeddfdf1f7248",
-    "CHANGELOG.md": "23a8702467b07f669942d4f3fd4c1c8b5bd74d9ce254908c064c7c346a0a281b",
-    "ModuleData/settings.xml": "afa61ffaaf17ae9c1725c78444762fbe5bba560c9c80056442f7132e6bcd1c72",
-    "README.zh-CN.md": "4a52e54005cc696729e149cae1e67d598e8cdfe0843c7fe14cb4ee342f446a9a",
-    "SubModule.xml": "434082d2a2f27bc0a98b3f837cb582339a48f6dee0934f5dd5101d3a31959155"
+    "bin/Win64_Shipping_Client/CavalryCombatTuning.dll": "450d300228ef010fadc1dbf958e9905a1db6520b1e8bc1268cac8d2b5c2b65bc",
+    "CHANGELOG.md": "e5f8abc1f92660901bbfaeec896432336067b47d7279781dfe9099cc810f51b2",
+    "ModuleData/settings.xml": "c88501d0d43b0963a8d4116e960b46b56e349a3c92760b6e82b1c05cd38fd128",
+    "README.zh-CN.md": "2ee7a86728ab82e6ea3a11ffc6822edb88e37c9437907118e4a63d0119220abb",
+    "SubModule.xml": "1c6284b8992427b1e763172ed7dbe14f5ab251596fc77ac58bf9837e2ece45df"
   },
   "game_acceptance": "pending_user_test; game_not_started"
 }

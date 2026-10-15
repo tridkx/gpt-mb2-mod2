@@ -4,6 +4,9 @@ using System.Reflection;
 using HarmonyLib;
 using TaleWorlds.Core;
 using TaleWorlds.MountAndBlade;
+using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.GameComponents;
+using TaleWorlds.CampaignSystem.Settlements;
 
 namespace CavalryCombatTuning
 {
@@ -26,6 +29,10 @@ namespace CavalryCombatTuning
                     throw new MissingMethodException(type.FullName, "UpdateAgentStats(Agent, AgentDrivenProperties)");
                 result.Add(method);
             }
+            MethodInfo militia = typeof(DefaultSettlementMilitiaModel).GetMethod("CalculateMilitiaChange",
+                new[] { typeof(Settlement), typeof(bool) });
+            if (militia == null) throw new MissingMethodException("DefaultSettlementMilitiaModel.CalculateMilitiaChange");
+            result.Add(militia);
             return result.ToArray();
         }
 
@@ -34,10 +41,11 @@ namespace CavalryCombatTuning
             MethodInfo[] targets = ResolveTargets();
             var harmony = new Harmony(OwnerId);
             var postfix = new HarmonyMethod(typeof(RuntimePatches), nameof(AfterUpdate)) { priority = Priority.Last };
+            var militiaPostfix = new HarmonyMethod(typeof(RuntimePatches), nameof(AfterMilitiaChange)) { priority = Priority.Last };
             try
             {
                 foreach (MethodInfo target in targets)
-                    harmony.Patch(target, postfix: postfix);
+                    harmony.Patch(target, postfix: target.DeclaringType == typeof(DefaultSettlementMilitiaModel) ? militiaPostfix : postfix);
             }
             catch
             {
@@ -47,6 +55,16 @@ namespace CavalryCombatTuning
         }
 
         public static void Uninstall() => new Harmony(OwnerId).UnpatchAll(OwnerId);
+
+        private static void AfterMilitiaChange(Settlement __0, ref ExplainedNumber __result)
+        {
+            if (__0 == null || !__0.IsVillage || __0.Village == null
+                || __0.Village.VillageState != Village.VillageStates.Normal) return;
+            Settings settings = CurrentSettings;
+            bool playerOwned = settings.VillageMilitiaPlayerClanOnly && Clan.PlayerClan != null
+                && __0.OwnerClan == Clan.PlayerClan;
+            VillageMilitiaModifier.Apply(ref __result, settings, __0.Village.Hearth, true, true, playerOwned);
+        }
 
         private static void AfterUpdate(Agent __0, AgentDrivenProperties __1)
         {

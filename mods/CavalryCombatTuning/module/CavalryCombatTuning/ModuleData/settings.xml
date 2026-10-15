@@ -7,4 +7,10 @@
   <MountedMovementPenaltyMultiplier>0.7</MountedMovementPenaltyMultiplier>
   <!-- false=玩家和所有AI；true=只调整AI骑射精度。此项不限制冲撞效果。 -->
   <MountedAccuracyAIOnly>false</MountedAccuracyAIOnly>
+  <!-- 正常村庄：正向补充倍率，1=原版，2=默认；允许0～10。退休率不变。 -->
+  <VillageMilitiaRecruitmentMultiplier>2</VillageMilitiaRecruitmentMultiplier>
+  <!-- 每日额外补充，独立加在倍率后，默认0；允许0～100。 -->
+  <VillageMilitiaDailyBonus>0</VillageMilitiaDailyBonus>
+  <!-- false=全部村庄；true=仅当前属于玩家家族的村庄。 -->
+  <VillageMilitiaPlayerClanOnly>false</VillageMilitiaPlayerClanOnly>
 </CavalryCombatTuning>

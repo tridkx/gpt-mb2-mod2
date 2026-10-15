@@ -59,6 +59,7 @@ def main():
     game_inputs = [
         game / "bin/Win64_Shipping_Client/TaleWorlds.MountAndBlade.dll",
         game / "bin/Win64_Shipping_Client/TaleWorlds.Core.dll",
+        game / "bin/Win64_Shipping_Client/TaleWorlds.CampaignSystem.dll",
         game / "Modules/Sandbox/bin/Win64_Shipping_Client/SandBox.dll",
         game / "Modules/Native/SubModule.xml",
     ]
@@ -95,7 +96,8 @@ def main():
         "checks": checks, "patch_targets": [line for line in output.splitlines() if line.startswith("PATCH OK")],
         "prerequisites": dependencies,
         "mcm_settings_id": "CavalryCombatTuning_v1",
-        "defaults": {"ChargeDamageMultiplier": 2.5, "MountedMovementPenaltyMultiplier": 0.7, "MountedAccuracyAIOnly": False},
+        "defaults": {"ChargeDamageMultiplier": 2.5, "MountedMovementPenaltyMultiplier": 0.7, "MountedAccuracyAIOnly": False,
+                     "VillageMilitiaRecruitmentMultiplier": 2, "VillageMilitiaDailyBonus": 0, "VillageMilitiaPlayerClanOnly": False},
         "game_inputs_sha256": before, "module_files_sha256": hashes,
         "game_acceptance": "pending_user_test; game_not_started",
     }

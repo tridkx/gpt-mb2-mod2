@@ -24,6 +24,9 @@ namespace CavalryCombatTuning
             ChargeDamageMultiplier = seed.ChargeDamageMultiplier;
             MountedMovementPenaltyMultiplier = seed.MountedMovementPenaltyMultiplier;
             MountedAccuracyAIOnly = seed.MountedAccuracyAIOnly;
+            VillageMilitiaRecruitmentMultiplier = seed.VillageMilitiaRecruitmentMultiplier;
+            VillageMilitiaDailyBonus = seed.VillageMilitiaDailyBonus;
+            VillageMilitiaPlayerClanOnly = seed.VillageMilitiaPlayerClanOnly;
         }
 
         [SettingPropertyFloatingInteger("冲撞基础伤害倍率", 0f, 10f, "0.00",
@@ -43,13 +46,33 @@ namespace CavalryCombatTuning
         [SettingPropertyGroup("骑射", GroupOrder = 1)]
         public bool MountedAccuracyAIOnly { get; set; }
 
+        [SettingPropertyFloatingInteger("村庄民兵正向补充倍率", 0f, 10f, "0.00",
+            Order = 0, RequireRestart = false,
+            HintText = "默认2。仅倍率调整正常村庄的基础补充和炉灶补充，不乘退休项。1为原版；保存后影响后续每日增长，不立即翻倍现有人数。")]
+        [SettingPropertyGroup("村庄民兵", GroupOrder = 2)]
+        public float VillageMilitiaRecruitmentMultiplier { get; set; }
+
+        [SettingPropertyFloatingInteger("村庄民兵每日额外人数", 0f, 100f, "0.00",
+            Order = 1, RequireRestart = false,
+            HintText = "默认0。独立加在倍率计算后，不参与倍率；支持小数累计。仅正常村庄生效，城镇、城堡和退休率不变。")]
+        [SettingPropertyGroup("村庄民兵", GroupOrder = 2)]
+        public float VillageMilitiaDailyBonus { get; set; }
+
+        [SettingPropertyBool("民兵调整仅限玩家家族村庄", Order = 2, RequireRestart = false,
+            HintText = "默认关闭：全部正常村庄生效。开启：只对当前属于玩家家族的村庄生效，不包括同王国其他家族；易主后按当前归属判断。")]
+        [SettingPropertyGroup("村庄民兵", GroupOrder = 2)]
+        public bool VillageMilitiaPlayerClanOnly { get; set; }
+
         public Settings ToRuntimeSettings()
         {
             var settings = new Settings
             {
                 ChargeDamageMultiplier = ChargeDamageMultiplier,
                 MountedMovementPenaltyMultiplier = MountedMovementPenaltyMultiplier,
-                MountedAccuracyAIOnly = MountedAccuracyAIOnly
+                MountedAccuracyAIOnly = MountedAccuracyAIOnly,
+                VillageMilitiaRecruitmentMultiplier = VillageMilitiaRecruitmentMultiplier,
+                VillageMilitiaDailyBonus = VillageMilitiaDailyBonus,
+                VillageMilitiaPlayerClanOnly = VillageMilitiaPlayerClanOnly
             };
             settings.Validate();
             return settings;

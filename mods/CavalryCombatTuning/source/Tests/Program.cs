@@ -10,6 +10,7 @@ using TaleWorlds.MountAndBlade;
 using MCM.Abstractions.Base;
 using MCM.Abstractions.Attributes;
 using MCM.Abstractions.Attributes.v2;
+using TaleWorlds.CampaignSystem;
 
 internal static class Program
 {
@@ -47,6 +48,10 @@ internal static class Program
         Settings settings = Settings.Load(configPath);
         Near(settings.ChargeDamageMultiplier, 2.5f, "default charge");
         Near(settings.MountedMovementPenaltyMultiplier, 0.7f, "default accuracy");
+        Near(settings.VillageMilitiaRecruitmentMultiplier, 2f, "default village recruitment");
+        Near(settings.VillageMilitiaDailyBonus, 0f, "default village extra zero");
+        Check(!settings.VillageMilitiaPlayerClanOnly, "default all villages");
+        CheckVillageMilitia();
         foreach (WeaponClass weapon in new[] { WeaponClass.Bow, WeaponClass.Crossbow })
         {
             foreach (bool ai in new[] { false, true })
@@ -106,6 +111,12 @@ internal static class Program
             Reject(() => Settings.Load(temp), "malformed number rejected");
             File.WriteAllText(temp, "<CavalryCombatTuning><ChargeDamageMultipler>3</ChargeDamageMultipler></CavalryCombatTuning>");
             Reject(() => Settings.Load(temp), "misspelled setting rejected");
+            File.WriteAllText(temp, "<CavalryCombatTuning><ChargeDamageMultiplier>3</ChargeDamageMultiplier><MountedAccuracyAIOnly>true</MountedAccuracyAIOnly></CavalryCombatTuning>");
+            Settings legacy = Settings.Load(temp);
+            Near(legacy.ChargeDamageMultiplier, 3f, "old XML existing value retained");
+            Near(legacy.VillageMilitiaRecruitmentMultiplier, 2f, "old XML new recruitment default");
+            Near(legacy.VillageMilitiaDailyBonus, 0f, "old XML new extra default");
+            Check(!legacy.VillageMilitiaPlayerClanOnly, "old XML new scope default");
         }
         finally { File.Delete(temp); }
 
@@ -116,7 +127,8 @@ internal static class Program
         Check(mcm.FormatType == "json2", "MCM persists global settings");
         Check(mcm.Id == "CavalryCombatTuning_v1", "stable MCM identity");
         Check(mcm.UIVersion == 2, "MCM v2 attributes");
-        foreach (string property in new[] { nameof(mcm.ChargeDamageMultiplier), nameof(mcm.MountedMovementPenaltyMultiplier), nameof(mcm.MountedAccuracyAIOnly) })
+        foreach (string property in new[] { nameof(mcm.ChargeDamageMultiplier), nameof(mcm.MountedMovementPenaltyMultiplier), nameof(mcm.MountedAccuracyAIOnly),
+            nameof(mcm.VillageMilitiaRecruitmentMultiplier), nameof(mcm.VillageMilitiaDailyBonus), nameof(mcm.VillageMilitiaPlayerClanOnly) })
         {
             var attribute = (BaseSettingPropertyAttribute)Attribute.GetCustomAttribute(typeof(McmSettings).GetProperty(property), typeof(BaseSettingPropertyAttribute));
             Check(attribute != null && !attribute.RequireRestart, "MCM control and no-restart: " + property);
@@ -128,12 +140,22 @@ internal static class Program
         mcm.ChargeDamageMultiplier = 4f;
         mcm.MountedMovementPenaltyMultiplier = 0.5f;
         mcm.MountedAccuracyAIOnly = false;
+        mcm.VillageMilitiaRecruitmentMultiplier = 3f;
+        mcm.VillageMilitiaDailyBonus = 1.5f;
+        mcm.VillageMilitiaPlayerClanOnly = true;
         mcm.OnPropertyChanged(nameof(mcm.ChargeDamageMultiplier));
         Near(RuntimePatches.CurrentSettings.ChargeDamageMultiplier, 3.5f, "unsaved menu edit not applied");
         mcm.OnPropertyChanged(BaseSettings.SaveTriggered);
         Near(RuntimePatches.CurrentSettings.ChargeDamageMultiplier, 4f, "saved menu charge applied without restart");
         Near(RuntimePatches.CurrentSettings.MountedMovementPenaltyMultiplier, 0.5f, "saved menu accuracy applied");
         Check(!RuntimePatches.CurrentSettings.MountedAccuracyAIOnly, "saved menu AI-only applied");
+        Near(RuntimePatches.CurrentSettings.VillageMilitiaRecruitmentMultiplier, 3f, "saved village multiplier applied");
+        Near(RuntimePatches.CurrentSettings.VillageMilitiaDailyBonus, 1.5f, "saved village bonus applied");
+        Check(RuntimePatches.CurrentSettings.VillageMilitiaPlayerClanOnly, "saved village scope applied");
+        Near(VillageMilitiaModifier.CalculateAdjustment(RuntimePatches.CurrentSettings, 600f, true, true, true), 5.5f,
+            "saved MCM values drive village calculation");
+        Near(VillageMilitiaModifier.CalculateAdjustment(RuntimePatches.CurrentSettings, 600f, true, true, false), 0f,
+            "saved MCM scope excludes non-player village");
         var liveMount = Baseline();
         StatModifier.Apply(liveMount, RuntimePatches.CurrentSettings, true, false, false, true, WeaponClass.Undefined);
         Near(liveMount.MountChargeDamage, 0.48f, "live saved charge used by combat modifier");
@@ -168,6 +190,53 @@ internal static class Program
         foreach (MethodInfo method in RuntimePatches.ResolveTargets())
             Check(Harmony.GetPatchInfo(method)?.Postfixes.All(p => p.owner != RuntimePatches.OwnerId) ?? true,
                 "owned patch removed");
+    }
+
+    private static void CheckVillageMilitia()
+    {
+        var defaults = new Settings();
+        foreach (float hearths in new[] { 0f, 600f, 1200f })
+            foreach (float militia in new[] { 0f, 80f, 160f, 300f })
+            {
+                float recruitment = 0.5f + hearths / 400f;
+                float retirement = -militia * 0.025f;
+                var result = new ExplainedNumber(recruitment + retirement);
+                VillageMilitiaModifier.Apply(ref result, defaults, hearths, true, true, false);
+                Near(result.ResultNumber, recruitment * 2f + retirement, "only positive recruitment doubled");
+            }
+        var balance = new ExplainedNumber(2f - 160f * 0.025f);
+        VillageMilitiaModifier.Apply(ref balance, defaults, 600f, true, true, false);
+        Near(balance.ResultNumber, 0f, "600-hearth default equilibrium at 160");
+        var otherEffect = new ExplainedNumber(2f - 2f - 3f);
+        VillageMilitiaModifier.Apply(ref otherEffect, defaults, 600f, true, true, false);
+        Near(otherEffect.ResultNumber, -1f, "unrelated negative effects preserved");
+        var descriptions = new ExplainedNumber(0f, true);
+        VillageMilitiaModifier.Apply(ref descriptions, defaults, 600f, true, true, false);
+        Near(descriptions.ResultNumber, 2f, "tooltip enabled same adjustment");
+        Check(descriptions.GetLines().Any(line => line.name.Contains("村庄民兵")), "village tooltip has labeled bonus");
+        Near(VillageMilitiaModifier.CalculateAdjustment(defaults, 600f, false, true, false), 0f, "town/castle excluded");
+        Near(VillageMilitiaModifier.CalculateAdjustment(defaults, 600f, true, false, false), 0f, "abnormal village excluded");
+        defaults.VillageMilitiaPlayerClanOnly = true;
+        Near(VillageMilitiaModifier.CalculateAdjustment(defaults, 600f, true, true, false), 0f, "other clan excluded");
+        Near(VillageMilitiaModifier.CalculateAdjustment(defaults, 600f, true, true, true), 2f, "player clan included");
+        defaults.VillageMilitiaDailyBonus = 1.5f;
+        Near(VillageMilitiaModifier.CalculateAdjustment(defaults, 600f, true, true, true), 3.5f, "extra bonus not multiplied");
+        defaults.VillageMilitiaRecruitmentMultiplier = 1f;
+        defaults.VillageMilitiaDailyBonus = 0f;
+        Near(VillageMilitiaModifier.CalculateAdjustment(defaults, 600f, true, true, true), 0f, "village vanilla restored");
+        defaults.VillageMilitiaRecruitmentMultiplier = 0f;
+        Near(VillageMilitiaModifier.CalculateAdjustment(defaults, 600f, true, true, true), -2f, "zero recruitment keeps retirement");
+        foreach (float invalid in new[] { -1f, 11f, float.NaN, float.PositiveInfinity })
+        {
+            defaults.VillageMilitiaRecruitmentMultiplier = invalid;
+            Reject(defaults.Validate, "invalid village multiplier rejected");
+        }
+        defaults.VillageMilitiaRecruitmentMultiplier = 2f;
+        foreach (float invalid in new[] { -1f, 101f, float.NaN, float.PositiveInfinity })
+        {
+            defaults.VillageMilitiaDailyBonus = invalid;
+            Reject(defaults.Validate, "invalid village extra rejected");
+        }
     }
 
     private static AgentDrivenProperties Baseline() => new AgentDrivenProperties

@@ -11,11 +11,16 @@ namespace CavalryCombatTuning
         public float ChargeDamageMultiplier { get; set; } = 2.5f;
         public float MountedMovementPenaltyMultiplier { get; set; } = 0.7f;
         public bool MountedAccuracyAIOnly { get; set; } = false;
+        public float VillageMilitiaRecruitmentMultiplier { get; set; } = 2f;
+        public float VillageMilitiaDailyBonus { get; set; } = 0f;
+        public bool VillageMilitiaPlayerClanOnly { get; set; } = false;
 
         public void Validate()
         {
             ValidateRange(ChargeDamageMultiplier, 0f, 10f, nameof(ChargeDamageMultiplier));
             ValidateRange(MountedMovementPenaltyMultiplier, 0f, 3f, nameof(MountedMovementPenaltyMultiplier));
+            ValidateRange(VillageMilitiaRecruitmentMultiplier, 0f, 10f, nameof(VillageMilitiaRecruitmentMultiplier));
+            ValidateRange(VillageMilitiaDailyBonus, 0f, 100f, nameof(VillageMilitiaDailyBonus));
         }
 
         private static void ValidateRange(float value, float min, float max, string name)

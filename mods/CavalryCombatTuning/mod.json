@@ -1,6 +1,6 @@
 {
   "id": "CavalryCombatTuning",
-  "version": "v1.1.0",
+  "version": "v1.2.0",
   "type": "singleplayer_runtime",
   "game_version": "v1.4.8",
   "package": "module/CavalryCombatTuning/bin/Win64_Shipping_Client/CavalryCombatTuning.dll",
@@ -11,6 +11,7 @@
     "source/Runtime/CavalryCombatTuning.csproj", "source/Runtime/Settings.cs",
     "source/Runtime/StatModifier.cs", "source/Runtime/RuntimePatches.cs", "source/Runtime/SubModule.cs",
     "source/Runtime/McmSettings.cs",
+    "source/Runtime/VillageMilitiaModifier.cs",
     "source/Runtime/Harmony-LICENSE.txt", "source/Tests/CavalryCombatTuning.Tests.csproj",
     "source/Tests/Program.cs", "tools/release.py"
   ]
