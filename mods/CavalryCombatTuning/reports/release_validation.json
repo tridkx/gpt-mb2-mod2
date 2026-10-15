@@ -1,0 +1,33 @@
+{
+  "id": "CavalryCombatTuning",
+  "version": "v1.0.0",
+  "status": "pass",
+  "generated_utc": "20261015T033512378866Z",
+  "game_version": "v1.4.8",
+  "checks": 142,
+  "patch_targets": [
+    "PATCH OK SandBox.GameComponents.SandboxAgentStatCalculateModel.UpdateAgentStats",
+    "PATCH OK TaleWorlds.MountAndBlade.CustomBattleAgentStatCalculateModel.UpdateAgentStats"
+  ],
+  "defaults": {
+    "ChargeDamageMultiplier": 2.5,
+    "MountedMovementPenaltyMultiplier": 0.7,
+    "MountedAccuracyAIOnly": false
+  },
+  "game_inputs_sha256": {
+    "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.dll": "19387f31557ff840d14f378f6bbdf1d58fcff406ab9ff2294dfbb3e49a50b87e",
+    "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.Core.dll": "3e5cece8ca42faf3fdde27632519ed2a6f86d1ec6d1a742867729f00001689bf",
+    "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\Sandbox\\bin\\Win64_Shipping_Client\\SandBox.dll": "587c6e94c425745c1478f632f3b66226ff8298666cb27e8e6d9a62488df5956a",
+    "D:\\SteamLibrary\\steamapps\\common\\Mount & Blade II Bannerlord\\Modules\\Native\\SubModule.xml": "38e8f6fa52498346cda474ea648d59cab0180284209f603d2bb1161e2b2bfefe"
+  },
+  "module_files_sha256": {
+    "bin/Win64_Shipping_Client/0Harmony.dll": "7b9e756306fa3d7620e02a857c8927a6ab04973f9bd8a77d3866700a6deac55c",
+    "bin/Win64_Shipping_Client/CavalryCombatTuning.dll": "3d330c231182607eb00f78fe830a1a4435467fc2f2bef800ac5ff12b0f441ca2",
+    "CHANGELOG.md": "586eec5078ac1385608a55524694ef49ba789566b15701802268774d7800da00",
+    "Harmony-LICENSE.txt": "407ddd98200c9f17f49942b5a7791e288a2bd553b59bf2f462db87dbb21c50bc",
+    "ModuleData/settings.xml": "f378de9b28a4568bd06b52f3e4b142fb95b257aa1c84e735f037a989012b4aca",
+    "README.zh-CN.md": "68fbfff2265fa8299e6f5ce9b35c6a766b5bba22e258cd476fd5e34a44293905",
+    "SubModule.xml": "bb50801745e8d16863d7549db6eea0f16ed1bcc22a4c50a7df0c8bf015695362"
+  },
+  "game_acceptance": "pending_user_test; game_not_started"
+}

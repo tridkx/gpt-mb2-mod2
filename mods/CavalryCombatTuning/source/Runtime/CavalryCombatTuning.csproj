@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../GameReferences.props" />
+  <PropertyGroup><AssemblyName>CavalryCombatTuning</AssemblyName><Version>1.0.0</Version><Deterministic>true</Deterministic></PropertyGroup>
+  <ItemGroup><PackageReference Include="Lib.Harmony" Version="2.4.2" /></ItemGroup>
+</Project>

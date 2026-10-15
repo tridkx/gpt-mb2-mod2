@@ -20,6 +20,7 @@
 | [原神种族合集](mods/GenshinRaceCollection/README.md) | 22 个完整角色种族统一为一个游戏模块，各角色保留独立源工程；13 个新角色长发布料，艾梅莉埃保留帽后长饰与背后飘带布料 |
 | [Modern Girl Race](mods/ModernGirlRace/README.md) | 现代少女 v6 完整人物固定外观种族与独立测试兵种 |
 | [Race Troop Builder](mods/RaceTroopBuilder/README.md) | 自定义种族兵种树拼装器，Windows GUI、AI JSON/CLI、中英名称与固有护甲配置 |
+| [Cavalry Combat Tuning](mods/CavalryCombatTuning/README.md) | 可调冲撞伤害与骑乘弓弩移动精度，独立单机运行模块 |
 
 ## 目录结构
 

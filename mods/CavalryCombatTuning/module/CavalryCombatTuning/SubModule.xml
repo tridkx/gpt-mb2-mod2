@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+  <Name value="Cavalry Combat Tuning" />
+  <Id value="CavalryCombatTuning" />
+  <Version value="v1.0.0" />
+  <DefaultModule value="false" />
+  <ModuleCategory value="Singleplayer" />
+  <Official value="false" />
+  <ModuleType value="Community" />
+  <DependedModules>
+    <DependedModule Id="Native" />
+    <DependedModule Id="SandBoxCore" />
+    <DependedModule Id="Sandbox" />
+    <DependedModule Id="CustomBattle" Optional="true" />
+  </DependedModules>
+  <SubModules>
+    <SubModule>
+      <Name value="Cavalry Combat Tuning Runtime" />
+      <DLLName value="CavalryCombatTuning.dll" />
+      <SubModuleClassType value="CavalryCombatTuning.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+  </SubModules>
+  <Xmls />
+</Module>
