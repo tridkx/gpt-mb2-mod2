@@ -11,6 +11,8 @@ using TaleWorlds.CampaignSystem.GameComponents;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Roster;
 using TaleWorlds.Localization;
+using TaleWorlds.Core;
+using TaleWorlds.MountAndBlade;
 
 internal static class EnhancementTests
 {
@@ -110,6 +112,7 @@ internal static class EnhancementTests
             object[] arguments={null,party};
             AccessTools.Method(typeof(EnhancementPatches),"PartySize").Invoke(null,arguments);
             Near(((ExplainedNumber)arguments[1]).ResultNumber,123,"default model postfix exact no-op");
+            CheckHeroInitialization();
         }
         finally{EnhancementPatches.Uninstall();}
         Check(!EnhancementPatches.Ready && !Harmony.GetAllPatchedMethods().Any(m=>Harmony.GetPatchInfo(m).Owners.Contains(EnhancementPatches.Owner)),"new hooks completely uninstalled");
@@ -129,6 +132,61 @@ internal static class EnhancementTests
             Check(Array.FindIndex(sorted,m=>m.DeclaringType==typeof(BanditPopulationTuning.Patches))<Array.FindIndex(sorted,m=>m.DeclaringType==type),"population still runs before Genshin mixing");
         }
         finally{type.GetMethod("Uninstall").Invoke(null,null);BanditPopulationTuning.Patches.Uninstall();}
+    }
+    private static bool OriginalHealth(ref ExplainedNumber __result){__result=new ExplainedNumber(137,false);return false;}
+    private static void CheckHeroInitialization()
+    {
+        var gameField=AccessTools.Field(typeof(Game),"_current");
+        object previousGame=gameField.GetValue(null);
+        var s=Settings.Current;
+        int previousPlayer=s.PlayerHealthBonus,previousOther=s.OtherHeroHealthBonus;
+        float previousPlayerDamage=s.PlayerDamagePercent,previousOtherDamage=s.OtherHeroDamagePercent;
+        var model=(DefaultCharacterStatsModel)FormatterServices.GetUninitializedObject(typeof(DefaultCharacterStatsModel));
+        var target=AccessTools.DeclaredMethod(typeof(DefaultCharacterStatsModel),"MaxHitpoints");
+        var harness=new Harmony("DKX.BanditTests.HeroInitialization");
+        var brother=Dummy("story_brother");
+        var player=Dummy("main_hero");
+        var heroSetter=AccessTools.PropertySetter(typeof(CharacterObject),"HeroObject");
+        heroSetter.Invoke(brother,new object[]{FormatterServices.GetUninitializedObject(typeof(Hero))});
+        heroSetter.Invoke(player,new object[]{FormatterServices.GetUninitializedObject(typeof(Hero))});
+        Check(brother.IsHero,"fixture reproduces hero-only health path");
+        harness.Patch(target,prefix:new HarmonyMethod(typeof(EnhancementTests),nameof(OriginalHealth)));
+        try
+        {
+            gameField.SetValue(null,null);
+            s.PlayerHealthBonus=0;s.OtherHeroHealthBonus=0;
+            Near(((ExplainedNumber)target.Invoke(model,new object[]{brother,false})).ResultNumber,137,"actual health postfix: zero bonuses and no Game");
+            s.PlayerHealthBonus=11;s.OtherHeroHealthBonus=31;
+            Near(((ExplainedNumber)target.Invoke(model,new object[]{brother,false})).ResultNumber,137,"actual health postfix: enabled bonuses and no Game");
+            var loading=(Game)FormatterServices.GetUninitializedObject(typeof(Game));
+            gameField.SetValue(null,loading);
+            Near(((ExplainedNumber)target.Invoke(model,new object[]{brother,false})).ResultNumber,137,"story load: Game exists but player troop not ready");
+            loading.PlayerTroop=Dummy("unbound_player");
+            Near(((ExplainedNumber)target.Invoke(model,new object[]{brother,false})).ResultNumber,137,"story load: player troop has no hero yet");
+            loading.PlayerTroop=player;
+            Near(((ExplainedNumber)target.Invoke(model,new object[]{brother,false})).ResultNumber,168,"ready player: brother gets other-hero bonus");
+            Near(((ExplainedNumber)target.Invoke(model,new object[]{player,false})).ResultNumber,148,"ready player: player gets independent bonus");
+            Near(((ExplainedNumber)target.Invoke(model,new object[]{Dummy("soldier"),false})).ResultNumber,137,"ordinary troops remain unchanged");
+            s.PlayerDamagePercent=50;s.OtherHeroDamagePercent=20;
+            var attack=new AttackInformation{AttackerAgentCharacter=brother};
+            var damage=AccessTools.Method(typeof(EnhancementPatches),"Damage");
+            object[] args={attack,100f};
+            gameField.SetValue(null,null);damage.Invoke(null,args);
+            Near((float)args[1],100,"damage enabled with no Game is a no-op");
+            gameField.SetValue(null,loading);loading.PlayerTroop=null;args[1]=100f;damage.Invoke(null,args);
+            Near((float)args[1],100,"damage during player initialization is a no-op");
+            loading.PlayerTroop=player;args[1]=100f;damage.Invoke(null,args);
+            Near((float)args[1],120,"damage resumes after player ready");
+            attack.AttackerAgentCharacter=player;args[0]=attack;args[1]=100f;damage.Invoke(null,args);
+            Near((float)args[1],150,"ready player damage independently configured");
+        }
+        finally
+        {
+            harness.UnpatchAll(harness.Id);gameField.SetValue(null,previousGame);
+            s.PlayerHealthBonus=previousPlayer;s.OtherHeroHealthBonus=previousOther;
+            s.PlayerDamagePercent=previousPlayerDamage;s.OtherHeroDamagePercent=previousOtherDamage;
+        }
+        Console.WriteLine("REGRESSION OK hero health/damage: no Game, missing player troop, missing player hero, ready player and story brother; original results preserved until player ready");
     }
     private static CharacterObject Dummy(string id){var c=(CharacterObject)FormatterServices.GetUninitializedObject(typeof(CharacterObject));c.StringId=id;return c;}
     private static void Check(bool value,string message){checks++;if(!value)throw new Exception(message);}

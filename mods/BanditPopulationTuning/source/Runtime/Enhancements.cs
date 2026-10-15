@@ -7,6 +7,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.GameComponents;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Settlements;
+using TaleWorlds.Core;
 using TaleWorlds.Localization;
 using TaleWorlds.MountAndBlade;
 
@@ -14,6 +15,15 @@ namespace BanditPopulationTuning
 {
     public static class EnhancementRules
     {
+        // Hero.MainHero dereferences PlayerCharacter internally, including during story load.
+        public static CharacterObject ReadyPlayerCharacter
+        {
+            get
+            {
+                var player=Game.Current?.PlayerTroop as CharacterObject;
+                return player?.HeroObject==null ? null : player;
+            }
+        }
         public static int SafeInt(int value, int max) => Math.Max(0, Math.Min(max, value));
         public static bool EligibleClan(bool exists, bool playerClan, bool bandit, bool eliminated) => exists && !playerClan && !bandit && !eliminated;
         public static bool EligibleParty(bool eligibleClan, bool lordParty, bool active, bool disbanding, bool leaderAlive, bool prisoner, bool playerParty) =>
@@ -113,7 +123,10 @@ namespace BanditPopulationTuning
         private static void Health(CharacterObject __0,ref ExplainedNumber __result)
         {
             if (__0?.IsHero!=true) return;
-            int bonus=__0.HeroObject==Hero.MainHero ? Settings.Current.PlayerHealthBonus : Settings.Current.OtherHeroHealthBonus;
+            var player=EnhancementRules.ReadyPlayerCharacter;
+            if(player==null) return;
+            var s=Settings.Current;
+            int bonus=__0.HeroObject==player.HeroObject ? s.PlayerHealthBonus : s.OtherHeroHealthBonus;
             EnhancementRules.AddFinal(ref __result,EnhancementRules.SafeInt(bonus,5000),"土匪与AI强化：英雄额外生命");
         }
         private static void Damage(in AttackInformation __0,ref float __result)
@@ -121,7 +134,10 @@ namespace BanditPopulationTuning
             var s=Settings.Current;
             if(s.PlayerDamagePercent==0 && s.OtherHeroDamagePercent==0) return;
             var attacker=__0.AttackerAgentCharacter;
-            __result=EnhancementRules.HeroDamage(__result,attacker?.IsHero==true,attacker!=null && attacker==Hero.MainHero?.CharacterObject,s);
+            if(attacker?.IsHero!=true) return;
+            var player=EnhancementRules.ReadyPlayerCharacter;
+            if(player==null) return;
+            __result=EnhancementRules.HeroDamage(__result,true,attacker==player,s);
         }
         private static void TownBonus(Town town,ref ExplainedNumber result,float bonus,string label)
         {

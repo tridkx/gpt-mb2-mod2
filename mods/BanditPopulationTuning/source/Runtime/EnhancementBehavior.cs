@@ -100,13 +100,15 @@ namespace BanditPopulationTuning
             if(!EnhancementPatches.Ready) return;
             var s=Settings.Current;
             if(s.AILordWeeklyGold==0 && s.AILordWeeklySkillXp==0) return;
+            var player=EnhancementRules.ReadyPlayerCharacter;
+            if(player==null) return;
             SkillObject[] skills={DefaultSkills.OneHanded,DefaultSkills.TwoHanded,DefaultSkills.Polearm,DefaultSkills.Bow,
                 DefaultSkills.Crossbow,DefaultSkills.Throwing,DefaultSkills.Riding,DefaultSkills.Athletics,DefaultSkills.Crafting,
                 DefaultSkills.Scouting,DefaultSkills.Tactics,DefaultSkills.Roguery,DefaultSkills.Charm,DefaultSkills.Leadership,
                 DefaultSkills.Trade,DefaultSkills.Steward,DefaultSkills.Medicine,DefaultSkills.Engineering};
             foreach(var hero in Hero.AllAliveHeroes.ToArray())
             {
-                if(!hero.IsLord || !hero.IsAlive || hero.IsPrisoner || !EnhancementRules.AIClan(hero.Clan) || hero==Hero.MainHero) continue;
+                if(!hero.IsLord || !hero.IsAlive || hero.IsPrisoner || !EnhancementRules.AIClan(hero.Clan) || hero==player.HeroObject) continue;
                 try
                 {
                     int gold=(int)Math.Max(0,Math.Min((long)EnhancementRules.SafeInt(s.AILordWeeklyGold,100000), (long)int.MaxValue-hero.Gold));

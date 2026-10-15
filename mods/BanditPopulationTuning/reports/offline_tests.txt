@@ -16,4 +16,5 @@ PATCH OK TaleWorlds.CampaignSystem.GameComponents.DefaultSettlementProsperityMod
 PATCH OK TaleWorlds.CampaignSystem.GameComponents.DefaultSettlementSecurityModel.CalculateSecurityChange
 PATCH OK TaleWorlds.CampaignSystem.GameComponents.DefaultSettlementTaxModel.CalculateTownTax
 PATCH OK SandBox.GameComponents.SandboxAgentApplyDamageModel.ApplyGeneralDamageModifiers
-PASS 220 checks
+REGRESSION OK hero health/damage: no Game, missing player troop, missing player hero, ready player and story brother; original results preserved until player ready
+PASS 232 checks

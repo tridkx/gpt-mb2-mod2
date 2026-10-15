@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-15",
+  "game_version": "v1.4.8",
+  "baseline_version": "v1.1.0",
+  "baseline_installed_dll_sha256": "27f0a3d7eaaa38c0248550d1440833577f9c583eb220d35a7ef7190023d96fc2",
+  "baseline_reproduction": "TargetInvocationException -> NullReferenceException in EnhancementPatches.Health through actual patched DefaultCharacterStatsModel.MaxHitpoints, with hero and absent player",
+  "regression": "new CheckHeroInitialization test failed on old implementation, passed after fix",
+  "fixed_version": "v1.1.1",
+  "checks": 232,
+  "coverage": [
+    "no Game",
+    "Game without player troop",
+    "player troop without hero binding",
+    "ready story brother and player with separate health bonuses",
+    "ordinary troop unchanged",
+    "damage with absent/unbound/ready player"
+  ],
+  "game_acceptance": "pending_user_story_mode_load_test; game_not_started"
+}
