@@ -1,6 +1,6 @@
 {
   "version": "v0.1.0",
-  "status": "pending_user_test",
+  "status": "user_basic_feedback_received",
   "game_launched_by_assistant": false,
   "package_sha256": "0a1326d23dd4ceaa4d3b9c44cc017323f99f4cc00b686bf79cd6d564d52137f3",
   "required_scenes": [
@@ -14,5 +14,8 @@
     "riding",
     "lod_distances"
   ],
-  "skirt_cloth_enabled": false
+  "skirt_cloth_enabled": false,
+  "feedback": "用户表示基本没问题，创建页面手臂自然下垂；未逐动作或 LOD 验收",
+  "tested_version": "v0.1.0",
+  "collection_loading_retest": "pending"
 }

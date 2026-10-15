@@ -23,10 +23,10 @@ def main():
   c.update(head_materials=HEAD[c['id']],exclude_materials=EXCLUDE[c['id']],glass_materials=[6] if c['id']=='ZhezhiRace' else [],cloth_enabled=True,cloth_mode='direct',cloth_lods=[0,1,2,3],cloth_materials=list(plan),cloth_proxy_materials=list(plan),cloth_proxy_policy={'pin_band_m':.012,'minimum_component_height_m':.04,'max_proxy_vertices':4500},direct_diagnostic_lods=[0],hair_reference_body_blend_max=.55,weight_refinement={'shoulders':True,'waist':True,'crotch':True},shoulder_style='arm_only')
   c['cloth_parts']={str(i):{'fixed_above_source_y':y,'attachment_bone':bone,'max_distance_m':travel,'travel_slope':.22} for i,(y,bone,travel) in plan.items()}
   c['exclude_materials']+= {'JinhsiRace':[10],'JinhsiOutfitRace':[18,19,20],'BaizhiRace':[11],'ShorekeeperRace':[10,11]}.get(c['id'],[])
-  c['skinned_skirt_materials']={'JinhsiRace':[20,21],'JinhsiOutfitRace':[34,35,36,37,39,43,44],'JianxinRace':[12,14,15,18],'ShorekeeperRace':[0,24,25,26,27,28,38],'ChangliRace':[18,26,27]}.get(c['id'],[])
+  c['skinned_skirt_materials']={'JinhsiRace':[20,21],'JinhsiOutfitRace':[34,35,36,37,39,43,44],'JianxinRace':[12,14,15,18],'ShorekeeperRace':[24,25,26,27,28,38],'ChangliRace':[18,26,27]}.get(c['id'],[])
   c['shoulder_style']='field'
   c['shoulder_materials']=[m['index'] for m in inv['materials'] if m['index'] not in HEAD[c['id']] and m['index'] not in plan]
-  c['weight_smoothing_materials']={'JinhsiOutfitRace':[5,6,8],'BaizhiRace':[5,25],'JianxinRace':[0,1],'YinlinRace':[8,9,10,13],'ChangliRace':[13,14,22],'ZhezhiRace':[1,9,11,12,13,14]}.get(c['id'],[])
+  c['weight_smoothing_materials']={'JinhsiOutfitRace':[5,6,8],'BaizhiRace':[5,25],'JianxinRace':[0,1],'YinlinRace':[8,9,10,13],'ShorekeeperRace':[0],'ChangliRace':[13,14,22],'ZhezhiRace':[1,9,11,12,13,14]}.get(c['id'],[])
   c['weight_smoothing_iterations']=16
   c['consistent_cloth_attachment']=True
   c['minimum_ratios']={f"m{i:02d}":.75 for i in HEAD[c['id']] if i not in plan}

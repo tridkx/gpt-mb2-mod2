@@ -1,6 +1,6 @@
 {
   "id": "ShorekeeperRace",
-  "version": "v0.1.0",
+  "version": "v0.1.1",
   "race": "ww_shorekeeper",
   "prefix": "ww_shorekeeper",
   "skeleton": "ww_shorekeeper_skeleton",
@@ -179,7 +179,6 @@
     }
   },
   "skinned_skirt_materials": [
-    0,
     24,
     25,
     26,
@@ -209,5 +208,9 @@
     39,
     40
   ],
-  "consistent_cloth_attachment": true
+  "consistent_cloth_attachment": true,
+  "weight_smoothing_materials": [
+    0
+  ],
+  "weight_smoothing_iterations": 16
 }

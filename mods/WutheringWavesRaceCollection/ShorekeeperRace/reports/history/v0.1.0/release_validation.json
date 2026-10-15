@@ -1,0 +1,128 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-15",
+  "final_package_sha256": "10797db9b38959c51588c6b9238b24c110b64e2d1532c21d55c9bf669cdd3dda",
+  "source_input_sha256": "b4dd5d8ce63039d02dd3089dd001f525b695da64f1ce983f021222e1e365a3df",
+  "baseline_package_sha256": null,
+  "baseline_reason": "Preserved source PMX and final direct-hair stream equivalence report",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 86253,
+      "vertices": 57095,
+      "submeshes": 32
+    },
+    {
+      "lod": 1,
+      "triangles": 64621,
+      "vertices": 46264,
+      "submeshes": 32
+    },
+    {
+      "lod": 2,
+      "triangles": 51581,
+      "vertices": 39738,
+      "submeshes": 32
+    },
+    {
+      "lod": 3,
+      "triangles": 46063,
+      "vertices": 36979,
+      "submeshes": 32
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 760,
+      "worst_mesh": "ww_shorekeeper_part_03",
+      "frames_checked": 16,
+      "max_edge_extension": 2.5494019507498273,
+      "max_mesh_p99_extension": 1.2409795720408108
+    },
+    {
+      "label": "run",
+      "worst_frame": 8,
+      "worst_mesh": "ww_shorekeeper_part_02",
+      "frames_checked": 25,
+      "max_edge_extension": 3.9293706415426777,
+      "max_mesh_p99_extension": 1.892543675289974
+    },
+    {
+      "label": "bow",
+      "worst_frame": 89,
+      "worst_mesh": "ww_shorekeeper_part_03",
+      "frames_checked": 150,
+      "max_edge_extension": 5.248396469755937,
+      "max_mesh_p99_extension": 2.5515548964341743
+    },
+    {
+      "label": "riding",
+      "worst_frame": 11,
+      "worst_mesh": "ww_shorekeeper_part_02",
+      "frames_checked": 20,
+      "max_edge_extension": 4.477837815175905,
+      "max_mesh_p99_extension": 1.9850182587115346
+    },
+    {
+      "label": "slash",
+      "worst_frame": 14,
+      "worst_mesh": "ww_shorekeeper_part_03",
+      "frames_checked": 150,
+      "max_edge_extension": 4.23094150319622,
+      "max_mesh_p99_extension": 2.922183762745712
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 1731,
+      "worst_mesh": "ww_shorekeeper_part_03",
+      "frames_checked": 64,
+      "max_edge_extension": 3.1111797242070747,
+      "max_mesh_p99_extension": 1.5138445313661273
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 540,
+      "worst_mesh": "ww_shorekeeper_part_02",
+      "frames_checked": 16,
+      "max_edge_extension": 4.7029883501561205,
+      "max_mesh_p99_extension": 2.1787636024520203
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 376,
+      "worst_mesh": "ww_shorekeeper_part_03",
+      "frames_checked": 16,
+      "max_edge_extension": 2.8252155897478235,
+      "max_mesh_p99_extension": 2.1203769897170974
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 62,
+      "worst_mesh": "ww_shorekeeper_part_03",
+      "frames_checked": 16,
+      "max_edge_extension": 3.195042410778277,
+      "max_mesh_p99_extension": 1.418761730996389
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": true,
+  "skirt_cloth_enabled": false,
+  "cloth_mode": "direct",
+  "cloth_render_groups": 16,
+  "proxy_simulation_vertices": 0,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u957f\u53d1\u53ca\u660e\u786e\u72ec\u7acb\u7684\u957f\u9970\u54c1\u91c7\u7528\u6709\u9650\u76f4\u63a5\u5e03\u6599\uff1b\u77ed\u53d1\u3001\u5218\u6d77\u3001\u88d9\u5b50\u3001\u8896\u5b50\u666e\u901a\u8499\u76ae\u3002\u5404\u6750\u8d28\u4e0e\u6302\u70b9\u89c1 cloth_parts\u3002",
+  "limitations": [
+    "CPU cloth diagnostics are approximate and do not certify native rendering or physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

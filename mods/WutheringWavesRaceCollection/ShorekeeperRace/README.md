@@ -1,16 +1,16 @@
 # Shorekeeper Race
 
-守岸人完整人物固定外观种族，独立工程与可单独启用的游戏模块。版本 `v0.1.0`，Native v1.4.8；模块 ID `ShorekeeperRace`，内部种族 `ww_shorekeeper`。
+守岸人完整人物固定外观种族，保留独立源工程，运行资源由上级合集统一加载。角色资源版本 `v0.1.1`，Native v1.4.8；模块 ID `ShorekeeperRace`，内部种族 `ww_shorekeeper`。
 
 ## 使用
 
-从[鸣潮合集](../README.md)交付 ZIP 中选择 `ShorekeeperRace/` 解压到游戏 `Modules/`。在启动器启用需要的角色模块，各角色互不依赖。角色带完整头、脸、衣服、双手，普通防具可能叠加或遮盖外观。仅新增女性测试兵种 `ww_shorekeeper_test`，不替换原版招募或兵种树。测试存档开启作弊和开发者控制台后可使用：
+随[鸣潮合集](../README.md)安装，在启动器只启用 `Wuthering Waves Race Collection`。`module/ShorekeeperRace/` 为独立构建资源，不与合集同时启用，避免重复注册。角色带完整头、脸、衣服、双手，普通防具可能叠加或遮盖外观。仅新增女性测试兵种 `ww_shorekeeper_test`，不替换原版招募或兵种树。测试存档开启作弊和开发者控制台后可使用：
 
 ```text
 campaign.give_troops ww_shorekeeper_test 10
 ```
 
-Race Troop Builder 可选择 `ww_shorekeeper`、女性，去除头、身体、腿、手套、披风装备，再配置需要的武器和坐骑。使用本种族的存档依赖本模块。
+Race Troop Builder 可选择 `ww_shorekeeper`、女性，去除头、身体、腿、手套、披风装备，再配置需要的武器和坐骑。使用本种族的存档依赖合集模块。
 
 ## 外观与布料
 
@@ -20,6 +20,8 @@ Race Troop Builder 可选择 `ww_shorekeeper`、女性，去除头、身体、�
 
 ## 验证与限制
 
+[创建页面手臂检查](reports/creation_arm_validation.json)覆盖最终网格的手臂骨骼权重和创建待机；当前版本恢复材质 0 内手臂的正常蒙皮，创建页面实机复测待用户完成。
+
 [最终 TPAC 检查](reports/release_validation.json)回读骨架、全部交付 LOD、UV、材质引用、量化权重、布料标记和直接预处理数据，并扫描跑步、持弓、挥击、骑乘原生片段；UI 待机采用抽样姿态检查。[源文件检查](reports/source_validation.json)包含重新打开 Blend/FBX 后的比例与 UV 对照。人物预览组件仅适配此种族 UI，随模块独立交付；完整场景动作集按当前 Native 生成。
 
 [布料诊断](reports/cloth_diagnostics.json)读取最终 TPAC，以 CPU 近似模拟检查动作；初次接入采用报告模式，提示不代表游戏物理通过或失败。诊断采用每秒 60 个源帧，尚未对齐所有游戏片段实际播放时长；LOD 布料数据相同时检查代表级 0。
@@ -28,7 +30,7 @@ Race Troop Builder 可选择 `ww_shorekeeper`、女性，去除头、身体、�
 
 ## 工程与重建
 
-`input/` 原始输入，`source/` 可编辑 Blend/FBX，`tex/` 相邻贴图，`tools/` 角色参数和入口，`module/ShorekeeperRace/` 可安装模块，`build/` 缓存，`reports/` 检查与预览，`dist/` 独立构建包。最终管理使用上级合集 ZIP。
+`input/` 原始输入，`source/` 可编辑 Blend/FBX，`tex/` 相邻贴图，`tools/` 角色参数和入口，`module/ShorekeeperRace/` 独立构建资源，`build/` 缓存，`reports/` 检查与预览，`dist/` 独立构建包。最终管理使用上级合集 ZIP。
 
 ```powershell
 & 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/WutheringWavesRaceCollection/ShorekeeperRace/tools/rebuild.py

@@ -1,6 +1,6 @@
 {
-  "version": "v0.1.0",
-  "status": "pending_user_test",
+  "version": "v0.1.1",
+  "status": "pending_user_creation_arm_retest",
   "game_launched_by_assistant": false,
   "package_sha256": "10797db9b38959c51588c6b9238b24c110b64e2d1532c21d55c9bf669cdd3dda",
   "required_scenes": [
@@ -14,5 +14,11 @@
     "riding",
     "lod_distances"
   ],
-  "skirt_cloth_enabled": false
+  "skirt_cloth_enabled": false,
+  "previous_version_feedback": {
+    "version": "v0.1.0",
+    "feedback": "基本没问题；创建页面守岸人 A pose，其余角色手臂自然下垂",
+    "scope": "User overall feedback; does not certify every action or LOD"
+  },
+  "collection_loading_retest": "pending"
 }

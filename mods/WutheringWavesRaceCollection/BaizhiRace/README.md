@@ -1,16 +1,16 @@
 # Baizhi Race
 
-白芷完整人物固定外观种族，独立工程与可单独启用的游戏模块。版本 `v0.1.0`，Native v1.4.8；模块 ID `BaizhiRace`，内部种族 `ww_baizhi`。
+白芷完整人物固定外观种族，保留独立源工程，运行资源由上级合集统一加载。角色资源版本 `v0.1.0`，Native v1.4.8；模块 ID `BaizhiRace`，内部种族 `ww_baizhi`。
 
 ## 使用
 
-从[鸣潮合集](../README.md)交付 ZIP 中选择 `BaizhiRace/` 解压到游戏 `Modules/`。在启动器启用需要的角色模块，各角色互不依赖。角色带完整头、脸、衣服、双手，普通防具可能叠加或遮盖外观。仅新增女性测试兵种 `ww_baizhi_test`，不替换原版招募或兵种树。测试存档开启作弊和开发者控制台后可使用：
+随[鸣潮合集](../README.md)安装，在启动器只启用 `Wuthering Waves Race Collection`。`module/BaizhiRace/` 为独立构建资源，不与合集同时启用，避免重复注册。角色带完整头、脸、衣服、双手，普通防具可能叠加或遮盖外观。仅新增女性测试兵种 `ww_baizhi_test`，不替换原版招募或兵种树。测试存档开启作弊和开发者控制台后可使用：
 
 ```text
 campaign.give_troops ww_baizhi_test 10
 ```
 
-Race Troop Builder 可选择 `ww_baizhi`、女性，去除头、身体、腿、手套、披风装备，再配置需要的武器和坐骑。使用本种族的存档依赖本模块。
+Race Troop Builder 可选择 `ww_baizhi`、女性，去除头、身体、腿、手套、披风装备，再配置需要的武器和坐骑。使用本种族的存档依赖合集模块。
 
 ## 外观与布料
 
@@ -28,7 +28,7 @@ Race Troop Builder 可选择 `ww_baizhi`、女性，去除头、身体、腿、�
 
 ## 工程与重建
 
-`input/` 原始输入，`source/` 可编辑 Blend/FBX，`tex/` 相邻贴图，`tools/` 角色参数和入口，`module/BaizhiRace/` 可安装模块，`build/` 缓存，`reports/` 检查与预览，`dist/` 独立构建包。最终管理使用上级合集 ZIP。
+`input/` 原始输入，`source/` 可编辑 Blend/FBX，`tex/` 相邻贴图，`tools/` 角色参数和入口，`module/BaizhiRace/` 独立构建资源，`build/` 缓存，`reports/` 检查与预览，`dist/` 独立构建包。最终管理使用上级合集 ZIP。
 
 ```powershell
 & 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/WutheringWavesRaceCollection/BaizhiRace/tools/rebuild.py

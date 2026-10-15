@@ -1,12 +1,12 @@
 # Wuthering Waves Race Collection
 
-鸣潮 8 个完整人物固定外观种族，版本 `v0.1.0`，适用于本机 Native v1.4.8。每个角色有独立工程、独立模块、源文件、参数与交付目录；合集仅用于统一管理 ZIP，不新增合并游戏模块。
+鸣潮 8 个完整人物固定外观种族，版本 `v0.1.1`，适用于本机 Native v1.4.8。每个角色保留独立源工程、源文件、参数和构建资源；游戏内统一为一个 `WutheringWavesRaceCollection` 模块，启动器英文名为 `Wuthering Waves Race Collection`。
 
 ## 安装与使用
 
-[模组合集 ZIP](dist/WutheringWavesRaceCollection_v0.1.0_Mod.zip) 顶层是下表 8 个模块目录。选择需要的角色解压到游戏 `Modules/`，在启动器分别启用；可同时启用，彼此没有依赖。制作完成后安装到 `D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules/<ModId>/`，助手不启动游戏。
+[模组合集 ZIP](dist/WutheringWavesRaceCollection_v0.1.1_Mod.zip) 顶层只有 `WutheringWavesRaceCollection/`，解压到游戏 `Modules/`，在启动器只启用 **Wuthering Waves Race Collection**。八个种族、测试兵种、TPAC 和界面组件由该模块统一加载。安装入口会完整备份原来的八个独立模块并移出游戏 `Modules/`，避免与合集重复注册；角色源工程继续保留。助手不启动游戏。
 
-| 角色／工程 | 启动器英文名 | 内部种族 | 测试兵种 |
+| 角色／工程 | 角色资源名称 | 内部种族 | 测试兵种 |
 | --- | --- | --- | --- |
 | [今汐](JinhsiRace/README.md) | Jinhsi Race | `ww_jinhsi` | `ww_jinhsi_test` |
 | [今汐·桃夭灼灼](JinhsiOutfitRace/README.md) | Jinhsi Outfit Race | `ww_jinhsi_outfit` | `ww_jinhsi_outfit_test` |
@@ -17,7 +17,7 @@
 | [长离](ChangliRace/README.md) | Changli Race | `ww_changli` | `ww_changli_test` |
 | [折枝](ZhezhiRace/README.md) | Zhezhi Race | `ww_zhezhi` | `ww_zhezhi_test` |
 
-仅新增女性测试兵种，不更改原版招募和兵种树。测试存档开启作弊和开发者控制台后可用 `campaign.give_troops ww_jinhsi_test 10`，其他角色替换对应兵种 ID。Race Troop Builder 可选择各自种族、女性，去掉头部、身体、腿、手套和披风防具，再选武器与坐骑。完整人物自带服装、双手和发型；普通防具可能叠加或遮盖外观。含这些种族的存档依赖对应模块。
+仅新增女性测试兵种，不更改原版招募和兵种树。测试存档开启作弊和开发者控制台后可用 `campaign.give_troops ww_jinhsi_test 10`，其他角色替换对应兵种 ID。Race Troop Builder 可选择各自种族、女性，去掉头部、身体、腿、手套和披风防具，再选武器与坐骑。完整人物自带服装、双手和发型；普通防具可能叠加或遮盖外观。含这些种族的存档依赖合集模块。原八模块存档迁移仍需实际读档确认。
 
 ## 模型和布料
 
@@ -38,9 +38,9 @@
 
 ## 工程、依赖与重建
 
-`<ModId>/input/` 保留原 ZIP、完整 PMX 和贴图；`source/` 与 `tex/` 相邻，`tools/` 保存参数与独立重建入口，`module/<ModId>/` 是实际模块，`build/`、`reports/`、`dist/` 分别保存缓存、检查和独立交付。系列 `tools/` 只负责此次八角色的批次处理与合集打包。
+`<ModId>/input/` 保留原 ZIP、完整 PMX 和贴图；`source/` 与 `tex/` 相邻，`tools/` 保存参数与独立重建入口，`module/<ModId>/` 是角色独立构建资源；系列 `module/WutheringWavesRaceCollection/` 是唯一可安装模块，`build/`、`reports/`、`dist/` 分别保存缓存、检查和独立交付。系列 `tools/` 只负责此次八角色的批次处理与合集打包。
 
-[合集源包](dist/WutheringWavesRaceCollection_v0.1.0_Source.zip) 内每个角色仍保持独立目录，公共工具仅在 `workspace_tools/` 保存一份。恢复到新工作区时将其放回根 `tools/`，保持各工程 `source/` 与 `tex/` 相邻，并调整游戏、Blender、PMX 读取器和 mbtool 的外部路径。
+[合集源包](dist/WutheringWavesRaceCollection_v0.1.1_Source.zip) 内每个角色仍保持独立目录，公共工具仅在 `workspace_tools/` 保存一份。恢复到新工作区时将其放回根 `tools/`，保持各工程 `source/` 与 `tex/` 相邻，并调整游戏、Blender、PMX 读取器和 mbtool 的外部路径。
 
 依赖 Blender 5.2、Python（NumPy、SciPy、Pillow、Matplotlib）、.NET 10 与 .NET Framework 4.7.2 引用程序集、Native v1.4.8、`D:/mb-tools`、MMD Tools PMX 读取器和[共用 PMX 流程](../../tools/pmx_race_pipeline/README.md)。在工作区根运行，例如：
 
@@ -48,7 +48,14 @@
 & 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/WutheringWavesRaceCollection/JinhsiRace/tools/rebuild.py
 ```
 
-系列工具 `bootstrap.py` 保留原始输入，`configure.py` 根据八个模型写入专用参数；首次制作后通常直接使用角色重建入口，不重复覆盖专用参数。`build_sources.py` 在后台 Blender 内执行，`build_resources.py` 构建独立 TPAC，`render.py` 从最终包生成各级预览，`finalize.py` 写入当前文档和诊断配置，`deliver.py` 运行诊断并调用共用安装入口，最后 `deliver.py --assemble` 汇总并逐文件核对合集。已有合集 ZIP 时需要改用新版本，入口拒绝覆盖历史包。
+系列工具 `bootstrap.py` 保留原始输入，`configure.py` 保存八角色参数；已建立工程直接使用角色重建入口，不重复覆盖参数。`build_sources.py` 在后台 Blender 内执行，`build_resources.py` 构建独立 TPAC，`render.py` 从最终包生成各级预览。修改角色后先完成该角色的最终检查，再运行合集入口：
+
+```powershell
+& 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/WutheringWavesRaceCollection/tools/collection.py build
+& 'C:/ProgramData/anaconda3/python.exe' -B -X utf8 mods/WutheringWavesRaceCollection/tools/collection.py install
+```
+
+`build` 合并 XML、检查 ID／GUID 和动作集、核对角色 TPAC／DLL 并运行各角色布料诊断；`install` 调用共用打包安装入口，核对 ZIP／工程／安装字节，备份并移出旧独立模块。保留旧版 ZIP 和标签。打包和安装需要 PowerShell 7，入口使用 `pwsh`。
 
 ## 检查与当前限制
 
@@ -56,6 +63,6 @@
 
 布料诊断读取最终包，初次接入为报告模式；CPU 近似结果独立于游戏验收，`needs_review` 提示不会被写成实机通过。源帧采样暂按 60 fps，尚未校准所有片段实际播放时长；数据一致的 LOD 检查代表级 0。具体动作范围、最差帧和状态见各角色 `reports/cloth_diagnostics.json`。
 
-固定外观，不提供捏脸形变、面部表情或手指握持形变。MMD toon 与游戏 PBR 不同。普通蒙皮裙子在骑乘、深蹲和大幅动作中可能折叠或穿模。游戏测试由用户完成，队伍／百科／物品栏预览、主要战场动作、握持、骑乘与远近布料效果仍待实机确认；助手未启动游戏。
+固定外观，不提供捏脸形变、面部表情或手指握持形变。MMD toon 与游戏 PBR 不同。普通蒙皮裙子在骑乘、深蹲和大幅动作中可能折叠或穿模。用户对 v0.1.0 给出基本正常的反馈，并指出创建页面守岸人手臂展开。当前资源已通过手臂权重及整段创建待机离线检查，守岸人创建页面和单模块合集加载仍待用户复测；未逐项确认的战场动作、握持、骑乘和远近布料继续按各报告范围验收，助手未启动游戏。
 
 [更新日志](CHANGELOG.md) · [工作区入口](../../README.md)

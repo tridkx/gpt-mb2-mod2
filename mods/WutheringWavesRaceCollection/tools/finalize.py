@@ -8,17 +8,17 @@ def finalize(root):
  name=c['display_name'];ident=c['id'];version=c['version'];race=c['race'];prefix=c['prefix']
  text=f'''# {c['module_name']}
 
-{name}完整人物固定外观种族，独立工程与可单独启用的游戏模块。版本 `{version}`，Native v1.4.8；模块 ID `{ident}`，内部种族 `{race}`。
+{name}完整人物固定外观种族，保留独立源工程，运行资源由上级合集模块统一加载。角色资源版本 `{version}`，Native v1.4.8；构建 ID `{ident}`，内部种族 `{race}`。
 
 ## 使用
 
-从[鸣潮合集](../README.md)交付 ZIP 中选择 `{ident}/` 解压到游戏 `Modules/`。在启动器启用需要的角色模块，各角色互不依赖。角色带完整头、脸、衣服、双手，普通防具可能叠加或遮盖外观。仅新增女性测试兵种 `{prefix}_test`，不替换原版招募或兵种树。测试存档开启作弊和开发者控制台后可使用：
+随[鸣潮合集](../README.md)安装，在启动器只启用 `Wuthering Waves Race Collection`。`module/{ident}/` 为独立构建资源，不与合集同时启用，避免重复注册。角色带完整头、脸、衣服、双手，普通防具可能叠加或遮盖外观。仅新增女性测试兵种 `{prefix}_test`，不替换原版招募或兵种树。测试存档开启作弊和开发者控制台后可使用：
 
 ```text
 campaign.give_troops {prefix}_test 10
 ```
 
-Race Troop Builder 可选择 `{race}`、女性，去除头、身体、腿、手套、披风装备，再配置需要的武器和坐骑。使用本种族的存档依赖本模块。
+Race Troop Builder 可选择 `{race}`、女性，去除头、身体、腿、手套、披风装备，再配置需要的武器和坐骑。使用本种族的存档依赖合集模块。
 
 ## 外观与布料
 

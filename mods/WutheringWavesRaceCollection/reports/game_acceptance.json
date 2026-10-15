@@ -1,0 +1,16 @@
+{
+  "version": "v0.1.1",
+  "status": "pending_user_collection_and_shorekeeper_creation_retest",
+  "game_launched_by_assistant": false,
+  "previous_feedback": {
+    "version": "v0.1.0",
+    "layout": "8 independent modules",
+    "text": "基本没问题，只有守岸人在创建页面 A pose，其余手臂自然下垂",
+    "scope": "Basic overall feedback; no blanket certification of all actions/LODs"
+  },
+  "required_retests": [
+    "single_collection_module_loading",
+    "shorekeeper_character_creation_initial_and_rebuild",
+    "old_save_module_migration"
+  ]
+}
