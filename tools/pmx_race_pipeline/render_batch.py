@@ -13,7 +13,7 @@ for row in batch['characters']:
         print('FINAL_PREVIEW_BEGIN',c['id'],flush=True);sys.argv=[sys.argv[0],'--','0','--review'];execute('render_final',root)
         # Distant LOD silhouette/face is also inspected from final bytes.
         sys.argv=[sys.argv[0],'--','3','--rest'];execute('render_final',root)
-        if c['cloth_enabled']:execute('save_proxy_source',root)
+        if c['cloth_enabled'] and c.get('cloth_mode')!='direct':execute('save_proxy_source',root)
         results.append({'id':c['id'],'status':'pass'});print('FINAL_PREVIEW_DONE',c['id'],flush=True)
     except Exception:
         error=traceback.format_exc();print(error,flush=True);(root/'reports/preview_failure.txt').write_text(error);results.append({'id':c['id'],'status':'error'})

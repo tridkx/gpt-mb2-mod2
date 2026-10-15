@@ -1,6 +1,6 @@
 {
   "id": "YunJinRace",
-  "version": "v0.1.2",
+  "version": "v0.1.3",
   "race": "yunjin",
   "prefix": "yunjin",
   "module_name": "Yun Jin Race",
@@ -105,5 +105,23 @@
     21
   ],
   "shoulder_style": "field",
-  "native_driver_role": true
+  "native_driver_role": true,
+  "direct_cloth_material": {
+    "Name": "yunjin_cloth_proxy_soft_driver",
+    "BendingStiffness": 0.08,
+    "ShearingStiffness": 0.9,
+    "StretchingStiffness": 1,
+    "AnchorStiffness": 0.3,
+    "Damping": 0.92,
+    "Gravity": 9.81,
+    "LinearInertia": 0.08,
+    "MaxLinearVelocity": 4,
+    "LinearVelocityMultiplier": 1,
+    "AirDragMultiplier": 0.04,
+    "Wind": 0.015
+  },
+  "cloth_mode": "direct",
+  "direct_diagnostic_lods": [
+    0
+  ]
 }

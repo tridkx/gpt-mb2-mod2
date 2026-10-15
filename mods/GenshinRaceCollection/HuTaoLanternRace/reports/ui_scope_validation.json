@@ -2,13 +2,15 @@
   "status": "pass",
   "race_filter": "hutao_lantern",
   "assembly_name": "HuTaoLanternRace.UIRuntime",
-  "source_sha256": "ebb9eb85f213528aec4fac63fb2c7f81111f54bdef5f66324223dc278eed3038",
-  "assembly_sha256": "8ce351a98486f2e894a4bde2996760b483fe27910278ebdec2a998fea3d796d3",
+  "source_sha256": "72c4d1283d41e61acec44eb167fba26fe3867dd88a02ccd19fac71454bf80e78",
+  "assembly_sha256": "e8cc7b725dffb87f4cf7470b002332cc74bd5592f73377771a58cf46089b728a",
   "owners": [
     "CharacterTableau",
     "BasicCharacterTableau",
     "BodyGeneratorView"
   ],
   "mission_and_live_map_entities_excluded": true,
-  "game_verified": false
+  "game_verified": false,
+  "readonly_hair_material_probe": true,
+  "hair_probe_source_sha256": "2e6ab36d0a7ba52649bb2a016ff1dfeb35b816af962716ec51b3c5bc7a6acb98"
 }

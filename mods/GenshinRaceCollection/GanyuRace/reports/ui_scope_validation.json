@@ -2,13 +2,15 @@
   "status": "pass",
   "race_filter": "ganyu",
   "assembly_name": "GanyuRace.UIRuntime",
-  "source_sha256": "b2eb4c424f35b8db274798f03e55eeb998b57b397347bdb981536d3d0d0c8f5e",
-  "assembly_sha256": "b8a4c10eba04d62afdaf34c7e1cbc6fe72cf865dd4e4d4886a473bddc553cc60",
+  "source_sha256": "a42e5b9f52a47234b514e59f9e66c12d9027a58317f512e2f170b7e389f9cac4",
+  "assembly_sha256": "7a5e9d63ba3a2f793468ce13e62a6478c6a876ca865a815482c8972c5bf4fb5e",
   "owners": [
     "CharacterTableau",
     "BasicCharacterTableau",
     "BodyGeneratorView"
   ],
   "mission_and_live_map_entities_excluded": true,
-  "game_verified": false
+  "game_verified": false,
+  "readonly_hair_material_probe": true,
+  "hair_probe_source_sha256": "6207fc0a665076a9b4dc5b66d5a286edcc57849291542d2073d6f31fdad8cf61"
 }

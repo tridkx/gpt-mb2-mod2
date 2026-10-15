@@ -2,13 +2,15 @@
   "status": "pass",
   "race_filter": "yaemiko",
   "assembly_name": "YaeMikoRace.UIRuntime",
-  "source_sha256": "329a44feee6e7c20abb081f362ff7df0cdd61f67f10e7927c2ee1ad7b27c96df",
-  "assembly_sha256": "b6be30fe6741676909f5b2d1fad90b975b31b73d719847ee81d564e56fdb0ed4",
+  "source_sha256": "82e1239496a0a6f910b1f2acad9358d4fa09b280ffe84967263f3b22da66234d",
+  "assembly_sha256": "b80e51178886edf15f936ac45b5efcb9b616408223c328335f727428325989a1",
   "owners": [
     "CharacterTableau",
     "BasicCharacterTableau",
     "BodyGeneratorView"
   ],
   "mission_and_live_map_entities_excluded": true,
-  "game_verified": false
+  "game_verified": false,
+  "readonly_hair_material_probe": true,
+  "hair_probe_source_sha256": "c180190d55cfdbce85bb54a11782ef2f0fdc9c8b41ac917d908594490c6e7640"
 }

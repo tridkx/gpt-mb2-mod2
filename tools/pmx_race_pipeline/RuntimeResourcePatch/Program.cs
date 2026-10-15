@@ -22,6 +22,16 @@ if(args[0]=="native-driver") {
  foreach(var mesh in body.Meshes.Where(m=>m.Flags.Contains("uses_cloth_simulation"))) {
   mesh.Flags.Remove("force_enable_cloth");mesh.UnknownBool1=false;mesh.UnknownBool2=false;mesh.UnknownBool3=false;
  }
+} else if(args[0]=="direct-body") {
+ var body=package.Items.OfType<Metamesh>().Single(m=>m.Name==args[3]+"_body");
+ var proxy=package.Items.OfType<Metamesh>().SingleOrDefault(m=>m.Guid==body.ClothMetamesh);
+ var driver=args.Length>4?JsonSerializer.Deserialize<ClothingMaterial>(File.ReadAllText(args[4])):proxy?.Meshes.Single().ClothingMaterial;
+ if(driver==null)throw new Exception("Explicit direct-cloth settings required");
+ body.ClothMetamesh=Guid.Empty;body.ClothUint=0;body.ClothString="";
+ body.TypelessDataSegments.RemoveAll(s=>s.TypeGuid==new Guid("af41613e-bd4d-46ec-8284-debb56c042dc"));
+ foreach(var mesh in body.Meshes.Where(m=>m.Flags.Contains("uses_cloth_simulation"))) {mesh.Flags=new List<string>{"uses_cloth_simulation"};mesh.UnknownBool1=false;mesh.UnknownBool2=false;mesh.UnknownBool3=false;mesh.ClothingMaterial=driver;}
+ if(proxy!=null)package.Items.Remove(proxy);
+ package.Items.RemoveAll(a=>a.Name==args[3]+"_proxy_invisible"||a.Name==args[3]+"_proxy_zero");
 } else if(args[0]=="replace-texture") {
  var donor=new AssetPackage(args[3],true,false);var original=package.Items.OfType<Texture>().Single(t=>t.Name==args[4]);var replacement=donor.Items.OfType<Texture>().Single();
  var donorGuid=replacement.Guid;replacement.Guid=original.Guid;replacement.Name=original.Name;

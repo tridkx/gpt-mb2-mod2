@@ -2,13 +2,15 @@
   "status": "pass",
   "race_filter": "amber",
   "assembly_name": "AmberRace.UIRuntime",
-  "source_sha256": "97ee3ee55b94760c25d2f21f5288fe3f1ded485607d6641c6bd5a00054351122",
-  "assembly_sha256": "9944952726ffed472572c1a4cacced3aa443259bd9ca32220f7434275f5a9013",
+  "source_sha256": "65fd171e3fc64dee2981b6f2d8097dc353586b91b47b77589a06658a47222e30",
+  "assembly_sha256": "3bd2c2946320eb6ab0500571c1028387dc57b0c9ded0a91a83f72d02b4ff7f2d",
   "owners": [
     "CharacterTableau",
     "BasicCharacterTableau",
     "BodyGeneratorView"
   ],
   "mission_and_live_map_entities_excluded": true,
-  "game_verified": false
+  "game_verified": false,
+  "readonly_hair_material_probe": true,
+  "hair_probe_source_sha256": "033eaf0d8f7affe5ecd534e23508b3cccf23f542cdbc51f91dcf25565ed2a28e"
 }

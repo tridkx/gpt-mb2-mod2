@@ -7,6 +7,10 @@ def scaffold(root):
     for name in ['Runtime.cs','UIRuntime.csproj']:
         template_name='UIRuntime.cs.tpl' if name=='Runtime.cs' else 'UIRuntime.csproj.tpl'
         code=(template/template_name).read_text(encoding='utf-8-sig').replace('EmilieRace',c['id']).replace('emilie',c['prefix']);(runtime/name).write_text(code,encoding='utf8')
+    if c.get('cloth_enabled'):
+        code=(template/'HairRuntimeProbe.cs.tpl').read_text(encoding='utf8').replace('EmilieRace',c['id']).replace('emilie',c['prefix'])
+        code=code.replace('__HAIR_PARTS__',','.join(json.dumps(c['prefix']+f'_part_{i:02d}') for i in c['cloth_materials']))
+        (runtime/'HairRuntimeProbe.cs').write_text(code,encoding='utf8')
     entry='''"""Rebuild this independent character without starting the game."""
 from pathlib import Path
 import sys

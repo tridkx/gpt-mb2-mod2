@@ -6,7 +6,7 @@ from context import SERIES,workspace_root
 from finalize import finalize
 
 ID='GenshinRaceCollection'
-VERSION='v0.1.2'
+VERSION='v0.1.3'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def roots():
     rows=json.loads((SERIES/'batch_inventory.json').read_text(encoding='utf8'))['characters']
@@ -90,7 +90,7 @@ def build():
     report['unique_asset_count']=len(assets)
     (SERIES/'reports/collection_validation.json').write_text(json.dumps(report,indent=2))
     acceptance=SERIES/'reports/game_acceptance.json'
-    if not acceptance.exists() or json.loads(acceptance.read_text()).get('version')!=VERSION:acceptance.write_text(json.dumps({'version':VERSION,'status':'pending_user_hair_artifact_retest','game_launched_by_assistant':False,'emilie_existing_acceptance_preserved':True,'previous_feedback':'v0.1.0 overall positive; moving single-color hair patches reported. No individual scene acceptance inferred.','collection_module_loading_verified':False,'required_scenes':['hair_closeup','hair_motion','lod_distances'],'old_save_dependency_migration_verified':False},indent=2))
+    if not acceptance.exists() or json.loads(acceptance.read_text()).get('version')!=VERSION:acceptance.write_text(json.dumps({'version':VERSION,'status':'pending_user_hair_artifact_retest','game_launched_by_assistant':False,'emilie_existing_acceptance_preserved':True,'previous_feedback':'v0.1.2 Lisa and Amber creation loading accepted; hair patches persist with cloth enabled and disappear with cloth disabled.','collection_module_loading_verified':False,'required_scenes':['hair_closeup','hair_motion','lod_distances'],'old_save_dependency_migration_verified':False},indent=2))
     sources=['README.md','CHANGELOG.md','mod.json','batch_inventory.json','hair_decisions.json','reports/collection_validation.json','reports/collection_asset_index.tsv','reports/collection_cloth_diagnostics.json','reports/game_acceptance.json']
     sources.extend(p.relative_to(SERIES).as_posix() for p in module.rglob('*') if p.is_file())
     sources.extend(p.relative_to(SERIES).as_posix() for p in (SERIES/'reports').glob('*.png'))
@@ -118,7 +118,7 @@ def install():
     report=json.loads((SERIES/'reports/collection_validation.json').read_text())
     assert report['status']=='pass' and report['module_file_hashes']=={p.relative_to(module).as_posix():sha(p) for p in module.rglob('*') if p.is_file()}
     arguments=['pwsh','-NoProfile','-ExecutionPolicy','Bypass','-File',str(w/'tools/install_release.ps1'),'-Mod',ID,'-Version',VERSION]
-    if (SERIES/'dist'/(ID+'_Mod.zip')).exists():arguments+=['-PreviousVersion','v0.1.1']
+    if (SERIES/'dist'/(ID+'_Mod.zip')).exists():arguments+=['-PreviousVersion','v0.1.2']
     subprocess.run(arguments,check=True)
     game=Path('D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules');archive=zipfile.ZipFile(SERIES/'dist'/(ID+'_Mod.zip'))
     for p in module.rglob('*'):

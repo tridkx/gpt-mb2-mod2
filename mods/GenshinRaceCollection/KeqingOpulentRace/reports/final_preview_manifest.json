@@ -1,5 +1,5 @@
 {
-  "package_sha256": "0b34353ca9e8b96600261aa318cdb612aa2c81b6f78a6534ec54cfb3ab746624",
+  "package_sha256": "4e2f842f95ed72eae79b927b7ee12e296b89ffcae73a1aad38e1f1633a6d6c03",
   "source": "Final TPAC re-export, decoded diffuse and byte weights",
   "game_cloth_solver_used": false,
   "previews": [
@@ -24,5 +24,8 @@
       "file": "reports/final_facegen_worst.png"
     }
   ],
-  "geometry_previews_reused_after_exact_stream_comparison": true
+  "geometry_previews_reused_after_exact_stream_comparison": true,
+  "preview_original_package_sha256": "0b34353ca9e8b96600261aa318cdb612aa2c81b6f78a6534ec54cfb3ab746624",
+  "reuse_evidence": "reports/direct_hair_cloth.json",
+  "scope": "Static skinning and texture preview reused: all four visible geometry streams unchanged. Does not preview current direct cloth deformation."
 }

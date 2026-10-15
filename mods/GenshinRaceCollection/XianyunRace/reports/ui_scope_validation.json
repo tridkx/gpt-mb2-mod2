@@ -2,13 +2,15 @@
   "status": "pass",
   "race_filter": "xianyun",
   "assembly_name": "XianyunRace.UIRuntime",
-  "source_sha256": "7599abb01b81cfe2c26d54a8f3317b759c8b8ee5f9ae5f9b6630d3df9daa8ae7",
-  "assembly_sha256": "9c5de2c11d61b7540085144a284998775f8543c1e47e0ce269936d7f594ee399",
+  "source_sha256": "917b44ca0e83c8250890bb23906321f504eb59a22f8a6450a2e6d4061f6517fc",
+  "assembly_sha256": "511903807396f12a6fa877307a7516f857ec306f215f6febfb4df61f2a5b453a",
   "owners": [
     "CharacterTableau",
     "BasicCharacterTableau",
     "BodyGeneratorView"
   ],
   "mission_and_live_map_entities_excluded": true,
-  "game_verified": false
+  "game_verified": false,
+  "readonly_hair_material_probe": true,
+  "hair_probe_source_sha256": "81f1333cfb5fd69c2c15980d4e170bc898039d45ed93c594426c07faca288c5b"
 }

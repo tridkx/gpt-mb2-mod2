@@ -41,11 +41,11 @@ def write():
 
 ## 检查与当前限制
 
-长发布料代理使用独立全透明裁切材质，与可见头发分开。v0.1.1 的[材质修复检查](reports/hair_proxy_visibility_fix.json)核对全部 LOD、原贴图、骨架、布料和映射字节不变，修复前后预览见各角色报告中的 `hair_proxy_before_*`／`hair_proxy_after_*`。v0.1.0 已收到整体良好的反馈；v0.1.1 的头发实机效果待复测。
+当前版本 v0.1.3 的 13 个长发角色直接模拟可见头发，每级保留自身直接布料数据，最终资源没有头发模拟代理、代理引用或映射段。发型、UV、材质和蒙皮保持不变，详见 [直接布料检查](reports/direct_hair_cloth.json)。默认丽莎、安柏和诺艾尔的表情贴图使用合法 BC 尺寸，原 PNG 和 UV 保留；[D3D11 对照](reports/d3d11_bc_resource_test.json)记录资源创建结果。用户已确认默认丽莎、安柏可以加载；当前直接布料头发效果待开启游戏布料复测。
 
-[合集检查](reports/collection_validation.json)与 [安装一致性](reports/collection_installation.json)分别记录。各新角色已检查最终 TPAC 所有交付 LOD、纹理、UV、权重、原生动作，以及重开的 Blend/FBX；[正面预览](reports/final_front_1.png)、[第二页](reports/final_front_2.png)、[背面预览](reports/final_back_1.png)、[第二页](reports/final_back_2.png)来自最终资源。
+[合集检查](reports/collection_validation.json)与 [安装一致性](reports/collection_installation.json)分别记录。各新角色已检查最终 TPAC 所有交付 LOD、纹理、UV、权重、原生动作，以及重开的 Blend/FBX；[正面预览](reports/final_front_1.png)、[第二页](reports/final_front_2.png)、[背面预览](reports/final_back_1.png)、[第二页](reports/final_back_2.png)对应保留不变的最终可见网格和贴图，属于静态／普通蒙皮预览，不展示本次直接布料形变。
 
-映射布料的 CPU 渲染诊断不支持当前代理映射，保留 `incomplete`；直接代理另作近似轨迹检查。[合集诊断索引](reports/collection_cloth_diagnostics.json)链接到各角色的独立报告。近似碰撞、拉伸提示不当作游戏验收。艾梅莉埃保留其原验收记录；新增角色和合集的队伍、百科、物品栏、战场动作、布料与 LOD 尚待用户游戏测试，助手不启动游戏。
+直接布料由 CPU 近似求解器检查动作轨迹和碰撞；数值相同的四级 LOD 依据预处理数据等价性选取代表级。[合集诊断索引](reports/collection_cloth_diagnostics.json)链接到各角色的独立报告。近似碰撞、拉伸提示不当作游戏验收。艾梅莉埃保留其原验收记录；新增角色和合集的队伍、百科、物品栏、战场动作、布料与 LOD 尚待用户游戏测试，助手不启动游戏。
 
 固定外观，无捏脸形变、表情动画或手指握持形变。普通蒙皮衣裙在骑乘和大幅动作中可能折叠、穿模，MMD toon 与游戏材质表现不同。使用种族的存档依赖合集模块。
 

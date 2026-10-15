@@ -2,13 +2,15 @@
   "status": "pass",
   "race_filter": "hutao",
   "assembly_name": "HuTaoRace.UIRuntime",
-  "source_sha256": "b646932e3ab3147af51c6487580aba79ea57a696388786898580aa7929bbdc2f",
-  "assembly_sha256": "50095486b8ba150a5708e976c8d76842f8a9a00c3cb05c3db01132e8de1db8f0",
+  "source_sha256": "0368f236baed02465709b9ac1dbccf6c569c922bd460e74c277ab5c15808bf83",
+  "assembly_sha256": "00fa5110c4d175681decce5a54af4f84f687d324450e5230912de169a95b37cb",
   "owners": [
     "CharacterTableau",
     "BasicCharacterTableau",
     "BodyGeneratorView"
   ],
   "mission_and_live_map_entities_excluded": true,
-  "game_verified": false
+  "game_verified": false,
+  "readonly_hair_material_probe": true,
+  "hair_probe_source_sha256": "c718f0f1524bd0c82035d2576a1e138e3541a6bab6f400d61475177f0b473171"
 }

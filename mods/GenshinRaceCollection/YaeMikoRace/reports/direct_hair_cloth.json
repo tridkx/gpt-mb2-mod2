@@ -1,0 +1,265 @@
+{
+  "status": "pass",
+  "mode": "direct_visible_hair",
+  "package_sha256": "00c0d11be5993456009de7133b70f1b4eefffc0eb479f27e4cfb24d2a465ae25",
+  "uses_mapped_proxy": false,
+  "driver_metamesh_removed": true,
+  "lods": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "meshes": [
+    {
+      "mesh": "yaemiko_part_09.lod3",
+      "guid": "0c1c1c69-baca-ac4f-36c1-831fded20441",
+      "metamesh": "yaemiko_body",
+      "lod": 3,
+      "bytes": 107888,
+      "render_vertices": 1817,
+      "simulation_vertices": 1325,
+      "fixed_positions": 752,
+      "boundary_fixed_positions": 28,
+      "active_positions": 573,
+      "stretch_constraints": 1750,
+      "bend_constraints": 1661,
+      "shear_constraints": 0,
+      "parallel_sets": 24,
+      "dummy_sets": 13,
+      "max_geodesic_anchor_length": 0.4821806725005114,
+      "sha256": "04c4fc9bf59f17687c6486dfec14d4d046fd5f7c954b97d702ddf10bf076e0c2",
+      "root_fixes": [
+        {
+          "component_positions": 224,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            770,
+            772,
+            773,
+            785
+          ],
+          "bounds": [
+            [
+              -0.12281405,
+              -0.38882267,
+              0.8448359
+            ],
+            [
+              0.11105169,
+              -0.28441182,
+              1.0939821
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        770,
+        772,
+        773,
+        785
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.015,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\YaeMikoRace\\build\\direct_hair_cooked\\0c1c1c69-baca-ac4f-36c1-831fded20441.bin"
+    },
+    {
+      "mesh": "yaemiko_part_09.lod2",
+      "guid": "3cad5a4e-a35c-ede1-8611-4eeeea51a299",
+      "metamesh": "yaemiko_body",
+      "lod": 2,
+      "bytes": 107888,
+      "render_vertices": 1817,
+      "simulation_vertices": 1325,
+      "fixed_positions": 752,
+      "boundary_fixed_positions": 28,
+      "active_positions": 573,
+      "stretch_constraints": 1750,
+      "bend_constraints": 1661,
+      "shear_constraints": 0,
+      "parallel_sets": 24,
+      "dummy_sets": 13,
+      "max_geodesic_anchor_length": 0.4821806725005114,
+      "sha256": "04c4fc9bf59f17687c6486dfec14d4d046fd5f7c954b97d702ddf10bf076e0c2",
+      "root_fixes": [
+        {
+          "component_positions": 224,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            770,
+            772,
+            773,
+            785
+          ],
+          "bounds": [
+            [
+              -0.12281405,
+              -0.38882267,
+              0.8448359
+            ],
+            [
+              0.11105169,
+              -0.28441182,
+              1.0939821
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        770,
+        772,
+        773,
+        785
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.015,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\YaeMikoRace\\build\\direct_hair_cooked\\3cad5a4e-a35c-ede1-8611-4eeeea51a299.bin"
+    },
+    {
+      "mesh": "yaemiko_part_09",
+      "guid": "7822afcd-022b-a3da-d89b-e147c235d1b7",
+      "metamesh": "yaemiko_body",
+      "lod": 0,
+      "bytes": 107888,
+      "render_vertices": 1817,
+      "simulation_vertices": 1325,
+      "fixed_positions": 752,
+      "boundary_fixed_positions": 28,
+      "active_positions": 573,
+      "stretch_constraints": 1750,
+      "bend_constraints": 1661,
+      "shear_constraints": 0,
+      "parallel_sets": 24,
+      "dummy_sets": 13,
+      "max_geodesic_anchor_length": 0.4821806725005114,
+      "sha256": "04c4fc9bf59f17687c6486dfec14d4d046fd5f7c954b97d702ddf10bf076e0c2",
+      "root_fixes": [
+        {
+          "component_positions": 224,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            770,
+            772,
+            773,
+            785
+          ],
+          "bounds": [
+            [
+              -0.12281405,
+              -0.38882267,
+              0.8448359
+            ],
+            [
+              0.11105169,
+              -0.28441182,
+              1.0939821
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        770,
+        772,
+        773,
+        785
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.015,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\YaeMikoRace\\build\\direct_hair_cooked\\7822afcd-022b-a3da-d89b-e147c235d1b7.bin"
+    },
+    {
+      "mesh": "yaemiko_part_09.lod1",
+      "guid": "842e04fd-20c1-6179-f40b-23079e9684e3",
+      "metamesh": "yaemiko_body",
+      "lod": 1,
+      "bytes": 107888,
+      "render_vertices": 1817,
+      "simulation_vertices": 1325,
+      "fixed_positions": 752,
+      "boundary_fixed_positions": 28,
+      "active_positions": 573,
+      "stretch_constraints": 1750,
+      "bend_constraints": 1661,
+      "shear_constraints": 0,
+      "parallel_sets": 24,
+      "dummy_sets": 13,
+      "max_geodesic_anchor_length": 0.4821806725005114,
+      "sha256": "04c4fc9bf59f17687c6486dfec14d4d046fd5f7c954b97d702ddf10bf076e0c2",
+      "root_fixes": [
+        {
+          "component_positions": 224,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            770,
+            772,
+            773,
+            785
+          ],
+          "bounds": [
+            [
+              -0.12281405,
+              -0.38882267,
+              0.8448359
+            ],
+            [
+              0.11105169,
+              -0.28441182,
+              1.0939821
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        770,
+        772,
+        773,
+        785
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.015,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\GenshinRaceCollection\\YaeMikoRace\\build\\direct_hair_cooked\\842e04fd-20c1-6179-f40b-23079e9684e3.bin"
+    }
+  ],
+  "source_uv_preserved": true,
+  "game_verified": false,
+  "all_lod_visible_geometry_bytes_unchanged": true,
+  "baseline_package_sha256": "c698021baa6e2404d2fdd785132c4cb51ef43ef9a1acde5072e5dc7f36e19f07",
+  "version": "v0.1.3",
+  "date": "2026-10-15",
+  "lod_payload_equivalence": [
+    {
+      "part": "yaemiko_part_09",
+      "lods": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "same_payload": true
+    }
+  ],
+  "representative_diagnostic_lods": [
+    0
+  ],
+  "runtime_material_probe": true
+}

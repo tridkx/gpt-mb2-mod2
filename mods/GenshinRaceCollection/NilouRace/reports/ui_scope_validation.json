@@ -2,13 +2,15 @@
   "status": "pass",
   "race_filter": "nilou",
   "assembly_name": "NilouRace.UIRuntime",
-  "source_sha256": "c20c7bf87df8884b434b76f7b292f8c81123afb6ccaf6268564da74c8e90c60d",
-  "assembly_sha256": "d3b0f430bb3d40fa3e1c660e65e61e07ac1d4ff55c9317cf16dc609494f01f3b",
+  "source_sha256": "45ea16da7a934d418266362602240379969acfa3b90ca32387ce3958c5b94281",
+  "assembly_sha256": "593477bed725eed23287f2fb54495dd58e3d739d4355ea7af957f5907a7df1e4",
   "owners": [
     "CharacterTableau",
     "BasicCharacterTableau",
     "BodyGeneratorView"
   ],
   "mission_and_live_map_entities_excluded": true,
-  "game_verified": false
+  "game_verified": false,
+  "readonly_hair_material_probe": true,
+  "hair_probe_source_sha256": "4d2875de19cbed492602794b090d8dbb8fa51e3eae4fee7b5066985df2481d6d"
 }

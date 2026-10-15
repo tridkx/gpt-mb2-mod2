@@ -1,11 +1,11 @@
 {
   "status": "pass",
-  "version": "v0.1.2",
+  "version": "v0.1.3",
   "date": "2026-10-15",
-  "final_package_sha256": "bc0e6742d86d9b8e4d30a567d2d2317b0ac89795bc235bdafee1d79c70602e97",
+  "final_package_sha256": "db05bc7e7f46833a36edadd09f9135a2c83adbdb9f340678e5a3bb20bed1f471",
   "source_input_sha256": "a766b867836bc34ce04289e06d39d16dad82bf8089d9e6c77204ed75d748f8c2",
-  "baseline_package_sha256": "2cb35b030c063a8a25015fafd2a439f7757475719f9bdbb000d68a0edab117cc",
-  "baseline_reason": "Native driver role and BC texture runtime compatibility repair; all geometry and physics streams preserved",
+  "baseline_package_sha256": "bc0e6742d86d9b8e4d30a567d2d2317b0ac89795bc235bdafee1d79c70602e97",
+  "baseline_reason": "v0.1.2 baseline; all four visible geometry streams unchanged during direct-hair conversion",
   "game_version": "v1.4.8",
   "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
   "lods": [
@@ -111,18 +111,19 @@
   "source_proportions_preserved": true,
   "cloth_enabled": true,
   "skirt_cloth_enabled": false,
+  "cloth_mode": "direct",
   "cloth_render_groups": 4,
-  "proxy_simulation_vertices": 867,
+  "proxy_simulation_vertices": 0,
   "metadata_audit": "pass",
   "action_sets_count": 89,
   "game_test_verified": false,
   "game_cloth_solver_used": false,
   "hair_decision": "\u540e\u90e8\u957f\u53d1\u8d85\u8fc7\u80a9\u80cc\uff0c\u542f\u7528\u6709\u9650\u6446\u52a8\uff1b\u989d\u524d\u5934\u53d1\u56fa\u5b9a",
   "limitations": [
-    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "CPU cloth diagnostics are approximate and do not certify native rendering or physics.",
     "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
     "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
     "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
   ],
-  "repair_validation": "reports/runtime_resource_fix.json"
+  "repair_validation": "reports/direct_hair_cloth.json"
 }

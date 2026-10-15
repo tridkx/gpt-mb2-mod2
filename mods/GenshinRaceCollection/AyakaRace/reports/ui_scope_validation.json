@@ -2,13 +2,15 @@
   "status": "pass",
   "race_filter": "ayaka",
   "assembly_name": "AyakaRace.UIRuntime",
-  "source_sha256": "684697e95cacc82c4b6bc86e1936f3ca920b8936b18a2dcf800381f6bb152fd7",
-  "assembly_sha256": "43ba9b78d89bc8f10bf5591f2955ecc527c273838ca012ad5ce572e5d12b2dbb",
+  "source_sha256": "749b00eeb50e964234f33607619ecba7a16f9870047943c423a2578c8dbb3241",
+  "assembly_sha256": "bae35fb26cc2713ff759cf314f7411208662735f216f39133f9784ea5d53d8b9",
   "owners": [
     "CharacterTableau",
     "BasicCharacterTableau",
     "BodyGeneratorView"
   ],
   "mission_and_live_map_entities_excluded": true,
-  "game_verified": false
+  "game_verified": false,
+  "readonly_hair_material_probe": true,
+  "hair_probe_source_sha256": "a20e6327a0f232f9066b779ff115137be5b20ec527a92446a74bc4c84402f7d8"
 }

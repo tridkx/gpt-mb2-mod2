@@ -14,7 +14,12 @@ def build_one(root,source=False):
         prepare(root);prepare_references(root)
         subprocess.run(['D:/Blender Foundation/Blender 5.2/blender.exe','--background','--factory-startup','--python-exit-code','1','--python',str(w/'tools/pmx_race_pipeline/source_one.py'),'--',str(root)],check=True)
     scaffold(root);execute('build_package',root)
-    if c['cloth_enabled']:write_collisions(root);build_cloth(root)
+    if c['cloth_enabled']:
+        write_collisions(root)
+        if c.get('cloth_mode')=='direct':
+            from direct_hair import build_direct_hair
+            build_direct_hair(root)
+        else:build_cloth(root)
     execute('verify_release',root);print('BUILD_OFFLINE_COMPLETE',c['id'],flush=True)
 
 if __name__=='__main__':build_one(Path(sys.argv[1]),source='--source' in sys.argv)

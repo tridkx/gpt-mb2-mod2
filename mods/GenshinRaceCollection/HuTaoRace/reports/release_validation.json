@@ -1,11 +1,11 @@
 {
   "status": "pass",
-  "version": "v0.1.2",
+  "version": "v0.1.3",
   "date": "2026-10-15",
-  "final_package_sha256": "3dd3c664bf4de014a2c21791128a974981c34846fe5d5539f1b07490f220ddca",
+  "final_package_sha256": "83127a2cacc4122077885fa990951beaad013efc3971d360e31c4093246b7bd9",
   "source_input_sha256": "e98189f1f36d1052a424d4ceb61eab28ef59e49fd8717db4ba2ad96081ce8a17",
-  "baseline_package_sha256": "0cc25468275bfa839c40201785df2bf599c3ca962682f2aa6da9e5a845b051ef",
-  "baseline_reason": "Native driver role and BC texture runtime compatibility repair; all geometry and physics streams preserved",
+  "baseline_package_sha256": "3dd3c664bf4de014a2c21791128a974981c34846fe5d5539f1b07490f220ddca",
+  "baseline_reason": "v0.1.2 baseline; all four visible geometry streams unchanged during direct-hair conversion",
   "game_version": "v1.4.8",
   "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
   "lods": [
@@ -111,18 +111,19 @@
   "source_proportions_preserved": true,
   "cloth_enabled": true,
   "skirt_cloth_enabled": false,
+  "cloth_mode": "direct",
   "cloth_render_groups": 4,
-  "proxy_simulation_vertices": 1710,
+  "proxy_simulation_vertices": 0,
   "metadata_audit": "pass",
   "action_sets_count": 89,
   "game_test_verified": false,
   "game_cloth_solver_used": false,
   "hair_decision": "\u540e\u90e8\u53cc\u957f\u53d1\u542f\u7528\u6709\u9650\u6446\u52a8\uff0c\u5e3d\u4e0e\u524d\u53d1\u56fa\u5b9a",
   "limitations": [
-    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "CPU cloth diagnostics are approximate and do not certify native rendering or physics.",
     "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
     "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
     "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
   ],
-  "repair_validation": "reports/runtime_resource_fix.json"
+  "repair_validation": "reports/direct_hair_cloth.json"
 }

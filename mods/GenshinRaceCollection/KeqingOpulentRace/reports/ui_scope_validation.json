@@ -2,13 +2,15 @@
   "status": "pass",
   "race_filter": "keqing_opulent",
   "assembly_name": "KeqingOpulentRace.UIRuntime",
-  "source_sha256": "57e390690b54fa996ddb11d8f14dfce7377e1acd9e79b8716f059af8f7ba117e",
-  "assembly_sha256": "6ba0918e98fc3a8b5e5a52a051ecc01d62cc9ba1d485a681834cd7d6fdb7cff8",
+  "source_sha256": "62ccc223af06e19202e471eaa40c4ea070d3d15dece9371fa3e49376588eb4c4",
+  "assembly_sha256": "7c3760b843ec9886b46f09715ce5a3749b14fc50b715adb3f637578e746854b2",
   "owners": [
     "CharacterTableau",
     "BasicCharacterTableau",
     "BodyGeneratorView"
   ],
   "mission_and_live_map_entities_excluded": true,
-  "game_verified": false
+  "game_verified": false,
+  "readonly_hair_material_probe": true,
+  "hair_probe_source_sha256": "fed4cc7977bfec545078885257e1860bc914b20d5be53a3326b43bffb6248a48"
 }

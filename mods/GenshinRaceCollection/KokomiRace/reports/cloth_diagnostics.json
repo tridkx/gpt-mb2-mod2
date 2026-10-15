@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "mod": "KokomiRace",
-  "fingerprint": "c365602820e6e4067c82344ab9f5847c9440e3114243ea656f5cfefbeb2a0ea5",
-  "generated_at_utc": "2026-10-14T15:30:07.455482+00:00",
+  "fingerprint": "a7b4f85fa8c6d0b990a78424b14482b8299f389dd53dfb28467698ff67268b22",
+  "generated_at_utc": "2026-10-15T01:09:44.090167+00:00",
   "inputs": {
     "mod/build/cloth_probe/mbtool.dll": "7391c3428210ba19ea7f9e1123fc1584a986d4bf618dffdda209e8fe25e92335",
     "mod/build/cloth_probe/NativeClothProbe.deps.json": "2f6631e12ab2d95519b7e139bb763ec892ce56b0fbc4e919abcf546a501850d7",
     "mod/build/cloth_probe/NativeClothProbe.dll": "fdc1c0294e44d4eb65c2cbd88fd64eafc33eaebf29d8eeaeac039e58bdb361a2",
     "mod/build/cloth_probe/NativeClothProbe.runtimeconfig.json": "256dda2706e1151bb95987b6b5be610bf68d64e058285b19e7e958222fc90414",
-    "mod/module/KokomiRace/AssetPackages/kokomi.tpac": "dc0efdd7d988d56c87e77e60ea4a40f239fb6561c3a9b4ce96d469bbe1f5e4df",
+    "mod/module/KokomiRace/AssetPackages/kokomi.tpac": "1071612d1cf2ec34e2bab694422d821f8e0512bcbbe7e4f6204a417b16991657",
     "mod/module/KokomiRace/ModuleData/cloth_bodies.xml": "0e328f3e456576f3aa06a30ee1b9bd0fdd0447d736523b772aaf16273ee2ad4c",
     "mod/reports/facegen.json": "35bbf06eea34fb3a0689bd589b6d6bde1310701e418967900c6aefc03cddf383",
     "mod/reports/final_skeleton.json": "6096af1135826b01aef0e7a6130c3913eff7b3432cdd75d5b68ea08b1790481a",
@@ -27,7 +27,7 @@
     "workspace_tools/asset_helpers/previewer/baker/__init__.py": "7d7e86ba699dcb4cba65aea6a098f50af97462ce01131ec88e3d7431dff6eb3d",
     "workspace_tools/asset_helpers/previewer/baker/skeleton.py": "3efa27ce001e74f25687d7ae56b27e06dbb8b6bd94f80cddabb237f380eaad8e",
     "workspace_tools/asset_helpers/previewer/baker/animation.py": "2bd196a1c96752d2b1f1478c6dad5e2672e4e4f53438766b710f9ba6b2024272",
-    "mod/mod.json": "db3198e298bb315fffd87ca43c2e3d95c899c1dbfda085283952627a2e0bec80"
+    "mod/mod.json": "20a2ca4812077274c57b9b78dd69f668920dd9a3998c13d86e5b4213a00c6057"
   },
   "config": {
     "enabled": true,
@@ -63,47 +63,12 @@
         },
         "metamesh": "kokomi_body",
         "lods": [
-          0,
-          1,
-          2,
-          3
-        ]
-      },
-      {
-        "skeleton": "reports/final_skeleton.json",
-        "capsules": "module/KokomiRace/ModuleData/cloth_bodies.xml",
-        "body": "kokomi_collision",
-        "motions": [
-          {
-            "name": "facegen",
-            "path": "reports/facegen.json",
-            "fps": 60,
-            "end": 61
-          },
-          {
-            "name": "run",
-            "path": "reports/run.json",
-            "fps": 60
-          },
-          {
-            "name": "riding",
-            "path": "reports/riding.json",
-            "fps": 60
-          }
-        ],
-        "settings": {
-          "warmup": 30,
-          "substeps": 2,
-          "iterations": 4
-        },
-        "metamesh": "kokomi_cloth_proxy",
-        "lods": [
           0
         ]
       }
     ]
   },
-  "package_sha256": "dc0efdd7d988d56c87e77e60ea4a40f239fb6561c3a9b4ce96d469bbe1f5e4df",
+  "package_sha256": "1071612d1cf2ec34e2bab694422d821f8e0512bcbbe7e4f6204a417b16991657",
   "package_relative_path": "module/KokomiRace/AssetPackages/kokomi.tpac",
   "game_solver_used": false,
   "game_verified": false,
@@ -111,12 +76,7 @@
   "results": [
     {
       "metamesh": "kokomi_body",
-      "status": "incomplete",
-      "reason": "mapped cloth is not supported by this direct-cloth diagnostic"
-    },
-    {
-      "metamesh": "kokomi_cloth_proxy",
-      "mesh": "kokomi_cloth_proxy",
+      "mesh": "kokomi_part_15",
       "lod": 0,
       "motion": "facegen",
       "status": "within_thresholds",
@@ -125,26 +85,26 @@
         "vertex_penetration_m": 0.0,
         "interior_penetration_m": 0.0,
         "fixed_penetration_m": 0.0,
-        "max_stretch_strain": 0.13228634706834208,
-        "max_stretch_error_m": 0.003072676869777302,
-        "p99_stretch_strain": 0.0612654185218878,
+        "max_stretch_strain": 0.16101105930678206,
+        "max_stretch_error_m": 0.0028541748096856806,
+        "p99_stretch_strain": 0.055646603189410025,
         "travel_exceeded_m": 6.938893903907228e-17,
         "fixed_drift_m": 0.0,
         "max_displacement_m": 0.0745098069310189
       },
       "artifacts": {
-        "build/cloth_simulator/63b86819e9ca-e6i9nrgf/target_01/case_0001/frames.npz": "98fc163324719665764ca51d40da1833ec6035d2812a5f889a800d456f9aaf9a",
-        "build/cloth_simulator/63b86819e9ca-e6i9nrgf/target_01/case_0001/replay.html": "20f018c551cc9f238b72ae538cb289282fdbf1da6b9474f319dc5ebc8f77af27",
-        "build/cloth_simulator/63b86819e9ca-e6i9nrgf/target_01/case_0001/report.json": "e44a7564d658545c4fb889317e8a25d8601b5979eb2744bf614c1eafa8566b74",
-        "build/cloth_simulator/63b86819e9ca-e6i9nrgf/target_01/case_0001/worst_frame.png": "b66d5d8ab61855bdd27021c7e2916c29ba80429626b48194a067f5e4675183ee",
-        "build/cloth_simulator/63b86819e9ca-e6i9nrgf/target_01/case_0001/worst_stretch.png": "30226771811579aff7eee21db436f20b771813681f55307d7f5e6a6669a6c1e7"
+        "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7/target_00/case_0000/frames.npz": "3ea2fd94a6051994b5bb2e40c1aa13f98c1fe644999154872cf297a91b342ac0",
+        "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7/target_00/case_0000/replay.html": "b24324a1e880207457c6eca14cd1a299858ed7f77f6d5dccb816726b060016f0",
+        "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7/target_00/case_0000/report.json": "b38abbf68c1650fdc29f2e1c513ab321d28a91e4f03d016db474927ebfd63113",
+        "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7/target_00/case_0000/worst_frame.png": "bdfc4cb665dabd7ad1384bf8a2eac58b457e30a6c6dca22b61fc90c9e21aa61a",
+        "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7/target_00/case_0000/worst_stretch.png": "3fa6622d1ddedcb7a986d0f685b203db804677df915d3eac913704bb3532c18e"
       },
-      "report": "build/cloth_simulator/63b86819e9ca-e6i9nrgf/target_01/case_0001/report.json",
-      "archive_directory": "reports/cloth_diagnostics/63b86819e9ca-e6i9nrgf/case_0001"
+      "report": "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7/target_00/case_0000/report.json",
+      "archive_directory": "reports/cloth_diagnostics/a7b4f85fa8c6-j90_3xm7/case_0000"
     },
     {
-      "metamesh": "kokomi_cloth_proxy",
-      "mesh": "kokomi_cloth_proxy",
+      "metamesh": "kokomi_body",
+      "mesh": "kokomi_part_15",
       "lod": 0,
       "motion": "run",
       "status": "needs_review",
@@ -153,26 +113,26 @@
         "vertex_penetration_m": 0.0,
         "interior_penetration_m": 0.0,
         "fixed_penetration_m": 0.0,
-        "max_stretch_strain": 1.1403249253065373,
-        "max_stretch_error_m": 0.009836472569984808,
-        "p99_stretch_strain": 0.1730957626786599,
+        "max_stretch_strain": 1.3372967324514944,
+        "max_stretch_error_m": 0.011995805496515972,
+        "p99_stretch_strain": 0.16797445912881692,
         "travel_exceeded_m": 1.1102230246251565e-16,
         "fixed_drift_m": 0.0,
         "max_displacement_m": 0.07450980693101894
       },
       "artifacts": {
-        "build/cloth_simulator/63b86819e9ca-e6i9nrgf/target_01/case_0002/frames.npz": "20208854134e996453b790e8f72d655ce833583ad6f6f444e0008725b3be64af",
-        "build/cloth_simulator/63b86819e9ca-e6i9nrgf/target_01/case_0002/replay.html": "646905d62ab9b08be1747b1859e08cb9b05cd9c6680b2bb03e3260658eee4ee9",
-        "build/cloth_simulator/63b86819e9ca-e6i9nrgf/target_01/case_0002/report.json": "2e7acd2a9531dc1845eee9831d76e0a83b8b88b2044331675ccb43fa123e02f9",
-        "build/cloth_simulator/63b86819e9ca-e6i9nrgf/target_01/case_0002/worst_frame.png": "866d2c77a10d32dea48c2252b8fb6372bd076bd1977c1a8fe7b9384409c01056",
-        "build/cloth_simulator/63b86819e9ca-e6i9nrgf/target_01/case_0002/worst_stretch.png": "3ec581010fdf83ba53681bd2cff890d7076e0c15556175c90637566e63b2a01c"
+        "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7/target_00/case_0001/frames.npz": "71e40b65970dd0b0c6afe4a0a9f86a8d73299a81e8179174045b75b2e6bdcc2b",
+        "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7/target_00/case_0001/replay.html": "76e0e57cd1299611c8a1db7b1ed7651fa9e791fd888108a5e111e6337a7f06f7",
+        "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7/target_00/case_0001/report.json": "d93bf0ff9619a01533985265f379da6b40cc497230d7c42d86e1766576c21cee",
+        "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7/target_00/case_0001/worst_frame.png": "597d608620d9bcab989b49c65edaed75d4b138cfda19f8daf9ce2d1dc7247116",
+        "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7/target_00/case_0001/worst_stretch.png": "f7cecc243224aad8c3c214c1a4ab83e92946f798c3faf465ebb82ff6bb2a62f2"
       },
-      "report": "build/cloth_simulator/63b86819e9ca-e6i9nrgf/target_01/case_0002/report.json",
-      "archive_directory": "reports/cloth_diagnostics/63b86819e9ca-e6i9nrgf/case_0002"
+      "report": "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7/target_00/case_0001/report.json",
+      "archive_directory": "reports/cloth_diagnostics/a7b4f85fa8c6-j90_3xm7/case_0001"
     },
     {
-      "metamesh": "kokomi_cloth_proxy",
-      "mesh": "kokomi_cloth_proxy",
+      "metamesh": "kokomi_body",
+      "mesh": "kokomi_part_15",
       "lod": 0,
       "motion": "riding",
       "status": "needs_review",
@@ -181,37 +141,24 @@
         "vertex_penetration_m": 0.0,
         "interior_penetration_m": 0.0,
         "fixed_penetration_m": 0.0,
-        "max_stretch_strain": 0.7340017671699542,
-        "max_stretch_error_m": 0.012511734269373992,
-        "p99_stretch_strain": 0.1734336242754695,
-        "travel_exceeded_m": 1.6306400674181987e-16,
+        "max_stretch_strain": 0.6916469510464931,
+        "max_stretch_error_m": 0.010870259642565064,
+        "p99_stretch_strain": 0.17346744726779117,
+        "travel_exceeded_m": 1.942890293094024e-16,
         "fixed_drift_m": 0.0,
-        "max_displacement_m": 0.07450980693101898
+        "max_displacement_m": 0.07450980693101902
       },
       "artifacts": {
-        "build/cloth_simulator/63b86819e9ca-e6i9nrgf/target_01/case_0003/frames.npz": "871eaa4315df99faf0bcba28c6ea1f6b58e76394134849393869b67f5400f82f",
-        "build/cloth_simulator/63b86819e9ca-e6i9nrgf/target_01/case_0003/replay.html": "5c3ebc8ffe05cac3d7755b24cd01a4b2347064471a525fa896b63f1701e354a0",
-        "build/cloth_simulator/63b86819e9ca-e6i9nrgf/target_01/case_0003/report.json": "2757317342ca48530f4eca2480e2a9712d0bc2a4d9c2c1d54d47c4c1fcce4f3d",
-        "build/cloth_simulator/63b86819e9ca-e6i9nrgf/target_01/case_0003/worst_frame.png": "fbd568dcbfcba9737117f10ba2115d5b146e02fd12e4f59a7c0200e384593b59",
-        "build/cloth_simulator/63b86819e9ca-e6i9nrgf/target_01/case_0003/worst_stretch.png": "213bdfc799cc0ab671fe78b87b663a9966f1f7fd999d0de7ed7d5bc7a1bbf89d"
+        "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7/target_00/case_0002/frames.npz": "967656a56ec1aef2465319cafbb545257b8699ccdc9a49c7590c6a11a7281d1c",
+        "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7/target_00/case_0002/replay.html": "79ef3bedc459d1213fca3351074480b1358cd8508734daeab68de41ce41a9324",
+        "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7/target_00/case_0002/report.json": "310d42b13837e1228ad1eda3ac129b5fa52ed8a6964b32063a4eba325706302e",
+        "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7/target_00/case_0002/worst_frame.png": "02891bcb8c23c39af80cb4eb8137461a69f36e2687b036ffc4b0b9364fbf04e6",
+        "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7/target_00/case_0002/worst_stretch.png": "6609a66506b41153d3f0e52ef6283f719157d44f0b494b37ed327a53374a8cb1"
       },
-      "report": "build/cloth_simulator/63b86819e9ca-e6i9nrgf/target_01/case_0003/report.json",
-      "archive_directory": "reports/cloth_diagnostics/63b86819e9ca-e6i9nrgf/case_0003"
+      "report": "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7/target_00/case_0002/report.json",
+      "archive_directory": "reports/cloth_diagnostics/a7b4f85fa8c6-j90_3xm7/case_0002"
     }
   ],
-  "run_directory": "build/cloth_simulator/63b86819e9ca-e6i9nrgf",
-  "status": "incomplete",
-  "simulation_rerun": false,
-  "material_only_equivalence": {
-    "proof": "reports/hair_proxy_visibility_fix.json",
-    "proof_sha256": "3e32e4978b0b2c860d23cc71af26323d4112a3f256b3e7c7b0812143218d4e0d",
-    "baseline_package_sha256": "ae7dc7a773dd1ee5217a7459e9a89be279307d72269d6ee83e69cd38d216283f",
-    "basis": "All LOD and proxy streams, cloth settings, payloads and mappings unchanged; collision, skeleton, motion and solver input hashes identical. Original trajectory provenance retained."
-  },
-  "numerical_input_reuse": {
-    "proof": "reports/native_driver_input_validation.json",
-    "proof_sha256": "339a01a27693910c6f338e63063987552c6f5730f9271ba07992f5fc90132fcf",
-    "basis": "Fresh flagless-driver extraction is byte-identical to prior solver mesh, edit data and payload; skeleton, collision, animation and solver inputs unchanged. Engine driver registration is outside CPU solver coverage.",
-    "native_engine_behavior_verified": false
-  }
+  "run_directory": "build/cloth_simulator/a7b4f85fa8c6-j90_3xm7",
+  "status": "needs_review"
 }

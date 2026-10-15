@@ -1,11 +1,11 @@
 {
   "status": "pass",
-  "version": "v0.1.2",
+  "version": "v0.1.3",
   "date": "2026-10-15",
-  "final_package_sha256": "c698021baa6e2404d2fdd785132c4cb51ef43ef9a1acde5072e5dc7f36e19f07",
+  "final_package_sha256": "00c0d11be5993456009de7133b70f1b4eefffc0eb479f27e4cfb24d2a465ae25",
   "source_input_sha256": "77d7fdb8f36abdfd01cc6a1fb7c38645ef40885a556987e9181844f3552f3423",
-  "baseline_package_sha256": "6f07164cdf6f4d78eddbe39ae8dd34d4c6a46ad3c90a90cb9b7be47ea7a716f6",
-  "baseline_reason": "Native driver role and BC texture runtime compatibility repair; all geometry and physics streams preserved",
+  "baseline_package_sha256": "c698021baa6e2404d2fdd785132c4cb51ef43ef9a1acde5072e5dc7f36e19f07",
+  "baseline_reason": "v0.1.2 baseline; all four visible geometry streams unchanged during direct-hair conversion",
   "game_version": "v1.4.8",
   "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
   "lods": [
@@ -111,18 +111,19 @@
   "source_proportions_preserved": true,
   "cloth_enabled": true,
   "skirt_cloth_enabled": false,
+  "cloth_mode": "direct",
   "cloth_render_groups": 4,
-  "proxy_simulation_vertices": 1325,
+  "proxy_simulation_vertices": 0,
   "metadata_audit": "pass",
   "action_sets_count": 89,
   "game_test_verified": false,
   "game_cloth_solver_used": false,
   "hair_decision": "\u540e\u90e8\u5bbd\u957f\u53d1\u8d85\u8fc7\u8170\u90e8\uff0c\u542f\u7528\u6709\u9650\u6446\u52a8\uff1b\u524d\u53d1\u4e0e\u9970\u7269\u56fa\u5b9a",
   "limitations": [
-    "Mapped cloth CPU diagnostics are incomplete; direct proxy diagnostics do not certify render mapping or game physics.",
+    "CPU cloth diagnostics are approximate and do not certify native rendering or physics.",
     "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
     "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
     "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
   ],
-  "repair_validation": "reports/runtime_resource_fix.json"
+  "repair_validation": "reports/direct_hair_cloth.json"
 }

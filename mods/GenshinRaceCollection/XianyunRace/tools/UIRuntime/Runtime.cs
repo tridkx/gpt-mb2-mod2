@@ -19,7 +19,7 @@ using Path = System.IO.Path;
 
 namespace XianyunRace.UIRuntime {
     // Scope corrections to this race's UI previews; preserve all character data.
-    public sealed class SubModule : MBSubModuleBase {
+    public sealed partial class SubModule : MBSubModuleBase {
         private const string LeaderKey="gpt-mb2-mod2/GenshinRaceCollection/UILeader";
         private const string RegistryKey="gpt-mb2-mod2/GenshinRaceCollection/UIRepairs";
         internal sealed class ReferenceComparer : IEqualityComparer<object> {
@@ -196,12 +196,14 @@ namespace XianyunRace.UIRuntime {
             return skeleton!="xianyun_skeleton" || actionSet!=expectedSet;
         }
 
+        partial void SampleRuntimeHair(AgentVisuals visual,string owner,string screen);
         private void CorrectPreview(AgentVisuals visual, string owner, string screen) {
             if (!IsPreviewOwner(owner)) return;
             try {
                 var data=visual.GetCopyAgentVisualsData();
                 var races=TaleWorlds.Core.FaceGen.GetRaceNames().ToArray();
                 if (data.RaceData<0 || data.RaceData>=races.Length || races[data.RaceData]!="xianyun") return;
+                SampleRuntimeHair(visual,owner,screen);
                 var entity=visual.GetEntity();
                 var oldSkeleton=entity.Skeleton;
                 if (oldSkeleton==null) return;

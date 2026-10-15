@@ -2,13 +2,15 @@
   "status": "pass",
   "race_filter": "weisina",
   "assembly_name": "WeisinaRace.UIRuntime",
-  "source_sha256": "5c1c428f83f9441edf204bd51761705c4071f50589b127d0d90cc983045c1b45",
-  "assembly_sha256": "ea0dc5ee6d700ea21f12318866ad26a5ce86a7f94cb7b84dc9f73a0429ddffcb",
+  "source_sha256": "751a0807cc57a4afb36f3d301bef144ab7e16480684f67988fa5e23062e7cde6",
+  "assembly_sha256": "132c9cd25760cca3a5acfb9ff0eb3e8a60b6979e32284bef2bd5fe3c0ed46178",
   "owners": [
     "CharacterTableau",
     "BasicCharacterTableau",
     "BodyGeneratorView"
   ],
   "mission_and_live_map_entities_excluded": true,
-  "game_verified": false
+  "game_verified": false,
+  "readonly_hair_material_probe": true,
+  "hair_probe_source_sha256": "20d2305c1636a885a91d8f6952fdfffef1b6005dc0d4f3ebb0d2a1007cdcfc65"
 }

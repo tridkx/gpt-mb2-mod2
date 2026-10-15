@@ -11,6 +11,9 @@ def finalize(root):
     cloth_note='映射布料的 CPU 渲染诊断仍为 `incomplete`；另检查直接模拟代理的动作轨迹。代理报告中的碰撞、拉伸提示属于近似诊断，不当作游戏通过或失败。初次接入使用报告模式。' if c['cloth_enabled'] else '本角色未配置布料模拟。'
     repair_note='当前版本为长发布料代理使用独立全透明裁切材质，所有 mip 的 Alpha 均为零；可见头发材质与布料活动距离独立。修复的网格、骨架、原贴图及布料字节对比见 [代理材质修复](reports/hair_proxy_visibility_fix.json)，近景预览见 [含代理检查](reports/hair_proxy_visibility_preview.json)。实机头发效果待用户复测。' if (root/'reports/hair_proxy_visibility_fix.json').exists() else ''
     if (root/'reports/runtime_resource_fix.json').exists():repair_note='当前版本的[运行资源检查](reports/runtime_resource_fix.json)覆盖 BC 纹理尺寸和原生驱动角色：BC 顶层尺寸满足 4 像素对齐；含长发布料时代理仅由可见网格引用，清除代理的直接渲染布料标记、身体绑定和三个附加开关，与 Native 模拟网格相同。独立透明材质仅作防护，不作为代理未显示的实机证据。模型、UV、骨架、权重与布料数据保留，创建页面加载和头发实机表现仍待复测。'
+    if c.get('cloth_mode')=='direct':
+        repair_note='当前为可见头发直接模拟：最终包没有模拟代理资产、代理引用或映射段，每级可见头发拥有自己的直接布料预处理数据。原发型、UV、材质、骨架和权重保持不变，衣裙普通蒙皮。结构及活动范围见 [直接布料检查](reports/direct_hair_cloth.json)。实际界面网格、材质和漫反射纹理名称会只读记录到角色 Documents 日志；不修改渲染。实机头发观感待用户复测。'
+        cloth_note='直接布料使用 CPU 近似求解器检查动作轨迹与碰撞，结果不作为游戏物理或渲染验收。数值相同的 LOD 以实际网格／预处理数据等价性归组，配置只模拟代表级。'
     readme=f'''# {c['module_name']}
 
 {c['display_name']}完整人物固定外观种族。模块 ID `{c['id']}`，内部种族 ID `{c['race']}`，启动器英文名 `{c['module_name']}`。针对本机 Native v1.4.8 制作。
@@ -31,7 +34,7 @@ campaign.give_troops {c['prefix']}_test 10
 
 保留所选 PMX 的固定脸、服装、身体比例和 UV。模型与骨架统一换算为每源单位 {c['unit_scale']} 米，静态整体高度约 {transfer['source_height_m']:.3f} 米。采用自有 28 骨绑定骨架，按源关节位置校准，沿用骑砍原生动作；源权重映射后补平滑肩部、腰部与胯部过渡。四级 LOD 保留关键切口及脸部轮廓。
 
-{hair} **裙子不启用布料模拟**。头发方案：{c['hair_decision']}。含布料时各级渲染 LOD 使用自身映射段，代理、固定区、碰撞尺寸与活动范围属于当前角色，参数见 [模型配置](tools/model_config.json)。
+{hair} **裙子不启用布料模拟**。头发方案：{c['hair_decision']}。含布料时各级可见头发拥有自身布料数据；固定区、碰撞尺寸与活动范围属于当前角色，参数见 [模型配置](tools/model_config.json)。
 
 选用 `{c['source_model']}`。忽略的附属／备用模型：{ignored}。原始压缩包和完整解包内容保留在 `input/`，这些附属模型不进入运行资源。重复的 MMD 高光／sphere 网格只排除经检查重叠的渲染层；具体几何范围见 [准备报告](reports/preparation.json)。
 
@@ -72,6 +75,7 @@ campaign.give_troops {c['prefix']}_test 10
     if c['cloth_enabled']:
         target={'skeleton':'reports/final_skeleton.json','capsules':f"module/{c['id']}/ModuleData/cloth_bodies.xml",'body':c['prefix']+'_collision','motions':[{'name':'facegen','path':'reports/facegen.json','fps':60,'end':61},{'name':'run','path':'reports/run.json','fps':60},{'name':'riding','path':'reports/riding.json','fps':60}],'settings':{'warmup':30,'substeps':2,'iterations':4}}
         cfg['cloth_diagnostics']={'enabled':True,'mode':'report','probe':'build/cloth_probe/NativeClothProbe.dll','targets':[dict(target,metamesh=c['prefix']+'_body',lods=[0,1,2,3]),dict(target,metamesh=c['prefix']+'_cloth_proxy',lods=[0])]}
+        if c.get('cloth_mode')=='direct':cfg['cloth_diagnostics']['targets']=[dict(target,metamesh=c['prefix']+'_body',lods=c.get('direct_diagnostic_lods',[0,1,2,3]))]
     (root/'mod.json').write_text(json.dumps(cfg,ensure_ascii=False,indent=2),encoding='utf8');print('MANIFEST_READY',c['id'],len(sources),flush=True)
 
 if __name__=='__main__':

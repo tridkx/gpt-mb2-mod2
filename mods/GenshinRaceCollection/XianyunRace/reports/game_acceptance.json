@@ -1,11 +1,11 @@
 {
-  "version": "v0.1.2",
-  "status": "pending_user_runtime_retest",
-  "package_sha256": "8a7c5ef902cbfe409e0709e1c5969077332089c876a2d032642a8719ebebc8db",
+  "version": "v0.1.3",
+  "status": "pending_user_direct_hair_retest",
   "game_launched_by_assistant": false,
+  "previous_feedback": "Hair patches in v0.1.2 disappear when game cloth simulation is disabled.",
   "required_scenes": [
-    "character_creation_loading",
-    "hair_closeup",
-    "hair_motion"
+    "cloth_enabled_hair_closeup",
+    "hair_motion",
+    "lod_distances"
   ]
 }

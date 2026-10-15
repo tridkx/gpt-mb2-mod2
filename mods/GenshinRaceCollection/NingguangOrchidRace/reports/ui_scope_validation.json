@@ -2,13 +2,15 @@
   "status": "pass",
   "race_filter": "ningguang_orchid",
   "assembly_name": "NingguangOrchidRace.UIRuntime",
-  "source_sha256": "0510eb3489d3b02099728b18e72ff631094ef69fe26d7fb8163ede42afd5b001",
-  "assembly_sha256": "b0432d59f3587ea6b1a46931f3d20b9dbba8114eb7ac8d2dd2dfda8fe4502245",
+  "source_sha256": "e2113cd14d4d96718fda39606583bc140a6ec7297cb375e2965eaabcfc6f2333",
+  "assembly_sha256": "656732691506387075577ece4c6d50d18a66dcd7144ec416d1d9b7d503483b9b",
   "owners": [
     "CharacterTableau",
     "BasicCharacterTableau",
     "BodyGeneratorView"
   ],
   "mission_and_live_map_entities_excluded": true,
-  "game_verified": false
+  "game_verified": false,
+  "readonly_hair_material_probe": true,
+  "hair_probe_source_sha256": "774f2e68871a3941b04c62abd49e3d8e201e1a77892258d23ff344c7251b956d"
 }
