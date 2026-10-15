@@ -10,6 +10,7 @@ def finalize(root):
     ignored='、'.join(c['ignored_models']) or '无独立附属模型'
     cloth_note='映射布料的 CPU 渲染诊断仍为 `incomplete`；另检查直接模拟代理的动作轨迹。代理报告中的碰撞、拉伸提示属于近似诊断，不当作游戏通过或失败。初次接入使用报告模式。' if c['cloth_enabled'] else '本角色未配置布料模拟。'
     repair_note='当前版本为长发布料代理使用独立全透明裁切材质，所有 mip 的 Alpha 均为零；可见头发材质与布料活动距离独立。修复的网格、骨架、原贴图及布料字节对比见 [代理材质修复](reports/hair_proxy_visibility_fix.json)，近景预览见 [含代理检查](reports/hair_proxy_visibility_preview.json)。实机头发效果待用户复测。' if (root/'reports/hair_proxy_visibility_fix.json').exists() else ''
+    if (root/'reports/runtime_resource_fix.json').exists():repair_note='当前版本的[运行资源检查](reports/runtime_resource_fix.json)覆盖 BC 纹理尺寸和原生驱动角色：BC 顶层尺寸满足 4 像素对齐；含长发布料时代理仅由可见网格引用，清除代理的直接渲染布料标记、身体绑定和三个附加开关，与 Native 模拟网格相同。独立透明材质仅作防护，不作为代理未显示的实机证据。模型、UV、骨架、权重与布料数据保留，创建页面加载和头发实机表现仍待复测。'
     readme=f'''# {c['module_name']}
 
 {c['display_name']}完整人物固定外观种族。模块 ID `{c['id']}`，内部种族 ID `{c['race']}`，启动器英文名 `{c['module_name']}`。针对本机 Native v1.4.8 制作。

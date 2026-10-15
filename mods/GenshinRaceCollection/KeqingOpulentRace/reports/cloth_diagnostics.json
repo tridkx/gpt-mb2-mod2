@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "mod": "KeqingOpulentRace",
-  "fingerprint": "625aa9e0a02dd873fff7a853b912cb8f71dd641dfa1b2861a04be6f332d38081",
+  "fingerprint": "19e07f14aae3a4da26cbe35dd3d135de3f26bf5388a73c08eb451bf6e5ef48d8",
   "generated_at_utc": "2026-10-14T15:33:29.165901+00:00",
   "inputs": {
     "mod/build/cloth_probe/mbtool.dll": "7391c3428210ba19ea7f9e1123fc1584a986d4bf618dffdda209e8fe25e92335",
     "mod/build/cloth_probe/NativeClothProbe.deps.json": "2f6631e12ab2d95519b7e139bb763ec892ce56b0fbc4e919abcf546a501850d7",
-    "mod/build/cloth_probe/NativeClothProbe.dll": "f4b0058cfca5743c7d0844727d4ec1c83ebaa8743a2f54900163f7f5acd7c321",
+    "mod/build/cloth_probe/NativeClothProbe.dll": "f12b3aa9f9831aa6849b9672ebb8f616466da23109fc99a6a2502590dc86938d",
     "mod/build/cloth_probe/NativeClothProbe.runtimeconfig.json": "256dda2706e1151bb95987b6b5be610bf68d64e058285b19e7e958222fc90414",
-    "mod/module/KeqingOpulentRace/AssetPackages/keqing_opulent.tpac": "0b34353ca9e8b96600261aa318cdb612aa2c81b6f78a6534ec54cfb3ab746624",
+    "mod/module/KeqingOpulentRace/AssetPackages/keqing_opulent.tpac": "127c602ccd7d83a0e676b1d5d3c5f43440ffe9848527530ee9aac26556efcc08",
     "mod/module/KeqingOpulentRace/ModuleData/cloth_bodies.xml": "b776d523d4644b642e717ea8215c08bffa5f7678c9b3320c5cb1b8136b10766e",
     "mod/reports/facegen.json": "35bbf06eea34fb3a0689bd589b6d6bde1310701e418967900c6aefc03cddf383",
     "mod/reports/final_skeleton.json": "b50dadac9a050ae37fd744c0b369490dd783fbb667a9ecd80724f6f22f31c641",
@@ -27,7 +27,7 @@
     "workspace_tools/asset_helpers/previewer/baker/__init__.py": "7d7e86ba699dcb4cba65aea6a098f50af97462ce01131ec88e3d7431dff6eb3d",
     "workspace_tools/asset_helpers/previewer/baker/skeleton.py": "3efa27ce001e74f25687d7ae56b27e06dbb8b6bd94f80cddabb237f380eaad8e",
     "workspace_tools/asset_helpers/previewer/baker/animation.py": "2bd196a1c96752d2b1f1478c6dad5e2672e4e4f53438766b710f9ba6b2024272",
-    "mod/mod.json": "29ef5aebff85c692785a27351373b09d96e6b491e329e208b8ea6f99ea03d76b"
+    "mod/mod.json": "b69abe6debdeeb757bf8f3194c9f479e808ab85aa8ab54bfa30029fa9602eea6"
   },
   "config": {
     "enabled": true,
@@ -103,7 +103,7 @@
       }
     ]
   },
-  "package_sha256": "0b34353ca9e8b96600261aa318cdb612aa2c81b6f78a6534ec54cfb3ab746624",
+  "package_sha256": "127c602ccd7d83a0e676b1d5d3c5f43440ffe9848527530ee9aac26556efcc08",
   "package_relative_path": "module/KeqingOpulentRace/AssetPackages/keqing_opulent.tpac",
   "game_solver_used": false,
   "game_verified": false,
@@ -207,5 +207,11 @@
     "proof_sha256": "e5991c5828829541ac787bd95e8580a37efb0bbe748283d3ea942b8a8d9cc9f3",
     "baseline_package_sha256": "38ee65f223d6973668583e7e9133aa27abb1d2a1c565e436440a23731deb1fe4",
     "basis": "All LOD and proxy streams, cloth settings, payloads and mappings unchanged; collision, skeleton, motion and solver input hashes identical. Original trajectory provenance retained."
+  },
+  "numerical_input_reuse": {
+    "proof": "reports/native_driver_input_validation.json",
+    "proof_sha256": "4351065eb251b389a78417aa093ec5d800bd67d40dbd21533e695a72d62b659c",
+    "basis": "Fresh flagless-driver extraction is byte-identical to prior solver mesh, edit data and payload; skeleton, collision, animation and solver inputs unchanged. Engine driver registration is outside CPU solver coverage.",
+    "native_engine_behavior_verified": false
   }
 }

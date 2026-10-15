@@ -292,6 +292,17 @@
         "use_specular",
         "disable_vertex_color_alpha"
       ]
+    },
+    {
+      "Name": "xianyun_proxy_invisible",
+      "Guid": "d262fc57-92f6-e3a0-6f53-5be3b87ee38b",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
     }
   ],
   "meshes": [
@@ -827,8 +838,7 @@
       "Name": "xianyun_part_11",
       "Lod": 0,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "7a1b0b27-97f9-dd80-5283-8280d5b6858c",
       "Vertices": 3803,
@@ -836,14 +846,13 @@
       "AlphaMax": 17,
       "ColorsSHA256": "45A33F16215DF6D79EED83A398347208A53B94F8036952324F4A4F3E386FF9E0",
       "VertexStreamSHA256": "BD0C8F0858284BBF81EAA22F7A87149120CFD9AF755ECEE2C24FC0E339F2C27E",
-      "ClothMetadataSHA256": "64380314CE4C90DE3B25F8874A1C1A8A0D55DE9D317D16B805F665B98386A9CC"
+      "ClothMetadataSHA256": "34D7B4C5E8BEF2F91D14ADFA93A9D34FC988CF4B6492FF5BB6D9711D44FE0BAC"
     },
     {
       "Name": "xianyun_part_11.lod1",
       "Lod": 1,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "7a1b0b27-97f9-dd80-5283-8280d5b6858c",
       "Vertices": 3803,
@@ -851,14 +860,13 @@
       "AlphaMax": 17,
       "ColorsSHA256": "45A33F16215DF6D79EED83A398347208A53B94F8036952324F4A4F3E386FF9E0",
       "VertexStreamSHA256": "BD0C8F0858284BBF81EAA22F7A87149120CFD9AF755ECEE2C24FC0E339F2C27E",
-      "ClothMetadataSHA256": "64380314CE4C90DE3B25F8874A1C1A8A0D55DE9D317D16B805F665B98386A9CC"
+      "ClothMetadataSHA256": "34D7B4C5E8BEF2F91D14ADFA93A9D34FC988CF4B6492FF5BB6D9711D44FE0BAC"
     },
     {
       "Name": "xianyun_part_11.lod2",
       "Lod": 2,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "7a1b0b27-97f9-dd80-5283-8280d5b6858c",
       "Vertices": 3803,
@@ -866,14 +874,13 @@
       "AlphaMax": 17,
       "ColorsSHA256": "45A33F16215DF6D79EED83A398347208A53B94F8036952324F4A4F3E386FF9E0",
       "VertexStreamSHA256": "BD0C8F0858284BBF81EAA22F7A87149120CFD9AF755ECEE2C24FC0E339F2C27E",
-      "ClothMetadataSHA256": "64380314CE4C90DE3B25F8874A1C1A8A0D55DE9D317D16B805F665B98386A9CC"
+      "ClothMetadataSHA256": "34D7B4C5E8BEF2F91D14ADFA93A9D34FC988CF4B6492FF5BB6D9711D44FE0BAC"
     },
     {
       "Name": "xianyun_part_11.lod3",
       "Lod": 3,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "7a1b0b27-97f9-dd80-5283-8280d5b6858c",
       "Vertices": 3803,
@@ -881,7 +888,7 @@
       "AlphaMax": 17,
       "ColorsSHA256": "45A33F16215DF6D79EED83A398347208A53B94F8036952324F4A4F3E386FF9E0",
       "VertexStreamSHA256": "BD0C8F0858284BBF81EAA22F7A87149120CFD9AF755ECEE2C24FC0E339F2C27E",
-      "ClothMetadataSHA256": "64380314CE4C90DE3B25F8874A1C1A8A0D55DE9D317D16B805F665B98386A9CC"
+      "ClothMetadataSHA256": "34D7B4C5E8BEF2F91D14ADFA93A9D34FC988CF4B6492FF5BB6D9711D44FE0BAC"
     },
     {
       "Name": "xianyun_part_13",
@@ -1714,17 +1721,14 @@
     {
       "Name": "xianyun_cloth_proxy",
       "Lod": 0,
-      "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
-      ],
-      "Material": "c7a8b846-5a63-1d66-10f6-2e939ecef69d",
+      "Flags": [],
+      "Material": "d262fc57-92f6-e3a0-6f53-5be3b87ee38b",
       "Vertices": 2915,
       "AlphaMin": 0,
       "AlphaMax": 17,
       "ColorsSHA256": "F343F4052341F24577A8E52575C7DE60A0A1906A31D41B50B1361DECEB4CD177",
       "VertexStreamSHA256": "9A8134FDD39772BA469D3B8ED8B1355B6E26047DFA58DA0156B6F4105019F856",
-      "ClothMetadataSHA256": "FD70DC663CCCD231330565A3E154AEA73B85131FDF8B0C7865572728F6972167"
+      "ClothMetadataSHA256": "FE9A5185360D1F350EB2F5DBFF5D4702E8163CA016FFC9706A25688A8B193657"
     }
   ]
 }

@@ -284,6 +284,17 @@
         "disable_vertex_color_alpha",
         "alpha_test"
       ]
+    },
+    {
+      "Name": "keqing_opulent_proxy_invisible",
+      "Guid": "544cc22b-839d-ca7d-569f-ae2d597a015a",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
     }
   ],
   "meshes": [
@@ -819,8 +830,7 @@
       "Name": "keqing_opulent_part_12",
       "Lod": 0,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "288acb7b-7398-44c3-acc2-f862926d4411",
       "Vertices": 1848,
@@ -828,14 +838,13 @@
       "AlphaMax": 17,
       "ColorsSHA256": "484B8174E62E27F4102708D067C699E844CDC522CF05F2CA4567A3D0B64289A7",
       "VertexStreamSHA256": "73579ECB0EDF286BCB9B26DA43359CD86F4CC385E8BE8A9CA1DEFC5DD550563B",
-      "ClothMetadataSHA256": "C67BDD6879C538776705AA56621B7B47EE74237B96D616C452E03ABC210E26F6"
+      "ClothMetadataSHA256": "BCEF7286C6DD1BCFB534116B4E099F3DEB8870463A0E81851D55E334E7D08EF2"
     },
     {
       "Name": "keqing_opulent_part_12.lod1",
       "Lod": 1,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "288acb7b-7398-44c3-acc2-f862926d4411",
       "Vertices": 1848,
@@ -843,14 +852,13 @@
       "AlphaMax": 17,
       "ColorsSHA256": "484B8174E62E27F4102708D067C699E844CDC522CF05F2CA4567A3D0B64289A7",
       "VertexStreamSHA256": "73579ECB0EDF286BCB9B26DA43359CD86F4CC385E8BE8A9CA1DEFC5DD550563B",
-      "ClothMetadataSHA256": "C67BDD6879C538776705AA56621B7B47EE74237B96D616C452E03ABC210E26F6"
+      "ClothMetadataSHA256": "BCEF7286C6DD1BCFB534116B4E099F3DEB8870463A0E81851D55E334E7D08EF2"
     },
     {
       "Name": "keqing_opulent_part_12.lod2",
       "Lod": 2,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "288acb7b-7398-44c3-acc2-f862926d4411",
       "Vertices": 1848,
@@ -858,14 +866,13 @@
       "AlphaMax": 17,
       "ColorsSHA256": "484B8174E62E27F4102708D067C699E844CDC522CF05F2CA4567A3D0B64289A7",
       "VertexStreamSHA256": "73579ECB0EDF286BCB9B26DA43359CD86F4CC385E8BE8A9CA1DEFC5DD550563B",
-      "ClothMetadataSHA256": "C67BDD6879C538776705AA56621B7B47EE74237B96D616C452E03ABC210E26F6"
+      "ClothMetadataSHA256": "BCEF7286C6DD1BCFB534116B4E099F3DEB8870463A0E81851D55E334E7D08EF2"
     },
     {
       "Name": "keqing_opulent_part_12.lod3",
       "Lod": 3,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "288acb7b-7398-44c3-acc2-f862926d4411",
       "Vertices": 1848,
@@ -873,7 +880,7 @@
       "AlphaMax": 17,
       "ColorsSHA256": "484B8174E62E27F4102708D067C699E844CDC522CF05F2CA4567A3D0B64289A7",
       "VertexStreamSHA256": "73579ECB0EDF286BCB9B26DA43359CD86F4CC385E8BE8A9CA1DEFC5DD550563B",
-      "ClothMetadataSHA256": "C67BDD6879C538776705AA56621B7B47EE74237B96D616C452E03ABC210E26F6"
+      "ClothMetadataSHA256": "BCEF7286C6DD1BCFB534116B4E099F3DEB8870463A0E81851D55E334E7D08EF2"
     },
     {
       "Name": "keqing_opulent_part_13",
@@ -1311,8 +1318,7 @@
       "Name": "keqing_opulent_part_22",
       "Lod": 0,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "9416e2f5-096d-502b-14c3-ab2086547807",
       "Vertices": 248,
@@ -1320,14 +1326,13 @@
       "AlphaMax": 17,
       "ColorsSHA256": "C4EA4C234FE6E8D01640709B528EDADED642BFD1A60E86FE2FC2AB6173B0017E",
       "VertexStreamSHA256": "CF10432703000A3DF027AAC4DEA9D7893C95AC00CBAE4064C77343C8E265C829",
-      "ClothMetadataSHA256": "C67BDD6879C538776705AA56621B7B47EE74237B96D616C452E03ABC210E26F6"
+      "ClothMetadataSHA256": "BCEF7286C6DD1BCFB534116B4E099F3DEB8870463A0E81851D55E334E7D08EF2"
     },
     {
       "Name": "keqing_opulent_part_22.lod1",
       "Lod": 1,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "9416e2f5-096d-502b-14c3-ab2086547807",
       "Vertices": 248,
@@ -1335,14 +1340,13 @@
       "AlphaMax": 17,
       "ColorsSHA256": "C4EA4C234FE6E8D01640709B528EDADED642BFD1A60E86FE2FC2AB6173B0017E",
       "VertexStreamSHA256": "CF10432703000A3DF027AAC4DEA9D7893C95AC00CBAE4064C77343C8E265C829",
-      "ClothMetadataSHA256": "C67BDD6879C538776705AA56621B7B47EE74237B96D616C452E03ABC210E26F6"
+      "ClothMetadataSHA256": "BCEF7286C6DD1BCFB534116B4E099F3DEB8870463A0E81851D55E334E7D08EF2"
     },
     {
       "Name": "keqing_opulent_part_22.lod2",
       "Lod": 2,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "9416e2f5-096d-502b-14c3-ab2086547807",
       "Vertices": 248,
@@ -1350,14 +1354,13 @@
       "AlphaMax": 17,
       "ColorsSHA256": "C4EA4C234FE6E8D01640709B528EDADED642BFD1A60E86FE2FC2AB6173B0017E",
       "VertexStreamSHA256": "CF10432703000A3DF027AAC4DEA9D7893C95AC00CBAE4064C77343C8E265C829",
-      "ClothMetadataSHA256": "C67BDD6879C538776705AA56621B7B47EE74237B96D616C452E03ABC210E26F6"
+      "ClothMetadataSHA256": "BCEF7286C6DD1BCFB534116B4E099F3DEB8870463A0E81851D55E334E7D08EF2"
     },
     {
       "Name": "keqing_opulent_part_22.lod3",
       "Lod": 3,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "9416e2f5-096d-502b-14c3-ab2086547807",
       "Vertices": 248,
@@ -1365,7 +1368,7 @@
       "AlphaMax": 17,
       "ColorsSHA256": "C4EA4C234FE6E8D01640709B528EDADED642BFD1A60E86FE2FC2AB6173B0017E",
       "VertexStreamSHA256": "CF10432703000A3DF027AAC4DEA9D7893C95AC00CBAE4064C77343C8E265C829",
-      "ClothMetadataSHA256": "C67BDD6879C538776705AA56621B7B47EE74237B96D616C452E03ABC210E26F6"
+      "ClothMetadataSHA256": "BCEF7286C6DD1BCFB534116B4E099F3DEB8870463A0E81851D55E334E7D08EF2"
     },
     {
       "Name": "keqing_opulent_part_23",
@@ -1670,17 +1673,14 @@
     {
       "Name": "keqing_opulent_cloth_proxy",
       "Lod": 0,
-      "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
-      ],
-      "Material": "5f88ac3e-b315-69bb-1412-e07c175a325c",
+      "Flags": [],
+      "Material": "544cc22b-839d-ca7d-569f-ae2d597a015a",
       "Vertices": 1462,
       "AlphaMin": 0,
       "AlphaMax": 17,
       "ColorsSHA256": "7248F8947500A86FADB994D42509666AE6EE483725821768AD374138B106F44D",
       "VertexStreamSHA256": "684F8B9C5CDA3520DF1A16305626EE77253D8C24C3663F950C4D9B62131FDA2C",
-      "ClothMetadataSHA256": "39347C2BDD052C998B2E8A858BA7C22B65B590C95A444EB6785BD6F064A0ED52"
+      "ClothMetadataSHA256": "9FB39D85E826706C368228EBE56841C584AD23BA8F067693A346398DA8FE8DDF"
     }
   ]
 }

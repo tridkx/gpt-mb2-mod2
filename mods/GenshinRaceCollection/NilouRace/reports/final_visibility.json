@@ -302,6 +302,17 @@
         "use_specular",
         "disable_vertex_color_alpha"
       ]
+    },
+    {
+      "Name": "nilou_proxy_invisible",
+      "Guid": "92a1c898-2909-0b91-c87c-c7bc2c38ffbb",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
     }
   ],
   "meshes": [
@@ -885,8 +896,7 @@
       "Name": "nilou_part_12",
       "Lod": 0,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "fcfd6b09-2c95-d655-3d6e-d5b620c43e33",
       "Vertices": 958,
@@ -894,14 +904,13 @@
       "AlphaMax": 15,
       "ColorsSHA256": "761779E4DD930A09AC5BE7DDD4DC2B6681226023A12F1B74F4ED152EF30BE4D0",
       "VertexStreamSHA256": "B3805E5A2BB9742EA0C7F90293A1F2AA0EE8E01C6E234CBE7697E10B2973FC9C",
-      "ClothMetadataSHA256": "F21E7CF6C56E4B91F854E07F6A53AF7BCD90C30C510B5EEEEB03F9196C52E64B"
+      "ClothMetadataSHA256": "D673D0F04111A6D6D87065102979B8BC6874F5BB4985AF54CAF3A013EA1A16D0"
     },
     {
       "Name": "nilou_part_12.lod1",
       "Lod": 1,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "fcfd6b09-2c95-d655-3d6e-d5b620c43e33",
       "Vertices": 958,
@@ -909,14 +918,13 @@
       "AlphaMax": 15,
       "ColorsSHA256": "761779E4DD930A09AC5BE7DDD4DC2B6681226023A12F1B74F4ED152EF30BE4D0",
       "VertexStreamSHA256": "B3805E5A2BB9742EA0C7F90293A1F2AA0EE8E01C6E234CBE7697E10B2973FC9C",
-      "ClothMetadataSHA256": "F21E7CF6C56E4B91F854E07F6A53AF7BCD90C30C510B5EEEEB03F9196C52E64B"
+      "ClothMetadataSHA256": "D673D0F04111A6D6D87065102979B8BC6874F5BB4985AF54CAF3A013EA1A16D0"
     },
     {
       "Name": "nilou_part_12.lod2",
       "Lod": 2,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "fcfd6b09-2c95-d655-3d6e-d5b620c43e33",
       "Vertices": 958,
@@ -924,14 +932,13 @@
       "AlphaMax": 15,
       "ColorsSHA256": "761779E4DD930A09AC5BE7DDD4DC2B6681226023A12F1B74F4ED152EF30BE4D0",
       "VertexStreamSHA256": "B3805E5A2BB9742EA0C7F90293A1F2AA0EE8E01C6E234CBE7697E10B2973FC9C",
-      "ClothMetadataSHA256": "F21E7CF6C56E4B91F854E07F6A53AF7BCD90C30C510B5EEEEB03F9196C52E64B"
+      "ClothMetadataSHA256": "D673D0F04111A6D6D87065102979B8BC6874F5BB4985AF54CAF3A013EA1A16D0"
     },
     {
       "Name": "nilou_part_12.lod3",
       "Lod": 3,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "fcfd6b09-2c95-d655-3d6e-d5b620c43e33",
       "Vertices": 958,
@@ -939,14 +946,13 @@
       "AlphaMax": 15,
       "ColorsSHA256": "761779E4DD930A09AC5BE7DDD4DC2B6681226023A12F1B74F4ED152EF30BE4D0",
       "VertexStreamSHA256": "B3805E5A2BB9742EA0C7F90293A1F2AA0EE8E01C6E234CBE7697E10B2973FC9C",
-      "ClothMetadataSHA256": "F21E7CF6C56E4B91F854E07F6A53AF7BCD90C30C510B5EEEEB03F9196C52E64B"
+      "ClothMetadataSHA256": "D673D0F04111A6D6D87065102979B8BC6874F5BB4985AF54CAF3A013EA1A16D0"
     },
     {
       "Name": "nilou_part_13",
       "Lod": 0,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "ebaf0efa-3a8f-2da7-e9be-2329a3fefa65",
       "Vertices": 32,
@@ -954,14 +960,13 @@
       "AlphaMax": 6,
       "ColorsSHA256": "1A1997D493DEE41105A446E24BAED32BA130729C738118C1981A4CE2BD39262B",
       "VertexStreamSHA256": "86AF529DCC60B714550D3D5220055F9C9D9CF5F80762F0BB2D1DBE4C642BAA81",
-      "ClothMetadataSHA256": "F21E7CF6C56E4B91F854E07F6A53AF7BCD90C30C510B5EEEEB03F9196C52E64B"
+      "ClothMetadataSHA256": "D673D0F04111A6D6D87065102979B8BC6874F5BB4985AF54CAF3A013EA1A16D0"
     },
     {
       "Name": "nilou_part_13.lod1",
       "Lod": 1,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "ebaf0efa-3a8f-2da7-e9be-2329a3fefa65",
       "Vertices": 32,
@@ -969,14 +974,13 @@
       "AlphaMax": 6,
       "ColorsSHA256": "1A1997D493DEE41105A446E24BAED32BA130729C738118C1981A4CE2BD39262B",
       "VertexStreamSHA256": "86AF529DCC60B714550D3D5220055F9C9D9CF5F80762F0BB2D1DBE4C642BAA81",
-      "ClothMetadataSHA256": "F21E7CF6C56E4B91F854E07F6A53AF7BCD90C30C510B5EEEEB03F9196C52E64B"
+      "ClothMetadataSHA256": "D673D0F04111A6D6D87065102979B8BC6874F5BB4985AF54CAF3A013EA1A16D0"
     },
     {
       "Name": "nilou_part_13.lod2",
       "Lod": 2,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "ebaf0efa-3a8f-2da7-e9be-2329a3fefa65",
       "Vertices": 32,
@@ -984,14 +988,13 @@
       "AlphaMax": 6,
       "ColorsSHA256": "1A1997D493DEE41105A446E24BAED32BA130729C738118C1981A4CE2BD39262B",
       "VertexStreamSHA256": "86AF529DCC60B714550D3D5220055F9C9D9CF5F80762F0BB2D1DBE4C642BAA81",
-      "ClothMetadataSHA256": "F21E7CF6C56E4B91F854E07F6A53AF7BCD90C30C510B5EEEEB03F9196C52E64B"
+      "ClothMetadataSHA256": "D673D0F04111A6D6D87065102979B8BC6874F5BB4985AF54CAF3A013EA1A16D0"
     },
     {
       "Name": "nilou_part_13.lod3",
       "Lod": 3,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "ebaf0efa-3a8f-2da7-e9be-2329a3fefa65",
       "Vertices": 32,
@@ -999,7 +1002,7 @@
       "AlphaMax": 6,
       "ColorsSHA256": "1A1997D493DEE41105A446E24BAED32BA130729C738118C1981A4CE2BD39262B",
       "VertexStreamSHA256": "86AF529DCC60B714550D3D5220055F9C9D9CF5F80762F0BB2D1DBE4C642BAA81",
-      "ClothMetadataSHA256": "F21E7CF6C56E4B91F854E07F6A53AF7BCD90C30C510B5EEEEB03F9196C52E64B"
+      "ClothMetadataSHA256": "D673D0F04111A6D6D87065102979B8BC6874F5BB4985AF54CAF3A013EA1A16D0"
     },
     {
       "Name": "nilou_part_14",
@@ -1784,17 +1787,14 @@
     {
       "Name": "nilou_cloth_proxy",
       "Lod": 0,
-      "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
-      ],
-      "Material": "292b624f-8b1f-f4a7-dd41-68155720f83a",
+      "Flags": [],
+      "Material": "92a1c898-2909-0b91-c87c-c7bc2c38ffbb",
       "Vertices": 809,
       "AlphaMin": 0,
       "AlphaMax": 15,
       "ColorsSHA256": "0404A0AA50E4D9BB3CCD9C394C47E3FEB72DEA4BD992D7EE98796B6F80F7FB74",
       "VertexStreamSHA256": "F930ADF8E29DF55A6C6191A80AA40D64E8668B842D902B6D182B70433FCD0D0E",
-      "ClothMetadataSHA256": "1A3513049059ACF0DBBA21D21DE3B09B3A5DC06D9AF96767636DF87BCE8AD8FB"
+      "ClothMetadataSHA256": "8401F5C46CD299ECCF4709F0164C7A0E80D29B2CE56F36568D230A0252061167"
     }
   ]
 }

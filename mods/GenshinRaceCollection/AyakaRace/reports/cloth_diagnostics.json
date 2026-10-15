@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "mod": "AyakaRace",
-  "fingerprint": "8008e4ffcb7d52b6b1acc1b4b42bb5eb80372a568c70e4495a918015d82ff369",
+  "fingerprint": "a61402162502b88ff6deecdb6ee48f77948339fb501a9c01b119f6d4cb1de783",
   "generated_at_utc": "2026-10-14T15:35:10.712381+00:00",
   "inputs": {
     "mod/build/cloth_probe/mbtool.dll": "7391c3428210ba19ea7f9e1123fc1584a986d4bf618dffdda209e8fe25e92335",
     "mod/build/cloth_probe/NativeClothProbe.deps.json": "2f6631e12ab2d95519b7e139bb763ec892ce56b0fbc4e919abcf546a501850d7",
-    "mod/build/cloth_probe/NativeClothProbe.dll": "2c8ab6b8b2bd8323d398d13dc42f03a40f353367f41a35f966966e24798fdec1",
+    "mod/build/cloth_probe/NativeClothProbe.dll": "b689029003091935ea2a5a30a81e2167f7b83d8a91a05353e56d8ae146e80d15",
     "mod/build/cloth_probe/NativeClothProbe.runtimeconfig.json": "256dda2706e1151bb95987b6b5be610bf68d64e058285b19e7e958222fc90414",
-    "mod/module/AyakaRace/AssetPackages/ayaka.tpac": "7cabe314765df2ef1b5b1700db662078e5eb454a4fe962cb47352ac502037dee",
+    "mod/module/AyakaRace/AssetPackages/ayaka.tpac": "f9dd867664d9058f81e716cd727282afc312a439f38b463e562410b3048e6e09",
     "mod/module/AyakaRace/ModuleData/cloth_bodies.xml": "39b5230034fa9bbf9a6d8d57277a54f6a84b51fad15583fa5605369da47da162",
     "mod/reports/facegen.json": "35bbf06eea34fb3a0689bd589b6d6bde1310701e418967900c6aefc03cddf383",
     "mod/reports/final_skeleton.json": "f572cc3f3d78c2f9ef47d4efb7a57a27d423d3355d6138d4b638f929bf440a1e",
@@ -27,7 +27,7 @@
     "workspace_tools/asset_helpers/previewer/baker/__init__.py": "7d7e86ba699dcb4cba65aea6a098f50af97462ce01131ec88e3d7431dff6eb3d",
     "workspace_tools/asset_helpers/previewer/baker/skeleton.py": "3efa27ce001e74f25687d7ae56b27e06dbb8b6bd94f80cddabb237f380eaad8e",
     "workspace_tools/asset_helpers/previewer/baker/animation.py": "2bd196a1c96752d2b1f1478c6dad5e2672e4e4f53438766b710f9ba6b2024272",
-    "mod/mod.json": "05daaf0e89a51d963ccbdd850f222bd571f507750375a909e8c30fa3d54f25be"
+    "mod/mod.json": "0b0847d97d7e37f2ebb729d3aa51908388c7ceed4e566fbc58acf4ac75dbd2a6"
   },
   "config": {
     "enabled": true,
@@ -103,7 +103,7 @@
       }
     ]
   },
-  "package_sha256": "7cabe314765df2ef1b5b1700db662078e5eb454a4fe962cb47352ac502037dee",
+  "package_sha256": "f9dd867664d9058f81e716cd727282afc312a439f38b463e562410b3048e6e09",
   "package_relative_path": "module/AyakaRace/AssetPackages/ayaka.tpac",
   "game_solver_used": false,
   "game_verified": false,
@@ -207,5 +207,11 @@
     "proof_sha256": "1a043e8e12e92f870a0f9123ed4f45df4b7371f114a240cd08f1aab0db920e4b",
     "baseline_package_sha256": "fda7ddb0d96fea431cd95ab0ff5f5cd2c50804c5324890b341013bcea008c7f3",
     "basis": "All LOD and proxy streams, cloth settings, payloads and mappings unchanged; collision, skeleton, motion and solver input hashes identical. Original trajectory provenance retained."
+  },
+  "numerical_input_reuse": {
+    "proof": "reports/native_driver_input_validation.json",
+    "proof_sha256": "2c8abadd7f0f2ab9e765bcb4dfadc1f34ef7d1aa3b8a9830ba5d04884e2e5e02",
+    "basis": "Fresh flagless-driver extraction is byte-identical to prior solver mesh, edit data and payload; skeleton, collision, animation and solver inputs unchanged. Engine driver registration is outside CPU solver coverage.",
+    "native_engine_behavior_verified": false
   }
 }

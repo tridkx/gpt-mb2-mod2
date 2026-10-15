@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "mod": "AmberRace",
-  "fingerprint": "1dc471c9a5048b452fbc64a3bc12c1246827bb6fd1975af4ed75d3657b88ee50",
+  "fingerprint": "15565af9edcf9b9e30314b04e77586db229ce6bb1506906632945fbb37824e21",
   "generated_at_utc": "2026-10-14T15:32:49.075684+00:00",
   "inputs": {
     "mod/build/cloth_probe/mbtool.dll": "7391c3428210ba19ea7f9e1123fc1584a986d4bf618dffdda209e8fe25e92335",
     "mod/build/cloth_probe/NativeClothProbe.deps.json": "2f6631e12ab2d95519b7e139bb763ec892ce56b0fbc4e919abcf546a501850d7",
-    "mod/build/cloth_probe/NativeClothProbe.dll": "fee65346fc9f16b34ce6e34e72854d87cb48725257646a46e4dd0b0da35db272",
+    "mod/build/cloth_probe/NativeClothProbe.dll": "2654192252e2c3cb165df90ade5827e95b4ca3948230e37e65778bbd70f1a194",
     "mod/build/cloth_probe/NativeClothProbe.runtimeconfig.json": "256dda2706e1151bb95987b6b5be610bf68d64e058285b19e7e958222fc90414",
-    "mod/module/AmberRace/AssetPackages/amber.tpac": "2cb35b030c063a8a25015fafd2a439f7757475719f9bdbb000d68a0edab117cc",
+    "mod/module/AmberRace/AssetPackages/amber.tpac": "bc0e6742d86d9b8e4d30a567d2d2317b0ac89795bc235bdafee1d79c70602e97",
     "mod/module/AmberRace/ModuleData/cloth_bodies.xml": "8f1618d6d50277085af9d4feaf369704460a93732592ec99faf1a061b4f12a15",
     "mod/reports/facegen.json": "35bbf06eea34fb3a0689bd589b6d6bde1310701e418967900c6aefc03cddf383",
     "mod/reports/final_skeleton.json": "58c546503f0b8e7ce7fe9114bdc2f301d7c881c7329823ea98971acc2a457041",
@@ -27,7 +27,7 @@
     "workspace_tools/asset_helpers/previewer/baker/__init__.py": "7d7e86ba699dcb4cba65aea6a098f50af97462ce01131ec88e3d7431dff6eb3d",
     "workspace_tools/asset_helpers/previewer/baker/skeleton.py": "3efa27ce001e74f25687d7ae56b27e06dbb8b6bd94f80cddabb237f380eaad8e",
     "workspace_tools/asset_helpers/previewer/baker/animation.py": "2bd196a1c96752d2b1f1478c6dad5e2672e4e4f53438766b710f9ba6b2024272",
-    "mod/mod.json": "8a3081ca6216f9dd289517d0b643fb46d4c35ca8776af418e5cae3d0d01917a8"
+    "mod/mod.json": "95f3acbb4862b1973f2afe450e9ccce5fb368c480b45071c3d121632e8cd4886"
   },
   "config": {
     "enabled": true,
@@ -103,7 +103,7 @@
       }
     ]
   },
-  "package_sha256": "2cb35b030c063a8a25015fafd2a439f7757475719f9bdbb000d68a0edab117cc",
+  "package_sha256": "bc0e6742d86d9b8e4d30a567d2d2317b0ac89795bc235bdafee1d79c70602e97",
   "package_relative_path": "module/AmberRace/AssetPackages/amber.tpac",
   "game_solver_used": false,
   "game_verified": false,
@@ -207,5 +207,11 @@
     "proof_sha256": "8ae289f012125f69b8de126c5dc003b4cdf82740a28c0a84aa2c07f719713035",
     "baseline_package_sha256": "4e30e0a6700920c7d5d207cd377332eaf7dfd2112b5e4702e85504eeb0d6cea5",
     "basis": "All LOD and proxy streams, cloth settings, payloads and mappings unchanged; collision, skeleton, motion and solver input hashes identical. Original trajectory provenance retained."
+  },
+  "numerical_input_reuse": {
+    "proof": "reports/native_driver_input_validation.json",
+    "proof_sha256": "e1565acca593902a5bc57b9cfe7d9f8f95b32eda27c2ce75bf21741e842a6ccf",
+    "basis": "Fresh flagless-driver extraction is byte-identical to prior solver mesh, edit data and payload; skeleton, collision, animation and solver inputs unchanged. Engine driver registration is outside CPU solver coverage.",
+    "native_engine_behavior_verified": false
   }
 }

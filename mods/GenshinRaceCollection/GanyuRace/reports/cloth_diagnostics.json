@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "mod": "GanyuRace",
-  "fingerprint": "ccd609b3b7b2f7a5890ec744ea1290cfaea753c24e0bce3564b0bf8bfb7ad35e",
+  "fingerprint": "6642739bd2d77c0bf20f5fcccc83ff88e6aa5efa3acf15fd8061aaa7044d9b54",
   "generated_at_utc": "2026-10-14T15:27:37.280473+00:00",
   "inputs": {
     "mod/build/cloth_probe/mbtool.dll": "7391c3428210ba19ea7f9e1123fc1584a986d4bf618dffdda209e8fe25e92335",
     "mod/build/cloth_probe/NativeClothProbe.deps.json": "2f6631e12ab2d95519b7e139bb763ec892ce56b0fbc4e919abcf546a501850d7",
-    "mod/build/cloth_probe/NativeClothProbe.dll": "d1ace5e70e3939426bf8e4a5f00af420ee1f2189caffafc4f259695a5c2e51f8",
+    "mod/build/cloth_probe/NativeClothProbe.dll": "c5e4eb72f200ac7e63cc767e74c3994ec95a52cd69569757b22e57891800fb29",
     "mod/build/cloth_probe/NativeClothProbe.runtimeconfig.json": "256dda2706e1151bb95987b6b5be610bf68d64e058285b19e7e958222fc90414",
-    "mod/module/GanyuRace/AssetPackages/ganyu.tpac": "b6915e1641cf2f68b94ebea5f10898f456a6af27ab67be36870207b7ab558f0b",
+    "mod/module/GanyuRace/AssetPackages/ganyu.tpac": "14958a89c405c32f88e535a700b82eea9bd6e49005c976df7d2b0b04ec267ed8",
     "mod/module/GanyuRace/ModuleData/cloth_bodies.xml": "1a4a8dac43e7302d2e78209bd6e1d5d25420a25b157e2064ed71948a01ec52dc",
     "mod/reports/facegen.json": "35bbf06eea34fb3a0689bd589b6d6bde1310701e418967900c6aefc03cddf383",
     "mod/reports/final_skeleton.json": "1bbf6c872386ca5a7844570e1274ed3b55f84882398c20a8a9eafe2d63d58e25",
@@ -27,7 +27,7 @@
     "workspace_tools/asset_helpers/previewer/baker/__init__.py": "7d7e86ba699dcb4cba65aea6a098f50af97462ce01131ec88e3d7431dff6eb3d",
     "workspace_tools/asset_helpers/previewer/baker/skeleton.py": "3efa27ce001e74f25687d7ae56b27e06dbb8b6bd94f80cddabb237f380eaad8e",
     "workspace_tools/asset_helpers/previewer/baker/animation.py": "2bd196a1c96752d2b1f1478c6dad5e2672e4e4f53438766b710f9ba6b2024272",
-    "mod/mod.json": "1de436054c8d67f84fc5704d9be375d0f903de5bbe1cf35023c157bde13f6501"
+    "mod/mod.json": "a7327fd2b87784937ecd721f2bc284b752e06f868e15c187b040c728410b9322"
   },
   "config": {
     "enabled": true,
@@ -103,7 +103,7 @@
       }
     ]
   },
-  "package_sha256": "b6915e1641cf2f68b94ebea5f10898f456a6af27ab67be36870207b7ab558f0b",
+  "package_sha256": "14958a89c405c32f88e535a700b82eea9bd6e49005c976df7d2b0b04ec267ed8",
   "package_relative_path": "module/GanyuRace/AssetPackages/ganyu.tpac",
   "game_solver_used": false,
   "game_verified": false,
@@ -207,5 +207,11 @@
     "proof_sha256": "25d75aa17ae2a3d02ab2b6bc4888d445e445504b2133e3b130342bc8efece835",
     "baseline_package_sha256": "efa6c7160d32067cabbd6615916d22576a8a950d8700c17f3d0274d92a0a92ad",
     "basis": "All LOD and proxy streams, cloth settings, payloads and mappings unchanged; collision, skeleton, motion and solver input hashes identical. Original trajectory provenance retained."
+  },
+  "numerical_input_reuse": {
+    "proof": "reports/native_driver_input_validation.json",
+    "proof_sha256": "8eab1332de50f768ddb2acde131118f02850ee54c26c994a3af8d60a4f5023e5",
+    "basis": "Fresh flagless-driver extraction is byte-identical to prior solver mesh, edit data and payload; skeleton, collision, animation and solver inputs unchanged. Engine driver registration is outside CPU solver coverage.",
+    "native_engine_behavior_verified": false
   }
 }

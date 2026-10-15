@@ -80,6 +80,17 @@
         "disable_vertex_color_alpha",
         "alpha_test"
       ]
+    },
+    {
+      "Name": "amber_proxy_invisible",
+      "Guid": "83b8d522-3d04-dabf-9481-235ad75b7caa",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
     }
   ],
   "meshes": [
@@ -351,8 +362,7 @@
       "Name": "amber_part_05",
       "Lod": 0,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "04e81bdd-f566-f4ec-4843-f0b08bfa80c3",
       "Vertices": 1245,
@@ -360,14 +370,13 @@
       "AlphaMax": 14,
       "ColorsSHA256": "8543CBB135147F64951F98FF7CCBB0DD97129CA0EDFCC90EFD948F590E080E1C",
       "VertexStreamSHA256": "B116B2E8492C56F0189F7A1DEAE430B6755726E332485A3B064C3CFD686B99FF",
-      "ClothMetadataSHA256": "334904E30CFBDD893361166CEC88BAFE749F571794B08328922D81701F9E6C53"
+      "ClothMetadataSHA256": "18D833972D546EDBA6C684CA322870B7E7E73DA5E2FC26593344E5FB0F103B15"
     },
     {
       "Name": "amber_part_05.lod1",
       "Lod": 1,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "04e81bdd-f566-f4ec-4843-f0b08bfa80c3",
       "Vertices": 1245,
@@ -375,14 +384,13 @@
       "AlphaMax": 14,
       "ColorsSHA256": "8543CBB135147F64951F98FF7CCBB0DD97129CA0EDFCC90EFD948F590E080E1C",
       "VertexStreamSHA256": "B116B2E8492C56F0189F7A1DEAE430B6755726E332485A3B064C3CFD686B99FF",
-      "ClothMetadataSHA256": "334904E30CFBDD893361166CEC88BAFE749F571794B08328922D81701F9E6C53"
+      "ClothMetadataSHA256": "18D833972D546EDBA6C684CA322870B7E7E73DA5E2FC26593344E5FB0F103B15"
     },
     {
       "Name": "amber_part_05.lod2",
       "Lod": 2,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "04e81bdd-f566-f4ec-4843-f0b08bfa80c3",
       "Vertices": 1245,
@@ -390,14 +398,13 @@
       "AlphaMax": 14,
       "ColorsSHA256": "8543CBB135147F64951F98FF7CCBB0DD97129CA0EDFCC90EFD948F590E080E1C",
       "VertexStreamSHA256": "B116B2E8492C56F0189F7A1DEAE430B6755726E332485A3B064C3CFD686B99FF",
-      "ClothMetadataSHA256": "334904E30CFBDD893361166CEC88BAFE749F571794B08328922D81701F9E6C53"
+      "ClothMetadataSHA256": "18D833972D546EDBA6C684CA322870B7E7E73DA5E2FC26593344E5FB0F103B15"
     },
     {
       "Name": "amber_part_05.lod3",
       "Lod": 3,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "04e81bdd-f566-f4ec-4843-f0b08bfa80c3",
       "Vertices": 1245,
@@ -405,7 +412,7 @@
       "AlphaMax": 14,
       "ColorsSHA256": "8543CBB135147F64951F98FF7CCBB0DD97129CA0EDFCC90EFD948F590E080E1C",
       "VertexStreamSHA256": "B116B2E8492C56F0189F7A1DEAE430B6755726E332485A3B064C3CFD686B99FF",
-      "ClothMetadataSHA256": "334904E30CFBDD893361166CEC88BAFE749F571794B08328922D81701F9E6C53"
+      "ClothMetadataSHA256": "18D833972D546EDBA6C684CA322870B7E7E73DA5E2FC26593344E5FB0F103B15"
     },
     {
       "Name": "amber_part_06",
@@ -518,17 +525,14 @@
     {
       "Name": "amber_cloth_proxy",
       "Lod": 0,
-      "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
-      ],
-      "Material": "1be4e649-81e7-1f03-9730-4149debb5a2b",
+      "Flags": [],
+      "Material": "83b8d522-3d04-dabf-9481-235ad75b7caa",
       "Vertices": 867,
       "AlphaMin": 0,
       "AlphaMax": 14,
       "ColorsSHA256": "6CFAFF119DF6C8306532A5FC3B14BA5A3883EDE6891CE273891759755B1C5326",
       "VertexStreamSHA256": "9B6608367B7E2C4FFAA11303CA84C3E1208F0CD7C6D48A384612B6DCED704C07",
-      "ClothMetadataSHA256": "2A1EF0CB3C4DF5B53686AC44316D405FCDB3790389E933B5F26A90CBBD078D47"
+      "ClothMetadataSHA256": "28B8FC0DE42AF9C06044DF2B20385386A0365126802F22CC0630EFA134B39324"
     }
   ]
 }

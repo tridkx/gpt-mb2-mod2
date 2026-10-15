@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "version": "v0.1.2",
+  "date": "2026-10-15",
+  "baseline_package_sha256": "b39fb983bd861f6a416dc1e4debcbb42b9f74d1449d3b432d5229cdf55afbd4d",
+  "final_package_sha256": "8f0692b2db0849469a7956e2b0f17045156ffc5ee8b84afe0d65f169fd59c602",
+  "all_lod_geometry_bytes_unchanged": true,
+  "skeleton_bytes_unchanged": true,
+  "cloth_payloads_mappings_and_materials_unchanged": true,
+  "native_driver_role": false,
+  "texture_dimensions_fixed": [
+    {
+      "texture": "lisa_tex_5",
+      "before": [
+        1181,
+        1181
+      ],
+      "after": [
+        2048,
+        2048
+      ],
+      "source_png_preserved": true
+    }
+  ],
+  "gpu_texture_contract": "Top-level BC width and height multiples of four; all encoded mip levels decoded successfully",
+  "game_verified": false,
+  "hair_fix_requires_user_retest": false
+}

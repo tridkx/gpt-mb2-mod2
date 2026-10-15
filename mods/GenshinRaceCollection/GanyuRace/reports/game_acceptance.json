@@ -1,7 +1,11 @@
 {
-  "version": "v0.1.1",
-  "status": "pending_user_hair_artifact_retest",
-  "package_sha256": "b6915e1641cf2f68b94ebea5f10898f456a6af27ab67be36870207b7ab558f0b",
+  "version": "v0.1.2",
+  "status": "pending_user_runtime_retest",
+  "package_sha256": "14958a89c405c32f88e535a700b82eea9bd6e49005c976df7d2b0b04ec267ed8",
   "game_launched_by_assistant": false,
-  "previous_feedback": "Overall positive; moving single-color hair patches reported, notably Ningguang and Weisina."
+  "required_scenes": [
+    "character_creation_loading",
+    "hair_closeup",
+    "hair_motion"
+  ]
 }

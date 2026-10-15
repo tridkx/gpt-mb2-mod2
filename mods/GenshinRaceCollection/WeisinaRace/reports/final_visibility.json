@@ -284,6 +284,17 @@
         "use_specular",
         "disable_vertex_color_alpha"
       ]
+    },
+    {
+      "Name": "weisina_proxy_invisible",
+      "Guid": "2de9be98-02aa-bf58-b07a-d83a3fc72cc3",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
     }
   ],
   "meshes": [
@@ -867,8 +878,7 @@
       "Name": "weisina_part_15",
       "Lod": 0,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "23a2fd9e-772d-ab3f-2f13-4a73b53240bf",
       "Vertices": 4146,
@@ -876,14 +886,13 @@
       "AlphaMax": 14,
       "ColorsSHA256": "F492DDEFFE5D397991A6132DBF88DE0E8BB942D0201AFACD5C3DC4AECB89BA38",
       "VertexStreamSHA256": "B718E2093D6606A2F53F316BE04F73F59CB99A5157210A622A2E07D01DE148A1",
-      "ClothMetadataSHA256": "E4933A7A4E4B7829B83D3CD80DE423A4AE72898B3F75D9178DECFED65A589D30"
+      "ClothMetadataSHA256": "F49123AD4159269F8AD7061D868934446304A77180249EB1D96BAEE4587FF9B5"
     },
     {
       "Name": "weisina_part_15.lod1",
       "Lod": 1,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "23a2fd9e-772d-ab3f-2f13-4a73b53240bf",
       "Vertices": 4146,
@@ -891,14 +900,13 @@
       "AlphaMax": 14,
       "ColorsSHA256": "F492DDEFFE5D397991A6132DBF88DE0E8BB942D0201AFACD5C3DC4AECB89BA38",
       "VertexStreamSHA256": "B718E2093D6606A2F53F316BE04F73F59CB99A5157210A622A2E07D01DE148A1",
-      "ClothMetadataSHA256": "E4933A7A4E4B7829B83D3CD80DE423A4AE72898B3F75D9178DECFED65A589D30"
+      "ClothMetadataSHA256": "F49123AD4159269F8AD7061D868934446304A77180249EB1D96BAEE4587FF9B5"
     },
     {
       "Name": "weisina_part_15.lod2",
       "Lod": 2,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "23a2fd9e-772d-ab3f-2f13-4a73b53240bf",
       "Vertices": 4146,
@@ -906,14 +914,13 @@
       "AlphaMax": 14,
       "ColorsSHA256": "F492DDEFFE5D397991A6132DBF88DE0E8BB942D0201AFACD5C3DC4AECB89BA38",
       "VertexStreamSHA256": "B718E2093D6606A2F53F316BE04F73F59CB99A5157210A622A2E07D01DE148A1",
-      "ClothMetadataSHA256": "E4933A7A4E4B7829B83D3CD80DE423A4AE72898B3F75D9178DECFED65A589D30"
+      "ClothMetadataSHA256": "F49123AD4159269F8AD7061D868934446304A77180249EB1D96BAEE4587FF9B5"
     },
     {
       "Name": "weisina_part_15.lod3",
       "Lod": 3,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "23a2fd9e-772d-ab3f-2f13-4a73b53240bf",
       "Vertices": 4146,
@@ -921,7 +928,7 @@
       "AlphaMax": 14,
       "ColorsSHA256": "F492DDEFFE5D397991A6132DBF88DE0E8BB942D0201AFACD5C3DC4AECB89BA38",
       "VertexStreamSHA256": "B718E2093D6606A2F53F316BE04F73F59CB99A5157210A622A2E07D01DE148A1",
-      "ClothMetadataSHA256": "E4933A7A4E4B7829B83D3CD80DE423A4AE72898B3F75D9178DECFED65A589D30"
+      "ClothMetadataSHA256": "F49123AD4159269F8AD7061D868934446304A77180249EB1D96BAEE4587FF9B5"
     },
     {
       "Name": "weisina_part_16",
@@ -1658,17 +1665,14 @@
     {
       "Name": "weisina_cloth_proxy",
       "Lod": 0,
-      "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
-      ],
-      "Material": "76aedd79-f55e-8fce-df72-6ea070b7af1c",
+      "Flags": [],
+      "Material": "2de9be98-02aa-bf58-b07a-d83a3fc72cc3",
       "Vertices": 2952,
       "AlphaMin": 0,
       "AlphaMax": 14,
       "ColorsSHA256": "B9967A62F8770BF15802612DA4865CECB70E0E84BE19B88E62F13C91C4449511",
       "VertexStreamSHA256": "6692076321CA10CC9B7F7AC8F5EA42C77054B6A65039C45D92862B46D1849F24",
-      "ClothMetadataSHA256": "41869569D938F5B102A0F715272B8F486FFE6C2E818D4615BB61090B88C2901D"
+      "ClothMetadataSHA256": "AE99709FC0F4D60DCE826DCA0EA8B9E9A8B9041130F1CCD9F9B61C1374CCF231"
     }
   ]
 }

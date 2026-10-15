@@ -1,19 +1,11 @@
 {
-  "version": "v0.1.0",
-  "status": "pending_user_test",
+  "version": "v0.1.2",
+  "status": "pending_user_runtime_retest",
+  "package_sha256": "8f0692b2db0849469a7956e2b0f17045156ffc5ee8b84afe0d65f169fd59c602",
   "game_launched_by_assistant": false,
-  "package_sha256": "b39fb983bd861f6a416dc1e4debcbb42b9f74d1449d3b432d5229cdf55afbd4d",
-  "hair_cloth": false,
-  "skirt_cloth_enabled": false,
   "required_scenes": [
-    "party",
-    "encyclopedia",
-    "inventory",
-    "idle",
-    "run",
-    "bow",
-    "slash",
-    "riding",
-    "lod_distances"
+    "character_creation_loading",
+    "hair_closeup",
+    "hair_motion"
   ]
 }

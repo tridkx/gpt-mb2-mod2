@@ -1,11 +1,11 @@
 {
   "status": "pass",
-  "version": "v0.1.0",
-  "date": "2026-10-14",
-  "final_package_sha256": "2dbd9253738cef7232a2ee7aa00a6706293b59c07fbdb4bdcdfe69530239d8c4",
+  "version": "v0.1.2",
+  "date": "2026-10-15",
+  "final_package_sha256": "2fc9e1ae45bb8eec1900876662096b417c285f22724cfec6c6f38da77e2afade",
   "source_input_sha256": "150f54b75a835060af8d99280e1895d635f78c8ead164cb8120bd26cb2703031",
-  "baseline_package_sha256": null,
-  "baseline_reason": "First release; preserved selected PMX is the source baseline",
+  "baseline_package_sha256": "2dbd9253738cef7232a2ee7aa00a6706293b59c07fbdb4bdcdfe69530239d8c4",
+  "baseline_reason": "Native driver role and BC texture runtime compatibility repair; all geometry and physics streams preserved",
   "game_version": "v1.4.8",
   "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
   "lods": [
@@ -123,5 +123,6 @@
     "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
     "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
     "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
-  ]
+  ],
+  "repair_validation": "reports/runtime_resource_fix.json"
 }

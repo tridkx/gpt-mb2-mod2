@@ -56,7 +56,7 @@
 
 ## 检查与当前限制
 
-长发布料代理使用独立全透明裁切材质，与可见头发分开。当前 v0.1.1 的[材质修复检查](reports/hair_proxy_visibility_fix.json)核对全部 LOD、原贴图、骨架、布料和映射字节不变，修复前后预览见各角色报告中的 `hair_proxy_before_*`／`hair_proxy_after_*`。v0.1.0 已收到整体良好的反馈；v0.1.1 的头发实机效果待复测。
+当前版本 v0.1.2 将可见头发与模拟驱动分开注册：代理仅由 `ClothMetamesh` 引用，没有直接可见布料标记、身体绑定或附加开关；可见头发继续启用布料。可见映射端同样只保留 Native 的 uses_cloth_simulation 标记，清除附加开关，布料数据保留。透明材质作为防护，不能作为实机未绘制代理的证据。[运行资源检查](reports/runtime_resource_fix.json)与 [Native 对照](reports/native_driver_reference.json)记录当前字段。默认丽莎、安柏和诺艾尔的表情贴图已按源 PNG 重编为合法 BC 尺寸，模型及 UV 不变；[本机 D3D11 对照](reports/d3d11_bc_resource_test.json)记录旧尺寸失败、新尺寸成功。创建页面和头发实机效果仍待复测。
 
 [合集检查](reports/collection_validation.json)与 [安装一致性](reports/collection_installation.json)分别记录。各新角色已检查最终 TPAC 所有交付 LOD、纹理、UV、权重、原生动作，以及重开的 Blend/FBX；[正面预览](reports/final_front_1.png)、[第二页](reports/final_front_2.png)、[背面预览](reports/final_back_1.png)、[第二页](reports/final_back_2.png)来自最终资源。
 

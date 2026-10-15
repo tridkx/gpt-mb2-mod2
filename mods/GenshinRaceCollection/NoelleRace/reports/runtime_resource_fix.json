@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "version": "v0.1.2",
+  "date": "2026-10-15",
+  "baseline_package_sha256": "2dbd9253738cef7232a2ee7aa00a6706293b59c07fbdb4bdcdfe69530239d8c4",
+  "final_package_sha256": "2fc9e1ae45bb8eec1900876662096b417c285f22724cfec6c6f38da77e2afade",
+  "all_lod_geometry_bytes_unchanged": true,
+  "skeleton_bytes_unchanged": true,
+  "cloth_payloads_mappings_and_materials_unchanged": true,
+  "native_driver_role": false,
+  "texture_dimensions_fixed": [
+    {
+      "texture": "noelle_tex_5",
+      "before": [
+        1181,
+        1181
+      ],
+      "after": [
+        2048,
+        2048
+      ],
+      "source_png_preserved": true
+    }
+  ],
+  "gpu_texture_contract": "Top-level BC width and height multiples of four; all encoded mip levels decoded successfully",
+  "game_verified": false,
+  "hair_fix_requires_user_retest": false
+}

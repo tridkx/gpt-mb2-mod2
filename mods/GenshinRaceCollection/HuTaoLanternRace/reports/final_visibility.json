@@ -340,6 +340,17 @@
         "use_specular",
         "disable_vertex_color_alpha"
       ]
+    },
+    {
+      "Name": "hutao_lantern_proxy_invisible",
+      "Guid": "fc8b8d2d-a0cd-4b75-6917-1035970aa9f9",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
     }
   ],
   "meshes": [
@@ -1067,8 +1078,7 @@
       "Name": "hutao_lantern_part_15",
       "Lod": 0,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "0c3ec4cc-88c1-af00-489d-88d334d237d7",
       "Vertices": 5113,
@@ -1076,14 +1086,13 @@
       "AlphaMax": 17,
       "ColorsSHA256": "80B59E02B780101EA595384F17B23B709A302DEA903C244F92ABA600E60350DA",
       "VertexStreamSHA256": "A464C557A27A85BF133344143FFC17E92BF18757C01D3CE9A8170055E17C451E",
-      "ClothMetadataSHA256": "474FCF784E89857EB6ABB07DF78CF35798293E0AA87C1BBA613B8DEC8BE812CE"
+      "ClothMetadataSHA256": "321B0C8D909A1AB73AB87540B5A290ADF119651DEEF6569D066E880745E3CD8F"
     },
     {
       "Name": "hutao_lantern_part_15.lod1",
       "Lod": 1,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "0c3ec4cc-88c1-af00-489d-88d334d237d7",
       "Vertices": 5113,
@@ -1091,14 +1100,13 @@
       "AlphaMax": 17,
       "ColorsSHA256": "80B59E02B780101EA595384F17B23B709A302DEA903C244F92ABA600E60350DA",
       "VertexStreamSHA256": "A464C557A27A85BF133344143FFC17E92BF18757C01D3CE9A8170055E17C451E",
-      "ClothMetadataSHA256": "474FCF784E89857EB6ABB07DF78CF35798293E0AA87C1BBA613B8DEC8BE812CE"
+      "ClothMetadataSHA256": "321B0C8D909A1AB73AB87540B5A290ADF119651DEEF6569D066E880745E3CD8F"
     },
     {
       "Name": "hutao_lantern_part_15.lod2",
       "Lod": 2,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "0c3ec4cc-88c1-af00-489d-88d334d237d7",
       "Vertices": 5113,
@@ -1106,14 +1114,13 @@
       "AlphaMax": 17,
       "ColorsSHA256": "80B59E02B780101EA595384F17B23B709A302DEA903C244F92ABA600E60350DA",
       "VertexStreamSHA256": "A464C557A27A85BF133344143FFC17E92BF18757C01D3CE9A8170055E17C451E",
-      "ClothMetadataSHA256": "474FCF784E89857EB6ABB07DF78CF35798293E0AA87C1BBA613B8DEC8BE812CE"
+      "ClothMetadataSHA256": "321B0C8D909A1AB73AB87540B5A290ADF119651DEEF6569D066E880745E3CD8F"
     },
     {
       "Name": "hutao_lantern_part_15.lod3",
       "Lod": 3,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "0c3ec4cc-88c1-af00-489d-88d334d237d7",
       "Vertices": 5113,
@@ -1121,7 +1128,7 @@
       "AlphaMax": 17,
       "ColorsSHA256": "80B59E02B780101EA595384F17B23B709A302DEA903C244F92ABA600E60350DA",
       "VertexStreamSHA256": "A464C557A27A85BF133344143FFC17E92BF18757C01D3CE9A8170055E17C451E",
-      "ClothMetadataSHA256": "474FCF784E89857EB6ABB07DF78CF35798293E0AA87C1BBA613B8DEC8BE812CE"
+      "ClothMetadataSHA256": "321B0C8D909A1AB73AB87540B5A290ADF119651DEEF6569D066E880745E3CD8F"
     },
     {
       "Name": "hutao_lantern_part_16",
@@ -1954,17 +1961,14 @@
     {
       "Name": "hutao_lantern_cloth_proxy",
       "Lod": 0,
-      "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
-      ],
-      "Material": "c202d11f-8fe0-d1af-4dbc-2740ffdef7a2",
+      "Flags": [],
+      "Material": "fc8b8d2d-a0cd-4b75-6917-1035970aa9f9",
       "Vertices": 3611,
       "AlphaMin": 0,
       "AlphaMax": 17,
       "ColorsSHA256": "C8FB54BE2F9E6B4E121CA235B4CEF21693A92C2C6526CA6F449C58EB0916E919",
       "VertexStreamSHA256": "2DC0582742F30CB9540E20A7813A64BBB05109295561B05B70C46B63EFE12F35",
-      "ClothMetadataSHA256": "82DAF354E6365D4A75CD02A15E03EB0D1CC423BA979E032BF15753F8AAF52A11"
+      "ClothMetadataSHA256": "62D2E722594ADE8E9119E74EC9DEEAC3EC7FA664849201DC393FFC2A48206F9F"
     }
   ]
 }

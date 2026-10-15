@@ -24,7 +24,7 @@ campaign.give_troops lisa_test 10
 
 ## 检查与当前限制
 
-
+当前版本的[运行资源检查](reports/runtime_resource_fix.json)覆盖 BC 纹理尺寸和原生驱动角色：BC 顶层尺寸满足 4 像素对齐；含长发布料时代理仅由可见网格引用，清除代理的直接渲染布料标记、身体绑定和三个附加开关，与 Native 模拟网格相同。独立透明材质仅作防护，不作为代理未显示的实机证据。模型、UV、骨架、权重与布料数据保留，创建页面加载和头发实机表现仍待复测。
 
 [最终资源报告](reports/release_validation.json)覆盖 TPAC 回读、骨架、材质、UV、量化权重、所有交付 LOD 与原生动作。跑步、持弓、挥击和骑乘扫描完整提取片段；界面／捏脸基础站姿仅作抽样姿态检查，不提供外观定制功能。[源文件检查](reports/source_validation.json)确认重新打开 Blend/FBX 后仍保留源比例和 UV。
 

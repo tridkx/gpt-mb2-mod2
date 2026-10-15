@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "mod": "HuTaoLanternRace",
-  "fingerprint": "eb76c5d3bfd4f83639b047244073c8247b549ede6108c6bee46e766ec76469d6",
+  "fingerprint": "d412fe0605dbcc9d4b021a3b51cf1c74b7b1abe11378cecdec3098f392ccc46e",
   "generated_at_utc": "2026-10-14T15:35:49.131386+00:00",
   "inputs": {
     "mod/build/cloth_probe/mbtool.dll": "7391c3428210ba19ea7f9e1123fc1584a986d4bf618dffdda209e8fe25e92335",
     "mod/build/cloth_probe/NativeClothProbe.deps.json": "2f6631e12ab2d95519b7e139bb763ec892ce56b0fbc4e919abcf546a501850d7",
-    "mod/build/cloth_probe/NativeClothProbe.dll": "c4a3d1e20d409ebda61f79b02169626fabcd0e5d432b7b409d926616e0490cbd",
+    "mod/build/cloth_probe/NativeClothProbe.dll": "1d287d2c4b71aa10e72d0fa1c904b4dc774055a4b6ebae0b8d1678a201cc4674",
     "mod/build/cloth_probe/NativeClothProbe.runtimeconfig.json": "256dda2706e1151bb95987b6b5be610bf68d64e058285b19e7e958222fc90414",
-    "mod/module/HuTaoLanternRace/AssetPackages/hutao_lantern.tpac": "34a184926dc90a2029918da788ba748f7c7bf2a5c2271393be5bca9afdc6a214",
+    "mod/module/HuTaoLanternRace/AssetPackages/hutao_lantern.tpac": "e143459e32d2d3087332024cfd46aaeed0bc7ef7787911d396b70a16ffc9d381",
     "mod/module/HuTaoLanternRace/ModuleData/cloth_bodies.xml": "d568e44b3bc2fdc10d5bdfc868799c09a9fa8d7f6daaaee7d54a947035d2c8f6",
     "mod/reports/facegen.json": "35bbf06eea34fb3a0689bd589b6d6bde1310701e418967900c6aefc03cddf383",
     "mod/reports/final_skeleton.json": "b10ea0e40ef10bacb0bc2f64e673449ce3029f0c6602fa57553f823e145b980a",
@@ -27,7 +27,7 @@
     "workspace_tools/asset_helpers/previewer/baker/__init__.py": "7d7e86ba699dcb4cba65aea6a098f50af97462ce01131ec88e3d7431dff6eb3d",
     "workspace_tools/asset_helpers/previewer/baker/skeleton.py": "3efa27ce001e74f25687d7ae56b27e06dbb8b6bd94f80cddabb237f380eaad8e",
     "workspace_tools/asset_helpers/previewer/baker/animation.py": "2bd196a1c96752d2b1f1478c6dad5e2672e4e4f53438766b710f9ba6b2024272",
-    "mod/mod.json": "07ab4546c62cab9d5c732e7936196add5e260f83b82e2d7b35046466d1814a50"
+    "mod/mod.json": "2a872783b85055235cfac4aa9892c8f8198502eef43afa5194e0471d19e7b687"
   },
   "config": {
     "enabled": true,
@@ -103,7 +103,7 @@
       }
     ]
   },
-  "package_sha256": "34a184926dc90a2029918da788ba748f7c7bf2a5c2271393be5bca9afdc6a214",
+  "package_sha256": "e143459e32d2d3087332024cfd46aaeed0bc7ef7787911d396b70a16ffc9d381",
   "package_relative_path": "module/HuTaoLanternRace/AssetPackages/hutao_lantern.tpac",
   "game_solver_used": false,
   "game_verified": false,
@@ -207,5 +207,11 @@
     "proof_sha256": "35eb02292a04f098d0445f22ad12e4eb99cc8abfca4d9a19c75aea7b5c64ee17",
     "baseline_package_sha256": "e3943f17335121b314d48dfccdf8b0e169bb50a1b259ab08f92201a0c24df21a",
     "basis": "All LOD and proxy streams, cloth settings, payloads and mappings unchanged; collision, skeleton, motion and solver input hashes identical. Original trajectory provenance retained."
+  },
+  "numerical_input_reuse": {
+    "proof": "reports/native_driver_input_validation.json",
+    "proof_sha256": "d629d130499997f6aa0ef6dccc069f0b4f23efcf15059105d4162f644b22720f",
+    "basis": "Fresh flagless-driver extraction is byte-identical to prior solver mesh, edit data and payload; skeleton, collision, animation and solver inputs unchanged. Engine driver registration is outside CPU solver coverage.",
+    "native_engine_behavior_verified": false
   }
 }

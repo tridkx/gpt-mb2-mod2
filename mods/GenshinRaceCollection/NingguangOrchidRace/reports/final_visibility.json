@@ -321,6 +321,17 @@
         "use_specular",
         "disable_vertex_color_alpha"
       ]
+    },
+    {
+      "Name": "ningguang_orchid_proxy_invisible",
+      "Guid": "deeaaf22-7c0a-5c94-1599-5f03b0822b29",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
     }
   ],
   "meshes": [
@@ -856,8 +867,7 @@
       "Name": "ningguang_orchid_part_11",
       "Lod": 0,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "ac9db206-213b-90c4-0c80-d5db296aa878",
       "Vertices": 2730,
@@ -865,14 +875,13 @@
       "AlphaMax": 17,
       "ColorsSHA256": "094A0BFCA80E847EA3E5100EDEA3268B8DDBF5C792B214611268FC087E2D46CB",
       "VertexStreamSHA256": "A5543691F7C5C0D988428B245523C95EF2475DFAF154C026EB8E39E1C2C7827F",
-      "ClothMetadataSHA256": "F6D0D2D0B2AD12223A875926F66888BE8E80DEAC4DFB1175BE50E7939720FEDB"
+      "ClothMetadataSHA256": "F1C3D882E81687288BB0EBD3D51D8F4EBDB5A22C3A7F5615B6D92F372212387D"
     },
     {
       "Name": "ningguang_orchid_part_11.lod1",
       "Lod": 1,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "ac9db206-213b-90c4-0c80-d5db296aa878",
       "Vertices": 2730,
@@ -880,14 +889,13 @@
       "AlphaMax": 17,
       "ColorsSHA256": "094A0BFCA80E847EA3E5100EDEA3268B8DDBF5C792B214611268FC087E2D46CB",
       "VertexStreamSHA256": "A5543691F7C5C0D988428B245523C95EF2475DFAF154C026EB8E39E1C2C7827F",
-      "ClothMetadataSHA256": "F6D0D2D0B2AD12223A875926F66888BE8E80DEAC4DFB1175BE50E7939720FEDB"
+      "ClothMetadataSHA256": "F1C3D882E81687288BB0EBD3D51D8F4EBDB5A22C3A7F5615B6D92F372212387D"
     },
     {
       "Name": "ningguang_orchid_part_11.lod2",
       "Lod": 2,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "ac9db206-213b-90c4-0c80-d5db296aa878",
       "Vertices": 2730,
@@ -895,14 +903,13 @@
       "AlphaMax": 17,
       "ColorsSHA256": "094A0BFCA80E847EA3E5100EDEA3268B8DDBF5C792B214611268FC087E2D46CB",
       "VertexStreamSHA256": "A5543691F7C5C0D988428B245523C95EF2475DFAF154C026EB8E39E1C2C7827F",
-      "ClothMetadataSHA256": "F6D0D2D0B2AD12223A875926F66888BE8E80DEAC4DFB1175BE50E7939720FEDB"
+      "ClothMetadataSHA256": "F1C3D882E81687288BB0EBD3D51D8F4EBDB5A22C3A7F5615B6D92F372212387D"
     },
     {
       "Name": "ningguang_orchid_part_11.lod3",
       "Lod": 3,
       "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
+        "uses_cloth_simulation"
       ],
       "Material": "ac9db206-213b-90c4-0c80-d5db296aa878",
       "Vertices": 2730,
@@ -910,7 +917,7 @@
       "AlphaMax": 17,
       "ColorsSHA256": "094A0BFCA80E847EA3E5100EDEA3268B8DDBF5C792B214611268FC087E2D46CB",
       "VertexStreamSHA256": "A5543691F7C5C0D988428B245523C95EF2475DFAF154C026EB8E39E1C2C7827F",
-      "ClothMetadataSHA256": "F6D0D2D0B2AD12223A875926F66888BE8E80DEAC4DFB1175BE50E7939720FEDB"
+      "ClothMetadataSHA256": "F1C3D882E81687288BB0EBD3D51D8F4EBDB5A22C3A7F5615B6D92F372212387D"
     },
     {
       "Name": "ningguang_orchid_part_13",
@@ -1887,17 +1894,14 @@
     {
       "Name": "ningguang_orchid_cloth_proxy",
       "Lod": 0,
-      "Flags": [
-        "uses_cloth_simulation",
-        "force_enable_cloth"
-      ],
-      "Material": "f76629bf-6997-a004-c969-7d0858364d58",
+      "Flags": [],
+      "Material": "deeaaf22-7c0a-5c94-1599-5f03b0822b29",
       "Vertices": 2140,
       "AlphaMin": 0,
       "AlphaMax": 17,
       "ColorsSHA256": "EF7F5E06317AF7111D2C5C38F914DE7E95E6AD5490B580F2049D959E1433A938",
       "VertexStreamSHA256": "D7193BDD8040F56F17C3E94A4766CF8731CD07D774D647A3B4CE861C44BE04EB",
-      "ClothMetadataSHA256": "DAE42BDE104407FAAAA0AD9CF6461300273B35766A5DCFA3F12DE912F04EDC91"
+      "ClothMetadataSHA256": "8F295D532A7F98D2568D3DDC6854A64E75F602376E6275CC019C33AA061A0BD3"
     }
   ]
 }

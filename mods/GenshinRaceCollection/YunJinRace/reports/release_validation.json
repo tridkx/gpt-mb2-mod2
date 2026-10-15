@@ -1,11 +1,11 @@
 {
   "status": "pass",
-  "version": "v0.1.1",
+  "version": "v0.1.2",
   "date": "2026-10-15",
-  "final_package_sha256": "1d9f7585d46dc2862347c349d9a8572e3b2bbd7b2c203d811c179f9a0fbc49cb",
+  "final_package_sha256": "27aafcacf4c23dfed58c85fa317a3254fd06881e8045ed4ce4106735a41238f0",
   "source_input_sha256": "bb8972aee772b847e7e585ddfb9db505f30d0b46192ae776db8946f9ac7cd12c",
-  "baseline_package_sha256": "18b5edefc22f9cf8490f4e88455cefb48daf6f59f90fd9ad22da82ad36fbc23e",
-  "baseline_reason": "Material-only driver visibility repair; all geometry, original textures, skeleton and cloth bytes preserved",
+  "baseline_package_sha256": "1d9f7585d46dc2862347c349d9a8572e3b2bbd7b2c203d811c179f9a0fbc49cb",
+  "baseline_reason": "Native driver role and BC texture runtime compatibility repair; all geometry and physics streams preserved",
   "game_version": "v1.4.8",
   "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
   "lods": [
@@ -124,5 +124,5 @@
     "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
     "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
   ],
-  "repair_validation": "reports/hair_proxy_visibility_fix.json"
+  "repair_validation": "reports/runtime_resource_fix.json"
 }

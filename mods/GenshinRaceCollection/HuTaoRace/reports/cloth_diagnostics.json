@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "mod": "HuTaoRace",
-  "fingerprint": "53a61e433ee6f2c191e55454308982cd9503e4ae81c36c74f076da145f8b89aa",
+  "fingerprint": "e6f8b3b3af7f373a0d48f79a1defd1a8a88b503c8893ae00be084d29a603086b",
   "generated_at_utc": "2026-10-14T15:36:16.453021+00:00",
   "inputs": {
     "mod/build/cloth_probe/mbtool.dll": "7391c3428210ba19ea7f9e1123fc1584a986d4bf618dffdda209e8fe25e92335",
     "mod/build/cloth_probe/NativeClothProbe.deps.json": "2f6631e12ab2d95519b7e139bb763ec892ce56b0fbc4e919abcf546a501850d7",
-    "mod/build/cloth_probe/NativeClothProbe.dll": "087c0d7fd6b19420a19a0fd6b2933ebbce0f9c8e70fe5add98da42aff7328ed2",
+    "mod/build/cloth_probe/NativeClothProbe.dll": "7a62e09eed6663a6f69cfeac15cdb43f82c431ddac5d109bf8c7e941d03029e4",
     "mod/build/cloth_probe/NativeClothProbe.runtimeconfig.json": "256dda2706e1151bb95987b6b5be610bf68d64e058285b19e7e958222fc90414",
-    "mod/module/HuTaoRace/AssetPackages/hutao.tpac": "0cc25468275bfa839c40201785df2bf599c3ca962682f2aa6da9e5a845b051ef",
+    "mod/module/HuTaoRace/AssetPackages/hutao.tpac": "3dd3c664bf4de014a2c21791128a974981c34846fe5d5539f1b07490f220ddca",
     "mod/module/HuTaoRace/ModuleData/cloth_bodies.xml": "b0f812fbb85bd7b81766b9684ae54590c6c85f0fa94e2044f9112a1a99e24919",
     "mod/reports/facegen.json": "35bbf06eea34fb3a0689bd589b6d6bde1310701e418967900c6aefc03cddf383",
     "mod/reports/final_skeleton.json": "7ae71674fe984169781958a9323dd2c605b0e35d2ac2f359ab3088c55a1ca267",
@@ -27,7 +27,7 @@
     "workspace_tools/asset_helpers/previewer/baker/__init__.py": "7d7e86ba699dcb4cba65aea6a098f50af97462ce01131ec88e3d7431dff6eb3d",
     "workspace_tools/asset_helpers/previewer/baker/skeleton.py": "3efa27ce001e74f25687d7ae56b27e06dbb8b6bd94f80cddabb237f380eaad8e",
     "workspace_tools/asset_helpers/previewer/baker/animation.py": "2bd196a1c96752d2b1f1478c6dad5e2672e4e4f53438766b710f9ba6b2024272",
-    "mod/mod.json": "4ba8b99b0533821c75c2a2bcff671ef0b29711f91ce38d777cfeed2719caa7d7"
+    "mod/mod.json": "c86817c0e356bf0503f4b84d816fd54f34c2644c6729cdc65dd9936425a709d0"
   },
   "config": {
     "enabled": true,
@@ -103,7 +103,7 @@
       }
     ]
   },
-  "package_sha256": "0cc25468275bfa839c40201785df2bf599c3ca962682f2aa6da9e5a845b051ef",
+  "package_sha256": "3dd3c664bf4de014a2c21791128a974981c34846fe5d5539f1b07490f220ddca",
   "package_relative_path": "module/HuTaoRace/AssetPackages/hutao.tpac",
   "game_solver_used": false,
   "game_verified": false,
@@ -207,5 +207,11 @@
     "proof_sha256": "041ce79960388b72182f7952548700a876469700ed933242951e207f02bb341a",
     "baseline_package_sha256": "09ff9dea8dbf06c0f861b7cd2cb555011a0254cf79341e5a51f69ec540485cc3",
     "basis": "All LOD and proxy streams, cloth settings, payloads and mappings unchanged; collision, skeleton, motion and solver input hashes identical. Original trajectory provenance retained."
+  },
+  "numerical_input_reuse": {
+    "proof": "reports/native_driver_input_validation.json",
+    "proof_sha256": "72920e7c4673625922b1d25dc2083915366ea3677ed4e292e68ebf3eed69f70f",
+    "basis": "Fresh flagless-driver extraction is byte-identical to prior solver mesh, edit data and payload; skeleton, collision, animation and solver inputs unchanged. Engine driver registration is outside CPU solver coverage.",
+    "native_engine_behavior_verified": false
   }
 }

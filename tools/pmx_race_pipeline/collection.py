@@ -6,7 +6,7 @@ from context import SERIES,workspace_root
 from finalize import finalize
 
 ID='GenshinRaceCollection'
-VERSION='v0.1.1'
+VERSION='v0.1.2'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def roots():
     rows=json.loads((SERIES/'batch_inventory.json').read_text(encoding='utf8'))['characters']
@@ -118,7 +118,7 @@ def install():
     report=json.loads((SERIES/'reports/collection_validation.json').read_text())
     assert report['status']=='pass' and report['module_file_hashes']=={p.relative_to(module).as_posix():sha(p) for p in module.rglob('*') if p.is_file()}
     arguments=['pwsh','-NoProfile','-ExecutionPolicy','Bypass','-File',str(w/'tools/install_release.ps1'),'-Mod',ID,'-Version',VERSION]
-    if (SERIES/'dist'/(ID+'_Mod.zip')).exists():arguments+=['-PreviousVersion','v0.1.0']
+    if (SERIES/'dist'/(ID+'_Mod.zip')).exists():arguments+=['-PreviousVersion','v0.1.1']
     subprocess.run(arguments,check=True)
     game=Path('D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules');archive=zipfile.ZipFile(SERIES/'dist'/(ID+'_Mod.zip'))
     for p in module.rglob('*'):

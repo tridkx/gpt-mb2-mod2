@@ -19,6 +19,9 @@ spec={'output':str(BUILD/'base.tpac'),'packageGuid':str(uuid.uuid5(uuid.NAMESPAC
 previous=json.loads((BUILD/'spec.json').read_text()) if '--reuse-textures' in sys.argv else None
 def texture(key,a,fmt,alpha=False):
     if key in seen:return seen[key]
+    if a.shape[0]%4 or a.shape[1]%4:
+        height=1<<(a.shape[0]-1).bit_length();width=1<<(a.shape[1]-1).bit_length()
+        a=np.array(Image.fromarray(a).resize((width,height),Image.Resampling.LANCZOS))
     name='emilie_tex_'+str(len(seen));path=BUILD/'tex'/(name+'.bc')
     if previous:
         old=previous['textures'][len(seen)];assert old['name']==name and old['format']==fmt and (old['width'],old['height'])==(a.shape[1],a.shape[0]);assert path.is_file();mips=old['mips']

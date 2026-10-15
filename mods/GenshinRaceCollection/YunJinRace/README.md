@@ -24,7 +24,7 @@ campaign.give_troops yunjin_test 10
 
 ## 检查与当前限制
 
-当前版本为长发布料代理使用独立全透明裁切材质，所有 mip 的 Alpha 均为零；可见头发材质与布料活动距离独立。修复的网格、骨架、原贴图及布料字节对比见 [代理材质修复](reports/hair_proxy_visibility_fix.json)，近景预览见 [含代理检查](reports/hair_proxy_visibility_preview.json)。实机头发效果待用户复测。
+当前版本的[运行资源检查](reports/runtime_resource_fix.json)覆盖 BC 纹理尺寸和原生驱动角色：BC 顶层尺寸满足 4 像素对齐；含长发布料时代理仅由可见网格引用，清除代理的直接渲染布料标记、身体绑定和三个附加开关，与 Native 模拟网格相同。独立透明材质仅作防护，不作为代理未显示的实机证据。模型、UV、骨架、权重与布料数据保留，创建页面加载和头发实机表现仍待复测。
 
 [最终资源报告](reports/release_validation.json)覆盖 TPAC 回读、骨架、材质、UV、量化权重、所有交付 LOD 与原生动作。跑步、持弓、挥击和骑乘扫描完整提取片段；界面／捏脸基础站姿仅作抽样姿态检查，不提供外观定制功能。[源文件检查](reports/source_validation.json)确认重新打开 Blend/FBX 后仍保留源比例和 UV。
 

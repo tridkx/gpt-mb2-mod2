@@ -17,7 +17,7 @@ if(args.Length==5&&args[0]=="--inspect") {
  File.WriteAllText(Path.Combine(output,"inspection.json"),JsonSerializer.Serialize(rows,new JsonSerializerOptions{WriteIndented=true}));
  return;
 }
-if(args.Length!=6)throw new Exception("input output mapping_manifest body_name proxy_name native_template_tpac required");
+if(args.Length!=6 && !(args.Length==7 && args[6]=="--native-driver-role"))throw new Exception("input output mapping_manifest body_name proxy_name native_template_tpac [--native-driver-role] required");
 if(Path.GetFullPath(args[0])==Path.GetFullPath(args[1]))throw new Exception("Preserve input");
 var pkg=new AssetPackage(args[0],true,false);
 var body=pkg.Items.OfType<Metamesh>().Single(m=>m.Name==args[3]);
@@ -49,5 +49,12 @@ body.ClothMetamesh=proxy.Guid;body.ClothUint=0;body.ClothString="";
 proxy.UnknownString=body.UnknownString;proxy.ClothMetamesh=Guid.Empty;
 var driver=proxy.Meshes[0];driver.Flags=new List<string>{"uses_cloth_simulation","force_enable_cloth"};driver.UnknownFloat1=1;driver.UnknownInt3=120;driver.UnknownBool1=true;driver.UnknownBool2=false;driver.UnknownBool3=true;
 driver.ClothingMaterial=new ClothingMaterial{Name=args[4]+"_soft_driver",BendingStiffness=.08f,ShearingStiffness=.9f,StretchingStiffness=1,AnchorStiffness=.3f,Damping=.92f,Gravity=9.81f,LinearInertia=.08f,AirDragMultiplier=.04f,Wind=.015f,MaxLinearVelocity=4,LinearVelocityMultiplier=1};
+if(args.Length==7) {
+ proxy.UnknownString="";driver.Flags.Clear();
+ driver.UnknownBool1=false;driver.UnknownBool2=false;driver.UnknownBool3=false;
+ foreach(var mesh in body.Meshes.Where(m=>m.Flags.Contains("uses_cloth_simulation"))) {
+  mesh.Flags.Remove("force_enable_cloth");mesh.UnknownBool1=false;mesh.UnknownBool2=false;mesh.UnknownBool3=false;
+ }
+}
 foreach(var asset in pkg.Items)asset.GetType().BaseType.GetField("_rawMetadata",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic)?.SetValue(asset,null);
 pkg.Save(args[1]);Console.WriteLine("Mapped shared proxy: "+touched.Count+" render groups; "+args[1]);

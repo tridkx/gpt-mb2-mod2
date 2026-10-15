@@ -17,12 +17,14 @@ from race_action_sets import validate_files
 def run(args):return subprocess.run([str(x) for x in args],check=True,capture_output=True,text=True,encoding='utf8',errors='replace').stdout
 audit=json.loads(run([sys.executable,'-X','utf8','C:/Users/DKX/.codex/skills/bannerlord-equipment-mod/scripts/audit_package.py',P,'--cloth-vertex-alpha']));assert audit['status']=='pass',audit;(R/'reports/package_audit.json').write_text(json.dumps(audit,indent=2))
 visible=json.loads(run(['dotnet',W/'tools/AssetTool/AssetTool.dll','visibility',P]));(R/'reports/final_visibility.json').write_text(json.dumps(visible,indent=2));assert all('disable_vertex_color_alpha' in m['ShaderMaterialFlags'] for m in visible['materials'])
-geometry=json.loads((B/'geometry.json').read_text());expected_cloth={g['name'] for g in geometry if g.get('cloth')};actual_cloth={m['Name'] for m in visible['meshes'] if 'uses_cloth_simulation' in m['Flags']};assert actual_cloth==expected_cloth|({'emilie_cloth_proxy'} if C['cloth_enabled'] else set())
+geometry=json.loads((B/'geometry.json').read_text());expected_cloth={g['name'] for g in geometry if g.get('cloth')};actual_cloth={m['Name'] for m in visible['meshes'] if 'uses_cloth_simulation' in m['Flags']};assert actual_cloth==expected_cloth
 allowed={C['prefix']+f'_part_{i:02d}' for i in C.get('cloth_materials',[])}
 assert all(re.sub(r'\.lod\d+$','',name) in allowed for name in expected_cloth)
 maps=[];data=None
 if C['cloth_enabled']:
- inspect=B/'mapped_final';run(['dotnet',B/'mapped_patch/MappedClothPatch.dll','--inspect',P,'emilie_body','emilie_cloth_proxy',inspect]);items=json.loads((inspect/'inspection.json').read_text());body=next(m for m in items if m['Name']=='emilie_body');proxy=next(m for m in items if m['Name']=='emilie_cloth_proxy');assert body['ClothMetamesh']==proxy['Guid'];assert body['body']==proxy['body']=='emilie_collision';assert len(proxy['segments'])==1
+ native_roles=json.loads(run(['dotnet',W/'tools/AssetTool/AssetTool.dll','inspect',P,'emilie_body']))[0]
+ assert all(m['Flags']==['uses_cloth_simulation'] and not any(m[k] for k in ['UnknownBool1','UnknownBool2','UnknownBool3']) for m in native_roles['meshes'] if 'uses_cloth_simulation' in m['Flags'])
+ inspect=B/'mapped_final';run(['dotnet',B/'mapped_patch/MappedClothPatch.dll','--inspect',P,'emilie_body','emilie_cloth_proxy',inspect]);items=json.loads((inspect/'inspection.json').read_text());body=next(m for m in items if m['Name']=='emilie_body');proxy=next(m for m in items if m['Name']=='emilie_cloth_proxy');assert body['ClothMetamesh']==proxy['Guid'];assert body['body']=='emilie_collision' and proxy['body']=='';assert len(proxy['segments'])==1
  direct=proxy['segments'][0];blob=Path(direct['path']).read_bytes();data=read_cloth(blob);check_structure(data);assert write_cloth(data)==blob;plan=json.loads((B/'proxy_cooked/manifest.json').read_text())[0];assert direct['sha256']==plan['sha256'];maps=json.loads((B/'render_maps/manifest.json').read_text());segments={s['OwnerGuid']:s for s in body['segments']};assert len(segments)==len(maps)==len(expected_cloth)
  for row in maps:
   s=segments[row['guid']];assert s['sha256']==row['sha256'];raw=Path(s['path']).read_bytes();i,w=read_map(raw);assert write_map(i,w)==raw and i.max()<data['vertex_count'];assert np.isfinite(w).all() and abs(w[:,:3].sum(1)-1).max()<2e-6
@@ -41,6 +43,7 @@ if C['cloth_enabled']:
  proxy_material=json.loads((R/'reports/material_names.json').read_text())['emilie_proxy_invisible'];assert proxy_material['template']=='alpha' and 'alpha_test' in proxy_material['shaderMaterialFlags'] and proxy_material['alphaTest']>0
 sys.path.insert(0,'D:/mb-tools/py');from bcencode import decode_bc1,decode_bc3,decode_bc5
 for t in pack['textures']:
+ assert t['width']%4==0 and t['height']%4==0,'GPU-incompatible top-level BC texture size'
  blob=(B/'final_export_lod0'/t['file']).read_bytes();assert blob==(B/'tex'/(t['name']+'.bc')).read_bytes();w,h=t['width'],t['height']
  for j,(off,size) in enumerate(zip(t['mipOffset'],t['mipSize'])):
   arr={'DXT1':decode_bc1,'DXT5':decode_bc3,'BC5':decode_bc5}[t['format']](blob[off:off+size],w,h)
