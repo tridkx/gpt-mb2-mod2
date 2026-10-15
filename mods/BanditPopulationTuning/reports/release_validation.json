@@ -1,9 +1,9 @@
 {
   "id": "BanditPopulationTuning",
-  "version": "v1.0.0",
-  "generated_utc": "20261015T055053411660Z",
+  "version": "v1.1.0",
+  "generated_utc": "20261015T094203125528Z",
   "status": "pass",
-  "checks": 113,
+  "checks": 220,
   "prerequisites": {
     "Bannerlord.Harmony": {
       "root": "D:\\SteamLibrary\\steamapps\\workshop\\content\\261550\\2859188632",
@@ -24,10 +24,11 @@
   },
   "game_version": "v1.4.8",
   "module_files_sha256": {
-    "CHANGELOG.md": "7cf9d4384cd103ef8f805bbac50ca0db6f66f8b0d3eea2fd9d5aa269e356e2ac",
-    "README.zh-CN.md": "6a47e0777c13fbc2e3e2261501cab7911ed65fec03be9f56c7960cf736104a8c",
-    "SubModule.xml": "07d0f7f73d603f2043e7a1beb8aa97441dcc2735cc48cab52aad6a88ad42a959",
-    "bin/Win64_Shipping_Client/BanditPopulationTuning.dll": "f2621f3b26509a69f7e78cdcd6f0b84e2cb2ddaa2ef4cfdfd4f6c2d4d75f5dca"
+    "CHANGELOG.md": "cf5e305c855d8e512e582f9b81c615ea6267838631a5ef809f2addd5e0860187",
+    "README.zh-CN.md": "6f00b43eaf61039cf96e0e98ef11dca311f982ff866a0ae2671ca54ba7901807",
+    "SubModule.xml": "cbe03290913c80a25646536a872e07fac57ef8ef1a85e926bc1344e9be5e191b",
+    "docs/ai_settings.md": "2641cbec56be950ac8d3535e1d59f0ec8d3aab8d1c6d9975b485e33acb9247bb",
+    "bin/Win64_Shipping_Client/BanditPopulationTuning.dll": "27f0a3d7eaaa38c0248550d1440833577f9c583eb220d35a7ef7190023d96fc2"
   },
   "patch_targets": [
     "PATCH OK TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior.GetCurrentLimitForLooters",
@@ -37,7 +38,17 @@
     "PATCH OK TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior.HourlyTickClan",
     "PATCH OK TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior.SpawnLooters",
     "PATCH OK TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior.SpawnBanditsAroundHideout",
-    "PATCH OK TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior.InitializeBanditParty"
+    "PATCH OK TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior.InitializeBanditParty",
+    "PATCH OK TaleWorlds.CampaignSystem.GameComponents.DefaultPartySizeLimitModel.GetPartyMemberSizeLimit",
+    "PATCH OK TaleWorlds.CampaignSystem.GameComponents.DefaultClanTierModel.GetPartyLimitForTier",
+    "PATCH OK TaleWorlds.CampaignSystem.GameComponents.DefaultCharacterStatsModel.MaxHitpoints",
+    "PATCH OK TaleWorlds.CampaignSystem.GameComponents.DefaultSettlementLoyaltyModel.CalculateLoyaltyChange",
+    "PATCH OK TaleWorlds.CampaignSystem.GameComponents.DefaultSettlementFoodModel.CalculateTownFoodStocksChange",
+    "PATCH OK TaleWorlds.CampaignSystem.GameComponents.DefaultSettlementMilitiaModel.CalculateMilitiaChange",
+    "PATCH OK TaleWorlds.CampaignSystem.GameComponents.DefaultSettlementProsperityModel.CalculateProsperityChange",
+    "PATCH OK TaleWorlds.CampaignSystem.GameComponents.DefaultSettlementSecurityModel.CalculateSecurityChange",
+    "PATCH OK TaleWorlds.CampaignSystem.GameComponents.DefaultSettlementTaxModel.CalculateTownTax",
+    "PATCH OK SandBox.GameComponents.SandboxAgentApplyDamageModel.ApplyGeneralDamageModifiers"
   ],
   "game_inputs_sha256": {
     "Modules\\Native\\SubModule.xml": "38e8f6fa52498346cda474ea648d59cab0180284209f603d2bb1161e2b2bfefe",

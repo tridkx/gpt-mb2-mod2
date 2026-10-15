@@ -26,9 +26,9 @@ def installed_document(text):
     text=text.replace('[Genshin Bandit Race](../GenshinBanditRace/README.md)','Genshin Bandit Race')
     text=text.replace('[Bandit Population Tuning](../BanditPopulationTuning/README.md)','Bandit Population Tuning')
     return re.sub(r'\[([^\]]+)\]\((reports/[^)]+)\)',lambda m:f'{m[1]}（见源码包 `{m[2]}`）',text)
-def descriptor(module,identity):
+def descriptor(module,identity,version):
     root=ET.Element('Module')
-    for tag,value in [('Name',NAMES[identity]),('Id',identity),('Version','v1.0.0'),('DefaultModule','false'),
+    for tag,value in [('Name',NAMES[identity]),('Id',identity),('Version',version),('DefaultModule','false'),
                       ('ModuleCategory','Singleplayer'),('Official','false'),('ModuleType','Community'),('SingleplayerModule','true'),('MultiplayerModule','false')]:
         ET.SubElement(root,tag,value=value)
     dependencies=ET.SubElement(root,'DependedModules')
@@ -51,8 +51,10 @@ def descriptor(module,identity):
 
 def build(root,identity,args,dependencies):
     game=args.game_root.resolve(); module=root/'module'/identity
+    version=json.loads((root/'mod.json').read_text(encoding='utf-8'))['version']
+    assert re.fullmatch(r'v\d+\.\d+\.\d+',version),version
     (module/'ModuleData').mkdir(parents=True,exist_ok=True)
-    descriptor(module,identity)
+    descriptor(module,identity,version)
     stamp=datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
     report_dir=root/'reports'; report_dir.mkdir(exist_ok=True)
     (root/'dist').mkdir(exist_ok=True)
@@ -84,7 +86,7 @@ def build(root,identity,args,dependencies):
         shutil.copy2(report_dir/'troop_configuration.json',module/'reports/troop_configuration.json')
     files={p.relative_to(module).as_posix():p for p in module.rglob('*') if p.is_file() and p.name!='runtime.log'}
     hashes={k:sha(v) for k,v in files.items()}
-    info=dict(id=identity,version='v1.0.0',generated_utc=stamp,status='pass',checks=checks,prerequisites=dependencies,
+    info=dict(id=identity,version=version,generated_utc=stamp,status='pass',checks=checks,prerequisites=dependencies,
         game_version=ET.parse(game/'Modules/Native/SubModule.xml').getroot().find('Version').get('value'),
         module_files_sha256=hashes,patch_targets=[x for x in output.splitlines() if x.startswith('PATCH OK')],
         game_inputs_sha256={str(p.relative_to(game)):sha(p) for p in [game/'Modules/Native/SubModule.xml',
@@ -99,7 +101,7 @@ def build(root,identity,args,dependencies):
         assert all((installed_dep/k).is_file() and sha(installed_dep/k)==v for k,v in dep_hashes.items()),'Genshin collection source/install mismatch'
         info['race_dependency_sha256']=dep_hashes
     (report_dir/'release_validation.json').write_text(json.dumps(info,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    archive=root/'dist'/f'{identity}_v1.0.0_{stamp}.zip'
+    archive=root/'dist'/f'{identity}_{version}_{stamp}.zip'
     with zipfile.ZipFile(archive,'x',zipfile.ZIP_DEFLATED) as z:
         for relative,path in files.items(): z.write(path,f'{identity}/{relative}')
     with zipfile.ZipFile(archive) as z:
@@ -117,7 +119,7 @@ def build(root,identity,args,dependencies):
                           settings='MCM per-save data; installation does not touch user settings or saves')
         (report_dir/'installation_validation.json').write_text(json.dumps(installation,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
         print(f'INSTALLED {destination}')
-    source=root/'dist'/f'{identity}_v1.0.0_source_{stamp}.zip'
+    source=root/'dist'/f'{identity}_{version}_source_{stamp}.zip'
     with zipfile.ZipFile(source,'x',zipfile.ZIP_DEFLATED) as z:
         for path in root.rglob('*'):
             parts=path.relative_to(root).parts

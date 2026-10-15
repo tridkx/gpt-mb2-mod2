@@ -4,10 +4,10 @@ using MCM.Abstractions.Base.PerSave;
 
 namespace BanditPopulationTuning
 {
-    public sealed class Settings : AttributePerSaveSettings<Settings>
+    public sealed partial class Settings : AttributePerSaveSettings<Settings>
     {
         public override string Id => "BanditPopulationTuning_v1";
-        public override string DisplayName => "土匪数量调节 / Bandit Population Tuning";
+        public override string DisplayName => "土匪与AI强化 / Bandit Population Tuning";
         public override string FolderName => "BanditPopulationTuning";
         public override int UIVersion => 2;
 

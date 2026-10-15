@@ -20,7 +20,7 @@ internal static class Program
     private static int Main(string[] args)
     {
         AppDomain.CurrentDomain.AssemblyResolve += (s,r) => Resolve(args[0],args[2],r.Name);
-        try { Run(); Console.WriteLine("PASS " + checks + " checks"); return 0; }
+        try { Run(); checks+=EnhancementTests.Run(args[0]); Console.WriteLine("PASS " + checks + " checks"); return 0; }
         catch (Exception e) { Console.Error.WriteLine(e); return 1; }
     }
     private static Assembly Resolve(string game,string workshop,string fullName)

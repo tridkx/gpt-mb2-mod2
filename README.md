@@ -21,7 +21,7 @@
 | [Modern Girl Race](mods/ModernGirlRace/README.md) | 现代少女 v6 完整人物固定外观种族与独立测试兵种 |
 | [Race Troop Builder](mods/RaceTroopBuilder/README.md) | 自定义种族兵种树拼装器，Windows GUI、AI JSON/CLI、中英名称与固有护甲配置 |
 | [Cavalry Combat Tuning](mods/CavalryCombatTuning/README.md) | MCM可调冲撞伤害、骑乘弓弩移动精度与村庄民兵补充，独立单机运行模块 |
-| [Bandit Population Tuning](mods/BanditPopulationTuning/README.md) | 六类普通土匪的队伍数量、单队人数与补充速度，MCM默认各2倍 |
+| [Bandit Population Tuning](mods/BanditPopulationTuning/README.md) | 土匪三项默认2倍；可选AI领主带兵、每日／每周补充、定居点与英雄调节，强化默认保持原版 |
 | [Genshin Bandit Race](mods/GenshinBanditRace/README.md) | 22种原神T3土匪混编，T5战斗属性与等效负重，MCM比例／固定人数设置 |
 
 ## 目录结构

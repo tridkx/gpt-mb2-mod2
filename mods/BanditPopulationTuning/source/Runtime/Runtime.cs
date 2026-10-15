@@ -8,6 +8,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.CampaignBehaviors;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Party.PartyComponents;
+using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
 
@@ -115,12 +116,29 @@ namespace BanditPopulationTuning
                 try { File.AppendAllText(Path.Combine(root, "ModuleData", "runtime.log"), error + Environment.NewLine); }
                 catch (IOException) { } catch (UnauthorizedAccessException) { }
             }
+            try { EnhancementPatches.Install(); }
+            catch(Exception error)
+            {
+                warning="土匪与AI强化：新增强化补丁加载失败，强化未启用；原有土匪功能独立运行。请查看 ModuleData/runtime.log。";
+                Log(error.ToString());
+            }
         }
         protected override void OnBeforeInitialModuleScreenSetAsRoot()
         {
             base.OnBeforeInitialModuleScreenSetAsRoot();
             if (warning != null) { InformationManager.DisplayMessage(new InformationMessage(warning)); warning = null; }
         }
-        protected override void OnSubModuleUnloaded() { Patches.Uninstall(); base.OnSubModuleUnloaded(); }
+        protected override void OnGameStart(Game game,IGameStarter starterObject)
+        {
+            base.OnGameStart(game,starterObject);
+            if(starterObject is CampaignGameStarter starter) starter.AddBehavior(new EnhancementBehavior());
+        }
+        public static void Log(string message)
+        {
+            var root=Path.GetFullPath(Path.Combine(Path.GetDirectoryName(typeof(SubModule).Assembly.Location),"..",".."));
+            try{File.AppendAllText(Path.Combine(root,"ModuleData","runtime.log"),DateTime.Now.ToString("s")+" "+message+Environment.NewLine);}
+            catch(IOException){} catch(UnauthorizedAccessException){}
+        }
+        protected override void OnSubModuleUnloaded() { EnhancementPatches.Uninstall(); Patches.Uninstall(); base.OnSubModuleUnloaded(); }
     }
 }
