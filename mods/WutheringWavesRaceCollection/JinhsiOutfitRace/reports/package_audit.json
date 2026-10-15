@@ -1,0 +1,25 @@
+{
+  "package": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiOutfitRace\\module\\JinhsiOutfitRace\\AssetPackages\\ww_jinhsi_outfit.tpac",
+  "status": "pass",
+  "scope": "Metadata round-trip, references and standard shader vertex-alpha risk only; textures, custom shader paths, geometry, weights, cloth dynamics and game behavior are not validated",
+  "cloth_vertex_alpha": true,
+  "errors": [],
+  "incomplete": [],
+  "observations": [],
+  "package_sha256": "0a1326d23dd4ceaa4d3b9c44cc017323f99f4cc00b686bf79cd6d564d52137f3",
+  "tool_output": {
+    "metacheck": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiOutfitRace\\module\\JinhsiOutfitRace\\AssetPackages\\ww_jinhsi_outfit.tpac: 49 assets | checksum ok=49 bad=0 | metadata identical=49 differ=0 noSerializer=0",
+    "mataudit": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiOutfitRace\\module\\JinhsiOutfitRace\\AssetPackages\\ww_jinhsi_outfit.tpac: 35 materials, 49 assets\n  metamesh-level material missing=0 | submesh Material present=141 missing=0 | submesh SecondMaterial present=0 missing=0 | metameshes with no material at all=0"
+  },
+  "counts": {
+    "materials": 35,
+    "submeshes": 141,
+    "cloth_submeshes": 16,
+    "lods": [
+      0,
+      1,
+      2,
+      3
+    ]
+  }
+}

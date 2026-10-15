@@ -1,0 +1,177 @@
+{
+  "id": "ChangliRace",
+  "version": "v0.1.0",
+  "race": "ww_changli",
+  "prefix": "ww_changli",
+  "skeleton": "ww_changli_skeleton",
+  "module_name": "Changli Race",
+  "display_name": "长离",
+  "source_model": "input/original/长离/长离.pmx",
+  "source_archive": "input/archive/长离 (修模绑骨后)_by_鸣潮_e349c154f0461623f174fcc484aab5de.zip",
+  "ignored_models": [],
+  "unit_scale": 0.08,
+  "source_rotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "skin_min_scale": 1.0,
+  "cloth_enabled": true,
+  "cloth_lods": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "cloth_parts": {
+    "9": {
+      "fixed_above_source_y": 20.0,
+      "attachment_bone": 13,
+      "max_distance_m": 0.06,
+      "travel_slope": 0.22
+    },
+    "31": {
+      "fixed_above_source_y": 7.02,
+      "attachment_bone": 0,
+      "max_distance_m": 0.035,
+      "travel_slope": 0.22
+    }
+  },
+  "cloth_materials": [
+    9,
+    31
+  ],
+  "lod_multipliers": [
+    1,
+    0.65,
+    0.4,
+    0.2
+  ],
+  "minimum_ratios": {
+    "m00": 0.75,
+    "m01": 0.75,
+    "m02": 0.75,
+    "m03": 0.75,
+    "m04": 0.75,
+    "m05": 0.75,
+    "m06": 0.75,
+    "m07": 0.75,
+    "m08": 0.75,
+    "m10": 0.75,
+    "m11": 0.75,
+    "m12": 0.75,
+    "m24": 0.75
+  },
+  "facial_animation": false,
+  "pmx_reader": "C:/Users/DKX/AppData/Roaming/Blender Foundation/Blender/5.2/extensions/user_default/mmd_tools/core/pmx/__init__.py",
+  "head_materials": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    24
+  ],
+  "exclude_materials": [
+    33
+  ],
+  "glass_materials": [],
+  "cloth_mode": "direct",
+  "cloth_proxy_materials": [
+    9,
+    31
+  ],
+  "cloth_proxy_policy": {
+    "pin_band_m": 0.012,
+    "minimum_component_height_m": 0.04,
+    "max_proxy_vertices": 4500
+  },
+  "direct_diagnostic_lods": [
+    0
+  ],
+  "hair_reference_body_blend_max": 0.55,
+  "weight_refinement": {
+    "shoulders": true,
+    "waist": true,
+    "crotch": true
+  },
+  "shoulder_style": "field",
+  "rigid_material_bindings": {
+    "0": 13,
+    "1": 13,
+    "2": 13,
+    "3": 13,
+    "4": 13,
+    "5": 13,
+    "6": 13,
+    "7": 13,
+    "8": 13,
+    "10": 13,
+    "11": 13,
+    "12": 13,
+    "24": 13
+  },
+  "hair_decision": "长发及明确独立的长饰品采用有限直接布料；短发、刘海、裙子、袖子普通蒙皮。各材质与挂点见 cloth_parts。",
+  "cloth_policy": {
+    "skirt": false,
+    "sleeves": false,
+    "default": false,
+    "enabled_materials": {
+      "9": "Hair_Back",
+      "31": "Cloth_Liusu"
+    }
+  },
+  "skinned_skirt_materials": [
+    18,
+    26,
+    27
+  ],
+  "shoulder_materials": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    32,
+    33
+  ],
+  "weight_smoothing_materials": [
+    13,
+    14,
+    22
+  ],
+  "weight_smoothing_iterations": 16,
+  "consistent_cloth_attachment": true
+}

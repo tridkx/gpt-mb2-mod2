@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf8'?>
+<bodies>
+  <body name="ww_shorekeeper_collision" owner_skeleton="ww_shorekeeper_skeleton">
+    <capsules>
+      <capsule name="ww_shorekeeper_torso_low" length="0.112045" origin="0, 0, 0" frame="-0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, 0.000000, -0.022859, 0.993211, 1.000000">
+        <points>
+          <point radius="0.078308">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.078308">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_shorekeeper_torso_high" length="0.095193" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000000, 0.004531, 1.105257, 1.000000">
+        <points>
+          <point radius="0.067764">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.067764">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_shorekeeper_head" length="0.035000" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, -0.036304, 1.454563, 1.000000">
+        <points>
+          <point radius="0.090000">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.090000">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_shorekeeper_neck" length="0.056946" origin="0, 0, 0" frame="-0.000001, 0.279039, 0.960280, 0.000000, 0.000000, 0.960280, -0.279039, 0.000000, -1.000000, 0.000000, -0.000001, 0.000000, 0.000000, -0.052194, 1.384879, 1.000000">
+        <points>
+          <point radius="0.034200">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.034200">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_shorekeeper_l_upperarm" length="0.218200" origin="0, 0, 0" frame="-0.791505, 0.019187, -0.610861, 0.000000, 0.015190, 0.999816, 0.011723, 0.000000, 0.610973, 0.000000, -0.791651, 0.000000, -0.103538, -0.069454, 1.339804, 1.000000">
+        <points>
+          <point radius="0.022911">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022911">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_shorekeeper_r_upperarm" length="0.218200" origin="0, 0, 0" frame="0.791505, 0.019189, -0.610861, 0.000000, -0.015191, 0.999816, 0.011724, 0.000000, 0.610973, -0.000000, 0.791651, 0.000000, 0.103539, -0.069454, 1.339804, 1.000000">
+        <points>
+          <point radius="0.022911">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022911">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

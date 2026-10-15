@@ -1,0 +1,25 @@
+{
+  "package": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\BaizhiRace\\module\\BaizhiRace\\AssetPackages\\ww_baizhi.tpac",
+  "status": "pass",
+  "scope": "Metadata round-trip, references and standard shader vertex-alpha risk only; textures, custom shader paths, geometry, weights, cloth dynamics and game behavior are not validated",
+  "cloth_vertex_alpha": true,
+  "errors": [],
+  "incomplete": [],
+  "observations": [],
+  "package_sha256": "a3de4c87f9b8dd323f4b3199351e4d684e6a1ef9e8c113c608dfaa1171c11d5c",
+  "tool_output": {
+    "metacheck": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\BaizhiRace\\module\\BaizhiRace\\AssetPackages\\ww_baizhi.tpac: 38 assets | checksum ok=38 bad=0 | metadata identical=38 differ=0 noSerializer=0",
+    "mataudit": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\BaizhiRace\\module\\BaizhiRace\\AssetPackages\\ww_baizhi.tpac: 26 materials, 38 assets\n  metamesh-level material missing=0 | submesh Material present=105 missing=0 | submesh SecondMaterial present=0 missing=0 | metameshes with no material at all=0"
+  },
+  "counts": {
+    "materials": 26,
+    "submeshes": 105,
+    "cloth_submeshes": 4,
+    "lods": [
+      0,
+      1,
+      2,
+      3
+    ]
+  }
+}

@@ -1,0 +1,933 @@
+{
+  "materials": [
+    {
+      "Name": "ww_zhezhi_m00",
+      "Guid": "91fe0f18-1c7a-8f29-3bdc-46714f317973",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "ww_zhezhi_m01",
+      "Guid": "486d2dbb-5a03-1733-c249-5fd2ec04684b",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "ww_zhezhi_m02",
+      "Guid": "ddc9a598-2b75-9a1c-4c6f-d6a84248ebe8",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "ww_zhezhi_m03",
+      "Guid": "2000f821-1663-bdee-dbe7-cf30bc57a337",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "ww_zhezhi_m04",
+      "Guid": "a9d9fa74-9b67-90fe-11d2-fb94848bd579",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "ww_zhezhi_m05",
+      "Guid": "f4b0765e-4804-81e8-b60b-018d5cebdef5",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "ww_zhezhi_m06",
+      "Guid": "47349ecb-416e-8581-f970-0f901b5a3950",
+      "BlendMode": "factor",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "ww_zhezhi_m07",
+      "Guid": "45d25512-afa7-2c33-1158-f25b9a713425",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "ww_zhezhi_m08",
+      "Guid": "e5c806f4-8d57-1c0b-f52a-fa933958665c",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0.25,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha",
+        "alpha_test"
+      ]
+    },
+    {
+      "Name": "ww_zhezhi_m09",
+      "Guid": "067bb1d2-9819-1c4d-6b07-36164e25eb88",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "ww_zhezhi_m10",
+      "Guid": "149ce93b-5392-84f8-49b5-4f7db49ff3b9",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "ww_zhezhi_m11",
+      "Guid": "e88996f1-2df6-5b0b-b8ab-7a4f57f5cdd0",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "ww_zhezhi_m12",
+      "Guid": "4f58723e-51bc-7fc9-b8f6-bd6348d068cc",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "ww_zhezhi_m13",
+      "Guid": "b7247d14-039c-0e92-dd40-5ce6d9a92d54",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    },
+    {
+      "Name": "ww_zhezhi_m14",
+      "Guid": "423e7fe7-a347-9ffc-cc09-2fff70a713e8",
+      "BlendMode": "no_alpha_blend",
+      "AlphaTest": 0,
+      "ShaderMaterialFlags": [
+        "use_specular",
+        "disable_vertex_color_alpha"
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "Name": "ww_zhezhi_part_00",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "91fe0f18-1c7a-8f29-3bdc-46714f317973",
+      "Vertices": 3847,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "E55C1E240219AF4DD885E7D78D828F450647A8DE7F8BAAEFF2B5A4AD0AE2D334",
+      "VertexStreamSHA256": "4426AE2DBDD0F41ECEED9D4BECCEF35A70C008F1A43EEA879DE2127A88D13E28",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_00.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "91fe0f18-1c7a-8f29-3bdc-46714f317973",
+      "Vertices": 3201,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "AF1678FE31BCEE90349E5B6ADE8A47F9FBEAE9892502ABF61396DF131533168E",
+      "VertexStreamSHA256": "C3605BA98D55B89617F3A68AA05E1B0FB7FF93660B20D41ADD499CC3EB3AA873",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_00.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "91fe0f18-1c7a-8f29-3bdc-46714f317973",
+      "Vertices": 3201,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "AF1678FE31BCEE90349E5B6ADE8A47F9FBEAE9892502ABF61396DF131533168E",
+      "VertexStreamSHA256": "C3605BA98D55B89617F3A68AA05E1B0FB7FF93660B20D41ADD499CC3EB3AA873",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_00.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "91fe0f18-1c7a-8f29-3bdc-46714f317973",
+      "Vertices": 3201,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "AF1678FE31BCEE90349E5B6ADE8A47F9FBEAE9892502ABF61396DF131533168E",
+      "VertexStreamSHA256": "C3605BA98D55B89617F3A68AA05E1B0FB7FF93660B20D41ADD499CC3EB3AA873",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_01",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "486d2dbb-5a03-1733-c249-5fd2ec04684b",
+      "Vertices": 19045,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "293196FF19BB1A9D023AFA8BF47861CABBF0E5A896120E97199F79349EBE8C2B",
+      "VertexStreamSHA256": "69AFC0E6CA3AB56DD4BB688D00650AE088536BF1265DCCA7E22C4BF13C5462F1",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_01.b2",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "486d2dbb-5a03-1733-c249-5fd2ec04684b",
+      "Vertices": 13657,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "13C8E24C09AE8C8CF203387CA572D3D227FD79DF75B748DD1B5664B508679702",
+      "VertexStreamSHA256": "325DFE95D26A1ADD6D9714C648D9D1CB78BD11CF132F930B6B6D6807E249750A",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_01.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "486d2dbb-5a03-1733-c249-5fd2ec04684b",
+      "Vertices": 13689,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "EC824BBA192A781CA42356B40323E3EEB3C7F3A716DCBDDE385C3F34D1745B58",
+      "VertexStreamSHA256": "42C8F3C2AFBA0D8B43A18EFF93957BF2960AF5457D7ED947F176BB3E80F68AFA",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_01.lod1.b2",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "486d2dbb-5a03-1733-c249-5fd2ec04684b",
+      "Vertices": 591,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A5C46601A0DBA06BF0497338BDAFE017DF3CB7912A14A5CD3BA971BF73451115",
+      "VertexStreamSHA256": "5F1DD120CEC0A5020E5ADEF8BC3E5E7CD11926081287F8FF52FC56A824454463",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_01.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "486d2dbb-5a03-1733-c249-5fd2ec04684b",
+      "Vertices": 9784,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "75F004680EA0BC2E1505EDB73E37FE951959ED90B72C996F0D9C2DA9FCD5BC70",
+      "VertexStreamSHA256": "FD00470C1977564D5F1F84392B5FB5024385495A2BF8F500B0D7DA3E9ECBF4DD",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_01.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "486d2dbb-5a03-1733-c249-5fd2ec04684b",
+      "Vertices": 6842,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "17440FB7DAEF807615B86B3A39A6593579A6F6CC8848288D6E353CECD7D4F049",
+      "VertexStreamSHA256": "688FC09968EBB477BF12EC415C157AC1E66DD0FCF28C0938749E3D1803EEFDBB",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_02",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "ddc9a598-2b75-9a1c-4c6f-d6a84248ebe8",
+      "Vertices": 1148,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "1A3D245CC25770957C9874D14241260E8B7E95573827CB6D621BD8922EA00D22",
+      "VertexStreamSHA256": "FCDE4B369A82DCC839A3CC3ADFFC50CC47A5FAAC2161738CF1423DF5D2D4B3B6",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_02.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "ddc9a598-2b75-9a1c-4c6f-d6a84248ebe8",
+      "Vertices": 1144,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "2773CC853E2264D542D164D1A9EEAA3FD4E4F3C9C15F7C86D472939EED522176",
+      "VertexStreamSHA256": "AEC9D22F780F80059B4B96F128D2898E49574D490CD47E3B1CDBD625A1A393EE",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_02.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "ddc9a598-2b75-9a1c-4c6f-d6a84248ebe8",
+      "Vertices": 1144,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "2773CC853E2264D542D164D1A9EEAA3FD4E4F3C9C15F7C86D472939EED522176",
+      "VertexStreamSHA256": "AEC9D22F780F80059B4B96F128D2898E49574D490CD47E3B1CDBD625A1A393EE",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_02.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "ddc9a598-2b75-9a1c-4c6f-d6a84248ebe8",
+      "Vertices": 1144,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "2773CC853E2264D542D164D1A9EEAA3FD4E4F3C9C15F7C86D472939EED522176",
+      "VertexStreamSHA256": "AEC9D22F780F80059B4B96F128D2898E49574D490CD47E3B1CDBD625A1A393EE",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_03",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "2000f821-1663-bdee-dbe7-cf30bc57a337",
+      "Vertices": 290,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B0E10DA9DDAEAC62BA660E4E6C0086CDCCE87A8EDCAC3ED22C18796348528984",
+      "VertexStreamSHA256": "A358143A4EE7417D63E707BBBFD21723882B5B1A54BC54ED0FB00FEF29A84843",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_03.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "2000f821-1663-bdee-dbe7-cf30bc57a337",
+      "Vertices": 227,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "003BC89CB6229304D5BA82A61161061B32537224532051DD032A6A5E15804BDC",
+      "VertexStreamSHA256": "D5C824BE40B11790585D19426ADD393B6D4ABD300FD78ACF9578FD570BDB7477",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_03.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "2000f821-1663-bdee-dbe7-cf30bc57a337",
+      "Vertices": 227,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "003BC89CB6229304D5BA82A61161061B32537224532051DD032A6A5E15804BDC",
+      "VertexStreamSHA256": "D5C824BE40B11790585D19426ADD393B6D4ABD300FD78ACF9578FD570BDB7477",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_03.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "2000f821-1663-bdee-dbe7-cf30bc57a337",
+      "Vertices": 227,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "003BC89CB6229304D5BA82A61161061B32537224532051DD032A6A5E15804BDC",
+      "VertexStreamSHA256": "D5C824BE40B11790585D19426ADD393B6D4ABD300FD78ACF9578FD570BDB7477",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_04",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "a9d9fa74-9b67-90fe-11d2-fb94848bd579",
+      "Vertices": 132,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "02E2663F4FB8F1EDD44D9A3AA7D4921579F5BC5A31E5430DDFABC1E20F79C596",
+      "VertexStreamSHA256": "5856B9DF50D7E500A5914D23194755401DDD280C942FF29F3CB776BA2C76FF1A",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_04.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "a9d9fa74-9b67-90fe-11d2-fb94848bd579",
+      "Vertices": 116,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "68AE0BD29C78321DD0733E60DB7396CEDB242552DC4741E9DBEBC09106A819C3",
+      "VertexStreamSHA256": "AF6ED4A083F3E8C7E85BD89DB78C6E45DB075FF81B65BA6F7FE90DC27C0D5C02",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_04.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "a9d9fa74-9b67-90fe-11d2-fb94848bd579",
+      "Vertices": 116,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "68AE0BD29C78321DD0733E60DB7396CEDB242552DC4741E9DBEBC09106A819C3",
+      "VertexStreamSHA256": "AF6ED4A083F3E8C7E85BD89DB78C6E45DB075FF81B65BA6F7FE90DC27C0D5C02",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_04.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "a9d9fa74-9b67-90fe-11d2-fb94848bd579",
+      "Vertices": 116,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "68AE0BD29C78321DD0733E60DB7396CEDB242552DC4741E9DBEBC09106A819C3",
+      "VertexStreamSHA256": "AF6ED4A083F3E8C7E85BD89DB78C6E45DB075FF81B65BA6F7FE90DC27C0D5C02",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_05",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "f4b0765e-4804-81e8-b60b-018d5cebdef5",
+      "Vertices": 3296,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "10D536361D53EC7D57374943899ED5D5AE4958772FCE72D00C27E0899C0FF793",
+      "VertexStreamSHA256": "10A0129F71E2C78D23F8CAE2E0A7E63FA0A6235D31C95274ECB70D8241238420",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_05.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "f4b0765e-4804-81e8-b60b-018d5cebdef5",
+      "Vertices": 2682,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "34401F57F3A0B9E0D14321F680C38906C386D6FA9B3508E024985CBC3986A9B0",
+      "VertexStreamSHA256": "D12E7CDDA7B8E329A435006C20FC1BC636FD29BF0C765B7E34B248090F20F24C",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_05.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "f4b0765e-4804-81e8-b60b-018d5cebdef5",
+      "Vertices": 2682,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "34401F57F3A0B9E0D14321F680C38906C386D6FA9B3508E024985CBC3986A9B0",
+      "VertexStreamSHA256": "D12E7CDDA7B8E329A435006C20FC1BC636FD29BF0C765B7E34B248090F20F24C",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_05.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "f4b0765e-4804-81e8-b60b-018d5cebdef5",
+      "Vertices": 2682,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "34401F57F3A0B9E0D14321F680C38906C386D6FA9B3508E024985CBC3986A9B0",
+      "VertexStreamSHA256": "D12E7CDDA7B8E329A435006C20FC1BC636FD29BF0C765B7E34B248090F20F24C",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_06",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "47349ecb-416e-8581-f970-0f901b5a3950",
+      "Vertices": 688,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "947CA5C544A3BEEB3DD47C0F8C922E3766EB1FA4BDB77C238E639B6AFE1080C6",
+      "VertexStreamSHA256": "4ED4ACC5A681CA82AF91C0335ADDEA7F678098C69A050050A87915378962EB9A",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_06.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "47349ecb-416e-8581-f970-0f901b5a3950",
+      "Vertices": 545,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "291C77B835071EF693D62E00E955B06631F0D80213D0E84B4B8E9D3294AEC5B5",
+      "VertexStreamSHA256": "C69CE98D72D9B53B4ABF4DAD2BF1ED506B23499F776396747BF305D564FE63E5",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_06.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "47349ecb-416e-8581-f970-0f901b5a3950",
+      "Vertices": 545,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "291C77B835071EF693D62E00E955B06631F0D80213D0E84B4B8E9D3294AEC5B5",
+      "VertexStreamSHA256": "C69CE98D72D9B53B4ABF4DAD2BF1ED506B23499F776396747BF305D564FE63E5",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_06.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "47349ecb-416e-8581-f970-0f901b5a3950",
+      "Vertices": 545,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "291C77B835071EF693D62E00E955B06631F0D80213D0E84B4B8E9D3294AEC5B5",
+      "VertexStreamSHA256": "C69CE98D72D9B53B4ABF4DAD2BF1ED506B23499F776396747BF305D564FE63E5",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_07",
+      "Lod": 0,
+      "Flags": [
+        "uses_cloth_simulation"
+      ],
+      "Material": "45d25512-afa7-2c33-1158-f25b9a713425",
+      "Vertices": 8589,
+      "AlphaMin": 0,
+      "AlphaMax": 14,
+      "ColorsSHA256": "884A11874E8F3745347C3D4C775354D4417CC9E49AC16D6DF3FE390F888DC81A",
+      "VertexStreamSHA256": "A9AA50F44C95B8A3BBC190C5E05F1C8A901C614395952C5BE0C6A00FBF427CD5",
+      "ClothMetadataSHA256": "DF0DF36DEC1E3562972B1701506FA3676AA1330A5EFF37393CFA63B50FE9C906"
+    },
+    {
+      "Name": "ww_zhezhi_part_07.lod1",
+      "Lod": 1,
+      "Flags": [
+        "uses_cloth_simulation"
+      ],
+      "Material": "45d25512-afa7-2c33-1158-f25b9a713425",
+      "Vertices": 8589,
+      "AlphaMin": 0,
+      "AlphaMax": 14,
+      "ColorsSHA256": "884A11874E8F3745347C3D4C775354D4417CC9E49AC16D6DF3FE390F888DC81A",
+      "VertexStreamSHA256": "A9AA50F44C95B8A3BBC190C5E05F1C8A901C614395952C5BE0C6A00FBF427CD5",
+      "ClothMetadataSHA256": "DF0DF36DEC1E3562972B1701506FA3676AA1330A5EFF37393CFA63B50FE9C906"
+    },
+    {
+      "Name": "ww_zhezhi_part_07.lod2",
+      "Lod": 2,
+      "Flags": [
+        "uses_cloth_simulation"
+      ],
+      "Material": "45d25512-afa7-2c33-1158-f25b9a713425",
+      "Vertices": 8589,
+      "AlphaMin": 0,
+      "AlphaMax": 14,
+      "ColorsSHA256": "884A11874E8F3745347C3D4C775354D4417CC9E49AC16D6DF3FE390F888DC81A",
+      "VertexStreamSHA256": "A9AA50F44C95B8A3BBC190C5E05F1C8A901C614395952C5BE0C6A00FBF427CD5",
+      "ClothMetadataSHA256": "DF0DF36DEC1E3562972B1701506FA3676AA1330A5EFF37393CFA63B50FE9C906"
+    },
+    {
+      "Name": "ww_zhezhi_part_07.lod3",
+      "Lod": 3,
+      "Flags": [
+        "uses_cloth_simulation"
+      ],
+      "Material": "45d25512-afa7-2c33-1158-f25b9a713425",
+      "Vertices": 8589,
+      "AlphaMin": 0,
+      "AlphaMax": 14,
+      "ColorsSHA256": "884A11874E8F3745347C3D4C775354D4417CC9E49AC16D6DF3FE390F888DC81A",
+      "VertexStreamSHA256": "A9AA50F44C95B8A3BBC190C5E05F1C8A901C614395952C5BE0C6A00FBF427CD5",
+      "ClothMetadataSHA256": "DF0DF36DEC1E3562972B1701506FA3676AA1330A5EFF37393CFA63B50FE9C906"
+    },
+    {
+      "Name": "ww_zhezhi_part_08",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "e5c806f4-8d57-1c0b-f52a-fa933958665c",
+      "Vertices": 36,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "D169F6754229C200BA4838A38E4894C03C47CE8939DB4B7A11C224921B982521",
+      "VertexStreamSHA256": "6C7C795188CBFA3760BEAE946F3DF6C51DE174488FD8BCCB9A921D2BFF8E293E",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_08.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "e5c806f4-8d57-1c0b-f52a-fa933958665c",
+      "Vertices": 28,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "D583AEF59874543A14822C32BE48385B86BD239A918575D36CF695B0EB1E0C1C",
+      "VertexStreamSHA256": "D6AC007C2B1D0FD0B62DE538DE8415264CAE19620FE17614B50797A8D1D34A5F",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_08.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "e5c806f4-8d57-1c0b-f52a-fa933958665c",
+      "Vertices": 27,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "8A4A142CD5B67451FA5F795CC98952B65D0889529440EBEEAA7B04032838AC4A",
+      "VertexStreamSHA256": "1B74507370F50E6AA5E66AF839F85130EFE95CC6EEEBB7D5FE3C18A827B132B4",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_08.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "e5c806f4-8d57-1c0b-f52a-fa933958665c",
+      "Vertices": 27,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "8A4A142CD5B67451FA5F795CC98952B65D0889529440EBEEAA7B04032838AC4A",
+      "VertexStreamSHA256": "1B74507370F50E6AA5E66AF839F85130EFE95CC6EEEBB7D5FE3C18A827B132B4",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_09",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "067bb1d2-9819-1c4d-6b07-36164e25eb88",
+      "Vertices": 16512,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "2BE2F4AFF325BB573D3295BAFAAB4779B605F7F0CF6AF18453BDD01891CE1DBF",
+      "VertexStreamSHA256": "045C8323FD7239ADAABD19765FB3E175E02CD8E13EA4396DED113776712F1A38",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_09.b2",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "067bb1d2-9819-1c4d-6b07-36164e25eb88",
+      "Vertices": 8336,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "A3DFF7AEDF83A6DB6A77A1C29C6D1FB51D549E854080088D1C8F6441537DE193",
+      "VertexStreamSHA256": "51094E098DC691C07951F29548D4203A7A533FA5B1E5AB148A6AF0AF7D8ADB04",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_09.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "067bb1d2-9819-1c4d-6b07-36164e25eb88",
+      "Vertices": 12187,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "C218BC9C00DF05C9100EAFC467B8108692463F275F942E709C958D2CA15B9375",
+      "VertexStreamSHA256": "723C5605B84D60043A4C8EAE8367084C2C9754B17AAB99AFB02D853839E864DA",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_09.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "067bb1d2-9819-1c4d-6b07-36164e25eb88",
+      "Vertices": 8955,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B642AF219B53B5BE09963AEC08D80FC3CAF764006399D24AD07BBEF3AA72E70D",
+      "VertexStreamSHA256": "5983DBD27C4DF6A391C6E77415F2B03264E367412090E1CEA889EE4F51DAF162",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_09.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "067bb1d2-9819-1c4d-6b07-36164e25eb88",
+      "Vertices": 7406,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "321E25F49EA457768791993AB774F1939265BD7EC244FDCF4E8705B9403DDE45",
+      "VertexStreamSHA256": "03CCA2A5BC1CD9B4ABF87623027C7F675B59363B42B851C71F4433CB63C7D286",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_10",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "149ce93b-5392-84f8-49b5-4f7db49ff3b9",
+      "Vertices": 4,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5AC6A5945F16500911219129984BA8B387A06F24FE383CE4E81A73294065461B",
+      "VertexStreamSHA256": "7DCCE5E58A5AB0B1E691EFF4164CBAC95C03CD3682028B247C52CBB38F8544C4",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_10.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "149ce93b-5392-84f8-49b5-4f7db49ff3b9",
+      "Vertices": 4,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5AC6A5945F16500911219129984BA8B387A06F24FE383CE4E81A73294065461B",
+      "VertexStreamSHA256": "7DCCE5E58A5AB0B1E691EFF4164CBAC95C03CD3682028B247C52CBB38F8544C4",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_10.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "149ce93b-5392-84f8-49b5-4f7db49ff3b9",
+      "Vertices": 4,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5AC6A5945F16500911219129984BA8B387A06F24FE383CE4E81A73294065461B",
+      "VertexStreamSHA256": "7DCCE5E58A5AB0B1E691EFF4164CBAC95C03CD3682028B247C52CBB38F8544C4",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_10.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "149ce93b-5392-84f8-49b5-4f7db49ff3b9",
+      "Vertices": 4,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5AC6A5945F16500911219129984BA8B387A06F24FE383CE4E81A73294065461B",
+      "VertexStreamSHA256": "7DCCE5E58A5AB0B1E691EFF4164CBAC95C03CD3682028B247C52CBB38F8544C4",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_11",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "e88996f1-2df6-5b0b-b8ab-7a4f57f5cdd0",
+      "Vertices": 78,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "26E1989C6B3B3E1B905DCC17405A2767A1A3EBBB76B26AE3AC6B16BFD61C031C",
+      "VertexStreamSHA256": "E8EF6ED6196408767B8FB81FA923FA5F008956767F7A28FA314F029171DE4301",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_11.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "e88996f1-2df6-5b0b-b8ab-7a4f57f5cdd0",
+      "Vertices": 78,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "26E1989C6B3B3E1B905DCC17405A2767A1A3EBBB76B26AE3AC6B16BFD61C031C",
+      "VertexStreamSHA256": "E8EF6ED6196408767B8FB81FA923FA5F008956767F7A28FA314F029171DE4301",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_11.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "e88996f1-2df6-5b0b-b8ab-7a4f57f5cdd0",
+      "Vertices": 78,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "26E1989C6B3B3E1B905DCC17405A2767A1A3EBBB76B26AE3AC6B16BFD61C031C",
+      "VertexStreamSHA256": "E8EF6ED6196408767B8FB81FA923FA5F008956767F7A28FA314F029171DE4301",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_11.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "e88996f1-2df6-5b0b-b8ab-7a4f57f5cdd0",
+      "Vertices": 78,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "26E1989C6B3B3E1B905DCC17405A2767A1A3EBBB76B26AE3AC6B16BFD61C031C",
+      "VertexStreamSHA256": "E8EF6ED6196408767B8FB81FA923FA5F008956767F7A28FA314F029171DE4301",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_12",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "4f58723e-51bc-7fc9-b8f6-bd6348d068cc",
+      "Vertices": 916,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "6C3BFDFFFCD588529D710B1A27A4F04C3F92952A4758B4DBCA36CAA4A2236F3A",
+      "VertexStreamSHA256": "F53FC74EFCE62ECD91C3F989D00819C6FC81F8D0DD8FDDBB01F3F05B7735EEE7",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_12.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "4f58723e-51bc-7fc9-b8f6-bd6348d068cc",
+      "Vertices": 663,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "66D4871EC6AFEF22782038B7EFD301976826F4C9A3A3BD6BAF6C551916B46F8D",
+      "VertexStreamSHA256": "F6ABF1C6635CA302BDCAB9E8763881FDA9706C8D49B61463FD2E065FC42E0E73",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_12.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "4f58723e-51bc-7fc9-b8f6-bd6348d068cc",
+      "Vertices": 483,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "D1042AC1B78337A678B0602B1F3380A479B064767C652762A9B6E7D4D2EF5323",
+      "VertexStreamSHA256": "9BD7E5C45BD51F1CF481F4B63CE500E6A2BD34F441BAC2D4C0E0AE6D58046973",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_12.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "4f58723e-51bc-7fc9-b8f6-bd6348d068cc",
+      "Vertices": 388,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "C6EB4D8B178A7E6CF087B39014541D05C6AA45112D83410F5D0F428EDDF70F87",
+      "VertexStreamSHA256": "25043DB4727D99C1F903F892DCA165A8E5795C49BEF1D747E5E33A9EF51E02D9",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_13",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "b7247d14-039c-0e92-dd40-5ce6d9a92d54",
+      "Vertices": 202,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B2A8B07898BCADB8E3E7724707B5A860617EF56E84BFA90964D1429328AE5E7D",
+      "VertexStreamSHA256": "445C7F922012E041EEBED967496C92F2F9EB0F5CB887BA169CABB5A48CAFCCEB",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_13.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "b7247d14-039c-0e92-dd40-5ce6d9a92d54",
+      "Vertices": 194,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "12B0282F3D6BE525428F561A0EE040E0AB621768B1AC08FDB45CC84E2D1891FA",
+      "VertexStreamSHA256": "E12C05E9B2291EBA948D85CA2114CCFCE0682C5759C38A52908BD6C7A43E18A8",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_13.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "b7247d14-039c-0e92-dd40-5ce6d9a92d54",
+      "Vertices": 194,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "12B0282F3D6BE525428F561A0EE040E0AB621768B1AC08FDB45CC84E2D1891FA",
+      "VertexStreamSHA256": "E12C05E9B2291EBA948D85CA2114CCFCE0682C5759C38A52908BD6C7A43E18A8",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_13.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "b7247d14-039c-0e92-dd40-5ce6d9a92d54",
+      "Vertices": 194,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "12B0282F3D6BE525428F561A0EE040E0AB621768B1AC08FDB45CC84E2D1891FA",
+      "VertexStreamSHA256": "E12C05E9B2291EBA948D85CA2114CCFCE0682C5759C38A52908BD6C7A43E18A8",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_14",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "423e7fe7-a347-9ffc-cc09-2fff70a713e8",
+      "Vertices": 1522,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5D46A0A6642D422E74243D5C767626B9C6837A24094DC5BB01603E7CC5F5B4EF",
+      "VertexStreamSHA256": "42F9FF89AD30DA39B5DBCABD7E0578A66DF2CA1E0723332ADCECDB6A16B1FB37",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_14.lod1",
+      "Lod": 1,
+      "Flags": [],
+      "Material": "423e7fe7-a347-9ffc-cc09-2fff70a713e8",
+      "Vertices": 1039,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5088237AE3ABA749716AA871BC07676788C295C0EE0A5384F87EACE1528CEF31",
+      "VertexStreamSHA256": "2512E3536AE679B17C8F76F92ADE42EA2A293123F8106906707616155C1B711A",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_14.lod2",
+      "Lod": 2,
+      "Flags": [],
+      "Material": "423e7fe7-a347-9ffc-cc09-2fff70a713e8",
+      "Vertices": 694,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "3AD6017AE6E5F462A42597561F211CD5A33A5A11E9775D797C6C644389AF806B",
+      "VertexStreamSHA256": "94AD74411DF03DEB2CDD396E1DCAF9B693A5EB9BE9C964E6DC9A52F0DEBAC135",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_part_14.lod3",
+      "Lod": 3,
+      "Flags": [],
+      "Material": "423e7fe7-a347-9ffc-cc09-2fff70a713e8",
+      "Vertices": 418,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "B38FCC447902CB40FCA72A9BA602715639340B382CBED0A4B927A87D61230EA0",
+      "VertexStreamSHA256": "AF0091D038A731042FB90D9B9A534B57FEE13415E1073A2B9CDB4CD8C0DED9EA",
+      "ClothMetadataSHA256": "1FCEE7F5E57B15AF3E9A450D4F0B234CEF0919C8414102593EB27C198CD8FD34"
+    },
+    {
+      "Name": "ww_zhezhi_hidden",
+      "Lod": 0,
+      "Flags": [],
+      "Material": "91fe0f18-1c7a-8f29-3bdc-46714f317973",
+      "Vertices": 4,
+      "AlphaMin": 255,
+      "AlphaMax": 255,
+      "ColorsSHA256": "5AC6A5945F16500911219129984BA8B387A06F24FE383CE4E81A73294065461B",
+      "VertexStreamSHA256": "EF54EFAF0087FF9735322207748957219F28ADC52CAD0EAEE8A20344CDE57CEB",
+      "ClothMetadataSHA256": "4568A9204AC8A39607A1736ABAE190BA5895E76BA2E81A97A2B5959459AB56CB"
+    }
+  ]
+}

@@ -20,7 +20,7 @@ def build_direct_hair(root,input_package=None):
             run(['dotnet','build',project,'--ignore-failed-sources','-p:BaseIntermediateOutputPath='+str(b/(folder+'_obj'))+'/', '-o',b/folder])
         patch=b/'runtime_resource_patch/RuntimeResourcePatch.dll'
     run(['dotnet',patch,'direct-body',input_package,output,prefix,settings_file])
-    dump=b/'direct_hair_input';dump.mkdir(exist_ok=True);run(['dotnet',b/'cloth_probe/NativeClothProbe.dll',output,prefix+'_body','--dump-segments',dump])
+    dump=b/'direct_hair_input'/hashlib.sha256(output.read_bytes()).hexdigest()[:16];dump.mkdir(parents=True,exist_ok=True);run(['dotnet',b/'cloth_probe/NativeClothProbe.dll',output,prefix+'_body','--dump-segments',dump])
     cooked=b/'direct_hair_cooked';cooked.mkdir(exist_ok=True);plans=[]
     for p in sorted(dump.glob('*.mesh.json')):
         mesh=json.loads(p.read_text());extent=np.ptp(np.asarray(mesh['positions']),axis=0);axis=2 if extent[2]>.002 else int(extent.argmax());band=min(c['cloth_proxy_policy']['pin_band_m'],float(extent[axis])*.15)

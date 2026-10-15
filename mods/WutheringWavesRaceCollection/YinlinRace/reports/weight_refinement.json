@@ -1,0 +1,39 @@
+{
+  "model": "YinlinRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 3220,
+      "vertical_band_m": [
+        0.9095674398541451,
+        1.2382618215680123
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "field",
+      "vertices": 1600,
+      "inner_x_m": 0.043253055572509774,
+      "outer_x_m": 0.1730122222900391
+    },
+    {
+      "region": "r_shoulder",
+      "style": "field",
+      "vertices": 955,
+      "inner_x_m": 0.04325312042236329,
+      "outer_x_m": 0.17301248168945316
+    },
+    {
+      "region": "crotch",
+      "vertices": 392,
+      "derived_hip_half_width_m": 0.07837644577026368
+    },
+    {
+      "region": "source_weight_discontinuities",
+      "vertices": 2515,
+      "iterations": 16,
+      "geometry_unchanged": true
+    }
+  ],
+  "geometry_unchanged": true
+}

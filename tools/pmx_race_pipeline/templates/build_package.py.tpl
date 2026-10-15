@@ -17,14 +17,23 @@ spec={'output':str(BUILD/'base.tpac'),'packageGuid':str(uuid.uuid5(uuid.NAMESPAC
  'skeleton':{'tpac':str(NATIVE/'EmAssetPackages/human/human.tpac'),'name':'human_skeleton'}},'textures':[],'materials':[],'meshes':[],'skeletons':[{'name':'emilie_skeleton','template':'skeleton','bones':json.loads((BUILD/'skeleton_spec.json').read_text())}]}
 (BUILD/'tex').mkdir(exist_ok=True);seen={}
 previous=json.loads((BUILD/'spec.json').read_text()) if '--reuse-textures' in sys.argv else None
+cached={}
+if previous:
+    oldtex={t['name']:t for t in previous['textures']};oldmat={m['name']:m for m in previous['materials']}
+    cache_names={'flatnormal':previous['textures'][0]['name'],'flatspecular':previous['textures'][1]['name']}
+    for key,info in json.loads((ROOT/'tex/materials.json').read_text(encoding='utf8')).items():
+        old=oldmat.get('emilie_'+key.lower())
+        if old:cache_names[info['diffuse']]=old['textures']['0']
+    for key,name in cache_names.items():
+        row=oldtex[name];cached[key]=(row,Path(row['blob']).read_bytes())
 def texture(key,a,fmt,alpha=False):
     if key in seen:return seen[key]
     if a.shape[0]%4 or a.shape[1]%4:
         height=1<<(a.shape[0]-1).bit_length();width=1<<(a.shape[1]-1).bit_length()
         a=np.array(Image.fromarray(a).resize((width,height),Image.Resampling.LANCZOS))
     name='emilie_tex_'+str(len(seen));path=BUILD/'tex'/(name+'.bc')
-    if previous:
-        old=previous['textures'][len(seen)];assert old['name']==name and old['format']==fmt and (old['width'],old['height'])==(a.shape[1],a.shape[0]);assert path.is_file();mips=old['mips']
+    if previous and key in cached:
+        old,blob=cached[key];assert old['format']==fmt and (old['width'],old['height'])==(a.shape[1],a.shape[0]);path.write_bytes(blob);mips=old['mips']
     else:
         blob,mips=encode_mips(a,fmt);path.write_bytes(blob)
     spec['textures'].append({'name':name,'template':'tex','blob':str(path),'width':a.shape[1],'height':a.shape[0],'mips':mips,'format':fmt,'flags':[],'systemFlags':['has_alpha'] if alpha else []});seen[key]=name;return name

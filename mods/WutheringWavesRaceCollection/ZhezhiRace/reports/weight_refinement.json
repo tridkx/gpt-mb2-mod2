@@ -1,0 +1,39 @@
+{
+  "model": "ZhezhiRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 7032,
+      "vertical_band_m": [
+        0.9242225533723831,
+        1.1721901208162309
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "field",
+      "vertices": 3726,
+      "inner_x_m": 0.040781448364257816,
+      "outer_x_m": 0.16312579345703127
+    },
+    {
+      "region": "r_shoulder",
+      "style": "field",
+      "vertices": 3728,
+      "inner_x_m": 0.04078152465820313,
+      "outer_x_m": 0.16312609863281252
+    },
+    {
+      "region": "crotch",
+      "vertices": 1399,
+      "derived_hip_half_width_m": 0.07389779567718506
+    },
+    {
+      "region": "source_weight_discontinuities",
+      "vertices": 31224,
+      "iterations": 16,
+      "geometry_unchanged": true
+    }
+  ],
+  "geometry_unchanged": true
+}

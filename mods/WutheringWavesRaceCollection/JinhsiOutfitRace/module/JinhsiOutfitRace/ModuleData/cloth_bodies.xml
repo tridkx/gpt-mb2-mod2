@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf8'?>
+<bodies>
+  <body name="ww_jinhsi_outfit_collision" owner_skeleton="ww_jinhsi_outfit_skeleton">
+    <capsules>
+      <capsule name="ww_jinhsi_outfit_torso_low" length="0.055116" origin="0, 0, 0" frame="-0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, -0.000000, -0.011929, 0.976391, 1.000000">
+        <points>
+          <point radius="0.074099">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.074099">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_jinhsi_outfit_torso_high" length="0.055116" origin="0, 0, 0" frame="-0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, -0.000000, -0.009930, 1.031507, 1.000000">
+        <points>
+          <point radius="0.072299">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.072299">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_jinhsi_outfit_head" length="0.090812" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, -0.045170, 1.451918, 1.000000">
+        <points>
+          <point radius="0.090000">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.090000">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_jinhsi_outfit_neck" length="0.069953" origin="0, 0, 0" frame="-0.000000, 0.088327, 0.996091, 0.000000, 0.000000, 0.996091, -0.088327, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, 0.000000, -0.051349, 1.357496, 1.000000">
+        <points>
+          <point radius="0.034200">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.034200">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_jinhsi_outfit_l_upperarm" length="0.214667" origin="0, 0, 0" frame="-0.801853, 0.019125, -0.597215, 0.000000, 0.015338, 0.999817, 0.011424, 0.000000, 0.597324, 0.000000, -0.802000, 0.000000, -0.101862, -0.068329, 1.317371, 1.000000">
+        <points>
+          <point radius="0.022540">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022540">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_jinhsi_outfit_r_upperarm" length="0.214667" origin="0, 0, 0" frame="0.801853, 0.019127, -0.597215, 0.000000, -0.015340, 0.999817, 0.011425, 0.000000, 0.597324, -0.000000, 0.802000, 0.000000, 0.101862, -0.068329, 1.317371, 1.000000">
+        <points>
+          <point radius="0.022540">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022540">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

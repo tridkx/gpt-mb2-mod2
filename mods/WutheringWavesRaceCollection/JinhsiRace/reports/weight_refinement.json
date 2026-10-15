@@ -1,0 +1,33 @@
+{
+  "model": "JinhsiRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 3121,
+      "vertical_band_m": [
+        0.9174530472606421,
+        1.1776981034129859
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "field",
+      "vertices": 1561,
+      "inner_x_m": 0.0407446403503418,
+      "outer_x_m": 0.1629785614013672
+    },
+    {
+      "region": "r_shoulder",
+      "style": "field",
+      "vertices": 1811,
+      "inner_x_m": 0.04074470520019532,
+      "outer_x_m": 0.16297882080078127
+    },
+    {
+      "region": "crotch",
+      "vertices": 459,
+      "derived_hip_half_width_m": 0.07390935420989991
+    }
+  ],
+  "geometry_unchanged": true
+}

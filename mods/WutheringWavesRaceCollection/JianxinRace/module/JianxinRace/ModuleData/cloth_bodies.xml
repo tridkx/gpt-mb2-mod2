@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf8'?>
+<bodies>
+  <body name="ww_jianxin_collision" owner_skeleton="ww_jianxin_skeleton">
+    <capsules>
+      <capsule name="ww_jianxin_torso_low" length="0.200974" origin="0, 0, 0" frame="-0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, 0.000000, -0.009654, 0.966455, 1.000000">
+        <points>
+          <point radius="0.079240">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.079240">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_jianxin_torso_high" length="0.092316" origin="0, 0, 0" frame="-0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, -0.000000, 0.000000, -0.000000, -0.013378, 1.167430, 1.000000">
+        <points>
+          <point radius="0.060209">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.060209">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_jianxin_head" length="0.035000" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, -0.044526, 1.450699, 1.000000">
+        <points>
+          <point radius="0.045000">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.045000">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_jianxin_neck" length="0.076072" origin="0, 0, 0" frame="-0.000000, 0.080065, 0.996790, 0.000000, 0.000000, 0.996790, -0.080065, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, 0.000000, -0.050617, 1.342124, 1.000000">
+        <points>
+          <point radius="0.017100">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.017100">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_jianxin_l_upperarm" length="0.211605" origin="0, 0, 0" frame="-0.729647, 0.009429, -0.683759, 0.000000, 0.006880, 0.999956, 0.006447, 0.000000, 0.683789, 0.000000, -0.729679, 0.000000, -0.100409, -0.067355, 1.302572, 1.000000">
+        <points>
+          <point radius="0.022219">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022219">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_jianxin_r_upperarm" length="0.211605" origin="0, 0, 0" frame="0.729646, 0.009430, -0.683760, 0.000000, -0.006881, 0.999956, 0.006448, 0.000000, 0.683790, -0.000000, 0.729679, 0.000000, 0.100409, -0.067355, 1.302572, 1.000000">
+        <points>
+          <point radius="0.022219">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022219">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

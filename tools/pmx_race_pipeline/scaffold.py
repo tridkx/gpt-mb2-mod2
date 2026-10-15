@@ -3,7 +3,7 @@ import json,shutil,subprocess,hashlib
 from pathlib import Path
 from context import SERIES,config,execute,workspace_root
 def scaffold(root):
-    c=config(root);w=workspace_root(root);tools=root/'tools';runtime=tools/'UIRuntime';runtime.mkdir(exist_ok=True);template=Path(__file__).parent/'templates'
+    root=Path(root).resolve();c=config(root);w=workspace_root(root);tools=root/'tools';runtime=tools/'UIRuntime';runtime.mkdir(exist_ok=True);template=Path(__file__).parent/'templates'
     for name in ['Runtime.cs','UIRuntime.csproj']:
         template_name='UIRuntime.cs.tpl' if name=='Runtime.cs' else 'UIRuntime.csproj.tpl'
         code=(template/template_name).read_text(encoding='utf-8-sig').replace('EmilieRace',c['id']).replace('emilie',c['prefix']);(runtime/name).write_text(code,encoding='utf8')

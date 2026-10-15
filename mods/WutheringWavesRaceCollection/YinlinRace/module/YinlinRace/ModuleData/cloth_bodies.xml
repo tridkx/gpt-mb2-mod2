@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf8'?>
+<bodies>
+  <body name="ww_yinlin_collision" owner_skeleton="ww_yinlin_skeleton">
+    <capsules>
+      <capsule name="ww_yinlin_torso_low" length="0.108217" origin="0, 0, 0" frame="-0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, 0.000000, -0.003113, 1.040045, 1.000000">
+        <points>
+          <point radius="0.067368">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.067368">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_yinlin_torso_high" length="0.108217" origin="0, 0, 0" frame="-0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, -0.000000, 0.004284, 1.148262, 1.000000">
+        <points>
+          <point radius="0.085000">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.085000">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_yinlin_head" length="0.087387" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, -0.047951, 1.560168, 1.000000">
+        <points>
+          <point radius="0.090000">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.090000">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_yinlin_neck" length="0.081924" origin="0, 0, 0" frame="-0.000000, 0.080065, 0.996790, 0.000000, 0.000000, 0.996790, -0.080065, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, 0.000000, -0.054510, 1.444611, 1.000000">
+        <points>
+          <point radius="0.034200">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.034200">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_yinlin_l_upperarm" length="0.227882" origin="0, 0, 0" frame="-0.752057, -0.012525, -0.658979, 0.000000, -0.009420, 0.999922, -0.008254, 0.000000, 0.659031, 0.000000, -0.752116, 0.000000, -0.108133, -0.072536, 1.402016, 1.000000">
+        <points>
+          <point radius="0.023928">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.023928">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_yinlin_r_upperarm" length="0.227882" origin="0, 0, 0" frame="0.752057, -0.012524, -0.658979, 0.000000, 0.009419, 0.999922, -0.008254, 0.000000, 0.659031, -0.000000, 0.752116, 0.000000, 0.108133, -0.072536, 1.402016, 1.000000">
+        <points>
+          <point radius="0.023928">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.023928">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

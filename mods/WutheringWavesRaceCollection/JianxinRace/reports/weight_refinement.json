@@ -1,0 +1,39 @@
+{
+  "model": "JianxinRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 4099,
+      "vertical_band_m": [
+        0.8410121077299118,
+        1.2574297255277636
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "field",
+      "vertices": 1112,
+      "inner_x_m": 0.040163551330566406,
+      "outer_x_m": 0.16065420532226563
+    },
+    {
+      "region": "r_shoulder",
+      "style": "field",
+      "vertices": 540,
+      "inner_x_m": 0.04016361618041993,
+      "outer_x_m": 0.1606544647216797
+    },
+    {
+      "region": "crotch",
+      "vertices": 431,
+      "derived_hip_half_width_m": 0.07277812004089355
+    },
+    {
+      "region": "source_weight_discontinuities",
+      "vertices": 5046,
+      "iterations": 16,
+      "geometry_unchanged": true
+    }
+  ],
+  "geometry_unchanged": true
+}

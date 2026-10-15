@@ -1,0 +1,39 @@
+{
+  "model": "ChangliRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 7134,
+      "vertical_band_m": [
+        0.9692088461527599,
+        1.2293969488749281
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "field",
+      "vertices": 3955,
+      "inner_x_m": 0.041069107055664064,
+      "outer_x_m": 0.16427642822265626
+    },
+    {
+      "region": "r_shoulder",
+      "style": "field",
+      "vertices": 4004,
+      "inner_x_m": 0.041069107055664064,
+      "outer_x_m": 0.16427642822265626
+    },
+    {
+      "region": "crotch",
+      "vertices": 1697,
+      "derived_hip_half_width_m": 0.08453842163085938
+    },
+    {
+      "region": "source_weight_discontinuities",
+      "vertices": 11921,
+      "iterations": 16,
+      "geometry_unchanged": true
+    }
+  ],
+  "geometry_unchanged": true
+}

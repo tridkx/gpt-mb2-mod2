@@ -1,0 +1,5553 @@
+{
+  "status": "pass",
+  "mode": "direct_visible_hair",
+  "package_sha256": "cc54d2fcedb3c5ca39ef77e0962325f2038565643329122fc3a1b92092628fe4",
+  "uses_mapped_proxy": false,
+  "driver_metamesh_removed": true,
+  "lods": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "meshes": [
+    {
+      "mesh": "ww_jinhsi_part_22.lod3",
+      "guid": "02b20cfd-5b85-1dca-e04f-b1ea4184c6d3",
+      "metamesh": "ww_jinhsi_body",
+      "lod": 3,
+      "bytes": 19920,
+      "render_vertices": 283,
+      "simulation_vertices": 228,
+      "fixed_positions": 123,
+      "boundary_fixed_positions": 16,
+      "active_positions": 105,
+      "stretch_constraints": 328,
+      "bend_constraints": 344,
+      "shear_constraints": 0,
+      "parallel_sets": 16,
+      "dummy_sets": 9,
+      "max_geodesic_anchor_length": 0.1974749110641505,
+      "sha256": "f4f5296cf39b4ccd1cd50f5acedaf71e8b11a9aedcd010ce73673d6e5a9c000b",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiRace\\build\\direct_hair_cooked\\02b20cfd-5b85-1dca-e04f-b1ea4184c6d3.bin"
+    },
+    {
+      "mesh": "ww_jinhsi_part_23.lod3",
+      "guid": "0fc42090-1c8b-137d-c503-d6dbca301550",
+      "metamesh": "ww_jinhsi_body",
+      "lod": 3,
+      "bytes": 11692,
+      "render_vertices": 120,
+      "simulation_vertices": 96,
+      "fixed_positions": 13,
+      "boundary_fixed_positions": 6,
+      "active_positions": 83,
+      "stretch_constraints": 252,
+      "bend_constraints": 240,
+      "shear_constraints": 0,
+      "parallel_sets": 25,
+      "dummy_sets": 13,
+      "max_geodesic_anchor_length": 0.3842825767674527,
+      "sha256": "7059b6dace1992b06b31fd9a1d05622ebd238318e79d62ab2c1f9b6c73a1d0fa",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiRace\\build\\direct_hair_cooked\\0fc42090-1c8b-137d-c503-d6dbca301550.bin"
+    },
+    {
+      "mesh": "ww_jinhsi_part_22",
+      "guid": "2bd97503-2a14-7c7a-dbc6-a152ac7f0d7d",
+      "metamesh": "ww_jinhsi_body",
+      "lod": 0,
+      "bytes": 19920,
+      "render_vertices": 283,
+      "simulation_vertices": 228,
+      "fixed_positions": 123,
+      "boundary_fixed_positions": 16,
+      "active_positions": 105,
+      "stretch_constraints": 328,
+      "bend_constraints": 344,
+      "shear_constraints": 0,
+      "parallel_sets": 16,
+      "dummy_sets": 9,
+      "max_geodesic_anchor_length": 0.1974749110641505,
+      "sha256": "f4f5296cf39b4ccd1cd50f5acedaf71e8b11a9aedcd010ce73673d6e5a9c000b",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiRace\\build\\direct_hair_cooked\\2bd97503-2a14-7c7a-dbc6-a152ac7f0d7d.bin"
+    },
+    {
+      "mesh": "ww_jinhsi_part_23.lod2",
+      "guid": "5b8bcc91-276b-8197-dd97-9fcc0fc9d642",
+      "metamesh": "ww_jinhsi_body",
+      "lod": 2,
+      "bytes": 11692,
+      "render_vertices": 120,
+      "simulation_vertices": 96,
+      "fixed_positions": 13,
+      "boundary_fixed_positions": 6,
+      "active_positions": 83,
+      "stretch_constraints": 252,
+      "bend_constraints": 240,
+      "shear_constraints": 0,
+      "parallel_sets": 25,
+      "dummy_sets": 13,
+      "max_geodesic_anchor_length": 0.3842825767674527,
+      "sha256": "7059b6dace1992b06b31fd9a1d05622ebd238318e79d62ab2c1f9b6c73a1d0fa",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiRace\\build\\direct_hair_cooked\\5b8bcc91-276b-8197-dd97-9fcc0fc9d642.bin"
+    },
+    {
+      "mesh": "ww_jinhsi_part_24.lod3",
+      "guid": "5c6f999a-30c2-9202-2efb-2a99cdbeaddf",
+      "metamesh": "ww_jinhsi_body",
+      "lod": 3,
+      "bytes": 34684,
+      "render_vertices": 488,
+      "simulation_vertices": 448,
+      "fixed_positions": 212,
+      "boundary_fixed_positions": 144,
+      "active_positions": 236,
+      "stretch_constraints": 598,
+      "bend_constraints": 402,
+      "shear_constraints": 0,
+      "parallel_sets": 15,
+      "dummy_sets": 8,
+      "max_geodesic_anchor_length": 0.1188153830631475,
+      "sha256": "96865e6ace5a07a06e1124bb311e2bc52a83d603cca38c84ece46a54bad5588a",
+      "root_fixes": [
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            64,
+            68,
+            69,
+            71,
+            72
+          ],
+          "bounds": [
+            [
+              0.26587903,
+              -0.44186863,
+              0.56036735
+            ],
+            [
+              0.28330234,
+              -0.42388403,
+              0.5817513
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            77,
+            80,
+            81
+          ],
+          "bounds": [
+            [
+              0.24437298,
+              -0.40611848,
+              0.54646444
+            ],
+            [
+              0.25733763,
+              -0.3945116,
+              0.5763703
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            86,
+            89,
+            90
+          ],
+          "bounds": [
+            [
+              0.2315456,
+              -0.4141317,
+              0.548613
+            ],
+            [
+              0.24702142,
+              -0.40473518,
+              0.5772145
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            95,
+            98,
+            99
+          ],
+          "bounds": [
+            [
+              0.25690082,
+              -0.40653858,
+              0.54738146
+            ],
+            [
+              0.26910028,
+              -0.39428973,
+              0.57671505
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            104,
+            106,
+            107,
+            108
+          ],
+          "bounds": [
+            [
+              0.22542144,
+              -0.4272169,
+              0.55300653
+            ],
+            [
+              0.24377264,
+              -0.4145344,
+              0.5789251
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            113,
+            115,
+            116,
+            117
+          ],
+          "bounds": [
+            [
+              0.23152114,
+              -0.4424493,
+              0.5579667
+            ],
+            [
+              0.2466449,
+              -0.42419538,
+              0.58084875
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            122,
+            125,
+            126
+          ],
+          "bounds": [
+            [
+              0.26620406,
+              -0.41501603,
+              0.5510137
+            ],
+            [
+              0.2833268,
+              -0.403826,
+              0.578117
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            131,
+            132,
+            134,
+            135
+          ],
+          "bounds": [
+            [
+              0.26861417,
+              -0.42711267,
+              0.5559739
+            ],
+            [
+              0.2894265,
+              -0.41425815,
+              0.58004063
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            136,
+            140,
+            141,
+            142,
+            143,
+            144
+          ],
+          "bounds": [
+            [
+              0.25632223,
+              -0.45332214,
+              0.562516
+            ],
+            [
+              0.26929608,
+              -0.42889857,
+              0.58259547
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            145,
+            149,
+            151,
+            152,
+            153
+          ],
+          "bounds": [
+            [
+              0.24455956,
+              -0.45354396,
+              0.56159896
+            ],
+            [
+              0.25638017,
+              -0.4290281,
+              0.58225065
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            154,
+            158,
+            160,
+            161,
+            162
+          ],
+          "bounds": [
+            [
+              0.23739849,
+              -0.44764096,
+              0.57020193
+            ],
+            [
+              0.2504408,
+              -0.42521766,
+              0.5901344
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            167,
+            170,
+            171
+          ],
+          "bounds": [
+            [
+              0.23743342,
+              -0.4068332,
+              0.5568431
+            ],
+            [
+              0.250474,
+              -0.39553443,
+              0.58512473
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            176,
+            178,
+            179,
+            180
+          ],
+          "bounds": [
+            [
+              0.22535937,
+              -0.41829997,
+              0.560412
+            ],
+            [
+              0.24392565,
+              -0.40636784,
+              0.5864699
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            181,
+            185,
+            186,
+            188,
+            189
+          ],
+          "bounds": [
+            [
+              0.26762655,
+              -0.43164685,
+              0.568443
+            ],
+            [
+              0.28851002,
+              -0.41672492,
+              0.5894459
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            190,
+            194,
+            196,
+            197,
+            198
+          ],
+          "bounds": [
+            [
+              0.22534603,
+              -0.432219,
+              0.56551456
+            ],
+            [
+              0.24396561,
+              -0.41737446,
+              0.5883834
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            199,
+            203,
+            204,
+            205,
+            206,
+            207
+          ],
+          "bounds": [
+            [
+              0.24942714,
+              -0.4535724,
+              0.5726837
+            ],
+            [
+              0.26294455,
+              -0.42739782,
+              0.591054
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            212,
+            215,
+            216
+          ],
+          "bounds": [
+            [
+              0.26154655,
+              -0.40687096,
+              0.558653
+            ],
+            [
+              0.27647093,
+              -0.39509678,
+              0.58578146
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            221,
+            222,
+            224,
+            225
+          ],
+          "bounds": [
+            [
+              0.26758662,
+              -0.418751,
+              0.56334037
+            ],
+            [
+              0.28852335,
+              -0.40570405,
+              0.58753246
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            230,
+            233,
+            234
+          ],
+          "bounds": [
+            [
+              0.24981824,
+              -0.403273,
+              0.5561713
+            ],
+            [
+              0.2633343,
+              -0.38916528,
+              0.58486176
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            235,
+            239,
+            240,
+            241,
+            242,
+            243
+          ],
+          "bounds": [
+            [
+              0.2615075,
+              -0.44720304,
+              0.5720118
+            ],
+            [
+              0.27643597,
+              -0.4249706,
+              0.59079105
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            308,
+            312,
+            313,
+            315,
+            316
+          ],
+          "bounds": [
+            [
+              -0.2833013,
+              -0.44186747,
+              0.5603669
+            ],
+            [
+              -0.26587802,
+              -0.4238829,
+              0.58175087
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            322,
+            324,
+            325
+          ],
+          "bounds": [
+            [
+              -0.2573366,
+              -0.40611726,
+              0.5464642
+            ],
+            [
+              -0.24437194,
+              -0.39451045,
+              0.57637
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            331,
+            333,
+            334
+          ],
+          "bounds": [
+            [
+              -0.24702042,
+              -0.41413045,
+              0.5486128
+            ],
+            [
+              -0.23154451,
+              -0.40473405,
+              0.5772142
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            340,
+            342,
+            343
+          ],
+          "bounds": [
+            [
+              -0.26909927,
+              -0.40653756,
+              0.5473811
+            ],
+            [
+              -0.25689983,
+              -0.3942886,
+              0.5767147
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            349,
+            350,
+            351,
+            352
+          ],
+          "bounds": [
+            [
+              -0.24377164,
+              -0.42721522,
+              0.5530063
+            ],
+            [
+              -0.22542036,
+              -0.4145329,
+              0.5789248
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            358,
+            359,
+            360,
+            361
+          ],
+          "bounds": [
+            [
+              -0.24664389,
+              -0.44244817,
+              0.5579665
+            ],
+            [
+              -0.23152009,
+              -0.4241942,
+              0.5808484
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            367,
+            369,
+            370
+          ],
+          "bounds": [
+            [
+              -0.28332573,
+              -0.4150147,
+              0.55101335
+            ],
+            [
+              -0.26620305,
+              -0.4038248,
+              0.57811666
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            375,
+            376,
+            378,
+            379
+          ],
+          "bounds": [
+            [
+              -0.28942546,
+              -0.4271114,
+              0.5559735
+            ],
+            [
+              -0.2686132,
+              -0.41425723,
+              0.5800403
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            380,
+            384,
+            385,
+            386,
+            387,
+            388
+          ],
+          "bounds": [
+            [
+              -0.26929504,
+              -0.45332104,
+              0.5625156
+            ],
+            [
+              -0.2563212,
+              -0.4288975,
+              0.58259505
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            389,
+            394,
+            395,
+            396,
+            397
+          ],
+          "bounds": [
+            [
+              -0.25637913,
+              -0.45354295,
+              0.56159866
+            ],
+            [
+              -0.24455854,
+              -0.42902705,
+              0.58225036
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            398,
+            403,
+            404,
+            405,
+            406
+          ],
+          "bounds": [
+            [
+              -0.25043985,
+              -0.44763985,
+              0.57020164
+            ],
+            [
+              -0.23739745,
+              -0.42521653,
+              0.590134
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            412,
+            414,
+            415
+          ],
+          "bounds": [
+            [
+              -0.250473,
+              -0.4068321,
+              0.55684286
+            ],
+            [
+              -0.23743233,
+              -0.39553347,
+              0.58512443
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            421,
+            422,
+            423,
+            424
+          ],
+          "bounds": [
+            [
+              -0.24392469,
+              -0.41829884,
+              0.56041175
+            ],
+            [
+              -0.2253583,
+              -0.40636677,
+              0.5864696
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            425,
+            429,
+            430,
+            432,
+            433
+          ],
+          "bounds": [
+            [
+              -0.28850898,
+              -0.4316459,
+              0.5684425
+            ],
+            [
+              -0.2676256,
+              -0.41672385,
+              0.58944553
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            434,
+            439,
+            440,
+            441,
+            442
+          ],
+          "bounds": [
+            [
+              -0.24396463,
+              -0.4322179,
+              0.5655143
+            ],
+            [
+              -0.22534499,
+              -0.4173733,
+              0.5883831
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            443,
+            447,
+            448,
+            449,
+            450,
+            451
+          ],
+          "bounds": [
+            [
+              -0.26294357,
+              -0.45357117,
+              0.5726834
+            ],
+            [
+              -0.24942616,
+              -0.42739677,
+              0.59105366
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            457,
+            459,
+            460
+          ],
+          "bounds": [
+            [
+              -0.2764699,
+              -0.4068698,
+              0.5586526
+            ],
+            [
+              -0.2615456,
+              -0.39509568,
+              0.5857811
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            465,
+            466,
+            468,
+            469
+          ],
+          "bounds": [
+            [
+              -0.28852233,
+              -0.41874984,
+              0.5633399
+            ],
+            [
+              -0.26758566,
+              -0.4057029,
+              0.5875321
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            475,
+            477,
+            478
+          ],
+          "bounds": [
+            [
+              -0.26333326,
+              -0.40327185,
+              0.55617094
+            ],
+            [
+              -0.24981718,
+              -0.3891642,
+              0.58486146
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            479,
+            483,
+            484,
+            485,
+            486,
+            487
+          ],
+          "bounds": [
+            [
+              -0.27643496,
+              -0.44720203,
+              0.5720114
+            ],
+            [
+              -0.26150653,
+              -0.42496958,
+              0.5907907
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        64,
+        68,
+        69,
+        71,
+        72,
+        77,
+        80,
+        81,
+        86,
+        89,
+        90,
+        95,
+        98,
+        99,
+        104,
+        106,
+        107,
+        108,
+        113,
+        115,
+        116,
+        117,
+        122,
+        125,
+        126,
+        131,
+        132,
+        134,
+        135,
+        136,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        149,
+        151,
+        152,
+        153,
+        154,
+        158,
+        160,
+        161,
+        162,
+        167,
+        170,
+        171,
+        176,
+        178,
+        179,
+        180,
+        181,
+        185,
+        186,
+        188,
+        189,
+        190,
+        194,
+        196,
+        197,
+        198,
+        199,
+        203,
+        204,
+        205,
+        206,
+        207,
+        212,
+        215,
+        216,
+        221,
+        222,
+        224,
+        225,
+        230,
+        233,
+        234,
+        235,
+        239,
+        240,
+        241,
+        242,
+        243,
+        308,
+        312,
+        313,
+        315,
+        316,
+        322,
+        324,
+        325,
+        331,
+        333,
+        334,
+        340,
+        342,
+        343,
+        349,
+        350,
+        351,
+        352,
+        358,
+        359,
+        360,
+        361,
+        367,
+        369,
+        370,
+        375,
+        376,
+        378,
+        379,
+        380,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        394,
+        395,
+        396,
+        397,
+        398,
+        403,
+        404,
+        405,
+        406,
+        412,
+        414,
+        415,
+        421,
+        422,
+        423,
+        424,
+        425,
+        429,
+        430,
+        432,
+        433,
+        434,
+        439,
+        440,
+        441,
+        442,
+        443,
+        447,
+        448,
+        449,
+        450,
+        451,
+        457,
+        459,
+        460,
+        465,
+        466,
+        468,
+        469,
+        475,
+        477,
+        478,
+        479,
+        483,
+        484,
+        485,
+        486,
+        487
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiRace\\build\\direct_hair_cooked\\5c6f999a-30c2-9202-2efb-2a99cdbeaddf.bin"
+    },
+    {
+      "mesh": "ww_jinhsi_part_24",
+      "guid": "7970771e-6312-fe25-9b77-ccbdb9de693c",
+      "metamesh": "ww_jinhsi_body",
+      "lod": 0,
+      "bytes": 34684,
+      "render_vertices": 488,
+      "simulation_vertices": 448,
+      "fixed_positions": 212,
+      "boundary_fixed_positions": 144,
+      "active_positions": 236,
+      "stretch_constraints": 598,
+      "bend_constraints": 402,
+      "shear_constraints": 0,
+      "parallel_sets": 15,
+      "dummy_sets": 8,
+      "max_geodesic_anchor_length": 0.1188153830631475,
+      "sha256": "96865e6ace5a07a06e1124bb311e2bc52a83d603cca38c84ece46a54bad5588a",
+      "root_fixes": [
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            64,
+            68,
+            69,
+            71,
+            72
+          ],
+          "bounds": [
+            [
+              0.26587903,
+              -0.44186863,
+              0.56036735
+            ],
+            [
+              0.28330234,
+              -0.42388403,
+              0.5817513
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            77,
+            80,
+            81
+          ],
+          "bounds": [
+            [
+              0.24437298,
+              -0.40611848,
+              0.54646444
+            ],
+            [
+              0.25733763,
+              -0.3945116,
+              0.5763703
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            86,
+            89,
+            90
+          ],
+          "bounds": [
+            [
+              0.2315456,
+              -0.4141317,
+              0.548613
+            ],
+            [
+              0.24702142,
+              -0.40473518,
+              0.5772145
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            95,
+            98,
+            99
+          ],
+          "bounds": [
+            [
+              0.25690082,
+              -0.40653858,
+              0.54738146
+            ],
+            [
+              0.26910028,
+              -0.39428973,
+              0.57671505
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            104,
+            106,
+            107,
+            108
+          ],
+          "bounds": [
+            [
+              0.22542144,
+              -0.4272169,
+              0.55300653
+            ],
+            [
+              0.24377264,
+              -0.4145344,
+              0.5789251
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            113,
+            115,
+            116,
+            117
+          ],
+          "bounds": [
+            [
+              0.23152114,
+              -0.4424493,
+              0.5579667
+            ],
+            [
+              0.2466449,
+              -0.42419538,
+              0.58084875
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            122,
+            125,
+            126
+          ],
+          "bounds": [
+            [
+              0.26620406,
+              -0.41501603,
+              0.5510137
+            ],
+            [
+              0.2833268,
+              -0.403826,
+              0.578117
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            131,
+            132,
+            134,
+            135
+          ],
+          "bounds": [
+            [
+              0.26861417,
+              -0.42711267,
+              0.5559739
+            ],
+            [
+              0.2894265,
+              -0.41425815,
+              0.58004063
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            136,
+            140,
+            141,
+            142,
+            143,
+            144
+          ],
+          "bounds": [
+            [
+              0.25632223,
+              -0.45332214,
+              0.562516
+            ],
+            [
+              0.26929608,
+              -0.42889857,
+              0.58259547
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            145,
+            149,
+            151,
+            152,
+            153
+          ],
+          "bounds": [
+            [
+              0.24455956,
+              -0.45354396,
+              0.56159896
+            ],
+            [
+              0.25638017,
+              -0.4290281,
+              0.58225065
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            154,
+            158,
+            160,
+            161,
+            162
+          ],
+          "bounds": [
+            [
+              0.23739849,
+              -0.44764096,
+              0.57020193
+            ],
+            [
+              0.2504408,
+              -0.42521766,
+              0.5901344
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            167,
+            170,
+            171
+          ],
+          "bounds": [
+            [
+              0.23743342,
+              -0.4068332,
+              0.5568431
+            ],
+            [
+              0.250474,
+              -0.39553443,
+              0.58512473
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            176,
+            178,
+            179,
+            180
+          ],
+          "bounds": [
+            [
+              0.22535937,
+              -0.41829997,
+              0.560412
+            ],
+            [
+              0.24392565,
+              -0.40636784,
+              0.5864699
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            181,
+            185,
+            186,
+            188,
+            189
+          ],
+          "bounds": [
+            [
+              0.26762655,
+              -0.43164685,
+              0.568443
+            ],
+            [
+              0.28851002,
+              -0.41672492,
+              0.5894459
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            190,
+            194,
+            196,
+            197,
+            198
+          ],
+          "bounds": [
+            [
+              0.22534603,
+              -0.432219,
+              0.56551456
+            ],
+            [
+              0.24396561,
+              -0.41737446,
+              0.5883834
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            199,
+            203,
+            204,
+            205,
+            206,
+            207
+          ],
+          "bounds": [
+            [
+              0.24942714,
+              -0.4535724,
+              0.5726837
+            ],
+            [
+              0.26294455,
+              -0.42739782,
+              0.591054
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            212,
+            215,
+            216
+          ],
+          "bounds": [
+            [
+              0.26154655,
+              -0.40687096,
+              0.558653
+            ],
+            [
+              0.27647093,
+              -0.39509678,
+              0.58578146
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            221,
+            222,
+            224,
+            225
+          ],
+          "bounds": [
+            [
+              0.26758662,
+              -0.418751,
+              0.56334037
+            ],
+            [
+              0.28852335,
+              -0.40570405,
+              0.58753246
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            230,
+            233,
+            234
+          ],
+          "bounds": [
+            [
+              0.24981824,
+              -0.403273,
+              0.5561713
+            ],
+            [
+              0.2633343,
+              -0.38916528,
+              0.58486176
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            235,
+            239,
+            240,
+            241,
+            242,
+            243
+          ],
+          "bounds": [
+            [
+              0.2615075,
+              -0.44720304,
+              0.5720118
+            ],
+            [
+              0.27643597,
+              -0.4249706,
+              0.59079105
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            308,
+            312,
+            313,
+            315,
+            316
+          ],
+          "bounds": [
+            [
+              -0.2833013,
+              -0.44186747,
+              0.5603669
+            ],
+            [
+              -0.26587802,
+              -0.4238829,
+              0.58175087
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            322,
+            324,
+            325
+          ],
+          "bounds": [
+            [
+              -0.2573366,
+              -0.40611726,
+              0.5464642
+            ],
+            [
+              -0.24437194,
+              -0.39451045,
+              0.57637
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            331,
+            333,
+            334
+          ],
+          "bounds": [
+            [
+              -0.24702042,
+              -0.41413045,
+              0.5486128
+            ],
+            [
+              -0.23154451,
+              -0.40473405,
+              0.5772142
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            340,
+            342,
+            343
+          ],
+          "bounds": [
+            [
+              -0.26909927,
+              -0.40653756,
+              0.5473811
+            ],
+            [
+              -0.25689983,
+              -0.3942886,
+              0.5767147
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            349,
+            350,
+            351,
+            352
+          ],
+          "bounds": [
+            [
+              -0.24377164,
+              -0.42721522,
+              0.5530063
+            ],
+            [
+              -0.22542036,
+              -0.4145329,
+              0.5789248
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            358,
+            359,
+            360,
+            361
+          ],
+          "bounds": [
+            [
+              -0.24664389,
+              -0.44244817,
+              0.5579665
+            ],
+            [
+              -0.23152009,
+              -0.4241942,
+              0.5808484
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            367,
+            369,
+            370
+          ],
+          "bounds": [
+            [
+              -0.28332573,
+              -0.4150147,
+              0.55101335
+            ],
+            [
+              -0.26620305,
+              -0.4038248,
+              0.57811666
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            375,
+            376,
+            378,
+            379
+          ],
+          "bounds": [
+            [
+              -0.28942546,
+              -0.4271114,
+              0.5559735
+            ],
+            [
+              -0.2686132,
+              -0.41425723,
+              0.5800403
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            380,
+            384,
+            385,
+            386,
+            387,
+            388
+          ],
+          "bounds": [
+            [
+              -0.26929504,
+              -0.45332104,
+              0.5625156
+            ],
+            [
+              -0.2563212,
+              -0.4288975,
+              0.58259505
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            389,
+            394,
+            395,
+            396,
+            397
+          ],
+          "bounds": [
+            [
+              -0.25637913,
+              -0.45354295,
+              0.56159866
+            ],
+            [
+              -0.24455854,
+              -0.42902705,
+              0.58225036
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            398,
+            403,
+            404,
+            405,
+            406
+          ],
+          "bounds": [
+            [
+              -0.25043985,
+              -0.44763985,
+              0.57020164
+            ],
+            [
+              -0.23739745,
+              -0.42521653,
+              0.590134
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            412,
+            414,
+            415
+          ],
+          "bounds": [
+            [
+              -0.250473,
+              -0.4068321,
+              0.55684286
+            ],
+            [
+              -0.23743233,
+              -0.39553347,
+              0.58512443
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            421,
+            422,
+            423,
+            424
+          ],
+          "bounds": [
+            [
+              -0.24392469,
+              -0.41829884,
+              0.56041175
+            ],
+            [
+              -0.2253583,
+              -0.40636677,
+              0.5864696
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            425,
+            429,
+            430,
+            432,
+            433
+          ],
+          "bounds": [
+            [
+              -0.28850898,
+              -0.4316459,
+              0.5684425
+            ],
+            [
+              -0.2676256,
+              -0.41672385,
+              0.58944553
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            434,
+            439,
+            440,
+            441,
+            442
+          ],
+          "bounds": [
+            [
+              -0.24396463,
+              -0.4322179,
+              0.5655143
+            ],
+            [
+              -0.22534499,
+              -0.4173733,
+              0.5883831
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            443,
+            447,
+            448,
+            449,
+            450,
+            451
+          ],
+          "bounds": [
+            [
+              -0.26294357,
+              -0.45357117,
+              0.5726834
+            ],
+            [
+              -0.24942616,
+              -0.42739677,
+              0.59105366
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            457,
+            459,
+            460
+          ],
+          "bounds": [
+            [
+              -0.2764699,
+              -0.4068698,
+              0.5586526
+            ],
+            [
+              -0.2615456,
+              -0.39509568,
+              0.5857811
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            465,
+            466,
+            468,
+            469
+          ],
+          "bounds": [
+            [
+              -0.28852233,
+              -0.41874984,
+              0.5633399
+            ],
+            [
+              -0.26758566,
+              -0.4057029,
+              0.5875321
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            475,
+            477,
+            478
+          ],
+          "bounds": [
+            [
+              -0.26333326,
+              -0.40327185,
+              0.55617094
+            ],
+            [
+              -0.24981718,
+              -0.3891642,
+              0.58486146
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            479,
+            483,
+            484,
+            485,
+            486,
+            487
+          ],
+          "bounds": [
+            [
+              -0.27643496,
+              -0.44720203,
+              0.5720114
+            ],
+            [
+              -0.26150653,
+              -0.42496958,
+              0.5907907
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        64,
+        68,
+        69,
+        71,
+        72,
+        77,
+        80,
+        81,
+        86,
+        89,
+        90,
+        95,
+        98,
+        99,
+        104,
+        106,
+        107,
+        108,
+        113,
+        115,
+        116,
+        117,
+        122,
+        125,
+        126,
+        131,
+        132,
+        134,
+        135,
+        136,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        149,
+        151,
+        152,
+        153,
+        154,
+        158,
+        160,
+        161,
+        162,
+        167,
+        170,
+        171,
+        176,
+        178,
+        179,
+        180,
+        181,
+        185,
+        186,
+        188,
+        189,
+        190,
+        194,
+        196,
+        197,
+        198,
+        199,
+        203,
+        204,
+        205,
+        206,
+        207,
+        212,
+        215,
+        216,
+        221,
+        222,
+        224,
+        225,
+        230,
+        233,
+        234,
+        235,
+        239,
+        240,
+        241,
+        242,
+        243,
+        308,
+        312,
+        313,
+        315,
+        316,
+        322,
+        324,
+        325,
+        331,
+        333,
+        334,
+        340,
+        342,
+        343,
+        349,
+        350,
+        351,
+        352,
+        358,
+        359,
+        360,
+        361,
+        367,
+        369,
+        370,
+        375,
+        376,
+        378,
+        379,
+        380,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        394,
+        395,
+        396,
+        397,
+        398,
+        403,
+        404,
+        405,
+        406,
+        412,
+        414,
+        415,
+        421,
+        422,
+        423,
+        424,
+        425,
+        429,
+        430,
+        432,
+        433,
+        434,
+        439,
+        440,
+        441,
+        442,
+        443,
+        447,
+        448,
+        449,
+        450,
+        451,
+        457,
+        459,
+        460,
+        465,
+        466,
+        468,
+        469,
+        475,
+        477,
+        478,
+        479,
+        483,
+        484,
+        485,
+        486,
+        487
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiRace\\build\\direct_hair_cooked\\7970771e-6312-fe25-9b77-ccbdb9de693c.bin"
+    },
+    {
+      "mesh": "ww_jinhsi_part_19.lod2",
+      "guid": "8869ca7d-8ae2-33f2-1d12-bd2c8ab8b67a",
+      "metamesh": "ww_jinhsi_body",
+      "lod": 2,
+      "bytes": 138140,
+      "render_vertices": 1658,
+      "simulation_vertices": 1224,
+      "fixed_positions": 134,
+      "boundary_fixed_positions": 44,
+      "active_positions": 1090,
+      "stretch_constraints": 3308,
+      "bend_constraints": 2960,
+      "shear_constraints": 0,
+      "parallel_sets": 23,
+      "dummy_sets": 12,
+      "max_geodesic_anchor_length": 0.9183256718669194,
+      "sha256": "1d0e19ae59b69e616683e2cfc6c1cd38378a3ff7cf5a15cc10c190221d409739",
+      "root_fixes": [
+        {
+          "component_positions": 37,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            510,
+            511,
+            512,
+            513,
+            529,
+            530,
+            544,
+            545
+          ],
+          "bounds": [
+            [
+              0.2599608,
+              -0.5238379,
+              0.36558056
+            ],
+            [
+              0.3185928,
+              -0.41595665,
+              0.54085034
+            ]
+          ]
+        },
+        {
+          "component_positions": 196,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            605,
+            608,
+            610,
+            611,
+            613,
+            614,
+            615,
+            616,
+            617,
+            655,
+            656,
+            673,
+            674,
+            675,
+            676,
+            677,
+            678,
+            679,
+            680,
+            711,
+            712,
+            713,
+            715,
+            718,
+            719,
+            777
+          ],
+          "bounds": [
+            [
+              0.21155624,
+              -0.546068,
+              0.22527209
+            ],
+            [
+              0.30120924,
+              -0.4181691,
+              0.5434641
+            ]
+          ]
+        },
+        {
+          "component_positions": 37,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            1339,
+            1340,
+            1341,
+            1342,
+            1358,
+            1359,
+            1373,
+            1374
+          ],
+          "bounds": [
+            [
+              -0.3185928,
+              -0.52383786,
+              0.36558056
+            ],
+            [
+              -0.2599608,
+              -0.4159566,
+              0.54085034
+            ]
+          ]
+        },
+        {
+          "component_positions": 196,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            1434,
+            1436,
+            1439,
+            1441,
+            1442,
+            1443,
+            1444,
+            1445,
+            1446,
+            1484,
+            1485,
+            1502,
+            1503,
+            1504,
+            1505,
+            1506,
+            1507,
+            1508,
+            1509,
+            1540,
+            1541,
+            1542,
+            1544,
+            1547,
+            1548,
+            1606
+          ],
+          "bounds": [
+            [
+              -0.30120924,
+              -0.54606795,
+              0.22527209
+            ],
+            [
+              -0.21155624,
+              -0.41816902,
+              0.5434641
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        510,
+        511,
+        512,
+        513,
+        529,
+        530,
+        544,
+        545,
+        605,
+        608,
+        610,
+        611,
+        613,
+        614,
+        615,
+        616,
+        617,
+        655,
+        656,
+        673,
+        674,
+        675,
+        676,
+        677,
+        678,
+        679,
+        680,
+        711,
+        712,
+        713,
+        715,
+        718,
+        719,
+        777,
+        1339,
+        1340,
+        1341,
+        1342,
+        1358,
+        1359,
+        1373,
+        1374,
+        1434,
+        1436,
+        1439,
+        1441,
+        1442,
+        1443,
+        1444,
+        1445,
+        1446,
+        1484,
+        1485,
+        1502,
+        1503,
+        1504,
+        1505,
+        1506,
+        1507,
+        1508,
+        1509,
+        1540,
+        1541,
+        1542,
+        1544,
+        1547,
+        1548,
+        1606
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiRace\\build\\direct_hair_cooked\\8869ca7d-8ae2-33f2-1d12-bd2c8ab8b67a.bin"
+    },
+    {
+      "mesh": "ww_jinhsi_part_22.lod2",
+      "guid": "9160d0d4-b64e-dbfc-5757-a0f7cce903b6",
+      "metamesh": "ww_jinhsi_body",
+      "lod": 2,
+      "bytes": 19920,
+      "render_vertices": 283,
+      "simulation_vertices": 228,
+      "fixed_positions": 123,
+      "boundary_fixed_positions": 16,
+      "active_positions": 105,
+      "stretch_constraints": 328,
+      "bend_constraints": 344,
+      "shear_constraints": 0,
+      "parallel_sets": 16,
+      "dummy_sets": 9,
+      "max_geodesic_anchor_length": 0.1974749110641505,
+      "sha256": "f4f5296cf39b4ccd1cd50f5acedaf71e8b11a9aedcd010ce73673d6e5a9c000b",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiRace\\build\\direct_hair_cooked\\9160d0d4-b64e-dbfc-5757-a0f7cce903b6.bin"
+    },
+    {
+      "mesh": "ww_jinhsi_part_24.lod2",
+      "guid": "97ae4e82-5c59-2d30-fac5-74134fbf5ae7",
+      "metamesh": "ww_jinhsi_body",
+      "lod": 2,
+      "bytes": 34684,
+      "render_vertices": 488,
+      "simulation_vertices": 448,
+      "fixed_positions": 212,
+      "boundary_fixed_positions": 144,
+      "active_positions": 236,
+      "stretch_constraints": 598,
+      "bend_constraints": 402,
+      "shear_constraints": 0,
+      "parallel_sets": 15,
+      "dummy_sets": 8,
+      "max_geodesic_anchor_length": 0.1188153830631475,
+      "sha256": "96865e6ace5a07a06e1124bb311e2bc52a83d603cca38c84ece46a54bad5588a",
+      "root_fixes": [
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            64,
+            68,
+            69,
+            71,
+            72
+          ],
+          "bounds": [
+            [
+              0.26587903,
+              -0.44186863,
+              0.56036735
+            ],
+            [
+              0.28330234,
+              -0.42388403,
+              0.5817513
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            77,
+            80,
+            81
+          ],
+          "bounds": [
+            [
+              0.24437298,
+              -0.40611848,
+              0.54646444
+            ],
+            [
+              0.25733763,
+              -0.3945116,
+              0.5763703
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            86,
+            89,
+            90
+          ],
+          "bounds": [
+            [
+              0.2315456,
+              -0.4141317,
+              0.548613
+            ],
+            [
+              0.24702142,
+              -0.40473518,
+              0.5772145
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            95,
+            98,
+            99
+          ],
+          "bounds": [
+            [
+              0.25690082,
+              -0.40653858,
+              0.54738146
+            ],
+            [
+              0.26910028,
+              -0.39428973,
+              0.57671505
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            104,
+            106,
+            107,
+            108
+          ],
+          "bounds": [
+            [
+              0.22542144,
+              -0.4272169,
+              0.55300653
+            ],
+            [
+              0.24377264,
+              -0.4145344,
+              0.5789251
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            113,
+            115,
+            116,
+            117
+          ],
+          "bounds": [
+            [
+              0.23152114,
+              -0.4424493,
+              0.5579667
+            ],
+            [
+              0.2466449,
+              -0.42419538,
+              0.58084875
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            122,
+            125,
+            126
+          ],
+          "bounds": [
+            [
+              0.26620406,
+              -0.41501603,
+              0.5510137
+            ],
+            [
+              0.2833268,
+              -0.403826,
+              0.578117
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            131,
+            132,
+            134,
+            135
+          ],
+          "bounds": [
+            [
+              0.26861417,
+              -0.42711267,
+              0.5559739
+            ],
+            [
+              0.2894265,
+              -0.41425815,
+              0.58004063
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            136,
+            140,
+            141,
+            142,
+            143,
+            144
+          ],
+          "bounds": [
+            [
+              0.25632223,
+              -0.45332214,
+              0.562516
+            ],
+            [
+              0.26929608,
+              -0.42889857,
+              0.58259547
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            145,
+            149,
+            151,
+            152,
+            153
+          ],
+          "bounds": [
+            [
+              0.24455956,
+              -0.45354396,
+              0.56159896
+            ],
+            [
+              0.25638017,
+              -0.4290281,
+              0.58225065
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            154,
+            158,
+            160,
+            161,
+            162
+          ],
+          "bounds": [
+            [
+              0.23739849,
+              -0.44764096,
+              0.57020193
+            ],
+            [
+              0.2504408,
+              -0.42521766,
+              0.5901344
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            167,
+            170,
+            171
+          ],
+          "bounds": [
+            [
+              0.23743342,
+              -0.4068332,
+              0.5568431
+            ],
+            [
+              0.250474,
+              -0.39553443,
+              0.58512473
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            176,
+            178,
+            179,
+            180
+          ],
+          "bounds": [
+            [
+              0.22535937,
+              -0.41829997,
+              0.560412
+            ],
+            [
+              0.24392565,
+              -0.40636784,
+              0.5864699
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            181,
+            185,
+            186,
+            188,
+            189
+          ],
+          "bounds": [
+            [
+              0.26762655,
+              -0.43164685,
+              0.568443
+            ],
+            [
+              0.28851002,
+              -0.41672492,
+              0.5894459
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            190,
+            194,
+            196,
+            197,
+            198
+          ],
+          "bounds": [
+            [
+              0.22534603,
+              -0.432219,
+              0.56551456
+            ],
+            [
+              0.24396561,
+              -0.41737446,
+              0.5883834
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            199,
+            203,
+            204,
+            205,
+            206,
+            207
+          ],
+          "bounds": [
+            [
+              0.24942714,
+              -0.4535724,
+              0.5726837
+            ],
+            [
+              0.26294455,
+              -0.42739782,
+              0.591054
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            212,
+            215,
+            216
+          ],
+          "bounds": [
+            [
+              0.26154655,
+              -0.40687096,
+              0.558653
+            ],
+            [
+              0.27647093,
+              -0.39509678,
+              0.58578146
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            221,
+            222,
+            224,
+            225
+          ],
+          "bounds": [
+            [
+              0.26758662,
+              -0.418751,
+              0.56334037
+            ],
+            [
+              0.28852335,
+              -0.40570405,
+              0.58753246
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            230,
+            233,
+            234
+          ],
+          "bounds": [
+            [
+              0.24981824,
+              -0.403273,
+              0.5561713
+            ],
+            [
+              0.2633343,
+              -0.38916528,
+              0.58486176
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            235,
+            239,
+            240,
+            241,
+            242,
+            243
+          ],
+          "bounds": [
+            [
+              0.2615075,
+              -0.44720304,
+              0.5720118
+            ],
+            [
+              0.27643597,
+              -0.4249706,
+              0.59079105
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            308,
+            312,
+            313,
+            315,
+            316
+          ],
+          "bounds": [
+            [
+              -0.2833013,
+              -0.44186747,
+              0.5603669
+            ],
+            [
+              -0.26587802,
+              -0.4238829,
+              0.58175087
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            322,
+            324,
+            325
+          ],
+          "bounds": [
+            [
+              -0.2573366,
+              -0.40611726,
+              0.5464642
+            ],
+            [
+              -0.24437194,
+              -0.39451045,
+              0.57637
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            331,
+            333,
+            334
+          ],
+          "bounds": [
+            [
+              -0.24702042,
+              -0.41413045,
+              0.5486128
+            ],
+            [
+              -0.23154451,
+              -0.40473405,
+              0.5772142
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            340,
+            342,
+            343
+          ],
+          "bounds": [
+            [
+              -0.26909927,
+              -0.40653756,
+              0.5473811
+            ],
+            [
+              -0.25689983,
+              -0.3942886,
+              0.5767147
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            349,
+            350,
+            351,
+            352
+          ],
+          "bounds": [
+            [
+              -0.24377164,
+              -0.42721522,
+              0.5530063
+            ],
+            [
+              -0.22542036,
+              -0.4145329,
+              0.5789248
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            358,
+            359,
+            360,
+            361
+          ],
+          "bounds": [
+            [
+              -0.24664389,
+              -0.44244817,
+              0.5579665
+            ],
+            [
+              -0.23152009,
+              -0.4241942,
+              0.5808484
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            367,
+            369,
+            370
+          ],
+          "bounds": [
+            [
+              -0.28332573,
+              -0.4150147,
+              0.55101335
+            ],
+            [
+              -0.26620305,
+              -0.4038248,
+              0.57811666
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            375,
+            376,
+            378,
+            379
+          ],
+          "bounds": [
+            [
+              -0.28942546,
+              -0.4271114,
+              0.5559735
+            ],
+            [
+              -0.2686132,
+              -0.41425723,
+              0.5800403
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            380,
+            384,
+            385,
+            386,
+            387,
+            388
+          ],
+          "bounds": [
+            [
+              -0.26929504,
+              -0.45332104,
+              0.5625156
+            ],
+            [
+              -0.2563212,
+              -0.4288975,
+              0.58259505
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            389,
+            394,
+            395,
+            396,
+            397
+          ],
+          "bounds": [
+            [
+              -0.25637913,
+              -0.45354295,
+              0.56159866
+            ],
+            [
+              -0.24455854,
+              -0.42902705,
+              0.58225036
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            398,
+            403,
+            404,
+            405,
+            406
+          ],
+          "bounds": [
+            [
+              -0.25043985,
+              -0.44763985,
+              0.57020164
+            ],
+            [
+              -0.23739745,
+              -0.42521653,
+              0.590134
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            412,
+            414,
+            415
+          ],
+          "bounds": [
+            [
+              -0.250473,
+              -0.4068321,
+              0.55684286
+            ],
+            [
+              -0.23743233,
+              -0.39553347,
+              0.58512443
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            421,
+            422,
+            423,
+            424
+          ],
+          "bounds": [
+            [
+              -0.24392469,
+              -0.41829884,
+              0.56041175
+            ],
+            [
+              -0.2253583,
+              -0.40636677,
+              0.5864696
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            425,
+            429,
+            430,
+            432,
+            433
+          ],
+          "bounds": [
+            [
+              -0.28850898,
+              -0.4316459,
+              0.5684425
+            ],
+            [
+              -0.2676256,
+              -0.41672385,
+              0.58944553
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            434,
+            439,
+            440,
+            441,
+            442
+          ],
+          "bounds": [
+            [
+              -0.24396463,
+              -0.4322179,
+              0.5655143
+            ],
+            [
+              -0.22534499,
+              -0.4173733,
+              0.5883831
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            443,
+            447,
+            448,
+            449,
+            450,
+            451
+          ],
+          "bounds": [
+            [
+              -0.26294357,
+              -0.45357117,
+              0.5726834
+            ],
+            [
+              -0.24942616,
+              -0.42739677,
+              0.59105366
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            457,
+            459,
+            460
+          ],
+          "bounds": [
+            [
+              -0.2764699,
+              -0.4068698,
+              0.5586526
+            ],
+            [
+              -0.2615456,
+              -0.39509568,
+              0.5857811
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            465,
+            466,
+            468,
+            469
+          ],
+          "bounds": [
+            [
+              -0.28852233,
+              -0.41874984,
+              0.5633399
+            ],
+            [
+              -0.26758566,
+              -0.4057029,
+              0.5875321
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            475,
+            477,
+            478
+          ],
+          "bounds": [
+            [
+              -0.26333326,
+              -0.40327185,
+              0.55617094
+            ],
+            [
+              -0.24981718,
+              -0.3891642,
+              0.58486146
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            479,
+            483,
+            484,
+            485,
+            486,
+            487
+          ],
+          "bounds": [
+            [
+              -0.27643496,
+              -0.44720203,
+              0.5720114
+            ],
+            [
+              -0.26150653,
+              -0.42496958,
+              0.5907907
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        64,
+        68,
+        69,
+        71,
+        72,
+        77,
+        80,
+        81,
+        86,
+        89,
+        90,
+        95,
+        98,
+        99,
+        104,
+        106,
+        107,
+        108,
+        113,
+        115,
+        116,
+        117,
+        122,
+        125,
+        126,
+        131,
+        132,
+        134,
+        135,
+        136,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        149,
+        151,
+        152,
+        153,
+        154,
+        158,
+        160,
+        161,
+        162,
+        167,
+        170,
+        171,
+        176,
+        178,
+        179,
+        180,
+        181,
+        185,
+        186,
+        188,
+        189,
+        190,
+        194,
+        196,
+        197,
+        198,
+        199,
+        203,
+        204,
+        205,
+        206,
+        207,
+        212,
+        215,
+        216,
+        221,
+        222,
+        224,
+        225,
+        230,
+        233,
+        234,
+        235,
+        239,
+        240,
+        241,
+        242,
+        243,
+        308,
+        312,
+        313,
+        315,
+        316,
+        322,
+        324,
+        325,
+        331,
+        333,
+        334,
+        340,
+        342,
+        343,
+        349,
+        350,
+        351,
+        352,
+        358,
+        359,
+        360,
+        361,
+        367,
+        369,
+        370,
+        375,
+        376,
+        378,
+        379,
+        380,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        394,
+        395,
+        396,
+        397,
+        398,
+        403,
+        404,
+        405,
+        406,
+        412,
+        414,
+        415,
+        421,
+        422,
+        423,
+        424,
+        425,
+        429,
+        430,
+        432,
+        433,
+        434,
+        439,
+        440,
+        441,
+        442,
+        443,
+        447,
+        448,
+        449,
+        450,
+        451,
+        457,
+        459,
+        460,
+        465,
+        466,
+        468,
+        469,
+        475,
+        477,
+        478,
+        479,
+        483,
+        484,
+        485,
+        486,
+        487
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiRace\\build\\direct_hair_cooked\\97ae4e82-5c59-2d30-fac5-74134fbf5ae7.bin"
+    },
+    {
+      "mesh": "ww_jinhsi_part_22.lod1",
+      "guid": "a3945fd0-e658-8a95-7929-e8f6b6075a30",
+      "metamesh": "ww_jinhsi_body",
+      "lod": 1,
+      "bytes": 19920,
+      "render_vertices": 283,
+      "simulation_vertices": 228,
+      "fixed_positions": 123,
+      "boundary_fixed_positions": 16,
+      "active_positions": 105,
+      "stretch_constraints": 328,
+      "bend_constraints": 344,
+      "shear_constraints": 0,
+      "parallel_sets": 16,
+      "dummy_sets": 9,
+      "max_geodesic_anchor_length": 0.1974749110641505,
+      "sha256": "f4f5296cf39b4ccd1cd50f5acedaf71e8b11a9aedcd010ce73673d6e5a9c000b",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiRace\\build\\direct_hair_cooked\\a3945fd0-e658-8a95-7929-e8f6b6075a30.bin"
+    },
+    {
+      "mesh": "ww_jinhsi_part_23.lod1",
+      "guid": "aaf93226-5855-79ab-0643-b1fe04129ad3",
+      "metamesh": "ww_jinhsi_body",
+      "lod": 1,
+      "bytes": 11692,
+      "render_vertices": 120,
+      "simulation_vertices": 96,
+      "fixed_positions": 13,
+      "boundary_fixed_positions": 6,
+      "active_positions": 83,
+      "stretch_constraints": 252,
+      "bend_constraints": 240,
+      "shear_constraints": 0,
+      "parallel_sets": 25,
+      "dummy_sets": 13,
+      "max_geodesic_anchor_length": 0.3842825767674527,
+      "sha256": "7059b6dace1992b06b31fd9a1d05622ebd238318e79d62ab2c1f9b6c73a1d0fa",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiRace\\build\\direct_hair_cooked\\aaf93226-5855-79ab-0643-b1fe04129ad3.bin"
+    },
+    {
+      "mesh": "ww_jinhsi_part_23",
+      "guid": "dc7d706b-7c1f-1a2f-62b8-4b01469dbe90",
+      "metamesh": "ww_jinhsi_body",
+      "lod": 0,
+      "bytes": 11692,
+      "render_vertices": 120,
+      "simulation_vertices": 96,
+      "fixed_positions": 13,
+      "boundary_fixed_positions": 6,
+      "active_positions": 83,
+      "stretch_constraints": 252,
+      "bend_constraints": 240,
+      "shear_constraints": 0,
+      "parallel_sets": 25,
+      "dummy_sets": 13,
+      "max_geodesic_anchor_length": 0.3842825767674527,
+      "sha256": "7059b6dace1992b06b31fd9a1d05622ebd238318e79d62ab2c1f9b6c73a1d0fa",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiRace\\build\\direct_hair_cooked\\dc7d706b-7c1f-1a2f-62b8-4b01469dbe90.bin"
+    },
+    {
+      "mesh": "ww_jinhsi_part_19.lod1",
+      "guid": "e367c2cf-8b19-ccd3-57f1-86ed41bcdd7a",
+      "metamesh": "ww_jinhsi_body",
+      "lod": 1,
+      "bytes": 138140,
+      "render_vertices": 1658,
+      "simulation_vertices": 1224,
+      "fixed_positions": 134,
+      "boundary_fixed_positions": 44,
+      "active_positions": 1090,
+      "stretch_constraints": 3308,
+      "bend_constraints": 2960,
+      "shear_constraints": 0,
+      "parallel_sets": 23,
+      "dummy_sets": 12,
+      "max_geodesic_anchor_length": 0.9183256718669194,
+      "sha256": "1d0e19ae59b69e616683e2cfc6c1cd38378a3ff7cf5a15cc10c190221d409739",
+      "root_fixes": [
+        {
+          "component_positions": 37,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            510,
+            511,
+            512,
+            513,
+            529,
+            530,
+            544,
+            545
+          ],
+          "bounds": [
+            [
+              0.2599608,
+              -0.5238379,
+              0.36558056
+            ],
+            [
+              0.3185928,
+              -0.41595665,
+              0.54085034
+            ]
+          ]
+        },
+        {
+          "component_positions": 196,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            605,
+            608,
+            610,
+            611,
+            613,
+            614,
+            615,
+            616,
+            617,
+            655,
+            656,
+            673,
+            674,
+            675,
+            676,
+            677,
+            678,
+            679,
+            680,
+            711,
+            712,
+            713,
+            715,
+            718,
+            719,
+            777
+          ],
+          "bounds": [
+            [
+              0.21155624,
+              -0.546068,
+              0.22527209
+            ],
+            [
+              0.30120924,
+              -0.4181691,
+              0.5434641
+            ]
+          ]
+        },
+        {
+          "component_positions": 37,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            1339,
+            1340,
+            1341,
+            1342,
+            1358,
+            1359,
+            1373,
+            1374
+          ],
+          "bounds": [
+            [
+              -0.3185928,
+              -0.52383786,
+              0.36558056
+            ],
+            [
+              -0.2599608,
+              -0.4159566,
+              0.54085034
+            ]
+          ]
+        },
+        {
+          "component_positions": 196,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            1434,
+            1436,
+            1439,
+            1441,
+            1442,
+            1443,
+            1444,
+            1445,
+            1446,
+            1484,
+            1485,
+            1502,
+            1503,
+            1504,
+            1505,
+            1506,
+            1507,
+            1508,
+            1509,
+            1540,
+            1541,
+            1542,
+            1544,
+            1547,
+            1548,
+            1606
+          ],
+          "bounds": [
+            [
+              -0.30120924,
+              -0.54606795,
+              0.22527209
+            ],
+            [
+              -0.21155624,
+              -0.41816902,
+              0.5434641
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        510,
+        511,
+        512,
+        513,
+        529,
+        530,
+        544,
+        545,
+        605,
+        608,
+        610,
+        611,
+        613,
+        614,
+        615,
+        616,
+        617,
+        655,
+        656,
+        673,
+        674,
+        675,
+        676,
+        677,
+        678,
+        679,
+        680,
+        711,
+        712,
+        713,
+        715,
+        718,
+        719,
+        777,
+        1339,
+        1340,
+        1341,
+        1342,
+        1358,
+        1359,
+        1373,
+        1374,
+        1434,
+        1436,
+        1439,
+        1441,
+        1442,
+        1443,
+        1444,
+        1445,
+        1446,
+        1484,
+        1485,
+        1502,
+        1503,
+        1504,
+        1505,
+        1506,
+        1507,
+        1508,
+        1509,
+        1540,
+        1541,
+        1542,
+        1544,
+        1547,
+        1548,
+        1606
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiRace\\build\\direct_hair_cooked\\e367c2cf-8b19-ccd3-57f1-86ed41bcdd7a.bin"
+    },
+    {
+      "mesh": "ww_jinhsi_part_24.lod1",
+      "guid": "e46e6e6c-8b4e-7448-4f78-956750bbb6ad",
+      "metamesh": "ww_jinhsi_body",
+      "lod": 1,
+      "bytes": 34684,
+      "render_vertices": 488,
+      "simulation_vertices": 448,
+      "fixed_positions": 212,
+      "boundary_fixed_positions": 144,
+      "active_positions": 236,
+      "stretch_constraints": 598,
+      "bend_constraints": 402,
+      "shear_constraints": 0,
+      "parallel_sets": 15,
+      "dummy_sets": 8,
+      "max_geodesic_anchor_length": 0.1188153830631475,
+      "sha256": "96865e6ace5a07a06e1124bb311e2bc52a83d603cca38c84ece46a54bad5588a",
+      "root_fixes": [
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            64,
+            68,
+            69,
+            71,
+            72
+          ],
+          "bounds": [
+            [
+              0.26587903,
+              -0.44186863,
+              0.56036735
+            ],
+            [
+              0.28330234,
+              -0.42388403,
+              0.5817513
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            77,
+            80,
+            81
+          ],
+          "bounds": [
+            [
+              0.24437298,
+              -0.40611848,
+              0.54646444
+            ],
+            [
+              0.25733763,
+              -0.3945116,
+              0.5763703
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            86,
+            89,
+            90
+          ],
+          "bounds": [
+            [
+              0.2315456,
+              -0.4141317,
+              0.548613
+            ],
+            [
+              0.24702142,
+              -0.40473518,
+              0.5772145
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            95,
+            98,
+            99
+          ],
+          "bounds": [
+            [
+              0.25690082,
+              -0.40653858,
+              0.54738146
+            ],
+            [
+              0.26910028,
+              -0.39428973,
+              0.57671505
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            104,
+            106,
+            107,
+            108
+          ],
+          "bounds": [
+            [
+              0.22542144,
+              -0.4272169,
+              0.55300653
+            ],
+            [
+              0.24377264,
+              -0.4145344,
+              0.5789251
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            113,
+            115,
+            116,
+            117
+          ],
+          "bounds": [
+            [
+              0.23152114,
+              -0.4424493,
+              0.5579667
+            ],
+            [
+              0.2466449,
+              -0.42419538,
+              0.58084875
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            122,
+            125,
+            126
+          ],
+          "bounds": [
+            [
+              0.26620406,
+              -0.41501603,
+              0.5510137
+            ],
+            [
+              0.2833268,
+              -0.403826,
+              0.578117
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            131,
+            132,
+            134,
+            135
+          ],
+          "bounds": [
+            [
+              0.26861417,
+              -0.42711267,
+              0.5559739
+            ],
+            [
+              0.2894265,
+              -0.41425815,
+              0.58004063
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            136,
+            140,
+            141,
+            142,
+            143,
+            144
+          ],
+          "bounds": [
+            [
+              0.25632223,
+              -0.45332214,
+              0.562516
+            ],
+            [
+              0.26929608,
+              -0.42889857,
+              0.58259547
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            145,
+            149,
+            151,
+            152,
+            153
+          ],
+          "bounds": [
+            [
+              0.24455956,
+              -0.45354396,
+              0.56159896
+            ],
+            [
+              0.25638017,
+              -0.4290281,
+              0.58225065
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            154,
+            158,
+            160,
+            161,
+            162
+          ],
+          "bounds": [
+            [
+              0.23739849,
+              -0.44764096,
+              0.57020193
+            ],
+            [
+              0.2504408,
+              -0.42521766,
+              0.5901344
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            167,
+            170,
+            171
+          ],
+          "bounds": [
+            [
+              0.23743342,
+              -0.4068332,
+              0.5568431
+            ],
+            [
+              0.250474,
+              -0.39553443,
+              0.58512473
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            176,
+            178,
+            179,
+            180
+          ],
+          "bounds": [
+            [
+              0.22535937,
+              -0.41829997,
+              0.560412
+            ],
+            [
+              0.24392565,
+              -0.40636784,
+              0.5864699
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            181,
+            185,
+            186,
+            188,
+            189
+          ],
+          "bounds": [
+            [
+              0.26762655,
+              -0.43164685,
+              0.568443
+            ],
+            [
+              0.28851002,
+              -0.41672492,
+              0.5894459
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            190,
+            194,
+            196,
+            197,
+            198
+          ],
+          "bounds": [
+            [
+              0.22534603,
+              -0.432219,
+              0.56551456
+            ],
+            [
+              0.24396561,
+              -0.41737446,
+              0.5883834
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            199,
+            203,
+            204,
+            205,
+            206,
+            207
+          ],
+          "bounds": [
+            [
+              0.24942714,
+              -0.4535724,
+              0.5726837
+            ],
+            [
+              0.26294455,
+              -0.42739782,
+              0.591054
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            212,
+            215,
+            216
+          ],
+          "bounds": [
+            [
+              0.26154655,
+              -0.40687096,
+              0.558653
+            ],
+            [
+              0.27647093,
+              -0.39509678,
+              0.58578146
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            221,
+            222,
+            224,
+            225
+          ],
+          "bounds": [
+            [
+              0.26758662,
+              -0.418751,
+              0.56334037
+            ],
+            [
+              0.28852335,
+              -0.40570405,
+              0.58753246
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            230,
+            233,
+            234
+          ],
+          "bounds": [
+            [
+              0.24981824,
+              -0.403273,
+              0.5561713
+            ],
+            [
+              0.2633343,
+              -0.38916528,
+              0.58486176
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            235,
+            239,
+            240,
+            241,
+            242,
+            243
+          ],
+          "bounds": [
+            [
+              0.2615075,
+              -0.44720304,
+              0.5720118
+            ],
+            [
+              0.27643597,
+              -0.4249706,
+              0.59079105
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            308,
+            312,
+            313,
+            315,
+            316
+          ],
+          "bounds": [
+            [
+              -0.2833013,
+              -0.44186747,
+              0.5603669
+            ],
+            [
+              -0.26587802,
+              -0.4238829,
+              0.58175087
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            322,
+            324,
+            325
+          ],
+          "bounds": [
+            [
+              -0.2573366,
+              -0.40611726,
+              0.5464642
+            ],
+            [
+              -0.24437194,
+              -0.39451045,
+              0.57637
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            331,
+            333,
+            334
+          ],
+          "bounds": [
+            [
+              -0.24702042,
+              -0.41413045,
+              0.5486128
+            ],
+            [
+              -0.23154451,
+              -0.40473405,
+              0.5772142
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            340,
+            342,
+            343
+          ],
+          "bounds": [
+            [
+              -0.26909927,
+              -0.40653756,
+              0.5473811
+            ],
+            [
+              -0.25689983,
+              -0.3942886,
+              0.5767147
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            349,
+            350,
+            351,
+            352
+          ],
+          "bounds": [
+            [
+              -0.24377164,
+              -0.42721522,
+              0.5530063
+            ],
+            [
+              -0.22542036,
+              -0.4145329,
+              0.5789248
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            358,
+            359,
+            360,
+            361
+          ],
+          "bounds": [
+            [
+              -0.24664389,
+              -0.44244817,
+              0.5579665
+            ],
+            [
+              -0.23152009,
+              -0.4241942,
+              0.5808484
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            367,
+            369,
+            370
+          ],
+          "bounds": [
+            [
+              -0.28332573,
+              -0.4150147,
+              0.55101335
+            ],
+            [
+              -0.26620305,
+              -0.4038248,
+              0.57811666
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            375,
+            376,
+            378,
+            379
+          ],
+          "bounds": [
+            [
+              -0.28942546,
+              -0.4271114,
+              0.5559735
+            ],
+            [
+              -0.2686132,
+              -0.41425723,
+              0.5800403
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            380,
+            384,
+            385,
+            386,
+            387,
+            388
+          ],
+          "bounds": [
+            [
+              -0.26929504,
+              -0.45332104,
+              0.5625156
+            ],
+            [
+              -0.2563212,
+              -0.4288975,
+              0.58259505
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            389,
+            394,
+            395,
+            396,
+            397
+          ],
+          "bounds": [
+            [
+              -0.25637913,
+              -0.45354295,
+              0.56159866
+            ],
+            [
+              -0.24455854,
+              -0.42902705,
+              0.58225036
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            398,
+            403,
+            404,
+            405,
+            406
+          ],
+          "bounds": [
+            [
+              -0.25043985,
+              -0.44763985,
+              0.57020164
+            ],
+            [
+              -0.23739745,
+              -0.42521653,
+              0.590134
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            412,
+            414,
+            415
+          ],
+          "bounds": [
+            [
+              -0.250473,
+              -0.4068321,
+              0.55684286
+            ],
+            [
+              -0.23743233,
+              -0.39553347,
+              0.58512443
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            421,
+            422,
+            423,
+            424
+          ],
+          "bounds": [
+            [
+              -0.24392469,
+              -0.41829884,
+              0.56041175
+            ],
+            [
+              -0.2253583,
+              -0.40636677,
+              0.5864696
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            425,
+            429,
+            430,
+            432,
+            433
+          ],
+          "bounds": [
+            [
+              -0.28850898,
+              -0.4316459,
+              0.5684425
+            ],
+            [
+              -0.2676256,
+              -0.41672385,
+              0.58944553
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            434,
+            439,
+            440,
+            441,
+            442
+          ],
+          "bounds": [
+            [
+              -0.24396463,
+              -0.4322179,
+              0.5655143
+            ],
+            [
+              -0.22534499,
+              -0.4173733,
+              0.5883831
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            443,
+            447,
+            448,
+            449,
+            450,
+            451
+          ],
+          "bounds": [
+            [
+              -0.26294357,
+              -0.45357117,
+              0.5726834
+            ],
+            [
+              -0.24942616,
+              -0.42739677,
+              0.59105366
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            457,
+            459,
+            460
+          ],
+          "bounds": [
+            [
+              -0.2764699,
+              -0.4068698,
+              0.5586526
+            ],
+            [
+              -0.2615456,
+              -0.39509568,
+              0.5857811
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            465,
+            466,
+            468,
+            469
+          ],
+          "bounds": [
+            [
+              -0.28852233,
+              -0.41874984,
+              0.5633399
+            ],
+            [
+              -0.26758566,
+              -0.4057029,
+              0.5875321
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            475,
+            477,
+            478
+          ],
+          "bounds": [
+            [
+              -0.26333326,
+              -0.40327185,
+              0.55617094
+            ],
+            [
+              -0.24981718,
+              -0.3891642,
+              0.58486146
+            ]
+          ]
+        },
+        {
+          "component_positions": 9,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            479,
+            483,
+            484,
+            485,
+            486,
+            487
+          ],
+          "bounds": [
+            [
+              -0.27643496,
+              -0.44720203,
+              0.5720114
+            ],
+            [
+              -0.26150653,
+              -0.42496958,
+              0.5907907
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        64,
+        68,
+        69,
+        71,
+        72,
+        77,
+        80,
+        81,
+        86,
+        89,
+        90,
+        95,
+        98,
+        99,
+        104,
+        106,
+        107,
+        108,
+        113,
+        115,
+        116,
+        117,
+        122,
+        125,
+        126,
+        131,
+        132,
+        134,
+        135,
+        136,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        149,
+        151,
+        152,
+        153,
+        154,
+        158,
+        160,
+        161,
+        162,
+        167,
+        170,
+        171,
+        176,
+        178,
+        179,
+        180,
+        181,
+        185,
+        186,
+        188,
+        189,
+        190,
+        194,
+        196,
+        197,
+        198,
+        199,
+        203,
+        204,
+        205,
+        206,
+        207,
+        212,
+        215,
+        216,
+        221,
+        222,
+        224,
+        225,
+        230,
+        233,
+        234,
+        235,
+        239,
+        240,
+        241,
+        242,
+        243,
+        308,
+        312,
+        313,
+        315,
+        316,
+        322,
+        324,
+        325,
+        331,
+        333,
+        334,
+        340,
+        342,
+        343,
+        349,
+        350,
+        351,
+        352,
+        358,
+        359,
+        360,
+        361,
+        367,
+        369,
+        370,
+        375,
+        376,
+        378,
+        379,
+        380,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        394,
+        395,
+        396,
+        397,
+        398,
+        403,
+        404,
+        405,
+        406,
+        412,
+        414,
+        415,
+        421,
+        422,
+        423,
+        424,
+        425,
+        429,
+        430,
+        432,
+        433,
+        434,
+        439,
+        440,
+        441,
+        442,
+        443,
+        447,
+        448,
+        449,
+        450,
+        451,
+        457,
+        459,
+        460,
+        465,
+        466,
+        468,
+        469,
+        475,
+        477,
+        478,
+        479,
+        483,
+        484,
+        485,
+        486,
+        487
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiRace\\build\\direct_hair_cooked\\e46e6e6c-8b4e-7448-4f78-956750bbb6ad.bin"
+    },
+    {
+      "mesh": "ww_jinhsi_part_19.lod3",
+      "guid": "e697e545-fd5f-3d2a-65d1-9e834f702c1e",
+      "metamesh": "ww_jinhsi_body",
+      "lod": 3,
+      "bytes": 138140,
+      "render_vertices": 1658,
+      "simulation_vertices": 1224,
+      "fixed_positions": 134,
+      "boundary_fixed_positions": 44,
+      "active_positions": 1090,
+      "stretch_constraints": 3308,
+      "bend_constraints": 2960,
+      "shear_constraints": 0,
+      "parallel_sets": 23,
+      "dummy_sets": 12,
+      "max_geodesic_anchor_length": 0.9183256718669194,
+      "sha256": "1d0e19ae59b69e616683e2cfc6c1cd38378a3ff7cf5a15cc10c190221d409739",
+      "root_fixes": [
+        {
+          "component_positions": 37,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            510,
+            511,
+            512,
+            513,
+            529,
+            530,
+            544,
+            545
+          ],
+          "bounds": [
+            [
+              0.2599608,
+              -0.5238379,
+              0.36558056
+            ],
+            [
+              0.3185928,
+              -0.41595665,
+              0.54085034
+            ]
+          ]
+        },
+        {
+          "component_positions": 196,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            605,
+            608,
+            610,
+            611,
+            613,
+            614,
+            615,
+            616,
+            617,
+            655,
+            656,
+            673,
+            674,
+            675,
+            676,
+            677,
+            678,
+            679,
+            680,
+            711,
+            712,
+            713,
+            715,
+            718,
+            719,
+            777
+          ],
+          "bounds": [
+            [
+              0.21155624,
+              -0.546068,
+              0.22527209
+            ],
+            [
+              0.30120924,
+              -0.4181691,
+              0.5434641
+            ]
+          ]
+        },
+        {
+          "component_positions": 37,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            1339,
+            1340,
+            1341,
+            1342,
+            1358,
+            1359,
+            1373,
+            1374
+          ],
+          "bounds": [
+            [
+              -0.3185928,
+              -0.52383786,
+              0.36558056
+            ],
+            [
+              -0.2599608,
+              -0.4159566,
+              0.54085034
+            ]
+          ]
+        },
+        {
+          "component_positions": 196,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            1434,
+            1436,
+            1439,
+            1441,
+            1442,
+            1443,
+            1444,
+            1445,
+            1446,
+            1484,
+            1485,
+            1502,
+            1503,
+            1504,
+            1505,
+            1506,
+            1507,
+            1508,
+            1509,
+            1540,
+            1541,
+            1542,
+            1544,
+            1547,
+            1548,
+            1606
+          ],
+          "bounds": [
+            [
+              -0.30120924,
+              -0.54606795,
+              0.22527209
+            ],
+            [
+              -0.21155624,
+              -0.41816902,
+              0.5434641
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        510,
+        511,
+        512,
+        513,
+        529,
+        530,
+        544,
+        545,
+        605,
+        608,
+        610,
+        611,
+        613,
+        614,
+        615,
+        616,
+        617,
+        655,
+        656,
+        673,
+        674,
+        675,
+        676,
+        677,
+        678,
+        679,
+        680,
+        711,
+        712,
+        713,
+        715,
+        718,
+        719,
+        777,
+        1339,
+        1340,
+        1341,
+        1342,
+        1358,
+        1359,
+        1373,
+        1374,
+        1434,
+        1436,
+        1439,
+        1441,
+        1442,
+        1443,
+        1444,
+        1445,
+        1446,
+        1484,
+        1485,
+        1502,
+        1503,
+        1504,
+        1505,
+        1506,
+        1507,
+        1508,
+        1509,
+        1540,
+        1541,
+        1542,
+        1544,
+        1547,
+        1548,
+        1606
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiRace\\build\\direct_hair_cooked\\e697e545-fd5f-3d2a-65d1-9e834f702c1e.bin"
+    },
+    {
+      "mesh": "ww_jinhsi_part_19",
+      "guid": "f59d39c9-d675-6d5e-da96-944cba258b34",
+      "metamesh": "ww_jinhsi_body",
+      "lod": 0,
+      "bytes": 138140,
+      "render_vertices": 1658,
+      "simulation_vertices": 1224,
+      "fixed_positions": 134,
+      "boundary_fixed_positions": 44,
+      "active_positions": 1090,
+      "stretch_constraints": 3308,
+      "bend_constraints": 2960,
+      "shear_constraints": 0,
+      "parallel_sets": 23,
+      "dummy_sets": 12,
+      "max_geodesic_anchor_length": 0.9183256718669194,
+      "sha256": "1d0e19ae59b69e616683e2cfc6c1cd38378a3ff7cf5a15cc10c190221d409739",
+      "root_fixes": [
+        {
+          "component_positions": 37,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            510,
+            511,
+            512,
+            513,
+            529,
+            530,
+            544,
+            545
+          ],
+          "bounds": [
+            [
+              0.2599608,
+              -0.5238379,
+              0.36558056
+            ],
+            [
+              0.3185928,
+              -0.41595665,
+              0.54085034
+            ]
+          ]
+        },
+        {
+          "component_positions": 196,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            605,
+            608,
+            610,
+            611,
+            613,
+            614,
+            615,
+            616,
+            617,
+            655,
+            656,
+            673,
+            674,
+            675,
+            676,
+            677,
+            678,
+            679,
+            680,
+            711,
+            712,
+            713,
+            715,
+            718,
+            719,
+            777
+          ],
+          "bounds": [
+            [
+              0.21155624,
+              -0.546068,
+              0.22527209
+            ],
+            [
+              0.30120924,
+              -0.4181691,
+              0.5434641
+            ]
+          ]
+        },
+        {
+          "component_positions": 37,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            1339,
+            1340,
+            1341,
+            1342,
+            1358,
+            1359,
+            1373,
+            1374
+          ],
+          "bounds": [
+            [
+              -0.3185928,
+              -0.52383786,
+              0.36558056
+            ],
+            [
+              -0.2599608,
+              -0.4159566,
+              0.54085034
+            ]
+          ]
+        },
+        {
+          "component_positions": 196,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            1434,
+            1436,
+            1439,
+            1441,
+            1442,
+            1443,
+            1444,
+            1445,
+            1446,
+            1484,
+            1485,
+            1502,
+            1503,
+            1504,
+            1505,
+            1506,
+            1507,
+            1508,
+            1509,
+            1540,
+            1541,
+            1542,
+            1544,
+            1547,
+            1548,
+            1606
+          ],
+          "bounds": [
+            [
+              -0.30120924,
+              -0.54606795,
+              0.22527209
+            ],
+            [
+              -0.21155624,
+              -0.41816902,
+              0.5434641
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        510,
+        511,
+        512,
+        513,
+        529,
+        530,
+        544,
+        545,
+        605,
+        608,
+        610,
+        611,
+        613,
+        614,
+        615,
+        616,
+        617,
+        655,
+        656,
+        673,
+        674,
+        675,
+        676,
+        677,
+        678,
+        679,
+        680,
+        711,
+        712,
+        713,
+        715,
+        718,
+        719,
+        777,
+        1339,
+        1340,
+        1341,
+        1342,
+        1358,
+        1359,
+        1373,
+        1374,
+        1434,
+        1436,
+        1439,
+        1441,
+        1442,
+        1443,
+        1444,
+        1445,
+        1446,
+        1484,
+        1485,
+        1502,
+        1503,
+        1504,
+        1505,
+        1506,
+        1507,
+        1508,
+        1509,
+        1540,
+        1541,
+        1542,
+        1544,
+        1547,
+        1548,
+        1606
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\JinhsiRace\\build\\direct_hair_cooked\\f59d39c9-d675-6d5e-da96-944cba258b34.bin"
+    }
+  ],
+  "source_uv_preserved": true,
+  "game_verified": false
+}

@@ -1,0 +1,31 @@
+{
+  "vertices": 32566,
+  "source_triangles": 41021,
+  "selected_triangles": 33255,
+  "bones": 363,
+  "morphs": 104,
+  "excluded": [
+    {
+      "material_index": 3,
+      "name": "bodyDown+",
+      "triangles": 3696,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    },
+    {
+      "material_index": 12,
+      "name": "MI_star+",
+      "triangles": 30,
+      "reason": "Default hidden expression/material or explicit prop exclusion"
+    },
+    {
+      "material_index": 13,
+      "name": "MI_UP+",
+      "triangles": 4040,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    }
+  ],
+  "ignored_models": [],
+  "source_model": "input/original/吟霖1.05.pmx",
+  "selected_source_height_m": 1.8018276479840278,
+  "skirt_cloth_enabled": false
+}

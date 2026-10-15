@@ -1,0 +1,283 @@
+{
+  "status": "pass",
+  "date": "2026-10-15",
+  "module_count": 8,
+  "independent_modules": true,
+  "package_guids_unique": true,
+  "race_ids_unique": true,
+  "game_verified": false,
+  "modules": [
+    {
+      "id": "JinhsiRace",
+      "race": "ww_jinhsi",
+      "package_sha256": "cc54d2fcedb3c5ca39ef77e0962325f2038565643329122fc3a1b92092628fe4",
+      "lods": [
+        {
+          "lod": 0,
+          "triangles": 32303,
+          "vertices": 22267,
+          "submeshes": 25
+        },
+        {
+          "lod": 1,
+          "triangles": 23505,
+          "vertices": 17760,
+          "submeshes": 25
+        },
+        {
+          "lod": 2,
+          "triangles": 19795,
+          "vertices": 15905,
+          "submeshes": 25
+        },
+        {
+          "lod": 3,
+          "triangles": 18909,
+          "vertices": 15462,
+          "submeshes": 25
+        }
+      ],
+      "max_motion_edge_extension": 4.4258595576555075,
+      "source_preservation": "pass",
+      "skirt_cloth_enabled": false
+    },
+    {
+      "id": "JinhsiOutfitRace",
+      "race": "ww_jinhsi_outfit",
+      "package_sha256": "0a1326d23dd4ceaa4d3b9c44cc017323f99f4cc00b686bf79cd6d564d52137f3",
+      "lods": [
+        {
+          "lod": 0,
+          "triangles": 78198,
+          "vertices": 52244,
+          "submeshes": 35
+        },
+        {
+          "lod": 1,
+          "triangles": 60260,
+          "vertices": 43109,
+          "submeshes": 35
+        },
+        {
+          "lod": 2,
+          "triangles": 51148,
+          "vertices": 38553,
+          "submeshes": 35
+        },
+        {
+          "lod": 3,
+          "triangles": 46546,
+          "vertices": 36252,
+          "submeshes": 35
+        }
+      ],
+      "max_motion_edge_extension": 5.440295222135611,
+      "source_preservation": "pass",
+      "skirt_cloth_enabled": false
+    },
+    {
+      "id": "BaizhiRace",
+      "race": "ww_baizhi",
+      "package_sha256": "a3de4c87f9b8dd323f4b3199351e4d684e6a1ef9e8c113c608dfaa1171c11d5c",
+      "lods": [
+        {
+          "lod": 0,
+          "triangles": 30718,
+          "vertices": 22889,
+          "submeshes": 26
+        },
+        {
+          "lod": 1,
+          "triangles": 22732,
+          "vertices": 18896,
+          "submeshes": 26
+        },
+        {
+          "lod": 2,
+          "triangles": 20188,
+          "vertices": 17624,
+          "submeshes": 26
+        },
+        {
+          "lod": 3,
+          "triangles": 19750,
+          "vertices": 17405,
+          "submeshes": 26
+        }
+      ],
+      "max_motion_edge_extension": 4.092286885613206,
+      "source_preservation": "pass",
+      "skirt_cloth_enabled": false
+    },
+    {
+      "id": "JianxinRace",
+      "race": "ww_jianxin",
+      "package_sha256": "6ab9f925676e469d20e96ed191dc998d4a73e618f72c2750cce6f2fe9b2bb34a",
+      "lods": [
+        {
+          "lod": 0,
+          "triangles": 33213,
+          "vertices": 24036,
+          "submeshes": 22
+        },
+        {
+          "lod": 1,
+          "triangles": 26357,
+          "vertices": 20397,
+          "submeshes": 22
+        },
+        {
+          "lod": 2,
+          "triangles": 23957,
+          "vertices": 19197,
+          "submeshes": 22
+        },
+        {
+          "lod": 3,
+          "triangles": 23497,
+          "vertices": 18967,
+          "submeshes": 22
+        }
+      ],
+      "max_motion_edge_extension": 2.688949810560554,
+      "source_preservation": "pass",
+      "skirt_cloth_enabled": false
+    },
+    {
+      "id": "YinlinRace",
+      "race": "ww_yinlin",
+      "package_sha256": "5116f8e9fb9efce7531d69056b56c71a1f07ad42c62f3e247cb0b77af6363c22",
+      "lods": [
+        {
+          "lod": 0,
+          "triangles": 33255,
+          "vertices": 23341,
+          "submeshes": 11
+        },
+        {
+          "lod": 1,
+          "triangles": 24471,
+          "vertices": 18946,
+          "submeshes": 11
+        },
+        {
+          "lod": 2,
+          "triangles": 20357,
+          "vertices": 16889,
+          "submeshes": 11
+        },
+        {
+          "lod": 3,
+          "triangles": 19871,
+          "vertices": 16646,
+          "submeshes": 11
+        }
+      ],
+      "max_motion_edge_extension": 5.407647900586669,
+      "source_preservation": "pass",
+      "skirt_cloth_enabled": false
+    },
+    {
+      "id": "ShorekeeperRace",
+      "race": "ww_shorekeeper",
+      "package_sha256": "10797db9b38959c51588c6b9238b24c110b64e2d1532c21d55c9bf669cdd3dda",
+      "lods": [
+        {
+          "lod": 0,
+          "triangles": 86253,
+          "vertices": 57095,
+          "submeshes": 32
+        },
+        {
+          "lod": 1,
+          "triangles": 64621,
+          "vertices": 46264,
+          "submeshes": 32
+        },
+        {
+          "lod": 2,
+          "triangles": 51581,
+          "vertices": 39738,
+          "submeshes": 32
+        },
+        {
+          "lod": 3,
+          "triangles": 46063,
+          "vertices": 36979,
+          "submeshes": 32
+        }
+      ],
+      "max_motion_edge_extension": 5.248396469755937,
+      "source_preservation": "pass",
+      "skirt_cloth_enabled": false
+    },
+    {
+      "id": "ChangliRace",
+      "race": "ww_changli",
+      "package_sha256": "14e4e07b0399ce74ef8d4946b79d74374e0c487ea10c91ef1478e618348017c4",
+      "lods": [
+        {
+          "lod": 0,
+          "triangles": 98585,
+          "vertices": 65748,
+          "submeshes": 31
+        },
+        {
+          "lod": 1,
+          "triangles": 70415,
+          "vertices": 50839,
+          "submeshes": 31
+        },
+        {
+          "lod": 2,
+          "triangles": 56567,
+          "vertices": 43915,
+          "submeshes": 31
+        },
+        {
+          "lod": 3,
+          "triangles": 52993,
+          "vertices": 42128,
+          "submeshes": 31
+        }
+      ],
+      "max_motion_edge_extension": 3.783676158133302,
+      "source_preservation": "pass",
+      "skirt_cloth_enabled": false
+    },
+    {
+      "id": "ZhezhiRace",
+      "race": "ww_zhezhi",
+      "package_sha256": "92d75b98c923342da251e66df0f10998e838b064f33d7a76e0f3b6885f8ca4eb",
+      "lods": [
+        {
+          "lod": 0,
+          "triangles": 86785,
+          "vertices": 78298,
+          "submeshes": 17
+        },
+        {
+          "lod": 1,
+          "triangles": 62241,
+          "vertices": 44977,
+          "submeshes": 16
+        },
+        {
+          "lod": 2,
+          "triangles": 46859,
+          "vertices": 36723,
+          "submeshes": 15
+        },
+        {
+          "lod": 3,
+          "triangles": 37131,
+          "vertices": 31861,
+          "submeshes": 15
+        }
+      ],
+      "max_motion_edge_extension": 5.834436328547587,
+      "source_preservation": "pass",
+      "skirt_cloth_enabled": false
+    }
+  ]
+}

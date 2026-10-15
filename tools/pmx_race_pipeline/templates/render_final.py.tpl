@@ -19,7 +19,7 @@ materials={};fully_discarded=set()
 for name,rec in materialinfo.items():
     mat=bpy.data.materials.new(name);mat.use_nodes=True;bs=mat.node_tree.nodes.get('Principled BSDF');bs.inputs['Roughness'].default_value=.65
     image=bpy.data.images.load(str(ROOT/'build/final_export_lod0/tex'/(rec['textures']['0']+'.png')),check_existing=True);tex=mat.node_tree.nodes.new('ShaderNodeTexImage');tex.image=image;mat.node_tree.links.new(tex.outputs['Color'],bs.inputs['Base Color'])
-    if rec['template']=='alpha':mat.node_tree.links.new(tex.outputs['Alpha'],bs.inputs['Alpha']);mat.surface_render_method='DITHERED'
+    if rec['template']=='alpha' or rec.get('blendMode')=='factor':mat.node_tree.links.new(tex.outputs['Alpha'],bs.inputs['Alpha']);mat.surface_render_method='DITHERED'
     # Match complete GPU alpha-test discard. Co-planar transparent geometry in
     # Cycles can still perturb ray offsets; discard only after decoded-alpha proof.
     if rec['template']=='alpha' and 'alpha_test' in rec.get('shaderMaterialFlags',[]):

@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<action_sets>
+  <action_set id="as_ww_baizhi_warrior" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_warrior" />
+  <action_set id="as_ww_baizhi_female_warrior" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_warrior">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_ww_baizhi_villager" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager" />
+  <action_set id="as_ww_baizhi_female_villager" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_ww_baizhi_facegen" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_facegen" />
+  <action_set id="as_ww_baizhi_female_facegen" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_facegen">
+    <action type="act_inventory_idle" animation="anim_female_custom" />
+    <action type="act_inventory_idle_start" animation="anim_female_custom_start" />
+  </action_set>
+  <action_set id="as_ww_baizhi_hideout_bandit" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_hideout_bandit" />
+  <action_set id="as_ww_baizhi_female_hideout_bandit" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_hideout_bandit" />
+  <action_set id="as_ww_baizhi_villager_in_tavern" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_in_tavern" />
+  <action_set id="as_ww_baizhi_female_villager_in_tavern" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_tavern" />
+  <action_set id="as_ww_baizhi_warrior_in_tavern" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_tavern" />
+  <action_set id="as_ww_baizhi_female_warrior_in_tavern" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_tavern" />
+  <action_set id="as_ww_baizhi_villager_in_aserai_tavern" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_in_aserai_tavern" />
+  <action_set id="as_ww_baizhi_female_villager_in_aserai_tavern" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_in_aserai_tavern" />
+  <action_set id="as_ww_baizhi_warrior_in_aserai_tavern" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_warrior_in_aserai_tavern" />
+  <action_set id="as_ww_baizhi_female_warrior_in_aserai_tavern" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_warrior_in_aserai_tavern" />
+  <action_set id="as_ww_baizhi_child" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_child" />
+  <action_set id="as_ww_baizhi_female_child" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_child" />
+  <action_set id="as_ww_baizhi_map" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_map" />
+  <action_set id="as_ww_baizhi_female_map" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_map" />
+  <action_set id="as_ww_baizhi_map_with_banner" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_map_with_banner" />
+  <action_set id="as_ww_baizhi_female_map_with_banner" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_map_with_banner" />
+  <action_set id="as_ww_baizhi_villain" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villain" />
+  <action_set id="as_ww_baizhi_female_villain" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villain" />
+  <action_set id="as_ww_baizhi_lord" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_lord" />
+  <action_set id="as_ww_baizhi_female_lord" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_lord" />
+  <action_set id="as_ww_baizhi_seller" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_seller" />
+  <action_set id="as_ww_baizhi_female_seller" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_seller" />
+  <action_set id="as_ww_baizhi_weaponsmith" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_weaponsmith" />
+  <action_set id="as_ww_baizhi_female_weaponsmith" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_weaponsmith" />
+  <action_set id="as_ww_baizhi_villager_artisan" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_artisan" />
+  <action_set id="as_ww_baizhi_female_villager_artisan" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_artisan" />
+  <action_set id="as_ww_baizhi_villager_merchant" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_merchant" />
+  <action_set id="as_ww_baizhi_female_villager_merchant" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_merchant" />
+  <action_set id="as_ww_baizhi_villager_preacher" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_preacher" />
+  <action_set id="as_ww_baizhi_female_villager_preacher" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_preacher" />
+  <action_set id="as_ww_baizhi_villager_gangleader" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_gangleader" />
+  <action_set id="as_ww_baizhi_female_villager_gangleader" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_gangleader" />
+  <action_set id="as_ww_baizhi_villager_ruralnotable" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_ruralnotable" />
+  <action_set id="as_ww_baizhi_female_villager_ruralnotable" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_ruralnotable" />
+  <action_set id="as_ww_baizhi_gangleader_bodyguard" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_gangleader_bodyguard" />
+  <action_set id="as_ww_baizhi_female_gangleader_bodyguard" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_gangleader_bodyguard" />
+  <action_set id="as_ww_baizhi_merchant_notary" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_merchant_notary" />
+  <action_set id="as_ww_baizhi_female_merchant_notary" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_merchant_notary" />
+  <action_set id="as_ww_baizhi_female_barmaid" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_barmaid" />
+  <action_set id="as_ww_baizhi_barmaid" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_barmaid" />
+  <action_set id="as_ww_baizhi_tavern_keeper" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_tavern_keeper" />
+  <action_set id="as_ww_baizhi_female_tavern_keeper" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_tavern_keeper" />
+  <action_set id="as_ww_baizhi_musician" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_musician" />
+  <action_set id="as_ww_baizhi_female_musician" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_musician" />
+  <action_set id="as_ww_baizhi_female_dancer" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_dancer" />
+  <action_set id="as_ww_baizhi_dancer" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_dancer" />
+  <action_set id="as_ww_baizhi_beggar" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_beggar" />
+  <action_set id="as_ww_baizhi_female_beggar" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_beggar" />
+  <action_set id="as_ww_baizhi_guard" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_guard" />
+  <action_set id="as_ww_baizhi_female_guard" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_guard" />
+  <action_set id="as_ww_baizhi_unarmed_guard" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_unarmed_guard" />
+  <action_set id="as_ww_baizhi_female_unarmed_guard" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_unarmed_guard" />
+  <action_set id="as_ww_baizhi_villager_with_backpack" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_with_backpack" />
+  <action_set id="as_ww_baizhi_female_villager_with_backpack" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_backpack" />
+  <action_set id="as_ww_baizhi_villager_with_staff" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_with_staff" />
+  <action_set id="as_ww_baizhi_female_villager_with_staff" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_with_staff" />
+  <action_set id="as_ww_baizhi_villager_carry_on_shoulder" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_on_shoulder" />
+  <action_set id="as_ww_baizhi_worker_carry_wood_on_shoulder" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_worker_carry_wood_on_shoulder" />
+  <action_set id="as_ww_baizhi_villager_carry_bucket_on_lefthand" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_bucket_on_lefthand" />
+  <action_set id="as_ww_baizhi_villager_carry_fish_buckets" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_fish_buckets" />
+  <action_set id="as_ww_baizhi_female_villager_carry_on_shoulder" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_on_shoulder" />
+  <action_set id="as_ww_baizhi_villager_carry_axe" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_axe" />
+  <action_set id="as_ww_baizhi_female_villager_carry_axe" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_axe" />
+  <action_set id="as_ww_baizhi_villager_carry_right_side" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_side" />
+  <action_set id="as_ww_baizhi_female_villager_carry_right_side" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_side" />
+  <action_set id="as_ww_baizhi_villager_carry_front_v2" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front_v2" />
+  <action_set id="as_ww_baizhi_female_villager_carry_front_v2" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front_v2" />
+  <action_set id="as_ww_baizhi_villager_carry_front" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_front" />
+  <action_set id="as_ww_baizhi_female_villager_carry_front" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_front" />
+  <action_set id="as_ww_baizhi_villager_carry_right_hand" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_hand" />
+  <action_set id="as_ww_baizhi_female_villager_carry_right_hand" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_hand" />
+  <action_set id="as_ww_baizhi_villager_carry_right_arm" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_right_arm" />
+  <action_set id="as_ww_baizhi_female_villager_carry_right_arm" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_right_arm" />
+  <action_set id="as_ww_baizhi_villager_carry_over_head" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head" />
+  <action_set id="as_ww_baizhi_female_villager_carry_over_head" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head" />
+  <action_set id="as_ww_baizhi_villager_carry_over_head_v2" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_carry_over_head_v2" />
+  <action_set id="as_ww_baizhi_female_villager_carry_over_head_v2" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_carry_over_head_v2" />
+  <action_set id="as_ww_baizhi_villager_2" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_2" />
+  <action_set id="as_ww_baizhi_female_villager_2" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_2" />
+  <action_set id="as_ww_baizhi_villager_3" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_villager_3" />
+  <action_set id="as_ww_baizhi_female_villager_3" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_female_villager_3" />
+  <action_set id="as_ww_baizhi_poses" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+  <action_set id="as_ww_baizhi_female_poses" skeleton="ww_baizhi_skeleton" movement_system="bipedal" base_set="as_human_poses" />
+</action_sets>

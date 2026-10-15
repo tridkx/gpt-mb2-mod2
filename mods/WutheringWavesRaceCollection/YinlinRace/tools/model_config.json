@@ -1,0 +1,126 @@
+{
+  "id": "YinlinRace",
+  "version": "v0.1.0",
+  "race": "ww_yinlin",
+  "prefix": "ww_yinlin",
+  "skeleton": "ww_yinlin_skeleton",
+  "module_name": "Yinlin Race",
+  "display_name": "吟霖",
+  "source_model": "input/original/吟霖1.05.pmx",
+  "source_archive": "input/archive/鸣潮_吟霖1.05_by_鸣潮_604b736dec5765941119bcccdd8cfe57.zip",
+  "ignored_models": [],
+  "unit_scale": 0.08,
+  "source_rotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "skin_min_scale": 1.0,
+  "cloth_enabled": true,
+  "cloth_lods": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "cloth_parts": {
+    "7": {
+      "fixed_above_source_y": 21.8,
+      "attachment_bone": 13,
+      "max_distance_m": 0.065,
+      "travel_slope": 0.22
+    }
+  },
+  "cloth_materials": [
+    7
+  ],
+  "lod_multipliers": [
+    1,
+    0.65,
+    0.4,
+    0.2
+  ],
+  "minimum_ratios": {
+    "m00": 0.75,
+    "m04": 0.75,
+    "m05": 0.75,
+    "m06": 0.75
+  },
+  "facial_animation": false,
+  "pmx_reader": "C:/Users/DKX/AppData/Roaming/Blender Foundation/Blender/5.2/extensions/user_default/mmd_tools/core/pmx/__init__.py",
+  "head_materials": [
+    0,
+    4,
+    5,
+    6,
+    7
+  ],
+  "exclude_materials": [],
+  "glass_materials": [],
+  "cloth_mode": "direct",
+  "cloth_proxy_materials": [
+    7
+  ],
+  "cloth_proxy_policy": {
+    "pin_band_m": 0.012,
+    "minimum_component_height_m": 0.04,
+    "max_proxy_vertices": 4500
+  },
+  "direct_diagnostic_lods": [
+    0
+  ],
+  "hair_reference_body_blend_max": 0.55,
+  "weight_refinement": {
+    "shoulders": true,
+    "waist": true,
+    "crotch": true
+  },
+  "shoulder_style": "field",
+  "rigid_material_bindings": {
+    "0": 13,
+    "4": 13,
+    "5": 13,
+    "6": 13
+  },
+  "hair_decision": "长发及明确独立的长饰品采用有限直接布料；短发、刘海、裙子、袖子普通蒙皮。各材质与挂点见 cloth_parts。",
+  "cloth_policy": {
+    "skirt": false,
+    "sleeves": false,
+    "default": false,
+    "enabled_materials": {
+      "7": "MI_Hair"
+    }
+  },
+  "skinned_skirt_materials": [],
+  "shoulder_materials": [
+    1,
+    2,
+    3,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "weight_smoothing_materials": [
+    8,
+    9,
+    10,
+    13
+  ],
+  "weight_smoothing_iterations": 16,
+  "consistent_cloth_attachment": true
+}

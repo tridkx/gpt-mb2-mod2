@@ -77,6 +77,17 @@ if C.get('weight_refinement',{}).get('crotch',False):
  if len(ids):
   outer=smooth(half_width*.25,half_width*C.get('crotch_lateral_transition_multiplier',1.1),abs(p[ids,0]));amount=smooth(.02,.17,drop[ids])*outer;side=smooth(-half_width*.8,half_width*.8,p[ids,0]);target=np.zeros((len(ids),28));target[:,0]=1-amount;target[:,1]=amount*(1-side);target[:,5]=amount*side;fade=(1-smooth(depth*.8,depth,drop[ids]))*(1-smooth(half_width*(outer_width-.25),half_width*outer_width,abs(p[ids,0])));w[ids]=w[ids]*(1-fade[:,None])+target*fade[:,None];refinements.append({'region':'crotch','vertices':len(ids),'derived_hip_half_width_m':half_width})
 (R/'reports/weight_refinement.json').write_text(json.dumps({'model':C['id'],'regions':refinements,'geometry_unchanged':True},indent=2))
+# Optional topology smoothing for measured discontinuities in source weight fields.
+if C.get('weight_smoothing_materials'):
+ groups=json.loads((B/'source_groups.json').read_text(encoding='utf8'));q,owner=np.unique(np.round(p,6),axis=0,return_inverse=True)
+ sums=np.zeros((len(q),28));np.add.at(sums,owner,w);sums/=np.bincount(owner)[:,None]
+ fs=np.concatenate([np.array(g['faces']) for g in groups]);tri=owner[fs];edges=np.unique(np.sort(np.concatenate([tri[:,[0,1]],tri[:,[1,2]],tri[:,[2,0]]]),axis=1),axis=0);edges=edges[edges[:,0]!=edges[:,1]]
+ aidx=np.concatenate([edges[:,0],edges[:,1]]);bidx=np.concatenate([edges[:,1],edges[:,0]]);length=np.linalg.norm(q[aidx]-q[bidx],axis=1);strength=1/np.maximum(length,.002);degree=np.bincount(aidx,weights=strength,minlength=len(q));degree=np.maximum(degree,1e-8)
+ selected=np.unique(np.concatenate([owner[np.unique(g['faces'])] for g in groups if g['source_material_index'] in C['weight_smoothing_materials']]))
+ for iteration in range(C.get('weight_smoothing_iterations',12)):
+  neighbor=np.zeros_like(sums);np.add.at(neighbor,aidx,sums[bidx]*strength[:,None]);sums[selected]=.4*sums[selected]+.6*neighbor[selected]/degree[selected,None]
+ w=sums[owner];refinements.append({'region':'source_weight_discontinuities','vertices':len(selected),'iterations':C.get('weight_smoothing_iterations',12),'geometry_unchanged':True})
+ (R/'reports/weight_refinement.json').write_text(json.dumps({'model':C['id'],'regions':refinements,'geometry_unchanged':True},indent=2))
 # Exact source coincidences receive common weights for face/neck/material cuts.
 q,owner=np.unique(np.round(p,6),axis=0,return_inverse=True);avg=np.zeros((len(q),28));np.add.at(avg,owner,w);avg/=np.bincount(owner)[:,None];w=avg[owner];keep=np.argsort(-w,axis=1)[:,:4];mask=np.zeros_like(w);np.put_along_axis(mask,keep,1,1);w*=mask;w/=w.sum(1,keepdims=True)
 bpy.ops.wm.read_factory_settings(use_empty=True);materials=json.loads((R/'tex/materials.json').read_text(encoding='utf8'));bm={}
@@ -93,6 +104,13 @@ for rec in json.loads((B/'source_groups.json').read_text(encoding='utf8')):
   weights[invalid]=0;weights[invalid,13]=1
  if str(rec['source_material_index']) in C.get('rigid_material_bindings',{}):
   weights[:]=0;weights[:,C['rigid_material_bindings'][str(rec['source_material_index'])]]=1
+ if rec['source_material_index'] in C.get('skinned_skirt_materials',[]):
+  # Smooth spatial weights for hanging skirts replace noisy source physics chains.
+  # Geometry is unchanged and these surfaces remain ordinary skinning.
+  down=smooth(S[0,2]+.03,S[2,2],points[:,2]);side=smooth(-.12,.12,points[:,0]);leg=.5*down
+  upper=smooth(S[0,2]+.04,S[11,2],points[:,2]);weights[:]=0
+  weights[:,0]=(1-leg)*(1-upper);weights[:,11]=upper
+  weights[:,1]=leg*(1-side);weights[:,5]=leg*side
  if rec['source_material_index'] in C.get('arm_material_bindings',[]):
   parent=list(range(len(points)))
   def find(x):
@@ -106,14 +124,15 @@ for rec in json.loads((B/'source_groups.json').read_text(encoding='utf8')):
    left=weights[vertices,14:21].sum();right=weights[vertices,21:28].sum();owner=15 if left>right else 22 if right>left else (15 if points[vertices,0].mean()<0 else 22);weights[vertices]=0;weights[vertices,owner]=1
  if rec.get('cloth'):
   # All cloth retains its real attachment owner, never the nearest leg.
-  weights[:]=0;weights[:,13]=1
   policy=C['cloth_parts'][str(rec['source_material_index'])]
+  attachment=policy.get('attachment_bone',13);weights[:]=0;weights[:,attachment]=1
   top=policy['fixed_above_source_y']*scale-a['p'][:,1].min()*scale
   alpha=np.minimum(np.maximum(top-points[:,2],0)*policy.get('travel_slope',.3),policy['max_distance_m'])
   if policy.get('source_z_min') is not None:alpha[a['p'][ix,2]<policy['source_z_min']]=0
   alpha[alpha<.008]=0
-  blend=np.clip((S[13,2]-points[:,2]-.12)/.35,0,C.get('hair_reference_body_blend_max',.7))
-  blend[alpha==0]=0;weights[:,13]=1-blend;weights[:,11]=blend
+  blend=np.clip((S[13,2]-points[:,2]-.12)/.35,0,C.get('hair_reference_body_blend_max',.7)) if attachment==13 else np.zeros(len(points))
+  if not C.get('consistent_cloth_attachment',False):blend[alpha==0]=0
+  weights[:,attachment]=1-blend;weights[:,11]+=blend
   rec['cloth']=True
  else:rec['cloth']=False
  me=bpy.data.meshes.new(rec['object']);me.from_pydata(points.tolist(),[],faces.tolist());me.update();uv=me.uv_layers.new(name='UVMap')

@@ -4,10 +4,13 @@
     <LangVersion>latest</LangVersion>
     <AssemblyName>EmilieRace.UIRuntime</AssemblyName>
     <AutomaticallyUseReferenceAssemblyPackages>false</AutomaticallyUseReferenceAssemblyPackages>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <GameBin>D:/SteamLibrary/steamapps/common/Mount &amp; Blade II Bannerlord/bin/Win64_Shipping_Client</GameBin>
     <NativeBin>D:/SteamLibrary/steamapps/common/Mount &amp; Blade II Bannerlord/Modules/Native/bin/Win64_Shipping_Client</NativeBin>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Runtime.cs" />
+    <Compile Include="HairRuntimeProbe.cs" Condition="Exists('HairRuntimeProbe.cs')" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="TaleWorlds.MountAndBlade"><HintPath>$(GameBin)/TaleWorlds.MountAndBlade.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="TaleWorlds.Core"><HintPath>$(GameBin)/TaleWorlds.Core.dll</HintPath><Private>false</Private></Reference>

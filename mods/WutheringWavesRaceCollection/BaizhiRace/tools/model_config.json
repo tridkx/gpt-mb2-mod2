@@ -1,0 +1,164 @@
+{
+  "id": "BaizhiRace",
+  "version": "v0.1.0",
+  "race": "ww_baizhi",
+  "prefix": "ww_baizhi",
+  "skeleton": "ww_baizhi_skeleton",
+  "module_name": "Baizhi Race",
+  "display_name": "白芷",
+  "source_model": "input/original/鸣潮_白莲1.12.pmx",
+  "source_archive": "input/archive/鸣潮_白芷1.12_by_鸣潮_b1b864afc9b3711e895c34a155eb3d84.zip",
+  "ignored_models": [],
+  "unit_scale": 0.08,
+  "source_rotation": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "skin_min_scale": 1.0,
+  "cloth_enabled": true,
+  "cloth_lods": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "cloth_parts": {
+    "19": {
+      "fixed_above_source_y": 18.5,
+      "attachment_bone": 13,
+      "max_distance_m": 0.065,
+      "travel_slope": 0.22
+    }
+  },
+  "cloth_materials": [
+    19
+  ],
+  "lod_multipliers": [
+    1,
+    0.65,
+    0.4,
+    0.2
+  ],
+  "minimum_ratios": {
+    "m09": 0.75,
+    "m10": 0.75,
+    "m11": 0.75,
+    "m12": 0.75,
+    "m13": 0.75,
+    "m14": 0.75,
+    "m15": 0.75,
+    "m16": 0.75,
+    "m17": 0.75,
+    "m18": 0.75,
+    "m00": 0.75,
+    "m24": 0.75
+  },
+  "facial_animation": false,
+  "pmx_reader": "C:/Users/DKX/AppData/Roaming/Blender Foundation/Blender/5.2/extensions/user_default/mmd_tools/core/pmx/__init__.py",
+  "head_materials": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    0,
+    24
+  ],
+  "exclude_materials": [
+    27,
+    28,
+    29,
+    30,
+    11
+  ],
+  "glass_materials": [],
+  "cloth_mode": "direct",
+  "cloth_proxy_materials": [
+    19
+  ],
+  "cloth_proxy_policy": {
+    "pin_band_m": 0.012,
+    "minimum_component_height_m": 0.04,
+    "max_proxy_vertices": 4500
+  },
+  "direct_diagnostic_lods": [
+    0
+  ],
+  "hair_reference_body_blend_max": 0.55,
+  "weight_refinement": {
+    "shoulders": true,
+    "waist": true,
+    "crotch": true
+  },
+  "shoulder_style": "field",
+  "rigid_material_bindings": {
+    "9": 13,
+    "10": 13,
+    "11": 13,
+    "12": 13,
+    "13": 13,
+    "14": 13,
+    "15": 13,
+    "16": 13,
+    "17": 13,
+    "18": 13,
+    "0": 13,
+    "24": 13,
+    "8": 11
+  },
+  "hair_decision": "长发及明确独立的长饰品采用有限直接布料；短发、刘海、裙子、袖子普通蒙皮。各材质与挂点见 cloth_parts。",
+  "cloth_policy": {
+    "skirt": false,
+    "sleeves": false,
+    "default": false,
+    "enabled_materials": {
+      "19": "MI_Hair"
+    }
+  },
+  "skinned_skirt_materials": [],
+  "shoulder_materials": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    20,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "weight_smoothing_materials": [
+    5,
+    25
+  ],
+  "weight_smoothing_iterations": 16,
+  "consistent_cloth_attachment": true
+}

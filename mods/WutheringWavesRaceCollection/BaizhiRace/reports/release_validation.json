@@ -1,0 +1,128 @@
+{
+  "status": "pass",
+  "version": "v0.1.0",
+  "date": "2026-10-15",
+  "final_package_sha256": "a3de4c87f9b8dd323f4b3199351e4d684e6a1ef9e8c113c608dfaa1171c11d5c",
+  "source_input_sha256": "3b31d7f554d8dbdbb229185ea39db53d213b941e9e6836853a946701287d4ad8",
+  "baseline_package_sha256": null,
+  "baseline_reason": "Preserved source PMX and final direct-hair stream equivalence report",
+  "game_version": "v1.4.8",
+  "check_scope": "Final TPAC geometry, UV, weights, materials, skeleton, mapping/cloth roundtrips, source preservation and native motion scans",
+  "lods": [
+    {
+      "lod": 0,
+      "triangles": 30718,
+      "vertices": 22889,
+      "submeshes": 26
+    },
+    {
+      "lod": 1,
+      "triangles": 22732,
+      "vertices": 18896,
+      "submeshes": 26
+    },
+    {
+      "lod": 2,
+      "triangles": 20188,
+      "vertices": 17624,
+      "submeshes": 26
+    },
+    {
+      "lod": 3,
+      "triangles": 19750,
+      "vertices": 17405,
+      "submeshes": 26
+    }
+  ],
+  "motions": [
+    {
+      "label": "idle",
+      "worst_frame": 1,
+      "worst_mesh": "ww_baizhi_part_02",
+      "frames_checked": 16,
+      "max_edge_extension": 1.72288438838877,
+      "max_mesh_p99_extension": 1.3595247420743397
+    },
+    {
+      "label": "run",
+      "worst_frame": 8,
+      "worst_mesh": "ww_baizhi_part_23",
+      "frames_checked": 25,
+      "max_edge_extension": 2.707338230858342,
+      "max_mesh_p99_extension": 1.8386912417395747
+    },
+    {
+      "label": "bow",
+      "worst_frame": 88,
+      "worst_mesh": "ww_baizhi_part_20",
+      "frames_checked": 150,
+      "max_edge_extension": 4.092286885613206,
+      "max_mesh_p99_extension": 2.4846472121001617
+    },
+    {
+      "label": "riding",
+      "worst_frame": 7,
+      "worst_mesh": "ww_baizhi_part_20",
+      "frames_checked": 20,
+      "max_edge_extension": 3.1451235305148497,
+      "max_mesh_p99_extension": 2.1111294561443934
+    },
+    {
+      "label": "slash",
+      "worst_frame": 14,
+      "worst_mesh": "ww_baizhi_part_20",
+      "frames_checked": 150,
+      "max_edge_extension": 2.9406504699999942,
+      "max_mesh_p99_extension": 1.9230394299148876
+    },
+    {
+      "label": "facegen",
+      "worst_frame": 2091,
+      "worst_mesh": "ww_baizhi_part_20",
+      "frames_checked": 64,
+      "max_edge_extension": 1.909689115616004,
+      "max_mesh_p99_extension": 1.3739743599271914
+    },
+    {
+      "label": "stand_unarmed",
+      "worst_frame": 270,
+      "worst_mesh": "ww_baizhi_part_20",
+      "frames_checked": 16,
+      "max_edge_extension": 3.2448537020324006,
+      "max_mesh_p99_extension": 2.5588586550845953
+    },
+    {
+      "label": "stand_1h",
+      "worst_frame": 439,
+      "worst_mesh": "ww_baizhi_part_20",
+      "frames_checked": 16,
+      "max_edge_extension": 2.1226789915648885,
+      "max_mesh_p99_extension": 1.5480930355321967
+    },
+    {
+      "label": "stand_2h",
+      "worst_frame": 62,
+      "worst_mesh": "ww_baizhi_part_20",
+      "frames_checked": 16,
+      "max_edge_extension": 2.276742777559216,
+      "max_mesh_p99_extension": 1.5376883200482063
+    }
+  ],
+  "source_proportions_preserved": true,
+  "cloth_enabled": true,
+  "skirt_cloth_enabled": false,
+  "cloth_mode": "direct",
+  "cloth_render_groups": 4,
+  "proxy_simulation_vertices": 0,
+  "metadata_audit": "pass",
+  "action_sets_count": 89,
+  "game_test_verified": false,
+  "game_cloth_solver_used": false,
+  "hair_decision": "\u957f\u53d1\u53ca\u660e\u786e\u72ec\u7acb\u7684\u957f\u9970\u54c1\u91c7\u7528\u6709\u9650\u76f4\u63a5\u5e03\u6599\uff1b\u77ed\u53d1\u3001\u5218\u6d77\u3001\u88d9\u5b50\u3001\u8896\u5b50\u666e\u901a\u8499\u76ae\u3002\u5404\u6750\u8d28\u4e0e\u6302\u70b9\u89c1 cloth_parts\u3002",
+  "limitations": [
+    "CPU cloth diagnostics are approximate and do not certify native rendering or physics.",
+    "Skirt uses ordinary skinning; riding and deep poses require visual game testing.",
+    "Fixed appearance; no facial expressions, face customization or finger grip morphs.",
+    "UI/facegen scans are sparse frame samples; run, bow, slash and riding cover full extracted cycles."
+  ]
+}

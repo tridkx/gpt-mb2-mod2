@@ -1,0 +1,617 @@
+{
+  "status": "pass",
+  "mode": "direct_visible_hair",
+  "package_sha256": "10797db9b38959c51588c6b9238b24c110b64e2d1532c21d55c9bf669cdd3dda",
+  "uses_mapped_proxy": false,
+  "driver_metamesh_removed": true,
+  "lods": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "meshes": [
+    {
+      "mesh": "ww_shorekeeper_part_30.lod1",
+      "guid": "1840a2e5-d5f0-55a6-1f76-d53a80aada17",
+      "metamesh": "ww_shorekeeper_body",
+      "lod": 1,
+      "bytes": 270780,
+      "render_vertices": 3511,
+      "simulation_vertices": 3200,
+      "fixed_positions": 1585,
+      "boundary_fixed_positions": 106,
+      "active_positions": 1615,
+      "stretch_constraints": 4846,
+      "bend_constraints": 4687,
+      "shear_constraints": 0,
+      "parallel_sets": 22,
+      "dummy_sets": 11,
+      "max_geodesic_anchor_length": 0.40301762894840454,
+      "sha256": "1c1c64f302e89459da10ebada9d296eda032006003f24aee47baf601dedffa65",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ShorekeeperRace\\build\\direct_hair_cooked\\1840a2e5-d5f0-55a6-1f76-d53a80aada17.bin"
+    },
+    {
+      "mesh": "ww_shorekeeper_part_23.lod1",
+      "guid": "21d4411a-d4f0-4262-3c97-799e54d1d0c8",
+      "metamesh": "ww_shorekeeper_body",
+      "lod": 1,
+      "bytes": 274592,
+      "render_vertices": 4722,
+      "simulation_vertices": 3061,
+      "fixed_positions": 1352,
+      "boundary_fixed_positions": 123,
+      "active_positions": 1709,
+      "stretch_constraints": 5188,
+      "bend_constraints": 4562,
+      "shear_constraints": 0,
+      "parallel_sets": 24,
+      "dummy_sets": 15,
+      "max_geodesic_anchor_length": 0.31081810315994324,
+      "sha256": "356ddc87ff9b40c8dc5763e815cae5687140e044e8e17029b8fe13aaf6c32014",
+      "root_fixes": [
+        {
+          "component_positions": 67,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            4055,
+            4056,
+            4057,
+            4058,
+            4059,
+            4060,
+            4657
+          ],
+          "bounds": [
+            [
+              -0.040343985,
+              -0.13149227,
+              1.3106993
+            ],
+            [
+              0.007129047,
+              -0.09127906,
+              1.4393662
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        4055,
+        4056,
+        4057,
+        4058,
+        4059,
+        4060,
+        4657
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ShorekeeperRace\\build\\direct_hair_cooked\\21d4411a-d4f0-4262-3c97-799e54d1d0c8.bin"
+    },
+    {
+      "mesh": "ww_shorekeeper_part_30.lod3",
+      "guid": "21fc3795-d5a2-ac9f-9d56-bb795e188f43",
+      "metamesh": "ww_shorekeeper_body",
+      "lod": 3,
+      "bytes": 270780,
+      "render_vertices": 3511,
+      "simulation_vertices": 3200,
+      "fixed_positions": 1585,
+      "boundary_fixed_positions": 106,
+      "active_positions": 1615,
+      "stretch_constraints": 4846,
+      "bend_constraints": 4687,
+      "shear_constraints": 0,
+      "parallel_sets": 22,
+      "dummy_sets": 11,
+      "max_geodesic_anchor_length": 0.40301762894840454,
+      "sha256": "1c1c64f302e89459da10ebada9d296eda032006003f24aee47baf601dedffa65",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ShorekeeperRace\\build\\direct_hair_cooked\\21fc3795-d5a2-ac9f-9d56-bb795e188f43.bin"
+    },
+    {
+      "mesh": "ww_shorekeeper_part_31.lod1",
+      "guid": "49a4d54a-b8ad-0175-bda7-b7bbc97bdc90",
+      "metamesh": "ww_shorekeeper_body",
+      "lod": 1,
+      "bytes": 143648,
+      "render_vertices": 2897,
+      "simulation_vertices": 2000,
+      "fixed_positions": 1356,
+      "boundary_fixed_positions": 36,
+      "active_positions": 644,
+      "stretch_constraints": 1860,
+      "bend_constraints": 1728,
+      "shear_constraints": 0,
+      "parallel_sets": 18,
+      "dummy_sets": 10,
+      "max_geodesic_anchor_length": 0.40036077714709134,
+      "sha256": "3ebcc01f07bd55b1c9711749fd048e41529c9f25cd560fddfd4ac088c8db1103",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ShorekeeperRace\\build\\direct_hair_cooked\\49a4d54a-b8ad-0175-bda7-b7bbc97bdc90.bin"
+    },
+    {
+      "mesh": "ww_shorekeeper_part_01.lod3",
+      "guid": "49b853e4-e353-90e9-94a4-ae59743475a3",
+      "metamesh": "ww_shorekeeper_body",
+      "lod": 3,
+      "bytes": 87324,
+      "render_vertices": 946,
+      "simulation_vertices": 760,
+      "fixed_positions": 58,
+      "boundary_fixed_positions": 14,
+      "active_positions": 702,
+      "stretch_constraints": 2083,
+      "bend_constraints": 2005,
+      "shear_constraints": 0,
+      "parallel_sets": 20,
+      "dummy_sets": 11,
+      "max_geodesic_anchor_length": 0.4374400068574455,
+      "sha256": "b07a5faf6903615498bb1e8b7721c6d7fd29923a0800c1ee28412c55984c0b7d",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ShorekeeperRace\\build\\direct_hair_cooked\\49b853e4-e353-90e9-94a4-ae59743475a3.bin"
+    },
+    {
+      "mesh": "ww_shorekeeper_part_30.lod2",
+      "guid": "54545dd6-8411-3bf4-a945-77b2ee4e2c00",
+      "metamesh": "ww_shorekeeper_body",
+      "lod": 2,
+      "bytes": 270780,
+      "render_vertices": 3511,
+      "simulation_vertices": 3200,
+      "fixed_positions": 1585,
+      "boundary_fixed_positions": 106,
+      "active_positions": 1615,
+      "stretch_constraints": 4846,
+      "bend_constraints": 4687,
+      "shear_constraints": 0,
+      "parallel_sets": 22,
+      "dummy_sets": 11,
+      "max_geodesic_anchor_length": 0.40301762894840454,
+      "sha256": "1c1c64f302e89459da10ebada9d296eda032006003f24aee47baf601dedffa65",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ShorekeeperRace\\build\\direct_hair_cooked\\54545dd6-8411-3bf4-a945-77b2ee4e2c00.bin"
+    },
+    {
+      "mesh": "ww_shorekeeper_part_31",
+      "guid": "61e91ae0-f89c-60cb-ae05-6eab5ef366d1",
+      "metamesh": "ww_shorekeeper_body",
+      "lod": 0,
+      "bytes": 143648,
+      "render_vertices": 2897,
+      "simulation_vertices": 2000,
+      "fixed_positions": 1356,
+      "boundary_fixed_positions": 36,
+      "active_positions": 644,
+      "stretch_constraints": 1860,
+      "bend_constraints": 1728,
+      "shear_constraints": 0,
+      "parallel_sets": 18,
+      "dummy_sets": 10,
+      "max_geodesic_anchor_length": 0.40036077714709134,
+      "sha256": "3ebcc01f07bd55b1c9711749fd048e41529c9f25cd560fddfd4ac088c8db1103",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ShorekeeperRace\\build\\direct_hair_cooked\\61e91ae0-f89c-60cb-ae05-6eab5ef366d1.bin"
+    },
+    {
+      "mesh": "ww_shorekeeper_part_01.lod2",
+      "guid": "712164d4-40c6-ecda-8d41-d96adf17b367",
+      "metamesh": "ww_shorekeeper_body",
+      "lod": 2,
+      "bytes": 87324,
+      "render_vertices": 946,
+      "simulation_vertices": 760,
+      "fixed_positions": 58,
+      "boundary_fixed_positions": 14,
+      "active_positions": 702,
+      "stretch_constraints": 2083,
+      "bend_constraints": 2005,
+      "shear_constraints": 0,
+      "parallel_sets": 20,
+      "dummy_sets": 11,
+      "max_geodesic_anchor_length": 0.4374400068574455,
+      "sha256": "b07a5faf6903615498bb1e8b7721c6d7fd29923a0800c1ee28412c55984c0b7d",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ShorekeeperRace\\build\\direct_hair_cooked\\712164d4-40c6-ecda-8d41-d96adf17b367.bin"
+    },
+    {
+      "mesh": "ww_shorekeeper_part_01",
+      "guid": "8340f1e0-b850-1911-4f44-a814fe3ae72e",
+      "metamesh": "ww_shorekeeper_body",
+      "lod": 0,
+      "bytes": 87324,
+      "render_vertices": 946,
+      "simulation_vertices": 760,
+      "fixed_positions": 58,
+      "boundary_fixed_positions": 14,
+      "active_positions": 702,
+      "stretch_constraints": 2083,
+      "bend_constraints": 2005,
+      "shear_constraints": 0,
+      "parallel_sets": 20,
+      "dummy_sets": 11,
+      "max_geodesic_anchor_length": 0.4374400068574455,
+      "sha256": "b07a5faf6903615498bb1e8b7721c6d7fd29923a0800c1ee28412c55984c0b7d",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ShorekeeperRace\\build\\direct_hair_cooked\\8340f1e0-b850-1911-4f44-a814fe3ae72e.bin"
+    },
+    {
+      "mesh": "ww_shorekeeper_part_31.lod3",
+      "guid": "892ee9ef-4574-2796-a5e8-a3f541109633",
+      "metamesh": "ww_shorekeeper_body",
+      "lod": 3,
+      "bytes": 143648,
+      "render_vertices": 2897,
+      "simulation_vertices": 2000,
+      "fixed_positions": 1356,
+      "boundary_fixed_positions": 36,
+      "active_positions": 644,
+      "stretch_constraints": 1860,
+      "bend_constraints": 1728,
+      "shear_constraints": 0,
+      "parallel_sets": 18,
+      "dummy_sets": 10,
+      "max_geodesic_anchor_length": 0.40036077714709134,
+      "sha256": "3ebcc01f07bd55b1c9711749fd048e41529c9f25cd560fddfd4ac088c8db1103",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ShorekeeperRace\\build\\direct_hair_cooked\\892ee9ef-4574-2796-a5e8-a3f541109633.bin"
+    },
+    {
+      "mesh": "ww_shorekeeper_part_23.lod2",
+      "guid": "9d921678-2e37-dd36-e7ad-8675a6113770",
+      "metamesh": "ww_shorekeeper_body",
+      "lod": 2,
+      "bytes": 274592,
+      "render_vertices": 4722,
+      "simulation_vertices": 3061,
+      "fixed_positions": 1352,
+      "boundary_fixed_positions": 123,
+      "active_positions": 1709,
+      "stretch_constraints": 5188,
+      "bend_constraints": 4562,
+      "shear_constraints": 0,
+      "parallel_sets": 24,
+      "dummy_sets": 15,
+      "max_geodesic_anchor_length": 0.31081810315994324,
+      "sha256": "356ddc87ff9b40c8dc5763e815cae5687140e044e8e17029b8fe13aaf6c32014",
+      "root_fixes": [
+        {
+          "component_positions": 67,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            4055,
+            4056,
+            4057,
+            4058,
+            4059,
+            4060,
+            4657
+          ],
+          "bounds": [
+            [
+              -0.040343985,
+              -0.13149227,
+              1.3106993
+            ],
+            [
+              0.007129047,
+              -0.09127906,
+              1.4393662
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        4055,
+        4056,
+        4057,
+        4058,
+        4059,
+        4060,
+        4657
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ShorekeeperRace\\build\\direct_hair_cooked\\9d921678-2e37-dd36-e7ad-8675a6113770.bin"
+    },
+    {
+      "mesh": "ww_shorekeeper_part_23.lod3",
+      "guid": "b7d07d14-adf8-6b4d-3c0c-be3ab73eadc3",
+      "metamesh": "ww_shorekeeper_body",
+      "lod": 3,
+      "bytes": 274592,
+      "render_vertices": 4722,
+      "simulation_vertices": 3061,
+      "fixed_positions": 1352,
+      "boundary_fixed_positions": 123,
+      "active_positions": 1709,
+      "stretch_constraints": 5188,
+      "bend_constraints": 4562,
+      "shear_constraints": 0,
+      "parallel_sets": 24,
+      "dummy_sets": 15,
+      "max_geodesic_anchor_length": 0.31081810315994324,
+      "sha256": "356ddc87ff9b40c8dc5763e815cae5687140e044e8e17029b8fe13aaf6c32014",
+      "root_fixes": [
+        {
+          "component_positions": 67,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            4055,
+            4056,
+            4057,
+            4058,
+            4059,
+            4060,
+            4657
+          ],
+          "bounds": [
+            [
+              -0.040343985,
+              -0.13149227,
+              1.3106993
+            ],
+            [
+              0.007129047,
+              -0.09127906,
+              1.4393662
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        4055,
+        4056,
+        4057,
+        4058,
+        4059,
+        4060,
+        4657
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ShorekeeperRace\\build\\direct_hair_cooked\\b7d07d14-adf8-6b4d-3c0c-be3ab73eadc3.bin"
+    },
+    {
+      "mesh": "ww_shorekeeper_part_31.lod2",
+      "guid": "d3d233b6-ca64-9d63-6c9c-729c67f44ea9",
+      "metamesh": "ww_shorekeeper_body",
+      "lod": 2,
+      "bytes": 143648,
+      "render_vertices": 2897,
+      "simulation_vertices": 2000,
+      "fixed_positions": 1356,
+      "boundary_fixed_positions": 36,
+      "active_positions": 644,
+      "stretch_constraints": 1860,
+      "bend_constraints": 1728,
+      "shear_constraints": 0,
+      "parallel_sets": 18,
+      "dummy_sets": 10,
+      "max_geodesic_anchor_length": 0.40036077714709134,
+      "sha256": "3ebcc01f07bd55b1c9711749fd048e41529c9f25cd560fddfd4ac088c8db1103",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ShorekeeperRace\\build\\direct_hair_cooked\\d3d233b6-ca64-9d63-6c9c-729c67f44ea9.bin"
+    },
+    {
+      "mesh": "ww_shorekeeper_part_30",
+      "guid": "dbab4382-33f0-1053-eeba-32c0bef14cdd",
+      "metamesh": "ww_shorekeeper_body",
+      "lod": 0,
+      "bytes": 270780,
+      "render_vertices": 3511,
+      "simulation_vertices": 3200,
+      "fixed_positions": 1585,
+      "boundary_fixed_positions": 106,
+      "active_positions": 1615,
+      "stretch_constraints": 4846,
+      "bend_constraints": 4687,
+      "shear_constraints": 0,
+      "parallel_sets": 22,
+      "dummy_sets": 11,
+      "max_geodesic_anchor_length": 0.40301762894840454,
+      "sha256": "1c1c64f302e89459da10ebada9d296eda032006003f24aee47baf601dedffa65",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ShorekeeperRace\\build\\direct_hair_cooked\\dbab4382-33f0-1053-eeba-32c0bef14cdd.bin"
+    },
+    {
+      "mesh": "ww_shorekeeper_part_01.lod1",
+      "guid": "f592d191-4f0f-9c5d-d4f6-44dca4abb2d5",
+      "metamesh": "ww_shorekeeper_body",
+      "lod": 1,
+      "bytes": 87324,
+      "render_vertices": 946,
+      "simulation_vertices": 760,
+      "fixed_positions": 58,
+      "boundary_fixed_positions": 14,
+      "active_positions": 702,
+      "stretch_constraints": 2083,
+      "bend_constraints": 2005,
+      "shear_constraints": 0,
+      "parallel_sets": 20,
+      "dummy_sets": 11,
+      "max_geodesic_anchor_length": 0.4374400068574455,
+      "sha256": "b07a5faf6903615498bb1e8b7721c6d7fd29923a0800c1ee28412c55984c0b7d",
+      "root_fixes": [],
+      "solver_pinned_render_vertices": [],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ShorekeeperRace\\build\\direct_hair_cooked\\f592d191-4f0f-9c5d-d4f6-44dca4abb2d5.bin"
+    },
+    {
+      "mesh": "ww_shorekeeper_part_23",
+      "guid": "fb4e9e3f-31d2-02dc-945f-80b127b1bf41",
+      "metamesh": "ww_shorekeeper_body",
+      "lod": 0,
+      "bytes": 274592,
+      "render_vertices": 4722,
+      "simulation_vertices": 3061,
+      "fixed_positions": 1352,
+      "boundary_fixed_positions": 123,
+      "active_positions": 1709,
+      "stretch_constraints": 5188,
+      "bend_constraints": 4562,
+      "shear_constraints": 0,
+      "parallel_sets": 24,
+      "dummy_sets": 15,
+      "max_geodesic_anchor_length": 0.31081810315994324,
+      "sha256": "356ddc87ff9b40c8dc5763e815cae5687140e044e8e17029b8fe13aaf6c32014",
+      "root_fixes": [
+        {
+          "component_positions": 67,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            4055,
+            4056,
+            4057,
+            4058,
+            4059,
+            4060,
+            4657
+          ],
+          "bounds": [
+            [
+              -0.040343985,
+              -0.13149227,
+              1.3106993
+            ],
+            [
+              0.007129047,
+              -0.09127906,
+              1.4393662
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        4055,
+        4056,
+        4057,
+        4058,
+        4059,
+        4060,
+        4657
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ShorekeeperRace\\build\\direct_hair_cooked\\fb4e9e3f-31d2-02dc-945f-80b127b1bf41.bin"
+    }
+  ],
+  "source_uv_preserved": true,
+  "game_verified": false
+}

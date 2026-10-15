@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf8'?>
+<bodies>
+  <body name="ww_baizhi_collision" owner_skeleton="ww_baizhi_skeleton">
+    <capsules>
+      <capsule name="ww_baizhi_torso_low" length="0.107790" origin="0, 0, 0" frame="-0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, -0.000000, -0.030414, 0.994543, 1.000000">
+        <points>
+          <point radius="0.081177">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.081177">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_baizhi_torso_high" length="0.097116" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000000, -0.041139, 1.102333, 1.000000">
+        <points>
+          <point radius="0.085000">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.085000">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_baizhi_head" length="0.080087" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, -0.000000, -0.037729, 1.477170, 1.000000">
+        <points>
+          <point radius="0.077151">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.077151">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_baizhi_neck" length="0.069968" origin="0, 0, 0" frame="-0.000000, 0.216220, 0.976345, 0.000000, 0.000000, 0.976345, -0.216220, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, -0.000000, -0.052857, 1.393857, 1.000000">
+        <points>
+          <point radius="0.029317">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.029317">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_baizhi_l_upperarm" length="0.230644" origin="0, 0, 0" frame="-0.799635, 0.065434, -0.596910, 0.000000, 0.052436, 0.997857, 0.039142, 0.000000, 0.598192, 0.000000, -0.801353, 0.000000, -0.098886, -0.065278, 1.361535, 1.000000">
+        <points>
+          <point radius="0.024218">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.024218">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_baizhi_r_upperarm" length="0.230644" origin="0, 0, 0" frame="0.799635, 0.065436, -0.596910, 0.000000, -0.052437, 0.997857, 0.039143, 0.000000, 0.598192, -0.000000, 0.801353, 0.000000, 0.098886, -0.065278, 1.361535, 1.000000">
+        <points>
+          <point radius="0.024218">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.024218">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

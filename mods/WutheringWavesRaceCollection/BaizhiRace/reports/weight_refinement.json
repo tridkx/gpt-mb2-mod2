@@ -1,0 +1,39 @@
+{
+  "model": "BaizhiRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 2388,
+      "vertical_band_m": [
+        0.9342922148853541,
+        1.1923326049000025
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "field",
+      "vertices": 999,
+      "inner_x_m": 0.039554206848144535,
+      "outer_x_m": 0.15821682739257814
+    },
+    {
+      "region": "r_shoulder",
+      "style": "field",
+      "vertices": 996,
+      "inner_x_m": 0.03955427169799805,
+      "outer_x_m": 0.1582170867919922
+    },
+    {
+      "region": "crotch",
+      "vertices": 282,
+      "derived_hip_half_width_m": 0.0814140558242798
+    },
+    {
+      "region": "source_weight_discontinuities",
+      "vertices": 2383,
+      "iterations": 16,
+      "geometry_unchanged": true
+    }
+  ],
+  "geometry_unchanged": true
+}

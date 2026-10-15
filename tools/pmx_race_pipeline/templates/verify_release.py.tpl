@@ -70,7 +70,9 @@ for label in ['idle','run','bow','riding','slash','facegen','stand_unarmed','sta
     extension=float(ratio.max());p99=max(p99,float(np.quantile(ratio,.99)))
     if extension>worst:worst=extension;worstframe=frame;worstmesh=m['name']
  motions.append({'label':label,'worst_frame':int(worstframe),'worst_mesh':worstmesh,'frames_checked':len(skins),'max_edge_extension':worst,'max_mesh_p99_extension':p99})
- if worst>=6:(R/'reports/motion_failure.json').write_text(json.dumps(motions,indent=2));raise ValueError((label,worstmesh,worst,'gross motion tear'))
+failures=[m for m in motions if m['max_edge_extension']>=6]
+if failures:
+ (R/'reports/motion_failure.json').write_text(json.dumps(motions,indent=2));raise ValueError([(m['label'],m['worst_mesh'],m['max_edge_extension'],'gross motion tear') for m in failures])
 actions=validate_files(Path('D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules/Native/ModuleData/action_sets.xml'),R/'module/EmilieRace/ModuleData/action_sets.xml','emilie','emilie_skeleton');assert actions['status']=='pass'
 for path in (R/'module/EmilieRace').rglob('*.xml'):ET.parse(path)
 skins=ET.parse(R/'module/EmilieRace/ModuleData/skins.xml').getroot().find("race[@id='emilie']");assert skins is not None and all(s.get('skeleton')=='emilie_skeleton' and s.get('body_meta_mesh')=='emilie_body' and s.get('hands_mesh')=='emilie_hidden' for s in skins)

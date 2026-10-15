@@ -1,0 +1,33 @@
+{
+  "model": "ShorekeeperRace",
+  "regions": [
+    {
+      "region": "waist",
+      "vertices": 8241,
+      "vertical_band_m": [
+        0.9334191486239434,
+        1.1952569171786311
+      ]
+    },
+    {
+      "region": "l_shoulder",
+      "style": "field",
+      "vertices": 3927,
+      "inner_x_m": 0.04141537475585938,
+      "outer_x_m": 0.16566149902343752
+    },
+    {
+      "region": "r_shoulder",
+      "style": "field",
+      "vertices": 3927,
+      "inner_x_m": 0.04141543579101563,
+      "outer_x_m": 0.1656617431640625
+    },
+    {
+      "region": "crotch",
+      "vertices": 817,
+      "derived_hip_half_width_m": 0.0731784224510193
+    }
+  ],
+  "geometry_unchanged": true
+}

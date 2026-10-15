@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf8'?>
+<bodies>
+  <body name="ww_zhezhi_collision" owner_skeleton="ww_zhezhi_skeleton">
+    <capsules>
+      <capsule name="ww_zhezhi_torso_low" length="0.102033" origin="0, 0, 0" frame="-0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, 0.000000, 0.012337, 0.980157, 1.000000">
+        <points>
+          <point radius="0.068866">
+            <bones>
+              <bone name="spine" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.068866">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_zhezhi_torso_high" length="0.102033" origin="0, 0, 0" frame="-0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, -0.000000, 0.045647, 1.082190, 1.000000">
+        <points>
+          <point radius="0.057112">
+            <bones>
+              <bone name="spine1" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.057112">
+            <bones>
+              <bone name="spine2" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_zhezhi_head" length="0.089538" origin="0, 0, 0" frame="0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 1.000000, -0.000000, 0.000000, -1.000000, 0.000000, 0.000000, 0.000000, 0.000000, -0.010891, 1.453599, 1.000000">
+        <points>
+          <point radius="0.090000">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.090000">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_zhezhi_neck" length="0.077242" origin="0, 0, 0" frame="-0.000000, 0.080065, 0.996790, 0.000000, 0.000000, 0.996790, -0.080065, 0.000000, -1.000000, 0.000000, -0.000000, 0.000000, 0.000000, -0.017076, 1.361605, 1.000000">
+        <points>
+          <point radius="0.034200">
+            <bones>
+              <bone name="neck" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.034200">
+            <bones>
+              <bone name="head" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_zhezhi_l_upperarm" length="0.215052" origin="0, 0, 0" frame="-0.751389, -0.044015, -0.658390, 0.000000, -0.033105, 0.999031, -0.029007, 0.000000, 0.659029, 0.000000, -0.752118, 0.000000, -0.101954, -0.034071, 1.321444, 1.000000">
+        <points>
+          <point radius="0.022580">
+            <bones>
+              <bone name="l_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022580">
+            <bones>
+              <bone name="l_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+      <capsule name="ww_zhezhi_r_upperarm" length="0.215052" origin="0, 0, 0" frame="0.751389, -0.044017, -0.658390, 0.000000, 0.033106, 0.999031, -0.029008, 0.000000, 0.659029, -0.000000, 0.752118, 0.000000, 0.101954, -0.034071, 1.321444, 1.000000">
+        <points>
+          <point radius="0.022580">
+            <bones>
+              <bone name="r_upperarm_twist" weight="1.0" />
+            </bones>
+          </point>
+          <point radius="0.022580">
+            <bones>
+              <bone name="r_foretwist" weight="1.0" />
+            </bones>
+          </point>
+        </points>
+      </capsule>
+    </capsules>
+  </body>
+</bodies>

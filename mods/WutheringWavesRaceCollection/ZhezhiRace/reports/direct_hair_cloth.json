@@ -1,0 +1,245 @@
+{
+  "status": "pass",
+  "mode": "direct_visible_hair",
+  "package_sha256": "92d75b98c923342da251e66df0f10998e838b064f33d7a76e0f3b6885f8ca4eb",
+  "uses_mapped_proxy": false,
+  "driver_metamesh_removed": true,
+  "lods": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "meshes": [
+    {
+      "mesh": "ww_zhezhi_part_07.lod2",
+      "guid": "25559b15-bfa3-d81f-b3a8-55794c5775a3",
+      "metamesh": "ww_zhezhi_body",
+      "lod": 2,
+      "bytes": 611348,
+      "render_vertices": 8589,
+      "simulation_vertices": 6035,
+      "fixed_positions": 1557,
+      "boundary_fixed_positions": 83,
+      "active_positions": 4478,
+      "stretch_constraints": 13439,
+      "bend_constraints": 11901,
+      "shear_constraints": 0,
+      "parallel_sets": 28,
+      "dummy_sets": 14,
+      "max_geodesic_anchor_length": 0.6973473270671446,
+      "sha256": "723880c5c1e662175fe4d2540ea03f9b3e90c92a472e1b81278d7c2377098be8",
+      "root_fixes": [
+        {
+          "component_positions": 73,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            5115,
+            5174,
+            5175,
+            5176
+          ],
+          "bounds": [
+            [
+              -0.022605937,
+              -0.1567986,
+              1.201082
+            ],
+            [
+              0.019172125,
+              -0.10325708,
+              1.3830287
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        5115,
+        5174,
+        5175,
+        5176
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ZhezhiRace\\build\\direct_hair_cooked\\25559b15-bfa3-d81f-b3a8-55794c5775a3.bin"
+    },
+    {
+      "mesh": "ww_zhezhi_part_07",
+      "guid": "5cfa86c8-c407-700e-fdd5-ec945063bea4",
+      "metamesh": "ww_zhezhi_body",
+      "lod": 0,
+      "bytes": 611348,
+      "render_vertices": 8589,
+      "simulation_vertices": 6035,
+      "fixed_positions": 1557,
+      "boundary_fixed_positions": 83,
+      "active_positions": 4478,
+      "stretch_constraints": 13439,
+      "bend_constraints": 11901,
+      "shear_constraints": 0,
+      "parallel_sets": 28,
+      "dummy_sets": 14,
+      "max_geodesic_anchor_length": 0.6973473270671446,
+      "sha256": "723880c5c1e662175fe4d2540ea03f9b3e90c92a472e1b81278d7c2377098be8",
+      "root_fixes": [
+        {
+          "component_positions": 73,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            5115,
+            5174,
+            5175,
+            5176
+          ],
+          "bounds": [
+            [
+              -0.022605937,
+              -0.1567986,
+              1.201082
+            ],
+            [
+              0.019172125,
+              -0.10325708,
+              1.3830287
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        5115,
+        5174,
+        5175,
+        5176
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ZhezhiRace\\build\\direct_hair_cooked\\5cfa86c8-c407-700e-fdd5-ec945063bea4.bin"
+    },
+    {
+      "mesh": "ww_zhezhi_part_07.lod1",
+      "guid": "a03c0c01-cf48-b784-74de-099bc2ee75c4",
+      "metamesh": "ww_zhezhi_body",
+      "lod": 1,
+      "bytes": 611348,
+      "render_vertices": 8589,
+      "simulation_vertices": 6035,
+      "fixed_positions": 1557,
+      "boundary_fixed_positions": 83,
+      "active_positions": 4478,
+      "stretch_constraints": 13439,
+      "bend_constraints": 11901,
+      "shear_constraints": 0,
+      "parallel_sets": 28,
+      "dummy_sets": 14,
+      "max_geodesic_anchor_length": 0.6973473270671446,
+      "sha256": "723880c5c1e662175fe4d2540ea03f9b3e90c92a472e1b81278d7c2377098be8",
+      "root_fixes": [
+        {
+          "component_positions": 73,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            5115,
+            5174,
+            5175,
+            5176
+          ],
+          "bounds": [
+            [
+              -0.022605937,
+              -0.1567986,
+              1.201082
+            ],
+            [
+              0.019172125,
+              -0.10325708,
+              1.3830287
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        5115,
+        5174,
+        5175,
+        5176
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ZhezhiRace\\build\\direct_hair_cooked\\a03c0c01-cf48-b784-74de-099bc2ee75c4.bin"
+    },
+    {
+      "mesh": "ww_zhezhi_part_07.lod3",
+      "guid": "f2e1e1fa-8aea-f98e-0242-e728ba72ae0f",
+      "metamesh": "ww_zhezhi_body",
+      "lod": 3,
+      "bytes": 611348,
+      "render_vertices": 8589,
+      "simulation_vertices": 6035,
+      "fixed_positions": 1557,
+      "boundary_fixed_positions": 83,
+      "active_positions": 4478,
+      "stretch_constraints": 13439,
+      "bend_constraints": 11901,
+      "shear_constraints": 0,
+      "parallel_sets": 28,
+      "dummy_sets": 14,
+      "max_geodesic_anchor_length": 0.6973473270671446,
+      "sha256": "723880c5c1e662175fe4d2540ea03f9b3e90c92a472e1b81278d7c2377098be8",
+      "root_fixes": [
+        {
+          "component_positions": 73,
+          "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties",
+          "pinned_render_vertices": [
+            5115,
+            5174,
+            5175,
+            5176
+          ],
+          "bounds": [
+            [
+              -0.022605937,
+              -0.1567986,
+              1.201082
+            ],
+            [
+              0.019172125,
+              -0.10325708,
+              1.3830287
+            ]
+          ]
+        }
+      ],
+      "solver_pinned_render_vertices": [
+        5115,
+        5174,
+        5175,
+        5176
+      ],
+      "root_policy": {
+        "unanchored": "pin_upper",
+        "axis": 2,
+        "band_m": 0.012,
+        "min_vertices": 2,
+        "reason": "Highest attachment edge of independently rooted visible hair component; band capped at 15% of component-material extent to preserve small hair ties"
+      },
+      "path": "D:\\gpt-mb2-mod2\\mods\\WutheringWavesRaceCollection\\ZhezhiRace\\build\\direct_hair_cooked\\f2e1e1fa-8aea-f98e-0242-e728ba72ae0f.bin"
+    }
+  ],
+  "source_uv_preserved": true,
+  "game_verified": false
+}

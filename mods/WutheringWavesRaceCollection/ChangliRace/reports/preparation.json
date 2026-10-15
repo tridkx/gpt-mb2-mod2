@@ -1,0 +1,37 @@
+{
+  "vertices": 83911,
+  "source_triangles": 115380,
+  "selected_triangles": 98585,
+  "bones": 843,
+  "morphs": 118,
+  "excluded": [
+    {
+      "material_index": 8,
+      "name": "Eye+",
+      "triangles": 286,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    },
+    {
+      "material_index": 10,
+      "name": "Hair_Back+",
+      "triangles": 3038,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    },
+    {
+      "material_index": 12,
+      "name": "Hair_Bangs+",
+      "triangles": 13423,
+      "reason": "Coincident MMD highlight/sphere overlay; primary geometry retained"
+    },
+    {
+      "material_index": 33,
+      "name": "附加表情",
+      "triangles": 48,
+      "reason": "Default hidden expression/material or explicit prop exclusion"
+    }
+  ],
+  "ignored_models": [],
+  "source_model": "input/original/长离/长离.pmx",
+  "selected_source_height_m": 1.7126345205912368,
+  "skirt_cloth_enabled": false
+}
