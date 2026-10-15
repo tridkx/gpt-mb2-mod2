@@ -11,6 +11,7 @@ namespace CavalryCombatTuning
             Path.GetDirectoryName(typeof(SubModule).Assembly.Location), "..", ".."));
         private string _warning;
         private bool _installed;
+        private bool _mcmConnected;
 
         protected override void OnSubModuleLoad()
         {
@@ -43,6 +44,20 @@ namespace CavalryCombatTuning
         protected override void OnBeforeInitialModuleScreenSetAsRoot()
         {
             base.OnBeforeInitialModuleScreenSetAsRoot();
+            if (!_mcmConnected)
+            {
+                try
+                {
+                    McmBridge.Connect(McmSettings.Instance);
+                    _mcmConnected = true;
+                    Log("MCM connected; saved menu changes apply on the next agent stat update.");
+                }
+                catch (Exception error)
+                {
+                    _warning = "Cavalry Combat Tuning: MCM连接失败，使用XML配置；请查看ModuleData/runtime.log。";
+                    Log("MCM connection failed. " + error);
+                }
+            }
             if (_warning == null) return;
             InformationManager.DisplayMessage(new InformationMessage(_warning));
             _warning = null;
@@ -50,6 +65,7 @@ namespace CavalryCombatTuning
 
         protected override void OnSubModuleUnloaded()
         {
+            McmBridge.Disconnect();
             if (_installed) RuntimePatches.Uninstall();
             base.OnSubModuleUnloaded();
         }

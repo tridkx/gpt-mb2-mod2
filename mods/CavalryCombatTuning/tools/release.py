@@ -3,6 +3,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 from pathlib import Path
 import shutil
 import subprocess
@@ -32,8 +33,25 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--game-root", type=Path, default=Path("D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord"))
     parser.add_argument("--install", action="store_true")
+    parser.add_argument("--workshop-root", type=Path, help="Steam workshop content/261550 directory")
     args = parser.parse_args()
     game = args.game_root.resolve()
+    workshop = (args.workshop_root or game.parent.parent / "workshop/content/261550").resolve()
+    dependencies = {}
+    for base in [game / "Modules", workshop]:
+        if not base.is_dir():
+            continue
+        for child in base.iterdir():
+            xml = child / "SubModule.xml"
+            if not xml.is_file():
+                continue
+            node = ET.parse(xml).getroot()
+            identity = node.find("Id").get("value")
+            if identity in ["Bannerlord.Harmony", "Bannerlord.ButterLib", "Bannerlord.UIExtenderEx", "Bannerlord.MBOptionScreen"]:
+                dependencies.setdefault(identity, {"root": str(child), "version": node.find("Version").get("value")})
+    assert len(dependencies) == 4, "Four prerequisites (Harmony/ButterLib/UIExtenderEx/MCM) are required"
+    mcm_bin = Path(dependencies["Bannerlord.MBOptionScreen"]["root"]) / "bin/Win64_Shipping_Client"
+    harmony_bin = Path(dependencies["Bannerlord.Harmony"]["root"]) / "bin/Win64_Shipping_Client"
     descriptor = ET.parse(MODULE / "SubModule.xml").getroot()
     assert descriptor.find("Id").get("value") == MOD_ID
     version = descriptor.find("Version").get("value")
@@ -45,20 +63,23 @@ def main():
         game / "Modules/Native/SubModule.xml",
     ]
     before = {str(path): sha256(path) for path in game_inputs}
+    prerequisite_hashes = {str(path): sha256(path) for info in dependencies.values()
+                           for path in Path(info["root"]).rglob("*") if path.is_file()}
     project = ROOT / "source/Tests/CavalryCombatTuning.Tests.csproj"
-    run(["dotnet", "build", project, "-c", "Release", "--nologo", f"-p:GameRoot={game}"])
+    run(["dotnet", "build", project, "-c", "Release", "--nologo", f"-p:GameRoot={game}",
+         f"-p:McmBin={mcm_bin}", f"-p:HarmonyBin={harmony_bin}"])
+    # Use the installed prerequisite's Harmony build in offline checks as well as in-game.
+    shutil.copy2(harmony_bin / "0Harmony.dll", ROOT / "source/Tests/bin/Release/net472/0Harmony.dll")
     output = run([
         ROOT / "source/Tests/bin/Release/net472/CavalryCombatTuning.Tests.exe",
-        game, MODULE / "ModuleData/settings.xml",
+        game, MODULE / "ModuleData/settings.xml", workshop,
     ])
-    assert "PASS 142 checks" in output
+    checks = int(re.search(r"PASS (\d+) checks", output).group(1))
     build = ROOT / "source/Runtime/bin/Release/net472"
     binary_dir = MODULE / "bin/Win64_Shipping_Client"
     binary_dir.mkdir(parents=True, exist_ok=True)
-    for name in [f"{MOD_ID}.dll", "0Harmony.dll"]:
+    for name in [f"{MOD_ID}.dll"]:
         shutil.copy2(build / name, binary_dir / name)
-    license_path = ROOT / "source/Runtime/Harmony-LICENSE.txt"
-    shutil.copy2(license_path, MODULE / "Harmony-LICENSE.txt")
     shutil.copy2(ROOT / "README.md", MODULE / "README.zh-CN.md")
     shutil.copy2(ROOT / "CHANGELOG.md", MODULE / "CHANGELOG.md")
     module_files = sorted(p for p in MODULE.rglob("*") if p.is_file())
@@ -71,7 +92,9 @@ def main():
     report = {
         "id": MOD_ID, "version": version, "status": "pass", "generated_utc": stamp,
         "game_version": ET.parse(game / "Modules/Native/SubModule.xml").getroot().find("Version").get("value"),
-        "checks": 142, "patch_targets": [line for line in output.splitlines() if line.startswith("PATCH OK")],
+        "checks": checks, "patch_targets": [line for line in output.splitlines() if line.startswith("PATCH OK")],
+        "prerequisites": dependencies,
+        "mcm_settings_id": "CavalryCombatTuning_v1",
         "defaults": {"ChargeDamageMultiplier": 2.5, "MountedMovementPenaltyMultiplier": 0.7, "MountedAccuracyAIOnly": False},
         "game_inputs_sha256": before, "module_files_sha256": hashes,
         "game_acceptance": "pending_user_test; game_not_started",
@@ -99,6 +122,13 @@ def main():
         if target.exists():
             backup = ROOT / "build/install_backups" / stamp / MOD_ID
             shutil.copytree(target, backup)
+        # v1.1 uses the existing Harmony module. Remove only our obsolete bundled files after backup.
+        for relative in ["bin/Win64_Shipping_Client/0Harmony.dll", "Harmony-LICENSE.txt"]:
+            obsolete = (target / relative).resolve()
+            if not obsolete.is_relative_to(target):
+                raise ValueError("Obsolete file outside this module")
+            if obsolete.exists():
+                obsolete.unlink()
         for source in module_files:
             destination = target / source.relative_to(MODULE)
             destination.parent.mkdir(parents=True, exist_ok=True)
@@ -119,6 +149,7 @@ def main():
         (reports / "installation_validation.json").write_text(json.dumps(install_report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"INSTALLED {target}")
     assert before == {str(path): sha256(path) for path in game_inputs}, "Native game inputs changed"
+    assert prerequisite_hashes == {path: sha256(Path(path)) for path in prerequisite_hashes}, "Prerequisite files changed"
     source_package = dist / f"{MOD_ID}_{version}_source_{stamp}.zip"
     source_paths = [ROOT / "README.md", ROOT / "CHANGELOG.md", ROOT / "mod.json", ROOT / ".gitignore"]
     for folder in ["source", "tools", "reports", "module"]:

@@ -5,8 +5,12 @@
     <AutomaticallyUseReferenceAssemblyPackages>false</AutomaticallyUseReferenceAssemblyPackages>
     <GameRoot Condition="'$(GameRoot)' == ''">D:/SteamLibrary/steamapps/common/Mount &amp; Blade II Bannerlord</GameRoot>
     <GameBin>$(GameRoot)/bin/Win64_Shipping_Client</GameBin>
+    <McmBin Condition="'$(McmBin)' == ''">D:/SteamLibrary/steamapps/workshop/content/261550/2859238197/bin/Win64_Shipping_Client</McmBin>
+    <HarmonyBin Condition="'$(HarmonyBin)' == ''">D:/SteamLibrary/steamapps/workshop/content/261550/2859188632/bin/Win64_Shipping_Client</HarmonyBin>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MCMv5"><HintPath>$(McmBin)/MCMv5.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(HarmonyBin)/0Harmony.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="TaleWorlds.MountAndBlade"><HintPath>$(GameBin)/TaleWorlds.MountAndBlade.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="TaleWorlds.Core"><HintPath>$(GameBin)/TaleWorlds.Core.dll</HintPath><Private>false</Private></Reference>
     <Reference Include="TaleWorlds.Library"><HintPath>$(GameBin)/TaleWorlds.Library.dll</HintPath><Private>false</Private></Reference>

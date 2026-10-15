@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CavalryCombatTuning>
+  <!-- v1.1起：仅作首次MCM配置初值及连接失败时回退；已有MCM保存值优先。 -->
   <!-- 冲撞基础伤害倍率：1=原版，2.5=默认，允许 0～10。 -->
   <ChargeDamageMultiplier>2.5</ChargeDamageMultiplier>
   <!-- 骑乘弓弩移动精度惩罚：1=原版，0.7=降低30%，0=消除该项；允许 0～3。 -->

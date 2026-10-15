@@ -7,6 +7,9 @@ using CavalryCombatTuning;
 using HarmonyLib;
 using TaleWorlds.Core;
 using TaleWorlds.MountAndBlade;
+using MCM.Abstractions.Base;
+using MCM.Abstractions.Attributes;
+using MCM.Abstractions.Attributes.v2;
 
 internal static class Program
 {
@@ -25,6 +28,13 @@ internal static class Program
                 string path = Path.Combine(gameRoot, root, name);
                 if (File.Exists(path)) return Assembly.LoadFrom(path);
             }
+            string[] moduleRoots = { Path.Combine(gameRoot, "Modules"), args.Length > 2 ? args[2] : "" };
+            foreach (string moduleRoot in moduleRoots)
+                foreach (string module in Directory.Exists(moduleRoot) ? Directory.GetDirectories(moduleRoot) : new string[0])
+                {
+                    string path = Path.Combine(module, "bin", "Win64_Shipping_Client", name);
+                    if (File.Exists(path)) return Assembly.LoadFrom(path);
+                }
             return null;
         };
         try { Run(args[1]); Console.WriteLine("PASS " + _checks + " checks"); return 0; }
@@ -98,6 +108,49 @@ internal static class Program
             Reject(() => Settings.Load(temp), "misspelled setting rejected");
         }
         finally { File.Delete(temp); }
+
+        var mcm = new McmSettings(new Settings
+        {
+            ChargeDamageMultiplier = 3.5f, MountedMovementPenaltyMultiplier = 0.6f, MountedAccuracyAIOnly = true
+        });
+        Check(mcm.FormatType == "json2", "MCM persists global settings");
+        Check(mcm.Id == "CavalryCombatTuning_v1", "stable MCM identity");
+        Check(mcm.UIVersion == 2, "MCM v2 attributes");
+        foreach (string property in new[] { nameof(mcm.ChargeDamageMultiplier), nameof(mcm.MountedMovementPenaltyMultiplier), nameof(mcm.MountedAccuracyAIOnly) })
+        {
+            var attribute = (BaseSettingPropertyAttribute)Attribute.GetCustomAttribute(typeof(McmSettings).GetProperty(property), typeof(BaseSettingPropertyAttribute));
+            Check(attribute != null && !attribute.RequireRestart, "MCM control and no-restart: " + property);
+        }
+        McmBridge.Connect(mcm);
+        Near(RuntimePatches.CurrentSettings.ChargeDamageMultiplier, 3.5f, "legacy charge seed");
+        Near(RuntimePatches.CurrentSettings.MountedMovementPenaltyMultiplier, 0.6f, "legacy accuracy seed");
+        Check(RuntimePatches.CurrentSettings.MountedAccuracyAIOnly, "legacy AI-only seed");
+        mcm.ChargeDamageMultiplier = 4f;
+        mcm.MountedMovementPenaltyMultiplier = 0.5f;
+        mcm.MountedAccuracyAIOnly = false;
+        mcm.OnPropertyChanged(nameof(mcm.ChargeDamageMultiplier));
+        Near(RuntimePatches.CurrentSettings.ChargeDamageMultiplier, 3.5f, "unsaved menu edit not applied");
+        mcm.OnPropertyChanged(BaseSettings.SaveTriggered);
+        Near(RuntimePatches.CurrentSettings.ChargeDamageMultiplier, 4f, "saved menu charge applied without restart");
+        Near(RuntimePatches.CurrentSettings.MountedMovementPenaltyMultiplier, 0.5f, "saved menu accuracy applied");
+        Check(!RuntimePatches.CurrentSettings.MountedAccuracyAIOnly, "saved menu AI-only applied");
+        var liveMount = Baseline();
+        StatModifier.Apply(liveMount, RuntimePatches.CurrentSettings, true, false, false, true, WeaponClass.Undefined);
+        Near(liveMount.MountChargeDamage, 0.48f, "live saved charge used by combat modifier");
+        var liveArcher = Baseline();
+        StatModifier.Apply(liveArcher, RuntimePatches.CurrentSettings, false, true, true, false, WeaponClass.Crossbow);
+        Near(liveArcher.WeaponMaxMovementAccuracyPenalty, 0.1f, "live saved accuracy used by combat modifier");
+        McmBridge.Disconnect();
+        mcm.ChargeDamageMultiplier = 5f;
+        mcm.OnPropertyChanged(BaseSettings.SaveTriggered);
+        Near(RuntimePatches.CurrentSettings.ChargeDamageMultiplier, 4f, "MCM event detached on unload");
+        McmBridge.Connect(mcm);
+        mcm.ChargeDamageMultiplier = 2.5f;
+        mcm.OnPropertyChanged(BaseSettings.LoadingComplete);
+        Near(RuntimePatches.CurrentSettings.ChargeDamageMultiplier, 2.5f, "reloaded MCM values applied");
+        McmBridge.Disconnect();
+        mcm.ChargeDamageMultiplier = float.NaN;
+        Reject(() => mcm.ToRuntimeSettings(), "MCM invalid value rejected");
 
         // Actually install Harmony patches against both installed game methods; do not launch a mission.
         RuntimePatches.Install();
