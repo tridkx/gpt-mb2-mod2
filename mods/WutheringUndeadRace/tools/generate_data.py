@@ -116,7 +116,9 @@ def main():
    armor=[min(500,int(Decimal(str(v*af)).quantize(Decimal(1),rounding=ROUND_HALF_UP))) for v in armor]
    id='wur_'+key+('_lord_template' if lord else '_t'+str(t))
    display=zh+'·'+('感染统领' if lord else ['感染步兵','感染射手','感染骑兵','感染骑射'][role]+str(t))
-   npc=E.SubElement(npcs,'NPCCharacter',id=id,name=display,level=str(36 if lord else 1+5*t),occupation='Lord' if lord else 'Soldier',culture='Culture.empire',race=lr if lord else race,is_female='true',age='30',default_group=ROLES[role],face_mesh_cache='false',**({'is_hero':'true','is_template':'true'} if lord else {}))
+   # A dynamic hero template is a CharacterObject, not a pre-existing hero.
+   # HeroCreator creates the hero instance later, after the campaign is ready.
+   npc=E.SubElement(npcs,'NPCCharacter',id=id,name=display,level=str(36 if lord else 1+5*t),occupation='Lord' if lord else 'Soldier',culture='Culture.empire',race=lr if lord else race,is_female='true',age='30',default_group=ROLES[role],face_mesh_cache='false',**({'is_template':'true'} if lord else {}))
    face=E.SubElement(npc,'face')
    for tag in ['BodyProperties','BodyPropertiesMax']:E.SubElement(face,tag,version='4',age='30',weight='0.5',build='0.5',key='0'*128)
    skills={s.get('id'):int(s.get('value')) for s in donor.findall('skills/skill')}

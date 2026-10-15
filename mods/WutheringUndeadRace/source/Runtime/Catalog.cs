@@ -37,12 +37,15 @@ namespace WutheringUndeadRace
   }
   public static void Bind()
   {
+   var missing=new List<string>();
    foreach(var e in Entries.Values)
    {
-    e.Character=MBObjectManager.Instance.GetObject<CharacterObject>(e.Id) ?? throw new InvalidDataException("Missing "+e.Id);
+    e.Character=MBObjectManager.Instance.GetObject<CharacterObject>(e.Id);
+    if(e.Character==null || !e.Character.IsReady){missing.Add(e.Id+(e.Character==null?" [missing]":" [not ready]"));continue;}
     var races=FaceGen.GetRaceNames();
     if(e.Character.Race<0 || e.Character.Race>=races.Length || races[e.Character.Race]!=e.Race)throw new InvalidDataException("Race mismatch: "+e.Id);
    }
+   if(missing.Count>0)throw new InvalidDataException("Infection character registry incomplete: "+string.Join(", ",missing));
   }
   public static Entry For(BasicCharacterObject c)
   {

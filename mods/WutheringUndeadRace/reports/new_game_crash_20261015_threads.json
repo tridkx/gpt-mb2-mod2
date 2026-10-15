@@ -1,0 +1,1287 @@
+[
+  {
+    "thread": 25232,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b659c4",
+        "sp": "0xd723dfec68",
+        "kind": "Runtime",
+        "name": "[InlinedCallFrame]",
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffe857769d9",
+        "sp": "0xd723dfec68",
+        "kind": "Runtime",
+        "name": "[InlinedCallFrame]",
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffe857769d9",
+        "sp": "0xd723dfec30",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffe8533262e",
+        "sp": "0xd723dfed30",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffe85330899",
+        "sp": "0xd723dfedd0",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.MountAndBlade.Launcher.Program.Main(System.String[])",
+        "token": 100663297,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.Launcher.exe"
+      },
+      {
+        "ip": "0x7ffee4af1b43",
+        "sp": "0xd723dfefe8",
+        "kind": "Runtime",
+        "name": "[GCFrame]",
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 36272,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd7251ff788",
+        "kind": "Runtime",
+        "name": "[DebuggerU2MCatchHandlerFrame]",
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 36964,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b623d4",
+        "sp": "0xd72376f8f8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 29940,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd728dff468",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 12612,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b628a4",
+        "sp": "0xd7295fed88",
+        "kind": "Runtime",
+        "name": "System.Threading.WaitHandle.WaitMultiple(System.Threading.WaitHandle[], Int32, Boolean, Boolean)",
+        "token": 100679313,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_64\\mscorlib\\v4.0_4.0.0.0__b77a5c561934e089\\mscorlib.dll"
+      },
+      {
+        "ip": "0x7ffee3238ea0",
+        "sp": "0xd7295feec0",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffe7b31b346",
+        "sp": "0xd7295fef20",
+        "kind": "ManagedMethod",
+        "name": "System.Net.TimerThread.ThreadProc()",
+        "token": 100668394,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_MSIL\\System\\v4.0_4.0.0.0__b77a5c561934e089\\System.dll"
+      },
+      {
+        "ip": "0x7ffee3211c08",
+        "sp": "0xd7295fefd0",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffee3211af5",
+        "sp": "0xd7295ff0a0",
+        "kind": "ManagedMethod",
+        "name": "System.Threading.ExecutionContext.Run(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object, Boolean)",
+        "token": 100678671,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_64\\mscorlib\\v4.0_4.0.0.0__b77a5c561934e089\\mscorlib.dll"
+      },
+      {
+        "ip": "0x7ffee3211ac5",
+        "sp": "0xd7295ff0d0",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffee3236455",
+        "sp": "0xd7295ff120",
+        "kind": "ManagedMethod",
+        "name": "System.Threading.ThreadHelper.ThreadStart()",
+        "token": 100678945,
+        "module": "C:\\Windows\\Microsoft.Net\\assembly\\GAC_64\\mscorlib\\v4.0_4.0.0.0__b77a5c561934e089\\mscorlib.dll"
+      },
+      {
+        "ip": "0x7ffee4af1b43",
+        "sp": "0xd7295ff340",
+        "kind": "Runtime",
+        "name": "[GCFrame]",
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffee4af1b43",
+        "sp": "0xd7295ff6a8",
+        "kind": "Runtime",
+        "name": "[DebuggerU2MCatchHandlerFrame]",
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 20972,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd73335fd28",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 34408,
+    "exception": "System.IO.InvalidDataException",
+    "message": "Troop missing: gbr_noelle",
+    "exceptions": [
+      {
+        "type": "System.IO.InvalidDataException",
+        "message": "Troop missing: gbr_noelle",
+        "frames": [
+          {
+            "name": null,
+            "token": null,
+            "module": null
+          },
+          {
+            "name": null,
+            "token": null,
+            "module": null
+          },
+          {
+            "name": "TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior.SpawnBanditsAroundHideoutAtNewGame()",
+            "token": 100678341,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll"
+          },
+          {
+            "name": "StoryMode.GameComponents.CampaignBehaviors.StoryModeBanditSpawnCampaignBehavior.SpawnInitialBanditsAndLooters()",
+            "token": 100664577,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\StoryMode\\bin\\Win64_Shipping_Client\\StoryMode.dll"
+          },
+          {
+            "name": "StoryMode.GameComponents.CampaignBehaviors.StoryModeBanditSpawnCampaignBehavior.OnTutorialEnded()",
+            "token": 100664576,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\StoryMode\\bin\\Win64_Shipping_Client\\StoryMode.dll"
+          },
+          {
+            "name": "TaleWorlds.CampaignSystem.MbEvent.InvokeList(EventHandlerRec)",
+            "token": 100664283,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll"
+          },
+          {
+            "name": "StoryMode.MainStoryLine.CompleteTutorialPhase(Boolean)",
+            "token": 100663380,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\StoryMode\\bin\\Win64_Shipping_Client\\StoryMode.dll"
+          },
+          {
+            "name": "StoryMode.GameComponents.CampaignBehaviors.TrainingFieldCampaignBehavior.OnMissionEnded(TaleWorlds.Core.IMission)",
+            "token": 100664650,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\StoryMode\\bin\\Win64_Shipping_Client\\StoryMode.dll"
+          },
+          {
+            "name": "TaleWorlds.CampaignSystem.MbEvent\u00601[[System.__Canon, mscorlib]].InvokeList(EventHandlerRec\u00601\u003CSystem.__Canon,System.__Canon\u003E, System.__Canon)",
+            "token": 100665464,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll"
+          },
+          {
+            "name": "TaleWorlds.CampaignSystem.CampaignEvents.OnMissionEnded(TaleWorlds.Core.IMission)",
+            "token": 100665142,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll"
+          },
+          {
+            "name": "TaleWorlds.CampaignSystem.CampaignEventDispatcher.OnMissionEnded(TaleWorlds.Core.IMission)",
+            "token": 100664430,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll"
+          },
+          {
+            "name": "SandBox.Missions.MissionLogics.CampaignMissionComponent.OnEndMission()",
+            "token": 100664293,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\SandBox\\bin\\Win64_Shipping_Client\\SandBox.dll"
+          },
+          {
+            "name": "TaleWorlds.MountAndBlade.Mission.EndMissionInternal()",
+            "token": 100670118,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.dll"
+          },
+          {
+            "name": "TaleWorlds.MountAndBlade.Mission.CheckMissionEnd(Single)",
+            "token": 100670130,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.dll"
+          },
+          {
+            "name": "TaleWorlds.MountAndBlade.Mission.OnTick(Single, Single, Boolean, Boolean)",
+            "token": 100670087,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.dll"
+          },
+          {
+            "name": "TaleWorlds.MountAndBlade.MissionState.TickMission(Single)",
+            "token": 100671831,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.dll"
+          },
+          {
+            "name": "TaleWorlds.MountAndBlade.MissionState.OnTick(Single)",
+            "token": 100671830,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.dll"
+          },
+          {
+            "name": "TaleWorlds.Core.GameStateManager.OnTick(Single)",
+            "token": 100665376,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.Core.dll"
+          },
+          {
+            "name": "TaleWorlds.Core.Game.OnTick(Single)",
+            "token": 100665231,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.Core.dll"
+          },
+          {
+            "name": "TaleWorlds.Core.GameManagerBase.OnTick(Single)",
+            "token": 100665274,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.Core.dll"
+          },
+          {
+            "name": "TaleWorlds.MountAndBlade.Module.OnApplicationTick(Single)",
+            "token": 100674101,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.dll"
+          },
+          {
+            "name": "TaleWorlds.DotNet.Managed.ApplicationTick(Single)",
+            "token": 100663475,
+            "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.DotNet.dll"
+          }
+        ]
+      }
+    ],
+    "frames": [
+      {
+        "ip": "0x7fff0108408a",
+        "sp": "0xd7255fb8c8",
+        "kind": "Runtime",
+        "name": "[HelperMethodFrame]",
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffe871bd304",
+        "sp": "0xd7255fb9b0",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffee4a801e1",
+        "sp": "0xd7255fe118",
+        "kind": "Runtime",
+        "name": "[HelperMethodFrame]",
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffe8a94024e",
+        "sp": "0xd7255fe200",
+        "kind": "ManagedMethod",
+        "name": "GenshinBanditRace.Catalog.Bind()",
+        "token": 100663312,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\GenshinBanditRace\\bin\\Win64_Shipping_Client\\GenshinBanditRace.dll"
+      },
+      {
+        "ip": "0x7ffe8b76d0ac",
+        "sp": "0xd7255fe260",
+        "kind": "ManagedMethod",
+        "name": "GenshinBanditRace.Patches.Mix(TaleWorlds.CampaignSystem.Party.MobileParty, TaleWorlds.CampaignSystem.Clan)",
+        "token": 100663320,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\GenshinBanditRace\\bin\\Win64_Shipping_Client\\GenshinBanditRace.dll"
+      },
+      {
+        "ip": "0x7ffe871bd1d2",
+        "sp": "0xd7255fe2a0",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffe871bc442",
+        "sp": "0xd7255fe360",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      },
+      {
+        "ip": "0x7ffe8ae05285",
+        "sp": "0xd7255fe3b0",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.CampaignSystem.CampaignBehaviors.BanditSpawnCampaignBehavior.SpawnBanditsAroundHideoutAtNewGame()",
+        "token": 100678341,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll"
+      },
+      {
+        "ip": "0x7ffe8b76ba1b",
+        "sp": "0xd7255fe400",
+        "kind": "ManagedMethod",
+        "name": "StoryMode.GameComponents.CampaignBehaviors.StoryModeBanditSpawnCampaignBehavior.SpawnInitialBanditsAndLooters()",
+        "token": 100664577,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\StoryMode\\bin\\Win64_Shipping_Client\\StoryMode.dll"
+      },
+      {
+        "ip": "0x7ffe8b76b9ab",
+        "sp": "0xd7255fe430",
+        "kind": "ManagedMethod",
+        "name": "StoryMode.GameComponents.CampaignBehaviors.StoryModeBanditSpawnCampaignBehavior.OnTutorialEnded()",
+        "token": 100664576,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\StoryMode\\bin\\Win64_Shipping_Client\\StoryMode.dll"
+      },
+      {
+        "ip": "0x7ffe8b19506b",
+        "sp": "0xd7255fe460",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.CampaignSystem.MbEvent.InvokeList(EventHandlerRec)",
+        "token": 100664283,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll"
+      },
+      {
+        "ip": "0x7ffe8b7659c1",
+        "sp": "0xd7255fe490",
+        "kind": "ManagedMethod",
+        "name": "StoryMode.MainStoryLine.CompleteTutorialPhase(Boolean)",
+        "token": 100663380,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\StoryMode\\bin\\Win64_Shipping_Client\\StoryMode.dll"
+      },
+      {
+        "ip": "0x7ffe8b765913",
+        "sp": "0xd7255fe4d0",
+        "kind": "ManagedMethod",
+        "name": "StoryMode.GameComponents.CampaignBehaviors.TrainingFieldCampaignBehavior.OnMissionEnded(TaleWorlds.Core.IMission)",
+        "token": 100664650,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\StoryMode\\bin\\Win64_Shipping_Client\\StoryMode.dll"
+      },
+      {
+        "ip": "0x7ffe8a8b1bf2",
+        "sp": "0xd7255fe500",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.CampaignSystem.MbEvent\u00601[[System.__Canon, mscorlib]].InvokeList(EventHandlerRec\u00601\u003CSystem.__Canon,System.__Canon\u003E, System.__Canon)",
+        "token": 100665464,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll"
+      },
+      {
+        "ip": "0x7ffe8b7658cb",
+        "sp": "0xd7255fe540",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.CampaignSystem.CampaignEvents.OnMissionEnded(TaleWorlds.Core.IMission)",
+        "token": 100665142,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll"
+      },
+      {
+        "ip": "0x7ffe8b765870",
+        "sp": "0xd7255fe570",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.CampaignSystem.CampaignEventDispatcher.OnMissionEnded(TaleWorlds.Core.IMission)",
+        "token": 100664430,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.CampaignSystem.dll"
+      },
+      {
+        "ip": "0x7ffe8b7657b7",
+        "sp": "0xd7255fe5c0",
+        "kind": "ManagedMethod",
+        "name": "SandBox.Missions.MissionLogics.CampaignMissionComponent.OnEndMission()",
+        "token": 100664293,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\Modules\\SandBox\\bin\\Win64_Shipping_Client\\SandBox.dll"
+      },
+      {
+        "ip": "0x7ffe8b752ad9",
+        "sp": "0xd7255fe610",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.MountAndBlade.Mission.EndMissionInternal()",
+        "token": 100670118,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.dll"
+      },
+      {
+        "ip": "0x7ffe8b70fe65",
+        "sp": "0xd7255fe6a0",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.MountAndBlade.Mission.CheckMissionEnd(Single)",
+        "token": 100670130,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.dll"
+      },
+      {
+        "ip": "0x7ffe8b70f71d",
+        "sp": "0xd7255fe720",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.MountAndBlade.Mission.OnTick(Single, Single, Boolean, Boolean)",
+        "token": 100670087,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.dll"
+      },
+      {
+        "ip": "0x7ffe8b6e2ef8",
+        "sp": "0xd7255feee0",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.MountAndBlade.MissionState.TickMission(Single)",
+        "token": 100671831,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.dll"
+      },
+      {
+        "ip": "0x7ffe8b34546f",
+        "sp": "0xd7255fef80",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.MountAndBlade.MissionState.OnTick(Single)",
+        "token": 100671830,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.dll"
+      },
+      {
+        "ip": "0x7ffe89b31382",
+        "sp": "0xd7255fefe0",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.Core.GameStateManager.OnTick(Single)",
+        "token": 100665376,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.Core.dll"
+      },
+      {
+        "ip": "0x7ffe8a945fda",
+        "sp": "0xd7255ff010",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.Core.Game.OnTick(Single)",
+        "token": 100665231,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.Core.dll"
+      },
+      {
+        "ip": "0x7ffe8a83b4d7",
+        "sp": "0xd7255ff080",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.Core.GameManagerBase.OnTick(Single)",
+        "token": 100665274,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.Core.dll"
+      },
+      {
+        "ip": "0x7ffe89b2fff2",
+        "sp": "0xd7255ff0d0",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.MountAndBlade.Module.OnApplicationTick(Single)",
+        "token": 100674101,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.MountAndBlade.dll"
+      },
+      {
+        "ip": "0x7ffe89b2b1c2",
+        "sp": "0xd7255ff1c0",
+        "kind": "ManagedMethod",
+        "name": "TaleWorlds.DotNet.Managed.ApplicationTick(Single)",
+        "token": 100663475,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\TaleWorlds.DotNet.dll"
+      },
+      {
+        "ip": "0x7ffe8577ad2d",
+        "sp": "0xd7255ff210",
+        "kind": "ManagedMethod",
+        "name": "DomainBoundILStubClass.IL_STUB_ReversePInvoke(Single)",
+        "token": 100663296,
+        "module": "D:\\SteamLibrary\\steamapps\\common\\Mount \u0026 Blade II Bannerlord\\bin\\Win64_Shipping_Client\\Steamworks.NET.dll"
+      }
+    ]
+  },
+  {
+    "thread": 28260,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd73375f6a8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 33964,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd732b5f738",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 37972,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd730f5f918",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 40620,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd73135f748",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 24728,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd7259ff768",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 21604,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd73175fd08",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 35028,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd730b5fd38",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 26672,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd731f5fca8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 33092,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd732f5fda8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 37064,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd73235f988",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 29916,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd73535fb18",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 34492,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd733b5fdb8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 14932,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd731b5fba8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 11676,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd733f5f6c8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 37968,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd73275f7a8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 27680,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd735b5f618",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 30928,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd73575fcc8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 25436,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd73475fdb8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 24816,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd73435f718",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 24132,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd734b5f768",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 18076,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd734f5fa98",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 28624,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61e74",
+        "sp": "0xd72a9ff638",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 39076,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd726b9ef78",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 27360,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd7291fe9a8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 7620,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd729dfef78",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 37964,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd7299fea58",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 12916,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd72a5fecb8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 25120,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd72a1fe9a8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 11556,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd72b1fe9e8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 30724,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd72b5fe778",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 19160,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd72b9fea68",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 15340,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd72bdff7d8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 28420,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd72c1ff998",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 36804,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd72c5ff698",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 36432,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd72c9ff728",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 31776,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd72cdffaf8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 31116,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd72d1ff378",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 40188,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd72d5ff8d8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 15244,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd72d9ff268",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 36184,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd72ddff6c8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 36568,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd72e1ff368",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 24200,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd72e9ff698",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 8556,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd72e5ff618",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 37304,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd72edff0b8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 35504,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd7374ef128",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  },
+  {
+    "thread": 12448,
+    "exception": null,
+    "message": null,
+    "exceptions": [],
+    "frames": [
+      {
+        "ip": "0x7fff03b61dd4",
+        "sp": "0xd7380eeff8",
+        "kind": "ManagedMethod",
+        "name": null,
+        "token": null,
+        "module": null
+      }
+    ]
+  }
+]

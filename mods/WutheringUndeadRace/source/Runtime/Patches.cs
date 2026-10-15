@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Reflection.Emit;
+using System.Xml;
 using HarmonyLib;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
@@ -28,6 +29,7 @@ namespace WutheringUndeadRace
    var h=new Harmony(Owner);Targets.Clear();
    try
    {
+    Patch(h,typeof(CharacterObject),"Deserialize",post:nameof(CharacterLoaded));
     Patch(h,typeof(DefaultPartySpeedCalculatingModel),"CalculateFinalSpeed",post:nameof(Speed));
     Patch(h,typeof(DefaultMobilePartyFoodConsumptionModel),"DoesPartyConsumeFood",pre:nameof(Food));
     Patch(h,typeof(DefaultMobilePartyFoodConsumptionModel),"CalculateDailyFoodConsumptionf",pre:nameof(Consumption));
@@ -59,6 +61,11 @@ namespace WutheringUndeadRace
     Patch(h,model,"GetEffectiveArmorEncumbrance",trans:nameof(WeightTransform));
    }
    catch {h.UnpatchAll(Owner);Targets.Clear();throw;}
+  }
+  public static void CharacterLoaded(CharacterObject __instance,XmlNode node)
+  {
+   if(__instance.StringId?.StartsWith("wur_")==true)
+    SubModule.Log("NPC after Deserialize / before AfterInitialized: "+__instance.StringId+" template="+__instance.IsTemplate+" initialized="+__instance.IsInitialized+" ready="+__instance.IsReady);
   }
   private static void Patch(Harmony h,Type type,string name,string pre=null,string post=null,string trans=null)
   {

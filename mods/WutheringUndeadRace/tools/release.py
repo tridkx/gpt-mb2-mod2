@@ -16,7 +16,7 @@ GAME=Path('D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord')
 WORKSHOP=Path('D:/SteamLibrary/steamapps/workshop/content/261550')
 MODULE=ROOT/'module'/MOD
 DEP=ROOT.parent/'WutheringWavesRaceCollection/module/WutheringWavesRaceCollection'
-VERSION='v0.1.0'
+VERSION=json.loads((ROOT/'mod.json').read_text(encoding='utf-8'))['version']
 
 def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def run(args):
@@ -72,6 +72,13 @@ def main():
  parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--install',action='store_true');args=parser.parse_args()
  if E.parse(GAME/'Modules/Native/SubModule.xml').getroot().find('Version').get('value')!='v1.4.8':raise RuntimeError('Revalidate against this game version before building')
  before={str(p.relative_to(DEP)):digest(p) for p in DEP.rglob('*') if p.is_file()}
+ previous=ROOT/'reports/release_validation.json'
+ if previous.is_file():
+  old=json.loads(previous.read_text(encoding='utf-8'))
+  if old.get('version')!=VERSION:
+   history=ROOT/'reports/history'/old['version'];history.mkdir(parents=True,exist_ok=True)
+   for f in ['release_validation.json','offline_tests.txt','troop_configuration.json']:
+    if (ROOT/'reports'/f).is_file():shutil.copy2(ROOT/'reports'/f,history/f)
  run([sys.executable,ROOT/'tools/generate_data.py']);metadata();data=validate_data()
  run(['dotnet','build',ROOT/'source/Tests/WutheringUndeadRace.Tests.csproj','-c','Release','--nologo'])
  output=run([ROOT/'source/Tests/bin/Release/net472/WutheringUndeadRace.Tests.exe',GAME,MODULE,WORKSHOP])

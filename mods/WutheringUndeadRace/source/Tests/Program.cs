@@ -55,6 +55,8 @@ internal static class Program
    Check(true,"installed game schema: "+filename);
   }
   var troops=XDocument.Load(Path.Combine(module,"ModuleData/troops.xml")).Root.Elements().ToArray();
+  foreach(var t in troops.Where(t=>((string)t.Attribute("id")).EndsWith("_lord_template")))
+   Check((string)t.Attribute("is_template")=="true" && (string)t.Attribute("is_hero")!="true","dynamic lord template is not declared a static hero");
   foreach(var t in troops)
   {
    var r=t.Element("Equipments").Elements("EquipmentRoster").First();

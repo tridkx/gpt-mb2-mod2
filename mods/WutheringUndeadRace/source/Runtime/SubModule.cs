@@ -4,6 +4,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
+using HarmonyLib;
 
 namespace WutheringUndeadRace
 {
@@ -22,6 +23,6 @@ namespace WutheringUndeadRace
   public static void Log(string message)
   {try{File.AppendAllText(Path.Combine(Root,"ModuleData","runtime.log"),DateTime.Now.ToString("s")+" "+message+Environment.NewLine);}catch{}}
   public static void Fail(Exception e)
-  {Ready=false;Log("DISABLED: "+e);InformationManager.DisplayMessage(new InformationMessage("鸣潮感染危机初始化失败，请检查 ModuleData/runtime.log。"));}
+  {Ready=false;new Harmony(Patches.Owner).UnpatchAll(Patches.Owner);Log("DISABLED (all owned hooks removed): "+e);InformationManager.DisplayMessage(new InformationMessage("鸣潮感染危机初始化失败，请检查 ModuleData/runtime.log。"));}
  }
 }
