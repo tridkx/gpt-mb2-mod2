@@ -13,6 +13,10 @@ def finalize(root):
     if (root/'reports/runtime_resource_fix.json').exists():repair_note='当前版本的[运行资源检查](reports/runtime_resource_fix.json)覆盖 BC 纹理尺寸和原生驱动角色：BC 顶层尺寸满足 4 像素对齐；含长发布料时代理仅由可见网格引用，清除代理的直接渲染布料标记、身体绑定和三个附加开关，与 Native 模拟网格相同。独立透明材质仅作防护，不作为代理未显示的实机证据。模型、UV、骨架、权重与布料数据保留，创建页面加载和头发实机表现仍待复测。'
     if c.get('cloth_mode')=='direct':
         repair_note='当前为可见头发直接模拟：最终包没有模拟代理资产、代理引用或映射段，每级可见头发拥有自己的直接布料预处理数据。原发型、UV、材质、骨架和权重保持不变，衣裙普通蒙皮。结构及活动范围见 [直接布料检查](reports/direct_hair_cloth.json)。实际界面网格、材质和漫反射纹理名称会只读记录到角色 Documents 日志；不修改渲染。实机头发观感待用户复测。'
+        acceptance_path=root.parent/'reports/game_acceptance.json'
+        if acceptance_path.exists():
+            accepted=json.loads(acceptance_path.read_text(encoding='utf8')).get('hair_artifact_retest',{})
+            if accepted.get('status')=='pass' and accepted.get('tested_version')==c['version']:repair_note=repair_note.replace('实机头发观感待用户复测。','合集头发色块修复已获用户实测确认，见 [合集验收记录](../reports/game_acceptance.json)；未逐角色声明全部动作和 LOD 通过。')
         cloth_note='直接布料使用 CPU 近似求解器检查动作轨迹与碰撞，结果不作为游戏物理或渲染验收。数值相同的 LOD 以实际网格／预处理数据等价性归组，配置只模拟代表级。'
     readme=f'''# {c['module_name']}
 

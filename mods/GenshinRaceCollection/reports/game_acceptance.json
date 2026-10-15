@@ -1,6 +1,6 @@
 {
   "version": "v0.1.3",
-  "status": "pending_user_hair_artifact_retest",
+  "status": "hair_artifact_fix_accepted_other_scenes_pending",
   "game_launched_by_assistant": false,
   "emilie_existing_acceptance_preserved": true,
   "previous_feedback": "v0.1.2 Lisa and Amber creation loading accepted; hair patches persist with cloth enabled and disappear with cloth disabled.",
@@ -10,5 +10,12 @@
     "hair_motion",
     "lod_distances"
   ],
-  "old_save_dependency_migration_verified": false
+  "old_save_dependency_migration_verified": false,
+  "hair_artifact_retest": {
+    "status": "pass",
+    "date": "2026-10-15",
+    "tested_version": "v0.1.3",
+    "user_feedback": "ok，已消除",
+    "scope": "User confirms reported hair color patches are eliminated after v0.1.3 direct-cloth repair. No individual character, motion or LOD coverage inferred."
+  }
 }
