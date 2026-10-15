@@ -55,6 +55,13 @@ internal static class Program
    Check(true,"installed game schema: "+filename);
   }
   var troops=XDocument.Load(Path.Combine(module,"ModuleData/troops.xml")).Root.Elements().ToArray();
+  var project=XDocument.Load(Path.Combine(module,"ModuleData/project.mbproj")).Root;
+  Check((string)project.Attribute("type")=="solution","native engine project manifest exists");
+  foreach(var resource in new[]{new[]{"skin","ModuleData/skins.xml"},new[]{"action_set","ModuleData/action_sets.xml"},new[]{"monster","ModuleData/monsters.xml"}})
+   Check(project.Elements("file").Any(f=>(string)f.Attribute("type")==resource[0] && (string)f.Attribute("name")==resource[1]) && File.Exists(Path.Combine(module,resource[1])),"engine discovers "+resource[0]+" before NPC deserialization");
+  var ownRaces=XDocument.Load(Path.Combine(module,"ModuleData/skins.xml")).Root.Elements().Select(r=>(string)r.Attribute("id")).ToArray();
+  foreach(var t in troops.Where(t=>((string)t.Attribute("id")).EndsWith("_lord_template")))
+   Check(ownRaces.Contains((string)t.Attribute("race")),"every lord has a race declared in the engine-registered skin file");
   foreach(var t in troops.Where(t=>((string)t.Attribute("id")).EndsWith("_lord_template")))
    Check((string)t.Attribute("is_template")=="true" && (string)t.Attribute("is_hero")!="true","dynamic lord template is not declared a static hero");
   foreach(var t in troops)

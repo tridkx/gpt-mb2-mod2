@@ -147,6 +147,10 @@ def main():
    E.SubElement(catalog,'Troop',id=id,race=lr if lord else race,key=key,role=ROLES[role],tier=str(t),lord=str(lord).lower(),weight=f'{weight*wf:.6f}',head=str(armor[0]),body=str(armor[1]),arms=str(armor[2]),legs=str(armor[3]))
    rows.append(dict(id=id,key=key,name=display,race=lr if lord else race,role=ROLES[role],tier=t,lord=lord,donor=donor_id,armor=armor,weight=round(weight*wf,4),skills=skills,equipment=slots))
  for filename,node in [('troops.xml',npcs),('items.xml',custom_items),('skins.xml',skins),('monsters.xml',monsters),('action_sets.xml',actions),('undead_catalog.xml',catalog)]:write(OUT/filename,node)
+ project=E.Element('base',type='solution')
+ for id,name,type in [('soln_skins','skins.xml','skin'),('soln_action_sets','action_sets.xml','action_set'),('soln_monsters','monsters.xml','monster')]:
+  E.SubElement(project,'file',id=id,name='ModuleData/'+name,type=type)
+ write(OUT/'project.mbproj',project)
  assert len(rows)==48 and len(skins)==8 and len(monsters)>=8 and len(actions)>0
  (ROOT/'reports/troop_configuration.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  lines=['# 感染兵与统领数据','', '原版同阶防御为底，职业差分随T1—T5线性增加；统领使用本职业T5护甲的1.6倍。头／身／臂／腿为固有护甲，负重仅补防具。','', '| 角色兵种 | 原版防御基准 | 固有护甲 | 等效负重 | 武器槽 |','| --- | --- | --- | ---: | --- |']

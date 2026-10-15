@@ -1,14 +1,14 @@
 # Wuthering Undead Race
 
-鸣潮感染危机 `v0.1.1`，适配本机骑砍2 Native `v1.4.8` 的单人战役与故事模式。新增40个感染兵、8名感染统领、陆地尸群生成、战败转化、尸潮军团和清剿奖励。复用 **Wuthering Waves Race Collection v0.1.1** 的模型、骨架与布料，不修改合集或原版文件。
+鸣潮感染危机 `v0.1.2`，适配本机骑砍2 Native `v1.4.8` 的单人战役与故事模式。新增40个感染兵、8名感染统领、陆地尸群生成、战败转化、尸潮军团和清剿奖励。复用 **Wuthering Waves Race Collection v0.1.1** 的模型、骨架与布料，不修改合集或原版文件。
 
 ## 安装与快速开始
 
-本机安装目录为 `D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules/WutheringUndeadRace/`。安装包见 [Mod ZIP](dist/WutheringUndeadRace_v0.1.1_Mod.zip)，源码见 [Source ZIP](dist/WutheringUndeadRace_v0.1.1_Source.zip)。
+本机安装目录为 `D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules/WutheringUndeadRace/`。安装包见 [Mod ZIP](dist/WutheringUndeadRace_v0.1.2_Mod.zip)，源码见 [Source ZIP](dist/WutheringUndeadRace_v0.1.2_Source.zip)。
 
 启动器按以下顺序启用：现有 Harmony → ButterLib → UIExtenderEx → MCM v5 → 原版单机模块 → **Wuthering Waves Race Collection** → **Wuthering Undead Race**。不额外打包前置，助手不启动游戏。进入战役后，在 MCM 的“鸣潮感染危机 / Wuthering Undead Race”调整设置，设置按存档保存。
 
-默认从本模块首次进入该存档时开始计时，经过3天宽限后生成。旧档也可初始化，但新增英雄、势力与兵种会进入存档，使用独立测试存档并保留启用前备份。关闭“允许生成与领主重生”只停止新增，已有尸群继续活动；关闭“允许尸群军团”后，空闲军团在后续小时检查中解散。没有已验证的安全卸载功能，直接移除模块或鸣潮合集可能导致相关存档无法加载。
+默认从本模块首次成功初始化该存档时开始计时，经过3天宽限后生成。到期后的小时检查尝试生成8名领主各自的尸群和1支游荡尸群，每队20—45名普通感染兵；之后每12小时尝试补一支游荡尸群，受全局上限限制。旧档也可初始化，但新增英雄、势力与兵种会进入存档，使用独立测试存档并保留启用前备份。若此前因初始化失败停用了模块，修复后首次成功初始化可能重新计算3天宽限；立即验证可在MCM将宽限设为0，再观察地图时间推进后的运行日志。关闭“允许生成与领主重生”只停止新增，已有尸群继续活动；关闭“允许尸群军团”后，空闲军团在后续小时检查中解散。没有已验证的安全卸载功能，直接移除模块或鸣潮合集可能导致相关存档无法加载。
 
 ## 兵种与领主
 
@@ -68,7 +68,7 @@
 
 ## 开发与检查
 
-`source/Runtime/` 为运行源码，`source/Tests/` 为离线检查，`tools/generate_data.py` 从本机原版数据生成本模块，`module/WutheringUndeadRace/` 为安装内容。`build/` 保存本机接口回读和缓存，不进入源码包；`dist/` 保留交付包。依赖 .NET Framework 4.7.2 引用程序集、.NET SDK、Python、本机游戏DLL与现有MCM／Harmony。
+`source/Runtime/` 为运行源码，`source/Tests/` 为离线检查，`tools/generate_data.py` 从本机原版数据生成本模块，`module/WutheringUndeadRace/` 为安装内容。`ModuleData/project.mbproj` 注册本模块的skin、action_set与monster，缺少入口会使领主种族无法供NPC加载。`build/` 保存本机接口回读和缓存，不进入源码包；`dist/` 保留交付包。依赖 .NET Framework 4.7.2 引用程序集、.NET SDK、Python、本机游戏DLL与现有MCM／Harmony。
 
 在工作区根运行：
 
@@ -78,7 +78,7 @@
 
 省略 `--install` 只生成、构建、检查和打包。安装检查鸣潮合集工程与游戏安装的逐文件哈希一致，只备份和写入本模块，不修改存档、前置或依赖模块。源码包放回同级 `mods/` 布局后重建；本机路径配置见 `source/GameReferences.props` 和 `tools/release.py`。
 
-[离线检查](reports/offline_tests.txt)覆盖实际游戏XML Schema、40兵种分组与升级引用、守岸人副武器、名额与联合奖励守恒、真实Roster操作、行为状态保存读回，以及当前游戏实际方法的Harmony补丁编译。[发布检查](reports/release_validation.json)记录安装与包文件哈希。
+[离线检查](reports/offline_tests.txt)覆盖引擎资源入口与目标路径、领主种族声明、实际游戏XML Schema、40兵种分组与升级引用、守岸人副武器、名额与联合奖励守恒、真实Roster操作、行为状态保存读回，以及当前游戏实际方法的Harmony补丁编译。[发布检查](reports/release_validation.json)记录安装与包文件哈希。
 
 ## 当前限制与游戏验收
 

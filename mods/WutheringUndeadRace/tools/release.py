@@ -42,6 +42,10 @@ def metadata():
  E.indent(m,space='  ');E.ElementTree(m).write(MODULE/'SubModule.xml',encoding='utf-8',xml_declaration=True)
 
 def validate_data():
+ project=E.parse(MODULE/'ModuleData/project.mbproj').getroot()
+ expected={'skin':'ModuleData/skins.xml','action_set':'ModuleData/action_sets.xml','monster':'ModuleData/monsters.xml'}
+ assert {f.get('type'):f.get('name') for f in project.findall('file')}==expected,'Incomplete engine resource registration'
+ for f in project.findall('file'):assert (MODULE/f.get('name')).is_file(),f.attrib
  npcs=E.parse(MODULE/'ModuleData/troops.xml').getroot();items=E.parse(MODULE/'ModuleData/items.xml').getroot()
  ids=[x.get('id') for x in npcs];itemids=[x.get('id') for x in items]
  assert len(ids)==48 and len(ids)==len(set(ids)) and len(itemids)==len(set(itemids))
@@ -66,7 +70,7 @@ def validate_data():
  for monster in E.parse(MODULE/'ModuleData/monsters.xml').getroot():
   for k in ['action_set','female_action_set']:
    if monster.get(k):assert monster.get(k) in allactions,(monster.get('id'),k,monster.get(k))
- return dict(troops=40,lords=8,custom_items=len(items),lord_races=len(lords),lord_action_sets=len(actions))
+ return dict(troops=40,lords=8,custom_items=len(items),lord_races=len(lords),lord_action_sets=len(actions),engine_resource_manifest='verified')
 
 def main():
  parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--install',action='store_true');args=parser.parse_args()
