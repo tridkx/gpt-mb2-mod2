@@ -2,6 +2,8 @@
 
 此工作区独立维护骑砍 2 模组的原始输入、可编辑源文件、工具、运行模块和交付包。合集中的套装工程保存在各合集的 sets/ 下；生化危机工程位于 ResidentEvil/<ModId>/，仙剑7角色工程位于 Xianjian7Race/<ModId>/，原神与鸣潮角色分别位于 GenshinRaceCollection/<ModId>/ 和 WutheringWavesRaceCollection/<ModId>/。原神与鸣潮系列根目录提供单一合集游戏模块，其他仅作容器的角色系列按各自入口说明安装。
 
+公共源工程：[GitHub 仓库](https://github.com/tridkx/gpt-mb2-mod2)；最新版安装包：[Release 索引](docs/release-index.md)。制作工作区保留原始 Git 历史，公共镜像的大模型使用 Git LFS，维护方式见[GitHub 公共发布](docs/github-publication.md)。
+
 ## 模组导航
 
 | 工程 | 内容 |
@@ -102,4 +104,4 @@ Mod ZIP 顶层是模组 ID，源包保持 source/ 与 tex/ 相邻。mod.json.sha
 
 专题调研记录：[自定义种族主角的地图频闪、读档与装备隐形](docs/reports/2026-10-14-custom-race-player-research.md)（2026-10-14，适用 Native v1.4.8；证据与待验证项见报告）。
 
-协作规范见 [AGENTS.md](AGENTS.md)。使用本地 Git，不上传远程；发布标签为 <ModId>/v<版本>。历史信息见 [更新日志](docs/CHANGELOG.md) 和 [历史路径对照](docs/historical-paths.md)。
+协作规范见 [AGENTS.md](AGENTS.md)。常规修改先提交本地 Git；远程发布按明确授权通过独立发布副本同步，发布标签为 <ModId>/v<版本>。历史信息见 [更新日志](docs/CHANGELOG.md) 和 [历史路径对照](docs/historical-paths.md)。
