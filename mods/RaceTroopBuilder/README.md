@@ -55,7 +55,7 @@ schemas/           工程格式
 examples/          可复用示例配置
 tools/             构建与发布脚本
 build/             检查、预览及导出缓存
-dist/              带运行时的桌面工具与历史交付包
+dist/              当前带运行时的桌面工具与交付包
 reports/           离线验证记录
 ```
 

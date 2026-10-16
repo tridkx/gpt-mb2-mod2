@@ -16,7 +16,6 @@
 | [Hanfu Blue Red](mods/HanfuBlueRed/README.md) | 蓝红汉服少女 |
 | [Resident Evil](mods/ResidentEvil/README.md) | 系列工程入口，包含艾达王默认服装装备与固定外观种族 |
 | [仙剑奇侠传七](mods/Xianjian7Race/README.md) | 独立角色种族资源：月清疏两套、白茉晴两套；白茉晴第二套为无帽版 |
-| [天刀种族系列](mods/TiandaoRaceCollection/README.md) | 独立角色种族工程，包含碧水青鸾女性完整角色及布料 |
 | [原神种族合集](mods/GenshinRaceCollection/README.md) | 22 个完整角色种族统一为一个游戏模块，各角色保留独立源工程；13 个新角色长发布料，艾梅莉埃保留帽后长饰与背后飘带布料 |
 | [鸣潮种族合集](mods/WutheringWavesRaceCollection/README.md) | 8 个独立角色源工程，统一为一个游戏模块；长发与明确长饰品有限布料，裙子普通蒙皮 |
 | [Modern Girl Race](mods/ModernGirlRace/README.md) | 现代少女 v6 完整人物固定外观种族与独立测试兵种 |
@@ -38,10 +37,10 @@ mods/<ModId>/
   module/<ModId>/          可安装的游戏模块
   build/                   中间文件与基线缓存
   reports/                 检查记录和预览
-  dist/                    当前与历史交付包
+  dist/                    当前交付包
   sets/                    合集内部套装工程（适用时）
 tools/                     共用工具、预检、打包与安装入口
-maintenance/               本机修复脚本、历史报告与备份
+maintenance/               本机修复脚本与历史报告
 docs/                      工作区专题说明、更新日志与历史检查记录
 ```
 
@@ -75,6 +74,10 @@ docs/                      工作区专题说明、更新日志与历史检查�
 
 通用预检入口在工作区根 tools/preflight.py，完整检查逻辑唯一维护在已安装技能 scripts/preflight.py，不放在具体模组目录。默认识别天香 T5 的合集套装路径；直接从独立模组或合集套装调用技能预检时，也会向上识别工作区根并读取 tools/asset_helpers/。其他助手目录使用 --helpers。预检覆盖工具和导入，不代表模型或游戏测试通过。
 
+## 重建与缓存清理
+
+各工程的原始模型重建能力不同；部分返修流程仍依赖固定 Git 标签或 `build/` 中的必要基线。可清理的生成产物、必须保留的输入和当前验证范围统一见 [重建输入与构建缓存](docs/rebuild-and-cleanup.md)。Source ZIP 可按需重新打包，不作为唯一源文件备份。
+
 ## 打包与安装
 
 在工作区根运行；下列命令以 TianxiangCollection v1.0.0 为例：
@@ -87,7 +90,7 @@ python tools/package_delivery.py --mod TianxiangCollection --version v1.0.0
 
 第一条只检查输入，第二条生成并验证 ZIP，第三条只验证安装条件。实际安装去掉 -CheckOnly；已有交付包时需用 -PreviousVersion 指明被替换的版本。-GameRoot 和 -Python 可覆盖本机路径。安装前退出游戏和启动器。
 
-Mod ZIP 顶层是模组 ID，源包保持 source/ 与 tex/ 相邻。mod.json.shared_source_files 可列入工作区 tools/ 文件，源包将其保存到 workspace_tools/。保留旧包，只复制任务涉及的模块；安装器不自动提交 Git 或打标签。
+Mod ZIP 顶层是模组 ID，源包保持 source/ 与 tex/ 相邻。mod.json.shared_source_files 可列入工作区 tools/ 文件，源包将其保存到 workspace_tools/。安装器在替换时保留旧包，只复制任务涉及的模块，不自动提交 Git 或打标签。
 
 含布料的模组可通过 `mod.json.cloth_diagnostics` 接入[自动离线诊断](tools/cloth_simulator/README.md#接入模组制作与交付流程)：打包及安装前检查最终 TPAC，复用相同输入的报告，并将报告、最差帧和诊断源码加入源包。尚未配置的模组沿用原流程；已启用时 `--check-only` 也可能生成诊断缓存和报告，但不打包或安装。近似模拟结果独立于游戏验收状态。
 

@@ -64,7 +64,7 @@ python -X utf8 mods/ShengxiuCollection/tools/finalize_back_hair.py
 ./tools/install_release.ps1 -Mod ShengxiuCollection -Version v1.1.7 -PreviousVersion v1.1.6
 ```
 
-增量基线缓存为 build/back_hair_baseline_v1.1.6/，包括 TPAC、Blend/FBX、rig_arrays.npz、rig_manifest.json 和 cloth_bodies.xml；后发布位分类读取 v1.1.4 原始坐标缓存，衣服拟合读取 v1.1.6 最终回读几何。首次重建需从保留的回退包和历史模型流程恢复这些基线。构建需要既有 build/spec.json、模板及 cloth_probe、cloth_patch；入口复用 prepare_hair_shape.py、verify_hair_shape.py、render_hair_fit.py，并覆盖版本、输出目录和检查范围。预览需要已解码的贴图缓存。
+增量基线缓存为 build/back_hair_baseline_v1.1.6/，包括 TPAC、Blend/FBX、rig_arrays.npz、rig_manifest.json 和 cloth_bodies.xml；后发布位分类读取 v1.1.4 原始坐标缓存，衣服拟合读取 v1.1.6 最终回读几何。这些是当前增量流程实际读取的必要输入，不能作为普通缓存删除。当前没有已验证的 input/model.fbx 到 v1.1.7 完整冷启动入口，也不能用当前最新版源文件重新初始化旧版基线。构建需要既有 build/spec.json、模板及 cloth_probe、cloth_patch；入口复用 prepare_hair_shape.py、verify_hair_shape.py、render_hair_fit.py，并覆盖版本、输出目录和检查范围。预览需要已解码的贴图缓存。 当前明玉 build/ 保留完整；其中部分必要输入被 Git 忽略，普通推送不会备份它们，详细边界见[重建输入与构建缓存](../../docs/rebuild-and-cleanup.md)。
 
 仅移植长发四级流，并修改 LOD0 长发弯曲参数和自有背部碰撞 XML。实际安装需退出游戏与启动器，旧交付包自动保留。依赖本机 Blender、Python、mbtool、原生资源和工作区 asset_helpers；源 ZIP 保持 source/、tex/ 相邻，并附带 workspace_tools/cloth_compiler/。
 

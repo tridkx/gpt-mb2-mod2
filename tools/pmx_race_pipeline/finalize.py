@@ -64,7 +64,7 @@ campaign.give_troops {c['prefix']}_test 10
 
 依赖 Blender 5.2、本机 Python（NumPy、SciPy、Pillow）、.NET 10／.NET Framework 4.7.2 引用程序集、Native v1.4.8、mbtool、已安装 MMD Tools PMX 读取器与工作区共用工具。共用实现及源包恢复方法见 [PMX 流程说明](../../../tools/pmx_race_pipeline/README.md)。原始模型的作者规则在 `input/original/`，当前工程与包用于个人本地适配，不上传远程。
 
-[合集源文件包](../dist/GenshinRaceCollection_Source.zip)、[更新日志](CHANGELOG.md)、[合集入口](../README.md)。
+[源文件与重建说明](../../../docs/rebuild-and-cleanup.md)、[更新日志](CHANGELOG.md)、[合集入口](../README.md)。
 '''
     (root/'README.md').write_text(readme,encoding='utf8');changelog=root/'CHANGELOG.md'
     if not changelog.exists():changelog.write_text(f"# 更新日志\n\n## {c['version']} — 2026-10-14\n\n- 新建 {c['display_name']} 独立固定外观种族及女性测试兵种，保留原始输入、源比例和 UV。\n- 自有骨架、四级 LOD、完整场景动作集与人物预览组件。\n- {hair} 忽略附属武器、杂物与未选备用模型。\n- 资源与源文件离线检查通过；游戏验收待用户测试。\n",encoding='utf8')

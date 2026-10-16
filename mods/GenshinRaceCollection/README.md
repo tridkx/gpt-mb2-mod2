@@ -43,7 +43,7 @@
 
 ## 工程与交付
 
-`<Character>Race/` 保存角色原始输入、`source/`、相邻 `tex/`、参数、构建模块和报告。根目录 `module/GenshinRaceCollection/` 保存合并后的运行模块，`build/` 为合集缓存，`dist/` 保存合集 Mod 包和 [完整源文件包](dist/GenshinRaceCollection_Source.zip)。源包包含所有角色与共用 `workspace_tools/`，不包含缓存和旧交付 ZIP；个人本地适配，不上传远程。
+`<Character>Race/` 保存角色原始输入、`source/`、相邻 `tex/`、参数、构建模块和报告。根目录 `module/GenshinRaceCollection/` 保存合并后的运行模块，`build/` 为合集缓存，`dist/` 保存合集 Mod 包，源文件 ZIP 按需重新打包，具体范围见[源文件与重建说明](../../docs/rebuild-and-cleanup.md)。源包包含所有角色与共用 `workspace_tools/`，不包含缓存和旧交付 ZIP；个人本地适配，不上传远程。
 
 在工作区根目录执行：
 

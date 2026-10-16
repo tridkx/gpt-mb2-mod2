@@ -4,7 +4,7 @@
 
 ## 安装与快速开始
 
-本机安装目录为 `D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules/WutheringUndeadRace/`。安装包见 [Mod ZIP](dist/WutheringUndeadRace_v0.1.3_Mod.zip)，源码见 [Source ZIP](dist/WutheringUndeadRace_v0.1.3_Source.zip)。
+本机安装目录为 `D:/SteamLibrary/steamapps/common/Mount & Blade II Bannerlord/Modules/WutheringUndeadRace/`。安装包见 [Mod ZIP](dist/WutheringUndeadRace_v0.1.3_Mod.zip)，源码见 [源文件与重建说明](../../docs/rebuild-and-cleanup.md)。
 
 启动器按以下顺序启用：现有 Harmony → ButterLib → UIExtenderEx → MCM v5 → 原版单机模块 → **Wuthering Waves Race Collection** → **Wuthering Undead Race**。不额外打包前置，助手不启动游戏。进入战役后，在 MCM 的“鸣潮感染危机 / Wuthering Undead Race”调整设置，设置按存档保存。
 

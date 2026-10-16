@@ -8,6 +8,8 @@ from cloth import build_cloth
 
 def build_one(root,source=False):
     root=Path(root).resolve();c=config(root);w=workspace_root(root);print('BUILD_BEGIN',c['id'],flush=True)
+    for directory in ('build','source','tex','reports'):
+        (root/directory).mkdir(parents=True,exist_ok=True)
     if source:
         from prepare import prepare
         from references import prepare_references

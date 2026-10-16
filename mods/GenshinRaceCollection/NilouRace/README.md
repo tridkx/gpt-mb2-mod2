@@ -44,4 +44,4 @@ campaign.give_troops nilou_test 10
 
 依赖 Blender 5.2、本机 Python（NumPy、SciPy、Pillow）、.NET 10／.NET Framework 4.7.2 引用程序集、Native v1.4.8、mbtool、已安装 MMD Tools PMX 读取器与工作区共用工具。共用实现及源包恢复方法见 [PMX 流程说明](../../../tools/pmx_race_pipeline/README.md)。原始模型的作者规则在 `input/original/`，当前工程与包用于个人本地适配，不上传远程。
 
-[合集源文件包](../dist/GenshinRaceCollection_Source.zip)、[更新日志](CHANGELOG.md)、[合集入口](../README.md)。
+[源文件与重建说明](../../../docs/rebuild-and-cleanup.md)、[更新日志](CHANGELOG.md)、[合集入口](../README.md)。

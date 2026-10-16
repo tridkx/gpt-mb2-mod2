@@ -28,7 +28,7 @@ campaign.add_item_to_player_party tx5_head
 
 入口从本地 TianxiangT5/v1.4.0 标签恢复固定基线，避免重复放大；需要本机 Blender、Python、.NET、mbtool 和工作区资源工具。历史模拟代理不属于当前交付。
 
-注意：build_appearance.ps1 当前用 projectRoot/../.. 查找工作区根，在 sets/ 分组布局下会落到 TianxiangCollection 而非工作区根。重新构建前需修正入口中的工作区根定位。
+入口向上查找工作区根，适用于当前 sets/ 分组布局。其固定标签基线属于必要制作输入，不能据此声称只靠原始模型完成最新版冷启动重建；共用说明见[重建输入与构建缓存](../../../../docs/rebuild-and-cleanup.md)。
 
 从工作区根检查当前交付输入：
 

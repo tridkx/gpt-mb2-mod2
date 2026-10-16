@@ -1,7 +1,12 @@
 param([string]$Python='C:/ProgramData/anaconda3/python.exe',[string]$Blender='D:/Blender Foundation/Blender 5.2/blender.exe')
 $ErrorActionPreference='Stop'
 $projectRoot=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
-$workspaceRoot=[IO.Path]::GetFullPath((Join-Path $projectRoot '../..'))
+$workspaceRoot=$projectRoot
+while (-not (Test-Path -LiteralPath (Join-Path $workspaceRoot 'tools/AssetTool/NuGet.Config'))) {
+    $parent=[IO.Directory]::GetParent($workspaceRoot)
+    if ($null -eq $parent) { throw 'Workspace tools/AssetTool/NuGet.Config not found' }
+    $workspaceRoot=$parent.FullName
+}
 Push-Location $workspaceRoot
 try {
     & dotnet build "$projectRoot/tools/SleeveTool/SleeveTool.csproj" -o "$projectRoot/build/sleeve_tool/bin" --configfile tools/AssetTool/NuGet.Config -v quiet

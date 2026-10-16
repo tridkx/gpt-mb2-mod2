@@ -1,0 +1,1704 @@
+{
+  "date": "2026-10-16",
+  "scope": "All real mod.json projects; source generation and latest-resource reconstruction are separate claims",
+  "projects": [
+    {
+      "project": "mods/BanditPopulationTuning",
+      "id": "BanditPopulationTuning",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "collection_or_nonmodel_project"
+    },
+    {
+      "project": "mods/BeautyBanners",
+      "id": "BeautyBanners",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "collection_or_nonmodel_project"
+    },
+    {
+      "project": "mods/BoRuModern",
+      "id": "BoRuModern",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "separate_source_stages_not_cold_verified"
+    },
+    {
+      "project": "mods/BoRuRace",
+      "id": "BoRuRace",
+      "rebuild_entry": "mods/BoRuRace/tools/rebuild.py",
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "custom_rebuild_entry_not_cold_verified"
+    },
+    {
+      "project": "mods/CavalryCombatTuning",
+      "id": "CavalryCombatTuning",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "collection_or_nonmodel_project"
+    },
+    {
+      "project": "mods/FeifengScaleTest",
+      "id": "FeifengScaleTest",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "separate_source_stages_not_cold_verified"
+    },
+    {
+      "project": "mods/GenshinBanditRace",
+      "id": "GenshinBanditRace",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "collection_or_nonmodel_project"
+    },
+    {
+      "project": "mods/GenshinRaceCollection",
+      "id": "GenshinRaceCollection",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "collection_or_nonmodel_project"
+    },
+    {
+      "project": "mods/HanfuBlueRed",
+      "id": "HanfuBlueRed",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "separate_source_stages_not_cold_verified"
+    },
+    {
+      "project": "mods/ModernGirlRace",
+      "id": "ModernGirlRace",
+      "rebuild_entry": "mods/ModernGirlRace/tools/rebuild.py",
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "custom_rebuild_entry_not_cold_verified"
+    },
+    {
+      "project": "mods/RaceTroopBuilder",
+      "id": "RaceTroopBuilder",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "collection_or_nonmodel_project"
+    },
+    {
+      "project": "mods/ShengxiuCollection",
+      "id": "ShengxiuCollection",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "latest_incremental_requires_ignored_build_inputs"
+    },
+    {
+      "project": "mods/TianxiangCollection",
+      "id": "TianxiangCollection",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "separate_source_stages_not_cold_verified"
+    },
+    {
+      "project": "mods/WuduRaceTest",
+      "id": "WuduRaceTest",
+      "rebuild_entry": "mods/WuduRaceTest/tools/rebuild.py",
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "custom_rebuild_entry_not_cold_verified"
+    },
+    {
+      "project": "mods/WutheringUndeadRace",
+      "id": "WutheringUndeadRace",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "collection_or_nonmodel_project"
+    },
+    {
+      "project": "mods/WutheringWavesRaceCollection",
+      "id": "WutheringWavesRaceCollection",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "collection_or_nonmodel_project"
+    },
+    {
+      "project": "mods/ZhenwuCollection",
+      "id": "ZhenwuCollection",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "collection_or_nonmodel_project"
+    },
+    {
+      "project": "mods/Xianjian7Race/BaiMoQingOutfit2Race",
+      "id": "BaiMoQingOutfit2Race",
+      "rebuild_entry": "mods/Xianjian7Race/BaiMoQingOutfit2Race/tools/rebuild.py",
+      "source_inputs": {
+        "source_blend": {
+          "path": "input/original/03_第二套装_无帽_MAJ03_02.blend",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "custom_rebuild_entry_not_cold_verified"
+    },
+    {
+      "project": "mods/Xianjian7Race/BaiMoQingRace",
+      "id": "BaiMoQingRace",
+      "rebuild_entry": "mods/Xianjian7Race/BaiMoQingRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_blend": {
+          "path": "input/original/01_默认套装_MAJ03_01.blend",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "custom_rebuild_entry_not_cold_verified"
+    },
+    {
+      "project": "mods/Xianjian7Race/YueQingShuOutfit2Race",
+      "id": "YueQingShuOutfit2Race",
+      "rebuild_entry": "mods/Xianjian7Race/YueQingShuOutfit2Race/tools/rebuild.py",
+      "source_inputs": {
+        "source_blend": {
+          "path": "input/original/02_第二套装_MAJ02_02.blend",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "custom_rebuild_entry_not_cold_verified"
+    },
+    {
+      "project": "mods/Xianjian7Race/YueQingShuRace",
+      "id": "YueQingShuRace",
+      "rebuild_entry": "mods/Xianjian7Race/YueQingShuRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_blend": {
+          "path": "input/default/01_默认套装_MAJ02_01.blend",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "custom_rebuild_entry_not_cold_verified"
+    },
+    {
+      "project": "mods/WutheringWavesRaceCollection/BaizhiRace",
+      "id": "BaizhiRace",
+      "rebuild_entry": "mods/WutheringWavesRaceCollection/BaizhiRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/鸣潮_白莲1.12.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/WutheringWavesRaceCollection/ChangliRace",
+      "id": "ChangliRace",
+      "rebuild_entry": "mods/WutheringWavesRaceCollection/ChangliRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/长离/长离.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/WutheringWavesRaceCollection/JianxinRace",
+      "id": "JianxinRace",
+      "rebuild_entry": "mods/WutheringWavesRaceCollection/JianxinRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/鸣潮_鉴心1.03.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/WutheringWavesRaceCollection/JinhsiOutfitRace",
+      "id": "JinhsiOutfitRace",
+      "rebuild_entry": "mods/WutheringWavesRaceCollection/JinhsiOutfitRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/鸣潮_今汐_桃夭灼灼1.0311.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/WutheringWavesRaceCollection/JinhsiRace",
+      "id": "JinhsiRace",
+      "rebuild_entry": "mods/WutheringWavesRaceCollection/JinhsiRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/鸣潮_今汐1.023请标明辫子软化版本.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/WutheringWavesRaceCollection/ShorekeeperRace",
+      "id": "ShorekeeperRace",
+      "rebuild_entry": "mods/WutheringWavesRaceCollection/ShorekeeperRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/鸣潮_守岸人1.09(双层裙子).pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/WutheringWavesRaceCollection/YinlinRace",
+      "id": "YinlinRace",
+      "rebuild_entry": "mods/WutheringWavesRaceCollection/YinlinRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/吟霖1.05.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/WutheringWavesRaceCollection/ZhezhiRace",
+      "id": "ZhezhiRace",
+      "rebuild_entry": "mods/WutheringWavesRaceCollection/ZhezhiRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/折枝0.75.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/TianxiangRaceColletion/TianxiangGirlT1Race",
+      "id": "TianxiangGirlT1Race",
+      "rebuild_entry": "mods/TianxiangRaceColletion/TianxiangGirlT1Race/tools/rebuild.py",
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "custom_rebuild_entry_not_cold_verified"
+    },
+    {
+      "project": "mods/TianxiangRaceColletion/TianxiangGirlT2Race",
+      "id": "TianxiangGirlT2Race",
+      "rebuild_entry": "mods/TianxiangRaceColletion/TianxiangGirlT2Race/tools/rebuild.py",
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "custom_rebuild_entry_not_cold_verified"
+    },
+    {
+      "project": "mods/TianxiangRaceColletion/TianxiangGirlT3Race",
+      "id": "TianxiangGirlT3Race",
+      "rebuild_entry": "mods/TianxiangRaceColletion/TianxiangGirlT3Race/tools/rebuild.py",
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "custom_rebuild_entry_not_cold_verified"
+    },
+    {
+      "project": "mods/TianxiangRaceColletion/TianxiangGirlT4Race",
+      "id": "TianxiangGirlT4Race",
+      "rebuild_entry": "mods/TianxiangRaceColletion/TianxiangGirlT4Race/tools/rebuild.py",
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "custom_rebuild_entry_not_cold_verified"
+    },
+    {
+      "project": "mods/TianxiangRaceColletion/TianxiangGirlT5Race",
+      "id": "TianxiangGirlT5Race",
+      "rebuild_entry": "mods/TianxiangRaceColletion/TianxiangGirlT5Race/tools/rebuild.py",
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "custom_rebuild_entry_not_cold_verified"
+    },
+    {
+      "project": "mods/TianxiangRaceColletion/TianxiangGirlT6Race",
+      "id": "TianxiangGirlT6Race",
+      "rebuild_entry": "mods/TianxiangRaceColletion/TianxiangGirlT6Race/tools/rebuild.py",
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "custom_rebuild_entry_not_cold_verified"
+    },
+    {
+      "project": "mods/TianxiangRaceColletion/TianxiangGirlT7Race",
+      "id": "TianxiangGirlT7Race",
+      "rebuild_entry": "mods/TianxiangRaceColletion/TianxiangGirlT7Race/tools/rebuild.py",
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "custom_rebuild_entry_not_cold_verified"
+    },
+    {
+      "project": "mods/TianxiangRaceColletion/TianxiangGirlT8Race",
+      "id": "TianxiangGirlT8Race",
+      "rebuild_entry": "mods/TianxiangRaceColletion/TianxiangGirlT8Race/tools/rebuild.py",
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "custom_rebuild_entry_not_cold_verified"
+    },
+    {
+      "project": "mods/TianxiangRaceColletion/TianxiangRaceCollection",
+      "id": "TianxiangRaceCollection",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "collection_or_nonmodel_project"
+    },
+    {
+      "project": "mods/TianxiangRaceColletion/TianxiangT5PVERace",
+      "id": "TianxiangT5PVERace",
+      "rebuild_entry": "mods/TianxiangRaceColletion/TianxiangT5PVERace/tools/rebuild.py",
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "custom_rebuild_entry_not_cold_verified"
+    },
+    {
+      "project": "mods/TianxiangCollection/sets/TianxiangFangzi",
+      "id": "TianxiangFangzi",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "separate_source_stages_not_cold_verified"
+    },
+    {
+      "project": "mods/TianxiangCollection/sets/TianxiangMufeng",
+      "id": "TianxiangMufeng",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "separate_source_stages_not_cold_verified"
+    },
+    {
+      "project": "mods/TianxiangCollection/sets/TianxiangMuyu",
+      "id": "TianxiangMuyu",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "separate_source_stages_not_cold_verified"
+    },
+    {
+      "project": "mods/TianxiangCollection/sets/TianxiangQingmei",
+      "id": "TianxiangQingmei",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "separate_source_stages_not_cold_verified"
+    },
+    {
+      "project": "mods/TianxiangCollection/sets/TianxiangRenqiu",
+      "id": "TianxiangRenqiu",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "separate_source_stages_not_cold_verified"
+    },
+    {
+      "project": "mods/TianxiangCollection/sets/TianxiangSuimeng",
+      "id": "TianxiangSuimeng",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "separate_source_stages_not_cold_verified"
+    },
+    {
+      "project": "mods/TianxiangCollection/sets/TianxiangT5",
+      "id": "TianxiangT5",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "latest_incremental_restores_fixed_git_tag"
+    },
+    {
+      "project": "mods/TianxiangCollection/sets/TianxiangXuezhi",
+      "id": "TianxiangXuezhi",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "separate_source_stages_not_cold_verified"
+    },
+    {
+      "project": "mods/ResidentEvil/REAdaWongDefault",
+      "id": "REAdaWongDefault",
+      "rebuild_entry": null,
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "separate_source_stages_not_cold_verified"
+    },
+    {
+      "project": "mods/ResidentEvil/REAdaWongRace",
+      "id": "REAdaWongRace",
+      "rebuild_entry": "mods/ResidentEvil/REAdaWongRace/tools/rebuild.py",
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "custom_rebuild_entry_not_cold_verified"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/AmberRace",
+      "id": "AmberRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/AmberRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/安柏/安柏.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/AyakaRace",
+      "id": "AyakaRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/AyakaRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/神里绫华.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/AyakaSpringBloomRace",
+      "id": "AyakaSpringBloomRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/AyakaSpringBloomRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/神里绫华.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/EmilieRace",
+      "id": "EmilieRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/EmilieRace/tools/rebuild.py",
+      "source_inputs": {},
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "custom_rebuild_entry_not_cold_verified"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/FurinaRace",
+      "id": "FurinaRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/FurinaRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/【芙宁娜_荒】.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/GanyuRace",
+      "id": "GanyuRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/GanyuRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/甘雨.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/HuTaoLanternRace",
+      "id": "HuTaoLanternRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/HuTaoLanternRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/胡桃-海灯节.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/HuTaoRace",
+      "id": "HuTaoRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/HuTaoRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/胡桃.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/JeanSeaBreezeRace",
+      "id": "JeanSeaBreezeRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/JeanSeaBreezeRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/琴.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/KeqingOpulentRace",
+      "id": "KeqingOpulentRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/KeqingOpulentRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/刻晴.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/KokomiRace",
+      "id": "KokomiRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/KokomiRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/珊瑚宫心海.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/LisaLeafShadeRace",
+      "id": "LisaLeafShadeRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/LisaLeafShadeRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/丽莎.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/LisaRace",
+      "id": "LisaRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/LisaRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/丽莎/丽莎.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/LumineRace",
+      "id": "LumineRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/LumineRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/荧.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/NilouRace",
+      "id": "NilouRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/NilouRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/妮露.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/NingguangOrchidRace",
+      "id": "NingguangOrchidRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/NingguangOrchidRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/凝光.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/NoelleRace",
+      "id": "NoelleRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/NoelleRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/诺艾尔.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/SucroseRace",
+      "id": "SucroseRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/SucroseRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/砂糖.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/WeisinaRace",
+      "id": "WeisinaRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/WeisinaRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/薇斯纳.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/XianyunRace",
+      "id": "XianyunRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/XianyunRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/闲云.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/YaeMikoRace",
+      "id": "YaeMikoRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/YaeMikoRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/八重神子.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    },
+    {
+      "project": "mods/GenshinRaceCollection/YunJinRace",
+      "id": "YunJinRace",
+      "rebuild_entry": "mods/GenshinRaceCollection/YunJinRace/tools/rebuild.py",
+      "source_inputs": {
+        "source_model": {
+          "path": "input/original/云堇.pmx",
+          "exists": true
+        }
+      },
+      "full_latest_resource_rebuild_executed": false,
+      "classification": "raw_model_source_pipeline"
+    }
+  ],
+  "legacy_build_baselines_retained": [
+    {
+      "path": "mods/BoRuModern/build/proportion_baseline",
+      "files": 3,
+      "bytes": 2769846,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/BoRuRace/build/feedback_baseline",
+      "files": 89,
+      "bytes": 148869263,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/FeifengScaleTest/build/baseline_export0",
+      "files": 11,
+      "bytes": 3184640,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/FeifengScaleTest/build/baseline_export1",
+      "files": 11,
+      "bytes": 3184640,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/FeifengScaleTest/build/baseline_export2",
+      "files": 11,
+      "bytes": 3184640,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/FeifengScaleTest/build/baseline_export3",
+      "files": 11,
+      "bytes": 3184640,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/FeifengScaleTest/build/baseline_v0.1.0.tpac",
+      "files": 1,
+      "bytes": 15395007,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/HanfuBlueRed/build/baseline_v1.0.0",
+      "files": 4,
+      "bytes": 56601023,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/HanfuBlueRed/build/baseline_v1.0.1",
+      "files": 11,
+      "bytes": 87432490,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/ModernGirlRace/build/arm_repair_baseline",
+      "files": 12,
+      "bytes": 65771311,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/ShengxiuCollection/build/back_collision_baseline_v1.1.2",
+      "files": 2,
+      "bytes": 10119926,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/ShengxiuCollection/build/back_hair_baseline_v1.1.6",
+      "files": 18,
+      "bytes": 27574827,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/ShengxiuCollection/build/cloth_baseline_v1.0.1",
+      "files": 32,
+      "bytes": 26270849,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/ShengxiuCollection/build/cloth_baseline_v1.0.2",
+      "files": 8,
+      "bytes": 19385543,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/ShengxiuCollection/build/cloth_baseline_v1.0.3",
+      "files": 32,
+      "bytes": 21994602,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/ShengxiuCollection/build/collision_baseline_dump",
+      "files": 12,
+      "bytes": 3556202,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/ShengxiuCollection/build/collision_baseline_v1.1.0",
+      "files": 1,
+      "bytes": 10116935,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/ShengxiuCollection/build/hair_clearance_baseline_v1.1.3",
+      "files": 2,
+      "bytes": 10121890,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/ShengxiuCollection/build/hair_shape_baseline_v1.1.4",
+      "files": 17,
+      "bytes": 23411689,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/ShengxiuCollection/build/head_neck_baseline_v1.1.5",
+      "files": 17,
+      "bytes": 27534755,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/ShengxiuCollection/build/leg_collision_baseline_v1.1.1",
+      "files": 1,
+      "bytes": 10116915,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/ShengxiuCollection/build/proportion_baseline_v1.0.0",
+      "files": 32,
+      "bytes": 26244822,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangCollection/build/source_snapshots_before_grouping",
+      "files": 138,
+      "bytes": 66273417,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/WuduRaceTest/build/hand_baseline_v0.2.0",
+      "files": 18,
+      "bytes": 22681146,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/BaiMoQingOutfit2Race/build/baseline_cloth",
+      "files": 36,
+      "bytes": 22778258,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/BaiMoQingOutfit2Race/build/baseline_v0.1.0.tpac",
+      "files": 1,
+      "bytes": 67523880,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/BaiMoQingOutfit2Race/build/baseline_v0.1.0_exports",
+      "files": 109,
+      "bytes": 298119314,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/BaiMoQingRace/build/baseline_cloth",
+      "files": 48,
+      "bytes": 23977619,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/BaiMoQingRace/build/baseline_v0.1.0.tpac",
+      "files": 1,
+      "bytes": 80176901,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/BaiMoQingRace/build/baseline_v0.1.0_exports",
+      "files": 119,
+      "bytes": 355405671,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/BaiMoQingRace/build/mapped_baseline_direct.tpac",
+      "files": 1,
+      "bytes": 79063037,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/BaiMoQingRace/build/mapping_baseline_lod0",
+      "files": 22,
+      "bytes": 78219048,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/BaiMoQingRace/build/mapping_baseline_lod1",
+      "files": 22,
+      "bytes": 58663936,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/BaiMoQingRace/build/mapping_baseline_lod2",
+      "files": 22,
+      "bytes": 58663936,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/BaiMoQingRace/build/mapping_baseline_lod3",
+      "files": 22,
+      "bytes": 58663936,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/BaiMoQingRace/build/trial_baseline_lod0",
+      "files": 22,
+      "bytes": 78219048,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/BaiMoQingRace/build/trial_baseline_lod1",
+      "files": 22,
+      "bytes": 58663936,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/BaiMoQingRace/build/trial_baseline_lod2",
+      "files": 22,
+      "bytes": 58663936,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/BaiMoQingRace/build/trial_baseline_lod3",
+      "files": 22,
+      "bytes": 58663936,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/BaiMoQingRace/build/trial_baseline_v0.1.2.tpac",
+      "files": 1,
+      "bytes": 77900768,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuOutfit2Race/build/baseline_cloth",
+      "files": 36,
+      "bytes": 22611842,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuOutfit2Race/build/baseline_v0.1.0.tpac",
+      "files": 1,
+      "bytes": 68033006,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuOutfit2Race/build/baseline_v0.1.0_exports",
+      "files": 114,
+      "bytes": 276420661,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/accepted_export_lod0",
+      "files": 22,
+      "bytes": 63097363,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/accepted_export_lod1",
+      "files": 21,
+      "bytes": 46520489,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/accepted_export_lod2",
+      "files": 21,
+      "bytes": 43773305,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/accepted_export_lod3",
+      "files": 21,
+      "bytes": 41946181,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/accepted_lighting_export",
+      "files": 22,
+      "bytes": 63097420,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/accepted_lighting_v0.2.1.tpac",
+      "files": 1,
+      "bytes": 77150462,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/accepted_skeleton.json",
+      "files": 1,
+      "bytes": 5497,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/accepted_v0.1.1.tpac",
+      "files": 1,
+      "bytes": 72245188,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/arm_feedback_check.log",
+      "files": 1,
+      "bytes": 1344,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/baseline_cloth",
+      "files": 54,
+      "bytes": 50158244,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/baseline_v0.3.0.tpac",
+      "files": 1,
+      "bytes": 77150940,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/baseline_v0.3.0_exports",
+      "files": 104,
+      "bytes": 236269057,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/baseline_v0.3.1.tpac",
+      "files": 1,
+      "bytes": 77151075,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/feedback_check.log",
+      "files": 1,
+      "bytes": 1344,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/mapped_baseline_direct.tpac",
+      "files": 1,
+      "bytes": 77153227,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/mapping_baseline_lod0",
+      "files": 19,
+      "bytes": 53227920,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/mapping_baseline_lod1",
+      "files": 19,
+      "bytes": 39920640,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/mapping_baseline_lod2",
+      "files": 19,
+      "bytes": 39920640,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/mapping_baseline_lod3",
+      "files": 19,
+      "bytes": 39920640,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/Xianjian7Race/YueQingShuRace/build/repair_verify_feedback_fixes.log",
+      "files": 1,
+      "bytes": 20163,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangRaceColletion/TianxiangGirlT2Race/build/baseline_export0",
+      "files": 11,
+      "bytes": 3678480,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangRaceColletion/TianxiangGirlT2Race/build/baseline_v0.1.0.tpac",
+      "files": 1,
+      "bytes": 8587353,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangRaceColletion/TianxiangGirlT3Race/build/skirt_baseline.blend",
+      "files": 1,
+      "bytes": 3930424,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangRaceColletion/TianxiangGirlT3Race/build/skirt_baseline.npz",
+      "files": 1,
+      "bytes": 348098,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangRaceColletion/TianxiangGirlT4Race/build/skirt_baseline.blend",
+      "files": 1,
+      "bytes": 3857675,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangRaceColletion/TianxiangGirlT4Race/build/skirt_baseline.npz",
+      "files": 1,
+      "bytes": 377774,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangRaceColletion/TianxiangGirlT5Race/build/skirt_baseline.blend",
+      "files": 1,
+      "bytes": 5301008,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangRaceColletion/TianxiangGirlT5Race/build/skirt_baseline.npz",
+      "files": 1,
+      "bytes": 411084,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangRaceColletion/TianxiangGirlT6Race/build/skirt_baseline.blend",
+      "files": 1,
+      "bytes": 3001320,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangRaceColletion/TianxiangGirlT6Race/build/skirt_baseline.npz",
+      "files": 1,
+      "bytes": 499747,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangRaceColletion/TianxiangGirlT7Race/build/skirt_baseline.blend",
+      "files": 1,
+      "bytes": 3987704,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangRaceColletion/TianxiangGirlT7Race/build/skirt_baseline.npz",
+      "files": 1,
+      "bytes": 399312,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangRaceColletion/TianxiangGirlT8Race/build/skirt_baseline.blend",
+      "files": 1,
+      "bytes": 4404200,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangRaceColletion/TianxiangGirlT8Race/build/skirt_baseline.npz",
+      "files": 1,
+      "bytes": 482680,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangCollection/sets/TianxiangMufeng/build/repair_baseline_v1.0.0",
+      "files": 55,
+      "bytes": 30724281,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangCollection/sets/TianxiangMuyu/build/repair_baseline_v1.0.0",
+      "files": 55,
+      "bytes": 30599405,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangCollection/sets/TianxiangQingmei/build/repair_baseline_v1.0.0",
+      "files": 55,
+      "bytes": 29841071,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangCollection/sets/TianxiangRenqiu/build/eye_baseline_v1.0.0",
+      "files": 21,
+      "bytes": 18009008,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/TianxiangCollection/sets/TianxiangXuezhi/build/arm_baseline",
+      "files": 5,
+      "bytes": 10773005,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    },
+    {
+      "path": "mods/ResidentEvil/REAdaWongRace/build/baseline_v0.1.0",
+      "files": 22,
+      "bytes": 175246880,
+      "git_tracking": "ignored build input; not included by ordinary push"
+    }
+  ],
+  "tianxiang_t5": {
+    "baseline_tag": "TianxiangT5/v1.4.0",
+    "package_hash_verified": true,
+    "blend_and_fbx_available_in_tag": true,
+    "raw_model_to_latest_without_git_baseline": false
+  },
+  "shengxiu_mingyu": {
+    "raw_model_to_latest_cold_build": false,
+    "essential_inputs": [
+      "build/back_hair_baseline_v1.1.6/",
+      "build/hair_shape_baseline_v1.1.4/rig_arrays.npz",
+      "build/head_neck_final_export/geo/",
+      "build/rig_arrays.npz",
+      "build/rig_manifest.json",
+      "build/spec.json",
+      "build/tex/"
+    ],
+    "reason": "Latest scripts reuse exact accepted body/cloth data and historical coordinates. Removing them cannot be repaired by rerunning rig_model.py alone.",
+    "latest_build_directory_preserved": true
+  },
+  "cold_source_verification": {
+    "status": "pass",
+    "count": 29,
+    "isolated": true,
+    "prior_build_or_final_sources_used_as_input": false,
+    "comparison_to_latest": "Positions, loop topology, UV, normalized weights, cloth Alpha and bone rest matrices; all absolute differences zero. Materials/normals/modifier settings/final TPAC were not compared.",
+    "scope": "Source generation + Blend/FBX reopen validation, not full TPAC rebuild or game acceptance",
+    "results": [
+      {
+        "project": "mods/GenshinRaceCollection/GanyuRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/WutheringWavesRaceCollection/ShorekeeperRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/WutheringWavesRaceCollection/BaizhiRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/WutheringWavesRaceCollection/ChangliRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/WutheringWavesRaceCollection/JianxinRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/WutheringWavesRaceCollection/JinhsiOutfitRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/WutheringWavesRaceCollection/JinhsiRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/WutheringWavesRaceCollection/YinlinRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/WutheringWavesRaceCollection/ZhezhiRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/AmberRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/AyakaRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/AyakaSpringBloomRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/FurinaRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/HuTaoLanternRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/HuTaoRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/JeanSeaBreezeRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/KeqingOpulentRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/KokomiRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/LisaLeafShadeRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/LisaRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/LumineRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/NilouRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/NingguangOrchidRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/NoelleRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/SucroseRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/WeisinaRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/XianyunRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/YaeMikoRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      },
+      {
+        "project": "mods/GenshinRaceCollection/YunJinRace",
+        "source_rebuilt_without_previous_build_or_source": true,
+        "source_roundtrip": "pass",
+        "latest_source_semantic_match": true,
+        "differences": [],
+        "max_absolute_errors": {
+          "positions": 0,
+          "uv": 0,
+          "loops": 0,
+          "weights": 0,
+          "alpha": 0,
+          "bones": 0
+        }
+      }
+    ]
+  }
+}

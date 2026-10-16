@@ -18,7 +18,7 @@
 
 ## 使用与依赖
 
-常规重建优先运行各角色 `tools/rebuild.py`。批量的初始模型索引保存在系列 `batch_inventory.json`，只包含本次新增角色，跳过艾梅莉埃。`source_batch.py` 在单个后台 Blender 进程中逐角色处理，`resource_batch.py` 最多并行构建两个角色的独立资源包。
+常规重建优先运行各角色 `tools/rebuild.py`。 入口自动建立缺少的 build/source/tex/reports 目录。源模型的逐角色隔离验证范围和清理边界见[重建输入与构建缓存](../../docs/rebuild-and-cleanup.md)。批量的初始模型索引保存在系列 `batch_inventory.json`，只包含本次新增角色，跳过艾梅莉埃。`source_batch.py` 在单个后台 Blender 进程中逐角色处理，`resource_batch.py` 最多并行构建两个角色的独立资源包。
 
 依赖本机 Blender 5.2、Python（NumPy、SciPy、Pillow）、.NET 10／.NET Framework 4.7.2 引用程序集、Native v1.4.8、`D:/mb-tools`、已安装 MMD Tools 的 PMX 读取器与 `tools/asset_helpers/`、`tools/cloth_compiler/`、`tools/cloth_simulator/`。外部路径在脚本／配置中明示，当前 Native 版本改变后必须重新抽取和核对引用，不能继续使用旧动作目录。
 

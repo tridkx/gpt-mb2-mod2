@@ -4,7 +4,7 @@
 
 ## 安装与使用
 
-[模组合集 ZIP](dist/WutheringWavesRaceCollection_v0.1.1_Mod.zip) 顶层只有 `WutheringWavesRaceCollection/`，解压到游戏 `Modules/`，在启动器只启用 **Wuthering Waves Race Collection**。八个种族、测试兵种、TPAC 和界面组件由该模块统一加载。安装入口会完整备份原来的八个独立模块并移出游戏 `Modules/`，避免与合集重复注册；角色源工程继续保留。助手不启动游戏。
+[模组合集 ZIP](dist/WutheringWavesRaceCollection_Mod.zip) 顶层只有 `WutheringWavesRaceCollection/`，解压到游戏 `Modules/`，在启动器只启用 **Wuthering Waves Race Collection**。八个种族、测试兵种、TPAC 和界面组件由该模块统一加载。安装入口会完整备份原来的八个独立模块并移出游戏 `Modules/`，避免与合集重复注册；角色源工程继续保留。助手不启动游戏。
 
 | 角色／工程 | 角色资源名称 | 内部种族 | 测试兵种 |
 | --- | --- | --- | --- |
@@ -40,7 +40,7 @@
 
 `<ModId>/input/` 保留原 ZIP、完整 PMX 和贴图；`source/` 与 `tex/` 相邻，`tools/` 保存参数与独立重建入口，`module/<ModId>/` 是角色独立构建资源；系列 `module/WutheringWavesRaceCollection/` 是唯一可安装模块，`build/`、`reports/`、`dist/` 分别保存缓存、检查和独立交付。系列 `tools/` 只负责此次八角色的批次处理与合集打包。
 
-[合集源包](dist/WutheringWavesRaceCollection_v0.1.1_Source.zip) 内每个角色仍保持独立目录，公共工具仅在 `workspace_tools/` 保存一份。恢复到新工作区时将其放回根 `tools/`，保持各工程 `source/` 与 `tex/` 相邻，并调整游戏、Blender、PMX 读取器和 mbtool 的外部路径。
+源文件 ZIP 按需重新打包；[源文件与重建说明](../../docs/rebuild-and-cleanup.md) 列出必须保留的输入。打包后每个角色仍保持独立目录，公共工具仅在 `workspace_tools/` 保存一份。恢复到新工作区时将其放回根 `tools/`，保持各工程 `source/` 与 `tex/` 相邻，并调整游戏、Blender、PMX 读取器和 mbtool 的外部路径。
 
 依赖 Blender 5.2、Python（NumPy、SciPy、Pillow、Matplotlib）、.NET 10 与 .NET Framework 4.7.2 引用程序集、Native v1.4.8、`D:/mb-tools`、MMD Tools PMX 读取器和[共用 PMX 流程](../../tools/pmx_race_pipeline/README.md)。在工作区根运行，例如：
 
