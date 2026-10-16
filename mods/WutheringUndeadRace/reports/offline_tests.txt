@@ -1,4 +1,5 @@
 PATCH OK TaleWorlds.CampaignSystem.CharacterObject.Deserialize
+PATCH OK TaleWorlds.CampaignSystem.CampaignBehaviors.DesertersCampaignBehavior.CanPartyGenerateDeserters
 PATCH OK TaleWorlds.CampaignSystem.GameComponents.DefaultPartySpeedCalculatingModel.CalculateFinalSpeed
 PATCH OK TaleWorlds.CampaignSystem.GameComponents.DefaultMobilePartyFoodConsumptionModel.DoesPartyConsumeFood
 PATCH OK TaleWorlds.CampaignSystem.GameComponents.DefaultMobilePartyFoodConsumptionModel.CalculateDailyFoodConsumptionf
@@ -27,4 +28,4 @@ PATCH OK TaleWorlds.CampaignSystem.Army.GetNotificationText
 PATCH OK TaleWorlds.CampaignSystem.MapEvents.MapEvent.CaptureDefeatedPartyMembers
 PATCH OK SandBox.GameComponents.SandboxAgentStatCalculateModel.UpdateHumanStats
 PATCH OK SandBox.GameComponents.SandboxAgentStatCalculateModel.GetEffectiveArmorEncumbrance
-PASS 2200 checks
+PASS 2205 checks

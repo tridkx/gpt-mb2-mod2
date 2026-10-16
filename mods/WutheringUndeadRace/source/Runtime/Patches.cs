@@ -30,6 +30,7 @@ namespace WutheringUndeadRace
    try
    {
     Patch(h,typeof(CharacterObject),"Deserialize",post:nameof(CharacterLoaded));
+    Patch(h,typeof(DesertersCampaignBehavior),"CanPartyGenerateDeserters",post:nameof(ExcludeHordeDeserters));
     Patch(h,typeof(DefaultPartySpeedCalculatingModel),"CalculateFinalSpeed",post:nameof(Speed));
     Patch(h,typeof(DefaultMobilePartyFoodConsumptionModel),"DoesPartyConsumeFood",pre:nameof(Food));
     Patch(h,typeof(DefaultMobilePartyFoodConsumptionModel),"CalculateDailyFoodConsumptionf",pre:nameof(Consumption));
@@ -67,6 +68,8 @@ namespace WutheringUndeadRace
    if(__instance.StringId?.StartsWith("wur_")==true)
     SubModule.Log("NPC after Deserialize / before AfterInitialized: "+__instance.StringId+" template="+__instance.IsTemplate+" initialized="+__instance.IsInitialized+" ready="+__instance.IsReady);
   }
+  public static void ExcludeHordeDeserters(MapEventParty mapEventParty,ref bool __result)
+  {if(Catalog.Zombie(mapEventParty?.Party))__result=false;}
   private static void Patch(Harmony h,Type type,string name,string pre=null,string post=null,string trans=null)
   {
    var m=AccessTools.DeclaredMethod(type,name) ?? throw new MissingMethodException(type.FullName,name);

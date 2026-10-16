@@ -10,6 +10,7 @@ using HarmonyLib;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Party;
 using TaleWorlds.CampaignSystem.Roster;
+using TaleWorlds.CampaignSystem.MapEvents;
 using WutheringUndeadRace;
 using Patches = WutheringUndeadRace.Patches;
 
@@ -80,6 +81,14 @@ internal static class Program
   var infectedClan=(Clan)FormatterServices.GetUninitializedObject(typeof(Clan));infectedClan.StringId="wur_infected_clan";
   typeof(MobileParty).GetField("_actualClan",BindingFlags.Instance|BindingFlags.NonPublic).SetValue(zombie,infectedClan);
   Check(Catalog.Zombie(zombie),"only the infected clan receives horde mechanics");
+  var battleParty=(MapEventParty)FormatterServices.GetUninitializedObject(typeof(MapEventParty));
+  var partyBase=(PartyBase)FormatterServices.GetUninitializedObject(typeof(PartyBase));
+  typeof(PartyBase).GetProperty("MobileParty").SetValue(partyBase,zombie);
+  typeof(MapEventParty).GetProperty("Party").SetValue(battleParty,partyBase);
+  bool deserters=true;Patches.ExcludeHordeDeserters(battleParty,ref deserters);Check(!deserters,"defeated infection lords cannot feed native deserter spawning");
+  typeof(PartyBase).GetProperty("MobileParty").SetValue(partyBase,normal);
+  deserters=true;Patches.ExcludeHordeDeserters(battleParty,ref deserters);Check(deserters,"normal lord armies, including reward troops, retain native deserter rules");
+  deserters=false;Patches.ExcludeHordeDeserters(battleParty,ref deserters);Check(!deserters,"a native deserter rejection remains rejected");
   var speed=new ExplainedNumber(4.5f);Patches.Speed(zombie,ref speed);Check(Math.Abs(speed.ResultNumber-4.725f)<.0001,"default 1.05 speed multiplier");
   var normalSpeed=new ExplainedNumber(4.5f);Patches.Speed(normal,ref normalSpeed);Check(normalSpeed.ResultNumber==4.5f,"normal army/reward troops keep native speed");
   bool eats=true;Check(!Patches.Food(zombie,ref eats) && !eats,"hordes do not eat");

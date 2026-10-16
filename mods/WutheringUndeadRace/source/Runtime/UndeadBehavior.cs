@@ -33,6 +33,7 @@ namespace WutheringUndeadRace
    CampaignEvents.OnSessionLaunchedEvent.AddNonSerializedListener(this,Session);
    CampaignEvents.HourlyTickEvent.AddNonSerializedListener(this,Hourly);
    CampaignEvents.QuarterHourlyTickEvent.AddNonSerializedListener(this,Quarterly);
+   CampaignEvents.DailyTickEvent.AddNonSerializedListener(this,PopulationLog);
    CampaignEvents.MobilePartyDestroyed.AddNonSerializedListener(this,Destroyed);
    CampaignEvents.HeroPrisonerTaken.AddNonSerializedListener(this,Prisoner);
    CampaignEvents.CanKingdomBeDiscontinuedEvent.AddNonSerializedListener(this,ProtectKingdom);
@@ -64,8 +65,17 @@ namespace WutheringUndeadRace
     clan=Clan.All.FirstOrDefault(Catalog.Faction);kingdom=Kingdom.All.FirstOrDefault(Catalog.Faction);
     foreach(var hero in Hero.AllAliveHeroes)if(hero.IsPrisoner && (Catalog.Lord(hero) || Catalog.Zombie(hero.PartyBelongedToAsPrisoner)))escape.Add(hero);
     SubModule.Log("Campaign ready; lord respawn="+Settings.Current.RespawnDays+" days, speed="+Settings.Current.Speed);
+    PopulationLog();
    }
    catch(Exception e){SubModule.Fail(e);}
+  }
+  private void PopulationLog()
+  {
+   if(!SubModule.Ready)return;
+   var parties=MobileParty.All.Where(Catalog.Zombie).ToArray();
+   SubModule.Log("Population day="+F(CampaignTime.Now.ToDays)+" parties="+parties.Length+" lord_parties="+parties.Count(p=>p.LeaderHero!=null)
+    +" wanderers="+parties.Count(p=>p.LeaderHero==null)+" regulars="+parties.Sum(p=>p.MemberRoster.TotalRegulars)
+    +" armies="+parties.Where(p=>p.Army!=null && p.Army.LeaderParty==p).Count()+" spawning="+Settings.Current.Spawning);
   }
   private void EnsureFaction()
   {
@@ -164,7 +174,7 @@ namespace WutheringUndeadRace
    }
    party.ItemRoster.Clear();party.Aggressiveness=1f;party.Party.SetCustomName(new TextObject(hero==null?"游荡感染尸群":hero.Name+"的尸群"));
    party.Ai.SetDoNotMakeNewDecisions(true);party.SetMovePatrolAroundPoint(pos,MobileParty.NavigationType.Default);party.Party.SetVisualAsDirty();
-   SubModule.Log("Spawn "+party.StringId+" ordinary="+count);
+   SubModule.Log("Spawn "+party.StringId+" ordinary="+count+" day="+F(CampaignTime.Now.ToDays)+" near="+home.Name+" name="+party.Name);
   }
   private void Quarterly()
   {
