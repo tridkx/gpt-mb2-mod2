@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Module>
+  <Name value="My Race Test" />
+  <Id value="MyRacetest" />
+  <Version value="v0.1.0" />
+  <DefaultModule value="false" />
+  <ModuleCategory value="Singleplayer" />
+  <ModuleType value="Community" />
+  <SingleplayerModule value="true" />
+  <MultiplayerModule value="false" />
+  <DependedModules>
+    <DependedModule Id="Native" />
+    <DependedModule Id="SandBoxCore" />
+    <DependedModule Id="Sandbox" />
+    <DependedModule Id="StoryMode" />
+    <DependedModule Id="YueQingShuOutfit2Race" />
+    <DependedModule Id="YueQingShuRace" />
+    <DependedModule Id="BaiMoQingOutfit2Race" />
+    <DependedModule Id="BaiMoQingRace" />
+    <DependedModule Id="TianxiangRaceCollection" />
+  </DependedModules>
+  <SubModules>
+    <SubModule>
+      <Name value="Race Troop Armor" />
+      <DLLName value="RaceTroopBuilder.ArmorRuntime.dll" />
+      <SubModuleClassType value="RaceTroopBuilder.ArmorRuntime.SubModule" />
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+  </SubModules>
+  <Xmls>
+    <XmlNode>
+      <XmlName id="NPCCharacters" path="rtb_troops" />
+      <IncludedGameTypes>
+        <GameType value="Campaign" />
+        <GameType value="CampaignStoryMode" />
+      </IncludedGameTypes>
+    </XmlNode>
+  </Xmls>
+</Module>
